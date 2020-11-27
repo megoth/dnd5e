@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import styles from "./index.module.css";
+import utilStyles from "../../styles/utils.module.css";
 
 const name = "[Your Name]";
 export const siteTitle = "Next.js Sample Website";
@@ -12,7 +12,7 @@ interface Props {
   home?: boolean;
 }
 
-export default function Layout({ children, home }: Props) {
+export default function Index({ children, home }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -71,6 +71,6 @@ export default function Layout({ children, home }: Props) {
   );
 }
 
-Layout.defaultProps = {
+Index.defaultProps = {
   home: false,
 };

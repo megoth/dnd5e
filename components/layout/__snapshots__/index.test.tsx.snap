@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout can be rendered as home 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    >
+      <img
+        alt="[Your Name]"
+        class="headerHomeImage borderCircle"
+        src="/images/profile.jpg"
+      />
+      <h1
+        class="heading2Xl"
+      >
+        [Your Name]
+      </h1>
+    </header>
+    <main>
+      test
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layout renders as non-home by default 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="[Your Name]"
+          class="headerImage borderCircle"
+          src="/images/profile.jpg"
+        />
+      </a>
+      <h2
+        class="headingLg"
+      >
+        <a
+          class="colorInherit"
+          href="/"
+        >
+          [Your Name]
+        </a>
+      </h2>
+    </header>
+    <main>
+      test
+    </main>
+    <div
+      class="backToHome"
+    >
+      <a
+        href="/"
+      >
+        ← Back to home
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

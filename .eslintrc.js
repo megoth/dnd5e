@@ -21,11 +21,16 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        devDependencies: ["**/*.test.*"],
+      },
+    ],
     "no-use-before-define": "off",
     semi: "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/semi": "error",
-    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-one-expression-per-line": "off",
