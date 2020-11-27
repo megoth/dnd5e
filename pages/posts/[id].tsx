@@ -10,7 +10,7 @@ interface Props {
 
 export default function Post({ postData }: Props) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>

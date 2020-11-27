@@ -5,7 +5,11 @@ module.exports = {
   clearMocks: true,
   preset: "ts-jest",
   testEnvironment: "jsdom",
-  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+  testPathIgnorePatterns: ["/node_modules/", "/__testUtils/"],
+  setupFilesAfterEnv: [
+    "@testing-library/jest-dom/extend-expect",
+    "<rootDir>/__testUtils/setupSession",
+  ],
 
   transform: {
     ...tsjPreset.transform,
@@ -16,6 +20,11 @@ module.exports = {
   },
 
   collectCoverage: true,
+  coveragePathIgnorePatterns: [
+    "/node_modules/",
+    "/__testUtils/",
+    "/src/windowHelpers",
+  ],
   coverageThreshold: {
     global: {
       branches: 90,

@@ -3,16 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --config .eslintrc.js --fix",
     "test": "jest"
   },
   "dependencies": {
+    "@inrupt/solid-ui-react": "^2.0.0",
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
+    "rdf-namespaces": "^1.9.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "^12.0.0",
@@ -27,6 +29,7 @@
     "@types/react": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
+    "@zeit/next-source-maps": "0.0.3",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
