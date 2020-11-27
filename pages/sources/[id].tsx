@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
@@ -6,7 +7,7 @@ import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <Layout home={true}>
       <Head>
         <title>{postData.title}</title>
       </Head>
