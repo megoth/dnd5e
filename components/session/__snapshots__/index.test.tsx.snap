@@ -1,45 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Session renders for authententicated state 1`] = `
+exports[`Session renders for authenticated state 1`] = `
 <DocumentFragment>
-  <div>
-    <p>
-      Logged in as 
-    </p>
-    <h3>
-      fetching data in progress
-    </h3>
-    <p />
-    <div
-      role="button"
-      tabindex="0"
-    >
-      <button
-        type="button"
-      >
-        Log out
-      </button>
-    </div>
+  <div
+    data-testid="loading"
+  >
+    Loading...
   </div>
 </DocumentFragment>
 `;
 
-exports[`Session renders for unauthententicated state 1`] = `
+exports[`Session renders for unauthenticated state 1`] = `
 <DocumentFragment>
-  <form>
-    <p>
-      Not logged in.
-    </p>
-    <div
-      role="button"
-      tabindex="0"
-    >
-      <button
-        type="submit"
-      >
-        Log In
-      </button>
-    </div>
-  </form>
+  <div
+    data-testid="loading"
+  >
+    Loading...
+  </div>
 </DocumentFragment>
 `;

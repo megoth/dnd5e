@@ -1,73 +1,75 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement, ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import styles from "./index.module.css";
 import utilStyles from "../../styles/utils.module.css";
-
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+import useTranslations from "../../src/hooks/useTranslations";
+import { getDefaultBundle, getMessage } from "../../src/models/translation";
+import Loading from "../loading";
+import ErrorMessage from "../errorMessage";
 
 interface Props {
   children: ReactNode;
   home?: boolean;
 }
 
-export default function Index({ children, home }: Props) {
+export default function Index({ children, home }: Props): ReactElement {
+  const { data: bundles, error } = useTranslations();
+
+  if (error) {
+    return (
+      <ErrorMessage error={error}>Error when loading page...</ErrorMessage>
+    );
+  }
+
+  if (!bundles) {
+    return <Loading />;
+  }
+
+  const bundle = getDefaultBundle(bundles);
+  const siteTitle = getMessage(bundle, "appName");
+  const description = getMessage(bundle, "appDescription");
+
+  const l10n = new ReactLocalization(bundles);
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
+    <LocalizationProvider l10n={l10n}>
+      <div className={styles.container}>
+        <Head>
+          <title>{siteTitle}</title>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content={bundle.formatPattern(description)}
+          />
+          <meta name="og:title" content={bundle.formatPattern(siteTitle)} />s{" "}
+        </Head>
+        <header className={styles.header}>
+          {home ? (
+            <>
+              <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
+            </>
+          ) : (
+            <>
+              <h2 className={utilStyles.headingLg}>
+                <Link href="/">
+                  <a className={utilStyles.colorInherit}>{siteTitle}</a>
+                </Link>
+              </h2>
+            </>
+          )}
+        </header>
+        <main>{children}</main>
+        {!home && (
+          <div className={styles.backToHome}>
             <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
+              <a>← Back to home</a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
+          </div>
         )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
+      </div>
+    </LocalizationProvider>
   );
 }
 

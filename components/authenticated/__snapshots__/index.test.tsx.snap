@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authenticated renders error if fetching profile fails 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="error"
+  >
+    <div>
+      <em>
+        Failed to fetch profile
+      </em>
+    </div>
+    <div>
+      Error
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Authenticated renders info about the user and a log out button 1`] = `
+<DocumentFragment>
+  <div>
+    <p />
+    <div
+      role="button"
+      tabindex="0"
+    >
+      <button
+        type="button"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Authenticated renders loading while fetching profile 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="loading"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;

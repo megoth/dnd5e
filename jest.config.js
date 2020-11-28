@@ -8,11 +8,13 @@ module.exports = {
   testPathIgnorePatterns: ["/node_modules/", "/__testUtils/"],
   setupFilesAfterEnv: [
     "@testing-library/jest-dom/extend-expect",
+    "<rootDir>/__testUtils/setupFetch",
     "<rootDir>/__testUtils/setupSession",
   ],
 
   transform: {
     ...tsjPreset.transform,
+    "\\.ttl$": "jest-raw-loader",
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   moduleNameMapper: {
@@ -27,10 +29,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      branches: 90,
-      functions: 90,
-      lines: 95,
-      statements: 95,
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
     },
   },
 

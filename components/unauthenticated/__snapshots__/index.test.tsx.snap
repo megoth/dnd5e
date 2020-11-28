@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unauthenticated renders a login form 1`] = `
+<DocumentFragment>
+  <form>
+    <p />
+    <div
+      role="button"
+      tabindex="0"
+    >
+      <button
+        type="submit"
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`Unauthenticated renders an error message if something goes wrong 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="error"
+  >
+    <div>
+      <em>
+        Failed loading translations
+      </em>
+    </div>
+    <div>
+      Error: error
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Unauthenticated renders loading when translations are not loaded yet 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="loading"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;
