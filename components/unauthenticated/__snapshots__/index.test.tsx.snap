@@ -3,14 +3,22 @@
 exports[`Unauthenticated renders a login form 1`] = `
 <DocumentFragment>
   <form>
-    <p />
+    <p>
+      <span
+        resource="http://localhost:3000/data/translations.ttl#loggedOut"
+      />
+    </p>
     <div
       role="button"
       tabindex="0"
     >
       <button
         type="submit"
-      />
+      >
+        <span
+          resource="http://localhost:3000/data/translations.ttl#logIn"
+        />
+      </button>
     </div>
   </form>
 </DocumentFragment>
@@ -24,7 +32,11 @@ exports[`Unauthenticated renders an error message if something goes wrong 1`] = 
     <h1
       data-testid="error-title"
     >
-      error
+      <span
+        resource="error"
+      >
+        error
+      </span>
     </h1>
     <pre
       data-testid="error-stack"

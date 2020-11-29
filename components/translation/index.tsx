@@ -12,7 +12,11 @@ interface Props {
 
 export default function Translation({ id, vars }: Props) {
   const url = generateTranslationUrl(id);
-  return <Localized id={getTranslationId(url)} vars={vars} />;
+  return (
+    <span resource={url}>
+      <Localized id={getTranslationId(url)} vars={vars} />
+    </span>
+  );
 }
 
 Translation.defaultProps = {

@@ -17,7 +17,9 @@ export default function ErrorMessage({ error }: Props) {
   return (
     <div data-testid={TESTID_ERROR}>
       <h1 data-testid={TESTID_ERROR_TITLE}>
-        <Localized id={errorId}>{errorUrl}</Localized>
+        <span resource={errorUrl}>
+          <Localized id={errorId}>{errorUrl}</Localized>
+        </span>
       </h1>
       <pre data-testid={TESTID_ERROR_STACK}>
         <h2>{error.message}</h2>

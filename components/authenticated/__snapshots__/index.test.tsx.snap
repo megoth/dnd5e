@@ -7,7 +7,11 @@ exports[`Authenticated renders error if fetching profile fails 1`] = `
   >
     <h1
       data-testid="error-title"
-    />
+    >
+      <span
+        resource=""
+      />
+    </h1>
     <pre
       data-testid="error-stack"
     >
@@ -29,14 +33,22 @@ exports[`Authenticated renders error if fetching profile fails 1`] = `
 
 exports[`Authenticated renders info about the user and a log out button 1`] = `
 <DocumentFragment>
-  <p />
+  <p>
+    <span
+      resource="http://localhost:3000/data/translations.ttl#loggedIn"
+    />
+  </p>
   <div
     role="button"
     tabindex="0"
   >
     <button
       type="button"
-    />
+    >
+      <span
+        resource="http://localhost:3000/data/translations.ttl#logOut"
+      />
+    </button>
   </div>
 </DocumentFragment>
 `;

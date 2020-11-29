@@ -63,7 +63,11 @@ exports[`Layout renders error if something goes wrong 1`] = `
   >
     <h1
       data-testid="error-title"
-    />
+    >
+      <span
+        resource=""
+      />
+    </h1>
     <pre
       data-testid="error-stack"
     >
