@@ -9,7 +9,7 @@ import { skos } from "rdf-namespaces";
 import { negotiateLanguages } from "@fluent/langneg";
 import { FluentBundle, FluentResource } from "@fluent/bundle";
 import NestedError from "nested-error-stacks";
-import translationsTurtle from "../../../data/translations.ttl";
+import translationsTurtle from "../../../public/data/translations.ttl";
 import { createLocalResponse } from "../../utils";
 import { getErrorsDataset, generateErrorUrl } from "../error";
 

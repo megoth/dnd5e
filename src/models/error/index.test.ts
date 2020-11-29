@@ -6,7 +6,7 @@ import {
   getErrorId,
   getErrorsDataset,
 } from "./index";
-import errorTurtle from "../../../data/errors.ttl";
+import errorTurtle from "../../../public/data/errors.ttl";
 
 describe("getErrorId", () => {
   const url = "http://example.com/test/me#more";

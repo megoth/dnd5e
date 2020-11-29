@@ -19,7 +19,7 @@ import {
   getTranslationsDataset,
   translationDatasetUrl,
 } from "./index";
-import translationsTurtle from "../../../data/translations.ttl";
+import translationsTurtle from "../../../public/data/translations.ttl";
 import { chain } from "../../utils";
 import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
 import { generateErrorUrl } from "../error";

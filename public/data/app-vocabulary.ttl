@@ -1,0 +1,32 @@
+@prefix dnd5e_app:  <#> .
+@prefix dcterms:  	<http://purl.org/dc/terms/> .
+@prefix owl:      	<http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:     	<http://purl.org/vocab/vann/> .
+@prefix xsd:      	<http://www.w3.org/2001/XMLSchema#> .
+
+dnd5e_app:
+    a owl:Ontology;
+	owl:versionInfo "0.1" ;
+ 	dcterms:title "D&D5E Solid App vocabulary"@en ;
+	dcterms:description """The D&D5E Solid App vocabulary."""@en ;
+	dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
+	dcterms:issued "2020/11/29"^^xsd:date ;
+	dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
+	vann:preferredNamespacePrefix "dnd5e_app" ;
+	vann:preferredNamespaceUri "https://dnd5e.inrupt.net/data/app-vocabulary#" .
+
+dnd5e_app:errorIndex
+	a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:label "Index of errors" ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Resource .
+
+dnd5e_app:translationsIndex
+	a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:label "Index of translations" ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Resource .

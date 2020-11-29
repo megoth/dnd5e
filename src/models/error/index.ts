@@ -1,6 +1,6 @@
 import { getSolidDataset } from "@inrupt/solid-client";
 import { createLocalResponse } from "../../utils";
-import errorTurtle from "../../../data/errors.ttl";
+import errorTurtle from "../../../public/data/errors.ttl";
 import { getTranslationId } from "../translation";
 
 export const errorDatasetUrl = "http://localhost:3000/data/errors.ttl";
