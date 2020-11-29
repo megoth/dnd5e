@@ -1,0 +1,29 @@
+name: CI
+
+on: [push]
+
+env:
+  CI: true
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # Available OS's: https://help.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners
+        os: [ubuntu-18.04]
+        node-version: [14.x, 12.x, 10.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Cache node modules
+      uses: actions/cache@v1.1.2
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node${{ runner.node-version }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+    - run: npm ci
+    - run: npm run ci
