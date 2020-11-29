@@ -2,6 +2,7 @@ import React, { createContext, ReactNode, useContext } from "react";
 
 const AppConfigContext = createContext({
   errorsUrl: "",
+  solidBaseUrl: "",
   translationsUrl: "",
 });
 
@@ -11,17 +12,16 @@ export function useAppConfig() {
 
 interface Props {
   children: ReactNode;
-  errorsUrl: string;
-  translationsUrl: string;
+  appConfig: {
+    errorsUrl: string;
+    solidBaseUrl: string;
+    translationsUrl: string;
+  };
 }
 
-export default function AppConfigProvider({
-  children,
-  errorsUrl,
-  translationsUrl,
-}: Props) {
+export default function AppConfigProvider({ children, appConfig }: Props) {
   return (
-    <AppConfigContext.Provider value={{ errorsUrl, translationsUrl }}>
+    <AppConfigContext.Provider value={appConfig}>
       {children}
     </AppConfigContext.Provider>
   );

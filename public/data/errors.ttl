@@ -2,9 +2,25 @@
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
 
+:baseNoAccess
+    a rdfs:Literal;
+    skos:definition "You have no access to base data, ask admin for help."@en-US.
+
+:baseNotFound
+    a rdfs:Literal;
+    skos:definition "No read access to base data"@en-US.
+
 :datasetLoadFailed
     a rdfs:Literal;
+    skos:definition "Failed to fetch dataset"@en-US.
+
+:resourceInfoLoadFailed
+    a rdfs:Literal;
     skos:definition "Failed to fetch resource"@en-US.
+
+:sourcesNone
+    a rdfs:Literal;
+    skos:definition "There are no sources available"@en-US.
 
 :translationsLoadFailed
     a rdfs:Literal;

@@ -1,6 +1,7 @@
 export default function mockAppConfig() {
   return {
-    errorsUrl: "http://localhost:3000/data/errors.ttl",
-    translationsUrl: "http://localhost:3000/data/translations.ttl",
+    errorsUrl: "https://localhost:3000/data/errors.ttl",
+    solidBaseUrl: "https://dnd5e.inrupt.net/data/index.ttl",
+    translationsUrl: "https://localhost:3000/data/translations.ttl",
   };
 }

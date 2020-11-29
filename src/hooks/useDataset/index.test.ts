@@ -8,9 +8,9 @@ import mockSWR, {
   createSWRErrorResponse,
   createSWRResponse,
 } from "../../../__testUtils/mockSWR";
-import { generateErrorUrl } from "../../models/error";
 import mockAppConfig from "../../../__testUtils/mockAppConfig";
 import AppConfigWrapper from "../../../__testUtils/appConfigWrapper";
+import { generateErrorUrl } from "../../models/error";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;

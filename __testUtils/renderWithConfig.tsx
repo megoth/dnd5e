@@ -4,10 +4,8 @@ import AppConfigProvider from "../src/contexts/appConfig";
 import mockAppConfig from "./mockAppConfig";
 
 export default function renderWithConfig(ui) {
-  const { errorsUrl, translationsUrl } = mockAppConfig();
+  const appConfig = mockAppConfig();
   return render(
-    <AppConfigProvider errorsUrl={errorsUrl} translationsUrl={translationsUrl}>
-      {ui}
-    </AppConfigProvider>
+    <AppConfigProvider appConfig={appConfig}>{ui}</AppConfigProvider>
   );
 }

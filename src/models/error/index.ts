@@ -16,3 +16,9 @@ export async function getErrorsDataset(datasetUrl) {
     fetch: () => Promise.resolve(createLocalResponse(errorTurtle)),
   });
 }
+
+export function isError(error: Error, errorId: string, datasetUrl): boolean {
+  const { message: errorUrl1 } = error;
+  const errorUrl2 = generateErrorUrl(errorId, datasetUrl);
+  return errorUrl1 === errorUrl2;
+}

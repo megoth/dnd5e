@@ -4,6 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
+  plugins: ["@typescript-eslint", "prettier"],
   extends: [
     "airbnb-base",
     "eslint:recommended",
@@ -12,6 +13,8 @@ module.exports = {
     "airbnb/hooks",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
   ],
   globals: {
     Atomics: "readonly",
@@ -19,8 +22,15 @@ module.exports = {
     SharedArrayBuffer: "readonly",
   },
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
   rules: {
+    "prettier/prettier": "error",
     "import/no-extraneous-dependencies": [
       "off",
       {
@@ -50,6 +60,9 @@ module.exports = {
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
+    },
+    react: {
+      version: "detect",
     },
   },
 };
