@@ -9,7 +9,7 @@ module.exports = {
   setupFilesAfterEnv: [
     "@testing-library/jest-dom/extend-expect",
     "<rootDir>/__testUtils/setupFetch",
-    "<rootDir>/__testUtils/setupSession",
+    "<rootDir>/__testUtils/setupSolidUIReact",
   ],
 
   transform: {

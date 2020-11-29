@@ -1,4 +1,4 @@
-import { chain } from "./index";
+import { chain, createLocalResponse } from "./index";
 
 describe("chain", () => {
   test("it reduces an arbitrary list of functions, accumulating each operation's return product", () => {
@@ -9,5 +9,13 @@ describe("chain", () => {
     expect(opOne).toHaveBeenCalledWith("x");
     expect(opTwo).toHaveBeenCalledWith("x:one");
     expect(value).toEqual("x:one:two");
+  });
+});
+
+describe("createLocalResponse", () => {
+  it("creates a Response object", async () => {
+    const response = createLocalResponse("test");
+    expect(response.headers.get("Content-Type")).toEqual("text/turtle");
+    await expect(response.text()).resolves.toEqual("test");
   });
 });

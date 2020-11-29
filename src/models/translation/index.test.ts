@@ -1,25 +1,28 @@
-import { FluentBundle, FluentResource } from "@fluent/bundle";
 import * as solidClientFns from "@inrupt/solid-client";
 import {
+  getThingAll,
   mockSolidDatasetFrom,
   mockThingFrom,
   setStringWithLocale,
   setThing,
   setUrl,
 } from "@inrupt/solid-client";
-import { rdf, skos, rdfs } from "rdf-namespaces";
+import { rdf, rdfs, skos } from "rdf-namespaces";
+import NestedError from "nested-error-stacks";
 import {
+  generateTranslationUrl,
   getDefaultBundle,
+  getFailedMessage,
   getMessage,
   getTranslationBundleAll,
   getTranslationId,
   getTranslationsDataset,
-  getTranslationUrl,
   translationDatasetUrl,
 } from "./index";
-import { mockedDataset } from "../../../__testUtils/mockDataset";
 import translationsTurtle from "../../../data/translations.ttl";
 import { chain } from "../../utils";
+import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
+import { generateErrorUrl } from "../error";
 
 describe("getDefaultBundle", () => {
   it("picks the first available bundle", () =>
@@ -33,26 +36,28 @@ describe("getTranslationId", () => {
     ));
 });
 
-describe("getTranslationUrl", () => {
+describe("generateTranslationUrl", () => {
   it("creates an url out of an id", () =>
-    expect(getTranslationUrl("test")).toEqual(`${translationDatasetUrl}#test`));
+    expect(generateTranslationUrl("test")).toEqual(
+      `${translationDatasetUrl}#test`
+    ));
 });
 
 describe("getMessage", () => {
   const id = "test";
-  const translationUrl = getTranslationUrl(id);
-  const translationId = getTranslationId(translationUrl);
 
   it("returns a message from a bundle", () => {
     const message = "Test";
-    const bundle = new FluentBundle("en");
-    bundle.addResource(new FluentResource(`${translationId} = ${message}`));
+    const bundle = mockFluentBundle({
+      [id]: message,
+    });
     expect(getMessage(bundle, id)).toEqual(message);
   });
 
   it("supports interpolation", () => {
-    const bundle = new FluentBundle("en");
-    bundle.addResource(new FluentResource(`${translationId} = {$test}`));
+    const bundle = mockFluentBundle({
+      [id]: "{$test}",
+    });
     expect(
       getMessage(bundle, id, {
         test: 42,
@@ -61,28 +66,18 @@ describe("getMessage", () => {
   });
 
   it("supports fallback if translation does not exist", () => {
-    const bundle = new FluentBundle("en");
+    const bundle = mockFluentBundle();
     expect(getMessage(bundle, id)).toEqual(
-      `[Translation for ${translationUrl} does not exist]`
+      `[Translation for ${generateTranslationUrl(id)} does not exist]`
     );
   });
 });
 
 describe("getTranslationsDataset", () => {
   it("sets a custom fetch to getSolidDataset", async () => {
-    const dataset = mockedDataset;
-    const mockedGetter = jest
-      .spyOn(solidClientFns, "getSolidDataset")
-      .mockResolvedValue(dataset);
-    await expect(getTranslationsDataset()).resolves.toBe(dataset);
-    const fetch = mockedGetter.mock.calls[0][1].fetch as Function;
-    const response = fetch();
-    await expect(response).resolves.toEqual(
-      new Response(translationsTurtle, {
-        headers: new Headers({
-          "Content-Type": "text/turtle",
-        }),
-      })
+    const dataset = await getTranslationsDataset();
+    expect(getThingAll(dataset).length).toEqual(
+      translationsTurtle.match(/rdfs:Literal/g)?.length
     );
   });
 });
@@ -90,12 +85,13 @@ describe("getTranslationsDataset", () => {
 describe("getTranslationBundleAll", () => {
   it("gets all bundles for a given locale", async () => {
     const message1 = chain(
-      mockThingFrom(getTranslationUrl("message1")),
+      mockThingFrom(generateTranslationUrl("message1")),
       (t) => setUrl(t, rdf.type, rdfs.Literal),
       (t) => setStringWithLocale(t, skos.definition, "Test", "en-US")
     );
-    const message2 = chain(mockThingFrom(getTranslationUrl("message2")), (t) =>
-      setUrl(t, rdf.type, rdfs.Literal)
+    const message2 = chain(
+      mockThingFrom(generateTranslationUrl("message2")),
+      (t) => setUrl(t, rdf.type, rdfs.Literal)
     );
     const dataset = chain(
       mockSolidDatasetFrom(translationDatasetUrl),
@@ -107,5 +103,18 @@ describe("getTranslationBundleAll", () => {
     expect(bundles).toHaveLength(1);
     const defaultBundle = getDefaultBundle(bundles);
     expect(getMessage(defaultBundle, "message1")).toEqual("Test");
+    expect(getMessage(defaultBundle, "message2")).toEqual(
+      getFailedMessage(generateTranslationUrl("message2"))
+    );
+  });
+
+  it("throws custom error if anything goes wrong", async () => {
+    const error = new Error();
+    jest.spyOn(solidClientFns, "getSolidDataset").mockImplementation(() => {
+      throw error;
+    });
+    await expect(getTranslationBundleAll(["en-US"])).rejects.toEqual(
+      new NestedError(generateErrorUrl("translationsLoadFailed"), error)
+    );
   });
 });

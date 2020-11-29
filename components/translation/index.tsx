@@ -2,7 +2,7 @@ import React from "react";
 import { Localized } from "@fluent/react";
 import {
   getTranslationId,
-  getTranslationUrl,
+  generateTranslationUrl,
 } from "../../src/models/translation";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function Translation({ id, vars }: Props) {
-  const url = getTranslationUrl(id);
+  const url = generateTranslationUrl(id);
   return <Localized id={getTranslationId(url)} vars={vars} />;
 }
 

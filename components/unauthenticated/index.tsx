@@ -20,9 +20,7 @@ export default function Unauthenticated() {
   const { data: bundles, error } = useTranslations();
 
   if (error) {
-    return (
-      <ErrorMessage error={error}>Failed loading translations</ErrorMessage>
-    );
+    return <ErrorMessage error={error} />;
   }
 
   if (!bundles) {

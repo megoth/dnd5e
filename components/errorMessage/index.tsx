@@ -1,19 +1,28 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import { Localized } from "@fluent/react";
+import NestedError from "nested-error-stacks";
+import { getErrorId } from "../../src/models/error";
 
 interface Props {
-  children: ReactNode;
-  error: Error;
+  error: NestedError;
 }
 
 export const TESTID_ERROR = "error";
+export const TESTID_ERROR_TITLE = "error-title";
+export const TESTID_ERROR_STACK = "error-stack";
 
-export default function ErrorMessage({ children, error }: Props) {
+export default function ErrorMessage({ error }: Props) {
+  const { message: errorUrl } = error;
+  const errorId = getErrorId(errorUrl);
   return (
     <div data-testid={TESTID_ERROR}>
-      <div>
-        <em>{children}</em>
-      </div>
-      <div>{error.toString()}</div>
+      <h1 data-testid={TESTID_ERROR_TITLE}>
+        <Localized id={errorId}>{errorUrl}</Localized>
+      </h1>
+      <pre data-testid={TESTID_ERROR_STACK}>
+        <h2>{error.message}</h2>
+        <pre>{error.stack}</pre>
+      </pre>
     </div>
   );
 }

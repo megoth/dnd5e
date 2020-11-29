@@ -1,8 +1,4 @@
-import {
-  CombinedDataProvider,
-  LogoutButton,
-  useSession,
-} from "@inrupt/solid-ui-react";
+import { LogoutButton, useSession } from "@inrupt/solid-ui-react";
 import React, { ReactElement } from "react";
 import { getThing } from "@inrupt/solid-client";
 import useDataset from "../../src/hooks/useDataset";
@@ -17,7 +13,7 @@ export default function Authenticated(): ReactElement {
   const { data: profileDataset, error } = useDataset(webId);
 
   if (error) {
-    return <ErrorMessage error={error}>Failed to fetch profile</ErrorMessage>;
+    return <ErrorMessage error={error} />;
   }
 
   if (!profileDataset) {
@@ -28,7 +24,7 @@ export default function Authenticated(): ReactElement {
   const name = getProfileName(profile);
 
   return (
-    <CombinedDataProvider datasetUrl={webId} thingUrl={webId}>
+    <>
       <p>
         <Translation id="loggedIn" vars={{ name }} />
       </p>
@@ -37,6 +33,6 @@ export default function Authenticated(): ReactElement {
           <Translation id="logOut" />
         </button>
       </LogoutButton>
-    </CombinedDataProvider>
+    </>
   );
 }

@@ -5,14 +5,36 @@ exports[`ErrorMessage renders 1`] = `
   <div
     data-testid="error"
   >
-    <div>
-      <em>
-        test 2
-      </em>
-    </div>
-    <div>
-      Error: test 1
-    </div>
+    <h1
+      data-testid="error-title"
+    >
+      error2
+    </h1>
+    <pre
+      data-testid="error-stack"
+    >
+      <h2>
+        error2
+      </h2>
+      <pre>
+        NestedError: error2
+    at Object.&lt;anonymous&gt; (/Users/arnehassel/Projects/dnd5e-app/components/errorMessage/index.test.tsx:9:20)
+    at Object.asyncJestTest (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+Caused By: Error: error1
+    at Object.&lt;anonymous&gt; (/Users/arnehassel/Projects/dnd5e-app/components/errorMessage/index.test.tsx:8:20)
+    at Object.asyncJestTest (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+      </pre>
+    </pre>
   </div>
 </DocumentFragment>
 `;

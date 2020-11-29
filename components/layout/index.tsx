@@ -18,9 +18,7 @@ export default function Index({ children, home }: Props): ReactElement {
   const { data: bundles, error } = useTranslations();
 
   if (error) {
-    return (
-      <ErrorMessage error={error}>Error when loading page...</ErrorMessage>
-    );
+    return <ErrorMessage error={error} />;
   }
 
   if (!bundles) {
