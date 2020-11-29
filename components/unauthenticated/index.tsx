@@ -6,6 +6,7 @@ import useTranslations from "../../src/hooks/useTranslations";
 import { getDefaultBundle, getMessage } from "../../src/models/translation";
 import Loading from "../loading";
 import ErrorMessage from "../errorMessage";
+import { useAppConfig } from "../../src/contexts/appConfig";
 
 export function setupLoginSubmit(login) {
   return (event) => {
@@ -18,6 +19,7 @@ export default function Unauthenticated() {
   const [providerIri] = useState("https://inrupt.net");
   const { login } = useSession();
   const { data: bundles, error } = useTranslations();
+  const { translationsUrl } = useAppConfig();
 
   if (error) {
     return <ErrorMessage error={error} />;
@@ -29,7 +31,7 @@ export default function Unauthenticated() {
 
   const bundle = getDefaultBundle(bundles);
   const authOptions = {
-    clientName: getMessage(bundle, "appName"),
+    clientName: getMessage(translationsUrl, bundle, "appName"),
   };
 
   const handleLoginSubmit = setupLoginSubmit(login);

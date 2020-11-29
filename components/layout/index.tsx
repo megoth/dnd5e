@@ -8,6 +8,7 @@ import useTranslations from "../../src/hooks/useTranslations";
 import { getDefaultBundle, getMessage } from "../../src/models/translation";
 import Loading from "../loading";
 import ErrorMessage from "../errorMessage";
+import { useAppConfig } from "../../src/contexts/appConfig";
 
 interface Props {
   children: ReactNode;
@@ -16,6 +17,7 @@ interface Props {
 
 export default function Index({ children, home }: Props): ReactElement {
   const { data: bundles, error } = useTranslations();
+  const { translationsUrl } = useAppConfig();
 
   if (error) {
     return <ErrorMessage error={error} />;
@@ -26,8 +28,8 @@ export default function Index({ children, home }: Props): ReactElement {
   }
 
   const bundle = getDefaultBundle(bundles);
-  const siteTitle = getMessage(bundle, "appName");
-  const description = getMessage(bundle, "appDescription");
+  const siteTitle = getMessage(translationsUrl, bundle, "appName");
+  const description = getMessage(translationsUrl, bundle, "appDescription");
 
   const l10n = new ReactLocalization(bundles);
 

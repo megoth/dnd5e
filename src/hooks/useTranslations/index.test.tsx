@@ -1,17 +1,24 @@
+import React from "react";
 import { renderHook } from "@testing-library/react-hooks";
 import useSWR from "swr";
 import useTranslations from "./index";
 import * as translationFns from "../../models/translation";
 import mockSWR, { createSWRResponse } from "../../../__testUtils/mockSWR";
+import AppConfigWrapper from "../../../__testUtils/appConfigWrapper";
+import mockAppConfig from "../../../__testUtils/mockAppConfig";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;
+
+const appConfig = mockAppConfig();
 
 describe("useTranslations", () => {
   beforeEach(() => mockSWR(mockedSWRHook));
 
   it("caches with SWR", () => {
-    renderHook(() => useTranslations());
+    renderHook(() => useTranslations(), {
+      wrapper: AppConfigWrapper,
+    });
     expect(mockedSWRHook).toHaveBeenCalledWith(
       "translations",
       expect.any(Function)
@@ -23,10 +30,13 @@ describe("useTranslations", () => {
     const mockedGetSolidDataset = jest
       .spyOn(translationFns, "getTranslationBundleAll")
       .mockResolvedValue(bundles);
-    const { result } = renderHook(() => useTranslations());
+    const { result } = renderHook(() => useTranslations(), {
+      wrapper: AppConfigWrapper,
+    });
     await expect(result.current).resolves.toEqual(createSWRResponse(bundles));
-    expect(mockedGetSolidDataset).toHaveBeenCalledWith([
-      ...navigator.languages,
-    ]);
+    expect(mockedGetSolidDataset).toHaveBeenCalledWith(
+      [...navigator.languages],
+      appConfig
+    );
   });
 });

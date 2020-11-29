@@ -13,9 +13,6 @@ import translationsTurtle from "../../../public/data/translations.ttl";
 import { createLocalResponse } from "../../utils";
 import { getErrorsDataset, generateErrorUrl } from "../error";
 
-export const translationDatasetUrl =
-  "http://localhost:3000/data/translations.ttl";
-
 export function getDefaultBundle(bundles) {
   return bundles[0];
 }
@@ -24,16 +21,21 @@ export function getTranslationId(url) {
   return url.replace(/(:|\/|\.|#)/g, "-");
 }
 
-export function generateTranslationUrl(id) {
-  return `${translationDatasetUrl}#${id}`;
+export function generateTranslationUrl(id, datasetUrl) {
+  return `${datasetUrl}#${id}`;
 }
 
 export function getFailedMessage(translationUrl) {
   return `[Translation for ${translationUrl} does not exist]`;
 }
 
-export function getMessage(bundle, id, args: Record<string, any> = {}) {
-  const translationUrl = generateTranslationUrl(id);
+export function getMessage(
+  datasetUrl,
+  bundle,
+  id,
+  args: Record<string, any> = {}
+) {
+  const translationUrl = generateTranslationUrl(id, datasetUrl);
   const translationId = getTranslationId(translationUrl);
   const message = bundle.getMessage(translationId);
   return message?.value
@@ -48,17 +50,20 @@ export function getTranslations(datasets): Array<ThingPersisted> {
   );
 }
 
-export async function getTranslationsDataset() {
-  return getSolidDataset(translationDatasetUrl, {
+export async function getTranslationsDataset(datasetUrl) {
+  return getSolidDataset(datasetUrl, {
     fetch: () => Promise.resolve(createLocalResponse(translationsTurtle)),
   });
 }
 
-export async function getTranslationBundleAll(userLocales) {
+export async function getTranslationBundleAll(
+  userLocales,
+  { errorsUrl, translationsUrl }
+) {
   try {
     const [translationsDataset, errorsDataset] = await Promise.all([
-      getTranslationsDataset(),
-      getErrorsDataset(),
+      getTranslationsDataset(translationsUrl),
+      getErrorsDataset(errorsUrl),
     ]);
     const translations = getTranslations([translationsDataset, errorsDataset]);
     const currentLocales = negotiateLanguages(userLocales, ["en-US"], {
@@ -77,6 +82,9 @@ export async function getTranslationBundleAll(userLocales) {
       return bundle;
     });
   } catch (error) {
-    throw new NestedError(generateErrorUrl("translationsLoadFailed"), error);
+    throw new NestedError(
+      generateErrorUrl("translationsLoadFailed", translationsUrl),
+      error
+    );
   }
 }

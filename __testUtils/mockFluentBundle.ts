@@ -9,12 +9,13 @@ interface Options {
 }
 
 export default function mockFluentBundle(
+  translationsUrl: string,
   translations: Record<string, string> = {},
   options: Partial<Options> = {}
 ) {
   const bundle = new FluentBundle(options.locale || "en-US");
   Object.entries(translations).forEach(([id, message]) => {
-    const translationUrl = generateTranslationUrl(id);
+    const translationUrl = generateTranslationUrl(id, translationsUrl);
     const translationId = getTranslationId(translationUrl);
     bundle.addResource(new FluentResource(`${translationId} = ${message}`));
   });
