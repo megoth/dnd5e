@@ -4,7 +4,7 @@ import DateComponent from "./index";
 
 describe("Date", () => {
   it("renders a date", () => {
-    const date = new Date(2014, 6, 3);
+    const date = new Date(2014, 6, 3, 11, 0, 0);
     const { asFragment } = render(
       <DateComponent dateString={date.toISOString()} />
     );

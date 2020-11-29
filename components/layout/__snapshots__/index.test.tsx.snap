@@ -68,21 +68,6 @@ exports[`Layout renders error if something goes wrong 1`] = `
         resource=""
       />
     </h1>
-    <pre
-      data-testid="error-stack"
-    >
-      <h2 />
-      <pre>
-        Error: 
-    at Object.&lt;anonymous&gt; (/Users/arnehassel/Projects/dnd5e-app/components/layout/index.test.tsx:33:53)
-    at Object.asyncJestTest (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /Users/arnehassel/Projects/dnd5e-app/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:85:5)
-      </pre>
-    </pre>
   </div>
 </DocumentFragment>
 `;

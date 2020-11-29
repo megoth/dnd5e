@@ -9,7 +9,6 @@ interface Props {
 
 export const TESTID_ERROR = "error";
 export const TESTID_ERROR_TITLE = "error-title";
-export const TESTID_ERROR_STACK = "error-stack";
 
 export default function ErrorMessage({ error }: Props) {
   const { message: errorUrl } = error;
@@ -21,10 +20,6 @@ export default function ErrorMessage({ error }: Props) {
           <Localized id={errorId}>{errorUrl}</Localized>
         </span>
       </h1>
-      <pre data-testid={TESTID_ERROR_STACK}>
-        <h2>{error.message}</h2>
-        <pre>{error.stack}</pre>
-      </pre>
     </div>
   );
 }

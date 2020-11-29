@@ -3,7 +3,7 @@
 exports[`Date renders a date 1`] = `
 <DocumentFragment>
   <time
-    datetime="2014-07-02T22:00:00.000Z"
+    datetime="2014-07-03"
   >
     July 3, 2014
   </time>
