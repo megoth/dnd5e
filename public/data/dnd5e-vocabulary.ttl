@@ -9,9 +9,9 @@
 dnd5e_voc:
     a owl:Ontology;
     owl:versionInfo "0.1" ;
-    dcterms:title "D&D5E vocabulary"@en ;
+    dcterms:title "D&D5E vocabulary"@en-US ;
     dcterms:description """An interpretation of the official Dungeons and Dragons 5th Edition core rules in the form
-        of a vocabulary."""@en ;
+        of a vocabulary."""@en-US ;
     dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
     dcterms:issued "2020/11/29"^^xsd:date ;
     dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
@@ -20,4 +20,4 @@ dnd5e_voc:
 
 dnd5e_voc:Ability
     a rdfs:Class ;
-    rdfs:label "Ability" .
+    rdfs:label "Ability"@en-US .
