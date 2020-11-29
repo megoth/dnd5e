@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+    "ci": "npm run lint && npm run test",
     "start": "next start",
     "lint": "eslint --config .eslintrc.js --fix",
     "test": "jest"
