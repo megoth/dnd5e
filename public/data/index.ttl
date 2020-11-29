@@ -1,6 +1,9 @@
 @prefix :          <#> .
 @prefix dnd5e_app: <./app-vocabulary.ttl#> .
 
+:dnd5e
+    dnd5e_app:coreRulesIndex <./dnd5e-core.ttl> .
+
 :errors
     dnd5e_app:errorIndex <./errors.ttl> .
 

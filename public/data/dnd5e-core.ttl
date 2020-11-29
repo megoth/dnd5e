@@ -1,0 +1,28 @@
+@prefix :          <#> .
+@prefix dnd5e_voc: <./dnd5e-vocabulary.ttl#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+
+:cha
+    a dnd5e_voc:Ability ;
+    skos:definition "Charisma"@en-US .
+
+:con
+    a dnd5e_voc:Ability ;
+    skos:definition "Constitution"@en-US .
+
+:dex
+    a dnd5e_voc:Ability ;
+    skos:definition "Dexterity"@en-US .
+
+:int
+    a dnd5e_voc:Ability ;
+    skos:definition "Intelligence"@en-US .
+
+:str
+    a dnd5e_voc:Ability ;
+    skos:definition "Strength"@en-US .
+
+:wis
+    a dnd5e_voc:Ability ;
+    skos:definition "Wisdom"@en-US .

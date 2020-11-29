@@ -17,6 +17,13 @@ dnd5e_app:
 	vann:preferredNamespacePrefix "dnd5e_app" ;
 	vann:preferredNamespaceUri "https://dnd5e.inrupt.net/data/app-vocabulary#" .
 
+dnd5e_app:coreRulesIndex
+	a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:label "Index of core D&D5E rules" ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Resource .
+
 dnd5e_app:errorIndex
 	a rdf:Property ;
 	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
