@@ -9,9 +9,13 @@ import mockSWR, {
   createSWRResponse,
 } from "../../../__testUtils/mockSWR";
 import { generateErrorUrl } from "../../models/error";
+import mockAppConfig from "../../../__testUtils/mockAppConfig";
+import AppConfigWrapper from "../../../__testUtils/appConfigWrapper";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;
+
+const { errorsUrl } = mockAppConfig();
 
 describe("useDataset", () => {
   const url = "http://example.com";
@@ -25,7 +29,9 @@ describe("useDataset", () => {
   });
 
   it("caches with SWR", () => {
-    renderHook(() => useDataset(url));
+    renderHook(() => useDataset(url), {
+      wrapper: AppConfigWrapper,
+    });
     expect(mockedSWRHook).toHaveBeenCalledWith(
       [url, "dataset"],
       expect.any(Function)
@@ -33,7 +39,9 @@ describe("useDataset", () => {
   });
 
   it("returns the fetched datasets", async () => {
-    const { result } = renderHook(() => useDataset(url));
+    const { result } = renderHook(() => useDataset(url), {
+      wrapper: AppConfigWrapper,
+    });
     await expect(result.current).resolves.toEqual(
       createSWRResponse(mockedDataset)
     );
@@ -42,10 +50,12 @@ describe("useDataset", () => {
   it("throws a custom error if it fails", async () => {
     const error = new Error("failed");
     mockedGetSolidDataset.mockRejectedValue(error);
-    const { result } = renderHook(() => useDataset(url));
+    const { result } = renderHook(() => useDataset(url), {
+      wrapper: AppConfigWrapper,
+    });
     await expect(result.current).resolves.toEqual(
       createSWRErrorResponse(
-        new NestedError(generateErrorUrl("datasetLoadFailed"), error)
+        new NestedError(generateErrorUrl("datasetLoadFailed", errorsUrl), error)
       )
     );
   });
