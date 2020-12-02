@@ -1,4 +1,4 @@
-import { chain, createLocalResponse } from "./index";
+import { chain, createLocalResponse, getPath } from "./index";
 
 describe("chain", () => {
   test("it reduces an arbitrary list of functions, accumulating each operation's return product", () => {
@@ -18,4 +18,9 @@ describe("createLocalResponse", () => {
     expect(response.headers.get("Content-Type")).toEqual("text/turtle");
     await expect(response.text()).resolves.toEqual("test");
   });
+});
+
+describe("getPath", () => {
+  it("returns the URL without slash", () =>
+    expect(getPath("http://example.com/#test")).toEqual("http://example.com/"));
 });

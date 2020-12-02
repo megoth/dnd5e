@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { LoginButton, useSession } from "@inrupt/solid-ui-react";
 import { generateRedirectUrl } from "../../src/windowHelpers";
 import Translation from "../translation";
-import useTranslations from "../../src/hooks/useTranslations";
-import { getDefaultBundle, getMessage } from "../../src/models/translation";
+import {
+  getDefaultTranslationBundle,
+  getMessage,
+} from "../../src/models/translation";
 import Loading from "../loading";
 import ErrorMessage from "../errorMessage";
-import { useAppConfig } from "../../src/contexts/appConfig";
+import useResourceBundle from "../../src/hooks/useResourceBundle";
 
 export function setupLoginSubmit(login) {
   return (event) => {
@@ -18,20 +20,18 @@ export function setupLoginSubmit(login) {
 export default function Unauthenticated() {
   const [providerIri] = useState("https://inrupt.net");
   const { login } = useSession();
-  const { data: bundles, error } = useTranslations();
-  const { translationsUrl } = useAppConfig();
+  const { data: resourceBundle, error } = useResourceBundle("global");
 
   if (error) {
     return <ErrorMessage error={error} />;
   }
 
-  if (!bundles) {
+  if (!resourceBundle) {
     return <Loading />;
   }
 
-  const bundle = getDefaultBundle(bundles);
   const authOptions = {
-    clientName: getMessage(translationsUrl, bundle, "appName"),
+    clientName: getMessage(resourceBundle, "appName"),
   };
 
   const handleLoginSubmit = setupLoginSubmit(login);

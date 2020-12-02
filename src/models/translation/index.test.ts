@@ -9,9 +9,9 @@ import {
 } from "@inrupt/solid-client";
 import { rdf, rdfs, skos } from "rdf-namespaces";
 import NestedError from "nested-error-stacks";
+import { FluentBundle } from "@fluent/bundle";
 import {
-  generateTranslationUrl,
-  getDefaultBundle,
+  getDefaultTranslationBundle,
   getFailedMessage,
   getMessage,
   getTranslationBundleAll,
@@ -20,16 +20,20 @@ import {
 } from "./index";
 import translationsTurtle from "../../../public/data/translations.ttl";
 import { chain } from "../../utils";
+import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
 import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
-import { generateErrorUrl } from "../error";
-import mockAppConfig from "../../../__testUtils/mockAppConfig";
+import { generateUrl } from "../error";
+import { generateTranslationUrl } from "../resourceBundle";
 
-const appConfig = mockAppConfig();
-const { translationsUrl } = appConfig;
+const resourceBundle = mockResourceBundle();
+const { translationsUrl } = resourceBundle;
 
 describe("getDefaultBundle", () => {
-  it("picks the first available bundle", () =>
-    expect(getDefaultBundle([42, 1337])).toEqual(42));
+  it("picks the first available bundle", () => {
+    const bundle1 = new FluentBundle("en-US");
+    const bundle2 = new FluentBundle("en");
+    expect(getDefaultTranslationBundle([bundle1, bundle2])).toEqual(bundle1);
+  });
 });
 
 describe("getTranslationId", () => {
@@ -41,7 +45,7 @@ describe("getTranslationId", () => {
 
 describe("generateTranslationUrl", () => {
   it("creates an url out of an id", () =>
-    expect(generateTranslationUrl("test", translationsUrl)).toEqual(
+    expect(generateTranslationUrl("test", resourceBundle)).toEqual(
       `${translationsUrl}#test`
     ));
 });
@@ -51,29 +55,34 @@ describe("getMessage", () => {
 
   it("returns a message from a bundle", () => {
     const message = "Test";
-    const bundle = mockFluentBundle(translationsUrl, {
+    const mockedFluentBundle = mockFluentBundle(translationsUrl, {
       [id]: message,
     });
-    expect(getMessage(translationsUrl, bundle, id)).toEqual(message);
+    const mockedResourceBundle = mockResourceBundle({
+      translationBundles: [mockedFluentBundle],
+    });
+    expect(getMessage(mockedResourceBundle, id)).toEqual(message);
   });
 
   it("supports interpolation", () => {
-    const bundle = mockFluentBundle(translationsUrl, {
+    const mockedFluentBundle = mockFluentBundle(translationsUrl, {
       [id]: "{$test}",
     });
+    const mockedResourceBundle = mockResourceBundle({
+      translationBundles: [mockedFluentBundle],
+    });
     expect(
-      getMessage(translationsUrl, bundle, id, {
+      getMessage(mockedResourceBundle, id, {
         test: 42,
       })
     ).toContain("42");
   });
 
   it("supports fallback if translation does not exist", () => {
-    const bundle = mockFluentBundle(translationsUrl);
-    expect(getMessage(translationsUrl, bundle, id)).toEqual(
+    expect(getMessage(resourceBundle, id)).toEqual(
       `[Translation for ${generateTranslationUrl(
         id,
-        translationsUrl
+        resourceBundle
       )} does not exist]`
     );
   });
@@ -91,12 +100,12 @@ describe("getTranslationsDataset", () => {
 describe("getTranslationBundleAll", () => {
   it("gets all bundles for a given locale", async () => {
     const message1 = chain(
-      mockThingFrom(generateTranslationUrl("message1", translationsUrl)),
+      mockThingFrom(generateTranslationUrl("message1", resourceBundle)),
       (t) => setUrl(t, rdf.type, rdfs.Literal),
       (t) => setStringWithLocale(t, skos.definition, "Test", "en-US")
     );
     const message2 = chain(
-      mockThingFrom(generateTranslationUrl("message2", translationsUrl)),
+      mockThingFrom(generateTranslationUrl("message2", resourceBundle)),
       (t) => setUrl(t, rdf.type, rdfs.Literal)
     );
     const dataset = chain(
@@ -105,14 +114,15 @@ describe("getTranslationBundleAll", () => {
       (d) => setThing(d, message2)
     );
     jest.spyOn(solidClientFns, "getSolidDataset").mockResolvedValue(dataset);
-    const bundles = await getTranslationBundleAll(["en-US"], appConfig);
+    const bundles = await getTranslationBundleAll(["en-US"], resourceBundle);
     expect(bundles).toHaveLength(1);
-    const defaultBundle = getDefaultBundle(bundles);
-    expect(getMessage(translationsUrl, defaultBundle, "message1")).toEqual(
-      "Test"
-    );
-    expect(getMessage(translationsUrl, defaultBundle, "message2")).toEqual(
-      getFailedMessage(generateTranslationUrl("message2", translationsUrl))
+
+    const mockedResourceBundle = mockResourceBundle({
+      translationBundles: bundles,
+    });
+    expect(getMessage(mockedResourceBundle, "message1")).toEqual("Test");
+    expect(getMessage(mockedResourceBundle, "message2")).toEqual(
+      getFailedMessage(generateTranslationUrl("message2", resourceBundle))
     );
   });
 
@@ -121,9 +131,11 @@ describe("getTranslationBundleAll", () => {
     jest.spyOn(solidClientFns, "getSolidDataset").mockImplementation(() => {
       throw error;
     });
-    await expect(getTranslationBundleAll(["en-US"], appConfig)).rejects.toEqual(
+    await expect(
+      getTranslationBundleAll(["en-US"], resourceBundle)
+    ).rejects.toEqual(
       new NestedError(
-        generateErrorUrl("translationsLoadFailed", translationsUrl),
+        generateUrl("translationsLoadFailed", resourceBundle.errorsUrl),
         error
       )
     );

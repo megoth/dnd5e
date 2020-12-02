@@ -11,9 +11,10 @@ import { FluentBundle, FluentResource } from "@fluent/bundle";
 import NestedError from "nested-error-stacks";
 import translationsTurtle from "../../../public/data/translations.ttl";
 import { createLocalResponse } from "../../utils";
-import { getErrorsDataset, generateErrorUrl } from "../error";
+import { generateUrl as generateErrorUrl, getErrorsDataset } from "../error";
+import { generateTranslationUrl, ResourceBundleModel } from "../resourceBundle";
 
-export function getDefaultBundle(bundles) {
+export function getDefaultTranslationBundle(bundles: Array<FluentBundle>) {
   return bundles[0];
 }
 
@@ -21,8 +22,8 @@ export function getTranslationId(url) {
   return url.replace(/(:|\/|\.|#)/g, "-");
 }
 
-export function generateTranslationUrl(id, datasetUrl) {
-  return `${datasetUrl}#${id}`;
+export function generateUrl(id, translationsUrl) {
+  return `${translationsUrl}#${id}`;
 }
 
 export function getFailedMessage(translationUrl) {
@@ -30,16 +31,18 @@ export function getFailedMessage(translationUrl) {
 }
 
 export function getMessage(
-  datasetUrl,
-  bundle,
+  bundle: ResourceBundleModel,
   id,
   args: Record<string, any> = {}
 ) {
-  const translationUrl = generateTranslationUrl(id, datasetUrl);
+  const translationUrl = generateTranslationUrl(id, bundle);
   const translationId = getTranslationId(translationUrl);
-  const message = bundle.getMessage(translationId);
+  const translationBundle = getDefaultTranslationBundle(
+    bundle.translationBundles
+  );
+  const message = translationBundle.getMessage(translationId);
   return message?.value
-    ? bundle.formatPattern(message.value, args)
+    ? translationBundle.formatPattern(message.value, args)
     : getFailedMessage(translationUrl);
 }
 
@@ -83,7 +86,7 @@ export async function getTranslationBundleAll(
     });
   } catch (error) {
     throw new NestedError(
-      generateErrorUrl("translationsLoadFailed", translationsUrl),
+      generateErrorUrl("translationsLoadFailed", errorsUrl),
       error
     );
   }

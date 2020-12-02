@@ -1,3 +1,5 @@
+import { responseInterface } from "swr";
+
 export function createSWRResponse(data) {
   return {
     data,
@@ -12,13 +14,22 @@ export function createSWRErrorResponse(error) {
   };
 }
 
-export default function mockSWR(mock) {
-  return mock.mockImplementation(async (key, fn) => {
-    try {
-      const data = await fn();
-      return createSWRResponse(data);
-    } catch (error) {
+export function mockSWRAsPromise(mock) {
+  return mock.mockImplementation(async (key, fn) => fn());
+}
+
+export default function mockSWR(
+  mock,
+  { data, error }: Partial<responseInterface<any, any>> = {}
+) {
+  return mock.mockImplementation((key, fn) => {
+    if (error) {
       return createSWRErrorResponse(error);
+    }
+    try {
+      return createSWRResponse(data || fn());
+    } catch (err) {
+      return createSWRErrorResponse(err);
     }
   });
 }

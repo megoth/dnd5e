@@ -7,10 +7,8 @@ interface Props {
 }
 
 export default function AppConfigWrapper({ children }: Props) {
-  const { errorsUrl, translationsUrl } = mockAppConfig();
+  const { solidBase } = mockAppConfig();
   return (
-    <AppConfigProvider errorsUrl={errorsUrl} translationsUrl={translationsUrl}>
-      {children}
-    </AppConfigProvider>
+    <AppConfigProvider solidBase={solidBase}>{children}</AppConfigProvider>
   );
 }

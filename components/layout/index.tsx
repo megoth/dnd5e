@@ -4,11 +4,10 @@ import Link from "next/link";
 import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import styles from "./index.module.css";
 import utilStyles from "../../styles/utils.module.css";
-import useTranslations from "../../src/hooks/useTranslations";
-import { getDefaultBundle, getMessage } from "../../src/models/translation";
+import { getMessage } from "../../src/models/translation";
 import Loading from "../loading";
 import ErrorMessage from "../errorMessage";
-import { useAppConfig } from "../../src/contexts/appConfig";
+import useResourceBundle from "../../src/hooks/useResourceBundle";
 
 interface Props {
   children: ReactNode;
@@ -16,22 +15,19 @@ interface Props {
 }
 
 export default function Index({ children, home }: Props): ReactElement {
-  const { data: bundles, error } = useTranslations();
-  const { translationsUrl } = useAppConfig();
+  const { data: resourceBundle, error } = useResourceBundle("global");
 
   if (error) {
     return <ErrorMessage error={error} />;
   }
 
-  if (!bundles) {
+  if (!resourceBundle) {
     return <Loading />;
   }
 
-  const bundle = getDefaultBundle(bundles);
-  const siteTitle = getMessage(translationsUrl, bundle, "appName");
-  const description = getMessage(translationsUrl, bundle, "appDescription");
-
-  const l10n = new ReactLocalization(bundles);
+  const siteTitle = getMessage(resourceBundle, "appName");
+  const description = getMessage(resourceBundle, "appDescription");
+  const l10n = new ReactLocalization(resourceBundle.translationBundles);
 
   return (
     <LocalizationProvider l10n={l10n}>
@@ -39,11 +35,8 @@ export default function Index({ children, home }: Props): ReactElement {
         <Head>
           <title>{siteTitle}</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content={bundle.formatPattern(description)}
-          />
-          <meta name="og:title" content={bundle.formatPattern(siteTitle)} />s{" "}
+          <meta name="description" content={description} />
+          <meta name="og:title" content={siteTitle} />
         </Head>
         <header className={styles.header}>
           {home ? (

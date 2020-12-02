@@ -12,10 +12,24 @@ exports[`Session renders for authenticated state 1`] = `
 
 exports[`Session renders for unauthenticated state 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="loading"
-  >
-    Loading...
-  </div>
+  <form>
+    <p>
+      <span
+        resource="https://example.com/translations.ttl#loggedOut"
+      />
+    </p>
+    <div
+      role="button"
+      tabindex="0"
+    >
+      <button
+        type="submit"
+      >
+        <span
+          resource="https://example.com/translations.ttl#logIn"
+        />
+      </button>
+    </div>
+  </form>
 </DocumentFragment>
 `;

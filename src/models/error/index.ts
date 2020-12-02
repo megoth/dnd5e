@@ -7,8 +7,8 @@ export function getErrorId(url) {
   return getTranslationId(url);
 }
 
-export function generateErrorUrl(id, datasetUrl) {
-  return `${datasetUrl}#${id}`;
+export function generateUrl(id: string, errorsUrl: string) {
+  return `${errorsUrl}#${id}`;
 }
 
 export async function getErrorsDataset(datasetUrl) {

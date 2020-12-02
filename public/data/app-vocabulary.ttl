@@ -19,21 +19,28 @@ dnd5e_app:
 
 dnd5e_app:coreRulesIndex
 	a rdf:Property ;
-	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "Index of core D&D5E rules"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .
 
-dnd5e_app:errorIndex
+dnd5e_app:errorsIndex
 	a rdf:Property ;
-	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "Index of errors"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .
 
+dnd5e_app:resourceBundle
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "A resource bundle (with translations and errors)"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdf:Statement .
+
 dnd5e_app:translationsIndex
 	a rdf:Property ;
-	rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "Index of translations"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .

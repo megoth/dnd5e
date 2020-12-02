@@ -1,19 +1,15 @@
-import useSWR from "swr";
+import useSWR, { keyInterface } from "swr";
 import { getSolidDataset } from "@inrupt/solid-client";
 import { useSession } from "@inrupt/solid-ui-react";
-import NestedError from "nested-error-stacks";
-import { generateErrorUrl } from "../../models/error";
-import { useAppConfig } from "../../contexts/appConfig";
+import useResourceBundle from "../useResourceBundle";
+import { getError } from "../../models/resourceBundle";
 
-export default function useDataset(url) {
+export default function useDataset(url, cacheKeys?: keyInterface) {
   const { fetch } = useSession();
-  const { errorsUrl } = useAppConfig();
-  return useSWR([url, "dataset"], () =>
+  const { data: bundle } = useResourceBundle("global");
+  return useSWR([url, "dataset"].concat(cacheKeys), () =>
     getSolidDataset(url, { fetch }).catch((error) => {
-      throw new NestedError(
-        generateErrorUrl("datasetLoadFailed", errorsUrl),
-        error
-      );
+      throw getError("datasetLoadFailed", bundle, error);
     })
   );
 }

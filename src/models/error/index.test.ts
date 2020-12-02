@@ -1,10 +1,10 @@
 import { getThingAll } from "@inrupt/solid-client";
 import { getTranslationId } from "../translation";
-import { generateErrorUrl, getErrorId, getErrorsDataset } from "./index";
+import { generateUrl, getErrorId, getErrorsDataset } from "./index";
 import errorTurtle from "../../../public/data/errors.ttl";
-import mockAppConfig from "../../../__testUtils/mockAppConfig";
+import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
 
-const { errorsUrl } = mockAppConfig();
+const { errorsUrl } = mockResourceBundle();
 
 describe("getErrorId", () => {
   const url = "http://example.com/test/me#more";
@@ -14,7 +14,7 @@ describe("getErrorId", () => {
 
 describe("generateErrorUrl", () => {
   it("creates an url out of an id", () =>
-    expect(generateErrorUrl("test", errorsUrl)).toEqual(`${errorsUrl}#test`));
+    expect(generateUrl("test", errorsUrl)).toEqual(`${errorsUrl}#test`));
 });
 
 describe("getErrorsDataset", () => {

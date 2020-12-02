@@ -1,21 +1,19 @@
 import { renderHook } from "@testing-library/react-hooks";
 import * as solidClientFns from "@inrupt/solid-client";
 import useSWR from "swr";
-import NestedError from "nested-error-stacks";
 import { mockedDataset } from "../../../__testUtils/mockDataset";
 import useDataset from "./index";
-import mockSWR, {
-  createSWRErrorResponse,
-  createSWRResponse,
-} from "../../../__testUtils/mockSWR";
-import { generateErrorUrl } from "../../models/error";
-import mockAppConfig from "../../../__testUtils/mockAppConfig";
+import { mockSWRAsPromise } from "../../../__testUtils/mockSWR";
 import AppConfigWrapper from "../../../__testUtils/appConfigWrapper";
+import useResourceBundle from "../useResourceBundle";
+import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
+import { getError } from "../../models/resourceBundle";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;
 
-const { errorsUrl } = mockAppConfig();
+jest.mock("../useResourceBundle");
+const mockedResourceBundleHook = useResourceBundle as jest.Mock;
 
 describe("useDataset", () => {
   const url = "http://example.com";
@@ -25,15 +23,18 @@ describe("useDataset", () => {
     mockedGetSolidDataset = jest
       .spyOn(solidClientFns, "getSolidDataset")
       .mockResolvedValue(mockedDataset);
-    mockSWR(mockedSWRHook);
+    mockSWRAsPromise(mockedSWRHook);
+    mockedResourceBundleHook.mockReturnValue({
+      data: { bundle: mockResourceBundle() },
+    });
   });
 
   it("caches with SWR", () => {
-    renderHook(() => useDataset(url), {
+    renderHook(() => useDataset(url, "test"), {
       wrapper: AppConfigWrapper,
     });
     expect(mockedSWRHook).toHaveBeenCalledWith(
-      [url, "dataset"],
+      [url, "dataset", "test"],
       expect.any(Function)
     );
   });
@@ -42,21 +43,19 @@ describe("useDataset", () => {
     const { result } = renderHook(() => useDataset(url), {
       wrapper: AppConfigWrapper,
     });
-    await expect(result.current).resolves.toEqual(
-      createSWRResponse(mockedDataset)
-    );
+    await expect(result.current).resolves.toEqual(mockedDataset);
   });
 
   it("throws a custom error if it fails", async () => {
     const error = new Error("failed");
     mockedGetSolidDataset.mockRejectedValue(error);
+    const bundle = mockResourceBundle();
+    mockedResourceBundleHook.mockReturnValue({ data: bundle });
     const { result } = renderHook(() => useDataset(url), {
       wrapper: AppConfigWrapper,
     });
-    await expect(result.current).resolves.toEqual(
-      createSWRErrorResponse(
-        new NestedError(generateErrorUrl("datasetLoadFailed", errorsUrl), error)
-      )
+    await expect(result.current).rejects.toEqual(
+      getError("datasetLoadFailed", bundle, error)
     );
   });
 });

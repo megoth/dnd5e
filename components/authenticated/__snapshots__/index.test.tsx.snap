@@ -20,7 +20,7 @@ exports[`Authenticated renders info about the user and a log out button 1`] = `
 <DocumentFragment>
   <p>
     <span
-      resource="#loggedIn"
+      resource="https://example.com/translations.ttl#loggedIn"
     />
   </p>
   <div
@@ -31,7 +31,7 @@ exports[`Authenticated renders info about the user and a log out button 1`] = `
       type="button"
     >
       <span
-        resource="#logOut"
+        resource="https://example.com/translations.ttl#logOut"
       />
     </button>
   </div>

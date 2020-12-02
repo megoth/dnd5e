@@ -11,3 +11,7 @@ export function createLocalResponse(body) {
     }),
   });
 }
+
+export function getPath(url) {
+  return url.split("#")[0];
+}

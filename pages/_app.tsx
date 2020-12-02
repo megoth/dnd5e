@@ -4,12 +4,11 @@ import "../styles/global.css";
 import { SessionProvider } from "@inrupt/solid-ui-react";
 import AppConfigProvider from "../src/contexts/appConfig";
 
-const errorsUrl = process.env.NEXT_PUBLIC_ERRORS_URL || "";
-const translationsUrl = process.env.NEXT_PUBLIC_TRANSLATIONS_URL || "";
+const solidBase = process.env.NEXT_PUBLIC_SOLID_BASE || "";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <AppConfigProvider errorsUrl={errorsUrl} translationsUrl={translationsUrl}>
+    <AppConfigProvider solidBase={solidBase}>
       <SessionProvider sessionId="dnd5e-app">
         <Component {...pageProps} />
       </SessionProvider>

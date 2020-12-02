@@ -1,27 +1,17 @@
-import React, { createContext, ReactNode, useContext } from "react";
+import React, { createContext, ReactNode } from "react";
 
-const AppConfigContext = createContext({
-  errorsUrl: "",
-  translationsUrl: "",
+export const AppConfigContext = createContext({
+  solidBase: "",
 });
-
-export function useAppConfig() {
-  return useContext(AppConfigContext);
-}
 
 interface Props {
   children: ReactNode;
-  errorsUrl: string;
-  translationsUrl: string;
+  solidBase: string;
 }
 
-export default function AppConfigProvider({
-  children,
-  errorsUrl,
-  translationsUrl,
-}: Props) {
+export default function AppConfigProvider({ children, solidBase }: Props) {
   return (
-    <AppConfigContext.Provider value={{ errorsUrl, translationsUrl }}>
+    <AppConfigContext.Provider value={{ solidBase }}>
       {children}
     </AppConfigContext.Provider>
   );

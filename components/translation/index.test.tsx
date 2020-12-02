@@ -3,17 +3,27 @@ import React from "react";
 import Translation from "./index";
 import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import renderWithConfig from "../../__testUtils/renderWithConfig";
-import mockAppConfig from "../../__testUtils/mockAppConfig";
+import mockResourceBundle from "../../__testUtils/mockResourceBundle";
+import useResourceBundle from "../../src/hooks/useResourceBundle";
+import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
+
+jest.mock("../../src/hooks/useResourceBundle");
+const mockedResourceBundleHook = useResourceBundle as jest.Mock;
 
 describe("Translation", () => {
   it("renders translated message", () => {
-    const { translationsUrl } = mockAppConfig();
     const id = "test";
     const message = `This is a test`;
-    const bundle = mockFluentBundle(translationsUrl, {
+    const { translationsUrl } = mockResourceBundle();
+    const fluentBundle = mockFluentBundle(translationsUrl, {
       [id]: message,
     });
-    const l10n = new ReactLocalization([bundle]);
+    const resourceBundle = mockResourceBundle({
+      translationBundles: [fluentBundle],
+    });
+    mockResourceBundleHook(mockedResourceBundleHook, resourceBundle);
+
+    const l10n = new ReactLocalization([fluentBundle]);
     const { asFragment, getByText } = renderWithConfig(
       <LocalizationProvider l10n={l10n}>
         <Translation id={id} />

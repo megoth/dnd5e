@@ -11,7 +11,7 @@ exports[`Layout can be rendered as home 1`] = `
       <h1
         class="heading2Xl"
       >
-        [Translation for http://localhost:3000/data/translations.ttl#appName does not exist]
+        [Translation for https://example.com/translations.ttl#appName does not exist]
       </h1>
     </header>
     <main>
@@ -36,7 +36,7 @@ exports[`Layout renders as non-home by default 1`] = `
           class="colorInherit"
           href="/"
         >
-          [Translation for http://localhost:3000/data/translations.ttl#appName does not exist]
+          [Translation for https://example.com/translations.ttl#appName does not exist]
         </a>
       </h2>
     </header>
@@ -72,7 +72,7 @@ exports[`Layout renders error if something goes wrong 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Layout renders loading while fetching translations 1`] = `
+exports[`Layout renders loading while fetching resource bundle 1`] = `
 <DocumentFragment>
   <div
     data-testid="loading"

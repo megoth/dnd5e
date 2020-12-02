@@ -5,11 +5,18 @@ import Session from "./index";
 import { mockUnauthenticatedSession } from "../../__testUtils/mockSession";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import useDataset from "../../src/hooks/useDataset";
+import useResourceBundle from "../../src/hooks/useResourceBundle";
+import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
 
 jest.mock("../../src/hooks/useDataset");
 const mockedUseDataset = useDataset as jest.Mock;
 
+jest.mock("../../src/hooks/useResourceBundle");
+const mockedResourceBundle = useResourceBundle as jest.Mock;
+
 describe("Session", () => {
+  beforeEach(() => mockResourceBundleHook(mockedResourceBundle));
+
   it("renders for authenticated state", () => {
     mockedUseDataset.mockReturnValue(mockProfileDataset());
     const { asFragment } = render(<Session />);
