@@ -15,15 +15,13 @@
     "@fluent/langneg": "^0.5.0",
     "@fluent/react": "^0.13.0",
     "@inrupt/solid-ui-react": "^2.0.0",
-    "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "nested-error-stacks": "^2.1.0",
     "next": "^10.0.0",
     "rdf-namespaces": "^1.9.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "remark": "^12.0.0",
-    "remark-html": "^12.0.0",
+    "react-markdown": "^5.0.3",
     "swr": "^0.3.9"
   },
   "devDependencies": {

@@ -39,20 +39,19 @@ export default function Index({ children, home }: Props): ReactElement {
           <meta name="og:title" content={siteTitle} />
         </Head>
         <header className={styles.header}>
-          {home ? (
+          {home && (
             <>
               <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
             </>
-          ) : (
-            <>
-              <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>{siteTitle}</a>
-                </Link>
-              </h2>
-            </>
           )}
         </header>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>

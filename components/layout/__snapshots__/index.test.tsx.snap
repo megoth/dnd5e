@@ -28,18 +28,16 @@ exports[`Layout renders as non-home by default 1`] = `
   >
     <header
       class="header"
+    />
+    <div
+      class="backToHome"
     >
-      <h2
-        class="headingLg"
+      <a
+        href="/"
       >
-        <a
-          class="colorInherit"
-          href="/"
-        >
-          [Translation for https://example.com/translations.ttl#appName does not exist]
-        </a>
-      </h2>
-    </header>
+        ← Back to home
+      </a>
+    </div>
     <main>
       test
     </main>

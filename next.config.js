@@ -8,7 +8,7 @@ module.exports = withSourceMaps({
         ...config.module,
         rules: config.module.rules.concat([
           {
-            test: /\.ttl$/i,
+            test: /\.(md|ttl)$/i,
             use: "raw-loader",
           },
         ]),

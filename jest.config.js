@@ -14,7 +14,7 @@ module.exports = {
 
   transform: {
     ...tsjPreset.transform,
-    "\\.ttl$": "jest-raw-loader",
+    "\\.(md|ttl)$": "jest-raw-loader",
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   moduleNameMapper: {
