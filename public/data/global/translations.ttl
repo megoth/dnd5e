@@ -1,0 +1,15 @@
+@prefix :         <#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+
+:appName a rdfs:Literal .
+:appDescription a rdfs:Literal .
+:datasetLoadFailed a rdfs:Literal .
+:faqTitle a rdfs:Literal .
+:loggedIn a rdfs:Literal .
+:loggedOut a rdfs:Literal .
+:logIn a rdfs:Literal .
+:logOut a rdfs:Literal .
+:translationsLoadFailed a rdfs:Literal .
+:whatIsSolidLabel a rdfs:Literal .
+:whatIsSolidDescription a rdfs:Literal .

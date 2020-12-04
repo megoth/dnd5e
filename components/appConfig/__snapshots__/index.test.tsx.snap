@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppConfig displays error if it fails to load resourceBundles 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="error"
+  >
+    <h1
+      data-testid="error-title"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AppConfig displays loading while resourceBundles are loading 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="loading"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AppConfig loads resources and renders 1`] = `
+<DocumentFragment>
+  test
+</DocumentFragment>
+`;

@@ -1,15 +1,17 @@
 import useSWR from "swr";
 import { getSolidDataset } from "@inrupt/solid-client";
-import { createLocalResponse, getPath } from "../../utils";
-import appIndexTurtle from "../../../public/data/index.ttl";
-import useAppConfig from "../useAppConfig";
+import { getPath } from "../../utils";
+import { packageAppIndex } from "../../models/appIndex";
 
-export default function useAppIndex() {
-  const { solidBase } = useAppConfig();
-  const solidBaseUrl = getPath(solidBase);
-  return useSWR("appIndex", () =>
-    getSolidDataset(solidBaseUrl, {
-      fetch: () => Promise.resolve(createLocalResponse(appIndexTurtle)),
-    })
-  );
+export default function useAppIndex(currentLocales, appIndexURL, appVocabURL) {
+  const appIndexResourceURL = getPath(appIndexURL);
+  return useSWR("appIndex", async () => {
+    const appIndexDataset = await getSolidDataset(appIndexResourceURL);
+    return packageAppIndex(
+      appIndexDataset,
+      appIndexURL,
+      currentLocales,
+      appVocabURL
+    );
+  });
 }

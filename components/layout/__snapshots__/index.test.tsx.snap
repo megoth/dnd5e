@@ -53,29 +53,3 @@ exports[`Layout renders as non-home by default 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`Layout renders error if something goes wrong 1`] = `
-<DocumentFragment>
-  <div
-    data-testid="error"
-  >
-    <h1
-      data-testid="error-title"
-    >
-      <span
-        resource=""
-      />
-    </h1>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Layout renders loading while fetching resource bundle 1`] = `
-<DocumentFragment>
-  <div
-    data-testid="loading"
-  >
-    Loading...
-  </div>
-</DocumentFragment>
-`;

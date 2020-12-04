@@ -1,16 +1,22 @@
-import { responseInterface } from "swr";
+import useSWR, { responseInterface } from "swr";
 
-export function createSWRResponse(data) {
+export function createSWRResponse<T, U>(data): responseInterface<T, U> {
   return {
     data,
     error: null,
+    revalidate: jest.fn(),
+    mutate: jest.fn(),
+    isValidating: false,
   };
 }
 
-export function createSWRErrorResponse(error) {
+export function createSWRErrorResponse<T, U>(error): responseInterface<T, U> {
   return {
     data: null,
     error,
+    revalidate: jest.fn(),
+    mutate: jest.fn(),
+    isValidating: false,
   };
 }
 
@@ -20,7 +26,7 @@ export function mockSWRAsPromise(mock) {
 
 export default function mockSWR(
   mock,
-  { data, error }: Partial<responseInterface<any, any>> = {}
+  { data, error }: Partial<ReturnType<typeof useSWR>> = {}
 ) {
   return mock.mockImplementation((key, fn) => {
     if (error) {

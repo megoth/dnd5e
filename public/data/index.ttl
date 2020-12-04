@@ -1,6 +1,6 @@
 @prefix :          <#> .
 @prefix dnd5e_app: <./app-vocabulary.ttl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
 
 :dnd5e
     dnd5e_app:coreRulesIndex <./dnd5e-core.ttl> ;
@@ -8,5 +8,13 @@
 
 :globalResources
     rdfs:label "global" ;
-    dnd5e_app:errorsIndex <./errors.ttl> ;
-    dnd5e_app:translationsIndex <./translations.ttl> .
+    dnd5e_app:errorsIndex <./global/errors.ttl> ;
+    dnd5e_app:faqIndex <./global/faq.ttl> ;
+    dnd5e_app:translationsIndex :globalTranslationIndex, :globalTranslation_en-US_Index .
+
+:globalTranslationIndex
+    dnd5e_app:resource <./global/translations.ttl> .
+
+:globalTranslation_en-US_Index
+    dnd5e_app:language "en-US" ;
+    dnd5e_app:resource <./global/translations.en-US.ttl> .

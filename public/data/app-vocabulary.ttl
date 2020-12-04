@@ -7,7 +7,7 @@
 @prefix xsd:      	<http://www.w3.org/2001/XMLSchema#> .
 
 dnd5e_app:
-    a owl:Ontology;
+	a owl:Ontology;
 	owl:versionInfo "0.1" ;
  	dcterms:title "D&D5E Solid App vocabulary"@en-US ;
 	dcterms:description """The D&D5E Solid App vocabulary."""@en-US ;
@@ -24,10 +24,55 @@ dnd5e_app:coreRulesIndex
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .
 
+dnd5e_app:Error
+  a rdfs:Class ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "The class for errors that are used in the app" .
+
 dnd5e_app:errorsIndex
 	a rdf:Property ;
 	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "Index of errors"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Resource .
+
+dnd5e_app:FAQ
+	a rdfs:Class ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "The class for FAQ (Frequently Asked Questions)" .
+
+dnd5e_app:faqDescription
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "Description for a FAQ (Frequently Asked Question)"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdf:Statement .
+
+dnd5e_app:faqIndex
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "Index of frequent asked questions"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Resource .
+
+dnd5e_app:faqLabel
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "Label for a FAQ (Frequently Asked Question)"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdf:Statement .
+
+dnd5e_app:language
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "A supported language"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Literal .
+
+dnd5e_app:resource
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "A resource for a statement"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .
 
@@ -38,9 +83,16 @@ dnd5e_app:resourceBundle
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdf:Statement .
 
+dnd5e_app:translation
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "A translation for the given statement"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdf:Statement .
+
 dnd5e_app:translationsIndex
 	a rdf:Property ;
 	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "Index of translations"@en-US ;
 	rdfs:domain rdf:Statement ;
-	rdfs:range rdfs:Resource .
+	rdfs:range rdf:Statement .

@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { LoginButton, useSession } from "@inrupt/solid-ui-react";
-import { generateRedirectUrl } from "../../src/windowHelpers";
+import { generateRedirectURL } from "../../src/windowHelpers";
 import Translation from "../translation";
-import {
-  getDefaultTranslationBundle,
-  getMessage,
-} from "../../src/models/translation";
-import Loading from "../loading";
-import ErrorMessage from "../errorMessage";
+import { getMessage } from "../../src/models/translation";
 import useResourceBundle from "../../src/hooks/useResourceBundle";
 
 export function setupLoginSubmit(login) {
@@ -18,18 +13,9 @@ export function setupLoginSubmit(login) {
 }
 
 export default function Unauthenticated() {
+  const { resourceBundle } = useResourceBundle();
   const [providerIri] = useState("https://inrupt.net");
   const { login } = useSession();
-  const { data: resourceBundle, error } = useResourceBundle("global");
-
-  if (error) {
-    return <ErrorMessage error={error} />;
-  }
-
-  if (!resourceBundle) {
-    return <Loading />;
-  }
-
   const authOptions = {
     clientName: getMessage(resourceBundle, "appName"),
   };
@@ -43,7 +29,7 @@ export default function Unauthenticated() {
       </p>
       <LoginButton
         oidcIssuer={providerIri}
-        redirectUrl={generateRedirectUrl("")}
+        redirectUrl={generateRedirectURL("")}
         authOptions={authOptions}
       >
         <button type="submit">

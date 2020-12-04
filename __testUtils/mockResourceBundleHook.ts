@@ -1,9 +1,13 @@
-import mockSWR from "./mockSWR";
 import mockResourceBundle from "./mockResourceBundle";
+import { ResourceBundleModel } from "../src/models/resourceBundle";
 
 export default function mockResourceBundleHook(
-  mock,
-  bundle = mockResourceBundle()
+  mock: jest.Mock,
+  response: {
+    resourceBundle: ResourceBundleModel | null;
+  } = {
+    resourceBundle: mockResourceBundle(),
+  }
 ) {
-  return mockSWR(mock, { data: bundle });
+  mock.mockReturnValue(response);
 }

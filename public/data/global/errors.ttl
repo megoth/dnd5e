@@ -1,0 +1,13 @@
+@prefix :             <#> .
+@prefix dnd5e_app:    <../app-vocabulary.ttl#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix translations: <./translations.ttl#> .
+
+:datasetLoadFailed
+    a dnd5e_app:Error ;
+    dnd5e_app:translation :datasetLoadFailed .
+
+:translationsLoadFailed
+    a dnd5e_app:Error ;
+    dnd5e_app:translation :translationsLoadFailed .

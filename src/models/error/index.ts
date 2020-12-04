@@ -1,18 +1,45 @@
-import { getSolidDataset } from "@inrupt/solid-client";
-import { createLocalResponse } from "../../utils";
-import errorTurtle from "../../../public/data/errors.ttl";
-import { getTranslationId } from "../translation";
+import { getThing, getUrl } from "@inrupt/solid-client";
+import NestedError from "nested-error-stacks";
+import { ResourceBundleModel } from "../resourceBundle";
+import { getAppTerm } from "../appIndex";
 
-export function getErrorId(url) {
-  return getTranslationId(url);
+export function generateErrorURL(
+  id: string,
+  { errorsIndexURL },
+  bundleName = "global"
+) {
+  return `${errorsIndexURL[bundleName]}#${id}`;
 }
 
-export function generateUrl(id: string, errorsUrl: string) {
-  return `${errorsUrl}#${id}`;
+export function getError(id, bundle, error = null) {
+  return new NestedError(generateErrorURL(id, bundle), error);
 }
 
-export async function getErrorsDataset(datasetUrl) {
-  return getSolidDataset(datasetUrl, {
-    fetch: () => Promise.resolve(createLocalResponse(errorTurtle)),
-  });
+export function isError(
+  error,
+  errorId: string,
+  bundle: ResourceBundleModel,
+  bundleName?: string
+): boolean {
+  const { message: errorURL1 } = error;
+  const errorURL2 = generateErrorURL(errorId, bundle, bundleName);
+  return errorURL1 === errorURL2;
+}
+
+export function getErrorTranslationURL(
+  errorURL,
+  { appVocabURL, errorsIndexSWR }: ResourceBundleModel,
+  bundleName = "global"
+): string | null {
+  const { data: errorsDataset } = errorsIndexSWR[bundleName];
+  if (!errorsDataset) {
+    return null;
+  }
+  try {
+    const error = getThing(errorsDataset, errorURL);
+    return getUrl(error, getAppTerm("translation", appVocabURL));
+  } catch (error) {
+    // ignore new error
+    return null;
+  }
 }

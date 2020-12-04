@@ -1,8 +1,10 @@
 import React from "react";
 import { Localized } from "@fluent/react";
-import { getTranslationId } from "../../src/models/translation";
+import {
+  generateTranslationURL,
+  getTranslationId,
+} from "../../src/models/translation";
 import useResourceBundle from "../../src/hooks/useResourceBundle";
-import { generateTranslationUrl } from "../../src/models/resourceBundle";
 
 interface Props {
   id: string;
@@ -10,8 +12,8 @@ interface Props {
 }
 
 export default function Translation({ id, vars }: Props) {
-  const { data: bundle } = useResourceBundle("global");
-  const url = generateTranslationUrl(id, bundle);
+  const { resourceBundle } = useResourceBundle();
+  const url = generateTranslationURL(id, resourceBundle);
   return (
     <span resource={url}>
       <Localized id={getTranslationId(url)} vars={vars} />

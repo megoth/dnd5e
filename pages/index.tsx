@@ -11,6 +11,10 @@ export default function Home() {
         <Link href="/about">
           <a>About the app</a>
         </Link>
+        <span> - </span>
+        <Link href="/faq">
+          <a>FAQ</a>
+        </Link>
       </nav>
     </Layout>
   );

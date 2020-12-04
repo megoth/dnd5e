@@ -1,6 +1,4 @@
-import * as solidClientFns from "@inrupt/solid-client";
 import {
-  getThingAll,
   mockSolidDatasetFrom,
   mockThingFrom,
   setStringWithLocale,
@@ -8,31 +6,38 @@ import {
   setUrl,
 } from "@inrupt/solid-client";
 import { rdf, rdfs, skos } from "rdf-namespaces";
-import NestedError from "nested-error-stacks";
 import { FluentBundle } from "@fluent/bundle";
 import {
+  generateTranslationURL,
   getDefaultTranslationBundle,
   getFailedMessage,
   getMessage,
   getTranslationBundleAll,
   getTranslationId,
-  getTranslationsDataset,
 } from "./index";
-import translationsTurtle from "../../../public/data/translations.ttl";
 import { chain } from "../../utils";
-import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
+import mockResourceBundle, {
+  localizedIndexURL,
+  translationsIndexURL,
+} from "../../../__testUtils/mockResourceBundle";
 import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
-import { generateUrl } from "../error";
-import { generateTranslationUrl } from "../resourceBundle";
 
-const resourceBundle = mockResourceBundle();
-const { translationsUrl } = resourceBundle;
-
-describe("getDefaultBundle", () => {
+describe("getDefaultTranslationBundle", () => {
   it("picks the first available bundle", () => {
     const bundle1 = new FluentBundle("en-US");
     const bundle2 = new FluentBundle("en");
-    expect(getDefaultTranslationBundle([bundle1, bundle2])).toEqual(bundle1);
+    const resourceBundle = mockResourceBundle({
+      fluentBundles: {
+        global: [bundle1, bundle2],
+      },
+    });
+    expect(getDefaultTranslationBundle(resourceBundle)).toEqual(bundle1);
+  });
+
+  it("returns null if fluent bundles is not available", () => {
+    expect(
+      getDefaultTranslationBundle({ fluentBundles: { global: null } })
+    ).toBeNull();
   });
 });
 
@@ -43,33 +48,59 @@ describe("getTranslationId", () => {
     ));
 });
 
-describe("generateTranslationUrl", () => {
+describe("generateTranslationURL", () => {
   it("creates an url out of an id", () =>
-    expect(generateTranslationUrl("test", resourceBundle)).toEqual(
-      `${translationsUrl}#test`
-    ));
+    expect(
+      generateTranslationURL(
+        "test",
+        {
+          translationsIndexURL: { global: translationsIndexURL },
+        },
+        "global"
+      )
+    ).toEqual(`${translationsIndexURL}#test`));
 });
 
 describe("getMessage", () => {
   const id = "test";
 
-  it("returns a message from a bundle", () => {
+  it("returns a message from a bundle given a translation id", () => {
     const message = "Test";
-    const mockedFluentBundle = mockFluentBundle(translationsUrl, {
+    const mockedFluentBundle = mockFluentBundle({
       [id]: message,
     });
     const mockedResourceBundle = mockResourceBundle({
-      translationBundles: [mockedFluentBundle],
+      fluentBundles: {
+        global: [mockedFluentBundle],
+      },
     });
-    expect(getMessage(mockedResourceBundle, id)).toEqual(message);
+    expect(getMessage(mockedResourceBundle, id, {}, "global")).toEqual(message);
+  });
+
+  it("returns a message from a bundle given a translation URL", () => {
+    const message = "Test";
+    const mockedFluentBundle = mockFluentBundle({
+      [id]: message,
+    });
+    const translationURL = generateTranslationURL(id, {
+      translationsIndexURL: { global: translationsIndexURL },
+    });
+    const mockedResourceBundle = mockResourceBundle({
+      fluentBundles: {
+        global: [mockedFluentBundle],
+      },
+    });
+    expect(getMessage(mockedResourceBundle, translationURL)).toEqual(message);
   });
 
   it("supports interpolation", () => {
-    const mockedFluentBundle = mockFluentBundle(translationsUrl, {
+    const mockedFluentBundle = mockFluentBundle({
       [id]: "{$test}",
     });
     const mockedResourceBundle = mockResourceBundle({
-      translationBundles: [mockedFluentBundle],
+      fluentBundles: {
+        global: [mockedFluentBundle],
+      },
     });
     expect(
       getMessage(mockedResourceBundle, id, {
@@ -79,20 +110,20 @@ describe("getMessage", () => {
   });
 
   it("supports fallback if translation does not exist", () => {
+    const resourceBundle = mockResourceBundle();
     expect(getMessage(resourceBundle, id)).toEqual(
-      `[Translation for ${generateTranslationUrl(
-        id,
-        resourceBundle
-      )} does not exist]`
+      getFailedMessage(generateTranslationURL(id, resourceBundle))
     );
   });
-});
 
-describe("getTranslationsDataset", () => {
-  it("sets a custom fetch to getSolidDataset", async () => {
-    const dataset = await getTranslationsDataset(translationsUrl);
-    expect(getThingAll(dataset).length).toEqual(
-      translationsTurtle.match(/rdfs:Literal/g)?.length
+  it("supports fallback if fluent bundles not available", () => {
+    const resourceBundle = mockResourceBundle({
+      fluentBundles: {
+        global: null,
+      },
+    });
+    expect(getMessage(resourceBundle, id)).toEqual(
+      getFailedMessage(generateTranslationURL(id, resourceBundle))
     );
   });
 });
@@ -100,43 +131,41 @@ describe("getTranslationsDataset", () => {
 describe("getTranslationBundleAll", () => {
   it("gets all bundles for a given locale", async () => {
     const message1 = chain(
-      mockThingFrom(generateTranslationUrl("message1", resourceBundle)),
+      mockThingFrom(
+        generateTranslationURL("message1", {
+          translationsIndexURL: { global: translationsIndexURL },
+        })
+      ),
       (t) => setUrl(t, rdf.type, rdfs.Literal),
       (t) => setStringWithLocale(t, skos.definition, "Test", "en-US")
     );
     const message2 = chain(
-      mockThingFrom(generateTranslationUrl("message2", resourceBundle)),
+      mockThingFrom(
+        generateTranslationURL("message2", {
+          translationsIndexURL: { global: translationsIndexURL },
+        })
+      ),
       (t) => setUrl(t, rdf.type, rdfs.Literal)
     );
     const dataset = chain(
-      mockSolidDatasetFrom(translationsUrl),
+      mockSolidDatasetFrom(localizedIndexURL),
       (d) => setThing(d, message1),
       (d) => setThing(d, message2)
     );
-    jest.spyOn(solidClientFns, "getSolidDataset").mockResolvedValue(dataset);
-    const bundles = await getTranslationBundleAll(["en-US"], resourceBundle);
+    const bundles = await getTranslationBundleAll(["en-US"], dataset);
     expect(bundles).toHaveLength(1);
 
     const mockedResourceBundle = mockResourceBundle({
-      translationBundles: bundles,
+      fluentBundles: {
+        global: bundles,
+      },
     });
     expect(getMessage(mockedResourceBundle, "message1")).toEqual("Test");
     expect(getMessage(mockedResourceBundle, "message2")).toEqual(
-      getFailedMessage(generateTranslationUrl("message2", resourceBundle))
-    );
-  });
-
-  it("throws custom error if anything goes wrong", async () => {
-    const error = new Error();
-    jest.spyOn(solidClientFns, "getSolidDataset").mockImplementation(() => {
-      throw error;
-    });
-    await expect(
-      getTranslationBundleAll(["en-US"], resourceBundle)
-    ).rejects.toEqual(
-      new NestedError(
-        generateUrl("translationsLoadFailed", resourceBundle.errorsUrl),
-        error
+      getFailedMessage(
+        generateTranslationURL("message2", {
+          translationsIndexURL: { global: translationsIndexURL },
+        })
       )
     );
   });

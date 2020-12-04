@@ -2,16 +2,17 @@ import React from "react";
 import { AppProps } from "next/app";
 import "../styles/global.css";
 import { SessionProvider } from "@inrupt/solid-ui-react";
-import AppConfigProvider from "../src/contexts/appConfig";
+import AppConfig from "../components/appConfig";
 
-const solidBase = process.env.NEXT_PUBLIC_SOLID_BASE || "";
+const APP_INDEX_URL = process.env.NEXT_PUBLIC_APP_INDEX_URL || "";
+const APP_VOCAB_URL = process.env.NEXT_PUBLIC_APP_VOCAB_URL || "";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <AppConfigProvider solidBase={solidBase}>
-      <SessionProvider sessionId="dnd5e-app">
+    <SessionProvider sessionId="dnd5e-app">
+      <AppConfig appIndexURL={APP_INDEX_URL} appVocabURL={APP_VOCAB_URL}>
         <Component {...pageProps} />
-      </SessionProvider>
-    </AppConfigProvider>
+      </AppConfig>
+    </SessionProvider>
   );
 }

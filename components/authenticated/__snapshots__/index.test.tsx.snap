@@ -7,11 +7,7 @@ exports[`Authenticated renders error if fetching profile fails 1`] = `
   >
     <h1
       data-testid="error-title"
-    >
-      <span
-        resource=""
-      />
-    </h1>
+    />
   </div>
 </DocumentFragment>
 `;
