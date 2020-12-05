@@ -6,7 +6,7 @@ import {
   setThing,
 } from "@inrupt/solid-client";
 import {
-  generateErrorURL,
+  getErrorURL,
   getError,
   getErrorTranslationURL,
   isError,
@@ -18,15 +18,15 @@ import mockResourceBundle, {
 import { createSWRResponse } from "../../../__testUtils/mockSWR";
 import { chain } from "../../utils";
 import { getAppTerm } from "../appIndex";
-import { generateTranslationURL } from "../translation";
+import { getTranslationURL } from "../translation";
 import { appVocabURL } from "../../../__testUtils/mockAppIndexDataset";
 
 const resourceBundle = mockResourceBundle();
 const id = "test";
 
-describe("generateErrorURL", () => {
+describe("getErrorURL", () => {
   it("creates an url out of an id", () =>
-    expect(generateErrorURL("test", resourceBundle, "global")).toEqual(
+    expect(getErrorURL("test", resourceBundle, "global")).toEqual(
       `${errorsIndexURL}#test`
     ));
 });
@@ -36,7 +36,7 @@ describe("getError", () => {
 
   it("generates a nested error", () =>
     expect(getError(id, resourceBundle, error)).toEqual(
-      new NestedError(generateErrorURL(id, resourceBundle), error)
+      new NestedError(getErrorURL(id, resourceBundle), error)
     ));
 });
 
@@ -51,10 +51,10 @@ describe("isError", () => {
 
 describe("getErrorTranslationURL", () => {
   it("returns a translation URL for a error URL", () => {
-    const errorURL = generateErrorURL("test", {
+    const errorURL = getErrorURL("test", {
       errorsIndexURL: { global: errorsIndexURL },
     });
-    const translationURL = generateTranslationURL("test", {
+    const translationURL = getTranslationURL("test", {
       translationsIndexURL: { global: translationsIndexURL },
     });
     const bundle = mockResourceBundle({
@@ -81,7 +81,7 @@ describe("getErrorTranslationURL", () => {
   });
 
   it("returns null if errors dataset is not available", () => {
-    const errorURL = generateErrorURL("test", {
+    const errorURL = getErrorURL("test", {
       errorsIndexURL: { global: errorsIndexURL },
     });
     const bundle = mockResourceBundle({

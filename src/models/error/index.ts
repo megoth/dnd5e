@@ -3,7 +3,7 @@ import NestedError from "nested-error-stacks";
 import { ResourceBundleModel } from "../resourceBundle";
 import { getAppTerm } from "../appIndex";
 
-export function generateErrorURL(
+export function getErrorURL(
   id: string,
   { errorsIndexURL },
   bundleName = "global"
@@ -12,7 +12,7 @@ export function generateErrorURL(
 }
 
 export function getError(id, bundle, error = null) {
-  return new NestedError(generateErrorURL(id, bundle), error);
+  return new NestedError(getErrorURL(id, bundle), error);
 }
 
 export function isError(
@@ -22,7 +22,7 @@ export function isError(
   bundleName?: string
 ): boolean {
   const { message: errorURL1 } = error;
-  const errorURL2 = generateErrorURL(errorId, bundle, bundleName);
+  const errorURL2 = getErrorURL(errorId, bundle, bundleName);
   return errorURL1 === errorURL2;
 }
 

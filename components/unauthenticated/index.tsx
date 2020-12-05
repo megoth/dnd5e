@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LoginButton, useSession } from "@inrupt/solid-ui-react";
-import { generateRedirectURL } from "../../src/windowHelpers";
+import { getRedirectURL } from "../../src/windowHelpers";
 import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
 import useResourceBundle from "../../src/hooks/useResourceBundle";
@@ -29,7 +29,7 @@ export default function Unauthenticated() {
       </p>
       <LoginButton
         oidcIssuer={providerIri}
-        redirectUrl={generateRedirectURL("")}
+        redirectUrl={getRedirectURL("")}
         authOptions={authOptions}
       >
         <button type="submit">

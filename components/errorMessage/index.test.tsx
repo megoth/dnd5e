@@ -17,9 +17,9 @@ import mockResourceBundle, {
 } from "../../__testUtils/mockResourceBundle";
 import { createSWRResponse } from "../../__testUtils/mockSWR";
 import { chain } from "../../src/utils";
-import { generateErrorURL } from "../../src/models/error";
+import { getErrorURL } from "../../src/models/error";
 import { getAppTerm } from "../../src/models/appIndex";
-import { generateTranslationURL } from "../../src/models/translation";
+import { getTranslationURL } from "../../src/models/translation";
 import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import { appVocabURL } from "../../__testUtils/mockAppIndexDataset";
 
@@ -28,10 +28,10 @@ const mockedResourceBundleHook = useResourceBundle as jest.Mock;
 
 describe("ErrorMessage", () => {
   it("renders", () => {
-    const errorURL = generateErrorURL("error", {
+    const errorURL = getErrorURL("error", {
       errorsIndexURL: { global: errorsIndexURL },
     });
-    const translationURL = generateTranslationURL("translation", {
+    const translationURL = getTranslationURL("translation", {
       translationsIndexURL: { global: translationsIndexURL },
     });
     const translatedErrorMessage = "Translated error message";

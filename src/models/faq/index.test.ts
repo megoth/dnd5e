@@ -18,16 +18,16 @@ import {
   getFAQLabelId,
 } from "./index";
 import { getAppTerm } from "../appIndex";
-import { generateTranslationURL, getTranslationId } from "../translation";
+import { getTranslationURL, getTranslationId } from "../translation";
 import { appVocabURL } from "../../../__testUtils/mockAppIndexDataset";
 
 const faqURL = generateFAQURL("test", {
   faqIndexURL: { global: faqIndexURL },
 });
-const faqLabelURL = generateTranslationURL("label", {
+const faqLabelURL = getTranslationURL("label", {
   translationsIndexURL: { global: translationsIndexURL },
 });
-const faqDescriptionURL = generateTranslationURL("description", {
+const faqDescriptionURL = getTranslationURL("description", {
   translationsIndexURL: { global: translationsIndexURL },
 });
 const faq = chain(

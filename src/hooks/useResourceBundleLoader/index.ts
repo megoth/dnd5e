@@ -7,7 +7,7 @@ import useDataset from "../useDataset";
 import useFluentBundles from "../useFluentBundles";
 import { ResourceBundleModel } from "../../models/resourceBundle";
 import { currentLanguage } from "../../models/translation";
-import useLanguages from "../useLanguages";
+import { getNavigatorLanguages } from "../../windowHelpers";
 
 export const swrConfig = {
   errorRetryCount: 0,
@@ -18,7 +18,7 @@ export default function useResourceBundleLoader(
   appIndexURL,
   appVocabURL
 ) {
-  const languages = useLanguages();
+  const languages = getNavigatorLanguages();
   const currentLocales = getLanguages(currentLanguage, languages);
   const { data: appIndex, error: appIndexError } = useAppIndex(
     currentLocales,

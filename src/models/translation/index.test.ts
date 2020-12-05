@@ -8,7 +8,7 @@ import {
 import { rdf, rdfs, skos } from "rdf-namespaces";
 import { FluentBundle } from "@fluent/bundle";
 import {
-  generateTranslationURL,
+  getTranslationURL,
   getDefaultTranslationBundle,
   getFailedMessage,
   getMessage,
@@ -48,10 +48,10 @@ describe("getTranslationId", () => {
     ));
 });
 
-describe("generateTranslationURL", () => {
+describe("getTranslationURL", () => {
   it("creates an url out of an id", () =>
     expect(
-      generateTranslationURL(
+      getTranslationURL(
         "test",
         {
           translationsIndexURL: { global: translationsIndexURL },
@@ -82,7 +82,7 @@ describe("getMessage", () => {
     const mockedFluentBundle = mockFluentBundle({
       [id]: message,
     });
-    const translationURL = generateTranslationURL(id, {
+    const translationURL = getTranslationURL(id, {
       translationsIndexURL: { global: translationsIndexURL },
     });
     const mockedResourceBundle = mockResourceBundle({
@@ -112,7 +112,7 @@ describe("getMessage", () => {
   it("supports fallback if translation does not exist", () => {
     const resourceBundle = mockResourceBundle();
     expect(getMessage(resourceBundle, id)).toEqual(
-      getFailedMessage(generateTranslationURL(id, resourceBundle))
+      getFailedMessage(getTranslationURL(id, resourceBundle))
     );
   });
 
@@ -123,7 +123,7 @@ describe("getMessage", () => {
       },
     });
     expect(getMessage(resourceBundle, id)).toEqual(
-      getFailedMessage(generateTranslationURL(id, resourceBundle))
+      getFailedMessage(getTranslationURL(id, resourceBundle))
     );
   });
 });
@@ -132,7 +132,7 @@ describe("getTranslationBundleAll", () => {
   it("gets all bundles for a given locale", async () => {
     const message1 = chain(
       mockThingFrom(
-        generateTranslationURL("message1", {
+        getTranslationURL("message1", {
           translationsIndexURL: { global: translationsIndexURL },
         })
       ),
@@ -141,7 +141,7 @@ describe("getTranslationBundleAll", () => {
     );
     const message2 = chain(
       mockThingFrom(
-        generateTranslationURL("message2", {
+        getTranslationURL("message2", {
           translationsIndexURL: { global: translationsIndexURL },
         })
       ),
@@ -163,7 +163,7 @@ describe("getTranslationBundleAll", () => {
     expect(getMessage(mockedResourceBundle, "message1")).toEqual("Test");
     expect(getMessage(mockedResourceBundle, "message2")).toEqual(
       getFailedMessage(
-        generateTranslationURL("message2", {
+        getTranslationURL("message2", {
           translationsIndexURL: { global: translationsIndexURL },
         })
       )

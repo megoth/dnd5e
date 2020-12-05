@@ -1,7 +1,7 @@
 import { FluentBundle, FluentResource } from "@fluent/bundle";
 import {
   currentLanguage,
-  generateTranslationURL,
+  getTranslationURL,
   getTranslationId,
 } from "../src/models/translation";
 import { translationsIndexURL } from "./mockResourceBundle";
@@ -17,7 +17,7 @@ export default function mockFluentBundle(
 ) {
   const bundle = new FluentBundle(options.locale || currentLanguage);
   Object.entries(translations).forEach(([id, message]) => {
-    const translationURL = generateTranslationURL(id, {
+    const translationURL = getTranslationURL(id, {
       translationsIndexURL: {
         global: translationsURL,
       },

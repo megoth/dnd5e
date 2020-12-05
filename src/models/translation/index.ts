@@ -21,7 +21,7 @@ export function getTranslationId(url) {
   return url.replace(/([:/.#])/g, "-");
 }
 
-export function generateTranslationURL(
+export function getTranslationURL(
   id,
   { translationsIndexURL },
   bundleName = "global"
@@ -41,7 +41,7 @@ export function getMessage(
 ) {
   const translationURL = idOrURL.startsWith("https://")
     ? idOrURL
-    : generateTranslationURL(idOrURL, bundle);
+    : getTranslationURL(idOrURL, bundle);
   const translationId = getTranslationId(translationURL);
   const translationBundle = getDefaultTranslationBundle(bundle, bundleName);
   const message = translationBundle?.getMessage(translationId);
