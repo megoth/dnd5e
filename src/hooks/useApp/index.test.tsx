@@ -7,7 +7,7 @@ import mockApp from "../../../__testUtils/mockApp";
 const TESTID_BUNDLE_NAMES = "bundle-names";
 
 function ChildComponent() {
-  const { app } = useApp();
+  const app = useApp();
   return <div data-testid={TESTID_BUNDLE_NAMES}>{app.bundleNames}</div>;
 }
 

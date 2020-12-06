@@ -11,6 +11,7 @@ import {
   appIndexURL,
   appVocabURL,
 } from "../../__testUtils/mockAppIndexDataset";
+import mockAppHook from "../../__testUtils/mockAppHook";
 
 jest.mock("../../src/hooks/useAppLoader");
 const mockedAppLoaderHook = useAppLoader as jest.Mock;
@@ -21,7 +22,7 @@ const mockedAppHook = useApp as jest.Mock;
 const app = mockApp();
 
 describe("AppConfig", () => {
-  beforeEach(() => mockedAppHook.mockReturnValue({ app }));
+  beforeEach(() => mockAppHook(mockedAppHook));
 
   it("loads resources and renders", () => {
     mockAppLoader(mockedAppLoaderHook, {
@@ -41,6 +42,7 @@ describe("AppConfig", () => {
   });
 
   it("displays error if it fails to load app", () => {
+    mockAppHook(mockedAppHook, null);
     mockAppLoader(mockedAppLoaderHook, {
       error: new Error(),
     });

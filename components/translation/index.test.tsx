@@ -17,13 +17,14 @@ describe("Translation", () => {
     const fluentBundle = mockFluentBundle({
       [id]: message,
     });
-    mockAppHook(mockedAppHook, {
-      app: mockApp({
+    mockAppHook(
+      mockedAppHook,
+      mockApp({
         fluentBundles: {
           global: [fluentBundle],
         },
-      }),
-    });
+      })
+    );
 
     const l10n = new ReactLocalization([fluentBundle]);
     const { asFragment, getByText } = render(

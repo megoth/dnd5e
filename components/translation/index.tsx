@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function Translation({ id, vars }: Props) {
-  const { app } = useApp();
+  const app = useApp();
   const url = getTranslationURL(id, app);
   return (
     <span resource={url}>

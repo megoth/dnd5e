@@ -13,7 +13,7 @@ import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
 
 export default function FAQPage() {
-  const { app } = useApp();
+  const app = useApp();
   const faqs = getFAQAll(app);
   return (
     <Layout>

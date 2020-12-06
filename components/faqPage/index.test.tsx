@@ -24,8 +24,9 @@ describe("FAQPage", () => {
     const faqURL = "https://example.com/#faq";
     const faqLabelURL = "https://example.com/#faqLabel";
     const faqDescriptionURL = "https://example.com/#faqDescription";
-    mockAppHook(mockedAppHook, {
-      app: mockApp({
+    mockAppHook(
+      mockedAppHook,
+      mockApp({
         faqIndexSWR: {
           global: createSWRResponse(
             chain(mockSolidDatasetFrom(faqIndexURL), (d) =>
@@ -52,8 +53,8 @@ describe("FAQPage", () => {
             )
           ),
         },
-      }),
-    });
+      })
+    );
     const { asFragment } = render(<FAQPage />);
     expect(asFragment()).toMatchSnapshot();
   });

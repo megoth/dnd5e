@@ -40,8 +40,9 @@ describe("ErrorMessage", () => {
         translation: translatedErrorMessage,
       }),
     ];
-    mockAppHook(mockedAppHook, {
-      app: mockApp({
+    mockAppHook(
+      mockedAppHook,
+      mockApp({
         errorsIndexSWR: {
           global: createSWRResponse(
             chain(mockSolidDatasetFrom(errorsIndexURL), (d) =>
@@ -61,8 +62,8 @@ describe("ErrorMessage", () => {
         fluentBundles: {
           global: fluentBundles,
         },
-      }),
-    });
+      })
+    );
     const error = new NestedError(errorURL);
     const l10n = new ReactLocalization(fluentBundles);
     const { asFragment, getByTestId } = render(
@@ -77,7 +78,7 @@ describe("ErrorMessage", () => {
   });
 
   it("render a fallback when app is not available", () => {
-    mockAppHook(mockedAppHook, { app: null });
+    mockAppHook(mockedAppHook, null);
     const error1 = new Error("error1");
     const error2 = new NestedError("error2", error1);
     const { asFragment, getByTestId } = render(<ErrorMessage error={error2} />);

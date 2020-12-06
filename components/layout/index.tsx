@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "./index.module.css";
@@ -11,8 +11,8 @@ interface Props {
   home?: boolean;
 }
 
-export default function Layout({ children, home }: Props): ReactElement {
-  const { app } = useApp();
+export default function Layout({ children, home }: Props) {
+  const app = useApp();
 
   const siteTitle = getMessage(app, "appName");
   const description = getMessage(app, "appDescription");

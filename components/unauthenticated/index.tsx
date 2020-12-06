@@ -13,7 +13,7 @@ export function setupLoginSubmit(login) {
 }
 
 export default function Unauthenticated() {
-  const { app } = useApp();
+  const app = useApp();
   const [providerIri] = useState("https://inrupt.net");
   const { login } = useSession();
   const authOptions = {

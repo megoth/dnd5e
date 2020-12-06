@@ -13,7 +13,7 @@ export const TESTID_ERROR = "error";
 export const TESTID_ERROR_TITLE = "error-title";
 
 export default function ErrorMessage({ error }: Props) {
-  const { app } = useApp();
+  const app = useApp();
   const { message: errorURL } = error;
   const translationURL = app ? getErrorTranslationURL(errorURL, app) : null;
   return (

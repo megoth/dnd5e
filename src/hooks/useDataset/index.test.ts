@@ -27,7 +27,7 @@ describe("useDataset", () => {
       .spyOn(solidClientFns, "getSolidDataset")
       .mockResolvedValue(mockedDataset);
     mockSWRAsPromise(mockedSWRHook);
-    mockAppHook(mockedAppHook, { app });
+    mockAppHook(mockedAppHook, app);
   });
 
   it("caches with SWR", () => {
@@ -60,7 +60,7 @@ describe("useDataset", () => {
   });
 
   it("throws an untranslated error if app is not available when it fails", async () => {
-    mockAppHook(mockedAppHook, { app: null });
+    mockAppHook(mockedAppHook, null);
     const error = new Error("failed");
     mockedGetSolidDataset.mockRejectedValue(error);
     const { result } = renderHook(() => useDataset(url));

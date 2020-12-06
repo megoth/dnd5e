@@ -11,7 +11,7 @@ export default function useDataset(
   config?: ConfigInterface
 ) {
   const { fetch } = useSession();
-  const { app } = useApp();
+  const app = useApp();
   return useSWR(
     [url, "dataset"].concat(cacheKeys),
     async () =>
