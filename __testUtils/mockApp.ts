@@ -1,5 +1,5 @@
 import { mockSolidDatasetFrom } from "@inrupt/solid-client";
-import { ResourceBundleModel } from "../src/models/resourceBundle";
+import { AppModel } from "../src/models/app";
 import mockFluentBundle from "./mockFluentBundle";
 import { createSWRResponse } from "./mockSWR";
 import { appVocabURL } from "./mockAppIndexDataset";
@@ -9,9 +9,7 @@ export const faqIndexURL = "https://example.com/faq.ttl";
 export const translationsIndexURL = "https://example.com/translations.ttl";
 export const localizedIndexURL = "https://example.com/translations.en-US.ttl";
 
-export default function mockResourceBundle(
-  overrides: Partial<ResourceBundleModel> = {}
-): ResourceBundleModel {
+export default function mockApp(overrides: Partial<AppModel> = {}): AppModel {
   return {
     appVocabURL,
     bundleNames: ["global"],

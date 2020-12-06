@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./index.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import { getMessage } from "../../src/models/translation";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
+import useApp from "../../src/hooks/useApp";
 
 interface Props {
   children: ReactNode;
@@ -12,10 +12,10 @@ interface Props {
 }
 
 export default function Layout({ children, home }: Props): ReactElement {
-  const { resourceBundle } = useResourceBundle();
+  const { app } = useApp();
 
-  const siteTitle = getMessage(resourceBundle, "appName");
-  const description = getMessage(resourceBundle, "appDescription");
+  const siteTitle = getMessage(app, "appName");
+  const description = getMessage(app, "appDescription");
 
   return (
     <div className={styles.container}>

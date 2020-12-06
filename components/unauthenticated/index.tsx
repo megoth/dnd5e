@@ -3,7 +3,7 @@ import { LoginButton, useSession } from "@inrupt/solid-ui-react";
 import { getRedirectURL } from "../../src/windowHelpers";
 import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
+import useApp from "../../src/hooks/useApp";
 
 export function setupLoginSubmit(login) {
   return (event) => {
@@ -13,11 +13,11 @@ export function setupLoginSubmit(login) {
 }
 
 export default function Unauthenticated() {
-  const { resourceBundle } = useResourceBundle();
+  const { app } = useApp();
   const [providerIri] = useState("https://inrupt.net");
   const { login } = useSession();
   const authOptions = {
-    clientName: getMessage(resourceBundle, "appName"),
+    clientName: getMessage(app, "appName"),
   };
 
   const handleLoginSubmit = setupLoginSubmit(login);

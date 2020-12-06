@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ErrorMessage render a fallback when ResourceBundle is not available 1`] = `
+exports[`ErrorMessage render a fallback when app is not available 1`] = `
 <DocumentFragment>
   <div
     data-testid="error"

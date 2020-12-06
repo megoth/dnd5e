@@ -26,7 +26,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
       <section>
         <h2 />
         <p>
-          [Translation for https://example.com/#fagDescription does not exist]
+          [Translation for https://example.com/#faqDescription does not exist]
         </p>
       </section>
     </main>

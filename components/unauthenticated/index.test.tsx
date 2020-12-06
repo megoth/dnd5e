@@ -1,15 +1,15 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Unauthenticated, { setupLoginSubmit } from "./index";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
+import useApp from "../../src/hooks/useApp";
+import mockAppHook from "../../__testUtils/mockAppHook";
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
 describe("Unauthenticated", () => {
   it("renders a login form", async () => {
-    mockResourceBundleHook(mockedResourceBundleHook);
+    mockAppHook(mockedAppHook);
     const { asFragment } = render(<Unauthenticated />);
     expect(asFragment()).toMatchSnapshot();
   });

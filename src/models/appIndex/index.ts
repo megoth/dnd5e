@@ -3,6 +3,7 @@ import {
   getThing,
   getUrl,
   getUrlAll,
+  SolidDataset,
 } from "@inrupt/solid-client";
 import { rdfs } from "rdf-namespaces";
 import { chain } from "../../utils";
@@ -17,56 +18,61 @@ export type AppIndex = {
   }>;
 };
 
-export function getAppTerm(alias, appVocabURL) {
+export function getAppTerm(alias, { appVocabURL }) {
   return `${appVocabURL}#${alias}`;
 }
 
 export function packageAppIndex(
-  appIndexDataset,
-  appIndexURL,
-  currentLocales,
-  appVocabURL
+  appIndexDataset: SolidDataset,
+  appIndexURL: string,
+  currentLocales: string[],
+  appVocabURL: string
 ): AppIndex {
   const appIndex = getThing(appIndexDataset, appIndexURL);
   return {
     resourceBundleAll: appIndex
-      ? getUrlAll(appIndex, getAppTerm("resourceBundle", appVocabURL))
+      ? getUrlAll(appIndex, getAppTerm("resourceBundle", { appVocabURL }))
           .map((bundleURL) => getThing(appIndexDataset, bundleURL))
-          .map((bundle) => {
+          .map((resourceBundle) => {
             const translationsIndexAll = getUrlAll(
-              bundle,
-              getAppTerm("translationsIndex", appVocabURL)
+              resourceBundle,
+              getAppTerm("translationsIndex", { appVocabURL })
             ).map((translationURL) =>
               getThing(appIndexDataset, translationURL)
             );
             return {
-              label: getStringNoLocale(bundle, rdfs.label),
+              label: getStringNoLocale(resourceBundle, rdfs.label),
               errorsIndexURL: getUrl(
-                bundle,
-                getAppTerm("errorsIndex", appVocabURL)
+                resourceBundle,
+                getAppTerm("errorsIndex", { appVocabURL })
               ),
-              faqIndexURL: getUrl(bundle, getAppTerm("faqIndex", appVocabURL)),
+              faqIndexURL: getUrl(
+                resourceBundle,
+                getAppTerm("faqIndex", { appVocabURL })
+              ),
               localizedIndexURL: chain(
                 translationsIndexAll.find(
                   (translation) =>
                     currentLocales.indexOf(
                       getStringNoLocale(
                         translation,
-                        getAppTerm("language", appVocabURL)
+                        getAppTerm("language", { appVocabURL })
                       )
                     ) !== -1
                 ),
-                (index) => getUrl(index, getAppTerm("resource", appVocabURL))
+                (index) =>
+                  getUrl(index, getAppTerm("resource", { appVocabURL }))
               ),
               translationsIndexURL: chain(
                 translationsIndexAll.find(
                   (translation) =>
                     !getStringNoLocale(
                       translation,
-                      getAppTerm("language", appVocabURL)
+                      getAppTerm("language", { appVocabURL })
                     )
                 ),
-                (index) => getUrl(index, getAppTerm("resource", appVocabURL))
+                (index) =>
+                  getUrl(index, getAppTerm("resource", { appVocabURL }))
               ),
             };
           })

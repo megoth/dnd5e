@@ -10,11 +10,11 @@ import {
   faqIndexURL,
   localizedIndexURL,
   translationsIndexURL,
-} from "../../../__testUtils/mockResourceBundle";
+} from "../../../__testUtils/mockApp";
 
 describe("getAppTerm", () => {
   it("generates a URL", () =>
-    expect(getAppTerm("test", appVocabURL)).toEqual(`${appVocabURL}#test`));
+    expect(getAppTerm("test", { appVocabURL })).toEqual(`${appVocabURL}#test`));
 });
 
 describe("packageAppIndex", () => {

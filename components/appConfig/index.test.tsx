@@ -1,33 +1,31 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import useResourceBundleLoader from "../../src/hooks/useResourceBundleLoader";
+import useAppLoader from "../../src/hooks/useAppLoader";
 import AppConfig from "./index";
-import mockResourceBundleLoaderHook from "../../__testUtils/mockResourceBundleLoaderHook";
+import mockAppLoader from "../../__testUtils/mockAppLoader";
 import { TESTID_ERROR } from "../errorMessage";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundle from "../../__testUtils/mockResourceBundle";
+import useApp from "../../src/hooks/useApp";
+import mockApp from "../../__testUtils/mockApp";
 import { TESTID_LOADING } from "../loading";
 import {
   appIndexURL,
   appVocabURL,
 } from "../../__testUtils/mockAppIndexDataset";
 
-jest.mock("../../src/hooks/useResourceBundleLoader");
-const mockedResourceBundleLoaderHook = useResourceBundleLoader as jest.Mock;
+jest.mock("../../src/hooks/useAppLoader");
+const mockedAppLoaderHook = useAppLoader as jest.Mock;
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
-const resourceBundle = mockResourceBundle();
+const app = mockApp();
 
 describe("AppConfig", () => {
-  beforeEach(() =>
-    mockedResourceBundleHook.mockReturnValue({ resourceBundle })
-  );
+  beforeEach(() => mockedAppHook.mockReturnValue({ app }));
 
   it("loads resources and renders", () => {
-    mockResourceBundleLoaderHook(mockedResourceBundleLoaderHook, {
-      data: resourceBundle,
+    mockAppLoader(mockedAppLoaderHook, {
+      data: app,
     });
     const { asFragment } = render(
       <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
@@ -35,15 +33,15 @@ describe("AppConfig", () => {
       </AppConfig>
     );
     expect(asFragment()).toMatchSnapshot();
-    expect(mockedResourceBundleLoaderHook).toHaveBeenCalledWith(
+    expect(mockedAppLoaderHook).toHaveBeenCalledWith(
       "global",
       appIndexURL,
       appVocabURL
     );
   });
 
-  it("displays error if it fails to load resourceBundles", () => {
-    mockResourceBundleLoaderHook(mockedResourceBundleLoaderHook, {
+  it("displays error if it fails to load app", () => {
+    mockAppLoader(mockedAppLoaderHook, {
       error: new Error(),
     });
     const { asFragment, getByTestId } = render(
@@ -55,8 +53,8 @@ describe("AppConfig", () => {
     expect(getByTestId(TESTID_ERROR)).toBeDefined();
   });
 
-  it("displays loading while resourceBundles are loading", () => {
-    mockResourceBundleLoaderHook(mockedResourceBundleLoaderHook, {
+  it("displays loading while app is loading", () => {
+    mockAppLoader(mockedAppLoaderHook, {
       data: null,
     });
     const { asFragment, getByTestId } = render(

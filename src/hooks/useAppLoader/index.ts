@@ -1,11 +1,11 @@
-import useSWR from "swr";
+import useSWR, { responseInterface } from "swr";
 import { useEffect, useState } from "react";
 import NestedError from "nested-error-stacks";
 import useAppIndex from "../useAppIndex";
 import { getLanguages } from "../../models/language";
 import useDataset from "../useDataset";
 import useFluentBundles from "../useFluentBundles";
-import { ResourceBundleModel } from "../../models/resourceBundle";
+import { AppModel, createApp } from "../../models/app";
 import { currentLanguage } from "../../models/translation";
 import { getNavigatorLanguages } from "../../windowHelpers";
 
@@ -13,11 +13,11 @@ export const swrConfig = {
   errorRetryCount: 0,
 };
 
-export default function useResourceBundleLoader(
-  bundleName: string,
+export default function useAppLoader(
+  bundleName,
   appIndexURL,
   appVocabURL
-) {
+): responseInterface<AppModel, any> {
   const languages = getNavigatorLanguages();
   const currentLocales = getLanguages(currentLanguage, languages);
   const { data: appIndex, error: appIndexError } = useAppIndex(
@@ -25,49 +25,36 @@ export default function useResourceBundleLoader(
     appIndexURL,
     appVocabURL
   );
-  const [bundleModel, setBundleModel] = useState<ResourceBundleModel>({
-    appVocabURL,
-    bundleNames: [],
-    currentLanguage,
-    errorsIndexSWR: {},
-    errorsIndexURL: {},
-    faqIndexSWR: {},
-    faqIndexURL: {},
-    fluentBundles: {},
-    localizedIndexSWR: {},
-    localizedIndexURL: {},
-    translationsIndexSWR: {},
-    translationsIndexURL: {},
-  });
+  const [appModel, setAppModel] = useState<AppModel>(createApp(appVocabURL));
   const [errorsIndexURL, setErrorsIndexURL] = useState<string>();
-  const errorsIndexSWR = useDataset(errorsIndexURL, [bundleModel], swrConfig);
+  const errorsIndexSWR = useDataset(errorsIndexURL, [appModel], swrConfig);
   const [faqIndexURL, setFaqIndexURL] = useState<string>();
-  const faqIndexSWR = useDataset(faqIndexURL, [bundleModel], swrConfig);
+  const faqIndexSWR = useDataset(faqIndexURL, [appModel], swrConfig);
   const [translationsIndexURL, setTranslationsIndexURL] = useState<string>();
   const translationsIndexSWR = useDataset(
     translationsIndexURL,
-    [bundleModel],
+    [appModel],
     swrConfig
   );
   const [localizedIndexURL, setLocalizedIndexURL] = useState<string>();
   const localizedIndexSWR = useDataset(
     localizedIndexURL,
-    [bundleModel],
+    [appModel],
     swrConfig
   );
   const fluentBundles = useFluentBundles(localizedIndexSWR, currentLocales);
   useEffect(() => {
-    if (bundleModel.bundleNames.indexOf(bundleName) !== -1 || appIndexError) {
+    if (appModel.bundleNames.indexOf(bundleName) !== -1 || appIndexError) {
       return;
     }
-    setBundleModel({
-      ...bundleModel,
-      bundleNames: bundleModel.bundleNames.concat(bundleName),
+    setAppModel({
+      ...appModel,
+      bundleNames: appModel.bundleNames.concat(bundleName),
     });
-  }, [appIndexError, bundleModel, bundleModel.bundleNames, bundleName]);
+  }, [appIndexError, appModel, appModel.bundleNames, bundleName]);
   return useSWR(
     [
-      bundleModel.bundleNames,
+      appModel.bundleNames,
       bundleName,
       appIndex,
       errorsIndexSWR,
@@ -78,68 +65,68 @@ export default function useResourceBundleLoader(
     ],
     () => {
       if (appIndexError) {
-        throw new NestedError("Unable to load resource bundle", appIndexError);
+        throw new NestedError("Unable to load app", appIndexError);
       }
       if (!appIndex) {
         return null;
       }
-      const bundle = appIndex.resourceBundleAll.find(
+      const resourceBundle = appIndex.resourceBundleAll.find(
         ({ label }) => label === bundleName
       );
-      if (!bundle) {
+      if (!resourceBundle) {
         return null;
       }
-      if (errorsIndexURL !== bundle.errorsIndexURL) {
-        setErrorsIndexURL(bundle.errorsIndexURL);
+      if (errorsIndexURL !== resourceBundle.errorsIndexURL) {
+        setErrorsIndexURL(resourceBundle.errorsIndexURL);
       }
-      if (faqIndexURL !== bundle.faqIndexURL) {
-        setFaqIndexURL(bundle.faqIndexURL);
+      if (faqIndexURL !== resourceBundle.faqIndexURL) {
+        setFaqIndexURL(resourceBundle.faqIndexURL);
       }
-      if (translationsIndexURL !== bundle.translationsIndexURL) {
-        setTranslationsIndexURL(bundle.translationsIndexURL);
+      if (translationsIndexURL !== resourceBundle.translationsIndexURL) {
+        setTranslationsIndexURL(resourceBundle.translationsIndexURL);
       }
-      if (localizedIndexURL !== bundle.localizedIndexURL) {
-        setLocalizedIndexURL(bundle.localizedIndexURL);
+      if (localizedIndexURL !== resourceBundle.localizedIndexURL) {
+        setLocalizedIndexURL(resourceBundle.localizedIndexURL);
       }
       return fluentBundles
         ? {
             appVocabURL,
-            bundleNames: bundleModel.bundleNames,
-            currentLanguage: bundleModel.currentLanguage,
+            bundleNames: appModel.bundleNames,
+            currentLanguage: appModel.currentLanguage,
             errorsIndexSWR: {
-              ...bundleModel.errorsIndexSWR,
+              ...appModel.errorsIndexSWR,
               [bundleName]: errorsIndexSWR,
             },
             errorsIndexURL: {
-              ...bundleModel.errorsIndexURL,
+              ...appModel.errorsIndexURL,
               [bundleName]: errorsIndexURL,
             },
             faqIndexSWR: {
-              ...bundleModel.faqIndexSWR,
+              ...appModel.faqIndexSWR,
               [bundleName]: faqIndexSWR,
             },
             faqIndexURL: {
-              ...bundleModel.faqIndexURL,
+              ...appModel.faqIndexURL,
               [bundleName]: faqIndexURL,
             },
             fluentBundles: {
-              ...bundleModel.fluentBundles,
+              ...appModel.fluentBundles,
               [bundleName]: fluentBundles,
             },
             localizedIndexSWR: {
-              ...bundleModel.localizedIndexSWR,
+              ...appModel.localizedIndexSWR,
               [bundleName]: localizedIndexSWR,
             },
             localizedIndexURL: {
-              ...bundleModel.localizedIndexURL,
+              ...appModel.localizedIndexURL,
               [bundleName]: localizedIndexURL,
             },
             translationsIndexSWR: {
-              ...bundleModel.translationsIndexSWR,
+              ...appModel.translationsIndexSWR,
               [bundleName]: translationsIndexSWR,
             },
             translationsIndexURL: {
-              ...bundleModel.translationsIndexURL,
+              ...appModel.translationsIndexURL,
               [bundleName]: translationsIndexURL,
             },
           }

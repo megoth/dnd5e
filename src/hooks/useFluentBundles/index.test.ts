@@ -1,6 +1,6 @@
 import { mockSolidDatasetFrom } from "@inrupt/solid-client";
 import { renderHook } from "@testing-library/react-hooks";
-import { localizedIndexURL } from "../../../__testUtils/mockResourceBundle";
+import { localizedIndexURL } from "../../../__testUtils/mockApp";
 import { createSWRResponse } from "../../../__testUtils/mockSWR";
 import useFluentBundles from "./index";
 import { currentLocales } from "../../models/translation";

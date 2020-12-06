@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { LocalizationProvider, ReactLocalization } from "@fluent/react";
-import ResourceBundleProvider from "../../src/contexts/resourceBundle";
-import useResourceBundleLoader from "../../src/hooks/useResourceBundleLoader";
+import AppProvider from "../../src/contexts/app";
+import useAppLoader from "../../src/hooks/useAppLoader";
 import ErrorMessage from "../errorMessage";
 import Loading from "../loading";
 import { getFluentBundles } from "../../src/models/language";
@@ -17,25 +17,24 @@ export default function AppConfig({
   appIndexURL,
   appVocabURL,
 }: Props) {
-  const {
-    data: resourceBundle,
-    error: resourceBundleError,
-  } = useResourceBundleLoader("global", appIndexURL, appVocabURL);
+  const { data: app, error: appError } = useAppLoader(
+    "global",
+    appIndexURL,
+    appVocabURL
+  );
 
-  if (resourceBundleError) {
-    return <ErrorMessage error={resourceBundleError} />;
+  if (appError) {
+    return <ErrorMessage error={appError} />;
   }
 
-  if (!resourceBundle) {
+  if (!app) {
     return <Loading />;
   }
 
-  const l10n = new ReactLocalization(getFluentBundles(resourceBundle));
+  const l10n = new ReactLocalization(getFluentBundles(app));
   return (
     <LocalizationProvider l10n={l10n}>
-      <ResourceBundleProvider resourceBundle={resourceBundle}>
-        {children}
-      </ResourceBundleProvider>
+      <AppProvider app={app}>{children}</AppProvider>
     </LocalizationProvider>
   );
 }

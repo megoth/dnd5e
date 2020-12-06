@@ -5,18 +5,18 @@ import NestedError from "nested-error-stacks";
 import { mockedDataset } from "../../../__testUtils/mockDataset";
 import useDataset from "./index";
 import { mockSWRAsPromise } from "../../../__testUtils/mockSWR";
-import useResourceBundle from "../useResourceBundle";
-import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
+import useApp from "../useApp";
+import mockApp from "../../../__testUtils/mockApp";
 import { getError } from "../../models/error";
-import mockResourceBundleHook from "../../../__testUtils/mockResourceBundleHook";
+import mockAppHook from "../../../__testUtils/mockAppHook";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;
 
-jest.mock("../useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../useApp");
+const mockedAppHook = useApp as jest.Mock;
 
-const resourceBundle = mockResourceBundle();
+const app = mockApp();
 
 describe("useDataset", () => {
   const url = "http://example.com";
@@ -27,7 +27,7 @@ describe("useDataset", () => {
       .spyOn(solidClientFns, "getSolidDataset")
       .mockResolvedValue(mockedDataset);
     mockSWRAsPromise(mockedSWRHook);
-    mockResourceBundleHook(mockedResourceBundleHook, { resourceBundle });
+    mockAppHook(mockedAppHook, { app });
   });
 
   it("caches with SWR", () => {
@@ -55,12 +55,12 @@ describe("useDataset", () => {
     mockedGetSolidDataset.mockRejectedValue(error);
     const { result } = renderHook(() => useDataset(url));
     await expect(result.current).rejects.toEqual(
-      getError("datasetLoadFailed", resourceBundle, error)
+      getError("datasetLoadFailed", app, error)
     );
   });
 
-  it("throws an untranslated error if resourceBundle is not available when it fails", async () => {
-    mockResourceBundleHook(mockedResourceBundleHook, { resourceBundle: null });
+  it("throws an untranslated error if app is not available when it fails", async () => {
+    mockAppHook(mockedAppHook, { app: null });
     const error = new Error("failed");
     mockedGetSolidDataset.mockRejectedValue(error);
     const { result } = renderHook(() => useDataset(url));

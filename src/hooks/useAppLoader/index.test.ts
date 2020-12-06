@@ -3,13 +3,13 @@ import useSWR from "swr";
 import { mockSolidDatasetFrom } from "@inrupt/solid-client";
 import NestedError from "nested-error-stacks";
 import useAppIndex from "../useAppIndex";
-import useResourceBundle, { swrConfig } from "./index";
+import useAppLoader, { swrConfig } from "./index";
 import {
   errorsIndexURL,
   faqIndexURL,
   localizedIndexURL,
   translationsIndexURL,
-} from "../../../__testUtils/mockResourceBundle";
+} from "../../../__testUtils/mockApp";
 import mockSWR, { createSWRResponse } from "../../../__testUtils/mockSWR";
 import mockAppIndex from "../../../__testUtils/mockAppIndex";
 import useDataset from "../useDataset";
@@ -35,7 +35,7 @@ const mockedFluentBundlesHook = useFluentBundles as jest.Mock;
 const bundleName = "global";
 const fluentBundles = [mockFluentBundle()];
 
-describe("useResourceBundle", () => {
+describe("useAppLoader", () => {
   let appIndex;
   let resourceDatasetSWR;
 
@@ -51,7 +51,7 @@ describe("useResourceBundle", () => {
   });
 
   it("caches with SWR", () => {
-    renderHook(() => useResourceBundle(bundleName, appIndexURL, appVocabURL));
+    renderHook(() => useAppLoader(bundleName, appIndexURL, appVocabURL));
     expect(mockedSWRHook).toHaveBeenCalledWith(
       [
         [],
@@ -78,33 +78,33 @@ describe("useResourceBundle", () => {
     );
   });
 
-  it("returns a resource bundle", () => {
+  it("returns an app model", () => {
     const { result } = renderHook(() =>
-      useResourceBundle(bundleName, appIndexURL, appVocabURL)
+      useAppLoader(bundleName, appIndexURL, appVocabURL)
     );
     expect(result.current).toBeDefined();
-    const { data: bundle } = result.current;
-    expect(bundle.bundleNames).toEqual(["global"]);
-    expect(bundle.currentLanguage).toEqual("en-US");
-    expect(bundle.errorsIndexSWR.global).toEqual(resourceDatasetSWR);
-    expect(bundle.errorsIndexURL.global).toEqual(errorsIndexURL);
-    expect(bundle.faqIndexSWR.global).toEqual(resourceDatasetSWR);
-    expect(bundle.faqIndexURL.global).toEqual(faqIndexURL);
-    expect(bundle.fluentBundles.global).toEqual(fluentBundles);
-    expect(bundle.localizedIndexSWR.global).toEqual(resourceDatasetSWR);
-    expect(bundle.localizedIndexURL.global).toEqual(localizedIndexURL);
-    expect(bundle.translationsIndexSWR.global).toEqual(resourceDatasetSWR);
-    expect(bundle.translationsIndexURL.global).toEqual(translationsIndexURL);
+    const { data: app } = result.current;
+    expect(app.bundleNames).toEqual(["global"]);
+    expect(app.currentLanguage).toEqual("en-US");
+    expect(app.errorsIndexSWR.global).toEqual(resourceDatasetSWR);
+    expect(app.errorsIndexURL.global).toEqual(errorsIndexURL);
+    expect(app.faqIndexSWR.global).toEqual(resourceDatasetSWR);
+    expect(app.faqIndexURL.global).toEqual(faqIndexURL);
+    expect(app.fluentBundles.global).toEqual(fluentBundles);
+    expect(app.localizedIndexSWR.global).toEqual(resourceDatasetSWR);
+    expect(app.localizedIndexURL.global).toEqual(localizedIndexURL);
+    expect(app.translationsIndexSWR.global).toEqual(resourceDatasetSWR);
+    expect(app.translationsIndexURL.global).toEqual(translationsIndexURL);
   });
 
   it("throws custom error if appIndex fails", () => {
     const appIndexError = new Error("error");
     mockedAppIndexHook.mockReturnValue({ error: appIndexError });
     const { result } = renderHook(() =>
-      useResourceBundle(bundleName, appIndexURL, appVocabURL)
+      useAppLoader(bundleName, appIndexURL, appVocabURL)
     );
     expect(result.current.error).toEqual(
-      new NestedError("Unable to load resource bundle", appIndexError)
+      new NestedError("Unable to load app", appIndexError)
     );
   });
 
@@ -113,7 +113,7 @@ describe("useResourceBundle", () => {
     mockedDatasetHook.mockReturnValue(null);
     mockedFluentBundlesHook.mockReturnValue(null);
     const { result } = renderHook(() =>
-      useResourceBundle(bundleName, appIndexURL, appVocabURL)
+      useAppLoader(bundleName, appIndexURL, appVocabURL)
     );
     expect(result.current.data).toBeNull();
   });
@@ -121,18 +121,18 @@ describe("useResourceBundle", () => {
   it("returns null if fluent bundles is not available", () => {
     mockedFluentBundlesHook.mockReturnValue(null);
     const { result } = renderHook(() =>
-      useResourceBundle(bundleName, appIndexURL, appVocabURL)
+      useAppLoader(bundleName, appIndexURL, appVocabURL)
     );
     expect(result.current.data).toBeNull();
   });
 
-  it("returns null if no resource bundles are available", () => {
+  it("returns null if no app are available", () => {
     const dataset = mockSolidDatasetFrom(appIndexURL);
     mockedAppIndexHook.mockReturnValue({
       data: mockAppIndex("global", appIndexURL, dataset),
     });
     const { result } = renderHook(() =>
-      useResourceBundle(bundleName, appIndexURL, appVocabURL)
+      useAppLoader(bundleName, appIndexURL, appVocabURL)
     );
     expect(result.current.data).toBeNull();
   });

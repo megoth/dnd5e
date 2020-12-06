@@ -5,10 +5,10 @@ import {
   setUrl,
 } from "@inrupt/solid-client";
 import { rdf } from "rdf-namespaces";
-import mockResourceBundle, {
+import mockApp, {
   faqIndexURL,
   translationsIndexURL,
-} from "../../../__testUtils/mockResourceBundle";
+} from "../../../__testUtils/mockApp";
 import { createSWRResponse } from "../../../__testUtils/mockSWR";
 import { chain } from "../../utils";
 import {
@@ -32,9 +32,10 @@ const faqDescriptionURL = getTranslationURL("description", {
 });
 const faq = chain(
   mockThingFrom(faqURL),
-  (t) => setUrl(t, rdf.type, getAppTerm("FAQ", appVocabURL)),
-  (t) => setUrl(t, getAppTerm("faqLabel", appVocabURL), faqLabelURL),
-  (t) => setUrl(t, getAppTerm("faqDescription", appVocabURL), faqDescriptionURL)
+  (t) => setUrl(t, rdf.type, getAppTerm("FAQ", { appVocabURL })),
+  (t) => setUrl(t, getAppTerm("faqLabel", { appVocabURL }), faqLabelURL),
+  (t) =>
+    setUrl(t, getAppTerm("faqDescription", { appVocabURL }), faqDescriptionURL)
 );
 
 describe("generateFAQURL", () => {
@@ -46,8 +47,8 @@ describe("generateFAQURL", () => {
 });
 
 describe("getFAQAll", () => {
-  it("returns an array of all available FAQs in a resource bundle", () => {
-    const bundle = mockResourceBundle({
+  it("returns an array of all available FAQs in an app", () => {
+    const bundle = mockApp({
       faqIndexSWR: {
         global: createSWRResponse(
           chain(mockSolidDatasetFrom(faqIndexURL), (d) => setThing(d, faq))
@@ -57,8 +58,8 @@ describe("getFAQAll", () => {
     expect(getFAQAll(bundle, "global")).toEqual([faq]);
   });
 
-  it("returns an empty array if resource bundle is not available", () => {
-    const bundle = mockResourceBundle({
+  it("returns an empty array if app is not available", () => {
+    const bundle = mockApp({
       faqIndexSWR: {
         global: createSWRResponse(null),
       },

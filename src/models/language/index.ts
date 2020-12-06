@@ -1,5 +1,5 @@
 import { negotiateLanguages } from "@fluent/langneg";
-import { ResourceBundleModel } from "../resourceBundle";
+import { AppModel } from "../app";
 import { currentLocales } from "../translation";
 
 export function getLanguages(currentLanguage, languages) {
@@ -8,9 +8,6 @@ export function getLanguages(currentLanguage, languages) {
   });
 }
 
-export function getFluentBundles(
-  bundle: ResourceBundleModel,
-  bundleLabel = "global"
-) {
-  return bundle.fluentBundles[bundleLabel];
+export function getFluentBundles(app: AppModel, bundleLabel = "global") {
+  return app.fluentBundles[bundleLabel];
 }

@@ -1,6 +1,7 @@
 import { SolidDataset } from "@inrupt/solid-client";
 import { responseInterface } from "swr";
 import { FluentBundle } from "@fluent/bundle";
+import { currentLanguage } from "../translation";
 
 export type ResourceBundleResourceSWR = Record<
   string,
@@ -8,7 +9,7 @@ export type ResourceBundleResourceSWR = Record<
 >;
 export type ResourceBundleResourceURL = Record<string, string | null>;
 
-export type ResourceBundleModel = {
+export type AppModel = {
   appVocabURL: string;
   bundleNames: string[];
   currentLanguage: string;
@@ -22,3 +23,20 @@ export type ResourceBundleModel = {
   translationsIndexSWR: ResourceBundleResourceSWR;
   translationsIndexURL: ResourceBundleResourceURL;
 };
+
+export function createApp(appVocabURL): AppModel {
+  return {
+    appVocabURL,
+    bundleNames: [],
+    currentLanguage,
+    errorsIndexSWR: {},
+    errorsIndexURL: {},
+    faqIndexSWR: {},
+    faqIndexURL: {},
+    fluentBundles: {},
+    localizedIndexSWR: {},
+    localizedIndexURL: {},
+    translationsIndexSWR: {},
+    translationsIndexURL: {},
+  };
+}

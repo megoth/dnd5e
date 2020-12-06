@@ -4,7 +4,7 @@ import {
   getTranslationURL,
   getTranslationId,
 } from "../src/models/translation";
-import { translationsIndexURL } from "./mockResourceBundle";
+import { translationsIndexURL } from "./mockApp";
 
 interface Options {
   locale: string;

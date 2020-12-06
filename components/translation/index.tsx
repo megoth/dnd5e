@@ -4,7 +4,7 @@ import {
   getTranslationURL,
   getTranslationId,
 } from "../../src/models/translation";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
+import useApp from "../../src/hooks/useApp";
 
 interface Props {
   id: string;
@@ -12,8 +12,8 @@ interface Props {
 }
 
 export default function Translation({ id, vars }: Props) {
-  const { resourceBundle } = useResourceBundle();
-  const url = getTranslationURL(id, resourceBundle);
+  const { app } = useApp();
+  const url = getTranslationURL(id, app);
   return (
     <span resource={url}>
       <Localized id={getTranslationId(url)} vars={vars} />

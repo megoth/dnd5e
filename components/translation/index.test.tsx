@@ -3,14 +3,12 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Translation from "./index";
 import mockFluentBundle from "../../__testUtils/mockFluentBundle";
-import mockResourceBundle, {
-  translationsIndexURL,
-} from "../../__testUtils/mockResourceBundle";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
+import mockApp from "../../__testUtils/mockApp";
+import useApp from "../../src/hooks/useApp";
+import mockAppHook from "../../__testUtils/mockAppHook";
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
 describe("Translation", () => {
   it("renders translated message", () => {
@@ -19,8 +17,8 @@ describe("Translation", () => {
     const fluentBundle = mockFluentBundle({
       [id]: message,
     });
-    mockResourceBundleHook(mockedResourceBundleHook, {
-      resourceBundle: mockResourceBundle({
+    mockAppHook(mockedAppHook, {
+      app: mockApp({
         fluentBundles: {
           global: [fluentBundle],
         },

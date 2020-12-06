@@ -9,12 +9,12 @@ import {
 } from "@inrupt/solid-client";
 import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import ErrorMessage, { TESTID_ERROR_TITLE } from "./index";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
-import mockResourceBundle, {
+import useApp from "../../src/hooks/useApp";
+import mockAppHook from "../../__testUtils/mockAppHook";
+import mockApp, {
   errorsIndexURL,
   translationsIndexURL,
-} from "../../__testUtils/mockResourceBundle";
+} from "../../__testUtils/mockApp";
 import { createSWRResponse } from "../../__testUtils/mockSWR";
 import { chain } from "../../src/utils";
 import { getErrorURL } from "../../src/models/error";
@@ -23,8 +23,8 @@ import { getTranslationURL } from "../../src/models/translation";
 import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import { appVocabURL } from "../../__testUtils/mockAppIndexDataset";
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
 describe("ErrorMessage", () => {
   it("renders", () => {
@@ -40,8 +40,8 @@ describe("ErrorMessage", () => {
         translation: translatedErrorMessage,
       }),
     ];
-    mockResourceBundleHook(mockedResourceBundleHook, {
-      resourceBundle: mockResourceBundle({
+    mockAppHook(mockedAppHook, {
+      app: mockApp({
         errorsIndexSWR: {
           global: createSWRResponse(
             chain(mockSolidDatasetFrom(errorsIndexURL), (d) =>
@@ -50,7 +50,7 @@ describe("ErrorMessage", () => {
                 chain(mockThingFrom(errorURL), (t) =>
                   setUrl(
                     t,
-                    getAppTerm("translation", appVocabURL),
+                    getAppTerm("translation", { appVocabURL }),
                     translationURL
                   )
                 )
@@ -76,8 +76,8 @@ describe("ErrorMessage", () => {
     );
   });
 
-  it("render a fallback when ResourceBundle is not available", () => {
-    mockResourceBundleHook(mockedResourceBundleHook, { resourceBundle: null });
+  it("render a fallback when app is not available", () => {
+    mockAppHook(mockedAppHook, { app: null });
     const error1 = new Error("error1");
     const error2 = new NestedError("error2", error1);
     const { asFragment, getByTestId } = render(<ErrorMessage error={error2} />);

@@ -11,22 +11,22 @@ import {
   getErrorTranslationURL,
   isError,
 } from "./index";
-import mockResourceBundle, {
+import mockApp, {
   errorsIndexURL,
   translationsIndexURL,
-} from "../../../__testUtils/mockResourceBundle";
+} from "../../../__testUtils/mockApp";
 import { createSWRResponse } from "../../../__testUtils/mockSWR";
 import { chain } from "../../utils";
 import { getAppTerm } from "../appIndex";
 import { getTranslationURL } from "../translation";
 import { appVocabURL } from "../../../__testUtils/mockAppIndexDataset";
 
-const resourceBundle = mockResourceBundle();
+const app = mockApp();
 const id = "test";
 
 describe("getErrorURL", () => {
   it("creates an url out of an id", () =>
-    expect(getErrorURL("test", resourceBundle, "global")).toEqual(
+    expect(getErrorURL("test", app, "global")).toEqual(
       `${errorsIndexURL}#test`
     ));
 });
@@ -35,17 +35,17 @@ describe("getError", () => {
   const error = new Error();
 
   it("generates a nested error", () =>
-    expect(getError(id, resourceBundle, error)).toEqual(
-      new NestedError(getErrorURL(id, resourceBundle), error)
+    expect(getError(id, app, error)).toEqual(
+      new NestedError(getErrorURL(id, app), error)
     ));
 });
 
 describe("isError", () => {
-  const error = getError(id, resourceBundle);
+  const error = getError(id, app);
 
   it("checks whether an error is a given error id", () => {
-    expect(isError(error, id, resourceBundle)).toBe(true);
-    expect(isError(new Error(), id, resourceBundle)).toBe(false);
+    expect(isError(error, id, app)).toBe(true);
+    expect(isError(new Error(), id, app)).toBe(false);
   });
 });
 
@@ -57,7 +57,7 @@ describe("getErrorTranslationURL", () => {
     const translationURL = getTranslationURL("test", {
       translationsIndexURL: { global: translationsIndexURL },
     });
-    const bundle = mockResourceBundle({
+    const bundle = mockApp({
       errorsIndexSWR: {
         global: createSWRResponse(
           chain(mockSolidDatasetFrom(errorsIndexURL), (d) =>
@@ -66,7 +66,7 @@ describe("getErrorTranslationURL", () => {
               chain(mockThingFrom(errorURL), (t) =>
                 addUrl(
                   t,
-                  getAppTerm("translation", appVocabURL),
+                  getAppTerm("translation", { appVocabURL }),
                   translationURL
                 )
               )
@@ -84,7 +84,7 @@ describe("getErrorTranslationURL", () => {
     const errorURL = getErrorURL("test", {
       errorsIndexURL: { global: errorsIndexURL },
     });
-    const bundle = mockResourceBundle({
+    const bundle = mockApp({
       errorsIndexSWR: {
         global: createSWRResponse(null),
       },
@@ -93,6 +93,6 @@ describe("getErrorTranslationURL", () => {
   });
 
   it("returns null if error url does not exist", () => {
-    expect(getErrorTranslationURL("test", resourceBundle)).toBeNull();
+    expect(getErrorTranslationURL("test", app)).toBeNull();
   });
 });

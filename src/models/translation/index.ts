@@ -34,16 +34,19 @@ export function getFailedMessage(translationURL) {
 }
 
 export function getMessage(
-  bundle,
+  { fluentBundles, translationsIndexURL },
   idOrURL,
   args: Record<string, any> = {},
   bundleName?: string
 ) {
   const translationURL = idOrURL.startsWith("https://")
     ? idOrURL
-    : getTranslationURL(idOrURL, bundle);
+    : getTranslationURL(idOrURL, { translationsIndexURL });
   const translationId = getTranslationId(translationURL);
-  const translationBundle = getDefaultTranslationBundle(bundle, bundleName);
+  const translationBundle = getDefaultTranslationBundle(
+    { fluentBundles },
+    bundleName
+  );
   const message = translationBundle?.getMessage(translationId);
   return message?.value
     ? translationBundle.formatPattern(message.value, args)

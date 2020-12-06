@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { asUrl } from "@inrupt/solid-client";
 import { Localized } from "@fluent/react";
 import Layout from "../layout";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
+import useApp from "../../src/hooks/useApp";
 import {
   getFAQAll,
   getFAQDescriptionURL,
@@ -13,24 +13,19 @@ import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
 
 export default function FAQPage() {
-  const { resourceBundle } = useResourceBundle();
-
-  const faqs = getFAQAll(resourceBundle);
-
+  const { app } = useApp();
+  const faqs = getFAQAll(app);
   return (
     <Layout>
       <h1>
         <Translation id="faqTitle" />
       </h1>
       {faqs.map((faq) => {
-        const description = getMessage(
-          resourceBundle,
-          getFAQDescriptionURL(faq, resourceBundle)
-        );
+        const description = getMessage(app, getFAQDescriptionURL(faq, app));
         return (
           <section key={asUrl(faq)}>
             <h2>
-              <Localized id={getFAQLabelId(faq, resourceBundle)} />
+              <Localized id={getFAQLabelId(faq, app)} />
             </h2>
             <ReactMarkdown>{description}</ReactMarkdown>
           </section>

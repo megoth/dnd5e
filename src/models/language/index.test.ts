@@ -1,5 +1,5 @@
 import { getFluentBundles, getLanguages } from "./index";
-import mockResourceBundle from "../../../__testUtils/mockResourceBundle";
+import mockApp from "../../../__testUtils/mockApp";
 import { currentLanguage } from "../translation";
 
 describe("getLanguages", () => {
@@ -9,12 +9,10 @@ describe("getLanguages", () => {
 });
 
 describe("getFluentBundles", () => {
-  it("returns fluent bundles in a resource bundle", () => {
-    const resourceBundle = mockResourceBundle();
-    const { fluentBundles } = resourceBundle;
-    expect(getFluentBundles(resourceBundle)).toEqual(fluentBundles.global);
-    expect(getFluentBundles(resourceBundle, "global")).toEqual(
-      fluentBundles.global
-    );
+  it("returns fluent bundles in an app", () => {
+    const app = mockApp();
+    const { fluentBundles } = app;
+    expect(getFluentBundles(app)).toEqual(fluentBundles.global);
+    expect(getFluentBundles(app, "global")).toEqual(fluentBundles.global);
   });
 });

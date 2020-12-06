@@ -13,7 +13,7 @@ import {
   faqIndexURL,
   localizedIndexURL,
   translationsIndexURL,
-} from "./mockResourceBundle";
+} from "./mockApp";
 import { currentLanguage } from "../src/models/translation";
 
 export const appIndexURL = "https://example.com/index.ttl#dnd5e";
@@ -33,7 +33,7 @@ export default function mockAppIndexDataset() {
         chain(mockThingFrom(appIndexURL), (t) =>
           addUrl(
             t,
-            getAppTerm("resourceBundle", appVocabURL),
+            getAppTerm("resourceBundle", { appVocabURL }),
             globalResourceURL
           )
         )
@@ -45,18 +45,23 @@ export default function mockAppIndexDataset() {
           mockThingFrom(globalResourceURL),
           (t) => addStringNoLocale(t, rdfs.label, "global"),
           (t) =>
-            addUrl(t, getAppTerm("errorsIndex", appVocabURL), errorsIndexURL),
-          (t) => addUrl(t, getAppTerm("faqIndex", appVocabURL), faqIndexURL),
+            addUrl(
+              t,
+              getAppTerm("errorsIndex", { appVocabURL }),
+              errorsIndexURL
+            ),
+          (t) =>
+            addUrl(t, getAppTerm("faqIndex", { appVocabURL }), faqIndexURL),
           (t) =>
             addUrl(
               t,
-              getAppTerm("translationsIndex", appVocabURL),
+              getAppTerm("translationsIndex", { appVocabURL }),
               globalTranslationsURL
             ),
           (t) =>
             addUrl(
               t,
-              getAppTerm("translationsIndex", appVocabURL),
+              getAppTerm("translationsIndex", { appVocabURL }),
               globalLocalizationsURL
             )
         )
@@ -65,7 +70,11 @@ export default function mockAppIndexDataset() {
       setThing(
         d,
         chain(mockThingFrom(globalTranslationsURL), (t) =>
-          addUrl(t, getAppTerm("resource", appVocabURL), translationsIndexURL)
+          addUrl(
+            t,
+            getAppTerm("resource", { appVocabURL }),
+            translationsIndexURL
+          )
         )
       ),
     (d) =>
@@ -74,11 +83,15 @@ export default function mockAppIndexDataset() {
         chain(
           mockThingFrom(globalLocalizationsURL),
           (t) =>
-            addUrl(t, getAppTerm("resource", appVocabURL), localizedIndexURL),
+            addUrl(
+              t,
+              getAppTerm("resource", { appVocabURL }),
+              localizedIndexURL
+            ),
           (t) =>
             addStringNoLocale(
               t,
-              getAppTerm("language", appVocabURL),
+              getAppTerm("language", { appVocabURL }),
               currentLanguage
             )
         )

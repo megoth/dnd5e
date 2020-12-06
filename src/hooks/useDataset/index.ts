@@ -2,7 +2,7 @@ import useSWR, { ConfigInterface, keyInterface } from "swr";
 import { getSolidDataset } from "@inrupt/solid-client";
 import { useSession } from "@inrupt/solid-ui-react";
 import NestedError from "nested-error-stacks";
-import useResourceBundle from "../useResourceBundle";
+import useApp from "../useApp";
 import { getError } from "../../models/error";
 
 export default function useDataset(
@@ -11,14 +11,14 @@ export default function useDataset(
   config?: ConfigInterface
 ) {
   const { fetch } = useSession();
-  const { resourceBundle } = useResourceBundle();
+  const { app } = useApp();
   return useSWR(
     [url, "dataset"].concat(cacheKeys),
     async () =>
       url
         ? getSolidDataset(url, { fetch }).catch((error) => {
-            throw resourceBundle
-              ? getError("datasetLoadFailed", resourceBundle, error)
+            throw app
+              ? getError("datasetLoadFailed", app, error)
               : new NestedError("Failed to load dataset", error);
           })
         : null,

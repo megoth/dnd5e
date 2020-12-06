@@ -1,14 +1,14 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Layout from "./index";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
+import useApp from "../../src/hooks/useApp";
+import mockAppHook from "../../__testUtils/mockAppHook";
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
 describe("Layout", () => {
-  beforeEach(() => mockResourceBundleHook(mockedResourceBundleHook));
+  beforeEach(() => mockAppHook(mockedAppHook));
 
   it("renders as non-home by default", () => {
     const { asFragment } = render(<Layout>test</Layout>);

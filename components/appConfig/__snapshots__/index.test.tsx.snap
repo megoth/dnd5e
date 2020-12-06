@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppConfig displays error if it fails to load resourceBundles 1`] = `
+exports[`AppConfig displays error if it fails to load app 1`] = `
 <DocumentFragment>
   <div
     data-testid="error"
@@ -12,7 +12,7 @@ exports[`AppConfig displays error if it fails to load resourceBundles 1`] = `
 </DocumentFragment>
 `;
 
-exports[`AppConfig displays loading while resourceBundles are loading 1`] = `
+exports[`AppConfig displays loading while app is loading 1`] = `
 <DocumentFragment>
   <div
     data-testid="loading"

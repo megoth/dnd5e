@@ -7,17 +7,17 @@ import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import useDataset from "../../src/hooks/useDataset";
 import { TESTID_LOADING } from "../loading";
 import { TESTID_ERROR } from "../errorMessage";
-import useResourceBundle from "../../src/hooks/useResourceBundle";
-import mockResourceBundleHook from "../../__testUtils/mockResourceBundleHook";
+import useApp from "../../src/hooks/useApp";
+import mockAppHook from "../../__testUtils/mockAppHook";
 
-jest.mock("../../src/hooks/useResourceBundle");
-const mockedResourceBundleHook = useResourceBundle as jest.Mock;
+jest.mock("../../src/hooks/useApp");
+const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
 
 describe("Authenticated", () => {
-  beforeEach(() => mockResourceBundleHook(mockedResourceBundleHook));
+  beforeEach(() => mockAppHook(mockedAppHook));
 
   it("renders info about the user and a log out button", () => {
     const { session } = useSession();
