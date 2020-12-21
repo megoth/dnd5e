@@ -4,9 +4,7 @@ exports[`Unauthenticated renders a login form 1`] = `
 <DocumentFragment>
   <form>
     <p>
-      <span
-        resource="https://example.com/translations.ttl#loggedOut"
-      />
+      [Translation for https://example.com/global/translations.ttl#loggedOut does not exist]
     </p>
     <div
       role="button"
@@ -15,9 +13,7 @@ exports[`Unauthenticated renders a login form 1`] = `
       <button
         type="submit"
       >
-        <span
-          resource="https://example.com/translations.ttl#logIn"
-        />
+        [Translation for https://example.com/global/translations.ttl#logIn does not exist]
       </button>
     </div>
   </form>

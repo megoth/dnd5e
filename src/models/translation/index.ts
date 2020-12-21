@@ -1,32 +1,16 @@
-import {
-  asUrl,
-  getStringWithLocale,
-  getThingAll,
-  ThingPersisted,
-} from "@inrupt/solid-client";
-import { skos } from "rdf-namespaces";
-import { FluentBundle, FluentResource } from "@fluent/bundle";
-
-export const currentLanguage = "en-US";
-export const currentLocales = [currentLanguage];
-
-export function getDefaultTranslationBundle(
-  { fluentBundles },
-  bundleName = "global"
-) {
-  return fluentBundles[bundleName] ? fluentBundles[bundleName][0] : null;
-}
+import { AppModel, getBundleKey } from "../app";
 
 export function getTranslationId(url) {
   return url.replace(/([:/.#])/g, "-");
 }
 
 export function getTranslationURL(
-  id,
-  { translationsIndexURL },
+  id: string,
+  { currentLocale, resourceBundles }: Partial<AppModel>,
   bundleName = "global"
 ) {
-  return `${translationsIndexURL[bundleName]}#${id}`;
+  const bundleKey = getBundleKey(currentLocale, bundleName);
+  return `${resourceBundles[bundleKey].urls.translations}#${id}`;
 }
 
 export function getFailedMessage(translationURL) {
@@ -34,44 +18,17 @@ export function getFailedMessage(translationURL) {
 }
 
 export function getMessage(
-  { fluentBundles, translationsIndexURL },
+  { currentLocale, fluentBundles, resourceBundles }: Partial<AppModel>,
   idOrURL,
-  args: Record<string, any> = {},
-  bundleName?: string
+  args: Record<string, any> = {}
 ) {
   const translationURL = idOrURL.startsWith("https://")
     ? idOrURL
-    : getTranslationURL(idOrURL, { translationsIndexURL });
+    : getTranslationURL(idOrURL, { currentLocale, resourceBundles });
   const translationId = getTranslationId(translationURL);
-  const translationBundle = getDefaultTranslationBundle(
-    { fluentBundles },
-    bundleName
-  );
-  const message = translationBundle?.getMessage(translationId);
+  const fluentBundle = fluentBundles[currentLocale];
+  const message = fluentBundle?.getMessage(translationId);
   return message?.value
-    ? translationBundle.formatPattern(message.value, args)
+    ? fluentBundle.formatPattern(message.value, args)
     : getFailedMessage(translationURL);
-}
-
-function getTranslations(datasets): Array<ThingPersisted> {
-  return datasets.reduce(
-    (translations, dataset) => translations.concat(getThingAll(dataset)),
-    []
-  );
-}
-
-export function getTranslationBundleAll(locales, localizedDataset) {
-  const translations = getTranslations([localizedDataset]);
-  return locales.map((locale) => {
-    const bundle = new FluentBundle(locale);
-    translations.forEach((t) => {
-      const value = getStringWithLocale(t, skos.definition, locale);
-      if (!value) {
-        return;
-      }
-      const id = getTranslationId(asUrl(t));
-      bundle.addResource(new FluentResource(`${id} = ${value}`));
-    });
-    return bundle;
-  });
 }

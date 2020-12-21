@@ -9,7 +9,6 @@ import mockAppIndexDataset, {
 } from "../../../__testUtils/mockAppIndexDataset";
 import { packageAppIndex } from "../../models/appIndex";
 import { getPath } from "../../utils";
-import { currentLocales } from "../../models/translation";
 
 jest.mock("swr");
 const mockedSWRHook = useSWR as jest.Mock;
@@ -27,7 +26,7 @@ describe("useAppIndex", () => {
   });
 
   it("caches with SWR", () => {
-    renderHook(() => useAppIndex(currentLocales, appIndexURL, appVocabURL));
+    renderHook(() => useAppIndex(appIndexURL, appVocabURL));
     expect(mockedSWRHook).toHaveBeenCalledWith(
       "appIndex",
       expect.any(Function)
@@ -35,11 +34,9 @@ describe("useAppIndex", () => {
   });
 
   it("uses getSolidDataset to fetch appIndex", async () => {
-    const { result } = renderHook(() =>
-      useAppIndex(currentLocales, appIndexURL, appVocabURL)
-    );
+    const { result } = renderHook(() => useAppIndex(appIndexURL, appVocabURL));
     await expect(result.current).resolves.toEqual(
-      packageAppIndex(appIndexDataset, appIndexURL, currentLocales, appVocabURL)
+      packageAppIndex(appIndexDataset, appIndexURL, appVocabURL)
     );
     expect(mockedGetSolidDataset).toHaveBeenCalledWith(getPath(appIndexURL));
   });

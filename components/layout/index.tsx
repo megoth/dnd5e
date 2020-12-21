@@ -5,6 +5,7 @@ import styles from "./index.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
+import LocaleSelector from "../localeSelector";
 
 interface Props {
   children: ReactNode;
@@ -47,6 +48,9 @@ export default function Layout({ children, home }: Props) {
           </Link>
         </div>
       )}
+      <footer>
+        <LocaleSelector />
+      </footer>
     </div>
   );
 }

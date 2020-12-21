@@ -1,14 +1,15 @@
 import { getThing, getUrl } from "@inrupt/solid-client";
 import NestedError from "nested-error-stacks";
-import { AppModel } from "../app";
+import { AppModel, getBundleKey } from "../app";
 import { getAppTerm } from "../appIndex";
 
 export function getErrorURL(
   id: string,
-  { errorsIndexURL },
+  { currentLocale, resourceBundles }: Partial<AppModel>,
   bundleName = "global"
 ) {
-  return `${errorsIndexURL[bundleName]}#${id}`;
+  const bundleKey = getBundleKey(currentLocale, bundleName);
+  return `${resourceBundles[bundleKey].urls.errors}#${id}`;
 }
 
 export function getError(id, bundle, error = null) {
@@ -18,7 +19,7 @@ export function getError(id, bundle, error = null) {
 export function isError(
   error,
   errorId: string,
-  app: AppModel,
+  app: Partial<AppModel>,
   bundleName?: string
 ): boolean {
   const { message: errorURL1 } = error;
@@ -28,15 +29,16 @@ export function isError(
 
 export function getErrorTranslationURL(
   errorURL,
-  { appVocabURL, errorsIndexSWR }: AppModel,
+  { appVocabURL, currentLocale, resourceBundles }: Partial<AppModel>,
   bundleName = "global"
 ): string | null {
-  const { data: errorsDataset } = errorsIndexSWR[bundleName];
-  if (!errorsDataset) {
+  const bundleKey = getBundleKey(currentLocale, bundleName);
+  const { errors } = resourceBundles[bundleKey].data;
+  if (!errors) {
     return null;
   }
   try {
-    const error = getThing(errorsDataset, errorURL);
+    const error = getThing(errors, errorURL);
     return getUrl(error, getAppTerm("translation", { appVocabURL }));
   } catch (error) {
     // ignore new error

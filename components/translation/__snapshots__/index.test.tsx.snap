@@ -2,10 +2,6 @@
 
 exports[`Translation renders translated message 1`] = `
 <DocumentFragment>
-  <span
-    resource="https://example.com/translations.ttl#test"
-  >
-    This is a test
-  </span>
+  This is a test
 </DocumentFragment>
 `;

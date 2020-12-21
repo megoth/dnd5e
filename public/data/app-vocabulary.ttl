@@ -12,7 +12,7 @@ dnd5e_app:
  	dcterms:title "D&D5E Solid App vocabulary"@en-US ;
 	dcterms:description """The D&D5E Solid App vocabulary."""@en-US ;
 	dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
-	dcterms:issued "2020/11/29"^^xsd:date ;
+	dcterms:issued "2020-11-29"^^xsd:date ;
 	dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
 	vann:preferredNamespacePrefix "dnd5e_app" ;
 	vann:preferredNamespaceUri "https://dnd5e.inrupt.net/data/app-vocabulary#" .
@@ -80,6 +80,13 @@ dnd5e_app:resourceBundle
 	a rdf:Property ;
 	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "A resource bundle (with translations and errors)"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdf:Statement .
+
+dnd5e_app:supportLanguage
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "Language(s) supported by app"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdf:Statement .
 

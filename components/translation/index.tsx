@@ -3,24 +3,30 @@ import { Localized } from "@fluent/react";
 import {
   getTranslationURL,
   getTranslationId,
+  getFailedMessage,
 } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 
 interface Props {
-  id: string;
+  id?: string;
+  bundle?: string;
+  url?: string;
   vars?: Record<string, string>;
 }
 
-export default function Translation({ id, vars }: Props) {
-  const app = useApp();
-  const url = getTranslationURL(id, app);
+export default function Translation({ id, bundle, url, vars }: Props) {
+  const app = useApp([bundle]);
+  const translationURL = url || getTranslationURL(id, app, bundle);
   return (
-    <span resource={url}>
-      <Localized id={getTranslationId(url)} vars={vars} />
-    </span>
+    <Localized id={getTranslationId(translationURL)} vars={vars}>
+      {getFailedMessage(translationURL)}
+    </Localized>
   );
 }
 
 Translation.defaultProps = {
+  id: null,
+  bundle: "global",
+  url: null,
   vars: {},
 };

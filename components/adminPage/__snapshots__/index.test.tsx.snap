@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminPage renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    />
+    <div
+      class="backToHome"
+    >
+      <a
+        href="/"
+      >
+        ← Back to home
+      </a>
+    </div>
+    <main>
+      <h1>
+        [Translation for https://example.com/admin/translations.ttl#adminTitle does not exist]
+      </h1>
+      <p>
+        [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+      </p>
+    </main>
+    <div
+      class="backToHome"
+    >
+      <a
+        href="/"
+      >
+        ← Back to home
+      </a>
+    </div>
+    <footer />
+  </div>
+</DocumentFragment>
+`;

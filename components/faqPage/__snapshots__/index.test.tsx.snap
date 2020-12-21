@@ -19,12 +19,14 @@ exports[`FAQPage renders a list of FAQs 1`] = `
     </div>
     <main>
       <h1>
-        <span
-          resource="https://example.com/translations.ttl#faqTitle"
-        />
+        [Translation for https://example.com/global/translations.ttl#faqTitle does not exist]
       </h1>
-      <section>
-        <h2 />
+      <section
+        data-testid="faq-item"
+      >
+        <h2>
+          [Translation for https://example.com/#faqLabel does not exist]
+        </h2>
         <p>
           [Translation for https://example.com/#faqDescription does not exist]
         </p>
@@ -39,6 +41,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
         ← Back to home
       </a>
     </div>
+    <footer />
   </div>
 </DocumentFragment>
 `;
