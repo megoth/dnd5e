@@ -9,9 +9,17 @@ export function getRedirectURL(path) {
   return "";
 }
 
-export function getNavigatorLanguages() {
+export function getNavigatorLanguages(selectedLocale?: string | string[]) {
   if (typeof navigator === "undefined") {
     return ["en-US"];
   }
-  return [...navigator.languages];
+  if (!selectedLocale) {
+    const storedLanguage = localStorage.getItem("locale");
+    return storedLanguage
+      ? [storedLanguage, ...navigator.languages]
+      : [...navigator.languages];
+  }
+  return Array.isArray(selectedLocale)
+    ? selectedLocale.concat([...navigator.languages])
+    : [selectedLocale, ...navigator.languages];
 }

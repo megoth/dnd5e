@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useApp returns app if available 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="bundle-names"
+  >
+    admin-en-US, global-en-US
+  </div>
+</DocumentFragment>
+`;

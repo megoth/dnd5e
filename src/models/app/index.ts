@@ -1,42 +1,67 @@
-import { SolidDataset } from "@inrupt/solid-client";
-import { responseInterface } from "swr";
 import { FluentBundle } from "@fluent/bundle";
-import { currentLanguage } from "../translation";
+import { ResourceBundleModel } from "../resourceBundle";
+import { AppIndex } from "../appIndex";
+import { LanguageModel } from "../language";
 
-export type ResourceBundleResourceSWR = Record<
-  string,
-  responseInterface<SolidDataset, any>
->;
-export type ResourceBundleResourceURL = Record<string, string | null>;
-
+type BundleKey = string;
+type Language = string;
+export type FluentBundleMap = Record<Language, FluentBundle>;
+export type ResourceBundleMap = Record<BundleKey, ResourceBundleModel>;
 export type AppModel = {
   appVocabURL: string;
-  bundleNames: string[];
-  currentLanguage: string;
-  errorsIndexSWR: ResourceBundleResourceSWR;
-  errorsIndexURL: ResourceBundleResourceURL;
-  faqIndexSWR: ResourceBundleResourceSWR;
-  faqIndexURL: ResourceBundleResourceURL;
-  fluentBundles: Record<string, Array<FluentBundle> | null>;
-  localizedIndexSWR: ResourceBundleResourceSWR;
-  localizedIndexURL: ResourceBundleResourceURL;
-  translationsIndexSWR: ResourceBundleResourceSWR;
-  translationsIndexURL: ResourceBundleResourceURL;
+  currentLocale: Language;
+  languages: Array<LanguageModel>;
+  fluentBundles: FluentBundleMap;
+  resourceBundles: ResourceBundleMap;
 };
 
-export function createApp(appVocabURL): AppModel {
+export function getBundleKey(locale = "en-US", label = "global") {
+  return `${label}-${locale}`;
+}
+
+export function createApp(
+  currentLocale,
+  appVocabURL,
+  appIndex: AppIndex | null
+): AppModel {
   return {
     appVocabURL,
-    bundleNames: [],
-    currentLanguage,
-    errorsIndexSWR: {},
-    errorsIndexURL: {},
-    faqIndexSWR: {},
-    faqIndexURL: {},
+    currentLocale,
     fluentBundles: {},
-    localizedIndexSWR: {},
-    localizedIndexURL: {},
-    translationsIndexSWR: {},
-    translationsIndexURL: {},
+    languages: appIndex?.supportLanguage || [],
+    resourceBundles:
+      appIndex?.resourceBundleAll.reduce<ResourceBundleMap>(
+        (memo, { label, locale, urls }) => ({
+          ...memo,
+          [getBundleKey(locale, label)]: {
+            label,
+            locale,
+            data: {},
+            urls,
+          },
+        }),
+        {}
+      ) || {},
   };
+}
+
+export function appIsLoading(app: AppModel, bundles: string[]): boolean {
+  return bundles.reduce<boolean>((memo, bundle) => {
+    const bundleKey = getBundleKey(app.currentLocale, bundle);
+    return memo || !app.resourceBundles[bundleKey];
+  }, false);
+}
+
+export function appIsLoadingLocalizations(
+  app: AppModel,
+  bundles: string[]
+): boolean {
+  return bundles.reduce<boolean>((memo, bundle) => {
+    const bundleKey = getBundleKey(app.currentLocale, bundle);
+    return (
+      memo ||
+      !app.resourceBundles[bundleKey] ||
+      app.resourceBundles[bundleKey].data.localizations === undefined
+    );
+  }, false);
 }

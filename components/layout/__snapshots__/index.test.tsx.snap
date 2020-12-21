@@ -11,12 +11,13 @@ exports[`Layout can be rendered as home 1`] = `
       <h1
         class="heading2Xl"
       >
-        [Translation for https://example.com/translations.ttl#appName does not exist]
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
       </h1>
     </header>
     <main>
       test
     </main>
+    <footer />
   </div>
 </DocumentFragment>
 `;
@@ -50,6 +51,7 @@ exports[`Layout renders as non-home by default 1`] = `
         ← Back to home
       </a>
     </div>
+    <footer />
   </div>
 </DocumentFragment>
 `;

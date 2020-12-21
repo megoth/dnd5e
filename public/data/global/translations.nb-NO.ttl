@@ -1,0 +1,20 @@
+@prefix :             <#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix translations: <./translations.ttl#> .
+
+translations:appName skos:definition "D&D5E Solid App"@nb-NO .
+translations:appDescription skos:definition "En Solid App for D&D5E"@nb-NO .
+translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+translations:faqTitle skos:definition "Ofte spurte spørsmål"@nb-NO .
+translations:locale-en-US skos:definition "Engelsk"@nb-NO .
+translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
+translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
+translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
+translations:logIn skos:definition "Logg in"@nb-NO .
+translations:logOut skos:definition "Logg out"@nb-NO .
+translations:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+translations:whatIsSolidLabel skos:definition "Hva er Solid?"@nb-NO .
+translations:whatIsSolidDescription skos:definition
+    """Solid er en standard som fokuserer på å gi folk kontrol over sine egne data."""@nb-NO .
+translations:workInProgress skos:definition "Under utvikling"@nb-NO .

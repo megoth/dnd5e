@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    >
+      <h1
+        class="heading2Xl"
+      >
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
+      </h1>
+    </header>
+    <main>
+      <div
+        data-testid="loading"
+      >
+        Loading...
+      </div>
+      <nav>
+        <a
+          href="/about"
+        >
+          About the app
+        </a>
+        <span>
+           - 
+        </span>
+        <a
+          href="/faq"
+        >
+          FAQ
+        </a>
+        <span>
+           - 
+        </span>
+        <a
+          href="/admin"
+        >
+          Admin
+        </a>
+      </nav>
+    </main>
+    <footer />
+  </div>
+</DocumentFragment>
+`;

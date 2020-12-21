@@ -1,8 +1,6 @@
 import React from "react";
-import ReactMarkdown from "react-markdown";
-import Layout from "../components/layout";
 import { getMarkdownData } from "../lib/markdown";
-import { HeadingRenderer } from "../src/markdown";
+import AboutPage from "../components/aboutPage";
 
 export type MarkdownData = {
   markdown: string;
@@ -14,14 +12,7 @@ interface Props {
 }
 
 export default function About({ data }: Props) {
-  const renderers = {
-    heading: HeadingRenderer,
-  };
-  return (
-    <Layout>
-      <ReactMarkdown renderers={renderers}>{data.markdown}</ReactMarkdown>
-    </Layout>
-  );
+  return <AboutPage markdown={data.markdown} />;
 }
 
 export async function getStaticProps() {

@@ -1,38 +1,90 @@
-import { mockSolidDatasetFrom } from "@inrupt/solid-client";
-import { AppModel } from "../src/models/app";
+import { AppModel, createApp, getBundleKey } from "../src/models/app";
 import mockFluentBundle from "./mockFluentBundle";
-import { createSWRResponse } from "./mockSWR";
 import { appVocabURL } from "./mockAppIndexDataset";
+import mockLanguage, { defaultLocale } from "./mockLanguage";
+import mockResourceBundleMap from "./mockResourceBundleMap";
+import mockAppIndex from "./mockAppIndex";
 
-export const errorsIndexURL = "https://example.com/errors.ttl";
-export const faqIndexURL = "https://example.com/faq.ttl";
-export const translationsIndexURL = "https://example.com/translations.ttl";
-export const localizedIndexURL = "https://example.com/translations.en-US.ttl";
+export const errorsURL = "https://example.com/global/errors.ttl";
+export const faqsURL = "https://example.com/global/faqs.ttl";
+export const translationsURL = "https://example.com/global/translations.ttl";
+export const localizationsURL =
+  "https://example.com/global/translations.en-US.ttl";
+
+export function mockAppPropValue(val, bundleName = "global", locale = "en-US") {
+  return bundleName
+    ? {
+        [getBundleKey(locale, bundleName)]: val,
+      }
+    : {
+        [locale]: val,
+      };
+}
 
 export default function mockApp(overrides: Partial<AppModel> = {}): AppModel {
+  const currentLocale = overrides.currentLocale || defaultLocale;
   return {
-    appVocabURL,
-    bundleNames: ["global"],
-    currentLanguage: "en-US",
-    errorsIndexURL: { global: errorsIndexURL },
-    errorsIndexSWR: {
-      global: createSWRResponse(mockSolidDatasetFrom(errorsIndexURL)),
-    },
-    faqIndexURL: { global: faqIndexURL },
-    faqIndexSWR: {
-      global: createSWRResponse(mockSolidDatasetFrom(faqIndexURL)),
-    },
+    appVocabURL: overrides.appVocabURL || appVocabURL,
+    currentLocale,
     fluentBundles: {
-      global: [mockFluentBundle({}, "en-US")],
+      [currentLocale]: mockFluentBundle({}, translationsURL, {
+        locale: currentLocale,
+      }),
+      ...overrides.fluentBundles,
     },
-    localizedIndexURL: { global: localizedIndexURL },
-    localizedIndexSWR: {
-      global: createSWRResponse(mockSolidDatasetFrom(faqIndexURL)),
+    languages: [mockLanguage(currentLocale), ...(overrides.languages || [])],
+    resourceBundles: {
+      ...mockResourceBundleMap({
+        label: "admin",
+        locale: currentLocale,
+        data: {
+          errors: null,
+          faqs: null,
+          localizations: null,
+          translations: null,
+        },
+      }),
+      ...mockResourceBundleMap({
+        locale: currentLocale,
+        data: {
+          errors: null,
+          faqs: null,
+          localizations: null,
+          translations: null,
+        },
+      }),
+      ...overrides.resourceBundles,
     },
-    translationsIndexURL: { global: translationsIndexURL },
-    translationsIndexSWR: {
-      global: createSWRResponse(mockSolidDatasetFrom(translationsIndexURL)),
-    },
-    ...overrides,
   };
+}
+
+export function mockNorwegianApp(): AppModel {
+  const locale = "nb-NO";
+  return mockApp({
+    fluentBundles: {
+      [locale]: mockFluentBundle({}, translationsURL, {
+        locale,
+      }),
+    },
+    languages: [mockLanguage(locale)],
+    resourceBundles: {
+      ...mockResourceBundleMap({
+        locale,
+        data: {
+          errors: null,
+          faqs: null,
+          localizations: null,
+          translations: null,
+        },
+      }),
+    },
+  });
+}
+
+export function mockEmptyApp(): AppModel {
+  return createApp(defaultLocale, appVocabURL, null);
+}
+
+export function mockUnloadedApp(): AppModel {
+  return createApp(defaultLocale, appVocabURL, mockAppIndex());
 }

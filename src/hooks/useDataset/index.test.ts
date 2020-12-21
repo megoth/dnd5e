@@ -2,7 +2,7 @@ import { renderHook } from "@testing-library/react-hooks";
 import * as solidClientFns from "@inrupt/solid-client";
 import useSWR from "swr";
 import NestedError from "nested-error-stacks";
-import { mockedDataset } from "../../../__testUtils/mockDataset";
+import { mockSolidDatasetFrom } from "@inrupt/solid-client";
 import useDataset from "./index";
 import { mockSWRAsPromise } from "../../../__testUtils/mockSWR";
 import useApp from "../useApp";
@@ -21,6 +21,7 @@ const app = mockApp();
 describe("useDataset", () => {
   const url = "http://example.com";
   let mockedGetSolidDataset;
+  const mockedDataset = mockSolidDatasetFrom(url);
 
   beforeEach(() => {
     mockedGetSolidDataset = jest

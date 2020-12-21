@@ -1,16 +1,17 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import { asUrl } from "@inrupt/solid-client";
-import { Localized } from "@fluent/react";
 import Layout from "../layout";
 import useApp from "../../src/hooks/useApp";
 import {
   getFAQAll,
   getFAQDescriptionURL,
-  getFAQLabelId,
+  getFAQLabelUrl,
 } from "../../src/models/faq";
 import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
+
+export const TESTID_FAQ_ITEM = "faq-item";
 
 export default function FAQPage() {
   const app = useApp();
@@ -20,17 +21,16 @@ export default function FAQPage() {
       <h1>
         <Translation id="faqTitle" />
       </h1>
-      {faqs.map((faq) => {
-        const description = getMessage(app, getFAQDescriptionURL(faq, app));
-        return (
-          <section key={asUrl(faq)}>
-            <h2>
-              <Localized id={getFAQLabelId(faq, app)} />
-            </h2>
-            <ReactMarkdown>{description}</ReactMarkdown>
-          </section>
-        );
-      })}
+      {faqs.map((faq) => (
+        <section key={asUrl(faq)} data-testid={TESTID_FAQ_ITEM}>
+          <h2>
+            <Translation url={getFAQLabelUrl(faq, app)} />
+          </h2>
+          <ReactMarkdown>
+            {getMessage(app, getFAQDescriptionURL(faq, app))}
+          </ReactMarkdown>
+        </section>
+      ))}
     </Layout>
   );
 }

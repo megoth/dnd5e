@@ -11,41 +11,45 @@ import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import ErrorMessage, { TESTID_ERROR_TITLE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
-import mockApp, {
-  errorsIndexURL,
-  translationsIndexURL,
-} from "../../__testUtils/mockApp";
-import { createSWRResponse } from "../../__testUtils/mockSWR";
+import mockApp, { errorsURL, translationsURL } from "../../__testUtils/mockApp";
 import { chain } from "../../src/utils";
 import { getErrorURL } from "../../src/models/error";
 import { getAppTerm } from "../../src/models/appIndex";
 import { getTranslationURL } from "../../src/models/translation";
 import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import { appVocabURL } from "../../__testUtils/mockAppIndexDataset";
+import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
+import { defaultLocale } from "../../__testUtils/mockLanguage";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
 
 describe("ErrorMessage", () => {
   it("renders", () => {
+    const urls = {
+      errors: errorsURL,
+      translations: translationsURL,
+    };
+    const globalResourceBundle = mockResourceBundleMap({
+      urls,
+    });
     const errorURL = getErrorURL("error", {
-      errorsIndexURL: { global: errorsIndexURL },
+      currentLocale: defaultLocale,
+      resourceBundles: globalResourceBundle,
     });
     const translationURL = getTranslationURL("translation", {
-      translationsIndexURL: { global: translationsIndexURL },
+      currentLocale: defaultLocale,
+      resourceBundles: globalResourceBundle,
     });
     const translatedErrorMessage = "Translated error message";
-    const fluentBundles = [
-      mockFluentBundle({
-        translation: translatedErrorMessage,
-      }),
-    ];
-    mockAppHook(
-      mockedAppHook,
-      mockApp({
-        errorsIndexSWR: {
-          global: createSWRResponse(
-            chain(mockSolidDatasetFrom(errorsIndexURL), (d) =>
+    const fluentBundle = mockFluentBundle({
+      translation: translatedErrorMessage,
+    });
+    const app = mockApp({
+      resourceBundles: {
+        ...mockResourceBundleMap({
+          data: {
+            errors: chain(mockSolidDatasetFrom(errorsURL), (d) =>
               setThing(
                 d,
                 chain(mockThingFrom(errorURL), (t) =>
@@ -56,16 +60,15 @@ describe("ErrorMessage", () => {
                   )
                 )
               )
-            )
-          ),
-        },
-        fluentBundles: {
-          global: fluentBundles,
-        },
-      })
-    );
+            ),
+          },
+          urls,
+        }),
+      },
+    });
+    mockAppHook(mockedAppHook, app);
     const error = new NestedError(errorURL);
-    const l10n = new ReactLocalization(fluentBundles);
+    const l10n = new ReactLocalization([fluentBundle]);
     const { asFragment, getByTestId } = render(
       <LocalizationProvider l10n={l10n}>
         <ErrorMessage error={error} />

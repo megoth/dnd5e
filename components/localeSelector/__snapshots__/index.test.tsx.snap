@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocaleSelector renders controls to select other languages if multiple languages are given 1`] = `
+<DocumentFragment>
+  <span
+    data-testid="locale-selector-language"
+  >
+    [Translation for http://example.com/translations.ttl#locale-en-US does not exist] 
+  </span>
+  <span
+    data-testid="locale-selector-language"
+  >
+    <a
+      href="/?locale=nb-NO"
+    >
+      [Translation for http://example.com/translations.ttl#locale-nb-NO does not exist]
+    </a>
+     
+  </span>
+</DocumentFragment>
+`;
+
+exports[`LocaleSelector renders nothing when only one language is given 1`] = `<DocumentFragment />`;

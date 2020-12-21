@@ -6,6 +6,7 @@ import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import mockApp from "../../__testUtils/mockApp";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
+import { defaultLocale } from "../../__testUtils/mockLanguage";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -21,7 +22,7 @@ describe("Translation", () => {
       mockedAppHook,
       mockApp({
         fluentBundles: {
-          global: [fluentBundle],
+          [defaultLocale]: fluentBundle,
         },
       })
     );

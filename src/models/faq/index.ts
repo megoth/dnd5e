@@ -1,20 +1,16 @@
 import { getThingAll, getUrl, ThingPersisted } from "@inrupt/solid-client";
 import { rdf } from "rdf-namespaces";
 import { getAppTerm } from "../appIndex";
-import { getTranslationId } from "../translation";
-import { AppModel } from "../app";
-
-export function generateFAQURL(id, { faqIndexURL }, bundleName = "global") {
-  return `${faqIndexURL[bundleName]}#${id}`;
-}
+import { AppModel, getBundleKey } from "../app";
 
 export function getFAQAll(
-  { appVocabURL, faqIndexSWR }: AppModel,
+  { appVocabURL, currentLocale, resourceBundles }: Partial<AppModel>,
   bundleName = "global"
 ) {
-  const { data: faqDataset } = faqIndexSWR[bundleName];
-  return faqDataset
-    ? (getThingAll(faqDataset).filter(
+  const bundleKey = getBundleKey(currentLocale, bundleName);
+  const { faqs } = resourceBundles[bundleKey].data;
+  return faqs
+    ? (getThingAll(faqs).filter(
         (t) => getUrl(t, rdf.type) === getAppTerm("FAQ", { appVocabURL })
       ) as Array<ThingPersisted>)
     : [];
@@ -24,6 +20,6 @@ export function getFAQDescriptionURL(faq, app) {
   return getUrl(faq, getAppTerm("faqDescription", app));
 }
 
-export function getFAQLabelId(faq, app) {
-  return getTranslationId(getUrl(faq, getAppTerm("faqLabel", app)));
+export function getFAQLabelUrl(faq, app) {
+  return getUrl(faq, getAppTerm("faqLabel", app));
 }

@@ -7,6 +7,8 @@ translations:appName skos:definition "D&D5E Solid App"@en-US .
 translations:appDescription skos:definition "A Solid App for D&D5E"@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 translations:faqTitle skos:definition "Frequently Asked Questions"@en-US .
+translations:locale-en-US skos:definition "English (US)"@en-US .
+translations:locale-nb-NO skos:definition "Norwegian"@en-US .
 translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
@@ -17,3 +19,4 @@ translations:whatIsSolidDescription skos:definition
     """Solid is a standard that focuses on giving people control of their own data. With Solid you get a digital
     identity, an online storage (often called Pods) and the means to control who gets access to your data. For more
     information, check out [solidproject.org](https://solidproject.org/)."""@en-US .
+translations:workInProgress skos:definition "Work in progress"@en-US .

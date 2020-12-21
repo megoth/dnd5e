@@ -9,20 +9,23 @@ import { rdfs } from "rdf-namespaces";
 import { chain } from "../src/utils";
 import { getAppTerm } from "../src/models/appIndex";
 import {
-  errorsIndexURL,
-  faqIndexURL,
-  localizedIndexURL,
-  translationsIndexURL,
+  errorsURL,
+  faqsURL,
+  localizationsURL,
+  translationsURL,
 } from "./mockApp";
-import { currentLanguage } from "../src/models/translation";
+import { defaultLocale } from "./mockLanguage";
 
 export const appIndexURL = "https://example.com/index.ttl#dnd5e";
 export const appVocabURL = "https://example.com/appVocab.ttl";
 export const globalResourceURL = "https://example.com/index.ttl#globalResource";
 export const globalLocalizationsURL =
-  "https://example/com/index.ttl#localizationsIndex";
+  "https://example.com/index.ttl#localizationsIndex";
 export const globalTranslationsURL =
-  "https://example/com/index.ttl#translationsIndex";
+  "https://example.com/index.ttl#translationsIndex";
+export const supportLanguageEnUS = "https://example.com/index.ttl#locale-en-US";
+export const translationLanguageEnUS =
+  "https://example.com/translations.ttl#locale-en-US";
 
 export default function mockAppIndexDataset() {
   return chain(
@@ -30,12 +33,20 @@ export default function mockAppIndexDataset() {
     (d) =>
       setThing(
         d,
-        chain(mockThingFrom(appIndexURL), (t) =>
-          addUrl(
-            t,
-            getAppTerm("resourceBundle", { appVocabURL }),
-            globalResourceURL
-          )
+        chain(
+          mockThingFrom(appIndexURL),
+          (t) =>
+            addUrl(
+              t,
+              getAppTerm("resourceBundle", { appVocabURL }),
+              globalResourceURL
+            ),
+          (t) =>
+            addUrl(
+              t,
+              getAppTerm("supportLanguage", { appVocabURL }),
+              supportLanguageEnUS
+            )
         )
       ),
     (d) =>
@@ -45,13 +56,8 @@ export default function mockAppIndexDataset() {
           mockThingFrom(globalResourceURL),
           (t) => addStringNoLocale(t, rdfs.label, "global"),
           (t) =>
-            addUrl(
-              t,
-              getAppTerm("errorsIndex", { appVocabURL }),
-              errorsIndexURL
-            ),
-          (t) =>
-            addUrl(t, getAppTerm("faqIndex", { appVocabURL }), faqIndexURL),
+            addUrl(t, getAppTerm("errorsIndex", { appVocabURL }), errorsURL),
+          (t) => addUrl(t, getAppTerm("faqIndex", { appVocabURL }), faqsURL),
           (t) =>
             addUrl(
               t,
@@ -70,11 +76,7 @@ export default function mockAppIndexDataset() {
       setThing(
         d,
         chain(mockThingFrom(globalTranslationsURL), (t) =>
-          addUrl(
-            t,
-            getAppTerm("resource", { appVocabURL }),
-            translationsIndexURL
-          )
+          addUrl(t, getAppTerm("resource", { appVocabURL }), translationsURL)
         )
       ),
     (d) =>
@@ -86,13 +88,32 @@ export default function mockAppIndexDataset() {
             addUrl(
               t,
               getAppTerm("resource", { appVocabURL }),
-              localizedIndexURL
+              localizationsURL
             ),
           (t) =>
             addStringNoLocale(
               t,
               getAppTerm("language", { appVocabURL }),
-              currentLanguage
+              defaultLocale
+            )
+        )
+      ),
+    (d) =>
+      setThing(
+        d,
+        chain(
+          mockThingFrom(supportLanguageEnUS),
+          (t) =>
+            addStringNoLocale(
+              t,
+              getAppTerm("language", { appVocabURL }),
+              defaultLocale
+            ),
+          (t) =>
+            addUrl(
+              t,
+              getAppTerm("translation", { appVocabURL }),
+              translationLanguageEnUS
             )
         )
       )

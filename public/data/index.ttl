@@ -1,16 +1,29 @@
-@prefix :          <#> .
-@prefix dnd5e_app: <./app-vocabulary.ttl#> .
-@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :               <#> .
+@prefix dnd5e_app:      <./app-vocabulary.ttl#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix translation:    <./global/translations.ttl#> .
 
 :dnd5e
     dnd5e_app:coreRulesIndex <./dnd5e-core.ttl> ;
-    dnd5e_app:resourceBundle :globalResources .
+    dnd5e_app:resourceBundle :globalResources, :adminResources ;
+    dnd5e_app:supportLanguage :locale-en-US, :locale-nb-NO .
+
+:locale-en-US
+    dnd5e_app:language "en-US" ;
+    dnd5e_app:translation translation:locale-en-US .
+
+:locale-nb-NO
+    dnd5e_app:language "nb-NO" ;
+    dnd5e_app:translation translation:locale-nb-NO .
 
 :globalResources
     rdfs:label "global" ;
     dnd5e_app:errorsIndex <./global/errors.ttl> ;
-    dnd5e_app:faqIndex <./global/faq.ttl> ;
-    dnd5e_app:translationsIndex :globalTranslationIndex, :globalTranslation_en-US_Index .
+    dnd5e_app:faqIndex <./global/faqs.ttl> ;
+    dnd5e_app:translationsIndex
+        :globalTranslationIndex,
+        :globalTranslation_en-US_Index,
+        :globalTranslation_nb-NO_Index .
 
 :globalTranslationIndex
     dnd5e_app:resource <./global/translations.ttl> .
@@ -18,3 +31,25 @@
 :globalTranslation_en-US_Index
     dnd5e_app:language "en-US" ;
     dnd5e_app:resource <./global/translations.en-US.ttl> .
+
+:globalTranslation_nb-NO_Index
+    dnd5e_app:language "nb-NO" ;
+    dnd5e_app:resource <./global/translations.nb-NO.ttl> .
+
+:adminResources
+    rdfs:label "admin" ;
+    dnd5e_app:translationsIndex
+        :adminTranslationIndex,
+        :adminTranslation_en-US_Index,
+        :adminTranslation_nb-NO_Index .
+
+:adminTranslationIndex
+    dnd5e_app:resource <./admin/translations.ttl> .
+
+:adminTranslation_en-US_Index
+    dnd5e_app:language "en-US" ;
+    dnd5e_app:resource <./admin/translations.en-US.ttl> .
+
+:adminTranslation_nb-NO_Index
+    dnd5e_app:language "nb-NO" ;
+    dnd5e_app:resource <./admin/translations.nb-NO.ttl> .

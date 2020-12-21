@@ -12,23 +12,22 @@ import {
   isError,
 } from "./index";
 import mockApp, {
-  errorsIndexURL,
-  translationsIndexURL,
+  errorsURL,
+  translationsURL,
 } from "../../../__testUtils/mockApp";
-import { createSWRResponse } from "../../../__testUtils/mockSWR";
 import { chain } from "../../utils";
 import { getAppTerm } from "../appIndex";
 import { getTranslationURL } from "../translation";
 import { appVocabURL } from "../../../__testUtils/mockAppIndexDataset";
+import mockResourceBundleMap from "../../../__testUtils/mockResourceBundleMap";
+import { defaultLocale } from "../../../__testUtils/mockLanguage";
 
 const app = mockApp();
 const id = "test";
 
 describe("getErrorURL", () => {
   it("creates an url out of an id", () =>
-    expect(getErrorURL("test", app, "global")).toEqual(
-      `${errorsIndexURL}#test`
-    ));
+    expect(getErrorURL("test", app, "global")).toEqual(`${errorsURL}#test`));
 });
 
 describe("getError", () => {
@@ -50,17 +49,27 @@ describe("isError", () => {
 });
 
 describe("getErrorTranslationURL", () => {
+  const urls = {
+    errors: errorsURL,
+    translations: translationsURL,
+  };
+  const globalResourceBundle = mockResourceBundleMap({
+    urls,
+  });
+  const errorURL = getErrorURL("test", {
+    currentLocale: defaultLocale,
+    resourceBundles: globalResourceBundle,
+  });
+
   it("returns a translation URL for a error URL", () => {
-    const errorURL = getErrorURL("test", {
-      errorsIndexURL: { global: errorsIndexURL },
-    });
     const translationURL = getTranslationURL("test", {
-      translationsIndexURL: { global: translationsIndexURL },
+      currentLocale: defaultLocale,
+      resourceBundles: globalResourceBundle,
     });
-    const bundle = mockApp({
-      errorsIndexSWR: {
-        global: createSWRResponse(
-          chain(mockSolidDatasetFrom(errorsIndexURL), (d) =>
+    const appWithErrors = mockApp({
+      resourceBundles: mockResourceBundleMap({
+        data: {
+          errors: chain(mockSolidDatasetFrom(errorsURL), (d) =>
             setThing(
               d,
               chain(mockThingFrom(errorURL), (t) =>
@@ -71,28 +80,35 @@ describe("getErrorTranslationURL", () => {
                 )
               )
             )
-          )
-        ),
-      },
+          ),
+        },
+        urls,
+      }),
     });
-    expect(getErrorTranslationURL(errorURL, bundle, "global")).toEqual(
+    expect(getErrorTranslationURL(errorURL, appWithErrors, "global")).toEqual(
       translationURL
     );
   });
 
   it("returns null if errors dataset is not available", () => {
-    const errorURL = getErrorURL("test", {
-      errorsIndexURL: { global: errorsIndexURL },
+    const appWithNoErrors = mockApp({
+      resourceBundles: globalResourceBundle,
     });
-    const bundle = mockApp({
-      errorsIndexSWR: {
-        global: createSWRResponse(null),
-      },
-    });
-    expect(getErrorTranslationURL(errorURL, bundle)).toBeNull();
+    expect(getErrorTranslationURL(errorURL, appWithNoErrors)).toBeNull();
   });
 
   it("returns null if error url does not exist", () => {
-    expect(getErrorTranslationURL("test", app)).toBeNull();
+    expect(
+      getErrorTranslationURL(
+        "test",
+        mockApp({
+          resourceBundles: mockResourceBundleMap({
+            data: {
+              errors: mockSolidDatasetFrom(errorsURL),
+            },
+          }),
+        })
+      )
+    ).toBeNull();
   });
 });

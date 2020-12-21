@@ -1,45 +1,16 @@
 import {
-  mockSolidDatasetFrom,
-  mockThingFrom,
-  setStringWithLocale,
-  setThing,
-  setUrl,
-} from "@inrupt/solid-client";
-import { rdf, rdfs, skos } from "rdf-namespaces";
-import { FluentBundle } from "@fluent/bundle";
-import {
   getTranslationURL,
-  getDefaultTranslationBundle,
   getFailedMessage,
   getMessage,
-  getTranslationBundleAll,
   getTranslationId,
 } from "./index";
-import { chain } from "../../utils";
 import mockApp, {
-  localizedIndexURL,
-  translationsIndexURL,
+  mockAppPropValue,
+  translationsURL,
 } from "../../../__testUtils/mockApp";
 import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
-
-describe("getDefaultTranslationBundle", () => {
-  it("picks the first available bundle", () => {
-    const bundle1 = new FluentBundle("en-US");
-    const bundle2 = new FluentBundle("en");
-    const app = mockApp({
-      fluentBundles: {
-        global: [bundle1, bundle2],
-      },
-    });
-    expect(getDefaultTranslationBundle(app)).toEqual(bundle1);
-  });
-
-  it("returns null if fluent bundles is not available", () => {
-    expect(
-      getDefaultTranslationBundle({ fluentBundles: { global: null } })
-    ).toBeNull();
-  });
-});
+import { defaultLocale } from "../../../__testUtils/mockLanguage";
+import mockResourceBundleMap from "../../../__testUtils/mockResourceBundleMap";
 
 describe("getTranslationId", () => {
   it("converts a url to safe string for Fluent", () =>
@@ -54,11 +25,12 @@ describe("getTranslationURL", () => {
       getTranslationURL(
         "test",
         {
-          translationsIndexURL: { global: translationsIndexURL },
+          currentLocale: defaultLocale,
+          resourceBundles: mockResourceBundleMap(),
         },
         "global"
       )
-    ).toEqual(`${translationsIndexURL}#test`));
+    ).toEqual(`${translationsURL}#test`));
 });
 
 describe("getMessage", () => {
@@ -71,10 +43,10 @@ describe("getMessage", () => {
     });
     const app = mockApp({
       fluentBundles: {
-        global: [mockedFluentBundle],
+        [defaultLocale]: mockedFluentBundle,
       },
     });
-    expect(getMessage(app, id, {}, "global")).toEqual(message);
+    expect(getMessage(app, id, {})).toEqual(message);
   });
 
   it("returns a message from a bundle given a translation URL", () => {
@@ -83,11 +55,12 @@ describe("getMessage", () => {
       [id]: message,
     });
     const translationURL = getTranslationURL(id, {
-      translationsIndexURL: { global: translationsIndexURL },
+      currentLocale: defaultLocale,
+      resourceBundles: mockResourceBundleMap(),
     });
     const app = mockApp({
       fluentBundles: {
-        global: [mockedFluentBundle],
+        [defaultLocale]: mockedFluentBundle,
       },
     });
     expect(getMessage(app, translationURL)).toEqual(message);
@@ -98,9 +71,7 @@ describe("getMessage", () => {
       [id]: "{$test}",
     });
     const app = mockApp({
-      fluentBundles: {
-        global: [mockedFluentBundle],
-      },
+      fluentBundles: mockAppPropValue(mockedFluentBundle, null),
     });
     expect(
       getMessage(app, id, {
@@ -118,55 +89,10 @@ describe("getMessage", () => {
 
   it("supports fallback if fluent bundles not available", () => {
     const app = mockApp({
-      fluentBundles: {
-        global: null,
-      },
+      fluentBundles: mockAppPropValue(null, null),
     });
     expect(getMessage(app, id)).toEqual(
       getFailedMessage(getTranslationURL(id, app))
-    );
-  });
-});
-
-describe("getTranslationBundleAll", () => {
-  it("gets all bundles for a given locale", async () => {
-    const message1 = chain(
-      mockThingFrom(
-        getTranslationURL("message1", {
-          translationsIndexURL: { global: translationsIndexURL },
-        })
-      ),
-      (t) => setUrl(t, rdf.type, rdfs.Literal),
-      (t) => setStringWithLocale(t, skos.definition, "Test", "en-US")
-    );
-    const message2 = chain(
-      mockThingFrom(
-        getTranslationURL("message2", {
-          translationsIndexURL: { global: translationsIndexURL },
-        })
-      ),
-      (t) => setUrl(t, rdf.type, rdfs.Literal)
-    );
-    const dataset = chain(
-      mockSolidDatasetFrom(localizedIndexURL),
-      (d) => setThing(d, message1),
-      (d) => setThing(d, message2)
-    );
-    const bundles = await getTranslationBundleAll(["en-US"], dataset);
-    expect(bundles).toHaveLength(1);
-
-    const app = mockApp({
-      fluentBundles: {
-        global: bundles,
-      },
-    });
-    expect(getMessage(app, "message1")).toEqual("Test");
-    expect(getMessage(app, "message2")).toEqual(
-      getFailedMessage(
-        getTranslationURL("message2", {
-          translationsIndexURL: { global: translationsIndexURL },
-        })
-      )
     );
   });
 });

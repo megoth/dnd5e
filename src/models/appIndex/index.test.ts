@@ -3,14 +3,16 @@ import { getAppTerm, packageAppIndex } from "./index";
 import mockAppIndexDataset, {
   appIndexURL,
   appVocabURL,
+  translationLanguageEnUS,
 } from "../../../__testUtils/mockAppIndexDataset";
-import { currentLocales } from "../translation";
 import {
-  errorsIndexURL,
-  faqIndexURL,
-  localizedIndexURL,
-  translationsIndexURL,
+  errorsURL,
+  faqsURL,
+  localizationsURL,
+  translationsURL,
 } from "../../../__testUtils/mockApp";
+import mockLanguage, { defaultLocale } from "../../../__testUtils/mockLanguage";
+import { defaultBundle } from "../../../__testUtils/mockResourceBundle";
 
 describe("getAppTerm", () => {
   it("generates a URL", () =>
@@ -20,27 +22,32 @@ describe("getAppTerm", () => {
 describe("packageAppIndex", () => {
   it("packages AppIndexModel from appIndexDataset", () => {
     const dataset = mockAppIndexDataset();
-    expect(
-      packageAppIndex(dataset, appIndexURL, currentLocales, appVocabURL)
-    ).toEqual({
+    expect(packageAppIndex(dataset, appIndexURL, appVocabURL)).toEqual({
       resourceBundleAll: [
         {
-          label: "global",
-          errorsIndexURL,
-          faqIndexURL,
-          localizedIndexURL,
-          translationsIndexURL,
+          label: defaultBundle,
+          locale: defaultLocale,
+          urls: {
+            errors: errorsURL,
+            faqs: faqsURL,
+            localizations: localizationsURL,
+            translations: translationsURL,
+          },
         },
+      ],
+      supportLanguage: [
+        mockLanguage(defaultLocale, {
+          translationUrl: translationLanguageEnUS,
+        }),
       ],
     });
   });
 
   it("handles empty datasets", () => {
     const dataset = mockSolidDatasetFrom("https://example.com/");
-    expect(
-      packageAppIndex(dataset, appIndexURL, currentLocales, appVocabURL)
-    ).toEqual({
+    expect(packageAppIndex(dataset, appIndexURL, appVocabURL)).toEqual({
       resourceBundleAll: [],
+      supportLanguage: [],
     });
   });
 });
