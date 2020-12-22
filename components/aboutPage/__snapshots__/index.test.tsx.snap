@@ -2,38 +2,151 @@
 
 exports[`AboutPage renders 1`] = `
 <DocumentFragment>
-  <div
-    class="container"
-  >
-    <header
-      class="header"
-    />
-    <div
-      class="backToHome"
+  <header>
+    <a
+      class="container mx-auto px-4 md:px-0 flex max-w-3xl"
+      href="/"
     >
-      <a
-        href="/"
+      <picture>
+        <source
+          media="(min-width: 640px)"
+          srcset="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+        />
+        <img
+          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+          src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+        />
+      </picture>
+      <div
+        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
       >
-        ← Back to home
-      </a>
-    </div>
-    <main>
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
+      </div>
+    </a>
+  </header>
+  <main
+    class="container mx-auto px-4 md:px-0 my-1 max-w-3xl"
+  >
+    <div
+      class="content leading-normal max-w-3xl mx-auto"
+    >
       <h1
         id="test"
       >
         test
       </h1>
-    </main>
+    </div>
+  </main>
+  <footer
+    class="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl"
+  >
     <div
-      class="backToHome"
+      class="md:flex-grow mb-2"
     >
       <a
-        href="/"
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/about"
       >
-        ← Back to home
+        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+      </a>
+      <a
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/faq"
+      >
+        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
       </a>
     </div>
-    <footer />
-  </div>
+    <div
+      class="mb-2"
+    />
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`AboutPage shows a warning on non-english pages 1`] = `
+<DocumentFragment>
+  <header>
+    <a
+      class="container mx-auto px-4 md:px-0 flex max-w-3xl"
+      href="/"
+    >
+      <picture>
+        <source
+          media="(min-width: 640px)"
+          srcset="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+        />
+        <img
+          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+          src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+        />
+      </picture>
+      <div
+        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
+      >
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
+      </div>
+    </a>
+  </header>
+  <main
+    class="container mx-auto px-4 md:px-0 my-1 max-w-3xl"
+  >
+    <div
+      class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm"
+      data-testid="about-page-language-warning"
+    >
+      [Translation for https://example.com/global/translations.ttl#onlyAvailableInEnglish does not exist]
+    </div>
+    <div
+      class="content leading-normal max-w-3xl mx-auto"
+    >
+      <h1
+        id="test"
+      >
+        test
+      </h1>
+    </div>
+  </main>
+  <footer
+    class="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl"
+  >
+    <div
+      class="md:flex-grow mb-2"
+    >
+      <a
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/about"
+      >
+        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+      </a>
+      <a
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/faq"
+      >
+        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+      </a>
+    </div>
+    <div
+      class="mb-2"
+    >
+      <span
+        data-testid="locale-selector-language"
+      >
+        <a
+          class="bg-gray-100 py-1 px-2 rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800"
+          href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
+        >
+          🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
+        </a>
+      </span>
+    </div>
+  </footer>
 </DocumentFragment>
 `;

@@ -11,7 +11,7 @@ interface Props {
   id?: string;
   bundle?: string;
   url?: string;
-  vars?: Record<string, string>;
+  vars?: Record<string, any>;
 }
 
 export default function Translation({ id, bundle, url, vars }: Props) {

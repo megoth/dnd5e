@@ -10,10 +10,12 @@
 
 :locale-en-US
     dnd5e_app:language "en-US" ;
+    dnd5e_app:languageFlag "🇺🇸" ;
     dnd5e_app:translation translation:locale-en-US .
 
 :locale-nb-NO
     dnd5e_app:language "nb-NO" ;
+    dnd5e_app:languageFlag "🇳🇴" ;
     dnd5e_app:translation translation:locale-nb-NO .
 
 :globalResources

@@ -2,49 +2,91 @@
 
 exports[`HomePage renders 1`] = `
 <DocumentFragment>
-  <div
-    class="container"
-  >
-    <header
-      class="header"
+  <main>
+    <section
+      class="hero"
     >
-      <h1
-        class="heading2Xl"
-      >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </h1>
-    </header>
-    <main>
       <div
-        data-testid="loading"
+        class="h-screen text-white flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-black relative text-center"
       >
-        Loading...
-      </div>
-      <nav>
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            srcset="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+          />
+          <source
+            media="(min-width: 480px)"
+            srcset="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+          />
+          <img
+            alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+            src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+          />
+        </picture>
+        <h1
+          class="text-3xl my-1 font-serif"
+        >
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </h1>
+        <p
+          class="my-1 max-w-xl"
+        >
+          [Translation for https://example.com/global/translations.ttl#appPitch does not exist]
+        </p>
         <a
+          class="my-1 max-w-3xl text-red-600 underline"
           href="/about"
         >
-          About the app
+          [Translation for https://example.com/global/translations.ttl#learnMore does not exist]
         </a>
-        <span>
-           - 
-        </span>
-        <a
-          href="/faq"
+        <p
+          class="text-2xl my-1"
         >
-          FAQ
-        </a>
-        <span>
-           - 
-        </span>
-        <a
-          href="/admin"
+          [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+        </p>
+        <p
+          class="text-xs text-gray-600 absolute bottom-1 right-2"
         >
-          Admin
-        </a>
-      </nav>
-    </main>
-    <footer />
-  </div>
+          Photo by 
+          <a
+            class="underline"
+            href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >
+            Steve Johnson
+          </a>
+           on 
+          <a
+            class="underline"
+            href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >
+            Unsplash
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer
+    class="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl"
+  >
+    <div
+      class="md:flex-grow mb-2"
+    >
+      <a
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/about"
+      >
+        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+      </a>
+      <a
+        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/faq"
+      >
+        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+      </a>
+    </div>
+    <div
+      class="mb-2"
+    />
+  </footer>
 </DocumentFragment>
 `;

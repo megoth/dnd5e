@@ -5,17 +5,12 @@ exports[`LocaleSelector renders controls to select other languages if multiple l
   <span
     data-testid="locale-selector-language"
   >
-    [Translation for http://example.com/translations.ttl#locale-en-US does not exist] 
-  </span>
-  <span
-    data-testid="locale-selector-language"
-  >
     <a
-      href="/?locale=nb-NO"
+      class="bg-gray-100 py-1 px-2 rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800"
+      href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
     >
-      [Translation for http://example.com/translations.ttl#locale-nb-NO does not exist]
+      🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
     </a>
-     
   </span>
 </DocumentFragment>
 `;

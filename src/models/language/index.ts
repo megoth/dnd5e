@@ -14,6 +14,7 @@ import { getNavigatorLanguages } from "../../windowHelpers";
 
 export type LanguageModel = {
   languageCode: string;
+  languageFlag: string;
   translationUrl: string;
 };
 

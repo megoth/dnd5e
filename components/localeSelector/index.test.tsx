@@ -20,6 +20,6 @@ describe("LocaleSelector", () => {
     mockAppHook(mockedAppHook, mockNorwegianApp());
     const { asFragment, queryAllByTestId } = render(<LocaleSelector />);
     expect(asFragment()).toMatchSnapshot();
-    expect(queryAllByTestId(TESTID_LOCALE_SELECTOR_LANGUAGE)).toHaveLength(2);
+    expect(queryAllByTestId(TESTID_LOCALE_SELECTOR_LANGUAGE)).toHaveLength(1);
   });
 });

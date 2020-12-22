@@ -10,6 +10,7 @@ import {
 } from "../../src/models/faq";
 import Translation from "../translation";
 import { getMessage } from "../../src/models/translation";
+import Content from "../content";
 
 export const TESTID_FAQ_ITEM = "faq-item";
 
@@ -18,19 +19,21 @@ export default function FAQPage() {
   const faqs = getFAQAll(app);
   return (
     <Layout>
-      <h1>
-        <Translation id="faqTitle" />
-      </h1>
-      {faqs.map((faq) => (
-        <section key={asUrl(faq)} data-testid={TESTID_FAQ_ITEM}>
-          <h2>
-            <Translation url={getFAQLabelUrl(faq, app)} />
-          </h2>
-          <ReactMarkdown>
-            {getMessage(app, getFAQDescriptionURL(faq, app))}
-          </ReactMarkdown>
-        </section>
-      ))}
+      <Content>
+        <h1>
+          <Translation id="faqTitle" />
+        </h1>
+        {faqs.map((faq) => (
+          <section key={asUrl(faq)} data-testid={TESTID_FAQ_ITEM}>
+            <h2>
+              <Translation url={getFAQLabelUrl(faq, app)} />
+            </h2>
+            <ReactMarkdown>
+              {getMessage(app, getFAQDescriptionURL(faq, app))}
+            </ReactMarkdown>
+          </section>
+        ))}
+      </Content>
     </Layout>
   );
 }

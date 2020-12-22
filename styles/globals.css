@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .content a {
+    @apply text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600;
+  }
+
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    @apply font-bold mt-4;
+  }
+
+  .content h1 {
+    @apply text-4xl;
+  }
+
+  .content h2 {
+    @apply text-3xl;
+  }
+
+  .content h3 {
+    @apply text-2xl;
+  }
+
+  .content h4 {
+    @apply text-xl;
+  }
+
+  .content h5 {
+    @apply text-lg;
+  }
+
+  .content ol {
+    @apply ml-5 list-decimal;
+  }
+
+  .content ol ol {
+    @apply ml-4 my-0.5;
+  }
+
+  .content p {
+    @apply my-1;
+  }
+
+  .content ul {
+    @apply ml-5 list-disc;
+  }
+
+  .content li {
+    @apply my-0;
+  }
+
+  .content ul ul {
+    @apply ml-4 my-0.5;
+  }
+}
+
+@layer components {
+  .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  @media screen and (max-width: 640px) {
+    .hero {
+      background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-640.jpg");
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 1920px) {
+    .hero {
+      background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-1920.jpg");
+    }
+  }
+  @media screen and (min-width: 1920px) and (max-width: 2400px) {
+    .hero {
+      background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-2400.jpg");
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .hero {
+      background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-orig.jpg");
+    }
+  }
+}
+

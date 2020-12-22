@@ -8,6 +8,7 @@ export default function mockLanguage(
 ): LanguageModel {
   return {
     languageCode,
+    languageFlag: "🇺🇸",
     translationUrl: `http://example.com/translations.ttl#locale-${languageCode}`,
     ...overrides,
   };

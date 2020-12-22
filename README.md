@@ -1,4 +1,4 @@
-# D&D5E Solid App
+# D&D5e Solid App
 
 A small [Solid app](https://solidproject.org/) that allows you to manage your 
 [Dungeons & Dragons 5th edition](https://dnd.wizards.com/) content. Using the power of Solid it allows you to control 

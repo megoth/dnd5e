@@ -32,6 +32,10 @@ export function packageAppIndex(
             language,
             getAppTerm("language", { appVocabURL })
           ),
+          languageFlag: getStringNoLocale(
+            language,
+            getAppTerm("languageFlag", { appVocabURL })
+          ),
           translationUrl: getUrl(
             language,
             getAppTerm("translation", { appVocabURL })

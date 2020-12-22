@@ -55,7 +55,9 @@ describe("AppConfig", () => {
     // @ts-ignore
     const routerWithLocaleQuery = createRouter("", { locale }, "", {});
     mockAppCoreHook(mockedAppCoreHook, {
-      app: mockNorwegianApp(),
+      app: mockNorwegianApp({
+        currentLocale: "en-US",
+      }),
     });
     const { getByTestId } = render(
       <RouterContext.Provider value={routerWithLocaleQuery}>

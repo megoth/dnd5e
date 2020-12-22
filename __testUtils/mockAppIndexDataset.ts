@@ -110,6 +110,12 @@ export default function mockAppIndexDataset() {
               defaultLocale
             ),
           (t) =>
+            addStringNoLocale(
+              t,
+              getAppTerm("languageFlag", { appVocabURL }),
+              "🇺🇸"
+            ),
+          (t) =>
             addUrl(
               t,
               getAppTerm("translation", { appVocabURL }),

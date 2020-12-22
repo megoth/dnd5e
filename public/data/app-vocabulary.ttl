@@ -9,8 +9,8 @@
 dnd5e_app:
 	a owl:Ontology;
 	owl:versionInfo "0.1" ;
- 	dcterms:title "D&D5E Solid App vocabulary"@en-US ;
-	dcterms:description """The D&D5E Solid App vocabulary."""@en-US ;
+ 	dcterms:title "D&D5e Solid App vocabulary"@en-US ;
+	dcterms:description """The D&D5e Solid App vocabulary."""@en-US ;
 	dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
 	dcterms:issued "2020-11-29"^^xsd:date ;
 	dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
@@ -20,7 +20,7 @@ dnd5e_app:
 dnd5e_app:coreRulesIndex
 	a rdf:Property ;
 	rdfs:isDefinedBy dnd5e_app: ;
-	rdfs:label "Index of core D&D5E rules"@en-US ;
+	rdfs:label "Index of core D&D5e rules"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Resource .
 
@@ -66,6 +66,13 @@ dnd5e_app:language
 	a rdf:Property ;
 	rdfs:isDefinedBy dnd5e_app: ;
 	rdfs:label "A supported language"@en-US ;
+	rdfs:domain rdf:Statement ;
+	rdfs:range rdfs:Literal .
+
+dnd5e_app:languageFlag
+	a rdf:Property ;
+	rdfs:isDefinedBy dnd5e_app: ;
+	rdfs:label "A flag representing a language"@en-US ;
 	rdfs:domain rdf:Statement ;
 	rdfs:range rdfs:Literal .
 

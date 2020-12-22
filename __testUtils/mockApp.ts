@@ -58,15 +58,20 @@ export default function mockApp(overrides: Partial<AppModel> = {}): AppModel {
   };
 }
 
-export function mockNorwegianApp(): AppModel {
+export function mockNorwegianApp(overrides: Partial<AppModel> = {}): AppModel {
   const locale = "nb-NO";
   return mockApp({
+    currentLocale: locale,
     fluentBundles: {
       [locale]: mockFluentBundle({}, translationsURL, {
         locale,
       }),
     },
-    languages: [mockLanguage(locale)],
+    languages: [
+      mockLanguage(locale, {
+        languageCode: "🇳🇴",
+      }),
+    ],
     resourceBundles: {
       ...mockResourceBundleMap({
         locale,
@@ -78,6 +83,7 @@ export function mockNorwegianApp(): AppModel {
         },
       }),
     },
+    ...overrides,
   });
 }
 
