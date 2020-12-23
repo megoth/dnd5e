@@ -140,7 +140,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
         data-testid="locale-selector-language"
       >
         <a
-          class="bg-gray-100 py-1 px-2 rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800"
+          class="bg-red-100 py-1 px-2 rounded border border-red-300 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-800 hover:shadow-inner"
           href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
         >
           🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
