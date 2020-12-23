@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps } from "next/app";
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { SessionProvider } from "@inrupt/solid-ui-react";
 import AppConfig from "../components/appConfig";
 

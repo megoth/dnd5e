@@ -1,4 +1,5 @@
 const withSourceMaps = require("@zeit/next-source-maps");
+const path = require("path");
 
 module.exports = withSourceMaps({
   webpack(config) {
@@ -14,5 +15,8 @@ module.exports = withSourceMaps({
         ]),
       },
     };
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 });
