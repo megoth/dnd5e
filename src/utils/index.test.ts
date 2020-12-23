@@ -1,4 +1,15 @@
-import { chain, createLocalResponse, getPath } from "./index";
+import { bem, chain, createLocalResponse, getPath } from "./index";
+
+describe("bem", () => {
+  it("outputs a combination of classes with modifier", () => {
+    expect(bem("foo")).toEqual("foo");
+    expect(bem("foo", null)).toEqual("foo");
+    expect(bem("foo", "bar")).toEqual("foo foo--bar");
+    expect(bem("foo", "bar", { baz: true, bam: false })).toEqual(
+      "foo foo--bar foo--baz"
+    );
+  });
+});
 
 describe("chain", () => {
   test("it reduces an arbitrary list of functions, accumulating each operation's return product", () => {

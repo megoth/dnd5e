@@ -10,6 +10,12 @@ translations:appPitch skos:definition
     """Manage your characters in Dungeons & Dragons 5th edition. You are in control of where the information is stored,
     and which rulesets to use, whether that be official or homebrewn."""@en-US .
 translations:appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
+translations:authenticationGuidance skos:definition
+    """Choose an identity provider from the list, or provide one yourself in the form."""@en-US .
+translations:authenticationPitch skos:definition
+    """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
+    maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
+    app."""@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 translations:faqShort skos:definition "FAQ"@en-US .
 translations:faqTitle skos:definition "Frequently Asked Questions"@en-US .
@@ -19,13 +25,28 @@ translations:locale-nb-NO skos:definition "Norwegian"@en-US .
 translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
+translations:logInImage skos:definition "The icon of the Solid project"@en-US .
+translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+translations:rememberIdP skos:definition "Remember identity provider"@en-US .
+translations:solidIdP skos:definition "Solid identity provider"@en-US .
 translations:translateTo skos:definition "Translate to {$language}"@en-US .
 translations:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
+translations:whatIsAPodLabel skos:definition "What is a Pod?"@en-US .
+translations:whatIsAPodDescription skos:definition
+    """Pod is the name we usually use for the storage that's connected to a Solid identity. Most users get a Pod when
+    they create their Solid identity, but it is possible to have multiple, or none at all. In order to use this app
+    we have to store the data somewhere, and if we're in doubt about where to do that, we'll ask you once you're logged
+    in."""@en-US .
 translations:whatIsSolidLabel skos:definition "What is Solid?"@en-US .
 translations:whatIsSolidDescription skos:definition
     """Solid is a standard that focuses on giving people control of their own data. With Solid you get a digital
-    identity, an online storage (often called Pods) and the means to control who gets access to your data. For more
+    identity, an online storage (often called a Pod) and the means to control who gets access to your data. For more
     information, check out [solidproject.org](https://solidproject.org/)."""@en-US .
+translations:whyLogInWithSolidLabel skos:definition "Why should I log in with Solid?"@en-US .
+translations:whyLogInWithSolidDescription skos:definition
+    """Using a Solid Identity is how this app recognizes who you are and know how to fetch your data. Solid is a
+    standard that allows you to choose amongst a number of Solid Identity Providers, which means you don't have to
+    rely on any specific company's service."""@en-US .
 translations:workInProgress skos:definition "Work in progress"@en-US .

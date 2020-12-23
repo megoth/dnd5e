@@ -1,36 +1,27 @@
-import {
-  mockSolidDatasetFrom,
-  mockThingFrom,
-  setThing,
-  setUrl,
-} from "@inrupt/solid-client";
-import { rdf } from "rdf-namespaces";
-import mockApp, { faqsURL } from "../../../__testUtils/mockApp";
+import { mockSolidDatasetFrom, setThing } from "@inrupt/solid-client";
+import mockApp, {
+  faqsURL,
+  mockUnloadedApp,
+} from "../../../__testUtils/mockApp";
 import { chain } from "../../utils";
-import { getFAQAll, getFAQDescriptionURL, getFAQLabelUrl } from "./index";
-import { getAppTerm } from "../appIndex";
-import { getTranslationURL } from "../translation";
-import { appVocabURL } from "../../../__testUtils/mockAppIndexDataset";
-import { defaultLocale } from "../../../__testUtils/mockLanguage";
+import {
+  getFAQ,
+  getFAQAll,
+  getFAQDescriptionURL,
+  getFAQDetails,
+  getFAQLabelUrl,
+} from "./index";
+import { getMessage } from "../translation";
 import mockResourceBundleMap from "../../../__testUtils/mockResourceBundleMap";
+import mockFAQThing, {
+  faqDescriptionURL,
+  faqId,
+  faqLabelURL,
+} from "../../../__testUtils/mockFAQThing";
+import { defaultBundle } from "../../../__testUtils/mockResourceBundle";
 
-const faqURL = `${faqsURL}#test`;
-const resourceBundles = mockResourceBundleMap();
-const faqLabelURL = getTranslationURL("label", {
-  currentLocale: defaultLocale,
-  resourceBundles,
-});
-const faqDescriptionURL = getTranslationURL("description", {
-  currentLocale: defaultLocale,
-  resourceBundles,
-});
-const faq = chain(
-  mockThingFrom(faqURL),
-  (t) => setUrl(t, rdf.type, getAppTerm("FAQ", { appVocabURL })),
-  (t) => setUrl(t, getAppTerm("faqLabel", { appVocabURL }), faqLabelURL),
-  (t) =>
-    setUrl(t, getAppTerm("faqDescription", { appVocabURL }), faqDescriptionURL)
-);
+const faq = mockFAQThing();
+const app = mockApp();
 
 describe("getFAQAll", () => {
   it("returns an array of all available FAQs in an app", () => {
@@ -45,21 +36,44 @@ describe("getFAQAll", () => {
   });
 
   it("returns an empty array if app is not available", () => {
-    const bundle = mockApp();
-    expect(getFAQAll(bundle)).toEqual([]);
+    const unloadedApp = mockUnloadedApp();
+    expect(getFAQAll(unloadedApp)).toEqual([]);
   });
 });
 
 describe("getFAQDescriptionURL", () => {
   it("returns the translation URL for FAQs description", () => {
-    expect(getFAQDescriptionURL(faq, { appVocabURL })).toEqual(
-      faqDescriptionURL
-    );
+    expect(getFAQDescriptionURL(faq, app)).toEqual(faqDescriptionURL);
   });
 });
 
 describe("getFAQLabelURL", () => {
   it("returns the translation URL for FAQs label", () => {
-    expect(getFAQLabelUrl(faq, { appVocabURL })).toEqual(faqLabelURL);
+    expect(getFAQLabelUrl(faq, app)).toEqual(faqLabelURL);
+  });
+});
+
+describe("getFAQDetails", () => {
+  it("prepares a model from a FAQ thing", () => {
+    expect(getFAQDetails(faq, app)).toEqual({
+      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      description: getMessage(app, getFAQDescriptionURL(faq, app)),
+    });
+  });
+});
+
+describe("getFAQ", () => {
+  it("prepares a model from a FAQ id", () => {
+    expect(getFAQ(faqId, app)).toEqual({
+      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      description: getMessage(app, getFAQDescriptionURL(faq, app)),
+    });
+  });
+
+  it("can specify which bundle the FAQ is in", () => {
+    expect(getFAQ(faqId, app, defaultBundle)).toEqual({
+      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      description: getMessage(app, getFAQDescriptionURL(faq, app)),
+    });
   });
 });

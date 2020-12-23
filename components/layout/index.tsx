@@ -1,21 +1,21 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import clsx from "clsx";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 import LocaleSelector from "../localeSelector";
-import Logo from "../logo";
+import { bem } from "../../src/utils";
+import PageHeader from "../pageHeader";
 
 interface Props {
   children: ReactNode;
-  home?: boolean;
+  full?: boolean;
+  header?: boolean;
 }
 
-export default function Layout({ children, home }: Props) {
+export default function Layout({ children, full, header }: Props) {
   const app = useApp();
-
-  const siteTitle = getMessage(app, "appName");
-  const description = getMessage(app, "appDescription");
 
   const pages = [
     { href: "/about", label: getMessage(app, "aboutTitle") },
@@ -25,31 +25,22 @@ export default function Layout({ children, home }: Props) {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{getMessage(app, "appName")}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content={description} />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="description" content={getMessage(app, "appDescription")} />
+        <meta name="og:title" content={getMessage(app, "appName")} />
       </Head>
-      {!home && (
-        <header>
-          <Link href="/">
-            <a className="container mx-auto px-4 md:px-0 flex max-w-3xl">
-              <Logo />
-              <div className="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased">
-                {siteTitle}
-              </div>
-            </a>
-          </Link>
-        </header>
-      )}
-      {home ? (
+      {header && <PageHeader />}
+      {full ? (
         <main>{children}</main>
       ) : (
-        <main className="container mx-auto px-4 md:px-0 my-1 max-w-3xl">
+        <main className={clsx(bem("main-container", "content"), "my-1")}>
           {children}
         </main>
       )}
-      <footer className="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl">
+      <footer
+        className={clsx(bem("main-container", "content"), "md:flex mt-2")}
+      >
         <div className="md:flex-grow mb-2">
           {pages.map(({ href, label }) => (
             <Link href={href} key={label}>
@@ -66,5 +57,6 @@ export default function Layout({ children, home }: Props) {
 }
 
 Layout.defaultProps = {
-  home: false,
+  full: false,
+  header: true,
 };

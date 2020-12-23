@@ -11,6 +11,12 @@ translations:appPitch skos:definition
     informasjonen lagres og hvilke regelsett du ønsker å bruke, enten det er offisielle regler eller dine egne
     hjemmelagde."""@nb-NO .
 translations:appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
+translations:authenticationGuidance skos:definition
+    """Velg en identitetsleverandør fra lista, eller fyll ut en selv i skjemaet."""@nb-NO .
+translations:authenticationPitch skos:definition
+    """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
+    lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
+    kompatible apper."""@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 translations:faqShort skos:definition "FAQ"@nb-NO .
 translations:faqTitle skos:definition "Ofte spurte spørsmål"@nb-NO .
@@ -19,12 +25,29 @@ translations:locale-en-US skos:definition "Engelsk"@nb-NO .
 translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
 translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
 translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
-translations:logIn skos:definition "Logg in"@nb-NO .
-translations:logOut skos:definition "Logg out"@nb-NO .
+translations:logIn skos:definition "Logg på"@nb-NO .
+translations:logInImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
+translations:logInWithSolid skos:definition "Logg på med Solid"@nb-NO .
+translations:logOut skos:definition "Logg ut"@nb-NO .
 translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
+translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 translations:translateTo skos:definition "Oversett til {$language}"@nb-NO .
 translations:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+translations:whatIsAPodLabel skos:definition "Hva er en Pod?"@nb-NO .
+translations:whatIsAPodDescription skos:definition
+    """Pod er navnet vi gjerne bruker om lagringsplassen du har tilknyttet din Solid identitet. De aller fleste får en
+    Pod når de først skaffer seg en Solid identitet, men det er mulig å ha flere, eller ingen i det hele tatt. For at
+    du skal kunne bruke denne appen trenger vi å lagre dataene dine et sted, og om vi er i tvil, så spør vi deg etter
+    at du har logget inn."""@nb-NO .
 translations:whatIsSolidLabel skos:definition "Hva er Solid?"@nb-NO .
 translations:whatIsSolidDescription skos:definition
-    """Solid er en standard som fokuserer på å gi folk kontrol over sine egne data."""@nb-NO .
+    """Solid er en standard som fokuserer på å gi folk kontrol over sine egne data. Med Solid så får du en digital
+    identitet, en lagringsplass på nett (ofte kalt en Pod) og muligheten til kontrollere hvem som har tilgang til
+    dataene dine. For mer informasjon, sjekk ut [solidproject.org](https://solidproject.org/)."""@nb-NO .
+translations:whyLogInWithSolidLabel skos:definition "Hvorfor må jeg logge inn med Solid?"@nb-NO .
+translations:whyLogInWithSolidDescription skos:definition
+    """Ved å bruke en Solid identitet kan appen gjenkjenne deg og vite hvor dataene dine skal hentes fra. Solid er en
+    standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
+    blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
 translations:workInProgress skos:definition "Under utvikling"@nb-NO .

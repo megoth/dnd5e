@@ -20,7 +20,7 @@ export default function LocaleSelector() {
             data-testid={TESTID_LOCALE_SELECTOR_LANGUAGE}
           >
             <Link href={{ query: { locale: languageCode } }}>
-              <a className="bg-red-100 py-1 px-2 rounded border border-red-300 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-800 hover:shadow-inner">
+              <a className="button">
                 {languageFlag}
                 &nbsp;
                 <Translation

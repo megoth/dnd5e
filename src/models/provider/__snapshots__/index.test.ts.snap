@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getProviders returns a list with info about IdPs 1`] = `
+Array [
+  Object {
+    "iri": "https://broker.pod.inrupt.com/",
+    "label": "Inrupt Pod Spaces",
+    "signupIri": "https://signup.pod.inrupt.com/",
+  },
+  Object {
+    "iri": "https://solidcommunity.net/",
+    "label": "solidcommunity.net",
+    "signupIri": "https://solidcommunity.net/register",
+  },
+  Object {
+    "iri": "https://inrupt.net/",
+    "label": "inrupt.net",
+    "signupIri": "https://inrupt.net/register",
+  },
+]
+`;

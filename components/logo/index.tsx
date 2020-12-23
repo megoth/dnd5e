@@ -8,15 +8,15 @@ export default function Logo() {
   return (
     <picture>
       <source
-        srcSet="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+        srcSet="/icons/app/icons8-dungeons-and-dragons-128.png"
         media="(min-width: 640px)"
       />
       <source
-        srcSet="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+        srcSet="/icons/app/icons8-dungeons-and-dragons-96.png"
         media="(min-width: 480px)"
       />
       <img
-        src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+        src="/icons/app/icons8-dungeons-and-dragons-64.png"
         alt={logoDescription}
       />
     </picture>

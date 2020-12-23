@@ -6,7 +6,7 @@ import Logo from "../logo";
 
 export default function HomePage() {
   return (
-    <Layout home>
+    <Layout full header={false}>
       <section className="hero">
         <div className="h-screen text-white flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-black relative text-center">
           <Logo />
@@ -17,7 +17,7 @@ export default function HomePage() {
             <Translation id="appPitch" />
           </p>
           <Link href="/about">
-            <a className="link my-1 max-w-3xl">
+            <a className="link my-1 max-w-prose">
               <Translation id="learnMore" />
             </a>
           </Link>

@@ -1,7 +1,19 @@
-import { getThingAll, getUrl, ThingPersisted } from "@inrupt/solid-client";
+import {
+  getThing,
+  getThingAll,
+  getUrl,
+  Thing,
+  ThingPersisted,
+} from "@inrupt/solid-client";
 import { rdf } from "rdf-namespaces";
 import { getAppTerm } from "../appIndex";
 import { AppModel, getBundleKey } from "../app";
+import { getMessage } from "../translation";
+
+type FAQModel = {
+  label: string;
+  description: string;
+};
 
 export function getFAQAll(
   { appVocabURL, currentLocale, resourceBundles }: Partial<AppModel>,
@@ -22,4 +34,24 @@ export function getFAQDescriptionURL(faq, app) {
 
 export function getFAQLabelUrl(faq, app) {
   return getUrl(faq, getAppTerm("faqLabel", app));
+}
+
+export function getFAQDetails(faq: Thing, app: AppModel): FAQModel {
+  return {
+    label: getMessage(app, getFAQLabelUrl(faq, app)),
+    description: getMessage(app, getFAQDescriptionURL(faq, app)),
+  };
+}
+
+export function getFAQ(
+  faqId: string,
+  app: AppModel,
+  bundle = "global"
+): FAQModel {
+  const { currentLocale, resourceBundles } = app;
+  const bundleKey = getBundleKey(currentLocale, bundle);
+  const faqURL = `${resourceBundles[bundleKey].urls.faqs}#${faqId}`;
+  const faq = getThing(resourceBundles[bundleKey].data.faqs, faqURL);
+  debugger;
+  return getFAQDetails(faq, app);
 }

@@ -4,21 +4,21 @@ exports[`AboutPage renders 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="container mx-auto px-4 md:px-0 flex max-w-3xl"
+      class="main-container main-container--content flex"
       href="/"
     >
       <picture>
         <source
           media="(min-width: 640px)"
-          srcset="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
         />
         <source
           media="(min-width: 480px)"
-          srcset="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
         />
         <img
           alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+          src="/icons/app/icons8-dungeons-and-dragons-64.png"
         />
       </picture>
       <div
@@ -29,10 +29,10 @@ exports[`AboutPage renders 1`] = `
     </a>
   </header>
   <main
-    class="container mx-auto px-4 md:px-0 my-1 max-w-3xl"
+    class="main-container main-container--content my-1"
   >
     <div
-      class="content leading-normal max-w-3xl mx-auto"
+      class="content leading-normal max-w-prose mx-auto"
     >
       <h1
         id="test"
@@ -42,7 +42,7 @@ exports[`AboutPage renders 1`] = `
     </div>
   </main>
   <footer
-    class="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl"
+    class="main-container main-container--content md:flex mt-2"
   >
     <div
       class="md:flex-grow mb-2"
@@ -71,21 +71,21 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="container mx-auto px-4 md:px-0 flex max-w-3xl"
+      class="main-container main-container--content flex"
       href="/"
     >
       <picture>
         <source
           media="(min-width: 640px)"
-          srcset="/images/appIcon/icons8-dungeons-and-dragons-128.png"
+          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
         />
         <source
           media="(min-width: 480px)"
-          srcset="/images/appIcon/icons8-dungeons-and-dragons-96.png"
+          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
         />
         <img
           alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/images/appIcon/icons8-dungeons-and-dragons-64.png"
+          src="/icons/app/icons8-dungeons-and-dragons-64.png"
         />
       </picture>
       <div
@@ -96,16 +96,16 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
     </a>
   </header>
   <main
-    class="container mx-auto px-4 md:px-0 my-1 max-w-3xl"
+    class="main-container main-container--content my-1"
   >
     <div
-      class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm"
+      class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
       data-testid="about-page-language-warning"
     >
       [Translation for https://example.com/global/translations.ttl#onlyAvailableInEnglish does not exist]
     </div>
     <div
-      class="content leading-normal max-w-3xl mx-auto"
+      class="content leading-normal max-w-prose mx-auto"
     >
       <h1
         id="test"
@@ -115,7 +115,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
     </div>
   </main>
   <footer
-    class="container mx-auto px-3 md:px-0 md:flex mt-2 max-w-3xl"
+    class="main-container main-container--content md:flex mt-2"
   >
     <div
       class="md:flex-grow mb-2"
@@ -140,7 +140,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
         data-testid="locale-selector-language"
       >
         <a
-          class="bg-red-100 py-1 px-2 rounded border border-red-300 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-800 hover:shadow-inner"
+          class="button"
           href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
         >
           🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]

@@ -9,3 +9,15 @@
     rdfs:label "What is Solid?"@en-US ;
     dnd5e_app:faqLabel translations:whatIsSolidLabel ;
     dnd5e_app:faqDescription translations:whatIsSolidDescription .
+
+:whatIsAPod
+    a dnd5e_app:FAQ ;
+    rdfs:label "What is a Pod?"@en-US ;
+    dnd5e_app:faqLabel translations:whatIsAPodLabel ;
+    dnd5e_app:faqDescription translations:whatIsAPodDescription .
+
+:whyLogInWithSolid
+    a dnd5e_app:FAQ ;
+    rdfs:label "Why should I log in with Solid?"@en-US ;
+    dnd5e_app:faqLabel translations:whyLogInWithSolidLabel ;
+    dnd5e_app:faqDescription translations:whyLogInWithSolidDescription .
