@@ -34,7 +34,7 @@ exports[`HomePage renders 1`] = `
           [Translation for https://example.com/global/translations.ttl#appPitch does not exist]
         </p>
         <a
-          class="my-1 max-w-3xl text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600"
+          class="link my-1 max-w-3xl"
           href="/about"
         >
           [Translation for https://example.com/global/translations.ttl#learnMore does not exist]
@@ -49,14 +49,14 @@ exports[`HomePage renders 1`] = `
         >
           Photo by 
           <a
-            class="underline focus:outline-none focus:ring-2 focus:ring-gray-600"
+            class="link--subtle"
             href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >
             Steve Johnson
           </a>
            on 
           <a
-            class="underline focus:outline-none focus:ring-2 focus:ring-gray-600"
+            class="link--subtle"
             href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >
             Unsplash
@@ -72,13 +72,13 @@ exports[`HomePage renders 1`] = `
       class="md:flex-grow mb-2"
     >
       <a
-        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        class="link mr-1 p-1"
         href="/about"
       >
         [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
       </a>
       <a
-        class="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+        class="link mr-1 p-1"
         href="/faq"
       >
         [Translation for https://example.com/global/translations.ttl#faqShort does not exist]

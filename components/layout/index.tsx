@@ -53,9 +53,7 @@ export default function Layout({ children, home }: Props) {
         <div className="md:flex-grow mb-2">
           {pages.map(({ href, label }) => (
             <Link href={href} key={label}>
-              <a className="text-red-600 underline mr-1 p-1 focus:outline-none focus:ring-2 focus:ring-red-600">
-                {label}
-              </a>
+              <a className="link mr-1 p-1">{label}</a>
             </Link>
           ))}
         </div>

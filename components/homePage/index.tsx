@@ -17,7 +17,7 @@ export default function HomePage() {
             <Translation id="appPitch" />
           </p>
           <Link href="/about">
-            <a className="my-1 max-w-3xl text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600">
+            <a className="link my-1 max-w-3xl">
               <Translation id="learnMore" />
             </a>
           </Link>
@@ -27,14 +27,14 @@ export default function HomePage() {
           <p className="text-xs text-gray-600 absolute bottom-1 right-2">
             Photo by{" "}
             <a
-              className="underline focus:outline-none focus:ring-2 focus:ring-gray-600"
+              className="link--subtle"
               href="https://unsplash.com/@steve_j?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
             >
               Steve Johnson
             </a>{" "}
             on{" "}
             <a
-              className="underline focus:outline-none focus:ring-2 focus:ring-gray-600"
+              className="link--subtle"
               href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
             >
               Unsplash
