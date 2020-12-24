@@ -10,7 +10,6 @@ export function getTranslationURL(
   bundleName = "global"
 ) {
   const bundleKey = getBundleKey(currentLocale, bundleName);
-  debugger;
   return `${resourceBundles[bundleKey].urls.translations}#${id}`;
 }
 

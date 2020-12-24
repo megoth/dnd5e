@@ -26,15 +26,33 @@ translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
 translations:logInImage skos:definition "The icon of the Solid project"@en-US .
+translations:logInPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 translations:rememberIdP skos:definition "Remember identity provider"@en-US .
+translations:serviceLogo skos:definition "Logo for service"@en-US .
+translations:signupPitch skos:definition
+    """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we
+    need you to sign up with a Solid account, which you can choose to do with any identity service that supports Solid.
+    This means **we'll never store your data on our systems**. Instead we'll store it to a storage you control (usually
+    the one connected to your Solid identity).
+
+    If you're not familiar with any Solid identity providers, we recommend you checking out the ones we recommend
+    below, or [head over to solidproject.org for more information about how to choose a
+    provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
+translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
+translations:signupTitle skos:definition "Create Solid account"@en-US .
 translations:solidIdP skos:definition "Solid identity provider"@en-US .
 translations:translateTo skos:definition "Translate to {$language}"@en-US .
 translations:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
-translations:whatIsAPodLabel skos:definition "What is a Pod?"@en-US .
-translations:whatIsAPodDescription skos:definition
+translations:whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .
+translations:whatIsIdPDescription skos:definition
+    """Solid identity providers, or Solid IdPs for short, are services that allow you to create a Solid identity,
+    which in turn allow you to authenticate with Solid-enabled services, such as this app. Most IdPs also provide you
+    with a storage, often called a Pod."""@en-US .
+translations:whatIsPodLabel skos:definition "What is a Pod?"@en-US .
+translations:whatIsPodDescription skos:definition
     """Pod is the name we usually use for the storage that's connected to a Solid identity. Most users get a Pod when
     they create their Solid identity, but it is possible to have multiple, or none at all. In order to use this app
     we have to store the data somewhere, and if we're in doubt about where to do that, we'll ask you once you're logged

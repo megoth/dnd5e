@@ -10,11 +10,17 @@
     dnd5e_app:faqLabel translations:whatIsSolidLabel ;
     dnd5e_app:faqDescription translations:whatIsSolidDescription .
 
-:whatIsAPod
+:whatIsIdP
+    a dnd5e_app:FAQ ;
+    rdfs:label "What is an identity provider?"@en-US ;
+    dnd5e_app:faqLabel translations:whatIsIdPLabel ;
+    dnd5e_app:faqDescription translations:whatIsIdPDescription .
+
+:whatIsPod
     a dnd5e_app:FAQ ;
     rdfs:label "What is a Pod?"@en-US ;
-    dnd5e_app:faqLabel translations:whatIsAPodLabel ;
-    dnd5e_app:faqDescription translations:whatIsAPodDescription .
+    dnd5e_app:faqLabel translations:whatIsPodLabel ;
+    dnd5e_app:faqDescription translations:whatIsPodDescription .
 
 :whyLogInWithSolid
     a dnd5e_app:FAQ ;

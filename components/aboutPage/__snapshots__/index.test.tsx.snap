@@ -4,7 +4,7 @@ exports[`AboutPage renders 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="main-container main-container--content flex"
+      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
       href="/"
     >
       <picture>
@@ -71,7 +71,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="main-container main-container--content flex"
+      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
       href="/"
     >
       <picture>

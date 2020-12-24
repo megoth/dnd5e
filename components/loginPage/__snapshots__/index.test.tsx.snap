@@ -4,7 +4,7 @@ exports[`LoginPage renders 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="main-container main-container--content flex"
+      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
       href="/"
     >
       <picture>
@@ -30,7 +30,7 @@ exports[`LoginPage renders 1`] = `
   </header>
   <main>
     <div
-      class="main-container md:grid grid-cols-2 gap-4 mb-16 max-w-3xl place-items-center"
+      class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
     >
       <div>
         <div
@@ -86,7 +86,7 @@ exports[`LoginPage renders 1`] = `
         <img
           alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
           class="mx-auto hidden md:block"
-          src="/icons/solid/solid-emblem.svg"
+          src="/logos/solid-emblem.svg"
           style="max-width: 200px;"
         />
         <label
@@ -127,10 +127,20 @@ exports[`LoginPage renders 1`] = `
         >
           [Translation for https://example.com/global/translations.ttl#logIn does not exist]
         </button>
+        <div
+          class="mt-4"
+        >
+          <a
+            class="link"
+            href="/signup"
+          >
+            [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+          </a>
+        </div>
       </form>
     </div>
     <aside
-      class="main-container main-container--content"
+      class="main-container main-container--content my-16"
     >
       <div
         class="content leading-normal max-w-prose mx-auto content content--small"

@@ -27,7 +27,7 @@ const app = mockApp({
       faqs: mockFAQsDataset([
         mockFAQThing("whyLogInWithSolid"),
         mockFAQThing("whatIsSolid"),
-        mockFAQThing("whatIsAPod"),
+        mockFAQThing("whatIsPod"),
       ]),
     },
   }),
@@ -119,7 +119,7 @@ describe("LoginPage", () => {
     const { login } = unauthenticatedSession;
     expect(login).toHaveBeenCalledWith({
       clientName: appName,
-      oidcIssuer: getProviders()[0].iri,
+      oidcIssuer: getProviders()[0].loginIri,
       redirectUrl: "http://localhost/",
     });
   });

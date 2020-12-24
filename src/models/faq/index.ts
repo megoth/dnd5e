@@ -52,6 +52,5 @@ export function getFAQ(
   const bundleKey = getBundleKey(currentLocale, bundle);
   const faqURL = `${resourceBundles[bundleKey].urls.faqs}#${faqId}`;
   const faq = getThing(resourceBundles[bundleKey].data.faqs, faqURL);
-  debugger;
   return getFAQDetails(faq, app);
 }

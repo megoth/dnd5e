@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useSession } from "@inrupt/solid-ui-react";
+import Link from "next/link";
+import clsx from "clsx";
 import Layout from "../layout";
 import useApp from "../../src/hooks/useApp";
 import { getMessage } from "../../src/models/translation";
@@ -66,7 +68,7 @@ export default function LoginPage() {
   return (
     <>
       <Layout full>
-        <div className="main-container md:grid grid-cols-2 gap-4 mb-16 max-w-3xl place-items-center">
+        <div className="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
           <div>
             <Content>
               <h1>
@@ -80,12 +82,12 @@ export default function LoginPage() {
               <Translation id="authenticationGuidance" />
             </p>
             <ul className="list-disc ml-5">
-              {providers.map(({ iri, label }) => (
-                <li key={iri}>
+              {providers.map(({ loginIri, label }) => (
+                <li key={loginIri}>
                   <button
                     type="button"
                     className="link"
-                    onClick={() => onIdPSelected(iri)}
+                    onClick={() => onIdPSelected(loginIri)}
                     data-testid={TESTID_LOGIN_PAGE_PREDEFINED_IDP}
                   >
                     {label}
@@ -96,7 +98,7 @@ export default function LoginPage() {
           </div>
           <form onSubmit={onSubmit} className="mt-2 md:mt-0 border p-2 rounded">
             <img
-              src="/icons/solid/solid-emblem.svg"
+              src="/logos/solid-emblem.svg"
               alt={getMessage(app, "logInImage")}
               className="mx-auto hidden md:block"
               style={{ maxWidth: 200 }}
@@ -134,12 +136,19 @@ export default function LoginPage() {
             >
               <Translation id="logIn" />
             </button>
+            <div className="mt-4">
+              <Link href="/signup">
+                <a className="link">
+                  <Translation id="signupSolidPrompt" />
+                </a>
+              </Link>
+            </div>
           </form>
         </div>
-        <aside className={bem("main-container", "content")}>
+        <aside className={clsx(bem("main-container", "content"), "my-16")}>
           <FAQ id="whyLogInWithSolid" variant="small" />
           <FAQ id="whatIsSolid" variant="small" />
-          <FAQ id="whatIsAPod" variant="small" />
+          <FAQ id="whatIsPod" variant="small" />
         </aside>
       </Layout>
     </>

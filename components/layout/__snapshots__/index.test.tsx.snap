@@ -4,7 +4,7 @@ exports[`Layout can be rendered as home 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="main-container main-container--content flex"
+      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
       href="/"
     >
       <picture>
@@ -61,7 +61,7 @@ exports[`Layout renders as non-home by default 1`] = `
 <DocumentFragment>
   <header>
     <a
-      class="main-container main-container--content flex"
+      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
       href="/"
     >
       <picture>
