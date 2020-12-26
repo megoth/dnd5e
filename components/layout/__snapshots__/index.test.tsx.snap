@@ -35,7 +35,7 @@ exports[`Layout can be rendered as home 1`] = `
     class="main-container main-container--content md:flex mt-2"
   >
     <div
-      class="md:flex-grow mb-2"
+      class="md:flex-grow pb-2"
     >
       <a
         class="link mr-1 p-1"
@@ -51,7 +51,7 @@ exports[`Layout can be rendered as home 1`] = `
       </a>
     </div>
     <div
-      class="mb-2"
+      class="pb-2"
     />
   </footer>
 </DocumentFragment>
@@ -94,7 +94,7 @@ exports[`Layout renders as non-home by default 1`] = `
     class="main-container main-container--content md:flex mt-2"
   >
     <div
-      class="md:flex-grow mb-2"
+      class="md:flex-grow pb-2"
     >
       <a
         class="link mr-1 p-1"
@@ -110,7 +110,7 @@ exports[`Layout renders as non-home by default 1`] = `
       </a>
     </div>
     <div
-      class="mb-2"
+      class="pb-2"
     />
   </footer>
 </DocumentFragment>

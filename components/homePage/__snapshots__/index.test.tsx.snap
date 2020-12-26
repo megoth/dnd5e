@@ -2,7 +2,9 @@
 
 exports[`HomePage renders 1`] = `
 <DocumentFragment>
-  <main>
+  <main
+    class="bg-black"
+  >
     <section
       class="hero"
     >
@@ -49,14 +51,14 @@ exports[`HomePage renders 1`] = `
         >
           Photo by 
           <a
-            class="link--subtle"
+            class="link link--subtle"
             href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >
             Steve Johnson
           </a>
            on 
           <a
-            class="link--subtle"
+            class="link link--subtle"
             href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >
             Unsplash
@@ -64,29 +66,117 @@ exports[`HomePage renders 1`] = `
         </p>
       </div>
     </section>
-  </main>
-  <footer
-    class="main-container main-container--content md:flex mt-2"
-  >
-    <div
-      class="md:flex-grow mb-2"
+    <section
+      class="bg-black text-white text-center my-16"
     >
-      <a
-        class="link mr-1 p-1"
-        href="/about"
+      <h2
+        class="text-2xl font-serif px-8"
       >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link mr-1 p-1"
-        href="/faq"
+        [Translation for https://example.com/global/translations.ttl#logInPitch does not exist]
+      </h2>
+      <ul
+        class="flex overflow-x-auto overscroll-x-contain md:justify-center px-2 my-8"
       >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
-    <div
-      class="mb-2"
-    />
-  </footer>
+        <li
+          class="p-2 flex"
+        >
+          <button
+            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
+            data-testid="login-button"
+            type="button"
+          >
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
+              class="mx-auto"
+              src="/logos/inrupt-ps-logo.png"
+              style="max-height: 175px; max-width: 200px;"
+            />
+            <span>
+              Inrupt Pod Spaces
+            </span>
+          </button>
+        </li>
+        <li
+          class="p-2 flex"
+        >
+          <button
+            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
+            data-testid="login-button"
+            type="button"
+          >
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
+              class="mx-auto"
+              src="/logos/solid-emblem.svg"
+              style="max-height: 175px; max-width: 200px;"
+            />
+            <span>
+              solidcommunity.net
+            </span>
+          </button>
+        </li>
+        <li
+          class="p-2 flex"
+        >
+          <button
+            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
+            data-testid="login-button"
+            type="button"
+          >
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
+              class="mx-auto"
+              src="/logos/solid-emblem.svg"
+              style="max-height: 175px; max-width: 200px;"
+            />
+            <span>
+              inrupt.net
+            </span>
+          </button>
+        </li>
+        <li
+          class="p-2 flex"
+          style="max-width: 200px;"
+        >
+          <a
+            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
+            href="/login?idp"
+            style="min-height: 175px;"
+          >
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#solidLogo does not exist]"
+              class="mx-auto"
+              src="/logos/solid-emblem.svg"
+              style="max-height: 175px; max-width: 200px;"
+            />
+            [Translation for https://example.com/global/translations.ttl#provideIdP does not exist]
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer
+      class="main-container main-container--content md:flex mt-2"
+    >
+      <div
+        class="md:flex-grow pb-2"
+      >
+        <a
+          class="link mr-1 p-1"
+          href="/about"
+        >
+          [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+        </a>
+        <a
+          class="link mr-1 p-1"
+          href="/faq"
+        >
+          [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+        </a>
+      </div>
+      <div
+        class="pb-2"
+      />
+    </footer>
+  </main>
 </DocumentFragment>
 `;

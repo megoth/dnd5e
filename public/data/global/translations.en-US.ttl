@@ -26,10 +26,12 @@ translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
 translations:logInImage skos:definition "The icon of the Solid project"@en-US .
+translations:logInPitch skos:definition "Log in with Solid to start your adventure!"@en-US .
 translations:logInPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+translations:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 translations:rememberIdP skos:definition "Remember identity provider"@en-US .
 translations:serviceLogo skos:definition "Logo for service"@en-US .
 translations:signupPitch skos:definition
@@ -44,6 +46,7 @@ translations:signupPitch skos:definition
 translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
 translations:signupTitle skos:definition "Create Solid account"@en-US .
 translations:solidIdP skos:definition "Solid identity provider"@en-US .
+translations:solidLogo skos:definition "Solid logo"@en-US .
 translations:translateTo skos:definition "Translate to {$language}"@en-US .
 translations:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 translations:whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .

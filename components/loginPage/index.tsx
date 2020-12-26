@@ -1,34 +1,46 @@
-import React, { useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { useSession } from "@inrupt/solid-ui-react";
 import Link from "next/link";
 import clsx from "clsx";
+import { useRouter } from "next/router";
 import Layout from "../layout";
 import useApp from "../../src/hooks/useApp";
 import { getMessage } from "../../src/models/translation";
-import { getRedirectURL } from "../../src/windowHelpers";
 import Translation from "../translation";
 import ErrorMessage from "../errorMessage";
 import FAQ from "../faq";
 import Content from "../content";
 import { bem } from "../../src/utils";
 import { getProviders } from "../../src/models/provider";
+import LoginButton from "../loginButton";
+import { onIdPSelected } from "../../src/models/session";
 
 export const TESTID_LOGIN_PAGE_IDP_FIELD = "login-page-idp-field";
 export const TESTID_LOGIN_PAGE_REMEMBER_CHECKBOX =
   "login-page-remember-checkbox";
 export const TESTID_LOGIN_PAGE_BUTTON = "login-page-button";
-export const TESTID_LOGIN_PAGE_PREDEFINED_IDP = "login-page-predefined-idp";
 
 export default function LoginPage() {
   const app = useApp();
+  const router = useRouter();
+  const queryIdP: string = Array.isArray(router.query.idp)
+    ? router.query.idp[0]
+    : router.query.idp;
   const [providerIri, setProviderIri] = useState<string>(
-    localStorage.getItem("idp") || ""
+    queryIdP || localStorage.getItem("idp") || ""
   );
   const [rememberIdp, setRememberIdP] = useState<boolean>(
     localStorage.getItem("rememberIdP") === "true" || false
   );
   const [loginError, setLoginError] = useState<Error | null>(null);
   const { login } = useSession();
+
+  const providerFieldRef = createRef<HTMLInputElement>();
+
+  useEffect(() => {
+    if (!providerFieldRef || router.query.idp === undefined) return;
+    providerFieldRef.current.focus();
+  }, [providerFieldRef, router.query.idp]);
 
   if (loginError) {
     return <ErrorMessage error={loginError} />;
@@ -42,19 +54,6 @@ export default function LoginPage() {
     localStorage.setItem("rememberIdP", value.toString());
   };
 
-  const onIdPSelected = async (oidcIssuer) => {
-    try {
-      await login({
-        oidcIssuer,
-        redirectUrl: getRedirectURL(""),
-        clientName: getMessage(app, "appName"),
-      });
-    } catch (error) {
-      // TODO: Doesn't throw errors yet
-      setLoginError(error);
-    }
-  };
-
   const onSubmit = async (event) => {
     event.preventDefault();
     if (rememberIdp) {
@@ -62,7 +61,7 @@ export default function LoginPage() {
     } else {
       localStorage.removeItem("idp");
     }
-    await onIdPSelected(providerIri);
+    await onIdPSelected(app, providerIri, login, setLoginError);
   };
 
   return (
@@ -84,14 +83,9 @@ export default function LoginPage() {
             <ul className="list-disc ml-5">
               {providers.map(({ loginIri, label }) => (
                 <li key={loginIri}>
-                  <button
-                    type="button"
-                    className="link"
-                    onClick={() => onIdPSelected(loginIri)}
-                    data-testid={TESTID_LOGIN_PAGE_PREDEFINED_IDP}
-                  >
+                  <LoginButton loginIri={loginIri} className="link">
                     {label}
-                  </button>
+                  </LoginButton>
                 </li>
               ))}
             </ul>
@@ -111,6 +105,7 @@ export default function LoginPage() {
                 onChange={(event) => setProviderIri(event.target.value)}
                 className="input"
                 value={providerIri}
+                ref={providerFieldRef}
                 required
                 placeholder="https://"
                 data-testid={TESTID_LOGIN_PAGE_IDP_FIELD}

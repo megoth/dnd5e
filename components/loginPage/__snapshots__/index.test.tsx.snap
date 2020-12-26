@@ -54,7 +54,7 @@ exports[`LoginPage renders 1`] = `
           <li>
             <button
               class="link"
-              data-testid="login-page-predefined-idp"
+              data-testid="login-button"
               type="button"
             >
               Inrupt Pod Spaces
@@ -63,7 +63,7 @@ exports[`LoginPage renders 1`] = `
           <li>
             <button
               class="link"
-              data-testid="login-page-predefined-idp"
+              data-testid="login-button"
               type="button"
             >
               solidcommunity.net
@@ -72,7 +72,7 @@ exports[`LoginPage renders 1`] = `
           <li>
             <button
               class="link"
-              data-testid="login-page-predefined-idp"
+              data-testid="login-button"
               type="button"
             >
               inrupt.net
@@ -196,7 +196,7 @@ exports[`LoginPage renders 1`] = `
     class="main-container main-container--content md:flex mt-2"
   >
     <div
-      class="md:flex-grow mb-2"
+      class="md:flex-grow pb-2"
     >
       <a
         class="link mr-1 p-1"
@@ -212,7 +212,7 @@ exports[`LoginPage renders 1`] = `
       </a>
     </div>
     <div
-      class="mb-2"
+      class="pb-2"
     />
   </footer>
 </DocumentFragment>

@@ -37,7 +37,7 @@ export function mockUnauthenticatedSession(options: Partial<Session> = {}) {
       },
     },
     handleIncomingRedirect: () => Promise.resolve(),
-    login: jest.fn().mockResolvedValue(undefined),
+    login: options.login || jest.fn().mockResolvedValue(undefined),
     logout: () => Promise.resolve(),
     on: () => {},
     ...options,

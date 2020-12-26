@@ -1,26 +1,29 @@
-import React, { ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import clsx from "clsx";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
-import LocaleSelector from "../localeSelector";
 import { bem } from "../../src/utils";
 import PageHeader from "../pageHeader";
+import PageFooter from "../pageFooter";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
+  className?: string;
   full?: boolean;
   header?: boolean;
+  footer?: boolean;
 }
 
-export default function Layout({ children, full, header }: Props) {
+export default function Layout({
+  children,
+  full,
+  header,
+  footer,
+  className,
+  ...props
+}: Props) {
   const app = useApp();
-
-  const pages = [
-    { href: "/about", label: getMessage(app, "aboutTitle") },
-    { href: "/faq", label: getMessage(app, "faqShort") },
-  ];
 
   return (
     <>
@@ -32,31 +35,25 @@ export default function Layout({ children, full, header }: Props) {
       </Head>
       {header && <PageHeader />}
       {full ? (
-        <main>{children}</main>
+        <main className={className} {...props}>
+          {children}
+        </main>
       ) : (
-        <main className={clsx(bem("main-container", "content"), "my-1")}>
+        <main
+          className={clsx(bem("main-container", "content"), "my-1", className)}
+          {...props}
+        >
           {children}
         </main>
       )}
-      <footer
-        className={clsx(bem("main-container", "content"), "md:flex mt-2")}
-      >
-        <div className="md:flex-grow mb-2">
-          {pages.map(({ href, label }) => (
-            <Link href={href} key={label}>
-              <a className="link mr-1 p-1">{label}</a>
-            </Link>
-          ))}
-        </div>
-        <div className="mb-2">
-          <LocaleSelector />
-        </div>
-      </footer>
+      {footer && <PageFooter />}
     </>
   );
 }
 
 Layout.defaultProps = {
   full: false,
+  className: null,
   header: true,
+  footer: true,
 };

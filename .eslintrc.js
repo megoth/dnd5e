@@ -44,6 +44,8 @@ module.exports = {
     ],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
   },
   settings: {
     "import/resolver": {

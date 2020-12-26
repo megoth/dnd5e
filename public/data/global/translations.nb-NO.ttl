@@ -27,10 +27,12 @@ translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
 translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
 translations:logIn skos:definition "Logg på"@nb-NO .
 translations:logInImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
+translations:logInPitch skos:definition "Logg inn med Solid for å starte ditt eventyr!"@nb-NO .
 translations:logInPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 translations:logInWithSolid skos:definition "Logg på med Solid"@nb-NO .
 translations:logOut skos:definition "Logg ut"@nb-NO .
 translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+translations:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 translations:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 translations:signupPitch skos:definition
@@ -45,6 +47,7 @@ translations:signupPitch skos:definition
 translations:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 translations:signupTitle skos:definition "Opprett Solid konto"@nb-NO .
 translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
+translations:solidLogo skos:definition "Logo for Solid"@nb-NO .
 translations:translateTo skos:definition "Oversett til {$language}"@nb-NO .
 translations:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 translations:whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
