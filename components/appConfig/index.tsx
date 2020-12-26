@@ -1,6 +1,7 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import { useRouter } from "next/router";
+import { useSession } from "@inrupt/solid-ui-react";
 import AppProvider from "../../src/contexts/app";
 import useAppCore from "../../src/hooks/useAppCore";
 import ErrorMessage from "../errorMessage";
@@ -46,12 +47,13 @@ export default function AppConfig({
     setBundles(["global"]);
     setApp(updateAppWithLocale(app, newLocale));
   }, [app, router.query.locale]);
+  const { sessionRequestInProgress } = useSession();
 
   if (appError) {
     return <ErrorMessage error={appError} />;
   }
 
-  if (!app || appIsLoading(app, bundles)) {
+  if (!app || appIsLoading(app, bundles) || sessionRequestInProgress) {
     return <Loading />;
   }
 

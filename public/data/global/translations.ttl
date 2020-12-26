@@ -16,6 +16,7 @@
 :locale-en-US a rdfs:Literal .
 :locale-nb-NO a rdfs:Literal .
 :loggedIn a rdfs:Literal .
+:LoggedInAlready a rdfs:Literal .
 :loggedOut a rdfs:Literal .
 :logIn a rdfs:Literal .
 :logInImage a rdfs:Literal .

@@ -29,7 +29,7 @@ export default function Authenticated(): ReactElement {
         <Translation id="loggedIn" vars={{ name }} />
       </p>
       <LogoutButton>
-        <button type="button">
+        <button type="button" className="button">
           <Translation id="logOut" />
         </button>
       </LogoutButton>

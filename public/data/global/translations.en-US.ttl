@@ -23,6 +23,7 @@ translations:learnMore skos:definition "Learn more about the project"@en-US .
 translations:locale-en-US skos:definition "English (US)"@en-US .
 translations:locale-nb-NO skos:definition "Norwegian"@en-US .
 translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
+translations:LoggedInAlready skos:definition "You are already logged in as {$name}"@en-US .
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
 translations:logInImage skos:definition "The icon of the Solid project"@en-US .

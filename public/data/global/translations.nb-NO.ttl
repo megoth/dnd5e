@@ -24,6 +24,7 @@ translations:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 translations:locale-en-US skos:definition "Engelsk"@nb-NO .
 translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
 translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
+translations:LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
 translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
 translations:logIn skos:definition "Logg på"@nb-NO .
 translations:logInImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .

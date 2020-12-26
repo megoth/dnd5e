@@ -15,13 +15,24 @@ import mockApp, { appName } from "../../__testUtils/mockApp";
 import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
 import mockFAQsDataset from "../../__testUtils/mockFAQsDataset";
 import mockFAQThing from "../../__testUtils/mockFAQThing";
-import { mockUnauthenticatedSession } from "../../__testUtils/mockSession";
+import {
+  authenticatedWebId,
+  mockAuthenticatedSession,
+  mockUnauthenticatedSession,
+} from "../../__testUtils/mockSession";
 import { TESTID_ERROR } from "../errorMessage";
 import { getProviders } from "../../src/models/provider";
 import { TESTID_LOGIN_BUTTON } from "../loginButton";
+import { TESTID_LOGGED_IN_ALREADY_WARNING } from "../loggedInAlreadyWarning";
+import useDataset from "../../src/hooks/useDataset";
+import mockDatasetHook from "../../__testUtils/mockDatasetHook";
+import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
+
+jest.mock("../../src/hooks/useDataset");
+const mockedDatasetHook = useDataset as jest.Mock;
 
 const app = mockApp({
   resourceBundles: mockResourceBundleMap({
@@ -52,8 +63,13 @@ describe("LoginPage", () => {
     unauthenticatedSession = mockUnauthenticatedSession();
     mockedSessionHook = jest
       .spyOn(solidUIReactFns, "useSession")
-      .mockImplementation(() => unauthenticatedSession);
+      .mockReturnValue(unauthenticatedSession);
   });
+  beforeEach(() =>
+    mockDatasetHook(mockedDatasetHook, {
+      data: mockProfileDataset(authenticatedWebId),
+    })
+  );
 
   it("renders", () => {
     const { asFragment } = render(
@@ -178,5 +194,17 @@ describe("LoginPage", () => {
     expect(getByTestId(TESTID_LOGIN_PAGE_IDP_FIELD)).toEqual(
       document.activeElement
     );
+  });
+
+  it("renders a warning when authenticated", () => {
+    mockedSessionHook.mockReturnValue(mockAuthenticatedSession());
+
+    const { asFragment, getByTestId } = render(
+      <RouterContext.Provider value={router}>
+        <LoginPage />
+      </RouterContext.Provider>
+    );
+    expect(asFragment()).toMatchSnapshot();
+    expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });
 });

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { useSession } from "@inrupt/solid-ui-react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -8,6 +9,7 @@ import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 import { getProviders } from "../../src/models/provider";
 import FAQ from "../faq";
+import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 
 export default function SignupPage() {
   const app = useApp();
@@ -17,6 +19,7 @@ export default function SignupPage() {
         <h1>
           <Translation id="signupTitle" />
         </h1>
+        <LoggedInAlreadyWarning />
         <ReactMarkdown>{getMessage(app, "signupPitch")}</ReactMarkdown>
       </Content>
       <ul className="flex flex-wrap justify-center my-8">

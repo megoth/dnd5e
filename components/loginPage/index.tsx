@@ -14,6 +14,7 @@ import { bem } from "../../src/utils";
 import { getProviders } from "../../src/models/provider";
 import LoginButton from "../loginButton";
 import { onIdPSelected } from "../../src/models/session";
+import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 
 export const TESTID_LOGIN_PAGE_IDP_FIELD = "login-page-idp-field";
 export const TESTID_LOGIN_PAGE_REMEMBER_CHECKBOX =
@@ -67,6 +68,7 @@ export default function LoginPage() {
   return (
     <>
       <Layout full>
+        <LoggedInAlreadyWarning className={bem("main-container", "content")} />
         <div className="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
           <div>
             <Content>
