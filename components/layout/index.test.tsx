@@ -16,7 +16,7 @@ describe("Layout", () => {
   });
 
   it("can be rendered as home", () => {
-    const { asFragment } = render(<Layout home>test</Layout>);
+    const { asFragment } = render(<Layout full>test</Layout>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

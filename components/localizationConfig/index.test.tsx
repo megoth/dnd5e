@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import LocalizationConfig, {
   TESTID_LOCALIZATION_CONFIG_NO_ERROR,
 } from "./index";
-import mockApp from "../../__testUtils/mockApp";
+import mockApp, { faqsURL } from "../../__testUtils/mockApp";
 import mockResourceBundle, {
   defaultBundle,
 } from "../../__testUtils/mockResourceBundle";
@@ -11,6 +11,7 @@ import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import useDataset from "../../src/hooks/useDataset";
 import { updateAppWithResourceBundle } from "../../src/models/resourceBundle";
 import { TESTID_ERROR } from "../errorMessage";
+import mockFAQsDataset from "../../__testUtils/mockFAQsDataset";
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;

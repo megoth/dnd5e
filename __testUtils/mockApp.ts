@@ -4,12 +4,15 @@ import { appVocabURL } from "./mockAppIndexDataset";
 import mockLanguage, { defaultLocale } from "./mockLanguage";
 import mockResourceBundleMap from "./mockResourceBundleMap";
 import mockAppIndex from "./mockAppIndex";
+import mockFAQsDataset from "./mockFAQsDataset";
 
 export const errorsURL = "https://example.com/global/errors.ttl";
 export const faqsURL = "https://example.com/global/faqs.ttl";
 export const translationsURL = "https://example.com/global/translations.ttl";
 export const localizationsURL =
   "https://example.com/global/translations.en-US.ttl";
+// localizations
+export const appName = "Test App";
 
 export function mockAppPropValue(val, bundleName = "global", locale = "en-US") {
   return bundleName
@@ -27,9 +30,15 @@ export default function mockApp(overrides: Partial<AppModel> = {}): AppModel {
     appVocabURL: overrides.appVocabURL || appVocabURL,
     currentLocale,
     fluentBundles: {
-      [currentLocale]: mockFluentBundle({}, translationsURL, {
-        locale: currentLocale,
-      }),
+      [currentLocale]: mockFluentBundle(
+        {
+          appName,
+        },
+        translationsURL,
+        {
+          locale: currentLocale,
+        }
+      ),
       ...overrides.fluentBundles,
     },
     languages: [mockLanguage(currentLocale), ...(overrides.languages || [])],
@@ -48,9 +57,15 @@ export default function mockApp(overrides: Partial<AppModel> = {}): AppModel {
         locale: currentLocale,
         data: {
           errors: null,
-          faqs: null,
+          faqs: mockFAQsDataset(),
           localizations: null,
           translations: null,
+        },
+        urls: {
+          errors: errorsURL,
+          faqs: faqsURL,
+          localizations: localizationsURL,
+          translations: translationsURL,
         },
       }),
       ...overrides.resourceBundles,

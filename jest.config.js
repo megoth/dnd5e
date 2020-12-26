@@ -6,6 +6,7 @@ module.exports = {
   preset: "ts-jest",
   testEnvironment: "jsdom",
   testPathIgnorePatterns: ["/node_modules/", "/__testUtils/"],
+  setupFiles: ["jest-localstorage-mock"],
   setupFilesAfterEnv: [
     "@testing-library/jest-dom/extend-expect",
     "<rootDir>/__testUtils/setupFetch",

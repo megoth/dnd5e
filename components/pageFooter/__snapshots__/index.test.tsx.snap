@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageFooter renders 1`] = `
+<DocumentFragment>
+  <footer
+    class="main-container main-container--content md:flex mt-2"
+  >
+    <div
+      class="md:flex-grow pb-2"
+    >
+      <a
+        class="link mr-1 p-1"
+        href="/about"
+      >
+        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+      </a>
+      <a
+        class="link mr-1 p-1"
+        href="/faq"
+      >
+        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+      </a>
+    </div>
+    <div
+      class="pb-2"
+    />
+  </footer>
+</DocumentFragment>
+`;

@@ -17,7 +17,7 @@ export default function mockFluentBundle(
   const bundle = new FluentBundle(locale);
   Object.entries(translations).forEach(([id, message]) => {
     const translationURL = getTranslationURL(id, {
-      currentLocale: defaultLocale,
+      currentLocale: locale,
       resourceBundles: mockResourceBundleMap({
         locale,
         urls: {
