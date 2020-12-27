@@ -16,7 +16,10 @@ export default function PageHeader() {
           )}
         >
           <Logo />
-          <div className="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased">
+          <div
+            className="font-serif self-center"
+            style={{ fontSize: "clamp(1.5rem, 3rem, 8vw)" }}
+          >
             <Translation id="appName" />
           </div>
         </a>

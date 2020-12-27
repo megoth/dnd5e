@@ -4,6 +4,10 @@ module.exports = {
   purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
   darkMode: "class", // or "media" or false
   theme: {
+    fontFamily: {
+      sans: ["'Raleway'", "sans-serif"],
+      serif: ["'Zilla Slab'", "serif"],
+    },
     screens: {
       xs: "480px",
       sm: "640px",

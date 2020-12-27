@@ -1,0 +1,33 @@
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Raleway/raleway-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('/fonts/Raleway/raleway-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/fonts/Raleway/raleway-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/Raleway/raleway-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/fonts/Raleway/raleway-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/Raleway/raleway-v18-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* zilla-slab-600 - latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Zilla_Slab/zilla-slab-v6-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('/fonts/Zilla_Slab/zilla-slab-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/fonts/Zilla_Slab/zilla-slab-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/Zilla_Slab/zilla-slab-v6-latin-600.woff') format('woff'), /* Modern Browsers */
+  url('/fonts/Zilla_Slab/ZillaSlab-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/Zilla_Slab/zilla-slab-v6-latin-600.svg#ZillaSlab') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}

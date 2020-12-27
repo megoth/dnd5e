@@ -8,7 +8,7 @@
 .content h4,
 .content h5,
 .content h6 {
-  @apply font-bold mb-2 font-serif;
+  @apply font-semibold mb-2 font-serif;
 }
 
 .content h1 {

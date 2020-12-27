@@ -19,7 +19,7 @@ export default function SplashPage() {
       <section className="hero">
         <div className="h-screen flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white via-transparent dark:from-gray-800 relative text-center">
           <Logo />
-          <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif">
+          <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
             <Translation id="appName" />
           </h1>
           <p className="my-1 max-w-xl">
