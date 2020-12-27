@@ -29,7 +29,6 @@ export default function Layout({
     <>
       <Head>
         <title>{getMessage(app, "appName")}</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="application-name" content={getMessage(app, "appName")} />
         <meta
           name="apple-mobile-web-app-title"
