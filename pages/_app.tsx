@@ -7,10 +7,10 @@ import { ensureAbsoluteURL, prefersDarkModeScheme } from "../src/windowHelpers";
 import AppConfig from "../components/appConfig";
 
 const APP_INDEX_URL = ensureAbsoluteURL(
-  process.env.NEXT_PUBLIC_APP_INDEX_URL || ""
+  process.env.NEXT_PUBLIC_APP_INDEX_URL || "/data/index.ttl#dnd5e"
 );
 const APP_VOCAB_URL = ensureAbsoluteURL(
-  process.env.NEXT_PUBLIC_APP_VOCAB_URL || ""
+  process.env.NEXT_PUBLIC_APP_VOCAB_URL || "/data/app-vocabulary.ttl"
 );
 
 export default function App({ Component, pageProps }: AppProps) {

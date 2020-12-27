@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = withPWA(
   withSourceMaps({
     pwa: {
-      disable: process.env.NODE_ENV === "development",
+      disable: process.env.NODE_ENV !== "production",
       dest: "public",
     },
     webpack(config) {
