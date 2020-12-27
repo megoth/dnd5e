@@ -6,8 +6,6 @@ module.exports = withPWA(
   withSourceMaps({
     pwa: {
       disable: process.env.NODE_ENV === "development",
-      register: true,
-      dest: "public",
     },
     webpack(config) {
       return {
