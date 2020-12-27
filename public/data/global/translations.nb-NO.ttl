@@ -3,7 +3,7 @@
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix translations: <./translations.ttl#> .
 
-translations:aboutTitle skos:definition "Om siden"@nb-NO .
+translations:aboutTitle skos:definition "Om appen"@nb-NO .
 translations:appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 translations:appName skos:definition "D&D5e Solid App"@nb-NO .
 translations:appPitch skos:definition
@@ -20,8 +20,8 @@ translations:authenticationPitch skos:definition
 translations:darkModeTurnOff skos:definition "Skru på dark-modus"@nb-NO .
 translations:darkModeTurnOn skos:definition "Skru av dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
-translations:faqShort skos:definition "FAQ"@nb-NO .
-translations:faqTitle skos:definition "Ofte spurte spørsmål"@nb-NO .
+translations:faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
+translations:faqTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 translations:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 translations:locale-en-US skos:definition "Engelsk"@nb-NO .
 translations:locale-nb-NO skos:definition "Norsk"@nb-NO .

@@ -29,14 +29,12 @@ export default function DarkModeSelector({ className, ...props }: Props) {
     >
       {darkMode ? (
         <span>
-          <span>💡</span>
-          &nbsp;
+          💡&nbsp;
           <Translation id="darkModeTurnOff" />
         </span>
       ) : (
         <span>
-          <span className="text-black text-opacity-30">💡</span>
-          &nbsp;
+          🌙&nbsp;
           <Translation id="darkModeTurnOn" />
         </span>
       )}
