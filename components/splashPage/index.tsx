@@ -19,7 +19,7 @@ export default function SplashPage() {
       <section className="hero">
         <div className="h-screen flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white via-transparent dark:from-gray-800 relative text-center">
           <Logo />
-          <h1 className="text-3xl my-1 font-serif">
+          <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif">
             <Translation id="appName" />
           </h1>
           <p className="my-1 max-w-xl">
@@ -52,18 +52,21 @@ export default function SplashPage() {
         </div>
       </section>
       <section className="text-center my-16 px-4 sm:px-0 flex flex-col sm:flex-row max-w-prose mx-auto">
-        <Content className="flex-1" hyphens={false}>
+        <Content
+          className="flex-1 flex flex-col justify-center"
+          hyphens={false}
+        >
           <img
             src="/logos/solid-emblem.svg"
             alt={getMessage(app, "solidLogo")}
             className="mx-auto"
             style={{ maxHeight: 175, maxWidth: 200 }}
           />
-          <h2 className="text-2xl font-serif px-8">
+          <h2 className="px-4">
             <Translation id="logInPitch" />
           </h2>
         </Content>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col justify-center">
           <Content className="mb-4">
             <p>
               <Translation id="authenticationGuidance" />

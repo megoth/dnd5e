@@ -29,7 +29,7 @@ translations:LoggedInAlready skos:definition "You are already logged in as {$nam
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
 translations:logInImage skos:definition "The icon of the Solid project"@en-US .
-translations:logInPitch skos:definition "Start your adventure by logging in with Solid"@en-US .
+translations:logInPitch skos:definition "Start your adventure with Solid"@en-US .
 translations:logInPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
