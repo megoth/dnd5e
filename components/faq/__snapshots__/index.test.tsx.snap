@@ -4,6 +4,7 @@ exports[`FAQ renders given a FAQ 1`] = `
 <DocumentFragment>
   <div
     class="content leading-normal max-w-prose mx-auto content"
+    style="hyphens: auto;"
   >
     <h2
       data-testid="faq-label"
@@ -25,6 +26,7 @@ exports[`FAQ renders given an id 1`] = `
 <DocumentFragment>
   <div
     class="content leading-normal max-w-prose mx-auto content"
+    style="hyphens: auto;"
   >
     <h2
       data-testid="faq-label"

@@ -79,13 +79,16 @@ export default function LoginPage() {
                 <Translation id="authenticationPitch" />
               </p>
             </Content>
-            <p className="font-bold">
+            <p className="font-bold mt-6">
               <Translation id="authenticationGuidance" />
             </p>
-            <ul className="list-disc ml-5">
+            <ul className="flex flex-col space-y-2 my-2">
               {providers.map(({ loginIri, label }) => (
                 <li key={loginIri}>
-                  <LoginButton loginIri={loginIri} className="link">
+                  <LoginButton
+                    loginIri={loginIri}
+                    className={clsx(bem("button", "solid"), "w-full")}
+                  >
                     {label}
                   </LoginButton>
                 </li>

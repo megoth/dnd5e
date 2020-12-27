@@ -27,7 +27,7 @@ export default function SignupPage() {
           <li key={signupIri} className="text-center m-2">
             <a
               href={signupIri}
-              className="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+              className="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
             >
               <img
                 src={logoSrc}

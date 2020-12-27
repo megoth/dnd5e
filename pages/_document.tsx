@@ -10,9 +10,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <meta name="color-scheme" content="dark light" />
-        </Head>
+        <Head />
         <body className="dark:bg-gray-800 dark:text-gray-200">
           <Main />
           <NextScript />

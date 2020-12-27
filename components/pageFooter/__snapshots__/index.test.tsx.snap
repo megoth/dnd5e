@@ -3,7 +3,7 @@
 exports[`PageFooter renders 1`] = `
 <DocumentFragment>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"

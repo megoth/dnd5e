@@ -12,7 +12,7 @@ translations:appPitch skos:definition
     hjemmelagde."""@nb-NO .
 translations:appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
 translations:authenticationGuidance skos:definition
-    """Velg en identitetsleverandør fra lista, eller fyll ut en selv i skjemaet."""@nb-NO .
+    """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
 translations:authenticationPitch skos:definition
     """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
     lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
@@ -30,7 +30,7 @@ translations:LoggedInAlready skos:definition "Du er allerede logget inn som {$na
 translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
 translations:logIn skos:definition "Logg på"@nb-NO .
 translations:logInImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
-translations:logInPitch skos:definition "Logg inn med Solid for å starte ditt eventyr!"@nb-NO .
+translations:logInPitch skos:definition "Start eventyret ditt med å logge inn med Solid"@nb-NO .
 translations:logInPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 translations:logInWithSolid skos:definition "Logg på med Solid"@nb-NO .
 translations:logOut skos:definition "Logg ut"@nb-NO .
@@ -38,6 +38,7 @@ translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engel
 translations:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 translations:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
+translations:signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 translations:signupPitch skos:definition
     """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
     identitet, som du velger selv hvor du vil opprette. Dette betyr at **vi aldri lagrer dine data på våre systemer**.
@@ -48,7 +49,7 @@ translations:signupPitch skos:definition
     eller [fortsett til solidproject.org for mer informasjon om hvordan du velger
     leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
 translations:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
-translations:signupTitle skos:definition "Opprett Solid konto"@nb-NO .
+translations:signupTitle skos:definition "Opprett en Solid konto"@nb-NO .
 translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 translations:solidLogo skos:definition "Logo for Solid"@nb-NO .
 translations:translateTo skos:definition "Oversett til {$language}"@nb-NO .

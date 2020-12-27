@@ -22,7 +22,7 @@ export default function PageFooter({ className, ...props }: Props) {
     <footer
       className={clsx(
         bem("main-container", "content"),
-        "mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start",
+        "mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start",
         className
       )}
       {...props}

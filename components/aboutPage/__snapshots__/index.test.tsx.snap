@@ -33,6 +33,7 @@ exports[`AboutPage renders 1`] = `
   >
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <h1
         id="test"
@@ -42,7 +43,7 @@ exports[`AboutPage renders 1`] = `
     </div>
   </main>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
@@ -121,6 +122,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
     </div>
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <h1
         id="test"
@@ -130,7 +132,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
     </div>
   </main>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"

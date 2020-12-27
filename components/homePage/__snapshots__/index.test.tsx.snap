@@ -33,6 +33,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
   >
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <h1>
         You are logged in!
@@ -53,7 +54,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
     </div>
   </main>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
@@ -95,14 +96,12 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
 
 exports[`HomePage renders splash page for unauthenticated session 1`] = `
 <DocumentFragment>
-  <main
-    class="bg-black"
-  >
+  <main>
     <section
       class="hero"
     >
       <div
-        class="h-screen text-white flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-black relative text-center"
+        class="h-screen flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white via-transparent dark:from-gray-800 relative text-center"
       >
         <picture>
           <source
@@ -160,95 +159,96 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
       </div>
     </section>
     <section
-      class="bg-black text-white text-center my-16"
+      class="text-center my-16 px-4 sm:px-0 flex flex-col sm:flex-row max-w-prose mx-auto"
     >
-      <h2
-        class="text-2xl font-serif px-8"
+      <div
+        class="content leading-normal max-w-prose mx-auto flex-1"
+        style="hyphens: manual;"
       >
-        [Translation for https://example.com/global/translations.ttl#logInPitch does not exist]
-      </h2>
-      <ul
-        class="flex overflow-x-auto overscroll-x-contain md:justify-center px-2 my-8"
-      >
-        <li
-          class="p-2 flex"
+        <img
+          alt="[Translation for https://example.com/global/translations.ttl#solidLogo does not exist]"
+          class="mx-auto"
+          src="/logos/solid-emblem.svg"
+          style="max-height: 175px; max-width: 200px;"
+        />
+        <h2
+          class="text-2xl font-serif px-8"
         >
-          <button
-            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-            data-testid="login-button"
-            type="button"
+          [Translation for https://example.com/global/translations.ttl#logInPitch does not exist]
+        </h2>
+      </div>
+      <div
+        class="flex-1"
+      >
+        <div
+          class="content leading-normal max-w-prose mx-auto mb-4"
+          style="hyphens: auto;"
+        >
+          <p>
+            [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
+          </p>
+        </div>
+        <ul
+          class="flex flex-col space-y-2 xs:max-w-xs md:max-w-full mx-auto"
+        >
+          <li
+            class="flex-1"
           >
-            <img
-              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
-              class="mx-auto"
-              src="/logos/inrupt-ps-logo.png"
-              style="max-height: 175px; max-width: 200px;"
-            />
-            <span>
+            <button
+              class="button button--solid block w-full"
+              data-testid="login-button"
+              type="button"
+            >
               Inrupt Pod Spaces
-            </span>
-          </button>
-        </li>
-        <li
-          class="p-2 flex"
-        >
-          <button
-            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-            data-testid="login-button"
-            type="button"
+            </button>
+          </li>
+          <li
+            class="flex-1"
           >
-            <img
-              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
-              class="mx-auto"
-              src="/logos/solid-emblem.svg"
-              style="max-height: 175px; max-width: 200px;"
-            />
-            <span>
+            <button
+              class="button button--solid block w-full"
+              data-testid="login-button"
+              type="button"
+            >
               solidcommunity.net
-            </span>
-          </button>
-        </li>
-        <li
-          class="p-2 flex"
-        >
-          <button
-            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-            data-testid="login-button"
-            type="button"
+            </button>
+          </li>
+          <li
+            class="flex-1"
           >
-            <img
-              alt="[Translation for https://example.com/global/translations.ttl#serviceLogo does not exist]"
-              class="mx-auto"
-              src="/logos/solid-emblem.svg"
-              style="max-height: 175px; max-width: 200px;"
-            />
-            <span>
+            <button
+              class="button button--solid block w-full"
+              data-testid="login-button"
+              type="button"
+            >
               inrupt.net
-            </span>
-          </button>
-        </li>
-        <li
-          class="p-2 flex"
-          style="max-width: 200px;"
+            </button>
+          </li>
+          <li
+            class="flex-1"
+          >
+            <a
+              class="button button--solid block w-full"
+              href="/login?idp"
+            >
+              [Translation for https://example.com/global/translations.ttl#provideIdP does not exist]
+            </a>
+          </li>
+        </ul>
+        <div
+          class="content leading-normal max-w-prose mx-auto mt-4"
+          style="hyphens: auto;"
         >
           <a
-            class="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-            href="/login?idp"
-            style="min-height: 175px;"
+            href="/signup"
           >
-            <img
-              alt="[Translation for https://example.com/global/translations.ttl#solidLogo does not exist]"
-              class="mx-auto"
-              src="/logos/solid-emblem.svg"
-              style="max-height: 175px; max-width: 200px;"
-            />
-            [Translation for https://example.com/global/translations.ttl#provideIdP does not exist]
+            [Translation for https://example.com/global/translations.ttl#signupGuidance does not exist]
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
     <footer
-      class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+      class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
     >
       <div
         class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"

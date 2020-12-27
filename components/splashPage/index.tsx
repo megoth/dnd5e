@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import clsx from "clsx";
 import useApp from "../../src/hooks/useApp";
 import Layout from "../layout";
 import Logo from "../logo";
@@ -9,13 +10,14 @@ import { getProviders } from "../../src/models/provider";
 import LoginButton from "../loginButton";
 import { getMessage } from "../../src/models/translation";
 import PageFooter from "../pageFooter";
+import Content from "../content";
 
 export default function SplashPage() {
   const app = useApp();
   return (
-    <Layout full header={false} footer={false} className="bg-black">
+    <Layout full header={false} footer={false}>
       <section className="hero">
-        <div className="h-screen text-white flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-black relative text-center">
+        <div className="h-screen flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white via-transparent dark:from-gray-800 relative text-center">
           <Logo />
           <h1 className="text-3xl my-1 font-serif">
             <Translation id="appName" />
@@ -49,44 +51,51 @@ export default function SplashPage() {
           </p>
         </div>
       </section>
-      <section className="bg-black text-white text-center my-16">
-        <h2 className="text-2xl font-serif px-8">
-          <Translation id="logInPitch" />
-        </h2>
-        <ul className="flex overflow-x-auto overscroll-x-contain md:justify-center px-2 my-8">
-          {getProviders().map(({ label, logoSrc, loginIri }) => (
-            <li key={loginIri} className="p-2 flex">
-              <LoginButton
-                loginIri={loginIri}
-                className="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-              >
-                <img
-                  src={logoSrc}
-                  alt={getMessage(app, "serviceLogo")}
-                  className="mx-auto"
-                  style={{ maxHeight: 175, maxWidth: 200 }}
-                />
-                <span>{label}</span>
-              </LoginButton>
+      <section className="text-center my-16 px-4 sm:px-0 flex flex-col sm:flex-row max-w-prose mx-auto">
+        <Content className="flex-1" hyphens={false}>
+          <img
+            src="/logos/solid-emblem.svg"
+            alt={getMessage(app, "solidLogo")}
+            className="mx-auto"
+            style={{ maxHeight: 175, maxWidth: 200 }}
+          />
+          <h2 className="text-2xl font-serif px-8">
+            <Translation id="logInPitch" />
+          </h2>
+        </Content>
+        <div className="flex-1">
+          <Content className="mb-4">
+            <p>
+              <Translation id="authenticationGuidance" />
+            </p>
+          </Content>
+          <ul className="flex flex-col space-y-2 xs:max-w-xs md:max-w-full mx-auto">
+            {getProviders().map(({ label, loginIri }) => (
+              <li key={loginIri} className="flex-1">
+                <LoginButton
+                  loginIri={loginIri}
+                  className={clsx(bem("button", "solid"), "block w-full")}
+                >
+                  {label}
+                </LoginButton>
+              </li>
+            ))}
+            <li className="flex-1">
+              <Link href="/login?idp">
+                <a className={clsx(bem("button", "solid"), "block w-full")}>
+                  <Translation id="provideIdP" />
+                </a>
+              </Link>
             </li>
-          ))}
-          <li className="p-2 flex" style={{ maxWidth: 200 }}>
-            <Link href="/login?idp">
-              <a
-                className="p-4 bg-purple-100 rounded-xl self-center text-black focus:outline-none focus:ring-2 focus:ring-purple-600 hover:bg-purple-300 hover:shadow-inner"
-                style={{ minHeight: 175 }}
-              >
-                <img
-                  src="/logos/solid-emblem.svg"
-                  alt={getMessage(app, "solidLogo")}
-                  className="mx-auto"
-                  style={{ maxHeight: 175, maxWidth: 200 }}
-                />
-                <Translation id="provideIdP" />
+          </ul>
+          <Content className="mt-4">
+            <Link href="/signup">
+              <a>
+                <Translation id="signupGuidance" />
               </a>
             </Link>
-          </li>
-        </ul>
+          </Content>
+        </div>
       </section>
       <PageFooter />
     </Layout>

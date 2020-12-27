@@ -11,7 +11,7 @@ translations:appPitch skos:definition
     and which rulesets to use, whether that be official or homebrewn."""@en-US .
 translations:appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
 translations:authenticationGuidance skos:definition
-    """Choose an identity provider from the list, or provide one yourself in the form."""@en-US .
+    """Choose an identity provider from the list, or provide one yourself."""@en-US .
 translations:authenticationPitch skos:definition
     """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
     maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
@@ -29,7 +29,7 @@ translations:LoggedInAlready skos:definition "You are already logged in as {$nam
 translations:loggedOut skos:definition "Not logged in"@en-US .
 translations:logIn skos:definition "Log in"@en-US .
 translations:logInImage skos:definition "The icon of the Solid project"@en-US .
-translations:logInPitch skos:definition "Log in with Solid to start your adventure!"@en-US .
+translations:logInPitch skos:definition "Start your adventure by logging in with Solid"@en-US .
 translations:logInPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
@@ -37,17 +37,18 @@ translations:onlyAvailableInEnglish skos:definition "Only available in english"@
 translations:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 translations:rememberIdP skos:definition "Remember identity provider"@en-US .
 translations:serviceLogo skos:definition "Logo for service"@en-US .
+translations:signupGuidance skos:definition "Not sure which to choose?"@en-US .
 translations:signupPitch skos:definition
     """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we
     need you to sign up with a Solid account, which you can choose to do with any identity service that supports Solid.
     This means **we'll never store your data on our systems**. Instead we'll store it to a storage you control (usually
     the one connected to your Solid identity).
 
-    If you're not familiar with any Solid identity providers, we recommend you checking out the ones we recommend
+    If you're not familiar with any Solid identity providers, we recommend choosing one from the  list
     below, or [head over to solidproject.org for more information about how to choose a
     provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
 translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
-translations:signupTitle skos:definition "Create Solid account"@en-US .
+translations:signupTitle skos:definition "Create a Solid account"@en-US .
 translations:solidIdP skos:definition "Solid identity provider"@en-US .
 translations:solidLogo skos:definition "Solid logo"@en-US .
 translations:translateTo skos:definition "Translate to {$language}"@en-US .

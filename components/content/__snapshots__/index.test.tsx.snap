@@ -4,6 +4,7 @@ exports[`Content renders 1`] = `
 <DocumentFragment>
   <div
     class="content leading-normal max-w-prose mx-auto"
+    style="hyphens: auto;"
   >
     test
   </div>

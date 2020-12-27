@@ -33,6 +33,7 @@ exports[`SignupPage renders 1`] = `
   >
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <h1>
         [Translation for https://example.com/global/translations.ttl#signupTitle does not exist]
@@ -48,7 +49,7 @@ exports[`SignupPage renders 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://signup.pod.inrupt.com/"
         >
           <img
@@ -67,7 +68,7 @@ exports[`SignupPage renders 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://solidcommunity.net/register"
         >
           <img
@@ -86,7 +87,7 @@ exports[`SignupPage renders 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://inrupt.net/register"
         >
           <img
@@ -104,6 +105,7 @@ exports[`SignupPage renders 1`] = `
     </ul>
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <p
         class="text-center"
@@ -120,6 +122,7 @@ exports[`SignupPage renders 1`] = `
     >
       <div
         class="content leading-normal max-w-prose mx-auto content content--small"
+        style="hyphens: auto;"
       >
         <h2
           data-testid="faq-label"
@@ -136,6 +139,7 @@ exports[`SignupPage renders 1`] = `
       </div>
       <div
         class="content leading-normal max-w-prose mx-auto content content--small"
+        style="hyphens: auto;"
       >
         <h2
           data-testid="faq-label"
@@ -153,7 +157,7 @@ exports[`SignupPage renders 1`] = `
     </aside>
   </main>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
@@ -226,6 +230,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
   >
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <h1>
         [Translation for https://example.com/global/translations.ttl#signupTitle does not exist]
@@ -250,7 +255,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://signup.pod.inrupt.com/"
         >
           <img
@@ -269,7 +274,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://solidcommunity.net/register"
         >
           <img
@@ -288,7 +293,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
         class="text-center m-2"
       >
         <a
-          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300"
+          class="block bg-purple-100 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 hover:shadow-inner hover:bg-purple-300 text-gray-800 dark:text-gray-800"
           href="https://inrupt.net/register"
         >
           <img
@@ -306,6 +311,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
     </ul>
     <div
       class="content leading-normal max-w-prose mx-auto"
+      style="hyphens: auto;"
     >
       <p
         class="text-center"
@@ -322,6 +328,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
     >
       <div
         class="content leading-normal max-w-prose mx-auto content content--small"
+        style="hyphens: auto;"
       >
         <h2
           data-testid="faq-label"
@@ -338,6 +345,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
       </div>
       <div
         class="content leading-normal max-w-prose mx-auto content content--small"
+        style="hyphens: auto;"
       >
         <h2
           data-testid="faq-label"
@@ -355,7 +363,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
     </aside>
   </main>
   <footer
-    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
       class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"

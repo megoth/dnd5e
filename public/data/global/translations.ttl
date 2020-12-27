@@ -30,6 +30,7 @@
 :provideIdP a rdfs:Literal .
 :rememberIdP a rdfs:Literal .
 :serviceLogo a rdfs:Literal .
+:signupGuidance a rdfs:Literal .
 :signupPitch a rdfs:Literal .
 :signupSolidPrompt a rdfs:Literal .
 :signupTitle a rdfs:Literal .
