@@ -2,16 +2,13 @@
 
 exports[`LocaleSelector renders controls to select other languages if multiple languages are given 1`] = `
 <DocumentFragment>
-  <span
+  <a
+    class="button"
     data-testid="locale-selector-language"
+    href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
   >
-    <a
-      class="button"
-      href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
-    >
-      🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
-    </a>
-  </span>
+    🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
+  </a>
 </DocumentFragment>
 `;
 

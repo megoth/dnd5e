@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DarkModeSelector renders 1`] = `
+<DocumentFragment>
+  <button
+    class="button"
+    data-testid="dark-mode-selector-button"
+    type="button"
+  >
+    <span>
+      <span
+        class="text-black text-opacity-30"
+      >
+        💡
+      </span>
+       [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`DarkModeSelector renders for dark mode 1`] = `
+<DocumentFragment>
+  <button
+    class="button"
+    data-testid="dark-mode-selector-button"
+    type="button"
+  >
+    <span>
+      <span>
+        💡
+      </span>
+       [Translation for https://example.com/global/translations.ttl#darkModeTurnOff does not exist]
+    </span>
+  </button>
+</DocumentFragment>
+`;

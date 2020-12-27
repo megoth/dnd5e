@@ -36,3 +36,16 @@ export function getNavigatorLanguages(selectedLocale?: string | string[]) {
     ? selectedLocale.concat([...navigator.languages])
     : [selectedLocale, ...navigator.languages];
 }
+
+export function prefersDarkModeScheme(): boolean {
+  if (typeof localStorage !== "undefined" && localStorage.getItem("darkMode")) {
+    return localStorage.getItem("darkMode") === "true";
+  }
+  if (
+    typeof window !== "undefined" &&
+    typeof window.matchMedia !== "undefined"
+  ) {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  return false;
+}

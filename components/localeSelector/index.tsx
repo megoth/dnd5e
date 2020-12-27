@@ -15,21 +15,16 @@ export default function LocaleSelector() {
       {languages
         .filter(({ languageCode }) => languageCode !== currentLocale)
         .map(({ languageCode, languageFlag, translationUrl }) => (
-          <span
-            key={languageCode}
-            data-testid={TESTID_LOCALE_SELECTOR_LANGUAGE}
-          >
-            <Link href={{ query: { locale: languageCode } }}>
-              <a className="button">
-                {languageFlag}
-                &nbsp;
-                <Translation
-                  id="translateTo"
-                  vars={{ language: getMessage(app, translationUrl) }}
-                />
-              </a>
-            </Link>
-          </span>
+          <Link href={{ query: { locale: languageCode } }} key={languageCode}>
+            <a className="button" data-testid={TESTID_LOCALE_SELECTOR_LANGUAGE}>
+              {languageFlag}
+              &nbsp;
+              <Translation
+                id="translateTo"
+                vars={{ language: getMessage(app, translationUrl) }}
+              />
+            </a>
+          </Link>
         ))}
     </>
   );

@@ -153,27 +153,42 @@ exports[`SignupPage renders 1`] = `
     </aside>
   </main>
   <footer
-    class="main-container main-container--content md:flex mt-2"
+    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
-      class="md:flex-grow pb-2"
+      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
     >
       <a
-        class="link mr-1 p-1"
+        class="link"
         href="/about"
       >
         [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
       </a>
       <a
-        class="link mr-1 p-1"
+        class="link"
         href="/faq"
       >
         [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
       </a>
     </div>
     <div
-      class="pb-2"
-    />
+      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+    >
+      <button
+        class="button"
+        data-testid="dark-mode-selector-button"
+        type="button"
+      >
+        <span>
+          <span
+            class="text-black text-opacity-30"
+          >
+            💡
+          </span>
+           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+        </span>
+      </button>
+    </div>
   </footer>
 </DocumentFragment>
 `;
@@ -340,27 +355,42 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
     </aside>
   </main>
   <footer
-    class="main-container main-container--content md:flex mt-2"
+    class="main-container main-container--content mt-2 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
   >
     <div
-      class="md:flex-grow pb-2"
+      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
     >
       <a
-        class="link mr-1 p-1"
+        class="link"
         href="/about"
       >
         [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
       </a>
       <a
-        class="link mr-1 p-1"
+        class="link"
         href="/faq"
       >
         [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
       </a>
     </div>
     <div
-      class="pb-2"
-    />
+      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+    >
+      <button
+        class="button"
+        data-testid="dark-mode-selector-button"
+        type="button"
+      >
+        <span>
+          <span
+            class="text-black text-opacity-30"
+          >
+            💡
+          </span>
+           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+        </span>
+      </button>
+    </div>
   </footer>
 </DocumentFragment>
 `;

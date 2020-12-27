@@ -17,6 +17,8 @@ translations:authenticationPitch skos:definition
     """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
     lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
     kompatible apper."""@nb-NO .
+translations:darkModeTurnOff skos:definition "Skru på dark-modus"@nb-NO .
+translations:darkModeTurnOn skos:definition "Skru av dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 translations:faqShort skos:definition "FAQ"@nb-NO .
 translations:faqTitle skos:definition "Ofte spurte spørsmål"@nb-NO .

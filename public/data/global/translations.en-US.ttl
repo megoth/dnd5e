@@ -16,6 +16,8 @@ translations:authenticationPitch skos:definition
     """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
     maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
     app."""@en-US .
+translations:darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
+translations:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 translations:faqShort skos:definition "FAQ"@en-US .
 translations:faqTitle skos:definition "Frequently Asked Questions"@en-US .
