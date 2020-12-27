@@ -1,6 +1,5 @@
 const withPWA = require("next-pwa");
 const withSourceMaps = require("@zeit/next-source-maps");
-const path = require("path");
 
 module.exports = withPWA(
   withSourceMaps({
@@ -21,9 +20,6 @@ module.exports = withPWA(
           ]),
         },
       };
-    },
-    sassOptions: {
-      includePaths: [path.join(__dirname, "styles")],
     },
   })
 );

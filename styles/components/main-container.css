@@ -1,7 +1,7 @@
 .main-container {
   @apply container mx-auto px-4 max-w-3xl;
+}
 
-  &--content {
-    @apply md:px-0 max-w-prose;
-  }
+.main-container--content {
+  @apply md:px-0 max-w-prose;
 }

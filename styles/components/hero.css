@@ -1,15 +1,27 @@
 .hero {
   @apply bg-cover bg-center bg-no-repeat h-screen;
-  @media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
     background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-640.jpg");
   }
-  @media screen and (min-width: 640px) and (max-width: 1920px) {
+}
+
+@media screen and (min-width: 640px) and (max-width: 1920px) {
+  .hero {
     background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-1920.jpg");
   }
-  @media screen and (min-width: 1920px) and (max-width: 2400px) {
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2400px) {
+  .hero {
     background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-2400.jpg");
   }
-  @media screen and (min-width: 2400px) {
+}
+
+@media screen and (min-width: 2400px) {
+  .hero {
     background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-orig.jpg");
   }
 }

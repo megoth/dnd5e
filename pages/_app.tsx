@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { AppProps } from "next/app";
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import { SessionProvider } from "@inrupt/solid-ui-react";
 import Head from "next/head";
 import { ensureAbsoluteURL, prefersDarkModeScheme } from "../src/windowHelpers";

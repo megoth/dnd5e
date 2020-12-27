@@ -1,0 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+@import "components/button.css";
+@import "components/content.css";
+@import "components/forms.css";
+@import "components/hero.css";
+@import "components/link.css";
+@import "components/main-container.css";
+
+@tailwind utilities;

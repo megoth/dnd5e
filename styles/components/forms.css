@@ -4,11 +4,11 @@
 
 .label {
   @apply my-1 block;
-
-  &__text {
-    @apply ml-1;
-  }
 }
+
+.label__text {
+   @apply ml-1;
+ }
 
 .input {
   @apply border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-sm leading-none w-full;
