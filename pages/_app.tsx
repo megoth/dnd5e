@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
           sizes="16x16"
           href="/icons/app/icons8-dungeons-and-dragons-16.png"
         />
-        <link rel="manifest" href="/static/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
         <link
           rel="mask-icon"
           href="/icons/app/icons8-dungeons-and-dragons.svg"
