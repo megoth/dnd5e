@@ -29,9 +29,23 @@ export default function Layout({
     <>
       <Head>
         <title>{getMessage(app, "appName")}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="application-name" content={getMessage(app, "appName")} />
+        <meta
+          name="apple-mobile-web-app-title"
+          content={getMessage(app, "appName")}
+        />
         <meta name="description" content={getMessage(app, "appDescription")} />
+        <meta name="twitter:title" content={getMessage(app, "appName")} />
+        <meta
+          name="twitter:description"
+          content={getMessage(app, "appDescription")}
+        />
         <meta name="og:title" content={getMessage(app, "appName")} />
+        <meta
+          property="og:description"
+          content={getMessage(app, "appDescription")}
+        />
+        <meta property="og:site_name" content={getMessage(app, "appName")} />
       </Head>
       {header && <PageHeader />}
       {full ? (

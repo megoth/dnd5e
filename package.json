@@ -21,6 +21,7 @@
     "gray-matter": "^4.0.2",
     "nested-error-stacks": "^2.1.0",
     "next": "^10.0.0",
+    "next-pwa": "^5.0.1",
     "postcss": "^8.2.1",
     "rdf-namespaces": "^1.9.2",
     "react": "16.13.1",
