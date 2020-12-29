@@ -7,9 +7,11 @@ import { getSubPages } from "../../src/models/page";
 import useLayout from "../../src/hooks/useLayout";
 import Translation from "../translation";
 import Icon from "../icon";
+import useEscKey from "../../src/hooks/useEscKey";
 
 export default function SubMenuNav() {
   const { setSubMenuOpen } = useLayout();
+  useEscKey(() => setSubMenuOpen(false));
 
   const { asPath } = useRouter();
   const pages = getSubPages(asPath);

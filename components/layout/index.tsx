@@ -1,6 +1,7 @@
-import React, { HTMLAttributes, ReactNode, useState } from "react";
+import React, { HTMLAttributes, ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 import clsx from "clsx";
+import { useSwipeable } from "react-swipeable";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 import { bem } from "../../src/utils";
@@ -27,9 +28,17 @@ export default function Layout({
 }: Props) {
   const app = useApp();
   const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false);
+  const [delayedMenuOpen, setDelayedMenuOpen] = useState<boolean>(false);
+  useEffect(() => {
+    setDelayedMenuOpen(subMenuOpen);
+  }, [subMenuOpen]);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setSubMenuOpen(false),
+    onSwipedRight: () => setSubMenuOpen(true),
+  });
 
   return (
-    <div className="flex-1 flex flex-col relative min-h-full">
+    <div className="flex-1 flex flex-col relative min-h-full" {...handlers}>
       <Head>
         <title>{getMessage(app, "appName")}</title>
         <meta name="application-name" content={getMessage(app, "appName")} />
@@ -61,14 +70,18 @@ export default function Layout({
           </>
         ) : (
           <>
-            <div
+            <button
               className={clsx(
                 "bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden",
                 {
                   hidden: !subMenuOpen,
                 }
               )}
-            />
+              onClick={() => setSubMenuOpen(false)}
+              type="button"
+            >
+              &nbsp;
+            </button>
             <div
               className={clsx(
                 bem("main-container", "main"),
@@ -78,7 +91,7 @@ export default function Layout({
               <div
                 className={clsx(
                   bem("layout__sub-menu", {
-                    open: subMenuOpen,
+                    open: delayedMenuOpen,
                   }),
                   {
                     hidden: !subMenuOpen,

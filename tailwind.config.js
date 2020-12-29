@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       transitionProperty: {
-        width: "width",
+        left: "left",
       },
     },
   },
