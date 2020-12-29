@@ -1,7 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
-import { useSession } from "@inrupt/solid-ui-react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -14,7 +13,7 @@ import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 export default function SignupPage() {
   const app = useApp();
   return (
-    <Layout>
+    <Layout showContent={false} showAdmin={false}>
       <Content>
         <h1>
           <Translation id="signupTitle" />

@@ -16,9 +16,14 @@ translations:authenticationPitch skos:definition
     """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
     maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
     app."""@en-US .
+translations:charactersPageTitle skos:definition "Characters"@en-US .
+translations:classesPageTitle skos:definition "Classes"@en-US .
+translations:close skos:definition "Close"@en-US .
 translations:darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 translations:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+translations:encountersPageTitle skos:definition "Encounters"@en-US .
+translations:equipmentPageTitle skos:definition "Equipment"@en-US .
 translations:faqShort skos:definition "FAQ"@en-US .
 translations:faqTitle skos:definition "Frequently Asked Questions"@en-US .
 translations:learnMore skos:definition "Learn more about the project"@en-US .
@@ -33,9 +38,13 @@ translations:logInPitch skos:definition "Start your adventure with Solid"@en-US 
 translations:logInPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logInWithSolid skos:definition "Log in with Solid"@en-US .
 translations:logOut skos:definition "Log out"@en-US .
+translations:monstersPageTitle skos:definition "Monsters"@en-US .
+translations:notesPageTitle skos:definition "Notes"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 translations:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
+translations:racesPageTitle skos:definition "Races"@en-US .
 translations:rememberIdP skos:definition "Remember identity provider"@en-US .
+translations:rulesPageTitle skos:definition "Rules"@en-US .
 translations:serviceLogo skos:definition "Logo for service"@en-US .
 translations:signupGuidance skos:definition "Not sure which to choose?"@en-US .
 translations:signupPitch skos:definition
@@ -51,6 +60,7 @@ translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-U
 translations:signupTitle skos:definition "Create a Solid account"@en-US .
 translations:solidIdP skos:definition "Solid identity provider"@en-US .
 translations:solidLogo skos:definition "Solid logo"@en-US .
+translations:spellsPageTitle skos:definition "Spells"@en-US .
 translations:translateTo skos:definition "Translate to {$language}"@en-US .
 translations:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 translations:whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .

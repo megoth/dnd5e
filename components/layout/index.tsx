@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode, useState } from "react";
 import Head from "next/head";
 import clsx from "clsx";
 import { getMessage } from "../../src/models/translation";
@@ -6,6 +6,8 @@ import useApp from "../../src/hooks/useApp";
 import { bem } from "../../src/utils";
 import PageHeader from "../pageHeader";
 import PageFooter from "../pageFooter";
+import SubMenuNav from "../subMenuNav";
+import LayoutProvider from "../../src/contexts/layout";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -24,9 +26,10 @@ export default function Layout({
   ...props
 }: Props) {
   const app = useApp();
+  const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false);
 
   return (
-    <>
+    <div className="flex-1 flex flex-col relative min-h-full">
       <Head>
         <title>{getMessage(app, "appName")}</title>
         <meta name="application-name" content={getMessage(app, "appName")} />
@@ -47,21 +50,54 @@ export default function Layout({
         />
         <meta property="og:site_name" content={getMessage(app, "appName")} />
       </Head>
-      {header && <PageHeader />}
-      {full ? (
-        <main className={className} {...props}>
-          {children}
-        </main>
-      ) : (
-        <main
-          className={clsx(bem("main-container", "content"), "my-1", className)}
-          {...props}
-        >
-          {children}
-        </main>
-      )}
-      {footer && <PageFooter />}
-    </>
+      <LayoutProvider setSubMenuOpen={setSubMenuOpen}>
+        {header && <PageHeader />}
+        {full ? (
+          <>
+            <main className={className} {...props}>
+              {children}
+            </main>
+            {footer && <PageFooter />}
+          </>
+        ) : (
+          <>
+            <div
+              className={clsx(
+                "bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden",
+                {
+                  hidden: !subMenuOpen,
+                }
+              )}
+            />
+            <div
+              className={clsx(
+                bem("main-container", "main"),
+                "flex-1 flex flex-col lg:flex-row lg:space-x-2"
+              )}
+            >
+              <div
+                className={clsx(
+                  bem("layout__sub-menu", {
+                    open: subMenuOpen,
+                  }),
+                  {
+                    hidden: !subMenuOpen,
+                  },
+                  "lg:block"
+                )}
+              >
+                <SubMenuNav />
+              </div>
+              <div className="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full">
+                <main className="flex-1">{children}</main>
+                {footer && <PageFooter />}
+              </div>
+              <div className="hidden lg:block lg:flex-1" />
+            </div>
+          </>
+        )}
+      </LayoutProvider>
+    </div>
   );
 }
 
