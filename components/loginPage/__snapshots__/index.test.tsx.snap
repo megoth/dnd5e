@@ -6,7 +6,7 @@ exports[`LoginPage renders 1`] = `
     class="flex-1 flex flex-col relative min-h-full"
   >
     <header
-      class="mb-2 shadow shadow-lg"
+      class="mb-2 shadow shadow-md"
     >
       <div
         class="main-container main-container--content"
@@ -264,7 +264,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
     class="flex-1 flex flex-col relative min-h-full"
   >
     <header
-      class="mb-2 shadow shadow-lg"
+      class="mb-2 shadow shadow-md"
     >
       <div
         class="main-container main-container--content"

@@ -11,7 +11,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 
 export default function PageHeader({ className, ...props }: Props) {
   return (
-    <header className={clsx("mb-2 shadow shadow-lg", className)} {...props}>
+    <header className={clsx("mb-2 shadow shadow-md", className)} {...props}>
       <div className={clsx(bem("main-container", "content"))}>
         <div
           className="font-serif self-center text-left"

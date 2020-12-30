@@ -3,7 +3,7 @@
 exports[`PageHeader renders 1`] = `
 <DocumentFragment>
   <header
-    class="mb-2 shadow shadow-lg"
+    class="mb-2 shadow shadow-md"
   >
     <div
       class="main-container main-container--content"

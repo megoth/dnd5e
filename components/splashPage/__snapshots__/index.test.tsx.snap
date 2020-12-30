@@ -13,7 +13,7 @@ exports[`SplashPage renders 1`] = `
           class="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative"
         >
           <header
-            class="mb-2 shadow shadow-lg absolute left-0 top-0 w-full"
+            class="mb-2 shadow shadow-md absolute left-0 top-0 w-full"
           >
             <div
               class="main-container main-container--content"
@@ -61,7 +61,7 @@ exports[`SplashPage renders 1`] = `
             </nav>
           </header>
           <div
-            class="mt-16 xs:mt-32 mb-8 xs:mb-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg"
+            class="mt-24 xs:mt-32 mb-8 xs:mb-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg"
           >
             <picture
               class="inline-block"
