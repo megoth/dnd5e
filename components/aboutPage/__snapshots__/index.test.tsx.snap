@@ -5,7 +5,9 @@ exports[`AboutPage renders 1`] = `
   <div
     class="flex-1 flex flex-col relative min-h-full"
   >
-    <header>
+    <header
+      class="pb-1"
+    >
       <div
         class="main-container main-container--content flex"
       >
@@ -234,7 +236,9 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
   <div
     class="flex-1 flex flex-col relative min-h-full"
   >
-    <header>
+    <header
+      class="pb-1"
+    >
       <div
         class="main-container main-container--content flex"
       >

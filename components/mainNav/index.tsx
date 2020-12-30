@@ -1,5 +1,6 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { useSession } from "@inrupt/solid-ui-react";
+import clsx from "clsx";
 import NavItem from "../navItem";
 import { Page } from "../../src/models/page";
 import { bem } from "../../src/utils";
@@ -7,7 +8,11 @@ import { userIsAdmin } from "../../src/models/session";
 
 export const TESTID_MAIN_NAV_LIST_ITEM = "main-nav-list-item";
 
-export default function MainNav() {
+interface Props extends HTMLAttributes<HTMLDivElement> {
+  className?: string;
+}
+
+export default function MainNav({ className, ...props }: Props) {
   const { session } = useSession();
   const admin = userIsAdmin(session);
   const pages: Array<Page> = [
@@ -30,7 +35,7 @@ export default function MainNav() {
       : []),
   ];
   return (
-    <nav className={bem("pages-nav", "main-menu")}>
+    <nav className={clsx(bem("pages-nav", "main-menu"), className)} {...props}>
       <ul className={bem("pages-nav__list", "main-menu")}>
         {pages.map((page) => (
           <NavItem
@@ -45,3 +50,7 @@ export default function MainNav() {
     </nav>
   );
 }
+
+MainNav.defaultProps = {
+  className: null,
+};

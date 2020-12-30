@@ -11,28 +11,32 @@ import LoginButton from "../loginButton";
 import { getMessage } from "../../src/models/translation";
 import PageFooter from "../pageFooter";
 import Content from "../content";
+import PageHeader from "../pageHeader";
+import WarningMessage from "../warningMessage";
 
 export default function SplashPage() {
   const app = useApp();
   return (
     <Layout full header={false} footer={false}>
       <section className="hero">
-        <div className="h-screen flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white via-transparent dark:from-gray-800 relative text-center">
-          <Logo />
-          <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
-            <Translation id="appName" />
-          </h1>
-          <p className="my-1 max-w-xl">
-            <Translation id="appPitch" />
-          </p>
-          <Link href="/about">
-            <a className="link my-1 max-w-prose">
-              <Translation id="learnMore" />
-            </a>
-          </Link>
-          <p className="text-2xl my-1">
-            <Translation id="workInProgress" />
-          </p>
+        <PageHeader className="bg-white dark:bg-gray-800" />
+        <div className="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent relative text-center">
+          <div className="p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-90 rounded max-w-lg">
+            <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
+              <Translation id="appName" />
+            </h1>
+            <p className="my-1 max-w-xl">
+              <Translation id="appPitch" />
+            </p>
+            <WarningMessage>
+              <Translation id="workInProgress" />
+            </WarningMessage>
+            <Link href="/about">
+              <a className="link block my-2 max-w-prose text-center">
+                <Translation id="learnMore" />
+              </a>
+            </Link>
+          </div>
           <p className="text-xs text-gray-600 absolute bottom-1 right-2">
             Photo by{" "}
             <a

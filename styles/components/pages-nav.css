@@ -1,4 +1,6 @@
-.pages-nav {}
+.pages-nav--main-menu {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
 
 .pages-nav--sub-menu {
   @apply bg-gray-100 dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent h-screen lg:h-auto overflow-y-auto overscroll-y-auto;
@@ -9,7 +11,7 @@
 }
 
 .pages-nav__link {
-  @apply block p-1 xs:p-2 text-black dark:text-white hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-900;
+  @apply block p-1 xs:p-2 text-black dark:text-white hover:bg-red-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-red-600;
 }
 
 .pages-nav__link--main-menu.pages-nav__link--child-selected {
@@ -25,9 +27,9 @@
 }
 
 .pages-nav__button {
-  @apply bg-red-600 text-white px-4 focus:outline-none focus:ring-2 focus:ring-red-900;
+  @apply bg-red-600 text-white px-4 focus:outline-none focus:ring-2 focus:ring-red-600;
 }
 
 .pages-nav__button--main-menu {
-  @apply px-1 xs:px-4;
+  @apply px-2 xs:px-4;
 }

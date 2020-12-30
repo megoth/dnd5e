@@ -2,7 +2,9 @@
 
 exports[`PageHeader renders 1`] = `
 <DocumentFragment>
-  <header>
+  <header
+    class="pb-1"
+  >
     <div
       class="main-container main-container--content flex"
     >

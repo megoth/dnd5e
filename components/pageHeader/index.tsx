@@ -1,14 +1,18 @@
 import Link from "next/link";
 import clsx from "clsx";
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { bem } from "../../src/utils";
 import Logo from "../logo";
 import Translation from "../translation";
 import MainNav from "../mainNav";
 
-export default function PageHeader() {
+interface Props extends HTMLAttributes<HTMLDivElement> {
+  className?: string;
+}
+
+export default function PageHeader({ className, ...props }: Props) {
   return (
-    <header>
+    <header className={clsx("pb-1", className)} {...props}>
       <div className={clsx(bem("main-container", "content"), "flex")}>
         <Link href="/">
           <a className="focus:outline-none focus:ring-2 focus:ring-red-600">
@@ -32,3 +36,7 @@ export default function PageHeader() {
     </header>
   );
 }
+
+PageHeader.defaultProps = {
+  className: null,
+};
