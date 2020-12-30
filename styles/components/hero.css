@@ -1,5 +1,6 @@
 .hero {
-  @apply flex flex-col bg-cover bg-center bg-no-repeat md:max-h-full md:min-h-screen;
+  @apply flex flex-col bg-cover bg-center bg-no-repeat;
+  min-height: 90vmax; /* TODO: weird bug on small devices */
 }
 
 @media screen and (max-width: 640px) {
@@ -10,6 +11,7 @@
 
 @media screen and (min-width: 640px) and (max-width: 1920px) {
   .hero {
+    @apply min-h-screen;
     background-image: url("/images/hero/steve-johnson-f2PXTJWrnrM-unsplash-1920.jpg");
   }
 }

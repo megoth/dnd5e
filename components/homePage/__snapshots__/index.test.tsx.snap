@@ -147,10 +147,10 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
         class="hero"
       >
         <div
-          class="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative"
+          class="flex-1 flex flex-col justify-center items-center leading-normal bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative"
         >
           <header
-            class="mb-2 shadow shadow-md absolute left-0 top-0 w-full"
+            class="mb-2 shadow shadow-md w-full"
           >
             <div
               class="main-container main-container--content"
@@ -198,60 +198,64 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
             </nav>
           </header>
           <div
-            class="mt-24 xs:mt-32 mb-8 xs:mb-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg"
+            class="px-4 flex-1"
           >
-            <picture
-              class="inline-block"
-            >
-              <source
-                media="(min-width: 600px)"
-                srcset="/icons/app/icons8-dungeons-and-dragons-256.png"
-              />
-              <img
-                alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-                src="/icons/app/icons8-dungeons-and-dragons-128.png"
-              />
-            </picture>
-            <h1
-              class="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold"
-            >
-              [Translation for https://example.com/global/translations.ttl#appName does not exist]
-            </h1>
-            <p
-              class="my-1 max-w-xl"
-            >
-              [Translation for https://example.com/global/translations.ttl#appPitch does not exist]
-            </p>
             <div
-              class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
+              class="my-8 px-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-md"
             >
-              [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+              <picture
+                class="inline-block"
+              >
+                <source
+                  media="(min-width: 600px)"
+                  srcset="/icons/app/icons8-dungeons-and-dragons-256.png"
+                />
+                <img
+                  alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+                  src="/icons/app/icons8-dungeons-and-dragons-128.png"
+                />
+              </picture>
+              <h1
+                class="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold"
+              >
+                [Translation for https://example.com/global/translations.ttl#appName does not exist]
+              </h1>
+              <p
+                class="my-1 max-w-xl"
+              >
+                [Translation for https://example.com/global/translations.ttl#appPitch does not exist]
+              </p>
+              <div
+                class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
+              >
+                [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+              </div>
+              <a
+                class="link block my-2 max-w-prose text-center"
+                href="/about"
+              >
+                [Translation for https://example.com/global/translations.ttl#learnMore does not exist]
+              </a>
             </div>
-            <a
-              class="link block my-2 max-w-prose text-center"
-              href="/about"
+            <p
+              class="text-xs text-gray-600 absolute bottom-1 right-2"
             >
-              [Translation for https://example.com/global/translations.ttl#learnMore does not exist]
-            </a>
+              Photo by 
+              <a
+                class="link link--subtle"
+                href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >
+                Steve Johnson
+              </a>
+               on 
+              <a
+                class="link link--subtle"
+                href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >
+                Unsplash
+              </a>
+            </p>
           </div>
-          <p
-            class="text-xs text-gray-600 absolute bottom-1 right-2"
-          >
-            Photo by 
-            <a
-              class="link link--subtle"
-              href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >
-              Steve Johnson
-            </a>
-             on 
-            <a
-              class="link link--subtle"
-              href="https://unsplash.com/s/photos/pen-and-paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >
-              Unsplash
-            </a>
-          </p>
         </div>
       </section>
       <section
