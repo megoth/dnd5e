@@ -10,7 +10,7 @@ export interface SessionInfo {
 
 export const authenticatedWebId = "http://example.com/webId#me";
 
-export function mockAuthenticatedSession(options: Partial<Session> = {}) {
+export function mockAuthenticatedSession(options: Partial<SessionInfo> = {}) {
   return ({
     session: {
       info: {
@@ -28,7 +28,7 @@ export function mockAuthenticatedSession(options: Partial<Session> = {}) {
   } as unknown) as SessionInfo;
 }
 
-export function mockUnauthenticatedSession(options: Partial<Session> = {}) {
+export function mockUnauthenticatedSession(options: Partial<SessionInfo> = {}) {
   return ({
     session: {
       info: {

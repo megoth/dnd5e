@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubMenuNav renders 1`] = `
+<DocumentFragment>
+  <nav
+    class="pages-nav pages-nav--sub-menu"
+  >
+    <button
+      class="button lg:hidden bg-transparent border-transparent text-right px-2 w-full hover:bg-gray-900 hover:text-white dark:text-white focus:ring-gray-900 mb-9"
+      data-testid="sub-menu-nav-close-button"
+      type="button"
+    >
+      [Translation for https://example.com/global/translations.ttl#close does not exist] 
+      <svg
+        class="icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 18L18 6M6 6l12 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <ul
+      class="nav-pages__list nav-pages__list--sub-menu"
+    >
+      <li
+        class="flex"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--sub-menu pages-nav__link--selected pages-nav__link--child-selected"
+          href="/admin"
+        >
+          [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--sub-menu"
+          href="/admin/languages"
+        >
+          [Translation for https://example.com/admin/translations.ttl#languagesPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--sub-menu"
+          href="/admin/translations"
+        >
+          [Translation for https://example.com/admin/translations.ttl#translationsPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--sub-menu"
+          href="/admin/errors"
+        >
+          [Translation for https://example.com/admin/translations.ttl#errorsPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--sub-menu"
+          href="/admin/faq"
+        >
+          [Translation for https://example.com/admin/translations.ttl#faqsPageTitle does not exist]
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`SubMenuNav renders nothing when there are no pages 1`] = `<DocumentFragment />`;

@@ -4,6 +4,7 @@ import { getMessage } from "../translation";
 import { AppModel } from "../app";
 
 export function userIsAdmin(session: Session): boolean {
+  // TODO: Replace with proper check - hacky for now
   return session.info.webId === "https://dnd5e.inrupt.net/profile/card#me";
 }
 

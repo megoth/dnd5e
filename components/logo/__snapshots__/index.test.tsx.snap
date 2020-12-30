@@ -2,7 +2,9 @@
 
 exports[`Logo renders 1`] = `
 <DocumentFragment>
-  <picture>
+  <picture
+    class="block"
+  >
     <source
       media="(min-width: 640px)"
       srcset="/icons/app/icons8-dungeons-and-dragons-128.png"

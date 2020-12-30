@@ -2,179 +2,471 @@
 
 exports[`AboutPage renders 1`] = `
 <DocumentFragment>
-  <header>
-    <a
-      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
-      href="/"
-    >
-      <picture>
-        <source
-          media="(min-width: 640px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-        />
-        <source
-          media="(min-width: 480px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-        />
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/icons/app/icons8-dungeons-and-dragons-64.png"
-        />
-      </picture>
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
+  >
+    <header>
       <div
-        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
+        class="main-container main-container--content flex"
       >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </div>
-    </a>
-  </header>
-  <main
-    class="main-container main-container--content my-1"
-  >
-    <div
-      class="content leading-normal max-w-prose mx-auto"
-      style="hyphens: auto;"
-    >
-      <h1
-        id="test"
-      >
-        test
-      </h1>
-    </div>
-  </main>
-  <footer
-    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-  >
-    <div
-      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
-    >
-      <a
-        class="link"
-        href="/about"
-      >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link"
-        href="/faq"
-      >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
-    <div
-      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
-    >
-      <button
-        class="button"
-        data-testid="dark-mode-selector-button"
-        type="button"
-      >
-        <span>
-          <span
-            class="text-black text-opacity-30"
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          <picture
+            class="block"
           >
-            💡
-          </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-        </span>
-      </button>
+            <source
+              media="(min-width: 640px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
+            />
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+              src="/icons/app/icons8-dungeons-and-dragons-64.png"
+            />
+          </picture>
+        </a>
+        <div
+          class="flex-1"
+        >
+          <div
+            class="font-serif self-center"
+          >
+            <a
+              class="focus:outline-none focus:ring-2 focus:ring-red-600"
+              href="/"
+            >
+              [Translation for https://example.com/global/translations.ttl#appName does not exist]
+            </a>
+          </div>
+          <nav
+            class="pages-nav pages-nav--main-menu"
+          >
+            <ul
+              class="pages-nav__list pages-nav__list--main-menu"
+            >
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/characters"
+                >
+                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                </a>
+              </li>
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/rules"
+                >
+                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <button
+      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden hidden"
+      data-testid="layout-fade"
+      type="button"
+    >
+       
+    </button>
+    <div
+      class="main-container main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
+    >
+      <div
+        class="layout__sub-menu hidden lg:block"
+        data-testid="layout-sub-menu"
+      >
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <button
+            class="button lg:hidden bg-transparent border-transparent text-right px-2 w-full hover:bg-gray-900 hover:text-white dark:text-white focus:ring-gray-900 mb-9"
+            data-testid="sub-menu-nav-close-button"
+            type="button"
+          >
+            [Translation for https://example.com/global/translations.ttl#close does not exist] 
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu pages-nav__link--selected pages-nav__link--child-selected"
+                href="/admin"
+              >
+                [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/languages"
+              >
+                [Translation for https://example.com/admin/translations.ttl#languagesPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/translations"
+              >
+                [Translation for https://example.com/admin/translations.ttl#translationsPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/errors"
+              >
+                [Translation for https://example.com/admin/translations.ttl#errorsPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/faq"
+              >
+                [Translation for https://example.com/admin/translations.ttl#faqsPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full"
+      >
+        <main
+          class="flex-1"
+        >
+          <div
+            class="content leading-normal max-w-prose mx-auto"
+            style="hyphens: auto;"
+          >
+            <h1
+              id="test"
+            >
+              test
+            </h1>
+          </div>
+        </main>
+        <footer
+          class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+        >
+          <div
+            class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+          >
+            <a
+              class="link"
+              href="/about"
+            >
+              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+            </a>
+            <a
+              class="link"
+              href="/faq"
+            >
+              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+            </a>
+          </div>
+          <div
+            class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+          >
+            <button
+              class="button"
+              data-testid="dark-mode-selector-button"
+              type="button"
+            >
+              <span>
+                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+              </span>
+            </button>
+          </div>
+        </footer>
+      </div>
+      <div
+        class="hidden lg:block lg:flex-1"
+      />
     </div>
-  </footer>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`AboutPage shows a warning on non-english pages 1`] = `
 <DocumentFragment>
-  <header>
-    <a
-      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
-      href="/"
-    >
-      <picture>
-        <source
-          media="(min-width: 640px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-        />
-        <source
-          media="(min-width: 480px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-        />
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/icons/app/icons8-dungeons-and-dragons-64.png"
-        />
-      </picture>
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
+  >
+    <header>
       <div
-        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
+        class="main-container main-container--content flex"
       >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </div>
-    </a>
-  </header>
-  <main
-    class="main-container main-container--content my-1"
-  >
-    <div
-      class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
-      data-testid="about-page-language-warning"
-    >
-      [Translation for https://example.com/global/translations.ttl#onlyAvailableInEnglish does not exist]
-    </div>
-    <div
-      class="content leading-normal max-w-prose mx-auto"
-      style="hyphens: auto;"
-    >
-      <h1
-        id="test"
-      >
-        test
-      </h1>
-    </div>
-  </main>
-  <footer
-    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-  >
-    <div
-      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
-    >
-      <a
-        class="link"
-        href="/about"
-      >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link"
-        href="/faq"
-      >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
-    <div
-      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
-    >
-      <button
-        class="button"
-        data-testid="dark-mode-selector-button"
-        type="button"
-      >
-        <span>
-          <span
-            class="text-black text-opacity-30"
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          <picture
+            class="block"
           >
-            💡
-          </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-        </span>
-      </button>
-      <a
-        class="button"
-        data-testid="locale-selector-language"
-        href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
+            <source
+              media="(min-width: 640px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
+            />
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+              src="/icons/app/icons8-dungeons-and-dragons-64.png"
+            />
+          </picture>
+        </a>
+        <div
+          class="flex-1"
+        >
+          <div
+            class="font-serif self-center"
+          >
+            <a
+              class="focus:outline-none focus:ring-2 focus:ring-red-600"
+              href="/"
+            >
+              [Translation for https://example.com/global/translations.ttl#appName does not exist]
+            </a>
+          </div>
+          <nav
+            class="pages-nav pages-nav--main-menu"
+          >
+            <ul
+              class="pages-nav__list pages-nav__list--main-menu"
+            >
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/characters"
+                >
+                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                </a>
+              </li>
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/rules"
+                >
+                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <button
+      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden hidden"
+      data-testid="layout-fade"
+      type="button"
+    >
+       
+    </button>
+    <div
+      class="main-container main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
+    >
+      <div
+        class="layout__sub-menu hidden lg:block"
+        data-testid="layout-sub-menu"
       >
-        🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
-      </a>
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <button
+            class="button lg:hidden bg-transparent border-transparent text-right px-2 w-full hover:bg-gray-900 hover:text-white dark:text-white focus:ring-gray-900 mb-9"
+            data-testid="sub-menu-nav-close-button"
+            type="button"
+          >
+            [Translation for https://example.com/global/translations.ttl#close does not exist] 
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu pages-nav__link--selected pages-nav__link--child-selected"
+                href="/admin"
+              >
+                [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/languages"
+              >
+                [Translation for https://example.com/admin/translations.ttl#languagesPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/translations"
+              >
+                [Translation for https://example.com/admin/translations.ttl#translationsPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/errors"
+              >
+                [Translation for https://example.com/admin/translations.ttl#errorsPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/admin/faq"
+              >
+                [Translation for https://example.com/admin/translations.ttl#faqsPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full"
+      >
+        <main
+          class="flex-1"
+        >
+          <div
+            class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
+            data-testid="about-page-language-warning"
+          >
+            [Translation for https://example.com/global/translations.ttl#onlyAvailableInEnglish does not exist]
+          </div>
+          <div
+            class="content leading-normal max-w-prose mx-auto"
+            style="hyphens: auto;"
+          >
+            <h1
+              id="test"
+            >
+              test
+            </h1>
+          </div>
+        </main>
+        <footer
+          class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+        >
+          <div
+            class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+          >
+            <a
+              class="link"
+              href="/about"
+            >
+              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+            </a>
+            <a
+              class="link"
+              href="/faq"
+            >
+              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+            </a>
+          </div>
+          <div
+            class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+          >
+            <button
+              class="button"
+              data-testid="dark-mode-selector-button"
+              type="button"
+            >
+              <span>
+                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+              </span>
+            </button>
+            <a
+              class="button"
+              data-testid="locale-selector-language"
+              href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
+            >
+              🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
+            </a>
+          </div>
+        </footer>
+      </div>
+      <div
+        class="hidden lg:block lg:flex-1"
+      />
     </div>
-  </footer>
+  </div>
 </DocumentFragment>
 `;

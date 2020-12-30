@@ -19,7 +19,7 @@ export default function AboutPage({ markdown }: Props) {
     heading: HeadingRenderer,
   };
   return (
-    <Layout showContent={false} showAdmin={false}>
+    <Layout>
       {currentLocale !== "en-US" && (
         <WarningMessage data-testid={TESTID_ABOUT_PAGE_LANGUAGE_WARNING}>
           <Translation id="onlyAvailableInEnglish" />

@@ -1,20 +1,20 @@
 import { useEffect } from "react";
 
-export const ESC_KEYCODE = 27;
+const ESC_KEYCODE = 27;
 
-export function handleEscKeydown(callback) {
+function handleEscKeydown(callback) {
   return (e) => {
-    if (!e?.keyCode) return;
     if (e.keyCode === ESC_KEYCODE) callback(e);
   };
 }
 
 export default function useEscKey(callback: () => void) {
   return useEffect(() => {
-    document.body.addEventListener("keydown", handleEscKeydown(callback));
+    const onKeydown = handleEscKeydown(callback);
+    document.body.addEventListener("keydown", onKeydown);
 
     return () => {
-      document.body.removeEventListener("keydown", handleEscKeydown(callback));
+      document.body.removeEventListener("keydown", onKeydown);
     };
   });
 }

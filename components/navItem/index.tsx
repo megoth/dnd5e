@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { useRouter } from "next/router";
 import clsx from "clsx";
 import Translation from "../translation";
@@ -8,7 +8,9 @@ import { bem } from "../../src/utils";
 import useLayout from "../../src/hooks/useLayout";
 import Icon from "../icon";
 
-interface Props extends Page {
+export const TESTID_NAV_ITEM_SUB_MENU_BUTTON = "nav-item-sub-menu-button";
+
+interface Props extends Page, HTMLAttributes<HTMLLIElement> {
   mainNav?: boolean;
   modifiers?: string;
 }
@@ -19,6 +21,7 @@ export default function NavItem({
   translationId,
   mainNav,
   modifiers,
+  ...props
 }: Props) {
   const { setSubMenuOpen } = useLayout();
 
@@ -26,7 +29,7 @@ export default function NavItem({
   const selected = asPath === href;
   const childSelected = asPath.startsWith(href);
   return (
-    <li className="flex">
+    <li className="flex" {...props}>
       <Link href={href}>
         <a
           className={bem("pages-nav__link", modifiers, {
@@ -42,6 +45,7 @@ export default function NavItem({
           type="button"
           className={clsx(bem("pages-nav__button", modifiers), "lg:hidden")}
           onClick={() => setSubMenuOpen(true)}
+          data-testid={TESTID_NAV_ITEM_SUB_MENU_BUTTON}
         >
           <Icon name="menu" />
         </button>

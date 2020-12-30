@@ -5,6 +5,8 @@ import { Page } from "../../src/models/page";
 import { bem } from "../../src/utils";
 import { userIsAdmin } from "../../src/models/session";
 
+export const TESTID_MAIN_NAV_LIST_ITEM = "main-nav-list-item";
+
 export default function MainNav() {
   const { session } = useSession();
   const admin = userIsAdmin(session);
@@ -31,7 +33,13 @@ export default function MainNav() {
     <nav className={bem("pages-nav", "main-menu")}>
       <ul className={bem("pages-nav__list", "main-menu")}>
         {pages.map((page) => (
-          <NavItem key={page.href} mainNav modifiers="main-menu" {...page} />
+          <NavItem
+            key={page.href}
+            mainNav
+            modifiers="main-menu"
+            {...page}
+            data-testid={TESTID_MAIN_NAV_LIST_ITEM}
+          />
         ))}
       </ul>
     </nav>

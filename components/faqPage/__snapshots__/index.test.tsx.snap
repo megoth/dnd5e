@@ -2,102 +2,168 @@
 
 exports[`FAQPage renders a list of FAQs 1`] = `
 <DocumentFragment>
-  <header>
-    <a
-      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
-      href="/"
-    >
-      <picture>
-        <source
-          media="(min-width: 640px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-        />
-        <source
-          media="(min-width: 480px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-        />
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/icons/app/icons8-dungeons-and-dragons-64.png"
-        />
-      </picture>
-      <div
-        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
-      >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </div>
-    </a>
-  </header>
-  <main
-    class="main-container main-container--content my-1"
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
   >
-    <div
-      class="content leading-normal max-w-prose mx-auto"
-      style="hyphens: auto;"
-    >
-      <h1>
-        [Translation for https://example.com/global/translations.ttl#faqTitle does not exist]
-      </h1>
-    </div>
-    <section
-      data-testid="faq-item"
-    >
+    <header>
       <div
-        class="content leading-normal max-w-prose mx-auto content"
-        style="hyphens: auto;"
+        class="main-container main-container--content flex"
       >
-        <h2
-          data-testid="faq-label"
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
         >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
+          <picture
+            class="block"
+          >
+            <source
+              media="(min-width: 640px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
+            />
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+              src="/icons/app/icons8-dungeons-and-dragons-64.png"
+            />
+          </picture>
+        </a>
         <div
-          data-testid="faq-description"
+          class="flex-1"
         >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
+          <div
+            class="font-serif self-center"
+          >
+            <a
+              class="focus:outline-none focus:ring-2 focus:ring-red-600"
+              href="/"
+            >
+              [Translation for https://example.com/global/translations.ttl#appName does not exist]
+            </a>
+          </div>
+          <nav
+            class="pages-nav pages-nav--main-menu"
+          >
+            <ul
+              class="pages-nav__list pages-nav__list--main-menu"
+            >
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/characters"
+                >
+                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                </a>
+              </li>
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/rules"
+                >
+                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </section>
-  </main>
-  <footer
-    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-  >
-    <div
-      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+    </header>
+    <button
+      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden hidden"
+      data-testid="layout-fade"
+      type="button"
     >
-      <a
-        class="link"
-        href="/about"
-      >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link"
-        href="/faq"
-      >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
+       
+    </button>
     <div
-      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+      class="main-container main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
     >
-      <button
-        class="button"
-        data-testid="dark-mode-selector-button"
-        type="button"
+      <div
+        class="layout__sub-menu hidden lg:block"
+        data-testid="layout-sub-menu"
+      />
+      <div
+        class="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full"
       >
-        <span>
-          <span
-            class="text-black text-opacity-30"
+        <main
+          class="flex-1"
+        >
+          <div
+            class="content leading-normal max-w-prose mx-auto"
+            style="hyphens: auto;"
           >
-            💡
-          </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-        </span>
-      </button>
+            <h1>
+              [Translation for https://example.com/global/translations.ttl#faqTitle does not exist]
+            </h1>
+          </div>
+          <section
+            data-testid="faq-item"
+          >
+            <div
+              class="content leading-normal max-w-prose mx-auto content"
+              style="hyphens: auto;"
+            >
+              <h2
+                data-testid="faq-label"
+              >
+                [Translation for https://example.com/#faqLabel does not exist]
+              </h2>
+              <div
+                data-testid="faq-description"
+              >
+                <p>
+                  [Translation for https://example.com/#faqDescription does not exist]
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer
+          class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+        >
+          <div
+            class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+          >
+            <a
+              class="link"
+              href="/about"
+            >
+              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+            </a>
+            <a
+              class="link"
+              href="/faq"
+            >
+              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+            </a>
+          </div>
+          <div
+            class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+          >
+            <button
+              class="button"
+              data-testid="dark-mode-selector-button"
+              type="button"
+            >
+              <span>
+                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+              </span>
+            </button>
+          </div>
+        </footer>
+      </div>
+      <div
+        class="hidden lg:block lg:flex-1"
+      />
     </div>
-  </footer>
+  </div>
 </DocumentFragment>
 `;

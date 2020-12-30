@@ -10,6 +10,9 @@ import PageFooter from "../pageFooter";
 import SubMenuNav from "../subMenuNav";
 import LayoutProvider from "../../src/contexts/layout";
 
+export const TESTID_LAYOUT_FADE = "layout-fade";
+export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
+
 interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   className?: string;
@@ -29,9 +32,7 @@ export default function Layout({
   const app = useApp();
   const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false);
   const [delayedMenuOpen, setDelayedMenuOpen] = useState<boolean>(false);
-  useEffect(() => {
-    setDelayedMenuOpen(subMenuOpen);
-  }, [subMenuOpen]);
+  useEffect(() => setDelayedMenuOpen(subMenuOpen), [subMenuOpen]);
   const handlers = useSwipeable({
     onSwipedLeft: () => setSubMenuOpen(false),
     onSwipedRight: () => setSubMenuOpen(true),
@@ -79,6 +80,7 @@ export default function Layout({
               )}
               onClick={() => setSubMenuOpen(false)}
               type="button"
+              data-testid={TESTID_LAYOUT_FADE}
             >
               &nbsp;
             </button>
@@ -98,6 +100,7 @@ export default function Layout({
                   },
                   "lg:block"
                 )}
+                data-testid={TESTID_LAYOUT_SUB_MENU}
               >
                 <SubMenuNav />
               </div>
