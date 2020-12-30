@@ -2,6 +2,7 @@ import React, { HTMLAttributes, ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 import clsx from "clsx";
 import { useSwipeable } from "react-swipeable";
+import { useRouter } from "next/router";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 import { bem } from "../../src/utils";
@@ -9,6 +10,7 @@ import PageHeader from "../pageHeader";
 import PageFooter from "../pageFooter";
 import SubMenuNav from "../subMenuNav";
 import LayoutProvider from "../../src/contexts/layout";
+import { getSubPages } from "../../src/models/page";
 
 export const TESTID_LAYOUT_FADE = "layout-fade";
 export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
@@ -33,9 +35,11 @@ export default function Layout({
   const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false);
   const [delayedMenuOpen, setDelayedMenuOpen] = useState<boolean>(false);
   useEffect(() => setDelayedMenuOpen(subMenuOpen), [subMenuOpen]);
+  const { asPath } = useRouter();
+  const pages = getSubPages(asPath);
   const handlers = useSwipeable({
     onSwipedLeft: () => setSubMenuOpen(false),
-    onSwipedRight: () => setSubMenuOpen(true),
+    onSwipedRight: () => setSubMenuOpen(pages.length > 0),
   });
 
   return (

@@ -65,11 +65,31 @@ exports[`Layout can be rendered as home 1`] = `
                 data-testid="main-nav-list-item"
               >
                 <a
-                  class="pages-nav__link pages-nav__link--main-menu"
+                  class="pages-nav__link pages-nav__link--main-menu pages-nav__link--selected pages-nav__link--child-selected"
                   href="/rules"
                 >
                   [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
                 </a>
+                <button
+                  class="pages-nav__button pages-nav__button--main-menu lg:hidden"
+                  data-testid="nav-item-sub-menu-button"
+                  type="button"
+                >
+                  <svg
+                    class="icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
               </li>
             </ul>
           </nav>
@@ -181,11 +201,31 @@ exports[`Layout renders as non-home by default 1`] = `
                 data-testid="main-nav-list-item"
               >
                 <a
-                  class="pages-nav__link pages-nav__link--main-menu"
+                  class="pages-nav__link pages-nav__link--main-menu pages-nav__link--selected pages-nav__link--child-selected"
                   href="/rules"
                 >
                   [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
                 </a>
+                <button
+                  class="pages-nav__button pages-nav__button--main-menu lg:hidden"
+                  data-testid="nav-item-sub-menu-button"
+                  type="button"
+                >
+                  <svg
+                    class="icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
               </li>
             </ul>
           </nav>
@@ -205,7 +245,97 @@ exports[`Layout renders as non-home by default 1`] = `
       <div
         class="layout__sub-menu hidden lg:block"
         data-testid="layout-sub-menu"
-      />
+      >
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <button
+            class="button lg:hidden bg-transparent border-transparent text-right px-2 w-full hover:bg-gray-900 hover:text-white dark:text-white focus:ring-gray-900 mb-9"
+            data-testid="sub-menu-nav-close-button"
+            type="button"
+          >
+            [Translation for https://example.com/global/translations.ttl#close does not exist] 
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu pages-nav__link--selected pages-nav__link--child-selected"
+                href="/rules"
+              >
+                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/rules/classes"
+              >
+                [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/rules/races"
+              >
+                [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/rules/equipment"
+              >
+                [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/rules/spells"
+              >
+                [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
+              </a>
+            </li>
+            <li
+              class="flex"
+            >
+              <a
+                class="pages-nav__link pages-nav__link--sub-menu"
+                href="/rules/monsters"
+              >
+                [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div
         class="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full"
       >

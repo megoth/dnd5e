@@ -19,7 +19,7 @@ describe("Layout", () => {
   beforeEach(() => {
     jest
       .spyOn(routerFns, "useRouter")
-      .mockReturnValue({ asPath: "/" } as NextRouter);
+      .mockReturnValue({ asPath: "/rules" } as NextRouter);
   });
   beforeEach(() => {
     mockedSwipeableHook = jest

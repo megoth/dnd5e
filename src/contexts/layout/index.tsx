@@ -8,7 +8,7 @@ export const LayoutContext = createContext<{
 
 interface Props {
   children: ReactNode;
-  setSubMenuOpen: Function;
+  setSubMenuOpen: (subMenuOpen: boolean) => void;
 }
 
 export default function LayoutProvider({ children, setSubMenuOpen }: Props) {
