@@ -20,8 +20,9 @@ export default function SplashPage() {
     <Layout full header={false} footer={false}>
       <section className="hero">
         <PageHeader className="bg-white dark:bg-gray-800" />
-        <div className="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent relative text-center">
-          <div className="p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-90 rounded max-w-lg">
+        <div className="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative -top-2 -mb-2">
+          <div className="my-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg">
+            <Logo />
             <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
               <Translation id="appName" />
             </h1>

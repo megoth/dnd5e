@@ -3,77 +3,52 @@
 exports[`PageHeader renders 1`] = `
 <DocumentFragment>
   <header
-    class="pb-1"
+    class="mb-2 shadow shadow-lg"
   >
     <div
-      class="main-container main-container--content flex"
+      class="main-container main-container--content"
     >
-      <a
-        class="focus:outline-none focus:ring-2 focus:ring-red-600"
-        href="/"
-      >
-        <picture
-          class="block"
-        >
-          <source
-            media="(min-width: 640px)"
-            srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-          />
-          <source
-            media="(min-width: 480px)"
-            srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-          />
-          <img
-            alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-            src="/icons/app/icons8-dungeons-and-dragons-64.png"
-          />
-        </picture>
-      </a>
       <div
-        class="flex-1"
+        class="font-serif self-center"
       >
-        <div
-          class="font-serif self-center"
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
         >
-          <a
-            class="focus:outline-none focus:ring-2 focus:ring-red-600"
-            href="/"
-          >
-            [Translation for https://example.com/global/translations.ttl#appName does not exist]
-          </a>
-        </div>
-        <nav
-          class="pages-nav pages-nav--main-menu"
-        >
-          <ul
-            class="pages-nav__list pages-nav__list--main-menu"
-          >
-            <li
-              class="flex"
-              data-testid="main-nav-list-item"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--main-menu"
-                href="/characters"
-              >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-              </a>
-            </li>
-            <li
-              class="flex"
-              data-testid="main-nav-list-item"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--main-menu"
-                href="/rules"
-              >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-              </a>
-            </li>
-          </ul>
-        </nav>
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
       </div>
     </div>
+    <nav
+      class="pages-nav pages-nav--main-menu"
+    >
+      <ul
+        class="pages-nav__list pages-nav__list--main-menu"
+      >
+        <li
+          class="flex"
+          data-testid="main-nav-list-item"
+        >
+          <a
+            class="pages-nav__link pages-nav__link--main-menu"
+            href="/characters"
+          >
+            [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+          </a>
+        </li>
+        <li
+          class="flex"
+          data-testid="main-nav-list-item"
+        >
+          <a
+            class="pages-nav__link pages-nav__link--main-menu"
+            href="/rules"
+          >
+            [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 </DocumentFragment>
 `;
