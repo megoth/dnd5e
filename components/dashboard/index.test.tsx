@@ -1,5 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
+import { createRouter } from "next/router";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import Dashboard from "./index";
@@ -15,12 +17,19 @@ jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
 
 describe("Dashboard", () => {
+  // @ts-ignore
+  const router = createRouter("", {}, "", {});
+
   it("renders", () => {
     mockAppHook(mockedAppHook);
     mockDatasetHook(mockedDatasetHook, {
       data: mockProfileDataset(authenticatedWebId),
     });
-    const { asFragment } = render(<Dashboard />);
+    const { asFragment } = render(
+      <RouterContext.Provider value={router}>
+        <Dashboard />
+      </RouterContext.Provider>
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

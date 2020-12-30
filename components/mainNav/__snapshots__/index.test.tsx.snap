@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNav renders 1`] = `
+<DocumentFragment>
+  <nav
+    class="pages-nav pages-nav--main-menu"
+  >
+    <ul
+      class="pages-nav__list pages-nav__list--main-menu"
+    >
+      <li
+        class="flex"
+        data-testid="main-nav-list-item"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--main-menu"
+          href="/characters"
+        >
+          [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+        data-testid="main-nav-list-item"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--main-menu"
+          href="/rules"
+        >
+          [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`MainNav renders an extra item for admin 1`] = `
+<DocumentFragment>
+  <nav
+    class="pages-nav pages-nav--main-menu"
+  >
+    <ul
+      class="pages-nav__list pages-nav__list--main-menu"
+    >
+      <li
+        class="flex"
+        data-testid="main-nav-list-item"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--main-menu"
+          href="/characters"
+        >
+          [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+        data-testid="main-nav-list-item"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--main-menu"
+          href="/rules"
+        >
+          [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+        </a>
+      </li>
+      <li
+        class="flex"
+        data-testid="main-nav-list-item"
+      >
+        <a
+          class="pages-nav__link pages-nav__link--main-menu"
+          href="/admin"
+        >
+          [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

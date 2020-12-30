@@ -2,484 +2,572 @@
 
 exports[`LoginPage renders 1`] = `
 <DocumentFragment>
-  <header>
-    <a
-      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
-      href="/"
-    >
-      <picture>
-        <source
-          media="(min-width: 640px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-        />
-        <source
-          media="(min-width: 480px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-        />
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/icons/app/icons8-dungeons-and-dragons-64.png"
-        />
-      </picture>
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
+  >
+    <header>
       <div
-        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
+        class="main-container main-container--content flex"
       >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </div>
-    </a>
-  </header>
-  <main>
-    <div
-      class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
-    >
-      <div>
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          <picture
+            class="block"
+          >
+            <source
+              media="(min-width: 640px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
+            />
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+              src="/icons/app/icons8-dungeons-and-dragons-64.png"
+            />
+          </picture>
+        </a>
         <div
-          class="content leading-normal max-w-prose mx-auto"
+          class="flex-1"
+        >
+          <div
+            class="font-serif self-center"
+          >
+            <a
+              class="focus:outline-none focus:ring-2 focus:ring-red-600"
+              href="/"
+            >
+              [Translation for https://example.com/global/translations.ttl#appName does not exist]
+            </a>
+          </div>
+          <nav
+            class="pages-nav pages-nav--main-menu"
+          >
+            <ul
+              class="pages-nav__list pages-nav__list--main-menu"
+            >
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/characters"
+                >
+                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                </a>
+              </li>
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/rules"
+                >
+                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
+      >
+        <div>
+          <div
+            class="content leading-normal max-w-prose mx-auto"
+            style="hyphens: auto;"
+          >
+            <h1>
+              [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
+            </h1>
+            <p>
+              [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
+            </p>
+          </div>
+          <p
+            class="font-bold mt-6"
+          >
+            [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
+          </p>
+          <ul
+            class="flex flex-col space-y-2 my-2"
+          >
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                Inrupt Pod Spaces
+              </button>
+            </li>
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                solidcommunity.net
+              </button>
+            </li>
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                inrupt.net
+              </button>
+            </li>
+          </ul>
+        </div>
+        <form
+          class="mt-2 md:mt-0 border p-2 rounded"
+        >
+          <img
+            alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+            class="mx-auto hidden md:block"
+            src="/logos/solid-emblem.svg"
+            style="max-width: 200px;"
+          />
+          <label
+            class="label"
+            for="idp"
+          >
+            [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+            <input
+              class="input"
+              data-testid="login-page-idp-field"
+              id="idp"
+              placeholder="https://"
+              required=""
+              type="url"
+              value=""
+            />
+          </label>
+          <label
+            class="label"
+            for="rememberIdp"
+          >
+            <input
+              class="checkbox"
+              data-testid="login-page-remember-checkbox"
+              id="rememberIdp"
+              type="checkbox"
+            />
+            <span
+              class="label__text"
+            >
+              [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+            </span>
+          </label>
+          <button
+            class="button w-full"
+            data-testid="login-page-button"
+            type="submit"
+          >
+            [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+          </button>
+          <div
+            class="mt-4"
+          >
+            <a
+              class="link"
+              href="/signup"
+            >
+              [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+            </a>
+          </div>
+        </form>
+      </div>
+      <aside
+        class="main-container main-container--content my-16"
+      >
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
           style="hyphens: auto;"
         >
-          <h1>
-            [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
-          </h1>
-          <p>
-            [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
-          </p>
-        </div>
-        <p
-          class="font-bold mt-6"
-        >
-          [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
-        </p>
-        <ul
-          class="flex flex-col space-y-2 my-2"
-        >
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              Inrupt Pod Spaces
-            </button>
-          </li>
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              solidcommunity.net
-            </button>
-          </li>
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              inrupt.net
-            </button>
-          </li>
-        </ul>
-      </div>
-      <form
-        class="mt-2 md:mt-0 border p-2 rounded"
-      >
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
-          class="mx-auto hidden md:block"
-          src="/logos/solid-emblem.svg"
-          style="max-width: 200px;"
-        />
-        <label
-          class="label"
-          for="idp"
-        >
-          [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
-          <input
-            class="input"
-            data-testid="login-page-idp-field"
-            id="idp"
-            placeholder="https://"
-            required=""
-            type="url"
-            value=""
-          />
-        </label>
-        <label
-          class="label"
-          for="rememberIdp"
-        >
-          <input
-            class="checkbox"
-            data-testid="login-page-remember-checkbox"
-            id="rememberIdp"
-            type="checkbox"
-          />
-          <span
-            class="label__text"
+          <h2
+            data-testid="faq-label"
           >
-            [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
-          </span>
-        </label>
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
+          style="hyphens: auto;"
+        >
+          <h2
+            data-testid="faq-label"
+          >
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
+          style="hyphens: auto;"
+        >
+          <h2
+            data-testid="faq-label"
+          >
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer
+      class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    >
+      <div
+        class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+      >
+        <a
+          class="link"
+          href="/about"
+        >
+          [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+        </a>
+        <a
+          class="link"
+          href="/faq"
+        >
+          [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+        </a>
+      </div>
+      <div
+        class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+      >
         <button
-          class="button w-full"
-          data-testid="login-page-button"
-          type="submit"
+          class="button"
+          data-testid="dark-mode-selector-button"
+          type="button"
         >
-          [Translation for https://example.com/global/translations.ttl#logIn does not exist]
-        </button>
-        <div
-          class="mt-4"
-        >
-          <a
-            class="link"
-            href="/signup"
-          >
-            [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
-          </a>
-        </div>
-      </form>
-    </div>
-    <aside
-      class="main-container main-container--content my-16"
-    >
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-    </aside>
-  </main>
-  <footer
-    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-  >
-    <div
-      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
-    >
-      <a
-        class="link"
-        href="/about"
-      >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link"
-        href="/faq"
-      >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
-    <div
-      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
-    >
-      <button
-        class="button"
-        data-testid="dark-mode-selector-button"
-        type="button"
-      >
-        <span>
-          <span
-            class="text-black text-opacity-30"
-          >
-            💡
+          <span>
+            🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
           </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-        </span>
-      </button>
-    </div>
-  </footer>
+        </button>
+      </div>
+    </footer>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`LoginPage renders a warning when authenticated 1`] = `
 <DocumentFragment>
-  <header>
-    <a
-      class="main-container main-container--content flex focus:outline-none focus:ring-2 focus:ring-red-600"
-      href="/"
-    >
-      <picture>
-        <source
-          media="(min-width: 640px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
-        />
-        <source
-          media="(min-width: 480px)"
-          srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
-        />
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
-          src="/icons/app/icons8-dungeons-and-dragons-64.png"
-        />
-      </picture>
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
+  >
+    <header>
       <div
-        class="font-serif text-2xl sm:text-3xl md:text-4xl self-center antialiased"
+        class="main-container main-container--content flex"
       >
-        [Translation for https://example.com/global/translations.ttl#appName does not exist]
-      </div>
-    </a>
-  </header>
-  <main>
-    <div
-      class="main-container main-container--content"
-      data-testid="logged-in-already-warning"
-    >
-      <div
-        class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
-      >
-        [Translation for https://example.com/global/translations.ttl#LoggedInAlready does not exist]
-      </div>
-    </div>
-    <div
-      class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
-    >
-      <div>
+        <a
+          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          <picture
+            class="block"
+          >
+            <source
+              media="(min-width: 640px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-128.png"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="/icons/app/icons8-dungeons-and-dragons-96.png"
+            />
+            <img
+              alt="[Translation for https://example.com/global/translations.ttl#appLogoDescription does not exist]"
+              src="/icons/app/icons8-dungeons-and-dragons-64.png"
+            />
+          </picture>
+        </a>
         <div
-          class="content leading-normal max-w-prose mx-auto"
+          class="flex-1"
+        >
+          <div
+            class="font-serif self-center"
+          >
+            <a
+              class="focus:outline-none focus:ring-2 focus:ring-red-600"
+              href="/"
+            >
+              [Translation for https://example.com/global/translations.ttl#appName does not exist]
+            </a>
+          </div>
+          <nav
+            class="pages-nav pages-nav--main-menu"
+          >
+            <ul
+              class="pages-nav__list pages-nav__list--main-menu"
+            >
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/characters"
+                >
+                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                </a>
+              </li>
+              <li
+                class="flex"
+                data-testid="main-nav-list-item"
+              >
+                <a
+                  class="pages-nav__link pages-nav__link--main-menu"
+                  href="/rules"
+                >
+                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        class="main-container main-container--content"
+        data-testid="logged-in-already-warning"
+      >
+        <div
+          class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
+        >
+          [Translation for https://example.com/global/translations.ttl#LoggedInAlready does not exist]
+        </div>
+      </div>
+      <div
+        class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
+      >
+        <div>
+          <div
+            class="content leading-normal max-w-prose mx-auto"
+            style="hyphens: auto;"
+          >
+            <h1>
+              [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
+            </h1>
+            <p>
+              [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
+            </p>
+          </div>
+          <p
+            class="font-bold mt-6"
+          >
+            [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
+          </p>
+          <ul
+            class="flex flex-col space-y-2 my-2"
+          >
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                Inrupt Pod Spaces
+              </button>
+            </li>
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                solidcommunity.net
+              </button>
+            </li>
+            <li>
+              <button
+                class="button button--solid w-full"
+                data-testid="login-button"
+                type="button"
+              >
+                inrupt.net
+              </button>
+            </li>
+          </ul>
+        </div>
+        <form
+          class="mt-2 md:mt-0 border p-2 rounded"
+        >
+          <img
+            alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+            class="mx-auto hidden md:block"
+            src="/logos/solid-emblem.svg"
+            style="max-width: 200px;"
+          />
+          <label
+            class="label"
+            for="idp"
+          >
+            [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+            <input
+              class="input"
+              data-testid="login-page-idp-field"
+              id="idp"
+              placeholder="https://"
+              required=""
+              type="url"
+              value=""
+            />
+          </label>
+          <label
+            class="label"
+            for="rememberIdp"
+          >
+            <input
+              class="checkbox"
+              data-testid="login-page-remember-checkbox"
+              id="rememberIdp"
+              type="checkbox"
+            />
+            <span
+              class="label__text"
+            >
+              [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+            </span>
+          </label>
+          <button
+            class="button w-full"
+            data-testid="login-page-button"
+            type="submit"
+          >
+            [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+          </button>
+          <div
+            class="mt-4"
+          >
+            <a
+              class="link"
+              href="/signup"
+            >
+              [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+            </a>
+          </div>
+        </form>
+      </div>
+      <aside
+        class="main-container main-container--content my-16"
+      >
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
           style="hyphens: auto;"
         >
-          <h1>
-            [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
-          </h1>
-          <p>
-            [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
-          </p>
-        </div>
-        <p
-          class="font-bold mt-6"
-        >
-          [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
-        </p>
-        <ul
-          class="flex flex-col space-y-2 my-2"
-        >
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              Inrupt Pod Spaces
-            </button>
-          </li>
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              solidcommunity.net
-            </button>
-          </li>
-          <li>
-            <button
-              class="button button--solid w-full"
-              data-testid="login-button"
-              type="button"
-            >
-              inrupt.net
-            </button>
-          </li>
-        </ul>
-      </div>
-      <form
-        class="mt-2 md:mt-0 border p-2 rounded"
-      >
-        <img
-          alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
-          class="mx-auto hidden md:block"
-          src="/logos/solid-emblem.svg"
-          style="max-width: 200px;"
-        />
-        <label
-          class="label"
-          for="idp"
-        >
-          [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
-          <input
-            class="input"
-            data-testid="login-page-idp-field"
-            id="idp"
-            placeholder="https://"
-            required=""
-            type="url"
-            value=""
-          />
-        </label>
-        <label
-          class="label"
-          for="rememberIdp"
-        >
-          <input
-            class="checkbox"
-            data-testid="login-page-remember-checkbox"
-            id="rememberIdp"
-            type="checkbox"
-          />
-          <span
-            class="label__text"
+          <h2
+            data-testid="faq-label"
           >
-            [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
-          </span>
-        </label>
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
+          style="hyphens: auto;"
+        >
+          <h2
+            data-testid="faq-label"
+          >
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+        <div
+          class="content leading-normal max-w-prose mx-auto content content--small"
+          style="hyphens: auto;"
+        >
+          <h2
+            data-testid="faq-label"
+          >
+            [Translation for https://example.com/#faqLabel does not exist]
+          </h2>
+          <div
+            data-testid="faq-description"
+          >
+            <p>
+              [Translation for https://example.com/#faqDescription does not exist]
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer
+      class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+    >
+      <div
+        class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+      >
+        <a
+          class="link"
+          href="/about"
+        >
+          [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+        </a>
+        <a
+          class="link"
+          href="/faq"
+        >
+          [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+        </a>
+      </div>
+      <div
+        class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+      >
         <button
-          class="button w-full"
-          data-testid="login-page-button"
-          type="submit"
+          class="button"
+          data-testid="dark-mode-selector-button"
+          type="button"
         >
-          [Translation for https://example.com/global/translations.ttl#logIn does not exist]
-        </button>
-        <div
-          class="mt-4"
-        >
-          <a
-            class="link"
-            href="/signup"
-          >
-            [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
-          </a>
-        </div>
-      </form>
-    </div>
-    <aside
-      class="main-container main-container--content my-16"
-    >
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-      <div
-        class="content leading-normal max-w-prose mx-auto content content--small"
-        style="hyphens: auto;"
-      >
-        <h2
-          data-testid="faq-label"
-        >
-          [Translation for https://example.com/#faqLabel does not exist]
-        </h2>
-        <div
-          data-testid="faq-description"
-        >
-          <p>
-            [Translation for https://example.com/#faqDescription does not exist]
-          </p>
-        </div>
-      </div>
-    </aside>
-  </main>
-  <footer
-    class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-  >
-    <div
-      class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
-    >
-      <a
-        class="link"
-        href="/about"
-      >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-      </a>
-      <a
-        class="link"
-        href="/faq"
-      >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-      </a>
-    </div>
-    <div
-      class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
-    >
-      <button
-        class="button"
-        data-testid="dark-mode-selector-button"
-        type="button"
-      >
-        <span>
-          <span
-            class="text-black text-opacity-30"
-          >
-            💡
+          <span>
+            🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
           </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-        </span>
-      </button>
-    </div>
-  </footer>
+        </button>
+      </div>
+    </footer>
+  </div>
 </DocumentFragment>
 `;

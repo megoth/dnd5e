@@ -1,7 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
-import { useSession } from "@inrupt/solid-ui-react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";

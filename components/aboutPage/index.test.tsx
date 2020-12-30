@@ -1,5 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import * as routerFns from "next/router";
+import { NextRouter } from "next/router";
 import AboutPage, { TESTID_ABOUT_PAGE_LANGUAGE_WARNING } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
@@ -9,6 +11,12 @@ jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
 
 describe("AboutPage", () => {
+  beforeEach(() => {
+    jest
+      .spyOn(routerFns, "useRouter")
+      .mockReturnValue({ asPath: "/admin" } as NextRouter);
+  });
+
   it("renders", () => {
     mockAppHook(mockedAppHook);
     const { asFragment } = render(<AboutPage markdown="# test" />);

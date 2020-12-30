@@ -5,3 +5,15 @@
 .main-container--content {
   @apply md:px-0 max-w-prose;
 }
+
+.main-container--main {
+  @apply max-w-full;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .main-container--main {
+    @apply mx-auto;
+    max-width: 1100px;
+  }
+}

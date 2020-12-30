@@ -30,12 +30,7 @@ exports[`PageFooter renders 1`] = `
         type="button"
       >
         <span>
-          <span
-            class="text-black text-opacity-30"
-          >
-            💡
-          </span>
-           [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+          🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
         </span>
       </button>
     </div>

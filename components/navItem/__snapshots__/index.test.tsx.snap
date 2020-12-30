@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem renders 1`] = `
+<DocumentFragment>
+  <li
+    class="flex"
+  >
+    <a
+      class="pages-nav__link"
+      href="/href"
+    >
+      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+    </a>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`NavItem renders for selected child items 1`] = `
+<DocumentFragment>
+  <li
+    class="flex"
+  >
+    <a
+      class="pages-nav__link  pages-nav__link--child-selected"
+      href="/href"
+    >
+      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+    </a>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`NavItem renders for selected items 1`] = `
+<DocumentFragment>
+  <li
+    class="flex"
+  >
+    <a
+      class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
+      href="/href"
+    >
+      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+    </a>
+  </li>
+</DocumentFragment>
+`;

@@ -17,9 +17,14 @@ translations:authenticationPitch skos:definition
     """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
     lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
     kompatible apper."""@nb-NO .
+translations:charactersPageTitle skos:definition "Karakterer"@nb-NO .
+translations:classesPageTitle skos:definition "Klasser"@nb-NO .
+translations:close skos:definition "Lukk"@nb-NO .
 translations:darkModeTurnOff skos:definition "Skru på dark-modus"@nb-NO .
 translations:darkModeTurnOn skos:definition "Skru av dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+translations:encountersPageTitle skos:definition "Kamper"@nb-NO .
+translations:equipmentPageTitle skos:definition "Utstyr"@nb-NO .
 translations:faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
 translations:faqTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 translations:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
@@ -34,9 +39,13 @@ translations:logInPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 translations:logInPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 translations:logInWithSolid skos:definition "Logg på med Solid"@nb-NO .
 translations:logOut skos:definition "Logg ut"@nb-NO .
+translations:monstersPageTitle skos:definition "Monstre"@nb-NO .
+translations:notesPageTitle skos:definition "Notater"@nb-NO .
 translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 translations:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
+translations:racesPageTitle skos:definition "Raser"@nb-NO .
 translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
+translations:rulesPageTitle skos:definition "Regler"@nb-NO .
 translations:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 translations:signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 translations:signupPitch skos:definition
@@ -52,6 +61,7 @@ translations:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO
 translations:signupTitle skos:definition "Opprett en Solid konto"@nb-NO .
 translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 translations:solidLogo skos:definition "Logo for Solid"@nb-NO .
+translations:spellsPageTitle skos:definition "Magi"@nb-NO .
 translations:translateTo skos:definition "Oversett til {$language}"@nb-NO .
 translations:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 translations:whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .

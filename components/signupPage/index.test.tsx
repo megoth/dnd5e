@@ -1,6 +1,8 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
+import { createRouter } from "next/router";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
 import useApp from "../../src/hooks/useApp";
 import mockApp from "../../__testUtils/mockApp";
 import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
@@ -36,6 +38,9 @@ const app = mockApp({
 });
 
 describe("SignupPage", () => {
+  // @ts-ignore
+  const router = createRouter("", {}, "", {});
+
   let mockedSessionHook;
 
   beforeEach(() => mockAppHook(mockedAppHook, app));
@@ -51,14 +56,22 @@ describe("SignupPage", () => {
   );
 
   it("renders", () => {
-    const { asFragment } = render(<SignupPage />);
+    const { asFragment } = render(
+      <RouterContext.Provider value={router}>
+        <SignupPage />
+      </RouterContext.Provider>
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders a warning when authenticated", () => {
     mockedSessionHook.mockReturnValue(mockAuthenticatedSession());
 
-    const { asFragment, getByTestId } = render(<SignupPage />);
+    const { asFragment, getByTestId } = render(
+      <RouterContext.Provider value={router}>
+        <SignupPage />
+      </RouterContext.Provider>
+    );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });

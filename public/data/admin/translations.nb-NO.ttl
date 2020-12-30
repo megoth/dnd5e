@@ -3,4 +3,8 @@
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix translations: <./translations.ttl#> .
 
-translations:adminTitle skos:definition "Admin"@nb-NO .
+translations:adminPageTitle skos:definition "Admin"@nb-NO .
+translations:errorsPageTitle skos:definition "Feil"@nb-NO .
+translations:faqsPageTitle skos:definition "FAQs"@nb-NO .
+translations:languagesPageTitle skos:definition "Språk"@nb-NO .
+translations:translationsPageTitle skos:definition "Oversettelser"@nb-NO .

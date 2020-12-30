@@ -6,7 +6,7 @@ export default function Logo() {
   const app = useApp();
   const logoDescription = getMessage(app, "appLogoDescription");
   return (
-    <picture>
+    <picture className="block">
       <source
         srcSet="/icons/app/icons8-dungeons-and-dragons-128.png"
         media="(min-width: 640px)"

@@ -1,0 +1,33 @@
+.pages-nav {}
+
+.pages-nav--sub-menu {
+  @apply bg-gray-100 dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent h-screen lg:h-auto overflow-y-auto overscroll-y-auto;
+}
+
+.pages-nav__list {
+  @apply flex flex-wrap;
+}
+
+.pages-nav__link {
+  @apply block p-1 xs:p-2 text-black dark:text-white hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-900;
+}
+
+.pages-nav__link--main-menu.pages-nav__link--child-selected {
+  @apply bg-red-600 hover:bg-red-600 text-white;
+}
+
+.pages-nav__link--sub-menu {
+  @apply p-2 px-4 w-full;
+}
+
+.pages-nav__link--selected {
+  @apply bg-red-600 hover:bg-red-600 text-white;
+}
+
+.pages-nav__button {
+  @apply bg-red-600 text-white px-4 focus:outline-none focus:ring-2 focus:ring-red-900;
+}
+
+.pages-nav__button--main-menu {
+  @apply px-1 xs:px-4;
+}
