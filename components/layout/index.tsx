@@ -86,7 +86,7 @@ export default function Layout({
             </button>
             <div
               className={clsx(
-                bem("main-container", "main"),
+                bem("main-container", "content", "main"),
                 "flex-1 flex flex-col lg:flex-row lg:space-x-2"
               )}
             >

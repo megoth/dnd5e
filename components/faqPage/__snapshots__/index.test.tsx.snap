@@ -84,7 +84,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
        
     </button>
     <div
-      class="main-container main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
+      class="main-container main-container--content main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
     >
       <div
         class="layout__sub-menu hidden lg:block"

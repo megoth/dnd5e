@@ -7,7 +7,7 @@
 }
 
 .main-container--main {
-  @apply max-w-full;
+  @apply lg:max-w-full;
 }
 
 
