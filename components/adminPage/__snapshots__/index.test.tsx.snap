@@ -12,7 +12,7 @@ exports[`AdminPage renders 1`] = `
         class="main-container main-container--content"
       >
         <div
-          class="font-serif self-center"
+          class="font-serif self-center text-left"
         >
           <a
             class="focus:outline-none focus:ring-2 focus:ring-red-600"

@@ -14,7 +14,7 @@ export default function PageHeader({ className, ...props }: Props) {
     <header className={clsx("mb-2 shadow shadow-lg", className)} {...props}>
       <div className={clsx(bem("main-container", "content"))}>
         <div
-          className="font-serif self-center"
+          className="font-serif self-center text-left"
           style={{ fontSize: "clamp(1.5rem, 3rem, 8vw)" }}
         >
           <Link href="/">

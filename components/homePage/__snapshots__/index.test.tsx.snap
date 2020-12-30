@@ -12,7 +12,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
         class="main-container main-container--content"
       >
         <div
-          class="font-serif self-center"
+          class="font-serif self-center text-left"
         >
           <a
             class="focus:outline-none focus:ring-2 focus:ring-red-600"
@@ -146,59 +146,59 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
       <section
         class="hero"
       >
-        <header
-          class="mb-2 shadow shadow-lg bg-white dark:bg-gray-800"
+        <div
+          class="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative"
         >
-          <div
-            class="main-container main-container--content"
+          <header
+            class="mb-2 shadow shadow-lg absolute left-0 top-0 w-full"
           >
             <div
-              class="font-serif self-center"
+              class="main-container main-container--content"
             >
-              <a
-                class="focus:outline-none focus:ring-2 focus:ring-red-600"
-                href="/"
+              <div
+                class="font-serif self-center text-left"
               >
-                [Translation for https://example.com/global/translations.ttl#appName does not exist]
-              </a>
+                <a
+                  class="focus:outline-none focus:ring-2 focus:ring-red-600"
+                  href="/"
+                >
+                  [Translation for https://example.com/global/translations.ttl#appName does not exist]
+                </a>
+              </div>
             </div>
-          </div>
-          <nav
-            class="pages-nav pages-nav--main-menu"
-          >
-            <ul
-              class="pages-nav__list pages-nav__list--main-menu"
+            <nav
+              class="pages-nav pages-nav--main-menu"
             >
-              <li
-                class="flex"
-                data-testid="main-nav-list-item"
+              <ul
+                class="pages-nav__list pages-nav__list--main-menu"
               >
-                <a
-                  class="pages-nav__link pages-nav__link--main-menu"
-                  href="/characters"
+                <li
+                  class="flex"
+                  data-testid="main-nav-list-item"
                 >
-                  [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-                </a>
-              </li>
-              <li
-                class="flex"
-                data-testid="main-nav-list-item"
-              >
-                <a
-                  class="pages-nav__link pages-nav__link--main-menu"
-                  href="/rules"
+                  <a
+                    class="pages-nav__link pages-nav__link--main-menu"
+                    href="/characters"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                  </a>
+                </li>
+                <li
+                  class="flex"
+                  data-testid="main-nav-list-item"
                 >
-                  [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div
-          class="flex-1 flex flex-col justify-center items-center leading-normal px-4 bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative -top-2 -mb-2"
-        >
+                  <a
+                    class="pages-nav__link pages-nav__link--main-menu"
+                    href="/rules"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
           <div
-            class="my-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg"
+            class="mt-16 xs:mt-32 mb-8 xs:mb-16 p-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-lg"
           >
             <picture
               class="inline-block"
