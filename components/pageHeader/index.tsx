@@ -15,7 +15,7 @@ export default function PageHeader({ className, ...props }: Props) {
       <div className={clsx(bem("main-container", "content"))}>
         <div
           className="font-serif self-center text-left"
-          style={{ fontSize: "clamp(1.5rem, 3rem, 8vw)" }}
+          style={{ fontSize: "clamp(2rem, 3rem, 8vw)" }}
         >
           <Link href="/">
             <a className="focus:outline-none focus:ring-2 focus:ring-red-600">

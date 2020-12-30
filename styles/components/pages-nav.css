@@ -10,20 +10,28 @@
   @apply flex flex-wrap;
 }
 
+.pages-nav__list-item--main-menu {
+  @apply flex-1 xs:flex-initial;
+}
+
 .pages-nav__list--main-menu {
   @apply max-w-prose px-4 md:px-0 mx-auto;
 }
 
 .pages-nav__link {
-  @apply block p-1 xs:p-2 text-black dark:text-white hover:bg-red-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-inset focus:ring-2 focus:ring-red-600;
+  @apply block p-2 text-black dark:text-white hover:bg-red-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-inset focus:ring-2 focus:ring-red-600;
 }
 
 .pages-nav__link--main-menu.pages-nav__link--child-selected {
   @apply bg-red-600 hover:bg-red-600 text-white;
 }
 
+.pages-nav__link--main-menu {
+  @apply px-4;
+}
+
 .pages-nav__link--sub-menu {
-  @apply p-2 px-4 w-full;
+  @apply p-2 w-full;
 }
 
 .pages-nav__link--selected {
@@ -35,5 +43,5 @@
 }
 
 .pages-nav__button--main-menu {
-  @apply px-2 xs:px-4;
+  @apply px-4;
 }
