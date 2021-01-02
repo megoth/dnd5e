@@ -1,5 +1,5 @@
 import { Session } from "@inrupt/solid-client-authn-browser";
-import { getRedirectURL } from "../../windowHelpers";
+import { getLocationHref } from "../../windowHelpers";
 import { getMessage } from "../translation";
 import { AppModel } from "../app";
 
@@ -12,12 +12,13 @@ export async function onIdPSelected(
   app: AppModel,
   oidcIssuer: string,
   login: Function,
-  onError: Function
+  onError: Function,
+  redirectUrl: string = getLocationHref()
 ) {
   try {
     await login({
       oidcIssuer,
-      redirectUrl: getRedirectURL(""),
+      redirectUrl,
       clientName: getMessage(app, "appName"),
     });
   } catch (error) {

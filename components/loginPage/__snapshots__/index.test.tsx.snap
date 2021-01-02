@@ -9,13 +9,13 @@ exports[`LoginPage renders 1`] = `
       class="mb-2 shadow shadow-md"
     >
       <div
-        class="main-container main-container--content"
+        class="main-container main-container--content pr-0"
       >
         <div
-          class="font-serif self-center text-left"
+          class="flex font-serif self-center text-left"
         >
           <a
-            class="focus:outline-none focus:ring-2 focus:ring-red-600"
+            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
             href="/"
           >
             [Translation for https://example.com/global/translations.ttl#appName does not exist]
@@ -107,7 +107,7 @@ exports[`LoginPage renders 1`] = `
           </ul>
         </div>
         <form
-          class="mt-2 md:mt-0 border p-2 rounded"
+          class="mt-2 md:mt-0 text-left border p-2 rounded"
         >
           <img
             alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
@@ -122,7 +122,7 @@ exports[`LoginPage renders 1`] = `
             [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
             <input
               class="input"
-              data-testid="login-page-idp-field"
+              data-testid="login-form-idp-field"
               id="idp"
               placeholder="https://"
               required=""
@@ -136,7 +136,7 @@ exports[`LoginPage renders 1`] = `
           >
             <input
               class="checkbox"
-              data-testid="login-page-remember-checkbox"
+              data-testid="login-form-remember-checkbox"
               id="rememberIdp"
               type="checkbox"
             />
@@ -148,7 +148,7 @@ exports[`LoginPage renders 1`] = `
           </label>
           <button
             class="button w-full"
-            data-testid="login-page-button"
+            data-testid="login-form-button"
             type="submit"
           >
             [Translation for https://example.com/global/translations.ttl#logIn does not exist]
@@ -267,13 +267,13 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
       class="mb-2 shadow shadow-md"
     >
       <div
-        class="main-container main-container--content"
+        class="main-container main-container--content pr-0"
       >
         <div
-          class="font-serif self-center text-left"
+          class="flex font-serif self-center text-left"
         >
           <a
-            class="focus:outline-none focus:ring-2 focus:ring-red-600"
+            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
             href="/"
           >
             [Translation for https://example.com/global/translations.ttl#appName does not exist]
@@ -375,7 +375,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
           </ul>
         </div>
         <form
-          class="mt-2 md:mt-0 border p-2 rounded"
+          class="mt-2 md:mt-0 text-left border p-2 rounded"
         >
           <img
             alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
@@ -390,7 +390,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
             [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
             <input
               class="input"
-              data-testid="login-page-idp-field"
+              data-testid="login-form-idp-field"
               id="idp"
               placeholder="https://"
               required=""
@@ -404,7 +404,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
           >
             <input
               class="checkbox"
-              data-testid="login-page-remember-checkbox"
+              data-testid="login-form-remember-checkbox"
               id="rememberIdp"
               type="checkbox"
             />
@@ -416,7 +416,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
           </label>
           <button
             class="button w-full"
-            data-testid="login-page-button"
+            data-testid="login-form-button"
             type="submit"
           >
             [Translation for https://example.com/global/translations.ttl#logIn does not exist]

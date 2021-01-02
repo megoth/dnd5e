@@ -1,13 +1,13 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import * as routerFns from "next/router";
-import { NextRouter } from "next/router";
 import solidUIReactFns from "@inrupt/solid-ui-react";
 import { Session } from "@inrupt/solid-client-authn-browser";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import MainNav, { TESTID_MAIN_NAV_LIST_ITEM } from "./index";
 import { mockAuthenticatedSession } from "../../__testUtils/mockSession";
+import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -19,7 +19,7 @@ describe("MainNav", () => {
   beforeEach(() => {
     jest
       .spyOn(routerFns, "useRouter")
-      .mockReturnValue({ asPath: "/" } as NextRouter);
+      .mockReturnValue(mockRouter({ asPath: "/" }));
   });
   beforeEach(() => {
     mockedSessionHook = jest.spyOn(solidUIReactFns, "useSession");

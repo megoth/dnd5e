@@ -5,6 +5,8 @@ import Icon from "./index";
 describe("Icon", () => {
   it("renders icons", () => {
     expect(render(<Icon name="close" />).asFragment()).toMatchSnapshot();
+    expect(render(<Icon name="login" />).asFragment()).toMatchSnapshot();
     expect(render(<Icon name="menu" />).asFragment()).toMatchSnapshot();
+    expect(render(<Icon name="settings" />).asFragment()).toMatchSnapshot();
   });
 });

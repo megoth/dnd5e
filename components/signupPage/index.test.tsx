@@ -1,8 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
-import { createRouter } from "next/router";
-import { RouterContext } from "next/dist/next-server/lib/router-context";
+import * as routerFns from "next/router";
 import useApp from "../../src/hooks/useApp";
 import mockApp from "../../__testUtils/mockApp";
 import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
@@ -19,6 +18,7 @@ import {
   mockUnauthenticatedSession,
 } from "../../__testUtils/mockSession";
 import { TESTID_LOGGED_IN_ALREADY_WARNING } from "../loggedInAlreadyWarning";
+import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -38,9 +38,6 @@ const app = mockApp({
 });
 
 describe("SignupPage", () => {
-  // @ts-ignore
-  const router = createRouter("", {}, "", {});
-
   let mockedSessionHook;
 
   beforeEach(() => mockAppHook(mockedAppHook, app));
@@ -54,24 +51,21 @@ describe("SignupPage", () => {
       data: mockProfileDataset(authenticatedWebId),
     })
   );
+  beforeEach(() => {
+    jest
+      .spyOn(routerFns, "useRouter")
+      .mockReturnValue(mockRouter({ asPath: "/signup" }));
+  });
 
   it("renders", () => {
-    const { asFragment } = render(
-      <RouterContext.Provider value={router}>
-        <SignupPage />
-      </RouterContext.Provider>
-    );
+    const { asFragment } = render(<SignupPage />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders a warning when authenticated", () => {
     mockedSessionHook.mockReturnValue(mockAuthenticatedSession());
 
-    const { asFragment, getByTestId } = render(
-      <RouterContext.Provider value={router}>
-        <SignupPage />
-      </RouterContext.Provider>
-    );
+    const { asFragment, getByTestId } = render(<SignupPage />);
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });

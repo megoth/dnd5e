@@ -1,25 +1,60 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { createRouter } from "next/router";
-import { RouterContext } from "next/dist/next-server/lib/router-context";
+import * as routerFns from "next/router";
+import userEvent from "@testing-library/user-event";
+import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
-import PageHeader from "./index";
+import PageHeader, { TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON } from "./index";
+import useLayout from "../../src/hooks/useLayout";
+import {
+  mockAuthenticatedSession,
+  mockUnauthenticatedSession,
+} from "../../__testUtils/mockSession";
+import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
 
+jest.mock("../../src/hooks/useLayout");
+const mockedLayoutHook = useLayout as jest.Mock;
+
 describe("PageHeader", () => {
-  // @ts-ignore
-  const router = createRouter("", {}, "", {});
+  const authenticatedSession = mockAuthenticatedSession();
+
+  let setRightOpen;
+  let mockedSessionHook;
+
+  beforeEach(() => mockAppHook(mockedAppHook));
+  beforeEach(() => {
+    jest
+      .spyOn(routerFns, "useRouter")
+      .mockReturnValue(mockRouter({ asPath: "/" }));
+  });
+  beforeEach(() => {
+    setRightOpen = jest.fn();
+    mockedLayoutHook.mockReturnValue({ setRightOpen });
+  });
+  beforeEach(() => {
+    mockedSessionHook = jest
+      .spyOn(solidUIReactFns, "useSession")
+      .mockReturnValue(authenticatedSession);
+  });
 
   it("renders", () => {
-    mockAppHook(mockedAppHook);
-    const { asFragment } = render(
-      <RouterContext.Provider value={router}>
-        <PageHeader />
-      </RouterContext.Provider>
-    );
+    const { asFragment } = render(<PageHeader />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders a button that opens the right menu", () => {
+    const { getByTestId } = render(<PageHeader />);
+    userEvent.click(getByTestId(TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON));
+    expect(setRightOpen).toHaveBeenCalledWith(true);
+  });
+
+  it("renders a different icon when unauthenticated", () => {
+    mockedSessionHook.mockReturnValue(mockUnauthenticatedSession());
+    const { asFragment } = render(<PageHeader />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

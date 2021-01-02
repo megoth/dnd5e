@@ -21,8 +21,8 @@ export function mockAuthenticatedSession(options: Partial<SessionInfo> = {}) {
       sessionRequestInProgress: false,
     },
     handleIncomingRedirect: () => Promise.resolve(),
-    login: () => Promise.resolve(),
-    logout: () => Promise.resolve(),
+    login: jest.fn().mockResolvedValue(undefined),
+    logout: jest.fn().mockResolvedValue(undefined),
     on: () => {},
     ...options,
   } as unknown) as SessionInfo;
@@ -39,8 +39,8 @@ export function mockUnauthenticatedSession(options: Partial<SessionInfo> = {}) {
       sessionRequestInProgress: false,
     },
     handleIncomingRedirect: () => Promise.resolve(),
-    login: options.login || jest.fn().mockResolvedValue(undefined),
-    logout: () => Promise.resolve(),
+    login: jest.fn().mockResolvedValue(undefined),
+    logout: jest.fn().mockResolvedValue(undefined),
     on: () => {},
     ...options,
   } as unknown) as SessionInfo;

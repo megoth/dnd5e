@@ -16,13 +16,13 @@ exports[`SplashPage renders 1`] = `
             class="mb-2 shadow shadow-md w-full"
           >
             <div
-              class="main-container main-container--content"
+              class="main-container main-container--content pr-0"
             >
               <div
-                class="font-serif self-center text-left"
+                class="flex font-serif self-center text-left"
               >
                 <a
-                  class="focus:outline-none focus:ring-2 focus:ring-red-600"
+                  class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
                   href="/"
                 >
                   [Translation for https://example.com/global/translations.ttl#appName does not exist]

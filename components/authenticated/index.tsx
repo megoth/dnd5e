@@ -1,4 +1,4 @@
-import { LogoutButton, useSession } from "@inrupt/solid-ui-react";
+import { useSession } from "@inrupt/solid-ui-react";
 import React, { ReactElement } from "react";
 import { getThing } from "@inrupt/solid-client";
 import useDataset from "../../src/hooks/useDataset";
@@ -7,8 +7,10 @@ import Loading from "../loading";
 import ErrorMessage from "../errorMessage";
 import getProfileName from "../../src/models/profile";
 
+export const TESTID_AUTHENTICATED_LOGOUT_BUTTON = "authenticated-logout-button";
+
 export default function Authenticated(): ReactElement {
-  const { session } = useSession();
+  const { logout, session } = useSession();
   const { webId } = session.info;
   const { data: profileDataset, error } = useDataset(webId);
 
@@ -28,11 +30,14 @@ export default function Authenticated(): ReactElement {
       <p>
         <Translation id="loggedIn" vars={{ name }} />
       </p>
-      <LogoutButton>
-        <button type="button" className="button">
-          <Translation id="logOut" />
-        </button>
-      </LogoutButton>
+      <button
+        className="button w-full"
+        type="button"
+        onClick={() => logout()}
+        data-testid={TESTID_AUTHENTICATED_LOGOUT_BUTTON}
+      >
+        <Translation id="logOut" />
+      </button>
     </>
   );
 }

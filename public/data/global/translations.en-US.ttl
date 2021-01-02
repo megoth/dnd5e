@@ -41,8 +41,10 @@ translations:logOut skos:definition "Log out"@en-US .
 translations:monstersPageTitle skos:definition "Monsters"@en-US .
 translations:notesPageTitle skos:definition "Notes"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+translations:or skos:definition "or"@en-US .
 translations:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 translations:racesPageTitle skos:definition "Races"@en-US .
+translations:recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 translations:rememberIdP skos:definition "Remember identity provider"@en-US .
 translations:rulesPageTitle skos:definition "Rules"@en-US .
 translations:serviceLogo skos:definition "Logo for service"@en-US .

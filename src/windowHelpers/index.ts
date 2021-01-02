@@ -13,6 +13,13 @@ export function ensureAbsoluteURL(relativeOrAbsoluteURL) {
     : createURLFromPath(relativeOrAbsoluteURL);
 }
 
+export function getLocationHref() {
+  if (typeof window !== "undefined") {
+    return window.location.href;
+  }
+  return "";
+}
+
 export function getRedirectURL(path) {
   if (typeof window !== "undefined") {
     const currentOrigin = window.location.origin;

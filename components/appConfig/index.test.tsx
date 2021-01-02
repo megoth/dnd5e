@@ -1,7 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { createRouter } from "next/router";
-import { RouterContext } from "next/dist/next-server/lib/router-context";
+import * as routerFns from "next/router";
 import useAppCore from "../../src/hooks/useAppCore";
 import AppConfig from "./index";
 import mockAppCoreHook from "../../__testUtils/mockAppCoreHook";
@@ -16,6 +15,7 @@ import {
 } from "../../__testUtils/mockAppIndexDataset";
 import useApp from "../../src/hooks/useApp";
 import { TESTID_LOADING } from "../loading";
+import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useAppCore");
 const mockedAppCoreHook = useAppCore as jest.Mock;
@@ -30,17 +30,20 @@ function ChildComponent() {
 }
 
 describe("AppConfig", () => {
-  // @ts-ignore
-  const router = createRouter("", {}, "", {});
+  let mockedRouterHook;
+
+  beforeEach(() => {
+    mockedRouterHook = jest
+      .spyOn(routerFns, "useRouter")
+      .mockReturnValue(mockRouter());
+  });
 
   it("loads resources and renders", () => {
     mockAppCoreHook(mockedAppCoreHook);
     const { getByTestId } = render(
-      <RouterContext.Provider value={router}>
-        <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
-          <ChildComponent />
-        </AppConfig>
-      </RouterContext.Provider>
+      <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
+        <ChildComponent />
+      </AppConfig>
     );
     expect(mockedAppCoreHook).toHaveBeenCalledWith(
       appVocabURL,
@@ -52,19 +55,16 @@ describe("AppConfig", () => {
 
   it("processes locale from router query", () => {
     const locale = "nb-NO";
-    // @ts-ignore
-    const routerWithLocaleQuery = createRouter("", { locale }, "", {});
+    mockedRouterHook.mockReturnValue(mockRouter({ query: { locale } }));
     mockAppCoreHook(mockedAppCoreHook, {
       app: mockNorwegianApp({
         currentLocale: "en-US",
       }),
     });
     const { getByTestId } = render(
-      <RouterContext.Provider value={routerWithLocaleQuery}>
-        <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
-          <ChildComponent />
-        </AppConfig>
-      </RouterContext.Provider>
+      <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
+        <ChildComponent />
+      </AppConfig>
     );
     expect(getByTestId(TESTID_LOCALE).innerHTML).toEqual(locale);
   });
@@ -72,11 +72,9 @@ describe("AppConfig", () => {
   it("displays error if it fails to load app", () => {
     mockAppCoreHook(mockedAppCoreHook, { error: new Error() });
     const { getByTestId } = render(
-      <RouterContext.Provider value={router}>
-        <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
-          <ChildComponent />
-        </AppConfig>
-      </RouterContext.Provider>
+      <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
+        <ChildComponent />
+      </AppConfig>
     );
     expect(getByTestId(TESTID_ERROR)).toBeDefined();
   });
@@ -84,11 +82,9 @@ describe("AppConfig", () => {
   it("displays loading while appCore is loading", () => {
     mockAppCoreHook(mockedAppCoreHook, { app: null });
     const { getByTestId } = render(
-      <RouterContext.Provider value={router}>
-        <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
-          <ChildComponent />
-        </AppConfig>
-      </RouterContext.Provider>
+      <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
+        <ChildComponent />
+      </AppConfig>
     );
     expect(getByTestId(TESTID_LOADING)).toBeDefined();
   });
@@ -96,11 +92,9 @@ describe("AppConfig", () => {
   it("displays loading while resourceBundles are loading", () => {
     mockAppCoreHook(mockedAppCoreHook, { app: mockUnloadedApp() });
     const { getByTestId } = render(
-      <RouterContext.Provider value={router}>
-        <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
-          <ChildComponent />
-        </AppConfig>
-      </RouterContext.Provider>
+      <AppConfig appIndexURL={appIndexURL} appVocabURL={appVocabURL}>
+        <ChildComponent />
+      </AppConfig>
     );
     expect(getByTestId(TESTID_LOADING)).toBeDefined();
   });

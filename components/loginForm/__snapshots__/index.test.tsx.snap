@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm renders 1`] = `
+<DocumentFragment>
+  <form
+    class="mt-2 md:mt-0 text-left"
+  >
+    <img
+      alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+      class="mx-auto hidden md:block"
+      src="/logos/solid-emblem.svg"
+      style="max-width: 200px;"
+    />
+    <label
+      class="label"
+      for="idp"
+    >
+      [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+      <input
+        class="input"
+        data-testid="login-form-idp-field"
+        id="idp"
+        placeholder="https://"
+        required=""
+        type="url"
+        value=""
+      />
+    </label>
+    <label
+      class="label"
+      for="rememberIdp"
+    >
+      <input
+        class="checkbox"
+        data-testid="login-form-remember-checkbox"
+        id="rememberIdp"
+        type="checkbox"
+      />
+      <span
+        class="label__text"
+      >
+        [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+      </span>
+    </label>
+    <button
+      class="button w-full"
+      data-testid="login-form-button"
+      type="submit"
+    >
+      [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+    </button>
+    <div
+      class="mt-4"
+    >
+      <a
+        class="link"
+        href="/signup"
+      >
+        [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+      </a>
+    </div>
+  </form>
+</DocumentFragment>
+`;

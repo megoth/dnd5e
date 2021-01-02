@@ -1,41 +1,38 @@
-import React, { useState } from "react";
-import { LoginButton, useSession } from "@inrupt/solid-ui-react";
-import { getRedirectURL } from "../../src/windowHelpers";
+import React from "react";
+import clsx from "clsx";
+import LoginForm from "../loginForm";
 import Translation from "../translation";
-import { getMessage } from "../../src/models/translation";
-import useApp from "../../src/hooks/useApp";
-
-export function setupLoginSubmit(login) {
-  return (event) => {
-    event.preventDefault();
-    login({});
-  };
-}
+import LoginButton from "../loginButton";
+import { bem } from "../../src/utils";
+import { getProviders } from "../../src/models/provider";
 
 export default function Unauthenticated() {
-  const app = useApp();
-  const [providerIri] = useState("https://inrupt.net");
-  const { login } = useSession();
-  const authOptions = {
-    clientName: getMessage(app, "appName"),
-  };
-
-  const handleLoginSubmit = setupLoginSubmit(login);
+  const providers = getProviders();
 
   return (
-    <form onSubmit={handleLoginSubmit}>
-      <p>
-        <Translation id="loggedOut" />
-      </p>
-      <LoginButton
-        oidcIssuer={providerIri}
-        redirectUrl={getRedirectURL("")}
-        authOptions={authOptions}
-      >
-        <button type="submit">
-          <Translation id="logIn" />
-        </button>
-      </LoginButton>
-    </form>
+    <div className="p-4 text-center">
+      <h2 className="font-bold text-xl">
+        <Translation id="recommendedIdPSet" />
+      </h2>
+      <ul className="flex flex-col space-y-2 my-2">
+        {providers.map(({ loginIri, label }) => (
+          <li key={loginIri}>
+            <LoginButton
+              loginIri={loginIri}
+              className={clsx(bem("button", "solid"), "w-full")}
+            >
+              {label}
+            </LoginButton>
+          </li>
+        ))}
+      </ul>
+      <h2 className="line-behind font-bold text-xl">
+        <span className="line-behind__line" />
+        <span className="bg-gray-100 dark:bg-gray-900 lg:bg-white lg:dark:bg-gray-800">
+          <Translation id="or" />
+        </span>
+      </h2>
+      <LoginForm />
+    </div>
   );
 }

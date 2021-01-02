@@ -14,13 +14,13 @@ jest.mock("../../src/hooks/useLayout");
 const mockedLayoutHook = useLayout as jest.Mock;
 
 describe("NavItem", () => {
-  let setSubMenuOpen;
+  let setLeftOpen;
   let mockedRouterHook;
 
   beforeEach(() => mockAppHook(mockedAppHook));
   beforeEach(() => {
-    setSubMenuOpen = jest.fn();
-    mockedLayoutHook.mockReturnValue({ setSubMenuOpen });
+    setLeftOpen = jest.fn();
+    mockedLayoutHook.mockReturnValue({ setLeftOpen });
   });
   beforeEach(() => {
     mockedRouterHook = jest.spyOn(routerFns, "useRouter");
@@ -56,6 +56,6 @@ describe("NavItem", () => {
       <NavItem href="/href" translationId="translationId" mainNav />
     );
     userEvent.click(getByTestId(TESTID_NAV_ITEM_SUB_MENU_BUTTON));
-    expect(setSubMenuOpen).toHaveBeenCalledWith(true);
+    expect(setLeftOpen).toHaveBeenCalledWith(true);
   });
 });

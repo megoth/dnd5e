@@ -13,7 +13,7 @@ import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 export default function SignupPage() {
   const app = useApp();
   return (
-    <Layout>
+    <Layout login={false}>
       <Content>
         <h1>
           <Translation id="signupTitle" />

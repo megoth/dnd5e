@@ -6,17 +6,110 @@ exports[`PageHeader renders 1`] = `
     class="mb-2 shadow shadow-md"
   >
     <div
-      class="main-container main-container--content"
+      class="main-container main-container--content pr-0"
     >
       <div
-        class="font-serif self-center text-left"
+        class="flex font-serif self-center text-left"
       >
         <a
-          class="focus:outline-none focus:ring-2 focus:ring-red-600"
+          class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
           [Translation for https://example.com/global/translations.ttl#appName does not exist]
         </a>
+        <button
+          class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+          data-testid="page-header-right-menu-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav
+      class="pages-nav pages-nav--main-menu"
+    >
+      <ul
+        class="pages-nav__list pages-nav__list--main-menu"
+      >
+        <li
+          class="flex"
+          data-testid="main-nav-list-item"
+        >
+          <a
+            class="pages-nav__link pages-nav__link--main-menu"
+            href="/characters"
+          >
+            [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+          </a>
+        </li>
+        <li
+          class="flex"
+          data-testid="main-nav-list-item"
+        >
+          <a
+            class="pages-nav__link pages-nav__link--main-menu"
+            href="/rules"
+          >
+            [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`PageHeader renders a different icon when unauthenticated 1`] = `
+<DocumentFragment>
+  <header
+    class="mb-2 shadow shadow-md"
+  >
+    <div
+      class="main-container main-container--content pr-0"
+    >
+      <div
+        class="flex font-serif self-center text-left"
+      >
+        <a
+          class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
+        <button
+          class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+          data-testid="page-header-right-menu-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
       </div>
     </div>
     <nav

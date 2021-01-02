@@ -9,17 +9,37 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
       class="mb-2 shadow shadow-md"
     >
       <div
-        class="main-container main-container--content"
+        class="main-container main-container--content pr-0"
       >
         <div
-          class="font-serif self-center text-left"
+          class="flex font-serif self-center text-left"
         >
           <a
-            class="focus:outline-none focus:ring-2 focus:ring-red-600"
+            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
             href="/"
           >
             [Translation for https://example.com/global/translations.ttl#appName does not exist]
           </a>
+          <button
+            class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            data-testid="page-header-right-menu-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <nav
@@ -54,21 +74,21 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
       </nav>
     </header>
     <button
-      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 lg:hidden hidden"
+      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 xl:hidden z-10 hidden"
       data-testid="layout-fade"
       type="button"
     >
        
     </button>
     <div
-      class="main-container main-container--content main-container--main flex-1 flex flex-col lg:flex-row lg:space-x-2"
+      class="main-container main-container--content main-container--main lg:flex-1 flex flex-col lg:flex-row lg:space-x-2"
     >
       <div
-        class="layout__sub-menu hidden lg:block"
+        class="layout__sub-menu lg:flex-1 hidden lg:block"
         data-testid="layout-sub-menu"
       />
       <div
-        class="flex-1 lg:flex-auto flex flex-col max-w-prose min-h-full"
+        class="lg:flex-auto flex flex-col max-w-prose min-h-full"
       >
         <main
           class="flex-1"
@@ -132,6 +152,38 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
       <div
         class="hidden lg:block lg:flex-1"
       />
+      <div
+        class="layout__right-menu xl:flex-1 xl:-top-2 xl:-mb-2 bg-gray-100 dark:bg-gray-900 xl:bg-transparent xl:dark:bg-transparent hidden"
+      >
+        <div>
+          <button
+            class="button button--close text-left"
+            data-testid="session-close-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+             [Translation for https://example.com/global/translations.ttl#close does not exist]
+          </button>
+          <div
+            data-testid="loading"
+          >
+            Loading...
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -153,13 +205,13 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
             class="mb-2 shadow shadow-md w-full"
           >
             <div
-              class="main-container main-container--content"
+              class="main-container main-container--content pr-0"
             >
               <div
-                class="font-serif self-center text-left"
+                class="flex font-serif self-center text-left"
               >
                 <a
-                  class="focus:outline-none focus:ring-2 focus:ring-red-600"
+                  class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
                   href="/"
                 >
                   [Translation for https://example.com/global/translations.ttl#appName does not exist]

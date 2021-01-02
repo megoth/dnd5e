@@ -7,13 +7,17 @@
 }
 
 .main-container--main {
-  @apply lg:max-w-full;
+  @apply lg:max-w-full lg:mx-auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .main-container--main {
+    max-width: 960px;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   .main-container--main {
-    @apply mx-auto;
-    max-width: 1100px;
+    max-width: 1250px;
   }
 }

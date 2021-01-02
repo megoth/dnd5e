@@ -17,17 +17,13 @@ exports[`Authenticated renders info about the user and a log out button 1`] = `
   <p>
     [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
   </p>
-  <div
-    role="button"
-    tabindex="0"
+  <button
+    class="button w-full"
+    data-testid="authenticated-logout-button"
+    type="button"
   >
-    <button
-      class="button"
-      type="button"
-    >
-      [Translation for https://example.com/global/translations.ttl#logOut does not exist]
-    </button>
-  </div>
+    [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+  </button>
 </DocumentFragment>
 `;
 

@@ -23,7 +23,7 @@ export default function NavItem({
   modifiers,
   ...props
 }: Props) {
-  const { setSubMenuOpen } = useLayout();
+  const { setLeftOpen } = useLayout();
 
   const { asPath } = useRouter();
   const selected = asPath === href;
@@ -44,7 +44,7 @@ export default function NavItem({
         <button
           type="button"
           className={clsx(bem("pages-nav__button", modifiers), "lg:hidden")}
-          onClick={() => setSubMenuOpen(true)}
+          onClick={() => setLeftOpen(true)}
           data-testid={TESTID_NAV_ITEM_SUB_MENU_BUTTON}
         >
           <Icon name="menu" />

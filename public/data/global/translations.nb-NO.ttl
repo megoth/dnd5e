@@ -20,8 +20,8 @@ translations:authenticationPitch skos:definition
 translations:charactersPageTitle skos:definition "Karakterer"@nb-NO .
 translations:classesPageTitle skos:definition "Klasser"@nb-NO .
 translations:close skos:definition "Lukk"@nb-NO .
-translations:darkModeTurnOff skos:definition "Skru på dark-modus"@nb-NO .
-translations:darkModeTurnOn skos:definition "Skru av dark-modus"@nb-NO .
+translations:darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
+translations:darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 translations:encountersPageTitle skos:definition "Kamper"@nb-NO .
 translations:equipmentPageTitle skos:definition "Utstyr"@nb-NO .
@@ -42,8 +42,10 @@ translations:logOut skos:definition "Logg ut"@nb-NO .
 translations:monstersPageTitle skos:definition "Monstre"@nb-NO .
 translations:notesPageTitle skos:definition "Notater"@nb-NO .
 translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+translations:or skos:definition "eller"@nb-NO .
 translations:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 translations:racesPageTitle skos:definition "Raser"@nb-NO .
+translations:recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 translations:rulesPageTitle skos:definition "Regler"@nb-NO .
 translations:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
