@@ -34,11 +34,12 @@ translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
 translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
 translations:LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
 translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
-translations:logIn skos:definition "Logg på"@nb-NO .
-translations:logInImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
-translations:logInPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
-translations:logInPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
-translations:logInWithSolid skos:definition "Logg på med Solid"@nb-NO .
+translations:login skos:definition "Logg på"@nb-NO .
+translations:loginImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
+translations:loginPageTitle skos:definition "Logg inn med Solid"@nb-NO .
+translations:loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
+translations:loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
+translations:loginWithSolid skos:definition "Logg på med Solid"@nb-NO .
 translations:logOut skos:definition "Logg ut"@nb-NO .
 translations:monstersPageTitle skos:definition "Monstre"@nb-NO .
 translations:notesPageTitle skos:definition "Notater"@nb-NO .

@@ -1,11 +1,11 @@
 .main-container {
-  @apply container mx-auto max-w-6xl;
+  @apply container mx-auto max-w-6xl flex flex-col lg:flex-row;
 }
 
 .main-container--content {
-  @apply max-w-prose;
+  @apply max-w-prose lg:flex-col px-4 lg:px-0;
 }
 
 .main-container--full {
-  @apply flex-1 flex flex-col lg:flex-row lg:max-w-full lg:mx-auto;
+  @apply flex-1 lg:max-w-full lg:mx-auto;
 }

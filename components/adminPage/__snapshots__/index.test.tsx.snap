@@ -22,7 +22,7 @@ exports[`AdminPage renders 1`] = `
         class="bg-gray-100 dark:bg-gray-900"
       >
         <div
-          class="main-container main-container--content flex px-0"
+          class="main-container main-container--content flex flex-row px-0"
         >
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"

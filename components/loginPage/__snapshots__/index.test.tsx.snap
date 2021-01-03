@@ -19,10 +19,10 @@ exports[`LoginPage renders 1`] = `
         </a>
       </div>
       <div
-        class="bg-gray-100 dark:bg-gray-800"
+        class="bg-gray-100 dark:bg-gray-900"
       >
         <div
-          class="main-container main-container--content flex px-0"
+          class="main-container main-container--content flex flex-row px-0"
         >
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -148,7 +148,7 @@ exports[`LoginPage renders 1`] = `
           class="flex-1"
         >
           <div
-            class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
+            class="main-container px-4 lg:px-0 md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
           >
             <div>
               <div
@@ -156,7 +156,7 @@ exports[`LoginPage renders 1`] = `
                 style="hyphens: auto;"
               >
                 <h1>
-                  [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
+                  [Translation for https://example.com/global/translations.ttl#loginWithSolid does not exist]
                 </h1>
                 <p>
                   [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
@@ -203,7 +203,7 @@ exports[`LoginPage renders 1`] = `
               class="mt-2 md:mt-0 text-left border p-2 rounded"
             >
               <img
-                alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+                alt="[Translation for https://example.com/global/translations.ttl#loginImage does not exist]"
                 class="mx-auto hidden md:block"
                 src="/logos/solid-emblem.svg"
                 style="max-width: 200px;"
@@ -244,7 +244,7 @@ exports[`LoginPage renders 1`] = `
                 data-testid="login-form-button"
                 type="submit"
               >
-                [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+                [Translation for https://example.com/global/translations.ttl#login does not exist]
               </button>
               <div
                 class="mt-4"
@@ -434,7 +434,7 @@ exports[`LoginPage renders 1`] = `
                 class="mt-2 md:mt-0 text-left"
               >
                 <img
-                  alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+                  alt="[Translation for https://example.com/global/translations.ttl#loginImage does not exist]"
                   class="mx-auto hidden md:block"
                   src="/logos/solid-emblem.svg"
                   style="max-width: 200px;"
@@ -475,7 +475,7 @@ exports[`LoginPage renders 1`] = `
                   data-testid="login-form-button"
                   type="submit"
                 >
-                  [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+                  [Translation for https://example.com/global/translations.ttl#login does not exist]
                 </button>
                 <div
                   class="mt-4"
@@ -516,10 +516,10 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
         </a>
       </div>
       <div
-        class="bg-gray-100 dark:bg-gray-800"
+        class="bg-gray-100 dark:bg-gray-900"
       >
         <div
-          class="main-container main-container--content flex px-0"
+          class="main-container main-container--content flex flex-row px-0"
         >
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -655,7 +655,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
             </div>
           </div>
           <div
-            class="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
+            class="main-container px-4 lg:px-0 md:grid grid-cols-2 gap-4 max-w-3xl place-items-center"
           >
             <div>
               <div
@@ -663,7 +663,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
                 style="hyphens: auto;"
               >
                 <h1>
-                  [Translation for https://example.com/global/translations.ttl#logInWithSolid does not exist]
+                  [Translation for https://example.com/global/translations.ttl#loginWithSolid does not exist]
                 </h1>
                 <p>
                   [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
@@ -710,7 +710,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
               class="mt-2 md:mt-0 text-left border p-2 rounded"
             >
               <img
-                alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+                alt="[Translation for https://example.com/global/translations.ttl#loginImage does not exist]"
                 class="mx-auto hidden md:block"
                 src="/logos/solid-emblem.svg"
                 style="max-width: 200px;"
@@ -751,7 +751,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
                 data-testid="login-form-button"
                 type="submit"
               >
-                [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+                [Translation for https://example.com/global/translations.ttl#login does not exist]
               </button>
               <div
                 class="mt-4"

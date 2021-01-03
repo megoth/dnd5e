@@ -69,7 +69,7 @@ export default function LoginForm({ className, redirectURL, ...props }: Props) {
     >
       <img
         src="/logos/solid-emblem.svg"
-        alt={getMessage(app, "logInImage")}
+        alt={getMessage(app, "loginImage")}
         className="mx-auto hidden md:block"
         style={{ maxWidth: 200 }}
       />
@@ -105,7 +105,7 @@ export default function LoginForm({ className, redirectURL, ...props }: Props) {
         data-testid={TESTID_LOGIN_FORM_BUTTON}
         type="submit"
       >
-        <Translation id="logIn" />
+        <Translation id="login" />
       </button>
       <div className="mt-4">
         <Link href="/signup">

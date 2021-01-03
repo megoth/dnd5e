@@ -42,7 +42,7 @@ export default function SignupPage() {
         <p className="text-center">
           <Link href="/login">
             <a>
-              <Translation id="logInPrompt" />
+              <Translation id="loginPrompt" />
             </a>
           </Link>
         </p>

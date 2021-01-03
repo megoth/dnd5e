@@ -100,10 +100,10 @@ exports[`SplashPage renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="bg-gray-100 dark:bg-gray-800"
+                  class="bg-gray-100 dark:bg-gray-900"
                 >
                   <div
-                    class="main-container main-container--content flex px-0"
+                    class="main-container main-container--content flex flex-row px-0"
                   >
                     <button
                       class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -230,7 +230,7 @@ exports[`SplashPage renders 1`] = `
               <h2
                 class="px-4"
               >
-                [Translation for https://example.com/global/translations.ttl#logInPitch does not exist]
+                [Translation for https://example.com/global/translations.ttl#loginPitch does not exist]
               </h2>
             </div>
             <div

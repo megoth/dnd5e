@@ -72,7 +72,7 @@ export default function SplashPage() {
             style={{ maxHeight: 175, maxWidth: 200 }}
           />
           <h2 className="px-4">
-            <Translation id="logInPitch" />
+            <Translation id="loginPitch" />
           </h2>
         </Content>
         <div className="flex-1 flex flex-col justify-center">

@@ -22,7 +22,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
         class="bg-gray-100 dark:bg-gray-900"
       >
         <div
-          class="main-container main-container--content flex px-0"
+          class="main-container main-container--content flex flex-row px-0"
         >
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
@@ -347,10 +347,10 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   </a>
                 </div>
                 <div
-                  class="bg-gray-100 dark:bg-gray-800"
+                  class="bg-gray-100 dark:bg-gray-900"
                 >
                   <div
-                    class="main-container main-container--content flex px-0"
+                    class="main-container main-container--content flex flex-row px-0"
                   >
                     <button
                       class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -477,7 +477,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               <h2
                 class="px-4"
               >
-                [Translation for https://example.com/global/translations.ttl#logInPitch does not exist]
+                [Translation for https://example.com/global/translations.ttl#loginPitch does not exist]
               </h2>
             </div>
             <div
@@ -671,7 +671,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 class="mt-2 md:mt-0 text-left"
               >
                 <img
-                  alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+                  alt="[Translation for https://example.com/global/translations.ttl#loginImage does not exist]"
                   class="mx-auto hidden md:block"
                   src="/logos/solid-emblem.svg"
                   style="max-width: 200px;"
@@ -712,7 +712,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   data-testid="login-form-button"
                   type="submit"
                 >
-                  [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+                  [Translation for https://example.com/global/translations.ttl#login does not exist]
                 </button>
                 <div
                   class="mt-4"

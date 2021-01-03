@@ -32,13 +32,13 @@ export default function PageHeader({ className, pageName, ...props }: Props) {
           </a>
         </Link>
       </div>
-      <div
-        className={clsx("bg-gray-100", {
-          "dark:bg-gray-800": full,
-          "dark:bg-gray-900": !full,
-        })}
-      >
-        <div className={clsx(bem("main-container", "content"), "flex px-0")}>
+      <div className="bg-gray-100 dark:bg-gray-900">
+        <div
+          className={clsx(
+            bem("main-container", "content"),
+            "flex flex-row px-0"
+          )}
+        >
           <button
             type="button"
             className={clsx(

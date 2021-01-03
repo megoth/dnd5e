@@ -57,7 +57,7 @@ exports[`Unauthenticated renders 1`] = `
       class="mt-2 md:mt-0 text-left"
     >
       <img
-        alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+        alt="[Translation for https://example.com/global/translations.ttl#loginImage does not exist]"
         class="mx-auto hidden md:block"
         src="/logos/solid-emblem.svg"
         style="max-width: 200px;"
@@ -98,7 +98,7 @@ exports[`Unauthenticated renders 1`] = `
         data-testid="login-form-button"
         type="submit"
       >
-        [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+        [Translation for https://example.com/global/translations.ttl#login does not exist]
       </button>
       <div
         class="mt-4"

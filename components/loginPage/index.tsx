@@ -21,11 +21,11 @@ export default function LoginPage() {
     <>
       <Layout full pageName={getMessage(app, "loginPageTitle")}>
         <LoggedInAlreadyWarning className={bem("main-container", "content")} />
-        <div className="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
+        <div className="main-container px-4 lg:px-0 md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
           <div>
             <Content>
               <h1>
-                <Translation id="logInWithSolid" />
+                <Translation id="loginWithSolid" />
               </h1>
               <p>
                 <Translation id="authenticationPitch" />
