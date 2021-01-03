@@ -3,7 +3,7 @@
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix translations: <./translations.ttl#> .
 
-translations:aaboutPageTitle skos:definition "Om appen"@nb-NO .
+translations:aboutPageTitle skos:definition "Om appen"@nb-NO .
 translations:appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 translations:appName skos:definition "D&D5e Solid App"@nb-NO .
 translations:appPitch skos:definition
