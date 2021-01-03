@@ -21,7 +21,18 @@ function ChildComponent() {
 }
 
 describe("useLayout", () => {
-  it("passes setSubMenuOpen", () => {
+  it("supports no properties", () => {
+    const { getByTestId } = render(
+      <LayoutProvider>
+        <ChildComponent />
+      </LayoutProvider>
+    );
+    expect(getByTestId(TESTID_FULL).innerHTML).toEqual("false");
+    expect(getByTestId(TESTID_LEFT_OPEN).innerHTML).toEqual("false");
+    expect(getByTestId(TESTID_RIGHT_OPEN).innerHTML).toEqual("false");
+  });
+
+  it("supports all properties", () => {
     const setLeftOpen = jest.fn();
     const setRightOpen = jest.fn();
     const { getByTestId } = render(

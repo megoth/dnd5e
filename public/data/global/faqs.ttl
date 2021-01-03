@@ -27,3 +27,15 @@
     rdfs:label "Why should I log in with Solid?"@en-US ;
     dnd5e_app:faqLabel translations:whyLogInWithSolidLabel ;
     dnd5e_app:faqDescription translations:whyLogInWithSolidDescription .
+
+:whoDevelopsTheApp
+    a dnd5e_app:FAQ ;
+    rdfs:label "Who develops the app?"@en-US ;
+    dnd5e_app:faqLabel translations:whoDevelopsTheAppLabel ;
+    dnd5e_app:faqDescription translations:whoDevelopsTheAppDescription .
+
+:whatSupportIsOffered
+    a dnd5e_app:FAQ ;
+    rdfs:label "What support is offered?"@en-US ;
+    dnd5e_app:faqLabel translations:whatSupportIsOfferedLabel ;
+    dnd5e_app:faqDescription translations:whatSupportIsOfferedDescription .

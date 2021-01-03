@@ -1,3 +1,7 @@
+import { AppModel } from "../app";
+import { getFAQAll, getFAQDetails } from "../faq";
+import { getHash } from "../../utils";
+
 export type Page = {
   href: string;
   translationId: string;
@@ -5,7 +9,11 @@ export type Page = {
   children?: Array<Page>;
 };
 
-export function getPages(path: string, admin: boolean): Array<Page> {
+export function getPages(
+  path: string,
+  admin: boolean,
+  app: AppModel
+): Array<Page> {
   return [
     {
       href: "/characters",
@@ -86,6 +94,17 @@ export function getPages(path: string, admin: boolean): Array<Page> {
     {
       href: "/faq",
       translationId: "faqShort",
+      children: path.startsWith("/faq")
+        ? getFAQAll(app)
+            .map((faq) => getFAQDetails(faq, app))
+            .map(({ labelTranslationURL }) => {
+              const hash = getHash(labelTranslationURL);
+              return {
+                href: `/faq#${hash}`,
+                translationId: hash,
+              };
+            })
+        : [],
     },
     {
       href: "/about",

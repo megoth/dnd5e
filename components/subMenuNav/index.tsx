@@ -10,17 +10,19 @@ import Translation from "../translation";
 import Icon from "../icon";
 import useEscKey from "../../src/hooks/useEscKey";
 import { userIsAdmin } from "../../src/models/session";
+import useApp from "../../src/hooks/useApp";
 
 export const TESTID_SUB_MENU_NAV_CLOSE_BUTTON = "sub-menu-nav-close-button";
 
 export default function SubMenuNav() {
   const { full, setLeftOpen } = useLayout();
   const { session } = useSession();
+  const app = useApp();
 
   useEscKey(() => setLeftOpen(false));
 
   const { asPath } = useRouter();
-  const pages = getPages(asPath, userIsAdmin(session));
+  const pages = getPages(asPath, userIsAdmin(session), app);
   return (
     <>
       <button

@@ -9,7 +9,7 @@ import {
   getFAQAll,
   getFAQDescriptionURL,
   getFAQDetails,
-  getFAQLabelUrl,
+  getFAQLabelURL,
 } from "./index";
 import { getMessage } from "../translation";
 import mockResourceBundleMap from "../../../__testUtils/mockResourceBundleMap";
@@ -49,15 +49,18 @@ describe("getFAQDescriptionURL", () => {
 
 describe("getFAQLabelURL", () => {
   it("returns the translation URL for FAQs label", () => {
-    expect(getFAQLabelUrl(faq, app)).toEqual(faqLabelURL);
+    expect(getFAQLabelURL(faq, app)).toEqual(faqLabelURL);
   });
 });
 
 describe("getFAQDetails", () => {
   it("prepares a model from a FAQ thing", () => {
     expect(getFAQDetails(faq, app)).toEqual({
-      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      faq,
+      label: getMessage(app, getFAQLabelURL(faq, app)),
+      labelTranslationURL: getFAQLabelURL(faq, app),
       description: getMessage(app, getFAQDescriptionURL(faq, app)),
+      descriptionTranslationURL: getFAQDescriptionURL(faq, app),
     });
   });
 });
@@ -65,15 +68,21 @@ describe("getFAQDetails", () => {
 describe("getFAQ", () => {
   it("prepares a model from a FAQ id", () => {
     expect(getFAQ(faqId, app)).toEqual({
-      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      faq,
+      label: getMessage(app, getFAQLabelURL(faq, app)),
+      labelTranslationURL: getFAQLabelURL(faq, app),
       description: getMessage(app, getFAQDescriptionURL(faq, app)),
+      descriptionTranslationURL: getFAQDescriptionURL(faq, app),
     });
   });
 
   it("can specify which bundle the FAQ is in", () => {
     expect(getFAQ(faqId, app, defaultBundle)).toEqual({
-      label: getMessage(app, getFAQLabelUrl(faq, app)),
+      faq,
+      label: getMessage(app, getFAQLabelURL(faq, app)),
+      labelTranslationURL: getFAQLabelURL(faq, app),
       description: getMessage(app, getFAQDescriptionURL(faq, app)),
+      descriptionTranslationURL: getFAQDescriptionURL(faq, app),
     });
   });
 });

@@ -8,6 +8,7 @@ exports[`FAQ renders given a FAQ 1`] = `
   >
     <h2
       data-testid="faq-label"
+      id="faqLabel"
     >
       [Translation for https://example.com/#faqLabel does not exist]
     </h2>
@@ -30,6 +31,7 @@ exports[`FAQ renders given an id 1`] = `
   >
     <h2
       data-testid="faq-label"
+      id="faqLabel"
     >
       [Translation for https://example.com/#faqLabel does not exist]
     </h2>

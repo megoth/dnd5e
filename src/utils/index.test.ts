@@ -1,4 +1,4 @@
-import { bem, chain, createLocalResponse, getPath } from "./index";
+import { bem, chain, createLocalResponse, getHash, getPath } from "./index";
 
 describe("bem", () => {
   it("outputs a combination of classes with modifier", () => {
@@ -32,6 +32,11 @@ describe("createLocalResponse", () => {
 });
 
 describe("getPath", () => {
-  it("returns the URL without slash", () =>
+  it("returns the URL without the hash", () =>
     expect(getPath("http://example.com/#test")).toEqual("http://example.com/"));
+});
+
+describe("getHash", () => {
+  it("returns the hash for a URL", () =>
+    expect(getHash("http://example.com/#test")).toEqual("test"));
 });

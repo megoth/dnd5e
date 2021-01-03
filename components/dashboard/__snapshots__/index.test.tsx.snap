@@ -109,6 +109,7 @@ exports[`Dashboard renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/characters"
               >
                 [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
@@ -117,6 +118,7 @@ exports[`Dashboard renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
@@ -125,6 +127,7 @@ exports[`Dashboard renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/faq"
               >
                 [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
@@ -133,6 +136,7 @@ exports[`Dashboard renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/about"
               >
                 [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]

@@ -82,6 +82,16 @@ translations:whatIsSolidDescription skos:definition
     """Solid is a standard that focuses on giving people control of their own data. With Solid you get a digital
     identity, an online storage (often called a Pod) and the means to control who gets access to your data. For more
     information, check out [solidproject.org](https://solidproject.org/)."""@en-US .
+translations:whatSupportIsOfferedLabel skos:definition "What support is offered?"@en-US .
+translations:whatSupportIsOfferedDescription skos:definition
+    """No support is offered for this service, but you
+    can [create an issue at GitHub](https://github.com/megoth/dnd5e/issues/new) to let me know that you have an issue you
+    would like fixed."""@en-US .
+translations:whoDevelopsTheAppLabel skos:definition "Who develops the app?"@en-US .
+translations:whoDevelopsTheAppDescription skos:definition
+    """The app is developed by [Arne Hassel](https://icanhasweb.net), as an open-source project
+    at [github.com/megoth/dnd5e](https://github.com/megoth/dnd5e). It is developed as an experimental app to understand
+    better how a web-app based on React and Solid can be constructed."""@en-US .
 translations:whyLogInWithSolidLabel skos:definition "Why should I log in with Solid?"@en-US .
 translations:whyLogInWithSolidDescription skos:definition
     """Using a Solid Identity is how this app recognizes who you are and know how to fetch your data. Solid is a

@@ -109,6 +109,7 @@ exports[`SignupPage renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/characters"
               >
                 [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
@@ -117,6 +118,7 @@ exports[`SignupPage renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
@@ -125,6 +127,7 @@ exports[`SignupPage renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/faq"
               >
                 [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
@@ -133,6 +136,7 @@ exports[`SignupPage renders 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/about"
               >
                 [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
@@ -242,6 +246,7 @@ exports[`SignupPage renders 1`] = `
             >
               <h2
                 data-testid="faq-label"
+                id="faqLabel"
               >
                 [Translation for https://example.com/#faqLabel does not exist]
               </h2>
@@ -259,6 +264,7 @@ exports[`SignupPage renders 1`] = `
             >
               <h2
                 data-testid="faq-label"
+                id="faqLabel"
               >
                 [Translation for https://example.com/#faqLabel does not exist]
               </h2>
@@ -564,6 +570,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/characters"
               >
                 [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
@@ -572,6 +579,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
@@ -580,6 +588,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/faq"
               >
                 [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
@@ -588,6 +597,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             <li>
               <a
                 class="pages-nav__link"
+                data-testid="nav-item-link"
                 href="/about"
               >
                 [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
@@ -706,6 +716,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             >
               <h2
                 data-testid="faq-label"
+                id="faqLabel"
               >
                 [Translation for https://example.com/#faqLabel does not exist]
               </h2>
@@ -723,6 +734,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             >
               <h2
                 data-testid="faq-label"
+                id="faqLabel"
               >
                 [Translation for https://example.com/#faqLabel does not exist]
               </h2>

@@ -40,3 +40,7 @@ export function createLocalResponse(body) {
 export function getPath(url) {
   return url.split("#")[0];
 }
+
+export function getHash(url) {
+  return url.split("#")[1];
+}

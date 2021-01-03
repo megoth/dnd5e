@@ -11,8 +11,11 @@ import { AppModel, getBundleKey } from "../app";
 import { getMessage } from "../translation";
 
 type FAQModel = {
+  faq: Thing;
   label: string;
+  labelTranslationURL: string;
   description: string;
+  descriptionTranslationURL: string;
 };
 
 export function getFAQAll(
@@ -32,14 +35,19 @@ export function getFAQDescriptionURL(faq, app) {
   return getUrl(faq, getAppTerm("faqDescription", app));
 }
 
-export function getFAQLabelUrl(faq, app) {
+export function getFAQLabelURL(faq, app) {
   return getUrl(faq, getAppTerm("faqLabel", app));
 }
 
 export function getFAQDetails(faq: Thing, app: AppModel): FAQModel {
+  const labelURL = getFAQLabelURL(faq, app);
+  const descriptionURL = getFAQDescriptionURL(faq, app);
   return {
-    label: getMessage(app, getFAQLabelUrl(faq, app)),
-    description: getMessage(app, getFAQDescriptionURL(faq, app)),
+    faq,
+    label: getMessage(app, labelURL),
+    labelTranslationURL: labelURL,
+    description: getMessage(app, descriptionURL),
+    descriptionTranslationURL: descriptionURL,
   };
 }
 

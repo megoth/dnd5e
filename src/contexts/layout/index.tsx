@@ -18,11 +18,11 @@ export const LayoutContext = createContext<{
 
 interface Props {
   children: ReactNode;
-  full: boolean;
-  leftOpen: boolean;
-  rightOpen: boolean;
-  setLeftOpen: SetMenuOpen;
-  setRightOpen: SetMenuOpen;
+  full?: boolean;
+  leftOpen?: boolean;
+  rightOpen?: boolean;
+  setLeftOpen?: SetMenuOpen;
+  setRightOpen?: SetMenuOpen;
 }
 
 export default function LayoutProvider({
@@ -41,3 +41,11 @@ export default function LayoutProvider({
     </LayoutContext.Provider>
   );
 }
+
+LayoutProvider.defaultProps = {
+  full: false,
+  leftOpen: false,
+  rightOpen: false,
+  setLeftOpen: () => {},
+  setRightOpen: () => {},
+};
