@@ -114,7 +114,11 @@ describe("Layout", () => {
       </Layout>
     );
     mockedRouterHook.mockReturnValue(mockRouter({ asPath: "/#test" }));
-    rerender(<Layout>test</Layout>);
+    rerender(<Layout full>test</Layout>);
+    expect(setLeftOpen).toHaveBeenCalledWith(false);
+    expect(setRightOpen).toHaveBeenCalledWith(false);
+    localStorage.setItem("right-menu-open", "true");
+    rerender(<Layout full={false}>test</Layout>);
     expect(setLeftOpen).toHaveBeenCalledWith(false);
     expect(setRightOpen).toHaveBeenCalledWith(false);
   });

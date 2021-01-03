@@ -57,8 +57,8 @@ export default function Layout({
   const router = useRouter();
   useEffect(() => {
     setLeftOpen(false);
-    setRightOpen(localStorage.getItem("right-menu-open") === "true");
-  }, [router]);
+    setRightOpen(localStorage.getItem("right-menu-open") === "true" && !full);
+  }, [full, router]);
 
   const open = leftOpen || rightOpen;
   const modifiers = {
