@@ -31,7 +31,6 @@
 :loginPageTitle a rdfs:Literal .
 :loginPitch a rdfs:Literal .
 :loginPrompt a rdfs:Literal .
-:loginWithSolid a rdfs:Literal .
 :logOut a rdfs:Literal .
 :monstersPageTitle a rdfs:Literal .
 :notesPageTitle a rdfs:Literal .

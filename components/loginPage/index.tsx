@@ -25,7 +25,7 @@ export default function LoginPage() {
           <div>
             <Content>
               <h1>
-                <Translation id="loginWithSolid" />
+                <Translation id="loginPageTitle" />
               </h1>
               <p>
                 <Translation id="authenticationPitch" />

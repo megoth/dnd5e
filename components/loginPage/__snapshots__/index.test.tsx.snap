@@ -156,7 +156,7 @@ exports[`LoginPage renders 1`] = `
                 style="hyphens: auto;"
               >
                 <h1>
-                  [Translation for https://example.com/global/translations.ttl#loginWithSolid does not exist]
+                  [Translation for https://example.com/global/translations.ttl#loginPageTitle does not exist]
                 </h1>
                 <p>
                   [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
@@ -663,7 +663,7 @@ exports[`LoginPage renders a warning when authenticated 1`] = `
                 style="hyphens: auto;"
               >
                 <h1>
-                  [Translation for https://example.com/global/translations.ttl#loginWithSolid does not exist]
+                  [Translation for https://example.com/global/translations.ttl#loginPageTitle does not exist]
                 </h1>
                 <p>
                   [Translation for https://example.com/global/translations.ttl#authenticationPitch does not exist]
