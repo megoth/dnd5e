@@ -24,7 +24,11 @@ export function getMessage(
 ) {
   const translationURL = idOrURL.startsWith("https://")
     ? idOrURL
-    : getTranslationURL(idOrURL, { currentLocale, resourceBundles });
+    : getTranslationURL(
+        idOrURL,
+        { currentLocale, resourceBundles },
+        args.bundle
+      );
   const translationId = getTranslationId(translationURL);
   const fluentBundle = fluentBundles[currentLocale];
   const message = fluentBundle?.getMessage(translationId);

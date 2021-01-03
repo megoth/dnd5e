@@ -16,11 +16,10 @@ const mockedLayoutHook = useLayout as jest.Mock;
 
 describe("SubMenuNav", () => {
   let setLeftOpen;
-  let mockedRouterHook;
 
   beforeEach(() => mockAppHook(mockedAppHook));
   beforeEach(() => {
-    mockedRouterHook = jest
+    jest
       .spyOn(routerFns, "useRouter")
       .mockReturnValue(mockRouter({ asPath: "/rules" }));
   });
@@ -30,14 +29,6 @@ describe("SubMenuNav", () => {
   });
 
   it("renders", () => {
-    const { asFragment } = render(<SubMenuNav />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("renders nothing when there are no pages", () => {
-    mockedRouterHook.mockReturnValue({
-      asPath: "/",
-    });
     const { asFragment } = render(<SubMenuNav />);
     expect(asFragment()).toMatchSnapshot();
   });

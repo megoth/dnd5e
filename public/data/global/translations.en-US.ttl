@@ -3,7 +3,7 @@
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix translations: <./translations.ttl#> .
 
-translations:aboutTitle skos:definition "About the app"@en-US .
+translations:aboutPageTitle skos:definition "About the app"@en-US .
 translations:appDescription skos:definition "A Solid App for D&D5e"@en-US .
 translations:appName skos:definition "D&D5e Solid App"@en-US .
 translations:appPitch skos:definition
@@ -24,8 +24,9 @@ translations:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 translations:encountersPageTitle skos:definition "Encounters"@en-US .
 translations:equipmentPageTitle skos:definition "Equipment"@en-US .
+translations:faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
 translations:faqShort skos:definition "FAQ"@en-US .
-translations:faqTitle skos:definition "Frequently Asked Questions"@en-US .
+translations:homePageTitle skos:definition "Home"@en-US .
 translations:learnMore skos:definition "Learn more about the project"@en-US .
 translations:locale-en-US skos:definition "English (US)"@en-US .
 translations:locale-nb-NO skos:definition "Norwegian"@en-US .
@@ -59,7 +60,7 @@ translations:signupPitch skos:definition
     below, or [head over to solidproject.org for more information about how to choose a
     provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
 translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
-translations:signupTitle skos:definition "Create a Solid account"@en-US .
+translations:signupPageTitle skos:definition "Create a Solid account"@en-US .
 translations:solidIdP skos:definition "Solid identity provider"@en-US .
 translations:solidLogo skos:definition "Solid logo"@en-US .
 translations:spellsPageTitle skos:definition "Spells"@en-US .

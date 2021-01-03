@@ -14,7 +14,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 export default function PageFooter({ className, ...props }: Props) {
   const app = useApp();
   const pages = [
-    { href: "/about", label: getMessage(app, "aboutTitle") },
+    { href: "/about", label: getMessage(app, "aboutPageTitle") },
     { href: "/faq", label: getMessage(app, "faqShort") },
   ];
 

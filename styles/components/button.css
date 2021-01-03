@@ -3,7 +3,7 @@
 }
 
 .button--close {
-  @apply bg-transparent border-transparent px-2 w-full hover:bg-transparent hover:text-black dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
+  @apply bg-gray-100 dark:bg-gray-800 border-transparent px-2 w-full hover:bg-transparent hover:text-black dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
 }
 
 .button--solid {

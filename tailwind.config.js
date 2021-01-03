@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       transitionProperty: {
         left: "left",
+        right: "right",
       },
     },
   },

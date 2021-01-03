@@ -3,7 +3,7 @@
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix translations: <./translations.ttl#> .
 
-translations:aboutTitle skos:definition "Om appen"@nb-NO .
+translations:aaboutPageTitle skos:definition "Om appen"@nb-NO .
 translations:appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 translations:appName skos:definition "D&D5e Solid App"@nb-NO .
 translations:appPitch skos:definition
@@ -25,8 +25,9 @@ translations:darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 translations:encountersPageTitle skos:definition "Kamper"@nb-NO .
 translations:equipmentPageTitle skos:definition "Utstyr"@nb-NO .
+translations:faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 translations:faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
-translations:faqTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
+translations:homePageTitle skos:definition "Hjem"@nb-NO .
 translations:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 translations:locale-en-US skos:definition "Engelsk"@nb-NO .
 translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
@@ -60,7 +61,7 @@ translations:signupPitch skos:definition
     eller [fortsett til solidproject.org for mer informasjon om hvordan du velger
     leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
 translations:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
-translations:signupTitle skos:definition "Opprett en Solid konto"@nb-NO .
+translations:signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
 translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 translations:solidLogo skos:definition "Logo for Solid"@nb-NO .
 translations:spellsPageTitle skos:definition "Magi"@nb-NO .

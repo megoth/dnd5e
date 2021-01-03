@@ -10,13 +10,16 @@ import LoginButton from "../loginButton";
 import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 import LoginForm from "../loginForm";
 import { getRedirectURL } from "../../src/windowHelpers";
+import { getMessage } from "../../src/models/translation";
+import useApp from "../../src/hooks/useApp";
 
 export default function LoginPage() {
+  const app = useApp();
   const providers = getProviders();
   const redirectURL = getRedirectURL("");
   return (
     <>
-      <Layout full login={false}>
+      <Layout full pageName={getMessage(app, "loginPageTitle")}>
         <LoggedInAlreadyWarning className={bem("main-container", "content")} />
         <div className="main-container md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
           <div>

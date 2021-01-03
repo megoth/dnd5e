@@ -6,6 +6,7 @@ import Content from "../content";
 import useApp from "../../src/hooks/useApp";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
+import { getMessage } from "../../src/models/translation";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
 
@@ -14,13 +15,13 @@ interface Props {
 }
 
 export default function AboutPage({ markdown }: Props) {
-  const { currentLocale } = useApp();
+  const app = useApp();
   const renderers = {
     heading: HeadingRenderer,
   };
   return (
-    <Layout>
-      {currentLocale !== "en-US" && (
+    <Layout pageName={getMessage(app, "aboutPageTitle")}>
+      {app.currentLocale !== "en-US" && (
         <WarningMessage data-testid={TESTID_ABOUT_PAGE_LANGUAGE_WARNING}>
           <Translation id="onlyAvailableInEnglish" />
         </WarningMessage>

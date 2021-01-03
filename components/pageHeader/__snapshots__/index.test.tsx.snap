@@ -8,17 +8,44 @@ exports[`PageHeader renders 1`] = `
     <div
       class="main-container main-container--content pr-0"
     >
-      <div
-        class="flex font-serif self-center text-left"
+      <a
+        class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/"
       >
-        <a
-          class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-          href="/"
-        >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
-        </a>
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
+      </a>
+    </div>
+    <div
+      class="bg-gray-100 dark:bg-gray-900"
+    >
+      <div
+        class="main-container main-container--content flex px-0"
+      >
         <button
-          class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+          class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
+          data-testid="page-header-left-menu-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <div
+          class="flex-1 text-lg font-semibold font-serif leading-10"
+        />
+        <button
+          class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
           data-testid="page-header-right-menu-button"
           type="button"
         >
@@ -39,41 +66,11 @@ exports[`PageHeader renders 1`] = `
         </button>
       </div>
     </div>
-    <nav
-      class="pages-nav pages-nav--main-menu"
-    >
-      <ul
-        class="pages-nav__list pages-nav__list--main-menu"
-      >
-        <li
-          class="flex"
-          data-testid="main-nav-list-item"
-        >
-          <a
-            class="pages-nav__link pages-nav__link--main-menu"
-            href="/characters"
-          >
-            [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-          </a>
-        </li>
-        <li
-          class="flex"
-          data-testid="main-nav-list-item"
-        >
-          <a
-            class="pages-nav__link pages-nav__link--main-menu"
-            href="/rules"
-          >
-            [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 </DocumentFragment>
 `;
 
-exports[`PageHeader renders a different icon when unauthenticated 1`] = `
+exports[`PageHeader renders different icon when unauthenticated 1`] = `
 <DocumentFragment>
   <header
     class="mb-2 shadow shadow-md"
@@ -81,17 +78,44 @@ exports[`PageHeader renders a different icon when unauthenticated 1`] = `
     <div
       class="main-container main-container--content pr-0"
     >
-      <div
-        class="flex font-serif self-center text-left"
+      <a
+        class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+        href="/"
       >
-        <a
-          class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-          href="/"
-        >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
-        </a>
+        [Translation for https://example.com/global/translations.ttl#appName does not exist]
+      </a>
+    </div>
+    <div
+      class="bg-gray-100 dark:bg-gray-900"
+    >
+      <div
+        class="main-container main-container--content flex px-0"
+      >
         <button
-          class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+          class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
+          data-testid="page-header-left-menu-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <div
+          class="flex-1 text-lg font-semibold font-serif leading-10"
+        />
+        <button
+          class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
           data-testid="page-header-right-menu-button"
           type="button"
         >
@@ -112,36 +136,6 @@ exports[`PageHeader renders a different icon when unauthenticated 1`] = `
         </button>
       </div>
     </div>
-    <nav
-      class="pages-nav pages-nav--main-menu"
-    >
-      <ul
-        class="pages-nav__list pages-nav__list--main-menu"
-      >
-        <li
-          class="flex"
-          data-testid="main-nav-list-item"
-        >
-          <a
-            class="pages-nav__link pages-nav__link--main-menu"
-            href="/characters"
-          >
-            [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-          </a>
-        </li>
-        <li
-          class="flex"
-          data-testid="main-nav-list-item"
-        >
-          <a
-            class="pages-nav__link pages-nav__link--main-menu"
-            href="/rules"
-          >
-            [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 </DocumentFragment>
 `;

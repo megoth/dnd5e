@@ -11,17 +11,44 @@ exports[`Layout can be rendered as home 1`] = `
       <div
         class="main-container main-container--content pr-0"
       >
-        <div
-          class="flex font-serif self-center text-left"
+        <a
+          class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
         >
-          <a
-            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-            href="/"
-          >
-            [Translation for https://example.com/global/translations.ttl#appName does not exist]
-          </a>
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
+      </div>
+      <div
+        class="bg-gray-100 dark:bg-gray-800"
+      >
+        <div
+          class="main-container main-container--content flex px-0"
+        >
           <button
-            class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            data-testid="page-header-left-menu-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <div
+            class="flex-1 text-lg font-semibold font-serif leading-10"
+          />
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
             data-testid="page-header-right-menu-button"
             type="button"
           >
@@ -42,296 +69,122 @@ exports[`Layout can be rendered as home 1`] = `
           </button>
         </div>
       </div>
-      <nav
-        class="pages-nav pages-nav--main-menu"
-      >
-        <ul
-          class="pages-nav__list pages-nav__list--main-menu"
-        >
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/characters"
-            >
-              [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-            </a>
-          </li>
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu pages-nav__link--selected pages-nav__link--child-selected"
-              href="/rules"
-            >
-              [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-            </a>
-            <button
-              class="pages-nav__button pages-nav__button--main-menu lg:hidden"
-              data-testid="nav-item-sub-menu-button"
-              type="button"
-            >
-              <svg
-                class="icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 6h16M4 12h16M4 18h16"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main>
-      test
-    </main>
-    <footer
-      class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
-    >
-      <div
-        class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
-      >
-        <a
-          class="link"
-          href="/about"
-        >
-          [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
-        </a>
-        <a
-          class="link"
-          href="/faq"
-        >
-          [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
-        </a>
-      </div>
-      <div
-        class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
-      >
-        <button
-          class="button"
-          data-testid="dark-mode-selector-button"
-          type="button"
-        >
-          <span>
-            🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
-          </span>
-        </button>
-      </div>
-    </footer>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Layout renders as non-home by default 1`] = `
-<DocumentFragment>
-  <div
-    class="flex-1 flex flex-col relative min-h-full"
-  >
-    <header
-      class="mb-2 shadow shadow-md"
-    >
-      <div
-        class="main-container main-container--content pr-0"
-      >
-        <div
-          class="flex font-serif self-center text-left"
-        >
-          <a
-            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-            href="/"
-          >
-            [Translation for https://example.com/global/translations.ttl#appName does not exist]
-          </a>
-          <button
-            class="px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
-            data-testid="page-header-right-menu-button"
-            type="button"
-          >
-            <svg
-              class="icon"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <nav
-        class="pages-nav pages-nav--main-menu"
-      >
-        <ul
-          class="pages-nav__list pages-nav__list--main-menu"
-        >
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/characters"
-            >
-              [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-            </a>
-          </li>
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu pages-nav__link--selected pages-nav__link--child-selected"
-              href="/rules"
-            >
-              [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-            </a>
-            <button
-              class="pages-nav__button pages-nav__button--main-menu lg:hidden"
-              data-testid="nav-item-sub-menu-button"
-              type="button"
-            >
-              <svg
-                class="icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 6h16M4 12h16M4 18h16"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <button
-      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 xl:hidden z-10 hidden"
-      data-testid="layout-fade"
-      type="button"
-    >
-       
-    </button>
     <div
-      class="main-container main-container--content main-container--main lg:flex-1 flex flex-col lg:flex-row lg:space-x-2"
+      class="main-container main-container--full"
     >
       <div
-        class="layout__sub-menu lg:flex-1 hidden lg:block"
+        class="layout__sidebar layout__sidebar--left layout__sidebar--full"
         data-testid="layout-sub-menu"
       >
+        <button
+          class="button button--close layout__close-button layout__close-button--left  layout__close-button--full text-right"
+          data-testid="sub-menu-nav-close-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+           [Translation for https://example.com/global/translations.ttl#close does not exist]
+        </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
         >
-          <button
-            class="button button--close mb-9 lg:hidden text-right"
-            data-testid="sub-menu-nav-close-button"
-            type="button"
-          >
-            <svg
-              class="icon"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 18L18 6M6 6l12 12"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
-          </button>
           <ul
             class="nav-pages__list nav-pages__list--sub-menu"
           >
-            <li
-              class="flex"
-            >
+            <li>
               <a
-                class="pages-nav__link pages-nav__link--sub-menu pages-nav__link--selected pages-nav__link--child-selected"
+                class="pages-nav__link"
+                href="/characters"
+              >
+                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
               </a>
-            </li>
-            <li
-              class="flex"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--sub-menu"
-                href="/rules/classes"
+              <ul
+                class="ml-4"
               >
-                [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/classes"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/races"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/equipment"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/spells"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/monsters"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/faq"
+              >
+                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
               </a>
             </li>
-            <li
-              class="flex"
-            >
+            <li>
               <a
-                class="pages-nav__link pages-nav__link--sub-menu"
-                href="/rules/races"
+                class="pages-nav__link"
+                href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
-              </a>
-            </li>
-            <li
-              class="flex"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--sub-menu"
-                href="/rules/equipment"
-              >
-                [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
-              </a>
-            </li>
-            <li
-              class="flex"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--sub-menu"
-                href="/rules/spells"
-              >
-                [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
-              </a>
-            </li>
-            <li
-              class="flex"
-            >
-              <a
-                class="pages-nav__link pages-nav__link--sub-menu"
-                href="/rules/monsters"
-              >
-                [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
+                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
               </a>
             </li>
           </ul>
         </nav>
       </div>
       <div
-        class="lg:flex-auto flex flex-col max-w-prose min-h-full"
+        class="layout__main layout__main--full"
       >
         <main
           class="flex-1"
@@ -348,7 +201,7 @@ exports[`Layout renders as non-home by default 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
             </a>
             <a
               class="link"
@@ -373,14 +226,14 @@ exports[`Layout renders as non-home by default 1`] = `
         </footer>
       </div>
       <div
-        class="hidden lg:block lg:flex-1"
+        class="layout__sidebar layout__sidebar--right-fake layout__sidebar--full"
       />
       <div
-        class="layout__right-menu xl:flex-1 xl:-top-2 xl:-mb-2 bg-gray-100 dark:bg-gray-900 xl:bg-transparent xl:dark:bg-transparent hidden"
+        class="layout__sidebar layout__sidebar--right layout__sidebar--full"
       >
         <div>
           <button
-            class="button button--close text-left"
+            class="button button--close layout__close-button layout__close-button--right  layout__close-button--full text-left"
             data-testid="session-close-button"
             type="button"
           >
@@ -400,16 +253,294 @@ exports[`Layout renders as non-home by default 1`] = `
             </svg>
              [Translation for https://example.com/global/translations.ttl#close does not exist]
           </button>
-          <p>
-            [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
-          </p>
+          <div
+            class="px-2"
+          >
+            <p>
+              [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+            </p>
+            <button
+              class="button w-full"
+              data-testid="authenticated-logout-button"
+              type="button"
+            >
+              [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layout renders as non-home by default 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-1 flex flex-col relative min-h-full"
+  >
+    <header
+      class="mb-2 shadow shadow-md"
+    >
+      <div
+        class="main-container main-container--content pr-0"
+      >
+        <a
+          class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
+        >
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
+      </div>
+      <div
+        class="bg-gray-100 dark:bg-gray-900"
+      >
+        <div
+          class="main-container main-container--content flex px-0"
+        >
           <button
-            class="button w-full"
-            data-testid="authenticated-logout-button"
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
+            data-testid="page-header-left-menu-button"
             type="button"
           >
-            [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
           </button>
+          <div
+            class="flex-1 text-lg font-semibold font-serif leading-10"
+          />
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            data-testid="page-header-right-menu-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      class="main-container"
+    >
+      <div
+        class="layout__sidebar layout__sidebar--left  layout__sidebar--content"
+        data-testid="layout-sub-menu"
+      >
+        <button
+          class="button button--close layout__close-button layout__close-button--left layout__close-button--content text-right"
+          data-testid="sub-menu-nav-close-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+           [Translation for https://example.com/global/translations.ttl#close does not exist]
+        </button>
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/characters"
+              >
+                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
+                href="/rules"
+              >
+                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+              </a>
+              <ul
+                class="ml-4"
+              >
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/classes"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/races"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/equipment"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/spells"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="pages-nav__link"
+                    href="/rules/monsters"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/faq"
+              >
+                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/about"
+              >
+                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="layout__main  layout__main--content"
+      >
+        <main
+          class="flex-1"
+        >
+          test
+        </main>
+        <footer
+          class="main-container main-container--content mt-8 text-center sm:text-left xs:flex xs:space-x-4 items-center justify-center sm:justify-start"
+        >
+          <div
+            class="md:flex-grow pb-2 flex space-x-1 justify-center sm:justify-start"
+          >
+            <a
+              class="link"
+              href="/about"
+            >
+              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+            </a>
+            <a
+              class="link"
+              href="/faq"
+            >
+              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+            </a>
+          </div>
+          <div
+            class="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center"
+          >
+            <button
+              class="button"
+              data-testid="dark-mode-selector-button"
+              type="button"
+            >
+              <span>
+                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+              </span>
+            </button>
+          </div>
+        </footer>
+      </div>
+      <div
+        class="layout__sidebar layout__sidebar--right-fake  layout__sidebar--content"
+      />
+      <div
+        class="layout__sidebar layout__sidebar--right  layout__sidebar--content"
+      >
+        <div>
+          <button
+            class="button button--close layout__close-button layout__close-button--right layout__close-button--content text-left"
+            data-testid="session-close-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+             [Translation for https://example.com/global/translations.ttl#close does not exist]
+          </button>
+          <div
+            class="px-2 xl:px-0"
+          >
+            <p>
+              [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+            </p>
+            <button
+              class="button w-full"
+              data-testid="authenticated-logout-button"
+              type="button"
+            >
+              [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+            </button>
+          </div>
         </div>
       </div>
     </div>

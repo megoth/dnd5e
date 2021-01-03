@@ -1,13 +1,15 @@
 import React, { createContext, ReactNode } from "react";
 
-type SetMenuOpen = (menuOpen: boolean) => void;
+export type SetMenuOpen = (menuOpen: boolean) => void;
 
 export const LayoutContext = createContext<{
+  full: boolean;
   leftOpen: boolean;
   rightOpen: boolean;
   setLeftOpen: SetMenuOpen;
   setRightOpen: SetMenuOpen;
 }>({
+  full: false,
   leftOpen: false,
   rightOpen: false,
   setLeftOpen: null,
@@ -16,6 +18,7 @@ export const LayoutContext = createContext<{
 
 interface Props {
   children: ReactNode;
+  full: boolean;
   leftOpen: boolean;
   rightOpen: boolean;
   setLeftOpen: SetMenuOpen;
@@ -24,6 +27,7 @@ interface Props {
 
 export default function LayoutProvider({
   children,
+  full,
   leftOpen,
   rightOpen,
   setRightOpen,
@@ -31,7 +35,7 @@ export default function LayoutProvider({
 }: Props) {
   return (
     <LayoutContext.Provider
-      value={{ leftOpen, rightOpen, setRightOpen, setLeftOpen }}
+      value={{ full, leftOpen, rightOpen, setRightOpen, setLeftOpen }}
     >
       {children}
     </LayoutContext.Provider>

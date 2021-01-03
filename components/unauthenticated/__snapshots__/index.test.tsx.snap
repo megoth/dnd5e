@@ -3,7 +3,7 @@
 exports[`Unauthenticated renders 1`] = `
 <DocumentFragment>
   <div
-    class="p-4 text-center"
+    class="text-center"
   >
     <h2
       class="font-bold text-xl"
@@ -48,7 +48,7 @@ exports[`Unauthenticated renders 1`] = `
         class="line-behind__line"
       />
       <span
-        class="bg-gray-100 dark:bg-gray-900 lg:bg-white lg:dark:bg-gray-800"
+        class="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800"
       >
         [Translation for https://example.com/global/translations.ttl#or does not exist]
       </span>

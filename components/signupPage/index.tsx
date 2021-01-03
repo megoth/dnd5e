@@ -13,10 +13,10 @@ import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 export default function SignupPage() {
   const app = useApp();
   return (
-    <Layout login={false}>
+    <Layout pageName={getMessage(app, "signupPageTitle")}>
       <Content>
         <h1>
-          <Translation id="signupTitle" />
+          <Translation id="signupPageTitle" />
         </h1>
         <LoggedInAlreadyWarning />
         <ReactMarkdown>{getMessage(app, "signupPitch")}</ReactMarkdown>

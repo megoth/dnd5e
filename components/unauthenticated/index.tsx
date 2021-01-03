@@ -10,7 +10,7 @@ export default function Unauthenticated() {
   const providers = getProviders();
 
   return (
-    <div className="p-4 text-center">
+    <div className="text-center">
       <h2 className="font-bold text-xl">
         <Translation id="recommendedIdPSet" />
       </h2>
@@ -28,7 +28,7 @@ export default function Unauthenticated() {
       </ul>
       <h2 className="line-behind font-bold text-xl">
         <span className="line-behind__line" />
-        <span className="bg-gray-100 dark:bg-gray-900 lg:bg-white lg:dark:bg-gray-800">
+        <span className="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800">
           <Translation id="or" />
         </span>
       </h2>

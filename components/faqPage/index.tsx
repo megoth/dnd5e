@@ -6,6 +6,7 @@ import { getFAQAll } from "../../src/models/faq";
 import Translation from "../translation";
 import Content from "../content";
 import FAQ from "../faq";
+import { getMessage } from "../../src/models/translation";
 
 export const TESTID_FAQ_ITEM = "faq-item";
 
@@ -13,10 +14,10 @@ export default function FAQPage() {
   const app = useApp();
   const faqs = getFAQAll(app);
   return (
-    <Layout>
+    <Layout pageName={getMessage(app, "faqPageTitle")}>
       <Content>
         <h1>
-          <Translation id="faqTitle" />
+          <Translation id="faqPageTitle" />
         </h1>
       </Content>
       {faqs.map((faq) => (

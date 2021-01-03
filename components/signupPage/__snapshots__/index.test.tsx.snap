@@ -11,64 +11,138 @@ exports[`SignupPage renders 1`] = `
       <div
         class="main-container main-container--content pr-0"
       >
-        <div
-          class="flex font-serif self-center text-left"
+        <a
+          class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
         >
-          <a
-            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-            href="/"
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
+      </div>
+      <div
+        class="bg-gray-100 dark:bg-gray-900"
+      >
+        <div
+          class="main-container main-container--content flex px-0"
+        >
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
+            data-testid="page-header-left-menu-button"
+            type="button"
           >
-            [Translation for https://example.com/global/translations.ttl#appName does not exist]
-          </a>
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <div
+            class="flex-1 text-lg font-semibold font-serif leading-10"
+          >
+            [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+          </div>
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            data-testid="page-header-right-menu-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <nav
-        class="pages-nav pages-nav--main-menu"
-      >
-        <ul
-          class="pages-nav__list pages-nav__list--main-menu"
-        >
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/characters"
-            >
-              [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-            </a>
-          </li>
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/rules"
-            >
-              [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <button
-      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 xl:hidden z-10 hidden"
-      data-testid="layout-fade"
-      type="button"
-    >
-       
-    </button>
     <div
-      class="main-container main-container--content main-container--main lg:flex-1 flex flex-col lg:flex-row lg:space-x-2"
+      class="main-container"
     >
       <div
-        class="layout__sub-menu lg:flex-1 hidden lg:block"
+        class="layout__sidebar layout__sidebar--left  layout__sidebar--content"
         data-testid="layout-sub-menu"
-      />
+      >
+        <button
+          class="button button--close layout__close-button layout__close-button--left layout__close-button--content text-right"
+          data-testid="sub-menu-nav-close-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+           [Translation for https://example.com/global/translations.ttl#close does not exist]
+        </button>
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/characters"
+              >
+                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/rules"
+              >
+                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/faq"
+              >
+                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/about"
+              >
+                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div
-        class="lg:flex-auto flex flex-col max-w-prose min-h-full"
+        class="layout__main  layout__main--content"
       >
         <main
           class="flex-1"
@@ -78,7 +152,7 @@ exports[`SignupPage renders 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/global/translations.ttl#signupTitle does not exist]
+              [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
             </h1>
             <p>
               [Translation for https://example.com/global/translations.ttl#signupPitch does not exist]
@@ -208,7 +282,7 @@ exports[`SignupPage renders 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
             </a>
             <a
               class="link"
@@ -233,14 +307,14 @@ exports[`SignupPage renders 1`] = `
         </footer>
       </div>
       <div
-        class="hidden lg:block lg:flex-1"
+        class="layout__sidebar layout__sidebar--right-fake  layout__sidebar--content"
       />
       <div
-        class="layout__right-menu xl:flex-1 xl:-top-2 xl:-mb-2 bg-gray-100 dark:bg-gray-900 xl:bg-transparent xl:dark:bg-transparent hidden"
+        class="layout__sidebar layout__sidebar--right  layout__sidebar--content"
       >
         <div>
           <button
-            class="button button--close text-left"
+            class="button button--close layout__close-button layout__close-button--right layout__close-button--content text-left"
             data-testid="session-close-button"
             type="button"
           >
@@ -261,114 +335,118 @@ exports[`SignupPage renders 1`] = `
              [Translation for https://example.com/global/translations.ttl#close does not exist]
           </button>
           <div
-            class="p-4 text-center"
+            class="px-2 xl:px-0"
           >
-            <h2
-              class="font-bold text-xl"
+            <div
+              class="text-center"
             >
-              [Translation for https://example.com/global/translations.ttl#recommendedIdPSet does not exist]
-            </h2>
-            <ul
-              class="flex flex-col space-y-2 my-2"
-            >
-              <li>
-                <button
-                  class="button button--solid w-full"
-                  data-testid="login-button"
-                  type="button"
-                >
-                  Inrupt Pod Spaces
-                </button>
-              </li>
-              <li>
-                <button
-                  class="button button--solid w-full"
-                  data-testid="login-button"
-                  type="button"
-                >
-                  solidcommunity.net
-                </button>
-              </li>
-              <li>
-                <button
-                  class="button button--solid w-full"
-                  data-testid="login-button"
-                  type="button"
-                >
-                  inrupt.net
-                </button>
-              </li>
-            </ul>
-            <h2
-              class="line-behind font-bold text-xl"
-            >
-              <span
-                class="line-behind__line"
-              />
-              <span
-                class="bg-gray-100 dark:bg-gray-900 lg:bg-white lg:dark:bg-gray-800"
+              <h2
+                class="font-bold text-xl"
               >
-                [Translation for https://example.com/global/translations.ttl#or does not exist]
-              </span>
-            </h2>
-            <form
-              class="mt-2 md:mt-0 text-left"
-            >
-              <img
-                alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
-                class="mx-auto hidden md:block"
-                src="/logos/solid-emblem.svg"
-                style="max-width: 200px;"
-              />
-              <label
-                class="label"
-                for="idp"
+                [Translation for https://example.com/global/translations.ttl#recommendedIdPSet does not exist]
+              </h2>
+              <ul
+                class="flex flex-col space-y-2 my-2"
               >
-                [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
-                <input
-                  class="input"
-                  data-testid="login-form-idp-field"
-                  id="idp"
-                  placeholder="https://"
-                  required=""
-                  type="url"
-                  value=""
-                />
-              </label>
-              <label
-                class="label"
-                for="rememberIdp"
+                <li>
+                  <button
+                    class="button button--solid w-full"
+                    data-testid="login-button"
+                    type="button"
+                  >
+                    Inrupt Pod Spaces
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="button button--solid w-full"
+                    data-testid="login-button"
+                    type="button"
+                  >
+                    solidcommunity.net
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="button button--solid w-full"
+                    data-testid="login-button"
+                    type="button"
+                  >
+                    inrupt.net
+                  </button>
+                </li>
+              </ul>
+              <h2
+                class="line-behind font-bold text-xl"
               >
-                <input
-                  class="checkbox"
-                  data-testid="login-form-remember-checkbox"
-                  id="rememberIdp"
-                  type="checkbox"
+                <span
+                  class="line-behind__line"
                 />
                 <span
-                  class="label__text"
+                  class="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800"
                 >
-                  [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+                  [Translation for https://example.com/global/translations.ttl#or does not exist]
                 </span>
-              </label>
-              <button
-                class="button w-full"
-                data-testid="login-form-button"
-                type="submit"
+              </h2>
+              <form
+                class="mt-2 md:mt-0 text-left"
               >
-                [Translation for https://example.com/global/translations.ttl#logIn does not exist]
-              </button>
-              <div
-                class="mt-4"
-              >
-                <a
-                  class="link"
-                  href="/signup"
+                <img
+                  alt="[Translation for https://example.com/global/translations.ttl#logInImage does not exist]"
+                  class="mx-auto hidden md:block"
+                  src="/logos/solid-emblem.svg"
+                  style="max-width: 200px;"
+                />
+                <label
+                  class="label"
+                  for="idp"
                 >
-                  [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
-                </a>
-              </div>
-            </form>
+                  [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+                  <input
+                    class="input"
+                    data-testid="login-form-idp-field"
+                    id="idp"
+                    placeholder="https://"
+                    required=""
+                    type="url"
+                    value=""
+                  />
+                </label>
+                <label
+                  class="label"
+                  for="rememberIdp"
+                >
+                  <input
+                    class="checkbox"
+                    data-testid="login-form-remember-checkbox"
+                    id="rememberIdp"
+                    type="checkbox"
+                  />
+                  <span
+                    class="label__text"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+                  </span>
+                </label>
+                <button
+                  class="button w-full"
+                  data-testid="login-form-button"
+                  type="submit"
+                >
+                  [Translation for https://example.com/global/translations.ttl#logIn does not exist]
+                </button>
+                <div
+                  class="mt-4"
+                >
+                  <a
+                    class="link"
+                    href="/signup"
+                  >
+                    [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+                  </a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -388,64 +466,138 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
       <div
         class="main-container main-container--content pr-0"
       >
-        <div
-          class="flex font-serif self-center text-left"
+        <a
+          class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          href="/"
         >
-          <a
-            class="flex-1 focus:outline-none focus:ring-2 focus:ring-red-600"
-            href="/"
+          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+        </a>
+      </div>
+      <div
+        class="bg-gray-100 dark:bg-gray-900"
+      >
+        <div
+          class="main-container main-container--content flex px-0"
+        >
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 lg:hidden"
+            data-testid="page-header-left-menu-button"
+            type="button"
           >
-            [Translation for https://example.com/global/translations.ttl#appName does not exist]
-          </a>
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+          <div
+            class="flex-1 text-lg font-semibold font-serif leading-10"
+          >
+            [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+          </div>
+          <button
+            class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+            data-testid="page-header-right-menu-button"
+            type="button"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <nav
-        class="pages-nav pages-nav--main-menu"
-      >
-        <ul
-          class="pages-nav__list pages-nav__list--main-menu"
-        >
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/characters"
-            >
-              [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
-            </a>
-          </li>
-          <li
-            class="flex"
-            data-testid="main-nav-list-item"
-          >
-            <a
-              class="pages-nav__link pages-nav__link--main-menu"
-              href="/rules"
-            >
-              [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <button
-      class="bg-black fixed top-0 left-0 w-screen h-screen opacity-80 z-0 xl:hidden z-10 hidden"
-      data-testid="layout-fade"
-      type="button"
-    >
-       
-    </button>
     <div
-      class="main-container main-container--content main-container--main lg:flex-1 flex flex-col lg:flex-row lg:space-x-2"
+      class="main-container"
     >
       <div
-        class="layout__sub-menu lg:flex-1 hidden lg:block"
+        class="layout__sidebar layout__sidebar--left  layout__sidebar--content"
         data-testid="layout-sub-menu"
-      />
+      >
+        <button
+          class="button button--close layout__close-button layout__close-button--left layout__close-button--content text-right"
+          data-testid="sub-menu-nav-close-button"
+          type="button"
+        >
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+           [Translation for https://example.com/global/translations.ttl#close does not exist]
+        </button>
+        <nav
+          class="pages-nav pages-nav--sub-menu"
+        >
+          <ul
+            class="nav-pages__list nav-pages__list--sub-menu"
+          >
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/characters"
+              >
+                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/rules"
+              >
+                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/faq"
+              >
+                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              </a>
+            </li>
+            <li>
+              <a
+                class="pages-nav__link"
+                href="/about"
+              >
+                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div
-        class="lg:flex-auto flex flex-col max-w-prose min-h-full"
+        class="layout__main  layout__main--content"
       >
         <main
           class="flex-1"
@@ -455,7 +607,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/global/translations.ttl#signupTitle does not exist]
+              [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
             </h1>
             <div
               data-testid="logged-in-already-warning"
@@ -594,7 +746,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
             </a>
             <a
               class="link"
@@ -619,14 +771,14 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
         </footer>
       </div>
       <div
-        class="hidden lg:block lg:flex-1"
+        class="layout__sidebar layout__sidebar--right-fake  layout__sidebar--content"
       />
       <div
-        class="layout__right-menu xl:flex-1 xl:-top-2 xl:-mb-2 bg-gray-100 dark:bg-gray-900 xl:bg-transparent xl:dark:bg-transparent hidden"
+        class="layout__sidebar layout__sidebar--right  layout__sidebar--content"
       >
         <div>
           <button
-            class="button button--close text-left"
+            class="button button--close layout__close-button layout__close-button--right layout__close-button--content text-left"
             data-testid="session-close-button"
             type="button"
           >
@@ -646,16 +798,20 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             </svg>
              [Translation for https://example.com/global/translations.ttl#close does not exist]
           </button>
-          <p>
-            [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
-          </p>
-          <button
-            class="button w-full"
-            data-testid="authenticated-logout-button"
-            type="button"
+          <div
+            class="px-2 xl:px-0"
           >
-            [Translation for https://example.com/global/translations.ttl#logOut does not exist]
-          </button>
+            <p>
+              [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+            </p>
+            <button
+              class="button w-full"
+              data-testid="authenticated-logout-button"
+              type="button"
+            >
+              [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+            </button>
+          </div>
         </div>
       </div>
     </div>

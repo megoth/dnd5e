@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { act, render } from "@testing-library/react";
 import * as routerFns from "next/router";
 import swipeableFns from "react-swipeable";
 import { SwipeableHandlers } from "react-swipeable/src/types";
 import userEvent from "@testing-library/user-event";
-import Layout, { TESTID_LAYOUT_FADE, TESTID_LAYOUT_SUB_MENU } from "./index";
+import Layout, { TESTID_LAYOUT_FADE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import useDataset from "../../src/hooks/useDataset";
@@ -12,12 +12,28 @@ import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { authenticatedWebId } from "../../__testUtils/mockSession";
 import mockRouter from "../../__testUtils/mockRouter";
+import useLayout from "../../src/hooks/useLayout";
+import { SetMenuOpen } from "../../src/contexts/layout";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
+
+interface Props {
+  setLeftOpen: SetMenuOpen;
+  setRightOpen: SetMenuOpen;
+}
+
+function ChildComponent({ setLeftOpen, setRightOpen }: Props) {
+  const { leftOpen, rightOpen } = useLayout();
+  useEffect(() => {
+    setLeftOpen(leftOpen);
+    setRightOpen(rightOpen);
+  }, [leftOpen, rightOpen, setLeftOpen, setRightOpen]);
+  return null;
+}
 
 describe("Layout", () => {
   let mockedSwipeableHook;
@@ -50,31 +66,39 @@ describe("Layout", () => {
   });
 
   it("adds event listeners to swipe left and right, which shows and hides sub menu", () => {
-    const { getByTestId } = render(<Layout>test</Layout>);
-    const subMenu = getByTestId(TESTID_LAYOUT_SUB_MENU);
+    const setLeftOpen = jest.fn();
+    const setRightOpen = jest.fn();
+    const { getByTestId } = render(
+      <Layout>
+        <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
+      </Layout>
+    );
     expect(mockedSwipeableHook).toHaveBeenCalledWith({
       onSwipedLeft: expect.any(Function),
       onSwipedRight: expect.any(Function),
     });
-    expect(subMenu.classList.contains("hidden")).toBeTruthy();
     act(() => mockedSwipeableHook.mock.calls[0][0].onSwipedRight());
-    expect(subMenu.classList.contains("hidden")).toBeFalsy();
+    expect(setLeftOpen.mock.calls[1][0]).toBe(true);
+    expect(setRightOpen.mock.calls[1][0]).toBe(false);
     act(() => mockedSwipeableHook.mock.calls[0][0].onSwipedLeft());
-    expect(subMenu.classList.contains("hidden")).toBeTruthy();
-    act(() => mockedSwipeableHook.mock.calls[0][0].onSwipedLeft());
-    expect(subMenu.classList.contains("hidden")).toBeTruthy();
-    act(() => mockedSwipeableHook.mock.calls[0][0].onSwipedRight());
-    expect(subMenu.classList.contains("hidden")).toBeFalsy();
+    expect(setLeftOpen.mock.calls[2][0]).toBe(false);
+    expect(setRightOpen.mock.calls[2][0]).toBe(true);
+    userEvent.click(getByTestId(TESTID_LAYOUT_FADE));
   });
 
   it("renders a fade as backdrop for the menus", () => {
-    const { getByTestId } = render(<Layout>test</Layout>);
-    const subMenu = getByTestId(TESTID_LAYOUT_SUB_MENU);
-    const fade = getByTestId(TESTID_LAYOUT_FADE);
+    const setLeftOpen = jest.fn();
+    const setRightOpen = jest.fn();
+    const { getByTestId } = render(
+      <Layout>
+        <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
+      </Layout>
+    );
     act(() => mockedSwipeableHook.mock.calls[0][0].onSwipedRight());
-    expect(subMenu.classList.contains("hidden")).toBeFalsy();
-    expect(fade).toBeDefined();
+    const fade = getByTestId(TESTID_LAYOUT_FADE);
+    expect(fade).not.toBeNull();
     userEvent.click(fade);
-    expect(subMenu.classList.contains("hidden")).toBeTruthy();
+    expect(setLeftOpen.mock.calls[2][0]).toBe(false);
+    expect(setRightOpen.mock.calls[2][0]).toBe(false);
   });
 });

@@ -9,7 +9,6 @@ import { bem } from "../../src/utils";
 import { getProviders } from "../../src/models/provider";
 import LoginButton from "../loginButton";
 import { getMessage } from "../../src/models/translation";
-import PageFooter from "../pageFooter";
 import Content from "../content";
 import PageHeader from "../pageHeader";
 import WarningMessage from "../warningMessage";
@@ -17,11 +16,14 @@ import WarningMessage from "../warningMessage";
 export default function SplashPage() {
   const app = useApp();
   return (
-    <Layout full header={false} footer={false} login={false}>
+    <Layout full header={false}>
       <section className="hero">
-        <div className="flex-1 flex flex-col justify-center items-center leading-normal bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent text-center relative">
-          <PageHeader className="w-full" login={false} />
-          <div className="px-4 flex-1">
+        <div className="flex-1 flex flex-col justify-center items-center leading-normal bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent relative">
+          <PageHeader
+            className="w-full"
+            pageName={getMessage(app, "homePageTitle")}
+          />
+          <div className="px-4 flex-1 text-center">
             <div className="my-8 px-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded rounded-lg md:rounded-xl max-w-lg shadow shadow-md">
               <Logo />
               <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
@@ -107,7 +109,6 @@ export default function SplashPage() {
           </Content>
         </div>
       </section>
-      <PageFooter />
     </Layout>
   );
 }

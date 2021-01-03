@@ -12,7 +12,7 @@ exports[`PageFooter renders 1`] = `
         class="link"
         href="/about"
       >
-        [Translation for https://example.com/global/translations.ttl#aboutTitle does not exist]
+        [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
       </a>
       <a
         class="link"

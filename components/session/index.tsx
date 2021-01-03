@@ -13,7 +13,7 @@ export const SESSION_CLOSE_BUTTON = "session-close-button";
 
 export default function Session() {
   const { session } = useSession();
-  const { setRightOpen } = useLayout();
+  const { full, setRightOpen } = useLayout();
 
   useEscKey(() => setRightOpen(false));
 
@@ -21,7 +21,14 @@ export default function Session() {
     <div>
       <button
         type="button"
-        className={clsx(bem("button", "close"), "text-left")}
+        className={clsx(
+          bem("button", "close"),
+          bem("layout__close-button", "right", {
+            content: !full,
+            full,
+          }),
+          "text-left"
+        )}
         onClick={() => setRightOpen(false)}
         data-testid={SESSION_CLOSE_BUTTON}
       >
@@ -29,7 +36,13 @@ export default function Session() {
         &nbsp;
         <Translation id="close" />
       </button>
-      {session.info.isLoggedIn ? <Authenticated /> : <Unauthenticated />}
+      <div
+        className={clsx("px-2", {
+          "xl:px-0": !full,
+        })}
+      >
+        {session.info.isLoggedIn ? <Authenticated /> : <Unauthenticated />}
+      </div>
     </div>
   );
 }
