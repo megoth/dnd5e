@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { act, render } from "@testing-library/react";
-import * as routerFns from "next/router";
 import swipeableFns from "react-swipeable";
 import { SwipeableHandlers } from "react-swipeable/src/types";
 import userEvent from "@testing-library/user-event";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
+import { createRouter } from "next/router";
+import * as routerFns from "next/router";
 import Layout, { TESTID_LAYOUT_FADE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
@@ -11,9 +13,9 @@ import useDataset from "../../src/hooks/useDataset";
 import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { authenticatedWebId } from "../../__testUtils/mockSession";
-import mockRouter from "../../__testUtils/mockRouter";
 import useLayout from "../../src/hooks/useLayout";
 import { SetMenuOpen } from "../../src/contexts/layout";
+import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -37,13 +39,9 @@ function ChildComponent({ setLeftOpen, setRightOpen }: Props) {
 
 describe("Layout", () => {
   let mockedSwipeableHook;
+  let mockedRouterHook;
 
   beforeEach(() => mockAppHook(mockedAppHook));
-  beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/rules" }));
-  });
   beforeEach(() => {
     mockedSwipeableHook = jest
       .spyOn(swipeableFns, "useSwipeable")
@@ -53,6 +51,11 @@ describe("Layout", () => {
     mockDatasetHook(mockedDatasetHook, {
       data: mockProfileDataset(authenticatedWebId),
     });
+  });
+  beforeEach(() => {
+    mockedRouterHook = jest
+      .spyOn(routerFns, "useRouter")
+      .mockReturnValue(mockRouter());
   });
 
   it("renders as non-home by default", () => {
@@ -100,5 +103,19 @@ describe("Layout", () => {
     userEvent.click(fade);
     expect(setLeftOpen.mock.calls[2][0]).toBe(false);
     expect(setRightOpen.mock.calls[2][0]).toBe(false);
+  });
+
+  it("closes menus when router change", () => {
+    const setLeftOpen = jest.fn();
+    const setRightOpen = jest.fn();
+    const { rerender } = render(
+      <Layout>
+        <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
+      </Layout>
+    );
+    mockedRouterHook.mockReturnValue(mockRouter({ asPath: "/#test" }));
+    rerender(<Layout>test</Layout>);
+    expect(setLeftOpen).toHaveBeenCalledWith(false);
+    expect(setRightOpen).toHaveBeenCalledWith(false);
   });
 });

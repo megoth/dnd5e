@@ -2,6 +2,7 @@ import React, { HTMLAttributes, ReactNode, useEffect, useState } from "react";
 import Head from "next/head";
 import clsx from "clsx";
 import { useSwipeable } from "react-swipeable";
+import { useRouter } from "next/router";
 import { getMessage } from "../../src/models/translation";
 import useApp from "../../src/hooks/useApp";
 import { bem } from "../../src/utils";
@@ -53,6 +54,11 @@ export default function Layout({
       setRightOpen(false);
     },
   });
+  const router = useRouter();
+  useEffect(() => {
+    setLeftOpen(false);
+    setRightOpen(localStorage.getItem("right-menu-open") === "true");
+  }, [router]);
 
   const open = leftOpen || rightOpen;
   const modifiers = {

@@ -107,7 +107,6 @@ exports[`Layout can be rendered as home 1`] = `
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/characters"
               >
                 [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
@@ -115,66 +114,15 @@ exports[`Layout can be rendered as home 1`] = `
             </li>
             <li>
               <a
-                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
-                data-testid="nav-item-link"
+                class="pages-nav__link"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
               </a>
-              <ul
-                class="ml-4"
-              >
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/classes"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/races"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/equipment"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/spells"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/monsters"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
-                  </a>
-                </li>
-              </ul>
             </li>
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/faq"
               >
                 [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
@@ -183,7 +131,6 @@ exports[`Layout can be rendered as home 1`] = `
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/about"
               >
                 [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
@@ -390,7 +337,6 @@ exports[`Layout renders as non-home by default 1`] = `
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/characters"
               >
                 [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
@@ -398,66 +344,15 @@ exports[`Layout renders as non-home by default 1`] = `
             </li>
             <li>
               <a
-                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
-                data-testid="nav-item-link"
+                class="pages-nav__link"
                 href="/rules"
               >
                 [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
               </a>
-              <ul
-                class="ml-4"
-              >
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/classes"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#classesPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/races"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#racesPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/equipment"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#equipmentPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/spells"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#spellsPageTitle does not exist]
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="pages-nav__link"
-                    data-testid="nav-item-link"
-                    href="/rules/monsters"
-                  >
-                    [Translation for https://example.com/global/translations.ttl#monstersPageTitle does not exist]
-                  </a>
-                </li>
-              </ul>
             </li>
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/faq"
               >
                 [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
@@ -466,7 +361,6 @@ exports[`Layout renders as non-home by default 1`] = `
             <li>
               <a
                 class="pages-nav__link"
-                data-testid="nav-item-link"
                 href="/about"
               >
                 [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
