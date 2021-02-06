@@ -6,8 +6,8 @@
 
 :datasetLoadFailed
     a dnd5e_app:Error ;
-    dnd5e_app:translation :datasetLoadFailed .
+    dnd5e_app:translation translations:datasetLoadFailed .
 
 :translationsLoadFailed
     a dnd5e_app:Error ;
-    dnd5e_app:translation :translationsLoadFailed .
+    dnd5e_app:translation translations:translationsLoadFailed .
