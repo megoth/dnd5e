@@ -8,7 +8,8 @@
     "ci": "npm run lint && npm run test",
     "start": "next start",
     "lint": "eslint --config .eslintrc.js --fix",
-    "test": "jest"
+    "test": "jest",
+    "manage-data": "node manage-data.mjs"
   },
   "dependencies": {
     "@fluent/bundle": "^0.17.1",
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "@zeit/next-source-maps": "0.0.3",
+    "commander": "^8.3.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
