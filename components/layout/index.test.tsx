@@ -3,8 +3,6 @@ import { act, render } from "@testing-library/react";
 import swipeableFns from "react-swipeable";
 import { SwipeableHandlers } from "react-swipeable/src/types";
 import userEvent from "@testing-library/user-event";
-import { RouterContext } from "next/dist/next-server/lib/router-context";
-import { createRouter } from "next/router";
 import * as routerFns from "next/router";
 import Layout, { TESTID_LAYOUT_FADE } from "./index";
 import useApp from "../../src/hooks/useApp";

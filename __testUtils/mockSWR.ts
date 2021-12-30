@@ -1,20 +1,18 @@
-import useSWR, { responseInterface } from "swr";
+import useSWR, { SWRResponse } from "swr";
 
-export function createSWRResponse<T, U>(data): responseInterface<T, U> {
+export function createSWRResponse<T, U>(data): SWRResponse<T, U> {
   return {
     data,
     error: null,
-    revalidate: jest.fn(),
     mutate: jest.fn(),
     isValidating: false,
   };
 }
 
-export function createSWRErrorResponse<T, U>(error): responseInterface<T, U> {
+export function createSWRErrorResponse<T, U>(error): SWRResponse<T, U> {
   return {
     data: null,
     error,
-    revalidate: jest.fn(),
     mutate: jest.fn(),
     isValidating: false,
   };

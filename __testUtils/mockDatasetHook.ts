@@ -1,9 +1,9 @@
 import { mockSolidDatasetFrom, SolidDataset } from "@inrupt/solid-client";
-import { responseInterface } from "swr";
+import { SWRResponse } from "swr";
 
 export default function mockDatasetHook(
   mock,
-  presets: Partial<responseInterface<SolidDataset, any>> = {}
+  presets: Partial<SWRResponse<SolidDataset, any>> = {}
 ) {
   return mock.mockReturnValue({
     data: mockSolidDatasetFrom("http://example.com"),

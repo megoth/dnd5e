@@ -1,4 +1,4 @@
-import useSWR, { ConfigInterface, keyInterface } from "swr";
+import useSWR, { SWRConfiguration, Key } from "swr";
 import { getSolidDataset } from "@inrupt/solid-client";
 import { useSession } from "@inrupt/solid-ui-react";
 import NestedError from "nested-error-stacks";
@@ -7,8 +7,8 @@ import { getError } from "../../models/error";
 
 export default function useDataset(
   url,
-  cacheKeys?: keyInterface,
-  config?: ConfigInterface
+  cacheKeys?: Key,
+  config?: SWRConfiguration
 ) {
   const { fetch } = useSession();
   const app = useApp();
