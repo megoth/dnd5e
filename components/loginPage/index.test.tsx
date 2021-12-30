@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import userEvent from "@testing-library/user-event";
 import * as routerFns from "next/router";
@@ -22,6 +21,7 @@ import useDataset from "../../src/hooks/useDataset";
 import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -64,12 +64,12 @@ describe("LoginPage", () => {
   });
 
   it("renders", () => {
-    const { asFragment } = render(<LoginPage />);
+    const { asFragment } = renderApp(app, <LoginPage />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders a list of predefined IdPs", () => {
-    const { getAllByTestId } = render(<LoginPage />);
+    const { getAllByTestId } = renderApp(app, <LoginPage />);
     const predefinedIdpButton = getAllByTestId(TESTID_LOGIN_BUTTON)[0];
     userEvent.click(predefinedIdpButton);
     const { login } = unauthenticatedSession;
@@ -83,7 +83,7 @@ describe("LoginPage", () => {
   it("renders a warning when authenticated", () => {
     mockedSessionHook.mockReturnValue(mockAuthenticatedSession());
 
-    const { asFragment, getByTestId } = render(<LoginPage />);
+    const { asFragment, getByTestId } = renderApp(app, <LoginPage />);
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });

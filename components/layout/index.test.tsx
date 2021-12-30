@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { act, render } from "@testing-library/react";
+import { act } from "@testing-library/react";
 import swipeableFns from "react-swipeable";
 import { SwipeableHandlers } from "react-swipeable/src/types";
 import userEvent from "@testing-library/user-event";
@@ -14,6 +14,7 @@ import { authenticatedWebId } from "../../__testUtils/mockSession";
 import useLayout from "../../src/hooks/useLayout";
 import { SetMenuOpen } from "../../src/contexts/layout";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -36,10 +37,13 @@ function ChildComponent({ setLeftOpen, setRightOpen }: Props) {
 }
 
 describe("Layout", () => {
+  let app;
   let mockedSwipeableHook;
   let mockedRouterHook;
 
-  beforeEach(() => mockAppHook(mockedAppHook));
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() => {
     mockedSwipeableHook = jest
       .spyOn(swipeableFns, "useSwipeable")
@@ -57,19 +61,20 @@ describe("Layout", () => {
   });
 
   it("renders as non-home by default", () => {
-    const { asFragment } = render(<Layout>test</Layout>);
+    const { asFragment } = renderApp(app, <Layout>test</Layout>);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("can be rendered as home", () => {
-    const { asFragment } = render(<Layout full>test</Layout>);
+    const { asFragment } = renderApp(app, <Layout full>test</Layout>);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("adds event listeners to swipe left and right, which shows and hides sub menu", () => {
     const setLeftOpen = jest.fn();
     const setRightOpen = jest.fn();
-    const { getByTestId } = render(
+    const { getByTestId } = renderApp(
+      app,
       <Layout>
         <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
       </Layout>
@@ -90,7 +95,8 @@ describe("Layout", () => {
   it("renders a fade as backdrop for the menus", () => {
     const setLeftOpen = jest.fn();
     const setRightOpen = jest.fn();
-    const { getByTestId } = render(
+    const { getByTestId } = renderApp(
+      app,
       <Layout>
         <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
       </Layout>
@@ -106,7 +112,8 @@ describe("Layout", () => {
   it("closes menus when router change", () => {
     const setLeftOpen = jest.fn();
     const setRightOpen = jest.fn();
-    const { rerender } = render(
+    const { rerender } = renderApp(
+      app,
       <Layout>
         <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
       </Layout>

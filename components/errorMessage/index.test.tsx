@@ -11,7 +11,11 @@ import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import ErrorMessage, { TESTID_ERROR_TITLE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
-import mockApp, { errorsURL, translationsURL } from "../../__testUtils/mockApp";
+import mockApp, {
+  errorsURL,
+  globalTranslationsURL,
+  translations,
+} from "../../__testUtils/mockApp";
 import { chain } from "../../src/utils";
 import { getErrorURL } from "../../src/models/error";
 import { getAppTerm } from "../../src/models/appIndex";
@@ -20,6 +24,7 @@ import mockFluentBundle from "../../__testUtils/mockFluentBundle";
 import { appVocabURL } from "../../__testUtils/mockAppIndexDataset";
 import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
 import { defaultLocale } from "../../__testUtils/mockLanguage";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -28,7 +33,7 @@ describe("ErrorMessage", () => {
   it("renders", () => {
     const urls = {
       errors: errorsURL,
-      translations: translationsURL,
+      translations: globalTranslationsURL,
     };
     const globalResourceBundle = mockResourceBundleMap({
       urls,
@@ -43,9 +48,13 @@ describe("ErrorMessage", () => {
     });
     const translatedErrorMessage = "Translated error message";
     const fluentBundle = mockFluentBundle({
-      translation: translatedErrorMessage,
+      ...translations,
+      [translationURL]: translatedErrorMessage,
     });
     const app = mockApp({
+      fluentBundles: {
+        [defaultLocale]: fluentBundle,
+      },
       resourceBundles: {
         ...mockResourceBundleMap({
           data: {
@@ -68,11 +77,9 @@ describe("ErrorMessage", () => {
     });
     mockAppHook(mockedAppHook, app);
     const error = new NestedError(errorURL);
-    const l10n = new ReactLocalization([fluentBundle]);
-    const { asFragment, getByTestId } = render(
-      <LocalizationProvider l10n={l10n}>
-        <ErrorMessage error={error} />
-      </LocalizationProvider>
+    const { asFragment, getByTestId } = renderApp(
+      app,
+      <ErrorMessage error={error} />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_ERROR_TITLE).innerHTML).toContain(

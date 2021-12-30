@@ -13,7 +13,7 @@ import {
 } from "./index";
 import mockApp, {
   errorsURL,
-  translationsURL,
+  globalTranslationsURL,
 } from "../../../__testUtils/mockApp";
 import { chain } from "../../utils";
 import { getAppTerm } from "../appIndex";
@@ -51,7 +51,7 @@ describe("isError", () => {
 describe("getErrorTranslationURL", () => {
   const urls = {
     errors: errorsURL,
-    translations: translationsURL,
+    translations: globalTranslationsURL,
   };
   const globalResourceBundle = mockResourceBundleMap({
     urls,

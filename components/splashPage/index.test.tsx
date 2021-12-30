@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import * as routerFns from "next/router";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
@@ -7,6 +6,7 @@ import useDataset from "../../src/hooks/useDataset";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import SplashPage from "./index";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -22,9 +22,9 @@ describe("SplashPage", () => {
   });
 
   it("renders", () => {
-    mockAppHook(mockedAppHook);
+    const app = mockAppHook(mockedAppHook);
     mockedUseDataset.mockReturnValue(mockProfileDataset());
-    const { asFragment } = render(<SplashPage />);
+    const { asFragment } = renderApp(app, <SplashPage />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

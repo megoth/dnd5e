@@ -15,7 +15,7 @@ exports[`Dashboard renders 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -98,7 +98,7 @@ exports[`Dashboard renders 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -111,7 +111,7 @@ exports[`Dashboard renders 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ exports[`Dashboard renders 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -127,7 +127,7 @@ exports[`Dashboard renders 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -135,7 +135,7 @@ exports[`Dashboard renders 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -164,14 +164,14 @@ exports[`Dashboard renders 1`] = `
             </a>
           </div>
           <p>
-            [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+            loggedIn
           </p>
           <button
             class="button w-full"
             data-testid="authenticated-logout-button"
             type="button"
           >
-            [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+            logOut
           </button>
         </main>
         <footer
@@ -184,13 +184,13 @@ exports[`Dashboard renders 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -202,7 +202,7 @@ exports[`Dashboard renders 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -234,20 +234,20 @@ exports[`Dashboard renders 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"
           >
             <p>
-              [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+              loggedIn
             </p>
             <button
               class="button w-full"
               data-testid="authenticated-logout-button"
               type="button"
             >
-              [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+              logOut
             </button>
           </div>
         </div>

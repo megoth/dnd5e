@@ -17,8 +17,9 @@ interface Props {
 export default function Translation({ id, bundle, url, vars }: Props) {
   const app = useApp([bundle]);
   const translationURL = url || getTranslationURL(id, app, bundle);
+  const translationId = getTranslationId(translationURL);
   return (
-    <Localized id={getTranslationId(translationURL)} vars={vars}>
+    <Localized id={translationId} vars={vars}>
       {getFailedMessage(translationURL)}
     </Localized>
   );

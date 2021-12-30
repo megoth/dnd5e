@@ -14,6 +14,7 @@ import {
   authenticatedWebId,
   mockAuthenticatedSession,
 } from "../../__testUtils/mockSession";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -25,7 +26,11 @@ describe("Authenticated", () => {
   const data = mockProfileDataset(authenticatedWebId);
   const authenticatedSession = mockAuthenticatedSession();
 
-  beforeEach(() => mockAppHook(mockedAppHook));
+  let app;
+
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() => {
     jest
       .spyOn(solidUIReactFns, "useSession")
@@ -34,7 +39,7 @@ describe("Authenticated", () => {
 
   it("renders info about the user and a log out button", () => {
     mockDatasetHook(mockedDatasetHook, { data });
-    const { asFragment, queryByTestId } = render(<Authenticated />);
+    const { asFragment, queryByTestId } = renderApp(app, <Authenticated />);
     expect(asFragment()).toMatchSnapshot();
     expect(queryByTestId(TESTID_LOADING)).toBeNull();
     expect(queryByTestId(TESTID_ERROR)).toBeNull();
@@ -42,14 +47,14 @@ describe("Authenticated", () => {
 
   it("renders loading while fetching profile", () => {
     mockDatasetHook(mockedDatasetHook, { data: null });
-    const { asFragment, getByTestId } = render(<Authenticated />);
+    const { asFragment, getByTestId } = renderApp(app, <Authenticated />);
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOADING)).toBeDefined();
   });
 
   it("renders error if fetching profile fails", () => {
     mockDatasetHook(mockedDatasetHook, { error: new Error() });
-    const { asFragment, getByTestId } = render(<Authenticated />);
+    const { asFragment, getByTestId } = renderApp(app, <Authenticated />);
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_ERROR)).toBeDefined();
   });
@@ -57,7 +62,7 @@ describe("Authenticated", () => {
   it("renders a logout button", () => {
     mockDatasetHook(mockedDatasetHook, { data });
     const { logout } = authenticatedSession;
-    const { getByTestId } = render(<Authenticated />);
+    const { getByTestId } = renderApp(app, <Authenticated />);
     userEvent.click(getByTestId(TESTID_AUTHENTICATED_LOGOUT_BUTTON));
     expect(logout).toHaveBeenCalledWith();
   });

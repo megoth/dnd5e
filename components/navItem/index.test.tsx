@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavItem from "./index";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import useApp from "../../src/hooks/useApp";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -13,9 +14,12 @@ jest.mock("next/link");
 const mockedLinkComponent = Link as jest.Mock;
 
 describe("NavItem", () => {
+  let app;
   let mockedRouterHook;
 
-  beforeEach(() => mockAppHook(mockedAppHook));
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() => {
     mockedRouterHook = jest.spyOn(routerFns, "useRouter");
   });
@@ -25,7 +29,8 @@ describe("NavItem", () => {
 
   it("renders", () => {
     mockedRouterHook.mockReturnValue({ asPath: "/" });
-    const { asFragment } = render(
+    const { asFragment } = renderApp(
+      app,
       <NavItem href="/href" translationId="translationId" />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -33,7 +38,8 @@ describe("NavItem", () => {
 
   it("renders for selected items", () => {
     mockedRouterHook.mockReturnValue({ asPath: "/href" });
-    const { asFragment } = render(
+    const { asFragment } = renderApp(
+      app,
       <NavItem href="/href" translationId="translationId" />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -41,7 +47,8 @@ describe("NavItem", () => {
 
   it("renders for selected child items", () => {
     mockedRouterHook.mockReturnValue({ asPath: "/href/test" });
-    const { asFragment } = render(
+    const { asFragment } = renderApp(
+      app,
       <NavItem href="/href" translationId="translationId" />
     );
     expect(asFragment()).toMatchSnapshot();

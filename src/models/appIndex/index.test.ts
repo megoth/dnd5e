@@ -8,8 +8,8 @@ import mockAppIndexDataset, {
 import {
   errorsURL,
   faqsURL,
-  localizationsURL,
-  translationsURL,
+  globalLocalizationsURL,
+  globalTranslationsURL,
 } from "../../../__testUtils/mockApp";
 import mockLanguage, { defaultLocale } from "../../../__testUtils/mockLanguage";
 import { defaultBundle } from "../../../__testUtils/mockResourceBundle";
@@ -30,8 +30,8 @@ describe("packageAppIndex", () => {
           urls: {
             errors: errorsURL,
             faqs: faqsURL,
-            localizations: localizationsURL,
-            translations: translationsURL,
+            localizations: globalLocalizationsURL,
+            translations: globalTranslationsURL,
           },
         },
       ],

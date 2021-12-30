@@ -15,7 +15,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -47,7 +47,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
           <div
             class="flex-1 text-lg font-semibold font-serif leading-10"
           >
-            [Translation for https://example.com/global/translations.ttl#faqPageTitle does not exist]
+            faqPageTitle
           </div>
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -98,7 +98,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -111,7 +111,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -127,7 +127,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                 class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
               <ul
                 class="ml-4"
@@ -137,7 +137,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                     class="pages-nav__link"
                     href="/faq#faqLabel"
                   >
-                    [Translation for https://example.com/global/translations.ttl#faqLabel does not exist]
+                    faqLabel
                   </a>
                 </li>
               </ul>
@@ -147,7 +147,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -164,7 +164,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/global/translations.ttl#faqPageTitle does not exist]
+              faqPageTitle
             </h1>
           </div>
           <section
@@ -200,13 +200,13 @@ exports[`FAQPage renders a list of FAQs 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -218,7 +218,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -250,7 +250,7 @@ exports[`FAQPage renders a list of FAQs 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"

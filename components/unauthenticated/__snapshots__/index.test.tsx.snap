@@ -8,7 +8,7 @@ exports[`Unauthenticated renders 1`] = `
     <h2
       class="font-bold text-xl"
     >
-      [Translation for https://example.com/global/translations.ttl#recommendedIdPSet does not exist]
+      recommendedIdPSet
     </h2>
     <ul
       class="flex flex-col space-y-2 my-2"
@@ -50,7 +50,7 @@ exports[`Unauthenticated renders 1`] = `
       <span
         class="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800"
       >
-        [Translation for https://example.com/global/translations.ttl#or does not exist]
+        or
       </span>
     </h2>
     <form
@@ -66,7 +66,7 @@ exports[`Unauthenticated renders 1`] = `
         class="label"
         for="idp"
       >
-        [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+        solidIdP
         <input
           class="input"
           data-testid="login-form-idp-field"
@@ -90,7 +90,7 @@ exports[`Unauthenticated renders 1`] = `
         <span
           class="label__text"
         >
-          [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+          rememberIdP
         </span>
       </label>
       <button
@@ -98,7 +98,7 @@ exports[`Unauthenticated renders 1`] = `
         data-testid="login-form-button"
         type="submit"
       >
-        [Translation for https://example.com/global/translations.ttl#login does not exist]
+        login
       </button>
       <div
         class="mt-4"
@@ -107,7 +107,7 @@ exports[`Unauthenticated renders 1`] = `
           class="link"
           href="/signup"
         >
-          [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+          signupSolidPrompt
         </a>
       </div>
     </form>

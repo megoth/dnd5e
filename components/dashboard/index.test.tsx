@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import * as routerFns from "next/router";
 import useApp from "../../src/hooks/useApp";
@@ -9,6 +8,7 @@ import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { authenticatedWebId } from "../../__testUtils/mockSession";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -24,11 +24,11 @@ describe("Dashboard", () => {
   });
 
   it("renders", () => {
-    mockAppHook(mockedAppHook);
+    const app = mockAppHook(mockedAppHook);
     mockDatasetHook(mockedDatasetHook, {
       data: mockProfileDataset(authenticatedWebId),
     });
-    const { asFragment } = render(<Dashboard />);
+    const { asFragment } = renderApp(app, <Dashboard />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import * as routerFns from "next/router";
@@ -11,11 +10,13 @@ import { appName } from "../../__testUtils/mockApp";
 import { getProviders } from "../../src/models/provider";
 import { mockUnauthenticatedSession } from "../../__testUtils/mockSession";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
 
 describe("Unauthenticated", () => {
+  let app;
   let unauthenticatedSession;
 
   beforeEach(() => {
@@ -27,15 +28,17 @@ describe("Unauthenticated", () => {
       .spyOn(solidUIReactFns, "useSession")
       .mockReturnValue(unauthenticatedSession);
   });
-  beforeEach(() => mockAppHook(mockedAppHook));
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
 
   it("renders", async () => {
-    const { asFragment } = render(<Unauthenticated />);
+    const { asFragment } = renderApp(app, <Unauthenticated />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders a list of predefined IdPs", () => {
-    const { getAllByTestId } = render(<Unauthenticated />);
+    const { getAllByTestId } = renderApp(app, <Unauthenticated />);
     const predefinedIdpButton = getAllByTestId(TESTID_LOGIN_BUTTON)[0];
     userEvent.click(predefinedIdpButton);
     const { login } = unauthenticatedSession;

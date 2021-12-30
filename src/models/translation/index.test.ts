@@ -6,7 +6,7 @@ import {
 } from "./index";
 import mockApp, {
   mockAppPropValue,
-  translationsURL,
+  globalTranslationsURL,
 } from "../../../__testUtils/mockApp";
 import mockFluentBundle from "../../../__testUtils/mockFluentBundle";
 import { defaultLocale } from "../../../__testUtils/mockLanguage";
@@ -30,7 +30,7 @@ describe("getTranslationURL", () => {
         },
         "global"
       )
-    ).toEqual(`${translationsURL}#test`));
+    ).toEqual(`${globalTranslationsURL}#test`));
 });
 
 describe("getMessage", () => {
@@ -39,7 +39,7 @@ describe("getMessage", () => {
   it("returns a message from a bundle given a translation id", () => {
     const message = "Test";
     const mockedFluentBundle = mockFluentBundle({
-      [id]: message,
+      [`${globalTranslationsURL}#${id}`]: message,
     });
     const app = mockApp({
       fluentBundles: {
@@ -52,7 +52,7 @@ describe("getMessage", () => {
   it("returns a message from a bundle given a translation URL", () => {
     const message = "Test";
     const mockedFluentBundle = mockFluentBundle({
-      [id]: message,
+      [`${globalTranslationsURL}#${id}`]: message,
     });
     const translationURL = getTranslationURL(id, {
       currentLocale: defaultLocale,
@@ -68,7 +68,7 @@ describe("getMessage", () => {
 
   it("supports interpolation", () => {
     const mockedFluentBundle = mockFluentBundle({
-      [id]: "{$test}",
+      [`${globalTranslationsURL}#${id}`]: "{$test}",
     });
     const app = mockApp({
       fluentBundles: mockAppPropValue(mockedFluentBundle, null),

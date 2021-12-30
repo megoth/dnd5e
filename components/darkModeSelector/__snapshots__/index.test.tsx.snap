@@ -8,7 +8,7 @@ exports[`DarkModeSelector renders 1`] = `
     type="button"
   >
     <span>
-      🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+      🌙 darkModeTurnOn
     </span>
   </button>
 </DocumentFragment>
@@ -22,7 +22,7 @@ exports[`DarkModeSelector renders for dark mode 1`] = `
     type="button"
   >
     <span>
-      💡 [Translation for https://example.com/global/translations.ttl#darkModeTurnOff does not exist]
+      💡 darkModeTurnOff
     </span>
   </button>
 </DocumentFragment>

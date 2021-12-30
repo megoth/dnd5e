@@ -15,14 +15,14 @@ exports[`Authenticated renders error if fetching profile fails 1`] = `
 exports[`Authenticated renders info about the user and a log out button 1`] = `
 <DocumentFragment>
   <p>
-    [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+    loggedIn
   </p>
   <button
     class="button w-full"
     data-testid="authenticated-logout-button"
     type="button"
   >
-    [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+    logOut
   </button>
 </DocumentFragment>
 `;

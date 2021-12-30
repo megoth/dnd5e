@@ -15,7 +15,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -98,7 +98,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -111,7 +111,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -127,7 +127,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -135,7 +135,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -179,13 +179,13 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -197,7 +197,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -229,7 +229,7 @@ exports[`HomePage renders dashboard for authenticated session 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"
@@ -278,7 +278,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -291,7 +291,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -299,7 +299,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -307,7 +307,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -315,7 +315,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -343,7 +343,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                     class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
                     href="/"
                   >
-                    [Translation for https://example.com/global/translations.ttl#appName does not exist]
+                    Test App
                   </a>
                 </div>
                 <div
@@ -421,23 +421,23 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   <h1
                     class="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold"
                   >
-                    [Translation for https://example.com/global/translations.ttl#appName does not exist]
+                    Test App
                   </h1>
                   <p
                     class="my-1 max-w-xl"
                   >
-                    [Translation for https://example.com/global/translations.ttl#appPitch does not exist]
+                    appPitch
                   </p>
                   <div
                     class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
                   >
-                    [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+                    workInProgress
                   </div>
                   <a
                     class="link block my-2 max-w-prose text-center"
                     href="/about"
                   >
-                    [Translation for https://example.com/global/translations.ttl#learnMore does not exist]
+                    learnMore
                   </a>
                 </div>
                 <p
@@ -477,7 +477,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               <h2
                 class="px-4"
               >
-                [Translation for https://example.com/global/translations.ttl#loginPitch does not exist]
+                loginPitch
               </h2>
             </div>
             <div
@@ -488,7 +488,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 style="hyphens: auto;"
               >
                 <p>
-                  [Translation for https://example.com/global/translations.ttl#authenticationGuidance does not exist]
+                  authenticationGuidance
                 </p>
               </div>
               <ul
@@ -534,7 +534,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                     class="button button--solid block w-full"
                     href="/login?idp"
                   >
-                    [Translation for https://example.com/global/translations.ttl#provideIdP does not exist]
+                    provideIdP
                   </a>
                 </li>
               </ul>
@@ -545,7 +545,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 <a
                   href="/signup"
                 >
-                  [Translation for https://example.com/global/translations.ttl#signupGuidance does not exist]
+                  signupGuidance
                 </a>
               </div>
             </div>
@@ -561,13 +561,13 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -579,7 +579,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -611,7 +611,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2"
@@ -622,7 +622,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
               <h2
                 class="font-bold text-xl"
               >
-                [Translation for https://example.com/global/translations.ttl#recommendedIdPSet does not exist]
+                recommendedIdPSet
               </h2>
               <ul
                 class="flex flex-col space-y-2 my-2"
@@ -664,7 +664,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                 <span
                   class="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800"
                 >
-                  [Translation for https://example.com/global/translations.ttl#or does not exist]
+                  or
                 </span>
               </h2>
               <form
@@ -680,7 +680,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   class="label"
                   for="idp"
                 >
-                  [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+                  solidIdP
                   <input
                     class="input"
                     data-testid="login-form-idp-field"
@@ -704,7 +704,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   <span
                     class="label__text"
                   >
-                    [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+                    rememberIdP
                   </span>
                 </label>
                 <button
@@ -712,7 +712,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                   data-testid="login-form-button"
                   type="submit"
                 >
-                  [Translation for https://example.com/global/translations.ttl#login does not exist]
+                  login
                 </button>
                 <div
                   class="mt-4"
@@ -721,7 +721,7 @@ exports[`HomePage renders splash page for unauthenticated session 1`] = `
                     class="link"
                     href="/signup"
                   >
-                    [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+                    signupSolidPrompt
                   </a>
                 </div>
               </form>

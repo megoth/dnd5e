@@ -15,7 +15,7 @@ exports[`AdminPage renders 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -47,7 +47,7 @@ exports[`AdminPage renders 1`] = `
           <div
             class="flex-1 text-lg font-semibold font-serif leading-10"
           >
-            [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+            adminPageTitle
           </div>
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -98,7 +98,7 @@ exports[`AdminPage renders 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -111,7 +111,7 @@ exports[`AdminPage renders 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ exports[`AdminPage renders 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -127,7 +127,7 @@ exports[`AdminPage renders 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -135,7 +135,7 @@ exports[`AdminPage renders 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -152,12 +152,12 @@ exports[`AdminPage renders 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/admin/translations.ttl#adminPageTitle does not exist]
+              adminPageTitle
             </h1>
             <div
               class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
             >
-              [Translation for https://example.com/global/translations.ttl#workInProgress does not exist]
+              workInProgress
             </div>
           </div>
         </main>
@@ -171,13 +171,13 @@ exports[`AdminPage renders 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -189,7 +189,7 @@ exports[`AdminPage renders 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -221,7 +221,7 @@ exports[`AdminPage renders 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"

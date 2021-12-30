@@ -10,6 +10,7 @@ import mockFAQsDataset from "../../__testUtils/mockFAQsDataset";
 import useDataset from "../../src/hooks/useDataset";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -26,7 +27,7 @@ describe("FAQPage", () => {
   });
 
   it("renders a list of FAQs", () => {
-    mockAppHook(
+    const app = mockAppHook(
       mockedAppHook,
       mockApp({
         resourceBundles: {
@@ -38,7 +39,7 @@ describe("FAQPage", () => {
         },
       })
     );
-    const { asFragment, queryAllByTestId } = render(<FAQPage />);
+    const { asFragment, queryAllByTestId } = renderApp(app, <FAQPage />);
     expect(asFragment()).toMatchSnapshot();
     expect(queryAllByTestId(TESTID_FAQ_ITEM).length).toBe(1);
   });

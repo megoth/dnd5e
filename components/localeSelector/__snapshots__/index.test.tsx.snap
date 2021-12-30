@@ -7,7 +7,7 @@ exports[`LocaleSelector renders controls to select other languages if multiple l
     data-testid="locale-selector-language"
     href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
   >
-    🇺🇸 [Translation for https://example.com/global/translations.ttl#translateTo does not exist]
+    🇺🇸 translateTo
   </a>
 </DocumentFragment>
 `;

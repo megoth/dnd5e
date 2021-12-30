@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import * as routerFns from "next/router";
 import useApp from "../../src/hooks/useApp";
@@ -9,6 +8,7 @@ import useDataset from "../../src/hooks/useDataset";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { mockUnauthenticatedSession } from "../../__testUtils/mockSession";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -17,7 +17,11 @@ jest.mock("../../src/hooks/useDataset");
 const mockedUseDataset = useDataset as jest.Mock;
 
 describe("HomePage", () => {
-  beforeEach(() => mockAppHook(mockedAppHook));
+  let app;
+
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() => {
     jest
       .spyOn(routerFns, "useRouter")
@@ -26,7 +30,7 @@ describe("HomePage", () => {
 
   it("renders dashboard for authenticated session", () => {
     mockedUseDataset.mockReturnValue(mockProfileDataset());
-    const { asFragment } = render(<HomePage />);
+    const { asFragment } = renderApp(app, <HomePage />);
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -34,7 +38,7 @@ describe("HomePage", () => {
     jest
       .spyOn(solidUIReactFns, "useSession")
       .mockImplementation(() => mockUnauthenticatedSession());
-    const { asFragment } = render(<HomePage />);
+    const { asFragment } = renderApp(app, <HomePage />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

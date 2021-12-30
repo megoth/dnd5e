@@ -12,7 +12,7 @@ import {
   getLocale,
   updateAppWithLocale,
 } from "./index";
-import mockApp, { localizationsURL } from "../../../__testUtils/mockApp";
+import mockApp, { globalLocalizationsURL } from "../../../__testUtils/mockApp";
 import { chain } from "../../utils";
 import {
   getFailedMessage,
@@ -60,7 +60,7 @@ describe("extendFluentBundle", () => {
       (t) => setUrl(t, rdf.type, rdfs.Literal)
     );
     const dataset = chain(
-      mockSolidDatasetFrom(localizationsURL),
+      mockSolidDatasetFrom(globalLocalizationsURL),
       (d) => setThing(d, message1),
       (d) => setThing(d, message2)
     );

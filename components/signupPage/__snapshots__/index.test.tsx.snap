@@ -15,7 +15,7 @@ exports[`SignupPage renders 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -47,7 +47,7 @@ exports[`SignupPage renders 1`] = `
           <div
             class="flex-1 text-lg font-semibold font-serif leading-10"
           >
-            [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+            signupPageTitle
           </div>
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -98,7 +98,7 @@ exports[`SignupPage renders 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -111,7 +111,7 @@ exports[`SignupPage renders 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ exports[`SignupPage renders 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -127,7 +127,7 @@ exports[`SignupPage renders 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -135,7 +135,7 @@ exports[`SignupPage renders 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -152,7 +152,7 @@ exports[`SignupPage renders 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+              signupPageTitle
             </h1>
             <p>
               [Translation for https://example.com/global/translations.ttl#signupPitch does not exist]
@@ -229,7 +229,7 @@ exports[`SignupPage renders 1`] = `
               <a
                 href="/login"
               >
-                [Translation for https://example.com/global/translations.ttl#loginPrompt does not exist]
+                loginPrompt
               </a>
             </p>
           </div>
@@ -284,13 +284,13 @@ exports[`SignupPage renders 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -302,7 +302,7 @@ exports[`SignupPage renders 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -334,7 +334,7 @@ exports[`SignupPage renders 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"
@@ -345,7 +345,7 @@ exports[`SignupPage renders 1`] = `
               <h2
                 class="font-bold text-xl"
               >
-                [Translation for https://example.com/global/translations.ttl#recommendedIdPSet does not exist]
+                recommendedIdPSet
               </h2>
               <ul
                 class="flex flex-col space-y-2 my-2"
@@ -387,7 +387,7 @@ exports[`SignupPage renders 1`] = `
                 <span
                   class="bg-white dark:bg-gray-800 lg:bg-white lg:dark:bg-gray-800"
                 >
-                  [Translation for https://example.com/global/translations.ttl#or does not exist]
+                  or
                 </span>
               </h2>
               <form
@@ -403,7 +403,7 @@ exports[`SignupPage renders 1`] = `
                   class="label"
                   for="idp"
                 >
-                  [Translation for https://example.com/global/translations.ttl#solidIdP does not exist]
+                  solidIdP
                   <input
                     class="input"
                     data-testid="login-form-idp-field"
@@ -427,7 +427,7 @@ exports[`SignupPage renders 1`] = `
                   <span
                     class="label__text"
                   >
-                    [Translation for https://example.com/global/translations.ttl#rememberIdP does not exist]
+                    rememberIdP
                   </span>
                 </label>
                 <button
@@ -435,7 +435,7 @@ exports[`SignupPage renders 1`] = `
                   data-testid="login-form-button"
                   type="submit"
                 >
-                  [Translation for https://example.com/global/translations.ttl#login does not exist]
+                  login
                 </button>
                 <div
                   class="mt-4"
@@ -444,7 +444,7 @@ exports[`SignupPage renders 1`] = `
                     class="link"
                     href="/signup"
                   >
-                    [Translation for https://example.com/global/translations.ttl#signupSolidPrompt does not exist]
+                    signupSolidPrompt
                   </a>
                 </div>
               </form>
@@ -472,7 +472,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
           class="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
           href="/"
         >
-          [Translation for https://example.com/global/translations.ttl#appName does not exist]
+          Test App
         </a>
       </div>
       <div
@@ -504,7 +504,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
           <div
             class="flex-1 text-lg font-semibold font-serif leading-10"
           >
-            [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+            signupPageTitle
           </div>
           <button
             class="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
@@ -555,7 +555,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               stroke-width="2"
             />
           </svg>
-           [Translation for https://example.com/global/translations.ttl#close does not exist]
+           close
         </button>
         <nav
           class="pages-nav pages-nav--sub-menu"
@@ -568,7 +568,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
                 class="pages-nav__link"
                 href="/characters"
               >
-                [Translation for https://example.com/global/translations.ttl#charactersPageTitle does not exist]
+                charactersPageTitle
               </a>
             </li>
             <li>
@@ -576,7 +576,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
                 class="pages-nav__link"
                 href="/rules"
               >
-                [Translation for https://example.com/global/translations.ttl#rulesPageTitle does not exist]
+                rulesPageTitle
               </a>
             </li>
             <li>
@@ -584,7 +584,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
                 class="pages-nav__link"
                 href="/faq"
               >
-                [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+                faqShort
               </a>
             </li>
             <li>
@@ -592,7 +592,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
                 class="pages-nav__link"
                 href="/about"
               >
-                [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+                aboutPageTitle
               </a>
             </li>
           </ul>
@@ -609,7 +609,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
             style="hyphens: auto;"
           >
             <h1>
-              [Translation for https://example.com/global/translations.ttl#signupPageTitle does not exist]
+              signupPageTitle
             </h1>
             <div
               data-testid="logged-in-already-warning"
@@ -617,7 +617,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               <div
                 class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
               >
-                [Translation for https://example.com/global/translations.ttl#LoggedInAlready does not exist]
+                LoggedInAlready
               </div>
             </div>
             <p>
@@ -695,7 +695,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               <a
                 href="/login"
               >
-                [Translation for https://example.com/global/translations.ttl#loginPrompt does not exist]
+                loginPrompt
               </a>
             </p>
           </div>
@@ -750,13 +750,13 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               class="link"
               href="/about"
             >
-              [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+              aboutPageTitle
             </a>
             <a
               class="link"
               href="/faq"
             >
-              [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+              faqShort
             </a>
           </div>
           <div
@@ -768,7 +768,7 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
               type="button"
             >
               <span>
-                🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+                🌙 darkModeTurnOn
               </span>
             </button>
           </div>
@@ -800,20 +800,20 @@ exports[`SignupPage renders a warning when authenticated 1`] = `
                 stroke-width="2"
               />
             </svg>
-             [Translation for https://example.com/global/translations.ttl#close does not exist]
+             close
           </button>
           <div
             class="px-2 xl:px-0"
           >
             <p>
-              [Translation for https://example.com/global/translations.ttl#loggedIn does not exist]
+              loggedIn
             </p>
             <button
               class="button w-full"
               data-testid="authenticated-logout-button"
               type="button"
             >
-              [Translation for https://example.com/global/translations.ttl#logOut does not exist]
+              logOut
             </button>
           </div>
         </div>

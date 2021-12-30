@@ -12,13 +12,13 @@ exports[`PageFooter renders 1`] = `
         class="link"
         href="/about"
       >
-        [Translation for https://example.com/global/translations.ttl#aboutPageTitle does not exist]
+        aboutPageTitle
       </a>
       <a
         class="link"
         href="/faq"
       >
-        [Translation for https://example.com/global/translations.ttl#faqShort does not exist]
+        faqShort
       </a>
     </div>
     <div
@@ -30,7 +30,7 @@ exports[`PageFooter renders 1`] = `
         type="button"
       >
         <span>
-          🌙 [Translation for https://example.com/global/translations.ttl#darkModeTurnOn does not exist]
+          🌙 darkModeTurnOn
         </span>
       </button>
     </div>

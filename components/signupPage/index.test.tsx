@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import * as routerFns from "next/router";
@@ -19,6 +18,7 @@ import {
 } from "../../__testUtils/mockSession";
 import { TESTID_LOGGED_IN_ALREADY_WARNING } from "../loggedInAlreadyWarning";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -58,14 +58,14 @@ describe("SignupPage", () => {
   });
 
   it("renders", () => {
-    const { asFragment } = render(<SignupPage />);
+    const { asFragment } = renderApp(app, <SignupPage />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders a warning when authenticated", () => {
     mockedSessionHook.mockReturnValue(mockAuthenticatedSession());
 
-    const { asFragment, getByTestId } = render(<SignupPage />);
+    const { asFragment, getByTestId } = renderApp(app, <SignupPage />);
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });

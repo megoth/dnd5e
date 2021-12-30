@@ -11,18 +11,14 @@ import { getAppTerm } from "../src/models/appIndex";
 import {
   errorsURL,
   faqsURL,
-  localizationsURL,
-  translationsURL,
+  globalLocalizationsURL,
+  globalTranslationsURL,
 } from "./mockApp";
 import { defaultLocale } from "./mockLanguage";
 
 export const appIndexURL = "https://example.com/index.ttl#dnd5e";
 export const appVocabURL = "https://example.com/appVocab.ttl";
 export const globalResourceURL = "https://example.com/index.ttl#globalResource";
-export const globalLocalizationsURL =
-  "https://example.com/index.ttl#localizationsIndex";
-export const globalTranslationsURL =
-  "https://example.com/index.ttl#translationsIndex";
 export const supportLanguageEnUS = "https://example.com/index.ttl#locale-en-US";
 export const translationLanguageEnUS =
   "https://example.com/translations.ttl#locale-en-US";
@@ -76,7 +72,11 @@ export default function mockAppIndexDataset() {
       setThing(
         d,
         chain(mockThingFrom(globalTranslationsURL), (t) =>
-          addUrl(t, getAppTerm("resource", { appVocabURL }), translationsURL)
+          addUrl(
+            t,
+            getAppTerm("resource", { appVocabURL }),
+            globalTranslationsURL
+          )
         )
       ),
     (d) =>
@@ -88,7 +88,7 @@ export default function mockAppIndexDataset() {
             addUrl(
               t,
               getAppTerm("resource", { appVocabURL }),
-              localizationsURL
+              globalLocalizationsURL
             ),
           (t) =>
             addStringNoLocale(

@@ -6,7 +6,7 @@ exports[`NavItem renders 1`] = `
     <a
       class="pages-nav__link"
     >
-      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+      translationId
     </a>
   </li>
 </DocumentFragment>
@@ -18,7 +18,7 @@ exports[`NavItem renders for selected child items 1`] = `
     <a
       class="pages-nav__link  pages-nav__link--child-selected"
     >
-      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+      translationId
     </a>
   </li>
 </DocumentFragment>
@@ -30,7 +30,7 @@ exports[`NavItem renders for selected items 1`] = `
     <a
       class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
     >
-      [Translation for https://example.com/global/translations.ttl#translationId does not exist]
+      translationId
     </a>
   </li>
 </DocumentFragment>

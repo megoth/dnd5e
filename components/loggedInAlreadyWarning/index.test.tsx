@@ -15,6 +15,7 @@ import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import { TESTID_ERROR } from "../errorMessage";
 import { TESTID_LOADING } from "../loading";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -23,7 +24,11 @@ jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
 
 describe("LoggedInAlreadyWarning", () => {
-  beforeEach(() => mockAppHook(mockedAppHook));
+  let app;
+
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() =>
     mockDatasetHook(mockedDatasetHook, {
       data: mockProfileDataset(authenticatedWebId),
@@ -31,7 +36,10 @@ describe("LoggedInAlreadyWarning", () => {
   );
 
   it("renders", () => {
-    const { asFragment, getByTestId } = render(<LoggedInAlreadyWarning />);
+    const { asFragment, getByTestId } = renderApp(
+      app,
+      <LoggedInAlreadyWarning />
+    );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId(TESTID_LOGGED_IN_ALREADY_WARNING)).toBeDefined();
   });
@@ -40,7 +48,7 @@ describe("LoggedInAlreadyWarning", () => {
     jest
       .spyOn(solidUIReactFns, "useSession")
       .mockReturnValue(mockUnauthenticatedSession());
-    const { asFragment } = render(<LoggedInAlreadyWarning />);
+    const { asFragment } = renderApp(app, <LoggedInAlreadyWarning />);
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -49,7 +57,7 @@ describe("LoggedInAlreadyWarning", () => {
       data: null,
       error: new Error(),
     });
-    const { getByTestId } = render(<LoggedInAlreadyWarning />);
+    const { getByTestId } = renderApp(app, <LoggedInAlreadyWarning />);
     expect(getByTestId(TESTID_ERROR)).toBeDefined();
   });
 
@@ -58,7 +66,7 @@ describe("LoggedInAlreadyWarning", () => {
       data: null,
       error: new Error(),
     });
-    const { getByTestId } = render(<LoggedInAlreadyWarning />);
+    const { getByTestId } = renderApp(app, <LoggedInAlreadyWarning />);
     expect(getByTestId(TESTID_ERROR)).toBeDefined();
   });
 
@@ -66,7 +74,7 @@ describe("LoggedInAlreadyWarning", () => {
     mockDatasetHook(mockedDatasetHook, {
       data: null,
     });
-    const { getByTestId } = render(<LoggedInAlreadyWarning />);
+    const { getByTestId } = renderApp(app, <LoggedInAlreadyWarning />);
     expect(getByTestId(TESTID_LOADING)).toBeDefined();
   });
 });

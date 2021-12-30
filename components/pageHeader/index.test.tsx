@@ -15,6 +15,7 @@ import {
   mockUnauthenticatedSession,
 } from "../../__testUtils/mockSession";
 import mockRouter from "../../__testUtils/mockRouter";
+import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
@@ -25,12 +26,15 @@ const mockedLayoutHook = useLayout as jest.Mock;
 describe("PageHeader", () => {
   const authenticatedSession = mockAuthenticatedSession();
 
+  let app;
   let setLeftOpen;
   let setRightOpen;
   let mockedSessionHook;
   let mockedRouterHook;
 
-  beforeEach(() => mockAppHook(mockedAppHook));
+  beforeEach(() => {
+    app = mockAppHook(mockedAppHook);
+  });
   beforeEach(() => {
     jest
       .spyOn(routerFns, "useRouter")
@@ -51,25 +55,25 @@ describe("PageHeader", () => {
   });
 
   it("renders", () => {
-    const { asFragment } = render(<PageHeader />);
+    const { asFragment } = renderApp(app, <PageHeader />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders button that opens the right menu", () => {
-    const { getByTestId } = render(<PageHeader />);
+    const { getByTestId } = renderApp(app, <PageHeader />);
     userEvent.click(getByTestId(TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON));
     expect(setRightOpen).toHaveBeenCalledWith(true);
   });
 
   it("renders different icon when unauthenticated", () => {
     mockedSessionHook.mockReturnValue(mockUnauthenticatedSession());
-    const { asFragment } = render(<PageHeader />);
+    const { asFragment } = renderApp(app, <PageHeader />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders button that opens the left menu", () => {
     mockedRouterHook.mockReturnValue({ asPath: "/href/test" });
-    const { getByTestId } = render(<PageHeader />);
+    const { getByTestId } = renderApp(app, <PageHeader />);
     userEvent.click(getByTestId(TESTID_PAGE_HEADER_LEFT_MENU_BUTTON));
     expect(setLeftOpen).toHaveBeenCalledWith(true);
   });

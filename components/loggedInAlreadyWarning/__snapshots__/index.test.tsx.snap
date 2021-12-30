@@ -8,7 +8,7 @@ exports[`LoggedInAlreadyWarning renders 1`] = `
     <div
       class="bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2"
     >
-      [Translation for https://example.com/global/translations.ttl#LoggedInAlready does not exist]
+      LoggedInAlready
     </div>
   </div>
 </DocumentFragment>
