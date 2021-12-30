@@ -64,10 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
           href="/icons/app/icons8-dungeons-and-dragons.svg"
           color="#ffffff"
         />
-        <link
-          rel="shortcut icon"
-          href="/icons/app/icons8-dungeons-and-dragons.ico"
-        />
+        <link rel="icon" href="/icons/app/icons8-dungeons-and-dragons.ico" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://dnd5e.vercel.app" />
         <meta name="twitter:title" content="D&D5e Solid App" />

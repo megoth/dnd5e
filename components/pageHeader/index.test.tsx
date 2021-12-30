@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import * as routerFns from "next/router";
 import userEvent from "@testing-library/user-event";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";

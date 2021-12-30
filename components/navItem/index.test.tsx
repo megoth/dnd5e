@@ -1,5 +1,4 @@
 import * as routerFns from "next/router";
-import { render } from "@testing-library/react";
 import React from "react";
 import Link from "next/link";
 import NavItem from "./index";

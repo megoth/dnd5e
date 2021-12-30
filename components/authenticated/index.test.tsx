@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import Authenticated, { TESTID_AUTHENTICATED_LOGOUT_BUTTON } from "./index";

@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import * as routerFns from "next/router";
 import FAQPage, { TESTID_FAQ_ITEM } from "./index";

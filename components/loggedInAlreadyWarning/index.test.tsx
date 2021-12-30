@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import LoggedInAlreadyWarning, {

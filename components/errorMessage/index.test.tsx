@@ -7,7 +7,6 @@ import {
   setThing,
   setUrl,
 } from "@inrupt/solid-client";
-import { LocalizationProvider, ReactLocalization } from "@fluent/react";
 import ErrorMessage, { TESTID_ERROR_TITLE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
