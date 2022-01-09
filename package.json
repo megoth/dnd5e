@@ -5,10 +5,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
-    "build": "next build",
-    "ci": "npm run lint && npm run test",
-    "start": "next start",
+    "build": "npm run build:sanity && pwd && npm run build:web",
+    "build:web": "next build",
+    "start:web": "next start",
+    "build:sanity": "cd studio && npx @sanity/cli build ../public/studio -y && cd ..",
+    "start:sanity": "cp .env ./studio/.env.development && cd studio && npx @sanity/cli start",
+    "postinstall": "lerna bootstrap",
     "lint": "eslint --config .eslintrc.js --fix",
+    "ci": "npm run lint && npm run test",
     "test": "jest",
     "manage-data": "ts-node manage-data.ts"
   },
@@ -34,6 +38,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@sanity/cli": "^2.23.3",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -62,6 +67,7 @@
     "jest": "^27.4.5",
     "jest-localstorage-mock": "^2.4.18",
     "jest-raw-loader": "^1.0.1",
+    "lerna": "^4.0.0",
     "next-router-mock": "^0.6.7",
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
