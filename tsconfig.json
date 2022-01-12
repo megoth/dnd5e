@@ -30,5 +30,8 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "ts-node": {
+    "isolatedModules": false
+  }
 }

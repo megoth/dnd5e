@@ -1,15 +1,15 @@
-import fetch from "node-fetch";
-import { writeFile } from "fs";
+// @ts-ignore
+const fetch = require("node-fetch");
+const { writeFile } = require("fs");
 
 function getApiUrl(endpointUrl) {
   return `https://www.dnd5eapi.co${endpointUrl}`;
 }
 
-export default async function downloadData() {
+module.exports = async function downloadData() {
   const apiResponse = await fetch(getApiUrl("/api/"));
   const apiEndpointMap = await apiResponse.json();
   await Promise.all(
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.entries(apiEndpointMap).map(async ([endpoint, endpointUrl]) => {
       const endpointResponse = await fetch(getApiUrl(endpointUrl));
       const endpointData = await endpointResponse.json();
@@ -40,4 +40,4 @@ export default async function downloadData() {
       );
     })
   );
-}
+};
