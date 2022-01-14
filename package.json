@@ -38,7 +38,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "@sanity/cli": "^2.23.3",
+    "@sanity/cli": "^2.24.0",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
