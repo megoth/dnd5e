@@ -1,5 +1,5 @@
-[
-  {
+{
+  "https://www.dnd5eapi.co/api/feats/grappler": {
     "index": "grappler",
     "name": "Grappler",
     "prerequisites": [
@@ -19,4 +19,4 @@
     ],
     "url": "/api/feats/grappler"
   }
-]
+}

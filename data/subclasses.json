@@ -1,5 +1,187 @@
-[
-  {
+{
+  "https://www.dnd5eapi.co/api/subclasses/lore": {
+    "index": "lore",
+    "class": {
+      "index": "bard",
+      "name": "Bard",
+      "url": "/api/classes/bard"
+    },
+    "name": "Lore",
+    "subclass_flavor": "Bard College",
+    "desc": [
+      "Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."
+    ],
+    "subclass_levels": "/api/subclasses/lore/levels",
+    "url": "/api/subclasses/lore"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/fiend": {
+    "index": "fiend",
+    "class": {
+      "index": "warlock",
+      "name": "Warlock",
+      "url": "/api/classes/warlock"
+    },
+    "name": "Fiend",
+    "subclass_flavor": "Otherworldly Patron",
+    "desc": [
+      "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
+    ],
+    "spells": [
+      {
+        "spell": {
+          "index": "burning-hands",
+          "name": "Burning Hands",
+          "url": "/api/spells/burning-hands"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-1",
+            "type": "level",
+            "name": "Warlock 1",
+            "url": "/api/classes/warlock/levels/1"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "command",
+          "name": "Command",
+          "url": "/api/spells/command"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-1",
+            "type": "level",
+            "name": "Warlock 1",
+            "url": "/api/classes/warlock/levels/1"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "blindness-deafness",
+          "name": "Blindness/Deafness",
+          "url": "/api/spells/blindness-deafness"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-3",
+            "type": "level",
+            "name": "Warlock 3",
+            "url": "/api/classes/warlock/levels/3"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "scorching-ray",
+          "name": "Scorching Ray",
+          "url": "/api/spells/scorching-ray"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-3",
+            "type": "level",
+            "name": "Warlock 3",
+            "url": "/api/classes/warlock/levels/3"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "fireball",
+          "name": "Fireball",
+          "url": "/api/spells/fireball"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-5",
+            "type": "level",
+            "name": "Warlock 5",
+            "url": "/api/classes/warlock/levels/5"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "stinking-cloud",
+          "name": "Stinking Cloud",
+          "url": "/api/spells/stinking-cloud"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-5",
+            "type": "level",
+            "name": "Warlock 5",
+            "url": "/api/classes/warlock/levels/5"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "fire-shield",
+          "name": "Fire Shield",
+          "url": "/api/spells/fire-shield"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-7",
+            "type": "level",
+            "name": "Warlock 7",
+            "url": "/api/classes/warlock/levels/7"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "wall-of-fire",
+          "name": "Wall of Fire",
+          "url": "/api/spells/wall-of-fire"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-7",
+            "type": "level",
+            "name": "Warlock 7",
+            "url": "/api/classes/warlock/levels/7"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "flame-strike",
+          "name": "Flame Strike",
+          "url": "/api/spells/flame-strike"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-9",
+            "type": "level",
+            "name": "Warlock 9",
+            "url": "/api/classes/warlock/levels/9"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "hallow",
+          "name": "Hallow",
+          "url": "/api/spells/hallow"
+        },
+        "prerequisites": [
+          {
+            "index": "warlock-9",
+            "type": "level",
+            "name": "Warlock 9",
+            "url": "/api/classes/warlock/levels/9"
+          }
+        ]
+      }
+    ],
+    "subclass_levels": "/api/subclasses/fiend/levels",
+    "url": "/api/subclasses/fiend"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/devotion": {
     "index": "devotion",
     "class": {
       "index": "paladin",
@@ -166,159 +348,82 @@
     "subclass_levels": "/api/subclasses/devotion/levels",
     "url": "/api/subclasses/devotion"
   },
-  {
-    "index": "life",
+  "https://www.dnd5eapi.co/api/subclasses/evocation": {
+    "index": "evocation",
     "class": {
-      "index": "cleric",
-      "name": "Cleric",
-      "url": "/api/classes/cleric"
+      "index": "wizard",
+      "name": "Wizard",
+      "url": "/api/classes/wizard"
     },
-    "name": "Life",
-    "subclass_flavor": "Divine Domain",
+    "name": "Evocation",
+    "subclass_flavor": "Arcane Tradition",
     "desc": [
-      "The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."
+      "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."
     ],
-    "spells": [
-      {
-        "spell": {
-          "index": "bless",
-          "name": "Bless",
-          "url": "/api/spells/bless"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-1",
-            "type": "level",
-            "name": "Cleric 1",
-            "url": "/api/classes/cleric/levels/1"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "cure-wounds",
-          "name": "Cure Wounds",
-          "url": "/api/spells/cure-wounds"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-1",
-            "type": "level",
-            "name": "Cleric 1",
-            "url": "/api/classes/cleric/levels/1"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "lesser-restoration",
-          "name": "Lesser Restoration",
-          "url": "/api/spells/lesser-restoration"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-3",
-            "type": "level",
-            "name": "Cleric 3",
-            "url": "/api/classes/cleric/levels/3"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "spiritual-weapon",
-          "name": "Spiritual Weapon",
-          "url": "/api/spells/spiritual-weapon"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-3",
-            "type": "level",
-            "name": "Cleric 3",
-            "url": "/api/classes/cleric/levels/3"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "beacon-of-hope",
-          "name": "Beacon of Hope",
-          "url": "/api/spells/beacon-of-hope"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-5",
-            "type": "level",
-            "name": "Cleric 5",
-            "url": "/api/classes/cleric/levels/5"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "revivify",
-          "name": "Revivify",
-          "url": "/api/spells/revivify"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-5",
-            "type": "level",
-            "name": "Cleric 5",
-            "url": "/api/classes/cleric/levels/5"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "death-ward",
-          "name": "Death Ward",
-          "url": "/api/spells/death-ward"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-7",
-            "type": "level",
-            "name": "Cleric 7",
-            "url": "/api/classes/cleric/levels/7"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "mass-cure-wounds",
-          "name": "Mass Cure Wounds",
-          "url": "/api/spells/mass-cure-wounds"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-9",
-            "type": "level",
-            "name": "Cleric 9",
-            "url": "/api/classes/cleric/levels/9"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "raise-dead",
-          "name": "Raise Dead",
-          "url": "/api/spells/raise-dead"
-        },
-        "prerequisites": [
-          {
-            "index": "cleric-9",
-            "type": "level",
-            "name": "Cleric 9",
-            "url": "/api/classes/cleric/levels/9"
-          }
-        ]
-      }
-    ],
-    "subclass_levels": "/api/subclasses/life/levels",
-    "url": "/api/subclasses/life"
+    "subclass_levels": "/api/subclasses/evocation/levels",
+    "url": "/api/subclasses/evocation"
   },
-  {
+  "https://www.dnd5eapi.co/api/subclasses/thief": {
+    "index": "thief",
+    "class": {
+      "index": "rogue",
+      "name": "Rogue",
+      "url": "/api/classes/rogue"
+    },
+    "name": "Thief",
+    "subclass_flavor": "Roguish Archetype",
+    "desc": [
+      "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ."
+    ],
+    "subclass_levels": "/api/subclasses/thief/levels",
+    "url": "/api/subclasses/thief"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/berserker": {
+    "index": "berserker",
+    "class": {
+      "index": "barbarian",
+      "name": "Barbarian",
+      "url": "/api/classes/barbarian"
+    },
+    "name": "Berserker",
+    "subclass_flavor": "Primal Path",
+    "desc": [
+      "For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being."
+    ],
+    "subclass_levels": "/api/subclasses/berserker/levels",
+    "url": "/api/subclasses/berserker"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/champion": {
+    "index": "champion",
+    "class": {
+      "index": "fighter",
+      "name": "Fighter",
+      "url": "/api/classes/fighter"
+    },
+    "name": "Champion",
+    "subclass_flavor": "Martial Archetype",
+    "desc": [
+      "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."
+    ],
+    "subclass_levels": "/api/subclasses/champion/levels",
+    "url": "/api/subclasses/champion"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/hunter": {
+    "index": "hunter",
+    "class": {
+      "index": "ranger",
+      "name": "Ranger",
+      "url": "/api/classes/ranger"
+    },
+    "name": "Hunter",
+    "subclass_flavor": "Ranger Archetype",
+    "desc": [
+      "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."
+    ],
+    "subclass_levels": "/api/subclasses/hunter/levels",
+    "url": "/api/subclasses/hunter"
+  },
+  "https://www.dnd5eapi.co/api/subclasses/land": {
     "index": "land",
     "class": {
       "index": "druid",
@@ -1511,22 +1616,159 @@
     "subclass_levels": "/api/subclasses/land/levels",
     "url": "/api/subclasses/land"
   },
-  {
-    "index": "champion",
+  "https://www.dnd5eapi.co/api/subclasses/life": {
+    "index": "life",
     "class": {
-      "index": "fighter",
-      "name": "Fighter",
-      "url": "/api/classes/fighter"
+      "index": "cleric",
+      "name": "Cleric",
+      "url": "/api/classes/cleric"
     },
-    "name": "Champion",
-    "subclass_flavor": "Martial Archetype",
+    "name": "Life",
+    "subclass_flavor": "Divine Domain",
     "desc": [
-      "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."
+      "The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community."
     ],
-    "subclass_levels": "/api/subclasses/champion/levels",
-    "url": "/api/subclasses/champion"
+    "spells": [
+      {
+        "spell": {
+          "index": "bless",
+          "name": "Bless",
+          "url": "/api/spells/bless"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-1",
+            "type": "level",
+            "name": "Cleric 1",
+            "url": "/api/classes/cleric/levels/1"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "cure-wounds",
+          "name": "Cure Wounds",
+          "url": "/api/spells/cure-wounds"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-1",
+            "type": "level",
+            "name": "Cleric 1",
+            "url": "/api/classes/cleric/levels/1"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "lesser-restoration",
+          "name": "Lesser Restoration",
+          "url": "/api/spells/lesser-restoration"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-3",
+            "type": "level",
+            "name": "Cleric 3",
+            "url": "/api/classes/cleric/levels/3"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "spiritual-weapon",
+          "name": "Spiritual Weapon",
+          "url": "/api/spells/spiritual-weapon"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-3",
+            "type": "level",
+            "name": "Cleric 3",
+            "url": "/api/classes/cleric/levels/3"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "beacon-of-hope",
+          "name": "Beacon of Hope",
+          "url": "/api/spells/beacon-of-hope"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-5",
+            "type": "level",
+            "name": "Cleric 5",
+            "url": "/api/classes/cleric/levels/5"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "revivify",
+          "name": "Revivify",
+          "url": "/api/spells/revivify"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-5",
+            "type": "level",
+            "name": "Cleric 5",
+            "url": "/api/classes/cleric/levels/5"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "death-ward",
+          "name": "Death Ward",
+          "url": "/api/spells/death-ward"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-7",
+            "type": "level",
+            "name": "Cleric 7",
+            "url": "/api/classes/cleric/levels/7"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "mass-cure-wounds",
+          "name": "Mass Cure Wounds",
+          "url": "/api/spells/mass-cure-wounds"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-9",
+            "type": "level",
+            "name": "Cleric 9",
+            "url": "/api/classes/cleric/levels/9"
+          }
+        ]
+      },
+      {
+        "spell": {
+          "index": "raise-dead",
+          "name": "Raise Dead",
+          "url": "/api/spells/raise-dead"
+        },
+        "prerequisites": [
+          {
+            "index": "cleric-9",
+            "type": "level",
+            "name": "Cleric 9",
+            "url": "/api/classes/cleric/levels/9"
+          }
+        ]
+      }
+    ],
+    "subclass_levels": "/api/subclasses/life/levels",
+    "url": "/api/subclasses/life"
   },
-  {
+  "https://www.dnd5eapi.co/api/subclasses/draconic": {
     "index": "draconic",
     "class": {
       "index": "sorcerer",
@@ -1541,234 +1783,7 @@
     "subclass_levels": "/api/subclasses/draconic/levels",
     "url": "/api/subclasses/draconic"
   },
-  {
-    "index": "evocation",
-    "class": {
-      "index": "wizard",
-      "name": "Wizard",
-      "url": "/api/classes/wizard"
-    },
-    "name": "Evocation",
-    "subclass_flavor": "Arcane Tradition",
-    "desc": [
-      "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants."
-    ],
-    "subclass_levels": "/api/subclasses/evocation/levels",
-    "url": "/api/subclasses/evocation"
-  },
-  {
-    "index": "fiend",
-    "class": {
-      "index": "warlock",
-      "name": "Warlock",
-      "url": "/api/classes/warlock"
-    },
-    "name": "Fiend",
-    "subclass_flavor": "Otherworldly Patron",
-    "desc": [
-      "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
-    ],
-    "spells": [
-      {
-        "spell": {
-          "index": "burning-hands",
-          "name": "Burning Hands",
-          "url": "/api/spells/burning-hands"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-1",
-            "type": "level",
-            "name": "Warlock 1",
-            "url": "/api/classes/warlock/levels/1"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "command",
-          "name": "Command",
-          "url": "/api/spells/command"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-1",
-            "type": "level",
-            "name": "Warlock 1",
-            "url": "/api/classes/warlock/levels/1"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "blindness-deafness",
-          "name": "Blindness/Deafness",
-          "url": "/api/spells/blindness-deafness"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-3",
-            "type": "level",
-            "name": "Warlock 3",
-            "url": "/api/classes/warlock/levels/3"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "scorching-ray",
-          "name": "Scorching Ray",
-          "url": "/api/spells/scorching-ray"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-3",
-            "type": "level",
-            "name": "Warlock 3",
-            "url": "/api/classes/warlock/levels/3"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "fireball",
-          "name": "Fireball",
-          "url": "/api/spells/fireball"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-5",
-            "type": "level",
-            "name": "Warlock 5",
-            "url": "/api/classes/warlock/levels/5"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "stinking-cloud",
-          "name": "Stinking Cloud",
-          "url": "/api/spells/stinking-cloud"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-5",
-            "type": "level",
-            "name": "Warlock 5",
-            "url": "/api/classes/warlock/levels/5"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "fire-shield",
-          "name": "Fire Shield",
-          "url": "/api/spells/fire-shield"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-7",
-            "type": "level",
-            "name": "Warlock 7",
-            "url": "/api/classes/warlock/levels/7"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "wall-of-fire",
-          "name": "Wall of Fire",
-          "url": "/api/spells/wall-of-fire"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-7",
-            "type": "level",
-            "name": "Warlock 7",
-            "url": "/api/classes/warlock/levels/7"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "flame-strike",
-          "name": "Flame Strike",
-          "url": "/api/spells/flame-strike"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-9",
-            "type": "level",
-            "name": "Warlock 9",
-            "url": "/api/classes/warlock/levels/9"
-          }
-        ]
-      },
-      {
-        "spell": {
-          "index": "hallow",
-          "name": "Hallow",
-          "url": "/api/spells/hallow"
-        },
-        "prerequisites": [
-          {
-            "index": "warlock-9",
-            "type": "level",
-            "name": "Warlock 9",
-            "url": "/api/classes/warlock/levels/9"
-          }
-        ]
-      }
-    ],
-    "subclass_levels": "/api/subclasses/fiend/levels",
-    "url": "/api/subclasses/fiend"
-  },
-  {
-    "index": "hunter",
-    "class": {
-      "index": "ranger",
-      "name": "Ranger",
-      "url": "/api/classes/ranger"
-    },
-    "name": "Hunter",
-    "subclass_flavor": "Ranger Archetype",
-    "desc": [
-      "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."
-    ],
-    "subclass_levels": "/api/subclasses/hunter/levels",
-    "url": "/api/subclasses/hunter"
-  },
-  {
-    "index": "berserker",
-    "class": {
-      "index": "barbarian",
-      "name": "Barbarian",
-      "url": "/api/classes/barbarian"
-    },
-    "name": "Berserker",
-    "subclass_flavor": "Primal Path",
-    "desc": [
-      "For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being."
-    ],
-    "subclass_levels": "/api/subclasses/berserker/levels",
-    "url": "/api/subclasses/berserker"
-  },
-  {
-    "index": "lore",
-    "class": {
-      "index": "bard",
-      "name": "Bard",
-      "url": "/api/classes/bard"
-    },
-    "name": "Lore",
-    "subclass_flavor": "Bard College",
-    "desc": [
-      "Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."
-    ],
-    "subclass_levels": "/api/subclasses/lore/levels",
-    "url": "/api/subclasses/lore"
-  },
-  {
+  "https://www.dnd5eapi.co/api/subclasses/open-hand": {
     "index": "open-hand",
     "class": {
       "index": "monk",
@@ -1782,20 +1797,5 @@
     ],
     "subclass_levels": "/api/subclasses/open-hand/levels",
     "url": "/api/subclasses/open-hand"
-  },
-  {
-    "index": "thief",
-    "class": {
-      "index": "rogue",
-      "name": "Rogue",
-      "url": "/api/classes/rogue"
-    },
-    "name": "Thief",
-    "subclass_flavor": "Roguish Archetype",
-    "desc": [
-      "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ."
-    ],
-    "subclass_levels": "/api/subclasses/thief/levels",
-    "url": "/api/subclasses/thief"
   }
-]
+}

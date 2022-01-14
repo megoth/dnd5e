@@ -1,5 +1,5 @@
-[
-  {
+{
+  "https://www.dnd5eapi.co/api/races/elf": {
     "index": "elf",
     "name": "Elf",
     "speed": 30,
@@ -63,24 +63,98 @@
     ],
     "url": "/api/races/elf"
   },
-  {
-    "index": "halfling",
-    "name": "Halfling",
-    "speed": 25,
+  "https://www.dnd5eapi.co/api/races/half-orc": {
+    "index": "half-orc",
+    "name": "Half-Orc",
+    "speed": 30,
     "ability_bonuses": [
       {
         "ability_score": {
-          "index": "dex",
-          "name": "DEX",
-          "url": "/api/ability-scores/dex"
+          "index": "str",
+          "name": "STR",
+          "url": "/api/ability-scores/str"
+        },
+        "bonus": 2
+      },
+      {
+        "ability_score": {
+          "index": "con",
+          "name": "CON",
+          "url": "/api/ability-scores/con"
+        },
+        "bonus": 1
+      }
+    ],
+    "alignment": "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.",
+    "age": "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.",
+    "size": "Medium",
+    "size_description": "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.",
+    "starting_proficiencies": [
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/proficiencies/skill-intimidation"
+      }
+    ],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common",
+        "url": "/api/languages/common"
+      },
+      {
+        "index": "orc",
+        "name": "Orc",
+        "url": "/api/languages/orc"
+      }
+    ],
+    "language_desc": "You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
+    "traits": [
+      {
+        "index": "darkvision",
+        "name": "Darkvision",
+        "url": "/api/traits/darkvision"
+      },
+      {
+        "index": "savage-attacks",
+        "name": "Savage Attacks",
+        "url": "/api/traits/savage-attacks"
+      },
+      {
+        "index": "relentless-endurance",
+        "name": "Relentless Endurance",
+        "url": "/api/traits/relentless-endurance"
+      }
+    ],
+    "subraces": [],
+    "url": "/api/races/half-orc"
+  },
+  "https://www.dnd5eapi.co/api/races/tiefling": {
+    "index": "tiefling",
+    "name": "Tiefling",
+    "speed": 30,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "int",
+          "name": "INT",
+          "url": "/api/ability-scores/int"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA",
+          "url": "/api/ability-scores/cha"
         },
         "bonus": 2
       }
     ],
-    "age": "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.",
-    "alignment": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.",
-    "size": "Small",
-    "size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
+    "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
+    "age": "Tieflings mature at the same rate as humans but live a few years longer.",
+    "size": "Medium",
+    "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
     "starting_proficiencies": [],
     "languages": [
       {
@@ -89,39 +163,86 @@
         "url": "/api/languages/common"
       },
       {
-        "index": "halfling",
-        "name": "Halfling",
-        "url": "/api/languages/halfling"
+        "index": "infernal",
+        "name": "Infernal",
+        "url": "/api/languages/infernal"
       }
     ],
-    "language_desc": "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
+    "language_desc": "You can speak, read, and write Common and Infernal.",
     "traits": [
       {
-        "index": "brave",
-        "name": "Brave",
-        "url": "/api/traits/brave"
+        "index": "darkvision",
+        "name": "Darkvision",
+        "url": "/api/traits/darkvision"
       },
       {
-        "index": "halfling-nimbleness",
-        "name": "Halfling Nimbleness",
-        "url": "/api/traits/halfling-nimbleness"
+        "index": "hellish-resistance",
+        "name": "Hellish Resistance",
+        "url": "/api/traits/hellish-resistance"
       },
       {
-        "index": "lucky",
-        "name": "Lucky",
-        "url": "/api/traits/lucky"
+        "index": "infernal-legacy",
+        "name": "Infernal Legacy",
+        "url": "/api/traits/infernal-legacy"
+      }
+    ],
+    "subraces": [],
+    "url": "/api/races/tiefling"
+  },
+  "https://www.dnd5eapi.co/api/races/gnome": {
+    "index": "gnome",
+    "name": "Gnome",
+    "speed": 25,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "int",
+          "name": "INT",
+          "url": "/api/ability-scores/int"
+        },
+        "bonus": 2
+      }
+    ],
+    "alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.",
+    "age": "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.",
+    "size": "Small",
+    "size_description": "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.",
+    "starting_proficiencies": [],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common",
+        "url": "/api/languages/common"
+      },
+      {
+        "index": "gnomish",
+        "name": "Gnomish",
+        "url": "/api/languages/gnomish"
+      }
+    ],
+    "language_desc": "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
+    "traits": [
+      {
+        "index": "darkvision",
+        "name": "Darkvision",
+        "url": "/api/traits/darkvision"
+      },
+      {
+        "index": "gnome-cunning",
+        "name": "Gnome Cunning",
+        "url": "/api/traits/gnome-cunning"
       }
     ],
     "subraces": [
       {
-        "index": "lightfoot-halfling",
-        "name": "Lightfoot Halfling",
-        "url": "/api/subraces/lightfoot-halfling"
+        "index": "rock-gnome",
+        "name": "Rock Gnome",
+        "url": "/api/subraces/rock-gnome"
       }
     ],
-    "url": "/api/races/halfling"
+    "url": "/api/races/gnome"
   },
-  {
+  "https://www.dnd5eapi.co/api/races/dwarf": {
     "index": "dwarf",
     "name": "Dwarf",
     "speed": 25,
@@ -231,338 +352,65 @@
     ],
     "url": "/api/races/dwarf"
   },
-  {
-    "index": "gnome",
-    "name": "Gnome",
+  "https://www.dnd5eapi.co/api/races/halfling": {
+    "index": "halfling",
+    "name": "Halfling",
     "speed": 25,
     "ability_bonuses": [
-      {
-        "ability_score": {
-          "index": "int",
-          "name": "INT",
-          "url": "/api/ability-scores/int"
-        },
-        "bonus": 2
-      }
-    ],
-    "alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.",
-    "age": "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.",
-    "size": "Small",
-    "size_description": "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.",
-    "starting_proficiencies": [],
-    "languages": [
-      {
-        "index": "common",
-        "name": "Common",
-        "url": "/api/languages/common"
-      },
-      {
-        "index": "gnomish",
-        "name": "Gnomish",
-        "url": "/api/languages/gnomish"
-      }
-    ],
-    "language_desc": "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
-    "traits": [
-      {
-        "index": "darkvision",
-        "name": "Darkvision",
-        "url": "/api/traits/darkvision"
-      },
-      {
-        "index": "gnome-cunning",
-        "name": "Gnome Cunning",
-        "url": "/api/traits/gnome-cunning"
-      }
-    ],
-    "subraces": [
-      {
-        "index": "rock-gnome",
-        "name": "Rock Gnome",
-        "url": "/api/subraces/rock-gnome"
-      }
-    ],
-    "url": "/api/races/gnome"
-  },
-  {
-    "index": "tiefling",
-    "name": "Tiefling",
-    "speed": 30,
-    "ability_bonuses": [
-      {
-        "ability_score": {
-          "index": "int",
-          "name": "INT",
-          "url": "/api/ability-scores/int"
-        },
-        "bonus": 1
-      },
-      {
-        "ability_score": {
-          "index": "cha",
-          "name": "CHA",
-          "url": "/api/ability-scores/cha"
-        },
-        "bonus": 2
-      }
-    ],
-    "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
-    "age": "Tieflings mature at the same rate as humans but live a few years longer.",
-    "size": "Medium",
-    "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
-    "starting_proficiencies": [],
-    "languages": [
-      {
-        "index": "common",
-        "name": "Common",
-        "url": "/api/languages/common"
-      },
-      {
-        "index": "infernal",
-        "name": "Infernal",
-        "url": "/api/languages/infernal"
-      }
-    ],
-    "language_desc": "You can speak, read, and write Common and Infernal.",
-    "traits": [
-      {
-        "index": "darkvision",
-        "name": "Darkvision",
-        "url": "/api/traits/darkvision"
-      },
-      {
-        "index": "hellish-resistance",
-        "name": "Hellish Resistance",
-        "url": "/api/traits/hellish-resistance"
-      },
-      {
-        "index": "infernal-legacy",
-        "name": "Infernal Legacy",
-        "url": "/api/traits/infernal-legacy"
-      }
-    ],
-    "subraces": [],
-    "url": "/api/races/tiefling"
-  },
-  {
-    "index": "half-orc",
-    "name": "Half-Orc",
-    "speed": 30,
-    "ability_bonuses": [
-      {
-        "ability_score": {
-          "index": "str",
-          "name": "STR",
-          "url": "/api/ability-scores/str"
-        },
-        "bonus": 2
-      },
-      {
-        "ability_score": {
-          "index": "con",
-          "name": "CON",
-          "url": "/api/ability-scores/con"
-        },
-        "bonus": 1
-      }
-    ],
-    "alignment": "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.",
-    "age": "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.",
-    "size": "Medium",
-    "size_description": "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.",
-    "starting_proficiencies": [
-      {
-        "index": "skill-intimidation",
-        "name": "Skill: Intimidation",
-        "url": "/api/proficiencies/skill-intimidation"
-      }
-    ],
-    "languages": [
-      {
-        "index": "common",
-        "name": "Common",
-        "url": "/api/languages/common"
-      },
-      {
-        "index": "orc",
-        "name": "Orc",
-        "url": "/api/languages/orc"
-      }
-    ],
-    "language_desc": "You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
-    "traits": [
-      {
-        "index": "darkvision",
-        "name": "Darkvision",
-        "url": "/api/traits/darkvision"
-      },
-      {
-        "index": "savage-attacks",
-        "name": "Savage Attacks",
-        "url": "/api/traits/savage-attacks"
-      },
-      {
-        "index": "relentless-endurance",
-        "name": "Relentless Endurance",
-        "url": "/api/traits/relentless-endurance"
-      }
-    ],
-    "subraces": [],
-    "url": "/api/races/half-orc"
-  },
-  {
-    "index": "human",
-    "name": "Human",
-    "speed": 30,
-    "ability_bonuses": [
-      {
-        "ability_score": {
-          "index": "str",
-          "name": "STR",
-          "url": "/api/ability-scores/str"
-        },
-        "bonus": 1
-      },
       {
         "ability_score": {
           "index": "dex",
           "name": "DEX",
           "url": "/api/ability-scores/dex"
         },
-        "bonus": 1
-      },
-      {
-        "ability_score": {
-          "index": "con",
-          "name": "CON",
-          "url": "/api/ability-scores/con"
-        },
-        "bonus": 1
-      },
-      {
-        "ability_score": {
-          "index": "int",
-          "name": "INT",
-          "url": "/api/ability-scores/int"
-        },
-        "bonus": 1
-      },
-      {
-        "ability_score": {
-          "index": "wis",
-          "name": "WIS",
-          "url": "/api/ability-scores/wis"
-        },
-        "bonus": 1
-      },
-      {
-        "ability_score": {
-          "index": "cha",
-          "name": "CHA",
-          "url": "/api/ability-scores/cha"
-        },
-        "bonus": 1
+        "bonus": 2
       }
     ],
-    "age": "Humans reach adulthood in their late teens and live less than a century.",
-    "alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
-    "size": "Medium",
-    "size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
+    "age": "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.",
+    "alignment": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.",
+    "size": "Small",
+    "size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
     "starting_proficiencies": [],
     "languages": [
       {
         "index": "common",
         "name": "Common",
         "url": "/api/languages/common"
+      },
+      {
+        "index": "halfling",
+        "name": "Halfling",
+        "url": "/api/languages/halfling"
       }
     ],
-    "language_options": {
-      "choose": 1,
-      "type": "languages",
-      "from": [
-        {
-          "index": "dwarvish",
-          "name": "Dwarvish",
-          "url": "/api/languages/dwarvish"
-        },
-        {
-          "index": "elvish",
-          "name": "Elvish",
-          "url": "/api/languages/elvish"
-        },
-        {
-          "index": "giant",
-          "name": "Giant",
-          "url": "/api/languages/giant"
-        },
-        {
-          "index": "gnomish",
-          "name": "Gnomish",
-          "url": "/api/languages/gnomish"
-        },
-        {
-          "index": "goblin",
-          "name": "Goblin",
-          "url": "/api/languages/goblin"
-        },
-        {
-          "index": "halfling",
-          "name": "Halfling",
-          "url": "/api/languages/halfling"
-        },
-        {
-          "index": "orc",
-          "name": "Orc",
-          "url": "/api/languages/orc"
-        },
-        {
-          "index": "abyssal",
-          "name": "Abyssal",
-          "url": "/api/languages/abyssal"
-        },
-        {
-          "index": "celestial",
-          "name": "Celestial",
-          "url": "/api/languages/celestial"
-        },
-        {
-          "index": "draconic",
-          "name": "Draconic",
-          "url": "/api/languages/draconic"
-        },
-        {
-          "index": "deep-speech",
-          "name": "Deep Speech",
-          "url": "/api/languages/deep-speech"
-        },
-        {
-          "index": "infernal",
-          "name": "Infernal",
-          "url": "/api/languages/infernal"
-        },
-        {
-          "index": "primordial",
-          "name": "Primordial",
-          "url": "/api/languages/primordial"
-        },
-        {
-          "index": "sylvan",
-          "name": "Sylvan",
-          "url": "/api/languages/sylvan"
-        },
-        {
-          "index": "undercommon",
-          "name": "Undercommon",
-          "url": "/api/languages/undercommon"
-        }
-      ]
-    },
-    "language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
-    "traits": [],
-    "subraces": [],
-    "url": "/api/races/human"
+    "language_desc": "You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.",
+    "traits": [
+      {
+        "index": "brave",
+        "name": "Brave",
+        "url": "/api/traits/brave"
+      },
+      {
+        "index": "halfling-nimbleness",
+        "name": "Halfling Nimbleness",
+        "url": "/api/traits/halfling-nimbleness"
+      },
+      {
+        "index": "lucky",
+        "name": "Lucky",
+        "url": "/api/traits/lucky"
+      }
+    ],
+    "subraces": [
+      {
+        "index": "lightfoot-halfling",
+        "name": "Lightfoot Halfling",
+        "url": "/api/subraces/lightfoot-halfling"
+      }
+    ],
+    "url": "/api/races/halfling"
   },
-  {
+  "https://www.dnd5eapi.co/api/races/dragonborn": {
     "index": "dragonborn",
     "name": "Dragonborn",
     "speed": 30,
@@ -622,7 +470,7 @@
     "subraces": [],
     "url": "/api/races/dragonborn"
   },
-  {
+  "https://www.dnd5eapi.co/api/races/half-elf": {
     "index": "half-elf",
     "name": "Half-Elf",
     "speed": 30,
@@ -891,5 +739,157 @@
     ],
     "subraces": [],
     "url": "/api/races/half-elf"
+  },
+  "https://www.dnd5eapi.co/api/races/human": {
+    "index": "human",
+    "name": "Human",
+    "speed": 30,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "str",
+          "name": "STR",
+          "url": "/api/ability-scores/str"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX",
+          "url": "/api/ability-scores/dex"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "con",
+          "name": "CON",
+          "url": "/api/ability-scores/con"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "int",
+          "name": "INT",
+          "url": "/api/ability-scores/int"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "wis",
+          "name": "WIS",
+          "url": "/api/ability-scores/wis"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA",
+          "url": "/api/ability-scores/cha"
+        },
+        "bonus": 1
+      }
+    ],
+    "age": "Humans reach adulthood in their late teens and live less than a century.",
+    "alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
+    "size": "Medium",
+    "size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
+    "starting_proficiencies": [],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common",
+        "url": "/api/languages/common"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": [
+        {
+          "index": "dwarvish",
+          "name": "Dwarvish",
+          "url": "/api/languages/dwarvish"
+        },
+        {
+          "index": "elvish",
+          "name": "Elvish",
+          "url": "/api/languages/elvish"
+        },
+        {
+          "index": "giant",
+          "name": "Giant",
+          "url": "/api/languages/giant"
+        },
+        {
+          "index": "gnomish",
+          "name": "Gnomish",
+          "url": "/api/languages/gnomish"
+        },
+        {
+          "index": "goblin",
+          "name": "Goblin",
+          "url": "/api/languages/goblin"
+        },
+        {
+          "index": "halfling",
+          "name": "Halfling",
+          "url": "/api/languages/halfling"
+        },
+        {
+          "index": "orc",
+          "name": "Orc",
+          "url": "/api/languages/orc"
+        },
+        {
+          "index": "abyssal",
+          "name": "Abyssal",
+          "url": "/api/languages/abyssal"
+        },
+        {
+          "index": "celestial",
+          "name": "Celestial",
+          "url": "/api/languages/celestial"
+        },
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/languages/draconic"
+        },
+        {
+          "index": "deep-speech",
+          "name": "Deep Speech",
+          "url": "/api/languages/deep-speech"
+        },
+        {
+          "index": "infernal",
+          "name": "Infernal",
+          "url": "/api/languages/infernal"
+        },
+        {
+          "index": "primordial",
+          "name": "Primordial",
+          "url": "/api/languages/primordial"
+        },
+        {
+          "index": "sylvan",
+          "name": "Sylvan",
+          "url": "/api/languages/sylvan"
+        },
+        {
+          "index": "undercommon",
+          "name": "Undercommon",
+          "url": "/api/languages/undercommon"
+        }
+      ]
+    },
+    "language_desc": "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
+    "traits": [],
+    "subraces": [],
+    "url": "/api/races/human"
   }
-]
+}

@@ -1,25 +1,5 @@
-[
-  {
-    "index": "abyssal",
-    "name": "Abyssal",
-    "type": "Exotic",
-    "typical_speakers": [
-      "Demons"
-    ],
-    "script": "Infernal",
-    "url": "/api/languages/abyssal"
-  },
-  {
-    "index": "common",
-    "name": "Common",
-    "type": "Standard",
-    "typical_speakers": [
-      "Humans"
-    ],
-    "script": "Common",
-    "url": "/api/languages/common"
-  },
-  {
+{
+  "https://www.dnd5eapi.co/api/languages/goblin": {
     "index": "goblin",
     "name": "Goblin",
     "type": "Standard",
@@ -29,18 +9,28 @@
     "script": "Dwarvish",
     "url": "/api/languages/goblin"
   },
-  {
-    "index": "gnomish",
-    "name": "Gnomish",
-    "desc": "The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
+  "https://www.dnd5eapi.co/api/languages/abyssal": {
+    "index": "abyssal",
+    "name": "Abyssal",
+    "type": "Exotic",
+    "typical_speakers": [
+      "Demons"
+    ],
+    "script": "Infernal",
+    "url": "/api/languages/abyssal"
+  },
+  "https://www.dnd5eapi.co/api/languages/orc": {
+    "index": "orc",
+    "name": "Orc",
+    "desc": "Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
     "type": "Standard",
     "typical_speakers": [
-      "Gnomes"
+      "Orcs"
     ],
     "script": "Dwarvish",
-    "url": "/api/languages/gnomish"
+    "url": "/api/languages/orc"
   },
-  {
+  "https://www.dnd5eapi.co/api/languages/draconic": {
     "index": "draconic",
     "name": "Draconic",
     "desc": "Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.",
@@ -52,61 +42,38 @@
     "script": "Draconic",
     "url": "/api/languages/draconic"
   },
-  {
-    "index": "giant",
-    "name": "Giant",
+  "https://www.dnd5eapi.co/api/languages/gnomish": {
+    "index": "gnomish",
+    "name": "Gnomish",
+    "desc": "The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.",
     "type": "Standard",
     "typical_speakers": [
-      "Ogres",
-      "Giants"
+      "Gnomes"
     ],
     "script": "Dwarvish",
-    "url": "/api/languages/giant"
+    "url": "/api/languages/gnomish"
   },
-  {
-    "index": "celestial",
-    "name": "Celestial",
+  "https://www.dnd5eapi.co/api/languages/undercommon": {
+    "index": "undercommon",
+    "name": "Undercommon",
     "type": "Exotic",
     "typical_speakers": [
-      "Celestials"
-    ],
-    "script": "Celestial",
-    "url": "/api/languages/celestial"
-  },
-  {
-    "index": "halfling",
-    "name": "Halfling",
-    "desc": "The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong.",
-    "type": "Standard",
-    "typical_speakers": [
-      "Halflings"
-    ],
-    "script": "Common",
-    "url": "/api/languages/halfling"
-  },
-  {
-    "index": "deep-speech",
-    "name": "Deep Speech",
-    "type": "Exotic",
-    "typical_speakers": [
-      "Aboleths",
-      "Cloakers"
-    ],
-    "script": null,
-    "url": "/api/languages/deep-speech"
-  },
-  {
-    "index": "elvish",
-    "name": "Elvish",
-    "desc": "Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
-    "type": "Standard",
-    "typical_speakers": [
-      "Elves"
+      "Underdark traders"
     ],
     "script": "Elvish",
-    "url": "/api/languages/elvish"
+    "url": "/api/languages/undercommon"
   },
-  {
+  "https://www.dnd5eapi.co/api/languages/infernal": {
+    "index": "infernal",
+    "name": "Infernal",
+    "type": "Exotic",
+    "typical_speakers": [
+      "Devils"
+    ],
+    "script": "Infernal",
+    "url": "/api/languages/infernal"
+  },
+  "https://www.dnd5eapi.co/api/languages/dwarvish": {
     "index": "dwarvish",
     "name": "Dwarvish",
     "desc": "Dwarvish is full of hard consonants and guttural sounds.",
@@ -117,7 +84,39 @@
     "script": "Dwarvish",
     "url": "/api/languages/dwarvish"
   },
-  {
+  "https://www.dnd5eapi.co/api/languages/common": {
+    "index": "common",
+    "name": "Common",
+    "type": "Standard",
+    "typical_speakers": [
+      "Humans"
+    ],
+    "script": "Common",
+    "url": "/api/languages/common"
+  },
+  "https://www.dnd5eapi.co/api/languages/giant": {
+    "index": "giant",
+    "name": "Giant",
+    "type": "Standard",
+    "typical_speakers": [
+      "Ogres",
+      "Giants"
+    ],
+    "script": "Dwarvish",
+    "url": "/api/languages/giant"
+  },
+  "https://www.dnd5eapi.co/api/languages/elvish": {
+    "index": "elvish",
+    "name": "Elvish",
+    "desc": "Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
+    "type": "Standard",
+    "typical_speakers": [
+      "Elves"
+    ],
+    "script": "Elvish",
+    "url": "/api/languages/elvish"
+  },
+  "https://www.dnd5eapi.co/api/languages/primordial": {
     "index": "primordial",
     "name": "Primordial",
     "type": "Exotic",
@@ -127,28 +126,39 @@
     "script": "Dwarvish",
     "url": "/api/languages/primordial"
   },
-  {
-    "index": "infernal",
-    "name": "Infernal",
+  "https://www.dnd5eapi.co/api/languages/celestial": {
+    "index": "celestial",
+    "name": "Celestial",
     "type": "Exotic",
     "typical_speakers": [
-      "Devils"
+      "Celestials"
     ],
-    "script": "Infernal",
-    "url": "/api/languages/infernal"
+    "script": "Celestial",
+    "url": "/api/languages/celestial"
   },
-  {
-    "index": "orc",
-    "name": "Orc",
-    "desc": "Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.",
+  "https://www.dnd5eapi.co/api/languages/halfling": {
+    "index": "halfling",
+    "name": "Halfling",
+    "desc": "The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong.",
     "type": "Standard",
     "typical_speakers": [
-      "Orcs"
+      "Halflings"
     ],
-    "script": "Dwarvish",
-    "url": "/api/languages/orc"
+    "script": "Common",
+    "url": "/api/languages/halfling"
   },
-  {
+  "https://www.dnd5eapi.co/api/languages/deep-speech": {
+    "index": "deep-speech",
+    "name": "Deep Speech",
+    "type": "Exotic",
+    "typical_speakers": [
+      "Aboleths",
+      "Cloakers"
+    ],
+    "script": null,
+    "url": "/api/languages/deep-speech"
+  },
+  "https://www.dnd5eapi.co/api/languages/sylvan": {
     "index": "sylvan",
     "name": "Sylvan",
     "type": "Exotic",
@@ -157,15 +167,5 @@
     ],
     "script": "Elvish",
     "url": "/api/languages/sylvan"
-  },
-  {
-    "index": "undercommon",
-    "name": "Undercommon",
-    "type": "Exotic",
-    "typical_speakers": [
-      "Underdark traders"
-    ],
-    "script": "Elvish",
-    "url": "/api/languages/undercommon"
   }
-]
+}

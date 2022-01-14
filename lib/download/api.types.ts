@@ -134,6 +134,29 @@ export interface ArmorClass {
   max_bonus: number;
 }
 
+export interface BarbarianSpecifics {
+  rage_count: number;
+  rage_damage_bonus: number;
+  brutal_critical_dice: number;
+}
+
+export interface BardSpecifics {
+  bardic_inspiration_die: number;
+  song_of_rest_die: number;
+  magical_secrets_max_5: number;
+  magical_secrets_max_7: number;
+  magical_secrets_max_9: number;
+}
+
+export interface BardMagicalSecretsSpecifics {
+  additional_magical_secrets_max_lvl: number;
+}
+
+export interface ClericSpecifics {
+  channel_divinity_charges: number;
+  destroy_undead_cr: number;
+}
+
 export interface Choice<T = APIResource> {
   choose: number;
   type?: string;
@@ -165,6 +188,12 @@ export interface DragonkindTrait {
   breath_weapon: Action;
 }
 
+export interface DruidSpecifics {
+  wild_shape_max_cr: number;
+  wild_shape_swim: boolean;
+  wild_shape_fly: boolean;
+}
+
 export interface EquipmentStack {
   equipment: APIResource;
   quantity: number;
@@ -173,6 +202,12 @@ export interface EquipmentStack {
 export interface FeaturePrerequisite {
   type: string;
   feature: string;
+}
+
+export interface FighterSpecifics {
+  action_surges: number;
+  indomitable_uses: number;
+  extra_attacks: number;
 }
 
 export interface Ideals {
@@ -217,6 +252,12 @@ export interface LevelPrerequisite {
   level: number;
 }
 
+export interface MonkSpecifics {
+  martial_arts: Record<string, number>;
+  ki_points: number;
+  unarmored_movement: number;
+}
+
 export interface MonsterSpeed {
   burrow?: string;
   climb?: string;
@@ -252,6 +293,10 @@ export interface MultiClassing {
   proficiency_choices?: Choice[];
 }
 
+export interface PaladinSpecifics {
+  aura_range: number;
+}
+
 export interface PersonalityChoice {
   choose: number;
   type: string;
@@ -274,10 +319,19 @@ interface Range {
   long: number | null;
 }
 
+export interface RangerSpecifics {
+  favored_enemies: number;
+  favored_terrain: number;
+}
+
 interface Reaction {
   name: string;
   desc: string;
   dc?: DifficultyClass;
+}
+
+export interface RogueSpecifics {
+  sneak_attack: Record<string, number>;
 }
 
 export interface Senses {
@@ -286,6 +340,15 @@ export interface Senses {
   passive_perception: number;
   tremorsense?: string;
   truesight?: string;
+}
+
+export interface SorcerorSpecifics {
+  sorcery_points: number;
+  metamagic_known: number;
+  creating_spell_slots: Array<{
+    spell_slot_level: number;
+    sorcery_point_cost: number;
+  }>;
 }
 
 export interface SpecialAbility {
@@ -365,6 +428,33 @@ export interface VehicleSpeed {
   quantity: number;
   unit: string;
 }
+
+export interface WarlockSpecifics {
+  invocations_known: number;
+  mystic_arcanum_level_6: number;
+  mystic_arcanum_level_7: number;
+  mystic_arcanum_level_8: number;
+  mystic_arcanum_level_9: number;
+}
+
+export interface WizardSpecifics {
+  arcane_recovery_levels: number;
+}
+
+export type ClassSpecifics =
+  | BarbarianSpecifics
+  | BardSpecifics
+  | BardMagicalSecretsSpecifics
+  | ClericSpecifics
+  | DruidSpecifics
+  | FighterSpecifics
+  | MonkSpecifics
+  | PaladinSpecifics
+  | RangerSpecifics
+  | RogueSpecifics
+  | SorcerorSpecifics
+  | WarlockSpecifics
+  | WizardSpecifics;
 
 /* Model Structures */
 
@@ -478,14 +568,17 @@ export interface LanguageData extends BaseData {
   script: string;
 }
 
-export interface LevelData extends BaseData {
+export interface LevelData extends Omit<BaseData, "name"> {
   level: number;
-  ability_score_bonuses: number;
-  prof_bonus: number;
-  feature_choices: APIResource[];
+  ability_score_bonuses?: number;
+  prof_bonus?: number;
+  feature_choices?: APIResource[];
   features: APIResource[];
-  class_specific: { [key: string]: any };
+  subclass_specific?: ClassSpecifics;
+  spellcasting?: Record<string, number>;
+  class_specific?: ClassSpecifics;
   class: APIResource;
+  subclass?: APIResource;
 }
 
 export interface MagicItemData extends BaseData {

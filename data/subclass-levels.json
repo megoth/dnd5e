@@ -1,0 +1,1171 @@
+{
+  "https://www.dnd5eapi.co/api/subclasses/fiend/levels": [
+    {
+      "level": 1,
+      "features": [
+        {
+          "index": "dark-ones-blessing",
+          "name": "Dark One's Blessing",
+          "url": "/api/features/dark-ones-blessing"
+        }
+      ],
+      "class": {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      "subclass": {
+        "index": "fiend",
+        "name": "Fiend",
+        "url": "/api/subclasses/fiend"
+      },
+      "url": "/api/subclasses/fiend/levels/1",
+      "index": "fiend-1"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "dark-ones-own-luck",
+          "name": "Dark One's Own Luck",
+          "url": "/api/features/dark-ones-own-luck"
+        }
+      ],
+      "class": {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      "subclass": {
+        "index": "fiend",
+        "name": "Fiend",
+        "url": "/api/subclasses/fiend"
+      },
+      "url": "/api/subclasses/fiend/levels/6",
+      "index": "fiend-6"
+    },
+    {
+      "level": 10,
+      "features": [
+        {
+          "index": "fiendish-resilience",
+          "name": "Fiendish Resilience",
+          "url": "/api/features/fiendish-resilience"
+        }
+      ],
+      "class": {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      "subclass": {
+        "index": "fiend",
+        "name": "Fiend",
+        "url": "/api/subclasses/fiend"
+      },
+      "url": "/api/subclasses/fiend/levels/10",
+      "index": "fiend-10"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "hurl-through-hell",
+          "name": "Hurl Through Hell",
+          "url": "/api/features/hurl-through-hell"
+        }
+      ],
+      "class": {
+        "index": "warlock",
+        "name": "Warlock",
+        "url": "/api/classes/warlock"
+      },
+      "subclass": {
+        "index": "fiend",
+        "name": "Fiend",
+        "url": "/api/subclasses/fiend"
+      },
+      "url": "/api/subclasses/fiend/levels/14",
+      "index": "fiend-14"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/berserker/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "frenzy",
+          "name": "Frenzy",
+          "url": "/api/features/frenzy"
+        }
+      ],
+      "class": {
+        "index": "barbarian",
+        "name": "Barbarian",
+        "url": "/api/classes/barbarian"
+      },
+      "subclass": {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/subclasses/berserker"
+      },
+      "url": "/api/subclasses/berserker/levels/3",
+      "index": "berserker-3"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "mindless-rage",
+          "name": "Mindless Rage",
+          "url": "/api/features/mindless-rage"
+        }
+      ],
+      "index": "berserker-6",
+      "class": {
+        "index": "barbarian",
+        "name": "Barbarian",
+        "url": "/api/classes/barbarian"
+      },
+      "subclass": {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/subclasses/berserker"
+      },
+      "url": "/api/subclasses/berserker/levels/6"
+    },
+    {
+      "level": 10,
+      "features": [
+        {
+          "index": "intimidating-presence",
+          "name": "Intimidating Presence",
+          "url": "/api/features/intimidating-presence"
+        }
+      ],
+      "class": {
+        "index": "barbarian",
+        "name": "Barbarian",
+        "url": "/api/classes/barbarian"
+      },
+      "subclass": {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/subclasses/berserker"
+      },
+      "url": "/api/subclasses/berserker/levels/10",
+      "index": "berserker-10"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "retaliation",
+          "name": "Retaliation",
+          "url": "/api/features/retaliation"
+        }
+      ],
+      "class": {
+        "index": "barbarian",
+        "name": "Barbarian",
+        "url": "/api/classes/barbarian"
+      },
+      "subclass": {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/subclasses/berserker"
+      },
+      "url": "/api/subclasses/berserker/levels/14",
+      "index": "berserker-14"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/land/levels": [
+    {
+      "level": 2,
+      "features": [
+        {
+          "index": "bonus-cantrip",
+          "name": "Bonus Cantrip",
+          "url": "/api/features/bonus-cantrip"
+        },
+        {
+          "index": "natural-recovery",
+          "name": "Natural Recovery",
+          "url": "/api/features/natural-recovery"
+        }
+      ],
+      "class": {
+        "index": "druid",
+        "name": "Druid",
+        "url": "/api/classes/druid"
+      },
+      "subclass": {
+        "index": "land",
+        "name": "Land",
+        "url": "/api/subclasses/land"
+      },
+      "url": "/api/subclasses/land/levels/2",
+      "index": "land-2"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "druid-lands-stride",
+          "name": "Land's Stride",
+          "url": "/api/features/druid-lands-stride"
+        }
+      ],
+      "class": {
+        "index": "druid",
+        "name": "Druid",
+        "url": "/api/classes/druid"
+      },
+      "subclass": {
+        "index": "land",
+        "name": "Land",
+        "url": "/api/subclasses/land"
+      },
+      "url": "/api/subclasses/land/levels/6",
+      "index": "land-6"
+    },
+    {
+      "level": 10,
+      "features": [
+        {
+          "index": "natures-ward",
+          "name": "Nature's Ward",
+          "url": "/api/features/natures-ward"
+        }
+      ],
+      "class": {
+        "index": "druid",
+        "name": "Druid",
+        "url": "/api/classes/druid"
+      },
+      "subclass": {
+        "index": "land",
+        "name": "Land",
+        "url": "/api/subclasses/land"
+      },
+      "url": "/api/subclasses/land/levels/10",
+      "index": "land-10"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "natures-sanctuary",
+          "name": "Nature's Sanctuary",
+          "url": "/api/features/natures-sanctuary"
+        }
+      ],
+      "class": {
+        "index": "druid",
+        "name": "Druid",
+        "url": "/api/classes/druid"
+      },
+      "subclass": {
+        "index": "land",
+        "name": "Land",
+        "url": "/api/subclasses/land"
+      },
+      "url": "/api/subclasses/land/levels/14",
+      "index": "land-14"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/lore/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "bonus-proficiencies",
+          "name": "Bonus Proficiencies",
+          "url": "/api/features/bonus-proficiencies"
+        },
+        {
+          "index": "cutting-words",
+          "name": "Cutting Words",
+          "url": "/api/features/cutting-words"
+        }
+      ],
+      "subclass_specific": {
+        "additional_magical_secrets_max_lvl": 0
+      },
+      "class": {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      "subclass": {
+        "index": "lore",
+        "name": "Lore",
+        "url": "/api/subclasses/lore"
+      },
+      "url": "/api/subclasses/lore/levels/3",
+      "index": "lore-3"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "additional-magical-secrets",
+          "name": "Additional Magical Secrets",
+          "url": "/api/features/additional-magical-secrets"
+        }
+      ],
+      "subclass_specific": {
+        "additional_magical_secrets_max_lvl": 3
+      },
+      "class": {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      "subclass": {
+        "index": "lore",
+        "name": "Lore",
+        "url": "/api/subclasses/lore"
+      },
+      "url": "/api/subclasses/lore/levels/6",
+      "index": "lore-6"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "peerless-skill",
+          "name": "Peerless Skill",
+          "url": "/api/features/peerless-skill"
+        }
+      ],
+      "subclass_specific": {
+        "additional_magical_secrets_max_lvl": 3
+      },
+      "class": {
+        "index": "bard",
+        "name": "Bard",
+        "url": "/api/classes/bard"
+      },
+      "subclass": {
+        "index": "lore",
+        "name": "Lore",
+        "url": "/api/subclasses/lore"
+      },
+      "url": "/api/subclasses/lore/levels/14",
+      "index": "lore-14"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/evocation/levels": [
+    {
+      "level": 2,
+      "features": [
+        {
+          "index": "evocation-savant",
+          "name": "Evocation Savant",
+          "url": "/api/features/evocation-savant"
+        },
+        {
+          "index": "sculpt-spells",
+          "name": "Sculpt Spells",
+          "url": "/api/features/sculpt-spells"
+        }
+      ],
+      "class": {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      },
+      "subclass": {
+        "index": "evocation",
+        "name": "Evocation",
+        "url": "/api/subclasses/evocation"
+      },
+      "url": "/api/subclasses/evocation/levels/2",
+      "index": "evocation-2"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "potent-cantrip",
+          "name": "Potent Cantrip",
+          "url": "/api/features/potent-cantrip"
+        }
+      ],
+      "class": {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      },
+      "subclass": {
+        "index": "evocation",
+        "name": "Evocation",
+        "url": "/api/subclasses/evocation"
+      },
+      "url": "/api/subclasses/evocation/levels/6",
+      "index": "evocation-6"
+    },
+    {
+      "level": 10,
+      "features": [
+        {
+          "index": "empowered-evocation",
+          "name": "Empowered Evocation",
+          "url": "/api/features/empowered-evocation"
+        }
+      ],
+      "class": {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      },
+      "subclass": {
+        "index": "evocation",
+        "name": "Evocation",
+        "url": "/api/subclasses/evocation"
+      },
+      "url": "/api/subclasses/evocation/levels/10",
+      "index": "evocation-10"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "overchannel",
+          "name": "Overchannel",
+          "url": "/api/features/overchannel"
+        }
+      ],
+      "class": {
+        "index": "wizard",
+        "name": "Wizard",
+        "url": "/api/classes/wizard"
+      },
+      "subclass": {
+        "index": "evocation",
+        "name": "Evocation",
+        "url": "/api/subclasses/evocation"
+      },
+      "url": "/api/subclasses/evocation/levels/14",
+      "index": "evocation-14"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/thief/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "fast-hands",
+          "name": "Fast Hands",
+          "url": "/api/features/fast-hands"
+        },
+        {
+          "index": "second-story-work",
+          "name": "Second-Story Work",
+          "url": "/api/features/second-story-work"
+        }
+      ],
+      "class": {
+        "index": "rogue",
+        "name": "Rogue",
+        "url": "/api/classes/rogue"
+      },
+      "subclass": {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/subclasses/thief"
+      },
+      "url": "/api/subclasses/thief/levels/3",
+      "index": "thief-3"
+    },
+    {
+      "level": 9,
+      "features": [
+        {
+          "index": "supreme-sneak",
+          "name": "Supreme Sneak",
+          "url": "/api/features/supreme-sneak"
+        }
+      ],
+      "class": {
+        "index": "rogue",
+        "name": "Rogue",
+        "url": "/api/classes/rogue"
+      },
+      "subclass": {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/subclasses/thief"
+      },
+      "url": "/api/subclasses/thief/levels/9",
+      "index": "thief-9"
+    },
+    {
+      "level": 13,
+      "features": [
+        {
+          "index": "use-magic-device",
+          "name": "Use Magic Device",
+          "url": "/api/features/use-magic-device"
+        }
+      ],
+      "class": {
+        "index": "rogue",
+        "name": "Rogue",
+        "url": "/api/classes/rogue"
+      },
+      "subclass": {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/subclasses/thief"
+      },
+      "url": "/api/subclasses/thief/levels/13",
+      "index": "thief-13"
+    },
+    {
+      "level": 17,
+      "features": [
+        {
+          "index": "thiefs-reflexes",
+          "name": "Thief's Reflexes",
+          "url": "/api/features/thiefs-reflexes"
+        }
+      ],
+      "class": {
+        "index": "rogue",
+        "name": "Rogue",
+        "url": "/api/classes/rogue"
+      },
+      "subclass": {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/subclasses/thief"
+      },
+      "url": "/api/subclasses/thief/levels/17",
+      "index": "thief-17"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/life/levels": [
+    {
+      "level": 1,
+      "features": [
+        {
+          "index": "bonus-proficiency",
+          "name": "Bonus Proficiency",
+          "url": "/api/features/bonus-proficiency"
+        },
+        {
+          "index": "disciple-of-life",
+          "name": "Disciple of Life",
+          "url": "/api/features/disciple-of-life"
+        }
+      ],
+      "class": {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      "subclass": {
+        "index": "life",
+        "name": "Life",
+        "url": "/api/subclasses/life"
+      },
+      "url": "/api/subclasses/life/levels/1",
+      "index": "life-1"
+    },
+    {
+      "level": 2,
+      "features": [
+        {
+          "index": "channel-divinity-preserve-life",
+          "name": "Channel Divinity: Preserve Life",
+          "url": "/api/features/channel-divinity-preserve-life"
+        }
+      ],
+      "class": {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      "subclass": {
+        "index": "life",
+        "name": "Life",
+        "url": "/api/subclasses/life"
+      },
+      "url": "/api/subclasses/life/levels/2",
+      "index": "life-2"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "blessed-healer",
+          "name": "Blessed Healer",
+          "url": "/api/features/blessed-healer"
+        }
+      ],
+      "class": {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      "subclass": {
+        "index": "life",
+        "name": "Life",
+        "url": "/api/subclasses/life"
+      },
+      "url": "/api/subclasses/life/levels/6",
+      "index": "life-6"
+    },
+    {
+      "level": 8,
+      "features": [
+        {
+          "index": "divine-strike",
+          "name": "Divine Strike",
+          "url": "/api/features/divine-strike"
+        }
+      ],
+      "class": {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      "subclass": {
+        "index": "life",
+        "name": "Life",
+        "url": "/api/subclasses/life"
+      },
+      "url": "/api/subclasses/life/levels/8",
+      "index": "life-8"
+    },
+    {
+      "level": 17,
+      "features": [
+        {
+          "index": "supreme-healing",
+          "name": "Supreme Healing",
+          "url": "/api/features/supreme-healing"
+        }
+      ],
+      "class": {
+        "index": "cleric",
+        "name": "Cleric",
+        "url": "/api/classes/cleric"
+      },
+      "subclass": {
+        "index": "life",
+        "name": "Life",
+        "url": "/api/subclasses/life"
+      },
+      "url": "/api/subclasses/life/levels/17",
+      "index": "life-17"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/devotion/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "channel-divinity",
+          "name": "Channel Divinity",
+          "url": "/api/features/channel-divinity"
+        }
+      ],
+      "class": {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      "subclass": {
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
+      },
+      "url": "/api/subclasses/devotion/levels/3",
+      "index": "devotion-3"
+    },
+    {
+      "level": 7,
+      "features": [
+        {
+          "index": "aura-of-devotion",
+          "name": "Aura of Devotion",
+          "url": "/api/features/aura-of-devotion"
+        }
+      ],
+      "subclass_specific": {
+        "aura_range": 10
+      },
+      "class": {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      "subclass": {
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
+      },
+      "url": "/api/subclasses/devotion/levels/7",
+      "index": "devotion-7"
+    },
+    {
+      "level": 15,
+      "features": [
+        {
+          "index": "purity-of-spirit",
+          "name": "Purity of Spirit",
+          "url": "/api/features/purity-of-spirit"
+        }
+      ],
+      "subclass_specific": {
+        "aura_range": 10
+      },
+      "class": {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      "subclass": {
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
+      },
+      "url": "/api/subclasses/devotion/levels/15",
+      "index": "devotion-15"
+    },
+    {
+      "level": 18,
+      "features": [],
+      "subclass_specific": {
+        "aura_range": 30
+      },
+      "class": {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      "subclass": {
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
+      },
+      "url": "/api/subclasses/devotion/levels/18",
+      "index": "devotion-18"
+    },
+    {
+      "level": 20,
+      "features": [
+        {
+          "index": "holy-nimbus",
+          "name": "Holy Nimbus",
+          "url": "/api/features/holy-nimbus"
+        }
+      ],
+      "subclass_specific": {
+        "aura_range": 30
+      },
+      "class": {
+        "index": "paladin",
+        "name": "Paladin",
+        "url": "/api/classes/paladin"
+      },
+      "subclass": {
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
+      },
+      "url": "/api/subclasses/devotion/levels/20",
+      "index": "devotion-20"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/open-hand/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "open-hand-technique",
+          "name": "Open Hand Technique",
+          "url": "/api/features/open-hand-technique"
+        }
+      ],
+      "class": {
+        "index": "monk",
+        "name": "Monk",
+        "url": "/api/classes/monk"
+      },
+      "subclass": {
+        "index": "open-hand",
+        "name": "Open Hand",
+        "url": "/api/subclasses/open-hand"
+      },
+      "url": "/api/subclasses/open-hand/levels/3",
+      "index": "open-hand-3"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "wholeness-of-body",
+          "name": "Wholeness of Body",
+          "url": "/api/features/wholeness-of-body"
+        }
+      ],
+      "class": {
+        "index": "monk",
+        "name": "Monk",
+        "url": "/api/classes/monk"
+      },
+      "subclass": {
+        "index": "open-hand",
+        "name": "Open Hand",
+        "url": "/api/subclasses/open-hand"
+      },
+      "url": "/api/subclasses/open-hand/levels/6",
+      "index": "open-hand-6"
+    },
+    {
+      "level": 11,
+      "features": [
+        {
+          "index": "tranquility",
+          "name": "Tranquility",
+          "url": "/api/features/tranquility"
+        }
+      ],
+      "class": {
+        "index": "monk",
+        "name": "Monk",
+        "url": "/api/classes/monk"
+      },
+      "subclass": {
+        "index": "open-hand",
+        "name": "Open Hand",
+        "url": "/api/subclasses/open-hand"
+      },
+      "url": "/api/subclasses/open-hand/levels/11",
+      "index": "open-hand-11"
+    },
+    {
+      "level": 17,
+      "features": [
+        {
+          "index": "quivering-palm",
+          "name": "Quivering Palm",
+          "url": "/api/features/quivering-palm"
+        }
+      ],
+      "class": {
+        "index": "monk",
+        "name": "Monk",
+        "url": "/api/classes/monk"
+      },
+      "subclass": {
+        "index": "open-hand",
+        "name": "Open Hand",
+        "url": "/api/subclasses/open-hand"
+      },
+      "url": "/api/subclasses/open-hand/levels/17",
+      "index": "open-hand-17"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/draconic/levels": [
+    {
+      "level": 1,
+      "features": [
+        {
+          "index": "dragon-ancestor",
+          "name": "Dragon Ancestor",
+          "url": "/api/features/dragon-ancestor"
+        },
+        {
+          "index": "draconic-resilience",
+          "name": "Draconic Resilience",
+          "url": "/api/features/draconic-resilience"
+        }
+      ],
+      "class": {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      "subclass": {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/subclasses/draconic"
+      },
+      "url": "/api/subclasses/draconic/levels/1",
+      "index": "draconic-1"
+    },
+    {
+      "level": 6,
+      "features": [
+        {
+          "index": "elemental-affinity",
+          "name": "Elemental Affinity",
+          "url": "/api/features/elemental-affinity"
+        }
+      ],
+      "class": {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      "subclass": {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/subclasses/draconic"
+      },
+      "url": "/api/subclasses/draconic/levels/6",
+      "index": "draconic-6"
+    },
+    {
+      "level": 14,
+      "features": [
+        {
+          "index": "dragon-wings",
+          "name": "Dragon Wings",
+          "url": "/api/features/dragon-wings"
+        }
+      ],
+      "class": {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      "subclass": {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/subclasses/draconic"
+      },
+      "url": "/api/subclasses/draconic/levels/14",
+      "index": "draconic-14"
+    },
+    {
+      "level": 18,
+      "features": [
+        {
+          "index": "draconic-presence",
+          "name": "Draconic Presence",
+          "url": "/api/features/draconic-presence"
+        }
+      ],
+      "class": {
+        "index": "sorcerer",
+        "name": "Sorcerer",
+        "url": "/api/classes/sorcerer"
+      },
+      "subclass": {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/subclasses/draconic"
+      },
+      "url": "/api/subclasses/draconic/levels/18",
+      "index": "draconic-18"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/hunter/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "hunters-prey",
+          "name": "Hunter's Prey",
+          "url": "/api/features/hunters-prey"
+        }
+      ],
+      "class": {
+        "index": "ranger",
+        "name": "Ranger",
+        "url": "/api/classes/ranger"
+      },
+      "subclass": {
+        "index": "hunter",
+        "name": "Hunter",
+        "url": "/api/subclasses/hunter"
+      },
+      "url": "/api/subclasses/hunter/levels/3",
+      "index": "hunter-3"
+    },
+    {
+      "level": 7,
+      "features": [
+        {
+          "index": "defensive-tactics",
+          "name": "Defensive Tactics",
+          "url": "/api/features/defensive-tactics"
+        }
+      ],
+      "class": {
+        "index": "ranger",
+        "name": "Ranger",
+        "url": "/api/classes/ranger"
+      },
+      "subclass": {
+        "index": "hunter",
+        "name": "Hunter",
+        "url": "/api/subclasses/hunter"
+      },
+      "url": "/api/subclasses/hunter/levels/7",
+      "index": "hunter-7"
+    },
+    {
+      "level": 11,
+      "features": [
+        {
+          "index": "multiattack",
+          "name": "Multiattack",
+          "url": "/api/features/multiattack"
+        }
+      ],
+      "class": {
+        "index": "ranger",
+        "name": "Ranger",
+        "url": "/api/classes/ranger"
+      },
+      "subclass": {
+        "index": "hunter",
+        "name": "Hunter",
+        "url": "/api/subclasses/hunter"
+      },
+      "url": "/api/subclasses/hunter/levels/11",
+      "index": "hunter-11"
+    },
+    {
+      "level": 15,
+      "features": [
+        {
+          "index": "superior-hunters-defense",
+          "name": "Superior Hunter's Defense",
+          "url": "/api/features/superior-hunters-defense"
+        }
+      ],
+      "class": {
+        "index": "ranger",
+        "name": "Ranger",
+        "url": "/api/classes/ranger"
+      },
+      "subclass": {
+        "index": "hunter",
+        "name": "Hunter",
+        "url": "/api/subclasses/hunter"
+      },
+      "url": "/api/subclasses/hunter/levels/15",
+      "index": "hunter-15"
+    }
+  ],
+  "https://www.dnd5eapi.co/api/subclasses/champion/levels": [
+    {
+      "level": 3,
+      "features": [
+        {
+          "index": "improved-critical",
+          "name": "Improved Critical",
+          "url": "/api/features/improved-critical"
+        }
+      ],
+      "class": {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      "subclass": {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/subclasses/champion"
+      },
+      "url": "/api/subclasses/champion/levels/3",
+      "index": "champion-3"
+    },
+    {
+      "level": 7,
+      "features": [
+        {
+          "index": "remarkable-athlete",
+          "name": "Remarkable Athlete",
+          "url": "/api/features/remarkable-athlete"
+        }
+      ],
+      "class": {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      "subclass": {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/subclasses/champion"
+      },
+      "url": "/api/subclasses/champion/levels/7",
+      "index": "champion-7"
+    },
+    {
+      "level": 10,
+      "features": [
+        {
+          "index": "additional-fighting-style",
+          "name": "Additional Fighting Style",
+          "url": "/api/features/additional-fighting-style"
+        }
+      ],
+      "class": {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      "subclass": {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/subclasses/champion"
+      },
+      "url": "/api/subclasses/champion/levels/10",
+      "index": "champion-10"
+    },
+    {
+      "level": 15,
+      "features": [
+        {
+          "index": "superior-critical",
+          "name": "Superior Critical",
+          "url": "/api/features/superior-critical"
+        }
+      ],
+      "class": {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      "subclass": {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/subclasses/champion"
+      },
+      "url": "/api/subclasses/champion/levels/15",
+      "index": "champion-15"
+    },
+    {
+      "level": 18,
+      "features": [
+        {
+          "index": "survivor",
+          "name": "Survivor",
+          "url": "/api/features/survivor"
+        }
+      ],
+      "class": {
+        "index": "fighter",
+        "name": "Fighter",
+        "url": "/api/classes/fighter"
+      },
+      "subclass": {
+        "index": "champion",
+        "name": "Champion",
+        "url": "/api/subclasses/champion"
+      },
+      "url": "/api/subclasses/champion/levels/18",
+      "index": "champion-18"
+    }
+  ]
+}

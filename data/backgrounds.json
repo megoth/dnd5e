@@ -1,5 +1,5 @@
-[
-  {
+{
+  "https://www.dnd5eapi.co/api/backgrounds/acolyte": {
     "index": "acolyte",
     "name": "Acolyte",
     "starting_proficiencies": [
@@ -336,4 +336,4 @@
     },
     "url": "/api/backgrounds/acolyte"
   }
-]
+}

@@ -1,5 +1,313 @@
-[
-  {
+{
+  "https://www.dnd5eapi.co/api/classes/druid": {
+    "index": "druid",
+    "name": "Druid",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "choose": 2,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "skill-animal-handling",
+            "name": "Skill: Animal Handling",
+            "url": "/api/proficiencies/skill-animal-handling"
+          },
+          {
+            "index": "skill-arcana",
+            "name": "Skill: Arcana",
+            "url": "/api/proficiencies/skill-arcana"
+          },
+          {
+            "index": "skill-insight",
+            "name": "Skill: Insight",
+            "url": "/api/proficiencies/skill-insight"
+          },
+          {
+            "index": "skill-medicine",
+            "name": "Skill: Medicine",
+            "url": "/api/proficiencies/skill-medicine"
+          },
+          {
+            "index": "skill-nature",
+            "name": "Skill: Nature",
+            "url": "/api/proficiencies/skill-nature"
+          },
+          {
+            "index": "skill-perception",
+            "name": "Skill: Perception",
+            "url": "/api/proficiencies/skill-perception"
+          },
+          {
+            "index": "skill-religion",
+            "name": "Skill: Religion",
+            "url": "/api/proficiencies/skill-religion"
+          },
+          {
+            "index": "skill-survival",
+            "name": "Skill: Survival",
+            "url": "/api/proficiencies/skill-survival"
+          }
+        ]
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Light Armor",
+        "url": "/api/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Medium Armor",
+        "url": "/api/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Shields",
+        "url": "/api/proficiencies/shields"
+      },
+      {
+        "index": "clubs",
+        "name": "Clubs",
+        "url": "/api/proficiencies/clubs"
+      },
+      {
+        "index": "daggers",
+        "name": "Daggers",
+        "url": "/api/proficiencies/daggers"
+      },
+      {
+        "index": "javelins",
+        "name": "Javelins",
+        "url": "/api/proficiencies/javelins"
+      },
+      {
+        "index": "maces",
+        "name": "Maces",
+        "url": "/api/proficiencies/maces"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Quarterstaffs",
+        "url": "/api/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "sickles",
+        "name": "Sickles",
+        "url": "/api/proficiencies/sickles"
+      },
+      {
+        "index": "spears",
+        "name": "Spears",
+        "url": "/api/proficiencies/spears"
+      },
+      {
+        "index": "darts",
+        "name": "Darts",
+        "url": "/api/proficiencies/darts"
+      },
+      {
+        "index": "slings",
+        "name": "Slings",
+        "url": "/api/proficiencies/slings"
+      },
+      {
+        "index": "scimitars",
+        "name": "Scimitars",
+        "url": "/api/proficiencies/scimitars"
+      },
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/proficiencies/herbalism-kit"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "explorers-pack",
+          "name": "Explorer's Pack",
+          "url": "/api/equipment/explorers-pack"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "shield",
+              "name": "Shield",
+              "url": "/api/equipment/shield"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "simple-weapons",
+                  "name": "Simple Weapons",
+                  "url": "/api/equipment-categories/simple-weapons"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "scimitar",
+              "name": "Scimitar",
+              "url": "/api/equipment/scimitar"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "simple-weapons",
+                  "name": "Simple Weapons",
+                  "url": "/api/equipment-categories/simple-weapons"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_category": {
+              "index": "druidic-foci",
+              "name": "Druidic Foci",
+              "url": "/api/equipment-categories/druidic-foci"
+            }
+          }
+        ]
+      }
+    ],
+    "class_levels": "/api/classes/druid/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light Armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "medium-armor",
+          "name": "Medium Armor",
+          "url": "/api/proficiencies/medium-armor"
+        },
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "land",
+        "name": "Land",
+        "url": "/api/subclasses/land"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      "info": [
+        {
+          "desc": [
+            "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
+          ],
+          "name": "Cantrips"
+        },
+        {
+          "desc": [
+            "The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+          ],
+          "name": "Preparing and Casting Spells"
+        },
+        {
+          "desc": [
+            "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
+            "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
+          ],
+          "name": "Spellcasting Ability"
+        },
+        {
+          "desc": [
+            "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ],
+          "name": "Ritual Casting"
+        },
+        {
+          "desc": [
+            "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells."
+          ],
+          "name": "Spellcasting Focus"
+        }
+      ]
+    },
+    "spells": "/api/classes/druid/spells",
+    "url": "/api/classes/druid"
+  },
+  "https://www.dnd5eapi.co/api/classes/cleric": {
     "index": "cleric",
     "name": "Cleric",
     "hit_die": 8,
@@ -311,7 +619,760 @@
     "spells": "/api/classes/cleric/spells",
     "url": "/api/classes/cleric"
   },
-  {
+  "https://www.dnd5eapi.co/api/classes/wizard": {
+    "index": "wizard",
+    "name": "Wizard",
+    "hit_die": 6,
+    "proficiency_choices": [
+      {
+        "choose": 2,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "skill-arcana",
+            "name": "Skill: Arcana",
+            "url": "/api/proficiencies/skill-arcana"
+          },
+          {
+            "index": "skill-history",
+            "name": "Skill: History",
+            "url": "/api/proficiencies/skill-history"
+          },
+          {
+            "index": "skill-insight",
+            "name": "Skill: Insight",
+            "url": "/api/proficiencies/skill-insight"
+          },
+          {
+            "index": "skill-investigation",
+            "name": "Skill: Investigation",
+            "url": "/api/proficiencies/skill-investigation"
+          },
+          {
+            "index": "skill-medicine",
+            "name": "Skill: Medicine",
+            "url": "/api/proficiencies/skill-medicine"
+          },
+          {
+            "index": "skill-religion",
+            "name": "Skill: Religion",
+            "url": "/api/proficiencies/skill-religion"
+          }
+        ]
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "daggers",
+        "name": "Daggers",
+        "url": "/api/proficiencies/daggers"
+      },
+      {
+        "index": "quarterstaffs",
+        "name": "Quarterstaffs",
+        "url": "/api/proficiencies/quarterstaffs"
+      },
+      {
+        "index": "darts",
+        "name": "Darts",
+        "url": "/api/proficiencies/darts"
+      },
+      {
+        "index": "slings",
+        "name": "Slings",
+        "url": "/api/proficiencies/slings"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "spellbook",
+          "name": "Spellbook",
+          "url": "/api/equipment/spellbook"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "dagger",
+              "name": "Dagger",
+              "url": "/api/equipment/dagger"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "quarterstaff",
+              "name": "Quarterstaff",
+              "url": "/api/equipment/quarterstaff"
+            },
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "component-pouch",
+              "name": "Component pouch",
+              "url": "/api/equipment/component-pouch"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "arcane-foci",
+                  "name": "Arcane Foci",
+                  "url": "/api/equipment-categories/arcane-foci"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "scholars-pack",
+              "name": "Scholar's Pack",
+              "url": "/api/equipment/scholars-pack"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "dungeoneers-pack",
+              "name": "Dungeoneer's Pack",
+              "url": "/api/equipment/dungeoneers-pack"
+            },
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "class_levels": "/api/classes/wizard/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "int",
+            "name": "INT",
+            "url": "/api/ability-scores/int"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": []
+    },
+    "subclasses": [
+      {
+        "index": "evocation",
+        "name": "Evocation",
+        "url": "/api/subclasses/evocation"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      },
+      "info": [
+        {
+          "desc": [
+            "At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table."
+          ],
+          "name": "Cantrips"
+        },
+        {
+          "desc": [
+            "At 1st level, you have a spellbook containing six 1st- level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind."
+          ],
+          "name": "Spellbook"
+        },
+        {
+          "desc": [
+            "The Wizard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
+          ],
+          "name": "Preparing and Casting Spells"
+        },
+        {
+          "desc": [
+            "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier.",
+            "Spell attack modifier = your proficiency bonus + your Intelligence modifier."
+          ],
+          "name": "Spellcasting Ability"
+        },
+        {
+          "desc": [
+            "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+          ],
+          "name": "Ritual Casting"
+        },
+        {
+          "desc": [
+            "You can use an arcane focus as a spellcasting focus for your wizard spells."
+          ],
+          "name": "Spellcasting Focus"
+        }
+      ]
+    },
+    "spells": "/api/classes/wizard/spells",
+    "url": "/api/classes/wizard"
+  },
+  "https://www.dnd5eapi.co/api/classes/rogue": {
+    "index": "rogue",
+    "name": "Rogue",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "choose": 4,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "skill-acrobatics",
+            "name": "Skill: Acrobatics",
+            "url": "/api/proficiencies/skill-acrobatics"
+          },
+          {
+            "index": "skill-athletics",
+            "name": "Skill: Athletics",
+            "url": "/api/proficiencies/skill-athletics"
+          },
+          {
+            "index": "skill-deception",
+            "name": "Skill: Deception",
+            "url": "/api/proficiencies/skill-deception"
+          },
+          {
+            "index": "skill-insight",
+            "name": "Skill: Insight",
+            "url": "/api/proficiencies/skill-insight"
+          },
+          {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation",
+            "url": "/api/proficiencies/skill-intimidation"
+          },
+          {
+            "index": "skill-investigation",
+            "name": "Skill: Investigation",
+            "url": "/api/proficiencies/skill-investigation"
+          },
+          {
+            "index": "skill-perception",
+            "name": "Skill: Perception",
+            "url": "/api/proficiencies/skill-perception"
+          },
+          {
+            "index": "skill-performance",
+            "name": "Skill: Performance",
+            "url": "/api/proficiencies/skill-performance"
+          },
+          {
+            "index": "skill-persuasion",
+            "name": "Skill: Persuasion",
+            "url": "/api/proficiencies/skill-persuasion"
+          },
+          {
+            "index": "skill-sleight-of-hand",
+            "name": "Skill: Sleight of Hand",
+            "url": "/api/proficiencies/skill-sleight-of-hand"
+          },
+          {
+            "index": "skill-stealth",
+            "name": "Skill: Stealth",
+            "url": "/api/proficiencies/skill-stealth"
+          }
+        ]
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Light Armor",
+        "url": "/api/proficiencies/light-armor"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/proficiencies/simple-weapons"
+      },
+      {
+        "index": "longswords",
+        "name": "Longswords",
+        "url": "/api/proficiencies/longswords"
+      },
+      {
+        "index": "rapiers",
+        "name": "Rapiers",
+        "url": "/api/proficiencies/rapiers"
+      },
+      {
+        "index": "shortswords",
+        "name": "Shortswords",
+        "url": "/api/proficiencies/shortswords"
+      },
+      {
+        "index": "hand-crossbows",
+        "name": "Hand crossbows",
+        "url": "/api/proficiencies/hand-crossbows"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/proficiencies/thieves-tools"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/ability-scores/int"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "thieves-tools",
+          "name": "Thieves' Tools",
+          "url": "/api/equipment/thieves-tools"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "rapier",
+              "name": "Rapier",
+              "url": "/api/equipment/rapier"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "shortsword",
+              "name": "Shortsword",
+              "url": "/api/equipment/shortsword"
+            },
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "shortsword",
+              "name": "Shortsword",
+              "url": "/api/equipment/shortsword"
+            },
+            "quantity": 1
+          },
+          {
+            "0": {
+              "equipment": {
+                "index": "shortbow",
+                "name": "Shortbow",
+                "url": "/api/equipment/shortbow"
+              },
+              "quantity": 1
+            },
+            "1": {
+              "equipment": {
+                "index": "arrow",
+                "name": "Arrow",
+                "url": "/api/equipment/arrow"
+              },
+              "quantity": 20
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "burglars-pack",
+              "name": "Burglar's Pack",
+              "url": "/api/equipment/burglars-pack"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "dungeoneers-pack",
+              "name": "Dungeoneer's Pack",
+              "url": "/api/equipment/dungeoneers-pack"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "explorers-pack",
+              "name": "Explorer's Pack",
+              "url": "/api/equipment/explorers-pack"
+            },
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "class_levels": "/api/classes/rogue/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/ability-scores/dex"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light Armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "thieves-tools",
+          "name": "Thieves' Tools",
+          "url": "/api/proficiencies/thieves-tools"
+        }
+      ],
+      "proficiency_choices": [
+        {
+          "choose": 1,
+          "type": "proficiencies",
+          "from": [
+            {
+              "index": "skill-acrobatics",
+              "name": "Skill: Acrobatics",
+              "url": "/api/proficiencies/skill-acrobatics"
+            },
+            {
+              "index": "skill-athletics",
+              "name": "Skill: Athletics",
+              "url": "/api/proficiencies/skill-athletics"
+            },
+            {
+              "index": "skill-deception",
+              "name": "Skill: Deception",
+              "url": "/api/proficiencies/skill-deception"
+            },
+            {
+              "index": "skill-insight",
+              "name": "Skill: Insight",
+              "url": "/api/proficiencies/skill-insight"
+            },
+            {
+              "index": "skill-intimidation",
+              "name": "Skill: Intimidation",
+              "url": "/api/proficiencies/skill-intimidation"
+            },
+            {
+              "index": "skill-investigation",
+              "name": "Skill: Investigation",
+              "url": "/api/proficiencies/skill-investigation"
+            },
+            {
+              "index": "skill-perception",
+              "name": "Skill: Perception",
+              "url": "/api/proficiencies/skill-perception"
+            },
+            {
+              "index": "skill-performance",
+              "name": "Skill: Performance",
+              "url": "/api/proficiencies/skill-performance"
+            },
+            {
+              "index": "skill-persuasion",
+              "name": "Skill: Persuasion",
+              "url": "/api/proficiencies/skill-persuasion"
+            },
+            {
+              "index": "skill-sleight-of-hand",
+              "name": "Skill: Sleight of Hand",
+              "url": "/api/proficiencies/skill-sleight-of-hand"
+            },
+            {
+              "index": "skill-stealth",
+              "name": "Skill: Stealth",
+              "url": "/api/proficiencies/skill-stealth"
+            }
+          ]
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "thief",
+        "name": "Thief",
+        "url": "/api/subclasses/thief"
+      }
+    ],
+    "url": "/api/classes/rogue"
+  },
+  "https://www.dnd5eapi.co/api/classes/barbarian": {
+    "index": "barbarian",
+    "name": "Barbarian",
+    "hit_die": 12,
+    "proficiency_choices": [
+      {
+        "choose": 2,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "skill-animal-handling",
+            "name": "Skill: Animal Handling",
+            "url": "/api/proficiencies/skill-animal-handling"
+          },
+          {
+            "index": "skill-athletics",
+            "name": "Skill: Athletics",
+            "url": "/api/proficiencies/skill-athletics"
+          },
+          {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation",
+            "url": "/api/proficiencies/skill-intimidation"
+          },
+          {
+            "index": "skill-nature",
+            "name": "Skill: Nature",
+            "url": "/api/proficiencies/skill-nature"
+          },
+          {
+            "index": "skill-perception",
+            "name": "Skill: Perception",
+            "url": "/api/proficiencies/skill-perception"
+          },
+          {
+            "index": "skill-survival",
+            "name": "Skill: Survival",
+            "url": "/api/proficiencies/skill-survival"
+          }
+        ]
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Light Armor",
+        "url": "/api/proficiencies/light-armor"
+      },
+      {
+        "index": "medium-armor",
+        "name": "Medium Armor",
+        "url": "/api/proficiencies/medium-armor"
+      },
+      {
+        "index": "shields",
+        "name": "Shields",
+        "url": "/api/proficiencies/shields"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/proficiencies/simple-weapons"
+      },
+      {
+        "index": "martial-weapons",
+        "name": "Martial Weapons",
+        "url": "/api/proficiencies/martial-weapons"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/ability-scores/str"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/ability-scores/con"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "explorers-pack",
+          "name": "Explorer's Pack",
+          "url": "/api/equipment/explorers-pack"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "javelin",
+          "name": "Javelin",
+          "url": "/api/equipment/javelin"
+        },
+        "quantity": 4
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "greataxe",
+              "name": "Greataxe",
+              "url": "/api/equipment/greataxe"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "martial-melee-weapons",
+                  "name": "Martial Melee Weapons",
+                  "url": "/api/equipment-categories/martial-melee-weapons"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "handaxe",
+              "name": "Handaxe",
+              "url": "/api/equipment/handaxe"
+            },
+            "quantity": 2
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "simple-weapons",
+                  "name": "Simple Weapons",
+                  "url": "/api/equipment-categories/simple-weapons"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "class_levels": "/api/classes/barbarian/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "shields",
+          "name": "Shields",
+          "url": "/api/proficiencies/shields"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple Weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        },
+        {
+          "index": "martial-weapons",
+          "name": "Martial Weapons",
+          "url": "/api/proficiencies/martial-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "berserker",
+        "name": "Berserker",
+        "url": "/api/subclasses/berserker"
+      }
+    ],
+    "url": "/api/classes/barbarian"
+  },
+  "https://www.dnd5eapi.co/api/classes/fighter": {
     "index": "fighter",
     "name": "Fighter",
     "hit_die": 10,
@@ -597,19 +1658,181 @@
     ],
     "url": "/api/classes/fighter"
   },
-  {
-    "index": "wizard",
-    "name": "Wizard",
-    "hit_die": 6,
+  "https://www.dnd5eapi.co/api/classes/monk": {
+    "index": "monk",
+    "name": "Monk",
+    "hit_die": 8,
     "proficiency_choices": [
+      {
+        "choose": 1,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "alchemists-supplies",
+            "name": "Alchemist's Supplies",
+            "url": "/api/proficiencies/alchemists-supplies"
+          },
+          {
+            "index": "brewers-supplies",
+            "name": "Brewer's Supplies",
+            "url": "/api/proficiencies/brewers-supplies"
+          },
+          {
+            "index": "calligraphers-supplies",
+            "name": "Calligrapher's Supplies",
+            "url": "/api/proficiencies/calligraphers-supplies"
+          },
+          {
+            "index": "carpenters-tools",
+            "name": "Carpenter's Tools",
+            "url": "/api/proficiencies/carpenters-tools"
+          },
+          {
+            "index": "cartographers-tools",
+            "name": "Cartographer's Tools",
+            "url": "/api/proficiencies/cartographers-tools"
+          },
+          {
+            "index": "cobblers-tools",
+            "name": "Cobbler's Tools",
+            "url": "/api/proficiencies/cobblers-tools"
+          },
+          {
+            "index": "cooks-utensils",
+            "name": "Cook's utensils",
+            "url": "/api/proficiencies/cooks-utensils"
+          },
+          {
+            "index": "glassblowers-tools",
+            "name": "Glassblower's Tools",
+            "url": "/api/proficiencies/glassblowers-tools"
+          },
+          {
+            "index": "jewelers-tools",
+            "name": "Jeweler's Tools",
+            "url": "/api/proficiencies/jewelers-tools"
+          },
+          {
+            "index": "leatherworkers-tools",
+            "name": "Leatherworker's Tools",
+            "url": "/api/proficiencies/leatherworkers-tools"
+          },
+          {
+            "index": "masons-tools",
+            "name": "Mason's Tools",
+            "url": "/api/proficiencies/masons-tools"
+          },
+          {
+            "index": "painters-supplies",
+            "name": "Painter's Supplies",
+            "url": "/api/proficiencies/painters-supplies"
+          },
+          {
+            "index": "potters-tools",
+            "name": "Potter's Tools",
+            "url": "/api/proficiencies/potters-tools"
+          },
+          {
+            "index": "smiths-tools",
+            "name": "Smith's Tools",
+            "url": "/api/proficiencies/smiths-tools"
+          },
+          {
+            "index": "tinkers-tools",
+            "name": "Tinker's Tools",
+            "url": "/api/proficiencies/tinkers-tools"
+          },
+          {
+            "index": "weavers-tools",
+            "name": "Weaver's Tools",
+            "url": "/api/proficiencies/weavers-tools"
+          },
+          {
+            "index": "woodcarvers-tools",
+            "name": "Woodcarver's Tools",
+            "url": "/api/proficiencies/woodcarvers-tools"
+          },
+          {
+            "index": "disguise-kit",
+            "name": "Disguise Kit",
+            "url": "/api/proficiencies/disguise-kit"
+          },
+          {
+            "index": "forgery-kit",
+            "name": "Forgery Kit",
+            "url": "/api/proficiencies/forgery-kit"
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "bagpipes",
+            "name": "Bagpipes",
+            "url": "/api/proficiencies/bagpipes"
+          },
+          {
+            "index": "drum",
+            "name": "Drum",
+            "url": "/api/proficiencies/drum"
+          },
+          {
+            "index": "dulcimer",
+            "name": "Dulcimer",
+            "url": "/api/proficiencies/dulcimer"
+          },
+          {
+            "index": "flute",
+            "name": "Flute",
+            "url": "/api/proficiencies/flute"
+          },
+          {
+            "index": "lute",
+            "name": "Lute",
+            "url": "/api/proficiencies/lute"
+          },
+          {
+            "index": "lyre",
+            "name": "Lyre",
+            "url": "/api/proficiencies/lyre"
+          },
+          {
+            "index": "horn",
+            "name": "Horn",
+            "url": "/api/proficiencies/horn"
+          },
+          {
+            "index": "pan-flute",
+            "name": "Pan flute",
+            "url": "/api/proficiencies/pan-flute"
+          },
+          {
+            "index": "shawm",
+            "name": "Shawm",
+            "url": "/api/proficiencies/shawm"
+          },
+          {
+            "index": "viol",
+            "name": "Viol",
+            "url": "/api/proficiencies/viol"
+          }
+        ]
+      },
       {
         "choose": 2,
         "type": "proficiencies",
         "from": [
           {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
+            "index": "skill-acrobatics",
+            "name": "Skill: Acrobatics",
+            "url": "/api/proficiencies/skill-acrobatics"
+          },
+          {
+            "index": "skill-athletics",
+            "name": "Skill: Athletics",
+            "url": "/api/proficiencies/skill-athletics"
           },
           {
             "index": "skill-history",
@@ -622,282 +1845,28 @@
             "url": "/api/proficiencies/skill-insight"
           },
           {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
             "index": "skill-religion",
             "name": "Skill: Religion",
             "url": "/api/proficiencies/skill-religion"
+          },
+          {
+            "index": "skill-stealth",
+            "name": "Skill: Stealth",
+            "url": "/api/proficiencies/skill-stealth"
           }
         ]
       }
     ],
     "proficiencies": [
-      {
-        "index": "daggers",
-        "name": "Daggers",
-        "url": "/api/proficiencies/daggers"
-      },
-      {
-        "index": "quarterstaffs",
-        "name": "Quarterstaffs",
-        "url": "/api/proficiencies/quarterstaffs"
-      },
-      {
-        "index": "darts",
-        "name": "Darts",
-        "url": "/api/proficiencies/darts"
-      },
-      {
-        "index": "slings",
-        "name": "Slings",
-        "url": "/api/proficiencies/slings"
-      }
-    ],
-    "saving_throws": [
-      {
-        "index": "int",
-        "name": "INT",
-        "url": "/api/ability-scores/int"
-      },
-      {
-        "index": "wis",
-        "name": "WIS",
-        "url": "/api/ability-scores/wis"
-      }
-    ],
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "spellbook",
-          "name": "Spellbook",
-          "url": "/api/equipment/spellbook"
-        },
-        "quantity": 1
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dagger",
-              "name": "Dagger",
-              "url": "/api/equipment/dagger"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "quarterstaff",
-              "name": "Quarterstaff",
-              "url": "/api/equipment/quarterstaff"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "component-pouch",
-              "name": "Component pouch",
-              "url": "/api/equipment/component-pouch"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "arcane-foci",
-                  "name": "Arcane Foci",
-                  "url": "/api/equipment-categories/arcane-foci"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scholars-pack",
-              "name": "Scholar's Pack",
-              "url": "/api/equipment/scholars-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      }
-    ],
-    "class_levels": "/api/classes/wizard/levels",
-    "multi_classing": {
-      "prerequisites": [
-        {
-          "ability_score": {
-            "index": "int",
-            "name": "INT",
-            "url": "/api/ability-scores/int"
-          },
-          "minimum_score": 13
-        }
-      ],
-      "proficiencies": []
-    },
-    "subclasses": [
-      {
-        "index": "evocation",
-        "name": "Evocation",
-        "url": "/api/subclasses/evocation"
-      }
-    ],
-    "spellcasting": {
-      "level": 1,
-      "spellcasting_ability": {
-        "index": "int",
-        "name": "INT",
-        "url": "/api/ability-scores/int"
-      },
-      "info": [
-        {
-          "desc": [
-            "At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table."
-          ],
-          "name": "Cantrips"
-        },
-        {
-          "desc": [
-            "At 1st level, you have a spellbook containing six 1st- level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind."
-          ],
-          "name": "Spellbook"
-        },
-        {
-          "desc": [
-            "The Wizard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-            "You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-            "For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
-          ],
-          "name": "Preparing and Casting Spells"
-        },
-        {
-          "desc": [
-            "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-            "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier.",
-            "Spell attack modifier = your proficiency bonus + your Intelligence modifier."
-          ],
-          "name": "Spellcasting Ability"
-        },
-        {
-          "desc": [
-            "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
-          ],
-          "name": "Ritual Casting"
-        },
-        {
-          "desc": [
-            "You can use an arcane focus as a spellcasting focus for your wizard spells."
-          ],
-          "name": "Spellcasting Focus"
-        }
-      ]
-    },
-    "spells": "/api/classes/wizard/spells",
-    "url": "/api/classes/wizard"
-  },
-  {
-    "index": "barbarian",
-    "name": "Barbarian",
-    "hit_die": 12,
-    "proficiency_choices": [
-      {
-        "choose": 2,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
-          }
-        ]
-      }
-    ],
-    "proficiencies": [
-      {
-        "index": "light-armor",
-        "name": "Light Armor",
-        "url": "/api/proficiencies/light-armor"
-      },
-      {
-        "index": "medium-armor",
-        "name": "Medium Armor",
-        "url": "/api/proficiencies/medium-armor"
-      },
-      {
-        "index": "shields",
-        "name": "Shields",
-        "url": "/api/proficiencies/shields"
-      },
       {
         "index": "simple-weapons",
         "name": "Simple Weapons",
         "url": "/api/proficiencies/simple-weapons"
       },
       {
-        "index": "martial-weapons",
-        "name": "Martial Weapons",
-        "url": "/api/proficiencies/martial-weapons"
+        "index": "shortswords",
+        "name": "Shortswords",
+        "url": "/api/proficiencies/shortswords"
       }
     ],
     "saving_throws": [
@@ -907,27 +1876,19 @@
         "url": "/api/ability-scores/str"
       },
       {
-        "index": "con",
-        "name": "CON",
-        "url": "/api/ability-scores/con"
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/ability-scores/dex"
       }
     ],
     "starting_equipment": [
       {
         "equipment": {
-          "index": "explorers-pack",
-          "name": "Explorer's Pack",
-          "url": "/api/equipment/explorers-pack"
+          "index": "dart",
+          "name": "Dart",
+          "url": "/api/equipment/dart"
         },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "javelin",
-          "name": "Javelin",
-          "url": "/api/equipment/javelin"
-        },
-        "quantity": 4
+        "quantity": 10
       }
     ],
     "starting_equipment_options": [
@@ -937,9 +1898,9 @@
         "from": [
           {
             "equipment": {
-              "index": "greataxe",
-              "name": "Greataxe",
-              "url": "/api/equipment/greataxe"
+              "index": "shortsword",
+              "name": "Shortsword",
+              "url": "/api/equipment/shortsword"
             },
             "quantity": 1
           },
@@ -949,229 +1910,6 @@
               "type": "equipment",
               "from": {
                 "equipment_category": {
-                  "index": "martial-melee-weapons",
-                  "name": "Martial Melee Weapons",
-                  "url": "/api/equipment-categories/martial-melee-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "handaxe",
-              "name": "Handaxe",
-              "url": "/api/equipment/handaxe"
-            },
-            "quantity": 2
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "class_levels": "/api/classes/barbarian/levels",
-    "multi_classing": {
-      "prerequisites": [
-        {
-          "ability_score": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
-          },
-          "minimum_score": 13
-        }
-      ],
-      "proficiencies": [
-        {
-          "index": "shields",
-          "name": "Shields",
-          "url": "/api/proficiencies/shields"
-        },
-        {
-          "index": "simple-weapons",
-          "name": "Simple Weapons",
-          "url": "/api/proficiencies/simple-weapons"
-        },
-        {
-          "index": "martial-weapons",
-          "name": "Martial Weapons",
-          "url": "/api/proficiencies/martial-weapons"
-        }
-      ]
-    },
-    "subclasses": [
-      {
-        "index": "berserker",
-        "name": "Berserker",
-        "url": "/api/subclasses/berserker"
-      }
-    ],
-    "url": "/api/classes/barbarian"
-  },
-  {
-    "index": "paladin",
-    "name": "Paladin",
-    "hit_die": 10,
-    "proficiency_choices": [
-      {
-        "choose": 2,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-medicine",
-            "name": "Skill: Medicine",
-            "url": "/api/proficiencies/skill-medicine"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
-      }
-    ],
-    "proficiencies": [
-      {
-        "index": "all-armor",
-        "name": "All armor",
-        "url": "/api/proficiencies/all-armor"
-      },
-      {
-        "index": "shields",
-        "name": "Shields",
-        "url": "/api/proficiencies/shields"
-      },
-      {
-        "index": "simple-weapons",
-        "name": "Simple Weapons",
-        "url": "/api/proficiencies/simple-weapons"
-      },
-      {
-        "index": "martial-weapons",
-        "name": "Martial Weapons",
-        "url": "/api/proficiencies/martial-weapons"
-      }
-    ],
-    "saving_throws": [
-      {
-        "index": "wis",
-        "name": "WIS",
-        "url": "/api/ability-scores/wis"
-      },
-      {
-        "index": "cha",
-        "name": "CHA",
-        "url": "/api/ability-scores/cha"
-      }
-    ],
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "chain-mail",
-          "name": "Chain Mail",
-          "url": "/api/equipment/chain-mail"
-        },
-        "quantity": 1
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "0": {
-              "equipment": {
-                "index": "shield",
-                "name": "Shield",
-                "url": "/api/equipment/shield"
-              },
-              "quantity": 1
-            },
-            "1": {
-              "equipment_option": {
-                "choose": 1,
-                "type": "equipment",
-                "from": {
-                  "equipment_category": {
-                    "name": "Martial Weapons",
-                    "index": "martial-weapons",
-                    "url": "/api/equipment-categories/martial-weapons"
-                  }
-                }
-              }
-            }
-          },
-          {
-            "equipment_option": {
-              "choose": 2,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "martial-weapons",
-                  "name": "Martial Weapons",
-                  "url": "/api/equipment-categories/martial-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "javelin",
-              "name": "Javelin",
-              "url": "/api/equipment/javelin"
-            },
-            "quantity": 5
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
                   "index": "simple-weapons",
                   "name": "Simple Weapons",
                   "url": "/api/equipment-categories/simple-weapons"
@@ -1187,9 +1925,9 @@
         "from": [
           {
             "equipment": {
-              "index": "priests-pack",
-              "name": "Priest's Pack",
-              "url": "/api/equipment/priests-pack"
+              "index": "dungeoneers-pack",
+              "name": "Dungeoneer's Pack",
+              "url": "/api/equipment/dungeoneers-pack"
             },
             "quantity": 1
           },
@@ -1202,113 +1940,51 @@
             "quantity": 1
           }
         ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment_category": {
-              "index": "holy-symbols",
-              "name": "Holy Symbols",
-              "url": "/api/equipment-categories/holy-symbols"
-            }
-          }
-        ]
       }
     ],
-    "class_levels": "/api/classes/paladin/levels",
+    "class_levels": "/api/classes/monk/levels",
     "multi_classing": {
       "prerequisites": [
         {
           "ability_score": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/ability-scores/dex"
           },
           "minimum_score": 13
         },
         {
           "ability_score": {
-            "index": "cha",
-            "name": "CHA",
-            "url": "/api/ability-scores/cha"
+            "index": "wis",
+            "name": "WIS",
+            "url": "/api/ability-scores/wis"
           },
           "minimum_score": 13
         }
       ],
       "proficiencies": [
         {
-          "index": "light-armor",
-          "name": "Light Armor",
-          "url": "/api/proficiencies/light-armor"
-        },
-        {
-          "index": "medium-armor",
-          "name": "Medium Armor",
-          "url": "/api/proficiencies/medium-armor"
-        },
-        {
-          "index": "shields",
-          "name": "Shields",
-          "url": "/api/proficiencies/shields"
-        },
-        {
           "index": "simple-weapons",
           "name": "Simple Weapons",
           "url": "/api/proficiencies/simple-weapons"
         },
         {
-          "index": "martial-weapons",
-          "name": "Martial Weapons",
-          "url": "/api/proficiencies/martial-weapons"
+          "index": "shortswords",
+          "name": "Shortswords",
+          "url": "/api/proficiencies/shortswords"
         }
       ]
     },
     "subclasses": [
       {
-        "index": "devotion",
-        "name": "Devotion",
-        "url": "/api/subclasses/devotion"
+        "index": "open-hand",
+        "name": "Open Hand",
+        "url": "/api/subclasses/open-hand"
       }
     ],
-    "spellcasting": {
-      "level": 2,
-      "spellcasting_ability": {
-        "index": "cha",
-        "name": "CHA",
-        "url": "/api/ability-scores/cha"
-      },
-      "info": [
-        {
-          "desc": [
-            "The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-            "You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
-            "For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
-          ],
-          "name": "Preparing and Casting Spells"
-        },
-        {
-          "desc": [
-            "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.",
-            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
-            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
-          ],
-          "name": "Spellcasting Ability"
-        },
-        {
-          "desc": [
-            "You can use a holy symbol as a spellcasting focus for your paladin spells."
-          ],
-          "name": "Spellcasting Focus"
-        }
-      ]
-    },
-    "spells": "/api/classes/paladin/spells",
-    "url": "/api/classes/paladin"
+    "url": "/api/classes/monk"
   },
-  {
+  "https://www.dnd5eapi.co/api/classes/sorcerer": {
     "index": "sorcerer",
     "name": "Sorcerer",
     "hit_die": 6,
@@ -1551,278 +2227,7 @@
     "spells": "/api/classes/sorcerer/spells",
     "url": "/api/classes/sorcerer"
   },
-  {
-    "index": "warlock",
-    "name": "Warlock",
-    "hit_die": 8,
-    "proficiency_choices": [
-      {
-        "choose": 2,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          }
-        ]
-      }
-    ],
-    "proficiencies": [
-      {
-        "index": "light-armor",
-        "name": "Light Armor",
-        "url": "/api/proficiencies/light-armor"
-      },
-      {
-        "index": "simple-weapons",
-        "name": "Simple Weapons",
-        "url": "/api/proficiencies/simple-weapons"
-      }
-    ],
-    "saving_throws": [
-      {
-        "index": "wis",
-        "name": "WIS",
-        "url": "/api/ability-scores/wis"
-      },
-      {
-        "index": "cha",
-        "name": "CHA",
-        "url": "/api/ability-scores/cha"
-      }
-    ],
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "dagger",
-          "name": "Dagger",
-          "url": "/api/equipment/dagger"
-        },
-        "quantity": 2
-      },
-      {
-        "equipment": {
-          "index": "leather-armor",
-          "name": "Leather Armor",
-          "url": "/api/equipment/leather-armor"
-        },
-        "quantity": 1
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "0": {
-              "equipment": {
-                "index": "crossbow-light",
-                "name": "Crossbow, light",
-                "url": "/api/equipment/crossbow-light"
-              },
-              "quantity": 1
-            },
-            "1": {
-              "equipment": {
-                "index": "crossbow-bolt",
-                "name": "Crossbow bolt",
-                "url": "/api/equipment/crossbow-bolt"
-              },
-              "quantity": 20
-            }
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "component-pouch",
-              "name": "Component pouch",
-              "url": "/api/equipment/component-pouch"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "arcane-foci",
-                  "name": "Arcane Foci",
-                  "url": "/api/equipment-categories/arcane-foci"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "scholars-pack",
-              "name": "Scholar's Pack",
-              "url": "/api/equipment/scholars-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment_category": {
-              "index": "simple-weapons",
-              "name": "Simple Weapons",
-              "url": "/api/equipment-categories/simple-weapons"
-            }
-          }
-        ]
-      }
-    ],
-    "class_levels": "/api/classes/warlock/levels",
-    "multi_classing": {
-      "prerequisites": [
-        {
-          "ability_score": {
-            "index": "cha",
-            "name": "CHA",
-            "url": "/api/ability-scores/cha"
-          },
-          "minimum_score": 13
-        }
-      ],
-      "proficiencies": [
-        {
-          "index": "light-armor",
-          "name": "Light Armor",
-          "url": "/api/proficiencies/light-armor"
-        },
-        {
-          "index": "simple-weapons",
-          "name": "Simple Weapons",
-          "url": "/api/proficiencies/simple-weapons"
-        }
-      ]
-    },
-    "subclasses": [
-      {
-        "index": "fiend",
-        "name": "Fiend",
-        "url": "/api/subclasses/fiend"
-      }
-    ],
-    "spellcasting": {
-      "level": 1,
-      "spellcasting_ability": {
-        "index": "cha",
-        "name": "CHA",
-        "url": "/api/ability-scores/cha"
-      },
-      "info": [
-        {
-          "desc": [
-            "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
-          ],
-          "name": "Cantrips"
-        },
-        {
-          "desc": [
-            "The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
-            "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
-          ],
-          "name": "Spell Slots"
-        },
-        {
-          "desc": [
-            "At 1st level, you know two 1st-level spells of your choice from the warlock spell list.",
-            "The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. ",
-            "A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
-            "Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
-          ],
-          "name": "Spells Known of 1st Level and Higher"
-        },
-        {
-          "desc": [
-            "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
-            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
-            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
-          ],
-          "name": "Spellcasting Ability"
-        },
-        {
-          "desc": [
-            "You can use an arcane focus as a spellcasting focus for your warlock spells."
-          ],
-          "name": "Spellcasting Focus"
-        }
-      ]
-    },
-    "spells": "/api/classes/warlock/spells",
-    "url": "/api/classes/warlock"
-  },
-  {
+  "https://www.dnd5eapi.co/api/classes/bard": {
     "index": "bard",
     "name": "Bard",
     "hit_die": 8,
@@ -2364,24 +2769,19 @@
     "spells": "/api/classes/bard/spells",
     "url": "/api/classes/bard"
   },
-  {
-    "index": "druid",
-    "name": "Druid",
-    "hit_die": 8,
+  "https://www.dnd5eapi.co/api/classes/paladin": {
+    "index": "paladin",
+    "name": "Paladin",
+    "hit_die": 10,
     "proficiency_choices": [
       {
         "choose": 2,
         "type": "proficiencies",
         "from": [
           {
-            "index": "skill-animal-handling",
-            "name": "Skill: Animal Handling",
-            "url": "/api/proficiencies/skill-animal-handling"
-          },
-          {
-            "index": "skill-arcana",
-            "name": "Skill: Arcana",
-            "url": "/api/proficiencies/skill-arcana"
+            "index": "skill-athletics",
+            "name": "Skill: Athletics",
+            "url": "/api/proficiencies/skill-athletics"
           },
           {
             "index": "skill-insight",
@@ -2389,43 +2789,33 @@
             "url": "/api/proficiencies/skill-insight"
           },
           {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation",
+            "url": "/api/proficiencies/skill-intimidation"
+          },
+          {
             "index": "skill-medicine",
             "name": "Skill: Medicine",
             "url": "/api/proficiencies/skill-medicine"
           },
           {
-            "index": "skill-nature",
-            "name": "Skill: Nature",
-            "url": "/api/proficiencies/skill-nature"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
+            "index": "skill-persuasion",
+            "name": "Skill: Persuasion",
+            "url": "/api/proficiencies/skill-persuasion"
           },
           {
             "index": "skill-religion",
             "name": "Skill: Religion",
             "url": "/api/proficiencies/skill-religion"
-          },
-          {
-            "index": "skill-survival",
-            "name": "Skill: Survival",
-            "url": "/api/proficiencies/skill-survival"
           }
         ]
       }
     ],
     "proficiencies": [
       {
-        "index": "light-armor",
-        "name": "Light Armor",
-        "url": "/api/proficiencies/light-armor"
-      },
-      {
-        "index": "medium-armor",
-        "name": "Medium Armor",
-        "url": "/api/proficiencies/medium-armor"
+        "index": "all-armor",
+        "name": "All armor",
+        "url": "/api/proficiencies/all-armor"
       },
       {
         "index": "shields",
@@ -2433,87 +2823,34 @@
         "url": "/api/proficiencies/shields"
       },
       {
-        "index": "clubs",
-        "name": "Clubs",
-        "url": "/api/proficiencies/clubs"
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/proficiencies/simple-weapons"
       },
       {
-        "index": "daggers",
-        "name": "Daggers",
-        "url": "/api/proficiencies/daggers"
-      },
-      {
-        "index": "javelins",
-        "name": "Javelins",
-        "url": "/api/proficiencies/javelins"
-      },
-      {
-        "index": "maces",
-        "name": "Maces",
-        "url": "/api/proficiencies/maces"
-      },
-      {
-        "index": "quarterstaffs",
-        "name": "Quarterstaffs",
-        "url": "/api/proficiencies/quarterstaffs"
-      },
-      {
-        "index": "sickles",
-        "name": "Sickles",
-        "url": "/api/proficiencies/sickles"
-      },
-      {
-        "index": "spears",
-        "name": "Spears",
-        "url": "/api/proficiencies/spears"
-      },
-      {
-        "index": "darts",
-        "name": "Darts",
-        "url": "/api/proficiencies/darts"
-      },
-      {
-        "index": "slings",
-        "name": "Slings",
-        "url": "/api/proficiencies/slings"
-      },
-      {
-        "index": "scimitars",
-        "name": "Scimitars",
-        "url": "/api/proficiencies/scimitars"
-      },
-      {
-        "index": "herbalism-kit",
-        "name": "Herbalism Kit",
-        "url": "/api/proficiencies/herbalism-kit"
+        "index": "martial-weapons",
+        "name": "Martial Weapons",
+        "url": "/api/proficiencies/martial-weapons"
       }
     ],
     "saving_throws": [
       {
-        "index": "int",
-        "name": "INT",
-        "url": "/api/ability-scores/int"
-      },
-      {
         "index": "wis",
         "name": "WIS",
         "url": "/api/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
       }
     ],
     "starting_equipment": [
       {
         "equipment": {
-          "index": "leather-armor",
-          "name": "Leather Armor",
-          "url": "/api/equipment/leather-armor"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "explorers-pack",
-          "name": "Explorer's Pack",
-          "url": "/api/equipment/explorers-pack"
+          "index": "chain-mail",
+          "name": "Chain Mail",
+          "url": "/api/equipment/chain-mail"
         },
         "quantity": 1
       }
@@ -2524,12 +2861,54 @@
         "type": "equipment",
         "from": [
           {
-            "equipment": {
-              "index": "shield",
-              "name": "Shield",
-              "url": "/api/equipment/shield"
+            "0": {
+              "equipment": {
+                "index": "shield",
+                "name": "Shield",
+                "url": "/api/equipment/shield"
+              },
+              "quantity": 1
             },
-            "quantity": 1
+            "1": {
+              "equipment_option": {
+                "choose": 1,
+                "type": "equipment",
+                "from": {
+                  "equipment_category": {
+                    "name": "Martial Weapons",
+                    "index": "martial-weapons",
+                    "url": "/api/equipment-categories/martial-weapons"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "equipment_option": {
+              "choose": 2,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "martial-weapons",
+                  "name": "Martial Weapons",
+                  "url": "/api/equipment-categories/martial-weapons"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "javelin",
+              "name": "Javelin",
+              "url": "/api/equipment/javelin"
+            },
+            "quantity": 5
           },
           {
             "equipment_option": {
@@ -2552,24 +2931,19 @@
         "from": [
           {
             "equipment": {
-              "index": "scimitar",
-              "name": "Scimitar",
-              "url": "/api/equipment/scimitar"
+              "index": "priests-pack",
+              "name": "Priest's Pack",
+              "url": "/api/equipment/priests-pack"
             },
             "quantity": 1
           },
           {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
+            "equipment": {
+              "index": "explorers-pack",
+              "name": "Explorer's Pack",
+              "url": "/api/equipment/explorers-pack"
+            },
+            "quantity": 1
           }
         ]
       },
@@ -2579,22 +2953,30 @@
         "from": [
           {
             "equipment_category": {
-              "index": "druidic-foci",
-              "name": "Druidic Foci",
-              "url": "/api/equipment-categories/druidic-foci"
+              "index": "holy-symbols",
+              "name": "Holy Symbols",
+              "url": "/api/equipment-categories/holy-symbols"
             }
           }
         ]
       }
     ],
-    "class_levels": "/api/classes/druid/levels",
+    "class_levels": "/api/classes/paladin/levels",
     "multi_classing": {
       "prerequisites": [
         {
           "ability_score": {
-            "index": "wis",
-            "name": "WIS",
-            "url": "/api/ability-scores/wis"
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "minimum_score": 13
+        },
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
           },
           "minimum_score": 13
         }
@@ -2614,716 +2996,63 @@
           "index": "shields",
           "name": "Shields",
           "url": "/api/proficiencies/shields"
-        }
-      ]
-    },
-    "subclasses": [
-      {
-        "index": "land",
-        "name": "Land",
-        "url": "/api/subclasses/land"
-      }
-    ],
-    "spellcasting": {
-      "level": 1,
-      "spellcasting_ability": {
-        "index": "wis",
-        "name": "WIS",
-        "url": "/api/ability-scores/wis"
-      },
-      "info": [
-        {
-          "desc": [
-            "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
-          ],
-          "name": "Cantrips"
         },
-        {
-          "desc": [
-            "The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-            "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-            "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-            "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
-          ],
-          "name": "Preparing and Casting Spells"
-        },
-        {
-          "desc": [
-            "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
-            "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.",
-            "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
-          ],
-          "name": "Spellcasting Ability"
-        },
-        {
-          "desc": [
-            "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
-          ],
-          "name": "Ritual Casting"
-        },
-        {
-          "desc": [
-            "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells."
-          ],
-          "name": "Spellcasting Focus"
-        }
-      ]
-    },
-    "spells": "/api/classes/druid/spells",
-    "url": "/api/classes/druid"
-  },
-  {
-    "index": "monk",
-    "name": "Monk",
-    "hit_die": 8,
-    "proficiency_choices": [
-      {
-        "choose": 1,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "alchemists-supplies",
-            "name": "Alchemist's Supplies",
-            "url": "/api/proficiencies/alchemists-supplies"
-          },
-          {
-            "index": "brewers-supplies",
-            "name": "Brewer's Supplies",
-            "url": "/api/proficiencies/brewers-supplies"
-          },
-          {
-            "index": "calligraphers-supplies",
-            "name": "Calligrapher's Supplies",
-            "url": "/api/proficiencies/calligraphers-supplies"
-          },
-          {
-            "index": "carpenters-tools",
-            "name": "Carpenter's Tools",
-            "url": "/api/proficiencies/carpenters-tools"
-          },
-          {
-            "index": "cartographers-tools",
-            "name": "Cartographer's Tools",
-            "url": "/api/proficiencies/cartographers-tools"
-          },
-          {
-            "index": "cobblers-tools",
-            "name": "Cobbler's Tools",
-            "url": "/api/proficiencies/cobblers-tools"
-          },
-          {
-            "index": "cooks-utensils",
-            "name": "Cook's utensils",
-            "url": "/api/proficiencies/cooks-utensils"
-          },
-          {
-            "index": "glassblowers-tools",
-            "name": "Glassblower's Tools",
-            "url": "/api/proficiencies/glassblowers-tools"
-          },
-          {
-            "index": "jewelers-tools",
-            "name": "Jeweler's Tools",
-            "url": "/api/proficiencies/jewelers-tools"
-          },
-          {
-            "index": "leatherworkers-tools",
-            "name": "Leatherworker's Tools",
-            "url": "/api/proficiencies/leatherworkers-tools"
-          },
-          {
-            "index": "masons-tools",
-            "name": "Mason's Tools",
-            "url": "/api/proficiencies/masons-tools"
-          },
-          {
-            "index": "painters-supplies",
-            "name": "Painter's Supplies",
-            "url": "/api/proficiencies/painters-supplies"
-          },
-          {
-            "index": "potters-tools",
-            "name": "Potter's Tools",
-            "url": "/api/proficiencies/potters-tools"
-          },
-          {
-            "index": "smiths-tools",
-            "name": "Smith's Tools",
-            "url": "/api/proficiencies/smiths-tools"
-          },
-          {
-            "index": "tinkers-tools",
-            "name": "Tinker's Tools",
-            "url": "/api/proficiencies/tinkers-tools"
-          },
-          {
-            "index": "weavers-tools",
-            "name": "Weaver's Tools",
-            "url": "/api/proficiencies/weavers-tools"
-          },
-          {
-            "index": "woodcarvers-tools",
-            "name": "Woodcarver's Tools",
-            "url": "/api/proficiencies/woodcarvers-tools"
-          },
-          {
-            "index": "disguise-kit",
-            "name": "Disguise Kit",
-            "url": "/api/proficiencies/disguise-kit"
-          },
-          {
-            "index": "forgery-kit",
-            "name": "Forgery Kit",
-            "url": "/api/proficiencies/forgery-kit"
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "bagpipes",
-            "name": "Bagpipes",
-            "url": "/api/proficiencies/bagpipes"
-          },
-          {
-            "index": "drum",
-            "name": "Drum",
-            "url": "/api/proficiencies/drum"
-          },
-          {
-            "index": "dulcimer",
-            "name": "Dulcimer",
-            "url": "/api/proficiencies/dulcimer"
-          },
-          {
-            "index": "flute",
-            "name": "Flute",
-            "url": "/api/proficiencies/flute"
-          },
-          {
-            "index": "lute",
-            "name": "Lute",
-            "url": "/api/proficiencies/lute"
-          },
-          {
-            "index": "lyre",
-            "name": "Lyre",
-            "url": "/api/proficiencies/lyre"
-          },
-          {
-            "index": "horn",
-            "name": "Horn",
-            "url": "/api/proficiencies/horn"
-          },
-          {
-            "index": "pan-flute",
-            "name": "Pan flute",
-            "url": "/api/proficiencies/pan-flute"
-          },
-          {
-            "index": "shawm",
-            "name": "Shawm",
-            "url": "/api/proficiencies/shawm"
-          },
-          {
-            "index": "viol",
-            "name": "Viol",
-            "url": "/api/proficiencies/viol"
-          }
-        ]
-      },
-      {
-        "choose": 2,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-history",
-            "name": "Skill: History",
-            "url": "/api/proficiencies/skill-history"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-religion",
-            "name": "Skill: Religion",
-            "url": "/api/proficiencies/skill-religion"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          }
-        ]
-      }
-    ],
-    "proficiencies": [
-      {
-        "index": "simple-weapons",
-        "name": "Simple Weapons",
-        "url": "/api/proficiencies/simple-weapons"
-      },
-      {
-        "index": "shortswords",
-        "name": "Shortswords",
-        "url": "/api/proficiencies/shortswords"
-      }
-    ],
-    "saving_throws": [
-      {
-        "index": "str",
-        "name": "STR",
-        "url": "/api/ability-scores/str"
-      },
-      {
-        "index": "dex",
-        "name": "DEX",
-        "url": "/api/ability-scores/dex"
-      }
-    ],
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "dart",
-          "name": "Dart",
-          "url": "/api/equipment/dart"
-        },
-        "quantity": 10
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment_option": {
-              "choose": 1,
-              "type": "equipment",
-              "from": {
-                "equipment_category": {
-                  "index": "simple-weapons",
-                  "name": "Simple Weapons",
-                  "url": "/api/equipment-categories/simple-weapons"
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      }
-    ],
-    "class_levels": "/api/classes/monk/levels",
-    "multi_classing": {
-      "prerequisites": [
-        {
-          "ability_score": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/ability-scores/dex"
-          },
-          "minimum_score": 13
-        },
-        {
-          "ability_score": {
-            "index": "wis",
-            "name": "WIS",
-            "url": "/api/ability-scores/wis"
-          },
-          "minimum_score": 13
-        }
-      ],
-      "proficiencies": [
         {
           "index": "simple-weapons",
           "name": "Simple Weapons",
           "url": "/api/proficiencies/simple-weapons"
         },
         {
-          "index": "shortswords",
-          "name": "Shortswords",
-          "url": "/api/proficiencies/shortswords"
+          "index": "martial-weapons",
+          "name": "Martial Weapons",
+          "url": "/api/proficiencies/martial-weapons"
         }
       ]
     },
     "subclasses": [
       {
-        "index": "open-hand",
-        "name": "Open Hand",
-        "url": "/api/subclasses/open-hand"
+        "index": "devotion",
+        "name": "Devotion",
+        "url": "/api/subclasses/devotion"
       }
     ],
-    "url": "/api/classes/monk"
-  },
-  {
-    "index": "rogue",
-    "name": "Rogue",
-    "hit_die": 8,
-    "proficiency_choices": [
-      {
-        "choose": 4,
-        "type": "proficiencies",
-        "from": [
-          {
-            "index": "skill-acrobatics",
-            "name": "Skill: Acrobatics",
-            "url": "/api/proficiencies/skill-acrobatics"
-          },
-          {
-            "index": "skill-athletics",
-            "name": "Skill: Athletics",
-            "url": "/api/proficiencies/skill-athletics"
-          },
-          {
-            "index": "skill-deception",
-            "name": "Skill: Deception",
-            "url": "/api/proficiencies/skill-deception"
-          },
-          {
-            "index": "skill-insight",
-            "name": "Skill: Insight",
-            "url": "/api/proficiencies/skill-insight"
-          },
-          {
-            "index": "skill-intimidation",
-            "name": "Skill: Intimidation",
-            "url": "/api/proficiencies/skill-intimidation"
-          },
-          {
-            "index": "skill-investigation",
-            "name": "Skill: Investigation",
-            "url": "/api/proficiencies/skill-investigation"
-          },
-          {
-            "index": "skill-perception",
-            "name": "Skill: Perception",
-            "url": "/api/proficiencies/skill-perception"
-          },
-          {
-            "index": "skill-performance",
-            "name": "Skill: Performance",
-            "url": "/api/proficiencies/skill-performance"
-          },
-          {
-            "index": "skill-persuasion",
-            "name": "Skill: Persuasion",
-            "url": "/api/proficiencies/skill-persuasion"
-          },
-          {
-            "index": "skill-sleight-of-hand",
-            "name": "Skill: Sleight of Hand",
-            "url": "/api/proficiencies/skill-sleight-of-hand"
-          },
-          {
-            "index": "skill-stealth",
-            "name": "Skill: Stealth",
-            "url": "/api/proficiencies/skill-stealth"
-          }
-        ]
-      }
-    ],
-    "proficiencies": [
-      {
-        "index": "light-armor",
-        "name": "Light Armor",
-        "url": "/api/proficiencies/light-armor"
+    "spellcasting": {
+      "level": 2,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
       },
-      {
-        "index": "simple-weapons",
-        "name": "Simple Weapons",
-        "url": "/api/proficiencies/simple-weapons"
-      },
-      {
-        "index": "longswords",
-        "name": "Longswords",
-        "url": "/api/proficiencies/longswords"
-      },
-      {
-        "index": "rapiers",
-        "name": "Rapiers",
-        "url": "/api/proficiencies/rapiers"
-      },
-      {
-        "index": "shortswords",
-        "name": "Shortswords",
-        "url": "/api/proficiencies/shortswords"
-      },
-      {
-        "index": "hand-crossbows",
-        "name": "Hand crossbows",
-        "url": "/api/proficiencies/hand-crossbows"
-      },
-      {
-        "index": "thieves-tools",
-        "name": "Thieves' Tools",
-        "url": "/api/proficiencies/thieves-tools"
-      }
-    ],
-    "saving_throws": [
-      {
-        "index": "dex",
-        "name": "DEX",
-        "url": "/api/ability-scores/dex"
-      },
-      {
-        "index": "int",
-        "name": "INT",
-        "url": "/api/ability-scores/int"
-      }
-    ],
-    "starting_equipment": [
-      {
-        "equipment": {
-          "index": "leather-armor",
-          "name": "Leather Armor",
-          "url": "/api/equipment/leather-armor"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
-          "index": "dagger",
-          "name": "Dagger",
-          "url": "/api/equipment/dagger"
-        },
-        "quantity": 2
-      },
-      {
-        "equipment": {
-          "index": "thieves-tools",
-          "name": "Thieves' Tools",
-          "url": "/api/equipment/thieves-tools"
-        },
-        "quantity": 1
-      }
-    ],
-    "starting_equipment_options": [
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "rapier",
-              "name": "Rapier",
-              "url": "/api/equipment/rapier"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "shortsword",
-              "name": "Shortsword",
-              "url": "/api/equipment/shortsword"
-            },
-            "quantity": 1
-          },
-          {
-            "0": {
-              "equipment": {
-                "index": "shortbow",
-                "name": "Shortbow",
-                "url": "/api/equipment/shortbow"
-              },
-              "quantity": 1
-            },
-            "1": {
-              "equipment": {
-                "index": "arrow",
-                "name": "Arrow",
-                "url": "/api/equipment/arrow"
-              },
-              "quantity": 20
-            }
-          }
-        ]
-      },
-      {
-        "choose": 1,
-        "type": "equipment",
-        "from": [
-          {
-            "equipment": {
-              "index": "burglars-pack",
-              "name": "Burglar's Pack",
-              "url": "/api/equipment/burglars-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "dungeoneers-pack",
-              "name": "Dungeoneer's Pack",
-              "url": "/api/equipment/dungeoneers-pack"
-            },
-            "quantity": 1
-          },
-          {
-            "equipment": {
-              "index": "explorers-pack",
-              "name": "Explorer's Pack",
-              "url": "/api/equipment/explorers-pack"
-            },
-            "quantity": 1
-          }
-        ]
-      }
-    ],
-    "class_levels": "/api/classes/rogue/levels",
-    "multi_classing": {
-      "prerequisites": [
+      "info": [
         {
-          "ability_score": {
-            "index": "dex",
-            "name": "DEX",
-            "url": "/api/ability-scores/dex"
-          },
-          "minimum_score": 13
-        }
-      ],
-      "proficiencies": [
-        {
-          "index": "light-armor",
-          "name": "Light Armor",
-          "url": "/api/proficiencies/light-armor"
+          "desc": [
+            "The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+          ],
+          "name": "Preparing and Casting Spells"
         },
         {
-          "index": "thieves-tools",
-          "name": "Thieves' Tools",
-          "url": "/api/proficiencies/thieves-tools"
-        }
-      ],
-      "proficiency_choices": [
+          "desc": [
+            "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ],
+          "name": "Spellcasting Ability"
+        },
         {
-          "choose": 1,
-          "type": "proficiencies",
-          "from": [
-            {
-              "index": "skill-acrobatics",
-              "name": "Skill: Acrobatics",
-              "url": "/api/proficiencies/skill-acrobatics"
-            },
-            {
-              "index": "skill-athletics",
-              "name": "Skill: Athletics",
-              "url": "/api/proficiencies/skill-athletics"
-            },
-            {
-              "index": "skill-deception",
-              "name": "Skill: Deception",
-              "url": "/api/proficiencies/skill-deception"
-            },
-            {
-              "index": "skill-insight",
-              "name": "Skill: Insight",
-              "url": "/api/proficiencies/skill-insight"
-            },
-            {
-              "index": "skill-intimidation",
-              "name": "Skill: Intimidation",
-              "url": "/api/proficiencies/skill-intimidation"
-            },
-            {
-              "index": "skill-investigation",
-              "name": "Skill: Investigation",
-              "url": "/api/proficiencies/skill-investigation"
-            },
-            {
-              "index": "skill-perception",
-              "name": "Skill: Perception",
-              "url": "/api/proficiencies/skill-perception"
-            },
-            {
-              "index": "skill-performance",
-              "name": "Skill: Performance",
-              "url": "/api/proficiencies/skill-performance"
-            },
-            {
-              "index": "skill-persuasion",
-              "name": "Skill: Persuasion",
-              "url": "/api/proficiencies/skill-persuasion"
-            },
-            {
-              "index": "skill-sleight-of-hand",
-              "name": "Skill: Sleight of Hand",
-              "url": "/api/proficiencies/skill-sleight-of-hand"
-            },
-            {
-              "index": "skill-stealth",
-              "name": "Skill: Stealth",
-              "url": "/api/proficiencies/skill-stealth"
-            }
-          ]
+          "desc": [
+            "You can use a holy symbol as a spellcasting focus for your paladin spells."
+          ],
+          "name": "Spellcasting Focus"
         }
       ]
     },
-    "subclasses": [
-      {
-        "index": "thief",
-        "name": "Thief",
-        "url": "/api/subclasses/thief"
-      }
-    ],
-    "url": "/api/classes/rogue"
+    "spells": "/api/classes/paladin/spells",
+    "url": "/api/classes/paladin"
   },
-  {
+  "https://www.dnd5eapi.co/api/classes/ranger": {
     "index": "ranger",
     "name": "Ranger",
     "hit_die": 10,
@@ -3643,5 +3372,276 @@
     },
     "spells": "/api/classes/ranger/spells",
     "url": "/api/classes/ranger"
+  },
+  "https://www.dnd5eapi.co/api/classes/warlock": {
+    "index": "warlock",
+    "name": "Warlock",
+    "hit_die": 8,
+    "proficiency_choices": [
+      {
+        "choose": 2,
+        "type": "proficiencies",
+        "from": [
+          {
+            "index": "skill-arcana",
+            "name": "Skill: Arcana",
+            "url": "/api/proficiencies/skill-arcana"
+          },
+          {
+            "index": "skill-deception",
+            "name": "Skill: Deception",
+            "url": "/api/proficiencies/skill-deception"
+          },
+          {
+            "index": "skill-history",
+            "name": "Skill: History",
+            "url": "/api/proficiencies/skill-history"
+          },
+          {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation",
+            "url": "/api/proficiencies/skill-intimidation"
+          },
+          {
+            "index": "skill-investigation",
+            "name": "Skill: Investigation",
+            "url": "/api/proficiencies/skill-investigation"
+          },
+          {
+            "index": "skill-nature",
+            "name": "Skill: Nature",
+            "url": "/api/proficiencies/skill-nature"
+          },
+          {
+            "index": "skill-religion",
+            "name": "Skill: Religion",
+            "url": "/api/proficiencies/skill-religion"
+          }
+        ]
+      }
+    ],
+    "proficiencies": [
+      {
+        "index": "light-armor",
+        "name": "Light Armor",
+        "url": "/api/proficiencies/light-armor"
+      },
+      {
+        "index": "simple-weapons",
+        "name": "Simple Weapons",
+        "url": "/api/proficiencies/simple-weapons"
+      }
+    ],
+    "saving_throws": [
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/ability-scores/wis"
+      },
+      {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      }
+    ],
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "dagger",
+          "name": "Dagger",
+          "url": "/api/equipment/dagger"
+        },
+        "quantity": 2
+      },
+      {
+        "equipment": {
+          "index": "leather-armor",
+          "name": "Leather Armor",
+          "url": "/api/equipment/leather-armor"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "0": {
+              "equipment": {
+                "index": "crossbow-light",
+                "name": "Crossbow, light",
+                "url": "/api/equipment/crossbow-light"
+              },
+              "quantity": 1
+            },
+            "1": {
+              "equipment": {
+                "index": "crossbow-bolt",
+                "name": "Crossbow bolt",
+                "url": "/api/equipment/crossbow-bolt"
+              },
+              "quantity": 20
+            }
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "simple-weapons",
+                  "name": "Simple Weapons",
+                  "url": "/api/equipment-categories/simple-weapons"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "component-pouch",
+              "name": "Component pouch",
+              "url": "/api/equipment/component-pouch"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment_option": {
+              "choose": 1,
+              "type": "equipment",
+              "from": {
+                "equipment_category": {
+                  "index": "arcane-foci",
+                  "name": "Arcane Foci",
+                  "url": "/api/equipment-categories/arcane-foci"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment": {
+              "index": "scholars-pack",
+              "name": "Scholar's Pack",
+              "url": "/api/equipment/scholars-pack"
+            },
+            "quantity": 1
+          },
+          {
+            "equipment": {
+              "index": "dungeoneers-pack",
+              "name": "Dungeoneer's Pack",
+              "url": "/api/equipment/dungeoneers-pack"
+            },
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "choose": 1,
+        "type": "equipment",
+        "from": [
+          {
+            "equipment_category": {
+              "index": "simple-weapons",
+              "name": "Simple Weapons",
+              "url": "/api/equipment-categories/simple-weapons"
+            }
+          }
+        ]
+      }
+    ],
+    "class_levels": "/api/classes/warlock/levels",
+    "multi_classing": {
+      "prerequisites": [
+        {
+          "ability_score": {
+            "index": "cha",
+            "name": "CHA",
+            "url": "/api/ability-scores/cha"
+          },
+          "minimum_score": 13
+        }
+      ],
+      "proficiencies": [
+        {
+          "index": "light-armor",
+          "name": "Light Armor",
+          "url": "/api/proficiencies/light-armor"
+        },
+        {
+          "index": "simple-weapons",
+          "name": "Simple Weapons",
+          "url": "/api/proficiencies/simple-weapons"
+        }
+      ]
+    },
+    "subclasses": [
+      {
+        "index": "fiend",
+        "name": "Fiend",
+        "url": "/api/subclasses/fiend"
+      }
+    ],
+    "spellcasting": {
+      "level": 1,
+      "spellcasting_ability": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/ability-scores/cha"
+      },
+      "info": [
+        {
+          "desc": [
+            "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+          ],
+          "name": "Cantrips"
+        },
+        {
+          "desc": [
+            "The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+            "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+          ],
+          "name": "Spell Slots"
+        },
+        {
+          "desc": [
+            "At 1st level, you know two 1st-level spells of your choice from the warlock spell list.",
+            "The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. ",
+            "A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+          ],
+          "name": "Spells Known of 1st Level and Higher"
+        },
+        {
+          "desc": [
+            "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+            "Spell save DC = 8 + your proficiency bonus + your Charisma modifier.",
+            "Spell attack modifier = your proficiency bonus + your Charisma modifier."
+          ],
+          "name": "Spellcasting Ability"
+        },
+        {
+          "desc": [
+            "You can use an arcane focus as a spellcasting focus for your warlock spells."
+          ],
+          "name": "Spellcasting Focus"
+        }
+      ]
+    },
+    "spells": "/api/classes/warlock/spells",
+    "url": "/api/classes/warlock"
   }
-]
+}
