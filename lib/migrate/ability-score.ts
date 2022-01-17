@@ -10,10 +10,6 @@ export default function migrateAbilityScoreData(existingDataMap) {
       name: abilityScore.name,
       fullName_en_US: abilityScore.full_name,
       description_en_US: abilityScore.desc.join("\n\n"),
-      slug: {
-        _type: "slug",
-        current: abilityScore.index.toString(),
-      },
     })
   );
 }

@@ -9,10 +9,6 @@ export default function migrateDamageTypeData(existingDataMap) {
       _type: "damageType",
       name_en_US: damageType.name,
       description_en_US: damageType.desc.join("\n\n"),
-      slug: {
-        _type: "slug",
-        current: damageType.index.toString(),
-      },
     })
   );
 }

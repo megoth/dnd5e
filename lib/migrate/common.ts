@@ -16,7 +16,7 @@ export function getReference<T = SanityDocument>(
 
 export function migrateData<T extends BaseData, U extends SanityDocument>(
   existingData: Record<string, any>,
-  migrateFn: (data: T) => Partial<U>
+  migrateFn: (data: T) => Omit<U, "_id" | "_rev" | "_createdAt" | "_updatedAt">
 ) {
   return (inputData) =>
     Object.entries(inputData as Record<string, T>).reduce<Record<string, U>>(
@@ -27,6 +27,10 @@ export function migrateData<T extends BaseData, U extends SanityDocument>(
           ...existingObject,
           // eslint-disable-next-line no-underscore-dangle
           _id: existingObject._id || uuidv4(),
+          slug: {
+            _type: "slug",
+            current: data.index.toString(),
+          },
           // eslint-disable-next-line no-underscore-dangle
           ...migrateFn(data),
           url,

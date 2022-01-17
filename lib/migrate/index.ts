@@ -1,15 +1,17 @@
 import { readFile, writeFile } from "fs";
 import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
-import migrateAbilityScoreData from "./ability-score";
-import migrateAlignmentData from "./alignment";
-import migrateSkillData, { addSkillReferences } from "./skill";
 import {
   AbilityScoreData,
   AlignmentData,
   DamageTypeData,
   SkillData,
+  WeaponPropertyData,
 } from "../download/api.types";
+import migrateAbilityScoreData from "./ability-score";
+import migrateAlignmentData from "./alignment";
 import migrateDamageTypeData from "./damage-type";
+import migrateSkillData, { addSkillReferences } from "./skill";
+import migrateWeaponPropertyData from "./weapon-property";
 
 async function loadExistingData() {
   try {
@@ -59,22 +61,26 @@ async function openFile(type) {
 
 export default async function migrateData() {
   const existingDataMap = await loadExistingData();
-  const [abilityScores, alignments, damageTypes, skills] = (await Promise.all([
-    openFile("ability-scores"),
-    openFile("alignments"),
-    openFile("damage-types"),
-    openFile("skills"),
-  ])) as [
-    Record<string, AbilityScoreData>,
-    Record<string, AlignmentData>,
-    Record<string, DamageTypeData>,
-    Record<string, SkillData>
-  ];
+  const [abilityScores, alignments, damageTypes, skills, weaponProperties] =
+    (await Promise.all([
+      openFile("ability-scores"),
+      openFile("alignments"),
+      openFile("damage-types"),
+      openFile("skills"),
+      openFile("weapon-properties"),
+    ])) as [
+      Record<string, AbilityScoreData>,
+      Record<string, AlignmentData>,
+      Record<string, DamageTypeData>,
+      Record<string, SkillData>,
+      Record<string, WeaponPropertyData>
+    ];
   const migratedDataMap = [
     migrateAbilityScoreData(existingDataMap)(abilityScores),
     migrateAlignmentData(existingDataMap)(alignments),
     migrateDamageTypeData(existingDataMap)(damageTypes),
     migrateSkillData(existingDataMap)(skills),
+    migrateWeaponPropertyData(existingDataMap)(weaponProperties),
   ].reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
   const linkedData = {
     ...migratedDataMap,

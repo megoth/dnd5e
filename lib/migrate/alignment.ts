@@ -10,10 +10,6 @@ export default function migrateAlignmentData(existingDataMap) {
       name_en_US: alignment.name,
       abbreviation_en_US: alignment.abbreviation,
       description_en_US: alignment.desc,
-      slug: {
-        _type: "slug",
-        current: alignment.index.toString(),
-      },
     })
   );
 }

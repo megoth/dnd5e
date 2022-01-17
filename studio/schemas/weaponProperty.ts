@@ -1,19 +1,14 @@
 import { getGroupField, getLanguagesAsGroups } from "../config/languages";
 
 export default {
-  name: "abilityScore",
-  title: "Ability Score",
+  name: "weaponProperty",
+  title: "Weapon Property",
   type: "document",
   groups: getLanguagesAsGroups(),
   fields: [
-    {
+    ...getGroupField({
       name: "name",
       title: "Name",
-      type: "string",
-    },
-    ...getGroupField({
-      name: "fullName",
-      title: "Full name",
       type: "string",
     }),
     {
@@ -21,7 +16,7 @@ export default {
       title: "Slug",
       type: "slug",
       options: {
-        source: "name",
+        source: "name_en_US",
         maxLength: 96,
       },
     },
@@ -38,7 +33,7 @@ export default {
   ],
   preview: {
     select: {
-      title: "fullName_en_US",
+      title: "name_en_US",
       subtitle: "slug.current",
     },
   },

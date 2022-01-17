@@ -7,10 +7,6 @@ export default function migrateSkillData(existingDataMap) {
     _type: "skill",
     name_en_US: skill.name,
     description_en_US: skill.desc.join("\n\n"),
-    slug: {
-      _type: "slug",
-      current: skill.index.toString(),
-    },
   }));
 }
 
