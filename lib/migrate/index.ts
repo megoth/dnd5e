@@ -6,8 +6,10 @@ import migrateSkillData, { addSkillReferences } from "./skill";
 import {
   AbilityScoreData,
   AlignmentData,
+  DamageTypeData,
   SkillData,
 } from "../download/api.types";
+import migrateDamageTypeData from "./damage-type";
 
 async function loadExistingData() {
   try {
@@ -57,18 +59,21 @@ async function openFile(type) {
 
 export default async function migrateData() {
   const existingDataMap = await loadExistingData();
-  const [abilityScores, alignments, skills] = (await Promise.all([
+  const [abilityScores, alignments, damageTypes, skills] = (await Promise.all([
     openFile("ability-scores"),
     openFile("alignments"),
+    openFile("damage-types"),
     openFile("skills"),
   ])) as [
     Record<string, AbilityScoreData>,
     Record<string, AlignmentData>,
+    Record<string, DamageTypeData>,
     Record<string, SkillData>
   ];
   const migratedDataMap = [
     migrateAbilityScoreData(existingDataMap)(abilityScores),
     migrateAlignmentData(existingDataMap)(alignments),
+    migrateDamageTypeData(existingDataMap)(damageTypes),
     migrateSkillData(existingDataMap)(skills),
   ].reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
   const linkedData = {
