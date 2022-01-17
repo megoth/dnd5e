@@ -7,6 +7,7 @@ import abilityScore from "./abilityScore";
 import alignment from "./alignment";
 import condition from "./condition";
 import damageType from "./damageType";
+import equipmentCategory from "./equipmentCategory";
 import skill from "./skill";
 import weaponProperty from "./weaponProperty";
 
@@ -21,6 +22,7 @@ export default createSchema({
     alignment,
     condition,
     damageType,
+    equipmentCategory,
     skill,
     weaponProperty,
   ]),

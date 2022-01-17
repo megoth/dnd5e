@@ -5,6 +5,7 @@ import {
   AlignmentData,
   ConditionData,
   DamageTypeData,
+  EquipmentCategoryData,
   SkillData,
   WeaponPropertyData,
 } from "../download/api.types";
@@ -14,6 +15,7 @@ import migrateDamageTypeData from "./damage-type";
 import migrateSkillData, { addSkillReferences } from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import migrateConditionData from "./condition";
+import migrateEquipmentCategoryData from "./equipment-category";
 
 async function loadExistingData() {
   try {
@@ -68,6 +70,7 @@ export default async function migrateData() {
     alignments,
     conditions,
     damageTypes,
+    equipmentCategories,
     skills,
     weaponProperties,
   ] = (await Promise.all([
@@ -75,6 +78,7 @@ export default async function migrateData() {
     openFile("alignments"),
     openFile("conditions"),
     openFile("damage-types"),
+    openFile("equipment-categories"),
     openFile("skills"),
     openFile("weapon-properties"),
   ])) as [
@@ -82,6 +86,7 @@ export default async function migrateData() {
     Record<string, AlignmentData>,
     Record<string, ConditionData>,
     Record<string, DamageTypeData>,
+    Record<string, EquipmentCategoryData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
   ];
@@ -90,6 +95,7 @@ export default async function migrateData() {
     migrateAlignmentData(existingDataMap)(alignments),
     migrateConditionData(existingDataMap)(conditions),
     migrateDamageTypeData(existingDataMap)(damageTypes),
+    migrateEquipmentCategoryData(existingDataMap)(equipmentCategories),
     migrateSkillData(existingDataMap)(skills),
     migrateWeaponPropertyData(existingDataMap)(weaponProperties),
   ].reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});

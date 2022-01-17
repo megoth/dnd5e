@@ -262,6 +262,43 @@ export interface DamageType extends SanityDocument {
 }
 
 /**
+ * Equipment Category
+ *
+ *
+ */
+export interface EquipmentCategory extends SanityDocument {
+  _type: "equipmentCategory";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Skill
  *
  *
@@ -375,5 +412,6 @@ export type Documents =
   | Alignment
   | Condition
   | DamageType
+  | EquipmentCategory
   | Skill
   | WeaponProperty;
