@@ -21,6 +21,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
+    "import/no-unresolved": [2, { ignore: ["^(all|part):"] }],
     "import/no-extraneous-dependencies": [
       "off",
       {
