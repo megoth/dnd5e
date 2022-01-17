@@ -159,4 +159,62 @@ export interface Alignment extends SanityDocument {
   url?: string;
 }
 
-export type Documents = AbilityScore | Alignment;
+/**
+ * Skill
+ *
+ *
+ */
+export interface Skill extends SanityDocument {
+  _type: "skill";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * Ability Score — `reference`
+   *
+   *
+   */
+  abilityScore?: SanityReference<AbilityScore>;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+export type Documents = AbilityScore | Alignment | Skill;

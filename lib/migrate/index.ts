@@ -1,7 +1,13 @@
 import { readFile, writeFile } from "fs";
-import migrateAlignmentData from "./alignment";
 import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
 import migrateAbilityScoreData from "./ability-score";
+import migrateAlignmentData from "./alignment";
+import migrateSkillData, { addSkillReferences } from "./skill";
+import {
+  AbilityScoreData,
+  AlignmentData,
+  SkillData,
+} from "../download/api.types";
 
 async function loadExistingData() {
   try {
@@ -51,14 +57,25 @@ async function openFile(type) {
 
 export default async function migrateData() {
   const existingDataMap = await loadExistingData();
-  const migratedDataMap = (
-    await Promise.all([
-      openFile("ability-scores").then(migrateAbilityScoreData(existingDataMap)),
-      openFile("alignments").then(migrateAlignmentData(existingDataMap)),
-    ])
-  ).reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
-  // // TODO: need to link up entities
-  const data = Object.values(migratedDataMap)
+  const [abilityScores, alignments, skills] = (await Promise.all([
+    openFile("ability-scores"),
+    openFile("alignments"),
+    openFile("skills"),
+  ])) as [
+    Record<string, AbilityScoreData>,
+    Record<string, AlignmentData>,
+    Record<string, SkillData>
+  ];
+  const migratedDataMap = [
+    migrateAbilityScoreData(existingDataMap)(abilityScores),
+    migrateAlignmentData(existingDataMap)(alignments),
+    migrateSkillData(existingDataMap)(skills),
+  ].reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
+  const linkedData = {
+    ...migratedDataMap,
+    ...addSkillReferences(migratedDataMap, skills),
+  };
+  const data = Object.values(linkedData)
     .map((item) => JSON.stringify(item))
     .join("\n");
   const sanityFilePath = getSanityFilePath();
