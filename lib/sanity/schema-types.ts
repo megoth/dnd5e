@@ -160,6 +160,57 @@ export interface Alignment extends SanityDocument {
 }
 
 /**
+ * Condition
+ *
+ *
+ */
+export interface Condition extends SanityDocument {
+  _type: "condition";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Damage Type
  *
  *
@@ -322,6 +373,7 @@ export interface WeaponProperty extends SanityDocument {
 export type Documents =
   | AbilityScore
   | Alignment
+  | Condition
   | DamageType
   | Skill
   | WeaponProperty;

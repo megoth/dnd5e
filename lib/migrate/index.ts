@@ -3,6 +3,7 @@ import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
 import {
   AbilityScoreData,
   AlignmentData,
+  ConditionData,
   DamageTypeData,
   SkillData,
   WeaponPropertyData,
@@ -12,6 +13,7 @@ import migrateAlignmentData from "./alignment";
 import migrateDamageTypeData from "./damage-type";
 import migrateSkillData, { addSkillReferences } from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
+import migrateConditionData from "./condition";
 
 async function loadExistingData() {
   try {
@@ -61,23 +63,32 @@ async function openFile(type) {
 
 export default async function migrateData() {
   const existingDataMap = await loadExistingData();
-  const [abilityScores, alignments, damageTypes, skills, weaponProperties] =
-    (await Promise.all([
-      openFile("ability-scores"),
-      openFile("alignments"),
-      openFile("damage-types"),
-      openFile("skills"),
-      openFile("weapon-properties"),
-    ])) as [
-      Record<string, AbilityScoreData>,
-      Record<string, AlignmentData>,
-      Record<string, DamageTypeData>,
-      Record<string, SkillData>,
-      Record<string, WeaponPropertyData>
-    ];
+  const [
+    abilityScores,
+    alignments,
+    conditions,
+    damageTypes,
+    skills,
+    weaponProperties,
+  ] = (await Promise.all([
+    openFile("ability-scores"),
+    openFile("alignments"),
+    openFile("conditions"),
+    openFile("damage-types"),
+    openFile("skills"),
+    openFile("weapon-properties"),
+  ])) as [
+    Record<string, AbilityScoreData>,
+    Record<string, AlignmentData>,
+    Record<string, ConditionData>,
+    Record<string, DamageTypeData>,
+    Record<string, SkillData>,
+    Record<string, WeaponPropertyData>
+  ];
   const migratedDataMap = [
     migrateAbilityScoreData(existingDataMap)(abilityScores),
     migrateAlignmentData(existingDataMap)(alignments),
+    migrateConditionData(existingDataMap)(conditions),
     migrateDamageTypeData(existingDataMap)(damageTypes),
     migrateSkillData(existingDataMap)(skills),
     migrateWeaponPropertyData(existingDataMap)(weaponProperties),

@@ -5,6 +5,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import abilityScore from "./abilityScore";
 import alignment from "./alignment";
+import condition from "./condition";
 import damageType from "./damageType";
 import skill from "./skill";
 import weaponProperty from "./weaponProperty";
@@ -18,6 +19,7 @@ export default createSchema({
   types: schemaTypes.concat([
     abilityScore,
     alignment,
+    condition,
     damageType,
     skill,
     weaponProperty,
