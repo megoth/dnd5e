@@ -14,7 +14,18 @@
     "lint": "eslint --config .eslintrc.js --fix",
     "ci": "npm run lint && npm run test",
     "test": "jest",
-    "manage-data": "ts-node manage-data.ts"
+    "generate:types": "npx sanity-codegen",
+    "manage:data": "npx ts-node --project tsconfig-tsnode.json manage-data.ts",
+    "download": "npm run manage:data download",
+    "migrate": "npm run export && npm run migrate:data && npm run import",
+    "export": "npm run export:sanity && npm run extract:sanity",
+    "export:sanity": "cd studio && npx @sanity/cli dataset export production ../data/sanity.tar.gz && cd ..",
+    "extract:sanity": "tar -xzvf data/sanity.tar.gz --directory data/sanity --strip-components 1",
+    "migrate:data": "npm run manage:data migrate",
+    "import": "npm run import:package && npm run import:sanity && npm run import:cleanup",
+    "import:package": "tar -czvf data/sanity.tar.gz --directory data/sanity .",
+    "import:sanity": "cd studio && npx @sanity/cli dataset import ../data/sanity.tar.gz production --replace && cd ..",
+    "import:cleanup": "rm data/sanity.tar.gz"
   },
   "dependencies": {
     "@fluent/bundle": "^0.17.1",
@@ -38,6 +49,8 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@sanity/cli": "^2.24.0",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.16.1",
@@ -72,9 +85,11 @@
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
     "react-test-renderer": "^17.0.2",
+    "sanity-codegen": "^0.9.8",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4",
+    "uuid": "^8.3.2",
     "whatwg-fetch": "^3.6.2"
   }
 }

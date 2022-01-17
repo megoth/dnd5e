@@ -1,6 +1,6 @@
-// @ts-ignore
-const { Command } = require("commander");
-const downloadData = require("./lib/download");
+import { Command } from "commander";
+import downloadData from "./lib/download";
+import migrateData from "./lib/migrate";
 
 const program = new Command();
 
@@ -10,7 +10,11 @@ async function init() {
     await downloadData();
     return;
   }
-  console.error("No process chosen (download)");
+  if (program.args[0] === "migrate") {
+    await migrateData();
+    return;
+  }
+  console.error("No process chosen (download, migrate)");
 }
 
 init();

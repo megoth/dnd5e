@@ -1,6 +1,6 @@
-// @ts-ignore
-const fetch = require("node-fetch");
-const { writeFile } = require("fs");
+import fetch from "node-fetch";
+import { writeFile } from "fs";
+import { getDnd5eDataPath } from "../manage-data";
 
 function getApiUrl(endpointUrl) {
   return `https://www.dnd5eapi.co${endpointUrl}`;
@@ -19,23 +19,26 @@ async function packageEndpointData(
     })
   );
   await writeFile(
-    `data/${endpoint}.json`,
+    getDnd5eDataPath(endpoint),
     JSON.stringify(data, null, 2),
     { flag: "w+" },
     (error) => {
-      if (!error) {
-        console.log(
-          `Imported data from ${endpoint} (${Object.keys(data).length} items)`
+      if (error) {
+        console.error(
+          `Something went wrong when packaging: ${endpoint}`,
+          error
         );
         return;
       }
-      console.error(`Something went wrong when packaging: ${endpoint}`, error);
+      console.log(
+        `Imported data from ${endpoint} (${Object.keys(data).length} items)`
+      );
     }
   );
   return data;
 }
 
-module.exports = async function downloadData() {
+export default async function downloadData() {
   const apiResponse = await fetch(getApiUrl("/api/"));
   const apiEndpointMap = (await apiResponse.json()) as Record<string, string>;
   const data = (
@@ -67,4 +70,4 @@ module.exports = async function downloadData() {
       )
     ),
   ]);
-};
+}
