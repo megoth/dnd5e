@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "fs";
 import migrateAlignmentData from "./alignment";
 import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
+import migrateAbilityScoreData from "./ability-score";
 
 async function loadExistingData() {
   try {
@@ -52,6 +53,7 @@ export default async function migrateData() {
   const existingDataMap = await loadExistingData();
   const migratedDataMap = (
     await Promise.all([
+      openFile("ability-scores").then(migrateAbilityScoreData(existingDataMap)),
       openFile("alignments").then(migrateAlignmentData(existingDataMap)),
     ])
   ).reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});

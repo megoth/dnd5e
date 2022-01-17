@@ -1,14 +1,19 @@
 import { getGroupField, getLanguagesAsGroups } from "../config/languages";
 
 export default {
-  name: "alignment",
-  title: "Alignment",
+  name: "abilityScore",
+  title: "Ability Score",
   type: "document",
   groups: getLanguagesAsGroups(),
   fields: [
-    ...getGroupField({
+    {
       name: "name",
       title: "Name",
+      type: "string",
+    },
+    ...getGroupField({
+      name: "fullName",
+      title: "Full name",
       type: "string",
     }),
     {
@@ -20,11 +25,6 @@ export default {
         maxLength: 96,
       },
     },
-    ...getGroupField({
-      name: "abbreviation",
-      title: "Abbreviation",
-      type: "string",
-    }),
     ...getGroupField({
       name: "description",
       title: "Description",
@@ -38,7 +38,7 @@ export default {
   ],
   preview: {
     select: {
-      title: "name_en_US",
+      title: "fullName_en_US",
       subtitle: "slug.current",
     },
   },
