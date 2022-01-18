@@ -11,10 +11,10 @@ export default function migrateSkillData(existingDataMap) {
 }
 
 export function addSkillReferences(
-  migratedDataMap: Record<string, any>,
+  migratedDataMap: Record<string, Skill>,
   downloadedSkillMap: Record<string, SkillData>
-): Record<string, SkillData> {
-  return Object.entries(downloadedSkillMap).reduce<Record<string, SkillData>>(
+): Record<string, Skill> {
+  return Object.entries(downloadedSkillMap).reduce<Record<string, Skill>>(
     (memo, [url, skill]) => ({
       ...memo,
       [url]: {

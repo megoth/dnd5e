@@ -63,6 +63,8 @@ export type RestType = "long" | "short";
 
 export type SpellComponent = "S" | "V" | "M";
 
+export type SuccessType = "full" | "half" | "none" | "other";
+
 export type ToolCategory =
   | "Artisan's Tools"
   | "Gaming Sets"
@@ -178,8 +180,8 @@ export interface Damage {
 export interface DifficultyClass {
   dc_type: APIResource;
   dc_value?: number;
-  success_type?: string;
-  dc_success?: string;
+  success_type?: SuccessType;
+  dc_success?: SuccessType;
   desc?: string;
 }
 
@@ -314,7 +316,7 @@ export interface ProficiencyBonus {
   value: number;
 }
 
-interface Range {
+export interface Range {
   normal: number;
   long: number | null;
 }

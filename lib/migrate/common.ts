@@ -1,18 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-import { SanityDocument, SanityReference } from "sanity-codegen";
+import { SanityDocument } from "sanity-codegen";
 import { BaseData } from "../download/api.types";
-import { getDnd5eUrl } from "../manage-data";
-
-export function getReference<T = SanityDocument>(
-  existingDataMap,
-  relativeUrl
-): SanityReference<T> {
-  return {
-    // eslint-disable-next-line no-underscore-dangle
-    _ref: existingDataMap[getDnd5eUrl(relativeUrl)]._id,
-    _type: "reference",
-  };
-}
 
 export function migrateData<T extends BaseData, U extends SanityDocument>(
   existingData: Record<string, any>,
