@@ -8,6 +8,7 @@ import {
   ConditionData,
   DamageTypeData,
   EquipmentCategoryData,
+  EquipmentData,
   SkillData,
   WeaponPropertyData,
 } from "../download/api.types";
@@ -18,9 +19,10 @@ import migrateSkillData from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import migrateConditionData from "./condition";
 import migrateEquipmentCategoryData from "./equipment-category";
-import { prepareData } from "./common";
+import migrateEquipmentData from "./equipment";
+import { prepareData, PreparedDocument } from "./common";
 
-async function loadExistingData(): Promise<Record<string, SanityDocument>> {
+async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
   try {
     return new Promise((resolve, reject) => {
       readFile(getSanityFilePath(), "utf-8", (err, data) => {
@@ -73,6 +75,7 @@ export default async function migrateData() {
     openFile("alignments"),
     openFile("conditions"),
     openFile("damage-types"),
+    openFile("equipment"),
     openFile("equipment-categories"),
     openFile("skills"),
     openFile("weapon-properties"),
@@ -85,6 +88,7 @@ export default async function migrateData() {
     alignments,
     conditions,
     damageTypes,
+    equipment,
     equipmentCategories,
     skills,
     weaponProperties,
@@ -93,6 +97,7 @@ export default async function migrateData() {
     Record<string, AlignmentData>,
     Record<string, ConditionData>,
     Record<string, DamageTypeData>,
+    Record<string, EquipmentData>,
     Record<string, EquipmentCategoryData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
@@ -102,6 +107,7 @@ export default async function migrateData() {
     migrateAlignmentData(preparedDataMap)(alignments),
     migrateConditionData(preparedDataMap)(conditions),
     migrateDamageTypeData(preparedDataMap)(damageTypes),
+    migrateEquipmentData(preparedDataMap)(equipment),
     migrateEquipmentCategoryData(preparedDataMap)(equipmentCategories),
     migrateSkillData(preparedDataMap)(skills),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),

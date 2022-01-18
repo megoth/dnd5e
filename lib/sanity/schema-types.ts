@@ -262,6 +262,225 @@ export interface DamageType extends SanityDocument {
 }
 
 /**
+ * Equipment
+ *
+ *
+ */
+export interface Equipment extends SanityDocument {
+  _type: "equipment";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * Armor Category — `string`
+   *
+   *
+   */
+  armorCategory?: string;
+
+  /**
+   * Armor Class — `armorClass`
+   *
+   *
+   */
+  armorClass?: ArmorClass;
+
+  /**
+   * Capacity — `string`
+   *
+   *
+   */
+  capacity?: string;
+
+  /**
+   * Range Category — `string`
+   *
+   *
+   */
+  rangeCategory?: string;
+
+  /**
+   * Damage — `damage`
+   *
+   *
+   */
+  damage?: Damage;
+
+  /**
+   * Equipment Category — `reference`
+   *
+   *
+   */
+  equipmentCategory?: SanityReference<EquipmentCategory>;
+
+  /**
+   * Gear Category — `reference`
+   *
+   *
+   */
+  gearCategory?: SanityReference<EquipmentCategory>;
+
+  /**
+   * Contents — `array`
+   *
+   *
+   */
+  contents?: Array<SanityKeyed<Item>>;
+
+  /**
+   * Cost — `cost`
+   *
+   *
+   */
+  cost?: Cost;
+
+  /**
+   * Quantity — `number`
+   *
+   *
+   */
+  quantity?: number;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+
+  /**
+   * Properties — `array`
+   *
+   *
+   */
+  properties?: Array<SanityKeyedReference<WeaponProperty>>;
+
+  /**
+   * Range — `range`
+   *
+   *
+   */
+  range?: Range;
+
+  /**
+   * Special (English) — `string`
+   *
+   *
+   */
+  special_en_US?: string;
+
+  /**
+   * Special (Norwegian) — `string`
+   *
+   *
+   */
+  special_nb_NO?: string;
+
+  /**
+   * Speed — `vehicleSpeed`
+   *
+   *
+   */
+  speed?: VehicleSpeed;
+
+  /**
+   * Strength Minimum — `number`
+   *
+   *
+   */
+  strMinimum?: number;
+
+  /**
+   * Stealth disadvantage — `boolean`
+   *
+   *
+   */
+  stealthDisadvantage?: boolean;
+
+  /**
+   * Throw Range — `range`
+   *
+   *
+   */
+  throwRange?: Range;
+
+  /**
+   * Tool Category — `string`
+   *
+   *
+   */
+  toolCategory?:
+    | "Artisan&#39;s Tools"
+    | "Gaming Sets"
+    | "Musical Instrument"
+    | "Other Tools";
+
+  /**
+   * Two Handed Damage — `damage`
+   *
+   *
+   */
+  twoHandedDamage?: Damage;
+
+  /**
+   * Vehicle Category — `string`
+   *
+   *
+   */
+  vehicleCategory?:
+    | "Mounts and Other Animals"
+    | "Tack, Harness, and Drawn Vehicles"
+    | "Waterborne Vehicles";
+
+  /**
+   * Weapon Range — `string`
+   *
+   *
+   */
+  weaponRange?: "Melee" | "Ranged";
+
+  /**
+   * Weight — `number`
+   *
+   *
+   */
+  weight?: number;
+}
+
+/**
  * Equipment Category
  *
  *
@@ -407,11 +626,190 @@ export interface WeaponProperty extends SanityDocument {
   url?: string;
 }
 
+export type ArmorClass = {
+  _type: "armorClass";
+  /**
+   * Base — `number`
+   *
+   *
+   */
+  base?: number;
+
+  /**
+   * Dex Bonus — `boolean`
+   *
+   *
+   */
+  dexBonus?: boolean;
+
+  /**
+   * Max Bonus — `number`
+   *
+   *
+   */
+  maxBonus?: number;
+};
+
+export type Cost = {
+  _type: "cost";
+  /**
+   * Quantity — `number`
+   *
+   *
+   */
+  quantity?: number;
+
+  /**
+   * Unit — `string`
+   *
+   *
+   */
+  unit?: "cp" | "sp" | "ep" | "gp" | "pp";
+};
+
+export type Damage = {
+  _type: "damage";
+  /**
+   * Damage Dice — `string`
+   *
+   *
+   */
+  damageDice?: string;
+
+  /**
+   * Damage Type — `reference`
+   *
+   *
+   */
+  damageType?: SanityReference<DamageType>;
+
+  /**
+   * Difficulty Class — `difficultyClass`
+   *
+   *
+   */
+  dc?: DifficultyClass;
+
+  /**
+   * Damage at Character Level — `array`
+   *
+   *
+   */
+  damageAtCharacterLevel?: Array<SanityKeyed<DamageAtCharacterLevel>>;
+};
+
+export type DamageAtCharacterLevel = {
+  _type: "damageAtCharacterLevel";
+  /**
+   * Level — `number`
+   *
+   *
+   */
+  level?: number;
+
+  /**
+   * Damage — `string`
+   *
+   *
+   */
+  damage?: string;
+};
+
+export type DifficultyClass = {
+  _type: "difficultyClass";
+  /**
+   * Difficulty Class Type — `reference`
+   *
+   *
+   */
+  difficultyClassType?: SanityReference<AbilityScore>;
+
+  /**
+   * Difficulty Class Value — `number`
+   *
+   *
+   */
+  difficultyClassValue?: number;
+
+  /**
+   * Success Type — `string`
+   *
+   *
+   */
+  successType?: "full" | "half" | "none" | "other";
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+};
+
+export type Item = {
+  _type: "item";
+  /**
+   * Item — `reference`
+   *
+   *
+   */
+  item?: SanityReference<Equipment>;
+
+  /**
+   * Quantity — `number`
+   *
+   *
+   */
+  quantity?: number;
+};
+
+export type Range = {
+  _type: "range";
+  /**
+   * Normal — `number`
+   *
+   *
+   */
+  normal?: number;
+
+  /**
+   * Long — `number`
+   *
+   *
+   */
+  long?: number;
+};
+
+export type VehicleSpeed = {
+  _type: "vehicleSpeed";
+  /**
+   * Quantity — `number`
+   *
+   *
+   */
+  quantity?: number;
+
+  /**
+   * Unit — `string`
+   *
+   *
+   */
+  unit?: string;
+};
+
 export type Documents =
   | AbilityScore
   | Alignment
   | Condition
   | DamageType
+  | Equipment
   | EquipmentCategory
   | Skill
   | WeaponProperty;

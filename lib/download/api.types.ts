@@ -170,11 +170,24 @@ export interface Cost {
   unit: CurrencyUnit;
 }
 
-export interface Damage {
-  damage_dice?: string;
+export type Damage =
+  | SpellDamageByCharacterLevel
+  | SpellDamageBySlotLevel
+  | WeaponDamage;
+
+export interface SpellDamageByCharacterLevel {
   damage_type: APIResource;
-  dc?: DifficultyClass;
-  damage_at_character_level?: Record<string, string>;
+  damage_at_character_level: Record<string, string>;
+}
+
+export interface SpellDamageBySlotLevel {
+  damage_type: APIResource;
+  damage_at_slot_level: Record<string, string>;
+}
+
+export interface WeaponDamage {
+  damage_dice: string;
+  damage_type: APIResource;
 }
 
 export interface DifficultyClass {
@@ -516,29 +529,29 @@ export interface EquipmentCategoryData extends BaseData {
 }
 
 export interface EquipmentData extends BaseData {
+  equipment_category: APIResource;
+  cost: Cost;
+  desc?: string[];
   armor_category?: ArmorCategory;
   armor_class?: ArmorClass;
-  capacity?: string;
-  category_range?: RangeCategory;
-  damage?: Damage;
-  desc?: string[];
-  equipment_category: APIResource;
-  gear_category?: APIResource;
-  contents?: Item[];
-  cost: Cost;
-  quantity?: number;
-  properties?: APIResource[];
-  range?: Range;
-  special?: string[];
-  speed?: VehicleSpeed;
   str_minimum?: number;
   stealth_disadvantage?: boolean;
-  throw_range?: Range;
-  tool_category?: ToolCategory;
-  two_handed_damage?: Damage;
   vehicle_category?: VehicleCategory;
+  speed?: VehicleSpeed;
+  capacity?: string;
+  damage?: Damage;
+  two_handed_damage?: Damage;
   weapon_category?: WeaponCategory;
   weapon_range?: WeaponRange;
+  category_range?: RangeCategory;
+  range?: Range;
+  throw_range?: Range;
+  properties?: APIResource[];
+  special?: string[];
+  gear_category?: APIResource;
+  contents?: Item[];
+  tool_category?: ToolCategory;
+  quantity?: number;
   weight?: number;
 }
 

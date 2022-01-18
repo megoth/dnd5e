@@ -13,7 +13,7 @@ export function getReference<T = SanityDocument>(
   };
 }
 
-interface PreparedDocument
+export interface PreparedDocument
   extends Omit<SanityDocument, "_rev" | "_createdAt" | "_updatedAt"> {
   _rev?: string;
   _createdAt?: string;
