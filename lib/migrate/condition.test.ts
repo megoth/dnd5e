@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from "uuid";
-import migrateAlignmentData from "./alignment";
 import migrateConditionData from "./condition";
 
 const conditionUrl = "https://www.dnd5eapi.co/api/conditions/frightened";

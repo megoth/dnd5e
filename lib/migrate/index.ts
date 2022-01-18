@@ -1,5 +1,4 @@
 import { readFile, writeFile } from "fs";
-import { SanityDocument } from "sanity-codegen";
 import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
 import {
   AbilityScoreData,
