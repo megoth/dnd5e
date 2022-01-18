@@ -2,9 +2,9 @@ import { migrateData } from "./common";
 import { WeaponPropertyData } from "../download/api.types";
 import { WeaponProperty } from "../sanity/schema-types";
 
-export default function migrateWeaponPropertyData(existingDataMap) {
+export default function migrateWeaponPropertyData(preparedDataMap) {
   return migrateData<WeaponPropertyData, WeaponProperty>(
-    existingDataMap,
+    preparedDataMap,
     (weaponProperty) => ({
       _type: "weaponProperty",
       name_en_US: weaponProperty.name,

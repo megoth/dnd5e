@@ -17,19 +17,13 @@ const damageTypeMap = {
 
 describe("migrateDamageTypeData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateDamageTypeData({})(damageTypeMap)).toEqual({
-      [damageTypeUrl]: {
-        _id: expect.any(String),
+    expect(migrateDamageTypeData({})(damageTypeMap)).toEqual([
+      {
         _type: "damageType",
         name_en_US: damageType.name,
         description_en_US: damageType.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: damageType.index,
-        },
-        url: damageTypeUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -40,18 +34,13 @@ describe("migrateDamageTypeData", () => {
           name_en_US: "TEST",
         },
       })(damageTypeMap)
-    ).toEqual({
-      [damageTypeUrl]: {
+    ).toEqual([
+      {
         _id: damageTypeId,
         _type: "damageType",
         name_en_US: damageType.name,
         description_en_US: damageType.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: damageType.index,
-        },
-        url: damageTypeUrl,
       },
-    });
+    ]);
   });
 });

@@ -1,8 +1,10 @@
 import { readFile, writeFile } from "fs";
+import { SanityDocument } from "sanity-codegen";
 import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
 import {
   AbilityScoreData,
   AlignmentData,
+  BaseData,
   ConditionData,
   DamageTypeData,
   EquipmentCategoryData,
@@ -12,12 +14,13 @@ import {
 import migrateAbilityScoreData from "./ability-score";
 import migrateAlignmentData from "./alignment";
 import migrateDamageTypeData from "./damage-type";
-import migrateSkillData, { addSkillReferences } from "./skill";
+import migrateSkillData from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import migrateConditionData from "./condition";
 import migrateEquipmentCategoryData from "./equipment-category";
+import { prepareData } from "./common";
 
-async function loadExistingData() {
+async function loadExistingData(): Promise<Record<string, SanityDocument>> {
   try {
     return new Promise((resolve, reject) => {
       readFile(getSanityFilePath(), "utf-8", (err, data) => {
@@ -65,6 +68,18 @@ async function openFile(type) {
 
 export default async function migrateData() {
   const existingDataMap = await loadExistingData();
+  const importedData = (await Promise.all([
+    openFile("ability-scores"),
+    openFile("alignments"),
+    openFile("conditions"),
+    openFile("damage-types"),
+    openFile("equipment-categories"),
+    openFile("skills"),
+    openFile("weapon-properties"),
+  ])) as Array<Record<string, BaseData>>;
+  const preparedDataMap = importedData
+    .map((data) => prepareData(existingDataMap, data))
+    .reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
   const [
     abilityScores,
     alignments,
@@ -73,15 +88,7 @@ export default async function migrateData() {
     equipmentCategories,
     skills,
     weaponProperties,
-  ] = (await Promise.all([
-    openFile("ability-scores"),
-    openFile("alignments"),
-    openFile("conditions"),
-    openFile("damage-types"),
-    openFile("equipment-categories"),
-    openFile("skills"),
-    openFile("weapon-properties"),
-  ])) as [
+  ] = importedData as [
     Record<string, AbilityScoreData>,
     Record<string, AlignmentData>,
     Record<string, ConditionData>,
@@ -91,19 +98,16 @@ export default async function migrateData() {
     Record<string, WeaponPropertyData>
   ];
   const migratedDataMap = [
-    migrateAbilityScoreData(existingDataMap)(abilityScores),
-    migrateAlignmentData(existingDataMap)(alignments),
-    migrateConditionData(existingDataMap)(conditions),
-    migrateDamageTypeData(existingDataMap)(damageTypes),
-    migrateEquipmentCategoryData(existingDataMap)(equipmentCategories),
-    migrateSkillData(existingDataMap)(skills),
-    migrateWeaponPropertyData(existingDataMap)(weaponProperties),
-  ].reduce<Record<string, any>>((memo, map) => ({ ...memo, ...map }), {});
-  const linkedData = {
-    ...migratedDataMap,
-    ...addSkillReferences(migratedDataMap, skills),
-  };
-  const data = Object.values(linkedData)
+    migrateAbilityScoreData(preparedDataMap)(abilityScores),
+    migrateAlignmentData(preparedDataMap)(alignments),
+    migrateConditionData(preparedDataMap)(conditions),
+    migrateDamageTypeData(preparedDataMap)(damageTypes),
+    migrateEquipmentCategoryData(preparedDataMap)(equipmentCategories),
+    migrateSkillData(preparedDataMap)(skills),
+    migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
+  ];
+  const data = Object.values(migratedDataMap)
+    .flat()
     .map((item) => JSON.stringify(item))
     .join("\n");
   const sanityFilePath = getSanityFilePath();

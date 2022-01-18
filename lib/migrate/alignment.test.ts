@@ -16,20 +16,14 @@ const alignmentMap = {
 
 describe("migrateAlignmentData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateAlignmentData({})(alignmentMap)).toEqual({
-      [alignmentUrl]: {
-        _id: expect.any(String),
+    expect(migrateAlignmentData({})(alignmentMap)).toEqual([
+      {
         _type: "alignment",
         name_en_US: alignment.name,
         abbreviation_en_US: alignment.abbreviation,
         description_en_US: alignment.desc,
-        slug: {
-          _type: "slug",
-          current: alignment.index,
-        },
-        url: alignmentUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -40,19 +34,14 @@ describe("migrateAlignmentData", () => {
           name_en_US: "TEST",
         },
       })(alignmentMap)
-    ).toEqual({
-      [alignmentUrl]: {
+    ).toEqual([
+      {
         _id: alignmentId,
         _type: "alignment",
         name_en_US: alignment.name,
         abbreviation_en_US: alignment.abbreviation,
         description_en_US: alignment.desc,
-        slug: {
-          _type: "slug",
-          current: alignment.index,
-        },
-        url: alignmentUrl,
       },
-    });
+    ]);
   });
 });

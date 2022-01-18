@@ -18,19 +18,13 @@ const weaponPropertyMap = {
 
 describe("migrateWeaponPropertyData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateWeaponPropertyData({})(weaponPropertyMap)).toEqual({
-      [weaponPropertyUrl]: {
-        _id: expect.any(String),
+    expect(migrateWeaponPropertyData({})(weaponPropertyMap)).toEqual([
+      {
         _type: "weaponProperty",
         name_en_US: weaponProperty.name,
         description_en_US: weaponProperty.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: weaponProperty.index,
-        },
-        url: weaponPropertyUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -41,18 +35,13 @@ describe("migrateWeaponPropertyData", () => {
           name_en_US: "TEST",
         },
       })(weaponPropertyMap)
-    ).toEqual({
-      [weaponPropertyUrl]: {
+    ).toEqual([
+      {
         _id: weaponPropertyId,
         _type: "weaponProperty",
         name_en_US: weaponProperty.name,
         description_en_US: weaponProperty.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: weaponProperty.index,
-        },
-        url: weaponPropertyUrl,
       },
-    });
+    ]);
   });
 });

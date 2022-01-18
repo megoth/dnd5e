@@ -2,9 +2,9 @@ import { migrateData } from "./common";
 import { ConditionData } from "../download/api.types";
 import { Condition } from "../sanity/schema-types";
 
-export default function migrateConditionData(existingDataMap) {
+export default function migrateConditionData(preparedDataMap) {
   return migrateData<ConditionData, Condition>(
-    existingDataMap,
+    preparedDataMap,
     (condition) => ({
       _type: "condition",
       name_en_US: condition.name,

@@ -2,26 +2,11 @@ import { getReference, migrateData } from "./common";
 import { SkillData } from "../download/api.types";
 import { Skill } from "../sanity/schema-types";
 
-export default function migrateSkillData(existingDataMap) {
-  return migrateData<SkillData, Skill>(existingDataMap, (skill) => ({
+export default function migrateSkillData(preparedDataMap) {
+  return migrateData<SkillData, Skill>(preparedDataMap, (skill) => ({
     _type: "skill",
     name_en_US: skill.name,
     description_en_US: skill.desc.join("\n\n"),
+    abilityScore: getReference(preparedDataMap, skill.ability_score.url),
   }));
-}
-
-export function addSkillReferences(
-  migratedDataMap: Record<string, Skill>,
-  downloadedSkillMap: Record<string, SkillData>
-): Record<string, Skill> {
-  return Object.entries(downloadedSkillMap).reduce<Record<string, Skill>>(
-    (memo, [url, skill]) => ({
-      ...memo,
-      [url]: {
-        ...migratedDataMap[url],
-        abilityScore: getReference(migratedDataMap, skill.ability_score.url),
-      },
-    }),
-    {}
-  );
 }

@@ -20,20 +20,14 @@ const abilityMap = {
 
 describe("migrateAbilityScoreData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateAbilityScoreData({})(abilityMap)).toEqual({
-      [abilityUrl]: {
-        _id: expect.any(String),
+    expect(migrateAbilityScoreData({})(abilityMap)).toEqual([
+      {
         _type: "abilityScore",
         name: ability.name,
         fullName_en_US: ability.full_name,
         description_en_US: ability.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: ability.index,
-        },
-        url: abilityUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -44,19 +38,14 @@ describe("migrateAbilityScoreData", () => {
           name: "TEST",
         },
       })(abilityMap)
-    ).toEqual({
-      [abilityUrl]: {
+    ).toEqual([
+      {
         _id: abilityId,
         _type: "abilityScore",
         name: ability.name,
         fullName_en_US: ability.full_name,
         description_en_US: ability.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: ability.index,
-        },
-        url: abilityUrl,
       },
-    });
+    ]);
   });
 });

@@ -19,19 +19,13 @@ const conditionMap = {
 
 describe("migrateAlignmentData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateConditionData({})(conditionMap)).toEqual({
-      [conditionUrl]: {
-        _id: expect.any(String),
+    expect(migrateConditionData({})(conditionMap)).toEqual([
+      {
         _type: "condition",
         name_en_US: condition.name,
         description_en_US: condition.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: condition.index,
-        },
-        url: conditionUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -42,18 +36,13 @@ describe("migrateAlignmentData", () => {
           name_en_US: "TEST",
         },
       })(conditionMap)
-    ).toEqual({
-      [conditionUrl]: {
+    ).toEqual([
+      {
         _id: conditionId,
         _type: "condition",
         name_en_US: condition.name,
         description_en_US: condition.desc.join("\n\n"),
-        slug: {
-          _type: "slug",
-          current: condition.index,
-        },
-        url: conditionUrl,
       },
-    });
+    ]);
   });
 });

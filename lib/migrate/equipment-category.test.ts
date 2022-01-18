@@ -52,18 +52,12 @@ const equipmentCategoryMap = {
 
 describe("migrateEquipmentCategoryData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
-    expect(migrateEquipmentCategoryData({})(equipmentCategoryMap)).toEqual({
-      [equipmentCategoryUrl]: {
-        _id: expect.any(String),
+    expect(migrateEquipmentCategoryData({})(equipmentCategoryMap)).toEqual([
+      {
         _type: "equipmentCategory",
         name_en_US: equipmentCategory.name,
-        slug: {
-          _type: "slug",
-          current: equipmentCategory.index,
-        },
-        url: equipmentCategoryUrl,
       },
-    });
+    ]);
   });
 
   it("preserves id from old data if available", () => {
@@ -74,17 +68,12 @@ describe("migrateEquipmentCategoryData", () => {
           name_en_US: "TEST",
         },
       })(equipmentCategoryMap)
-    ).toEqual({
-      [equipmentCategoryUrl]: {
+    ).toEqual([
+      {
         _id: equipmentCategoryId,
         _type: "equipmentCategory",
         name_en_US: equipmentCategory.name,
-        slug: {
-          _type: "slug",
-          current: equipmentCategory.index,
-        },
-        url: equipmentCategoryUrl,
       },
-    });
+    ]);
   });
 });

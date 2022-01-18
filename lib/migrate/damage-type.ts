@@ -2,9 +2,9 @@ import { migrateData } from "./common";
 import { DamageTypeData } from "../download/api.types";
 import { DamageType } from "../sanity/schema-types";
 
-export default function migrateDamageTypeData(existingDataMap) {
+export default function migrateDamageTypeData(preparedDataMap) {
   return migrateData<DamageTypeData, DamageType>(
-    existingDataMap,
+    preparedDataMap,
     (damageType) => ({
       _type: "damageType",
       name_en_US: damageType.name,
