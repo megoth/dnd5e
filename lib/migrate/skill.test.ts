@@ -27,7 +27,7 @@ const preparedMap = {
   [abilityScoreUrl]: { _id: abilityScoreId },
 };
 
-describe("migrateEquipmentCategoryData", () => {
+describe("migrateSkillData", () => {
   it("migrates data from D&D5e API to Sanity CMS", () => {
     expect(migrateSkillData(preparedMap)(skillMap)).toEqual([
       {

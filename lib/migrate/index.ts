@@ -8,17 +8,19 @@ import {
   DamageTypeData,
   EquipmentCategoryData,
   EquipmentData,
+  FeatData,
   SkillData,
   WeaponPropertyData,
 } from "../download/api.types";
 import migrateAbilityScoreData from "./ability-score";
 import migrateAlignmentData from "./alignment";
-import migrateDamageTypeData from "./damage-type";
-import migrateSkillData from "./skill";
-import migrateWeaponPropertyData from "./weapon-property";
 import migrateConditionData from "./condition";
+import migrateDamageTypeData from "./damage-type";
 import migrateEquipmentCategoryData from "./equipment-category";
 import migrateEquipmentData from "./equipment";
+import migrateFeatData from "./feat";
+import migrateSkillData from "./skill";
+import migrateWeaponPropertyData from "./weapon-property";
 import { prepareData, PreparedDocument } from "./common";
 import { openFile } from "../manage-data/node-common";
 
@@ -60,6 +62,7 @@ export default async function migrateData() {
     openFile("damage-types"),
     openFile("equipment"),
     openFile("equipment-categories"),
+    openFile("feats"),
     openFile("skills"),
     openFile("weapon-properties"),
   ])) as Array<Record<string, BaseData>>;
@@ -73,6 +76,7 @@ export default async function migrateData() {
     damageTypes,
     equipment,
     equipmentCategories,
+    feats,
     skills,
     weaponProperties,
   ] = importedData as [
@@ -82,6 +86,7 @@ export default async function migrateData() {
     Record<string, DamageTypeData>,
     Record<string, EquipmentData>,
     Record<string, EquipmentCategoryData>,
+    Record<string, FeatData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
   ];
@@ -92,6 +97,7 @@ export default async function migrateData() {
     migrateDamageTypeData(preparedDataMap)(damageTypes),
     migrateEquipmentData(preparedDataMap)(equipment),
     migrateEquipmentCategoryData(preparedDataMap)(equipmentCategories),
+    migrateFeatData(preparedDataMap)(feats),
     migrateSkillData(preparedDataMap)(skills),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
   ];

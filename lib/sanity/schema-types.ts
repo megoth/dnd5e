@@ -518,6 +518,64 @@ export interface EquipmentCategory extends SanityDocument {
 }
 
 /**
+ * Feat
+ *
+ *
+ */
+export interface Feat extends SanityDocument {
+  _type: "feat";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Prerequisites — `array`
+   *
+   *
+   */
+  prerequisites?: Array<AbilityPrerequisite>;
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Skill
  *
  *
@@ -626,6 +684,23 @@ export interface WeaponProperty extends SanityDocument {
   url?: string;
 }
 
+export type AbilityPrerequisite = {
+  _type: "abilityPrerequisite";
+  /**
+   * Ability Score — `reference`
+   *
+   *
+   */
+  abilityScore?: SanityReference<AbilityScore>;
+
+  /**
+   * Minimum Score — `number`
+   *
+   *
+   */
+  minimumScore?: number;
+};
+
 export type ArmorClass = {
   _type: "armorClass";
   /**
@@ -706,6 +781,23 @@ export type DamageAtCharacterLevel = {
    *
    */
   level?: number;
+
+  /**
+   * Damage — `string`
+   *
+   *
+   */
+  damage?: string;
+};
+
+export type DamageAtSlotLevel = {
+  _type: "damageAtSlotLevel";
+  /**
+   * Slot — `number`
+   *
+   *
+   */
+  slot?: number;
 
   /**
    * Damage — `string`
@@ -811,5 +903,6 @@ export type Documents =
   | DamageType
   | Equipment
   | EquipmentCategory
+  | Feat
   | Skill
   | WeaponProperty;
