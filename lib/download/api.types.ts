@@ -171,9 +171,16 @@ export interface Cost {
 }
 
 export type Damage =
+  | MonsterDamage
   | SpellDamageByCharacterLevel
   | SpellDamageBySlotLevel
   | WeaponDamage;
+
+export interface MonsterDamage {
+  damage_dice: string;
+  damage_type: APIResource;
+  dc: DifficultyClass;
+}
 
 export interface SpellDamageByCharacterLevel {
   damage_type: APIResource;
@@ -181,7 +188,7 @@ export interface SpellDamageByCharacterLevel {
 }
 
 export interface SpellDamageBySlotLevel {
-  damage_type: APIResource;
+  damage_type?: APIResource;
   damage_at_slot_level: Record<string, string>;
 }
 
@@ -250,16 +257,6 @@ export interface FeatureOption {
 export interface Item {
   item: APIResource;
   quantity: number;
-}
-
-export interface LevelledCharacterSpellDamage {
-  damage_type?: Damage["damage_type"];
-  damage_at_character_level: Record<string, string>;
-}
-
-export interface LevelledSlotSpellDamage {
-  damage_type?: Damage["damage_type"];
-  damage_at_slot_level: Record<string, string>;
 }
 
 export interface LevelPrerequisite {
@@ -663,6 +660,11 @@ export interface RaceData extends BaseData {
 
 export interface RuleData extends BaseData {
   desc: string;
+  subsections: APIResource[];
+}
+
+export interface RuleSectionData extends BaseData {
+  desc: string;
 }
 
 export interface SkillData extends BaseData {
@@ -683,7 +685,7 @@ export interface SpellData extends BaseData {
   level: number;
   heal_at_slot_level?: Record<string, string>;
   attack_type?: string;
-  damage?: Damage | LevelledCharacterSpellDamage | LevelledSlotSpellDamage;
+  damage?: Damage;
   dc?: DifficultyClass;
   area_of_effect?: AreaOfEffect;
   school: APIResource;

@@ -10,6 +10,7 @@ import condition from "./condition";
 import cost from "./cost";
 import damage from "./damage";
 import damageAtCharacterLevel from "./damageAtCharacterLevel";
+import damageAtSlotLevel from "./damageAtSlotLevel";
 import damageType from "./damageType";
 import difficultyClass from "./difficultyClass";
 import equipment from "./equipment";
@@ -34,6 +35,7 @@ export default createSchema({
     cost,
     damage,
     damageAtCharacterLevel,
+    damageAtSlotLevel,
     damageType,
     difficultyClass,
     equipment,

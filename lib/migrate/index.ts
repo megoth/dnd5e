@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "fs";
-import { getDnd5eDataPath, getSanityFilePath } from "../manage-data";
+import { getSanityFilePath } from "../manage-data";
 import {
   AbilityScoreData,
   AlignmentData,
@@ -20,6 +20,7 @@ import migrateConditionData from "./condition";
 import migrateEquipmentCategoryData from "./equipment-category";
 import migrateEquipmentData from "./equipment";
 import { prepareData, PreparedDocument } from "./common";
+import { openFile } from "../manage-data/node-common";
 
 async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
   try {
@@ -42,23 +43,6 @@ async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
             }
           }, {});
         resolve(dataMap);
-      });
-    });
-  } catch (e) {
-    // TODO: handle errors better
-    return {};
-  }
-}
-
-async function openFile(type) {
-  try {
-    return new Promise((resolve, reject) => {
-      readFile(getDnd5eDataPath(type), "utf-8", (err, data) => {
-        if (err) {
-          reject(err);
-          return;
-        }
-        resolve(JSON.parse(data));
       });
     });
   } catch (e) {
