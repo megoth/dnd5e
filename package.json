@@ -2,6 +2,7 @@
   "name": "dnd5e",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
