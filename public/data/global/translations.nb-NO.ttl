@@ -20,6 +20,7 @@ translations:authenticationPitch skos:definition
 translations:charactersPageTitle skos:definition "Karakterer"@nb-NO .
 translations:classesPageTitle skos:definition "Klasser"@nb-NO .
 translations:close skos:definition "Lukk"@nb-NO .
+translations:cost skos:definition "Kostnad"@nb-NO .
 translations:darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 translations:darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
@@ -41,6 +42,7 @@ translations:loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 translations:loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 translations:logOut skos:definition "Logg ut"@nb-NO .
 translations:monstersPageTitle skos:definition "Monstre"@nb-NO .
+translations:name skos:definition "Navn"@nb-NO .
 translations:notesPageTitle skos:definition "Notater"@nb-NO .
 translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 translations:or skos:definition "eller"@nb-NO .

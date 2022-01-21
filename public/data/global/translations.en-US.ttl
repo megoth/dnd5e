@@ -19,6 +19,7 @@ translations:authenticationPitch skos:definition
 translations:charactersPageTitle skos:definition "Characters"@en-US .
 translations:classesPageTitle skos:definition "Classes"@en-US .
 translations:close skos:definition "Close"@en-US .
+translations:cost skos:definition "Cost"@en-US .
 translations:darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 translations:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
@@ -40,6 +41,7 @@ translations:loginPitch skos:definition "Start your adventure with Solid"@en-US 
 translations:loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 translations:logOut skos:definition "Log out"@en-US .
 translations:monstersPageTitle skos:definition "Monsters"@en-US .
+translations:name skos:definition "Name"@en-US .
 translations:notesPageTitle skos:definition "Notes"@en-US .
 translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 translations:or skos:definition "or"@en-US .

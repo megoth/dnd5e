@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<SVGElement> {
-  name: "close" | "login" | "menu" | "settings";
+  name: "caretDown" | "caretUp" | "close" | "login" | "menu" | "settings";
 }
 
 export default function Icon({ name, ...props }: Props) {
@@ -9,8 +9,11 @@ export default function Icon({ name, ...props }: Props) {
     className: "icon",
     ...props,
   };
-  // eslint-disable-next-line default-case
   switch (name) {
+    case "caretDown":
+      return <span>▼</span>;
+    case "caretUp":
+      return <span>▲</span>;
     case "close":
       return (
         <svg
@@ -79,5 +82,7 @@ export default function Icon({ name, ...props }: Props) {
           />
         </svg>
       );
+    default:
+      return <span>No icon for {name}</span>;
   }
 }
