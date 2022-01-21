@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { getDnd5eUrl } from "../../manage-data";
 import migrateFeatData from "./index";
-import abilityPrerequisite from "../../../studio/schemas/abilityPrerequisite";
 
 const featUrl = "https://www.dnd5eapi.co/api/skills/arcana";
 const abilityScoreRelativeUrl = "/api/ability-scores/str";

@@ -2,6 +2,22 @@
 
 exports[`Icon renders icons 1`] = `
 <DocumentFragment>
+  <span>
+    ▼
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Icon renders icons 2`] = `
+<DocumentFragment>
+  <span>
+    ▲
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Icon renders icons 3`] = `
+<DocumentFragment>
   <svg
     class="icon"
     fill="none"
@@ -19,7 +35,7 @@ exports[`Icon renders icons 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icon renders icons 2`] = `
+exports[`Icon renders icons 4`] = `
 <DocumentFragment>
   <svg
     class="icon"
@@ -38,7 +54,7 @@ exports[`Icon renders icons 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Icon renders icons 3`] = `
+exports[`Icon renders icons 5`] = `
 <DocumentFragment>
   <svg
     class="icon"
@@ -57,7 +73,7 @@ exports[`Icon renders icons 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Icon renders icons 4`] = `
+exports[`Icon renders icons 6`] = `
 <DocumentFragment>
   <svg
     class="icon"

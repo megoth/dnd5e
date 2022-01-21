@@ -9,6 +9,7 @@ export default function Icon({ name, ...props }: Props) {
     className: "icon",
     ...props,
   };
+  // eslint-disable-next-line default-case
   switch (name) {
     case "caretDown":
       return <span>▼</span>;
@@ -82,7 +83,5 @@ export default function Icon({ name, ...props }: Props) {
           />
         </svg>
       );
-    default:
-      return <span>No icon for {name}</span>;
   }
 }

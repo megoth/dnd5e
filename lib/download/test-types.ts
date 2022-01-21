@@ -51,7 +51,7 @@ export default async function testTypes() {
       ["damage-types", "DamageTypeData"],
       ["equipment", "EquipmentData"],
       ["equipment-categories", "EquipmentCategoryData"],
-      ["feats", "featData"],
+      ["feats", "FeatData"],
       ["features", "FeatureData"],
       ["languages", "LanguageData"],
       ["magic-items", "MagicItemData"],
