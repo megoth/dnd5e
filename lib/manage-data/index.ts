@@ -7,6 +7,16 @@ export function createKeyedArray(list) {
   }));
 }
 
+export function createSlug(slug: string | number): {
+  _type: "slug";
+  current: string;
+} {
+  return {
+    _type: "slug",
+    current: slug.toString(),
+  };
+}
+
 export function getDnd5eDataPath(type: string): string {
   return `./data/dnd5eapi/${type}.json`;
 }

@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { SanityDocument, SanityReference } from "sanity-codegen";
 import { BaseData } from "../download/api.types";
-import { getDnd5eUrl } from "../manage-data";
+import { createSlug, getDnd5eUrl } from "../manage-data";
 
 export function getReference<T = SanityDocument>(
   preparedDataMap,
@@ -34,10 +34,7 @@ export function prepareData<T extends PreparedDocument>(
       // eslint-disable-next-line no-param-reassign
       outputData[url] = {
         ...(existingData[url] || { _id: uuidv4() }),
-        slug: {
-          _type: "slug",
-          current: data.index.toString(),
-        },
+        slug: createSlug(data.index),
         url,
       };
       return outputData;

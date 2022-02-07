@@ -73,18 +73,18 @@ export interface AbilityScore extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * URL — `url`
@@ -189,18 +189,18 @@ export interface Condition extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * URL — `url`
@@ -240,18 +240,18 @@ export interface DamageType extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * URL — `url`
@@ -291,18 +291,18 @@ export interface Equipment extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * Armor Category — `string`
@@ -396,18 +396,18 @@ export interface Equipment extends SanityDocument {
   range?: Range;
 
   /**
-   * Special (English) — `string`
+   * Special (English) — `markdown`
    *
    *
    */
-  special_en_US?: string;
+  special_en_US?: Markdown;
 
   /**
-   * Special (Norwegian) — `string`
+   * Special (Norwegian) — `markdown`
    *
    *
    */
-  special_nb_NO?: string;
+  special_nb_NO?: Markdown;
 
   /**
    * Speed — `vehicleSpeed`
@@ -698,18 +698,69 @@ export interface MagicItem extends SanityDocument {
   equipmentCategory?: SanityReference<EquipmentCategory>;
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
+ * Magic School
+ *
+ *
+ */
+export interface MagicSchool extends SanityDocument {
+  _type: "magicSchool";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `markdown`
+   *
+   *
+   */
+  description_en_US?: Markdown;
+
+  /**
+   * Description (Norwegian) — `markdown`
+   *
+   *
+   */
+  description_nb_NO?: Markdown;
 
   /**
    * URL — `url`
@@ -749,18 +800,18 @@ export interface Skill extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * Ability Score — `reference`
@@ -807,18 +858,18 @@ export interface WeaponProperty extends SanityDocument {
   slug?: { _type: "slug"; current: string };
 
   /**
-   * Description (English) — `string`
+   * Description (English) — `markdown`
    *
    *
    */
-  description_en_US?: string;
+  description_en_US?: Markdown;
 
   /**
-   * Description (Norwegian) — `string`
+   * Description (Norwegian) — `markdown`
    *
    *
    */
-  description_nb_NO?: string;
+  description_nb_NO?: Markdown;
 
   /**
    * URL — `url`
@@ -1050,5 +1101,13 @@ export type Documents =
   | Feat
   | Language
   | MagicItem
+  | MagicSchool
   | Skill
   | WeaponProperty;
+
+/**
+ * This interface is a stub. It was referenced in your sanity schema but
+ * the definition was not actually found. Future versions of
+ * sanity-codegen will let you type this explicity.
+ */
+type Markdown = any;
