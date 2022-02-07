@@ -1,7 +1,7 @@
 import { EquipmentData } from "../../download/api.types";
 import { Equipment } from "../../sanity/schema-types";
 import { getReference, migrateData } from "../common";
-import { getProperty } from "../../manage-data";
+import { getProperty, migrateToMarkdown } from "../../manage-data";
 import migrateArmorClass from "../armor-class";
 import migrateDamage from "../damage";
 import migrateCost from "../cost";
@@ -22,7 +22,7 @@ export default function migrateEquipmentData(preparedDataMap) {
       cost: migrateCost<Equipment>("cost", equipment.cost),
       ...getProperty<Equipment>(
         "description_en_US",
-        equipment.desc?.join("\n\n")
+        migrateToMarkdown(equipment.desc)
       ),
       ...getProperty<Equipment>("armorCategory", equipment.armor_category),
       ...migrateArmorClass("armorClass", equipment.armor_class),
@@ -34,7 +34,7 @@ export default function migrateEquipmentData(preparedDataMap) {
       ...migrateRange<Equipment>("range", equipment.range),
       ...getProperty<Equipment>(
         "special_en_US",
-        equipment.special?.join("\n\n")
+        migrateToMarkdown(equipment.special)
       ),
       ...migrateVehicleSpeed<Equipment>("speed", equipment.speed),
       ...getProperty<Equipment>("strMinimum", equipment.str_minimum),

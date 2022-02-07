@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import migrateEquipmentData from "./index";
 import { EquipmentData, WeaponDamage } from "../../download/api.types";
-import { getDnd5eUrl } from "../../manage-data";
+import { getDnd5eUrl, migrateToMarkdown } from "../../manage-data";
 
 const equipmentUrl = "https://www.dnd5eapi.co/api/equipment/battleaxe";
 const weaponCategoryRelativeUrl = "/api/equipment-categories/weapon";
@@ -205,14 +205,14 @@ describe("migrateEquipmentData", () => {
             _type: "reference",
           },
         },
-        description_en_US: complexEquipment.desc.join("\n\n"),
+        description_en_US: migrateToMarkdown(complexEquipment.desc),
         quantity: complexEquipment.quantity,
         range: {
           _type: "range",
           normal: complexEquipment.range.normal,
         },
         rangeCategory: complexEquipment.category_range,
-        special_en_US: complexEquipment.special.join("\n\n"),
+        special_en_US: migrateToMarkdown(complexEquipment.special),
         speed: {
           _type: "vehicleSpeed",
           quantity: complexEquipment.speed.quantity,

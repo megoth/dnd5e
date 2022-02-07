@@ -29,7 +29,7 @@ export default {
     ...getGroupField({
       name: "description",
       title: "Description",
-      type: "string",
+      type: "markdown",
     }),
     {
       name: "url",

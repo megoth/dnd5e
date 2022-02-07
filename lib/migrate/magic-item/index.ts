@@ -1,6 +1,7 @@
 import { getReference, migrateData } from "../common";
 import { MagicItemData } from "../../download/api.types";
 import { MagicItem } from "../../sanity/schema-types";
+import { migrateToMarkdown } from "../../manage-data";
 
 export default function migrateMagicItemData(preparedDataMap) {
   return migrateData<MagicItemData, MagicItem>(
@@ -12,7 +13,7 @@ export default function migrateMagicItemData(preparedDataMap) {
         preparedDataMap,
         magicItem.equipment_category.url
       ),
-      description_en_US: magicItem.desc.join("\n"),
+      description_en_US: migrateToMarkdown(magicItem.desc),
     })
   );
 }

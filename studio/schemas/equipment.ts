@@ -23,7 +23,7 @@ export default {
     ...getGroupField({
       name: "description",
       title: "Description",
-      type: "string",
+      type: "markdown",
     }),
     {
       name: "armorCategory",
@@ -97,7 +97,7 @@ export default {
     ...getGroupField({
       name: "special",
       title: "Special",
-      type: "string",
+      type: "markdown",
     }),
     {
       name: "speed",

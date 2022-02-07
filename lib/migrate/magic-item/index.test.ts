@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import migrateMagicItemData from "./index";
-import { getDnd5eUrl } from "../../manage-data";
+import { getDnd5eUrl, migrateToMarkdown } from "../../manage-data";
 
 const equipmentCategoryRelativeUrl = "/api/equipment-categories/wondrous-items";
 const equipmentCategoryUrl = getDnd5eUrl(equipmentCategoryRelativeUrl);
@@ -34,7 +34,7 @@ describe("migrateMagicItemData", () => {
     ).toEqual([
       {
         _type: "magicItem",
-        description_en_US: magicItem.desc.join("\n"),
+        description_en_US: migrateToMarkdown(magicItem.desc),
         equipmentCategory: {
           _ref: equipmentCategoryId,
           _type: "reference",

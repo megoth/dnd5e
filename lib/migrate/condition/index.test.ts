@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import migrateConditionData from "./index";
+import { migrateToMarkdown } from "../../manage-data";
 
 const conditionUrl = "https://www.dnd5eapi.co/api/conditions/frightened";
 const condition = {
@@ -22,7 +23,7 @@ describe("migrateAlignmentData", () => {
       {
         _type: "condition",
         name_en_US: condition.name,
-        description_en_US: condition.desc.join("\n\n"),
+        description_en_US: migrateToMarkdown(condition.desc),
       },
     ]);
   });
@@ -40,7 +41,7 @@ describe("migrateAlignmentData", () => {
         _id: conditionId,
         _type: "condition",
         name_en_US: condition.name,
-        description_en_US: condition.desc.join("\n\n"),
+        description_en_US: migrateToMarkdown(condition.desc),
       },
     ]);
   });

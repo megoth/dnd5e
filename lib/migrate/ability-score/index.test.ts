@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import migrateAbilityScoreData from "./index";
+import { migrateToMarkdown } from "../../manage-data";
 
 const abilityUrl = "https://www.dnd5eapi.co/api/ability-scores/con";
 const ability = {
@@ -25,7 +26,7 @@ describe("migrateAbilityScoreData", () => {
         _type: "abilityScore",
         name: ability.name,
         fullName_en_US: ability.full_name,
-        description_en_US: ability.desc.join("\n\n"),
+        description_en_US: migrateToMarkdown(ability.desc),
       },
     ]);
   });
@@ -44,7 +45,7 @@ describe("migrateAbilityScoreData", () => {
         _type: "abilityScore",
         name: ability.name,
         fullName_en_US: ability.full_name,
-        description_en_US: ability.desc.join("\n\n"),
+        description_en_US: migrateToMarkdown(ability.desc),
       },
     ]);
   });
