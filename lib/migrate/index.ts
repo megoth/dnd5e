@@ -9,6 +9,7 @@ import {
   EquipmentCategoryData,
   EquipmentData,
   FeatData,
+  LanguageData,
   SkillData,
   WeaponPropertyData,
 } from "../download/api.types";
@@ -19,6 +20,7 @@ import migrateDamageTypeData from "./damage-type";
 import migrateEquipmentCategoryData from "./equipment-category";
 import migrateEquipmentData from "./equipment";
 import migrateFeatData from "./feat";
+import migrateLanguageData from "./language";
 import migrateSkillData from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import { prepareData, PreparedDocument } from "./common";
@@ -63,6 +65,7 @@ export default async function migrateData() {
     openFile("equipment"),
     openFile("equipment-categories"),
     openFile("feats"),
+    openFile("languages"),
     openFile("skills"),
     openFile("weapon-properties"),
   ])) as Array<Record<string, BaseData>>;
@@ -77,6 +80,7 @@ export default async function migrateData() {
     equipment,
     equipmentCategories,
     feats,
+    languages,
     skills,
     weaponProperties,
   ] = importedData as [
@@ -87,6 +91,7 @@ export default async function migrateData() {
     Record<string, EquipmentData>,
     Record<string, EquipmentCategoryData>,
     Record<string, FeatData>,
+    Record<string, LanguageData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
   ];
@@ -98,6 +103,7 @@ export default async function migrateData() {
     migrateEquipmentData(preparedDataMap)(equipment),
     migrateEquipmentCategoryData(preparedDataMap)(equipmentCategories),
     migrateFeatData(preparedDataMap)(feats),
+    migrateLanguageData(preparedDataMap)(languages),
     migrateSkillData(preparedDataMap)(skills),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
   ];

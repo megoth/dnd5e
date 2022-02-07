@@ -15,6 +15,7 @@ import equipment from "./equipment";
 import equipmentCategory from "./equipmentCategory";
 import feat from "./feat";
 import item from "./item";
+import language from "./language";
 import range from "./range";
 import skill from "./skill";
 import vehicleSpeed from "./vehicleSpeed";
@@ -38,6 +39,7 @@ export default createSchema({
     equipmentCategory,
     feat,
     item,
+    language,
     range,
     skill,
     vehicleSpeed,

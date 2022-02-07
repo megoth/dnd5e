@@ -551,7 +551,7 @@ export interface Feat extends SanityDocument {
    *
    *
    */
-  prerequisites?: Array<AbilityPrerequisite>;
+  prerequisites?: Array<SanityKeyed<AbilityPrerequisite>>;
 
   /**
    * Description (English) — `string`
@@ -566,6 +566,92 @@ export interface Feat extends SanityDocument {
    *
    */
   description_nb_NO?: string;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
+ * Language
+ *
+ *
+ */
+export interface Language extends SanityDocument {
+  _type: "language";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * Type — `string`
+   *
+   *
+   */
+  type?: "Standard" | "Exotic";
+
+  /**
+   * Typical speakers (English) — `array`
+   *
+   *
+   */
+  typicalSpeakers_en_US?: Array<SanityKeyed<string>>;
+
+  /**
+   * Typical speakers (Norwegian) — `array`
+   *
+   *
+   */
+  typicalSpeakers_nb_NO?: Array<SanityKeyed<string>>;
+
+  /**
+   * Script (English) — `string`
+   *
+   *
+   */
+  script_en_US?: string;
+
+  /**
+   * Script (Norwegian) — `string`
+   *
+   *
+   */
+  script_nb_NO?: string;
 
   /**
    * URL — `url`
@@ -904,5 +990,6 @@ export type Documents =
   | Equipment
   | EquipmentCategory
   | Feat
+  | Language
   | Skill
   | WeaponProperty;

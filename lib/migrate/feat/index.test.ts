@@ -42,6 +42,7 @@ describe("migrateFeatData", () => {
         name_en_US: feat.name,
         prerequisites: [
           {
+            _key: expect.any(String),
             _type: "abilityPrerequisite",
             abilityScore: {
               _type: "reference",
