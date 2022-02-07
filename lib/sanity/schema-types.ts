@@ -662,6 +662,64 @@ export interface Language extends SanityDocument {
 }
 
 /**
+ * Magic Item
+ *
+ *
+ */
+export interface MagicItem extends SanityDocument {
+  _type: "magicItem";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Equipment Category — `reference`
+   *
+   *
+   */
+  equipmentCategory?: SanityReference<EquipmentCategory>;
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Skill
  *
  *
@@ -991,5 +1049,6 @@ export type Documents =
   | EquipmentCategory
   | Feat
   | Language
+  | MagicItem
   | Skill
   | WeaponProperty;
