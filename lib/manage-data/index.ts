@@ -36,6 +36,10 @@ export function getSanityFilePath(): string {
   return "./data/sanity/data.ndjson";
 }
 
+export function getSafeType(type) {
+  return type.replace("'", "");
+}
+
 export function migrateToMarkdown(lines: string[] = []): string {
   return lines
     .map((line, index) =>

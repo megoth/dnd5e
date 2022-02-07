@@ -12,6 +12,7 @@ import {
   LanguageData,
   MagicItemData,
   MagicSchoolData,
+  ProficiencyData,
   SkillData,
   WeaponPropertyData,
 } from "../download/api.types";
@@ -29,6 +30,7 @@ import { prepareData, PreparedDocument } from "./common";
 import { openFile } from "../manage-data/node-common";
 import migrateMagicItemData from "./magic-item";
 import migrateMagicSchoolData from "./magic-school";
+import migrateProficiencyData from "./proficiency";
 
 async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
   try {
@@ -72,6 +74,7 @@ export default async function migrateData() {
     openFile("languages"),
     openFile("magic-items"),
     openFile("magic-schools"),
+    openFile("proficiencies"),
     openFile("skills"),
     openFile("weapon-properties"),
   ])) as Array<Record<string, BaseData>>;
@@ -89,6 +92,7 @@ export default async function migrateData() {
     languages,
     magicItems,
     magicSchools,
+    proficiencies,
     skills,
     weaponProperties,
   ] = importedData as [
@@ -102,6 +106,7 @@ export default async function migrateData() {
     Record<string, LanguageData>,
     Record<string, MagicItemData>,
     Record<string, MagicSchoolData>,
+    Record<string, ProficiencyData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
   ];
@@ -116,6 +121,7 @@ export default async function migrateData() {
     migrateLanguageData(preparedDataMap)(languages),
     migrateMagicItemData(preparedDataMap)(magicItems),
     migrateMagicSchoolData(preparedDataMap)(magicSchools),
+    migrateProficiencyData(preparedDataMap)(proficiencies),
     migrateSkillData(preparedDataMap)(skills),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
   ];

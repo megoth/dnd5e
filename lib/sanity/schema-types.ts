@@ -771,6 +771,73 @@ export interface MagicSchool extends SanityDocument {
 }
 
 /**
+ * Proficiency
+ *
+ *
+ */
+export interface Proficiency extends SanityDocument {
+  _type: "proficiency";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Type — `string`
+   *
+   *
+   */
+  type?:
+    | "Armor"
+    | "Artisans Tools"
+    | "Gaming Sets"
+    | "Musical Instruments"
+    | "Other"
+    | "Saving Throws"
+    | "Skills"
+    | "Vehicles"
+    | "Weapons";
+
+  /**
+   * Skill Reference — `reference`
+   *
+   *
+   */
+  skillReference?: SanityReference<Skill>;
+
+  /**
+   * Equipment Reference — `reference`
+   *
+   *
+   */
+  equipmentReference?: SanityReference<Equipment>;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Skill
  *
  *
@@ -1102,6 +1169,7 @@ export type Documents =
   | Language
   | MagicItem
   | MagicSchool
+  | Proficiency
   | Skill
   | WeaponProperty;
 

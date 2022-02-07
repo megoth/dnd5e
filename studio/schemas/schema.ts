@@ -18,6 +18,7 @@ import item from "./item";
 import language from "./language";
 import magicItem from "./magicItem";
 import magicSchool from "./magicSchool";
+import proficiency from "./proficiency";
 import range from "./range";
 import skill from "./skill";
 import vehicleSpeed from "./vehicleSpeed";
@@ -44,6 +45,7 @@ export default createSchema({
     language,
     magicItem,
     magicSchool,
+    proficiency,
     range,
     skill,
     vehicleSpeed,

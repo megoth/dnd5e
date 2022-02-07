@@ -53,6 +53,17 @@ export type GearCategory =
 
 export type LanguageType = "Exotic" | "Standard";
 
+export type ProficiencyType =
+  | "Armor"
+  | "Artisan's Tools"
+  | "Gaming Sets"
+  | "Musical Instruments"
+  | "Other"
+  | "Saving Throws"
+  | "Skills"
+  | "Vehicles"
+  | "Weapons";
+
 export type RangeCategory =
   | "Martial Melee"
   | "Martial Ranged"
@@ -634,7 +645,7 @@ export interface MonsterData extends BaseData {
 }
 
 export interface ProficiencyData extends BaseData {
-  type: string;
+  type: ProficiencyType;
   classes: APIResource[];
   races: APIResource[];
   reference: APIResource;
