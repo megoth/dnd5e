@@ -13,6 +13,7 @@ import {
   MagicItemData,
   MagicSchoolData,
   ProficiencyData,
+  RuleData,
   RuleSectionData,
   SkillData,
   WeaponPropertyData,
@@ -25,14 +26,15 @@ import migrateEquipmentCategoryData from "./equipment-category";
 import migrateEquipmentData from "./equipment";
 import migrateFeatData from "./feat";
 import migrateLanguageData from "./language";
+import migrateMagicItemData from "./magic-item";
+import migrateMagicSchoolData from "./magic-school";
+import migrateProficiencyData from "./proficiency";
+import migrateRuleData from "./rule";
+import migrateRuleSectionData from "./rule-section";
 import migrateSkillData from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import { prepareData, PreparedDocument } from "./common";
 import { openFile } from "../manage-data/node-common";
-import migrateMagicItemData from "./magic-item";
-import migrateMagicSchoolData from "./magic-school";
-import migrateProficiencyData from "./proficiency";
-import migrateRuleSectionData from "./rule-section";
 
 async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
   try {
@@ -77,6 +79,7 @@ export default async function migrateData() {
     openFile("magic-items"),
     openFile("magic-schools"),
     openFile("proficiencies"),
+    openFile("rules"),
     openFile("rule-sections"),
     openFile("skills"),
     openFile("weapon-properties"),
@@ -96,6 +99,7 @@ export default async function migrateData() {
     magicItems,
     magicSchools,
     proficiencies,
+    rules,
     ruleSections,
     skills,
     weaponProperties,
@@ -111,6 +115,7 @@ export default async function migrateData() {
     Record<string, MagicItemData>,
     Record<string, MagicSchoolData>,
     Record<string, ProficiencyData>,
+    Record<string, RuleData>,
     Record<string, RuleSectionData>,
     Record<string, SkillData>,
     Record<string, WeaponPropertyData>
@@ -128,6 +133,7 @@ export default async function migrateData() {
     migrateMagicSchoolData(preparedDataMap)(magicSchools),
     migrateProficiencyData(preparedDataMap)(proficiencies),
     migrateRuleSectionData(preparedDataMap)(ruleSections),
+    migrateRuleData(preparedDataMap)(rules),
     migrateSkillData(preparedDataMap)(skills),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
   ];

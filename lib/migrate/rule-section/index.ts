@@ -5,10 +5,10 @@ import { RuleSection } from "../../sanity/schema-types";
 export default function migrateRuleSectionData(preparedDataMap) {
   return migrateData<RuleSectionData, RuleSection>(
     preparedDataMap,
-    (weaponProperty) => ({
+    (ruleSection) => ({
       _type: "ruleSection",
-      name_en_US: weaponProperty.name,
-      description_en_US: weaponProperty.desc,
+      name_en_US: ruleSection.name,
+      description_en_US: ruleSection.desc,
     })
   );
 }

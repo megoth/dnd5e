@@ -838,6 +838,64 @@ export interface Proficiency extends SanityDocument {
 }
 
 /**
+ * Rule
+ *
+ *
+ */
+export interface Rule extends SanityDocument {
+  _type: "rule";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `markdown`
+   *
+   *
+   */
+  description_en_US?: Markdown;
+
+  /**
+   * Description (Norwegian) — `markdown`
+   *
+   *
+   */
+  description_nb_NO?: Markdown;
+
+  /**
+   * Subsections — `array`
+   *
+   *
+   */
+  subsections?: Array<SanityKeyedReference<RuleSection>>;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Rule Section
  *
  *
@@ -1221,6 +1279,7 @@ export type Documents =
   | MagicItem
   | MagicSchool
   | Proficiency
+  | Rule
   | RuleSection
   | Skill
   | WeaponProperty;
