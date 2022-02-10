@@ -2,6 +2,15 @@
 
 /* Basic Types */
 
+export type ActionReferenceType = "ability" | "magic" | "melee" | "ranged";
+
+export type ActionUsageType =
+  | "at will"
+  | "per day"
+  | "per rest"
+  | "recharge after rest"
+  | "recharge on roll";
+
 export type ArmorCategory = "Light" | "Medium" | "Heavy" | "Shield";
 
 export type CreatureSize =
@@ -122,7 +131,7 @@ export interface Action {
 }
 
 export interface ActionUsage {
-  type: string;
+  type: ActionUsageType;
   times?: number;
   dice?: string;
   min_value?: number;
@@ -133,7 +142,7 @@ export interface ActionReference {
   name: Action["name"];
   count: number | string;
   notes?: string;
-  type: string;
+  type: ActionReferenceType;
 }
 
 export interface AreaOfEffect {

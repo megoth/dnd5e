@@ -5,7 +5,7 @@ import { getProperty } from "../../manage-data";
 export default function migrateArmorClass(
   key: string,
   value?: ArmorClassData
-): {} | Record<string, ArmorClass> {
+): Record<string, ArmorClass> {
   return value
     ? {
         [key]: {

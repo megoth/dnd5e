@@ -5,7 +5,7 @@ import { getProperty } from "../../manage-data";
 export default function getDifficultyClass<T>(
   key: keyof T,
   value?: DifficultyClassData
-): {} | Record<keyof T, DifficultyClass> {
+): Record<string, DifficultyClass> {
   return value
     ? {
         [key]: {
