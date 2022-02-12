@@ -5,12 +5,18 @@ import { createSlug, getDnd5eUrl } from "../manage-data";
 
 export function getReference<T = SanityDocument>(
   preparedDataMap,
-  relativeUrl
-): SanityReference<T> {
-  return {
-    _ref: preparedDataMap[getDnd5eUrl(relativeUrl)]._id,
-    _type: "reference",
-  };
+  relativeUrl?: string
+): SanityReference<T> | null {
+  const referencedObject = preparedDataMap[getDnd5eUrl(relativeUrl)];
+  if (!referencedObject && relativeUrl) {
+    throw Error(`Unable to find reference for ${relativeUrl}`);
+  }
+  return relativeUrl
+    ? {
+        _ref: referencedObject._id,
+        _type: "reference",
+      }
+    : null;
 }
 
 export interface PreparedDocument

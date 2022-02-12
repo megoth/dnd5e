@@ -1005,6 +1005,248 @@ export interface Skill extends SanityDocument {
 }
 
 /**
+ * Spell
+ *
+ *
+ */
+export interface Spell extends SanityDocument {
+  _type: "spell";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `markdown`
+   *
+   *
+   */
+  description_en_US?: Markdown;
+
+  /**
+   * Description (Norwegian) — `markdown`
+   *
+   *
+   */
+  description_nb_NO?: Markdown;
+
+  /**
+   * Higher Level (English) — `markdown`
+   *
+   *
+   */
+  higherLevel_en_US?: Markdown;
+
+  /**
+   * Higher Level (Norwegian) — `markdown`
+   *
+   *
+   */
+  higherLevel_nb_NO?: Markdown;
+
+  /**
+   * Range — `string`
+   *
+   *
+   */
+  range?: string;
+
+  /**
+   * Components — `array`
+   *
+   *
+   */
+  components?: Array<SanityKeyed<string>>;
+
+  /**
+   * Material — `string`
+   *
+   *
+   */
+  material?: string;
+
+  /**
+   * Ritual — `boolean`
+   *
+   *
+   */
+  ritual?: boolean;
+
+  /**
+   * Duration — `string`
+   *
+   *
+   */
+  duration?: string;
+
+  /**
+   * Concentration — `boolean`
+   *
+   *
+   */
+  concentration?: boolean;
+
+  /**
+   * Casting Time — `string`
+   *
+   *
+   */
+  castingTime?: string;
+
+  /**
+   * Level — `number`
+   *
+   *
+   */
+  level?: number;
+
+  /**
+   * Heal at Slot Level — `array`
+   *
+   *
+   */
+  healAtSlotLevel?: Array<SanityKeyed<HealAtSlotLevel>>;
+
+  /**
+   * Attack Type — `string`
+   *
+   *
+   */
+  attackType?: "melee" | "ranged";
+
+  /**
+   * Damage — `damage`
+   *
+   *
+   */
+  damage?: Damage;
+
+  /**
+   * Difficulty Class — `difficultyClass`
+   *
+   *
+   */
+  dc?: DifficultyClass;
+
+  /**
+   * Area of Effect — `areaOfEffect`
+   *
+   *
+   */
+  areaOfEffect?: AreaOfEffect;
+
+  /**
+   * School — `reference`
+   *
+   *
+   */
+  school?: SanityReference<MagicSchool>;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
+ * Trait
+ *
+ *
+ */
+export interface Trait extends SanityDocument {
+  _type: "trait";
+
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Slug — `slug`
+   *
+   *
+   */
+  slug?: { _type: "slug"; current: string };
+
+  /**
+   * Description (English) — `string`
+   *
+   *
+   */
+  description_en_US?: string;
+
+  /**
+   * Description (Norwegian) — `string`
+   *
+   *
+   */
+  description_nb_NO?: string;
+
+  /**
+   * Parent — `reference`
+   *
+   *
+   */
+  parent?: SanityReference<Trait>;
+
+  /**
+   * Proficiencies — `array`
+   *
+   *
+   */
+  proficiencies?: Array<SanityKeyedReference<Proficiency>>;
+
+  /**
+   * Proficiency Choices — `proficiencyChoice`
+   *
+   *
+   */
+  proficiencyChoices?: ProficiencyChoice;
+
+  /**
+   * Trait Specific — `traitSpecific`
+   *
+   *
+   */
+  traitSpecific?: TraitSpecific;
+
+  /**
+   * URL — `url`
+   *
+   *
+   */
+  url?: string;
+}
+
+/**
  * Weapon Property
  *
  *
@@ -1070,6 +1312,242 @@ export type AbilityPrerequisite = {
    *
    */
   minimumScore?: number;
+};
+
+export type Action = {
+  _type: "action";
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Attack Bonus — `number`
+   *
+   *
+   */
+  attackBonus?: number;
+
+  /**
+   * Damage — `array`
+   *
+   *
+   */
+  damage?: Array<SanityKeyed<Damage>>;
+
+  /**
+   * Damage Choice — `array`
+   *
+   *
+   */
+  damageChoice?: Array<SanityKeyed<DamageChoice>>;
+
+  /**
+   * Description (English) — `markdown`
+   *
+   *
+   */
+  description_en_US?: Markdown;
+
+  /**
+   * Description (Norwegian) — `markdown`
+   *
+   *
+   */
+  description_nb_NO?: Markdown;
+
+  /**
+   * Difficulty Class — `difficultyClass`
+   *
+   *
+   */
+  dc?: DifficultyClass;
+
+  /**
+   * Options — `actionOptions`
+   *
+   *
+   */
+  options?: ActionOptions;
+
+  /**
+   * Usage — `actionUsage`
+   *
+   *
+   */
+  usage?: ActionUsage;
+
+  /**
+   * Attacks — `array`
+   *
+   *
+   */
+  attacks?: Array<SanityKeyed<Action>>;
+
+  /**
+   * Attack Options — `actionChoice`
+   *
+   *
+   */
+  attackOptions?: ActionChoice;
+};
+
+export type ActionChoice = {
+  _type: "actionChoice";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyed<Action>>;
+};
+
+export type ActionOption = {
+  _type: "actionOption";
+  /**
+   * Attacks — `array`
+   *
+   *
+   */
+  attacks?: Array<SanityKeyed<ActionReference>>;
+};
+
+export type ActionOptions = {
+  _type: "actionOptions";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyed<ActionOption>>;
+};
+
+export type ActionReference = {
+  _type: "actionReference";
+  /**
+   * Name (English) — `string`
+   *
+   *
+   */
+  name_en_US?: string;
+
+  /**
+   * Name (Norwegian) — `string`
+   *
+   *
+   */
+  name_nb_NO?: string;
+
+  /**
+   * Count — `string`
+   *
+   *
+   */
+  count?: string;
+
+  /**
+   * Notes (English) — `string`
+   *
+   *
+   */
+  notes_en_US?: string;
+
+  /**
+   * Notes (Norwegian) — `string`
+   *
+   *
+   */
+  notes_nb_NO?: string;
+
+  /**
+   * Type — `string`
+   *
+   *
+   */
+  type?: "ability" | "magic" | "melee" | "ranged";
+};
+
+export type ActionUsage = {
+  _type: "actionUsage";
+  /**
+   * Type — `string`
+   *
+   *
+   */
+  type?:
+    | "at will"
+    | "per day"
+    | "per rest"
+    | "recharge after rest"
+    | "recharge on roll";
+
+  /**
+   * Times — `number`
+   *
+   *
+   */
+  times?: number;
+
+  /**
+   * Dice — `string`
+   *
+   *
+   */
+  dice?: string;
+
+  /**
+   * Minimum value — `number`
+   *
+   *
+   */
+  minValue?: number;
+
+  /**
+   * Rest Type — `string`
+   *
+   *
+   */
+  restType?: "long" | "short";
+};
+
+export type AreaOfEffect = {
+  _type: "areaOfEffect";
+  /**
+   * Type — `string`
+   *
+   *
+   */
+  type?: "cone" | "cube" | "cylinder" | "line" | "sphere";
+
+  /**
+   * Size — `number`
+   *
+   *
+   */
+  size?: number;
 };
 
 export type ArmorClass = {
@@ -1142,6 +1620,13 @@ export type Damage = {
    *
    */
   damageAtCharacterLevel?: Array<SanityKeyed<DamageAtCharacterLevel>>;
+
+  /**
+   * Damage at Slot Level — `array`
+   *
+   *
+   */
+  damageAtSlotLevel?: Array<SanityKeyed<DamageAtSlotLevel>>;
 };
 
 export type DamageAtCharacterLevel = {
@@ -1161,8 +1646,8 @@ export type DamageAtCharacterLevel = {
   damage?: string;
 };
 
-export type DamageAtSlotLevel = {
-  _type: "damageAtSlotLevel";
+export type HealAtSlotLevel = {
+  _type: "healAtSlotLevel";
   /**
    * Slot — `number`
    *
@@ -1171,11 +1656,28 @@ export type DamageAtSlotLevel = {
   slot?: number;
 
   /**
-   * Damage — `string`
+   * Heal — `string`
    *
    *
    */
-  damage?: string;
+  heal?: string;
+};
+
+export type DamageChoice = {
+  _type: "damageChoice";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyed<Damage>>;
 };
 
 export type DifficultyClass = {
@@ -1216,6 +1718,23 @@ export type DifficultyClass = {
   description_nb_NO?: string;
 };
 
+export type DamageAtSlotLevel = {
+  _type: "damageAtSlotLevel";
+  /**
+   * Slot — `number`
+   *
+   *
+   */
+  slot?: number;
+
+  /**
+   * Damage — `string`
+   *
+   *
+   */
+  damage?: string;
+};
+
 export type Item = {
   _type: "item";
   /**
@@ -1233,6 +1752,23 @@ export type Item = {
   quantity?: number;
 };
 
+export type ProficiencyChoice = {
+  _type: "proficiencyChoice";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyedReference<Proficiency>>;
+};
+
 export type Range = {
   _type: "range";
   /**
@@ -1248,6 +1784,71 @@ export type Range = {
    *
    */
   long?: number;
+};
+
+export type SpellChoice = {
+  _type: "spellChoice";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyedReference<Spell>>;
+};
+
+export type TraitChoice = {
+  _type: "traitChoice";
+  /**
+   * Choose — `number`
+   *
+   *
+   */
+  choose?: number;
+
+  /**
+   * From — `array`
+   *
+   *
+   */
+  from?: Array<SanityKeyedReference<Trait>>;
+};
+
+export type TraitSpecific = {
+  _type: "traitSpecific";
+  /**
+   * Damage Type — `reference`
+   *
+   *
+   */
+  damageType?: SanityReference<DamageType>;
+
+  /**
+   * Breath Weapon — `action`
+   *
+   *
+   */
+  breathWeapon?: Action;
+
+  /**
+   * Subtrait Options — `traitChoice`
+   *
+   *
+   */
+  subtraitOptions?: TraitChoice;
+
+  /**
+   * Spell Options — `spellChoice`
+   *
+   *
+   */
+  spellOptions?: SpellChoice;
 };
 
 export type VehicleSpeed = {
@@ -1282,6 +1883,8 @@ export type Documents =
   | Rule
   | RuleSection
   | Skill
+  | Spell
+  | Trait
   | WeaponProperty;
 
 /**

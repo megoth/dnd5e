@@ -25,5 +25,11 @@ export default {
       type: "array",
       of: [{ type: "damageAtCharacterLevel" }],
     },
+    {
+      name: "damageAtSlotLevel",
+      title: "Damage at Slot Level",
+      type: "array",
+      of: [{ type: "damageAtSlotLevel" }],
+    },
   ],
 };

@@ -1,6 +1,6 @@
 export default {
-  name: "healAtSlotLevel",
-  title: "Heal at Slot Level",
+  name: "damageAtSlotLevel",
+  title: "Damage at Slot Level",
   type: "object",
   fields: [
     {
@@ -9,8 +9,8 @@ export default {
       type: "number",
     },
     {
-      name: "heal",
-      title: "Heal",
+      name: "damage",
+      title: "Damage",
       type: "string",
     },
   ],

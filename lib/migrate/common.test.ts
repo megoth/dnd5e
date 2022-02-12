@@ -1,4 +1,4 @@
-import { prepareData } from "./common";
+import { getReference, prepareData } from "./common";
 
 const existingData = {
   "https://www.dnd5eapi.co/api/ability-scores/con": {
@@ -36,6 +36,18 @@ const importedData = {
     url: "/api/ability-scores/wis",
   },
 };
+
+describe("getReference", () => {
+  it("throws an error when reference isn't found", () => {
+    expect(() => getReference({}, "test")).toThrow(
+      "Unable to find reference for test"
+    );
+  });
+
+  it("returns null if no url is given", () => {
+    expect(getReference({})).toBeNull();
+  });
+});
 
 describe("prepareData", () => {
   it("prepares SanityDocument", () => {

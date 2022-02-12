@@ -16,6 +16,8 @@ import {
   RuleData,
   RuleSectionData,
   SkillData,
+  SpellData,
+  TraitData,
   WeaponPropertyData,
 } from "../download/api.types";
 import migrateAbilityScoreData from "./ability-score";
@@ -35,6 +37,8 @@ import migrateSkillData from "./skill";
 import migrateWeaponPropertyData from "./weapon-property";
 import { prepareData, PreparedDocument } from "./common";
 import { openFile } from "../manage-data/node-common";
+import migrateSpellData from "./spell";
+import migrateTraitData from "./trait";
 
 async function loadExistingData(): Promise<Record<string, PreparedDocument>> {
   try {
@@ -82,6 +86,8 @@ export default async function migrateData() {
     openFile("rules"),
     openFile("rule-sections"),
     openFile("skills"),
+    openFile("spells"),
+    openFile("traits"),
     openFile("weapon-properties"),
   ])) as Array<Record<string, BaseData>>;
   const preparedDataMap = importedData
@@ -102,6 +108,8 @@ export default async function migrateData() {
     rules,
     ruleSections,
     skills,
+    spells,
+    traits,
     weaponProperties,
   ] = importedData as [
     Record<string, AbilityScoreData>,
@@ -118,6 +126,8 @@ export default async function migrateData() {
     Record<string, RuleData>,
     Record<string, RuleSectionData>,
     Record<string, SkillData>,
+    Record<string, SpellData>,
+    Record<string, TraitData>,
     Record<string, WeaponPropertyData>
   ];
   const migratedDataMap = [
@@ -135,6 +145,8 @@ export default async function migrateData() {
     migrateRuleSectionData(preparedDataMap)(ruleSections),
     migrateRuleData(preparedDataMap)(rules),
     migrateSkillData(preparedDataMap)(skills),
+    migrateSpellData(preparedDataMap)(spells),
+    migrateTraitData(preparedDataMap)(traits),
     migrateWeaponPropertyData(preparedDataMap)(weaponProperties),
   ];
   const data = Object.values(migratedDataMap)

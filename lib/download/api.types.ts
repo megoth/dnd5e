@@ -13,6 +13,8 @@ export type ActionUsageType =
 
 export type ArmorCategory = "Light" | "Medium" | "Heavy" | "Shield";
 
+export type Component = "M" | "S" | "V";
+
 export type CreatureSize =
   | "Fine"
   | "Diminutive"
@@ -81,6 +83,8 @@ export type RangeCategory =
 
 export type RestType = "long" | "short";
 
+export type SpellAttackType = "melee" | "ranged";
+
 export type SpellComponent = "S" | "V" | "M";
 
 export type SuccessType = "full" | "half" | "none" | "other";
@@ -118,19 +122,19 @@ export interface AbilityPrerequisite {
   minimum_score: number;
 }
 
-export interface Action {
+export interface ActionData {
   attack_bonus?: number;
   name: string;
-  damage?: Array<Damage | Choice<Damage>>;
+  damage?: Array<DamageData | ChoiceData<DamageData>>;
   desc?: string;
   dc?: DifficultyClass;
-  options?: Choice<ActionReference | ActionReference[]>;
-  usage?: ActionUsage;
-  attacks?: Action[];
-  attack_options?: Choice<Action>;
+  options?: ChoiceData<ActionReferenceData | Array<ActionReferenceData>>;
+  usage?: ActionUsageData;
+  attacks?: ActionData[];
+  attack_options?: ChoiceData<ActionData>;
 }
 
-export interface ActionUsage {
+export interface ActionUsageData {
   type: ActionUsageType;
   times?: number;
   dice?: string;
@@ -138,14 +142,14 @@ export interface ActionUsage {
   rest_types?: RestType[];
 }
 
-export interface ActionReference {
-  name: Action["name"];
+export interface ActionReferenceData {
+  name: ActionData["name"];
   count: number | string;
   notes?: string;
   type: ActionReferenceType;
 }
 
-export interface AreaOfEffect {
+export interface AreaOfEffectData {
   type: "cone" | "cube" | "cylinder" | "line" | "sphere";
   size: number;
 }
@@ -179,7 +183,7 @@ export interface ClericSpecifics {
   destroy_undead_cr: number;
 }
 
-export interface Choice<T = APIResource> {
+export interface ChoiceData<T = APIResource> {
   choose: number;
   type?: string;
   from: T[];
@@ -190,7 +194,7 @@ export interface Cost {
   unit: CurrencyUnit;
 }
 
-export type Damage =
+export type DamageData =
   | MonsterDamage
   | SpellDamageByCharacterLevel
   | SpellDamageBySlotLevel
@@ -225,9 +229,11 @@ export interface DifficultyClass {
   desc?: string;
 }
 
+export type TraitSpecificData = DragonkindTrait | Subtrait | SpellTrait;
+
 export interface DragonkindTrait {
   damage_type: APIResource;
-  breath_weapon: Action;
+  breath_weapon: ActionData;
 }
 
 export interface DruidSpecifics {
@@ -262,7 +268,7 @@ export interface Ideals {
 }
 
 export interface ExpertiseOption {
-  expertise_options: Choice;
+  expertise_options: ChoiceData;
 }
 
 export interface Feature {
@@ -271,7 +277,7 @@ export interface Feature {
 }
 
 export interface FeatureOption {
-  subfeature_options: Choice;
+  subfeature_options: ChoiceData;
 }
 
 export interface Item {
@@ -304,7 +310,7 @@ export interface MonsterSpell {
   level: number;
   notes?: string;
   url: string;
-  usage?: ActionUsage;
+  usage?: ActionUsageData;
 }
 
 export interface MonsterSpellcasting {
@@ -320,9 +326,9 @@ export interface MonsterSpellcasting {
 
 export interface MultiClassing {
   prerequisites?: AbilityPrerequisite[];
-  prerequisite_options?: Choice<AbilityPrerequisite>;
+  prerequisite_options?: ChoiceData<AbilityPrerequisite>;
   proficiencies: APIResource[];
-  proficiency_choices?: Choice[];
+  proficiency_choices?: ChoiceData[];
 }
 
 export interface PaladinSpecifics {
@@ -386,10 +392,10 @@ export interface SorcerorSpecifics {
 export interface SpecialAbility {
   name: string;
   desc: string;
-  damage?: Damage[];
+  damage?: DamageData[];
   dc?: DifficultyClass;
   spellcasting?: MonsterSpellcasting;
-  usage?: ActionUsage;
+  usage?: ActionUsageData;
   attack_bonus?: number;
 }
 
@@ -406,7 +412,7 @@ export interface SpellCastingInfo {
 }
 
 export interface SpellTrait {
-  spell_options: Choice;
+  spell_options: ChoiceData;
 }
 
 interface StartingEquipmentOptionEquipment {
@@ -453,7 +459,7 @@ export interface SubclassSpellPrerequisite extends APIResource {
 }
 
 export interface Subtrait {
-  subtrait_options: Choice;
+  subtrait_options: ChoiceData;
 }
 
 export interface VehicleSpeed {
@@ -509,9 +515,9 @@ export interface AlignmentData extends BaseData {
 
 export interface BackgroundData extends BaseData {
   starting_proficiencies: APIResource[];
-  language_options: Choice;
+  language_options: ChoiceData;
   starting_equipment: EquipmentStack[];
-  starting_equipment_options: Choice<StartingEquipmentOptionEquipmentCategory>[];
+  starting_equipment_options: ChoiceData<StartingEquipmentOptionEquipmentCategory>[];
   feature: Feature;
   personality_traits: PersonalityChoice;
   ideals: Ideals;
@@ -522,7 +528,7 @@ export interface BackgroundData extends BaseData {
 export interface ClassData extends BaseData {
   hit_die: number;
   proficiencies: APIResource[];
-  proficiency_choices: Choice[];
+  proficiency_choices: ChoiceData[];
   saving_throws: APIResource[];
   starting_equipment: EquipmentStack[];
   starting_equipment_options: StartingEquipmentChoice[];
@@ -556,8 +562,8 @@ export interface EquipmentData extends BaseData {
   vehicle_category?: VehicleCategory;
   speed?: VehicleSpeed;
   capacity?: string;
-  damage?: Damage;
-  two_handed_damage?: Damage;
+  damage?: DamageData;
+  two_handed_damage?: DamageData;
   weapon_category?: WeaponCategory;
   weapon_range?: WeaponRange;
   category_range?: RangeCategory;
@@ -647,8 +653,8 @@ export interface MonsterData extends BaseData {
   languages: string;
   challenge_rating: number;
   special_abilities?: SpecialAbility[];
-  actions?: Action[];
-  legendary_actions?: Action[];
+  actions?: ActionData[];
+  legendary_actions?: ActionData[];
   xp?: number;
   reactions?: Reaction[];
 }
@@ -664,15 +670,15 @@ export interface RaceData extends BaseData {
   name: string;
   speed: number;
   ability_bonuses: AbilityBonus[];
-  ability_bonus_options?: Choice<AbilityBonus>;
+  ability_bonus_options?: ChoiceData<AbilityBonus>;
   alignment: string;
   age: string;
   size: CreatureSize;
   size_description: string;
   starting_proficiencies: APIResource[];
-  starting_proficiency_options?: Choice;
+  starting_proficiency_options?: ChoiceData;
   languages: APIResource[];
-  language_options?: Choice;
+  language_options?: ChoiceData;
   language_desc: string;
   traits: APIResource[];
   subraces: APIResource[];
@@ -696,7 +702,7 @@ export interface SpellData extends BaseData {
   desc: string[];
   higher_level?: string[];
   range: string;
-  components: string[];
+  components: Array<Component>;
   material?: string;
   ritual: boolean;
   duration: string;
@@ -704,10 +710,10 @@ export interface SpellData extends BaseData {
   casting_time: string;
   level: number;
   heal_at_slot_level?: Record<string, string>;
-  attack_type?: string;
-  damage?: Damage;
+  attack_type?: SpellAttackType;
+  damage?: DamageData;
   dc?: DifficultyClass;
-  area_of_effect?: AreaOfEffect;
+  area_of_effect?: AreaOfEffectData;
   school: APIResource;
   classes: APIResource[];
   subclasses: APIResource[];
@@ -716,7 +722,7 @@ export interface SpellData extends BaseData {
 export interface StartingEquipmentData extends BaseData {
   class: APIResource;
   starting_equipment: EquipmentStack[];
-  starting_equipment_options: Choice[];
+  starting_equipment_options: ChoiceData[];
 }
 
 export interface SubclassData extends BaseData {
@@ -731,13 +737,13 @@ export interface SubraceData extends BaseData {
   race: APIResource;
   desc: string;
   ability_bonuses: AbilityBonus[];
-  ability_bonus_options?: Choice;
+  ability_bonus_options?: ChoiceData;
   starting_proficiencies: APIResource[];
-  starting_proficiency_options?: Choice;
+  starting_proficiency_options?: ChoiceData;
   languages: APIResource[];
-  language_options?: Choice;
+  language_options?: ChoiceData;
   racial_traits: APIResource[];
-  racial_trait_options?: Choice;
+  racial_trait_options?: ChoiceData;
 }
 
 export interface TraitData extends BaseData {
@@ -746,8 +752,8 @@ export interface TraitData extends BaseData {
   desc: string[];
   parent?: APIResource;
   proficiencies: APIResource[];
-  proficiency_choices?: Choice;
-  trait_specific?: DragonkindTrait | Subtrait | SpellTrait;
+  proficiency_choices?: ChoiceData;
+  trait_specific?: TraitSpecificData;
 }
 
 export interface WeaponPropertyData extends BaseData {

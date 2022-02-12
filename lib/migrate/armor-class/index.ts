@@ -1,6 +1,6 @@
 import { ArmorClass as ArmorClassData } from "../../download/api.types";
 import { ArmorClass } from "../../sanity/schema-types";
-import { getProperty } from "../../manage-data";
+import { migrateProperty } from "../../manage-data";
 
 export default function migrateArmorClass(
   key: string,
@@ -10,9 +10,9 @@ export default function migrateArmorClass(
     ? {
         [key]: {
           _type: "armorClass",
-          ...getProperty<ArmorClass>("base", value.base),
-          ...getProperty<ArmorClass>("dexBonus", value.dex_bonus),
-          ...getProperty<ArmorClass>("maxBonus", value.max_bonus),
+          ...migrateProperty<ArmorClass>("base", value.base),
+          ...migrateProperty<ArmorClass>("dexBonus", value.dex_bonus),
+          ...migrateProperty<ArmorClass>("maxBonus", value.max_bonus),
         },
       }
     : {};

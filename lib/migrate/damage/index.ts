@@ -1,13 +1,39 @@
-import { Damage as DamageData, WeaponDamage } from "../../download/api.types";
+import {
+  DamageData,
+  MonsterDamage,
+  SpellDamageByCharacterLevel,
+  SpellDamageBySlotLevel,
+  WeaponDamage,
+} from "../../download/api.types";
 import { Damage } from "../../sanity/schema-types";
-import { getProperty } from "../../manage-data";
+import { migrateProperty } from "../../manage-data";
 import { getReference, PreparedDocument } from "../common";
+import migrateDamageAtCharacterLevels from "../damage-at-character-level";
+import migrateDamageAtSlotLevels from "../damage-at-slot-level";
+import migrateDifficultyClass from "../difficulty-class";
 
-function migrateObject(preparedDataMap, value: DamageData): Damage {
+export function migrateDamageValue(preparedDataMap, value: DamageData): Damage {
   return {
     _type: "damage",
-    damageType: getReference(preparedDataMap, value.damage_type.url),
-    ...getProperty<Damage>("damageDice", (value as WeaponDamage).damage_dice),
+    ...migrateProperty<Damage>(
+      "damageType",
+      value.damage_type
+        ? getReference(preparedDataMap, value.damage_type.url)
+        : null
+    ),
+    ...migrateProperty<Damage>(
+      "damageDice",
+      (value as WeaponDamage).damage_dice
+    ),
+    ...migrateDifficultyClass<Damage>("dc", (value as MonsterDamage).dc),
+    ...migrateDamageAtCharacterLevels<Damage>(
+      "damageAtCharacterLevel",
+      (value as SpellDamageByCharacterLevel).damage_at_character_level
+    ),
+    ...migrateDamageAtSlotLevels<Damage>(
+      "damageAtSlotLevel",
+      (value as SpellDamageBySlotLevel).damage_at_slot_level
+    ),
   };
 }
 
@@ -16,5 +42,5 @@ export default function migrateDamage<T>(
   key: keyof T,
   value?: DamageData
 ): Record<string, Damage> {
-  return value ? { [key]: migrateObject(preparedDataMap, value) } : {};
+  return value ? { [key]: migrateDamageValue(preparedDataMap, value) } : {};
 }

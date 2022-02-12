@@ -50,4 +50,8 @@ Four sizes of carpet of flying exist. The GM chooses the size of a given carpet 
 
 A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.`);
   });
+
+  it("handles undefined", () => {
+    expect(migrateToMarkdown()).toBeNull();
+  });
 });
