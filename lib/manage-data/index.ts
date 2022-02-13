@@ -36,11 +36,14 @@ export function getSafeType(type) {
   return type.replace("'", "");
 }
 
-export function migrateProperty<T>(
+export function migrateOptional<T, U = any, V = U>(
   key: keyof T,
-  value?: any
+  value?: any,
+  postProcessor?: (val: U) => V
 ): Record<string, any> {
-  return value ? { [key]: value } : {};
+  return value && (Array.isArray(value) ? value.length > 0 : true)
+    ? { [key]: postProcessor ? postProcessor(value) : value }
+    : {};
 }
 
 export function migrateToMarkdown(lines?: string[]): string | null {

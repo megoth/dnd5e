@@ -3,9 +3,6 @@ import { getDnd5eUrl, migrateToMarkdown } from "../../manage-data";
 import migrateSpellData from "./index";
 import { SpellData } from "../../download/api.types";
 import { getReference } from "../common";
-import { migrateDamageValue } from "../damage";
-import { migrateDifficultyClassValue } from "../difficulty-class";
-import { migrateAreaOfEffectValue } from "../area-of-effect";
 
 const schoolRelativeUrl = "/api/magic-schools/abjuration";
 const schoolUrl = getDnd5eUrl(schoolRelativeUrl);
@@ -48,6 +45,16 @@ const simpleSpell: SpellData = {
   subclasses: [],
   url: "/api/spells/death-ward",
 };
+const damageAtSlotLevel = {
+  damage_type: {
+    index: "necrotic",
+    name: "Necrotic",
+    url: damageTypeRelativeUrl,
+  },
+  damage_at_slot_level: {
+    "3": "3d6",
+  },
+};
 const complexSpell: SpellData = {
   index: "death-ward",
   name: "Death Ward",
@@ -71,16 +78,7 @@ const complexSpell: SpellData = {
     "2": "2d8 + MOD",
   },
   attack_type: "melee",
-  damage: {
-    damage_type: {
-      index: "necrotic",
-      name: "Necrotic",
-      url: damageTypeRelativeUrl,
-    },
-    damage_at_slot_level: {
-      "3": "3d6",
-    },
-  },
+  damage: damageAtSlotLevel,
   dc: {
     dc_type: {
       index: "dex",
@@ -152,10 +150,38 @@ describe("migrateSpellData", () => {
           },
         ],
         attackType: complexSpell.attack_type,
-        damage: migrateDamageValue(preparedDataMap, complexSpell.damage),
-        dc: migrateDifficultyClassValue(complexSpell.dc),
-        areaOfEffect: migrateAreaOfEffectValue(complexSpell.area_of_effect),
-        school: getReference(preparedDataMap, complexSpell.school.url),
+        damage: {
+          _type: "damage",
+          damageAtSlotLevel: [
+            {
+              _key: expect.any(String),
+              _type: "damageAtSlotLevel",
+              damage: damageAtSlotLevel.damage_at_slot_level["3"],
+              slot: 3,
+            },
+          ],
+          damageType: {
+            _ref: damageTypeId,
+            _type: "reference",
+          },
+        },
+        dc: {
+          _type: "difficultyClass",
+          difficultyClassType: {
+            _ref: abilityScoreId,
+            _type: "reference",
+          },
+          successType: complexSpell.dc.dc_success,
+        },
+        areaOfEffect: {
+          _type: "areaOfEffect",
+          size: complexSpell.area_of_effect.size,
+          type: complexSpell.area_of_effect.type,
+        },
+        school: {
+          _ref: schoolId,
+          _type: "reference",
+        },
       },
     ]);
   });

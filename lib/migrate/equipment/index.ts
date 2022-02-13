@@ -1,7 +1,25 @@
-import { EquipmentData } from "../../download/api.types";
-import { Equipment } from "../../sanity/schema-types";
+import {
+  ArmorClassData,
+  DamageData,
+  EquipmentData,
+  ItemData,
+  RangeData,
+  VehicleSpeedData,
+} from "../../download/api.types";
+import {
+  ArmorClass,
+  Damage,
+  Equipment,
+  Item,
+  Range,
+  VehicleSpeed,
+} from "../../sanity/schema-types";
 import { getReference, migrateData } from "../common";
-import { migrateProperty, migrateToMarkdown } from "../../manage-data";
+import {
+  createKeyedArray,
+  migrateOptional,
+  migrateToMarkdown,
+} from "../../manage-data";
 import migrateArmorClass from "../armor-class";
 import migrateDamage from "../damage";
 import migrateCost from "../cost";
@@ -19,58 +37,83 @@ export default function migrateEquipmentData(preparedDataMap) {
         preparedDataMap,
         equipment.equipment_category.url
       ),
-      cost: migrateCost<Equipment>("cost", equipment.cost),
-      ...migrateProperty<Equipment>(
+      cost: migrateCost(equipment.cost),
+      ...migrateOptional<Equipment>(
         "description_en_US",
         migrateToMarkdown(equipment.desc)
       ),
-      ...migrateProperty<Equipment>("armorCategory", equipment.armor_category),
-      ...migrateArmorClass("armorClass", equipment.armor_class),
-      ...migrateProperty<Equipment>("capacity", equipment.capacity),
-      ...migrateProperty<Equipment>("rangeCategory", equipment.category_range),
-      ...migrateDamage<Equipment>(preparedDataMap, "damage", equipment.damage),
+      ...migrateOptional<Equipment>("armorCategory", equipment.armor_category),
+      ...migrateOptional<Equipment, ArmorClassData, ArmorClass>(
+        "armorClass",
+        equipment.armor_class,
+        migrateArmorClass
+      ),
+      ...migrateOptional<Equipment>("capacity", equipment.capacity),
+      ...migrateOptional<Equipment>("rangeCategory", equipment.category_range),
+      ...migrateOptional<Equipment, DamageData, Damage>(
+        "damage",
+        equipment.damage,
+        (val) => migrateDamage(val, preparedDataMap)
+      ),
 
-      ...migrateProperty<Equipment>("quantity", equipment.quantity),
-      ...migrateRange<Equipment>("range", equipment.range),
-      ...migrateProperty<Equipment>(
+      ...migrateOptional<Equipment>("quantity", equipment.quantity),
+      ...migrateOptional<Equipment, RangeData, Range>(
+        "range",
+        equipment.range,
+        migrateRange
+      ),
+      ...migrateOptional<Equipment>(
         "special_en_US",
         migrateToMarkdown(equipment.special)
       ),
-      ...migrateVehicleSpeed<Equipment>("speed", equipment.speed),
-      ...migrateProperty<Equipment>("strMinimum", equipment.str_minimum),
-      ...migrateProperty<Equipment>(
+      ...migrateOptional<Equipment, VehicleSpeedData, VehicleSpeed>(
+        "speed",
+        equipment.speed,
+        migrateVehicleSpeed
+      ),
+      ...migrateOptional<Equipment>("strMinimum", equipment.str_minimum),
+      ...migrateOptional<Equipment>(
         "stealthDisadvantage",
         equipment.stealth_disadvantage
       ),
-      ...migrateRange<Equipment>("throwRange", equipment.throw_range),
-      ...migrateProperty<Equipment>("toolCategory", equipment.tool_category),
-      ...migrateDamage<Equipment>(
-        preparedDataMap,
-        "twoHandedDamage",
-        equipment.two_handed_damage
+      ...migrateOptional<Equipment, RangeData, Range>(
+        "throwRange",
+        equipment.throw_range,
+        migrateRange
       ),
-      ...migrateProperty<Equipment>(
+      ...migrateOptional<Equipment>("toolCategory", equipment.tool_category),
+      ...migrateOptional<Equipment, DamageData, Damage>(
+        "twoHandedDamage",
+        equipment.two_handed_damage,
+        (val) => migrateDamage(val, preparedDataMap)
+      ),
+      ...migrateOptional<Equipment>(
         "vehicleCategory",
         equipment.vehicle_category
       ),
-      ...migrateProperty<Equipment>("weaponRange", equipment.weapon_range),
-      ...migrateProperty<Equipment>("weight", equipment.weight),
-      ...migrateProperty<Equipment>(
+      ...migrateOptional<Equipment>("weaponRange", equipment.weapon_range),
+      ...migrateOptional<Equipment>("weight", equipment.weight),
+      ...migrateOptional<Equipment>(
         "properties",
-        equipment.properties?.map(({ url }) =>
-          getReference(preparedDataMap, url)
+        createKeyedArray(
+          equipment.properties?.map(({ url }) =>
+            getReference(preparedDataMap, url)
+          )
         )
       ),
-      ...migrateProperty<Equipment>(
+      ...migrateOptional<Equipment>(
         "gearCategory",
         equipment.gear_category
           ? getReference(preparedDataMap, equipment.gear_category.url)
           : null
       ),
-      ...migrateItem<Equipment>(
-        preparedDataMap,
+      ...migrateOptional<Equipment, Array<ItemData>, Array<Item>>(
         "contents",
-        equipment.contents
+        equipment.contents,
+        (contents) =>
+          createKeyedArray(
+            contents.map((val) => migrateItem(val, preparedDataMap))
+          )
       ),
     })
   );

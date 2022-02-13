@@ -1,28 +1,18 @@
 import { ActionData, ChoiceData } from "../../download/api.types";
 import { Choice } from "../choice";
 import { Action } from "../../sanity/schema-types";
-import { migrateActionValue } from "../action";
+import migrateAction from "../action";
 import { createKeyedArray } from "../../manage-data";
 
-export function migrateActionChoiceValue(
-  preparedDataMap,
-  value: ChoiceData<ActionData>
+export default function migrateActionChoice(
+  value: ChoiceData<ActionData>,
+  preparedDataMap
 ): Choice<"actionChoice", Action> {
   return {
     _type: "actionChoice",
     choose: value.choose,
     from: createKeyedArray(
-      value.from.map((action) => migrateActionValue(preparedDataMap, action))
+      value.from.map((action) => migrateAction(action, preparedDataMap))
     ),
   };
-}
-
-export default function migrateActionChoice<T>(
-  preparedDataMap,
-  key: keyof T,
-  value?: ChoiceData<ActionData>
-): Record<string, Choice<"actionChoice", Action>> {
-  return value
-    ? { [key]: migrateActionChoiceValue(preparedDataMap, value) }
-    : {};
 }

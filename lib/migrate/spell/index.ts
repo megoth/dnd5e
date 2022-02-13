@@ -1,7 +1,19 @@
+import { SanityKeyed } from "sanity-codegen";
 import { getReference, migrateData } from "../common";
-import { SpellData } from "../../download/api.types";
-import { Spell } from "../../sanity/schema-types";
-import { migrateProperty, migrateToMarkdown } from "../../manage-data";
+import {
+  AreaOfEffectData,
+  DamageData,
+  DifficultyClassData,
+  SpellData,
+} from "../../download/api.types";
+import {
+  AreaOfEffect,
+  Damage,
+  DifficultyClass,
+  HealAtSlotLevel,
+  Spell,
+} from "../../sanity/schema-types";
+import { migrateOptional, migrateToMarkdown } from "../../manage-data";
 import migrateHealAtSlotLevel from "../heal-at-slot-level";
 import migrateDamage from "../damage";
 import migrateDifficultyClass from "../difficulty-class";
@@ -12,25 +24,38 @@ export default function migrateSpellData(preparedDataMap) {
     _type: "spell",
     name_en_US: spell.name,
     description_en_US: migrateToMarkdown(spell.desc),
-    ...migrateProperty<Spell>(
+    ...migrateOptional<Spell>(
       "higherLevel_en_US",
       migrateToMarkdown(spell.higher_level)
     ),
     range: spell.range,
     components: spell.components,
-    ...migrateProperty<Spell>("material", spell.material),
+    ...migrateOptional<Spell>("material", spell.material),
     ritual: spell.ritual,
     duration: spell.duration,
     concentration: spell.concentration,
     castingTime: spell.casting_time,
-    ...migrateHealAtSlotLevel<Spell>(
-      "healAtSlotLevel",
-      spell.heal_at_slot_level
+    ...migrateOptional<
+      Spell,
+      Record<string, string>,
+      Array<SanityKeyed<HealAtSlotLevel>>
+    >("healAtSlotLevel", spell.heal_at_slot_level, migrateHealAtSlotLevel),
+    ...migrateOptional<Spell>("attackType", spell.attack_type),
+    ...migrateOptional<Spell, DamageData, Damage>(
+      "damage",
+      spell.damage,
+      (val) => migrateDamage(val, preparedDataMap)
     ),
-    ...migrateProperty<Spell>("attackType", spell.attack_type),
-    ...migrateDamage<Spell>(preparedDataMap, "damage", spell.damage),
-    ...migrateDifficultyClass<Spell>("dc", spell.dc),
-    ...migrateAreaOfEffect<Spell>("areaOfEffect", spell.area_of_effect),
+    ...migrateOptional<Spell, DifficultyClassData, DifficultyClass>(
+      "dc",
+      spell.dc,
+      (val) => migrateDifficultyClass(val, preparedDataMap)
+    ),
+    ...migrateOptional<Spell, AreaOfEffectData, AreaOfEffect>(
+      "areaOfEffect",
+      spell.area_of_effect,
+      migrateAreaOfEffect
+    ),
     school: getReference(preparedDataMap, spell.school.url),
   }));
 }

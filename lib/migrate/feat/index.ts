@@ -2,7 +2,7 @@ import { migrateData } from "../common";
 import { FeatData } from "../../download/api.types";
 import { Feat } from "../../sanity/schema-types";
 import migrateAbilityPrerequisite from "../ability-prerequisite";
-import { createKeyedArray } from "../../manage-data";
+import { createKeyedArray, migrateToMarkdown } from "../../manage-data";
 
 export default function migrateFeatData(preparedDataMap) {
   return migrateData<FeatData, Feat>(preparedDataMap, (feat) => ({
@@ -10,9 +10,9 @@ export default function migrateFeatData(preparedDataMap) {
     name_en_US: feat.name,
     prerequisites: createKeyedArray(
       feat.prerequisites.map((prerequisite) =>
-        migrateAbilityPrerequisite(preparedDataMap, prerequisite)
+        migrateAbilityPrerequisite(prerequisite, preparedDataMap)
       )
     ),
-    description_en_US: feat.desc.join("\n\n"),
+    description_en_US: migrateToMarkdown(feat.desc),
   }));
 }

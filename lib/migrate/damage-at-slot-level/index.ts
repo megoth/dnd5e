@@ -1,18 +1,15 @@
+import { SanityKeyed } from "sanity-codegen";
 import { DamageAtSlotLevel } from "../../sanity/schema-types";
+import { createKeyedArray } from "../../manage-data";
 
-function migrateObject(
+export default function migrateDamageAtSlotLevels(
   value: Record<string, string>
-): Array<DamageAtSlotLevel> {
-  return Object.entries(value).map(([slot, damage]) => ({
-    _type: "damageAtSlotLevel",
-    slot: parseInt(slot, 10),
-    damage,
-  }));
-}
-
-export default function migrateDamageAtSlotLevels<T>(
-  key: keyof T,
-  value?: Record<string, string>
-): Record<string, Array<DamageAtSlotLevel>> {
-  return value ? { [key]: migrateObject(value) } : {};
+): Array<SanityKeyed<DamageAtSlotLevel>> {
+  return createKeyedArray(
+    Object.entries(value).map(([slot, damage]) => ({
+      _type: "damageAtSlotLevel",
+      slot: parseInt(slot, 10),
+      damage,
+    }))
+  );
 }

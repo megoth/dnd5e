@@ -239,6 +239,7 @@ describe("migrateEquipmentData", () => {
         weight: complexEquipment.weight,
         properties: [
           {
+            _key: expect.any(String),
             _ref: preparedDataMap[propertyUrl]._id,
             _type: "reference",
           },
@@ -249,6 +250,7 @@ describe("migrateEquipmentData", () => {
         },
         contents: [
           {
+            _key: expect.any(String),
             _type: "item",
             item: {
               _type: "reference",

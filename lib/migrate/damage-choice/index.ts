@@ -2,18 +2,17 @@ import { ChoiceData, DamageData } from "../../download/api.types";
 import { Choice } from "../choice";
 import { Damage } from "../../sanity/schema-types";
 import { createKeyedArray } from "../../manage-data";
-import { migrateDamageValue } from "../damage";
+import migrateDamage from "../damage";
 
-// eslint-disable-next-line import/prefer-default-export
-export function migrateDamageChoiceValue(
-  preparedDataMap,
-  value: ChoiceData<DamageData>
+export default function migrateDamageChoice(
+  value: ChoiceData<DamageData>,
+  preparedDataMap
 ): Choice<"damageChoice", Damage> {
   return {
     _type: "damageChoice",
     choose: value.choose,
     from: createKeyedArray(
-      value.from.map((dam) => migrateDamageValue(preparedDataMap, dam))
+      value.from.map((dam) => migrateDamage(dam, preparedDataMap))
     ),
   };
 }

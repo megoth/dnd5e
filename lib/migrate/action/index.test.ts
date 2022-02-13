@@ -1,42 +1,20 @@
 import { v4 as uuidv4 } from "uuid";
-import {
-  migrateActionDamage,
-  migrateActionDamageChoice,
-  migrateActionValue,
-} from "./index";
+import migrateAction from "./index";
 import { ActionData, ActionReferenceData } from "../../download/api.types";
 import { getDnd5eUrl } from "../../manage-data";
+import { damage, preparedDataMap as damageDataMap } from "./damage/index.test";
+import { damageChoice } from "./damage-choice/index.test";
 
 const abilityScoreRelativeUrl = "/api/ability-scores/str";
 const abilityScoreUrl = getDnd5eUrl(abilityScoreRelativeUrl);
 const abilityScoreId = uuidv4();
-const damageTypeRelativeUrl = "/api/damage-types/piercing";
-const damageTypeUrl = getDnd5eUrl(damageTypeRelativeUrl);
-const damageTypeId = uuidv4();
 const preparedDataMap = {
-  [damageTypeUrl]: { _id: damageTypeId },
+  ...damageDataMap,
   [abilityScoreUrl]: { _id: abilityScoreId },
 };
 
 const simpleAction: ActionData = {
   name: "Multiattack",
-};
-const damage = {
-  damage_type: {
-    index: "piercing",
-    name: "Piercing",
-    url: damageTypeRelativeUrl,
-  },
-  damage_dice: "1d4+2",
-};
-const damageChoice = {
-  choose: 1,
-  type: "damage",
-  from: [damage],
-};
-const simpleActionWDamage: ActionData = {
-  name: "Multiattack",
-  damage: [damage, damageChoice],
 };
 const clawReference: ActionReferenceData = {
   name: "Claw",
@@ -80,14 +58,14 @@ const complexAction: ActionData = {
 
 describe("migrateActionValue", () => {
   it("migrates simple action data", () => {
-    expect(migrateActionValue(preparedDataMap, simpleAction)).toEqual({
+    expect(migrateAction(simpleAction, preparedDataMap)).toEqual({
       _type: "action",
       name_en_US: simpleAction.name,
     });
   });
 
   it("migrates complex action data", () => {
-    expect(migrateActionValue(preparedDataMap, complexAction)).toEqual({
+    expect(migrateAction(complexAction, preparedDataMap)).toEqual({
       _type: "action",
       attackBonus: complexAction.attack_bonus,
       name_en_US: complexAction.name,
@@ -96,6 +74,10 @@ describe("migrateActionValue", () => {
       description_en_US: complexAction.desc,
       dc: {
         _type: "difficultyClass",
+        difficultyClassType: {
+          _ref: abilityScoreId,
+          _type: "reference",
+        },
         difficultyClassValue: complexAction.dc.dc_value,
         successType: complexAction.dc.success_type,
       },
@@ -154,51 +136,6 @@ describe("migrateActionValue", () => {
           },
         ],
       },
-    });
-  });
-});
-
-describe("migrateActionDamage", () => {
-  it("migrates damage data for attacks", () => {
-    expect(migrateActionDamage(preparedDataMap, simpleActionWDamage)).toEqual({
-      damage: [
-        {
-          _key: expect.any(String),
-          _type: "damage",
-          damageDice: damage.damage_dice,
-          damageType: {
-            _ref: damageTypeId,
-            _type: "reference",
-          },
-        },
-      ],
-    });
-  });
-});
-
-describe("migrateActionDamageChoice", () => {
-  it("migrates damage choice data for attacks", () => {
-    expect(
-      migrateActionDamageChoice(preparedDataMap, simpleActionWDamage)
-    ).toEqual({
-      damageChoice: [
-        {
-          _key: expect.any(String),
-          _type: "damageChoice",
-          choose: damageChoice.choose,
-          from: [
-            {
-              _key: expect.any(String),
-              _type: "damage",
-              damageDice: damage.damage_dice,
-              damageType: {
-                _ref: damageTypeId,
-                _type: "reference",
-              },
-            },
-          ],
-        },
-      ],
     });
   });
 });

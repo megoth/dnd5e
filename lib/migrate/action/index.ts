@@ -1,71 +1,69 @@
-import { SanityKeyed } from "sanity-codegen";
-import { Action, Damage, DamageChoice } from "../../sanity/schema-types";
-import { ActionData, ChoiceData, DamageData } from "../../download/api.types";
-import { migrateDamageValue } from "../damage";
-import { createKeyedArray, migrateProperty } from "../../manage-data";
-import { migrateDamageChoiceValue } from "../damage-choice";
+import {
+  Action,
+  ActionOptions,
+  ActionUsage,
+  DifficultyClass,
+} from "../../sanity/schema-types";
+import {
+  ActionData,
+  ActionReferenceData,
+  ActionUsageData,
+  ChoiceData,
+  DifficultyClassData,
+} from "../../download/api.types";
+import { createKeyedArray, migrateOptional } from "../../manage-data";
 import migrateDifficultyClass from "../difficulty-class";
 import migrateActionOptions from "../action-options";
 import migrateActionUsage from "../action-usage";
 import migrateActionChoice from "../action-choice";
+import migrateActionDamage from "./damage";
+import migrateActionDamageChoice from "./damage-choice";
+import { Choice } from "../choice";
 
-export function migrateActionDamage(
-  preparedDataMap,
-  value: ActionData
-): Record<string, Array<SanityKeyed<Damage>>> {
-  const damages = (value.damage || []).filter(
-    (dam) => "damage_type" in dam || "damage_at_slot_level" in dam
-  ) as Array<DamageData>;
-  return damages.length
-    ? {
-        damage: createKeyedArray(
-          damages.map((dam) => migrateDamageValue(preparedDataMap, dam))
-        ),
-      }
-    : {};
-}
-
-export function migrateActionDamageChoice(
-  preparedDataMap,
-  value: ActionData
-): Record<string, Array<SanityKeyed<DamageChoice>>> {
-  const damageChoices = (value.damage || []).filter(
-    (dam) => "from" in dam
-  ) as Array<ChoiceData<DamageData>>;
-  return damageChoices.length
-    ? {
-        damageChoice: createKeyedArray(
-          damageChoices.map((dam) =>
-            migrateDamageChoiceValue(preparedDataMap, dam)
-          )
-        ),
-      }
-    : {};
-}
-
-export function migrateActionValue(preparedDataMap, value: ActionData): Action {
+export default function migrateAction(
+  value: ActionData,
+  preparedDataMap
+): Action {
   return {
     _type: "action",
-    ...migrateProperty<Action>("attackBonus", value.attack_bonus),
+    ...migrateOptional<Action>("attackBonus", value.attack_bonus),
     name_en_US: value.name,
-    ...migrateActionDamage(preparedDataMap, value),
-    ...migrateActionDamageChoice(preparedDataMap, value),
-    ...migrateProperty<Action>("description_en_US", value.desc),
-    ...migrateDifficultyClass<Action>("dc", value.dc),
-    ...migrateActionOptions<Action>("options", value.options),
-    ...migrateActionUsage<Action>("usage", value.usage),
-    ...migrateProperty<Action>(
+    ...migrateOptional<Action>(
+      "damage",
+      migrateActionDamage(value, preparedDataMap)
+    ),
+    ...migrateOptional<Action>(
+      "damageChoice",
+      migrateActionDamageChoice(value, preparedDataMap)
+    ),
+    ...migrateOptional<Action>("description_en_US", value.desc),
+    ...migrateOptional<Action, DifficultyClassData, DifficultyClass>(
+      "dc",
+      value.dc,
+      (val) => migrateDifficultyClass(val, preparedDataMap)
+    ),
+    ...migrateOptional<
+      Action,
+      ChoiceData<ActionReferenceData | Array<ActionReferenceData>>,
+      ActionOptions
+    >("options", value.options, migrateActionOptions),
+    ...migrateOptional<Action, ActionUsageData, ActionUsage>(
+      "usage",
+      value.usage,
+      migrateActionUsage
+    ),
+    ...migrateOptional<Action>(
       "attacks",
       createKeyedArray(
-        value.attacks?.map((attack) =>
-          migrateActionValue(preparedDataMap, attack)
-        )
+        value.attacks?.map((attack) => migrateAction(attack, preparedDataMap))
       )
     ),
-    ...migrateActionChoice<Action>(
-      preparedDataMap,
-      "attackOptions",
-      value.attack_options
+    ...migrateOptional<
+      Action,
+      ChoiceData<ActionData>,
+      Choice<"actionChoice", Action>
+    >("attackOptions", value.attack_options, (val) =>
+      migrateActionChoice(val, preparedDataMap)
     ),
   };
 }

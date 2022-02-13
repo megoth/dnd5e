@@ -117,7 +117,7 @@ export interface AbilityBonus {
   bonus: number;
 }
 
-export interface AbilityPrerequisite {
+export interface AbilityPrerequisiteData {
   ability_score: APIResource;
   minimum_score: number;
 }
@@ -127,7 +127,7 @@ export interface ActionData {
   name: string;
   damage?: Array<DamageData | ChoiceData<DamageData>>;
   desc?: string;
-  dc?: DifficultyClass;
+  dc?: DifficultyClassData;
   options?: ChoiceData<ActionReferenceData | Array<ActionReferenceData>>;
   usage?: ActionUsageData;
   attacks?: ActionData[];
@@ -154,7 +154,7 @@ export interface AreaOfEffectData {
   size: number;
 }
 
-export interface ArmorClass {
+export interface ArmorClassData {
   base: number;
   dex_bonus: boolean;
   max_bonus: number;
@@ -189,7 +189,7 @@ export interface ChoiceData<T = APIResource> {
   from: T[];
 }
 
-export interface Cost {
+export interface CostData {
   quantity: number;
   unit: CurrencyUnit;
 }
@@ -203,7 +203,7 @@ export type DamageData =
 export interface MonsterDamage {
   damage_dice: string;
   damage_type: APIResource;
-  dc: DifficultyClass;
+  dc: DifficultyClassData;
 }
 
 export interface SpellDamageByCharacterLevel {
@@ -221,7 +221,7 @@ export interface WeaponDamage {
   damage_type: APIResource;
 }
 
-export interface DifficultyClass {
+export interface DifficultyClassData {
   dc_type: APIResource;
   dc_value?: number;
   success_type?: SuccessType;
@@ -280,7 +280,7 @@ export interface FeatureOption {
   subfeature_options: ChoiceData;
 }
 
-export interface Item {
+export interface ItemData {
   item: APIResource;
   quantity: number;
 }
@@ -325,8 +325,8 @@ export interface MonsterSpellcasting {
 }
 
 export interface MultiClassing {
-  prerequisites?: AbilityPrerequisite[];
-  prerequisite_options?: ChoiceData<AbilityPrerequisite>;
+  prerequisites?: AbilityPrerequisiteData[];
+  prerequisite_options?: ChoiceData<AbilityPrerequisiteData>;
   proficiencies: APIResource[];
   proficiency_choices?: ChoiceData[];
 }
@@ -352,7 +352,7 @@ export interface ProficiencyBonus {
   value: number;
 }
 
-export interface Range {
+export interface RangeData {
   normal: number;
   long: number | null;
 }
@@ -365,7 +365,7 @@ export interface RangerSpecifics {
 interface Reaction {
   name: string;
   desc: string;
-  dc?: DifficultyClass;
+  dc?: DifficultyClassData;
 }
 
 export interface RogueSpecifics {
@@ -393,7 +393,7 @@ export interface SpecialAbility {
   name: string;
   desc: string;
   damage?: DamageData[];
-  dc?: DifficultyClass;
+  dc?: DifficultyClassData;
   spellcasting?: MonsterSpellcasting;
   usage?: ActionUsageData;
   attack_bonus?: number;
@@ -462,7 +462,7 @@ export interface Subtrait {
   subtrait_options: ChoiceData;
 }
 
-export interface VehicleSpeed {
+export interface VehicleSpeedData {
   quantity: number;
   unit: string;
 }
@@ -553,26 +553,26 @@ export interface EquipmentCategoryData extends BaseData {
 
 export interface EquipmentData extends BaseData {
   equipment_category: APIResource;
-  cost: Cost;
+  cost: CostData;
   desc?: string[];
   armor_category?: ArmorCategory;
-  armor_class?: ArmorClass;
+  armor_class?: ArmorClassData;
   str_minimum?: number;
   stealth_disadvantage?: boolean;
   vehicle_category?: VehicleCategory;
-  speed?: VehicleSpeed;
+  speed?: VehicleSpeedData;
   capacity?: string;
   damage?: DamageData;
   two_handed_damage?: DamageData;
   weapon_category?: WeaponCategory;
   weapon_range?: WeaponRange;
   category_range?: RangeCategory;
-  range?: Range;
-  throw_range?: Range;
+  range?: RangeData;
+  throw_range?: RangeData;
   properties?: APIResource[];
   special?: string[];
   gear_category?: APIResource;
-  contents?: Item[];
+  contents?: ItemData[];
   tool_category?: ToolCategory;
   quantity?: number;
   weight?: number;
@@ -580,7 +580,7 @@ export interface EquipmentData extends BaseData {
 
 export interface FeatData extends BaseData {
   desc: string[];
-  prerequisites?: AbilityPrerequisite[];
+  prerequisites?: AbilityPrerequisiteData[];
 }
 
 export interface FeatureData extends BaseData {
@@ -591,7 +591,7 @@ export interface FeatureData extends BaseData {
   level: number;
   parent?: APIResource;
   prerequisites?: Array<
-    | AbilityPrerequisite
+    | AbilityPrerequisiteData
     | FeaturePrerequisite
     | LevelPrerequisite
     | SpellPrerequisite
@@ -712,7 +712,7 @@ export interface SpellData extends BaseData {
   heal_at_slot_level?: Record<string, string>;
   attack_type?: SpellAttackType;
   damage?: DamageData;
-  dc?: DifficultyClass;
+  dc?: DifficultyClassData;
   area_of_effect?: AreaOfEffectData;
   school: APIResource;
   classes: APIResource[];

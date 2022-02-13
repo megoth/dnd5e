@@ -1,6 +1,7 @@
 import {
   getDnd5eDataPath,
   getSanityFilePath,
+  migrateOptional,
   migrateToMarkdown,
 } from "./index";
 
@@ -13,6 +14,12 @@ describe("getDnd5eDataPath", () => {
 describe("getSanityFilePath", () => {
   it("returns the path for local NDJSON-files needed for Sanity CMS", () => {
     expect(getSanityFilePath()).toEqual("./data/sanity/data.ndjson");
+  });
+});
+
+describe("migrateOptional", () => {
+  it("handles empty arrays", () => {
+    expect(migrateOptional("test", [])).toEqual({});
   });
 });
 

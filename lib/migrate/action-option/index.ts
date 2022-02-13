@@ -1,32 +1,29 @@
 import { ActionReferenceData } from "../../download/api.types";
-import { ActionOption } from "../../sanity/schema-types";
+import { ActionOption, ActionReference } from "../../sanity/schema-types";
 import { createKeyedArray } from "../../manage-data";
-import { migrateActionReferenceValue } from "../action-reference";
+import migrateActionReference from "../action-reference";
 
-export function migrateActionOptionItem(
+function migrateActionOptionAsItem(
   value: ActionReferenceData
-): ActionOption {
-  return {
-    _type: "actionOption",
-    attacks: createKeyedArray([migrateActionReferenceValue(value)]),
-  };
+): Array<ActionReference> {
+  return [migrateActionReference(value)];
 }
 
-export function migrateActionOptionAsArray(
+function migrateActionOptionAsArray(
   value: Array<ActionReferenceData>
+): Array<ActionReference> {
+  return value.map(migrateActionReference);
+}
+
+export default function migrateActionOption(
+  value: ActionReferenceData | Array<ActionReferenceData>
 ): ActionOption {
   return {
     _type: "actionOption",
     attacks: createKeyedArray(
-      value.map((val) => migrateActionReferenceValue(val))
+      "length" in value
+        ? migrateActionOptionAsArray(value)
+        : migrateActionOptionAsItem(value)
     ),
   };
-}
-
-export function migrateActionOptionValue(
-  value: ActionReferenceData | Array<ActionReferenceData>
-): ActionOption {
-  return "length" in value
-    ? migrateActionOptionAsArray(value as Array<ActionReferenceData>)
-    : migrateActionOptionItem(value as ActionReferenceData);
 }

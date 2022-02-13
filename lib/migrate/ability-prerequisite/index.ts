@@ -1,10 +1,10 @@
 import { getReference } from "../common";
-import { AbilityPrerequisite as AbilityPrerequisiteData } from "../../download/api.types";
 import { AbilityPrerequisite } from "../../sanity/schema-types";
+import { AbilityPrerequisiteData } from "../../download/api.types";
 
 export default function migrateAbilityPrerequisite(
-  preparedDataMap,
-  value: AbilityPrerequisiteData
+  value: AbilityPrerequisiteData,
+  preparedDataMap
 ): AbilityPrerequisite {
   return {
     _type: "abilityPrerequisite",

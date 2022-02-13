@@ -1,143 +1,48 @@
-import { v4 as uuidv4 } from "uuid";
-import { DragonkindTrait } from "../../download/api.types";
-import { getDnd5eUrl } from "../../manage-data";
+import migrateTraitSpecific from "./index";
+import migrateTraitSpecificDragonkind from "./dragonkind";
 import {
-  migrateTraitSpecificDragonkind,
-  migrateTraitSpecificSpell,
-  migrateTraitSpecificSubtrait,
-  migrateTraitSpecificValue,
-} from "./index";
+  dragonkindTraitSpecific,
+  preparedDataMap as dragonkindDataMap,
+} from "./dragonkind/index.test";
+import {
+  preparedDataMap as subtraitDataMap,
+  subtraitId,
+  subtraitOptionsTraitSpecific,
+} from "./subtrait-options/index.test";
+import {
+  preparedDataMap as spellDataMap,
+  spellId,
+  spellOptionsTraitSpecific,
+} from "./spell-options/index.test";
 
-const damageTypeRelativeUrl = "/api/damage-types/acid";
-const damageTypeUrl = getDnd5eUrl(damageTypeRelativeUrl);
-const damageTypeId = uuidv4();
-const spellRelativeUrl = "/api/spells/light";
-const spellUrl = getDnd5eUrl(spellRelativeUrl);
-const spellId = uuidv4();
-const subtraitRelativeUrl = "/api/traits/draconic-ancestry";
-const subtraitUrl = getDnd5eUrl(subtraitRelativeUrl);
-const subtraitId = uuidv4();
 export const preparedDataMap = {
-  [damageTypeUrl]: { _id: damageTypeId },
-  [spellUrl]: { _id: spellId },
-  [subtraitUrl]: { _id: subtraitId },
+  ...dragonkindDataMap,
+  ...subtraitDataMap,
+  ...spellDataMap,
 };
 
-export const dragonkindTraitSpecific: DragonkindTrait = {
-  damage_type: {
-    index: "acid",
-    name: "Acid",
-    url: damageTypeRelativeUrl,
-  },
-  breath_weapon: {
-    name: "Breath Weapon",
-  },
+export const traitSpecific = {
+  ...dragonkindTraitSpecific,
+  ...subtraitOptionsTraitSpecific,
+  ...spellOptionsTraitSpecific,
 };
 
-export const subtraitOptionsTraitSpecific = {
-  subtrait_options: {
-    choose: 1,
-    from: [
-      {
-        index: "draconic-ancestry-black",
-        name: "Draconic Ancestry (Black)",
-        url: subtraitRelativeUrl,
-      },
-    ],
-    type: "trait",
-  },
-};
-
-export const spellOptionsTraitSpecific = {
-  spell_options: {
-    choose: 1,
-    from: [
-      {
-        index: "light",
-        name: "Light",
-        url: spellRelativeUrl,
-      },
-    ],
-    type: "spell",
-  },
-};
-
-describe("migrateTraitSpecificDragonkind", () => {
-  it("migrates trait specific data for dragonkind", () => {
-    expect(
-      migrateTraitSpecificDragonkind(preparedDataMap, dragonkindTraitSpecific)
-    ).toEqual({
-      breathWeapon: {
-        _type: "action",
-        name_en_US: dragonkindTraitSpecific.breath_weapon.name,
-      },
-      damageType: {
-        _ref: damageTypeId,
-        _type: "reference",
-      },
-    });
-  });
-});
-
-describe("migrateTraitSpecificSubtrait", () => {
-  it("migrates subtrait options", () => {
-    expect(
-      migrateTraitSpecificSubtrait(
-        preparedDataMap,
-        subtraitOptionsTraitSpecific
-      )
-    ).toEqual({
-      subtraitOptions: {
-        _type: "traitChoice",
-        choose: subtraitOptionsTraitSpecific.subtrait_options.choose,
-        from: [
-          {
-            _key: expect.any(String),
-            _ref: subtraitId,
-            _type: "reference",
-          },
-        ],
-      },
-    });
-  });
-});
-
-describe("migrateTraitSpecificSpell", () => {
-  it("migrates spell options", () => {
-    expect(
-      migrateTraitSpecificSpell(preparedDataMap, spellOptionsTraitSpecific)
-    ).toEqual({
-      spellOptions: {
-        _type: "spellChoice",
-        choose: spellOptionsTraitSpecific.spell_options.choose,
-        from: [
-          {
-            _key: expect.any(String),
-            _ref: spellId,
-            _type: "reference",
-          },
-        ],
-      },
-    });
-  });
-});
-
-describe("migrateTraitSpecificValue", () => {
+describe("migrateTraitSpecific", () => {
   it("migrates dragonkind specific trait", () => {
     expect(
-      migrateTraitSpecificValue(preparedDataMap, dragonkindTraitSpecific)
+      migrateTraitSpecific(dragonkindTraitSpecific, preparedDataMap)
     ).toEqual({
       _type: "traitSpecific",
       ...migrateTraitSpecificDragonkind(
-        preparedDataMap,
-        dragonkindTraitSpecific
+        dragonkindTraitSpecific,
+        preparedDataMap
       ),
     });
   });
 
   it("migrates subtrait specific trait", () => {
     expect(
-      migrateTraitSpecificValue(preparedDataMap, subtraitOptionsTraitSpecific)
+      migrateTraitSpecific(subtraitOptionsTraitSpecific, preparedDataMap)
     ).toEqual({
       _type: "traitSpecific",
       subtraitOptions: {
@@ -156,7 +61,7 @@ describe("migrateTraitSpecificValue", () => {
 
   it("migrates spell specific trait", () => {
     expect(
-      migrateTraitSpecificValue(preparedDataMap, spellOptionsTraitSpecific)
+      migrateTraitSpecific(spellOptionsTraitSpecific, preparedDataMap)
     ).toEqual({
       _type: "traitSpecific",
       spellOptions: {
@@ -175,16 +80,19 @@ describe("migrateTraitSpecificValue", () => {
 
   it("migrates all specificities of traits", () => {
     expect(
-      migrateTraitSpecificValue(preparedDataMap, {
-        ...dragonkindTraitSpecific,
-        ...subtraitOptionsTraitSpecific,
-        ...spellOptionsTraitSpecific,
-      })
+      migrateTraitSpecific(
+        {
+          ...dragonkindTraitSpecific,
+          ...subtraitOptionsTraitSpecific,
+          ...spellOptionsTraitSpecific,
+        },
+        preparedDataMap
+      )
     ).toEqual({
       _type: "traitSpecific",
       ...migrateTraitSpecificDragonkind(
-        preparedDataMap,
-        dragonkindTraitSpecific
+        dragonkindTraitSpecific,
+        preparedDataMap
       ),
       subtraitOptions: {
         _type: "traitChoice",

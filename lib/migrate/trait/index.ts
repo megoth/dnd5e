@@ -1,7 +1,11 @@
 import { getReference, migrateData } from "../common";
-import { TraitData } from "../../download/api.types";
-import { Trait } from "../../sanity/schema-types";
-import { createKeyedArray, migrateToMarkdown } from "../../manage-data";
+import { TraitData, TraitSpecificData } from "../../download/api.types";
+import { Trait, TraitSpecific } from "../../sanity/schema-types";
+import {
+  createKeyedArray,
+  migrateOptional,
+  migrateToMarkdown,
+} from "../../manage-data";
 import migrateProficiencyChoices from "../proficiency-choices";
 import migrateTraitSpecific from "../trait-specific";
 
@@ -18,15 +22,15 @@ export default function migrateTraitData(preparedDataMap) {
         getReference(preparedDataMap, proficiency.url)
       )
     ),
-    ...migrateProficiencyChoices<Trait>(
-      preparedDataMap,
+    ...migrateOptional<Trait>(
       "proficiencyChoices",
-      trait.proficiency_choices
+      trait.proficiency_choices,
+      (val) => migrateProficiencyChoices(val, preparedDataMap)
     ),
-    ...migrateTraitSpecific<Trait>(
-      preparedDataMap,
+    ...migrateOptional<Trait, TraitSpecificData, TraitSpecific>(
       "traitSpecific",
-      trait.trait_specific
+      trait.trait_specific,
+      (value) => migrateTraitSpecific(value, preparedDataMap)
     ),
   }));
 }

@@ -3,10 +3,8 @@ import migrateSkillData from "./index";
 import { getDnd5eUrl, migrateToMarkdown } from "../../manage-data";
 import { TraitData } from "../../download/api.types";
 import {
-  dragonkindTraitSpecific,
-  preparedDataMap as traitSpecificPreparedDataMap,
-  subtraitOptionsTraitSpecific,
-  spellOptionsTraitSpecific,
+  preparedDataMap as traitSpecificDataMap,
+  traitSpecific,
 } from "../trait-specific/index.test";
 
 const skillRelativeUrl = "/api/proficiencies/skill-intimidation";
@@ -16,7 +14,7 @@ const parentTraitRelativeUrl = "/api/traits/draconic-ancestry";
 const parentTraitUrl = getDnd5eUrl(parentTraitRelativeUrl);
 const parentTraitId = uuidv4();
 const preparedDataMap = {
-  ...traitSpecificPreparedDataMap,
+  ...traitSpecificDataMap,
   [skillUrl]: { _id: skillId },
   [parentTraitUrl]: { _id: parentTraitId },
 };
@@ -70,11 +68,7 @@ const complexTrait: TraitData = {
       },
     ],
   },
-  trait_specific: {
-    ...dragonkindTraitSpecific,
-    ...subtraitOptionsTraitSpecific,
-    ...spellOptionsTraitSpecific,
-  },
+  trait_specific: traitSpecific,
   url: "/api/traits/draconic-ancestry-copper",
 };
 
