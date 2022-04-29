@@ -16,14 +16,14 @@ function migrateActionOptionAsArray(
 }
 
 export default function migrateActionOption(
-  value: ActionReferenceData | Array<ActionReferenceData>
+  value: ActionReferenceData | Record<number, ActionReferenceData>
 ): ActionOption {
   return {
     _type: "actionOption",
     attacks: createKeyedArray(
-      "length" in value
-        ? migrateActionOptionAsArray(value)
-        : migrateActionOptionAsItem(value)
+      "length" in value || value[0]
+        ? migrateActionOptionAsArray(Object.values(value))
+        : migrateActionOptionAsItem(value as ActionReferenceData)
     ),
   };
 }

@@ -128,7 +128,11 @@ export interface ActionData {
   damage?: Array<DamageData | ChoiceData<DamageData>>;
   desc?: string;
   dc?: DifficultyClassData;
-  options?: ChoiceData<ActionReferenceData | Array<ActionReferenceData>>;
+  options?: ChoiceData<
+    | ActionReferenceData
+    | Array<ActionReferenceData>
+    | Record<number, ActionReferenceData>
+  >;
   usage?: ActionUsageData;
   attacks?: ActionData[];
   attack_options?: ChoiceData<ActionData>;
@@ -186,7 +190,7 @@ export interface ClericSpecifics {
 export interface ChoiceData<T = APIResource> {
   choose: number;
   type?: string;
-  from: T[];
+  from: Array<T>;
 }
 
 export interface CostData {
@@ -622,6 +626,11 @@ export interface LevelData extends Omit<BaseData, "name"> {
 export interface MagicItemData extends BaseData {
   desc: string[];
   equipment_category: APIResource;
+  rarity: {
+    name: string;
+  };
+  variants: Array<APIResource>;
+  variant: boolean;
 }
 
 export interface MagicSchoolData extends BaseData {
@@ -631,7 +640,7 @@ export interface MagicSchoolData extends BaseData {
 export interface MonsterData extends BaseData {
   size: CreatureSize;
   type: string;
-  subtype: string;
+  subtype?: string;
   alignment: string;
   armor_class: number;
   hit_points: number;
@@ -699,6 +708,7 @@ export interface SkillData extends BaseData {
 }
 
 export interface SpellData extends BaseData {
+  _id: string;
   desc: string[];
   higher_level?: string[];
   range: string;
