@@ -1,11 +1,10 @@
 import React from "react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import userEvent from "@testing-library/user-event";
 import SubMenuNav, { TESTID_SUB_MENU_NAV_CLOSE_BUTTON } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import useLayout from "../../src/hooks/useLayout";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -13,6 +12,8 @@ const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useLayout");
 const mockedLayoutHook = useLayout as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 describe("SubMenuNav", () => {
   let app;
@@ -22,9 +23,7 @@ describe("SubMenuNav", () => {
     app = mockAppHook(mockedAppHook);
   });
   beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/rules" }));
+    mockRouter.default.setCurrentUrl("/rules");
   });
   beforeEach(() => {
     setLeftOpen = jest.fn();

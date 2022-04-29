@@ -1,5 +1,5 @@
 import React from "react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import userEvent from "@testing-library/user-event";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import useApp from "../../src/hooks/useApp";
@@ -13,7 +13,6 @@ import {
   mockAuthenticatedSession,
   mockUnauthenticatedSession,
 } from "../../__testUtils/mockSession";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -22,6 +21,8 @@ const mockedAppHook = useApp as jest.Mock;
 jest.mock("../../src/hooks/useLayout");
 const mockedLayoutHook = useLayout as jest.Mock;
 
+jest.mock("next/router", () => mockRouter);
+
 describe("PageHeader", () => {
   const authenticatedSession = mockAuthenticatedSession();
 
@@ -29,15 +30,9 @@ describe("PageHeader", () => {
   let setLeftOpen;
   let setRightOpen;
   let mockedSessionHook;
-  let mockedRouterHook;
 
   beforeEach(() => {
     app = mockAppHook(mockedAppHook);
-  });
-  beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/" }));
   });
   beforeEach(() => {
     setLeftOpen = jest.fn();
@@ -48,9 +43,6 @@ describe("PageHeader", () => {
     mockedSessionHook = jest
       .spyOn(solidUIReactFns, "useSession")
       .mockReturnValue(authenticatedSession);
-  });
-  beforeEach(() => {
-    mockedRouterHook = jest.spyOn(routerFns, "useRouter");
   });
 
   it("renders", () => {
@@ -71,7 +63,7 @@ describe("PageHeader", () => {
   });
 
   it("renders button that opens the left menu", () => {
-    mockedRouterHook.mockReturnValue({ asPath: "/href/test" });
+    mockRouter.default.setCurrentUrl("/href/test");
     const { getByTestId } = renderApp(app, <PageHeader />);
     userEvent.click(getByTestId(TESTID_PAGE_HEADER_LEFT_MENU_BUTTON));
     expect(setLeftOpen).toHaveBeenCalledWith(true);

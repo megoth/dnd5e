@@ -1,12 +1,11 @@
 import React from "react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import AboutPage, { TESTID_ABOUT_PAGE_LANGUAGE_WARNING } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import { mockNorwegianApp } from "../../__testUtils/mockApp";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import useDataset from "../../src/hooks/useDataset";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -15,11 +14,11 @@ const mockedAppHook = useApp as jest.Mock;
 jest.mock("../../src/hooks/useDataset");
 const mockedUseDataset = useDataset as jest.Mock;
 
+jest.mock("next/router", () => mockRouter);
+
 describe("AboutPage", () => {
   beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/admin" }));
+    mockRouter.default.setCurrentUrl("/about");
   });
   beforeEach(() => mockedUseDataset.mockReturnValue(mockProfileDataset()));
 

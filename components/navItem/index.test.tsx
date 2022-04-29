@@ -1,5 +1,5 @@
-import * as routerFns from "next/router";
 import React from "react";
+import * as mockRouter from "next-router-mock";
 import Link from "next/link";
 import NavItem from "./index";
 import mockAppHook from "../../__testUtils/mockAppHook";
@@ -12,22 +12,19 @@ const mockedAppHook = useApp as jest.Mock;
 jest.mock("next/link");
 const mockedLinkComponent = Link as jest.Mock;
 
+jest.mock("next/router", () => mockRouter);
+
 describe("NavItem", () => {
   let app;
-  let mockedRouterHook;
 
   beforeEach(() => {
     app = mockAppHook(mockedAppHook);
-  });
-  beforeEach(() => {
-    mockedRouterHook = jest.spyOn(routerFns, "useRouter");
   });
   beforeEach(() => {
     mockedLinkComponent.mockImplementation(({ children }) => children);
   });
 
   it("renders", () => {
-    mockedRouterHook.mockReturnValue({ asPath: "/" });
     const { asFragment } = renderApp(
       app,
       <NavItem href="/href" translationId="translationId" />
@@ -36,7 +33,7 @@ describe("NavItem", () => {
   });
 
   it("renders for selected items", () => {
-    mockedRouterHook.mockReturnValue({ asPath: "/href" });
+    mockRouter.default.setCurrentUrl("/href");
     const { asFragment } = renderApp(
       app,
       <NavItem href="/href" translationId="translationId" />
@@ -45,7 +42,7 @@ describe("NavItem", () => {
   });
 
   it("renders for selected child items", () => {
-    mockedRouterHook.mockReturnValue({ asPath: "/href/test" });
+    mockRouter.default.setCurrentUrl("/href/test");
     const { asFragment } = renderApp(
       app,
       <NavItem href="/href" translationId="translationId" />

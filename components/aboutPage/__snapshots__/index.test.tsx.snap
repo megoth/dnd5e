@@ -132,7 +132,7 @@ exports[`AboutPage renders 1`] = `
             </li>
             <li>
               <a
-                class="pages-nav__link"
+                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
                 href="/about"
               >
                 aboutPageTitle
@@ -368,7 +368,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
             </li>
             <li>
               <a
-                class="pages-nav__link"
+                class="pages-nav__link pages-nav__link--selected pages-nav__link--child-selected"
                 href="/about"
               >
                 aboutPageTitle
@@ -434,7 +434,7 @@ exports[`AboutPage shows a warning on non-english pages 1`] = `
             <a
               class="button"
               data-testid="locale-selector-language"
-              href="/?locale=%F0%9F%87%B3%F0%9F%87%B4"
+              href="/about?locale=%F0%9F%87%B3%F0%9F%87%B4"
             >
               🇺🇸 translateTo
             </a>

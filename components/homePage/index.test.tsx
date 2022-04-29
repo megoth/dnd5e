@@ -1,13 +1,12 @@
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import HomePage from "./index";
 import useDataset from "../../src/hooks/useDataset";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { mockUnauthenticatedSession } from "../../__testUtils/mockSession";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -16,16 +15,13 @@ const mockedAppHook = useApp as jest.Mock;
 jest.mock("../../src/hooks/useDataset");
 const mockedUseDataset = useDataset as jest.Mock;
 
+jest.mock("next/router", () => mockRouter);
+
 describe("HomePage", () => {
   let app;
 
   beforeEach(() => {
     app = mockAppHook(mockedAppHook);
-  });
-  beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/" }));
   });
 
   it("renders dashboard for authenticated session", () => {

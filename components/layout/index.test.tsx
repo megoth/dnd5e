@@ -3,7 +3,7 @@ import { act } from "@testing-library/react";
 import swipeableFns from "react-swipeable";
 import { SwipeableHandlers } from "react-swipeable/src/types";
 import userEvent from "@testing-library/user-event";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import Layout, { TESTID_LAYOUT_FADE } from "./index";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
@@ -13,7 +13,6 @@ import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
 import { authenticatedWebId } from "../../__testUtils/mockSession";
 import useLayout from "../../src/hooks/useLayout";
 import { SetMenuOpen } from "../../src/contexts/layout";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -21,6 +20,8 @@ const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 interface Props {
   setLeftOpen: SetMenuOpen;
@@ -39,7 +40,6 @@ function ChildComponent({ setLeftOpen, setRightOpen }: Props) {
 describe("Layout", () => {
   let app;
   let mockedSwipeableHook;
-  let mockedRouterHook;
 
   beforeEach(() => {
     app = mockAppHook(mockedAppHook);
@@ -53,11 +53,6 @@ describe("Layout", () => {
     mockDatasetHook(mockedDatasetHook, {
       data: mockProfileDataset(authenticatedWebId),
     });
-  });
-  beforeEach(() => {
-    mockedRouterHook = jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter());
   });
 
   it("renders as non-home by default", () => {
@@ -118,7 +113,9 @@ describe("Layout", () => {
         <ChildComponent setLeftOpen={setLeftOpen} setRightOpen={setRightOpen} />
       </Layout>
     );
-    mockedRouterHook.mockReturnValue(mockRouter({ asPath: "/#test" }));
+    act(() => {
+      mockRouter.default.setCurrentUrl(`/#test`);
+    });
     rerender(<Layout full>test</Layout>);
     expect(setLeftOpen).toHaveBeenCalledWith(false);
     expect(setRightOpen).toHaveBeenCalledWith(false);

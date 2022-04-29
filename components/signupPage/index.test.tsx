@@ -1,6 +1,6 @@
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import useApp from "../../src/hooks/useApp";
 import mockApp from "../../__testUtils/mockApp";
 import mockResourceBundleMap from "../../__testUtils/mockResourceBundleMap";
@@ -17,7 +17,6 @@ import {
   mockUnauthenticatedSession,
 } from "../../__testUtils/mockSession";
 import { TESTID_LOGGED_IN_ALREADY_WARNING } from "../loggedInAlreadyWarning";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -25,6 +24,8 @@ const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 const app = mockApp({
   resourceBundles: mockResourceBundleMap({
@@ -52,9 +53,7 @@ describe("SignupPage", () => {
     })
   );
   beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/signup" }));
+    mockRouter.default.setCurrentUrl("/signup");
   });
 
   it("renders", () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import userEvent from "@testing-library/user-event";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import { appName } from "../../__testUtils/mockApp";
@@ -12,11 +12,12 @@ import LoginForm, {
   TESTID_LOGIN_FORM_IDP_FIELD,
   TESTID_LOGIN_FORM_REMEMBER_CHECKBOX,
 } from "./index";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
 const mockedAppHook = useApp as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 describe("LoginForm", () => {
   const idpUrl = "https://example.com";
@@ -26,7 +27,6 @@ describe("LoginForm", () => {
   let app;
   let unauthenticatedSession;
   let mockedSessionHook;
-  let mockedRouterHook;
 
   beforeEach(() => {
     app = mockAppHook(mockedAppHook);
@@ -36,11 +36,6 @@ describe("LoginForm", () => {
     mockedSessionHook = jest
       .spyOn(solidUIReactFns, "useSession")
       .mockReturnValue(unauthenticatedSession);
-  });
-  beforeEach(() => {
-    mockedRouterHook = jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter());
   });
 
   it("renders", () => {
@@ -107,10 +102,7 @@ describe("LoginForm", () => {
   });
 
   it("can provide IdP via the query param", () => {
-    mockedRouterHook.mockReturnValue({
-      asPath: "/rules",
-      query: { idp: idp1 },
-    });
+    mockRouter.default.setCurrentUrl(`/rules?idp=${idp1}`);
     const { getByTestId } = renderApp(app, <LoginForm />);
     expect(
       getByTestId(TESTID_LOGIN_FORM_IDP_FIELD).getAttribute("value")
@@ -118,10 +110,7 @@ describe("LoginForm", () => {
   });
 
   it("also handles an array of IdPs", () => {
-    mockedRouterHook.mockReturnValue({
-      asPath: "/rules",
-      query: { idp: [idp1, idp2] },
-    });
+    mockRouter.default.setCurrentUrl(`/rules?idp=${idp1}&idp=${idp2}`);
     const { getByTestId } = renderApp(app, <LoginForm />);
     expect(
       getByTestId(TESTID_LOGIN_FORM_IDP_FIELD).getAttribute("value")
@@ -129,10 +118,7 @@ describe("LoginForm", () => {
   });
 
   it("focuses on idp field if IdP query is given", () => {
-    mockedRouterHook.mockReturnValue({
-      asPath: "/rules",
-      query: { idp: [idp1, idp2] },
-    });
+    mockRouter.default.setCurrentUrl(`/rules?idp=${idp1}&idp=${idp2}`);
     const { getByTestId } = renderApp(app, <LoginForm />);
     expect(getByTestId(TESTID_LOGIN_FORM_IDP_FIELD)).toEqual(
       document.activeElement

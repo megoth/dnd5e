@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import useAppCore from "../../src/hooks/useAppCore";
 import AppConfig from "./index";
 import mockAppCoreHook from "../../__testUtils/mockAppCoreHook";
@@ -15,10 +15,11 @@ import {
 } from "../../__testUtils/mockAppIndexDataset";
 import useApp from "../../src/hooks/useApp";
 import { TESTID_LOADING } from "../loading";
-import mockRouter from "../../__testUtils/mockRouter";
 
 jest.mock("../../src/hooks/useAppCore");
 const mockedAppCoreHook = useAppCore as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 const app = mockApp();
 
@@ -30,14 +31,6 @@ function ChildComponent() {
 }
 
 describe("AppConfig", () => {
-  let mockedRouterHook;
-
-  beforeEach(() => {
-    mockedRouterHook = jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter());
-  });
-
   it("loads resources and renders", () => {
     mockAppCoreHook(mockedAppCoreHook);
     const { getByTestId } = render(
@@ -55,7 +48,7 @@ describe("AppConfig", () => {
 
   it("processes locale from router query", () => {
     const locale = "nb-NO";
-    mockedRouterHook.mockReturnValue(mockRouter({ query: { locale } }));
+    mockRouter.default.setCurrentUrl(`/?locale=${locale}`);
     mockAppCoreHook(mockedAppCoreHook, {
       app: mockNorwegianApp({
         currentLocale: "en-US",

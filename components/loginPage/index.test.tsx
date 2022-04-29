@@ -1,7 +1,7 @@
 import React from "react";
 import * as solidUIReactFns from "@inrupt/solid-ui-react";
 import userEvent from "@testing-library/user-event";
-import * as routerFns from "next/router";
+import * as mockRouter from "next-router-mock";
 import useApp from "../../src/hooks/useApp";
 import mockAppHook from "../../__testUtils/mockAppHook";
 import LoginPage from "./index";
@@ -20,7 +20,6 @@ import { TESTID_LOGIN_BUTTON } from "../loginButton";
 import useDataset from "../../src/hooks/useDataset";
 import mockDatasetHook from "../../__testUtils/mockDatasetHook";
 import { mockProfileDataset } from "../../__testUtils/mockProfileDataset";
-import mockRouter from "../../__testUtils/mockRouter";
 import renderApp from "../../__testUtils/renderApp";
 
 jest.mock("../../src/hooks/useApp");
@@ -28,6 +27,8 @@ const mockedAppHook = useApp as jest.Mock;
 
 jest.mock("../../src/hooks/useDataset");
 const mockedDatasetHook = useDataset as jest.Mock;
+
+jest.mock("next/router", () => mockRouter);
 
 const app = mockApp({
   resourceBundles: mockResourceBundleMap({
@@ -58,9 +59,7 @@ describe("LoginPage", () => {
     })
   );
   beforeEach(() => {
-    jest
-      .spyOn(routerFns, "useRouter")
-      .mockReturnValue(mockRouter({ asPath: "/login" }));
+    mockRouter.default.setCurrentUrl("/login");
   });
 
   it("renders", () => {
