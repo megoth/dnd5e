@@ -246,6 +246,10 @@ export interface DruidSpecifics {
   wild_shape_fly: boolean;
 }
 
+export interface EquipmentChoiceData extends ChoiceData<EquipmentData> {
+  type: "equipment";
+}
+
 export interface EquipmentStack {
   equipment: APIResource;
   quantity: number;
@@ -428,29 +432,34 @@ interface StartingEquipmentOptionEquipment {
   }>;
 }
 
-interface StartingEquipmentOptionEquipmentOption {
-  equipment_option: StartingEquipmentChoice;
-}
-
 interface StartingEquipmentOptionEquipmentCategory {
   equipment_category: APIResource;
+}
+
+interface StartingEquipmentOptionEquipmentCategoryChoice {
+  choose: number;
+  type: "equipment";
+  from: StartingEquipmentOptionEquipmentCategory;
+}
+
+interface StartingEquipmentOptionEquipmentOption {
+  equipment_option: StartingEquipmentOptionEquipmentCategoryChoice;
 }
 
 export interface StartingEquipmentChoice {
   choose: number;
   type: string;
-  from:
-    | Array<
+  from: Array<
+    | StartingEquipmentOptionEquipment
+    | StartingEquipmentOptionEquipmentOption
+    | StartingEquipmentOptionEquipmentCategory
+    | StartingEquipmentOptionEquipmentCategoryChoice
+    | Record<
+        number,
         | StartingEquipmentOptionEquipment
         | StartingEquipmentOptionEquipmentOption
-        | StartingEquipmentOptionEquipmentCategory
-        | Record<
-            string,
-            | StartingEquipmentOptionEquipment
-            | StartingEquipmentOptionEquipmentOption
-          >
       >
-    | StartingEquipmentOptionEquipmentCategory;
+  >;
 }
 
 export interface SubclassSpell {
@@ -521,7 +530,7 @@ export interface BackgroundData extends BaseData {
   starting_proficiencies: APIResource[];
   language_options: ChoiceData;
   starting_equipment: EquipmentStack[];
-  starting_equipment_options: ChoiceData<StartingEquipmentOptionEquipmentCategory>[];
+  starting_equipment_options: StartingEquipmentChoice[];
   feature: Feature;
   personality_traits: PersonalityChoice;
   ideals: Ideals;

@@ -11,6 +11,7 @@ import actionUsage from "./actionUsage";
 import alignment from "./alignment";
 import areaOfEffect from "./areaOfEffect";
 import armorClass from "./armorClass";
+import classSchema from "./class";
 import condition from "./condition";
 import cost from "./cost";
 import damage from "./damage";
@@ -21,6 +22,8 @@ import damageType from "./damageType";
 import difficultyClass from "./difficultyClass";
 import equipment from "./equipment";
 import equipmentCategory from "./equipmentCategory";
+import equipmentChoice from "./equipmentChoice";
+import equipmentStack from "./equipmentStack";
 import feat from "./feat";
 import healAtSlotLevel from "./healAtSlotLevel";
 import item from "./item";
@@ -55,6 +58,7 @@ export default createSchema({
     alignment,
     areaOfEffect,
     armorClass,
+    classSchema,
     condition,
     cost,
     damage,
@@ -65,6 +69,8 @@ export default createSchema({
     difficultyClass,
     equipment,
     equipmentCategory,
+    equipmentChoice,
+    equipmentStack,
     feat,
     healAtSlotLevel,
     item,
