@@ -1,0 +1,42 @@
+PREFIX dnd5e_app: <https://dnd5e.app/vocab/app#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX shape: </shapes/app.shex#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+shape:App {
+    dnd5e_app:resourceBundle @shape:ResourceBundle* ;
+    dnd5e_app:supportLanguage @shape:Locale* ;
+}
+
+shape:FAQ {
+    rdf:type dnd5e_app:FAQ ;
+    rdfs:label xsd:string ;
+    dnd5e_app:faqLabel @shape:Translation ;
+    dnd5e_app:faqDescription @shape:Translation ;
+}
+
+shape:Locale {
+    dnd5e_app:language xsd:string ;
+    dnd5e_app:languageFlag xsd:string ;
+}
+
+shape:ResourceBundle {
+    rdfs:label xsd:string ;
+    dnd5e_app:errorsIndex IRI* ;
+    dnd5e_app:faqIndex IRI* ;
+    dnd5e_app:translationBase IRI ;
+    dnd5e_app:translationsIndex @shape:TranslationsIndex* ;
+}
+
+shape:TranslationsIndex {
+    dnd5e_app:language xsd:string? ;
+    dnd5e_app:resource IRI ;
+}
+
+shape:Translation EXTRA rdf:type {
+    rdf:type rdfs:Literal ;
+    skos:definition xsd:string ;
+}
+

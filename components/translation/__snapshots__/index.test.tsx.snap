@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Translation renders translated message 1`] = `
-<DocumentFragment>
-  This is a test
-</DocumentFragment>
-`;

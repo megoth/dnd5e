@@ -1,100 +1,99 @@
-@prefix :             <#> .
-@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
-@prefix translations: <./translations.ttl#> .
+@prefix : <https://dnd5e.app/translations/global#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-translations:aboutPageTitle skos:definition "About the app"@en-US .
-translations:appDescription skos:definition "A Solid App for D&D5e"@en-US .
-translations:appName skos:definition "D&D5e Solid App"@en-US .
-translations:appPitch skos:definition
-    """Manage your characters in Dungeons & Dragons 5th edition. You are in control of where the information is stored,
-    and which rulesets to use, whether that be official or homebrewn."""@en-US .
-translations:appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
-translations:authenticationGuidance skos:definition
-    """Choose an identity provider from the list, or provide one yourself."""@en-US .
-translations:authenticationPitch skos:definition
-    """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
-    maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
-    app."""@en-US .
-translations:charactersPageTitle skos:definition "Characters"@en-US .
-translations:classesPageTitle skos:definition "Classes"@en-US .
-translations:close skos:definition "Close"@en-US .
-translations:darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
-translations:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
-translations:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
-translations:encountersPageTitle skos:definition "Encounters"@en-US .
-translations:equipmentPageTitle skos:definition "Equipment"@en-US .
-translations:faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
-translations:faqShort skos:definition "FAQ"@en-US .
-translations:homePageTitle skos:definition "Home"@en-US .
-translations:learnMore skos:definition "Learn more about the project"@en-US .
-translations:locale-en-US skos:definition "English (US)"@en-US .
-translations:locale-nb-NO skos:definition "Norwegian"@en-US .
-translations:loggedIn skos:definition "Logged in as {$name}"@en-US .
-translations:LoggedInAlready skos:definition "You are already logged in as {$name}"@en-US .
-translations:loggedOut skos:definition "Not logged in"@en-US .
-translations:login skos:definition "Log in"@en-US .
-translations:loginImage skos:definition "The icon of the Solid project"@en-US .
-translations:loginPageTitle skos:definition "Log in with Solid"@en-US .
-translations:loginPitch skos:definition "Start your adventure with Solid"@en-US .
-translations:loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
-translations:logOut skos:definition "Log out"@en-US .
-translations:monstersPageTitle skos:definition "Monsters"@en-US .
-translations:notesPageTitle skos:definition "Notes"@en-US .
-translations:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
-translations:or skos:definition "or"@en-US .
-translations:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
-translations:racesPageTitle skos:definition "Races"@en-US .
-translations:recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
-translations:rememberIdP skos:definition "Remember identity provider"@en-US .
-translations:rulesPageTitle skos:definition "Rules"@en-US .
-translations:serviceLogo skos:definition "Logo for service"@en-US .
-translations:signupGuidance skos:definition "Not sure which to choose?"@en-US .
-translations:signupPitch skos:definition
-    """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we
-    need you to sign up with a Solid account, which you can choose to do with any identity service that supports Solid.
-    This means **we'll never store your data on our systems**. Instead we'll store it to a storage you control (usually
-    the one connected to your Solid identity).
+:aboutPageTitle skos:definition "About the app"@en-US .
+:appDescription skos:definition "A Solid App for D&D5e"@en-US .
+:appName skos:definition "D&D5e Solid App"@en-US .
+:appPitch skos:definition
+        """Manage your characters in Dungeons & Dragons 5th edition. You are in control of where the information is stored,
+        and which rulesets to use, whether that be official or homebrewn."""@en-US .
+:appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
+:authenticationGuidance skos:definition
+        """Choose an identity provider from the list, or provide one yourself."""@en-US .
+:authenticationPitch skos:definition
+        """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
+        maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
+        app."""@en-US .
+:charactersPageTitle skos:definition "Characters"@en-US .
+:classesPageTitle skos:definition "Classes"@en-US .
+:close skos:definition "Close"@en-US .
+:darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
+:darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
+:datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+:encountersPageTitle skos:definition "Encounters"@en-US .
+:equipmentPageTitle skos:definition "Equipment"@en-US .
+:faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
+:faqShort skos:definition "FAQ"@en-US .
+:homePageTitle skos:definition "Home"@en-US .
+:learnMore skos:definition "Learn more about the project"@en-US .
+:locale-en-US skos:definition "English (US)"@en-US .
+:locale-nb-NO skos:definition "Norwegian"@en-US .
+:loggedIn skos:definition "Logged in as {$name}"@en-US .
+:LoggedInAlready skos:definition "You are already logged in as {$name}"@en-US .
+:loggedOut skos:definition "Not logged in"@en-US .
+:login skos:definition "Log in"@en-US .
+:loginImage skos:definition "The icon of the Solid project"@en-US .
+:loginPageTitle skos:definition "Log in with Solid"@en-US .
+:loginPitch skos:definition "Start your adventure with Solid"@en-US .
+:loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
+:logOut skos:definition "Log out"@en-US .
+:monstersPageTitle skos:definition "Monsters"@en-US .
+:notesPageTitle skos:definition "Notes"@en-US .
+:onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+:or skos:definition "or"@en-US .
+:provideIdP skos:definition "Provide another Solid identity provider"@en-US .
+:racesPageTitle skos:definition "Races"@en-US .
+:recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
+:rememberIdP skos:definition "Remember identity provider"@en-US .
+:rulesPageTitle skos:definition "Rules"@en-US .
+:serviceLogo skos:definition "Logo for service"@en-US .
+:signupGuidance skos:definition "Not sure which to choose?"@en-US .
+:signupPitch skos:definition
+        """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we
+        need you to sign up with a Solid account, which you can choose to do with any identity service that supports Solid.
+        This means **we'll never store your data on our systems**. Instead we'll store it to a storage you control (usually
+        the one connected to your Solid identity).
 
-    If you're not familiar with any Solid identity providers, we recommend choosing one from the  list
-    below, or [head over to solidproject.org for more information about how to choose a
-    provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
-translations:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
-translations:signupPageTitle skos:definition "Create a Solid account"@en-US .
-translations:solidIdP skos:definition "Solid identity provider"@en-US .
-translations:solidLogo skos:definition "Solid logo"@en-US .
-translations:spellsPageTitle skos:definition "Spells"@en-US .
-translations:translateTo skos:definition "Translate to {$language}"@en-US .
-translations:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
-translations:whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .
-translations:whatIsIdPDescription skos:definition
-    """Solid identity providers, or Solid IdPs for short, are services that allow you to create a Solid identity,
-    which in turn allow you to authenticate with Solid-enabled services, such as this app. Most IdPs also provide you
-    with a storage, often called a Pod."""@en-US .
-translations:whatIsPodLabel skos:definition "What is a Pod?"@en-US .
-translations:whatIsPodDescription skos:definition
-    """Pod is the name we usually use for the storage that's connected to a Solid identity. Most users get a Pod when
-    they create their Solid identity, but it is possible to have multiple, or none at all. In order to use this app
-    we have to store the data somewhere, and if we're in doubt about where to do that, we'll ask you once you're logged
-    in."""@en-US .
-translations:whatIsSolidLabel skos:definition "What is Solid?"@en-US .
-translations:whatIsSolidDescription skos:definition
-    """Solid is a standard that focuses on giving people control of their own data. With Solid you get a digital
-    identity, an online storage (often called a Pod) and the means to control who gets access to your data. For more
-    information, check out [solidproject.org](https://solidproject.org/)."""@en-US .
-translations:whatSupportIsOfferedLabel skos:definition "What support is offered?"@en-US .
-translations:whatSupportIsOfferedDescription skos:definition
-    """No support is offered for this service, but you
-    can [create an issue at GitHub](https://github.com/megoth/dnd5e/issues/new) to let me know that you have an issue you
-    would like fixed."""@en-US .
-translations:whoDevelopsTheAppLabel skos:definition "Who develops the app?"@en-US .
-translations:whoDevelopsTheAppDescription skos:definition
-    """The app is developed by [Arne Hassel](https://icanhasweb.net), as an open-source project
-    at [github.com/megoth/dnd5e](https://github.com/megoth/dnd5e). It is developed as an experimental app to understand
-    better how a web-app based on React and Solid can be constructed."""@en-US .
-translations:whyLogInWithSolidLabel skos:definition "Why should I log in with Solid?"@en-US .
-translations:whyLogInWithSolidDescription skos:definition
-    """Using a Solid Identity is how this app recognizes who you are and know how to fetch your data. Solid is a
-    standard that allows you to choose amongst a number of Solid Identity Providers, which means you don't have to
-    rely on any specific company's service."""@en-US .
-translations:workInProgress skos:definition "Work in progress"@en-US .
+        If you're not familiar with any Solid identity providers, we recommend choosing one from the  list
+        below, or [head over to solidproject.org for more information about how to choose a
+        provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
+:signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
+:signupPageTitle skos:definition "Create a Solid account"@en-US .
+:solidIdP skos:definition "Solid identity provider"@en-US .
+:solidLogo skos:definition "Solid logo"@en-US .
+:spellsPageTitle skos:definition "Spells"@en-US .
+:translateTo skos:definition "Translate to {$language}"@en-US .
+:translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
+:whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .
+:whatIsIdPDescription skos:definition
+        """Solid identity providers, or Solid IdPs for short, are services that allow you to create a Solid identity,
+        which in turn allow you to authenticate with Solid-enabled services, such as this app. Most IdPs also provide you
+        with a storage, often called a Pod."""@en-US .
+:whatIsPodLabel skos:definition "What is a Pod?"@en-US .
+:whatIsPodDescription skos:definition
+        """Pod is the name we usually use for the storage that's connected to a Solid identity. Most users get a Pod when
+        they create their Solid identity, but it is possible to have multiple, or none at all. In order to use this app
+        we have to store the data somewhere, and if we're in doubt about where to do that, we'll ask you once you're logged
+        in."""@en-US .
+:whatIsSolidLabel skos:definition "What is Solid?"@en-US .
+:whatIsSolidDescription skos:definition
+        """Solid is a standard that focuses on giving people control of their own data. With Solid you get a digital
+        identity, an online storage (often called a Pod) and the means to control who gets access to your data. For more
+        information, check out [solidproject.org](https://solidproject.org/)."""@en-US .
+:whatSupportIsOfferedLabel skos:definition "What support is offered?"@en-US .
+:whatSupportIsOfferedDescription skos:definition
+        """No support is offered for this service, but you
+        can [create an issue at GitHub](https://github.com/megoth/dnd5e/issues/new) to let me know that you have an issue you
+        would like fixed."""@en-US .
+:whoDevelopsTheAppLabel skos:definition "Who develops the app?"@en-US .
+:whoDevelopsTheAppDescription skos:definition
+        """The app is developed by [Arne Hassel](https://icanhasweb.net), as an open-source project
+        at [github.com/megoth/dnd5e](https://github.com/megoth/dnd5e). It is developed as an experimental app to understand
+        better how a web-app based on React and Solid can be constructed."""@en-US .
+:whyLogInWithSolidLabel skos:definition "Why should I log in with Solid?"@en-US .
+:whyLogInWithSolidDescription skos:definition
+        """Using a Solid Identity is how this app recognizes who you are and know how to fetch your data. Solid is a
+        standard that allows you to choose amongst a number of Solid Identity Providers, which means you don't have to
+        rely on any specific company's service."""@en-US .
+:workInProgress skos:definition "Work in progress"@en-US .

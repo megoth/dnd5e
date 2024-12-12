@@ -1,0 +1,194 @@
+import React, { ReactNode, useEffect, useMemo, useState } from "react";
+import { LocalizationProvider, ReactLocalization } from "@fluent/react";
+import { getLocale } from "../../utils/language";
+import AppContext from "./context";
+import useSWR from "swr";
+import Loading from "../../components/loading";
+import {
+  AppShapeType,
+  LocaleShapeType,
+  ResourceBundleShapeType,
+  TranslationShapeType,
+  TranslationsIndexShapeType,
+} from "../../ldo/app.shapeTypes";
+import { SessionInfo, useLdo, useSolidAuth } from "@ldo/solid-react";
+import { getHash, getPath } from "../../utils/url";
+import { useSearchParams } from "react-router-dom";
+import { FluentBundle, FluentResource } from "@fluent/bundle";
+import { userIsAdmin } from "../../utils/session";
+import { namedNode } from "@rdfjs/data-model";
+import { useLocalStorage } from "@uidotdev/usehooks";
+// TODO: FIX @rdfjs/types
+// eslint-disable-next-line import/no-unresolved
+import { Literal } from "@rdfjs/types";
+
+interface Props {
+  children: ReactNode;
+  appUrl: string;
+  // appIndexURL: string;
+  // appVocabURL: string;
+}
+
+function replaceHost(url: string): string {
+  // TODO: SHAKY AF - must replace with something better
+  return url.replace("https://dnd5e.app", location.origin);
+}
+
+function replaceIndex(url: string): string {
+  // TODO: SHAKY AF - must replace with something better
+  return replaceHost(url).replace("#", "/index.ttl#");
+}
+
+function getBundles(session: SessionInfo): string[] {
+  return userIsAdmin(session) ? ["global", "admin"] : ["global"];
+}
+
+export default function AppProvider({ children, appUrl }: Props) {
+  const { session } = useSolidAuth();
+  const { dataset, getResource, getSubject } = useLdo();
+  const [searchParams] = useSearchParams();
+  const [currentLocale, setCurrentLocale] = useLocalStorage("locale", "en-US");
+  const [bundles, setBundles] = useState<string[]>(getBundles(session));
+
+  useEffect(() => {
+    setBundles(getBundles(session));
+  }, [session]);
+
+  // fetch app index
+  const { data: app } = useSWR("app", async () => {
+    const localAppUrl = replaceIndex(appUrl);
+    const path = getPath(localAppUrl);
+    await getResource(path).readIfUnfetched();
+    return getSubject(AppShapeType, appUrl);
+  });
+
+  // fetch resource bundles
+  const { data: resourceBundles } = useSWR(
+    () => `resourceBundles-${app["@id"]}}-${bundles.join("-")}`,
+    async () =>
+      (
+        await Promise.all(
+          app.resourceBundle.map(async (bundle) => {
+            await getResource(replaceIndex(bundle["@id"])).readIfUnfetched();
+            return getSubject(ResourceBundleShapeType, bundle["@id"]);
+          }),
+        )
+      ).filter((bundle) => bundles.indexOf(bundle.label) !== -1),
+  );
+
+  // fetch supported languages
+  const { data: supportedLocales } = useSWR(
+    () => `supportedLocales-${app["@id"]}}`,
+    async () =>
+      Promise.all(
+        app.supportLanguage.map(async (language) => {
+          await getResource(replaceIndex(language["@id"])).readIfUnfetched();
+          return getSubject(LocaleShapeType, language["@id"]);
+        }),
+      ),
+  );
+
+  useEffect(() => {
+    if (!supportedLocales) return;
+    // TODO: FIX so that you can load translations directly
+    const requestedLocale = searchParams.get("locale");
+    const locale = getLocale(
+      (Array.isArray(requestedLocale) ? requestedLocale[0] : requestedLocale) ||
+        currentLocale,
+      supportedLocales?.map((locale) => locale.language),
+    );
+    setCurrentLocale(locale);
+  }, [searchParams.get("locale"), supportedLocales, currentLocale]);
+
+  // fetch FAQs
+  const { isLoading: faqIsLoading } = useSWR(
+    () => `faqs-${resourceBundles.map((b) => b["@id"]).join("-")}}`,
+    async () =>
+      Promise.all(
+        resourceBundles
+          .flatMap((bundle) => bundle.faqIndex)
+          .map(async (index) =>
+            getResource(replaceIndex(index["@id"])).readIfUnfetched(),
+          ),
+      ),
+  );
+
+  // fetch translation indices
+  const { data: translations } = useSWR(
+    () =>
+      `translationsIndices-${resourceBundles.map((b) => b["@id"]).join("-")}-${currentLocale}`,
+    async () => {
+      return (
+        await Promise.all(
+          resourceBundles
+            .flatMap((bundle) => bundle.translationsIndex)
+            .map(async (index) => {
+              await getResource(replaceIndex(index["@id"])).readIfUnfetched();
+              return getSubject(TranslationsIndexShapeType, index["@id"]);
+            }),
+        )
+      ).filter((index) => !index.language || index.language === currentLocale);
+    },
+  );
+
+  // get translations
+  const { isLoading: translationsLoading } = useSWR(
+    () => `translations-${translations.map((t) => t["@id"]).join("-")}}`,
+    async () =>
+      Promise.all(
+        translations
+          .map((index) => index.resource)
+          .map(async (resourceUrl) =>
+            getResource(replaceHost(resourceUrl["@id"])).readIfUnfetched(),
+          ),
+      ),
+  );
+  const localization = useMemo(() => {
+    const localization = new FluentBundle(currentLocale);
+    if (!resourceBundles || translationsLoading) return null;
+    resourceBundles.forEach((bundle) =>
+      bundle.translationsIndex
+        .map((index) => replaceHost(index.resource["@id"]))
+        .flatMap((resourceUrl) => {
+          return dataset
+            .match(null, null, null, namedNode(resourceUrl))
+            .toArray()
+            .filter(
+              (quad) =>
+                (quad.object as Literal).language ===
+                currentLocale.toLowerCase(),
+            )
+            .map((quad) =>
+              getSubject(TranslationShapeType, quad.subject.value),
+            );
+        })
+        .forEach((translation) =>
+          localization.addResource(
+            new FluentResource(
+              `${bundle.label}-${getHash(translation["@id"])}-${currentLocale} = ${translation.definition}`,
+            ),
+          ),
+        ),
+    );
+    return new ReactLocalization([localization]);
+  }, [currentLocale, resourceBundles, dataset, translationsLoading]);
+
+  if (translationsLoading || faqIsLoading || !translations || !localization) {
+    return <Loading />;
+  }
+
+  return (
+    <AppContext.Provider
+      value={{
+        currentLocale,
+        availableLocales: supportedLocales?.filter(
+          (locale) => locale.language !== currentLocale,
+        ),
+      }}
+    >
+      <LocalizationProvider l10n={localization}>
+        {children}
+      </LocalizationProvider>
+    </AppContext.Provider>
+  );
+}

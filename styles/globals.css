@@ -1,8 +1,5 @@
-@tailwind base;
 @import "base/fonts.css";
-@import "base/layout.css";
 
-@tailwind components;
 @import "components/button.css";
 @import "components/content.css";
 @import "components/forms.css";
@@ -13,5 +10,8 @@
 @import "components/main-container.css";
 @import "components/pages-nav.css";
 
-@tailwind utilities;
 @import "utilities/line-behind.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
