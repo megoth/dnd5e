@@ -5,6 +5,9 @@ import Content from "../content";
 import useApp from "../../hooks/useApp";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
+// TODO: FIX lazy solution
+// eslint-disable-next-line import/no-unresolved
+import readmeMarkdown from "../../../README.md?raw";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
 
@@ -19,7 +22,7 @@ export default function AboutPage() {
         </WarningMessage>
       )}
       <Content>
-        <ReactMarkdown>TEST</ReactMarkdown>
+        <ReactMarkdown>{readmeMarkdown}</ReactMarkdown>
       </Content>
     </Layout>
   );

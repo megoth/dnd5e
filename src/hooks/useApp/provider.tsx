@@ -44,6 +44,8 @@ export default function AppProvider({ children }: Props) {
   // fetch app index
   const { data: app } = useSWR("app", async () => {
     const appUrl =
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       import.meta.env.VITE_APP_URL ||
       new URL("/data/index.ttl#dnd5e", location.origin).toString();
     const path = getPath(appUrl);
