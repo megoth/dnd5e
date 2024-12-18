@@ -51,13 +51,6 @@ export const appContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/app#languageFlag",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  type: {
-    "@id": "@type",
-    "@type": [
-      "https://dnd5e.app/vocab/app#FAQ",
-      "http://www.w3.org/2000/01/rdf-schema#Literal",
-    ],
-  },
   faqLabel: {
     "@id": "https://dnd5e.app/vocab/app#faqLabel",
     "@type": "@id",

@@ -44,14 +44,6 @@ export const appSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "https://dnd5e.app/vocab/app#FAQ",
-              },
-            },
-            {
-              type: "TripleConstraint",
               predicate: "http://www.w3.org/2000/01/rdf-schema#label",
               valueExpr: {
                 type: "NodeConstraint",
@@ -191,27 +183,13 @@ export const appSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "EachOf",
-          expressions: [
-            {
-              type: "TripleConstraint",
-              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2000/01/rdf-schema#Literal",
-              },
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "http://www.w3.org/2004/02/skos/core#definition",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-            },
-          ],
+          type: "TripleConstraint",
+          predicate: "http://www.w3.org/2004/02/skos/core#definition",
+          valueExpr: {
+            type: "NodeConstraint",
+            datatype: "http://www.w3.org/2001/XMLSchema#string",
+          },
         },
-        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
   ],

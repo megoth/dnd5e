@@ -5,9 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "ci": "npm run lint",
+    "build": "npm run build-ldo && vite build",
     "lint": "eslint --config .eslintrc.js --fix",
+    "preview": "vite preview",
+    "ci": "npm run lint",
     "manage-data": "ts-node manage-data.ts",
     "build-ldo": "ldo build --input ./public/shapes --output ./src/ldo"
   },

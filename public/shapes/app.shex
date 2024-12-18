@@ -11,7 +11,6 @@ shape:App {
 }
 
 shape:FAQ {
-    rdf:type dnd5e_app:FAQ ;
     rdfs:label xsd:string ;
     dnd5e_app:faqLabel @shape:Translation ;
     dnd5e_app:faqDescription @shape:Translation ;
@@ -35,8 +34,7 @@ shape:TranslationsIndex {
     dnd5e_app:resource IRI ;
 }
 
-shape:Translation EXTRA rdf:type {
-    rdf:type rdfs:Literal ;
+shape:Translation {
     skos:definition xsd:string ;
 }
 

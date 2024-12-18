@@ -22,7 +22,6 @@ export interface App {
 export interface FAQ {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
   label: string;
   faqLabel: Translation;
   faqDescription: Translation;
@@ -75,6 +74,5 @@ export interface TranslationsIndex {
 export interface Translation {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
   definition: string;
 }
