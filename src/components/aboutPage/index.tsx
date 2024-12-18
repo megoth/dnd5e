@@ -17,13 +17,16 @@ function flatten(text, child) {
     : React.Children.toArray(child.props.children).reduce(flatten, text);
 }
 
-const renderHeader =
-  (tagName: string) => (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+function renderHeader(tagName: string) {
+  return function renderHeaderInner(
+    props: React.HTMLAttributes<HTMLHeadingElement>,
+  ) {
     const children = React.Children.toArray(props.children);
     const text = children.reduce(flatten, "");
     const slug = text.toLowerCase().replace(/\W/g, "-");
     return React.createElement(tagName, { id: slug }, props.children);
   };
+}
 
 export default function AboutPage() {
   const { currentLocale } = useApp();
