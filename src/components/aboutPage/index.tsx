@@ -5,7 +5,6 @@ import Content from "../content";
 import useApp from "../../hooks/useApp";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
-import readmeMarkdown from "../../../README.md?raw";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
 
@@ -20,7 +19,7 @@ export default function AboutPage() {
         </WarningMessage>
       )}
       <Content>
-        <ReactMarkdown>{readmeMarkdown}</ReactMarkdown>
+        <ReactMarkdown>TEST</ReactMarkdown>
       </Content>
     </Layout>
   );
