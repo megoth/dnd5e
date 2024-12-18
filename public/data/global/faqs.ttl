@@ -1,8 +1,8 @@
-@prefix : <https://dnd5e.app/translations/global#> .
+@prefix : <#> .
 @prefix dnd5e_app: <https://dnd5e.app/vocab/app#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix translations: <https://dnd5e.app/data/global/translations#> .
+@prefix translations: </data/global/translations#> .
 
 :whatIsSolid
     a dnd5e_app:FAQ ;

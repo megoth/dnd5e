@@ -24,26 +24,13 @@ import { Literal } from "@rdfjs/types";
 
 interface Props {
   children: ReactNode;
-  appUrl: string;
-  // appIndexURL: string;
-  // appVocabURL: string;
-}
-
-function replaceHost(url: string): string {
-  // TODO: SHAKY AF - must replace with something better
-  return url.replace("https://dnd5e.app", location.origin);
-}
-
-function replaceIndex(url: string): string {
-  // TODO: SHAKY AF - must replace with something better
-  return replaceHost(url).replace("#", "/index.ttl#");
 }
 
 function getBundles(session: SessionInfo): string[] {
   return userIsAdmin(session) ? ["global", "admin"] : ["global"];
 }
 
-export default function AppProvider({ children, appUrl }: Props) {
+export default function AppProvider({ children }: Props) {
   const { session } = useSolidAuth();
   const { dataset, getResource, getSubject } = useLdo();
   const [searchParams] = useSearchParams();
@@ -56,8 +43,8 @@ export default function AppProvider({ children, appUrl }: Props) {
 
   // fetch app index
   const { data: app } = useSWR("app", async () => {
-    const localAppUrl = replaceIndex(appUrl);
-    const path = getPath(localAppUrl);
+    const appUrl = new URL("/data/index.ttl#dnd5e", location.origin).toString();
+    const path = getPath(appUrl);
     await getResource(path).readIfUnfetched();
     return getSubject(AppShapeType, appUrl);
   });
@@ -69,7 +56,7 @@ export default function AppProvider({ children, appUrl }: Props) {
       (
         await Promise.all(
           app.resourceBundle.map(async (bundle) => {
-            await getResource(replaceIndex(bundle["@id"])).readIfUnfetched();
+            await getResource(bundle["@id"]).readIfUnfetched();
             return getSubject(ResourceBundleShapeType, bundle["@id"]);
           }),
         )
@@ -82,7 +69,7 @@ export default function AppProvider({ children, appUrl }: Props) {
     async () =>
       Promise.all(
         app.supportLanguage.map(async (language) => {
-          await getResource(replaceIndex(language["@id"])).readIfUnfetched();
+          await getResource(language["@id"]).readIfUnfetched();
           return getSubject(LocaleShapeType, language["@id"]);
         }),
       ),
@@ -107,9 +94,7 @@ export default function AppProvider({ children, appUrl }: Props) {
       Promise.all(
         resourceBundles
           .flatMap((bundle) => bundle.faqIndex)
-          .map(async (index) =>
-            getResource(replaceIndex(index["@id"])).readIfUnfetched(),
-          ),
+          .map(async (index) => getResource(index["@id"]).readIfUnfetched()),
       ),
   );
 
@@ -123,7 +108,7 @@ export default function AppProvider({ children, appUrl }: Props) {
           resourceBundles
             .flatMap((bundle) => bundle.translationsIndex)
             .map(async (index) => {
-              await getResource(replaceIndex(index["@id"])).readIfUnfetched();
+              await getResource(index["@id"]).readIfUnfetched();
               return getSubject(TranslationsIndexShapeType, index["@id"]);
             }),
         )
@@ -139,7 +124,7 @@ export default function AppProvider({ children, appUrl }: Props) {
         translations
           .map((index) => index.resource)
           .map(async (resourceUrl) =>
-            getResource(replaceHost(resourceUrl["@id"])).readIfUnfetched(),
+            getResource(resourceUrl["@id"]).readIfUnfetched(),
           ),
       ),
   );
@@ -148,7 +133,7 @@ export default function AppProvider({ children, appUrl }: Props) {
     if (!resourceBundles || translationsLoading) return null;
     resourceBundles.forEach((bundle) =>
       bundle.translationsIndex
-        .map((index) => replaceHost(index.resource["@id"]))
+        .map((index) => index.resource["@id"])
         .flatMap((resourceUrl) => {
           return dataset
             .match(null, null, null, namedNode(resourceUrl))

@@ -25,14 +25,12 @@ import SignupPage from "./components/signupPage";
 import RulesPage from "./components/rulesPage";
 import LayoutProvider from "./hooks/useLayout/provider";
 
-const APP_URL = "https://dnd5e.app/data#dnd5e";
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <BrowserSolidLdoProvider>
-        <AppProvider appUrl={APP_URL}>
+        <AppProvider>
           <LayoutProvider>
             <Outlet />
           </LayoutProvider>
