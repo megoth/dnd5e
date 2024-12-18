@@ -43,7 +43,9 @@ export default function AppProvider({ children }: Props) {
 
   // fetch app index
   const { data: app } = useSWR("app", async () => {
-    const appUrl = new URL("/data/index.ttl#dnd5e", location.origin).toString();
+    const appUrl =
+      import.meta.env.VITE_APP_URL ||
+      new URL("/data/index.ttl#dnd5e", location.origin).toString();
     const path = getPath(appUrl);
     await getResource(path).readIfUnfetched();
     return getSubject(AppShapeType, appUrl);
