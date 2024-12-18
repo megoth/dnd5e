@@ -5,13 +5,12 @@ module.exports = {
     node: true,
   },
   extends: [
-    "airbnb-base",
     "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
     "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:import/recommended",
   ],
   globals: {
     Atomics: "readonly",
@@ -28,9 +27,7 @@ module.exports = {
       },
     ],
     "no-use-before-define": "off",
-    semi: "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-    "@typescript-eslint/semi": "error",
     "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/jsx-one-expression-per-line": "off",
@@ -47,7 +44,14 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+      },
+    ],
   },
   settings: {
     "import/resolver": {

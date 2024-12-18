@@ -1,8 +1,8 @@
 const pluginForms = require("@tailwindcss/forms");
 
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
-  darkMode: "class", // or "media" or false
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "selector", // or "media" or false
   theme: {
     fontFamily: {
       sans: ["'Raleway'", "sans-serif"],

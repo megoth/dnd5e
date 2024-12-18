@@ -1,101 +1,100 @@
-@prefix :             <#> .
-@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
-@prefix translations: <./translations.ttl#> .
+@prefix : <https://dnd5e.app/translations/global#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-translations:aboutPageTitle skos:definition "Om appen"@nb-NO .
-translations:appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
-translations:appName skos:definition "D&D5e Solid App"@nb-NO .
-translations:appPitch skos:definition
-    """Få full oversikt over karakteren din i Dungeons & Dragons 5th edition. Du har full kontroll over hvor
-    informasjonen lagres og hvilke regelsett du ønsker å bruke, enten det er offisielle regler eller dine egne
-    hjemmelagde."""@nb-NO .
-translations:appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
-translations:authenticationGuidance skos:definition
-    """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
-translations:authenticationPitch skos:definition
-    """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
-    lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
-    kompatible apper."""@nb-NO .
-translations:charactersPageTitle skos:definition "Karakterer"@nb-NO .
-translations:classesPageTitle skos:definition "Klasser"@nb-NO .
-translations:close skos:definition "Lukk"@nb-NO .
-translations:darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
-translations:darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
-translations:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
-translations:encountersPageTitle skos:definition "Kamper"@nb-NO .
-translations:equipmentPageTitle skos:definition "Utstyr"@nb-NO .
-translations:faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
-translations:faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
-translations:homePageTitle skos:definition "Hjem"@nb-NO .
-translations:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
-translations:locale-en-US skos:definition "Engelsk"@nb-NO .
-translations:locale-nb-NO skos:definition "Norsk"@nb-NO .
-translations:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
-translations:LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
-translations:loggedOut skos:definition "Ikke logget inn"@nb-NO .
-translations:login skos:definition "Logg på"@nb-NO .
-translations:loginImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
-translations:loginPageTitle skos:definition "Logg på med Solid"@nb-NO .
-translations:loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
-translations:loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
-translations:logOut skos:definition "Logg ut"@nb-NO .
-translations:monstersPageTitle skos:definition "Monstre"@nb-NO .
-translations:notesPageTitle skos:definition "Notater"@nb-NO .
-translations:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
-translations:or skos:definition "eller"@nb-NO .
-translations:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
-translations:racesPageTitle skos:definition "Raser"@nb-NO .
-translations:recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
-translations:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
-translations:rulesPageTitle skos:definition "Regler"@nb-NO .
-translations:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
-translations:signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
-translations:signupPitch skos:definition
-    """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
-    identitet, som du velger selv hvor du vil opprette. Dette betyr at **vi aldri lagrer dine data på våre systemer**.
-    Istedenfor lagrer vi dine data på det stedet du kontrollerer (som regel den lagringsplassen som er tilknyttet
-    din Solid konto).
+:aboutPageTitle skos:definition "Om appen"@nb-NO .
+:appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
+:appName skos:definition "D&D5e Solid App"@nb-NO .
+:appPitch skos:definition
+        """Få full oversikt over karakteren din i Dungeons & Dragons 5th edition. Du har full kontroll over hvor
+        informasjonen lagres og hvilke regelsett du ønsker å bruke, enten det er offisielle regler eller dine egne
+        hjemmelagde."""@nb-NO .
+:appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
+:authenticationGuidance skos:definition
+        """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
+:authenticationPitch skos:definition
+        """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
+        lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
+        kompatible apper."""@nb-NO .
+:charactersPageTitle skos:definition "Karakterer"@nb-NO .
+:classesPageTitle skos:definition "Klasser"@nb-NO .
+:close skos:definition "Lukk"@nb-NO .
+:darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
+:darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
+:datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+:encountersPageTitle skos:definition "Kamper"@nb-NO .
+:equipmentPageTitle skos:definition "Utstyr"@nb-NO .
+:faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
+:faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
+:homePageTitle skos:definition "Hjem"@nb-NO .
+:learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
+:locale-en-US skos:definition "Engelsk"@nb-NO .
+:locale-nb-NO skos:definition "Norsk"@nb-NO .
+:loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
+:LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
+:loggedOut skos:definition "Ikke logget inn"@nb-NO .
+:login skos:definition "Logg på"@nb-NO .
+:loginImage skos:definition "Ikonet til Solid prosjektet"@nb-NO .
+:loginPageTitle skos:definition "Logg på med Solid"@nb-NO .
+:loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
+:loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
+:logOut skos:definition "Logg ut"@nb-NO .
+:monstersPageTitle skos:definition "Monstre"@nb-NO .
+:notesPageTitle skos:definition "Notater"@nb-NO .
+:onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+:or skos:definition "eller"@nb-NO .
+:provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
+:racesPageTitle skos:definition "Raser"@nb-NO .
+:recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
+:rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
+:rulesPageTitle skos:definition "Regler"@nb-NO .
+:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
+:signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
+:signupPitch skos:definition
+        """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
+        identitet, som du velger selv hvor du vil opprette. Dette betyr at **vi aldri lagrer dine data på våre systemer**.
+        Istedenfor lagrer vi dine data på det stedet du kontrollerer (som regel den lagringsplassen som er tilknyttet
+        din Solid konto).
 
-    Om du ikke kjenner til noen identitetsleverandører for Solid så anbefaler vi å sjekke ut de vi har listet under,
-    eller [fortsett til solidproject.org for mer informasjon om hvordan du velger
-    leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
-translations:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
-translations:signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
-translations:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
-translations:solidLogo skos:definition "Logo for Solid"@nb-NO .
-translations:spellsPageTitle skos:definition "Magi"@nb-NO .
-translations:translateTo skos:definition "Oversett til {$language}"@nb-NO .
-translations:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
-translations:whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
-translations:whatIsIdPDescription skos:definition
-    """Identitetsleverandører for Solid er tjenester som lar deg lage en Solid identitet som du kan bruke til å
-    autentisere deg på Solid-kompatible tjenester, som f.eks. denne appen. De fleste identitetsleverandører gir deg
-    også en lagringsplass, ofte kalt en Pod."""@nb-NO .
-translations:whatIsPodLabel skos:definition "Hva er en Pod?"@nb-NO .
-translations:whatIsPodDescription skos:definition
-    """Pod er navnet vi gjerne bruker om lagringsplassen du har tilknyttet din Solid identitet. De aller fleste får en
-    Pod når de først skaffer seg en Solid identitet, men det er mulig å ha flere, eller ingen i det hele tatt. For at
-    du skal kunne bruke denne appen trenger vi å lagre dataene dine et sted, og om vi er i tvil, så spør vi deg etter
-    at du har logget inn."""@nb-NO .
-translations:whatIsSolidLabel skos:definition "Hva er Solid?"@nb-NO .
-translations:whatIsSolidDescription skos:definition
-    """Solid er en standard som fokuserer på å gi folk kontrol over sine egne data. Med Solid så får du en digital
-    identitet, en lagringsplass på nett (ofte kalt en Pod) og muligheten til kontrollere hvem som har tilgang til
-    dataene dine. For mer informasjon, sjekk ut [solidproject.org](https://solidproject.org/)."""@nb-NO .
-translations:whatSupportIsOfferedLabel skos:definition "Hva tilbys av support?"@nb-NO .
-translations:whatSupportIsOfferedDescription skos:definition
+        Om du ikke kjenner til noen identitetsleverandører for Solid så anbefaler vi å sjekke ut de vi har listet under,
+        eller [fortsett til solidproject.org for mer informasjon om hvordan du velger
+        leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
+:signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
+:signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
+:solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
+:solidLogo skos:definition "Logo for Solid"@nb-NO .
+:spellsPageTitle skos:definition "Magi"@nb-NO .
+:translateTo skos:definition "Oversett til {$language}"@nb-NO .
+:translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+:whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
+:whatIsIdPDescription skos:definition
+        """Identitetsleverandører for Solid er tjenester som lar deg lage en Solid identitet som du kan bruke til å
+        autentisere deg på Solid-kompatible tjenester, som f.eks. denne appen. De fleste identitetsleverandører gir deg
+        også en lagringsplass, ofte kalt en Pod."""@nb-NO .
+:whatIsPodLabel skos:definition "Hva er en Pod?"@nb-NO .
+:whatIsPodDescription skos:definition
+        """Pod er navnet vi gjerne bruker om lagringsplassen du har tilknyttet din Solid identitet. De aller fleste får en
+        Pod når de først skaffer seg en Solid identitet, men det er mulig å ha flere, eller ingen i det hele tatt. For at
+        du skal kunne bruke denne appen trenger vi å lagre dataene dine et sted, og om vi er i tvil, så spør vi deg etter
+        at du har logget inn."""@nb-NO .
+:whatIsSolidLabel skos:definition "Hva er Solid?"@nb-NO .
+:whatIsSolidDescription skos:definition
+        """Solid er en standard som fokuserer på å gi folk kontrol over sine egne data. Med Solid så får du en digital
+        identitet, en lagringsplass på nett (ofte kalt en Pod) og muligheten til kontrollere hvem som har tilgang til
+        dataene dine. For mer informasjon, sjekk ut [solidproject.org](https://solidproject.org/)."""@nb-NO .
+:whatSupportIsOfferedLabel skos:definition "Hva tilbys av support?"@nb-NO .
+:whatSupportIsOfferedDescription skos:definition
         """Ingen support er tilgjengelig for appen, men du
         kan [lage en ny issue på GitHub](https://github.com/megoth/dnd5e/issues/new)
         for å la meg vite at du har et problem du ønsker å ha fikset."""@nb-NO .
-translations:whoDevelopsTheAppLabel skos:definition "Hvem utvikler appen?"@nb-NO .
-translations:whoDevelopsTheAppDescription skos:definition
+:whoDevelopsTheAppLabel skos:definition "Hvem utvikler appen?"@nb-NO .
+:whoDevelopsTheAppDescription skos:definition
         """Appen blir utviklet av [Arne Hassel](https://icanhasweb.net), som et open-source prosjekt
         på [github.com/megoth/dnd5e](https://github.com/megoth/dnd5e). Den er utviklet som en eksperimentell app for å
         forstå bedre hvordan en web-app basert på React og Solid kan fungere."""@nb-NO .
-translations:whyLogInWithSolidLabel skos:definition "Hvorfor må jeg logge inn med Solid?"@nb-NO .
-translations:whyLogInWithSolidDescription skos:definition
-    """Ved å bruke en Solid identitet kan appen gjenkjenne deg og vite hvor dataene dine skal hentes fra. Solid er en
-    standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
-    blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
-translations:workInProgress skos:definition "Under utvikling"@nb-NO .
+:whyLogInWithSolidLabel skos:definition "Hvorfor må jeg logge inn med Solid?"@nb-NO .
+:whyLogInWithSolidDescription skos:definition
+        """Ved å bruke en Solid identitet kan appen gjenkjenne deg og vite hvor dataene dine skal hentes fra. Solid er en
+        standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
+        blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
+:workInProgress skos:definition "Under utvikling"@nb-NO .

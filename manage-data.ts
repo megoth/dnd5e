@@ -1,6 +1,5 @@
-// @ts-ignore
-const { Command } = require("commander");
-const downloadData = require("./lib/download");
+import { Command } from "commander";
+import downloadData from "./lib/download";
 
 const program = new Command();
 
