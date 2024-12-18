@@ -11,6 +11,20 @@ import readmeMarkdown from "../../../README.md?raw";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
 
+function flatten(text, child) {
+  return typeof child === "string"
+    ? text + child
+    : React.Children.toArray(child.props.children).reduce(flatten, text);
+}
+
+const renderHeader =
+  (tagName: string) => (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+    const children = React.Children.toArray(props.children);
+    const text = children.reduce(flatten, "");
+    const slug = text.toLowerCase().replace(/\W/g, "-");
+    return React.createElement(tagName, { id: slug }, props.children);
+  };
+
 export default function AboutPage() {
   const { currentLocale } = useApp();
 
@@ -22,7 +36,15 @@ export default function AboutPage() {
         </WarningMessage>
       )}
       <Content>
-        <ReactMarkdown>{readmeMarkdown}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            h2: renderHeader("h2"),
+            h3: renderHeader("h3"),
+            h4: renderHeader("h4"),
+          }}
+        >
+          {readmeMarkdown}
+        </ReactMarkdown>
       </Content>
     </Layout>
   );
