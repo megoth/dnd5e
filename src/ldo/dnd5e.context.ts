@@ -12,6 +12,7 @@ export const dnd5eContext: ContextDefinition = {
       "https://dnd5e.app/vocab/dnd5e#AbilityScore",
       "https://dnd5e.app/vocab/dnd5e#Alignment",
       "https://dnd5e.app/vocab/dnd5e#Class",
+      "https://dnd5e.app/vocab/dnd5e#DamageType",
       "https://dnd5e.app/vocab/dnd5e#Language",
       "https://dnd5e.app/vocab/dnd5e#Proficiency",
       "https://dnd5e.app/vocab/dnd5e#Race",

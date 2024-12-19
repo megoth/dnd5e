@@ -144,6 +144,44 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "https://dnd5e.app/vocab/dnd5e#DamageType",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#Language",
       type: "ShapeDecl",
       shapeExpr: {

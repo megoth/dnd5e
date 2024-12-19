@@ -27,6 +27,12 @@ shape:Class {
     dcterms:description xsd:string? ;
 }
 
+shape:DamageType {
+    rdf:type dnd5e:DamageType ;
+    rdfs:label xsd:string ;
+    dcterms:description xsd:string* ;
+}
+
 shape:Language {
     rdf:type dnd5e:Language ;
     rdfs:label xsd:string ;

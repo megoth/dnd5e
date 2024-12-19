@@ -43,6 +43,17 @@ export interface Class {
 }
 
 /**
+ * DamageType Type
+ */
+export interface DamageType {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  label: string;
+  description?: string[];
+}
+
+/**
  * Language Type
  */
 export interface Language {

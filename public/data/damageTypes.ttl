@@ -1,0 +1,26 @@
+<https://dnd5e.app/data/damageTypes.ttl#acid> <http://www.w3.org/2000/01/rdf-schema#label> "Acid" .
+<https://dnd5e.app/data/damageTypes.ttl#acid> <http://purl.org/dc/terms/description> "The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage." .
+<https://dnd5e.app/data/damageTypes.ttl#bludgeoning> <http://www.w3.org/2000/01/rdf-schema#label> "Bludgeoning" .
+<https://dnd5e.app/data/damageTypes.ttl#bludgeoning> <http://purl.org/dc/terms/description> "Blunt force attacks, falling, constriction, and the like deal bludgeoning damage." .
+<https://dnd5e.app/data/damageTypes.ttl#cold> <http://www.w3.org/2000/01/rdf-schema#label> "Cold" .
+<https://dnd5e.app/data/damageTypes.ttl#cold> <http://purl.org/dc/terms/description> "The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage." .
+<https://dnd5e.app/data/damageTypes.ttl#fire> <http://www.w3.org/2000/01/rdf-schema#label> "Fire" .
+<https://dnd5e.app/data/damageTypes.ttl#fire> <http://purl.org/dc/terms/description> "Red dragons breathe fire, and many spells conjure flames to deal fire damage." .
+<https://dnd5e.app/data/damageTypes.ttl#force> <http://www.w3.org/2000/01/rdf-schema#label> "Force" .
+<https://dnd5e.app/data/damageTypes.ttl#force> <http://purl.org/dc/terms/description> "Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon." .
+<https://dnd5e.app/data/damageTypes.ttl#lightning> <http://www.w3.org/2000/01/rdf-schema#label> "Lightning" .
+<https://dnd5e.app/data/damageTypes.ttl#lightning> <http://purl.org/dc/terms/description> "A lightning bolt spell and a blue dragon's breath deal lightning damage." .
+<https://dnd5e.app/data/damageTypes.ttl#necrotic> <http://www.w3.org/2000/01/rdf-schema#label> "Necrotic" .
+<https://dnd5e.app/data/damageTypes.ttl#necrotic> <http://purl.org/dc/terms/description> "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul." .
+<https://dnd5e.app/data/damageTypes.ttl#piercing> <http://www.w3.org/2000/01/rdf-schema#label> "Piercing" .
+<https://dnd5e.app/data/damageTypes.ttl#piercing> <http://purl.org/dc/terms/description> "Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage." .
+<https://dnd5e.app/data/damageTypes.ttl#poison> <http://www.w3.org/2000/01/rdf-schema#label> "Poison" .
+<https://dnd5e.app/data/damageTypes.ttl#poison> <http://purl.org/dc/terms/description> "Venomous stings and the toxic gas of a green dragon's breath deal poison damage." .
+<https://dnd5e.app/data/damageTypes.ttl#psychic> <http://www.w3.org/2000/01/rdf-schema#label> "Psychic" .
+<https://dnd5e.app/data/damageTypes.ttl#psychic> <http://purl.org/dc/terms/description> "Mental abilities such as a psionic blast deal psychic damage." .
+<https://dnd5e.app/data/damageTypes.ttl#radiant> <http://www.w3.org/2000/01/rdf-schema#label> "Radiant" .
+<https://dnd5e.app/data/damageTypes.ttl#radiant> <http://purl.org/dc/terms/description> "Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power." .
+<https://dnd5e.app/data/damageTypes.ttl#slashing> <http://www.w3.org/2000/01/rdf-schema#label> "Slashing" .
+<https://dnd5e.app/data/damageTypes.ttl#slashing> <http://purl.org/dc/terms/description> "Swords, axes, and monsters' claws deal slashing damage." .
+<https://dnd5e.app/data/damageTypes.ttl#thunder> <http://www.w3.org/2000/01/rdf-schema#label> "Thunder" .
+<https://dnd5e.app/data/damageTypes.ttl#thunder> <http://purl.org/dc/terms/description> "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage." .

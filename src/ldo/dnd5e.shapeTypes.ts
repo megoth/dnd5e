@@ -5,6 +5,7 @@ import {
   AbilityScore,
   Alignment,
   Class,
+  DamageType,
   Language,
   Proficiency,
   Race,
@@ -41,6 +42,15 @@ export const AlignmentShapeType: ShapeType<Alignment> = {
 export const ClassShapeType: ShapeType<Class> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Class",
+  context: dnd5eContext,
+};
+
+/**
+ * DamageType ShapeType
+ */
+export const DamageTypeShapeType: ShapeType<DamageType> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
   context: dnd5eContext,
 };
 
