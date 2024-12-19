@@ -6,10 +6,10 @@ import WarningMessage from "../warningMessage";
 
 export default function AdminPage() {
   return (
-    <Layout pageName="adminPageTitle" bundle="admin">
+    <Layout pageName="adminPageTitle">
       <Content>
         <h1>
-          <Translation id="adminPageTitle" bundle="admin" />
+          <Translation id="adminPageTitle" />
         </h1>
         <WarningMessage>
           <Translation id="workInProgress" />

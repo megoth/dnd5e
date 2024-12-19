@@ -6,6 +6,8 @@ import useApp from "../../hooks/useApp";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
 // TODO: FIX lazy solution
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 // eslint-disable-next-line import/no-unresolved
 import readmeMarkdown from "../../../README.md?raw";
 

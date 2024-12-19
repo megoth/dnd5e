@@ -15,7 +15,6 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;
   header?: boolean;
   pageName?: string;
-  bundle?: string;
   className?: string;
 }
 
@@ -24,7 +23,6 @@ export default function Layout({
   full = false,
   header = true,
   pageName,
-  bundle,
   className,
   ...props
 }: Props) {
@@ -62,7 +60,7 @@ export default function Layout({
 
   return (
     <div className="flex-1 flex flex-col relative min-h-full" {...handlers}>
-      {header && <PageHeader pageName={pageName} bundle={bundle} />}
+      {header && <PageHeader pageName={pageName} />}
       {open && (
         <button
           className={bem("layout__fade", modifiers)}

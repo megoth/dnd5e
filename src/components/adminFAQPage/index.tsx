@@ -9,7 +9,7 @@ export default function AdminFAQPAge() {
     <Layout pageName="faqPageTitle">
       <Content>
         <h1>
-          <Translation id="faqsPageTitle" bundle="admin" />
+          <Translation id="faqsPageTitle" />
         </h1>
         <WarningMessage>
           <Translation id="workInProgress" />

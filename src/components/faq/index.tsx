@@ -8,34 +8,29 @@ import Translation from "../translation";
 import { useLocalization } from "@fluent/react";
 import ErrorMessage from "../errorMessage";
 import { bem } from "../../utils/bem";
-import useApp from "../../hooks/useApp";
 
 export const TESTID_FAQ_LABEL = "faq-label";
 export const TESTID_FAQ_DESCRIPTION = "faq-description";
 
 interface Props {
-  bundle?: string;
   id: string;
   variant?: "small";
 }
 
-export default function FAQ({ bundle = "global", id, variant }: Props) {
-  const { currentLocale } = useApp();
+export default function FAQ({ id, variant }: Props) {
   const { l10n } = useLocalization();
   const { getSubject } = useLdo();
-  const url = isUrl(id) ? id : `https://dnd5e.app/translations/${bundle}#${id}`;
+  const url = isUrl(id) ? id : `https://dnd5e.app/faqs#${id}`;
   const faq = getSubject(FAQShapeType, url);
   if (!faq.faqLabel || !faq.faqDescription) {
     return <ErrorMessage error={new Error(`FAQ not found: ${id}`)} />;
   }
   const label = getHash(faq.faqLabel["@id"]);
-  const description = l10n.getString(
-    `global-${getHash(faq.faqDescription["@id"])}-${currentLocale}`,
-  );
+  const description = l10n.getString(getHash(faq.faqDescription["@id"]));
   return (
     <Content className={bem("content", variant)}>
       <h2 id={id} data-testid={TESTID_FAQ_LABEL}>
-        <Translation id={label} bundle={bundle} />
+        <Translation id={label} />
       </h2>
       <div data-testid={TESTID_FAQ_DESCRIPTION}>
         <ReactMarkdown>{description}</ReactMarkdown>

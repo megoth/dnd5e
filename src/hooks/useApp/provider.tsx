@@ -154,7 +154,7 @@ export default function AppProvider({ children }: Props) {
         .forEach((translation) =>
           localization.addResource(
             new FluentResource(
-              `${bundle.label}-${getHash(translation["@id"])}-${currentLocale} = ${translation.definition}`,
+              `${getHash(translation["@id"])} = ${translation.definition}`,
             ),
           ),
         ),

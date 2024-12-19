@@ -8,7 +8,7 @@ export const TESTID_LOCALE_SELECTOR_LANGUAGE = "locale-selector-language";
 
 export default function LocaleSelector() {
   const { l10n } = useLocalization();
-  const { availableLocales, currentLocale } = useApp();
+  const { availableLocales } = useApp();
   const location = useLocation();
   return availableLocales.map((locale) => (
     <a
@@ -22,9 +22,7 @@ export default function LocaleSelector() {
       <Translation
         id="translateTo"
         vars={{
-          language: l10n.getString(
-            `global-locale-${locale.language}-${currentLocale}`,
-          ),
+          language: l10n.getString(`locale-${locale.language}`),
         }}
       />
     </a>

@@ -6,10 +6,10 @@ import WarningMessage from "../warningMessage";
 
 export default function TranslationsPage() {
   return (
-    <Layout pageName="translationsPageTitle" bundle="admin">
+    <Layout pageName="translationsPageTitle">
       <Content>
         <h1>
-          <Translation id="translationsPageTitle" bundle="admin" />
+          <Translation id="translationsPageTitle" />
         </h1>
         <WarningMessage>
           <Translation id="workInProgress" />
