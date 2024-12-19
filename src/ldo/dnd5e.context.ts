@@ -12,6 +12,7 @@ export const dnd5eContext: ContextDefinition = {
       "https://dnd5e.app/vocab/dnd5e#AbilityScore",
       "https://dnd5e.app/vocab/dnd5e#Alignment",
       "https://dnd5e.app/vocab/dnd5e#Class",
+      "https://dnd5e.app/vocab/dnd5e#Language",
       "https://dnd5e.app/vocab/dnd5e#Proficiency",
       "https://dnd5e.app/vocab/dnd5e#Race",
     ],
@@ -37,6 +38,19 @@ export const dnd5eContext: ContextDefinition = {
   abilityScore: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
     "@type": "@id",
+  },
+  languageType: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#languageType",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  script: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#script",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  typicalSpeakers: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#typicalSpeakers",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
   },
   proficiencyType: {
     "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyType",

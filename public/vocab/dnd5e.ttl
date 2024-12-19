@@ -21,7 +21,7 @@ dnd5e:AbilityScore a rdfs:Class ;
     rdfs:label "Ability Score"@en-US .
 
 dnd5e:abilityScore a rdf:Property ;
-    rdfs:domain dnd5e:AbilityScore .
+    rdfs:range dnd5e:AbilityScore .
 
 dnd5e:Alignment a rdfs:Class ;
     rdfs:label "Alignment"@en-US .
@@ -29,14 +29,29 @@ dnd5e:Alignment a rdfs:Class ;
 dnd5e:Class a rdfs:Class ;
     rdfs:label "Class"@en-US .
 
+dnd5e:Language a rdfs:Class ;
+    rdfs:label "Language"@en-US .
+
+dnd5e:languageType a rdf:Property ;
+    rdfs:domain dnd5e:Language ;
+    rdfs:range xsd:string .
+
 dnd5e:Proficiency a rdfs:Class ;
     rdfs:label "Proficiency"@en-US .
 
 dnd5e:Race a rdfs:Class ;
     rdfs:label "Race"@en-US .
 
+dnd5e:script a rdf:Property ;
+    rdfs:domain dnd5e:Language ;
+    rdfs:range xsd:string .
+
 dnd5e:Skill a rdfs:Class ;
     rdfs:label "Skill"@en-US .
 
 dnd5e:skill a rdf:Property ;
-    rdfs:domain dnd5e:Skill .
+    rdfs:range dnd5e:Skill .
+
+dnd5e:typicalSpeakers a rdf:Property ;
+    rdfs:domain dnd5e:Language ;
+    rdfs:range xsd:string .

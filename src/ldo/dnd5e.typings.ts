@@ -39,6 +39,21 @@ export interface Class {
   "@context"?: ContextDefinition;
   type: string;
   label: string;
+  description?: string;
+}
+
+/**
+ * Language Type
+ */
+export interface Language {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  label: string;
+  languageType?: string;
+  script?: string;
+  description?: string;
+  typicalSpeakers?: string[];
 }
 
 /**

@@ -24,6 +24,16 @@ shape:Alignment {
 shape:Class {
     rdf:type dnd5e:Class ;
     rdfs:label xsd:string ;
+    dcterms:description xsd:string? ;
+}
+
+shape:Language {
+    rdf:type dnd5e:Language ;
+    rdfs:label xsd:string ;
+    dnd5e:languageType xsd:string? ;
+    dnd5e:script xsd:string? ;
+    dcterms:description xsd:string? ;
+    dnd5e:typicalSpeakers xsd:string* ;
 }
 
 shape:Proficiency {
