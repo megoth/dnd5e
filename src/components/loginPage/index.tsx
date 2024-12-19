@@ -10,6 +10,7 @@ import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 import LoginForm from "../loginForm";
 import { getRedirectURL } from "../../utils/windowHelpers";
 import { bem } from "../../utils/bem";
+import PageFooter from "../pageFooter";
 
 export default function LoginPage() {
   const providers = getProviders();
@@ -51,6 +52,7 @@ export default function LoginPage() {
         <FAQ id="whatIsSolid" variant="small" />
         <FAQ id="whatIsPod" variant="small" />
       </aside>
+      <PageFooter className="main-container" />
     </Layout>
   );
 }

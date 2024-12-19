@@ -8,12 +8,14 @@ import FAQ from "../faq";
 import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 import { NavLink } from "react-router-dom";
 import { useLocalization } from "@fluent/react";
+import PageFooter from "../pageFooter";
+import { bem } from "../../utils/bem";
 
 export default function SignupPage() {
   const { l10n } = useLocalization();
   return (
-    <Layout pageName={"signupPageTitle"}>
-      <Content>
+    <Layout pageName="signupPageTitle" full>
+      <Content className={bem("layout__main", "content")}>
         <h1>
           <Translation id="signupPageTitle" />
         </h1>
@@ -37,17 +39,18 @@ export default function SignupPage() {
           </li>
         ))}
       </ul>
-      <Content>
+      <Content className={bem("layout__main", "content")}>
         <p className="text-center">
           <NavLink to="/login">
             <Translation id="loginPrompt" />
           </NavLink>
         </p>
       </Content>
-      <aside className="my-16">
+      <aside className={bem("layout__main", "content")}>
         <FAQ id="whatIsIdP" variant="small" />
         <FAQ id="whatIsPod" variant="small" />
       </aside>
+      <PageFooter className="main-container" />
     </Layout>
   );
 }
