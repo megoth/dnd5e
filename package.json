@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "ci": "npm run lint",
     "manage-data": "ts-node manage-data.ts",
-    "build-ldo": "ldo build --input ./public/shapes --output ./src/ldo"
+    "build-ldo": "ldo build --input ./public/shapes --output ./src/ldo",
+    "build-openapi-ts": "openapi-typescript ./data/schema/openapi.json -o ./typings/dnd5eapi.d.ts"
   },
   "dependencies": {
     "@fluent/bundle": "^0.17.1",
@@ -52,6 +53,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "identity-obj-proxy": "^3.0.0",
+    "openapi-typescript": "^7.4.4",
     "prettier": "^3.4.2",
     "raw-loader": "^4.0.2",
     "ts-node": "^10.9.2",

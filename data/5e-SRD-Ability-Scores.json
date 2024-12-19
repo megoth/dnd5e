@@ -1,16 +1,5 @@
-{
-  "https://www.dnd5eapi.co/api/ability-scores/con": {
-    "index": "con",
-    "name": "CON",
-    "full_name": "Constitution",
-    "desc": [
-      "Constitution measures health, stamina, and vital force.",
-      "Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving a specific effort on the part of a character or monster."
-    ],
-    "skills": [],
-    "url": "/api/ability-scores/con"
-  },
-  "https://www.dnd5eapi.co/api/ability-scores/str": {
+[
+  {
     "index": "str",
     "name": "STR",
     "full_name": "Strength",
@@ -27,7 +16,82 @@
     ],
     "url": "/api/ability-scores/str"
   },
-  "https://www.dnd5eapi.co/api/ability-scores/wis": {
+  {
+    "index": "dex",
+    "name": "DEX",
+    "full_name": "Dexterity",
+    "desc": [
+      "Dexterity measures agility, reflexes, and balance.",
+      "A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks."
+    ],
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "index": "acrobatics",
+        "url": "/api/skills/acrobatics"
+      },
+      {
+        "name": "Sleight of Hand",
+        "index": "sleight-of-hand",
+        "url": "/api/skills/sleight-of-hand"
+      },
+      {
+        "name": "Stealth",
+        "index": "stealth",
+        "url": "/api/skills/stealth"
+      }
+    ],
+    "url": "/api/ability-scores/dex"
+  },
+  {
+    "index": "con",
+    "name": "CON",
+    "full_name": "Constitution",
+    "desc": [
+      "Constitution measures health, stamina, and vital force.",
+      "Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving a specific effort on the part of a character or monster."
+    ],
+    "skills": [],
+    "url": "/api/ability-scores/con"
+  },
+  {
+    "index": "int",
+    "name": "INT",
+    "full_name": "Intelligence",
+    "desc": [
+      "Intelligence measures mental acuity, accuracy of recall, and the ability to reason.",
+      "An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning. The Arcana, History, Investigation, Nature, and Religion skills reflect aptitude in certain kinds of Intelligence checks."
+    ],
+    "skills": [
+      {
+        "name": "Arcana",
+        "index": "arcana",
+        "url": "/api/skills/arcana"
+      },
+      {
+        "name": "History",
+        "index": "history",
+        "url": "/api/skills/history"
+      },
+      {
+        "name": "Investigation",
+        "index": "investigation",
+        "url": "/api/skills/investigation"
+      },
+      {
+        "name": "Nature",
+        "index": "nature",
+        "url": "/api/skills/nature"
+      },
+      {
+        "name": "Religion",
+        "index": "religion",
+        "url": "/api/skills/religion"
+      }
+    ],
+    "url": "/api/ability-scores/int"
+  },
+  {
     "index": "wis",
     "name": "WIS",
     "full_name": "Wisdom",
@@ -64,7 +128,7 @@
     ],
     "url": "/api/ability-scores/wis"
   },
-  "https://www.dnd5eapi.co/api/ability-scores/cha": {
+  {
     "index": "cha",
     "name": "CHA",
     "full_name": "Charisma",
@@ -95,69 +159,5 @@
       }
     ],
     "url": "/api/ability-scores/cha"
-  },
-  "https://www.dnd5eapi.co/api/ability-scores/dex": {
-    "index": "dex",
-    "name": "DEX",
-    "full_name": "Dexterity",
-    "desc": [
-      "Dexterity measures agility, reflexes, and balance.",
-      "A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks."
-    ],
-    "skills": [
-      {
-        "name": "Acrobatics",
-        "index": "acrobatics",
-        "url": "/api/skills/acrobatics"
-      },
-      {
-        "name": "Sleight of Hand",
-        "index": "sleight-of-hand",
-        "url": "/api/skills/sleight-of-hand"
-      },
-      {
-        "name": "Stealth",
-        "index": "stealth",
-        "url": "/api/skills/stealth"
-      }
-    ],
-    "url": "/api/ability-scores/dex"
-  },
-  "https://www.dnd5eapi.co/api/ability-scores/int": {
-    "index": "int",
-    "name": "INT",
-    "full_name": "Intelligence",
-    "desc": [
-      "Intelligence measures mental acuity, accuracy of recall, and the ability to reason.",
-      "An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning. The Arcana, History, Investigation, Nature, and Religion skills reflect aptitude in certain kinds of Intelligence checks."
-    ],
-    "skills": [
-      {
-        "name": "Arcana",
-        "index": "arcana",
-        "url": "/api/skills/arcana"
-      },
-      {
-        "name": "History",
-        "index": "history",
-        "url": "/api/skills/history"
-      },
-      {
-        "name": "Investigation",
-        "index": "investigation",
-        "url": "/api/skills/investigation"
-      },
-      {
-        "name": "Nature",
-        "index": "nature",
-        "url": "/api/skills/nature"
-      },
-      {
-        "name": "Religion",
-        "index": "religion",
-        "url": "/api/skills/religion"
-      }
-    ],
-    "url": "/api/ability-scores/int"
   }
-}
+]

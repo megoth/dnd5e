@@ -1,5 +1,5 @@
-{
-  "https://www.dnd5eapi.co/api/damage-types/acid": {
+[
+  {
     "index": "acid",
     "name": "Acid",
     "desc": [
@@ -7,15 +7,7 @@
     ],
     "url": "/api/damage-types/acid"
   },
-  "https://www.dnd5eapi.co/api/damage-types/poison": {
-    "index": "poison",
-    "name": "Poison",
-    "desc": [
-      "Venomous stings and the toxic gas of a green dragon's breath deal poison damage."
-    ],
-    "url": "/api/damage-types/poison"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/bludgeoning": {
+  {
     "index": "bludgeoning",
     "name": "Bludgeoning",
     "desc": [
@@ -23,39 +15,7 @@
     ],
     "url": "/api/damage-types/bludgeoning"
   },
-  "https://www.dnd5eapi.co/api/damage-types/fire": {
-    "index": "fire",
-    "name": "Fire",
-    "desc": [
-      "Red dragons breathe fire, and many spells conjure flames to deal fire damage."
-    ],
-    "url": "/api/damage-types/fire"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/slashing": {
-    "index": "slashing",
-    "name": "Slashing",
-    "desc": [
-      "Swords, axes, and monsters' claws deal slashing damage."
-    ],
-    "url": "/api/damage-types/slashing"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/force": {
-    "index": "force",
-    "name": "Force",
-    "desc": [
-      "Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon."
-    ],
-    "url": "/api/damage-types/force"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/necrotic": {
-    "index": "necrotic",
-    "name": "Necrotic",
-    "desc": [
-      "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul."
-    ],
-    "url": "/api/damage-types/necrotic"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/cold": {
+  {
     "index": "cold",
     "name": "Cold",
     "desc": [
@@ -63,31 +23,23 @@
     ],
     "url": "/api/damage-types/cold"
   },
-  "https://www.dnd5eapi.co/api/damage-types/piercing": {
-    "index": "piercing",
-    "name": "Piercing",
+  {
+    "index": "fire",
+    "name": "Fire",
     "desc": [
-      "Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage."
+      "Red dragons breathe fire, and many spells conjure flames to deal fire damage."
     ],
-    "url": "/api/damage-types/piercing"
+    "url": "/api/damage-types/fire"
   },
-  "https://www.dnd5eapi.co/api/damage-types/radiant": {
-    "index": "radiant",
-    "name": "Radiant",
+  {
+    "index": "force",
+    "name": "Force",
     "desc": [
-      "Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power."
+      "Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon."
     ],
-    "url": "/api/damage-types/radiant"
+    "url": "/api/damage-types/force"
   },
-  "https://www.dnd5eapi.co/api/damage-types/thunder": {
-    "index": "thunder",
-    "name": "Thunder",
-    "desc": [
-      "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage."
-    ],
-    "url": "/api/damage-types/thunder"
-  },
-  "https://www.dnd5eapi.co/api/damage-types/lightning": {
+  {
     "index": "lightning",
     "name": "Lightning",
     "desc": [
@@ -95,12 +47,56 @@
     ],
     "url": "/api/damage-types/lightning"
   },
-  "https://www.dnd5eapi.co/api/damage-types/psychic": {
+  {
+    "index": "necrotic",
+    "name": "Necrotic",
+    "desc": [
+      "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul."
+    ],
+    "url": "/api/damage-types/necrotic"
+  },
+  {
+    "index": "piercing",
+    "name": "Piercing",
+    "desc": [
+      "Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage."
+    ],
+    "url": "/api/damage-types/piercing"
+  },
+  {
+    "index": "poison",
+    "name": "Poison",
+    "desc": [
+      "Venomous stings and the toxic gas of a green dragon's breath deal poison damage."
+    ],
+    "url": "/api/damage-types/poison"
+  },
+  {
     "index": "psychic",
     "name": "Psychic",
-    "desc": [
-      "Mental abilities such as a psionic blast deal psychic damage."
-    ],
+    "desc": ["Mental abilities such as a psionic blast deal psychic damage."],
     "url": "/api/damage-types/psychic"
+  },
+  {
+    "index": "radiant",
+    "name": "Radiant",
+    "desc": [
+      "Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power."
+    ],
+    "url": "/api/damage-types/radiant"
+  },
+  {
+    "index": "slashing",
+    "name": "Slashing",
+    "desc": ["Swords, axes, and monsters' claws deal slashing damage."],
+    "url": "/api/damage-types/slashing"
+  },
+  {
+    "index": "thunder",
+    "name": "Thunder",
+    "desc": [
+      "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage."
+    ],
+    "url": "/api/damage-types/thunder"
   }
-}
+]
