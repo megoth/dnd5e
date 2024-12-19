@@ -9,13 +9,12 @@ export function transformSkill(
   datasetUrl: string,
   abilityScoreUrl: string,
 ): Skill {
-  const ldoDataset = createLdoDataset();
-  const skill = ldoDataset
+  const skill = createLdoDataset()
     .usingType(SkillShapeType)
     .fromSubject(datasetUrl + data.index);
   skill.label = data.name;
   skill.description = data.desc;
-  skill.abilityScore = ldoDataset
+  skill.abilityScore = createLdoDataset()
     .usingType(AbilityScoreShapeType)
     .fromSubject(abilityScoreUrl + data.ability_score.index);
   return skill;

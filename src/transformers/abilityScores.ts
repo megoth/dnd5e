@@ -4,7 +4,7 @@ import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { AbilityScore } from "../ldo/dnd5e.typings";
 
-export function transformAbilityScore(
+function transformAbilityScore(
   data: components["schemas"]["AbilityScore"],
   datasetUrl: string,
   skillUrl: string,

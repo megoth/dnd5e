@@ -29,6 +29,9 @@ dnd5e:Alignment a rdfs:Class ;
 dnd5e:Class a rdfs:Class ;
     rdfs:label "Class"@en-US .
 
+dnd5e:Condition a rdfs:Class ;
+    rdfs:label "Condition"@en-US .
+
 dnd5e:DamageType a rdfs:Class ;
     rdfs:label "Damage Type"@en-US .
 

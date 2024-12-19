@@ -14,19 +14,20 @@ export function transformProficiency(
   classUrl: string,
   raceUrl: string,
 ): Proficiency {
-  const ldoDataset = createLdoDataset();
-  const proficiency = ldoDataset
+  const proficiency = createLdoDataset()
     .usingType(ProficiencyShapeType)
     .fromSubject(datasetUrl + data.index);
   proficiency.label = data.name;
   proficiency.proficiencyType = data.type;
   proficiency.class = data.classes.map((classData) =>
-    ldoDataset
+    createLdoDataset()
       .usingType(ClassShapeType)
       .fromSubject(classUrl + classData.index),
   );
   proficiency.race = data.races.map((race) =>
-    ldoDataset.usingType(RaceShapeType).fromSubject(raceUrl + race.index),
+    createLdoDataset()
+      .usingType(RaceShapeType)
+      .fromSubject(raceUrl + race.index),
   );
   return proficiency;
 }

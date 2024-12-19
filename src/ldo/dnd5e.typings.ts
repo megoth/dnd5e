@@ -43,6 +43,17 @@ export interface Class {
 }
 
 /**
+ * Condition Type
+ */
+export interface Condition {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  label: string;
+  description?: string[];
+}
+
+/**
  * DamageType Type
  */
 export interface DamageType {

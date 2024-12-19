@@ -8,8 +8,7 @@ export function transformAlignment(
   data: components["schemas"]["Alignment"],
   datasetUrl: string,
 ): Alignment {
-  const ldoDataset = createLdoDataset();
-  const alignment = ldoDataset
+  const alignment = createLdoDataset()
     .usingType(AlignmentShapeType)
     .fromSubject(datasetUrl + data.index);
   alignment.label = data.name;

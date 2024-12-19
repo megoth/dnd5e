@@ -8,8 +8,7 @@ export function transformLanguage(
   data: components["schemas"]["Language"],
   datasetUrl: string,
 ): Proficiency {
-  const ldoDataset = createLdoDataset();
-  const language = ldoDataset
+  const language = createLdoDataset()
     .usingType(LanguageShapeType)
     .fromSubject(datasetUrl + data.index);
   language.label = data.name;
