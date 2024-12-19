@@ -6,6 +6,13 @@ import { ContextDefinition } from "jsonld";
  * =============================================================================
  */
 export const dnd5eContext: ContextDefinition = {
+  type: {
+    "@id": "@type",
+    "@type": [
+      "https://dnd5e.app/vocab/dnd5e#AbilityScore",
+      "https://dnd5e.app/vocab/dnd5e#Alignment",
+    ],
+  },
   label: {
     "@id": "http://www.w3.org/2000/01/rdf-schema#label",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -13,9 +20,19 @@ export const dnd5eContext: ContextDefinition = {
   description: {
     "@id": "http://purl.org/dc/terms/description",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
   },
   abbreviation: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abbreviation",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  skill: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#skill",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  abilityScore: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
+    "@type": "@id",
   },
 };

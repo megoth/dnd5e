@@ -6,8 +6,24 @@ PREFIX shape: </shapes/dnd5e.shex#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 
+shape:AbilityScore {
+    rdf:type dnd5e:AbilityScore ;
+    rdfs:label xsd:string ;
+    dcterms:description xsd:string+ ;
+    dnd5e:abbreviation xsd:string ;
+    dnd5e:skill @shape:Skill* ;
+}
+
 shape:Alignment {
+    rdf:type dnd5e:Alignment ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string ;
     dnd5e:abbreviation xsd:string ;
+}
+
+shape:Skill {
+    rdf:type dnd5e:AbilityScore ;
+    rdfs:label xsd:string ;
+    dcterms:description xsd:string+ ;
+    dnd5e:abilityScore @shape:AbilityScore ;
 }

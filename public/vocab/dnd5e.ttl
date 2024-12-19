@@ -10,16 +10,24 @@ dnd5e: a owl:Ontology ;
     owl:versionInfo "0.1" ;
     dcterms:title "D&D5e vocabulary"@en-US ;
     dcterms:description
-        """An interpretation of the official Dungeons and Dragons 5th Edition core rules in the form
-               of a vocabulary."""@en-US ;
+        """An interpretation of the official Dungeons and Dragons 5th Edition core rules in the form of a vocabulary."""@en-US ;
     dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
     dcterms:issued "2024-12-19"^^xsd:date ;
     dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
     vann:preferredNamespacePrefix "dnd5e" ;
     vann:preferredNamespaceUri "https://dnd5e.app/vocab/dnd5e#" .
 
-dnd5e:Ability a rdfs:Class ;
-    rdfs:label "Ability"@en-US .
+dnd5e:AbilityScore a rdfs:Class ;
+    rdfs:label "Ability Score"@en-US .
+
+dnd5e:abilityScore a rdf:Property ;
+    rdfs:domain dnd5e:AbilityScore .
 
 dnd5e:Alignment a rdfs:Class ;
     rdfs:label "Alignment"@en-US .
+
+dnd5e:Skill a rdfs:Class ;
+    rdfs:label "Skill"@en-US .
+
+dnd5e:skill a rdf:Property ;
+    rdfs:domain dnd5e:Skill .
