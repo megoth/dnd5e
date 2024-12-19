@@ -21,6 +21,25 @@ shape:Alignment {
     dnd5e:abbreviation xsd:string ;
 }
 
+shape:Class {
+    rdf:type dnd5e:Class ;
+    rdfs:label xsd:string ;
+}
+
+shape:Proficiency {
+    rdf:type dnd5e:Proficiency ;
+    dnd5e:proficiencyType xsd:string? ;
+    rdfs:label xsd:string ;
+    dnd5e:class @shape:Class* ;
+    dnd5e:race @shape:Race* ;
+    dnd5e:reference IRI? ;
+}
+
+shape:Race {
+    rdf:type dnd5e:Race ;
+    rdfs:label xsd:string ;
+}
+
 shape:Skill {
     rdf:type dnd5e:AbilityScore ;
     rdfs:label xsd:string ;

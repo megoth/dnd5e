@@ -11,6 +11,9 @@ export const dnd5eContext: ContextDefinition = {
     "@type": [
       "https://dnd5e.app/vocab/dnd5e#AbilityScore",
       "https://dnd5e.app/vocab/dnd5e#Alignment",
+      "https://dnd5e.app/vocab/dnd5e#Class",
+      "https://dnd5e.app/vocab/dnd5e#Proficiency",
+      "https://dnd5e.app/vocab/dnd5e#Race",
     ],
   },
   label: {
@@ -33,6 +36,24 @@ export const dnd5eContext: ContextDefinition = {
   },
   abilityScore: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
+    "@type": "@id",
+  },
+  proficiencyType: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyType",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  class: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#class",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  race: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#race",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  reference: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
     "@type": "@id",
   },
 };

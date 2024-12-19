@@ -26,6 +26,15 @@ dnd5e:abilityScore a rdf:Property ;
 dnd5e:Alignment a rdfs:Class ;
     rdfs:label "Alignment"@en-US .
 
+dnd5e:Class a rdfs:Class ;
+    rdfs:label "Class"@en-US .
+
+dnd5e:Proficiency a rdfs:Class ;
+    rdfs:label "Proficiency"@en-US .
+
+dnd5e:Race a rdfs:Class ;
+    rdfs:label "Race"@en-US .
+
 dnd5e:Skill a rdfs:Class ;
     rdfs:label "Skill"@en-US .
 

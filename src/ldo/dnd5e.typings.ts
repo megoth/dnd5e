@@ -32,6 +32,42 @@ export interface Alignment {
 }
 
 /**
+ * Class Type
+ */
+export interface Class {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  label: string;
+}
+
+/**
+ * Proficiency Type
+ */
+export interface Proficiency {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  proficiencyType?: string;
+  label: string;
+  class?: Class[];
+  race?: Race[];
+  reference?: {
+    "@id": string;
+  };
+}
+
+/**
+ * Race Type
+ */
+export interface Race {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
+  label: string;
+}
+
+/**
  * Skill Type
  */
 export interface Skill {

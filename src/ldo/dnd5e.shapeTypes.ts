@@ -1,7 +1,14 @@
 import { ShapeType } from "@ldo/ldo";
 import { dnd5eSchema } from "./dnd5e.schema";
 import { dnd5eContext } from "./dnd5e.context";
-import { AbilityScore, Alignment, Skill } from "./dnd5e.typings";
+import {
+  AbilityScore,
+  Alignment,
+  Class,
+  Proficiency,
+  Race,
+  Skill,
+} from "./dnd5e.typings";
 
 /**
  * =============================================================================
@@ -24,6 +31,33 @@ export const AbilityScoreShapeType: ShapeType<AbilityScore> = {
 export const AlignmentShapeType: ShapeType<Alignment> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Alignment",
+  context: dnd5eContext,
+};
+
+/**
+ * Class ShapeType
+ */
+export const ClassShapeType: ShapeType<Class> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Class",
+  context: dnd5eContext,
+};
+
+/**
+ * Proficiency ShapeType
+ */
+export const ProficiencyShapeType: ShapeType<Proficiency> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
+  context: dnd5eContext,
+};
+
+/**
+ * Race ShapeType
+ */
+export const RaceShapeType: ShapeType<Race> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Race",
   context: dnd5eContext,
 };
 
