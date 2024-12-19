@@ -20,7 +20,7 @@
     "jsx": "preserve",
     "typeRoots": [
       "node_modules/@types",
-      "typings"
+      "src/typings"
     ],
     "incremental": true
   },
@@ -31,7 +31,4 @@
   "exclude": [
     "node_modules"
   ],
-  "ts-node": {
-    "isolatedModules": false
-  }
 }

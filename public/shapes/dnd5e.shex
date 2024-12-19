@@ -1,0 +1,13 @@
+PREFIX dnd5e: <https://dnd5e.app/vocab/dnd5e#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX shape: </shapes/dnd5e.shex#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+shape:Alignment {
+    rdfs:label xsd:string ;
+    dcterms:description xsd:string ;
+    dnd5e:abbreviation xsd:string ;
+}

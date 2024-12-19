@@ -1,6 +1,9 @@
 import fetch from "node-fetch";
 import { writeFile } from "fs";
 
+// TODO: PROBABLY DELETE
+// Keeping it for now
+
 function getApiUrl(endpointUrl) {
   return `https://www.dnd5eapi.co${endpointUrl}`;
 }

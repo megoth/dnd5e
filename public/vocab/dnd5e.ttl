@@ -1,4 +1,4 @@
-@prefix dnd5e_voc: <https://dnd5e.app/vocab/dnd5e#> .
+@prefix dnd5e: <https://dnd5e.app/vocab/dnd5e#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,19 +6,20 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dnd5e_voc:
-    a owl:Ontology ;
+dnd5e: a owl:Ontology ;
     owl:versionInfo "0.1" ;
     dcterms:title "D&D5e vocabulary"@en-US ;
     dcterms:description
         """An interpretation of the official Dungeons and Dragons 5th Edition core rules in the form
                of a vocabulary."""@en-US ;
     dcterms:creator <https://dnd5e.inrupt.net/profile/card/#me> ;
-    dcterms:issued "2020-11-29"^^xsd:date ;
+    dcterms:issued "2024-12-19"^^xsd:date ;
     dcterms:license "http://purl.org/NET/rdflicense/MIT1.0.ttl" ;
-    vann:preferredNamespacePrefix "dnd5e_voc" ;
+    vann:preferredNamespacePrefix "dnd5e" ;
     vann:preferredNamespaceUri "https://dnd5e.app/vocab/dnd5e#" .
 
-dnd5e_voc:Ability
-    a rdfs:Class ;
+dnd5e:Ability a rdfs:Class ;
     rdfs:label "Ability"@en-US .
+
+dnd5e:Alignment a rdfs:Class ;
+    rdfs:label "Alignment"@en-US .

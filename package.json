@@ -5,13 +5,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-ldo && vite build",
+    "build": "npm run build-ldo && npm run manage-data transform && vite build",
     "lint": "eslint --config .eslintrc.js --fix",
     "preview": "vite preview",
     "ci": "npm run lint",
-    "manage-data": "ts-node manage-data.ts",
+    "manage-data": "tsx manage-data.ts",
     "build-ldo": "ldo build --input ./public/shapes --output ./src/ldo",
-    "build-openapi-ts": "openapi-typescript ./data/schema/openapi.json -o ./typings/dnd5eapi.d.ts"
+    "build-openapi-ts": "openapi-typescript src/dnd5eapi-data/schema/openapi.json -o src/typings/dnd5eapi.d.ts"
   },
   "dependencies": {
     "@fluent/bundle": "^0.17.1",
@@ -56,7 +56,7 @@
     "openapi-typescript": "^7.4.4",
     "prettier": "^3.4.2",
     "raw-loader": "^4.0.2",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vite": "^6.0.3",
     "whatwg-fetch": "^3.6.20"

@@ -4,7 +4,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { BrowserSolidLdoProvider } from "@ldo/solid-react";
 import HomePage from "./components/homePage";
 import AppProvider from "./hooks/useApp/provider";
-import "../styles/globals.css";
+import "./styles/globals.css";
 import AboutPage from "./components/aboutPage";
 import FAQPage from "./components/faqPage";
 import AdminPage from "./components/adminPage";
