@@ -1,16 +1,19 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { AlignmentShapeType } from "../ldo/dnd5e.shapeTypes";
+import { AlignmentShapeType, TypeShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Alignment } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
+import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
 
-export function transformAlignment(
+function transformAlignment(
   data: components["schemas"]["Alignment"],
-  datasetUrl: string,
 ): Alignment {
   const alignment = createLdoDataset()
     .usingType(AlignmentShapeType)
-    .fromSubject(datasetUrl + data.index);
+    .fromSubject(dataUrl("alignments", data.index));
+  alignment.type = createLdoDataset()
+    .usingType(TypeShapeType)
+    .fromSubject(vocabUrl("Alignment"));
   alignment.label = data.name;
   alignment.abbreviation = data.abbreviation;
   alignment.description = data.desc;
@@ -19,15 +22,11 @@ export function transformAlignment(
 
 export default async function transformAlignments(
   data: Array<components["schemas"]["Alignment"]>,
-  datasetPath: string,
-  datasetUrl: string,
 ): Promise<void> {
   const turtle = (
     await Promise.all(
-      data.map((alignmentData) =>
-        toTurtle(transformAlignment(alignmentData, datasetUrl)),
-      ),
+      data.map((alignmentData) => toTurtle(transformAlignment(alignmentData))),
     )
   ).reduce((memo, alignment) => memo.concat(alignment));
-  writeFileSync(process.cwd() + datasetPath, turtle);
+  writeFileSync(dataPath("alignments"), turtle);
 }

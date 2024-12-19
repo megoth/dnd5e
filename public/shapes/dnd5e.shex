@@ -7,7 +7,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 
 shape:AbilityScore {
-    rdf:type dnd5e:AbilityScore ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string+ ;
     dnd5e:abbreviation xsd:string ;
@@ -15,32 +15,32 @@ shape:AbilityScore {
 }
 
 shape:Alignment {
-    rdf:type dnd5e:Alignment ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string ;
     dnd5e:abbreviation xsd:string ;
 }
 
 shape:Class {
-    rdf:type dnd5e:Class ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string? ;
 }
 
 shape:Condition {
-    rdf:type dnd5e:Condition ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string* ;
 }
 
 shape:DamageType {
-    rdf:type dnd5e:DamageType ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string* ;
 }
 
 shape:Language {
-    rdf:type dnd5e:Language ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dnd5e:languageType xsd:string? ;
     dnd5e:script xsd:string? ;
@@ -49,7 +49,7 @@ shape:Language {
 }
 
 shape:Proficiency {
-    rdf:type dnd5e:Proficiency ;
+    rdf:type @shape:Type ;
     dnd5e:proficiencyType xsd:string? ;
     rdfs:label xsd:string ;
     dnd5e:class @shape:Class* ;
@@ -58,13 +58,17 @@ shape:Proficiency {
 }
 
 shape:Race {
-    rdf:type dnd5e:Race ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
 }
 
 shape:Skill {
-    rdf:type dnd5e:AbilityScore ;
+    rdf:type @shape:Type ;
     rdfs:label xsd:string ;
     dcterms:description xsd:string+ ;
     dnd5e:abilityScore @shape:AbilityScore ;
+}
+
+shape:Type {
+    rdf:type rdfs:Class ;
 }

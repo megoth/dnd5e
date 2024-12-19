@@ -1,3 +1,4 @@
+<https://dnd5e.app/data/proficiencies.ttl#light-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Light Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
@@ -7,42 +8,58 @@
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
 <https://dnd5e.app/data/proficiencies.ttl#light-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#warlock> .
+<https://dnd5e.app/data/proficiencies.ttl#medium-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#cleric> .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#medium-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
+<https://dnd5e.app/data/proficiencies.ttl#heavy-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#heavy-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Heavy Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#heavy-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#all-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#all-armor> <http://www.w3.org/2000/01/rdf-schema#label> "All armor" .
 <https://dnd5e.app/data/proficiencies.ttl#all-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#all-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#fighter> .
 <https://dnd5e.app/data/proficiencies.ttl#all-armor> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#paladin> .
+<https://dnd5e.app/data/proficiencies.ttl#padded-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#padded-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Padded Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#padded-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Leather Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#leather-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#studded-leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Studded Leather Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#hide-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Hide Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#hide-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Shirt" .
 <https://dnd5e.app/data/proficiencies.ttl#chain-shirt> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Scale Mail" .
 <https://dnd5e.app/data/proficiencies.ttl#scale-mail> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Breastplate" .
 <https://dnd5e.app/data/proficiencies.ttl#breastplate> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#half-plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Half Plate Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Ring Mail" .
 <https://dnd5e.app/data/proficiencies.ttl#ring-mail> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Mail" .
 <https://dnd5e.app/data/proficiencies.ttl#chain-mail> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#splint-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Splint Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#splint-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#plate-armor> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
+<https://dnd5e.app/data/proficiencies.ttl#shields> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#shields> <http://www.w3.org/2000/01/rdf-schema#label> "Shields" .
 <https://dnd5e.app/data/proficiencies.ttl#shields> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Armor" .
 <https://dnd5e.app/data/proficiencies.ttl#shields> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
@@ -51,6 +68,7 @@
 <https://dnd5e.app/data/proficiencies.ttl#shields> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#fighter> .
 <https://dnd5e.app/data/proficiencies.ttl#shields> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#paladin> .
 <https://dnd5e.app/data/proficiencies.ttl#shields> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
+<https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
@@ -62,221 +80,301 @@
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
 <https://dnd5e.app/data/proficiencies.ttl#simple-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#warlock> .
+<https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <http://www.w3.org/2000/01/rdf-schema#label> "Martial Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#fighter> .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#paladin> .
 <https://dnd5e.app/data/proficiencies.ttl#martial-weapons> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
+<https://dnd5e.app/data/proficiencies.ttl#clubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#clubs> <http://www.w3.org/2000/01/rdf-schema#label> "Clubs" .
 <https://dnd5e.app/data/proficiencies.ttl#clubs> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#clubs> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#daggers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#daggers> <http://www.w3.org/2000/01/rdf-schema#label> "Daggers" .
 <https://dnd5e.app/data/proficiencies.ttl#daggers> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#daggers> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#daggers> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#daggers> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#greatclubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#greatclubs> <http://www.w3.org/2000/01/rdf-schema#label> "Greatclubs" .
 <https://dnd5e.app/data/proficiencies.ttl#greatclubs> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#handaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#handaxes> <http://www.w3.org/2000/01/rdf-schema#label> "Handaxes" .
 <https://dnd5e.app/data/proficiencies.ttl#handaxes> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#handaxes> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#dwarf> .
+<https://dnd5e.app/data/proficiencies.ttl#javelins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#javelins> <http://www.w3.org/2000/01/rdf-schema#label> "Javelins" .
 <https://dnd5e.app/data/proficiencies.ttl#javelins> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#javelins> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#light-hammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#light-hammers> <http://www.w3.org/2000/01/rdf-schema#label> "Light hammers" .
 <https://dnd5e.app/data/proficiencies.ttl#light-hammers> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#light-hammers> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#dwarf> .
+<https://dnd5e.app/data/proficiencies.ttl#maces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#maces> <http://www.w3.org/2000/01/rdf-schema#label> "Maces" .
 <https://dnd5e.app/data/proficiencies.ttl#maces> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#maces> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterstaffs" .
 <https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#sickles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#sickles> <http://www.w3.org/2000/01/rdf-schema#label> "Sickles" .
 <https://dnd5e.app/data/proficiencies.ttl#sickles> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#sickles> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#spears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#spears> <http://www.w3.org/2000/01/rdf-schema#label> "Spears" .
 <https://dnd5e.app/data/proficiencies.ttl#spears> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#spears> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#crossbows-light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-light> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbows, light" .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-light> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-light> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-light> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#darts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#darts> <http://www.w3.org/2000/01/rdf-schema#label> "Darts" .
 <https://dnd5e.app/data/proficiencies.ttl#darts> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#darts> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#darts> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#darts> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#shortbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#shortbows> <http://www.w3.org/2000/01/rdf-schema#label> "Shortbows" .
 <https://dnd5e.app/data/proficiencies.ttl#shortbows> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#shortbows> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#high-elf> .
+<https://dnd5e.app/data/proficiencies.ttl#slings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#slings> <http://www.w3.org/2000/01/rdf-schema#label> "Slings" .
 <https://dnd5e.app/data/proficiencies.ttl#slings> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#slings> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#slings> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#slings> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#battleaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#battleaxes> <http://www.w3.org/2000/01/rdf-schema#label> "Battleaxes" .
 <https://dnd5e.app/data/proficiencies.ttl#battleaxes> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#battleaxes> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#dwarf> .
+<https://dnd5e.app/data/proficiencies.ttl#flails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#flails> <http://www.w3.org/2000/01/rdf-schema#label> "Flails" .
 <https://dnd5e.app/data/proficiencies.ttl#flails> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#glaives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#glaives> <http://www.w3.org/2000/01/rdf-schema#label> "Glaives" .
 <https://dnd5e.app/data/proficiencies.ttl#glaives> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#greataxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#greataxes> <http://www.w3.org/2000/01/rdf-schema#label> "Greataxes" .
 <https://dnd5e.app/data/proficiencies.ttl#greataxes> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#greatswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#greatswords> <http://www.w3.org/2000/01/rdf-schema#label> "Greatswords" .
 <https://dnd5e.app/data/proficiencies.ttl#greatswords> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#halberds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#halberds> <http://www.w3.org/2000/01/rdf-schema#label> "Halberds" .
 <https://dnd5e.app/data/proficiencies.ttl#halberds> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#lances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#lances> <http://www.w3.org/2000/01/rdf-schema#label> "Lances" .
 <https://dnd5e.app/data/proficiencies.ttl#lances> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#longswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#longswords> <http://www.w3.org/2000/01/rdf-schema#label> "Longswords" .
 <https://dnd5e.app/data/proficiencies.ttl#longswords> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#longswords> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
 <https://dnd5e.app/data/proficiencies.ttl#longswords> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
 <https://dnd5e.app/data/proficiencies.ttl#longswords> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#high-elf> .
+<https://dnd5e.app/data/proficiencies.ttl#mauls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#mauls> <http://www.w3.org/2000/01/rdf-schema#label> "Mauls" .
 <https://dnd5e.app/data/proficiencies.ttl#mauls> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#morningstars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#morningstars> <http://www.w3.org/2000/01/rdf-schema#label> "Morningstars" .
 <https://dnd5e.app/data/proficiencies.ttl#morningstars> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#pikes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#pikes> <http://www.w3.org/2000/01/rdf-schema#label> "Pikes" .
 <https://dnd5e.app/data/proficiencies.ttl#pikes> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#rapiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#rapiers> <http://www.w3.org/2000/01/rdf-schema#label> "Rapiers" .
 <https://dnd5e.app/data/proficiencies.ttl#rapiers> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#rapiers> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
 <https://dnd5e.app/data/proficiencies.ttl#rapiers> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
+<https://dnd5e.app/data/proficiencies.ttl#scimitars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#scimitars> <http://www.w3.org/2000/01/rdf-schema#label> "Scimitars" .
 <https://dnd5e.app/data/proficiencies.ttl#scimitars> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#scimitars> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#shortswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <http://www.w3.org/2000/01/rdf-schema#label> "Shortswords" .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#monk> .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
 <https://dnd5e.app/data/proficiencies.ttl#shortswords> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#high-elf> .
+<https://dnd5e.app/data/proficiencies.ttl#tridents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#tridents> <http://www.w3.org/2000/01/rdf-schema#label> "Tridents" .
 <https://dnd5e.app/data/proficiencies.ttl#tridents> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#war-picks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#war-picks> <http://www.w3.org/2000/01/rdf-schema#label> "War picks" .
 <https://dnd5e.app/data/proficiencies.ttl#war-picks> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#warhammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#warhammers> <http://www.w3.org/2000/01/rdf-schema#label> "Warhammers" .
 <https://dnd5e.app/data/proficiencies.ttl#warhammers> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#warhammers> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#dwarf> .
+<https://dnd5e.app/data/proficiencies.ttl#whips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#whips> <http://www.w3.org/2000/01/rdf-schema#label> "Whips" .
 <https://dnd5e.app/data/proficiencies.ttl#whips> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#blowguns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#blowguns> <http://www.w3.org/2000/01/rdf-schema#label> "Blowguns" .
 <https://dnd5e.app/data/proficiencies.ttl#blowguns> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#hand-crossbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#hand-crossbows> <http://www.w3.org/2000/01/rdf-schema#label> "Hand crossbows" .
 <https://dnd5e.app/data/proficiencies.ttl#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
 <https://dnd5e.app/data/proficiencies.ttl#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
+<https://dnd5e.app/data/proficiencies.ttl#crossbows-heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-heavy> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbows, heavy" .
 <https://dnd5e.app/data/proficiencies.ttl#crossbows-heavy> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#longbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#longbows> <http://www.w3.org/2000/01/rdf-schema#label> "Longbows" .
 <https://dnd5e.app/data/proficiencies.ttl#longbows> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
 <https://dnd5e.app/data/proficiencies.ttl#longbows> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#high-elf> .
+<https://dnd5e.app/data/proficiencies.ttl#nets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#nets> <http://www.w3.org/2000/01/rdf-schema#label> "Nets" .
 <https://dnd5e.app/data/proficiencies.ttl#nets> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Weapons" .
+<https://dnd5e.app/data/proficiencies.ttl#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#alchemists-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's Supplies" .
 <https://dnd5e.app/data/proficiencies.ttl#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#brewers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Brewer's Supplies" .
 <https://dnd5e.app/data/proficiencies.ttl#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#calligraphers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Calligrapher's Supplies" .
 <https://dnd5e.app/data/proficiencies.ttl#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#carpenters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Carpenter's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#cartographers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cartographer's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#cobblers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cobbler's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#cooks-utensils> <http://www.w3.org/2000/01/rdf-schema#label> "Cook's utensils" .
 <https://dnd5e.app/data/proficiencies.ttl#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#glassblowers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Glassblower's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#jewelers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Jeweler's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#leatherworkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Leatherworker's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#masons-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Mason's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#masons-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#painters-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Painter's Supplies" .
 <https://dnd5e.app/data/proficiencies.ttl#painters-supplies> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#potters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Potter's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#potters-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#smiths-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Smith's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#smiths-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#tinkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#weavers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Weaver's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#weavers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#woodcarvers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Woodcarver's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#disguise-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Kit" .
 <https://dnd5e.app/data/proficiencies.ttl#disguise-kit> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#forgery-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Forgery Kit" .
 <https://dnd5e.app/data/proficiencies.ttl#forgery-kit> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Artisan's Tools" .
+<https://dnd5e.app/data/proficiencies.ttl#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#dice-set> <http://www.w3.org/2000/01/rdf-schema#label> "Dice Set" .
 <https://dnd5e.app/data/proficiencies.ttl#dice-set> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Gaming Sets" .
+<https://dnd5e.app/data/proficiencies.ttl#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#playing-card-set> <http://www.w3.org/2000/01/rdf-schema#label> "Playing Card Set" .
 <https://dnd5e.app/data/proficiencies.ttl#playing-card-set> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Gaming Sets" .
+<https://dnd5e.app/data/proficiencies.ttl#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#bagpipes> <http://www.w3.org/2000/01/rdf-schema#label> "Bagpipes" .
 <https://dnd5e.app/data/proficiencies.ttl#bagpipes> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#drum> <http://www.w3.org/2000/01/rdf-schema#label> "Drum" .
 <https://dnd5e.app/data/proficiencies.ttl#drum> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#dulcimer> <http://www.w3.org/2000/01/rdf-schema#label> "Dulcimer" .
 <https://dnd5e.app/data/proficiencies.ttl#dulcimer> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#flute> <http://www.w3.org/2000/01/rdf-schema#label> "Flute" .
 <https://dnd5e.app/data/proficiencies.ttl#flute> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#lute> <http://www.w3.org/2000/01/rdf-schema#label> "Lute" .
 <https://dnd5e.app/data/proficiencies.ttl#lute> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#lyre> <http://www.w3.org/2000/01/rdf-schema#label> "Lyre" .
 <https://dnd5e.app/data/proficiencies.ttl#lyre> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#horn> <http://www.w3.org/2000/01/rdf-schema#label> "Horn" .
 <https://dnd5e.app/data/proficiencies.ttl#horn> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#pan-flute> <http://www.w3.org/2000/01/rdf-schema#label> "Pan flute" .
 <https://dnd5e.app/data/proficiencies.ttl#pan-flute> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#shawm> <http://www.w3.org/2000/01/rdf-schema#label> "Shawm" .
 <https://dnd5e.app/data/proficiencies.ttl#shawm> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#viol> <http://www.w3.org/2000/01/rdf-schema#label> "Viol" .
 <https://dnd5e.app/data/proficiencies.ttl#viol> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Musical Instruments" .
+<https://dnd5e.app/data/proficiencies.ttl#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#herbalism-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Herbalism Kit" .
 <https://dnd5e.app/data/proficiencies.ttl#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Other" .
 <https://dnd5e.app/data/proficiencies.ttl#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
+<https://dnd5e.app/data/proficiencies.ttl#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#navigators-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Navigator's Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#navigators-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Other" .
+<https://dnd5e.app/data/proficiencies.ttl#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#poisoners-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoner's Kit" .
 <https://dnd5e.app/data/proficiencies.ttl#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Other" .
+<https://dnd5e.app/data/proficiencies.ttl#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#thieves-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Thieves' Tools" .
 <https://dnd5e.app/data/proficiencies.ttl#thieves-tools> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Other" .
 <https://dnd5e.app/data/proficiencies.ttl#thieves-tools> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
+<https://dnd5e.app/data/proficiencies.ttl#land-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#land-vehicles> <http://www.w3.org/2000/01/rdf-schema#label> "Land Vehicles" .
 <https://dnd5e.app/data/proficiencies.ttl#land-vehicles> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Vehicles" .
+<https://dnd5e.app/data/proficiencies.ttl#water-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#water-vehicles> <http://www.w3.org/2000/01/rdf-schema#label> "Water Vehicles" .
 <https://dnd5e.app/data/proficiencies.ttl#water-vehicles> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Vehicles" .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: STR" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#fighter> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#monk> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: DEX" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#monk> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#ranger> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: CON" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#barbarian> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#fighter> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: INT" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#druid> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#rogue> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: WIS" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#cleric> .
@@ -284,6 +382,7 @@
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#paladin> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#warlock> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#wizard> .
+<https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: CHA" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Saving Throws" .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#bard> .
@@ -291,40 +390,58 @@
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#paladin> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#sorcerer> .
 <https://dnd5e.app/data/proficiencies.ttl#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#class> <https://dnd5e.app/data/classes.ttl#warlock> .
+<https://dnd5e.app/data/proficiencies.ttl#skill-acrobatics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-acrobatics> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Acrobatics" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-acrobatics> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-animal-handling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-animal-handling> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Animal Handling" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-animal-handling> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-arcana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-arcana> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Arcana" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-arcana> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-athletics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-athletics> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Athletics" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-athletics> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-deception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-deception> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Deception" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-deception> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-history> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: History" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-history> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-insight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-insight> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Insight" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-insight> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-intimidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-intimidation> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Intimidation" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-intimidation> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-investigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-investigation> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Investigation" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-investigation> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-medicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-medicine> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Medicine" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-medicine> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-nature> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Nature" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-nature> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-perception> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Perception" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-perception> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-perception> <https://dnd5e.app/vocab/dnd5e#race> <https://dnd5e.app/data/races.ttl#elf> .
+<https://dnd5e.app/data/proficiencies.ttl#skill-performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-performance> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Performance" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-performance> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-persuasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-persuasion> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Persuasion" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-persuasion> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-religion> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Religion" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-religion> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-sleight-of-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-sleight-of-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Sleight of Hand" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-sleight-of-hand> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-stealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-stealth> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Stealth" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-stealth> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .
+<https://dnd5e.app/data/proficiencies.ttl#skill-survival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
 <https://dnd5e.app/data/proficiencies.ttl#skill-survival> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Survival" .
 <https://dnd5e.app/data/proficiencies.ttl#skill-survival> <https://dnd5e.app/vocab/dnd5e#proficiencyType> "Skills" .

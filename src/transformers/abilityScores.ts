@@ -1,39 +1,42 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
+import {
+  AbilityScoreShapeType,
+  SkillShapeType,
+  TypeShapeType,
+} from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { AbilityScore } from "../ldo/dnd5e.typings";
+import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
 
 function transformAbilityScore(
   data: components["schemas"]["AbilityScore"],
-  datasetUrl: string,
-  skillUrl: string,
 ): AbilityScore {
   const ldoDataset = createLdoDataset();
   const abilityScore = ldoDataset
     .usingType(AbilityScoreShapeType)
-    .fromSubject(datasetUrl + data.index);
+    .fromSubject(dataUrl("abilityScores", data.index));
+  abilityScore.type = createLdoDataset()
+    .usingType(TypeShapeType)
+    .fromSubject(vocabUrl("AbilityScore"));
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;
   abilityScore.description = data.desc;
   abilityScore.skill = data.skills.map((skill) =>
-    ldoDataset.usingType(SkillShapeType).fromSubject(skillUrl + skill.index),
+    ldoDataset
+      .usingType(SkillShapeType)
+      .fromSubject(dataUrl("skills", skill.index)),
   );
   return abilityScore;
 }
 
 export default async function transformAbilityScores(
   data: Array<components["schemas"]["AbilityScore"]>,
-  datasetPath: string,
-  datasetUrl: string,
-  skillUrl: string,
 ): Promise<void> {
   const turtle = (
     await Promise.all(
-      data.map((abilityScore) =>
-        toTurtle(transformAbilityScore(abilityScore, datasetUrl, skillUrl)),
-      ),
+      data.map((abilityScore) => toTurtle(transformAbilityScore(abilityScore))),
     )
-  ).reduce((memo, alignment) => memo.concat(alignment));
-  writeFileSync(process.cwd() + datasetPath, turtle);
+  ).reduce((memo, abilityScore) => memo.concat(abilityScore));
+  writeFileSync(dataPath("abilityScores"), turtle);
 }

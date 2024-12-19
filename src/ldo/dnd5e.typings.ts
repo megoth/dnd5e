@@ -12,7 +12,7 @@ import { ContextDefinition } from "jsonld";
 export interface AbilityScore {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description: string[];
   abbreviation: string;
@@ -25,7 +25,7 @@ export interface AbilityScore {
 export interface Alignment {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description: string;
   abbreviation: string;
@@ -37,7 +37,7 @@ export interface Alignment {
 export interface Class {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description?: string;
 }
@@ -48,7 +48,7 @@ export interface Class {
 export interface Condition {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description?: string[];
 }
@@ -59,7 +59,7 @@ export interface Condition {
 export interface DamageType {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description?: string[];
 }
@@ -70,7 +70,7 @@ export interface DamageType {
 export interface Language {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   languageType?: string;
   script?: string;
@@ -84,7 +84,7 @@ export interface Language {
 export interface Proficiency {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   proficiencyType?: string;
   label: string;
   class?: Class[];
@@ -100,7 +100,7 @@ export interface Proficiency {
 export interface Race {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
 }
 
@@ -110,8 +110,17 @@ export interface Race {
 export interface Skill {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: string;
+  type: Type;
   label: string;
   description: string[];
   abilityScore: AbilityScore;
+}
+
+/**
+ * Type Type
+ */
+export interface Type {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: string;
 }

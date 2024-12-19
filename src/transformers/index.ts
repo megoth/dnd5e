@@ -14,43 +14,14 @@ import transformLanguages from "./languages";
 import transformDamageTypes from "./damageTypes";
 import transformConditions from "./conditions";
 
-const ALIGNMENTS_PATH = "/public/data/alignments.ttl";
-const ABILITY_SCORES_PATH = "/public/data/abilityScores.ttl";
-const CONDITIONS_PATH = "/public/data/conditions.ttl";
-const DAMAGE_TYPES_PATH = "/public/data/damageTypes.ttl";
-const PROFICIENCIES_PATH = "/public/data/proficiencies.ttl";
-const LANGUAGES_PATH = "/public/data/languages.ttl";
-const SKILLS_PATH = "/public/data/skills.ttl";
-
-const ABILITY_SCORES_URL = "https://dnd5e.app/data/abilityScores.ttl#";
-const ALIGNMENTS_URL = "https://dnd5e.app/data/alignments.ttl#";
-const CLASSES_URL = "https://dnd5e.app/data/classes.ttl#";
-const CONDITIONS_URL = "https://dnd5e.app/data/conditions.ttl#";
-const DAMAGE_TYPES_URL = "https://dnd5e.app/data/damageTypes.ttl#";
-const LANGUAGES_URL = "https://dnd5e.app/data/languages.ttl#";
-const PROFICIENCIES_URL = "https://dnd5e.app/data/proficiencies.ttl#";
-const RACES_URL = "https://dnd5e.app/data/races.ttl#";
-const SKILLS_URL = "https://dnd5e.app/data/alignments.ttl#";
-
 export default async function transformData() {
   return Promise.all([
-    transformAbilityScores(
-      abilityScores,
-      ABILITY_SCORES_PATH,
-      ABILITY_SCORES_URL,
-      SKILLS_URL,
-    ),
-    transformAlignments(alignments, ALIGNMENTS_PATH, ALIGNMENTS_URL),
-    transformConditions(conditions, CONDITIONS_PATH, CONDITIONS_URL),
-    transformDamageTypes(damageTypes, DAMAGE_TYPES_PATH, DAMAGE_TYPES_URL),
-    transformLanguages(languages, LANGUAGES_PATH, LANGUAGES_URL),
-    transformSkills(skills, SKILLS_PATH, SKILLS_URL, ABILITY_SCORES_URL),
-    transformProficiencies(
-      proficiencies,
-      PROFICIENCIES_PATH,
-      PROFICIENCIES_URL,
-      CLASSES_URL,
-      RACES_URL,
-    ),
+    transformAbilityScores(abilityScores),
+    transformAlignments(alignments),
+    transformConditions(conditions),
+    transformDamageTypes(damageTypes),
+    transformLanguages(languages),
+    transformSkills(skills),
+    transformProficiencies(proficiencies),
   ]);
 }

@@ -1,71 +1,87 @@
+<https://dnd5e.app/data/languages.ttl#common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#common> <http://www.w3.org/2000/01/rdf-schema#label> "Common" .
 <https://dnd5e.app/data/languages.ttl#common> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#common> <https://dnd5e.app/vocab/dnd5e#script> "Common" .
 <https://dnd5e.app/data/languages.ttl#common> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Humans" .
+<https://dnd5e.app/data/languages.ttl#dwarvish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#dwarvish> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#dwarvish> <http://purl.org/dc/terms/description> "Dwarvish is full of hard consonants and guttural sounds." .
 <https://dnd5e.app/data/languages.ttl#dwarvish> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#dwarvish> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#dwarvish> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Dwarves" .
+<https://dnd5e.app/data/languages.ttl#elvish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#elvish> <http://www.w3.org/2000/01/rdf-schema#label> "Elvish" .
 <https://dnd5e.app/data/languages.ttl#elvish> <http://purl.org/dc/terms/description> "Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires." .
 <https://dnd5e.app/data/languages.ttl#elvish> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#elvish> <https://dnd5e.app/vocab/dnd5e#script> "Elvish" .
 <https://dnd5e.app/data/languages.ttl#elvish> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Elves" .
+<https://dnd5e.app/data/languages.ttl#giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#giant> <http://www.w3.org/2000/01/rdf-schema#label> "Giant" .
 <https://dnd5e.app/data/languages.ttl#giant> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#giant> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#giant> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Ogres" .
 <https://dnd5e.app/data/languages.ttl#giant> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Giants" .
+<https://dnd5e.app/data/languages.ttl#gnomish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#gnomish> <http://www.w3.org/2000/01/rdf-schema#label> "Gnomish" .
 <https://dnd5e.app/data/languages.ttl#gnomish> <http://purl.org/dc/terms/description> "The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world." .
 <https://dnd5e.app/data/languages.ttl#gnomish> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#gnomish> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#gnomish> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Gnomes" .
+<https://dnd5e.app/data/languages.ttl#goblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#goblin> <http://www.w3.org/2000/01/rdf-schema#label> "Goblin" .
 <https://dnd5e.app/data/languages.ttl#goblin> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#goblin> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#goblin> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Goblinoids" .
+<https://dnd5e.app/data/languages.ttl#halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#halfling> <http://www.w3.org/2000/01/rdf-schema#label> "Halfling" .
 <https://dnd5e.app/data/languages.ttl#halfling> <http://purl.org/dc/terms/description> "The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong." .
 <https://dnd5e.app/data/languages.ttl#halfling> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#halfling> <https://dnd5e.app/vocab/dnd5e#script> "Common" .
 <https://dnd5e.app/data/languages.ttl#halfling> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Halflings" .
+<https://dnd5e.app/data/languages.ttl#orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#orc> <http://www.w3.org/2000/01/rdf-schema#label> "Orc" .
 <https://dnd5e.app/data/languages.ttl#orc> <http://purl.org/dc/terms/description> "Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script." .
 <https://dnd5e.app/data/languages.ttl#orc> <https://dnd5e.app/vocab/dnd5e#languageType> "Standard" .
 <https://dnd5e.app/data/languages.ttl#orc> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#orc> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Orcs" .
+<https://dnd5e.app/data/languages.ttl#abyssal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#abyssal> <http://www.w3.org/2000/01/rdf-schema#label> "Abyssal" .
 <https://dnd5e.app/data/languages.ttl#abyssal> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#abyssal> <https://dnd5e.app/vocab/dnd5e#script> "Infernal" .
 <https://dnd5e.app/data/languages.ttl#abyssal> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Demons" .
+<https://dnd5e.app/data/languages.ttl#celestial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#celestial> <http://www.w3.org/2000/01/rdf-schema#label> "Celestial" .
 <https://dnd5e.app/data/languages.ttl#celestial> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#celestial> <https://dnd5e.app/vocab/dnd5e#script> "Celestial" .
 <https://dnd5e.app/data/languages.ttl#celestial> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Celestials" .
+<https://dnd5e.app/data/languages.ttl#draconic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#draconic> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic" .
 <https://dnd5e.app/data/languages.ttl#draconic> <http://purl.org/dc/terms/description> "Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants." .
 <https://dnd5e.app/data/languages.ttl#draconic> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#draconic> <https://dnd5e.app/vocab/dnd5e#script> "Draconic" .
 <https://dnd5e.app/data/languages.ttl#draconic> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Dragons" .
 <https://dnd5e.app/data/languages.ttl#draconic> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Dragonborn" .
+<https://dnd5e.app/data/languages.ttl#deep-speech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#deep-speech> <http://www.w3.org/2000/01/rdf-schema#label> "Deep Speech" .
 <https://dnd5e.app/data/languages.ttl#deep-speech> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#deep-speech> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Aboleths" .
 <https://dnd5e.app/data/languages.ttl#deep-speech> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Cloakers" .
+<https://dnd5e.app/data/languages.ttl#infernal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#infernal> <http://www.w3.org/2000/01/rdf-schema#label> "Infernal" .
 <https://dnd5e.app/data/languages.ttl#infernal> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#infernal> <https://dnd5e.app/vocab/dnd5e#script> "Infernal" .
 <https://dnd5e.app/data/languages.ttl#infernal> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Devils" .
+<https://dnd5e.app/data/languages.ttl#primordial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#primordial> <http://www.w3.org/2000/01/rdf-schema#label> "Primordial" .
 <https://dnd5e.app/data/languages.ttl#primordial> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#primordial> <https://dnd5e.app/vocab/dnd5e#script> "Dwarvish" .
 <https://dnd5e.app/data/languages.ttl#primordial> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Elementals" .
+<https://dnd5e.app/data/languages.ttl#sylvan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#sylvan> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvan" .
 <https://dnd5e.app/data/languages.ttl#sylvan> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#sylvan> <https://dnd5e.app/vocab/dnd5e#script> "Elvish" .
 <https://dnd5e.app/data/languages.ttl#sylvan> <https://dnd5e.app/vocab/dnd5e#typicalSpeakers> "Fey creatures" .
+<https://dnd5e.app/data/languages.ttl#undercommon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Language> .
 <https://dnd5e.app/data/languages.ttl#undercommon> <http://www.w3.org/2000/01/rdf-schema#label> "Undercommon" .
 <https://dnd5e.app/data/languages.ttl#undercommon> <https://dnd5e.app/vocab/dnd5e#languageType> "Exotic" .
 <https://dnd5e.app/data/languages.ttl#undercommon> <https://dnd5e.app/vocab/dnd5e#script> "Elvish" .

@@ -8,16 +8,7 @@ import { ContextDefinition } from "jsonld";
 export const dnd5eContext: ContextDefinition = {
   type: {
     "@id": "@type",
-    "@type": [
-      "https://dnd5e.app/vocab/dnd5e#AbilityScore",
-      "https://dnd5e.app/vocab/dnd5e#Alignment",
-      "https://dnd5e.app/vocab/dnd5e#Class",
-      "https://dnd5e.app/vocab/dnd5e#Condition",
-      "https://dnd5e.app/vocab/dnd5e#DamageType",
-      "https://dnd5e.app/vocab/dnd5e#Language",
-      "https://dnd5e.app/vocab/dnd5e#Proficiency",
-      "https://dnd5e.app/vocab/dnd5e#Race",
-    ],
+    "@type": ["@id", "http://www.w3.org/2000/01/rdf-schema#Class"],
   },
   label: {
     "@id": "http://www.w3.org/2000/01/rdf-schema#label",

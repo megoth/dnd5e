@@ -11,6 +11,7 @@ import {
   Proficiency,
   Race,
   Skill,
+  Type,
 } from "./dnd5e.typings";
 
 /**
@@ -97,5 +98,14 @@ export const RaceShapeType: ShapeType<Race> = {
 export const SkillShapeType: ShapeType<Skill> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Skill",
+  context: dnd5eContext,
+};
+
+/**
+ * Type ShapeType
+ */
+export const TypeShapeType: ShapeType<Type> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Type",
   context: dnd5eContext,
 };

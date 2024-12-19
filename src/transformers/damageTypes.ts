@@ -1,16 +1,19 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { DamageTypeShapeType } from "../ldo/dnd5e.shapeTypes";
+import { DamageTypeShapeType, TypeShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { DamageType } from "../ldo/dnd5e.typings";
+import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
 
-export function transformDamageType(
+function transformDamageType(
   data: components["schemas"]["DamageType"],
-  datasetUrl: string,
 ): DamageType {
   const damageType = createLdoDataset()
     .usingType(DamageTypeShapeType)
-    .fromSubject(datasetUrl + data.index);
+    .fromSubject(dataUrl("damageTypes", data.index));
+  damageType.type = createLdoDataset()
+    .usingType(TypeShapeType)
+    .fromSubject(vocabUrl("DamageType"));
   damageType.label = data.name;
   damageType.description = data.desc;
   return damageType;
@@ -18,15 +21,11 @@ export function transformDamageType(
 
 export default async function transformDamageTypes(
   data: Array<components["schemas"]["DamageType"]>,
-  datasetPath: string,
-  datasetUrl: string,
 ): Promise<void> {
   const turtle = (
     await Promise.all(
-      data.map((damageType) =>
-        toTurtle(transformDamageType(damageType, datasetUrl)),
-      ),
+      data.map((damageType) => toTurtle(transformDamageType(damageType))),
     )
-  ).reduce((memo, alignment) => memo.concat(alignment));
-  writeFileSync(process.cwd() + datasetPath, turtle);
+  ).reduce((memo, damageType) => memo.concat(damageType));
+  writeFileSync(dataPath("damageTypes"), turtle);
 }

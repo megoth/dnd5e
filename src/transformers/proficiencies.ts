@@ -4,49 +4,43 @@ import {
   ClassShapeType,
   ProficiencyShapeType,
   RaceShapeType,
+  TypeShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Proficiency } from "../ldo/dnd5e.typings";
+import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
 
 export function transformProficiency(
   data: components["schemas"]["Proficiency"],
-  datasetUrl: string,
-  classUrl: string,
-  raceUrl: string,
 ): Proficiency {
   const proficiency = createLdoDataset()
     .usingType(ProficiencyShapeType)
-    .fromSubject(datasetUrl + data.index);
+    .fromSubject(dataUrl("proficiencies", data.index));
+  proficiency.type = createLdoDataset()
+    .usingType(TypeShapeType)
+    .fromSubject(vocabUrl("Proficiency"));
   proficiency.label = data.name;
   proficiency.proficiencyType = data.type;
   proficiency.class = data.classes.map((classData) =>
     createLdoDataset()
       .usingType(ClassShapeType)
-      .fromSubject(classUrl + classData.index),
+      .fromSubject(dataUrl("classes", classData.index)),
   );
   proficiency.race = data.races.map((race) =>
     createLdoDataset()
       .usingType(RaceShapeType)
-      .fromSubject(raceUrl + race.index),
+      .fromSubject(dataUrl("races", race.index)),
   );
   return proficiency;
 }
 
 export default async function transformProficiencies(
   data: Array<components["schemas"]["Proficiency"]>,
-  datasetPath: string,
-  datasetUrl: string,
-  classUrl: string,
-  raceUrl: string,
 ): Promise<void> {
   const turtle = (
     await Promise.all(
-      data.map((proficiency) =>
-        toTurtle(
-          transformProficiency(proficiency, datasetUrl, classUrl, raceUrl),
-        ),
-      ),
+      data.map((proficiency) => toTurtle(transformProficiency(proficiency))),
     )
   ).reduce((memo, alignment) => memo.concat(alignment));
-  writeFileSync(process.cwd() + datasetPath, turtle);
+  writeFileSync(dataPath("proficiencies"), turtle);
 }
