@@ -32,7 +32,7 @@ export function transformProficiency(
   return proficiency;
 }
 
-export default async function transformProficiencies(
+export default async function writeProficiencies(
   data: Array<components["schemas"]["Proficiency"]>,
 ): Promise<void> {
   const turtle = (

@@ -21,7 +21,7 @@ export function transformLanguage(
   return language;
 }
 
-export default async function transformLanguages(
+export default async function writeLanguages(
   data: Array<components["schemas"]["Language"]>,
 ): Promise<void> {
   const turtle = (

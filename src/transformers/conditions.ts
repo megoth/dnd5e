@@ -18,7 +18,7 @@ function transformCondition(
   return damageType;
 }
 
-export default async function transformConditions(
+export default async function writeConditions(
   data: Array<components["schemas"]["Condition"]>,
 ): Promise<void> {
   const turtle = (

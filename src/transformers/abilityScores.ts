@@ -25,7 +25,7 @@ function transformAbilityScore(
   return abilityScore;
 }
 
-export default async function transformAbilityScores(
+export default async function writeAbilityScores(
   data: Array<components["schemas"]["AbilityScore"]>,
 ): Promise<void> {
   const turtle = (

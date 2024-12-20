@@ -9,24 +9,24 @@ import languages from "../dnd5eapi-data/5e-SRD-Languages.json";
 import proficiencies from "../dnd5eapi-data/5e-SRD-Proficiencies.json";
 import skills from "../dnd5eapi-data/5e-SRD-Skills.json";
 
-import transformAlignments from "./alignments";
-import transformAbilityScores from "./abilityScores";
-import transformSkills from "./skills";
-import transformProficiencies from "./proficiencies";
-import transformLanguages from "./languages";
-import transformDamageTypes from "./damageTypes";
-import transformConditions from "./conditions";
-import transformBackgrounds from "./backgrounds";
+import writeAlignments from "./alignments";
+import writeAbilityScores from "./abilityScores";
+import writeSkills from "./skills";
+import writeProficiencies from "./proficiencies";
+import writeLanguages from "./languages";
+import writeDamageTypes from "./damageTypes";
+import writeConditions from "./conditions";
+import writeBackgrounds from "./backgrounds";
 
 export default async function transformData() {
   return Promise.all([
-    transformAbilityScores(abilityScores),
-    transformAlignments(alignments),
-    transformBackgrounds(backgrounds),
-    transformConditions(conditions),
-    transformDamageTypes(damageTypes),
-    transformLanguages(languages as Array<components["schemas"]["Language"]>),
-    transformSkills(skills),
-    transformProficiencies(proficiencies),
+    writeAbilityScores(abilityScores),
+    writeAlignments(alignments),
+    writeBackgrounds(backgrounds),
+    writeConditions(conditions),
+    writeDamageTypes(damageTypes),
+    writeLanguages(languages as Array<components["schemas"]["Language"]>),
+    writeSkills(skills),
+    writeProficiencies(proficiencies),
   ]);
 }

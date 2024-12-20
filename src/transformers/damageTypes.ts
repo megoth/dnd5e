@@ -18,7 +18,7 @@ function transformDamageType(
   return damageType;
 }
 
-export default async function transformDamageTypes(
+export default async function writeDamageTypes(
   data: Array<components["schemas"]["DamageType"]>,
 ): Promise<void> {
   const turtle = (

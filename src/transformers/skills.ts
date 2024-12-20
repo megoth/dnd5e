@@ -19,7 +19,7 @@ export function transformSkill(data: components["schemas"]["Skill"]): Skill {
   return skill;
 }
 
-export default async function transformSkills(
+export default async function writeSkills(
   data: Array<components["schemas"]["Skill"]>,
 ): Promise<void> {
   const turtle = (

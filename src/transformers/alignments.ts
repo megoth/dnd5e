@@ -19,7 +19,7 @@ function transformAlignment(
   return alignment;
 }
 
-export default async function transformAlignments(
+export default async function writeAlignments(
   data: Array<components["schemas"]["Alignment"]>,
 ): Promise<void> {
   const turtle = (

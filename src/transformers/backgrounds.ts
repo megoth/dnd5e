@@ -41,7 +41,7 @@ function transformBackground(
   return background;
 }
 
-export default async function transformBackgrounds(
+export default async function writeBackgrounds(
   data: Array<components["schemas"]["Background"]>,
 ): Promise<void> {
   const turtle = (
