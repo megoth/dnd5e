@@ -2352,17 +2352,20 @@ export interface components {
     Background: components["schemas"]["APIReference"] & {
       /** @description Starting proficiencies for all new characters of this background. */
       starting_proficiencies?: components["schemas"]["APIReference"][];
-      /** @description Starting equipment for all new characters of this background. */
-      starting_equipment?: components["schemas"]["APIReference"][];
-      starting_equipment_options?: components["schemas"]["Choice"];
+      /** @description List of equipment and their quantities all players of the class start with. */
+      starting_equipment?: {
+        quantity?: number;
+        equipment?: components["schemas"]["APIReference"];
+      }[];
+      /** @description List of choices of starting equipment. */
+      starting_equipment_options?: components["schemas"]["Choice"][];
       language_options?: components["schemas"]["Choice"];
       /** @description Special feature granted to new characters of this background. */
       feature?: {
         name?: string;
         desc?: string[];
       };
-      /** @description Choice of personality traits for this background. */
-      personality_traits?: Record<string, never>;
+      personality_traits?: components["schemas"]["Choice"];
       ideals?: components["schemas"]["Choice"];
       bonds?: components["schemas"]["Choice"];
       flaws?: components["schemas"]["Choice"];
@@ -2936,7 +2939,7 @@ export interface components {
           /** @description Type of option set; determines other attributes. */
           option_set_type?: string;
           /** @description Array of options to choose from. */
-          options_array?: components["schemas"]["Option"][];
+          options?: components["schemas"]["Option"][];
         }
       | {
           /** @description Type of option set; determines other attributes. */
@@ -2947,7 +2950,7 @@ export interface components {
           /** @description Type of option set; determines other attributes. */
           option_set_type?: string;
           /** @description A reference (by URL) to a collection in the database. */
-          resource_list?: string;
+          resource_list_url?: string;
         };
     /** @description `Option`
      *      */

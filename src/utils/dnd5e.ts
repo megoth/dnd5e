@@ -3,7 +3,7 @@ export function dataPath(type: string): string {
   return `${process.cwd()}/public/data/${type}.ttl`;
 }
 
-export function dataUrl(type: string, id: string): string {
+export function dataUrl(type: string, id: string = ""): string {
   return `https://dnd5e.app/data/${type}.ttl#${id}`;
 }
 

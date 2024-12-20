@@ -1,9 +1,10 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { AlignmentShapeType, TypeShapeType } from "../ldo/dnd5e.shapeTypes";
+import { AlignmentShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Alignment } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 function transformAlignment(
   data: components["schemas"]["Alignment"],
@@ -11,9 +12,7 @@ function transformAlignment(
   const alignment = createLdoDataset()
     .usingType(AlignmentShapeType)
     .fromSubject(dataUrl("alignments", data.index));
-  alignment.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("Alignment"));
+  alignment.type = type("Alignment");
   alignment.label = data.name;
   alignment.abbreviation = data.abbreviation;
   alignment.description = data.desc;

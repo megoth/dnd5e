@@ -23,8 +23,28 @@ dnd5e:AbilityScore a rdfs:Class ;
 dnd5e:abilityScore a rdf:Property ;
     rdfs:range dnd5e:AbilityScore .
 
+dnd5e:AbilityScoreOption a rdfs:Class .
+
+dnd5e:ActionOption a rdfs:Class .
+
 dnd5e:Alignment a rdfs:Class ;
     rdfs:label "Alignment"@en-US .
+
+dnd5e:Background a rdfs:Class ;
+    rdfs:label "Background"@en-US .
+
+dnd5e:bonds a rdf:Property .
+
+dnd5e:BonusOption a rdfs:Class .
+
+dnd5e:BreathOption a rdfs:Class .
+
+dnd5e:Choice a rdfs:Class .
+
+dnd5e:choice a rdf:Property ;
+    rdfs:range xsd:integer .
+
+dnd5e:ChoiceOption a rdfs:Class .
 
 dnd5e:Class a rdfs:Class ;
     rdfs:label "Class"@en-US .
@@ -32,24 +52,87 @@ dnd5e:Class a rdfs:Class ;
 dnd5e:Condition a rdfs:Class ;
     rdfs:label "Condition"@en-US .
 
+dnd5e:CountOption a rdfs:Class .
+
+dnd5e:Damage a rdfs:Class ;
+    rdfs:label "Damage"@en-US .
+
+dnd5e:DamageOption a rdfs:Class .
+
 dnd5e:DamageType a rdfs:Class ;
     rdfs:label "Damage Type"@en-US .
 
+dnd5e:dcValue a rdf:Property ;
+    rdfs:range xsd:integer .
+
+dnd5e:dice a rdf:Property ;
+    rdfs:range xsd:string .
+
+dnd5e:DifficultyClass a rdfs:Class ;
+    rdfs:label "Difficulty Class"@en-US .
+
+dnd5e:equipmentCategory a rdf:Property .
+
+dnd5e:EquipmentCategoryOptionSet a rdfs:Class .
+
+dnd5e:flaws a rdf:Property .
+
+dnd5e:from a rdf:Property .
+
+dnd5e:IdealOption a rdfs:Class .
+
+dnd5e:ideals a rdf:Property .
+
 dnd5e:Language a rdfs:Class ;
     rdfs:label "Language"@en-US .
+
+dnd5e:languageOptions a rdf:Property .
 
 dnd5e:languageType a rdf:Property ;
     rdfs:domain dnd5e:Language ;
     rdfs:range xsd:string .
 
+dnd5e:MultipleOption a rdfs:Class .
+
+dnd5e:notes a rdf:Property .
+
+dnd5e:ofType a rdf:Property .
+
+dnd5e:options a rdf:Property .
+
+dnd5e:OptionSet a rdfs:Class .
+
+dnd5e:personalityTraits a rdf:Property .
+
 dnd5e:Proficiency a rdfs:Class ;
     rdfs:label "Proficiency"@en-US .
+
+dnd5e:quantity a rdf:Property ;
+    rdfs:range xsd:integer .
 
 dnd5e:Race a rdfs:Class ;
     rdfs:label "Race"@en-US .
 
+dnd5e:ReferenceOption a rdfs:Class .
+
+dnd5e:resourceList a rdf:Property .
+
+dnd5e:ResourceListOptionSet a rdfs:Class .
+
 dnd5e:script a rdf:Property ;
     rdfs:domain dnd5e:Language ;
+    rdfs:range xsd:string .
+
+dnd5e:StringOption a rdfs:Class .
+
+dnd5e:startingEquipment a rdf:Property .
+
+dnd5e:startingEquipmentOptions a rdf:Property .
+
+dnd5e:startingProficiencies a rdf:Property ;
+    rdfs:range dnd5e:Proficiency .
+
+dnd5e:successType a rdf:Property ;
     rdfs:range xsd:string .
 
 dnd5e:Skill a rdfs:Class ;
@@ -57,6 +140,8 @@ dnd5e:Skill a rdfs:Class ;
 
 dnd5e:skill a rdf:Property ;
     rdfs:range dnd5e:Skill .
+
+dnd5e:type a rdf:Property .
 
 dnd5e:typicalSpeakers a rdf:Property ;
     rdfs:domain dnd5e:Language ;

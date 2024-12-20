@@ -4,11 +4,11 @@ import {
   ClassShapeType,
   ProficiencyShapeType,
   RaceShapeType,
-  TypeShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Proficiency } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 export function transformProficiency(
   data: components["schemas"]["Proficiency"],
@@ -16,9 +16,7 @@ export function transformProficiency(
   const proficiency = createLdoDataset()
     .usingType(ProficiencyShapeType)
     .fromSubject(dataUrl("proficiencies", data.index));
-  proficiency.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("Proficiency"));
+  proficiency.type = type("Proficiency");
   proficiency.label = data.name;
   proficiency.proficiencyType = data.type;
   proficiency.class = data.classes.map((classData) =>

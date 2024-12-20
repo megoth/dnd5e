@@ -4356,14 +4356,26 @@
                 }
               },
               "starting_equipment": {
-                "description": "Starting equipment for all new characters of this background.",
+                "description": "List of equipment and their quantities all players of the class start with.",
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/APIReference"
+                  "type": "object",
+                  "properties": {
+                    "quantity": {
+                      "type": "number"
+                    },
+                    "equipment": {
+                      "$ref": "#/components/schemas/APIReference"
+                    }
+                  }
                 }
               },
               "starting_equipment_options": {
-                "$ref": "#/components/schemas/Choice"
+                "description": "List of choices of starting equipment.",
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Choice"
+                }
               },
               "language_options": {
                 "$ref": "#/components/schemas/Choice"
@@ -4384,8 +4396,7 @@
                 }
               },
               "personality_traits": {
-                "description": "Choice of personality traits for this background.",
-                "type": "object"
+                "$ref": "#/components/schemas/Choice"
               },
               "ideals": {
                 "$ref": "#/components/schemas/Choice"
@@ -5933,7 +5944,7 @@
                 "description": "Type of option set; determines other attributes.",
                 "type": "string"
               },
-              "options_array": {
+              "options": {
                 "description": "Array of options to choose from.",
                 "type": "array",
                 "items": {
@@ -5961,7 +5972,7 @@
                 "description": "Type of option set; determines other attributes.",
                 "type": "string"
               },
-              "resource_list": {
+              "resource_list_url": {
                 "description": "A reference (by URL) to a collection in the database.",
                 "type": "string"
               }

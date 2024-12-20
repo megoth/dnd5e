@@ -1,9 +1,10 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { DamageTypeShapeType, TypeShapeType } from "../ldo/dnd5e.shapeTypes";
+import { DamageTypeShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { DamageType } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 function transformDamageType(
   data: components["schemas"]["DamageType"],
@@ -11,9 +12,7 @@ function transformDamageType(
   const damageType = createLdoDataset()
     .usingType(DamageTypeShapeType)
     .fromSubject(dataUrl("damageTypes", data.index));
-  damageType.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("DamageType"));
+  damageType.type = type("DamageType");
   damageType.label = data.name;
   damageType.description = data.desc;
   return damageType;

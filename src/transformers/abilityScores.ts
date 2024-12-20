@@ -1,13 +1,10 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import {
-  AbilityScoreShapeType,
-  SkillShapeType,
-  TypeShapeType,
-} from "../ldo/dnd5e.shapeTypes";
+import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { AbilityScore } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 function transformAbilityScore(
   data: components["schemas"]["AbilityScore"],
@@ -16,9 +13,7 @@ function transformAbilityScore(
   const abilityScore = ldoDataset
     .usingType(AbilityScoreShapeType)
     .fromSubject(dataUrl("abilityScores", data.index));
-  abilityScore.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("AbilityScore"));
+  abilityScore.type = type("AbilityScore");
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;
   abilityScore.description = data.desc;

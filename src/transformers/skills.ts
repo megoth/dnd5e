@@ -1,21 +1,16 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import {
-  AbilityScoreShapeType,
-  SkillShapeType,
-  TypeShapeType,
-} from "../ldo/dnd5e.shapeTypes";
+import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Skill } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 export function transformSkill(data: components["schemas"]["Skill"]): Skill {
   const skill = createLdoDataset()
     .usingType(SkillShapeType)
     .fromSubject(dataUrl("skills", data.index));
-  skill.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("Skill"));
+  skill.type = type("Skill");
   skill.label = data.name;
   skill.description = data.desc;
   skill.abilityScore = createLdoDataset()

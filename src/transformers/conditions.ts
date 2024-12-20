@@ -1,9 +1,10 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { ConditionShapeType, TypeShapeType } from "../ldo/dnd5e.shapeTypes";
+import { ConditionShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Condition } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl, vocabUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl } from "../utils/dnd5e";
+import { type } from "../../public/data/type";
 
 function transformCondition(
   data: components["schemas"]["Condition"],
@@ -11,9 +12,7 @@ function transformCondition(
   const damageType = createLdoDataset()
     .usingType(ConditionShapeType)
     .fromSubject(dataUrl("conditions", data.index));
-  damageType.type = createLdoDataset()
-    .usingType(TypeShapeType)
-    .fromSubject(vocabUrl("Condition"));
+  damageType.type = type("Condition");
   damageType.label = data.name;
   damageType.description = data.desc;
   return damageType;

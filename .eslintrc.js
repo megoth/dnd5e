@@ -35,9 +35,14 @@ module.exports = {
       "error",
       "ignorePackages",
       {
+        "": "never",
         ts: "never",
         tsx: "never",
       },
+    ],
+    "import/no-unresolved": [
+      "error",
+      { extensions: ["", ".json", ".ts", ".tsx"] },
     ],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
