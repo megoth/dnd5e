@@ -12,19 +12,20 @@ import { type } from "../../public/data/type";
 
 export function transformProficiency(
   data: components["schemas"]["Proficiency"],
+  ldoDataset = createLdoDataset(),
 ): Proficiency {
-  const proficiency = createLdoDataset()
+  const proficiency = ldoDataset
     .usingType(ProficiencyShapeType)
     .fromSubject(dataUrl("proficiencies", data.index));
   proficiency.type = type("Proficiency");
   proficiency.label = data.name;
   proficiency.proficiencyType = data.type;
-  proficiency.class = data.classes.map((classData) =>
+  proficiency.classes = data.classes.map((classData) =>
     createLdoDataset()
       .usingType(ClassShapeType)
       .fromSubject(dataUrl("classes", classData.index)),
   );
-  proficiency.race = data.races.map((race) =>
+  proficiency.races = data.races.map((race) =>
     createLdoDataset()
       .usingType(RaceShapeType)
       .fromSubject(dataUrl("races", race.index)),

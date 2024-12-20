@@ -8,8 +8,9 @@ import { type } from "../../public/data/type";
 
 function transformCondition(
   data: components["schemas"]["Condition"],
+  ldoDataset = createLdoDataset(),
 ): Condition {
-  const damageType = createLdoDataset()
+  const damageType = ldoDataset
     .usingType(ConditionShapeType)
     .fromSubject(dataUrl("conditions", data.index));
   damageType.type = type("Condition");

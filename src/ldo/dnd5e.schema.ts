@@ -503,7 +503,41 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#hitDie",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#levels",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevel",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#multiclassing",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Multiclassing",
+              min: 0,
+              max: 1,
+            },
           ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevel",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "TripleConstraint",
+          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
         },
       },
     },
@@ -827,6 +861,44 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#Multiclassing",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#prerequisites",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Prerequisite",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#prerequisiteOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencies",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencyChoices",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#MultipleOption",
       type: "ShapeDecl",
       shapeExpr: {
@@ -969,6 +1041,35 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#Prerequisite",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#abilityScore",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#minimumScore",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
       type: "ShapeDecl",
       shapeExpr: {
@@ -1001,14 +1102,14 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#class",
+              predicate: "https://dnd5e.app/vocab/dnd5e#classes",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Class",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#race",
+              predicate: "https://dnd5e.app/vocab/dnd5e#races",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Race",
               min: 0,
               max: -1,
@@ -1106,6 +1207,35 @@ export const dnd5eSchema: Schema = {
           },
           min: 0,
           max: 1,
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#ScorePrerequisiteOption",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#abilityScore",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#minimumScore",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+              min: 0,
+              max: 1,
+            },
+          ],
         },
       },
     },

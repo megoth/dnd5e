@@ -13,8 +13,8 @@ import { transformChoice } from "./choice";
 
 function transformBackground(
   data: components["schemas"]["Background"],
+  ldoDataset = createLdoDataset(),
 ): Background {
-  const ldoDataset = createLdoDataset();
   const background = ldoDataset
     .usingType(BackgroundShapeType)
     .fromSubject(dataUrl("backgrounds", data.index));

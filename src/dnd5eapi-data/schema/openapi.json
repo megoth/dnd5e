@@ -3849,11 +3849,7 @@
             }
           },
           "prerequisite_options": {
-            "description": "List of choices of prerequisites to meet for.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Choice"
-            }
+            "$ref": "#/components/schemas/Choice"
           },
           "proficiencies": {
             "description": "List of proficiencies available when multiclassing.",

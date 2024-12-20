@@ -8,8 +8,9 @@ import { type } from "../../public/data/type";
 
 function transformAlignment(
   data: components["schemas"]["Alignment"],
+  ldoDataset = createLdoDataset(),
 ): Alignment {
-  const alignment = createLdoDataset()
+  const alignment = ldoDataset
     .usingType(AlignmentShapeType)
     .fromSubject(dataUrl("alignments", data.index));
   alignment.type = type("Alignment");

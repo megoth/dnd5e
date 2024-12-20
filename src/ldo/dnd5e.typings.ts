@@ -147,6 +147,18 @@ export interface Class {
   type: Type;
   label: string;
   description?: string;
+  hitDie: number;
+  levels?: ClassLevel[];
+  multiclassing?: Multiclassing;
+}
+
+/**
+ * ClassLevel Type
+ */
+export interface ClassLevel {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
 }
 
 /**
@@ -262,6 +274,18 @@ export interface Language {
 }
 
 /**
+ * Multiclassing Type
+ */
+export interface Multiclassing {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  prerequisites?: Prerequisite[];
+  prerequisiteOptions: Choice;
+  proficiencies?: Proficiency[];
+  proficiencyChoices?: Choice[];
+}
+
+/**
  * MultipleOption Type
  */
 export interface MultipleOption {
@@ -302,6 +326,16 @@ export interface OptionSet {
 }
 
 /**
+ * Prerequisite Type
+ */
+export interface Prerequisite {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  abilityScore?: AbilityScore;
+  minimumScore?: number;
+}
+
+/**
  * Proficiency Type
  */
 export interface Proficiency {
@@ -310,8 +344,8 @@ export interface Proficiency {
   type: Type;
   proficiencyType?: string;
   label: string;
-  class?: Class[];
-  race?: Race[];
+  classes?: Class[];
+  races?: Race[];
   reference?: {
     "@id": string;
   };
@@ -346,6 +380,16 @@ export interface ResourceListOptionSet {
   "@id"?: string;
   "@context"?: ContextDefinition;
   resourceList?: string;
+}
+
+/**
+ * ScorePrerequisiteOption Type
+ */
+export interface ScorePrerequisiteOption {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  abilityScore?: AbilityScore;
+  minimumScore?: number;
 }
 
 /**

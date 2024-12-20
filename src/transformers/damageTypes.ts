@@ -8,8 +8,9 @@ import { type } from "../../public/data/type";
 
 function transformDamageType(
   data: components["schemas"]["DamageType"],
+  ldoDataset = createLdoDataset(),
 ): DamageType {
-  const damageType = createLdoDataset()
+  const damageType = ldoDataset
     .usingType(DamageTypeShapeType)
     .fromSubject(dataUrl("damageTypes", data.index));
   damageType.type = type("DamageType");

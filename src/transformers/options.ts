@@ -1,15 +1,21 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset } from "@ldo/ldo";
 import {
+  AbilityScoreShapeType,
   ActionOptionShapeType,
   DamageShapeType,
   EquipmentShapeType,
   MultipleOptionShapeType,
   ProficiencyShapeType,
   ReferenceOptionShapeType,
+  ScorePrerequisiteOptionShapeType,
   SpellShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { ActionOption, ReferenceOption } from "../ldo/dnd5e.typings";
+import {
+  ActionOption,
+  ReferenceOption,
+  ScorePrerequisiteOption,
+} from "../ldo/dnd5e.typings";
 import { dataUrl } from "../utils/dnd5e";
 
 export function transformOption(
@@ -29,6 +35,24 @@ export function transformOption(
   ): ActionOption {
     return ldoDataset.usingType(ActionOptionShapeType).fromJson({
       label: data.action_name,
+    });
+  }
+
+  interface IScorePrerequisiteOption {
+    option_type?: string;
+    ability_score?: components["schemas"]["APIReference"];
+    minimum_score?: number;
+  }
+
+  function transformScorePrerequisiteOption(
+    data: IScorePrerequisiteOption,
+    ldoDadaset = createLdoDataset(),
+  ): ScorePrerequisiteOption {
+    return ldoDadaset.usingType(ScorePrerequisiteOptionShapeType).fromJson({
+      abilityScore: ldoDadaset
+        .usingType(AbilityScoreShapeType)
+        .fromSubject(dataUrl("abilityScores", data.ability_score.index)),
+      minimumScore: data.minimum_score,
     });
   }
 
@@ -103,16 +127,14 @@ export function transformOption(
       return transformMultipleOption(data as IMultipleOption, ldoDataset);
     case "reference":
       return transformReferenceOption(data as IReferenceOption, ldoDataset);
+    case "score_prerequisite":
+      return transformScorePrerequisiteOption(
+        data as IScorePrerequisiteOption,
+        ldoDataset,
+      );
     // case "string":
     //   return null;
     default:
       throw new Error(`Unsupported type ${data.option_type}`);
   }
-}
-
-export function transformOptions(
-  data: Array<components["schemas"]["Option"]>,
-  ldoDataset = createLdoDataset(),
-) {
-  return data.map((option) => transformOption(option, ldoDataset));
 }

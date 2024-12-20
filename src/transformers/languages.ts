@@ -8,8 +8,9 @@ import { type } from "../../public/data/type";
 
 export function transformLanguage(
   data: components["schemas"]["Language"],
+  ldoDataset = createLdoDataset(),
 ): Proficiency {
-  const language = createLdoDataset()
+  const language = ldoDataset
     .usingType(LanguageShapeType)
     .fromSubject(dataUrl("languages", data.index));
   language.type = type("Language");

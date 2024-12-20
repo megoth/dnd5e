@@ -14,6 +14,7 @@ import {
   CountOption,
   Choice,
   Class,
+  ClassLevel,
   Condition,
   Damage,
   DamageOption,
@@ -24,13 +25,16 @@ import {
   EquipmentCategoryOptionSet,
   IdealOption,
   Language,
+  Multiclassing,
   MultipleOption,
   OptionAction,
   OptionSet,
+  Prerequisite,
   Proficiency,
   Race,
   ReferenceOption,
   ResourceListOptionSet,
+  ScorePrerequisiteOption,
   Skill,
   Spell,
   StartingEquipment,
@@ -153,6 +157,15 @@ export const ClassShapeType: ShapeType<Class> = {
 };
 
 /**
+ * ClassLevel ShapeType
+ */
+export const ClassLevelShapeType: ShapeType<ClassLevel> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevel",
+  context: dnd5eContext,
+};
+
+/**
  * Condition ShapeType
  */
 export const ConditionShapeType: ShapeType<Condition> = {
@@ -244,6 +257,15 @@ export const LanguageShapeType: ShapeType<Language> = {
 };
 
 /**
+ * Multiclassing ShapeType
+ */
+export const MulticlassingShapeType: ShapeType<Multiclassing> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Multiclassing",
+  context: dnd5eContext,
+};
+
+/**
  * MultipleOption ShapeType
  */
 export const MultipleOptionShapeType: ShapeType<MultipleOption> = {
@@ -267,6 +289,15 @@ export const OptionActionShapeType: ShapeType<OptionAction> = {
 export const OptionSetShapeType: ShapeType<OptionSet> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#OptionSet",
+  context: dnd5eContext,
+};
+
+/**
+ * Prerequisite ShapeType
+ */
+export const PrerequisiteShapeType: ShapeType<Prerequisite> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Prerequisite",
   context: dnd5eContext,
 };
 
@@ -304,6 +335,16 @@ export const ResourceListOptionSetShapeType: ShapeType<ResourceListOptionSet> =
   {
     schema: dnd5eSchema,
     shape: "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
+    context: dnd5eContext,
+  };
+
+/**
+ * ScorePrerequisiteOption ShapeType
+ */
+export const ScorePrerequisiteOptionShapeType: ShapeType<ScorePrerequisiteOption> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#ScorePrerequisiteOption",
     context: dnd5eContext,
   };
 

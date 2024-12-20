@@ -2154,8 +2154,7 @@ export interface components {
     Multiclassing: {
       /** @description List of prerequisites that must be met. */
       prerequisites?: components["schemas"]["Prerequisite"][];
-      /** @description List of choices of prerequisites to meet for. */
-      prerequisite_options?: components["schemas"]["Choice"][];
+      prerequisite_options?: components["schemas"]["Choice"];
       /** @description List of proficiencies available when multiclassing. */
       proficiencies?: components["schemas"]["APIReference"][];
       /** @description List of choices of proficiencies that are given when multiclassing. */

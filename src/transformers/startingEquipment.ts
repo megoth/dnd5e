@@ -1,5 +1,5 @@
 import { components } from "../typings/dnd5eapi";
-import { LdoDataset } from "@ldo/ldo";
+import { createLdoDataset } from "@ldo/ldo";
 import {
   EquipmentShapeType,
   StartingEquipmentShapeType,
@@ -9,7 +9,7 @@ import { dataUrl } from "../utils/dnd5e";
 
 export function transformStartingEquipment(
   data: components["schemas"]["Background"]["starting_equipment"][0],
-  dataset: LdoDataset,
+  dataset = createLdoDataset(),
 ): StartingEquipment {
   return dataset.usingType(StartingEquipmentShapeType).fromJson({
     equipment: dataset

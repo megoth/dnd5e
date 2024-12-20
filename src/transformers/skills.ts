@@ -6,8 +6,11 @@ import { writeFileSync } from "node:fs";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 
-export function transformSkill(data: components["schemas"]["Skill"]): Skill {
-  const skill = createLdoDataset()
+export function transformSkill(
+  data: components["schemas"]["Skill"],
+  ldoDataset = createLdoDataset(),
+): Skill {
+  const skill = ldoDataset
     .usingType(SkillShapeType)
     .fromSubject(dataUrl("skills", data.index));
   skill.type = type("Skill");

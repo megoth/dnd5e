@@ -40,10 +40,7 @@ module.exports = {
         tsx: "never",
       },
     ],
-    "import/no-unresolved": [
-      "error",
-      { extensions: ["", ".json", ".ts", ".tsx"] },
-    ],
+    "import/no-unresolved": ["off"],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/click-events-have-key-events": "off",

@@ -53,37 +53,32 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  class: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#class",
+  classes: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#classes",
     "@type": "@id",
     "@container": "@set",
   },
-  race: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#race",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  reference: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
-    "@type": "@id",
-  },
-  startingEquipment: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipment",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  quantity: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
+  hitDie: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#hitDie",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
-  equipment: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
-    "@type": "@id",
-  },
-  startingEquipmentOptions: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+  levels: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#levels",
     "@type": "@id",
     "@container": "@set",
+  },
+  multiclassing: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#multiclassing",
+    "@type": "@id",
+  },
+  prerequisites: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#prerequisites",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  prerequisiteOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#prerequisiteOptions",
+    "@type": "@id",
   },
   choose: {
     "@id": "https://dnd5e.app/vocab/dnd5e#choose",
@@ -101,6 +96,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#references",
     "@type": "@id",
     "@container": "@set",
+  },
+  equipment: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
+    "@type": "@id",
   },
   language: {
     "@id": "https://dnd5e.app/vocab/dnd5e#language",
@@ -251,6 +250,39 @@ export const dnd5eContext: ContextDefinition = {
   resourceList: {
     "@id": "https://dnd5e.app/vocab/dnd5e#resourceList",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  proficiencies: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#proficiencies",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  proficiencyChoices: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyChoices",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  races: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#races",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  reference: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
+    "@type": "@id",
+  },
+  startingEquipment: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipment",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  quantity: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  startingEquipmentOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+    "@type": "@id",
+    "@container": "@set",
   },
   languageOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#languageOptions",

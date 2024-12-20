@@ -8,8 +8,8 @@ import { type } from "../../public/data/type";
 
 function transformAbilityScore(
   data: components["schemas"]["AbilityScore"],
+  ldoDataset = createLdoDataset(),
 ): AbilityScore {
-  const ldoDataset = createLdoDataset();
   const abilityScore = ldoDataset
     .usingType(AbilityScoreShapeType)
     .fromSubject(dataUrl("abilityScores", data.index));
