@@ -58,4 +58,5 @@
     dnd5e_app:translationsResource </data/admin/translations.nb-NO.ttl> .
 
 :classesBundle
+    rdfs:label "classes" ;
     dnd5e_app:rulesResource </data/classes.ttl> .
