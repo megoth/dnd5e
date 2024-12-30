@@ -1,0 +1,10 @@
+.data-list {
+    @apply w-full ms-4;
+}
+
+.data-list > dt {
+    @apply float-start clear-start font-bold mr-2 -ms-4;
+}
+.data-list > dd {
+    @apply hyphens-none;
+}

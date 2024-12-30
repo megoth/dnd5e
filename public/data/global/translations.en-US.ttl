@@ -17,6 +17,8 @@
         app."""@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
+:classFeatures skos:definition "Class Features"@en-US .
+:classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
@@ -25,6 +27,13 @@
 :equipmentPageTitle skos:definition "Equipment"@en-US .
 :faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
 :faqShort skos:definition "FAQ"@en-US .
+:hitDie skos:definition "Hit Die"@en-US .
+:hitDiePerClassLevel skos:definition "1d{$hitDie} per {$className} level"@en-US .
+:hitPoints skos:definition "Hit Points"@en-US .
+:hitPointsAt1stLevel skos:definition "Hit Points at 1st Level"@en-US .
+:hitPointsAt1stLevelDescription skos:definition "{$hitDie} + your Constitution modifier"@en-US .
+:hitPointsAtHigherLevels skos:definition "Hit Points at Higher Levels"@en-US .
+:hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .

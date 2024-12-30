@@ -18,6 +18,8 @@
         kompatible apper."""@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
+:classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
+:classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
 :close skos:definition "Lukk"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
@@ -26,6 +28,13 @@
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
 :faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 :faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
+:hitDie skos:definition "Hit Die"@nb-NO .
+:hitDiePerClassLevel skos:definition "1d{$hitDie} per nivå av {$className}"@nb-NO .
+:hitPoints skos:definition "Hit Points"@nb-NO .
+:hitPointsAt1stLevel skos:definition "Hit Points på første level"@nb-NO .
+:hitPointsAt1stLevelDescription skos:definition "{$hitDie} + din Constitution modifikator"@nb-NO .
+:hitPointsAtHigherLevels skos:definition "Hit Points på høyere nivå"@nb-NO .
+:hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .

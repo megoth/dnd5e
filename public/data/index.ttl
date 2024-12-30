@@ -23,12 +23,8 @@
     dnd5e_app:faqIndex </data/global/faqs.ttl> ;
     dnd5e_app:translationBase </translations/global#> ;
     dnd5e_app:translationsIndex
-        :globalTranslationIndex,
         :globalTranslation_en-US_Index,
         :globalTranslation_nb-NO_Index .
-
-:globalTranslationIndex
-    dnd5e_app:translationsResource </data/global/translations.ttl> .
 
 :globalTranslation_en-US_Index
     dnd5e_app:language "en-US" ;
@@ -42,12 +38,8 @@
     rdfs:label "admin" ;
     dnd5e_app:translationBase <https://dnd5e.app/translations/admin#> ;
     dnd5e_app:translationsIndex
-        :adminTranslationIndex,
         :adminTranslation_en-US_Index,
         :adminTranslation_nb-NO_Index .
-
-:adminTranslationIndex
-    dnd5e_app:translationsResource </data/admin/translations.ttl> .
 
 :adminTranslation_en-US_Index
     dnd5e_app:language "en-US" ;

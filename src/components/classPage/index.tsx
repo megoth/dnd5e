@@ -29,11 +29,56 @@ export default function ClassPage() {
 
   return (
     <Layout pageName="classesPageTitle">
+      <WarningMessage>
+        <Translation id="workInProgress" />
+      </WarningMessage>
       <Content>
         <h1>{classInfo.label}</h1>
-        <WarningMessage>
-          <Translation id="workInProgress" />
-        </WarningMessage>
+        <h2>
+          <Translation id="classFeatures" />
+        </h2>
+        <p>
+          <Translation
+            id="classFeaturesDescription"
+            vars={{ className: classInfo.label }}
+          />
+        </p>
+        <h3>
+          <Translation id="hitPoints" />
+        </h3>
+        <dl className="data-list">
+          <dt>
+            <Translation id="hitDie" />
+          </dt>
+          <dd>
+            <Translation
+              id="hitDiePerClassLevel"
+              vars={{ hitDie: classInfo.hitDie, className: classInfo.label }}
+            />
+          </dd>
+          <dt>
+            <Translation id="hitPointsAt1stLevel" />
+          </dt>
+          <dd>
+            <Translation
+              id="hitPointsAt1stLevelDescription"
+              vars={{ hitDie: classInfo.hitDie }}
+            />
+          </dd>
+          <dt>
+            <Translation id="hitPointsAtHigherLevels" />
+          </dt>
+          <dd>
+            <Translation
+              id="hitPointsAtHigherLevelsDescription"
+              vars={{
+                hitDie: classInfo.hitDie,
+                hitDieBalanced: classInfo.hitDie / 2 + 1,
+                className: classInfo.label,
+              }}
+            />
+          </dd>
+        </dl>
       </Content>
     </Layout>
   );
