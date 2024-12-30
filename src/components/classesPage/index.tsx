@@ -1,32 +1,22 @@
-import React, { useMemo } from "react";
+import React from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
-import useRulesBundle from "../../hooks/useRulesBundle";
 import Loading from "../loading";
-import { useLdo } from "@ldo/solid-react";
-import { vocabUrl } from "../../utils/dnd5e";
-import { namedNode } from "@rdfjs/data-model";
 import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
+import { NavLink } from "react-router-dom";
+import useListOfType from "../../hooks/useListOfType";
 
 export default function ClassesPage() {
-  const { dataset, getSubject } = useLdo();
-  const { isLoading } = useRulesBundle("classes");
-
-  const classes = useMemo(() => {
-    if (!dataset || isLoading) return null;
-    return dataset
-      .match(null, null, namedNode(vocabUrl("Class")))
-      .toArray()
-      .map((quad) => getSubject(ClassShapeType, quad.subject.value));
-  }, [dataset, isLoading]);
+  const { isLoading, items: classes } = useListOfType(ClassShapeType);
 
   if (isLoading) {
     return <Loading />;
   }
+
   return (
-    <Layout pageName={"classesPageTitle"}>
+    <Layout pageName="classesPageTitle">
       <Content>
         <h1>
           <Translation id="classesPageTitle" />
@@ -34,11 +24,18 @@ export default function ClassesPage() {
         <WarningMessage>
           <Translation id="workInProgress" />
         </WarningMessage>
-        <ul>
+
+        <div className="nav-group">
           {classes.map((adventureClass) => (
-            <li key={adventureClass["@id"]}>{adventureClass.label}</li>
+            <NavLink
+              key={adventureClass["@id"]}
+              to={`/classes/${btoa(adventureClass["@id"])}`}
+              className="nav-group__link"
+            >
+              {adventureClass.label}
+            </NavLink>
           ))}
-        </ul>
+        </div>
       </Content>
     </Layout>
   );

@@ -13,7 +13,7 @@ function transformClass(
 ): Class {
   const adventureClass = ldoDataset
     .usingType(ClassShapeType)
-    .fromSubject(dataUrl("classes", data.index));
+    .fromSubject(`#${data.index}`);
   adventureClass.type = type("Class");
   adventureClass.label = data.name;
   adventureClass.hitDie = data.hit_die;

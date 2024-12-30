@@ -1,6 +1,10 @@
+import useListOfType from "../hooks/useListOfType";
+import { ClassShapeType } from "../ldo/dnd5e.shapeTypes";
+
 export type Page = {
   href: string;
-  translationId: string;
+  text?: string;
+  translationId?: string;
   bundle?: string;
   children?: Array<Page>;
 };
@@ -26,30 +30,36 @@ export function getPages(path: string, admin: boolean): Array<Page> {
     {
       href: "/rules",
       translationId: "rulesPageTitle",
-      children: path.startsWith("/rules")
-        ? [
-            {
-              href: "/rules/classes",
-              translationId: "classesPageTitle",
-            },
-            {
-              href: "/rules/races",
-              translationId: "racesPageTitle",
-            },
-            {
-              href: "/rules/equipment",
-              translationId: "equipmentPageTitle",
-            },
-            {
-              href: "/rules/spells",
-              translationId: "spellsPageTitle",
-            },
-            {
-              href: "/rules/monsters",
-              translationId: "monstersPageTitle",
-            },
-          ]
+    },
+    {
+      href: "/classes",
+      translationId: "classesPageTitle",
+      children: path.startsWith("/classes")
+        ? (() => {
+            const { isLoading, items: classes } = useListOfType(ClassShapeType);
+            if (isLoading) return [];
+            return classes.map((classInfo) => ({
+              href: `/classes/${btoa(classInfo["@id"])}`,
+              text: classInfo.label,
+            }));
+          })()
         : [],
+    },
+    {
+      href: "/races",
+      translationId: "racesPageTitle",
+    },
+    {
+      href: "/equipment",
+      translationId: "equipmentPageTitle",
+    },
+    {
+      href: "/spells",
+      translationId: "spellsPageTitle",
+    },
+    {
+      href: "/monsters",
+      translationId: "monstersPageTitle",
     },
     ...(admin
       ? [

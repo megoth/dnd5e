@@ -11,6 +11,7 @@ interface Props extends Page, Omit<HTMLAttributes<HTMLLIElement>, "children"> {
 export default function NavItem({
   children = [],
   href,
+  text,
   translationId,
   ...props
 }: Props) {
@@ -26,7 +27,7 @@ export default function NavItem({
           "child-selected": childSelected,
         })}
       >
-        <Translation id={translationId} />
+        {text || <Translation id={translationId} />}
       </NavLink>
       {children.length ? (
         <ul className="ml-4">

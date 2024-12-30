@@ -24,6 +24,7 @@ import LoginPage from "./components/loginPage";
 import SignupPage from "./components/signupPage";
 import RulesPage from "./components/rulesPage";
 import LayoutProvider from "./hooks/useLayout/provider";
+import ClassPage from "./components/classPage";
 
 const router = createBrowserRouter([
   {
@@ -91,23 +92,27 @@ const router = createBrowserRouter([
         element: <RulesPage />,
       },
       {
-        path: "/rules/classes",
+        path: "/classes",
         element: <ClassesPage />,
       },
       {
-        path: "/rules/equipment",
+        path: "/classes/:url",
+        element: <ClassPage />,
+      },
+      {
+        path: "/equipment",
         element: <EquipmentPage />,
       },
       {
-        path: "/rules/monsters",
+        path: "/monsters",
         element: <MonstersPage />,
       },
       {
-        path: "/rules/races",
+        path: "/races",
         element: <RacesPage />,
       },
       {
-        path: "/rules/spells",
+        path: "/spells",
         element: <SpellsPage />,
       },
       {
