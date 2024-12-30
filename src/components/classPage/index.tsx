@@ -7,7 +7,7 @@ import Loading from "../loading";
 import { useParams } from "react-router-dom";
 import useSWR from "swr";
 import { useLdo } from "@ldo/solid-react";
-import { getPath } from "../../utils/url";
+import { resourceUrl } from "../../utils/url";
 import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
 
 export default function ClassPage() {
@@ -15,12 +15,22 @@ export default function ClassPage() {
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
 
-  const { isLoading, data: classInfo } = useSWR(
+  const { data: classInfo } = useSWR(
     () => url,
     async () => {
-      await getResource(getPath(url)).readIfUnfetched();
+      await getResource(resourceUrl(url)).readIfUnfetched();
       return getSubject(ClassShapeType, url);
     },
+  );
+
+  const { isLoading } = useSWR(
+    () => `class-${classInfo["@id"]}`,
+    async () =>
+      Promise.all(
+        classInfo.proficiencies.map((proficiency) =>
+          getResource(resourceUrl(proficiency["@id"])).readIfUnfetched(),
+        ),
+      ),
   );
 
   if (isLoading || !classInfo?.["@id"]) {
@@ -79,6 +89,14 @@ export default function ClassPage() {
             />
           </dd>
         </dl>
+        <h3>
+          <Translation id="proficiencies" />
+        </h3>
+        <ul>
+          {classInfo.proficiencies.map((proficiency) => (
+            <li key={proficiency["@id"]}>{proficiency.label}</li>
+          ))}
+        </ul>
       </Content>
     </Layout>
   );

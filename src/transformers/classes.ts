@@ -1,6 +1,10 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { ClassLevelShapeType, ClassShapeType } from "../ldo/dnd5e.shapeTypes";
+import {
+  ClassLevelShapeType,
+  ClassShapeType,
+  ProficiencyShapeType,
+} from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Class } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
@@ -25,6 +29,11 @@ function transformClass(
   adventureClass.multiclassing = transformMulticlassing(
     data.multi_classing,
     ldoDataset,
+  );
+  adventureClass.proficiencies = data.proficiencies.map((proficiency) =>
+    ldoDataset
+      .usingType(ProficiencyShapeType)
+      .fromSubject(dataUrl("proficiencies", proficiency.index)),
   );
   return adventureClass;
 }

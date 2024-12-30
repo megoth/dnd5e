@@ -52,6 +52,7 @@
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
+:proficiencies skos:definition "Ferdigheter"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 :racesPageTitle skos:definition "Raser"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .

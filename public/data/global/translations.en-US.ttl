@@ -51,6 +51,7 @@
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
+:proficiencies skos:definition "Proficiencies"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 :racesPageTitle skos:definition "Races"@en-US .
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .

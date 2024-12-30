@@ -525,6 +525,13 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencies",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
+              min: 0,
+              max: -1,
+            },
           ],
         },
       },

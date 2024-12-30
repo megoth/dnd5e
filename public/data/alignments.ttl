@@ -1,36 +1,36 @@
-<https://dnd5e.app/data/alignments.ttl#lawful-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#lawful-good> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Good" .
-<https://dnd5e.app/data/alignments.ttl#lawful-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LG" .
-<https://dnd5e.app/data/alignments.ttl#lawful-good> <http://purl.org/dc/terms/description> "Lawful good (LG) creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good." .
-<https://dnd5e.app/data/alignments.ttl#neutral-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#neutral-good> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral Good" .
-<https://dnd5e.app/data/alignments.ttl#neutral-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "NG" .
-<https://dnd5e.app/data/alignments.ttl#neutral-good> <http://purl.org/dc/terms/description> "Neutral good (NG) folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good." .
-<https://dnd5e.app/data/alignments.ttl#chaotic-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#chaotic-good> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Good" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CG" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-good> <http://purl.org/dc/terms/description> "Chaotic good (CG) creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good." .
-<https://dnd5e.app/data/alignments.ttl#lawful-neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#lawful-neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Neutral" .
-<https://dnd5e.app/data/alignments.ttl#lawful-neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LN" .
-<https://dnd5e.app/data/alignments.ttl#lawful-neutral> <http://purl.org/dc/terms/description> "Lawful neutral (LN) individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral." .
-<https://dnd5e.app/data/alignments.ttl#neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral" .
-<https://dnd5e.app/data/alignments.ttl#neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "N" .
-<https://dnd5e.app/data/alignments.ttl#neutral> <http://purl.org/dc/terms/description> "Neutral (N) is the alignment of those who prefer to steer clear of moral questions and don't take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral." .
-<https://dnd5e.app/data/alignments.ttl#chaotic-neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#chaotic-neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Neutral" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CN" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-neutral> <http://purl.org/dc/terms/description> "Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral." .
-<https://dnd5e.app/data/alignments.ttl#lawful-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#lawful-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Evil" .
-<https://dnd5e.app/data/alignments.ttl#lawful-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LE" .
-<https://dnd5e.app/data/alignments.ttl#lawful-evil> <http://purl.org/dc/terms/description> "Lawful evil (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil." .
-<https://dnd5e.app/data/alignments.ttl#neutral-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#neutral-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral Evil" .
-<https://dnd5e.app/data/alignments.ttl#neutral-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "NE" .
-<https://dnd5e.app/data/alignments.ttl#neutral-evil> <http://purl.org/dc/terms/description> "Neutral evil (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and goblins are neutral evil." .
-<https://dnd5e.app/data/alignments.ttl#chaotic-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
-<https://dnd5e.app/data/alignments.ttl#chaotic-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Evil" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CE" .
-<https://dnd5e.app/data/alignments.ttl#chaotic-evil> <http://purl.org/dc/terms/description> "Chaotic evil (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil." .
+</data/alignments.ttl#lawful-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#lawful-good> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Good" .
+</data/alignments.ttl#lawful-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LG" .
+</data/alignments.ttl#lawful-good> <http://purl.org/dc/terms/description> "Lawful good (LG) creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good." .
+</data/alignments.ttl#neutral-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#neutral-good> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral Good" .
+</data/alignments.ttl#neutral-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "NG" .
+</data/alignments.ttl#neutral-good> <http://purl.org/dc/terms/description> "Neutral good (NG) folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good." .
+</data/alignments.ttl#chaotic-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#chaotic-good> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Good" .
+</data/alignments.ttl#chaotic-good> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CG" .
+</data/alignments.ttl#chaotic-good> <http://purl.org/dc/terms/description> "Chaotic good (CG) creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good." .
+</data/alignments.ttl#lawful-neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#lawful-neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Neutral" .
+</data/alignments.ttl#lawful-neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LN" .
+</data/alignments.ttl#lawful-neutral> <http://purl.org/dc/terms/description> "Lawful neutral (LN) individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral." .
+</data/alignments.ttl#neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral" .
+</data/alignments.ttl#neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "N" .
+</data/alignments.ttl#neutral> <http://purl.org/dc/terms/description> "Neutral (N) is the alignment of those who prefer to steer clear of moral questions and don't take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral." .
+</data/alignments.ttl#chaotic-neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#chaotic-neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Neutral" .
+</data/alignments.ttl#chaotic-neutral> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CN" .
+</data/alignments.ttl#chaotic-neutral> <http://purl.org/dc/terms/description> "Chaotic neutral (CN) creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral." .
+</data/alignments.ttl#lawful-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#lawful-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Lawful Evil" .
+</data/alignments.ttl#lawful-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "LE" .
+</data/alignments.ttl#lawful-evil> <http://purl.org/dc/terms/description> "Lawful evil (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil." .
+</data/alignments.ttl#neutral-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#neutral-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral Evil" .
+</data/alignments.ttl#neutral-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "NE" .
+</data/alignments.ttl#neutral-evil> <http://purl.org/dc/terms/description> "Neutral evil (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and goblins are neutral evil." .
+</data/alignments.ttl#chaotic-evil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Alignment> .
+</data/alignments.ttl#chaotic-evil> <http://www.w3.org/2000/01/rdf-schema#label> "Chaotic Evil" .
+</data/alignments.ttl#chaotic-evil> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CE" .
+</data/alignments.ttl#chaotic-evil> <http://purl.org/dc/terms/description> "Chaotic evil (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil." .

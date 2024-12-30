@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import React from "react";
 import Content from "../content";
-import { getHash, isUrl } from "../../utils/url";
+import { hash, isUrl } from "../../utils/url";
 import { useLdo } from "@ldo/solid-react";
 import { FAQShapeType } from "../../ldo/app.shapeTypes";
 import Translation from "../translation";
@@ -25,8 +25,8 @@ export default function FAQ({ id, variant }: Props) {
   if (!faq.faqLabel || !faq.faqDescription) {
     return <ErrorMessage error={new Error(`FAQ not found: ${id}`)} />;
   }
-  const label = getHash(faq.faqLabel["@id"]);
-  const description = l10n.getString(getHash(faq.faqDescription["@id"]));
+  const label = hash(faq.faqLabel["@id"]);
+  const description = l10n.getString(hash(faq.faqDescription["@id"]));
   return (
     <Content className={bem("content", variant)}>
       <h2 id={id} data-testid={TESTID_FAQ_LABEL}>

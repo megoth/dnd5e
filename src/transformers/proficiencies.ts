@@ -16,7 +16,7 @@ export function transformProficiency(
 ): Proficiency {
   const proficiency = ldoDataset
     .usingType(ProficiencyShapeType)
-    .fromSubject(dataUrl("proficiencies", data.index));
+    .fromSubject(`#${data.index}`);
   proficiency.type = type("Proficiency");
   proficiency.label = data.name;
   proficiency.proficiencyType = data.type;

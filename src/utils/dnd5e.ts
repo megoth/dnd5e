@@ -4,7 +4,7 @@ export function dataPath(type: string): string {
 }
 
 export function dataUrl(type: string, id: string = ""): string {
-  return `https://dnd5e.app/data/${type}.ttl#${id}`;
+  return `/data/${type}.ttl#${id}`;
 }
 
 export function vocabUrl(id: string): string {

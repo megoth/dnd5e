@@ -12,7 +12,7 @@ import {
   TranslationsIndexShapeType,
 } from "../../ldo/app.shapeTypes";
 import { SessionInfo, useLdo, useSolidAuth } from "@ldo/solid-react";
-import { getHash, getPath } from "../../utils/url";
+import { hash, resourceUrl } from "../../utils/url";
 import { useSearchParams } from "react-router-dom";
 import { FluentBundle, FluentResource } from "@fluent/bundle";
 import { userIsAdmin } from "../../utils/session";
@@ -46,7 +46,7 @@ export default function AppProvider({ children }: Props) {
       // @ts-ignore
       import.meta.env.VITE_APP_URL ||
       new URL("/data/index.ttl#dnd5e", location.origin).toString();
-    const path = getPath(appUrl);
+    const path = resourceUrl(appUrl);
     await getResource(path).readIfUnfetched();
     return getSubject(AppShapeType, appUrl);
   });
@@ -153,7 +153,7 @@ export default function AppProvider({ children }: Props) {
         .forEach((translation) =>
           localization.addResource(
             new FluentResource(
-              `${getHash(translation["@id"])} = ${translation.definition}`,
+              `${hash(translation["@id"])} = ${translation.definition}`,
             ),
           ),
         ),

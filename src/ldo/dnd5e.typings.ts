@@ -150,6 +150,7 @@ export interface Class {
   hitDie: number;
   levels?: ClassLevel[];
   multiclassing?: Multiclassing;
+  proficiencies?: Proficiency[];
 }
 
 /**
