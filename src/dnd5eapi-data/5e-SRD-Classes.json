@@ -7,7 +7,7 @@
       {
         "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
         "choose": 2,
-        "type": "proficiencies",
+        "type": "",
         "from": {
           "option_set_type": "options_array",
           "options": [

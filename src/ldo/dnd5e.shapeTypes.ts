@@ -10,12 +10,12 @@ import {
   BackgroundFeature,
   BonusOption,
   BreathOption,
-  ChoiceOption,
-  CountOption,
   Choice,
+  ChoiceOption,
   Class,
   ClassLevel,
   Condition,
+  CountOption,
   Damage,
   DamageOption,
   DamageType,
@@ -121,29 +121,20 @@ export const BreathOptionShapeType: ShapeType<BreathOption> = {
 };
 
 /**
- * ChoiceOption ShapeType
- */
-export const ChoiceOptionShapeType: ShapeType<ChoiceOption> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#ChoiceOption",
-  context: dnd5eContext,
-};
-
-/**
- * CountOption ShapeType
- */
-export const CountOptionShapeType: ShapeType<CountOption> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
-  context: dnd5eContext,
-};
-
-/**
  * Choice ShapeType
  */
 export const ChoiceShapeType: ShapeType<Choice> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+  context: dnd5eContext,
+};
+
+/**
+ * ChoiceOption ShapeType
+ */
+export const ChoiceOptionShapeType: ShapeType<ChoiceOption> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#ChoiceOption",
   context: dnd5eContext,
 };
 
@@ -171,6 +162,15 @@ export const ClassLevelShapeType: ShapeType<ClassLevel> = {
 export const ConditionShapeType: ShapeType<Condition> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Condition",
+  context: dnd5eContext,
+};
+
+/**
+ * CountOption ShapeType
+ */
+export const CountOptionShapeType: ShapeType<CountOption> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
   context: dnd5eContext,
 };
 

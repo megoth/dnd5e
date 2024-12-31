@@ -92,94 +92,13 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#from",
     "@type": "@id",
   },
-  references: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#references",
+  abilityScores: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScores",
     "@type": "@id",
     "@container": "@set",
-  },
-  equipment: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
-    "@type": "@id",
-  },
-  language: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#language",
-    "@type": "@id",
-  },
-  languageType: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#languageType",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  script: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#script",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  typicalSpeakers: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#typicalSpeakers",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-    "@container": "@set",
-  },
-  proficiency: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#proficiency",
-    "@type": "@id",
-  },
-  spell: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#spell",
-    "@type": "@id",
   },
   actions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#actions",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  multiples: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#multiples",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  choices: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#choices",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  "choice:": {
-    "@id": "https://dnd5e.app/vocab/dnd5e#choice:",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  counts: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#counts",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  of: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#of",
-    "@type": "@id",
-  },
-  strings: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#strings",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  "string:": {
-    "@id": "https://dnd5e.app/vocab/dnd5e#string:",
-    "@type": "http://www.w3.org/2001/XMLSchema#strsing",
-  },
-  ideals: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  description2: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#description",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  alignments: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#alignments",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  abilityScores: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScores",
     "@type": "@id",
     "@container": "@set",
   },
@@ -222,6 +141,24 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#type",
     "@type": "@id",
   },
+  choices: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#choices",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  choice: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#choice",
+    "@type": "@id",
+  },
+  counts: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#counts",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  of: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#of",
+    "@type": "@id",
+  },
   damages: {
     "@id": "https://dnd5e.app/vocab/dnd5e#damages",
     "@type": "@id",
@@ -234,6 +171,68 @@ export const dnd5eContext: ContextDefinition = {
   notes: {
     "@id": "https://dnd5e.app/vocab/dnd5e#notes",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  ideals: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  description2: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#description",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  alignments: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#alignments",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  multiples: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#multiples",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  references: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#references",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  equipment: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
+    "@type": "@id",
+  },
+  language: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#language",
+    "@type": "@id",
+  },
+  languageType: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#languageType",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  script: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#script",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  typicalSpeakers: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#typicalSpeakers",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  proficiency: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#proficiency",
+    "@type": "@id",
+  },
+  spell: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spell",
+    "@type": "@id",
+  },
+  strings: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#strings",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  "string:": {
+    "@id": "https://dnd5e.app/vocab/dnd5e#string:",
+    "@type": "http://www.w3.org/2001/XMLSchema#strsing",
   },
   fromEquipmentCategory: {
     "@id": "https://dnd5e.app/vocab/dnd5e#fromEquipmentCategory",

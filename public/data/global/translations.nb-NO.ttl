@@ -17,6 +17,7 @@
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
+:chooseNumberFrom skos:definition "Velg {$number} fra {$list}."@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
 :classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .

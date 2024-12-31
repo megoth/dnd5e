@@ -93,8 +93,29 @@ export default function ClassPage() {
           <Translation id="proficiencies" />
         </h3>
         <ul>
-          {classInfo.proficiencies.map((proficiency) => (
-            <li key={proficiency["@id"]}>{proficiency.label}</li>
+          <li>
+            {classInfo.proficiencies
+              .map((proficiency) => proficiency.label)
+              .join(", ")}
+          </li>
+          {classInfo.proficiencyChoices.map((choice) => (
+            <li key={choice.description}>
+              <Translation
+                id="chooseNumberFrom"
+                vars={{
+                  number: choice.choose,
+                  list: choice.from.references
+                    .map(
+                      (reference) =>
+                        reference.proficiency?.label ||
+                        reference.language?.label ||
+                        reference.spell?.label ||
+                        reference.equipment?.label,
+                    )
+                    .join(", "),
+                }}
+              />
+            </li>
           ))}
         </ul>
       </Content>

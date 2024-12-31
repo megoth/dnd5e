@@ -103,27 +103,6 @@ export interface BreathOption {
 }
 
 /**
- * ChoiceOption Type
- */
-export interface ChoiceOption {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  "choice:"?: Choice[];
-}
-
-/**
- * CountOption Type
- */
-export interface CountOption {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  count?: number;
-  of?: {
-    "@id": string;
-  };
-}
-
-/**
  * Choice Type
  */
 export interface Choice {
@@ -139,6 +118,15 @@ export interface Choice {
 }
 
 /**
+ * ChoiceOption Type
+ */
+export interface ChoiceOption {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  choice: Choice;
+}
+
+/**
  * Class Type
  */
 export interface Class {
@@ -151,6 +139,7 @@ export interface Class {
   levels?: ClassLevel[];
   multiclassing?: Multiclassing;
   proficiencies?: Proficiency[];
+  proficiencyChoices?: Choice[];
 }
 
 /**
@@ -171,6 +160,18 @@ export interface Condition {
   type: Type;
   label: string;
   description?: string[];
+}
+
+/**
+ * CountOption Type
+ */
+export interface CountOption {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  count?: number;
+  of?: {
+    "@id": string;
+  };
 }
 
 /**
@@ -228,6 +229,7 @@ export interface Equipment {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  label: string;
 }
 
 /**
@@ -313,17 +315,17 @@ export interface OptionAction {
 export interface OptionSet {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  references?: ReferenceOption[];
-  actions?: ActionOption[];
-  multiples?: MultipleOption[];
-  choices?: ChoiceOption[];
-  strings?: StringOption[];
-  ideals?: IdealOption[];
-  counts?: CountOption[];
   abilityScores?: AbilityScoreOption[];
+  actions?: ActionOption[];
   bonuses?: BonusOption[];
   breaths?: BreathOption[];
+  choices?: ChoiceOption[];
+  counts?: CountOption[];
   damages?: DamageOption[];
+  ideals?: IdealOption[];
+  multiples?: MultipleOption[];
+  references?: ReferenceOption[];
+  strings?: StringOption[];
 }
 
 /**
@@ -412,6 +414,7 @@ export interface Spell {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  label: string;
 }
 
 /**

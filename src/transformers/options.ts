@@ -3,8 +3,9 @@ import { createLdoDataset } from "@ldo/ldo";
 import {
   AbilityScoreShapeType,
   ActionOptionShapeType,
-  DamageShapeType,
+  ChoiceOptionShapeType,
   EquipmentShapeType,
+  LanguageShapeType,
   MultipleOptionShapeType,
   ProficiencyShapeType,
   ReferenceOptionShapeType,
@@ -13,10 +14,53 @@ import {
 } from "../ldo/dnd5e.shapeTypes";
 import {
   ActionOption,
+  ChoiceOption,
   ReferenceOption,
   ScorePrerequisiteOption,
 } from "../ldo/dnd5e.typings";
 import { dataUrl } from "../utils/dnd5e";
+import { transformChoice } from "./choice";
+
+export interface IChoiceOption {
+  choice?: components["schemas"]["Choice"];
+}
+
+export function transformChoiceOption(
+  data: IChoiceOption,
+  ldoDataset = createLdoDataset(),
+): ChoiceOption {
+  return ldoDataset.usingType(ChoiceOptionShapeType).fromJson({
+    choice: transformChoice(data.choice, ldoDataset),
+  });
+}
+
+export interface IReferenceOption {
+  item?: components["schemas"]["APIReference"];
+}
+
+export function transformReferenceOption(
+  data: IReferenceOption,
+  ldoDataset = createLdoDataset(),
+): ReferenceOption {
+  const [_, type, id] = data.item.url.match(/api\/(\w+)\/(\S+)/);
+  const itemUrl = dataUrl(type, id);
+  return ldoDataset.usingType(ReferenceOptionShapeType).fromJson({
+    ...(type === "equipment" && {
+      equipment: ldoDataset.usingType(EquipmentShapeType).fromSubject(itemUrl),
+    }),
+    ...(type === "languages" && {
+      language: ldoDataset.usingType(LanguageShapeType).fromSubject(itemUrl),
+    }),
+    ...(type === "proficiencies" && {
+      proficiency: ldoDataset
+        .usingType(ProficiencyShapeType)
+        .fromSubject(itemUrl),
+    }),
+    ...(type === "spells" && {
+      spell: ldoDataset.usingType(SpellShapeType).fromSubject(itemUrl),
+    }),
+  });
+}
 
 export function transformOption(
   data: components["schemas"]["Option"],
@@ -80,36 +124,6 @@ export function transformOption(
     });
   }
 
-  interface IReferenceOption {
-    item?: components["schemas"]["APIReference"];
-  }
-
-  function transformReferenceOption(
-    data: IReferenceOption,
-    ldoDataset = createLdoDataset(),
-  ): ReferenceOption {
-    const [_, type, id] = data.item.url.match(/api\/(\w+)\//);
-    const itemUrl = dataUrl(type, id);
-    return ldoDataset.usingType(ReferenceOptionShapeType).fromJson({
-      ...(type === "equipment" && {
-        equipment: ldoDataset
-          .usingType(EquipmentShapeType)
-          .fromSubject(itemUrl),
-      }),
-      ...(type === "languages" && {
-        equipment: ldoDataset.usingType(DamageShapeType).fromSubject(itemUrl),
-      }),
-      ...(type === "proficiencies" && {
-        equipment: ldoDataset
-          .usingType(ProficiencyShapeType)
-          .fromSubject(itemUrl),
-      }),
-      ...(type === "spells" && {
-        equipment: ldoDataset.usingType(SpellShapeType).fromSubject(itemUrl),
-      }),
-    });
-  }
-
   switch (data.option_type) {
     // case "ability_bonus":
     //   return null;
@@ -117,8 +131,8 @@ export function transformOption(
       return transformActionOption(data as IActionOption, ldoDataset);
     // case "breath":
     //   return null;
-    // case "choice":
-    //   return null;
+    case "choice":
+      return transformChoiceOption(data as IChoiceOption, ldoDataset);
     // case "counted_reference":
     //   return null;
     // case "ideal":

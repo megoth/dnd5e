@@ -10,6 +10,7 @@ import { Class } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
+import { transformChoice } from "./choice";
 
 function transformClass(
   data: components["schemas"]["Class"],
@@ -34,6 +35,9 @@ function transformClass(
     ldoDataset
       .usingType(ProficiencyShapeType)
       .fromSubject(dataUrl("proficiencies", proficiency.index)),
+  );
+  adventureClass.proficiencyChoices = data.proficiency_choices.map((choice) =>
+    transformChoice(choice, ldoDataset),
   );
   return adventureClass;
 }

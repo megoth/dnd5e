@@ -16,6 +16,7 @@
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
+:chooseNumberFrom skos:definition "Choose {$number} from {$list}."@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
