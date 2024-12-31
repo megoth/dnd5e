@@ -26,11 +26,28 @@ export default function ClassPage() {
   const { isLoading } = useSWR(
     () => `class-${classInfo["@id"]}`,
     async () =>
-      Promise.all(
-        classInfo.proficiencies.map((proficiency) =>
-          getResource(resourceUrl(proficiency["@id"])).readIfUnfetched(),
+      Promise.all([
+        Promise.all(
+          classInfo.proficiencies.map((proficiency) =>
+            getResource(resourceUrl(proficiency["@id"])).readIfUnfetched(),
+          ),
         ),
-      ),
+        Promise.all(
+          classInfo.proficiencyChoices.flatMap((choice) =>
+            choice.from.references
+              ?.map(
+                (reference) =>
+                  reference.proficiency["@id"] ||
+                  reference.spell["@id"] ||
+                  reference.language["@id"] ||
+                  reference.equipment["@id"],
+              )
+              .map((referenceUrl) =>
+                getResource(resourceUrl(referenceUrl)).readIfUnfetched(),
+              ),
+          ),
+        ),
+      ]),
   );
 
   if (isLoading || !classInfo?.["@id"]) {
