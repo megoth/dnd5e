@@ -16,7 +16,7 @@
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
-:chooseNumberFrom skos:definition "Choose {$number} from {$list}."@en-US .
+:chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
@@ -58,6 +58,7 @@
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .
+:savingThrows skos:definition "Saving Throws"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition

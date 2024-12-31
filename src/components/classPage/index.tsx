@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -45,6 +45,11 @@ export default function ClassPage() {
               .map((referenceUrl) =>
                 getResource(resourceUrl(referenceUrl)).readIfUnfetched(),
               ),
+          ),
+        ),
+        Promise.all(
+          classInfo.savingThrows.map((savingThrow) =>
+            getResource(resourceUrl(savingThrow["@id"])).readIfUnfetched(),
           ),
         ),
       ]),
@@ -109,32 +114,46 @@ export default function ClassPage() {
         <h3>
           <Translation id="proficiencies" />
         </h3>
-        <ul>
-          <li>
+        <dl className="data-list">
+          <dt></dt>
+          <dd>
             {classInfo.proficiencies
               .map((proficiency) => proficiency.label)
               .join(", ")}
-          </li>
+          </dd>
           {classInfo.proficiencyChoices.map((choice) => (
-            <li key={choice.description}>
-              <Translation
-                id="chooseNumberFrom"
-                vars={{
-                  number: choice.choose,
-                  list: choice.from.references
-                    .map(
-                      (reference) =>
-                        reference.proficiency?.label ||
-                        reference.language?.label ||
-                        reference.spell?.label ||
-                        reference.equipment?.label,
-                    )
-                    .join(", "),
-                }}
-              />
-            </li>
+            <Fragment key={choice.description}>
+              <dt>
+                <Translation
+                  id="chooseNumberFrom"
+                  vars={{
+                    number: choice.choose,
+                  }}
+                />
+                :
+              </dt>
+              <dd>
+                {choice.from.references
+                  .map(
+                    (reference) =>
+                      reference.proficiency?.label ||
+                      reference.language?.label ||
+                      reference.spell?.label ||
+                      reference.equipment?.label,
+                  )
+                  .join(", ")}
+              </dd>
+            </Fragment>
           ))}
-        </ul>
+          <dt>
+            <Translation id="savingThrows" />:
+          </dt>
+          <dd>
+            {classInfo.savingThrows
+              .map((savingThrow) => savingThrow.label)
+              .join(", ")}
+          </dd>
+        </dl>
       </Content>
     </Layout>
   );

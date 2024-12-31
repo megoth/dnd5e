@@ -260,6 +260,11 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  savingThrows: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#savingThrows",
+    "@type": "@id",
+    "@container": "@set",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",

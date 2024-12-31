@@ -140,6 +140,7 @@ export interface Class {
   multiclassing?: Multiclassing;
   proficiencies?: Proficiency[];
   proficiencyChoices?: Choice[];
+  savingThrows?: AbilityScore[];
 }
 
 /**

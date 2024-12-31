@@ -1,6 +1,7 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
+  AbilityScoreShapeType,
   ClassLevelShapeType,
   ClassShapeType,
   ProficiencyShapeType,
@@ -38,6 +39,11 @@ function transformClass(
   );
   adventureClass.proficiencyChoices = data.proficiency_choices.map((choice) =>
     transformChoice(choice, ldoDataset),
+  );
+  adventureClass.savingThrows = data.saving_throws.map((savingThrow) =>
+    ldoDataset
+      .usingType(AbilityScoreShapeType)
+      .fromSubject(dataUrl("abilityScores", savingThrow.index)),
   );
   return adventureClass;
 }
