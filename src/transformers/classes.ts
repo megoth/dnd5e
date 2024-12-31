@@ -12,6 +12,7 @@ import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
+import { transformStartingEquipment } from "./startingEquipment";
 
 function transformClass(
   data: components["schemas"]["Class"],
@@ -44,6 +45,10 @@ function transformClass(
     ldoDataset
       .usingType(AbilityScoreShapeType)
       .fromSubject(dataUrl("abilityScores", savingThrow.index)),
+  );
+  adventureClass.startingEquipment = data.starting_equipment.map(
+    (startingEquipment) =>
+      transformStartingEquipment(startingEquipment, ldoDataset),
   );
   return adventureClass;
 }

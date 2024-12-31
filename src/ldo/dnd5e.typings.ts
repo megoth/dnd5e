@@ -141,6 +141,7 @@ export interface Class {
   proficiencies?: Proficiency[];
   proficiencyChoices?: Choice[];
   savingThrows?: AbilityScore[];
+  startingEquipment?: StartingEquipment[];
 }
 
 /**
@@ -231,6 +232,7 @@ export interface Equipment {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+  description?: string[];
 }
 
 /**

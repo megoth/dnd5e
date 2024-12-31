@@ -265,15 +265,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  races: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#races",
-    "@type": "@id",
-    "@container": "@set",
-  },
-  reference: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
-    "@type": "@id",
-  },
   startingEquipment: {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipment",
     "@type": "@id",
@@ -282,6 +273,15 @@ export const dnd5eContext: ContextDefinition = {
   quantity: {
     "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  races: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#races",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  reference: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
+    "@type": "@id",
   },
   startingEquipmentOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",

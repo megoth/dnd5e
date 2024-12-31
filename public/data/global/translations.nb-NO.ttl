@@ -26,6 +26,7 @@
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 :encountersPageTitle skos:definition "Kamper"@nb-NO .
+:equipment skos:definition "Utstyr"@nb-NO .
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
 :faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 :faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .

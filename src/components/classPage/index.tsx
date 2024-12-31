@@ -9,6 +9,9 @@ import useSWR from "swr";
 import { useLdo } from "@ldo/solid-react";
 import { resourceUrl } from "../../utils/url";
 import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
+import ClassPageHitPoints from "./hitPoints";
+import ClassPageProficiencies from "./proficiencies";
+import ClassPageEquipment from "./equipment";
 
 export default function ClassPage() {
   const params = useParams();
@@ -52,6 +55,13 @@ export default function ClassPage() {
             getResource(resourceUrl(savingThrow["@id"])).readIfUnfetched(),
           ),
         ),
+        Promise.all(
+          classInfo.startingEquipment.map((startingEquipment) =>
+            getResource(
+              resourceUrl(startingEquipment.equipment["@id"]),
+            ).readIfUnfetched(),
+          ),
+        ),
       ]),
   );
 
@@ -75,85 +85,9 @@ export default function ClassPage() {
             vars={{ className: classInfo.label }}
           />
         </p>
-        <h3>
-          <Translation id="hitPoints" />
-        </h3>
-        <dl className="data-list">
-          <dt>
-            <Translation id="hitDie" />
-          </dt>
-          <dd>
-            <Translation
-              id="hitDiePerClassLevel"
-              vars={{ hitDie: classInfo.hitDie, className: classInfo.label }}
-            />
-          </dd>
-          <dt>
-            <Translation id="hitPointsAt1stLevel" />
-          </dt>
-          <dd>
-            <Translation
-              id="hitPointsAt1stLevelDescription"
-              vars={{ hitDie: classInfo.hitDie }}
-            />
-          </dd>
-          <dt>
-            <Translation id="hitPointsAtHigherLevels" />
-          </dt>
-          <dd>
-            <Translation
-              id="hitPointsAtHigherLevelsDescription"
-              vars={{
-                hitDie: classInfo.hitDie,
-                hitDieBalanced: classInfo.hitDie / 2 + 1,
-                className: classInfo.label,
-              }}
-            />
-          </dd>
-        </dl>
-        <h3>
-          <Translation id="proficiencies" />
-        </h3>
-        <dl className="data-list">
-          <dt></dt>
-          <dd>
-            {classInfo.proficiencies
-              .map((proficiency) => proficiency.label)
-              .join(", ")}
-          </dd>
-          {classInfo.proficiencyChoices.map((choice) => (
-            <Fragment key={choice.description}>
-              <dt>
-                <Translation
-                  id="chooseNumberFrom"
-                  vars={{
-                    number: choice.choose,
-                  }}
-                />
-                :
-              </dt>
-              <dd>
-                {choice.from.references
-                  .map(
-                    (reference) =>
-                      reference.proficiency?.label ||
-                      reference.language?.label ||
-                      reference.spell?.label ||
-                      reference.equipment?.label,
-                  )
-                  .join(", ")}
-              </dd>
-            </Fragment>
-          ))}
-          <dt>
-            <Translation id="savingThrows" />:
-          </dt>
-          <dd>
-            {classInfo.savingThrows
-              .map((savingThrow) => savingThrow.label)
-              .join(", ")}
-          </dd>
-        </dl>
+        <ClassPageHitPoints classInfo={classInfo} />
+        <ClassPageProficiencies classInfo={classInfo} />
+        <ClassPageEquipment classInfo={classInfo} />
       </Content>
     </Layout>
   );
