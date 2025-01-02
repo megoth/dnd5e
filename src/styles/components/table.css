@@ -1,18 +1,19 @@
 .table-container {
     @apply relative overflow-x-auto;
+    max-width: 93vw;
 }
 
 .table {
-    @apply w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400;
+    @apply w-full text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400;
 }
 
 .table > thead {
-    @apply text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
+    @apply text-xs lg:text-sm bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
 }
 
 .table th,
 .table td {
-    @apply px-6 py-3;
+    @apply px-2 py-1 md:px-4 md:py-2 lg:px-6 lg:py-3;
 }
 
 .table > tbody > tr {
