@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -12,6 +12,7 @@ import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
 import ClassPageHitPoints from "./hitPoints";
 import ClassPageProficiencies from "./proficiencies";
 import ClassPageEquipment from "./equipment";
+import { classResourceUrls } from "../../utils/dnd5e";
 
 export default function ClassPage() {
   const params = useParams();
@@ -28,41 +29,13 @@ export default function ClassPage() {
 
   const { isLoading } = useSWR(
     () => `class-${classInfo["@id"]}`,
-    async () =>
-      Promise.all([
-        Promise.all(
-          classInfo.proficiencies.map((proficiency) =>
-            getResource(resourceUrl(proficiency["@id"])).readIfUnfetched(),
-          ),
+    async () => {
+      return Promise.all(
+        classResourceUrls(classInfo).map((resourceUrl) =>
+          getResource(resourceUrl).readIfUnfetched(),
         ),
-        Promise.all(
-          classInfo.proficiencyChoices.flatMap((choice) =>
-            choice.from.references
-              ?.map(
-                (reference) =>
-                  reference.proficiency["@id"] ||
-                  reference.spell["@id"] ||
-                  reference.language["@id"] ||
-                  reference.equipment["@id"],
-              )
-              .map((referenceUrl) =>
-                getResource(resourceUrl(referenceUrl)).readIfUnfetched(),
-              ),
-          ),
-        ),
-        Promise.all(
-          classInfo.savingThrows.map((savingThrow) =>
-            getResource(resourceUrl(savingThrow["@id"])).readIfUnfetched(),
-          ),
-        ),
-        Promise.all(
-          classInfo.startingEquipment.map((startingEquipment) =>
-            getResource(
-              resourceUrl(startingEquipment.equipment["@id"]),
-            ).readIfUnfetched(),
-          ),
-        ),
-      ]),
+      );
+    },
   );
 
   if (isLoading || !classInfo?.["@id"]) {

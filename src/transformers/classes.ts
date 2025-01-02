@@ -50,6 +50,9 @@ function transformClass(
     (startingEquipment) =>
       transformStartingEquipment(startingEquipment, ldoDataset),
   );
+  adventureClass.startingEquipmentOptions = data.starting_equipment_options.map(
+    (option) => transformChoice(option, ldoDataset),
+  );
   return adventureClass;
 }
 

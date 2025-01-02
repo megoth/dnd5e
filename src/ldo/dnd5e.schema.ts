@@ -408,14 +408,6 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#fromEquipmentCategory",
-              valueExpr:
-                "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategoryOptionSet",
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#fromResourceList",
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
@@ -520,6 +512,14 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: -1,
             },
+            {
+              type: "TripleConstraint",
+              predicate:
+                "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: -1,
+            },
           ],
         },
       },
@@ -592,10 +592,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#of",
-              valueExpr: {
-                type: "NodeConstraint",
-                nodeKind: "iri",
-              },
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
               min: 0,
               max: 1,
             },
@@ -793,23 +790,29 @@ export const dnd5eSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
-        },
-      },
-    },
-    {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategoryOptionSet",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "TripleConstraint",
-          predicate: "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
-          min: 0,
-          max: 1,
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipmentList",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
+              min: 0,
+              max: -1,
+            },
+          ],
         },
       },
     },
@@ -1057,6 +1060,14 @@ export const dnd5eSchema: Schema = {
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageOption",
               min: 0,
               max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
+              min: 0,
+              max: 1,
             },
             {
               type: "TripleConstraint",

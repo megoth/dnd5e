@@ -3,7 +3,7 @@ import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import { ConditionShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Condition } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl } from "../utils/dnd5e";
+import { dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 
 function transformCondition(
@@ -12,7 +12,7 @@ function transformCondition(
 ): Condition {
   const damageType = ldoDataset
     .usingType(ConditionShapeType)
-    .fromSubject(dataUrl("conditions", data.index));
+    .fromSubject(`#${data.index}`);
   damageType.type = type("Condition");
   damageType.label = data.name;
   damageType.description = data.desc;

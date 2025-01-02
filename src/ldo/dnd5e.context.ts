@@ -172,6 +172,15 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#notes",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
+  equipmentCategory: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
+    "@type": "@id",
+  },
+  equipmentList: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentList",
+    "@type": "@id",
+    "@container": "@set",
+  },
   ideals: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
     "@type": "@id",
@@ -234,14 +243,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#string:",
     "@type": "http://www.w3.org/2001/XMLSchema#strsing",
   },
-  fromEquipmentCategory: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#fromEquipmentCategory",
-    "@type": "@id",
-  },
-  equipmentCategory: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
-    "@type": "@id",
-  },
   fromResourceList: {
     "@id": "https://dnd5e.app/vocab/dnd5e#fromResourceList",
     "@type": "@id",
@@ -274,6 +275,11 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
+  startingEquipmentOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+    "@type": "@id",
+    "@container": "@set",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",
@@ -282,11 +288,6 @@ export const dnd5eContext: ContextDefinition = {
   reference: {
     "@id": "https://dnd5e.app/vocab/dnd5e#reference",
     "@type": "@id",
-  },
-  startingEquipmentOptions: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
-    "@type": "@id",
-    "@container": "@set",
   },
   languageOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#languageOptions",

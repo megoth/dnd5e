@@ -1,19 +1,20 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset } from "@ldo/ldo";
 import {
-  EquipmentCategoryOptionSetShapeType,
   EquipmentCategoryShapeType,
   OptionSetShapeType,
   ResourceListOptionSetShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import {
   IChoiceOption,
+  ICountedReferenceOption,
   IReferenceOption,
   transformChoiceOption,
+  transformCountedReferenceOption,
   transformReferenceOption,
 } from "./options";
 import { dataUrl } from "../utils/dnd5e";
-import { EquipmentCategoryOptionSet } from "../ldo/dnd5e.typings";
+import { OptionSet } from "../ldo/dnd5e.typings";
 
 interface IEquipmentCategory {
   option_set_type?: string;
@@ -23,12 +24,12 @@ interface IEquipmentCategory {
 function transformEquipmentCategory(
   data: IEquipmentCategory,
   ldoDataset = createLdoDataset(),
-): EquipmentCategoryOptionSet {
-  return ldoDataset.usingType(EquipmentCategoryOptionSetShapeType).fromJson({
+): OptionSet {
+  return ldoDataset.usingType(OptionSetShapeType).fromJson({
     equipmentCategory: ldoDataset
       .usingType(EquipmentCategoryShapeType)
       .fromSubject(
-        dataUrl("equipmentCategories", data.equipment_category.index),
+        dataUrl("equipment-categories", data.equipment_category.index),
       ),
   });
 }
@@ -47,6 +48,14 @@ function transformOptionsArray(
       .filter((option) => option.option_type === "choice")
       .map((option) =>
         transformChoiceOption(option as IChoiceOption, ldoDataset),
+      ),
+    counts: data.options
+      .filter((option) => option.option_type === "counted_reference")
+      .map((option) =>
+        transformCountedReferenceOption(
+          option as ICountedReferenceOption,
+          ldoDataset,
+        ),
       ),
     references: data.options
       .filter((option) => option.option_type === "reference")

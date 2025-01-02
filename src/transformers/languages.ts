@@ -12,7 +12,7 @@ export function transformLanguage(
 ): Proficiency {
   const language = ldoDataset
     .usingType(LanguageShapeType)
-    .fromSubject(dataUrl("languages", data.index));
+    .fromSubject(`#${data.index}`);
   language.type = type("Language");
   language.label = data.name;
   language.description = data.desc;

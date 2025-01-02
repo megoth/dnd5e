@@ -1,33 +1,30 @@
 import Translation from "../../translation";
 import React from "react";
 import { Class } from "../../../ldo/dnd5e.typings";
-import { useLdo } from "@ldo/solid-react";
-import { EquipmentShapeType } from "../../../ldo/dnd5e.shapeTypes";
+import ClassPageChoiceDataListItem from "../choiceDataListItem";
 
 interface Props {
   classInfo: Class;
 }
 
 export default function ClassPageEquipment({ classInfo }: Props) {
-  const { getSubject } = useLdo();
   return (
     <article>
       <h3>
         <Translation id="equipment" />
       </h3>
       <dl className="data-list">
-        <dt></dt>
         <dd>
           {classInfo.startingEquipment
-            .map(
-              (startingEquipment) =>
-                getSubject(
-                  EquipmentShapeType,
-                  startingEquipment.equipment["@id"],
-                ).label,
-            )
+            .map((startingEquipment) => startingEquipment.equipment.label)
             .join(", ")}
         </dd>
+        {classInfo.startingEquipmentOptions.map((option) => (
+          <ClassPageChoiceDataListItem
+            key={option.description}
+            choice={option}
+          />
+        ))}
       </dl>
     </article>
   );

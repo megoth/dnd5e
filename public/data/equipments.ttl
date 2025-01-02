@@ -1,606 +1,606 @@
-</data/equipments.ttl#club> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#club> <http://www.w3.org/2000/01/rdf-schema#label> "Club" .
-</data/equipments.ttl#dagger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#dagger> <http://www.w3.org/2000/01/rdf-schema#label> "Dagger" .
-</data/equipments.ttl#greatclub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#greatclub> <http://www.w3.org/2000/01/rdf-schema#label> "Greatclub" .
-</data/equipments.ttl#handaxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#handaxe> <http://www.w3.org/2000/01/rdf-schema#label> "Handaxe" .
-</data/equipments.ttl#javelin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#javelin> <http://www.w3.org/2000/01/rdf-schema#label> "Javelin" .
-</data/equipments.ttl#light-hammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#light-hammer> <http://www.w3.org/2000/01/rdf-schema#label> "Light hammer" .
-</data/equipments.ttl#mace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#mace> <http://www.w3.org/2000/01/rdf-schema#label> "Mace" .
-</data/equipments.ttl#quarterstaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#quarterstaff> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterstaff" .
-</data/equipments.ttl#sickle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sickle> <http://www.w3.org/2000/01/rdf-schema#label> "Sickle" .
-</data/equipments.ttl#spear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#spear> <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
-</data/equipments.ttl#crossbow-light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crossbow-light> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, light" .
-</data/equipments.ttl#dart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#dart> <http://www.w3.org/2000/01/rdf-schema#label> "Dart" .
-</data/equipments.ttl#shortbow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#shortbow> <http://www.w3.org/2000/01/rdf-schema#label> "Shortbow" .
-</data/equipments.ttl#sling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sling> <http://www.w3.org/2000/01/rdf-schema#label> "Sling" .
-</data/equipments.ttl#battleaxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#battleaxe> <http://www.w3.org/2000/01/rdf-schema#label> "Battleaxe" .
-</data/equipments.ttl#flail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#flail> <http://www.w3.org/2000/01/rdf-schema#label> "Flail" .
-</data/equipments.ttl#glaive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#glaive> <http://www.w3.org/2000/01/rdf-schema#label> "Glaive" .
-</data/equipments.ttl#greataxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#greataxe> <http://www.w3.org/2000/01/rdf-schema#label> "Greataxe" .
-</data/equipments.ttl#greatsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#greatsword> <http://www.w3.org/2000/01/rdf-schema#label> "Greatsword" .
-</data/equipments.ttl#halberd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#halberd> <http://www.w3.org/2000/01/rdf-schema#label> "Halberd" .
-</data/equipments.ttl#lance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lance> <http://www.w3.org/2000/01/rdf-schema#label> "Lance" .
-</data/equipments.ttl#longsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#longsword> <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
-</data/equipments.ttl#maul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#maul> <http://www.w3.org/2000/01/rdf-schema#label> "Maul" .
-</data/equipments.ttl#morningstar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#morningstar> <http://www.w3.org/2000/01/rdf-schema#label> "Morningstar" .
-</data/equipments.ttl#pike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pike> <http://www.w3.org/2000/01/rdf-schema#label> "Pike" .
-</data/equipments.ttl#rapier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rapier> <http://www.w3.org/2000/01/rdf-schema#label> "Rapier" .
-</data/equipments.ttl#scimitar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#scimitar> <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
-</data/equipments.ttl#shortsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#shortsword> <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
-</data/equipments.ttl#trident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#trident> <http://www.w3.org/2000/01/rdf-schema#label> "Trident" .
-</data/equipments.ttl#war-pick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#war-pick> <http://www.w3.org/2000/01/rdf-schema#label> "War pick" .
-</data/equipments.ttl#warhammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#warhammer> <http://www.w3.org/2000/01/rdf-schema#label> "Warhammer" .
-</data/equipments.ttl#whip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#whip> <http://www.w3.org/2000/01/rdf-schema#label> "Whip" .
-</data/equipments.ttl#blowgun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#blowgun> <http://www.w3.org/2000/01/rdf-schema#label> "Blowgun" .
-</data/equipments.ttl#crossbow-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crossbow-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, hand" .
-</data/equipments.ttl#crossbow-heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crossbow-heavy> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, heavy" .
-</data/equipments.ttl#longbow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#longbow> <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-</data/equipments.ttl#net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#net> <http://www.w3.org/2000/01/rdf-schema#label> "Net" .
-</data/equipments.ttl#padded-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#padded-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Padded Armor" .
-</data/equipments.ttl#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Leather Armor" .
-</data/equipments.ttl#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#studded-leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Studded Leather Armor" .
-</data/equipments.ttl#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#hide-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Hide Armor" .
-</data/equipments.ttl#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Shirt" .
-</data/equipments.ttl#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Scale Mail" .
-</data/equipments.ttl#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Breastplate" .
-</data/equipments.ttl#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#half-plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Half Plate Armor" .
-</data/equipments.ttl#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Ring Mail" .
-</data/equipments.ttl#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Mail" .
-</data/equipments.ttl#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#splint-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Splint Armor" .
-</data/equipments.ttl#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Armor" .
-</data/equipments.ttl#shield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#shield> <http://www.w3.org/2000/01/rdf-schema#label> "Shield" .
-</data/equipments.ttl#abacus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#abacus> <http://www.w3.org/2000/01/rdf-schema#label> "Abacus" .
-</data/equipments.ttl#acid-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#acid-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Acid (vial)" .
-</data/equipments.ttl#acid-vial> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon." .
-</data/equipments.ttl#acid-vial> <http://purl.org/dc/terms/description> "On a hit, the target takes 2d6 acid damage." .
-</data/equipments.ttl#alchemists-fire-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#alchemists-fire-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's fire (flask)" .
-</data/equipments.ttl#alchemists-fire-flask> <http://purl.org/dc/terms/description> "This sticky, adhesive fluid ignites when exposed to air." .
-</data/equipments.ttl#alchemists-fire-flask> <http://purl.org/dc/terms/description> "As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon." .
-</data/equipments.ttl#alchemists-fire-flask> <http://purl.org/dc/terms/description> "On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames." .
-</data/equipments.ttl#alms-box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#alms-box> <http://www.w3.org/2000/01/rdf-schema#label> "Alms box" .
-</data/equipments.ttl#alms-box> <http://purl.org/dc/terms/description> "A small box for alms, typically found in a priest's pack." .
-</data/equipments.ttl#arrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#arrow> <http://www.w3.org/2000/01/rdf-schema#label> "Arrow" .
-</data/equipments.ttl#block-of-incense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#block-of-incense> <http://www.w3.org/2000/01/rdf-schema#label> "Block of incense" .
-</data/equipments.ttl#block-of-incense> <http://purl.org/dc/terms/description> "A block of incense, typically found in a priest's pack." .
-</data/equipments.ttl#blowgun-needle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#blowgun-needle> <http://www.w3.org/2000/01/rdf-schema#label> "Blowgun needle" .
-</data/equipments.ttl#censer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#censer> <http://www.w3.org/2000/01/rdf-schema#label> "Censer" .
-</data/equipments.ttl#censer> <http://purl.org/dc/terms/description> "A censer, typically found in a priest's pack." .
-</data/equipments.ttl#crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow bolt" .
-</data/equipments.ttl#sling-bullet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sling-bullet> <http://www.w3.org/2000/01/rdf-schema#label> "Sling bullet" .
-</data/equipments.ttl#amulet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#amulet> <http://www.w3.org/2000/01/rdf-schema#label> "Amulet" .
-</data/equipments.ttl#amulet> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
-</data/equipments.ttl#amulet> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
-</data/equipments.ttl#antitoxin-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#antitoxin-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Antitoxin (vial)" .
-</data/equipments.ttl#antitoxin-vial> <http://purl.org/dc/terms/description> "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs." .
-</data/equipments.ttl#crystal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crystal> <http://www.w3.org/2000/01/rdf-schema#label> "Crystal" .
-</data/equipments.ttl#crystal> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
-</data/equipments.ttl#orb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#orb> <http://www.w3.org/2000/01/rdf-schema#label> "Orb" .
-</data/equipments.ttl#orb> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
-</data/equipments.ttl#rod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rod> <http://www.w3.org/2000/01/rdf-schema#label> "Rod" .
-</data/equipments.ttl#rod> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
-</data/equipments.ttl#staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff" .
-</data/equipments.ttl#staff> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
-</data/equipments.ttl#wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#wand> <http://www.w3.org/2000/01/rdf-schema#label> "Wand" .
-</data/equipments.ttl#wand> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
-</data/equipments.ttl#backpack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#backpack> <http://www.w3.org/2000/01/rdf-schema#label> "Backpack" .
-</data/equipments.ttl#ball-bearings-bag-of-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ball-bearings-bag-of-1000> <http://www.w3.org/2000/01/rdf-schema#label> "Ball bearings (bag of 1,000)" .
-</data/equipments.ttl#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side." .
-</data/equipments.ttl#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone." .
-</data/equipments.ttl#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
-</data/equipments.ttl#barrel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barrel> <http://www.w3.org/2000/01/rdf-schema#label> "Barrel" .
-</data/equipments.ttl#basket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#basket> <http://www.w3.org/2000/01/rdf-schema#label> "Basket" .
-</data/equipments.ttl#bedroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bedroll> <http://www.w3.org/2000/01/rdf-schema#label> "Bedroll" .
-</data/equipments.ttl#bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bell> <http://www.w3.org/2000/01/rdf-schema#label> "Bell" .
-</data/equipments.ttl#blanket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#blanket> <http://www.w3.org/2000/01/rdf-schema#label> "Blanket" .
-</data/equipments.ttl#block-and-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#block-and-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Block and tackle" .
-</data/equipments.ttl#block-and-tackle> <http://purl.org/dc/terms/description> "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift." .
-</data/equipments.ttl#book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#book> <http://www.w3.org/2000/01/rdf-schema#label> "Book" .
-</data/equipments.ttl#book> <http://purl.org/dc/terms/description> "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section)." .
-</data/equipments.ttl#bottle-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bottle-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Bottle, glass" .
-</data/equipments.ttl#bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bucket> <http://www.w3.org/2000/01/rdf-schema#label> "Bucket" .
-</data/equipments.ttl#caltrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#caltrops> <http://www.w3.org/2000/01/rdf-schema#label> "Caltrops" .
-</data/equipments.ttl#caltrops> <http://purl.org/dc/terms/description> "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side." .
-</data/equipments.ttl#caltrops> <http://purl.org/dc/terms/description> "Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage." .
-</data/equipments.ttl#caltrops> <http://purl.org/dc/terms/description> "Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point." .
-</data/equipments.ttl#caltrops> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
-</data/equipments.ttl#candle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#candle> <http://www.w3.org/2000/01/rdf-schema#label> "Candle" .
-</data/equipments.ttl#candle> <http://purl.org/dc/terms/description> "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet." .
-</data/equipments.ttl#case-crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#case-crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Case, crossbow bolt" .
-</data/equipments.ttl#case-crossbow-bolt> <http://purl.org/dc/terms/description> "This wooden case can hold up to twenty crossbow bolts." .
-</data/equipments.ttl#case-map-or-scroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#case-map-or-scroll> <http://www.w3.org/2000/01/rdf-schema#label> "Case, map or scroll" .
-</data/equipments.ttl#case-map-or-scroll> <http://purl.org/dc/terms/description> "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment." .
-</data/equipments.ttl#chain-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chain-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Chain (10 feet)" .
-</data/equipments.ttl#chain-10-feet> <http://purl.org/dc/terms/description> "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check." .
-</data/equipments.ttl#chalk-1-piece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chalk-1-piece> <http://www.w3.org/2000/01/rdf-schema#label> "Chalk (1 piece)" .
-</data/equipments.ttl#chest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chest> <http://www.w3.org/2000/01/rdf-schema#label> "Chest" .
-</data/equipments.ttl#clothes-common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#clothes-common> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, common" .
-</data/equipments.ttl#clothes-costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#clothes-costume> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, costume" .
-</data/equipments.ttl#clothes-fine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#clothes-fine> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, fine" .
-</data/equipments.ttl#clothes-travelers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#clothes-travelers> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, traveler's" .
-</data/equipments.ttl#component-pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#component-pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Component pouch" .
-</data/equipments.ttl#component-pouch> <http://purl.org/dc/terms/description> "A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)." .
-</data/equipments.ttl#crowbar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#crowbar> <http://www.w3.org/2000/01/rdf-schema#label> "Crowbar" .
-</data/equipments.ttl#crowbar> <http://purl.org/dc/terms/description> "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied." .
-</data/equipments.ttl#sprig-of-mistletoe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sprig-of-mistletoe> <http://www.w3.org/2000/01/rdf-schema#label> "Sprig of mistletoe" .
-</data/equipments.ttl#sprig-of-mistletoe> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
-</data/equipments.ttl#totem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#totem> <http://www.w3.org/2000/01/rdf-schema#label> "Totem" .
-</data/equipments.ttl#totem> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
-</data/equipments.ttl#wooden-staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#wooden-staff> <http://www.w3.org/2000/01/rdf-schema#label> "Wooden staff" .
-</data/equipments.ttl#wooden-staff> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
-</data/equipments.ttl#yew-wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#yew-wand> <http://www.w3.org/2000/01/rdf-schema#label> "Yew wand" .
-</data/equipments.ttl#yew-wand> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
-</data/equipments.ttl#emblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#emblem> <http://www.w3.org/2000/01/rdf-schema#label> "Emblem" .
-</data/equipments.ttl#emblem> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
-</data/equipments.ttl#emblem> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
-</data/equipments.ttl#fishing-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#fishing-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Fishing tackle" .
-</data/equipments.ttl#fishing-tackle> <http://purl.org/dc/terms/description> "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting." .
-</data/equipments.ttl#flask-or-tankard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#flask-or-tankard> <http://www.w3.org/2000/01/rdf-schema#label> "Flask or tankard" .
-</data/equipments.ttl#grappling-hook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#grappling-hook> <http://www.w3.org/2000/01/rdf-schema#label> "Grappling hook" .
-</data/equipments.ttl#hammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#hammer> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer" .
-</data/equipments.ttl#hammer-sledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#hammer-sledge> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer, sledge" .
-</data/equipments.ttl#holy-water-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#holy-water-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Holy water (flask)" .
-</data/equipments.ttl#holy-water-flask> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon." .
-</data/equipments.ttl#holy-water-flask> <http://purl.org/dc/terms/description> "If the target is a fiend or undead, it takes 2d6 radiant damage." .
-</data/equipments.ttl#holy-water-flask> <http://purl.org/dc/terms/description> "A cleric or paladin may create holy water by performing a special ritual." .
-</data/equipments.ttl#holy-water-flask> <http://purl.org/dc/terms/description> "The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot." .
-</data/equipments.ttl#hourglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#hourglass> <http://www.w3.org/2000/01/rdf-schema#label> "Hourglass" .
-</data/equipments.ttl#hunting-trap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#hunting-trap> <http://www.w3.org/2000/01/rdf-schema#label> "Hunting trap" .
-</data/equipments.ttl#hunting-trap> <http://purl.org/dc/terms/description> "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground." .
-</data/equipments.ttl#hunting-trap> <http://purl.org/dc/terms/description> "A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long)." .
-</data/equipments.ttl#hunting-trap> <http://purl.org/dc/terms/description> "A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature." .
-</data/equipments.ttl#ink-1-ounce-bottle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ink-1-ounce-bottle> <http://www.w3.org/2000/01/rdf-schema#label> "Ink (1 ounce bottle)" .
-</data/equipments.ttl#ink-pen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ink-pen> <http://www.w3.org/2000/01/rdf-schema#label> "Ink pen" .
-</data/equipments.ttl#jug-or-pitcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#jug-or-pitcher> <http://www.w3.org/2000/01/rdf-schema#label> "Jug or pitcher" .
-</data/equipments.ttl#climbers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#climbers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Climber's Kit" .
-</data/equipments.ttl#climbers-kit> <http://purl.org/dc/terms/description> "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor." .
-</data/equipments.ttl#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#disguise-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Kit" .
-</data/equipments.ttl#disguise-kit> <http://purl.org/dc/terms/description> "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise." .
-</data/equipments.ttl#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#forgery-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Forgery Kit" .
-</data/equipments.ttl#forgery-kit> <http://purl.org/dc/terms/description> "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document." .
-</data/equipments.ttl#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#herbalism-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Herbalism Kit" .
-</data/equipments.ttl#herbalism-kit> <http://purl.org/dc/terms/description> "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing." .
-</data/equipments.ttl#healers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#healers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Healer's Kit" .
-</data/equipments.ttl#healers-kit> <http://purl.org/dc/terms/description> "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check." .
-</data/equipments.ttl#mess-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#mess-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Mess Kit" .
-</data/equipments.ttl#mess-kit> <http://purl.org/dc/terms/description> "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl." .
-</data/equipments.ttl#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#poisoners-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoner's Kit" .
-</data/equipments.ttl#poisoners-kit> <http://purl.org/dc/terms/description> "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons." .
-</data/equipments.ttl#ladder-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ladder-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder (10-foot)" .
-</data/equipments.ttl#lamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lamp> <http://www.w3.org/2000/01/rdf-schema#label> "Lamp" .
-</data/equipments.ttl#lamp> <http://purl.org/dc/terms/description> "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
-</data/equipments.ttl#lantern-bullseye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lantern-bullseye> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, bullseye" .
-</data/equipments.ttl#lantern-bullseye> <http://purl.org/dc/terms/description> "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
-</data/equipments.ttl#lantern-hooded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lantern-hooded> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, hooded" .
-</data/equipments.ttl#lantern-hooded> <http://purl.org/dc/terms/description> "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius." .
-</data/equipments.ttl#little-bag-of-sand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#little-bag-of-sand> <http://www.w3.org/2000/01/rdf-schema#label> "Little bag of sand" .
-</data/equipments.ttl#little-bag-of-sand> <http://purl.org/dc/terms/description> "A small bag of sand, typically found in a scholar's pack." .
-</data/equipments.ttl#lock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lock> <http://www.w3.org/2000/01/rdf-schema#label> "Lock" .
-</data/equipments.ttl#lock> <http://purl.org/dc/terms/description> "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices." .
-</data/equipments.ttl#magnifying-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#magnifying-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Magnifying glass" .
-</data/equipments.ttl#magnifying-glass> <http://purl.org/dc/terms/description> "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite." .
-</data/equipments.ttl#magnifying-glass> <http://purl.org/dc/terms/description> "A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed." .
-</data/equipments.ttl#manacles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#manacles> <http://www.w3.org/2000/01/rdf-schema#label> "Manacles" .
-</data/equipments.ttl#manacles> <http://purl.org/dc/terms/description> "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check." .
-</data/equipments.ttl#manacles> <http://purl.org/dc/terms/description> "Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points." .
-</data/equipments.ttl#mirror-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#mirror-steel> <http://www.w3.org/2000/01/rdf-schema#label> "Mirror, steel" .
-</data/equipments.ttl#oil-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#oil-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Oil (flask)" .
-</data/equipments.ttl#oil-flask> <http://purl.org/dc/terms/description> "Oil usually comes in a clay flask that holds 1 pint." .
-</data/equipments.ttl#oil-flask> <http://purl.org/dc/terms/description> "As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon." .
-</data/equipments.ttl#oil-flask> <http://purl.org/dc/terms/description> "On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil." .
-</data/equipments.ttl#oil-flask> <http://purl.org/dc/terms/description> "You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level." .
-</data/equipments.ttl#oil-flask> <http://purl.org/dc/terms/description> "If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn." .
-</data/equipments.ttl#paper-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#paper-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Paper (one sheet)" .
-</data/equipments.ttl#parchment-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#parchment-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Parchment (one sheet)" .
-</data/equipments.ttl#perfume-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#perfume-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Perfume (vial)" .
-</data/equipments.ttl#pick-miners> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pick-miners> <http://www.w3.org/2000/01/rdf-schema#label> "Pick, miner's" .
-</data/equipments.ttl#piton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#piton> <http://www.w3.org/2000/01/rdf-schema#label> "Piton" .
-</data/equipments.ttl#poison-basic-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#poison-basic-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Poison, basic (vial)" .
-</data/equipments.ttl#poison-basic-vial> <http://purl.org/dc/terms/description> "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying." .
-</data/equipments.ttl#pole-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pole-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Pole (10-foot)" .
-</data/equipments.ttl#pot-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pot-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Pot, iron" .
-</data/equipments.ttl#pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Pouch" .
-</data/equipments.ttl#pouch> <http://purl.org/dc/terms/description> "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)." .
-</data/equipments.ttl#quiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#quiver> <http://www.w3.org/2000/01/rdf-schema#label> "Quiver" .
-</data/equipments.ttl#quiver> <http://purl.org/dc/terms/description> "A quiver can hold up to 20 arrows." .
-</data/equipments.ttl#ram-portable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#ram-portable> <http://www.w3.org/2000/01/rdf-schema#label> "Ram, portable" .
-</data/equipments.ttl#ram-portable> <http://purl.org/dc/terms/description> "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check." .
-</data/equipments.ttl#rations-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rations-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Rations (1 day)" .
-</data/equipments.ttl#rations-1-day> <http://purl.org/dc/terms/description> "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts." .
-</data/equipments.ttl#reliquary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#reliquary> <http://www.w3.org/2000/01/rdf-schema#label> "Reliquary" .
-</data/equipments.ttl#reliquary> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
-</data/equipments.ttl#reliquary> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
-</data/equipments.ttl#robes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#robes> <http://www.w3.org/2000/01/rdf-schema#label> "Robes" .
-</data/equipments.ttl#rope-hempen-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rope-hempen-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, hempen (50 feet)" .
-</data/equipments.ttl#rope-hempen-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
-</data/equipments.ttl#rope-silk-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rope-silk-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, silk (50 feet)" .
-</data/equipments.ttl#rope-silk-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
-</data/equipments.ttl#sack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sack> <http://www.w3.org/2000/01/rdf-schema#label> "Sack" .
-</data/equipments.ttl#scale-merchants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#scale-merchants> <http://www.w3.org/2000/01/rdf-schema#label> "Scale, merchant's" .
-</data/equipments.ttl#scale-merchants> <http://purl.org/dc/terms/description> "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth." .
-</data/equipments.ttl#sealing-wax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sealing-wax> <http://www.w3.org/2000/01/rdf-schema#label> "Sealing wax" .
-</data/equipments.ttl#shovel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#shovel> <http://www.w3.org/2000/01/rdf-schema#label> "Shovel" .
-</data/equipments.ttl#signal-whistle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#signal-whistle> <http://www.w3.org/2000/01/rdf-schema#label> "Signal whistle" .
-</data/equipments.ttl#signet-ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#signet-ring> <http://www.w3.org/2000/01/rdf-schema#label> "Signet ring" .
-</data/equipments.ttl#small-knife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#small-knife> <http://www.w3.org/2000/01/rdf-schema#label> "Small knife" .
-</data/equipments.ttl#small-knife> <http://purl.org/dc/terms/description> "A small knife, typically found in a scholar's pack." .
-</data/equipments.ttl#soap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#soap> <http://www.w3.org/2000/01/rdf-schema#label> "Soap" .
-</data/equipments.ttl#spellbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#spellbook> <http://www.w3.org/2000/01/rdf-schema#label> "Spellbook" .
-</data/equipments.ttl#spellbook> <http://purl.org/dc/terms/description> "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells." .
-</data/equipments.ttl#spike-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#spike-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Spike, iron" .
-</data/equipments.ttl#spyglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#spyglass> <http://www.w3.org/2000/01/rdf-schema#label> "Spyglass" .
-</data/equipments.ttl#spyglass> <http://purl.org/dc/terms/description> "Objects viewed through a spyglass are magnified to twice their size." .
-</data/equipments.ttl#string-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#string-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "String (10 feet)" .
-</data/equipments.ttl#string-10-feet> <http://purl.org/dc/terms/description> "A 10-foot length of string, typically found in a burglar's pack." .
-</data/equipments.ttl#tent-two-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#tent-two-person> <http://www.w3.org/2000/01/rdf-schema#label> "Tent, two-person" .
-</data/equipments.ttl#tent-two-person> <http://purl.org/dc/terms/description> "A simple and portable canvas shelter, a tent sleeps two." .
-</data/equipments.ttl#tinderbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#tinderbox> <http://www.w3.org/2000/01/rdf-schema#label> "Tinderbox" .
-</data/equipments.ttl#tinderbox> <http://purl.org/dc/terms/description> "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action." .
-</data/equipments.ttl#tinderbox> <http://purl.org/dc/terms/description> "Lighting any other fire takes 1 minute." .
-</data/equipments.ttl#torch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#torch> <http://www.w3.org/2000/01/rdf-schema#label> "Torch" .
-</data/equipments.ttl#torch> <http://purl.org/dc/terms/description> "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage." .
-</data/equipments.ttl#vestments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#vestments> <http://www.w3.org/2000/01/rdf-schema#label> "Vestments" .
-</data/equipments.ttl#vestments> <http://purl.org/dc/terms/description> "Religious clothing, typically found in a priest's pack." .
-</data/equipments.ttl#vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#vial> <http://www.w3.org/2000/01/rdf-schema#label> "Vial" .
-</data/equipments.ttl#waterskin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#waterskin> <http://www.w3.org/2000/01/rdf-schema#label> "Waterskin" .
-</data/equipments.ttl#whetstone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#whetstone> <http://www.w3.org/2000/01/rdf-schema#label> "Whetstone" .
-</data/equipments.ttl#burglars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#burglars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Burglar's Pack" .
-</data/equipments.ttl#diplomats-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#diplomats-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Diplomat's Pack" .
-</data/equipments.ttl#dungeoneers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#dungeoneers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Dungeoneer's Pack" .
-</data/equipments.ttl#entertainers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#entertainers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainer's Pack" .
-</data/equipments.ttl#explorers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#explorers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Explorer's Pack" .
-</data/equipments.ttl#priests-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#priests-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Priest's Pack" .
-</data/equipments.ttl#scholars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#scholars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Scholar's Pack" .
-</data/equipments.ttl#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#alchemists-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's Supplies" .
-</data/equipments.ttl#alchemists-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#brewers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Brewer's Supplies" .
-</data/equipments.ttl#brewers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#calligraphers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Calligrapher's Supplies" .
-</data/equipments.ttl#calligraphers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#carpenters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Carpenter's Tools" .
-</data/equipments.ttl#carpenters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#cartographers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cartographer's Tools" .
-</data/equipments.ttl#cartographers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#cobblers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cobbler's Tools" .
-</data/equipments.ttl#cobblers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#cooks-utensils> <http://www.w3.org/2000/01/rdf-schema#label> "Cook's utensils" .
-</data/equipments.ttl#cooks-utensils> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#glassblowers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Glassblower's Tools" .
-</data/equipments.ttl#glassblowers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#jewelers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Jeweler's Tools" .
-</data/equipments.ttl#jewelers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#leatherworkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Leatherworker's Tools" .
-</data/equipments.ttl#leatherworkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#masons-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Mason's Tools" .
-</data/equipments.ttl#masons-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#painters-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Painter's Supplies" .
-</data/equipments.ttl#painters-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#potters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Potter's Tools" .
-</data/equipments.ttl#potters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#smiths-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Smith's Tools" .
-</data/equipments.ttl#smiths-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#tinkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker's Tools" .
-</data/equipments.ttl#tinkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#weavers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Weaver's Tools" .
-</data/equipments.ttl#weavers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#woodcarvers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Woodcarver's Tools" .
-</data/equipments.ttl#woodcarvers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
-</data/equipments.ttl#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#dice-set> <http://www.w3.org/2000/01/rdf-schema#label> "Dice Set" .
-</data/equipments.ttl#dice-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
-</data/equipments.ttl#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#playing-card-set> <http://www.w3.org/2000/01/rdf-schema#label> "Playing Card Set" .
-</data/equipments.ttl#playing-card-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
-</data/equipments.ttl#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bagpipes> <http://www.w3.org/2000/01/rdf-schema#label> "Bagpipes" .
-</data/equipments.ttl#bagpipes> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#drum> <http://www.w3.org/2000/01/rdf-schema#label> "Drum" .
-</data/equipments.ttl#drum> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#dulcimer> <http://www.w3.org/2000/01/rdf-schema#label> "Dulcimer" .
-</data/equipments.ttl#dulcimer> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#flute> <http://www.w3.org/2000/01/rdf-schema#label> "Flute" .
-</data/equipments.ttl#flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lute> <http://www.w3.org/2000/01/rdf-schema#label> "Lute" .
-</data/equipments.ttl#lute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#lyre> <http://www.w3.org/2000/01/rdf-schema#label> "Lyre" .
-</data/equipments.ttl#lyre> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#horn> <http://www.w3.org/2000/01/rdf-schema#label> "Horn" .
-</data/equipments.ttl#horn> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pan-flute> <http://www.w3.org/2000/01/rdf-schema#label> "Pan flute" .
-</data/equipments.ttl#pan-flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#shawm> <http://www.w3.org/2000/01/rdf-schema#label> "Shawm" .
-</data/equipments.ttl#shawm> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#viol> <http://www.w3.org/2000/01/rdf-schema#label> "Viol" .
-</data/equipments.ttl#viol> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
-</data/equipments.ttl#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#navigators-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Navigator's Tools" .
-</data/equipments.ttl#navigators-tools> <http://purl.org/dc/terms/description> "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea." .
-</data/equipments.ttl#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#thieves-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Thieves' Tools" .
-</data/equipments.ttl#thieves-tools> <http://purl.org/dc/terms/description> "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks." .
-</data/equipments.ttl#camel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#camel> <http://www.w3.org/2000/01/rdf-schema#label> "Camel" .
-</data/equipments.ttl#donkey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#donkey> <http://www.w3.org/2000/01/rdf-schema#label> "Donkey" .
-</data/equipments.ttl#mule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#mule> <http://www.w3.org/2000/01/rdf-schema#label> "Mule" .
-</data/equipments.ttl#elephant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#elephant> <http://www.w3.org/2000/01/rdf-schema#label> "Elephant" .
-</data/equipments.ttl#horse-draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#horse-draft> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, draft" .
-</data/equipments.ttl#horse-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#horse-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, riding" .
-</data/equipments.ttl#mastiff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#mastiff> <http://www.w3.org/2000/01/rdf-schema#label> "Mastiff" .
-</data/equipments.ttl#pony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#pony> <http://www.w3.org/2000/01/rdf-schema#label> "Pony" .
-</data/equipments.ttl#warhorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#warhorse> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse" .
-</data/equipments.ttl#barding-padded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-padded> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Padded" .
-</data/equipments.ttl#barding-padded> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Leather" .
-</data/equipments.ttl#barding-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-studded-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-studded-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Studded Leather" .
-</data/equipments.ttl#barding-studded-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-hide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-hide> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Hide" .
-</data/equipments.ttl#barding-hide> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain shirt" .
-</data/equipments.ttl#barding-chain-shirt> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Scale mail" .
-</data/equipments.ttl#barding-scale-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Breastplate" .
-</data/equipments.ttl#barding-breastplate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-half-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-half-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Half plate" .
-</data/equipments.ttl#barding-half-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Ring mail" .
-</data/equipments.ttl#barding-ring-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain mail" .
-</data/equipments.ttl#barding-chain-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-splint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-splint> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Splint" .
-</data/equipments.ttl#barding-splint> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#barding-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#barding-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Plate" .
-</data/equipments.ttl#barding-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
-</data/equipments.ttl#bit-and-bridle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#bit-and-bridle> <http://www.w3.org/2000/01/rdf-schema#label> "Bit and bridle" .
-</data/equipments.ttl#carriage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#carriage> <http://www.w3.org/2000/01/rdf-schema#label> "Carriage" .
-</data/equipments.ttl#cart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#cart> <http://www.w3.org/2000/01/rdf-schema#label> "Cart" .
-</data/equipments.ttl#chariot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#chariot> <http://www.w3.org/2000/01/rdf-schema#label> "Chariot" .
-</data/equipments.ttl#animal-feed-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#animal-feed-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Feed (1 day)" .
-</data/equipments.ttl#saddle-exotic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#saddle-exotic> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Exotic" .
-</data/equipments.ttl#saddle-exotic> <http://purl.org/dc/terms/description> "An exotic saddle is required for riding any aquatic or flying mount." .
-</data/equipments.ttl#saddle-military> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#saddle-military> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Military" .
-</data/equipments.ttl#saddle-military> <http://purl.org/dc/terms/description> "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted." .
-</data/equipments.ttl#saddle-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#saddle-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Pack" .
-</data/equipments.ttl#saddle-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#saddle-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Riding" .
-</data/equipments.ttl#saddlebags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#saddlebags> <http://www.w3.org/2000/01/rdf-schema#label> "Saddlebags" .
-</data/equipments.ttl#sled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sled> <http://www.w3.org/2000/01/rdf-schema#label> "Sled" .
-</data/equipments.ttl#stabling-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#stabling-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Stabling (1 day)" .
-</data/equipments.ttl#wagon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#wagon> <http://www.w3.org/2000/01/rdf-schema#label> "Wagon" .
-</data/equipments.ttl#galley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#galley> <http://www.w3.org/2000/01/rdf-schema#label> "Galley" .
-</data/equipments.ttl#keelboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#keelboat> <http://www.w3.org/2000/01/rdf-schema#label> "Keelboat" .
-</data/equipments.ttl#keelboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
-</data/equipments.ttl#longship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#longship> <http://www.w3.org/2000/01/rdf-schema#label> "Longship" .
-</data/equipments.ttl#rowboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#rowboat> <http://www.w3.org/2000/01/rdf-schema#label> "Rowboat" .
-</data/equipments.ttl#rowboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
-</data/equipments.ttl#sailing-ship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#sailing-ship> <http://www.w3.org/2000/01/rdf-schema#label> "Sailing ship" .
-</data/equipments.ttl#warship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
-</data/equipments.ttl#warship> <http://www.w3.org/2000/01/rdf-schema#label> "Warship" .
+<#club> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#club> <http://www.w3.org/2000/01/rdf-schema#label> "Club" .
+<#dagger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#dagger> <http://www.w3.org/2000/01/rdf-schema#label> "Dagger" .
+<#greatclub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#greatclub> <http://www.w3.org/2000/01/rdf-schema#label> "Greatclub" .
+<#handaxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#handaxe> <http://www.w3.org/2000/01/rdf-schema#label> "Handaxe" .
+<#javelin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#javelin> <http://www.w3.org/2000/01/rdf-schema#label> "Javelin" .
+<#light-hammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#light-hammer> <http://www.w3.org/2000/01/rdf-schema#label> "Light hammer" .
+<#mace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#mace> <http://www.w3.org/2000/01/rdf-schema#label> "Mace" .
+<#quarterstaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#quarterstaff> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterstaff" .
+<#sickle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sickle> <http://www.w3.org/2000/01/rdf-schema#label> "Sickle" .
+<#spear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#spear> <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
+<#crossbow-light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crossbow-light> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, light" .
+<#dart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#dart> <http://www.w3.org/2000/01/rdf-schema#label> "Dart" .
+<#shortbow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#shortbow> <http://www.w3.org/2000/01/rdf-schema#label> "Shortbow" .
+<#sling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sling> <http://www.w3.org/2000/01/rdf-schema#label> "Sling" .
+<#battleaxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#battleaxe> <http://www.w3.org/2000/01/rdf-schema#label> "Battleaxe" .
+<#flail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#flail> <http://www.w3.org/2000/01/rdf-schema#label> "Flail" .
+<#glaive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#glaive> <http://www.w3.org/2000/01/rdf-schema#label> "Glaive" .
+<#greataxe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#greataxe> <http://www.w3.org/2000/01/rdf-schema#label> "Greataxe" .
+<#greatsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#greatsword> <http://www.w3.org/2000/01/rdf-schema#label> "Greatsword" .
+<#halberd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#halberd> <http://www.w3.org/2000/01/rdf-schema#label> "Halberd" .
+<#lance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lance> <http://www.w3.org/2000/01/rdf-schema#label> "Lance" .
+<#longsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#longsword> <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
+<#maul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#maul> <http://www.w3.org/2000/01/rdf-schema#label> "Maul" .
+<#morningstar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#morningstar> <http://www.w3.org/2000/01/rdf-schema#label> "Morningstar" .
+<#pike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pike> <http://www.w3.org/2000/01/rdf-schema#label> "Pike" .
+<#rapier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rapier> <http://www.w3.org/2000/01/rdf-schema#label> "Rapier" .
+<#scimitar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#scimitar> <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
+<#shortsword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#shortsword> <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
+<#trident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#trident> <http://www.w3.org/2000/01/rdf-schema#label> "Trident" .
+<#war-pick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#war-pick> <http://www.w3.org/2000/01/rdf-schema#label> "War pick" .
+<#warhammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#warhammer> <http://www.w3.org/2000/01/rdf-schema#label> "Warhammer" .
+<#whip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#whip> <http://www.w3.org/2000/01/rdf-schema#label> "Whip" .
+<#blowgun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#blowgun> <http://www.w3.org/2000/01/rdf-schema#label> "Blowgun" .
+<#crossbow-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crossbow-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, hand" .
+<#crossbow-heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crossbow-heavy> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow, heavy" .
+<#longbow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#longbow> <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
+<#net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#net> <http://www.w3.org/2000/01/rdf-schema#label> "Net" .
+<#padded-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#padded-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Padded Armor" .
+<#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Leather Armor" .
+<#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#studded-leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Studded Leather Armor" .
+<#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#hide-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Hide Armor" .
+<#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Shirt" .
+<#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Scale Mail" .
+<#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Breastplate" .
+<#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#half-plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Half Plate Armor" .
+<#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Ring Mail" .
+<#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Mail" .
+<#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#splint-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Splint Armor" .
+<#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Armor" .
+<#shield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#shield> <http://www.w3.org/2000/01/rdf-schema#label> "Shield" .
+<#abacus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#abacus> <http://www.w3.org/2000/01/rdf-schema#label> "Abacus" .
+<#acid-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#acid-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Acid (vial)" .
+<#acid-vial> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon." .
+<#acid-vial> <http://purl.org/dc/terms/description> "On a hit, the target takes 2d6 acid damage." .
+<#alchemists-fire-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#alchemists-fire-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's fire (flask)" .
+<#alchemists-fire-flask> <http://purl.org/dc/terms/description> "This sticky, adhesive fluid ignites when exposed to air." .
+<#alchemists-fire-flask> <http://purl.org/dc/terms/description> "As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon." .
+<#alchemists-fire-flask> <http://purl.org/dc/terms/description> "On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames." .
+<#alms-box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#alms-box> <http://www.w3.org/2000/01/rdf-schema#label> "Alms box" .
+<#alms-box> <http://purl.org/dc/terms/description> "A small box for alms, typically found in a priest's pack." .
+<#arrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#arrow> <http://www.w3.org/2000/01/rdf-schema#label> "Arrow" .
+<#block-of-incense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#block-of-incense> <http://www.w3.org/2000/01/rdf-schema#label> "Block of incense" .
+<#block-of-incense> <http://purl.org/dc/terms/description> "A block of incense, typically found in a priest's pack." .
+<#blowgun-needle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#blowgun-needle> <http://www.w3.org/2000/01/rdf-schema#label> "Blowgun needle" .
+<#censer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#censer> <http://www.w3.org/2000/01/rdf-schema#label> "Censer" .
+<#censer> <http://purl.org/dc/terms/description> "A censer, typically found in a priest's pack." .
+<#crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow bolt" .
+<#sling-bullet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sling-bullet> <http://www.w3.org/2000/01/rdf-schema#label> "Sling bullet" .
+<#amulet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#amulet> <http://www.w3.org/2000/01/rdf-schema#label> "Amulet" .
+<#amulet> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
+<#amulet> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
+<#antitoxin-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#antitoxin-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Antitoxin (vial)" .
+<#antitoxin-vial> <http://purl.org/dc/terms/description> "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs." .
+<#crystal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crystal> <http://www.w3.org/2000/01/rdf-schema#label> "Crystal" .
+<#crystal> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
+<#orb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#orb> <http://www.w3.org/2000/01/rdf-schema#label> "Orb" .
+<#orb> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
+<#rod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rod> <http://www.w3.org/2000/01/rdf-schema#label> "Rod" .
+<#rod> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
+<#staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff" .
+<#staff> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
+<#wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#wand> <http://www.w3.org/2000/01/rdf-schema#label> "Wand" .
+<#wand> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
+<#backpack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#backpack> <http://www.w3.org/2000/01/rdf-schema#label> "Backpack" .
+<#ball-bearings-bag-of-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ball-bearings-bag-of-1000> <http://www.w3.org/2000/01/rdf-schema#label> "Ball bearings (bag of 1,000)" .
+<#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side." .
+<#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone." .
+<#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
+<#barrel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barrel> <http://www.w3.org/2000/01/rdf-schema#label> "Barrel" .
+<#basket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#basket> <http://www.w3.org/2000/01/rdf-schema#label> "Basket" .
+<#bedroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bedroll> <http://www.w3.org/2000/01/rdf-schema#label> "Bedroll" .
+<#bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bell> <http://www.w3.org/2000/01/rdf-schema#label> "Bell" .
+<#blanket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#blanket> <http://www.w3.org/2000/01/rdf-schema#label> "Blanket" .
+<#block-and-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#block-and-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Block and tackle" .
+<#block-and-tackle> <http://purl.org/dc/terms/description> "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift." .
+<#book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#book> <http://www.w3.org/2000/01/rdf-schema#label> "Book" .
+<#book> <http://purl.org/dc/terms/description> "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section)." .
+<#bottle-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bottle-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Bottle, glass" .
+<#bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bucket> <http://www.w3.org/2000/01/rdf-schema#label> "Bucket" .
+<#caltrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#caltrops> <http://www.w3.org/2000/01/rdf-schema#label> "Caltrops" .
+<#caltrops> <http://purl.org/dc/terms/description> "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side." .
+<#caltrops> <http://purl.org/dc/terms/description> "Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage." .
+<#caltrops> <http://purl.org/dc/terms/description> "Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point." .
+<#caltrops> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
+<#candle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#candle> <http://www.w3.org/2000/01/rdf-schema#label> "Candle" .
+<#candle> <http://purl.org/dc/terms/description> "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet." .
+<#case-crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#case-crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Case, crossbow bolt" .
+<#case-crossbow-bolt> <http://purl.org/dc/terms/description> "This wooden case can hold up to twenty crossbow bolts." .
+<#case-map-or-scroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#case-map-or-scroll> <http://www.w3.org/2000/01/rdf-schema#label> "Case, map or scroll" .
+<#case-map-or-scroll> <http://purl.org/dc/terms/description> "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment." .
+<#chain-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chain-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Chain (10 feet)" .
+<#chain-10-feet> <http://purl.org/dc/terms/description> "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check." .
+<#chalk-1-piece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chalk-1-piece> <http://www.w3.org/2000/01/rdf-schema#label> "Chalk (1 piece)" .
+<#chest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chest> <http://www.w3.org/2000/01/rdf-schema#label> "Chest" .
+<#clothes-common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#clothes-common> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, common" .
+<#clothes-costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#clothes-costume> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, costume" .
+<#clothes-fine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#clothes-fine> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, fine" .
+<#clothes-travelers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#clothes-travelers> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, traveler's" .
+<#component-pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#component-pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Component pouch" .
+<#component-pouch> <http://purl.org/dc/terms/description> "A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)." .
+<#crowbar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#crowbar> <http://www.w3.org/2000/01/rdf-schema#label> "Crowbar" .
+<#crowbar> <http://purl.org/dc/terms/description> "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied." .
+<#sprig-of-mistletoe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sprig-of-mistletoe> <http://www.w3.org/2000/01/rdf-schema#label> "Sprig of mistletoe" .
+<#sprig-of-mistletoe> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
+<#totem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#totem> <http://www.w3.org/2000/01/rdf-schema#label> "Totem" .
+<#totem> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
+<#wooden-staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#wooden-staff> <http://www.w3.org/2000/01/rdf-schema#label> "Wooden staff" .
+<#wooden-staff> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
+<#yew-wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#yew-wand> <http://www.w3.org/2000/01/rdf-schema#label> "Yew wand" .
+<#yew-wand> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
+<#emblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#emblem> <http://www.w3.org/2000/01/rdf-schema#label> "Emblem" .
+<#emblem> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
+<#emblem> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
+<#fishing-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#fishing-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Fishing tackle" .
+<#fishing-tackle> <http://purl.org/dc/terms/description> "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting." .
+<#flask-or-tankard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#flask-or-tankard> <http://www.w3.org/2000/01/rdf-schema#label> "Flask or tankard" .
+<#grappling-hook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#grappling-hook> <http://www.w3.org/2000/01/rdf-schema#label> "Grappling hook" .
+<#hammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#hammer> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer" .
+<#hammer-sledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#hammer-sledge> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer, sledge" .
+<#holy-water-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#holy-water-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Holy water (flask)" .
+<#holy-water-flask> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon." .
+<#holy-water-flask> <http://purl.org/dc/terms/description> "If the target is a fiend or undead, it takes 2d6 radiant damage." .
+<#holy-water-flask> <http://purl.org/dc/terms/description> "A cleric or paladin may create holy water by performing a special ritual." .
+<#holy-water-flask> <http://purl.org/dc/terms/description> "The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot." .
+<#hourglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#hourglass> <http://www.w3.org/2000/01/rdf-schema#label> "Hourglass" .
+<#hunting-trap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#hunting-trap> <http://www.w3.org/2000/01/rdf-schema#label> "Hunting trap" .
+<#hunting-trap> <http://purl.org/dc/terms/description> "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground." .
+<#hunting-trap> <http://purl.org/dc/terms/description> "A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long)." .
+<#hunting-trap> <http://purl.org/dc/terms/description> "A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature." .
+<#ink-1-ounce-bottle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ink-1-ounce-bottle> <http://www.w3.org/2000/01/rdf-schema#label> "Ink (1 ounce bottle)" .
+<#ink-pen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ink-pen> <http://www.w3.org/2000/01/rdf-schema#label> "Ink pen" .
+<#jug-or-pitcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#jug-or-pitcher> <http://www.w3.org/2000/01/rdf-schema#label> "Jug or pitcher" .
+<#climbers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#climbers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Climber's Kit" .
+<#climbers-kit> <http://purl.org/dc/terms/description> "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor." .
+<#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#disguise-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Kit" .
+<#disguise-kit> <http://purl.org/dc/terms/description> "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise." .
+<#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#forgery-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Forgery Kit" .
+<#forgery-kit> <http://purl.org/dc/terms/description> "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document." .
+<#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#herbalism-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Herbalism Kit" .
+<#herbalism-kit> <http://purl.org/dc/terms/description> "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing." .
+<#healers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#healers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Healer's Kit" .
+<#healers-kit> <http://purl.org/dc/terms/description> "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check." .
+<#mess-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#mess-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Mess Kit" .
+<#mess-kit> <http://purl.org/dc/terms/description> "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl." .
+<#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#poisoners-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoner's Kit" .
+<#poisoners-kit> <http://purl.org/dc/terms/description> "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons." .
+<#ladder-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ladder-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder (10-foot)" .
+<#lamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lamp> <http://www.w3.org/2000/01/rdf-schema#label> "Lamp" .
+<#lamp> <http://purl.org/dc/terms/description> "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
+<#lantern-bullseye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lantern-bullseye> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, bullseye" .
+<#lantern-bullseye> <http://purl.org/dc/terms/description> "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
+<#lantern-hooded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lantern-hooded> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, hooded" .
+<#lantern-hooded> <http://purl.org/dc/terms/description> "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius." .
+<#little-bag-of-sand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#little-bag-of-sand> <http://www.w3.org/2000/01/rdf-schema#label> "Little bag of sand" .
+<#little-bag-of-sand> <http://purl.org/dc/terms/description> "A small bag of sand, typically found in a scholar's pack." .
+<#lock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lock> <http://www.w3.org/2000/01/rdf-schema#label> "Lock" .
+<#lock> <http://purl.org/dc/terms/description> "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices." .
+<#magnifying-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#magnifying-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Magnifying glass" .
+<#magnifying-glass> <http://purl.org/dc/terms/description> "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite." .
+<#magnifying-glass> <http://purl.org/dc/terms/description> "A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed." .
+<#manacles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#manacles> <http://www.w3.org/2000/01/rdf-schema#label> "Manacles" .
+<#manacles> <http://purl.org/dc/terms/description> "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check." .
+<#manacles> <http://purl.org/dc/terms/description> "Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points." .
+<#mirror-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#mirror-steel> <http://www.w3.org/2000/01/rdf-schema#label> "Mirror, steel" .
+<#oil-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#oil-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Oil (flask)" .
+<#oil-flask> <http://purl.org/dc/terms/description> "Oil usually comes in a clay flask that holds 1 pint." .
+<#oil-flask> <http://purl.org/dc/terms/description> "As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon." .
+<#oil-flask> <http://purl.org/dc/terms/description> "On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil." .
+<#oil-flask> <http://purl.org/dc/terms/description> "You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level." .
+<#oil-flask> <http://purl.org/dc/terms/description> "If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn." .
+<#paper-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#paper-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Paper (one sheet)" .
+<#parchment-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#parchment-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Parchment (one sheet)" .
+<#perfume-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#perfume-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Perfume (vial)" .
+<#pick-miners> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pick-miners> <http://www.w3.org/2000/01/rdf-schema#label> "Pick, miner's" .
+<#piton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#piton> <http://www.w3.org/2000/01/rdf-schema#label> "Piton" .
+<#poison-basic-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#poison-basic-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Poison, basic (vial)" .
+<#poison-basic-vial> <http://purl.org/dc/terms/description> "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying." .
+<#pole-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pole-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Pole (10-foot)" .
+<#pot-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pot-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Pot, iron" .
+<#pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Pouch" .
+<#pouch> <http://purl.org/dc/terms/description> "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)." .
+<#quiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#quiver> <http://www.w3.org/2000/01/rdf-schema#label> "Quiver" .
+<#quiver> <http://purl.org/dc/terms/description> "A quiver can hold up to 20 arrows." .
+<#ram-portable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#ram-portable> <http://www.w3.org/2000/01/rdf-schema#label> "Ram, portable" .
+<#ram-portable> <http://purl.org/dc/terms/description> "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check." .
+<#rations-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rations-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Rations (1 day)" .
+<#rations-1-day> <http://purl.org/dc/terms/description> "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts." .
+<#reliquary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#reliquary> <http://www.w3.org/2000/01/rdf-schema#label> "Reliquary" .
+<#reliquary> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
+<#reliquary> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
+<#robes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#robes> <http://www.w3.org/2000/01/rdf-schema#label> "Robes" .
+<#rope-hempen-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rope-hempen-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, hempen (50 feet)" .
+<#rope-hempen-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
+<#rope-silk-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rope-silk-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, silk (50 feet)" .
+<#rope-silk-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
+<#sack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sack> <http://www.w3.org/2000/01/rdf-schema#label> "Sack" .
+<#scale-merchants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#scale-merchants> <http://www.w3.org/2000/01/rdf-schema#label> "Scale, merchant's" .
+<#scale-merchants> <http://purl.org/dc/terms/description> "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth." .
+<#sealing-wax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sealing-wax> <http://www.w3.org/2000/01/rdf-schema#label> "Sealing wax" .
+<#shovel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#shovel> <http://www.w3.org/2000/01/rdf-schema#label> "Shovel" .
+<#signal-whistle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#signal-whistle> <http://www.w3.org/2000/01/rdf-schema#label> "Signal whistle" .
+<#signet-ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#signet-ring> <http://www.w3.org/2000/01/rdf-schema#label> "Signet ring" .
+<#small-knife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#small-knife> <http://www.w3.org/2000/01/rdf-schema#label> "Small knife" .
+<#small-knife> <http://purl.org/dc/terms/description> "A small knife, typically found in a scholar's pack." .
+<#soap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#soap> <http://www.w3.org/2000/01/rdf-schema#label> "Soap" .
+<#spellbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#spellbook> <http://www.w3.org/2000/01/rdf-schema#label> "Spellbook" .
+<#spellbook> <http://purl.org/dc/terms/description> "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells." .
+<#spike-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#spike-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Spike, iron" .
+<#spyglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#spyglass> <http://www.w3.org/2000/01/rdf-schema#label> "Spyglass" .
+<#spyglass> <http://purl.org/dc/terms/description> "Objects viewed through a spyglass are magnified to twice their size." .
+<#string-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#string-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "String (10 feet)" .
+<#string-10-feet> <http://purl.org/dc/terms/description> "A 10-foot length of string, typically found in a burglar's pack." .
+<#tent-two-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#tent-two-person> <http://www.w3.org/2000/01/rdf-schema#label> "Tent, two-person" .
+<#tent-two-person> <http://purl.org/dc/terms/description> "A simple and portable canvas shelter, a tent sleeps two." .
+<#tinderbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#tinderbox> <http://www.w3.org/2000/01/rdf-schema#label> "Tinderbox" .
+<#tinderbox> <http://purl.org/dc/terms/description> "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action." .
+<#tinderbox> <http://purl.org/dc/terms/description> "Lighting any other fire takes 1 minute." .
+<#torch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#torch> <http://www.w3.org/2000/01/rdf-schema#label> "Torch" .
+<#torch> <http://purl.org/dc/terms/description> "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage." .
+<#vestments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#vestments> <http://www.w3.org/2000/01/rdf-schema#label> "Vestments" .
+<#vestments> <http://purl.org/dc/terms/description> "Religious clothing, typically found in a priest's pack." .
+<#vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#vial> <http://www.w3.org/2000/01/rdf-schema#label> "Vial" .
+<#waterskin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#waterskin> <http://www.w3.org/2000/01/rdf-schema#label> "Waterskin" .
+<#whetstone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#whetstone> <http://www.w3.org/2000/01/rdf-schema#label> "Whetstone" .
+<#burglars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#burglars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Burglar's Pack" .
+<#diplomats-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#diplomats-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Diplomat's Pack" .
+<#dungeoneers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#dungeoneers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Dungeoneer's Pack" .
+<#entertainers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#entertainers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainer's Pack" .
+<#explorers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#explorers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Explorer's Pack" .
+<#priests-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#priests-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Priest's Pack" .
+<#scholars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#scholars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Scholar's Pack" .
+<#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#alchemists-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's Supplies" .
+<#alchemists-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#brewers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Brewer's Supplies" .
+<#brewers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#calligraphers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Calligrapher's Supplies" .
+<#calligraphers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#carpenters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Carpenter's Tools" .
+<#carpenters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#cartographers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cartographer's Tools" .
+<#cartographers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#cobblers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cobbler's Tools" .
+<#cobblers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#cooks-utensils> <http://www.w3.org/2000/01/rdf-schema#label> "Cook's utensils" .
+<#cooks-utensils> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#glassblowers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Glassblower's Tools" .
+<#glassblowers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#jewelers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Jeweler's Tools" .
+<#jewelers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#leatherworkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Leatherworker's Tools" .
+<#leatherworkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#masons-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Mason's Tools" .
+<#masons-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#painters-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Painter's Supplies" .
+<#painters-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#potters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Potter's Tools" .
+<#potters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#smiths-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Smith's Tools" .
+<#smiths-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#tinkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker's Tools" .
+<#tinkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#weavers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Weaver's Tools" .
+<#weavers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#woodcarvers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Woodcarver's Tools" .
+<#woodcarvers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
+<#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#dice-set> <http://www.w3.org/2000/01/rdf-schema#label> "Dice Set" .
+<#dice-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
+<#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#playing-card-set> <http://www.w3.org/2000/01/rdf-schema#label> "Playing Card Set" .
+<#playing-card-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
+<#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bagpipes> <http://www.w3.org/2000/01/rdf-schema#label> "Bagpipes" .
+<#bagpipes> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#drum> <http://www.w3.org/2000/01/rdf-schema#label> "Drum" .
+<#drum> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#dulcimer> <http://www.w3.org/2000/01/rdf-schema#label> "Dulcimer" .
+<#dulcimer> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#flute> <http://www.w3.org/2000/01/rdf-schema#label> "Flute" .
+<#flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lute> <http://www.w3.org/2000/01/rdf-schema#label> "Lute" .
+<#lute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#lyre> <http://www.w3.org/2000/01/rdf-schema#label> "Lyre" .
+<#lyre> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#horn> <http://www.w3.org/2000/01/rdf-schema#label> "Horn" .
+<#horn> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pan-flute> <http://www.w3.org/2000/01/rdf-schema#label> "Pan flute" .
+<#pan-flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#shawm> <http://www.w3.org/2000/01/rdf-schema#label> "Shawm" .
+<#shawm> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#viol> <http://www.w3.org/2000/01/rdf-schema#label> "Viol" .
+<#viol> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
+<#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#navigators-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Navigator's Tools" .
+<#navigators-tools> <http://purl.org/dc/terms/description> "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea." .
+<#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#thieves-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Thieves' Tools" .
+<#thieves-tools> <http://purl.org/dc/terms/description> "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks." .
+<#camel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#camel> <http://www.w3.org/2000/01/rdf-schema#label> "Camel" .
+<#donkey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#donkey> <http://www.w3.org/2000/01/rdf-schema#label> "Donkey" .
+<#mule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#mule> <http://www.w3.org/2000/01/rdf-schema#label> "Mule" .
+<#elephant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#elephant> <http://www.w3.org/2000/01/rdf-schema#label> "Elephant" .
+<#horse-draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#horse-draft> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, draft" .
+<#horse-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#horse-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, riding" .
+<#mastiff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#mastiff> <http://www.w3.org/2000/01/rdf-schema#label> "Mastiff" .
+<#pony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#pony> <http://www.w3.org/2000/01/rdf-schema#label> "Pony" .
+<#warhorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#warhorse> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse" .
+<#barding-padded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-padded> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Padded" .
+<#barding-padded> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Leather" .
+<#barding-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-studded-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-studded-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Studded Leather" .
+<#barding-studded-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-hide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-hide> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Hide" .
+<#barding-hide> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain shirt" .
+<#barding-chain-shirt> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Scale mail" .
+<#barding-scale-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Breastplate" .
+<#barding-breastplate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-half-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-half-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Half plate" .
+<#barding-half-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Ring mail" .
+<#barding-ring-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain mail" .
+<#barding-chain-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-splint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-splint> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Splint" .
+<#barding-splint> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#barding-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#barding-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Plate" .
+<#barding-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
+<#bit-and-bridle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#bit-and-bridle> <http://www.w3.org/2000/01/rdf-schema#label> "Bit and bridle" .
+<#carriage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#carriage> <http://www.w3.org/2000/01/rdf-schema#label> "Carriage" .
+<#cart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#cart> <http://www.w3.org/2000/01/rdf-schema#label> "Cart" .
+<#chariot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#chariot> <http://www.w3.org/2000/01/rdf-schema#label> "Chariot" .
+<#animal-feed-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#animal-feed-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Feed (1 day)" .
+<#saddle-exotic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#saddle-exotic> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Exotic" .
+<#saddle-exotic> <http://purl.org/dc/terms/description> "An exotic saddle is required for riding any aquatic or flying mount." .
+<#saddle-military> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#saddle-military> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Military" .
+<#saddle-military> <http://purl.org/dc/terms/description> "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted." .
+<#saddle-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#saddle-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Pack" .
+<#saddle-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#saddle-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Riding" .
+<#saddlebags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#saddlebags> <http://www.w3.org/2000/01/rdf-schema#label> "Saddlebags" .
+<#sled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sled> <http://www.w3.org/2000/01/rdf-schema#label> "Sled" .
+<#stabling-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#stabling-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Stabling (1 day)" .
+<#wagon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#wagon> <http://www.w3.org/2000/01/rdf-schema#label> "Wagon" .
+<#galley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#galley> <http://www.w3.org/2000/01/rdf-schema#label> "Galley" .
+<#keelboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#keelboat> <http://www.w3.org/2000/01/rdf-schema#label> "Keelboat" .
+<#keelboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
+<#longship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#longship> <http://www.w3.org/2000/01/rdf-schema#label> "Longship" .
+<#rowboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#rowboat> <http://www.w3.org/2000/01/rdf-schema#label> "Rowboat" .
+<#rowboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
+<#sailing-ship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#sailing-ship> <http://www.w3.org/2000/01/rdf-schema#label> "Sailing ship" .
+<#warship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
+<#warship> <http://www.w3.org/2000/01/rdf-schema#label> "Warship" .

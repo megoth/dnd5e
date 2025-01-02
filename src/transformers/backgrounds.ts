@@ -17,7 +17,7 @@ function transformBackground(
 ): Background {
   const background = ldoDataset
     .usingType(BackgroundShapeType)
-    .fromSubject(dataUrl("backgrounds", data.index));
+    .fromSubject(`#${data.index}`);
   background.type = type("Background");
   background.label = data.name;
   if (data.starting_proficiencies) {

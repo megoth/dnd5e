@@ -113,7 +113,6 @@ export interface Choice {
   choose?: number;
   ofType?: string;
   from?: OptionSet;
-  fromEquipmentCategory?: EquipmentCategoryOptionSet;
   fromResourceList?: ResourceListOptionSet;
 }
 
@@ -142,6 +141,7 @@ export interface Class {
   proficiencyChoices?: Choice[];
   savingThrows?: AbilityScore[];
   startingEquipment?: StartingEquipment[];
+  startingEquipmentOptions?: Choice[];
 }
 
 /**
@@ -171,9 +171,7 @@ export interface CountOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
   count?: number;
-  of?: {
-    "@id": string;
-  };
+  of?: Equipment;
 }
 
 /**
@@ -242,15 +240,8 @@ export interface EquipmentCategory {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
-}
-
-/**
- * EquipmentCategoryOptionSet Type
- */
-export interface EquipmentCategoryOptionSet {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  equipmentCategory?: EquipmentCategory;
+  label: string;
+  equipmentList?: Equipment[];
 }
 
 /**
@@ -325,6 +316,7 @@ export interface OptionSet {
   choices?: ChoiceOption[];
   counts?: CountOption[];
   damages?: DamageOption[];
+  equipmentCategory?: EquipmentCategory;
   ideals?: IdealOption[];
   multiples?: MultipleOption[];
   references?: ReferenceOption[];

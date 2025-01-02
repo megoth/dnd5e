@@ -22,7 +22,6 @@ import {
   DifficultyClass,
   Equipment,
   EquipmentCategory,
-  EquipmentCategoryOptionSet,
   IdealOption,
   Language,
   Multiclassing,
@@ -227,16 +226,6 @@ export const EquipmentCategoryShapeType: ShapeType<EquipmentCategory> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
   context: dnd5eContext,
 };
-
-/**
- * EquipmentCategoryOptionSet ShapeType
- */
-export const EquipmentCategoryOptionSetShapeType: ShapeType<EquipmentCategoryOptionSet> =
-  {
-    schema: dnd5eSchema,
-    shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategoryOptionSet",
-    context: dnd5eContext,
-  };
 
 /**
  * IdealOption ShapeType

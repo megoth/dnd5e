@@ -12,7 +12,7 @@ function transformAlignment(
 ): Alignment {
   const alignment = ldoDataset
     .usingType(AlignmentShapeType)
-    .fromSubject(dataUrl("alignments", data.index));
+    .fromSubject(`#${data.index}`);
   alignment.type = type("Alignment");
   alignment.label = data.name;
   alignment.abbreviation = data.abbreviation;

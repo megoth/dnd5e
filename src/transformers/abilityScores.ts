@@ -12,7 +12,7 @@ function transformAbilityScore(
 ): AbilityScore {
   const abilityScore = ldoDataset
     .usingType(AbilityScoreShapeType)
-    .fromSubject(dataUrl("abilityScores", data.index));
+    .fromSubject(`#${data.index}`);
   abilityScore.type = type("AbilityScore");
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;

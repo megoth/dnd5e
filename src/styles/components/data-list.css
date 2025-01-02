@@ -5,6 +5,9 @@
 .data-list > dt {
     @apply float-start clear-start font-bold mr-2 -ms-4;
 }
+.data-list > dt:after {
+    content: ":";
+}
 .data-list > dd {
     @apply hyphens-none;
 }

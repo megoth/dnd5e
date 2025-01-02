@@ -4,6 +4,7 @@ import {
   AbilityScoreShapeType,
   ActionOptionShapeType,
   ChoiceOptionShapeType,
+  CountOptionShapeType,
   EquipmentShapeType,
   LanguageShapeType,
   MultipleOptionShapeType,
@@ -15,6 +16,7 @@ import {
 import {
   ActionOption,
   ChoiceOption,
+  CountOption,
   ReferenceOption,
   ScorePrerequisiteOption,
 } from "../ldo/dnd5e.typings";
@@ -31,6 +33,23 @@ export function transformChoiceOption(
 ): ChoiceOption {
   return ldoDataset.usingType(ChoiceOptionShapeType).fromJson({
     choice: transformChoice(data.choice, ldoDataset),
+  });
+}
+
+export interface ICountedReferenceOption {
+  count?: number;
+  of?: components["schemas"]["APIReference"];
+}
+
+export function transformCountedReferenceOption(
+  data: ICountedReferenceOption,
+  ldoDataset = createLdoDataset(),
+): CountOption {
+  return ldoDataset.usingType(CountOptionShapeType).fromJson({
+    count: data.count,
+    of: ldoDataset
+      .usingType(EquipmentShapeType)
+      .fromSubject(dataUrl("equipments", data.of.index)),
   });
 }
 
@@ -133,8 +152,11 @@ export function transformOption(
     //   return null;
     case "choice":
       return transformChoiceOption(data as IChoiceOption, ldoDataset);
-    // case "counted_reference":
-    //   return null;
+    case "counted_reference":
+      return transformCountedReferenceOption(
+        data as ICountedReferenceOption,
+        ldoDataset,
+      );
     // case "ideal":
     //   return null;
     case "multiple":

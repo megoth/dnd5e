@@ -12,7 +12,7 @@ export function transformSkill(
 ): Skill {
   const skill = ldoDataset
     .usingType(SkillShapeType)
-    .fromSubject(dataUrl("skills", data.index));
+    .fromSubject(`#${data.index}`);
   skill.type = type("Skill");
   skill.label = data.name;
   skill.description = data.desc;

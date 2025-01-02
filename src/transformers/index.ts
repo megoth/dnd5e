@@ -10,6 +10,7 @@ import languages from "../dnd5eapi-data/5e-SRD-Languages.json";
 import proficiencies from "../dnd5eapi-data/5e-SRD-Proficiencies.json";
 import skills from "../dnd5eapi-data/5e-SRD-Skills.json";
 import equipment from "../dnd5eapi-data/5e-SRD-Equipment.json";
+import equipmentCategories from "../dnd5eapi-data/5e-SRD-Equipment-Categories.json";
 
 import writeAlignments from "./alignments";
 import writeAbilityScores from "./abilityScores";
@@ -21,6 +22,7 @@ import writeConditions from "./conditions";
 import writeBackgrounds from "./backgrounds";
 import writeClasses from "./classes";
 import writeEquipment from "./equipment";
+import writeEquipmentCategory from "./equipmentCategory";
 
 export default async function transformData() {
   return Promise.all([
@@ -31,6 +33,7 @@ export default async function transformData() {
     writeConditions(conditions),
     writeDamageTypes(damageTypes),
     writeEquipment(equipment),
+    writeEquipmentCategory(equipmentCategories),
     writeLanguages(languages as Array<components["schemas"]["Language"]>),
     writeProficiencies(proficiencies),
     writeSkills(skills),

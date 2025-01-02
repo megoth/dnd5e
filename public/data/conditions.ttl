@@ -1,79 +1,79 @@
-</data/conditions.ttl#blinded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#blinded> <http://www.w3.org/2000/01/rdf-schema#label> "Blinded" .
-</data/conditions.ttl#blinded> <http://purl.org/dc/terms/description> "- A blinded creature can't see and automatically fails any ability check that requires sight." .
-</data/conditions.ttl#blinded> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage." .
-</data/conditions.ttl#charmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#charmed> <http://www.w3.org/2000/01/rdf-schema#label> "Charmed" .
-</data/conditions.ttl#charmed> <http://purl.org/dc/terms/description> "- A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects." .
-</data/conditions.ttl#charmed> <http://purl.org/dc/terms/description> "- The charmer has advantage on any ability check to interact socially with the creature." .
-</data/conditions.ttl#deafened> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#deafened> <http://www.w3.org/2000/01/rdf-schema#label> "Deafened" .
-</data/conditions.ttl#deafened> <http://purl.org/dc/terms/description> "- A deafened creature can't hear and automatically fails any ability check that requires hearing." .
-</data/conditions.ttl#frightened> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#frightened> <http://www.w3.org/2000/01/rdf-schema#label> "Frightened" .
-</data/conditions.ttl#frightened> <http://purl.org/dc/terms/description> "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight." .
-</data/conditions.ttl#frightened> <http://purl.org/dc/terms/description> "- The creature can't willingly move closer to the source of its fear." .
-</data/conditions.ttl#grappled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#grappled> <http://www.w3.org/2000/01/rdf-schema#label> "Grappled" .
-</data/conditions.ttl#grappled> <http://purl.org/dc/terms/description> "- A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed." .
-</data/conditions.ttl#grappled> <http://purl.org/dc/terms/description> "- The condition ends if the grappler is incapacitated (see the condition)." .
-</data/conditions.ttl#grappled> <http://purl.org/dc/terms/description> "- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell." .
-</data/conditions.ttl#incapacitated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#incapacitated> <http://www.w3.org/2000/01/rdf-schema#label> "Incapacitated" .
-</data/conditions.ttl#incapacitated> <http://purl.org/dc/terms/description> "- An incapacitated creature can't take actions or reactions." .
-</data/conditions.ttl#invisible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#invisible> <http://www.w3.org/2000/01/rdf-schema#label> "Invisible" .
-</data/conditions.ttl#invisible> <http://purl.org/dc/terms/description> "- An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves." .
-</data/conditions.ttl#invisible> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage." .
-</data/conditions.ttl#paralyzed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#paralyzed> <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzed" .
-</data/conditions.ttl#paralyzed> <http://purl.org/dc/terms/description> "- A paralyzed creature is incapacitated (see the condition) and can't move or speak." .
-</data/conditions.ttl#paralyzed> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
-</data/conditions.ttl#paralyzed> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
-</data/conditions.ttl#paralyzed> <http://purl.org/dc/terms/description> "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature." .
-</data/conditions.ttl#petrified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#petrified> <http://www.w3.org/2000/01/rdf-schema#label> "Petrified" .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging." .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings." .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- The creature has resistance to all damage." .
-</data/conditions.ttl#petrified> <http://purl.org/dc/terms/description> "- The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized." .
-</data/conditions.ttl#poisoned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#poisoned> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoned" .
-</data/conditions.ttl#poisoned> <http://purl.org/dc/terms/description> "- A poisoned creature has disadvantage on attack rolls and ability checks." .
-</data/conditions.ttl#prone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#prone> <http://www.w3.org/2000/01/rdf-schema#label> "Prone" .
-</data/conditions.ttl#prone> <http://purl.org/dc/terms/description> "- A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition." .
-</data/conditions.ttl#prone> <http://purl.org/dc/terms/description> "- The creature has disadvantage on attack rolls." .
-</data/conditions.ttl#prone> <http://purl.org/dc/terms/description> "- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage." .
-</data/conditions.ttl#restrained> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#restrained> <http://www.w3.org/2000/01/rdf-schema#label> "Restrained" .
-</data/conditions.ttl#restrained> <http://purl.org/dc/terms/description> "- A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed." .
-</data/conditions.ttl#restrained> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage." .
-</data/conditions.ttl#restrained> <http://purl.org/dc/terms/description> "- The creature has disadvantage on Dexterity saving throws." .
-</data/conditions.ttl#stunned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#stunned> <http://www.w3.org/2000/01/rdf-schema#label> "Stunned" .
-</data/conditions.ttl#stunned> <http://purl.org/dc/terms/description> "- A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly." .
-</data/conditions.ttl#stunned> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
-</data/conditions.ttl#stunned> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
-</data/conditions.ttl#unconscious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#unconscious> <http://www.w3.org/2000/01/rdf-schema#label> "Unconscious" .
-</data/conditions.ttl#unconscious> <http://purl.org/dc/terms/description> "- An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings." .
-</data/conditions.ttl#unconscious> <http://purl.org/dc/terms/description> "- The creature drops whatever it's holding and falls prone." .
-</data/conditions.ttl#unconscious> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
-</data/conditions.ttl#unconscious> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
-</data/conditions.ttl#unconscious> <http://purl.org/dc/terms/description> "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature." .
-</data/conditions.ttl#exhaustion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
-</data/conditions.ttl#exhaustion> <http://www.w3.org/2000/01/rdf-schema#label> "Exhaustion" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description." .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "1 - Disadvantage on ability checks" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "2 - Speed halved" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "3 - Disadvantage on attack rolls and saving throws" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "4 - Hit point maximum halved" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "5 - Speed reduced to 0" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "6 - Death" .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description." .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks." .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1." .
-</data/conditions.ttl#exhaustion> <http://purl.org/dc/terms/description> "Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink." .
+<#blinded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#blinded> <http://www.w3.org/2000/01/rdf-schema#label> "Blinded" .
+<#blinded> <http://purl.org/dc/terms/description> "- A blinded creature can't see and automatically fails any ability check that requires sight." .
+<#blinded> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage." .
+<#charmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#charmed> <http://www.w3.org/2000/01/rdf-schema#label> "Charmed" .
+<#charmed> <http://purl.org/dc/terms/description> "- A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects." .
+<#charmed> <http://purl.org/dc/terms/description> "- The charmer has advantage on any ability check to interact socially with the creature." .
+<#deafened> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#deafened> <http://www.w3.org/2000/01/rdf-schema#label> "Deafened" .
+<#deafened> <http://purl.org/dc/terms/description> "- A deafened creature can't hear and automatically fails any ability check that requires hearing." .
+<#frightened> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#frightened> <http://www.w3.org/2000/01/rdf-schema#label> "Frightened" .
+<#frightened> <http://purl.org/dc/terms/description> "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight." .
+<#frightened> <http://purl.org/dc/terms/description> "- The creature can't willingly move closer to the source of its fear." .
+<#grappled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#grappled> <http://www.w3.org/2000/01/rdf-schema#label> "Grappled" .
+<#grappled> <http://purl.org/dc/terms/description> "- A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed." .
+<#grappled> <http://purl.org/dc/terms/description> "- The condition ends if the grappler is incapacitated (see the condition)." .
+<#grappled> <http://purl.org/dc/terms/description> "- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell." .
+<#incapacitated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#incapacitated> <http://www.w3.org/2000/01/rdf-schema#label> "Incapacitated" .
+<#incapacitated> <http://purl.org/dc/terms/description> "- An incapacitated creature can't take actions or reactions." .
+<#invisible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#invisible> <http://www.w3.org/2000/01/rdf-schema#label> "Invisible" .
+<#invisible> <http://purl.org/dc/terms/description> "- An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves." .
+<#invisible> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage." .
+<#paralyzed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#paralyzed> <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzed" .
+<#paralyzed> <http://purl.org/dc/terms/description> "- A paralyzed creature is incapacitated (see the condition) and can't move or speak." .
+<#paralyzed> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
+<#paralyzed> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
+<#paralyzed> <http://purl.org/dc/terms/description> "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature." .
+<#petrified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#petrified> <http://www.w3.org/2000/01/rdf-schema#label> "Petrified" .
+<#petrified> <http://purl.org/dc/terms/description> "- A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging." .
+<#petrified> <http://purl.org/dc/terms/description> "- The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings." .
+<#petrified> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
+<#petrified> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
+<#petrified> <http://purl.org/dc/terms/description> "- The creature has resistance to all damage." .
+<#petrified> <http://purl.org/dc/terms/description> "- The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized." .
+<#poisoned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#poisoned> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoned" .
+<#poisoned> <http://purl.org/dc/terms/description> "- A poisoned creature has disadvantage on attack rolls and ability checks." .
+<#prone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#prone> <http://www.w3.org/2000/01/rdf-schema#label> "Prone" .
+<#prone> <http://purl.org/dc/terms/description> "- A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition." .
+<#prone> <http://purl.org/dc/terms/description> "- The creature has disadvantage on attack rolls." .
+<#prone> <http://purl.org/dc/terms/description> "- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage." .
+<#restrained> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#restrained> <http://www.w3.org/2000/01/rdf-schema#label> "Restrained" .
+<#restrained> <http://purl.org/dc/terms/description> "- A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed." .
+<#restrained> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage." .
+<#restrained> <http://purl.org/dc/terms/description> "- The creature has disadvantage on Dexterity saving throws." .
+<#stunned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#stunned> <http://www.w3.org/2000/01/rdf-schema#label> "Stunned" .
+<#stunned> <http://purl.org/dc/terms/description> "- A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly." .
+<#stunned> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
+<#stunned> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
+<#unconscious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#unconscious> <http://www.w3.org/2000/01/rdf-schema#label> "Unconscious" .
+<#unconscious> <http://purl.org/dc/terms/description> "- An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings." .
+<#unconscious> <http://purl.org/dc/terms/description> "- The creature drops whatever it's holding and falls prone." .
+<#unconscious> <http://purl.org/dc/terms/description> "- The creature automatically fails Strength and Dexterity saving throws." .
+<#unconscious> <http://purl.org/dc/terms/description> "- Attack rolls against the creature have advantage." .
+<#unconscious> <http://purl.org/dc/terms/description> "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature." .
+<#exhaustion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Condition> .
+<#exhaustion> <http://www.w3.org/2000/01/rdf-schema#label> "Exhaustion" .
+<#exhaustion> <http://purl.org/dc/terms/description> "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description." .
+<#exhaustion> <http://purl.org/dc/terms/description> "1 - Disadvantage on ability checks" .
+<#exhaustion> <http://purl.org/dc/terms/description> "2 - Speed halved" .
+<#exhaustion> <http://purl.org/dc/terms/description> "3 - Disadvantage on attack rolls and saving throws" .
+<#exhaustion> <http://purl.org/dc/terms/description> "4 - Hit point maximum halved" .
+<#exhaustion> <http://purl.org/dc/terms/description> "5 - Speed reduced to 0" .
+<#exhaustion> <http://purl.org/dc/terms/description> "6 - Death" .
+<#exhaustion> <http://purl.org/dc/terms/description> "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description." .
+<#exhaustion> <http://purl.org/dc/terms/description> "A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks." .
+<#exhaustion> <http://purl.org/dc/terms/description> "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1." .
+<#exhaustion> <http://purl.org/dc/terms/description> "Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink." .
