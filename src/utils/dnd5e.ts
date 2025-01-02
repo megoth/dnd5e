@@ -1,6 +1,10 @@
 import { Choice, Class } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 
+export function classHasRage(classInfo: Class): boolean {
+  return !!classInfo.levels.find((level) => !!level.classSpecific?.rageCount);
+}
+
 export function choiceLabels(choice: Choice) {
   return [
     choice.from.choices?.flatMap((option) => choiceLabels(option.choice)),
@@ -76,6 +80,10 @@ export function dataUrl(type: string, id: string = ""): string {
 export function apiUrlToSubjectUrl(apiUrl: string): string {
   const [_, type, id] = apiUrl.match(/api\/(\w+)\/(\S+)/);
   return dataUrl(type, id);
+}
+
+export function rageCount(count: string): string {
+  return parseInt(count, 10) === 9999 ? "Unlimited" : count;
 }
 
 export function vocabUrl(id: string): string {

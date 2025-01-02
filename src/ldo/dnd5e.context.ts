@@ -297,6 +297,203 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subfeatureOptions",
     "@type": "@id",
   },
+  spellcasting: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellcasting",
+    "@type": "@id",
+  },
+  cantripsKnown: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#cantripsKnown",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellsKnown: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellsKnown",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel1: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel2: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel3: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel3",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel4: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel4",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel5: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel5",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel6: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel6",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel7: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel7",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel8: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel8",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  spellSlotsLevel9: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  classSpecific: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#classSpecific",
+    "@type": "@id",
+  },
+  rageCount: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#rageCount",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  rageDamageBonus: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#rageDamageBonus",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  brutalCriticalDice: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#brutalCriticalDice",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  bardicInspirationDice: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#bardicInspirationDice",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  songOfRestDie: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#songOfRestDie",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  magicalSecretsMax5: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax5",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  magicalSecretsMax7: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax7",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  magicalSecretsMax9: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  channelDivinityChargers: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#channelDivinityChargers",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  destroyUndeadCr: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#destroyUndeadCr",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  wildShapeMaxCr: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#wildShapeMaxCr",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  wildShapeSwim: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#wildShapeSwim",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+  },
+  wildShapeFly: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#wildShapeFly",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+  },
+  actionSurges: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#actionSurges",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  indomitableUses: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#indomitableUses",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  extraAttacks: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#extraAttacks",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  kiPoints: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#kiPoints",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  unarmoredMovement: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#unarmoredMovement",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  martialArts: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#martialArts",
+    "@type": "@id",
+  },
+  diceCount: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#diceCount",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  diceValue: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#diceValue",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  auraRange: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#auraRange",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  favoredEnemies: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#favoredEnemies",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  favoredTerrain: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#favoredTerrain",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  sneakAttack: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#sneakAttack",
+    "@type": "@id",
+  },
+  sorceryPoints: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#sorceryPoints",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  metamagicKnown: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#metamagicKnown",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  creatingSpellSlots: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#creatingSpellSlots",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  spellSlotLevel: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotLevel",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  sorceryPointCost: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#sorceryPointCost",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  invocationsKnown: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#invocationsKnown",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  mysticArcanumLevel6: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel6",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  mysticArcanumLevel7: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel7",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  mysticArcanumLevel8: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel8",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  mysticArcanumLevel9: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  arcaneRecoverLevels: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#arcaneRecoverLevels",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
   multiclassing: {
     "@id": "https://dnd5e.app/vocab/dnd5e#multiclassing",
     "@type": "@id",

@@ -29,6 +29,7 @@
 :equipmentPageTitle skos:definition "Equipment"@en-US .
 :faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
 :faqShort skos:definition "FAQ"@en-US .
+:features skos:definition "Features"@en-US .
 :hitDie skos:definition "Hit Die"@en-US .
 :hitDiePerClassLevel skos:definition "1d{$hitDie} per {$className} level"@en-US .
 :hitPoints skos:definition "Hit Points"@en-US .
@@ -38,6 +39,7 @@
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .
+:level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
 :locale-nb-NO skos:definition "Norwegian"@en-US .
 :loggedIn skos:definition "Logged in as {$name}"@en-US .
@@ -54,8 +56,11 @@
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
+:proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 :racesPageTitle skos:definition "Races"@en-US .
+:rageDamage skos:definition "Rage Damage"@en-US .
+:rages skos:definition "Rages"@en-US .
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .

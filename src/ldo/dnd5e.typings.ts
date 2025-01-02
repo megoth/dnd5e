@@ -156,6 +156,58 @@ export interface ClassLevel {
   abilityScoreBonuses?: string;
   proficiencyBonus?: string;
   features?: Feature[];
+  spellcasting?: Spellcasting;
+  classSpecific?: ClassSpecific;
+}
+
+/**
+ * ClassSpecific Type
+ */
+export interface ClassSpecific {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  rageCount?: string;
+  rageDamageBonus?: string;
+  brutalCriticalDice?: string;
+  bardicInspirationDice?: string;
+  songOfRestDie?: string;
+  magicalSecretsMax5?: string;
+  magicalSecretsMax7?: string;
+  magicalSecretsMax9?: string;
+  channelDivinityChargers?: string;
+  destroyUndeadCr?: string;
+  wildShapeMaxCr?: string;
+  wildShapeSwim?: boolean;
+  wildShapeFly?: boolean;
+  actionSurges?: string;
+  indomitableUses?: string;
+  extraAttacks?: string;
+  kiPoints?: string;
+  unarmoredMovement?: string;
+  martialArts?: Dice;
+  auraRange?: string;
+  favoredEnemies?: string;
+  favoredTerrain?: string;
+  sneakAttack?: Dice;
+  sorceryPoints?: string;
+  metamagicKnown?: string;
+  creatingSpellSlots?: ClassSpecificCreatingSpellSlots[];
+  invocationsKnown?: string;
+  mysticArcanumLevel6?: string;
+  mysticArcanumLevel7?: string;
+  mysticArcanumLevel8?: string;
+  mysticArcanumLevel9?: string;
+  arcaneRecoverLevels?: string;
+}
+
+/**
+ * ClassSpecificCreatingSpellSlots Type
+ */
+export interface ClassSpecificCreatingSpellSlots {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  spellSlotLevel?: string;
+  sorceryPointCost?: string;
 }
 
 /**
@@ -214,6 +266,16 @@ export interface DamageType {
   type: Type;
   label: string;
   description?: string[];
+}
+
+/**
+ * Dice Type
+ */
+export interface Dice {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  diceCount?: string;
+  diceValue?: string;
 }
 
 /**
@@ -455,6 +517,25 @@ export interface Spell {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+}
+
+/**
+ * Spellcasting Type
+ */
+export interface Spellcasting {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  cantripsKnown?: string;
+  spellsKnown?: string;
+  spellSlotsLevel1?: string;
+  spellSlotsLevel2?: string;
+  spellSlotsLevel3?: string;
+  spellSlotsLevel4?: string;
+  spellSlotsLevel5?: string;
+  spellSlotsLevel6?: string;
+  spellSlotsLevel7?: string;
+  spellSlotsLevel8?: string;
+  spellSlotsLevel9?: string;
 }
 
 /**

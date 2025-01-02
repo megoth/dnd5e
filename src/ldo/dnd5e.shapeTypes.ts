@@ -14,11 +14,14 @@ import {
   ChoiceOption,
   Class,
   ClassLevel,
+  ClassSpecific,
+  ClassSpecificCreatingSpellSlots,
   Condition,
   CountOption,
   Damage,
   DamageOption,
   DamageType,
+  Dice,
   DifficultyClass,
   Equipment,
   EquipmentCategory,
@@ -39,6 +42,7 @@ import {
   ScorePrerequisiteOption,
   Skill,
   Spell,
+  Spellcasting,
   StartingEquipment,
   StringOption,
   Subclass,
@@ -160,6 +164,26 @@ export const ClassLevelShapeType: ShapeType<ClassLevel> = {
 };
 
 /**
+ * ClassSpecific ShapeType
+ */
+export const ClassSpecificShapeType: ShapeType<ClassSpecific> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpecific",
+  context: dnd5eContext,
+};
+
+/**
+ * ClassSpecificCreatingSpellSlots ShapeType
+ */
+export const ClassSpecificCreatingSpellSlotsShapeType: ShapeType<ClassSpecificCreatingSpellSlots> =
+  {
+    schema: dnd5eSchema,
+    shape:
+      "https://ldo.js.org/shapes/dnd5e.shex#ClassSpecificCreatingSpellSlots",
+    context: dnd5eContext,
+  };
+
+/**
  * Condition ShapeType
  */
 export const ConditionShapeType: ShapeType<Condition> = {
@@ -201,6 +225,15 @@ export const DamageOptionShapeType: ShapeType<DamageOption> = {
 export const DamageTypeShapeType: ShapeType<DamageType> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
+  context: dnd5eContext,
+};
+
+/**
+ * Dice ShapeType
+ */
+export const DiceShapeType: ShapeType<Dice> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Dice",
   context: dnd5eContext,
 };
 
@@ -383,6 +416,15 @@ export const SkillShapeType: ShapeType<Skill> = {
 export const SpellShapeType: ShapeType<Spell> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Spell",
+  context: dnd5eContext,
+};
+
+/**
+ * Spellcasting ShapeType
+ */
+export const SpellcastingShapeType: ShapeType<Spellcasting> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Spellcasting",
   context: dnd5eContext,
 };
 

@@ -30,6 +30,7 @@
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
 :faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 :faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
+:features skos:definition "Egenskaper"@nb-NO .
 :hitDie skos:definition "Hit Die"@nb-NO .
 :hitDiePerClassLevel skos:definition "1d{$hitDie} per nivå av {$className}"@nb-NO .
 :hitPoints skos:definition "Hit Points"@nb-NO .
@@ -39,6 +40,7 @@
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
+:level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
 :loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
@@ -55,8 +57,11 @@
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
+:proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 :racesPageTitle skos:definition "Raser"@nb-NO .
+:rageDamage skos:definition "Raseriskade"@nb-NO .
+:rages skos:definition "Raseri"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .

@@ -7,10 +7,14 @@
 }
 
 .table > thead {
-    @apply text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400;
+    @apply text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
 }
 
 .table th,
 .table td {
     @apply px-6 py-3;
+}
+
+.table > tbody > tr {
+    @apply even:text-gray-700 even:bg-gray-50 even:dark:bg-gray-700 even:dark:text-gray-400;
 }
