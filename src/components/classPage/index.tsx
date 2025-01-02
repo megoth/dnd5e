@@ -13,6 +13,7 @@ import ClassPageHitPoints from "./hitPoints";
 import ClassPageProficiencies from "./proficiencies";
 import ClassPageEquipment from "./equipment";
 import { classResourceUrls } from "../../utils/dnd5e";
+import ClassPageLevels from "./levels";
 
 export default function ClassPage() {
   const params = useParams();
@@ -30,7 +31,13 @@ export default function ClassPage() {
   const { isLoading } = useSWR(
     () => `class-${classInfo["@id"]}`,
     async () => {
-      return Promise.all(
+      await Promise.all(
+        classResourceUrls(classInfo).map((resourceUrl) =>
+          getResource(resourceUrl).readIfUnfetched(),
+        ),
+      );
+      // must run second time to load class features
+      await Promise.all(
         classResourceUrls(classInfo).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
         ),
@@ -49,6 +56,7 @@ export default function ClassPage() {
       </WarningMessage>
       <Content>
         <h1>{classInfo.label}</h1>
+        <ClassPageLevels classInfo={classInfo} />
         <h2>
           <Translation id="classFeatures" />
         </h2>

@@ -22,6 +22,9 @@ import {
   DifficultyClass,
   Equipment,
   EquipmentCategory,
+  Feature,
+  FeaturePrerequisite,
+  FeatureSpecific,
   IdealOption,
   Language,
   Multiclassing,
@@ -38,6 +41,7 @@ import {
   Spell,
   StartingEquipment,
   StringOption,
+  Subclass,
   Type,
 } from "./dnd5e.typings";
 
@@ -228,6 +232,33 @@ export const EquipmentCategoryShapeType: ShapeType<EquipmentCategory> = {
 };
 
 /**
+ * Feature ShapeType
+ */
+export const FeatureShapeType: ShapeType<Feature> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Feature",
+  context: dnd5eContext,
+};
+
+/**
+ * FeaturePrerequisite ShapeType
+ */
+export const FeaturePrerequisiteShapeType: ShapeType<FeaturePrerequisite> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#FeaturePrerequisite",
+  context: dnd5eContext,
+};
+
+/**
+ * FeatureSpecific ShapeType
+ */
+export const FeatureSpecificShapeType: ShapeType<FeatureSpecific> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#FeatureSpecific",
+  context: dnd5eContext,
+};
+
+/**
  * IdealOption ShapeType
  */
 export const IdealOptionShapeType: ShapeType<IdealOption> = {
@@ -370,6 +401,15 @@ export const StartingEquipmentShapeType: ShapeType<StartingEquipment> = {
 export const StringOptionShapeType: ShapeType<StringOption> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#StringOption",
+  context: dnd5eContext,
+};
+
+/**
+ * Subclass ShapeType
+ */
+export const SubclassShapeType: ShapeType<Subclass> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Subclass",
   context: dnd5eContext,
 };
 

@@ -16,7 +16,10 @@ export default function ClassPageEquipment({ classInfo }: Props) {
       <dl className="data-list">
         <dd>
           {classInfo.startingEquipment
-            .map((startingEquipment) => startingEquipment.equipment.label)
+            .map(
+              (startingEquipment) =>
+                `${startingEquipment.quantity > 1 ? `${startingEquipment.quantity} ` : ""}${startingEquipment.equipment.label}`,
+            )
             .join(", ")}
         </dd>
         {classInfo.startingEquipmentOptions.map((option) => (

@@ -12,5 +12,5 @@ _:b2 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
 _:b3 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
 _:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b4 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b4 <https://dnd5e.app/vocab/dnd5e#ofType> "equipment" .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
 _:b4 <https://dnd5e.app/vocab/dnd5e#from> _:b3 .

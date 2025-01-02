@@ -1,22 +1,24 @@
 import { Choice, Class } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 
-export function choiceLabels(choice: Choice): string {
+export function choiceLabels(choice: Choice) {
   return [
-    ...(choice.from.choices?.flatMap((option) => choiceLabels(option.choice)) ||
-      []),
-    ...(choice.from.counts?.flatMap(
-      (option) => `${option.count}x ${option.of.label}`,
-    ) || []),
-    choice.from.equipmentCategory?.label,
-    ...(choice.from.references?.map(
+    choice.from.choices?.flatMap((option) => choiceLabels(option.choice)),
+    choice.from.counts?.map(
+      (option) =>
+        `${choice.choose > 1 ? `${option.count} ` : ""}${option.of.label}`,
+    ),
+    choice.from.equipmentCategory?.label && [
+      `${choice.from.equipmentCategory.label} (${choice.from.equipmentCategory.equipmentList.map((equipment) => equipment.label).join(", ")})`,
+    ],
+    choice.from.references?.map(
       (reference) =>
         reference.proficiency?.label ||
         reference.language?.label ||
         reference.spell?.label ||
         reference.equipment?.label,
-    ) || []),
-  ].join(", ");
+    ),
+  ].filter((labels) => labels?.length > 0);
 }
 
 export function choiceResourceUrls(choice: Choice): string[] {
@@ -55,6 +57,10 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...classInfo.startingEquipmentOptions.flatMap((option) =>
       choiceResourceUrls(option),
     ),
+    ...classInfo.levels.map((level) => resourceUrl(level["@id"])),
+    ...classInfo.levels.flatMap((level) =>
+      level.features.map((feature) => resourceUrl(feature["@id"])),
+    ),
   ];
 }
 
@@ -65,6 +71,11 @@ export function dataPath(type: string): string {
 
 export function dataUrl(type: string, id: string = ""): string {
   return `/data/${type}.ttl#${id}`;
+}
+
+export function apiUrlToSubjectUrl(apiUrl: string): string {
+  const [_, type, id] = apiUrl.match(/api\/(\w+)\/(\S+)/);
+  return dataUrl(type, id);
 }
 
 export function vocabUrl(id: string): string {

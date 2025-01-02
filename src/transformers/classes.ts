@@ -24,11 +24,6 @@ function transformClass(
   adventureClass.type = type("Class");
   adventureClass.label = data.name;
   adventureClass.hitDie = data.hit_die;
-  adventureClass.levels = new Array(20).map((_, index) =>
-    ldoDataset
-      .usingType(ClassLevelShapeType)
-      .fromSubject(dataUrl("classLevels", `${data.index}-${index}`)),
-  );
   adventureClass.multiclassing = transformMulticlassing(
     data.multi_classing,
     ldoDataset,
@@ -52,6 +47,11 @@ function transformClass(
   );
   adventureClass.startingEquipmentOptions = data.starting_equipment_options.map(
     (option) => transformChoice(option, ldoDataset),
+  );
+  adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>
+    ldoDataset
+      .usingType(ClassLevelShapeType)
+      .fromSubject(dataUrl("class-levels", `${data.index}-${index + 1}`)),
   );
   return adventureClass;
 }

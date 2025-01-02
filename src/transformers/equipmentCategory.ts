@@ -21,7 +21,7 @@ export function transformEquipmentCategory(
   category.equipmentList = data.equipment.map((equipment) =>
     ldoDataset
       .usingType(EquipmentShapeType)
-      .fromSubject(dataUrl("equipment", equipment.index)),
+      .fromSubject(dataUrl("equipments", equipment.index)),
   );
   return category;
 }

@@ -111,7 +111,7 @@ export interface Choice {
   type: Type;
   description?: string;
   choose?: number;
-  ofType?: string;
+  ofType2?: string;
   from?: OptionSet;
   fromResourceList?: ResourceListOptionSet;
 }
@@ -142,6 +142,7 @@ export interface Class {
   savingThrows?: AbilityScore[];
   startingEquipment?: StartingEquipment[];
   startingEquipmentOptions?: Choice[];
+  classLevels?: ClassLevel[];
 }
 
 /**
@@ -151,6 +152,10 @@ export interface ClassLevel {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  level: string;
+  abilityScoreBonuses?: string;
+  proficiencyBonus?: string;
+  features?: Feature[];
 }
 
 /**
@@ -242,6 +247,46 @@ export interface EquipmentCategory {
   type: Type;
   label: string;
   equipmentList?: Equipment[];
+}
+
+/**
+ * Feature Type
+ */
+export interface Feature {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label: string;
+  description?: string[];
+  level?: string;
+  class?: Class;
+  subclass?: Subclass;
+  parent?: Feature;
+  prerequisites?: FeaturePrerequisite[];
+  featureSpecific?: FeatureSpecific;
+}
+
+/**
+ * FeaturePrerequisite Type
+ */
+export interface FeaturePrerequisite {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  ofType: string;
+  level?: string;
+  feature?: Feature;
+  spell?: Spell;
+}
+
+/**
+ * FeatureSpecific Type
+ */
+export interface FeatureSpecific {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  expertiseOptions?: Choice;
+  invocations?: Feature[];
+  subfeatureOptions?: Choice;
 }
 
 /**
@@ -429,6 +474,15 @@ export interface StringOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
   "string:"?: string;
+}
+
+/**
+ * Subclass Type
+ */
+export interface Subclass {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
 }
 
 /**
