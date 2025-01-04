@@ -14,6 +14,7 @@ import ClassPageProficiencies from "./proficiencies";
 import ClassPageEquipment from "./equipment";
 import { classResourceUrls } from "../../utils/dnd5e";
 import ClassPageLevels from "./levels";
+import ClassPageFeatures from "./features";
 
 export default function ClassPage() {
   const params = useParams();
@@ -69,6 +70,7 @@ export default function ClassPage() {
         <ClassPageHitPoints classInfo={classInfo} />
         <ClassPageProficiencies classInfo={classInfo} />
         <ClassPageEquipment classInfo={classInfo} />
+        <ClassPageFeatures classInfo={classInfo} />
       </Content>
     </Layout>
   );

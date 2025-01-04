@@ -531,11 +531,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  classLevels: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#classLevels",
-    "@type": "@id",
-    "@container": "@set",
-  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",

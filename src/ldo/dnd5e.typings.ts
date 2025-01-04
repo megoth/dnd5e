@@ -142,7 +142,6 @@ export interface Class {
   savingThrows?: AbilityScore[];
   startingEquipment?: StartingEquipment[];
   startingEquipmentOptions?: Choice[];
-  classLevels?: ClassLevel[];
 }
 
 /**
