@@ -1,5 +1,13 @@
+.content {
+  @apply leading-normal;
+}
+
 .content a {
   @apply text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
+.content dl {
+  @apply max-w-prose;
 }
 
 .content h1,
@@ -44,7 +52,7 @@
 }
 
 .content ol {
-  @apply ml-5;
+  @apply ml-5 max-w-prose;
 }
 
 .content ol ol {
@@ -52,11 +60,11 @@
 }
 
 .content p {
-  @apply my-1;
+  @apply my-1 max-w-prose;
 }
 
 .content ul {
-  @apply ml-5 list-disc;
+  @apply ml-5 list-disc max-w-prose;
 }
 .content ul ul {
   @apply ml-4 my-0.5;

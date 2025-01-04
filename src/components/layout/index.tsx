@@ -76,9 +76,17 @@ export default function Layout({
         </button>
       )}
       <div
-        className={bem("main-container", {
-          full,
-        })}
+        className={clsx(
+          bem("main-container", {
+            content: !full,
+            full,
+          }),
+          bem("layout-container", {
+            content: !full,
+            full,
+            ["with-meta"]: rightOpen,
+          }),
+        )}
       >
         <div
           className={bem("layout__sidebar", "left", modifiers)}
@@ -90,13 +98,16 @@ export default function Layout({
           <main className={clsx("flex-1", className)} {...props}>
             {children}
           </main>
-          {!full && <PageFooter />}
         </div>
-        <div className={bem("layout__sidebar", "right-fake", modifiers)} />
         <div className={bem("layout__sidebar", "right", modifiers)}>
           <Session />
         </div>
       </div>
+      {!full && (
+        <div className={bem("main-container", { full })}>
+          <PageFooter />
+        </div>
+      )}
     </div>
   );
 }

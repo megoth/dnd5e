@@ -16,6 +16,7 @@
         """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
+:cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
@@ -25,6 +26,7 @@
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+:dice skos:definition "{$count}d{$value}"@nb-NO .
 :encountersPageTitle skos:definition "Kamper"@nb-NO .
 :equipment skos:definition "Utstyr"@nb-NO .
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
@@ -39,6 +41,8 @@
 :hitPointsAtHigherLevels skos:definition "Hit Points på høyere nivå"@nb-NO .
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
+:invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
+:kiPoints skos:definition "Ki poeng"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 :level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
@@ -52,10 +56,21 @@
 :loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 :loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 :logOut skos:definition "Logg ut"@nb-NO .
+:martialArts skos:definition "Kampkunst"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
+:movementBonus skos:definition "+{$bonus} fot"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
+:order1 skos:definition "1."@nb-NO .
+:order2 skos:definition "2."@nb-NO .
+:order3 skos:definition "3."@nb-NO .
+:order4 skos:definition "4."@nb-NO .
+:order5 skos:definition "5."@nb-NO .
+:order6 skos:definition "6."@nb-NO .
+:order7 skos:definition "7."@nb-NO .
+:order8 skos:definition "8."@nb-NO .
+:order9 skos:definition "9."@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
@@ -79,11 +94,18 @@
         leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
 :signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 :signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
+:slotLevel skos:definition "Plassnivå"@nb-NO .
+:sneakAttack skos:definition "Snikangrep"@nb-NO .
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 :solidLogo skos:definition "Logo for Solid"@nb-NO .
+:sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
+:spellsKnown skos:definition "Kjente trylleformler"@nb-NO .
+:spellSlots skos:definition "Trylleformler"@nb-NO .
+:spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+:unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
 :whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
 :whatIsIdPDescription skos:definition
         """Identitetsleverandører for Solid er tjenester som lar deg lage en Solid identitet som du kan bruke til å

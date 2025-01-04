@@ -38,10 +38,12 @@ export function getPages(path: string, admin: boolean): Array<Page> {
         ? (() => {
             const { isLoading, items: classes } = useListOfType(ClassShapeType);
             if (isLoading) return [];
-            return classes.map((classInfo) => ({
-              href: `/classes/${btoa(classInfo["@id"])}`,
-              text: classInfo.label,
-            }));
+            return classes
+              .sort((a, b) => (a.label > b.label ? 1 : -1))
+              .map((classInfo) => ({
+                href: `/classes/${btoa(classInfo["@id"])}`,
+                text: classInfo.label,
+              }));
           })()
         : [],
     },

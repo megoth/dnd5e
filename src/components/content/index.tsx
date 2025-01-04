@@ -14,7 +14,7 @@ export default function Content({
 }: Props) {
   return (
     <div
-      className={clsx("content leading-normal max-w-prose mx-auto", className)}
+      className={clsx("content", className)}
       style={{ hyphens: hyphens ? "auto" : "manual" }}
     >
       {children}

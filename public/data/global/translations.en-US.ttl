@@ -15,6 +15,7 @@
         """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
+:cantripsKnown skos:definition "Cantrips Known"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
@@ -24,6 +25,7 @@
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+:dice skos:definition "{$count}d{$value}"@en-US .
 :encountersPageTitle skos:definition "Encounters"@en-US .
 :equipment skos:definition "Equipment"@en-US .
 :equipmentPageTitle skos:definition "Equipment"@en-US .
@@ -38,6 +40,8 @@
 :hitPointsAtHigherLevels skos:definition "Hit Points at Higher Levels"@en-US .
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
+:invocationsKnown skos:definition "Invocations Known"@en-US .
+:kiPoints skos:definition "Ki Points"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .
 :level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
@@ -51,10 +55,21 @@
 :loginPitch skos:definition "Start your adventure with Solid"@en-US .
 :loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 :logOut skos:definition "Log out"@en-US .
+:martialArts skos:definition "Martial Arts"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
+:movementBonus skos:definition "+{$bonus} ft."@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
+:order1 skos:definition "1st"@en-US .
+:order2 skos:definition "2nd"@en-US .
+:order3 skos:definition "3rd"@en-US .
+:order4 skos:definition "4th"@en-US .
+:order5 skos:definition "5th"@en-US .
+:order6 skos:definition "6th"@en-US .
+:order7 skos:definition "7th"@en-US .
+:order8 skos:definition "8th"@en-US .
+:order9 skos:definition "9th"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
@@ -78,11 +93,18 @@
         provider](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)."""@en-US .
 :signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
 :signupPageTitle skos:definition "Create a Solid account"@en-US .
+:slotLevel skos:definition "Slot Level"@en-US .
+:sneakAttack skos:definition "Sneak Attack"@en-US .
 :solidIdP skos:definition "Solid identity provider"@en-US .
 :solidLogo skos:definition "Solid logo"@en-US .
+:sorceryPoints skos:definition "Sorcery Points"@en-US .
+:spellsKnown skos:definition "Spells Known"@en-US .
+:spellSlots skos:definition "Spell Slots"@en-US .
+:spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
+:unarmoredMovement skos:definition "Unarmored movement"@en-US .
 :whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .
 :whatIsIdPDescription skos:definition
         """Solid identity providers, or Solid IdPs for short, are services that allow you to create a Solid identity,

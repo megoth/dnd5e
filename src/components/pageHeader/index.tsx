@@ -22,7 +22,7 @@ export default function PageHeader({ className, pageName, ...props }: Props) {
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
   return (
     <header className={clsx("mb-2 shadow shadow-md", className)} {...props}>
-      <div className={clsx(bem("main-container", "content"), "pr-0")}>
+      <div className={clsx(bem("main-container", "header"), "pr-0")}>
         <NavLink
           to="/"
           className="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
@@ -34,7 +34,7 @@ export default function PageHeader({ className, pageName, ...props }: Props) {
       <div className="bg-gray-100 dark:bg-gray-900">
         <div
           className={clsx(
-            bem("main-container", "content"),
+            bem("main-container", "subheader"),
             "flex flex-row px-0",
           )}
         >

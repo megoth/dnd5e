@@ -24,10 +24,9 @@ function transformClass(
   adventureClass.type = type("Class");
   adventureClass.label = data.name;
   adventureClass.hitDie = data.hit_die;
-  adventureClass.multiclassing = transformMulticlassing(
-    data.multi_classing,
-    ldoDataset,
-  );
+  adventureClass.multiclassing =
+    data.multi_classing &&
+    transformMulticlassing(data.multi_classing, ldoDataset);
   adventureClass.proficiencies = data.proficiencies.map((proficiency) =>
     ldoDataset
       .usingType(ProficiencyShapeType)
