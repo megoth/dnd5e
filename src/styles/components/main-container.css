@@ -3,7 +3,7 @@
 }
 
 .main-container--content {
-  @apply lg:container lg:flex-col px-4 lg:px-0;
+  @apply lg:container lg:flex-col;
 }
 
 .main-container--header {
