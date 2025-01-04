@@ -128,7 +128,7 @@ export function dataUrl(type: string, id: string = ""): string {
 }
 
 export function apiUrlToSubjectUrl(apiUrl: string): string {
-  const [_, type, id] = apiUrl.match(/api\/(\w+)\/(\S+)/);
+  const [_, type, id] = apiUrl.match(/api\/(\S+)\/(\S+)/);
   return dataUrl(type, id);
 }
 

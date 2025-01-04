@@ -16,6 +16,8 @@ import {
   ClassLevel,
   ClassLevelSpellcasting,
   ClassSpecific,
+  ClassSpellcasting,
+  ClassSpellcastingInfo,
   ClassSpecificCreatingSpellSlots,
   Condition,
   CountOption,
@@ -181,6 +183,25 @@ export const ClassSpecificShapeType: ShapeType<ClassSpecific> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpecific",
   context: dnd5eContext,
 };
+
+/**
+ * ClassSpellcasting ShapeType
+ */
+export const ClassSpellcastingShapeType: ShapeType<ClassSpellcasting> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcasting",
+  context: dnd5eContext,
+};
+
+/**
+ * ClassSpellcastingInfo ShapeType
+ */
+export const ClassSpellcastingInfoShapeType: ShapeType<ClassSpellcastingInfo> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcastingInfo",
+    context: dnd5eContext,
+  };
 
 /**
  * ClassSpecificCreatingSpellSlots ShapeType

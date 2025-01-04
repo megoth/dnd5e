@@ -520,6 +520,12 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: -1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#classSpellcasting",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcasting",
+            },
           ],
         },
       },
@@ -1033,6 +1039,69 @@ export const dnd5eSchema: Schema = {
               },
               min: 0,
               max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcasting",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#level",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellcastingInfo",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcastingInfo",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellcastingAbility",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcastingInfo",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
             },
           ],
         },

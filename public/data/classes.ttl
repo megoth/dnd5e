@@ -125,14 +125,15 @@ _:b28 <https://dnd5e.app/vocab/dnd5e#from> _:b27 .
 <#bard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#hand-crossbows> .
 <#bard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-dex> .
 <#bard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
-<#bard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b101 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b113 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b108 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b120 .
 <#bard> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b62 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b63 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b64 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b71 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b75 .
-<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b81 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b69 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b70 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b71 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b78 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b82 .
+<#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b88 .
 <#bard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#bard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 _:b29 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
@@ -207,122 +208,148 @@ _:b62 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b29 .
 _:b62 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
 _:b62 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b49 .
 _:b62 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b61 .
-_:b63 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
-_:b63 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b64 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
-_:b64 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b65 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b66 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b66 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b66 <https://dnd5e.app/vocab/dnd5e#from> _:b65 .
-_:b67 <https://dnd5e.app/vocab/dnd5e#choice> _:b66 .
-_:b68 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b68 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#rapier> .
-_:b69 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b69 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#longsword> .
-_:b70 <https://dnd5e.app/vocab/dnd5e#choices> _:b67 .
-_:b70 <https://dnd5e.app/vocab/dnd5e#counts> _:b68 .
-_:b70 <https://dnd5e.app/vocab/dnd5e#counts> _:b69 .
-_:b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b71 <http://purl.org/dc/terms/description> "(a) a rapier, (b) a longsword, or (c) any simple weapon" .
-_:b71 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b71 <https://dnd5e.app/vocab/dnd5e#from> _:b70 .
-_:b72 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b72 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#diplomats-pack> .
-_:b73 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b73 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#entertainers-pack> .
-_:b74 <https://dnd5e.app/vocab/dnd5e#counts> _:b72 .
-_:b74 <https://dnd5e.app/vocab/dnd5e#counts> _:b73 .
-_:b75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b75 <http://purl.org/dc/terms/description> "(a) a diplomat’s pack or (b) an entertainer’s pack" .
-_:b75 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b75 <https://dnd5e.app/vocab/dnd5e#from> _:b74 .
-_:b76 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#musical-instruments> .
-_:b77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b77 <http://purl.org/dc/terms/description> "any other musical instrument" .
-_:b77 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b77 <https://dnd5e.app/vocab/dnd5e#from> _:b76 .
-_:b78 <https://dnd5e.app/vocab/dnd5e#choice> _:b77 .
+_:b63 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b63 <http://purl.org/dc/terms/description> "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table." .
+_:b64 <http://www.w3.org/2000/01/rdf-schema#label> "Spell Slots" .
+_:b64 <http://purl.org/dc/terms/description> "The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b64 <http://purl.org/dc/terms/description> "For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot." .
+_:b65 <http://www.w3.org/2000/01/rdf-schema#label> "Spells Known of 1st Level and Higher" .
+_:b65 <http://purl.org/dc/terms/description> "You know four 1st-level spells of your choice from the bard spell list." .
+_:b65 <http://purl.org/dc/terms/description> "The Spells Known column of the Bard table shows when you learn more bard spells of your choice." .
+_:b65 <http://purl.org/dc/terms/description> "Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level." .
+_:b65 <http://purl.org/dc/terms/description> "Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots." .
+_:b66 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b66 <http://purl.org/dc/terms/description> "Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one." .
+_:b66 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Charisma modifier." .
+_:b66 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
+_:b67 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
+_:b67 <http://purl.org/dc/terms/description> "You can cast any bard spell you know as a ritual if that spell has the ritual tag." .
+_:b68 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b68 <http://purl.org/dc/terms/description> "You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells." .
+_:b69 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b63 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b64 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b65 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b66 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b67 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b68 .
+_:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#cha> .
+_:b70 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
+_:b70 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b71 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
+_:b71 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b72 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b73 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b73 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b73 <https://dnd5e.app/vocab/dnd5e#from> _:b72 .
+_:b74 <https://dnd5e.app/vocab/dnd5e#choice> _:b73 .
+_:b75 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b75 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#rapier> .
+_:b76 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b76 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#longsword> .
+_:b77 <https://dnd5e.app/vocab/dnd5e#choices> _:b74 .
+_:b77 <https://dnd5e.app/vocab/dnd5e#counts> _:b75 .
+_:b77 <https://dnd5e.app/vocab/dnd5e#counts> _:b76 .
+_:b78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b78 <http://purl.org/dc/terms/description> "(a) a rapier, (b) a longsword, or (c) any simple weapon" .
+_:b78 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b78 <https://dnd5e.app/vocab/dnd5e#from> _:b77 .
 _:b79 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b79 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#lute> .
-_:b80 <https://dnd5e.app/vocab/dnd5e#choices> _:b78 .
-_:b80 <https://dnd5e.app/vocab/dnd5e#counts> _:b79 .
-_:b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b81 <http://purl.org/dc/terms/description> "(a) a lute or (b) any other musical instrument" .
-_:b81 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b81 <https://dnd5e.app/vocab/dnd5e#from> _:b80 .
-_:b82 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b83 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b84 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b85 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b86 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b87 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b88 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b89 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b90 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b91 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b92 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b93 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b94 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
-_:b95 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b96 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b97 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
-_:b98 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b99 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b82 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b83 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b84 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b85 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b86 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b87 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b88 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b89 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b90 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b91 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b92 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b93 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b94 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b95 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b96 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b97 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b98 .
-_:b100 <https://dnd5e.app/vocab/dnd5e#references> _:b99 .
-_:b101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b101 <http://purl.org/dc/terms/description> "Choose any three" .
-_:b101 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
-_:b101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b101 <https://dnd5e.app/vocab/dnd5e#from> _:b100 .
-_:b102 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#bagpipes> .
-_:b103 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#drum> .
-_:b104 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#dulcimer> .
-_:b105 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#flute> .
-_:b106 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lute> .
-_:b107 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lyre> .
-_:b108 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#horn> .
-_:b109 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#pan-flute> .
-_:b110 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#shawm> .
-_:b111 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#viol> .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b102 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b103 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b104 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b105 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b106 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b107 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b108 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b109 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b110 .
-_:b112 <https://dnd5e.app/vocab/dnd5e#references> _:b111 .
-_:b113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b113 <http://purl.org/dc/terms/description> "Three musical instruments of your choice" .
-_:b113 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
-_:b113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b113 <https://dnd5e.app/vocab/dnd5e#from> _:b112 .
+_:b79 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#diplomats-pack> .
+_:b80 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b80 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#entertainers-pack> .
+_:b81 <https://dnd5e.app/vocab/dnd5e#counts> _:b79 .
+_:b81 <https://dnd5e.app/vocab/dnd5e#counts> _:b80 .
+_:b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b82 <http://purl.org/dc/terms/description> "(a) a diplomat’s pack or (b) an entertainer’s pack" .
+_:b82 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b82 <https://dnd5e.app/vocab/dnd5e#from> _:b81 .
+_:b83 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#musical-instruments> .
+_:b84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b84 <http://purl.org/dc/terms/description> "any other musical instrument" .
+_:b84 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b84 <https://dnd5e.app/vocab/dnd5e#from> _:b83 .
+_:b85 <https://dnd5e.app/vocab/dnd5e#choice> _:b84 .
+_:b86 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b86 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#lute> .
+_:b87 <https://dnd5e.app/vocab/dnd5e#choices> _:b85 .
+_:b87 <https://dnd5e.app/vocab/dnd5e#counts> _:b86 .
+_:b88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b88 <http://purl.org/dc/terms/description> "(a) a lute or (b) any other musical instrument" .
+_:b88 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b88 <https://dnd5e.app/vocab/dnd5e#from> _:b87 .
+_:b89 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b90 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b91 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b92 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b93 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b94 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b95 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b96 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b97 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b98 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b99 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b100 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b101 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
+_:b102 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b103 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b104 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
+_:b105 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b106 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b89 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b90 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b91 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b92 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b93 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b94 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b95 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b96 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b97 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b98 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b99 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b100 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b101 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b102 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b103 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b104 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b105 .
+_:b107 <https://dnd5e.app/vocab/dnd5e#references> _:b106 .
+_:b108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b108 <http://purl.org/dc/terms/description> "Choose any three" .
+_:b108 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
+_:b108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b108 <https://dnd5e.app/vocab/dnd5e#from> _:b107 .
+_:b109 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#bagpipes> .
+_:b110 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#drum> .
+_:b111 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#dulcimer> .
+_:b112 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#flute> .
+_:b113 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lute> .
+_:b114 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lyre> .
+_:b115 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#horn> .
+_:b116 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#pan-flute> .
+_:b117 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#shawm> .
+_:b118 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#viol> .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b109 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b110 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b111 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b112 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b113 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b114 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b115 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b116 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b117 .
+_:b119 <https://dnd5e.app/vocab/dnd5e#references> _:b118 .
+_:b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b120 <http://purl.org/dc/terms/description> "Three musical instruments of your choice" .
+_:b120 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
+_:b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b120 <https://dnd5e.app/vocab/dnd5e#from> _:b119 .
 <#cleric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#cleric> <http://www.w3.org/2000/01/rdf-schema#label> "Cleric" .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#hitDie> 8 .
@@ -352,94 +379,117 @@ _:b113 <https://dnd5e.app/vocab/dnd5e#from> _:b112 .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b115 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b116 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b120 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b125 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b130 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b134 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b136 .
-<#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b143 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b122 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b128 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b129 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b133 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b138 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b143 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b147 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b149 .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b156 .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
-_:b114 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
-_:b114 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b115 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b114 .
-_:b115 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b115 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
-_:b115 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
-_:b116 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#shield> .
-_:b116 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b117 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b117 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#mace> .
-_:b118 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b118 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#warhammer> .
-_:b119 <https://dnd5e.app/vocab/dnd5e#counts> _:b117 .
-_:b119 <https://dnd5e.app/vocab/dnd5e#counts> _:b118 .
-_:b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b120 <http://purl.org/dc/terms/description> "(a) a mace or (b) a warhammer (if proficient)" .
-_:b120 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b120 <https://dnd5e.app/vocab/dnd5e#from> _:b119 .
-_:b121 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b121 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scale-mail> .
-_:b122 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b122 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#leather-armor> .
-_:b123 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b123 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#chain-mail> .
-_:b124 <https://dnd5e.app/vocab/dnd5e#counts> _:b121 .
-_:b124 <https://dnd5e.app/vocab/dnd5e#counts> _:b122 .
-_:b124 <https://dnd5e.app/vocab/dnd5e#counts> _:b123 .
-_:b125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b125 <http://purl.org/dc/terms/description> "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)" .
-_:b125 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b125 <https://dnd5e.app/vocab/dnd5e#from> _:b124 .
-_:b126 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b127 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b127 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b127 <https://dnd5e.app/vocab/dnd5e#from> _:b126 .
-_:b128 <https://dnd5e.app/vocab/dnd5e#choice> _:b127 .
-_:b129 <https://dnd5e.app/vocab/dnd5e#choices> _:b128 .
-_:b130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b130 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
-_:b130 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b130 <https://dnd5e.app/vocab/dnd5e#from> _:b129 .
+_:b121 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
+_:b121 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b122 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b121 .
+_:b122 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b122 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
+_:b122 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
+_:b123 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b123 <http://purl.org/dc/terms/description> "At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table." .
+_:b124 <http://www.w3.org/2000/01/rdf-schema#label> "Preparing and Casting Spells" .
+_:b124 <http://purl.org/dc/terms/description> "The Cleric table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b124 <http://purl.org/dc/terms/description> "You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots." .
+_:b124 <http://purl.org/dc/terms/description> "For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells." .
+_:b124 <http://purl.org/dc/terms/description> "You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list." .
+_:b125 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b125 <http://purl.org/dc/terms/description> "Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one." .
+_:b125 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier" .
+_:b125 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Wisdom modifier" .
+_:b126 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
+_:b126 <http://purl.org/dc/terms/description> "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared." .
+_:b127 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b127 <http://purl.org/dc/terms/description> "You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells." .
+_:b128 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b123 .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b124 .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b125 .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b126 .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b127 .
+_:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#wis> .
+_:b129 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#shield> .
+_:b129 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b130 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b130 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#mace> .
 _:b131 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b131 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#priests-pack> .
-_:b132 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b132 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b133 <https://dnd5e.app/vocab/dnd5e#counts> _:b131 .
-_:b133 <https://dnd5e.app/vocab/dnd5e#counts> _:b132 .
-_:b134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b134 <http://purl.org/dc/terms/description> "(a) a priest’s pack or (b) an explorer’s pack" .
-_:b134 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b134 <https://dnd5e.app/vocab/dnd5e#from> _:b133 .
-_:b135 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
-_:b136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b136 <http://purl.org/dc/terms/description> "holy symbol" .
-_:b136 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b136 <https://dnd5e.app/vocab/dnd5e#from> _:b135 .
-_:b137 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b138 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b139 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b140 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b141 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b142 <https://dnd5e.app/vocab/dnd5e#references> _:b137 .
-_:b142 <https://dnd5e.app/vocab/dnd5e#references> _:b138 .
-_:b142 <https://dnd5e.app/vocab/dnd5e#references> _:b139 .
-_:b142 <https://dnd5e.app/vocab/dnd5e#references> _:b140 .
-_:b142 <https://dnd5e.app/vocab/dnd5e#references> _:b141 .
+_:b131 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#warhammer> .
+_:b132 <https://dnd5e.app/vocab/dnd5e#counts> _:b130 .
+_:b132 <https://dnd5e.app/vocab/dnd5e#counts> _:b131 .
+_:b133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b133 <http://purl.org/dc/terms/description> "(a) a mace or (b) a warhammer (if proficient)" .
+_:b133 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b133 <https://dnd5e.app/vocab/dnd5e#from> _:b132 .
+_:b134 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b134 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scale-mail> .
+_:b135 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b135 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#leather-armor> .
+_:b136 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b136 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#chain-mail> .
+_:b137 <https://dnd5e.app/vocab/dnd5e#counts> _:b134 .
+_:b137 <https://dnd5e.app/vocab/dnd5e#counts> _:b135 .
+_:b137 <https://dnd5e.app/vocab/dnd5e#counts> _:b136 .
+_:b138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b138 <http://purl.org/dc/terms/description> "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)" .
+_:b138 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b138 <https://dnd5e.app/vocab/dnd5e#from> _:b137 .
+_:b139 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b140 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b140 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b140 <https://dnd5e.app/vocab/dnd5e#from> _:b139 .
+_:b141 <https://dnd5e.app/vocab/dnd5e#choice> _:b140 .
+_:b142 <https://dnd5e.app/vocab/dnd5e#choices> _:b141 .
 _:b143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b143 <http://purl.org/dc/terms/description> "Choose two from History, Insight, Medicine, Persuasion, and Religion" .
-_:b143 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b143 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
+_:b143 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
 _:b143 <https://dnd5e.app/vocab/dnd5e#from> _:b142 .
+_:b144 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b144 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#priests-pack> .
+_:b145 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b145 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b146 <https://dnd5e.app/vocab/dnd5e#counts> _:b144 .
+_:b146 <https://dnd5e.app/vocab/dnd5e#counts> _:b145 .
+_:b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b147 <http://purl.org/dc/terms/description> "(a) a priest’s pack or (b) an explorer’s pack" .
+_:b147 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b147 <https://dnd5e.app/vocab/dnd5e#from> _:b146 .
+_:b148 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
+_:b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b149 <http://purl.org/dc/terms/description> "holy symbol" .
+_:b149 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b149 <https://dnd5e.app/vocab/dnd5e#from> _:b148 .
+_:b150 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b151 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b152 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b153 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b154 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b155 <https://dnd5e.app/vocab/dnd5e#references> _:b150 .
+_:b155 <https://dnd5e.app/vocab/dnd5e#references> _:b151 .
+_:b155 <https://dnd5e.app/vocab/dnd5e#references> _:b152 .
+_:b155 <https://dnd5e.app/vocab/dnd5e#references> _:b153 .
+_:b155 <https://dnd5e.app/vocab/dnd5e#references> _:b154 .
+_:b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b156 <http://purl.org/dc/terms/description> "Choose two from History, Insight, Medicine, Persuasion, and Religion" .
+_:b156 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b156 <https://dnd5e.app/vocab/dnd5e#from> _:b155 .
 <#druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#druid> <http://www.w3.org/2000/01/rdf-schema#label> "Druid" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#hitDie> 8 .
@@ -479,84 +529,107 @@ _:b143 <https://dnd5e.app/vocab/dnd5e#from> _:b142 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#herbalism-kit> .
 <#druid> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-int> .
 <#druid> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
-<#druid> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b145 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b146 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b147 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b153 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b159 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b161 .
-<#druid> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b171 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b158 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b164 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b165 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b166 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b172 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b178 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b180 .
+<#druid> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b190 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
 <#druid> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
-_:b144 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
-_:b144 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b145 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b144 .
-_:b145 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b145 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
-_:b145 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
-_:b146 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
-_:b146 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b147 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#explorers-pack> .
-_:b147 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b148 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b149 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b149 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b149 <https://dnd5e.app/vocab/dnd5e#from> _:b148 .
-_:b150 <https://dnd5e.app/vocab/dnd5e#choice> _:b149 .
-_:b151 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b151 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shield> .
-_:b152 <https://dnd5e.app/vocab/dnd5e#choices> _:b150 .
-_:b152 <https://dnd5e.app/vocab/dnd5e#counts> _:b151 .
-_:b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b153 <http://purl.org/dc/terms/description> "(a) a wooden shield or (b) any simple weapon" .
-_:b153 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b153 <https://dnd5e.app/vocab/dnd5e#from> _:b152 .
-_:b154 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-melee-weapons> .
-_:b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b155 <http://purl.org/dc/terms/description> "any simple melee weapon" .
-_:b155 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b155 <https://dnd5e.app/vocab/dnd5e#from> _:b154 .
-_:b156 <https://dnd5e.app/vocab/dnd5e#choice> _:b155 .
-_:b157 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b157 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scimitar> .
-_:b158 <https://dnd5e.app/vocab/dnd5e#choices> _:b156 .
-_:b158 <https://dnd5e.app/vocab/dnd5e#counts> _:b157 .
-_:b159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b159 <http://purl.org/dc/terms/description> "(a) a scimitar or (b) any simple melee weapon" .
-_:b159 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b159 <https://dnd5e.app/vocab/dnd5e#from> _:b158 .
-_:b160 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#druidic-foci> .
-_:b161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b161 <http://purl.org/dc/terms/description> "druidic focus" .
-_:b161 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b161 <https://dnd5e.app/vocab/dnd5e#from> _:b160 .
-_:b162 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b163 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b164 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b165 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b166 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b167 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b168 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b169 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b162 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b163 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b164 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b165 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b166 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b167 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b168 .
-_:b170 <https://dnd5e.app/vocab/dnd5e#references> _:b169 .
-_:b171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b171 <http://purl.org/dc/terms/description> "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival" .
-_:b171 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b171 <https://dnd5e.app/vocab/dnd5e#from> _:b170 .
+_:b157 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
+_:b157 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b158 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b157 .
+_:b158 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b158 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
+_:b158 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
+_:b159 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b159 <http://purl.org/dc/terms/description> "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table." .
+_:b160 <http://www.w3.org/2000/01/rdf-schema#label> "Preparing and Casting Spells" .
+_:b160 <http://purl.org/dc/terms/description> "The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b160 <http://purl.org/dc/terms/description> "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots." .
+_:b160 <http://purl.org/dc/terms/description> "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells." .
+_:b160 <http://purl.org/dc/terms/description> "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list." .
+_:b161 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b161 <http://purl.org/dc/terms/description> "Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one." .
+_:b161 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier." .
+_:b161 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Wisdom modifier." .
+_:b162 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
+_:b162 <http://purl.org/dc/terms/description> "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared." .
+_:b163 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b163 <http://purl.org/dc/terms/description> "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells." .
+_:b164 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b159 .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b160 .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b161 .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b162 .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b163 .
+_:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#wis> .
+_:b165 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
+_:b165 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b166 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#explorers-pack> .
+_:b166 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b167 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b168 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b168 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b168 <https://dnd5e.app/vocab/dnd5e#from> _:b167 .
+_:b169 <https://dnd5e.app/vocab/dnd5e#choice> _:b168 .
+_:b170 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b170 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shield> .
+_:b171 <https://dnd5e.app/vocab/dnd5e#choices> _:b169 .
+_:b171 <https://dnd5e.app/vocab/dnd5e#counts> _:b170 .
+_:b172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b172 <http://purl.org/dc/terms/description> "(a) a wooden shield or (b) any simple weapon" .
+_:b172 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b172 <https://dnd5e.app/vocab/dnd5e#from> _:b171 .
+_:b173 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-melee-weapons> .
+_:b174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b174 <http://purl.org/dc/terms/description> "any simple melee weapon" .
+_:b174 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b174 <https://dnd5e.app/vocab/dnd5e#from> _:b173 .
+_:b175 <https://dnd5e.app/vocab/dnd5e#choice> _:b174 .
+_:b176 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b176 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scimitar> .
+_:b177 <https://dnd5e.app/vocab/dnd5e#choices> _:b175 .
+_:b177 <https://dnd5e.app/vocab/dnd5e#counts> _:b176 .
+_:b178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b178 <http://purl.org/dc/terms/description> "(a) a scimitar or (b) any simple melee weapon" .
+_:b178 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b178 <https://dnd5e.app/vocab/dnd5e#from> _:b177 .
+_:b179 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#druidic-foci> .
+_:b180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b180 <http://purl.org/dc/terms/description> "druidic focus" .
+_:b180 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b180 <https://dnd5e.app/vocab/dnd5e#from> _:b179 .
+_:b181 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b182 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b183 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b184 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b185 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b186 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b187 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b188 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b181 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b182 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b183 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b184 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b185 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b186 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b187 .
+_:b189 <https://dnd5e.app/vocab/dnd5e#references> _:b188 .
+_:b190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b190 <http://purl.org/dc/terms/description> "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival" .
+_:b190 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b190 <https://dnd5e.app/vocab/dnd5e#from> _:b189 .
 <#fighter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#fighter> <http://www.w3.org/2000/01/rdf-schema#label> "Fighter" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#hitDie> 10 .
@@ -586,91 +659,91 @@ _:b171 <https://dnd5e.app/vocab/dnd5e#from> _:b170 .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#all-armor> .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-str> .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-con> .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b176 .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b179 .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b184 .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b187 .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b191 .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b201 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b195 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b198 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b203 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b206 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b210 .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b220 .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#con> .
-_:b172 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
-_:b172 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b173 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
-_:b173 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b174 <https://dnd5e.app/vocab/dnd5e#abilityScores> _:b172 .
-_:b174 <https://dnd5e.app/vocab/dnd5e#abilityScores> _:b173 .
-_:b175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b175 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "ability-scores" .
-_:b175 <https://dnd5e.app/vocab/dnd5e#from> _:b174 .
-_:b176 <https://dnd5e.app/vocab/dnd5e#prerequisiteOptions> _:b175 .
-_:b176 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b176 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
-_:b176 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
-_:b176 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
-_:b176 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
-_:b177 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b177 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#chain-mail> .
-_:b178 <https://dnd5e.app/vocab/dnd5e#counts> _:b177 .
-_:b179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b179 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b179 <https://dnd5e.app/vocab/dnd5e#from> _:b178 .
-_:b179 <http://purl.org/dc/terms/description> "(a) chain mail or (b) leather armor, longbow, and 20 arrows" .
-_:b180 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#martial-weapons> .
-_:b181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b181 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b181 <https://dnd5e.app/vocab/dnd5e#from> _:b180 .
-_:b181 <http://purl.org/dc/terms/description> "two martial weapons" .
-_:b182 <https://dnd5e.app/vocab/dnd5e#choice> _:b181 .
-_:b183 <https://dnd5e.app/vocab/dnd5e#choices> _:b182 .
-_:b184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b184 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b184 <https://dnd5e.app/vocab/dnd5e#from> _:b183 .
-_:b184 <http://purl.org/dc/terms/description> "(a) a martial weapon and a shield or (b) two martial weapons" .
-_:b185 <https://dnd5e.app/vocab/dnd5e#count> 2 .
-_:b185 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#handaxe> .
-_:b186 <https://dnd5e.app/vocab/dnd5e#counts> _:b185 .
-_:b187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b187 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b187 <https://dnd5e.app/vocab/dnd5e#from> _:b186 .
-_:b187 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) two handaxes" .
-_:b188 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b188 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b189 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b189 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b190 <https://dnd5e.app/vocab/dnd5e#counts> _:b188 .
-_:b190 <https://dnd5e.app/vocab/dnd5e#counts> _:b189 .
-_:b191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b191 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b191 <https://dnd5e.app/vocab/dnd5e#from> _:b190 .
-_:b191 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
-_:b192 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b193 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b194 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b195 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b196 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b197 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b198 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b199 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b192 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b193 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b194 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b195 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b196 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b197 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b198 .
-_:b200 <https://dnd5e.app/vocab/dnd5e#references> _:b199 .
-_:b201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b201 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b201 <https://dnd5e.app/vocab/dnd5e#from> _:b200 .
-_:b201 <http://purl.org/dc/terms/description> "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival" .
+_:b191 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
+_:b191 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b192 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
+_:b192 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b193 <https://dnd5e.app/vocab/dnd5e#abilityScores> _:b191 .
+_:b193 <https://dnd5e.app/vocab/dnd5e#abilityScores> _:b192 .
+_:b194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b194 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "ability-scores" .
+_:b194 <https://dnd5e.app/vocab/dnd5e#from> _:b193 .
+_:b195 <https://dnd5e.app/vocab/dnd5e#prerequisiteOptions> _:b194 .
+_:b195 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b195 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
+_:b195 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
+_:b195 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
+_:b195 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
+_:b196 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b196 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#chain-mail> .
+_:b197 <https://dnd5e.app/vocab/dnd5e#counts> _:b196 .
+_:b198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b198 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b198 <https://dnd5e.app/vocab/dnd5e#from> _:b197 .
+_:b198 <http://purl.org/dc/terms/description> "(a) chain mail or (b) leather armor, longbow, and 20 arrows" .
+_:b199 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#martial-weapons> .
+_:b200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b200 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b200 <https://dnd5e.app/vocab/dnd5e#from> _:b199 .
+_:b200 <http://purl.org/dc/terms/description> "two martial weapons" .
+_:b201 <https://dnd5e.app/vocab/dnd5e#choice> _:b200 .
+_:b202 <https://dnd5e.app/vocab/dnd5e#choices> _:b201 .
+_:b203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b203 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b203 <https://dnd5e.app/vocab/dnd5e#from> _:b202 .
+_:b203 <http://purl.org/dc/terms/description> "(a) a martial weapon and a shield or (b) two martial weapons" .
+_:b204 <https://dnd5e.app/vocab/dnd5e#count> 2 .
+_:b204 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#handaxe> .
+_:b205 <https://dnd5e.app/vocab/dnd5e#counts> _:b204 .
+_:b206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b206 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b206 <https://dnd5e.app/vocab/dnd5e#from> _:b205 .
+_:b206 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) two handaxes" .
+_:b207 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b207 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b208 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b208 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b209 <https://dnd5e.app/vocab/dnd5e#counts> _:b207 .
+_:b209 <https://dnd5e.app/vocab/dnd5e#counts> _:b208 .
+_:b210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b210 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b210 <https://dnd5e.app/vocab/dnd5e#from> _:b209 .
+_:b210 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
+_:b211 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b212 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b213 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b214 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b215 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b216 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b217 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b218 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b211 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b212 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b213 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b214 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b215 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b216 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b217 .
+_:b219 <https://dnd5e.app/vocab/dnd5e#references> _:b218 .
+_:b220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b220 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b220 <https://dnd5e.app/vocab/dnd5e#from> _:b219 .
+_:b220 <http://purl.org/dc/terms/description> "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival" .
 <#monk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#monk> <http://www.w3.org/2000/01/rdf-schema#label> "Monk" .
 <#monk> <https://dnd5e.app/vocab/dnd5e#hitDie> 8 .
@@ -698,145 +771,145 @@ _:b201 <http://purl.org/dc/terms/description> "Choose two skills from Acrobatics
 <#monk> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shortswords> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-dex> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-str> .
-<#monk> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b204 .
-<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b205 .
-<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b211 .
-<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b215 .
-<#monk> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b223 .
-<#monk> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b260 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b223 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b224 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b230 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b234 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b242 .
+<#monk> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b279 .
 <#monk> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
-_:b202 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
-_:b202 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b203 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
-_:b203 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b204 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b202 .
-_:b204 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b203 .
-_:b204 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
-_:b204 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shortswords> .
-_:b205 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dart> .
-_:b205 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b206 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b207 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b207 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b207 <https://dnd5e.app/vocab/dnd5e#from> _:b206 .
-_:b208 <https://dnd5e.app/vocab/dnd5e#choice> _:b207 .
-_:b209 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b209 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
-_:b210 <https://dnd5e.app/vocab/dnd5e#choices> _:b208 .
-_:b210 <https://dnd5e.app/vocab/dnd5e#counts> _:b209 .
-_:b211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b211 <http://purl.org/dc/terms/description> "(a) a shortsword or (b) any simple weapon" .
-_:b211 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b211 <https://dnd5e.app/vocab/dnd5e#from> _:b210 .
-_:b212 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b212 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b213 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b213 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b214 <https://dnd5e.app/vocab/dnd5e#counts> _:b212 .
-_:b214 <https://dnd5e.app/vocab/dnd5e#counts> _:b213 .
-_:b215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b215 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
-_:b215 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b215 <https://dnd5e.app/vocab/dnd5e#from> _:b214 .
-_:b216 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b217 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b218 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b219 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b220 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b221 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b216 .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b217 .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b218 .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b219 .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b220 .
-_:b222 <https://dnd5e.app/vocab/dnd5e#references> _:b221 .
-_:b223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b223 <http://purl.org/dc/terms/description> "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth" .
-_:b223 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b223 <https://dnd5e.app/vocab/dnd5e#from> _:b222 .
-_:b224 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#alchemists-supplies> .
-_:b225 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
-_:b226 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#calligraphers-supplies> .
-_:b227 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#carpenters-tools> .
-_:b228 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cartographers-tools> .
-_:b229 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cobblers-tools> .
-_:b230 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cooks-utensils> .
-_:b231 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#glassblowers-tools> .
-_:b232 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#jewelers-tools> .
-_:b233 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#leatherworkers-tools> .
-_:b234 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
-_:b235 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#painters-supplies> .
-_:b236 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#potters-tools> .
-_:b237 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
-_:b238 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#tinkers-tools> .
-_:b239 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#weavers-tools> .
-_:b240 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#woodcarvers-tools> .
-_:b241 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#disguise-kit> .
-_:b242 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#forgery-kit> .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b224 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b225 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b226 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b227 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b228 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b229 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b230 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b231 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b232 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b233 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b234 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b235 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b236 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b237 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b238 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b239 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b240 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b241 .
-_:b243 <https://dnd5e.app/vocab/dnd5e#references> _:b242 .
-_:b244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b244 <http://purl.org/dc/terms/description> "artisan's tools" .
-_:b244 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b244 <https://dnd5e.app/vocab/dnd5e#from> _:b243 .
-_:b245 <https://dnd5e.app/vocab/dnd5e#choice> _:b244 .
-_:b246 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#bagpipes> .
-_:b247 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#drum> .
-_:b248 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#dulcimer> .
-_:b249 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#flute> .
-_:b250 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lute> .
-_:b251 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lyre> .
-_:b252 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#horn> .
-_:b253 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#pan-flute> .
-_:b254 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#shawm> .
-_:b255 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#viol> .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b246 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b247 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b248 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b249 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b250 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b251 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b252 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b253 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b254 .
-_:b256 <https://dnd5e.app/vocab/dnd5e#references> _:b255 .
-_:b257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b257 <http://purl.org/dc/terms/description> "musical instrument" .
-_:b257 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b257 <https://dnd5e.app/vocab/dnd5e#from> _:b256 .
-_:b258 <https://dnd5e.app/vocab/dnd5e#choice> _:b257 .
-_:b259 <https://dnd5e.app/vocab/dnd5e#choices> _:b245 .
-_:b259 <https://dnd5e.app/vocab/dnd5e#choices> _:b258 .
-_:b260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b260 <http://purl.org/dc/terms/description> "Choose one type of artisan’s tools or one musical instrument" .
-_:b260 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b260 <https://dnd5e.app/vocab/dnd5e#from> _:b259 .
+_:b221 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
+_:b221 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b222 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
+_:b222 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b223 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b221 .
+_:b223 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b222 .
+_:b223 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
+_:b223 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shortswords> .
+_:b224 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dart> .
+_:b224 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b225 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b226 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b226 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b226 <https://dnd5e.app/vocab/dnd5e#from> _:b225 .
+_:b227 <https://dnd5e.app/vocab/dnd5e#choice> _:b226 .
+_:b228 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b228 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
+_:b229 <https://dnd5e.app/vocab/dnd5e#choices> _:b227 .
+_:b229 <https://dnd5e.app/vocab/dnd5e#counts> _:b228 .
+_:b230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b230 <http://purl.org/dc/terms/description> "(a) a shortsword or (b) any simple weapon" .
+_:b230 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b230 <https://dnd5e.app/vocab/dnd5e#from> _:b229 .
+_:b231 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b231 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b232 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b232 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b233 <https://dnd5e.app/vocab/dnd5e#counts> _:b231 .
+_:b233 <https://dnd5e.app/vocab/dnd5e#counts> _:b232 .
+_:b234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b234 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
+_:b234 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b234 <https://dnd5e.app/vocab/dnd5e#from> _:b233 .
+_:b235 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b236 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b237 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b238 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b239 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b240 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b235 .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b236 .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b237 .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b238 .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b239 .
+_:b241 <https://dnd5e.app/vocab/dnd5e#references> _:b240 .
+_:b242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b242 <http://purl.org/dc/terms/description> "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth" .
+_:b242 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b242 <https://dnd5e.app/vocab/dnd5e#from> _:b241 .
+_:b243 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#alchemists-supplies> .
+_:b244 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
+_:b245 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#calligraphers-supplies> .
+_:b246 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#carpenters-tools> .
+_:b247 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cartographers-tools> .
+_:b248 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cobblers-tools> .
+_:b249 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#cooks-utensils> .
+_:b250 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#glassblowers-tools> .
+_:b251 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#jewelers-tools> .
+_:b252 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#leatherworkers-tools> .
+_:b253 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
+_:b254 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#painters-supplies> .
+_:b255 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#potters-tools> .
+_:b256 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
+_:b257 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#tinkers-tools> .
+_:b258 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#weavers-tools> .
+_:b259 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#woodcarvers-tools> .
+_:b260 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#disguise-kit> .
+_:b261 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#forgery-kit> .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b243 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b244 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b245 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b246 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b247 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b248 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b249 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b250 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b251 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b252 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b253 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b254 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b255 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b256 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b257 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b258 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b259 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b260 .
+_:b262 <https://dnd5e.app/vocab/dnd5e#references> _:b261 .
+_:b263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b263 <http://purl.org/dc/terms/description> "artisan's tools" .
+_:b263 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b263 <https://dnd5e.app/vocab/dnd5e#from> _:b262 .
+_:b264 <https://dnd5e.app/vocab/dnd5e#choice> _:b263 .
+_:b265 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#bagpipes> .
+_:b266 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#drum> .
+_:b267 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#dulcimer> .
+_:b268 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#flute> .
+_:b269 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lute> .
+_:b270 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#lyre> .
+_:b271 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#horn> .
+_:b272 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#pan-flute> .
+_:b273 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#shawm> .
+_:b274 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#viol> .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b265 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b266 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b267 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b268 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b269 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b270 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b271 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b272 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b273 .
+_:b275 <https://dnd5e.app/vocab/dnd5e#references> _:b274 .
+_:b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b276 <http://purl.org/dc/terms/description> "musical instrument" .
+_:b276 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b276 <https://dnd5e.app/vocab/dnd5e#from> _:b275 .
+_:b277 <https://dnd5e.app/vocab/dnd5e#choice> _:b276 .
+_:b278 <https://dnd5e.app/vocab/dnd5e#choices> _:b264 .
+_:b278 <https://dnd5e.app/vocab/dnd5e#choices> _:b277 .
+_:b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b279 <http://purl.org/dc/terms/description> "Choose one type of artisan’s tools or one musical instrument" .
+_:b279 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b279 <https://dnd5e.app/vocab/dnd5e#from> _:b278 .
 <#paladin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#paladin> <http://www.w3.org/2000/01/rdf-schema#label> "Paladin" .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#hitDie> 10 .
@@ -866,91 +939,108 @@ _:b260 <https://dnd5e.app/vocab/dnd5e#from> _:b259 .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#all-armor> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b263 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b264 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b269 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b275 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b279 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b281 .
-<#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b289 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b282 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b286 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b287 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b292 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b298 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b302 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b304 .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b312 .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
-_:b261 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
-_:b261 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b262 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
-_:b262 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b263 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b261 .
-_:b263 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b262 .
-_:b263 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b263 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
-_:b263 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
-_:b263 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
-_:b263 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
-_:b264 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#chain-mail> .
-_:b264 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b265 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#martial-weapons> .
-_:b266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b266 <http://purl.org/dc/terms/description> "two martial weapons" .
-_:b266 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b266 <https://dnd5e.app/vocab/dnd5e#from> _:b265 .
-_:b267 <https://dnd5e.app/vocab/dnd5e#choice> _:b266 .
-_:b268 <https://dnd5e.app/vocab/dnd5e#choices> _:b267 .
-_:b269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b269 <http://purl.org/dc/terms/description> "(a) a martial weapon and a shield or (b) two martial weapons" .
-_:b269 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b269 <https://dnd5e.app/vocab/dnd5e#from> _:b268 .
-_:b270 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b271 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b271 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b271 <https://dnd5e.app/vocab/dnd5e#from> _:b270 .
-_:b272 <https://dnd5e.app/vocab/dnd5e#choice> _:b271 .
-_:b273 <https://dnd5e.app/vocab/dnd5e#count> 5 .
-_:b273 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#javelin> .
-_:b274 <https://dnd5e.app/vocab/dnd5e#choices> _:b272 .
-_:b274 <https://dnd5e.app/vocab/dnd5e#counts> _:b273 .
-_:b275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b275 <http://purl.org/dc/terms/description> "(a) five javelins or (b) any simple melee weapon" .
-_:b275 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b275 <https://dnd5e.app/vocab/dnd5e#from> _:b274 .
-_:b276 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b276 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#priests-pack> .
-_:b277 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b277 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b278 <https://dnd5e.app/vocab/dnd5e#counts> _:b276 .
-_:b278 <https://dnd5e.app/vocab/dnd5e#counts> _:b277 .
-_:b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b279 <http://purl.org/dc/terms/description> "(a) a priest’s pack or (b) an explorer’s pack" .
-_:b279 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b279 <https://dnd5e.app/vocab/dnd5e#from> _:b278 .
-_:b280 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
-_:b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b281 <http://purl.org/dc/terms/description> "holy symbol" .
-_:b281 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b281 <https://dnd5e.app/vocab/dnd5e#from> _:b280 .
-_:b282 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b283 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b284 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b285 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b286 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b287 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b282 .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b283 .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b284 .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b285 .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b286 .
-_:b288 <https://dnd5e.app/vocab/dnd5e#references> _:b287 .
+_:b280 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
+_:b280 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b281 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
+_:b281 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b282 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b280 .
+_:b282 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b281 .
+_:b282 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b282 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
+_:b282 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
+_:b282 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
+_:b282 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
+_:b283 <http://www.w3.org/2000/01/rdf-schema#label> "Preparing and Casting Spells" .
+_:b283 <http://purl.org/dc/terms/description> "The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b283 <http://purl.org/dc/terms/description> "You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots." .
+_:b283 <http://purl.org/dc/terms/description> "For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells." .
+_:b283 <http://purl.org/dc/terms/description> "You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list." .
+_:b284 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b284 <http://purl.org/dc/terms/description> "Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one." .
+_:b284 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Charisma modifier." .
+_:b284 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
+_:b285 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b285 <http://purl.org/dc/terms/description> "You can use a holy symbol as a spellcasting focus for your paladin spells." .
+_:b286 <https://dnd5e.app/vocab/dnd5e#level> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b283 .
+_:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b284 .
+_:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b285 .
+_:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#cha> .
+_:b287 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#chain-mail> .
+_:b287 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b288 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#martial-weapons> .
 _:b289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b289 <http://purl.org/dc/terms/description> "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion" .
+_:b289 <http://purl.org/dc/terms/description> "two martial weapons" .
 _:b289 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
 _:b289 <https://dnd5e.app/vocab/dnd5e#from> _:b288 .
+_:b290 <https://dnd5e.app/vocab/dnd5e#choice> _:b289 .
+_:b291 <https://dnd5e.app/vocab/dnd5e#choices> _:b290 .
+_:b292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b292 <http://purl.org/dc/terms/description> "(a) a martial weapon and a shield or (b) two martial weapons" .
+_:b292 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b292 <https://dnd5e.app/vocab/dnd5e#from> _:b291 .
+_:b293 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b294 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b294 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b294 <https://dnd5e.app/vocab/dnd5e#from> _:b293 .
+_:b295 <https://dnd5e.app/vocab/dnd5e#choice> _:b294 .
+_:b296 <https://dnd5e.app/vocab/dnd5e#count> 5 .
+_:b296 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#javelin> .
+_:b297 <https://dnd5e.app/vocab/dnd5e#choices> _:b295 .
+_:b297 <https://dnd5e.app/vocab/dnd5e#counts> _:b296 .
+_:b298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b298 <http://purl.org/dc/terms/description> "(a) five javelins or (b) any simple melee weapon" .
+_:b298 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b298 <https://dnd5e.app/vocab/dnd5e#from> _:b297 .
+_:b299 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b299 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#priests-pack> .
+_:b300 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b300 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b301 <https://dnd5e.app/vocab/dnd5e#counts> _:b299 .
+_:b301 <https://dnd5e.app/vocab/dnd5e#counts> _:b300 .
+_:b302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b302 <http://purl.org/dc/terms/description> "(a) a priest’s pack or (b) an explorer’s pack" .
+_:b302 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b302 <https://dnd5e.app/vocab/dnd5e#from> _:b301 .
+_:b303 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
+_:b304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b304 <http://purl.org/dc/terms/description> "holy symbol" .
+_:b304 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b304 <https://dnd5e.app/vocab/dnd5e#from> _:b303 .
+_:b305 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b306 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b307 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b308 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b309 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b310 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b305 .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b306 .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b307 .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b308 .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b309 .
+_:b311 <https://dnd5e.app/vocab/dnd5e#references> _:b310 .
+_:b312 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b312 <http://purl.org/dc/terms/description> "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion" .
+_:b312 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b312 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b312 <https://dnd5e.app/vocab/dnd5e#from> _:b311 .
 <#ranger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#ranger> <http://www.w3.org/2000/01/rdf-schema#label> "Ranger" .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#hitDie> 10 .
@@ -981,110 +1071,127 @@ _:b289 <https://dnd5e.app/vocab/dnd5e#from> _:b288 .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-dex> .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-str> .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b328 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b302 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b303 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b304 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b308 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b314 .
-<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b318 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b355 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b325 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b329 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b330 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b331 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b335 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b341 .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b345 .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
-_:b290 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
-_:b290 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b291 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
-_:b291 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b292 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b293 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b294 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b295 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b296 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b297 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b298 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b299 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b292 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b293 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b294 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b295 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b296 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b297 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b298 .
-_:b300 <https://dnd5e.app/vocab/dnd5e#references> _:b299 .
-_:b301 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b301 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b301 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b301 <https://dnd5e.app/vocab/dnd5e#from> _:b300 .
-_:b302 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b290 .
-_:b302 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b291 .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
-_:b302 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b301 .
-_:b303 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#longbow> .
-_:b303 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b304 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#arrow> .
-_:b304 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b305 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b305 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scale-mail> .
-_:b306 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b306 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#leather-armor> .
-_:b307 <https://dnd5e.app/vocab/dnd5e#counts> _:b305 .
-_:b307 <https://dnd5e.app/vocab/dnd5e#counts> _:b306 .
-_:b308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b308 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b308 <https://dnd5e.app/vocab/dnd5e#from> _:b307 .
-_:b308 <http://purl.org/dc/terms/description> "(a) scale mail or (b) leather armor" .
-_:b309 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-melee-weapons> .
-_:b310 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b310 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b310 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b310 <https://dnd5e.app/vocab/dnd5e#from> _:b309 .
-_:b310 <http://purl.org/dc/terms/description> "two simple melee weapons" .
-_:b311 <https://dnd5e.app/vocab/dnd5e#choice> _:b310 .
-_:b312 <https://dnd5e.app/vocab/dnd5e#count> 2 .
-_:b312 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
-_:b313 <https://dnd5e.app/vocab/dnd5e#counts> _:b312 .
-_:b313 <https://dnd5e.app/vocab/dnd5e#choices> _:b311 .
-_:b314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b314 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b314 <https://dnd5e.app/vocab/dnd5e#from> _:b313 .
-_:b314 <http://purl.org/dc/terms/description> "(a) two shortswords or (b) two simple melee weapons" .
-_:b315 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b315 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b316 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b316 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b317 <https://dnd5e.app/vocab/dnd5e#counts> _:b315 .
-_:b317 <https://dnd5e.app/vocab/dnd5e#counts> _:b316 .
-_:b318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b318 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b318 <https://dnd5e.app/vocab/dnd5e#from> _:b317 .
-_:b318 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
-_:b319 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b320 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b321 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b322 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b323 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b324 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b325 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b326 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b319 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b320 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b321 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b322 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b323 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b324 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b325 .
-_:b327 <https://dnd5e.app/vocab/dnd5e#references> _:b326 .
-_:b328 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b328 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
-_:b328 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b328 <https://dnd5e.app/vocab/dnd5e#from> _:b327 .
-_:b328 <http://purl.org/dc/terms/description> "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival" .
+_:b313 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
+_:b313 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b314 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
+_:b314 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b315 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b316 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b317 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b318 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b319 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b320 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b321 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b322 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b315 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b316 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b317 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b318 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b319 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b320 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b321 .
+_:b323 <https://dnd5e.app/vocab/dnd5e#references> _:b322 .
+_:b324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b324 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b324 <https://dnd5e.app/vocab/dnd5e#from> _:b323 .
+_:b325 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b313 .
+_:b325 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b314 .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#medium-armor> .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#shields> .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#martial-weapons> .
+_:b325 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b324 .
+_:b326 <http://www.w3.org/2000/01/rdf-schema#label> "Spell Slots" .
+_:b326 <http://purl.org/dc/terms/description> "The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b326 <http://purl.org/dc/terms/description> "For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot." .
+_:b327 <http://www.w3.org/2000/01/rdf-schema#label> "Spells Known of 1st Level and Higher" .
+_:b327 <http://purl.org/dc/terms/description> "You know two 1st-level spells of your choice from the ranger spell list." .
+_:b327 <http://purl.org/dc/terms/description> "The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level." .
+_:b327 <http://purl.org/dc/terms/description> "Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots." .
+_:b328 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b328 <http://purl.org/dc/terms/description> "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one." .
+_:b328 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier." .
+_:b328 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Wisdom modifier." .
+_:b329 <https://dnd5e.app/vocab/dnd5e#level> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b326 .
+_:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b327 .
+_:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b328 .
+_:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#wis> .
+_:b330 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#longbow> .
+_:b330 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b331 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#arrow> .
+_:b331 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b332 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b332 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scale-mail> .
+_:b333 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b333 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#leather-armor> .
+_:b334 <https://dnd5e.app/vocab/dnd5e#counts> _:b332 .
+_:b334 <https://dnd5e.app/vocab/dnd5e#counts> _:b333 .
+_:b335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b335 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b335 <https://dnd5e.app/vocab/dnd5e#from> _:b334 .
+_:b335 <http://purl.org/dc/terms/description> "(a) scale mail or (b) leather armor" .
+_:b336 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-melee-weapons> .
+_:b337 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b337 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b337 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b337 <https://dnd5e.app/vocab/dnd5e#from> _:b336 .
+_:b337 <http://purl.org/dc/terms/description> "two simple melee weapons" .
+_:b338 <https://dnd5e.app/vocab/dnd5e#choice> _:b337 .
+_:b339 <https://dnd5e.app/vocab/dnd5e#count> 2 .
+_:b339 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
+_:b340 <https://dnd5e.app/vocab/dnd5e#counts> _:b339 .
+_:b340 <https://dnd5e.app/vocab/dnd5e#choices> _:b338 .
+_:b341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b341 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b341 <https://dnd5e.app/vocab/dnd5e#from> _:b340 .
+_:b341 <http://purl.org/dc/terms/description> "(a) two shortswords or (b) two simple melee weapons" .
+_:b342 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b342 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b343 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b343 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b344 <https://dnd5e.app/vocab/dnd5e#counts> _:b342 .
+_:b344 <https://dnd5e.app/vocab/dnd5e#counts> _:b343 .
+_:b345 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b345 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b345 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b345 <https://dnd5e.app/vocab/dnd5e#from> _:b344 .
+_:b345 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
+_:b346 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b347 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b348 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b349 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b350 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b351 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b352 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b353 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b346 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b347 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b348 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b349 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b350 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b351 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b352 .
+_:b354 <https://dnd5e.app/vocab/dnd5e#references> _:b353 .
+_:b355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b355 <https://dnd5e.app/vocab/dnd5e#choose> 3 .
+_:b355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b355 <https://dnd5e.app/vocab/dnd5e#from> _:b354 .
+_:b355 <http://purl.org/dc/terms/description> "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival" .
 <#rogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#rogue> <http://www.w3.org/2000/01/rdf-schema#label> "Rogue" .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#hitDie> 8 .
@@ -1117,114 +1224,114 @@ _:b328 <http://purl.org/dc/terms/description> "Choose three from Animal Handling
 <#rogue> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#hand-crossbows> .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-dex> .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-int> .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b371 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b343 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b344 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b345 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b346 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b350 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b353 .
-<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b358 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b398 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b370 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b371 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b372 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b373 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b377 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b380 .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b385 .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
-_:b329 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
-_:b329 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b330 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b331 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b332 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b333 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b334 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b335 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b336 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b337 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
-_:b338 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b339 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
-_:b340 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b330 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b331 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b332 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b333 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b334 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b335 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b336 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b337 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b338 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b339 .
-_:b341 <https://dnd5e.app/vocab/dnd5e#references> _:b340 .
-_:b342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b342 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b342 <https://dnd5e.app/vocab/dnd5e#from> _:b341 .
-_:b343 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b329 .
-_:b343 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b343 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#thieves-tools> .
-_:b343 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b342 .
-_:b344 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
-_:b344 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b345 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
-_:b345 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b346 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#thieves-tools> .
-_:b346 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b347 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b347 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#rapier> .
-_:b348 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b348 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
-_:b349 <https://dnd5e.app/vocab/dnd5e#counts> _:b347 .
-_:b349 <https://dnd5e.app/vocab/dnd5e#counts> _:b348 .
-_:b350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b350 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b350 <https://dnd5e.app/vocab/dnd5e#from> _:b349 .
-_:b350 <http://purl.org/dc/terms/description> "(a) a rapier or (b) a shortsword" .
-_:b351 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b351 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
-_:b352 <https://dnd5e.app/vocab/dnd5e#counts> _:b351 .
-_:b353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b353 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b353 <https://dnd5e.app/vocab/dnd5e#from> _:b352 .
-_:b353 <http://purl.org/dc/terms/description> "(a) a shortbow and quiver of 20 arrows or (b) a shortsword" .
-_:b354 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b354 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#burglars-pack> .
-_:b355 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b355 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b356 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b356 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b357 <https://dnd5e.app/vocab/dnd5e#counts> _:b354 .
-_:b357 <https://dnd5e.app/vocab/dnd5e#counts> _:b355 .
-_:b357 <https://dnd5e.app/vocab/dnd5e#counts> _:b356 .
-_:b358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b358 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b358 <https://dnd5e.app/vocab/dnd5e#from> _:b357 .
-_:b358 <http://purl.org/dc/terms/description> "(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack" .
-_:b359 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b360 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b361 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b362 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b363 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b364 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b365 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b366 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
-_:b367 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b368 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
-_:b369 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b359 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b360 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b361 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b362 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b363 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b364 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b365 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b366 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b367 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b368 .
-_:b370 <https://dnd5e.app/vocab/dnd5e#references> _:b369 .
-_:b371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b371 <https://dnd5e.app/vocab/dnd5e#choose> 4 .
-_:b371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b371 <https://dnd5e.app/vocab/dnd5e#from> _:b370 .
-_:b371 <http://purl.org/dc/terms/description> "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth" .
+_:b356 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
+_:b356 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b357 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b358 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b359 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b360 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b361 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b362 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b363 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b364 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
+_:b365 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b366 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
+_:b367 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b357 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b358 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b359 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b360 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b361 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b362 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b363 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b364 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b365 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b366 .
+_:b368 <https://dnd5e.app/vocab/dnd5e#references> _:b367 .
+_:b369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b369 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b369 <https://dnd5e.app/vocab/dnd5e#from> _:b368 .
+_:b370 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b356 .
+_:b370 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b370 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#thieves-tools> .
+_:b370 <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b369 .
+_:b371 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
+_:b371 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b372 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
+_:b372 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b373 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#thieves-tools> .
+_:b373 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b374 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b374 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#rapier> .
+_:b375 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b375 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
+_:b376 <https://dnd5e.app/vocab/dnd5e#counts> _:b374 .
+_:b376 <https://dnd5e.app/vocab/dnd5e#counts> _:b375 .
+_:b377 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b377 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b377 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b377 <https://dnd5e.app/vocab/dnd5e#from> _:b376 .
+_:b377 <http://purl.org/dc/terms/description> "(a) a rapier or (b) a shortsword" .
+_:b378 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b378 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#shortsword> .
+_:b379 <https://dnd5e.app/vocab/dnd5e#counts> _:b378 .
+_:b380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b380 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b380 <https://dnd5e.app/vocab/dnd5e#from> _:b379 .
+_:b380 <http://purl.org/dc/terms/description> "(a) a shortbow and quiver of 20 arrows or (b) a shortsword" .
+_:b381 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b381 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#burglars-pack> .
+_:b382 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b382 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b383 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b383 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b384 <https://dnd5e.app/vocab/dnd5e#counts> _:b381 .
+_:b384 <https://dnd5e.app/vocab/dnd5e#counts> _:b382 .
+_:b384 <https://dnd5e.app/vocab/dnd5e#counts> _:b383 .
+_:b385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b385 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b385 <https://dnd5e.app/vocab/dnd5e#from> _:b384 .
+_:b385 <http://purl.org/dc/terms/description> "(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack" .
+_:b386 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b387 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b388 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b389 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b390 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b391 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b392 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b393 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
+_:b394 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b395 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
+_:b396 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b386 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b387 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b388 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b389 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b390 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b391 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b392 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b393 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b394 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b395 .
+_:b397 <https://dnd5e.app/vocab/dnd5e#references> _:b396 .
+_:b398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b398 <https://dnd5e.app/vocab/dnd5e#choose> 4 .
+_:b398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b398 <https://dnd5e.app/vocab/dnd5e#from> _:b397 .
+_:b398 <http://purl.org/dc/terms/description> "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth" .
 <#sorcerer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#sorcerer> <http://www.w3.org/2000/01/rdf-schema#label> "Sorcerer" .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#hitDie> 6 .
@@ -1248,12 +1355,13 @@ _:b371 <http://purl.org/dc/terms/description> "Choose four from Acrobatics, Athl
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#sorcerer-18> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#sorcerer-19> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#sorcerer-20> .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b373 .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b374 .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b379 .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b385 .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b389 .
-<#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b397 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b400 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b406 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b407 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b412 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b418 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b422 .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b430 .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#daggers> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#darts> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#slings> .
@@ -1263,68 +1371,90 @@ _:b371 <http://purl.org/dc/terms/description> "Choose four from Acrobatics, Athl
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#con> .
-_:b372 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
-_:b372 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b373 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b372 .
-_:b374 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
-_:b374 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b375 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b376 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b376 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b376 <https://dnd5e.app/vocab/dnd5e#from> _:b375 .
-_:b377 <https://dnd5e.app/vocab/dnd5e#choice> _:b376 .
-_:b378 <https://dnd5e.app/vocab/dnd5e#choices> _:b377 .
-_:b379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b379 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
-_:b379 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b379 <https://dnd5e.app/vocab/dnd5e#from> _:b378 .
-_:b380 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
-_:b381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b381 <http://purl.org/dc/terms/description> "arcane focus" .
-_:b381 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b381 <https://dnd5e.app/vocab/dnd5e#from> _:b380 .
-_:b382 <https://dnd5e.app/vocab/dnd5e#choice> _:b381 .
-_:b383 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b383 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
-_:b384 <https://dnd5e.app/vocab/dnd5e#choices> _:b382 .
-_:b384 <https://dnd5e.app/vocab/dnd5e#counts> _:b383 .
-_:b385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b385 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
-_:b385 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b385 <https://dnd5e.app/vocab/dnd5e#from> _:b384 .
-_:b386 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b386 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b387 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b387 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b388 <https://dnd5e.app/vocab/dnd5e#counts> _:b386 .
-_:b388 <https://dnd5e.app/vocab/dnd5e#counts> _:b387 .
-_:b389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b389 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
-_:b389 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b389 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b389 <https://dnd5e.app/vocab/dnd5e#from> _:b388 .
-_:b390 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b391 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b392 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b393 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b394 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b395 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b390 .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b391 .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b392 .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b393 .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b394 .
-_:b396 <https://dnd5e.app/vocab/dnd5e#references> _:b395 .
-_:b397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b397 <http://purl.org/dc/terms/description> "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion" .
-_:b397 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b397 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b397 <https://dnd5e.app/vocab/dnd5e#from> _:b396 .
+_:b399 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
+_:b399 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b400 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b399 .
+_:b401 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b401 <http://purl.org/dc/terms/description> "At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table." .
+_:b402 <http://www.w3.org/2000/01/rdf-schema#label> "Spell Slots" .
+_:b402 <http://purl.org/dc/terms/description> "The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b402 <http://purl.org/dc/terms/description> "For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot." .
+_:b403 <http://www.w3.org/2000/01/rdf-schema#label> "Spells Known of 1st Level and Higher" .
+_:b403 <http://purl.org/dc/terms/description> "You know two 1st-level spells of your choice from the sorcerer spell list." .
+_:b403 <http://purl.org/dc/terms/description> "The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. " .
+_:b403 <http://purl.org/dc/terms/description> "Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots." .
+_:b404 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b404 <http://purl.org/dc/terms/description> "Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one." .
+_:b404 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Charisma modifier." .
+_:b404 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
+_:b405 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b405 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your sorcerer spells." .
+_:b406 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b401 .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b402 .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b403 .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b404 .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b405 .
+_:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#cha> .
+_:b407 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
+_:b407 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b408 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b409 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b409 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b409 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b409 <https://dnd5e.app/vocab/dnd5e#from> _:b408 .
+_:b410 <https://dnd5e.app/vocab/dnd5e#choice> _:b409 .
+_:b411 <https://dnd5e.app/vocab/dnd5e#choices> _:b410 .
+_:b412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b412 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
+_:b412 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b412 <https://dnd5e.app/vocab/dnd5e#from> _:b411 .
+_:b413 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
+_:b414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b414 <http://purl.org/dc/terms/description> "arcane focus" .
+_:b414 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b414 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b414 <https://dnd5e.app/vocab/dnd5e#from> _:b413 .
+_:b415 <https://dnd5e.app/vocab/dnd5e#choice> _:b414 .
+_:b416 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b416 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
+_:b417 <https://dnd5e.app/vocab/dnd5e#choices> _:b415 .
+_:b417 <https://dnd5e.app/vocab/dnd5e#counts> _:b416 .
+_:b418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b418 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
+_:b418 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b418 <https://dnd5e.app/vocab/dnd5e#from> _:b417 .
+_:b419 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b419 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b420 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b420 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b421 <https://dnd5e.app/vocab/dnd5e#counts> _:b419 .
+_:b421 <https://dnd5e.app/vocab/dnd5e#counts> _:b420 .
+_:b422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b422 <http://purl.org/dc/terms/description> "(a) a dungeoneer’s pack or (b) an explorer’s pack" .
+_:b422 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b422 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b422 <https://dnd5e.app/vocab/dnd5e#from> _:b421 .
+_:b423 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b424 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b425 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b426 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b427 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b428 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b423 .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b424 .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b425 .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b426 .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b427 .
+_:b429 <https://dnd5e.app/vocab/dnd5e#references> _:b428 .
+_:b430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b430 <http://purl.org/dc/terms/description> "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion" .
+_:b430 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b430 <https://dnd5e.app/vocab/dnd5e#from> _:b429 .
 <#warlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#warlock> <http://www.w3.org/2000/01/rdf-schema#label> "Warlock" .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#hitDie> 8 .
@@ -1352,90 +1482,114 @@ _:b397 <https://dnd5e.app/vocab/dnd5e#from> _:b396 .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b399 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b400 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b401 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b406 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b412 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b416 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b418 .
-<#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b427 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b432 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b438 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b439 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b440 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b445 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b451 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b455 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b457 .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b466 .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
-_:b398 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
-_:b398 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b399 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b398 .
-_:b399 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
-_:b399 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
-_:b400 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
-_:b400 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b401 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
-_:b401 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b402 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b403 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b403 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b403 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b403 <https://dnd5e.app/vocab/dnd5e#from> _:b402 .
-_:b404 <https://dnd5e.app/vocab/dnd5e#choice> _:b403 .
-_:b405 <https://dnd5e.app/vocab/dnd5e#choices> _:b404 .
-_:b406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b406 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
-_:b406 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b406 <https://dnd5e.app/vocab/dnd5e#from> _:b405 .
-_:b407 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
-_:b408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b408 <http://purl.org/dc/terms/description> "arcane focus" .
-_:b408 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b408 <https://dnd5e.app/vocab/dnd5e#from> _:b407 .
-_:b409 <https://dnd5e.app/vocab/dnd5e#choice> _:b408 .
-_:b410 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b410 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
-_:b411 <https://dnd5e.app/vocab/dnd5e#choices> _:b409 .
-_:b411 <https://dnd5e.app/vocab/dnd5e#counts> _:b410 .
-_:b412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b412 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
-_:b412 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b412 <https://dnd5e.app/vocab/dnd5e#from> _:b411 .
-_:b413 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b413 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scholars-pack> .
-_:b414 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b414 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
-_:b415 <https://dnd5e.app/vocab/dnd5e#counts> _:b413 .
-_:b415 <https://dnd5e.app/vocab/dnd5e#counts> _:b414 .
-_:b416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b416 <http://purl.org/dc/terms/description> "(a) a scholar’s pack or (b) a dungeoneer’s pack" .
-_:b416 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b416 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b416 <https://dnd5e.app/vocab/dnd5e#from> _:b415 .
-_:b417 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-_:b418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b418 <http://purl.org/dc/terms/description> "any simple weapon" .
-_:b418 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b418 <https://dnd5e.app/vocab/dnd5e#from> _:b417 .
-_:b419 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b420 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b421 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b422 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b423 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b424 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b425 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b419 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b420 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b421 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b422 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b423 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b424 .
-_:b426 <https://dnd5e.app/vocab/dnd5e#references> _:b425 .
-_:b427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b427 <http://purl.org/dc/terms/description> "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion" .
-_:b427 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b427 <https://dnd5e.app/vocab/dnd5e#from> _:b426 .
+_:b431 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
+_:b431 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b432 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b431 .
+_:b432 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#light-armor> .
+_:b432 <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#simple-weapons> .
+_:b433 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b433 <http://purl.org/dc/terms/description> "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table." .
+_:b434 <http://www.w3.org/2000/01/rdf-schema#label> "Spell Slots" .
+_:b434 <http://purl.org/dc/terms/description> "The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest." .
+_:b434 <http://purl.org/dc/terms/description> "For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell." .
+_:b435 <http://www.w3.org/2000/01/rdf-schema#label> "Spells Known of 1st Level and Higher" .
+_:b435 <http://purl.org/dc/terms/description> "At 1st level, you know two 1st-level spells of your choice from the warlock spell list." .
+_:b435 <http://purl.org/dc/terms/description> "The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. " .
+_:b435 <http://purl.org/dc/terms/description> "A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level." .
+_:b435 <http://purl.org/dc/terms/description> "Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots." .
+_:b436 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b436 <http://purl.org/dc/terms/description> "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one." .
+_:b436 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Charisma modifier." .
+_:b436 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
+_:b437 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b437 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your warlock spells." .
+_:b438 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b433 .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b434 .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b435 .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b436 .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b437 .
+_:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#cha> .
+_:b439 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#dagger> .
+_:b439 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b440 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#leather-armor> .
+_:b440 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b441 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b442 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b442 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b442 <https://dnd5e.app/vocab/dnd5e#from> _:b441 .
+_:b443 <https://dnd5e.app/vocab/dnd5e#choice> _:b442 .
+_:b444 <https://dnd5e.app/vocab/dnd5e#choices> _:b443 .
+_:b445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b445 <http://purl.org/dc/terms/description> "(a) a light crossbow and 20 bolts or (b) any simple weapon" .
+_:b445 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b445 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b445 <https://dnd5e.app/vocab/dnd5e#from> _:b444 .
+_:b446 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
+_:b447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b447 <http://purl.org/dc/terms/description> "arcane focus" .
+_:b447 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b447 <https://dnd5e.app/vocab/dnd5e#from> _:b446 .
+_:b448 <https://dnd5e.app/vocab/dnd5e#choice> _:b447 .
+_:b449 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b449 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
+_:b450 <https://dnd5e.app/vocab/dnd5e#choices> _:b448 .
+_:b450 <https://dnd5e.app/vocab/dnd5e#counts> _:b449 .
+_:b451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b451 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
+_:b451 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b451 <https://dnd5e.app/vocab/dnd5e#from> _:b450 .
+_:b452 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b452 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scholars-pack> .
+_:b453 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b453 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dungeoneers-pack> .
+_:b454 <https://dnd5e.app/vocab/dnd5e#counts> _:b452 .
+_:b454 <https://dnd5e.app/vocab/dnd5e#counts> _:b453 .
+_:b455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b455 <http://purl.org/dc/terms/description> "(a) a scholar’s pack or (b) a dungeoneer’s pack" .
+_:b455 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b455 <https://dnd5e.app/vocab/dnd5e#from> _:b454 .
+_:b456 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
+_:b457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b457 <http://purl.org/dc/terms/description> "any simple weapon" .
+_:b457 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b457 <https://dnd5e.app/vocab/dnd5e#from> _:b456 .
+_:b458 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b459 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b460 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b461 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b462 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b463 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b464 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b458 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b459 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b460 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b461 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b462 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b463 .
+_:b465 <https://dnd5e.app/vocab/dnd5e#references> _:b464 .
+_:b466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b466 <http://purl.org/dc/terms/description> "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion" .
+_:b466 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b466 <https://dnd5e.app/vocab/dnd5e#from> _:b465 .
 <#wizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Class> .
 <#wizard> <http://www.w3.org/2000/01/rdf-schema#label> "Wizard" .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#hitDie> 6 .
@@ -1459,12 +1613,13 @@ _:b427 <https://dnd5e.app/vocab/dnd5e#from> _:b426 .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#wizard-18> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#wizard-19> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#levels> </data/class-levels.ttl#wizard-20> .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b429 .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b430 .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b434 .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b440 .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b444 .
-<#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b452 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#multiclassing> _:b468 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#classSpellcasting> _:b475 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b476 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b480 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b486 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b490 .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b498 .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#daggers> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#darts> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#slings> .
@@ -1474,63 +1629,88 @@ _:b427 <https://dnd5e.app/vocab/dnd5e#from> _:b426 .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
-_:b428 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#int> .
-_:b428 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
-_:b429 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b428 .
-_:b430 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#spellbook> .
-_:b430 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b431 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b431 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#quarterstaff> .
-_:b432 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b432 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dagger> .
-_:b433 <https://dnd5e.app/vocab/dnd5e#counts> _:b431 .
-_:b433 <https://dnd5e.app/vocab/dnd5e#counts> _:b432 .
-_:b434 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b434 <http://purl.org/dc/terms/description> "(a) a quarterstaff or (b) a dagger" .
-_:b434 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b434 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b434 <https://dnd5e.app/vocab/dnd5e#from> _:b433 .
-_:b435 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
-_:b436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b436 <http://purl.org/dc/terms/description> "arcane focus" .
-_:b436 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b436 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b436 <https://dnd5e.app/vocab/dnd5e#from> _:b435 .
-_:b437 <https://dnd5e.app/vocab/dnd5e#choice> _:b436 .
-_:b438 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b438 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
-_:b439 <https://dnd5e.app/vocab/dnd5e#counts> _:b438 .
-_:b439 <https://dnd5e.app/vocab/dnd5e#choices> _:b437 .
-_:b440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b440 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
-_:b440 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b440 <https://dnd5e.app/vocab/dnd5e#from> _:b439 .
-_:b441 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b441 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scholars-pack> .
-_:b442 <https://dnd5e.app/vocab/dnd5e#count> 1 .
-_:b442 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
-_:b443 <https://dnd5e.app/vocab/dnd5e#counts> _:b441 .
-_:b443 <https://dnd5e.app/vocab/dnd5e#counts> _:b442 .
-_:b444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b444 <http://purl.org/dc/terms/description> "(a) a scholar’s pack or (b) an explorer’s pack" .
-_:b444 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
-_:b444 <https://dnd5e.app/vocab/dnd5e#from> _:b443 .
-_:b445 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b446 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b447 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b448 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b449 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b450 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b445 .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b446 .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b447 .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b448 .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b449 .
-_:b451 <https://dnd5e.app/vocab/dnd5e#references> _:b450 .
-_:b452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b452 <http://purl.org/dc/terms/description> "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion" .
-_:b452 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
-_:b452 <https://dnd5e.app/vocab/dnd5e#from> _:b451 .
+_:b467 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#int> .
+_:b467 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
+_:b468 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b467 .
+_:b469 <http://www.w3.org/2000/01/rdf-schema#label> "Cantrips" .
+_:b469 <http://purl.org/dc/terms/description> "At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table." .
+_:b470 <http://www.w3.org/2000/01/rdf-schema#label> "Spellbook" .
+_:b470 <http://purl.org/dc/terms/description> "At 1st level, you have a spellbook containing six 1st- level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind." .
+_:b471 <http://www.w3.org/2000/01/rdf-schema#label> "Preparing and Casting Spells" .
+_:b471 <http://purl.org/dc/terms/description> "The Wizard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest." .
+_:b471 <http://purl.org/dc/terms/description> "You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots." .
+_:b471 <http://purl.org/dc/terms/description> "For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells." .
+_:b471 <http://purl.org/dc/terms/description> "You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list." .
+_:b472 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
+_:b472 <http://purl.org/dc/terms/description> "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one." .
+_:b472 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Intelligence modifier." .
+_:b472 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Intelligence modifier." .
+_:b473 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
+_:b473 <http://purl.org/dc/terms/description> "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared." .
+_:b474 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
+_:b474 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your wizard spells." .
+_:b475 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b469 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b470 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b471 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b472 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b473 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b474 .
+_:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingAbility> </data/ability-scores.ttl#int> .
+_:b476 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#spellbook> .
+_:b476 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b477 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b477 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#quarterstaff> .
+_:b478 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b478 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#dagger> .
+_:b479 <https://dnd5e.app/vocab/dnd5e#counts> _:b477 .
+_:b479 <https://dnd5e.app/vocab/dnd5e#counts> _:b478 .
+_:b480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b480 <http://purl.org/dc/terms/description> "(a) a quarterstaff or (b) a dagger" .
+_:b480 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b480 <https://dnd5e.app/vocab/dnd5e#from> _:b479 .
+_:b481 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#arcane-foci> .
+_:b482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b482 <http://purl.org/dc/terms/description> "arcane focus" .
+_:b482 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b482 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b482 <https://dnd5e.app/vocab/dnd5e#from> _:b481 .
+_:b483 <https://dnd5e.app/vocab/dnd5e#choice> _:b482 .
+_:b484 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b484 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#component-pouch> .
+_:b485 <https://dnd5e.app/vocab/dnd5e#counts> _:b484 .
+_:b485 <https://dnd5e.app/vocab/dnd5e#choices> _:b483 .
+_:b486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b486 <http://purl.org/dc/terms/description> "(a) a component pouch or (b) an arcane focus" .
+_:b486 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b486 <https://dnd5e.app/vocab/dnd5e#from> _:b485 .
+_:b487 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b487 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#scholars-pack> .
+_:b488 <https://dnd5e.app/vocab/dnd5e#count> 1 .
+_:b488 <https://dnd5e.app/vocab/dnd5e#of> </data/equipments.ttl#explorers-pack> .
+_:b489 <https://dnd5e.app/vocab/dnd5e#counts> _:b487 .
+_:b489 <https://dnd5e.app/vocab/dnd5e#counts> _:b488 .
+_:b490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b490 <http://purl.org/dc/terms/description> "(a) a scholar’s pack or (b) an explorer’s pack" .
+_:b490 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "equipment" .
+_:b490 <https://dnd5e.app/vocab/dnd5e#from> _:b489 .
+_:b491 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b492 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b493 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b494 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b495 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b496 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b491 .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b492 .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b493 .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b494 .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b495 .
+_:b497 <https://dnd5e.app/vocab/dnd5e#references> _:b496 .
+_:b498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b498 <http://purl.org/dc/terms/description> "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion" .
+_:b498 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiencies" .
+_:b498 <https://dnd5e.app/vocab/dnd5e#from> _:b497 .

@@ -79,7 +79,7 @@ export function transformReferenceOption(
   data: IReferenceOption,
   ldoDataset = createLdoDataset(),
 ): ReferenceOption {
-  const [_, type, id] = data.item.url.match(/api\/(\w+)\/(\S+)/);
+  const [_, type, id] = data.item.url.match(/api\/(\S+)\/(\S+)/);
   const itemUrl = dataUrl(type, id);
   return ldoDataset.usingType(ReferenceOptionShapeType).fromJson({
     ...(type === "equipment" && {

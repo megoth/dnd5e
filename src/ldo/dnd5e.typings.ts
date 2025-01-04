@@ -142,6 +142,7 @@ export interface Class {
   savingThrows?: AbilityScore[];
   startingEquipment?: StartingEquipment[];
   startingEquipmentOptions?: Choice[];
+  classSpellcasting: ClassSpellcasting;
 }
 
 /**
@@ -216,6 +217,27 @@ export interface ClassSpecific {
   mysticArcanumLevel8?: string;
   mysticArcanumLevel9?: string;
   arcaneRecoverLevels?: string;
+}
+
+/**
+ * ClassSpellcasting Type
+ */
+export interface ClassSpellcasting {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  level: string;
+  spellcastingInfo?: ClassSpellcastingInfo[];
+  spellcastingAbility: AbilityScore;
+}
+
+/**
+ * ClassSpellcastingInfo Type
+ */
+export interface ClassSpellcastingInfo {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label: string;
+  description?: string[];
 }
 
 /**

@@ -4,11 +4,13 @@ import {
   AbilityScoreShapeType,
   ClassLevelShapeType,
   ClassShapeType,
+  ClassSpellcastingInfoShapeType,
+  ClassSpellcastingShapeType,
   ProficiencyShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Class } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
@@ -32,7 +34,22 @@ function transformClass(
   adventureClass.multiclassing =
     data.multi_classing &&
     transformMulticlassing(data.multi_classing, ldoDataset);
-  // spellcasting
+  adventureClass.classSpellcasting =
+    data.spellcasting &&
+    ldoDataset.usingType(ClassSpellcastingShapeType).fromJson({
+      level: data.spellcasting.level.toString(),
+      spellcastingInfo: data.spellcasting.info.map((info) =>
+        ldoDataset.usingType(ClassSpellcastingInfoShapeType).fromJson({
+          label: info.name,
+          description: info.desc,
+        }),
+      ),
+      spellcastingAbility: ldoDataset
+        .usingType(AbilityScoreShapeType)
+        .fromSubject(
+          apiUrlToSubjectUrl(data.spellcasting.spellcasting_ability.url),
+        ),
+    });
   // spells
   adventureClass.startingEquipment = data.starting_equipment.map(
     (startingEquipment) =>

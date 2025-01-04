@@ -77,7 +77,7 @@ function transformResourceList(
   data: IResourceList,
   ldoDataset = createLdoDataset(),
 ) {
-  const [_, type] = data.resource_list_url?.match(/api\/(\w+)\//) || [];
+  const [_, type] = data.resource_list_url?.match(/api\/(\S+)\//) || [];
   return ldoDataset.usingType(ResourceListOptionSetShapeType).fromJson({
     resourceList: dataUrl(type),
   });

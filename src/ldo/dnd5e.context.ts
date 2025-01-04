@@ -531,6 +531,19 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  classSpellcasting: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#classSpellcasting",
+    "@type": "@id",
+  },
+  spellcastingInfo: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellcastingInfo",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  spellcastingAbility: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellcastingAbility",
+    "@type": "@id",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",
