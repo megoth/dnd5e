@@ -4,22 +4,15 @@ import useRulesBundle from "../useRulesBundle";
 import { useMemo } from "react";
 import { namedNode } from "@rdfjs/data-model";
 import { vocabUrl } from "../../utils/dnd5e";
-import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
 
 export default function useListOfType<Type extends LdoBase>(
   shapeType: ShapeType<Type>,
+  rulesBundle: string,
+  type: string,
 ): {
   isLoading: boolean;
   items?: Array<Type>;
 } {
-  const [rulesBundle, type] = (() => {
-    switch (shapeType.schema) {
-      case ClassShapeType.schema:
-        return ["classes", "Class"];
-      default:
-        throw new Error(`Unknown type: ${shapeType.schema.type}`);
-    }
-  })();
   const { dataset, getSubject } = useLdo();
   const { isLoading } = useRulesBundle(rulesBundle);
 
@@ -30,7 +23,8 @@ export default function useListOfType<Type extends LdoBase>(
       items: dataset
         .match(null, null, namedNode(vocabUrl(type)))
         .toArray()
-        .map((quad) => getSubject(shapeType, quad.subject.value)),
+        .map((quad) => getSubject(shapeType, quad.subject.value))
+        .sort((a, b) => (a.label > b.label ? 1 : -1)),
     };
   }, [dataset, isLoading]);
 }

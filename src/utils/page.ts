@@ -36,7 +36,11 @@ export function getPages(path: string, admin: boolean): Array<Page> {
       translationId: "classesPageTitle",
       children: path.startsWith("/classes")
         ? (() => {
-            const { isLoading, items: classes } = useListOfType(ClassShapeType);
+            const { isLoading, items: classes } = useListOfType(
+              ClassShapeType,
+              "classes",
+              "Class",
+            );
             if (isLoading) return [];
             return classes
               .sort((a, b) => (a.label > b.label ? 1 : -1))

@@ -1,0 +1,638 @@
+<#acid-arrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#acid-arrow> <http://www.w3.org/2000/01/rdf-schema#label> "Acid Arrow" .
+<#acid-splash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#acid-splash> <http://www.w3.org/2000/01/rdf-schema#label> "Acid Splash" .
+<#aid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#aid> <http://www.w3.org/2000/01/rdf-schema#label> "Aid" .
+<#alarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#alarm> <http://www.w3.org/2000/01/rdf-schema#label> "Alarm" .
+<#alter-self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#alter-self> <http://www.w3.org/2000/01/rdf-schema#label> "Alter Self" .
+<#animal-friendship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#animal-friendship> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Friendship" .
+<#animal-messenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#animal-messenger> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Messenger" .
+<#animal-shapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#animal-shapes> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Shapes" .
+<#animate-dead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#animate-dead> <http://www.w3.org/2000/01/rdf-schema#label> "Animate Dead" .
+<#animate-objects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#animate-objects> <http://www.w3.org/2000/01/rdf-schema#label> "Animate Objects" .
+<#antilife-shell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#antilife-shell> <http://www.w3.org/2000/01/rdf-schema#label> "Antilife Shell" .
+<#antimagic-field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#antimagic-field> <http://www.w3.org/2000/01/rdf-schema#label> "Antimagic Field" .
+<#antipathy-sympathy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#antipathy-sympathy> <http://www.w3.org/2000/01/rdf-schema#label> "Antipathy/Sympathy" .
+<#arcane-eye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#arcane-eye> <http://www.w3.org/2000/01/rdf-schema#label> "Arcane Eye" .
+<#arcane-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#arcane-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Arcane Hand" .
+<#arcane-lock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#arcane-lock> <http://www.w3.org/2000/01/rdf-schema#label> "Arcane Lock" .
+<#arcane-sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#arcane-sword> <http://www.w3.org/2000/01/rdf-schema#label> "Arcane Sword" .
+<#arcanists-magic-aura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#arcanists-magic-aura> <http://www.w3.org/2000/01/rdf-schema#label> "Arcanist's Magic Aura" .
+<#astral-projection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#astral-projection> <http://www.w3.org/2000/01/rdf-schema#label> "Astral Projection" .
+<#augury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#augury> <http://www.w3.org/2000/01/rdf-schema#label> "Augury" .
+<#awaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#awaken> <http://www.w3.org/2000/01/rdf-schema#label> "Awaken" .
+<#bane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#bane> <http://www.w3.org/2000/01/rdf-schema#label> "Bane" .
+<#banishment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#banishment> <http://www.w3.org/2000/01/rdf-schema#label> "Banishment" .
+<#barkskin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#barkskin> <http://www.w3.org/2000/01/rdf-schema#label> "Barkskin" .
+<#beacon-of-hope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#beacon-of-hope> <http://www.w3.org/2000/01/rdf-schema#label> "Beacon of Hope" .
+<#bestow-curse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#bestow-curse> <http://www.w3.org/2000/01/rdf-schema#label> "Bestow Curse" .
+<#black-tentacles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#black-tentacles> <http://www.w3.org/2000/01/rdf-schema#label> "Black Tentacles" .
+<#blade-barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#blade-barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Blade Barrier" .
+<#bless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#bless> <http://www.w3.org/2000/01/rdf-schema#label> "Bless" .
+<#blight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#blight> <http://www.w3.org/2000/01/rdf-schema#label> "Blight" .
+<#blindness-deafness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#blindness-deafness> <http://www.w3.org/2000/01/rdf-schema#label> "Blindness/Deafness" .
+<#blink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#blink> <http://www.w3.org/2000/01/rdf-schema#label> "Blink" .
+<#blur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#blur> <http://www.w3.org/2000/01/rdf-schema#label> "Blur" .
+<#branding-smite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#branding-smite> <http://www.w3.org/2000/01/rdf-schema#label> "Branding Smite" .
+<#burning-hands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#burning-hands> <http://www.w3.org/2000/01/rdf-schema#label> "Burning Hands" .
+<#call-lightning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#call-lightning> <http://www.w3.org/2000/01/rdf-schema#label> "Call Lightning" .
+<#calm-emotions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#calm-emotions> <http://www.w3.org/2000/01/rdf-schema#label> "Calm Emotions" .
+<#chain-lightning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#chain-lightning> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Lightning" .
+<#charm-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#charm-person> <http://www.w3.org/2000/01/rdf-schema#label> "Charm Person" .
+<#chill-touch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#chill-touch> <http://www.w3.org/2000/01/rdf-schema#label> "Chill Touch" .
+<#circle-of-death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#circle-of-death> <http://www.w3.org/2000/01/rdf-schema#label> "Circle of Death" .
+<#clairvoyance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#clairvoyance> <http://www.w3.org/2000/01/rdf-schema#label> "Clairvoyance" .
+<#clone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#clone> <http://www.w3.org/2000/01/rdf-schema#label> "Clone" .
+<#cloudkill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#cloudkill> <http://www.w3.org/2000/01/rdf-schema#label> "Cloudkill" .
+<#color-spray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#color-spray> <http://www.w3.org/2000/01/rdf-schema#label> "Color Spray" .
+<#command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#command> <http://www.w3.org/2000/01/rdf-schema#label> "Command" .
+<#commune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#commune> <http://www.w3.org/2000/01/rdf-schema#label> "Commune" .
+<#commune-with-nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#commune-with-nature> <http://www.w3.org/2000/01/rdf-schema#label> "Commune With Nature" .
+<#comprehend-languages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#comprehend-languages> <http://www.w3.org/2000/01/rdf-schema#label> "Comprehend Languages" .
+<#compulsion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#compulsion> <http://www.w3.org/2000/01/rdf-schema#label> "Compulsion" .
+<#cone-of-cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#cone-of-cold> <http://www.w3.org/2000/01/rdf-schema#label> "Cone of Cold" .
+<#confusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#confusion> <http://www.w3.org/2000/01/rdf-schema#label> "Confusion" .
+<#conjure-animals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-animals> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Animals" .
+<#conjure-celestial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-celestial> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Celestial" .
+<#conjure-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Elemental" .
+<#conjure-fey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-fey> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Fey" .
+<#conjure-minor-elementals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-minor-elementals> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Minor Elementals" .
+<#conjure-woodland-beings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#conjure-woodland-beings> <http://www.w3.org/2000/01/rdf-schema#label> "Conjure Woodland Beings" .
+<#contact-other-plane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#contact-other-plane> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Other Plane" .
+<#contagion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#contagion> <http://www.w3.org/2000/01/rdf-schema#label> "Contagion" .
+<#contingency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#contingency> <http://www.w3.org/2000/01/rdf-schema#label> "Contingency" .
+<#continual-flame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#continual-flame> <http://www.w3.org/2000/01/rdf-schema#label> "Continual Flame" .
+<#control-water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#control-water> <http://www.w3.org/2000/01/rdf-schema#label> "Control Water" .
+<#control-weather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#control-weather> <http://www.w3.org/2000/01/rdf-schema#label> "Control Weather" .
+<#counterspell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#counterspell> <http://www.w3.org/2000/01/rdf-schema#label> "Counterspell" .
+<#create-food-and-water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#create-food-and-water> <http://www.w3.org/2000/01/rdf-schema#label> "Create Food and Water" .
+<#create-undead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#create-undead> <http://www.w3.org/2000/01/rdf-schema#label> "Create Undead" .
+<#create-or-destroy-water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#create-or-destroy-water> <http://www.w3.org/2000/01/rdf-schema#label> "Create or Destroy Water" .
+<#creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#creation> <http://www.w3.org/2000/01/rdf-schema#label> "Creation" .
+<#cure-wounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#cure-wounds> <http://www.w3.org/2000/01/rdf-schema#label> "Cure Wounds" .
+<#dancing-lights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dancing-lights> <http://www.w3.org/2000/01/rdf-schema#label> "Dancing Lights" .
+<#darkness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#darkness> <http://www.w3.org/2000/01/rdf-schema#label> "Darkness" .
+<#darkvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#darkvision> <http://www.w3.org/2000/01/rdf-schema#label> "Darkvision" .
+<#daylight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#daylight> <http://www.w3.org/2000/01/rdf-schema#label> "Daylight" .
+<#death-ward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#death-ward> <http://www.w3.org/2000/01/rdf-schema#label> "Death Ward" .
+<#delayed-blast-fireball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#delayed-blast-fireball> <http://www.w3.org/2000/01/rdf-schema#label> "Delayed Blast Fireball" .
+<#demiplane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#demiplane> <http://www.w3.org/2000/01/rdf-schema#label> "Demiplane" .
+<#detect-evil-and-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#detect-evil-and-good> <http://www.w3.org/2000/01/rdf-schema#label> "Detect Evil and Good" .
+<#detect-magic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#detect-magic> <http://www.w3.org/2000/01/rdf-schema#label> "Detect Magic" .
+<#detect-poison-and-disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#detect-poison-and-disease> <http://www.w3.org/2000/01/rdf-schema#label> "Detect Poison and Disease" .
+<#detect-thoughts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#detect-thoughts> <http://www.w3.org/2000/01/rdf-schema#label> "Detect Thoughts" .
+<#dimension-door> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dimension-door> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension Door" .
+<#disguise-self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#disguise-self> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Self" .
+<#disintegrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#disintegrate> <http://www.w3.org/2000/01/rdf-schema#label> "Disintegrate" .
+<#dispel-evil-and-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dispel-evil-and-good> <http://www.w3.org/2000/01/rdf-schema#label> "Dispel Evil and Good" .
+<#dispel-magic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dispel-magic> <http://www.w3.org/2000/01/rdf-schema#label> "Dispel Magic" .
+<#divination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#divination> <http://www.w3.org/2000/01/rdf-schema#label> "Divination" .
+<#divine-favor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#divine-favor> <http://www.w3.org/2000/01/rdf-schema#label> "Divine Favor" .
+<#divine-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#divine-word> <http://www.w3.org/2000/01/rdf-schema#label> "Divine Word" .
+<#dominate-beast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dominate-beast> <http://www.w3.org/2000/01/rdf-schema#label> "Dominate Beast" .
+<#dominate-monster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dominate-monster> <http://www.w3.org/2000/01/rdf-schema#label> "Dominate Monster" .
+<#dominate-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dominate-person> <http://www.w3.org/2000/01/rdf-schema#label> "Dominate Person" .
+<#dream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#dream> <http://www.w3.org/2000/01/rdf-schema#label> "Dream" .
+<#druidcraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#druidcraft> <http://www.w3.org/2000/01/rdf-schema#label> "Druidcraft" .
+<#earthquake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#earthquake> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake" .
+<#eldritch-blast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#eldritch-blast> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Blast" .
+<#enhance-ability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#enhance-ability> <http://www.w3.org/2000/01/rdf-schema#label> "Enhance Ability" .
+<#enlarge-reduce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#enlarge-reduce> <http://www.w3.org/2000/01/rdf-schema#label> "Enlarge/Reduce" .
+<#entangle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#entangle> <http://www.w3.org/2000/01/rdf-schema#label> "Entangle" .
+<#enthrall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#enthrall> <http://www.w3.org/2000/01/rdf-schema#label> "Enthrall" .
+<#etherealness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#etherealness> <http://www.w3.org/2000/01/rdf-schema#label> "Etherealness" .
+<#expeditious-retreat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#expeditious-retreat> <http://www.w3.org/2000/01/rdf-schema#label> "Expeditious Retreat" .
+<#eyebite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#eyebite> <http://www.w3.org/2000/01/rdf-schema#label> "Eyebite" .
+<#fabricate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fabricate> <http://www.w3.org/2000/01/rdf-schema#label> "Fabricate" .
+<#faerie-fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#faerie-fire> <http://www.w3.org/2000/01/rdf-schema#label> "Faerie Fire" .
+<#faithful-hound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#faithful-hound> <http://www.w3.org/2000/01/rdf-schema#label> "Faithful Hound" .
+<#false-life> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#false-life> <http://www.w3.org/2000/01/rdf-schema#label> "False Life" .
+<#fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fear> <http://www.w3.org/2000/01/rdf-schema#label> "Fear" .
+<#feather-fall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#feather-fall> <http://www.w3.org/2000/01/rdf-schema#label> "Feather Fall" .
+<#feeblemind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#feeblemind> <http://www.w3.org/2000/01/rdf-schema#label> "Feeblemind" .
+<#find-familiar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#find-familiar> <http://www.w3.org/2000/01/rdf-schema#label> "Find Familiar" .
+<#find-steed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#find-steed> <http://www.w3.org/2000/01/rdf-schema#label> "Find Steed" .
+<#find-traps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#find-traps> <http://www.w3.org/2000/01/rdf-schema#label> "Find Traps" .
+<#find-the-path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#find-the-path> <http://www.w3.org/2000/01/rdf-schema#label> "Find the Path" .
+<#finger-of-death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#finger-of-death> <http://www.w3.org/2000/01/rdf-schema#label> "Finger of Death" .
+<#fire-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fire-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Bolt" .
+<#fire-shield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fire-shield> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Shield" .
+<#fire-storm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fire-storm> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Storm" .
+<#fireball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fireball> <http://www.w3.org/2000/01/rdf-schema#label> "Fireball" .
+<#flame-blade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#flame-blade> <http://www.w3.org/2000/01/rdf-schema#label> "Flame Blade" .
+<#flame-strike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#flame-strike> <http://www.w3.org/2000/01/rdf-schema#label> "Flame Strike" .
+<#flaming-sphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#flaming-sphere> <http://www.w3.org/2000/01/rdf-schema#label> "Flaming Sphere" .
+<#flesh-to-stone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#flesh-to-stone> <http://www.w3.org/2000/01/rdf-schema#label> "Flesh to Stone" .
+<#floating-disk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#floating-disk> <http://www.w3.org/2000/01/rdf-schema#label> "Floating Disk" .
+<#fly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fly> <http://www.w3.org/2000/01/rdf-schema#label> "Fly" .
+<#fog-cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#fog-cloud> <http://www.w3.org/2000/01/rdf-schema#label> "Fog Cloud" .
+<#forbiddance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#forbiddance> <http://www.w3.org/2000/01/rdf-schema#label> "Forbiddance" .
+<#forcecage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#forcecage> <http://www.w3.org/2000/01/rdf-schema#label> "Forcecage" .
+<#foresight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#foresight> <http://www.w3.org/2000/01/rdf-schema#label> "Foresight" .
+<#freedom-of-movement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#freedom-of-movement> <http://www.w3.org/2000/01/rdf-schema#label> "Freedom of Movement" .
+<#freezing-sphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#freezing-sphere> <http://www.w3.org/2000/01/rdf-schema#label> "Freezing Sphere" .
+<#gaseous-form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#gaseous-form> <http://www.w3.org/2000/01/rdf-schema#label> "Gaseous Form" .
+<#gate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#gate> <http://www.w3.org/2000/01/rdf-schema#label> "Gate" .
+<#geas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#geas> <http://www.w3.org/2000/01/rdf-schema#label> "Geas" .
+<#gentle-repose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#gentle-repose> <http://www.w3.org/2000/01/rdf-schema#label> "Gentle Repose" .
+<#giant-insect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#giant-insect> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Insect" .
+<#glibness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#glibness> <http://www.w3.org/2000/01/rdf-schema#label> "Glibness" .
+<#globe-of-invulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#globe-of-invulnerability> <http://www.w3.org/2000/01/rdf-schema#label> "Globe of Invulnerability" .
+<#glyph-of-warding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#glyph-of-warding> <http://www.w3.org/2000/01/rdf-schema#label> "Glyph of Warding" .
+<#goodberry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#goodberry> <http://www.w3.org/2000/01/rdf-schema#label> "Goodberry" .
+<#grease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#grease> <http://www.w3.org/2000/01/rdf-schema#label> "Grease" .
+<#greater-invisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#greater-invisibility> <http://www.w3.org/2000/01/rdf-schema#label> "Greater Invisibility" .
+<#greater-restoration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#greater-restoration> <http://www.w3.org/2000/01/rdf-schema#label> "Greater Restoration" .
+<#guardian-of-faith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#guardian-of-faith> <http://www.w3.org/2000/01/rdf-schema#label> "Guardian of Faith" .
+<#guards-and-wards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#guards-and-wards> <http://www.w3.org/2000/01/rdf-schema#label> "Guards and Wards" .
+<#guidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#guidance> <http://www.w3.org/2000/01/rdf-schema#label> "Guidance" .
+<#guiding-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#guiding-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Guiding Bolt" .
+<#gust-of-wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#gust-of-wind> <http://www.w3.org/2000/01/rdf-schema#label> "Gust of Wind" .
+<#hallow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hallow> <http://www.w3.org/2000/01/rdf-schema#label> "Hallow" .
+<#hallucinatory-terrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hallucinatory-terrain> <http://www.w3.org/2000/01/rdf-schema#label> "Hallucinatory Terrain" .
+<#harm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#harm> <http://www.w3.org/2000/01/rdf-schema#label> "Harm" .
+<#haste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#haste> <http://www.w3.org/2000/01/rdf-schema#label> "Haste" .
+<#heal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#heal> <http://www.w3.org/2000/01/rdf-schema#label> "Heal" .
+<#healing-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#healing-word> <http://www.w3.org/2000/01/rdf-schema#label> "Healing Word" .
+<#heat-metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#heat-metal> <http://www.w3.org/2000/01/rdf-schema#label> "Heat Metal" .
+<#hellish-rebuke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hellish-rebuke> <http://www.w3.org/2000/01/rdf-schema#label> "Hellish Rebuke" .
+<#heroes-feast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#heroes-feast> <http://www.w3.org/2000/01/rdf-schema#label> "Heroes' Feast" .
+<#heroism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#heroism> <http://www.w3.org/2000/01/rdf-schema#label> "Heroism" .
+<#hideous-laughter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hideous-laughter> <http://www.w3.org/2000/01/rdf-schema#label> "Hideous Laughter" .
+<#hold-monster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hold-monster> <http://www.w3.org/2000/01/rdf-schema#label> "Hold Monster" .
+<#hold-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hold-person> <http://www.w3.org/2000/01/rdf-schema#label> "Hold Person" .
+<#holy-aura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#holy-aura> <http://www.w3.org/2000/01/rdf-schema#label> "Holy Aura" .
+<#hunters-mark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hunters-mark> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter's Mark" .
+<#hypnotic-pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#hypnotic-pattern> <http://www.w3.org/2000/01/rdf-schema#label> "Hypnotic Pattern" .
+<#ice-storm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#ice-storm> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Storm" .
+<#identify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#identify> <http://www.w3.org/2000/01/rdf-schema#label> "Identify" .
+<#illusory-script> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#illusory-script> <http://www.w3.org/2000/01/rdf-schema#label> "Illusory Script" .
+<#imprisonment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#imprisonment> <http://www.w3.org/2000/01/rdf-schema#label> "Imprisonment" .
+<#incendiary-cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#incendiary-cloud> <http://www.w3.org/2000/01/rdf-schema#label> "Incendiary Cloud" .
+<#inflict-wounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#inflict-wounds> <http://www.w3.org/2000/01/rdf-schema#label> "Inflict Wounds" .
+<#insect-plague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#insect-plague> <http://www.w3.org/2000/01/rdf-schema#label> "Insect Plague" .
+<#instant-summons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#instant-summons> <http://www.w3.org/2000/01/rdf-schema#label> "Instant Summons" .
+<#invisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#invisibility> <http://www.w3.org/2000/01/rdf-schema#label> "Invisibility" .
+<#irresistible-dance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#irresistible-dance> <http://www.w3.org/2000/01/rdf-schema#label> "Irresistible Dance" .
+<#jump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#jump> <http://www.w3.org/2000/01/rdf-schema#label> "Jump" .
+<#knock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#knock> <http://www.w3.org/2000/01/rdf-schema#label> "Knock" .
+<#legend-lore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#legend-lore> <http://www.w3.org/2000/01/rdf-schema#label> "Legend Lore" .
+<#lesser-restoration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#lesser-restoration> <http://www.w3.org/2000/01/rdf-schema#label> "Lesser Restoration" .
+<#levitate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#levitate> <http://www.w3.org/2000/01/rdf-schema#label> "Levitate" .
+<#light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#light> <http://www.w3.org/2000/01/rdf-schema#label> "Light" .
+<#lightning-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#lightning-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Lightning Bolt" .
+<#locate-animals-or-plants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#locate-animals-or-plants> <http://www.w3.org/2000/01/rdf-schema#label> "Locate Animals or Plants" .
+<#locate-creature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#locate-creature> <http://www.w3.org/2000/01/rdf-schema#label> "Locate Creature" .
+<#locate-object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#locate-object> <http://www.w3.org/2000/01/rdf-schema#label> "Locate Object" .
+<#longstrider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#longstrider> <http://www.w3.org/2000/01/rdf-schema#label> "Longstrider" .
+<#mage-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mage-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Mage Armor" .
+<#mage-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mage-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Mage Hand" .
+<#magic-circle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magic-circle> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Circle" .
+<#magic-jar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magic-jar> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Jar" .
+<#magic-missile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magic-missile> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Missile" .
+<#magic-mouth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magic-mouth> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Mouth" .
+<#magic-weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magic-weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Weapon" .
+<#magnificent-mansion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#magnificent-mansion> <http://www.w3.org/2000/01/rdf-schema#label> "Magnificent Mansion" .
+<#major-image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#major-image> <http://www.w3.org/2000/01/rdf-schema#label> "Major Image" .
+<#mass-cure-wounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mass-cure-wounds> <http://www.w3.org/2000/01/rdf-schema#label> "Mass Cure Wounds" .
+<#mass-heal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mass-heal> <http://www.w3.org/2000/01/rdf-schema#label> "Mass Heal" .
+<#mass-healing-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mass-healing-word> <http://www.w3.org/2000/01/rdf-schema#label> "Mass Healing Word" .
+<#mass-suggestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mass-suggestion> <http://www.w3.org/2000/01/rdf-schema#label> "Mass Suggestion" .
+<#maze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#maze> <http://www.w3.org/2000/01/rdf-schema#label> "Maze" .
+<#meld-into-stone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#meld-into-stone> <http://www.w3.org/2000/01/rdf-schema#label> "Meld Into Stone" .
+<#mending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mending> <http://www.w3.org/2000/01/rdf-schema#label> "Mending" .
+<#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#message> <http://www.w3.org/2000/01/rdf-schema#label> "Message" .
+<#meteor-swarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#meteor-swarm> <http://www.w3.org/2000/01/rdf-schema#label> "Meteor Swarm" .
+<#mind-blank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mind-blank> <http://www.w3.org/2000/01/rdf-schema#label> "Mind Blank" .
+<#minor-illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#minor-illusion> <http://www.w3.org/2000/01/rdf-schema#label> "Minor Illusion" .
+<#mirage-arcane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mirage-arcane> <http://www.w3.org/2000/01/rdf-schema#label> "Mirage Arcane" .
+<#mirror-image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mirror-image> <http://www.w3.org/2000/01/rdf-schema#label> "Mirror Image" .
+<#mislead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#mislead> <http://www.w3.org/2000/01/rdf-schema#label> "Mislead" .
+<#misty-step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#misty-step> <http://www.w3.org/2000/01/rdf-schema#label> "Misty Step" .
+<#modify-memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#modify-memory> <http://www.w3.org/2000/01/rdf-schema#label> "Modify Memory" .
+<#moonbeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#moonbeam> <http://www.w3.org/2000/01/rdf-schema#label> "Moonbeam" .
+<#move-earth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#move-earth> <http://www.w3.org/2000/01/rdf-schema#label> "Move Earth" .
+<#nondetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#nondetection> <http://www.w3.org/2000/01/rdf-schema#label> "Nondetection" .
+<#pass-without-trace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#pass-without-trace> <http://www.w3.org/2000/01/rdf-schema#label> "Pass Without Trace" .
+<#passwall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#passwall> <http://www.w3.org/2000/01/rdf-schema#label> "Passwall" .
+<#phantasmal-killer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#phantasmal-killer> <http://www.w3.org/2000/01/rdf-schema#label> "Phantasmal Killer" .
+<#phantom-steed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#phantom-steed> <http://www.w3.org/2000/01/rdf-schema#label> "Phantom Steed" .
+<#planar-ally> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#planar-ally> <http://www.w3.org/2000/01/rdf-schema#label> "Planar Ally" .
+<#planar-binding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#planar-binding> <http://www.w3.org/2000/01/rdf-schema#label> "Planar Binding" .
+<#plane-shift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#plane-shift> <http://www.w3.org/2000/01/rdf-schema#label> "Plane Shift" .
+<#plant-growth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#plant-growth> <http://www.w3.org/2000/01/rdf-schema#label> "Plant Growth" .
+<#poison-spray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#poison-spray> <http://www.w3.org/2000/01/rdf-schema#label> "Poison Spray" .
+<#polymorph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#polymorph> <http://www.w3.org/2000/01/rdf-schema#label> "Polymorph" .
+<#power-word-kill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#power-word-kill> <http://www.w3.org/2000/01/rdf-schema#label> "Power Word Kill" .
+<#power-word-stun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#power-word-stun> <http://www.w3.org/2000/01/rdf-schema#label> "Power Word Stun" .
+<#prayer-of-healing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#prayer-of-healing> <http://www.w3.org/2000/01/rdf-schema#label> "Prayer of Healing" .
+<#prestidigitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#prestidigitation> <http://www.w3.org/2000/01/rdf-schema#label> "Prestidigitation" .
+<#prismatic-spray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#prismatic-spray> <http://www.w3.org/2000/01/rdf-schema#label> "Prismatic Spray" .
+<#prismatic-wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#prismatic-wall> <http://www.w3.org/2000/01/rdf-schema#label> "Prismatic Wall" .
+<#private-sanctum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#private-sanctum> <http://www.w3.org/2000/01/rdf-schema#label> "Private Sanctum" .
+<#produce-flame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#produce-flame> <http://www.w3.org/2000/01/rdf-schema#label> "Produce Flame" .
+<#programmed-illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#programmed-illusion> <http://www.w3.org/2000/01/rdf-schema#label> "Programmed Illusion" .
+<#project-image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#project-image> <http://www.w3.org/2000/01/rdf-schema#label> "Project Image" .
+<#protection-from-energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#protection-from-energy> <http://www.w3.org/2000/01/rdf-schema#label> "Protection From Energy" .
+<#protection-from-evil-and-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#protection-from-evil-and-good> <http://www.w3.org/2000/01/rdf-schema#label> "Protection from Evil and Good" .
+<#protection-from-poison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#protection-from-poison> <http://www.w3.org/2000/01/rdf-schema#label> "Protection from Poison" .
+<#purify-food-and-drink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#purify-food-and-drink> <http://www.w3.org/2000/01/rdf-schema#label> "Purify Food and Drink" .
+<#raise-dead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#raise-dead> <http://www.w3.org/2000/01/rdf-schema#label> "Raise Dead" .
+<#ray-of-enfeeblement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#ray-of-enfeeblement> <http://www.w3.org/2000/01/rdf-schema#label> "Ray of Enfeeblement" .
+<#ray-of-frost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#ray-of-frost> <http://www.w3.org/2000/01/rdf-schema#label> "Ray of Frost" .
+<#regenerate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#regenerate> <http://www.w3.org/2000/01/rdf-schema#label> "Regenerate" .
+<#reincarnate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#reincarnate> <http://www.w3.org/2000/01/rdf-schema#label> "Reincarnate" .
+<#remove-curse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#remove-curse> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Curse" .
+<#resilient-sphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#resilient-sphere> <http://www.w3.org/2000/01/rdf-schema#label> "Resilient Sphere" .
+<#resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#resistance> <http://www.w3.org/2000/01/rdf-schema#label> "Resistance" .
+<#resurrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#resurrection> <http://www.w3.org/2000/01/rdf-schema#label> "Resurrection" .
+<#reverse-gravity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#reverse-gravity> <http://www.w3.org/2000/01/rdf-schema#label> "Reverse Gravity" .
+<#revivify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#revivify> <http://www.w3.org/2000/01/rdf-schema#label> "Revivify" .
+<#rope-trick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#rope-trick> <http://www.w3.org/2000/01/rdf-schema#label> "Rope Trick" .
+<#sacred-flame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sacred-flame> <http://www.w3.org/2000/01/rdf-schema#label> "Sacred Flame" .
+<#sanctuary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sanctuary> <http://www.w3.org/2000/01/rdf-schema#label> "Sanctuary" .
+<#scorching-ray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#scorching-ray> <http://www.w3.org/2000/01/rdf-schema#label> "Scorching Ray" .
+<#scrying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#scrying> <http://www.w3.org/2000/01/rdf-schema#label> "Scrying" .
+<#secret-chest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#secret-chest> <http://www.w3.org/2000/01/rdf-schema#label> "Secret Chest" .
+<#see-invisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#see-invisibility> <http://www.w3.org/2000/01/rdf-schema#label> "See Invisibility" .
+<#seeming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#seeming> <http://www.w3.org/2000/01/rdf-schema#label> "Seeming" .
+<#sending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sending> <http://www.w3.org/2000/01/rdf-schema#label> "Sending" .
+<#sequester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sequester> <http://www.w3.org/2000/01/rdf-schema#label> "Sequester" .
+<#shapechange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shapechange> <http://www.w3.org/2000/01/rdf-schema#label> "Shapechange" .
+<#shatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shatter> <http://www.w3.org/2000/01/rdf-schema#label> "Shatter" .
+<#shield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shield> <http://www.w3.org/2000/01/rdf-schema#label> "Shield" .
+<#shield-of-faith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shield-of-faith> <http://www.w3.org/2000/01/rdf-schema#label> "Shield of Faith" .
+<#shillelagh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shillelagh> <http://www.w3.org/2000/01/rdf-schema#label> "Shillelagh" .
+<#shocking-grasp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#shocking-grasp> <http://www.w3.org/2000/01/rdf-schema#label> "Shocking Grasp" .
+<#silence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#silence> <http://www.w3.org/2000/01/rdf-schema#label> "Silence" .
+<#silent-image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#silent-image> <http://www.w3.org/2000/01/rdf-schema#label> "Silent Image" .
+<#simulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#simulacrum> <http://www.w3.org/2000/01/rdf-schema#label> "Simulacrum" .
+<#sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep" .
+<#sleet-storm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sleet-storm> <http://www.w3.org/2000/01/rdf-schema#label> "Sleet Storm" .
+<#slow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#slow> <http://www.w3.org/2000/01/rdf-schema#label> "Slow" .
+<#spare-the-dying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#spare-the-dying> <http://www.w3.org/2000/01/rdf-schema#label> "Spare the Dying" .
+<#speak-with-animals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#speak-with-animals> <http://www.w3.org/2000/01/rdf-schema#label> "Speak with Animals" .
+<#speak-with-dead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#speak-with-dead> <http://www.w3.org/2000/01/rdf-schema#label> "Speak with Dead" .
+<#speak-with-plants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#speak-with-plants> <http://www.w3.org/2000/01/rdf-schema#label> "Speak with Plants" .
+<#spider-climb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#spider-climb> <http://www.w3.org/2000/01/rdf-schema#label> "Spider Climb" .
+<#spike-growth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#spike-growth> <http://www.w3.org/2000/01/rdf-schema#label> "Spike Growth" .
+<#spirit-guardians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#spirit-guardians> <http://www.w3.org/2000/01/rdf-schema#label> "Spirit Guardians" .
+<#spiritual-weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#spiritual-weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Spiritual Weapon" .
+<#stinking-cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#stinking-cloud> <http://www.w3.org/2000/01/rdf-schema#label> "Stinking Cloud" .
+<#stone-shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#stone-shape> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Shape" .
+<#stoneskin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#stoneskin> <http://www.w3.org/2000/01/rdf-schema#label> "Stoneskin" .
+<#storm-of-vengeance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#storm-of-vengeance> <http://www.w3.org/2000/01/rdf-schema#label> "Storm of Vengeance" .
+<#suggestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#suggestion> <http://www.w3.org/2000/01/rdf-schema#label> "Suggestion" .
+<#sunbeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sunbeam> <http://www.w3.org/2000/01/rdf-schema#label> "Sunbeam" .
+<#sunburst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#sunburst> <http://www.w3.org/2000/01/rdf-schema#label> "Sunburst" .
+<#symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#symbol> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol" .
+<#telekinesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#telekinesis> <http://www.w3.org/2000/01/rdf-schema#label> "Telekinesis" .
+<#telepathic-bond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#telepathic-bond> <http://www.w3.org/2000/01/rdf-schema#label> "Telepathic Bond" .
+<#teleport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#teleport> <http://www.w3.org/2000/01/rdf-schema#label> "Teleport" .
+<#teleportation-circle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#teleportation-circle> <http://www.w3.org/2000/01/rdf-schema#label> "Teleportation Circle" .
+<#thaumaturgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#thaumaturgy> <http://www.w3.org/2000/01/rdf-schema#label> "Thaumaturgy" .
+<#thunderwave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#thunderwave> <http://www.w3.org/2000/01/rdf-schema#label> "Thunderwave" .
+<#time-stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#time-stop> <http://www.w3.org/2000/01/rdf-schema#label> "Time Stop" .
+<#tiny-hut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#tiny-hut> <http://www.w3.org/2000/01/rdf-schema#label> "Tiny Hut" .
+<#tongues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#tongues> <http://www.w3.org/2000/01/rdf-schema#label> "Tongues" .
+<#transport-via-plants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#transport-via-plants> <http://www.w3.org/2000/01/rdf-schema#label> "Transport via Plants" .
+<#tree-stride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#tree-stride> <http://www.w3.org/2000/01/rdf-schema#label> "Tree Stride" .
+<#true-polymorph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#true-polymorph> <http://www.w3.org/2000/01/rdf-schema#label> "True Polymorph" .
+<#true-resurrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#true-resurrection> <http://www.w3.org/2000/01/rdf-schema#label> "True Resurrection" .
+<#true-seeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#true-seeing> <http://www.w3.org/2000/01/rdf-schema#label> "True Seeing" .
+<#true-strike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#true-strike> <http://www.w3.org/2000/01/rdf-schema#label> "True Strike" .
+<#unseen-servant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#unseen-servant> <http://www.w3.org/2000/01/rdf-schema#label> "Unseen Servant" .
+<#vampiric-touch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#vampiric-touch> <http://www.w3.org/2000/01/rdf-schema#label> "Vampiric Touch" .
+<#vicious-mockery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#vicious-mockery> <http://www.w3.org/2000/01/rdf-schema#label> "Vicious Mockery" .
+<#wall-of-fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wall-of-fire> <http://www.w3.org/2000/01/rdf-schema#label> "Wall of Fire" .
+<#wall-of-force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wall-of-force> <http://www.w3.org/2000/01/rdf-schema#label> "Wall of Force" .
+<#wall-of-ice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wall-of-ice> <http://www.w3.org/2000/01/rdf-schema#label> "Wall of Ice" .
+<#wall-of-stone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wall-of-stone> <http://www.w3.org/2000/01/rdf-schema#label> "Wall of Stone" .
+<#wall-of-thorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wall-of-thorns> <http://www.w3.org/2000/01/rdf-schema#label> "Wall of Thorns" .
+<#warding-bond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#warding-bond> <http://www.w3.org/2000/01/rdf-schema#label> "Warding Bond" .
+<#water-breathing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#water-breathing> <http://www.w3.org/2000/01/rdf-schema#label> "Water Breathing" .
+<#water-walk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#water-walk> <http://www.w3.org/2000/01/rdf-schema#label> "Water Walk" .
+<#web> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#web> <http://www.w3.org/2000/01/rdf-schema#label> "Web" .
+<#weird> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#weird> <http://www.w3.org/2000/01/rdf-schema#label> "Weird" .
+<#wind-walk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wind-walk> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Walk" .
+<#wind-wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wind-wall> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Wall" .
+<#wish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#wish> <http://www.w3.org/2000/01/rdf-schema#label> "Wish" .
+<#word-of-recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#word-of-recall> <http://www.w3.org/2000/01/rdf-schema#label> "Word of Recall" .
+<#zone-of-truth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
+<#zone-of-truth> <http://www.w3.org/2000/01/rdf-schema#label> "Zone of Truth" .

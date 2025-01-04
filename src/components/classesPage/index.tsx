@@ -8,7 +8,11 @@ import { NavLink } from "react-router-dom";
 import useListOfType from "../../hooks/useListOfType";
 
 export default function ClassesPage() {
-  const { isLoading, items: classes } = useListOfType(ClassShapeType);
+  const { isLoading, items: classes } = useListOfType(
+    ClassShapeType,
+    "classes",
+    "Class",
+  );
 
   if (isLoading) {
     return <Loading />;

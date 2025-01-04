@@ -559,6 +559,7 @@ export interface Spell {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+  description?: string[];
 }
 
 /**

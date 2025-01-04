@@ -2168,6 +2168,16 @@ export const dnd5eSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
             },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
           ],
         },
       },

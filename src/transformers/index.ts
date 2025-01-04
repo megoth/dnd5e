@@ -11,6 +11,7 @@ import writeEquipment from "./equipment";
 import writeEquipmentCategory from "./equipmentCategory";
 import writeLevels from "./levels";
 import writeFeatures from "./features";
+import writeSpells from "./spells";
 
 export default async function transformData() {
   return Promise.all([
@@ -27,5 +28,6 @@ export default async function transformData() {
     writeLevels(),
     writeProficiencies(),
     writeSkills(),
+    writeSpells(),
   ]);
 }
