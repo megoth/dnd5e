@@ -107,6 +107,9 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...classInfo.levels.flatMap((level) =>
       level.features.map((feature) => resourceUrl(feature["@id"])),
     ),
+    ...classInfo.multiclassing.prerequisites.map((prerequisite) =>
+      resourceUrl(prerequisite.abilityScore["@id"]),
+    ),
   ];
 }
 

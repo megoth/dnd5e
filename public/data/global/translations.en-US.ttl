@@ -3,6 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :aboutPageTitle skos:definition "About the app"@en-US .
+:and skos:definition "and"@en-US .
 :appDescription skos:definition "A Solid App for D&D5e"@en-US .
 :appName skos:definition "D&D5e Solid App"@en-US .
 :appPitch skos:definition
@@ -58,6 +59,7 @@
 :martialArts skos:definition "Martial Arts"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
+:multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .

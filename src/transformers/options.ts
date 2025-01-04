@@ -57,6 +57,24 @@ export interface IReferenceOption {
   item?: components["schemas"]["APIReference"];
 }
 
+interface IScorePrerequisiteOption {
+  option_type?: string;
+  ability_score?: components["schemas"]["APIReference"];
+  minimum_score?: number;
+}
+
+export function transformScorePrerequisiteOption(
+  data: IScorePrerequisiteOption,
+  ldoDataset = createLdoDataset(),
+): ScorePrerequisiteOption {
+  return ldoDataset.usingType(ScorePrerequisiteOptionShapeType).fromJson({
+    abilityScore: ldoDataset
+      .usingType(AbilityScoreShapeType)
+      .fromSubject(dataUrl("abilityScores", data.ability_score.index)),
+    minimumScore: data.minimum_score,
+  });
+}
+
 export function transformReferenceOption(
   data: IReferenceOption,
   ldoDataset = createLdoDataset(),
@@ -98,24 +116,6 @@ export function transformOption(
   ): ActionOption {
     return ldoDataset.usingType(ActionOptionShapeType).fromJson({
       label: data.action_name,
-    });
-  }
-
-  interface IScorePrerequisiteOption {
-    option_type?: string;
-    ability_score?: components["schemas"]["APIReference"];
-    minimum_score?: number;
-  }
-
-  function transformScorePrerequisiteOption(
-    data: IScorePrerequisiteOption,
-    ldoDadaset = createLdoDataset(),
-  ): ScorePrerequisiteOption {
-    return ldoDadaset.usingType(ScorePrerequisiteOptionShapeType).fromJson({
-      abilityScore: ldoDadaset
-        .usingType(AbilityScoreShapeType)
-        .fromSubject(dataUrl("abilityScores", data.ability_score.index)),
-      minimumScore: data.minimum_score,
     });
   }
 

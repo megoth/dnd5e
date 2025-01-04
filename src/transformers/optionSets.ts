@@ -12,6 +12,7 @@ import {
   transformChoiceOption,
   transformCountedReferenceOption,
   transformReferenceOption,
+  transformScorePrerequisiteOption,
 } from "./options";
 import { dataUrl } from "../utils/dnd5e";
 import { OptionSet } from "../ldo/dnd5e.typings";
@@ -44,6 +45,9 @@ function transformOptionsArray(
 ) {
   // TODO: string, ideal, counted_reference, breath
   return ldoDataset.usingType(OptionSetShapeType).fromJson({
+    abilityScores: data.options
+      .filter((option) => option.option_type === "score_prerequisite")
+      .map((option) => transformScorePrerequisiteOption(option, ldoDataset)),
     choices: data.options
       .filter((option) => option.option_type === "choice")
       .map((option) =>

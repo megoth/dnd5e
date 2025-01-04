@@ -3,6 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
+:and skos:definition "og"@nb-NO .
 :appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 :appName skos:definition "D&D5e Solid App"@nb-NO .
 :appPitch skos:definition
@@ -59,6 +60,7 @@
 :martialArts skos:definition "Kampkunst"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
+:multiclassRequirement skos:definition "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
