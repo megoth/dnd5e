@@ -69,6 +69,8 @@ export function choiceLabels(choice: Choice) {
 
 export function choiceResourceUrls(choice: Choice): string[] {
   return [
+    ...(choice.from?.abilityScores?.map((score) => score.abilityScore["@id"]) ||
+      []),
     ...(choice.from?.choices?.flatMap((option) =>
       choiceResourceUrls(option.choice),
     ) || []),
@@ -110,6 +112,9 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...classInfo.multiclassing.prerequisites.map((prerequisite) =>
       resourceUrl(prerequisite.abilityScore["@id"]),
     ),
+    ...(classInfo.multiclassing?.prerequisiteOptions
+      ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteOptions)
+      : []),
   ];
 }
 

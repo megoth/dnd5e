@@ -24,22 +24,16 @@ function transformClass(
   adventureClass.type = type("Class");
   adventureClass.label = data.name;
   adventureClass.hitDie = data.hit_die;
+  adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>
+    ldoDataset
+      .usingType(ClassLevelShapeType)
+      .fromSubject(dataUrl("class-levels", `${data.index}-${index + 1}`)),
+  );
   adventureClass.multiclassing =
     data.multi_classing &&
     transformMulticlassing(data.multi_classing, ldoDataset);
-  adventureClass.proficiencies = data.proficiencies.map((proficiency) =>
-    ldoDataset
-      .usingType(ProficiencyShapeType)
-      .fromSubject(dataUrl("proficiencies", proficiency.index)),
-  );
-  adventureClass.proficiencyChoices = data.proficiency_choices.map((choice) =>
-    transformChoice(choice, ldoDataset),
-  );
-  adventureClass.savingThrows = data.saving_throws.map((savingThrow) =>
-    ldoDataset
-      .usingType(AbilityScoreShapeType)
-      .fromSubject(dataUrl("abilityScores", savingThrow.index)),
-  );
+  // spellcasting
+  // spells
   adventureClass.startingEquipment = data.starting_equipment.map(
     (startingEquipment) =>
       transformStartingEquipment(startingEquipment, ldoDataset),
@@ -47,11 +41,20 @@ function transformClass(
   adventureClass.startingEquipmentOptions = data.starting_equipment_options.map(
     (option) => transformChoice(option, ldoDataset),
   );
-  adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>
-    ldoDataset
-      .usingType(ClassLevelShapeType)
-      .fromSubject(dataUrl("class-levels", `${data.index}-${index + 1}`)),
+  adventureClass.proficiencyChoices = data.proficiency_choices.map((choice) =>
+    transformChoice(choice, ldoDataset),
   );
+  adventureClass.proficiencies = data.proficiencies.map((proficiency) =>
+    ldoDataset
+      .usingType(ProficiencyShapeType)
+      .fromSubject(dataUrl("proficiencies", proficiency.index)),
+  );
+  adventureClass.savingThrows = data.saving_throws.map((savingThrow) =>
+    ldoDataset
+      .usingType(AbilityScoreShapeType)
+      .fromSubject(dataUrl("abilityScores", savingThrow.index)),
+  );
+  // subclasses
   return adventureClass;
 }
 
