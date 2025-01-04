@@ -13,6 +13,7 @@ import { apiUrlToSubjectUrl, dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import { transformChoice } from "./choice";
+import features from "../dnd5eapi-data/5e-SRD-Features.json";
 
 interface SpecificFeature {
   subfeature_options?: components["schemas"]["Choice"];
@@ -95,12 +96,10 @@ export function transformFeature(
   return feature;
 }
 
-export default async function writeFeatures(
-  data: Array<components["schemas"]["Feature"]>,
-): Promise<void> {
+export default async function writeFeatures() {
   const turtle = (
     await Promise.all(
-      data.map((feature) => toTurtle(transformFeature(feature))),
+      features.map((feature) => toTurtle(transformFeature(feature))),
     )
   ).reduce((memo, features) => memo.concat(features));
   writeFileSync(dataPath("features"), turtle);

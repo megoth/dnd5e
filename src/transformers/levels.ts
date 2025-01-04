@@ -15,6 +15,7 @@ import {
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import { dataPath, dataUrl } from "../utils/dnd5e";
+import levels from "../dnd5eapi-data/5e-SRD-Levels.json";
 
 export function transformLevel(
   data: components["schemas"]["ClassLevel"],
@@ -120,11 +121,9 @@ export function transformLevel(
   return classLevel;
 }
 
-export default async function writeLevels(
-  data: Array<components["schemas"]["ClassLevel"]>,
-): Promise<void> {
+export default async function writeLevels() {
   const turtle = (
-    await Promise.all(data.map((level) => toTurtle(transformLevel(level))))
+    await Promise.all(levels.map((level) => toTurtle(transformLevel(level))))
   ).reduce((memo, levels) => memo.concat(levels));
   writeFileSync(dataPath("class-levels"), turtle);
 }

@@ -1,19 +1,3 @@
-import { components } from "../typings/dnd5eapi";
-
-import abilityScores from "../dnd5eapi-data/5e-SRD-Ability-Scores.json";
-import alignments from "../dnd5eapi-data/5e-SRD-Alignments.json";
-import backgrounds from "../dnd5eapi-data/5e-SRD-Backgrounds.json";
-import classes from "../dnd5eapi-data/5e-SRD-Classes.json";
-import conditions from "../dnd5eapi-data/5e-SRD-Conditions.json";
-import damageTypes from "../dnd5eapi-data/5e-SRD-Damage-Types.json";
-import features from "../dnd5eapi-data/5e-SRD-Features.json";
-import languages from "../dnd5eapi-data/5e-SRD-Languages.json";
-import proficiencies from "../dnd5eapi-data/5e-SRD-Proficiencies.json";
-import skills from "../dnd5eapi-data/5e-SRD-Skills.json";
-import equipment from "../dnd5eapi-data/5e-SRD-Equipment.json";
-import equipmentCategories from "../dnd5eapi-data/5e-SRD-Equipment-Categories.json";
-import levels from "../dnd5eapi-data/5e-SRD-Levels.json";
-
 import writeAlignments from "./alignments";
 import writeAbilityScores from "./abilityScores";
 import writeSkills from "./skills";
@@ -30,18 +14,18 @@ import writeFeatures from "./features";
 
 export default async function transformData() {
   return Promise.all([
-    writeAbilityScores(abilityScores),
-    writeAlignments(alignments),
-    writeBackgrounds(backgrounds),
-    writeClasses(classes as Array<components["schemas"]["Class"]>),
-    writeConditions(conditions),
-    writeDamageTypes(damageTypes),
-    writeEquipment(equipment),
-    writeEquipmentCategory(equipmentCategories),
-    writeFeatures(features),
-    writeLanguages(languages as Array<components["schemas"]["Language"]>),
-    writeLevels(levels),
-    writeProficiencies(proficiencies),
-    writeSkills(skills),
+    writeAbilityScores(),
+    writeAlignments(),
+    writeBackgrounds(),
+    writeClasses(),
+    writeConditions(),
+    writeDamageTypes(),
+    writeEquipment(),
+    writeEquipmentCategory(),
+    writeFeatures(),
+    writeLanguages(),
+    writeLevels(),
+    writeProficiencies(),
+    writeSkills(),
   ]);
 }

@@ -10,6 +10,7 @@ import { dataPath, dataUrl } from "../utils/dnd5e";
 import { transformStartingEquipment } from "./startingEquipment";
 import { type } from "../../public/data/type";
 import { transformChoice } from "./choice";
+import backgrounds from "../dnd5eapi-data/5e-SRD-Backgrounds.json";
 
 function transformBackground(
   data: components["schemas"]["Background"],
@@ -41,12 +42,12 @@ function transformBackground(
   return background;
 }
 
-export default async function writeBackgrounds(
-  data: Array<components["schemas"]["Background"]>,
-): Promise<void> {
+export default async function writeBackgrounds() {
   const turtle = (
     await Promise.all(
-      data.map((abilityScore) => toTurtle(transformBackground(abilityScore))),
+      backgrounds.map((abilityScore) =>
+        toTurtle(transformBackground(abilityScore)),
+      ),
     )
   ).reduce((memo, background) => memo.concat(background));
   writeFileSync(dataPath("backgrounds"), turtle);

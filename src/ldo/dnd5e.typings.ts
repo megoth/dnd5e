@@ -143,6 +143,7 @@ export interface Class {
   startingEquipment?: StartingEquipment[];
   startingEquipmentOptions?: Choice[];
   classSpellcasting: ClassSpellcasting;
+  spells?: Spell[];
 }
 
 /**

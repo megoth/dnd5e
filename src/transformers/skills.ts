@@ -5,6 +5,7 @@ import { Skill } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
+import skills from "../dnd5eapi-data/5e-SRD-Skills.json";
 
 export function transformSkill(
   data: components["schemas"]["Skill"],
@@ -22,11 +23,9 @@ export function transformSkill(
   return skill;
 }
 
-export default async function writeSkills(
-  data: Array<components["schemas"]["Skill"]>,
-): Promise<void> {
+export default async function writeSkills(): Promise<void> {
   const turtle = (
-    await Promise.all(data.map((skill) => toTurtle(transformSkill(skill))))
+    await Promise.all(skills.map((skill) => toTurtle(transformSkill(skill))))
   ).reduce((memo, skill) => memo.concat(skill));
   writeFileSync(dataPath("skills"), turtle);
 }

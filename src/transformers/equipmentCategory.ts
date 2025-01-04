@@ -8,6 +8,7 @@ import { EquipmentCategory } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
+import equipmentCategories from "../dnd5eapi-data/5e-SRD-Equipment-Categories.json";
 
 export function transformEquipmentCategory(
   data: components["schemas"]["EquipmentCategory"],
@@ -26,12 +27,12 @@ export function transformEquipmentCategory(
   return category;
 }
 
-export default async function writeEquipmentCategory(
-  data: Array<components["schemas"]["EquipmentCategory"]>,
-): Promise<void> {
+export default async function writeEquipmentCategory() {
   const turtle = (
     await Promise.all(
-      data.map((category) => toTurtle(transformEquipmentCategory(category))),
+      equipmentCategories.map((category) =>
+        toTurtle(transformEquipmentCategory(category)),
+      ),
     )
   ).reduce((memo, category) => memo.concat(category));
   writeFileSync(dataPath("equipment-categories"), turtle);

@@ -6,6 +6,8 @@ import { AbilityScore } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 
+import abilityScores from "../dnd5eapi-data/5e-SRD-Ability-Scores.json";
+
 function transformAbilityScore(
   data: components["schemas"]["AbilityScore"],
   ldoDataset = createLdoDataset(),
@@ -25,12 +27,12 @@ function transformAbilityScore(
   return abilityScore;
 }
 
-export default async function writeAbilityScores(
-  data: Array<components["schemas"]["AbilityScore"]>,
-): Promise<void> {
+export default async function writeAbilityScores() {
   const turtle = (
     await Promise.all(
-      data.map((abilityScore) => toTurtle(transformAbilityScore(abilityScore))),
+      abilityScores.map((abilityScore) =>
+        toTurtle(transformAbilityScore(abilityScore)),
+      ),
     )
   ).reduce((memo, abilityScore) => memo.concat(abilityScore));
   writeFileSync(dataPath("abilityScores"), turtle);

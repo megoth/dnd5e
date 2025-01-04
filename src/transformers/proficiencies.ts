@@ -9,6 +9,7 @@ import { writeFileSync } from "node:fs";
 import { Proficiency } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
+import proficiencies from "../dnd5eapi-data/5e-SRD-Proficiencies.json";
 
 export function transformProficiency(
   data: components["schemas"]["Proficiency"],
@@ -33,12 +34,12 @@ export function transformProficiency(
   return proficiency;
 }
 
-export default async function writeProficiencies(
-  data: Array<components["schemas"]["Proficiency"]>,
-): Promise<void> {
+export default async function writeProficiencies() {
   const turtle = (
     await Promise.all(
-      data.map((proficiency) => toTurtle(transformProficiency(proficiency))),
+      proficiencies.map((proficiency) =>
+        toTurtle(transformProficiency(proficiency)),
+      ),
     )
   ).reduce((memo, alignment) => memo.concat(alignment));
   writeFileSync(dataPath("proficiencies"), turtle);

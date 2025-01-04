@@ -7,6 +7,7 @@ import {
   ClassSpellcastingInfoShapeType,
   ClassSpellcastingShapeType,
   ProficiencyShapeType,
+  SpellShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Class } from "../ldo/dnd5e.typings";
@@ -15,6 +16,8 @@ import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
 import { transformStartingEquipment } from "./startingEquipment";
+import classes from "../dnd5eapi-data/5e-SRD-Classes.json";
+import { classSpells } from "./spells";
 
 function transformClass(
   data: components["schemas"]["Class"],
@@ -50,7 +53,11 @@ function transformClass(
           apiUrlToSubjectUrl(data.spellcasting.spellcasting_ability.url),
         ),
     });
-  // spells
+  adventureClass.spells = classSpells(data.url).map((apiUrl) =>
+    ldoDataset
+      .usingType(SpellShapeType)
+      .fromSubject(apiUrlToSubjectUrl(apiUrl)),
+  );
   adventureClass.startingEquipment = data.starting_equipment.map(
     (startingEquipment) =>
       transformStartingEquipment(startingEquipment, ldoDataset),
@@ -75,12 +82,10 @@ function transformClass(
   return adventureClass;
 }
 
-export default async function writeClasses(
-  data: Array<components["schemas"]["Class"]>,
-): Promise<void> {
+export default async function writeClasses() {
   const turtle = (
     await Promise.all(
-      data.map((adventureClass) => toTurtle(transformClass(adventureClass))),
+      classes.map((adventureClass) => toTurtle(transformClass(adventureClass))),
     )
   ).reduce((memo, condition) => memo.concat(condition));
   writeFileSync(dataPath("classes"), turtle);

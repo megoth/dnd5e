@@ -544,6 +544,11 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellcastingAbility",
     "@type": "@id",
   },
+  spells: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spells",
+    "@type": "@id",
+    "@container": "@set",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",

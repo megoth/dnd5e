@@ -526,6 +526,13 @@ export const dnd5eSchema: Schema = {
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#ClassSpellcasting",
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spells",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Spell",
+              min: 0,
+              max: -1,
+            },
           ],
         },
       },

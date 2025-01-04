@@ -5,6 +5,7 @@ import { writeFileSync } from "node:fs";
 import { Condition } from "../ldo/dnd5e.typings";
 import { dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
+import conditions from "../dnd5eapi-data/5e-SRD-Conditions.json";
 
 function transformCondition(
   data: components["schemas"]["Condition"],
@@ -19,12 +20,10 @@ function transformCondition(
   return damageType;
 }
 
-export default async function writeConditions(
-  data: Array<components["schemas"]["Condition"]>,
-): Promise<void> {
+export default async function writeConditions() {
   const turtle = (
     await Promise.all(
-      data.map((condition) => toTurtle(transformCondition(condition))),
+      conditions.map((condition) => toTurtle(transformCondition(condition))),
     )
   ).reduce((memo, condition) => memo.concat(condition));
   writeFileSync(dataPath("conditions"), turtle);

@@ -5,6 +5,7 @@ import { writeFileSync } from "node:fs";
 import { DamageType } from "../ldo/dnd5e.typings";
 import { dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
+import damageTypes from "../dnd5eapi-data/5e-SRD-Damage-Types.json";
 
 function transformDamageType(
   data: components["schemas"]["DamageType"],
@@ -19,12 +20,12 @@ function transformDamageType(
   return damageType;
 }
 
-export default async function writeDamageTypes(
-  data: Array<components["schemas"]["DamageType"]>,
-): Promise<void> {
+export default async function writeDamageTypes() {
   const turtle = (
     await Promise.all(
-      data.map((damageType) => toTurtle(transformDamageType(damageType))),
+      damageTypes.map((damageType) =>
+        toTurtle(transformDamageType(damageType)),
+      ),
     )
   ).reduce((memo, damageType) => memo.concat(damageType));
   writeFileSync(dataPath("damageTypes"), turtle);
