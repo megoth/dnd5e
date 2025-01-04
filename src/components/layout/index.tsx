@@ -11,6 +11,14 @@ import { bem } from "../../utils/bem";
 export const TESTID_LAYOUT_FADE = "layout-fade";
 export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
 
+function isInsideTable(target: HTMLElement): boolean {
+  return (
+    target.nodeName === "TD" ||
+    target.nodeName === "TH" ||
+    target.classList.contains("table-container")
+  );
+}
+
 interface Props extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;
   header?: boolean;
@@ -37,11 +45,13 @@ export default function Layout({
   useEffect(() => setDelayedRightOpen(rightOpen), [rightOpen]);
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => {
+    onSwipedLeft: (eventData) => {
+      if (isInsideTable(eventData.event.target as HTMLElement)) return;
       setRightOpen(!leftOpen);
       setLeftOpen(false);
     },
-    onSwipedRight: () => {
+    onSwipedRight: (eventData) => {
+      if (isInsideTable(eventData.event.target as HTMLElement)) return;
       setLeftOpen(!rightOpen);
       setRightOpen(false);
     },
