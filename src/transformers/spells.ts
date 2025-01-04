@@ -27,14 +27,14 @@ export function transformSpell(
   spell.label = data.name;
   // description
   // higherLevel
-  // range
-  // components
+  spell.spellRange = data.range;
+  spell.components = data.components;
   // material
   // areaOfEffect
   // ritual
-  // duration
+  spell.duration = data.duration;
   // concentration
-  // castingTime
+  spell.castingTime = data.casting_time;
   // level
   // attackType
   // damage

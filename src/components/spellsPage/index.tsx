@@ -37,6 +37,18 @@ export default function SpellsPage() {
                 <th scope="col">
                   <Translation id="school" />
                 </th>
+                <th scope="col">
+                  <Translation id="castingTime" />
+                </th>
+                <th scope="col">
+                  <Translation id="range" />
+                </th>
+                <th scope="col">
+                  <Translation id="duration" />
+                </th>
+                <th scope="col">
+                  <Translation id="components" />
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -44,6 +56,10 @@ export default function SpellsPage() {
                 <tr key={spell["@id"]}>
                   <td>{spell.label}</td>
                   <td>{spell.magicSchool.label}</td>
+                  <td>{spell.castingTime}</td>
+                  <td>{spell.spellRange}</td>
+                  <td>{spell.duration}</td>
+                  <td>{spell.components.join(", ")}</td>
                 </tr>
               ))}
             </tbody>

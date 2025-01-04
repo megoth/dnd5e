@@ -17,16 +17,19 @@
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
 :cantripsKnown skos:definition "Cantrips Known"@en-US .
+:castingTime skos:definition "Casting Time"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .
+:components skos:definition "Components"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 :dice skos:definition "{$count}d{$value}"@en-US .
+:duration skos:definition "Duration"@en-US .
 :encountersPageTitle skos:definition "Encounters"@en-US .
 :equipment skos:definition "Equipment"@en-US .
 :equipmentPageTitle skos:definition "Equipment"@en-US .
@@ -79,6 +82,7 @@
 :racesPageTitle skos:definition "Races"@en-US .
 :rageDamage skos:definition "Rage Damage"@en-US .
 :rages skos:definition "Rages"@en-US .
+:range skos:definition "Range"@en-US .
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .

@@ -2213,6 +2213,42 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellRange",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#components",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#duration",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#castingTime",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#magicSchool",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MagicSchool",
             },

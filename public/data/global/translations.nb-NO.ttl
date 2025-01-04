@@ -18,16 +18,19 @@
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
 :cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
+:castingTime skos:definition "Kastetid"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
 :classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
 :close skos:definition "Lukk"@nb-NO .
+:components skos:definition "Komponenter"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 :dice skos:definition "{$count}d{$value}"@nb-NO .
+:duration skos:definition "Varighet"@nb-NO .
 :encountersPageTitle skos:definition "Kamper"@nb-NO .
 :equipment skos:definition "Utstyr"@nb-NO .
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
@@ -80,6 +83,7 @@
 :racesPageTitle skos:definition "Raser"@nb-NO .
 :rageDamage skos:definition "Raseriskade"@nb-NO .
 :rages skos:definition "Raseri"@nb-NO .
+:range skos:definition "Lengde"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .

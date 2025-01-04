@@ -571,6 +571,10 @@ export interface Spell {
   type: Type;
   label: string;
   description?: string[];
+  spellRange: string;
+  components?: string[];
+  duration: string;
+  castingTime?: string;
   magicSchool: MagicSchool;
 }
 

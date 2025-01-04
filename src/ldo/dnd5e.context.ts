@@ -113,6 +113,23 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#spell",
     "@type": "@id",
   },
+  spellRange: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellRange",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  components: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#components",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  duration: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#duration",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  castingTime: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#castingTime",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
   magicSchool: {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicSchool",
     "@type": "@id",

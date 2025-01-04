@@ -1,5 +1,5 @@
 .table-container {
-    @apply relative lg:overflow-x-auto;
+    @apply overflow-x-auto;
     max-width: 93vw;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .table > thead {
-    @apply sticky top-0 text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
+    @apply top-0 text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
 }
 
 .table th,
