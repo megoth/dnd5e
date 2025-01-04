@@ -1,11 +1,11 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { SpellShapeType } from "../ldo/dnd5e.shapeTypes";
+import { MagicSchoolShapeType, SpellShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Spell } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import spells from "../dnd5eapi-data/5e-SRD-Spells.json";
 import { writeFileSync } from "node:fs";
-import { dataPath } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
 
 export function classSpells(classApiUrl: string): Array<string> {
   return spells
@@ -38,7 +38,11 @@ export function transformSpell(
   // level
   // attackType
   // damage
-  // school
+  spell.magicSchool =
+    data.school &&
+    ldoDataset
+      .usingType(MagicSchoolShapeType)
+      .fromSubject(apiUrlToSubjectUrl(data.school.url));
   // classes
   // subclasses
   return spell;

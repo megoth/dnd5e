@@ -113,6 +113,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#spell",
     "@type": "@id",
   },
+  magicSchool: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicSchool",
+    "@type": "@id",
+  },
   featureSpecific: {
     "@id": "https://dnd5e.app/vocab/dnd5e#featureSpecific",
     "@type": "@id",

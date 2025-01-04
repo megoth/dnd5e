@@ -33,6 +33,7 @@ import {
   FeatureSpecific,
   IdealOption,
   Language,
+  MagicSchool,
   Multiclassing,
   MultipleOption,
   OptionAction,
@@ -337,6 +338,15 @@ export const IdealOptionShapeType: ShapeType<IdealOption> = {
 export const LanguageShapeType: ShapeType<Language> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Language",
+  context: dnd5eContext,
+};
+
+/**
+ * MagicSchool ShapeType
+ */
+export const MagicSchoolShapeType: ShapeType<MagicSchool> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MagicSchool",
   context: dnd5eContext,
 };
 

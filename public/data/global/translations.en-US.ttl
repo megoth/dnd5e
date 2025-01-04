@@ -60,6 +60,7 @@
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
 :multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
+:name skos:definition "Name"@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
@@ -82,6 +83,7 @@
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .
 :savingThrows skos:definition "Saving Throws"@en-US .
+:school skos:definition "School"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition

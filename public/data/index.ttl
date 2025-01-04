@@ -15,7 +15,7 @@
 
 :spellsBundle
     rdfs:label "spells" ;
-    dnd5e_app:rulesResource </data/spells.ttl> .
+    dnd5e_app:rulesResource </data/magic-schools.ttl>, </data/spells.ttl> .
 
 :locale-en-US
     dnd5e_app:language "en-US" ;

@@ -420,6 +420,17 @@ export interface Language {
 }
 
 /**
+ * MagicSchool Type
+ */
+export interface MagicSchool {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label: string;
+  description: string;
+}
+
+/**
  * Multiclassing Type
  */
 export interface Multiclassing {
@@ -560,6 +571,7 @@ export interface Spell {
   type: Type;
   label: string;
   description?: string[];
+  magicSchool: MagicSchool;
 }
 
 /**

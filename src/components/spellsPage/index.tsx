@@ -31,13 +31,19 @@ export default function SpellsPage() {
           <table className="table">
             <thead>
               <tr>
-                <th scope="col">Name</th>
+                <th scope="col">
+                  <Translation id="name" />
+                </th>
+                <th scope="col">
+                  <Translation id="school" />
+                </th>
               </tr>
             </thead>
             <tbody>
               {spells.map((spell) => (
                 <tr key={spell["@id"]}>
                   <td>{spell.label}</td>
+                  <td>{spell.magicSchool.label}</td>
                 </tr>
               ))}
             </tbody>

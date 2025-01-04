@@ -12,6 +12,7 @@ import writeEquipmentCategory from "./equipmentCategory";
 import writeLevels from "./levels";
 import writeFeatures from "./features";
 import writeSpells from "./spells";
+import writeMagicSchools from "./magicSchools";
 
 export default async function transformData() {
   return Promise.all([
@@ -25,6 +26,7 @@ export default async function transformData() {
     writeEquipmentCategory(),
     writeFeatures(),
     writeLanguages(),
+    writeMagicSchools(),
     writeLevels(),
     writeProficiencies(),
     writeSkills(),

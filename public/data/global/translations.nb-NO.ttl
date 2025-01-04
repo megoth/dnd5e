@@ -61,6 +61,7 @@
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
 :multiclassRequirement skos:definition "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
+:name skos:definition "Navn"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
@@ -84,6 +85,7 @@
 :rulesPageTitle skos:definition "Regler"@nb-NO .
 :savingThrows skos:definition "Saving Throws"@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
+:school skos:definition "Skole"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
