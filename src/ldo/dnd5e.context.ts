@@ -549,6 +549,11 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  subclasses: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subclasses",
+    "@type": "@id",
+    "@container": "@set",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",

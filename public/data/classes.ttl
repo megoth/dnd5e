@@ -36,6 +36,7 @@
 <#barbarian> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b28 .
 <#barbarian> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
 <#barbarian> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#con> .
+<#barbarian> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#berserker> .
 _:b5 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
 _:b5 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b6 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b5 .
@@ -247,6 +248,7 @@ _:b28 <https://dnd5e.app/vocab/dnd5e#from> _:b27 .
 <#bard> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b88 .
 <#bard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#bard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
+<#bard> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b29 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
 _:b29 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b30 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
@@ -606,6 +608,7 @@ _:b120 <https://dnd5e.app/vocab/dnd5e#from> _:b119 .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b156 .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#life> .
 _:b121 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
 _:b121 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b122 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b121 .
@@ -861,6 +864,7 @@ _:b156 <https://dnd5e.app/vocab/dnd5e#from> _:b155 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b190 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
 <#druid> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
+<#druid> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b157 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
 _:b157 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b158 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b157 .
@@ -989,6 +993,7 @@ _:b190 <https://dnd5e.app/vocab/dnd5e#from> _:b189 .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b220 .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#con> .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#champion> .
 _:b191 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
 _:b191 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b192 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
@@ -1101,6 +1106,7 @@ _:b220 <http://purl.org/dc/terms/description> "Choose two skills from Acrobatics
 <#monk> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b279 .
 <#monk> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
+<#monk> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#open-hand> .
 _:b221 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
 _:b221 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b222 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
@@ -1302,6 +1308,7 @@ _:b279 <https://dnd5e.app/vocab/dnd5e#from> _:b278 .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b312 .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#devotion> .
 _:b280 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#str> .
 _:b280 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b281 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
@@ -1471,6 +1478,7 @@ _:b312 <https://dnd5e.app/vocab/dnd5e#from> _:b311 .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b345 .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#str> .
+<#ranger> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#hunter> .
 _:b313 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
 _:b313 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b314 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#wis> .
@@ -1624,6 +1632,7 @@ _:b355 <http://purl.org/dc/terms/description> "Choose three from Animal Handling
 <#rogue> <https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions> _:b385 .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#dex> .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
+<#rogue> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#thief> .
 _:b356 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#dex> .
 _:b356 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b357 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
@@ -1881,6 +1890,7 @@ _:b398 <http://purl.org/dc/terms/description> "Choose four from Acrobatics, Athl
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-cha> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#con> .
+<#sorcerer> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#draconic> .
 _:b399 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
 _:b399 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b400 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b399 .
@@ -2067,6 +2077,7 @@ _:b430 <https://dnd5e.app/vocab/dnd5e#from> _:b429 .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b466 .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#cha> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
+<#warlock> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b431 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#cha> .
 _:b431 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b432 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b431 .
@@ -2407,6 +2418,7 @@ _:b466 <https://dnd5e.app/vocab/dnd5e#from> _:b465 .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#proficiencies> </data/proficiencies.ttl#saving-throw-wis> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#int> .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#savingThrows> </data/abilityScores.ttl#wis> .
+<#wizard> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#evocation> .
 _:b467 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/abilityScores.ttl#int> .
 _:b467 <https://dnd5e.app/vocab/dnd5e#minimumScore> 13 .
 _:b468 <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b467 .

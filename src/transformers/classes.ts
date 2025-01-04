@@ -8,6 +8,7 @@ import {
   ClassSpellcastingShapeType,
   ProficiencyShapeType,
   SpellShapeType,
+  SubclassShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Class } from "../ldo/dnd5e.typings";
@@ -78,7 +79,11 @@ function transformClass(
       .usingType(AbilityScoreShapeType)
       .fromSubject(dataUrl("abilityScores", savingThrow.index)),
   );
-  // subclasses
+  adventureClass.subclasses = data.subclasses.map((subclass) =>
+    ldoDataset
+      .usingType(SubclassShapeType)
+      .fromSubject(apiUrlToSubjectUrl(subclass.url)),
+  );
   return adventureClass;
 }
 

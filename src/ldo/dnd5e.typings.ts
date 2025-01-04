@@ -144,6 +144,7 @@ export interface Class {
   startingEquipmentOptions?: Choice[];
   classSpellcasting: ClassSpellcasting;
   spells?: Spell[];
+  subclasses?: Subclass[];
 }
 
 /**
