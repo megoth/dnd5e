@@ -184,7 +184,7 @@ _:b702 <https://dnd5e.app/vocab/dnd5e#brutalCriticalDice> "3"^^<http://www.w3.or
 <#bard-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-bard> .
 <#bard-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bardic-inspiration-d6> .
-<#bard-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b703 .
+<#bard-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b703 .
 <#bard-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b704 .
 _:b703 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b703 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -207,7 +207,7 @@ _:b704 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#jack-of-all-trades> .
 <#bard-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#song-of-rest-d6> .
-<#bard-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b705 .
+<#bard-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b705 .
 <#bard-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b706 .
 _:b705 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b705 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -230,7 +230,7 @@ _:b706 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-expertise-1> .
 <#bard-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-college> .
-<#bard-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b707 .
+<#bard-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b707 .
 <#bard-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b708 .
 _:b707 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b707 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -252,7 +252,7 @@ _:b708 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-ability-score-improvement-1> .
-<#bard-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b709 .
+<#bard-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b709 .
 <#bard-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b710 .
 _:b709 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b709 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -275,7 +275,7 @@ _:b710 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bardic-inspiration-d8> .
 <#bard-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#font-of-inspiration> .
-<#bard-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b711 .
+<#bard-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b711 .
 <#bard-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b712 .
 _:b711 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b711 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "8"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -297,7 +297,7 @@ _:b712 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-6> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#countercharm> .
-<#bard-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b713 .
+<#bard-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b713 .
 <#bard-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b714 .
 _:b713 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b713 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -318,7 +318,7 @@ _:b714 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#bard-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b715 .
+<#bard-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b715 .
 <#bard-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b716 .
 _:b715 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b715 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -340,7 +340,7 @@ _:b716 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-8> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-ability-score-improvement-2> .
-<#bard-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b717 .
+<#bard-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b717 .
 <#bard-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b718 .
 _:b717 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b717 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -362,7 +362,7 @@ _:b718 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-9> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#song-of-rest-d8> .
-<#bard-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b719 .
+<#bard-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b719 .
 <#bard-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b720 .
 _:b719 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b719 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -386,7 +386,7 @@ _:b720 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-expertise-2> .
 <#bard-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bardic-inspiration-d10> .
 <#bard-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#magical-secrets-1> .
-<#bard-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b721 .
+<#bard-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b721 .
 <#bard-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b722 .
 _:b721 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b721 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -407,7 +407,7 @@ _:b722 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-11> <https://dnd5e.app/vocab/dnd5e#level> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#bard-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b723 .
+<#bard-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b723 .
 <#bard-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b724 .
 _:b723 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b723 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -429,7 +429,7 @@ _:b724 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-ability-score-improvement-3> .
-<#bard-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b725 .
+<#bard-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b725 .
 <#bard-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b726 .
 _:b725 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b725 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -451,7 +451,7 @@ _:b726 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-13> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#song-of-rest-d10> .
-<#bard-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b727 .
+<#bard-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b727 .
 <#bard-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b728 .
 _:b727 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b727 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "16"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -473,7 +473,7 @@ _:b728 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-14> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#magical-secrets-2> .
-<#bard-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b729 .
+<#bard-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b729 .
 <#bard-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b730 .
 _:b729 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b729 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "18"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -495,7 +495,7 @@ _:b730 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-15> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bardic-inspiration-d12> .
-<#bard-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b731 .
+<#bard-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b731 .
 <#bard-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b732 .
 _:b731 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b731 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "19"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -517,7 +517,7 @@ _:b732 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-ability-score-improvement-4> .
-<#bard-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b733 .
+<#bard-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b733 .
 <#bard-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b734 .
 _:b733 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b733 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "19"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -539,7 +539,7 @@ _:b734 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-17> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#song-of-rest-d12> .
-<#bard-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b735 .
+<#bard-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b735 .
 <#bard-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b736 .
 _:b735 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b735 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "20"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -561,7 +561,7 @@ _:b736 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "0"^^<http://www.w3.or
 <#bard-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#magical-secrets-3> .
-<#bard-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b737 .
+<#bard-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b737 .
 <#bard-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b738 .
 _:b737 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b737 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "22"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -583,7 +583,7 @@ _:b738 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "2"^^<http://www.w3.or
 <#bard-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#bard-ability-score-improvement-5> .
-<#bard-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b739 .
+<#bard-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b739 .
 <#bard-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b740 .
 _:b739 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b739 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "22"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -605,7 +605,7 @@ _:b740 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "2"^^<http://www.w3.or
 <#bard-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#bard-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#superior-inspiration> .
-<#bard-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b741 .
+<#bard-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b741 .
 <#bard-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b742 .
 _:b741 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b741 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "22"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -629,7 +629,7 @@ _:b742 <https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9> "2"^^<http://www.w3.or
 <#cleric-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-cleric> .
 <#cleric-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#divine-domain> .
 <#cleric-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#domain-spells-1> .
-<#cleric-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b743 .
+<#cleric-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b743 .
 <#cleric-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b744 .
 _:b743 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b743 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -649,7 +649,7 @@ _:b744 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0"^^<http://www.w3.org/2
 <#cleric-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#channel-divinity-1-rest> .
 <#cleric-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#channel-divinity-turn-undead> .
-<#cleric-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b745 .
+<#cleric-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b745 .
 <#cleric-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b746 .
 _:b745 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b745 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -668,7 +668,7 @@ _:b746 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0"^^<http://www.w3.org/2
 <#cleric-3> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#domain-spells-2> .
-<#cleric-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b747 .
+<#cleric-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b747 .
 <#cleric-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b748 .
 _:b747 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b747 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -687,7 +687,7 @@ _:b748 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0"^^<http://www.w3.org/2
 <#cleric-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleric-ability-score-improvement-1> .
-<#cleric-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b749 .
+<#cleric-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b749 .
 <#cleric-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b750 .
 _:b749 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b749 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -707,7 +707,7 @@ _:b750 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0"^^<http://www.w3.org/2
 <#cleric-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#domain-spells-3> .
 <#cleric-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#destroy-undead-cr-1-2-or-below> .
-<#cleric-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b751 .
+<#cleric-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b751 .
 <#cleric-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b752 .
 _:b751 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b751 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -726,7 +726,7 @@ _:b752 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0.5"^^<http://www.w3.org
 <#cleric-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-6> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#channel-divinity-2-rest> .
-<#cleric-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b753 .
+<#cleric-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b753 .
 <#cleric-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b754 .
 _:b753 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b753 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -745,7 +745,7 @@ _:b754 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0.5"^^<http://www.w3.org
 <#cleric-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-7> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#domain-spells-4> .
-<#cleric-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b755 .
+<#cleric-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b755 .
 <#cleric-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b756 .
 _:b755 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b755 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -765,7 +765,7 @@ _:b756 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "0.5"^^<http://www.w3.org
 <#cleric-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleric-ability-score-improvement-2> .
 <#cleric-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#destroy-undead-cr-1-or-below> .
-<#cleric-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b757 .
+<#cleric-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b757 .
 <#cleric-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b758 .
 _:b757 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b757 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -784,7 +784,7 @@ _:b758 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "1"^^<http://www.w3.org/2
 <#cleric-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-9> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#domain-spells-5> .
-<#cleric-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b759 .
+<#cleric-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b759 .
 <#cleric-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b760 .
 _:b759 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b759 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -803,7 +803,7 @@ _:b760 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "1"^^<http://www.w3.org/2
 <#cleric-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#divine-intervention> .
-<#cleric-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b761 .
+<#cleric-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b761 .
 <#cleric-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b762 .
 _:b761 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b761 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -822,7 +822,7 @@ _:b762 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "1"^^<http://www.w3.org/2
 <#cleric-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-11> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#destroy-undead-cr-2-or-below> .
-<#cleric-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b763 .
+<#cleric-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b763 .
 <#cleric-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b764 .
 _:b763 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b763 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -841,7 +841,7 @@ _:b764 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "2"^^<http://www.w3.org/2
 <#cleric-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleric-ability-score-improvement-3> .
-<#cleric-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b765 .
+<#cleric-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b765 .
 <#cleric-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b766 .
 _:b765 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b765 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -859,7 +859,7 @@ _:b766 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "2"^^<http://www.w3.org/2
 <#cleric-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#cleric-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b767 .
+<#cleric-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b767 .
 <#cleric-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b768 .
 _:b767 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b767 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -878,7 +878,7 @@ _:b768 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "2"^^<http://www.w3.org/2
 <#cleric-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-14> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#destroy-undead-cr-3-or-below> .
-<#cleric-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b769 .
+<#cleric-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b769 .
 <#cleric-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b770 .
 _:b769 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b769 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -896,7 +896,7 @@ _:b770 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "3"^^<http://www.w3.org/2
 <#cleric-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#cleric-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b771 .
+<#cleric-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b771 .
 <#cleric-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b772 .
 _:b771 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b771 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -915,7 +915,7 @@ _:b772 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "3"^^<http://www.w3.org/2
 <#cleric-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleric-ability-score-improvement-4> .
-<#cleric-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b773 .
+<#cleric-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b773 .
 <#cleric-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b774 .
 _:b773 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b773 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -934,7 +934,7 @@ _:b774 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "3"^^<http://www.w3.org/2
 <#cleric-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-17> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#destroy-undead-cr-4-or-below> .
-<#cleric-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b775 .
+<#cleric-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b775 .
 <#cleric-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b776 .
 _:b775 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b775 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -953,7 +953,7 @@ _:b776 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "4"^^<http://www.w3.org/2
 <#cleric-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#channel-divinity-3-rest> .
-<#cleric-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b777 .
+<#cleric-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b777 .
 <#cleric-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b778 .
 _:b777 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b777 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -972,7 +972,7 @@ _:b778 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "4"^^<http://www.w3.org/2
 <#cleric-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleric-ability-score-improvement-5> .
-<#cleric-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b779 .
+<#cleric-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b779 .
 <#cleric-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b780 .
 _:b779 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b779 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -991,7 +991,7 @@ _:b780 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "4"^^<http://www.w3.org/2
 <#cleric-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#cleric-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#divine-intervention-improvement> .
-<#cleric-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b781 .
+<#cleric-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b781 .
 <#cleric-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b782 .
 _:b781 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b781 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1011,7 +1011,7 @@ _:b782 <https://dnd5e.app/vocab/dnd5e#destroyUndeadCr> "4"^^<http://www.w3.org/2
 <#druid-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-druid> .
 <#druid-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druidic> .
-<#druid-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b783 .
+<#druid-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b783 .
 <#druid-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b784 .
 _:b783 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b783 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1032,7 +1032,7 @@ _:b784 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wild-shape-cr-1-4-or-below-no-flying-or-swim-speed> .
 <#druid-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-circle> .
-<#druid-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b785 .
+<#druid-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b785 .
 <#druid-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b786 .
 _:b785 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b785 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1051,7 +1051,7 @@ _:b786 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-3> <https://dnd5e.app/vocab/dnd5e#level> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-3> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b787 .
+<#druid-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b787 .
 <#druid-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b788 .
 _:b787 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b787 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1072,7 +1072,7 @@ _:b788 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wild-shape-cr-1-2-or-below-no-flying-speed> .
 <#druid-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-ability-score-improvement-1> .
-<#druid-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b789 .
+<#druid-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b789 .
 <#druid-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b790 .
 _:b789 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b789 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1091,7 +1091,7 @@ _:b790 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-5> <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b791 .
+<#druid-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b791 .
 <#druid-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b792 .
 _:b791 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b791 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1110,7 +1110,7 @@ _:b792 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-6> <https://dnd5e.app/vocab/dnd5e#level> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b793 .
+<#druid-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b793 .
 <#druid-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b794 .
 _:b793 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b793 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1129,7 +1129,7 @@ _:b794 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b795 .
+<#druid-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b795 .
 <#druid-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b796 .
 _:b795 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b795 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1150,7 +1150,7 @@ _:b796 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> false .
 <#druid-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wild-shape-cr-1-or-below> .
 <#druid-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-ability-score-improvement-2> .
-<#druid-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b797 .
+<#druid-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b797 .
 <#druid-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b798 .
 _:b797 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b797 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1169,7 +1169,7 @@ _:b798 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b799 .
+<#druid-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b799 .
 <#druid-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b800 .
 _:b799 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b799 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1188,7 +1188,7 @@ _:b800 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-10> <https://dnd5e.app/vocab/dnd5e#level> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b801 .
+<#druid-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b801 .
 <#druid-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b802 .
 _:b801 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b801 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1207,7 +1207,7 @@ _:b802 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-11> <https://dnd5e.app/vocab/dnd5e#level> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b803 .
+<#druid-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b803 .
 <#druid-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b804 .
 _:b803 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b803 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1227,7 +1227,7 @@ _:b804 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-ability-score-improvement-3> .
-<#druid-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b805 .
+<#druid-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b805 .
 <#druid-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b806 .
 _:b805 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b805 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1246,7 +1246,7 @@ _:b806 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b807 .
+<#druid-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b807 .
 <#druid-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b808 .
 _:b807 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b807 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1265,7 +1265,7 @@ _:b808 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-14> <https://dnd5e.app/vocab/dnd5e#level> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b809 .
+<#druid-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b809 .
 <#druid-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b810 .
 _:b809 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b809 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1284,7 +1284,7 @@ _:b810 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b811 .
+<#druid-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b811 .
 <#druid-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b812 .
 _:b811 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b811 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1304,7 +1304,7 @@ _:b812 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-ability-score-improvement-4> .
-<#druid-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b813 .
+<#druid-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b813 .
 <#druid-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b814 .
 _:b813 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b813 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1323,7 +1323,7 @@ _:b814 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-17> <https://dnd5e.app/vocab/dnd5e#level> "17"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#druid-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b815 .
+<#druid-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b815 .
 <#druid-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b816 .
 _:b815 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b815 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1344,7 +1344,7 @@ _:b816 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-timeless-body> .
 <#druid-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#beast-spells> .
-<#druid-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b817 .
+<#druid-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b817 .
 <#druid-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b818 .
 _:b817 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b817 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1364,7 +1364,7 @@ _:b818 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#druid-ability-score-improvement-5> .
-<#druid-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b819 .
+<#druid-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b819 .
 <#druid-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b820 .
 _:b819 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b819 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1384,7 +1384,7 @@ _:b820 <https://dnd5e.app/vocab/dnd5e#wildShapeFly> true .
 <#druid-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#druid-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#archdruid> .
-<#druid-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b821 .
+<#druid-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b821 .
 <#druid-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b822 .
 _:b821 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b821 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1810,7 +1810,7 @@ _:b882 <https://dnd5e.app/vocab/dnd5e#martialArts> _:b881 .
 <#paladin-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#divine-sense> .
 <#paladin-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#lay-on-hands> .
-<#paladin-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b883 .
+<#paladin-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b883 .
 <#paladin-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b884 .
 _:b883 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b883 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1825,7 +1825,7 @@ _:b884 <https://dnd5e.app/vocab/dnd5e#auraRange> "0"^^<http://www.w3.org/2001/XM
 <#paladin-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-fighting-style> .
 <#paladin-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-paladin> .
 <#paladin-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#divine-smite> .
-<#paladin-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b885 .
+<#paladin-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b885 .
 <#paladin-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b886 .
 _:b885 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b885 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1841,7 +1841,7 @@ _:b886 <https://dnd5e.app/vocab/dnd5e#auraRange> "0"^^<http://www.w3.org/2001/XM
 <#paladin-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sacred-oath> .
 <#paladin-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#oath-spells> .
 <#paladin-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#channel-divinity> .
-<#paladin-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b887 .
+<#paladin-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b887 .
 <#paladin-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b888 .
 _:b887 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b887 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1854,7 +1854,7 @@ _:b888 <https://dnd5e.app/vocab/dnd5e#auraRange> "0"^^<http://www.w3.org/2001/XM
 <#paladin-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-ability-score-improvement-1> .
-<#paladin-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b889 .
+<#paladin-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b889 .
 <#paladin-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b890 .
 _:b889 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b889 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1867,7 +1867,7 @@ _:b890 <https://dnd5e.app/vocab/dnd5e#auraRange> "0"^^<http://www.w3.org/2001/XM
 <#paladin-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-extra-attack> .
-<#paladin-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b891 .
+<#paladin-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b891 .
 <#paladin-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b892 .
 _:b891 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b891 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1880,7 +1880,7 @@ _:b892 <https://dnd5e.app/vocab/dnd5e#auraRange> "0"^^<http://www.w3.org/2001/XM
 <#paladin-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-6> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#aura-of-protection> .
-<#paladin-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b893 .
+<#paladin-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b893 .
 <#paladin-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b894 .
 _:b893 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b893 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1892,7 +1892,7 @@ _:b894 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b895 .
+<#paladin-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b895 .
 <#paladin-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b896 .
 _:b895 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b895 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1905,7 +1905,7 @@ _:b896 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-8> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-ability-score-improvement-2> .
-<#paladin-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b897 .
+<#paladin-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b897 .
 <#paladin-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b898 .
 _:b897 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b897 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1917,7 +1917,7 @@ _:b898 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b899 .
+<#paladin-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b899 .
 <#paladin-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b900 .
 _:b899 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b899 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1930,7 +1930,7 @@ _:b900 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#aura-of-courage> .
-<#paladin-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b901 .
+<#paladin-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b901 .
 <#paladin-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b902 .
 _:b901 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b901 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1943,7 +1943,7 @@ _:b902 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-11> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#improved-divine-smite> .
-<#paladin-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b903 .
+<#paladin-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b903 .
 <#paladin-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b904 .
 _:b903 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b903 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1956,7 +1956,7 @@ _:b904 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-ability-score-improvement-3> .
-<#paladin-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b905 .
+<#paladin-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b905 .
 <#paladin-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b906 .
 _:b905 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b905 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1968,7 +1968,7 @@ _:b906 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b907 .
+<#paladin-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b907 .
 <#paladin-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b908 .
 _:b907 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b907 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1981,7 +1981,7 @@ _:b908 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-14> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#cleansing-touch> .
-<#paladin-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b909 .
+<#paladin-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b909 .
 <#paladin-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b910 .
 _:b909 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b909 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -1993,7 +1993,7 @@ _:b910 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b911 .
+<#paladin-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b911 .
 <#paladin-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b912 .
 _:b911 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b911 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2006,7 +2006,7 @@ _:b912 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-ability-score-improvement-4> .
-<#paladin-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b913 .
+<#paladin-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b913 .
 <#paladin-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b914 .
 _:b913 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b913 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2018,7 +2018,7 @@ _:b914 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-17> <https://dnd5e.app/vocab/dnd5e#level> "17"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b915 .
+<#paladin-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b915 .
 <#paladin-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b916 .
 _:b915 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b915 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2031,7 +2031,7 @@ _:b916 <https://dnd5e.app/vocab/dnd5e#auraRange> "10"^^<http://www.w3.org/2001/X
 <#paladin-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#aura-improvements> .
-<#paladin-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b917 .
+<#paladin-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b917 .
 <#paladin-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b918 .
 _:b917 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b917 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2044,7 +2044,7 @@ _:b918 <https://dnd5e.app/vocab/dnd5e#auraRange> "30"^^<http://www.w3.org/2001/X
 <#paladin-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#paladin-ability-score-improvement-5> .
-<#paladin-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b919 .
+<#paladin-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b919 .
 <#paladin-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b920 .
 _:b919 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b919 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2056,7 +2056,7 @@ _:b920 <https://dnd5e.app/vocab/dnd5e#auraRange> "30"^^<http://www.w3.org/2001/X
 <#paladin-20> <https://dnd5e.app/vocab/dnd5e#level> "20"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#paladin-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#paladin-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b921 .
+<#paladin-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b921 .
 <#paladin-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b922 .
 _:b921 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b921 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2070,7 +2070,7 @@ _:b922 <https://dnd5e.app/vocab/dnd5e#auraRange> "30"^^<http://www.w3.org/2001/X
 <#ranger-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#favored-enemy-1-type> .
 <#ranger-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#natural-explorer-1-terrain-type> .
-<#ranger-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b923 .
+<#ranger-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b923 .
 <#ranger-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b924 .
 _:b923 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b923 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2086,7 +2086,7 @@ _:b924 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "1"^^<http://www.w3.org/20
 <#ranger-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-fighting-style> .
 <#ranger-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-ranger> .
-<#ranger-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b925 .
+<#ranger-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b925 .
 <#ranger-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b926 .
 _:b925 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b925 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2102,7 +2102,7 @@ _:b926 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "1"^^<http://www.w3.org/20
 <#ranger-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-archetype> .
 <#ranger-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#primeval-awareness> .
-<#ranger-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b927 .
+<#ranger-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b927 .
 <#ranger-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b928 .
 _:b927 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b927 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2117,7 +2117,7 @@ _:b928 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "1"^^<http://www.w3.org/20
 <#ranger-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-ability-score-improvement-1> .
-<#ranger-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b929 .
+<#ranger-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b929 .
 <#ranger-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b930 .
 _:b929 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b929 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2132,7 +2132,7 @@ _:b930 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "1"^^<http://www.w3.org/20
 <#ranger-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-5> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-extra-attack> .
-<#ranger-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b931 .
+<#ranger-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b931 .
 <#ranger-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b932 .
 _:b931 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b931 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2148,7 +2148,7 @@ _:b932 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "1"^^<http://www.w3.org/20
 <#ranger-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-6> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#favored-enemy-2-types> .
 <#ranger-6> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#natural-explorer-2-terrain-types> .
-<#ranger-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b933 .
+<#ranger-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b933 .
 <#ranger-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b934 .
 _:b933 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b933 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2162,7 +2162,7 @@ _:b934 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "2"^^<http://www.w3.org/20
 <#ranger-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b935 .
+<#ranger-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b935 .
 <#ranger-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b936 .
 _:b935 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b935 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2178,7 +2178,7 @@ _:b936 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "2"^^<http://www.w3.org/20
 <#ranger-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-ability-score-improvement-2> .
 <#ranger-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-lands-stride> .
-<#ranger-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b937 .
+<#ranger-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b937 .
 <#ranger-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b938 .
 _:b937 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b937 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2192,7 +2192,7 @@ _:b938 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "2"^^<http://www.w3.org/20
 <#ranger-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b939 .
+<#ranger-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b939 .
 <#ranger-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b940 .
 _:b939 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b939 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2208,7 +2208,7 @@ _:b940 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "2"^^<http://www.w3.org/20
 <#ranger-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#natural-explorer-3-terrain-types> .
 <#ranger-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#hide-in-plain-sight> .
-<#ranger-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b941 .
+<#ranger-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b941 .
 <#ranger-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b942 .
 _:b941 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b941 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2222,7 +2222,7 @@ _:b942 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-11> <https://dnd5e.app/vocab/dnd5e#level> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b943 .
+<#ranger-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b943 .
 <#ranger-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b944 .
 _:b943 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b943 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2237,7 +2237,7 @@ _:b944 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-ability-score-improvement-3> .
-<#ranger-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b945 .
+<#ranger-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b945 .
 <#ranger-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b946 .
 _:b945 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b945 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2251,7 +2251,7 @@ _:b946 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b947 .
+<#ranger-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b947 .
 <#ranger-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b948 .
 _:b947 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "8"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b947 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2267,7 +2267,7 @@ _:b948 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-14> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#favored-enemy-3-enemies> .
 <#ranger-14> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#vanish> .
-<#ranger-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b949 .
+<#ranger-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b949 .
 <#ranger-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b950 .
 _:b949 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "8"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b949 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2281,7 +2281,7 @@ _:b950 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b951 .
+<#ranger-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b951 .
 <#ranger-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b952 .
 _:b951 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b951 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2296,7 +2296,7 @@ _:b952 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-ability-score-improvement-4> .
-<#ranger-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b953 .
+<#ranger-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b953 .
 <#ranger-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b954 .
 _:b953 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b953 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2310,7 +2310,7 @@ _:b954 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-17> <https://dnd5e.app/vocab/dnd5e#level> "17"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#ranger-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b955 .
+<#ranger-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b955 .
 <#ranger-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b956 .
 _:b955 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b955 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2325,7 +2325,7 @@ _:b956 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#feral-senses> .
-<#ranger-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b957 .
+<#ranger-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b957 .
 <#ranger-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b958 .
 _:b957 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b957 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2340,7 +2340,7 @@ _:b958 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#ranger-ability-score-improvement-5> .
-<#ranger-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b959 .
+<#ranger-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b959 .
 <#ranger-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b960 .
 _:b959 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b959 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2355,7 +2355,7 @@ _:b960 <https://dnd5e.app/vocab/dnd5e#favoredTerrain> "3"^^<http://www.w3.org/20
 <#ranger-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#ranger-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#foe-slayer> .
-<#ranger-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b961 .
+<#ranger-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b961 .
 <#ranger-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b962 .
 _:b961 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b961 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2550,7 +2550,7 @@ _:b1002 <https://dnd5e.app/vocab/dnd5e#sneakAttack> _:b1001 .
 <#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-sorcerer> .
 <#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerous-origin> .
-<#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1003 .
+<#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1003 .
 <#sorcerer-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1004 .
 _:b1003 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1003 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2572,7 +2572,7 @@ _:b1004 <https://dnd5e.app/vocab/dnd5e#metamagicKnown> "0"^^<http://www.w3.org/2
 <#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#font-of-magic> .
 <#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#flexible-casting-creating-spell-slots> .
 <#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#flexible-casting-converting-spell-slot> .
-<#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1005 .
+<#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1005 .
 <#sorcerer-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1011 .
 _:b1005 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1005 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2607,7 +2607,7 @@ _:b1011 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1010 .
 <#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#metamagic-1> .
-<#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1012 .
+<#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1012 .
 <#sorcerer-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1018 .
 _:b1012 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1012 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2642,7 +2642,7 @@ _:b1018 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1017 .
 <#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerer-ability-score-improvement-1> .
-<#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1019 .
+<#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1019 .
 <#sorcerer-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1025 .
 _:b1019 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1019 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2676,7 +2676,7 @@ _:b1025 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1024 .
 <#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1026 .
+<#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1026 .
 <#sorcerer-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1032 .
 _:b1026 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1026 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2710,7 +2710,7 @@ _:b1032 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1031 .
 <#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#level> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1033 .
+<#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1033 .
 <#sorcerer-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1039 .
 _:b1033 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1033 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2744,7 +2744,7 @@ _:b1039 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1038 .
 <#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1040 .
+<#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1040 .
 <#sorcerer-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1046 .
 _:b1040 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1040 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "8"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2779,7 +2779,7 @@ _:b1046 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1045 .
 <#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerer-ability-score-improvement-2> .
-<#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1047 .
+<#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1047 .
 <#sorcerer-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1053 .
 _:b1047 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1047 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2813,7 +2813,7 @@ _:b1053 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1052 .
 <#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1054 .
+<#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1054 .
 <#sorcerer-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1060 .
 _:b1054 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1054 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2848,7 +2848,7 @@ _:b1060 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1059 .
 <#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#metamagic-2> .
-<#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1061 .
+<#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1061 .
 <#sorcerer-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1067 .
 _:b1061 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1061 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2882,7 +2882,7 @@ _:b1067 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1066 .
 <#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#level> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1068 .
+<#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1068 .
 <#sorcerer-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1074 .
 _:b1068 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1068 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2917,7 +2917,7 @@ _:b1074 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1073 .
 <#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerer-ability-score-improvement-3> .
-<#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1075 .
+<#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1075 .
 <#sorcerer-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1081 .
 _:b1075 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1075 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2951,7 +2951,7 @@ _:b1081 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1080 .
 <#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1082 .
+<#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1082 .
 <#sorcerer-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1088 .
 _:b1082 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1082 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -2985,7 +2985,7 @@ _:b1088 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1087 .
 <#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#level> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1089 .
+<#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1089 .
 <#sorcerer-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1095 .
 _:b1089 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1089 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3019,7 +3019,7 @@ _:b1095 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1094 .
 <#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1096 .
+<#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1096 .
 <#sorcerer-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1102 .
 _:b1096 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1096 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3054,7 +3054,7 @@ _:b1102 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1101 .
 <#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerer-ability-score-improvement-4> .
-<#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1103 .
+<#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1103 .
 <#sorcerer-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1109 .
 _:b1103 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1103 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3089,7 +3089,7 @@ _:b1109 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1108 .
 <#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#metamagic-3> .
-<#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1110 .
+<#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1110 .
 <#sorcerer-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1116 .
 _:b1110 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1110 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3123,7 +3123,7 @@ _:b1116 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1115 .
 <#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#level> "18"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1117 .
+<#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1117 .
 <#sorcerer-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1123 .
 _:b1117 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1117 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3158,7 +3158,7 @@ _:b1123 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1122 .
 <#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerer-ability-score-improvement-5> .
-<#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1124 .
+<#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1124 .
 <#sorcerer-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1130 .
 _:b1124 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1124 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3193,7 +3193,7 @@ _:b1130 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1129 .
 <#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#sorcerous-restoration> .
-<#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1131 .
+<#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1131 .
 <#sorcerer-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1137 .
 _:b1131 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1131 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3229,7 +3229,7 @@ _:b1137 <https://dnd5e.app/vocab/dnd5e#creatingSpellSlots> _:b1136 .
 <#warlock-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#otherworldly-patron> .
 <#warlock-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#pact-magic> .
-<#warlock-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1138 .
+<#warlock-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1138 .
 <#warlock-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1139 .
 _:b1138 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1138 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3252,7 +3252,7 @@ _:b1139 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-2> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#eldritch-invocations> .
-<#warlock-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1140 .
+<#warlock-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1140 .
 <#warlock-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1141 .
 _:b1140 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1140 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3275,7 +3275,7 @@ _:b1141 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-3> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-3> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#pact-boon> .
-<#warlock-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1142 .
+<#warlock-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1142 .
 <#warlock-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1143 .
 _:b1142 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1142 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3298,7 +3298,7 @@ _:b1143 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#warlock-ability-score-improvement-1> .
-<#warlock-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1144 .
+<#warlock-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1144 .
 <#warlock-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1145 .
 _:b1144 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1144 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3320,7 +3320,7 @@ _:b1145 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-5> <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1146 .
+<#warlock-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1146 .
 <#warlock-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1147 .
 _:b1146 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1146 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3342,7 +3342,7 @@ _:b1147 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-6> <https://dnd5e.app/vocab/dnd5e#level> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1148 .
+<#warlock-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1148 .
 <#warlock-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1149 .
 _:b1148 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1148 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3364,7 +3364,7 @@ _:b1149 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1150 .
+<#warlock-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1150 .
 <#warlock-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1151 .
 _:b1150 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1150 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "8"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3387,7 +3387,7 @@ _:b1151 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-8> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#warlock-ability-score-improvement-2> .
-<#warlock-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1152 .
+<#warlock-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1152 .
 <#warlock-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1153 .
 _:b1152 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1152 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3409,7 +3409,7 @@ _:b1153 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1154 .
+<#warlock-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1154 .
 <#warlock-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1155 .
 _:b1154 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1154 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3431,7 +3431,7 @@ _:b1155 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-10> <https://dnd5e.app/vocab/dnd5e#level> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1156 .
+<#warlock-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1156 .
 <#warlock-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1157 .
 _:b1156 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1156 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3454,7 +3454,7 @@ _:b1157 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-11> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#mystic-arcanum-6th-level> .
-<#warlock-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1158 .
+<#warlock-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1158 .
 <#warlock-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1159 .
 _:b1158 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1158 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3477,7 +3477,7 @@ _:b1159 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#warlock-ability-score-improvement-3> .
-<#warlock-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1160 .
+<#warlock-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1160 .
 <#warlock-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1161 .
 _:b1160 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1160 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3500,7 +3500,7 @@ _:b1161 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-13> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#mystic-arcanum-7th-level> .
-<#warlock-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1162 .
+<#warlock-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1162 .
 <#warlock-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1163 .
 _:b1162 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1162 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3522,7 +3522,7 @@ _:b1163 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-14> <https://dnd5e.app/vocab/dnd5e#level> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1164 .
+<#warlock-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1164 .
 <#warlock-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1165 .
 _:b1164 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1164 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3545,7 +3545,7 @@ _:b1165 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-15> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#mystic-arcanum-8th-level> .
-<#warlock-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1166 .
+<#warlock-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1166 .
 <#warlock-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1167 .
 _:b1166 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1166 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3568,7 +3568,7 @@ _:b1167 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#warlock-ability-score-improvement-4> .
-<#warlock-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1168 .
+<#warlock-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1168 .
 <#warlock-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1169 .
 _:b1168 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1168 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3591,7 +3591,7 @@ _:b1169 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "0"^^<http://www.w3.
 <#warlock-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-17> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#mystic-arcanum-9th-level> .
-<#warlock-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1170 .
+<#warlock-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1170 .
 <#warlock-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1171 .
 _:b1170 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1170 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3613,7 +3613,7 @@ _:b1171 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "1"^^<http://www.w3.
 <#warlock-18> <https://dnd5e.app/vocab/dnd5e#level> "18"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#warlock-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1172 .
+<#warlock-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1172 .
 <#warlock-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1173 .
 _:b1172 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1172 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3636,7 +3636,7 @@ _:b1173 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "1"^^<http://www.w3.
 <#warlock-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#warlock-ability-score-improvement-5> .
-<#warlock-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1174 .
+<#warlock-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1174 .
 <#warlock-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1175 .
 _:b1174 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1174 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3659,7 +3659,7 @@ _:b1175 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "1"^^<http://www.w3.
 <#warlock-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#warlock-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#eldritch-master> .
-<#warlock-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1176 .
+<#warlock-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1176 .
 <#warlock-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1177 .
 _:b1176 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1176 <https://dnd5e.app/vocab/dnd5e#spellsKnown> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3683,7 +3683,7 @@ _:b1177 <https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9> "1"^^<http://www.w3.
 <#wizard-1> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spellcasting-wizard> .
 <#wizard-1> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#arcane-recovery> .
-<#wizard-1> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1178 .
+<#wizard-1> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1178 .
 <#wizard-1> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1179 .
 _:b1178 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1178 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3700,7 +3700,7 @@ _:b1178 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-2> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-2> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-2> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#arcane-tradition> .
-<#wizard-2> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1180 .
+<#wizard-2> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1180 .
 <#wizard-2> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1181 .
 _:b1180 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1180 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3716,7 +3716,7 @@ _:b1180 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-3> <https://dnd5e.app/vocab/dnd5e#level> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-3> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "0"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-3> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-3> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1182 .
+<#wizard-3> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1182 .
 <#wizard-3> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1183 .
 _:b1182 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1182 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3733,7 +3733,7 @@ _:b1182 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-4> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-4> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-4> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wizard-ability-score-improvement-1> .
-<#wizard-4> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1184 .
+<#wizard-4> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1184 .
 <#wizard-4> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1185 .
 _:b1184 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1184 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3749,7 +3749,7 @@ _:b1184 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-5> <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-5> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-5> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-5> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1186 .
+<#wizard-5> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1186 .
 <#wizard-5> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1187 .
 _:b1186 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1186 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3765,7 +3765,7 @@ _:b1186 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-6> <https://dnd5e.app/vocab/dnd5e#level> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-6> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-6> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-6> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1188 .
+<#wizard-6> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1188 .
 <#wizard-6> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1189 .
 _:b1188 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1188 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3781,7 +3781,7 @@ _:b1188 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-7> <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-7> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-7> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-7> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1190 .
+<#wizard-7> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1190 .
 <#wizard-7> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1191 .
 _:b1190 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1190 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3798,7 +3798,7 @@ _:b1190 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-8> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-8> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-8> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wizard-ability-score-improvement-2> .
-<#wizard-8> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1192 .
+<#wizard-8> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1192 .
 <#wizard-8> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1193 .
 _:b1192 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1192 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3814,7 +3814,7 @@ _:b1192 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-9> <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-9> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-9> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-9> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1194 .
+<#wizard-9> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1194 .
 <#wizard-9> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1195 .
 _:b1194 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1194 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3830,7 +3830,7 @@ _:b1194 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-10> <https://dnd5e.app/vocab/dnd5e#level> "10"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-10> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-10> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-10> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1196 .
+<#wizard-10> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1196 .
 <#wizard-10> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1197 .
 _:b1196 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1196 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3846,7 +3846,7 @@ _:b1196 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-11> <https://dnd5e.app/vocab/dnd5e#level> "11"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-11> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-11> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-11> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1198 .
+<#wizard-11> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1198 .
 <#wizard-11> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1199 .
 _:b1198 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1198 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3863,7 +3863,7 @@ _:b1198 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-12> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-12> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-12> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wizard-ability-score-improvement-3> .
-<#wizard-12> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1200 .
+<#wizard-12> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1200 .
 <#wizard-12> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1201 .
 _:b1200 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1200 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3879,7 +3879,7 @@ _:b1200 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-13> <https://dnd5e.app/vocab/dnd5e#level> "13"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-13> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-13> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-13> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1202 .
+<#wizard-13> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1202 .
 <#wizard-13> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1203 .
 _:b1202 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1202 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3895,7 +3895,7 @@ _:b1202 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-14> <https://dnd5e.app/vocab/dnd5e#level> "14"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-14> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-14> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-14> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1204 .
+<#wizard-14> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1204 .
 <#wizard-14> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1205 .
 _:b1204 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1204 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3911,7 +3911,7 @@ _:b1204 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-15> <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-15> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "3"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-15> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-15> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1206 .
+<#wizard-15> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1206 .
 <#wizard-15> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1207 .
 _:b1206 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1206 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3928,7 +3928,7 @@ _:b1206 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-16> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-16> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-16> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wizard-ability-score-improvement-4> .
-<#wizard-16> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1208 .
+<#wizard-16> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1208 .
 <#wizard-16> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1209 .
 _:b1208 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1208 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3944,7 +3944,7 @@ _:b1208 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "0"^^<http://www.w3.org
 <#wizard-17> <https://dnd5e.app/vocab/dnd5e#level> "17"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-17> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-17> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
-<#wizard-17> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1210 .
+<#wizard-17> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1210 .
 <#wizard-17> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1211 .
 _:b1210 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1210 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3961,7 +3961,7 @@ _:b1210 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "1"^^<http://www.w3.org
 <#wizard-18> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-18> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-18> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#spell-mastery> .
-<#wizard-18> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1212 .
+<#wizard-18> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1212 .
 <#wizard-18> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1213 .
 _:b1212 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1212 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3978,7 +3978,7 @@ _:b1212 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "1"^^<http://www.w3.org
 <#wizard-19> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-19> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-19> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#wizard-ability-score-improvement-5> .
-<#wizard-19> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1214 .
+<#wizard-19> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1214 .
 <#wizard-19> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1215 .
 _:b1214 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1214 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .
@@ -3995,7 +3995,7 @@ _:b1214 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9> "1"^^<http://www.w3.org
 <#wizard-20> <https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-20> <https://dnd5e.app/vocab/dnd5e#proficiencyBonus> "6"^^<http://www.w3.org/2001/XMLSchema#number> .
 <#wizard-20> <https://dnd5e.app/vocab/dnd5e#features> </data/features.ttl#signature-spell> .
-<#wizard-20> <https://dnd5e.app/vocab/dnd5e#spellcasting> _:b1216 .
+<#wizard-20> <https://dnd5e.app/vocab/dnd5e#levelSpellcasting> _:b1216 .
 <#wizard-20> <https://dnd5e.app/vocab/dnd5e#classSpecific> _:b1217 .
 _:b1216 <https://dnd5e.app/vocab/dnd5e#cantripsKnown> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
 _:b1216 <https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1> "4"^^<http://www.w3.org/2001/XMLSchema#number> .

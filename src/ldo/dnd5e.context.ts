@@ -297,8 +297,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subfeatureOptions",
     "@type": "@id",
   },
-  spellcasting: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#spellcasting",
+  levelSpellcasting: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#levelSpellcasting",
     "@type": "@id",
   },
   cantripsKnown: {

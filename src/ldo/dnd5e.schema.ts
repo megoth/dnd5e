@@ -574,8 +574,9 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellcasting",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Spellcasting",
+              predicate: "https://dnd5e.app/vocab/dnd5e#levelSpellcasting",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#ClassLevelSpellcasting",
               min: 0,
               max: 1,
             },
@@ -583,6 +584,128 @@ export const dnd5eSchema: Schema = {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#classSpecific",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ClassSpecific",
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevelSpellcasting",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#cantripsKnown",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellsKnown",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel3",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel4",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel5",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel6",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel7",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel8",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
               min: 0,
               max: 1,
             },
@@ -1961,128 +2084,6 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#Spellcasting",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "EachOf",
-          expressions: [
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#cantripsKnown",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellsKnown",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel3",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel4",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel5",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel6",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel7",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel8",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
-              },
-              min: 0,
-              max: 1,
             },
           ],
         },

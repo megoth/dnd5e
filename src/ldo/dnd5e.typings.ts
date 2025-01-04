@@ -155,8 +155,27 @@ export interface ClassLevel {
   abilityScoreBonuses?: string;
   proficiencyBonus?: string;
   features?: Feature[];
-  spellcasting?: Spellcasting;
+  levelSpellcasting?: ClassLevelSpellcasting;
   classSpecific?: ClassSpecific;
+}
+
+/**
+ * ClassLevelSpellcasting Type
+ */
+export interface ClassLevelSpellcasting {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  cantripsKnown?: string;
+  spellsKnown?: string;
+  spellSlotsLevel1?: string;
+  spellSlotsLevel2?: string;
+  spellSlotsLevel3?: string;
+  spellSlotsLevel4?: string;
+  spellSlotsLevel5?: string;
+  spellSlotsLevel6?: string;
+  spellSlotsLevel7?: string;
+  spellSlotsLevel8?: string;
+  spellSlotsLevel9?: string;
 }
 
 /**
@@ -516,25 +535,6 @@ export interface Spell {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-}
-
-/**
- * Spellcasting Type
- */
-export interface Spellcasting {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  cantripsKnown?: string;
-  spellsKnown?: string;
-  spellSlotsLevel1?: string;
-  spellSlotsLevel2?: string;
-  spellSlotsLevel3?: string;
-  spellSlotsLevel4?: string;
-  spellSlotsLevel5?: string;
-  spellSlotsLevel6?: string;
-  spellSlotsLevel7?: string;
-  spellSlotsLevel8?: string;
-  spellSlotsLevel9?: string;
 }
 
 /**

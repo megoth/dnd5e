@@ -6,11 +6,11 @@ import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   ClassLevelShapeType,
+  ClassLevelSpellcastingShapeType,
   ClassSpecificCreatingSpellSlotsShapeType,
   ClassSpecificShapeType,
   DiceShapeType,
   FeatureShapeType,
-  SpellcastingShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
@@ -32,9 +32,9 @@ export function transformLevel(
       .usingType(FeatureShapeType)
       .fromSubject(dataUrl("features", feature.index)),
   );
-  classLevel.spellcasting =
+  classLevel.levelSpellcasting =
     data.spellcasting &&
-    ldoDataset.usingType(SpellcastingShapeType).fromJson({
+    ldoDataset.usingType(ClassLevelSpellcastingShapeType).fromJson({
       cantripsKnown: data.spellcasting.cantrips_known?.toString(),
       spellsKnown: data.spellcasting.spells_known?.toString(),
       spellSlotsLevel1: data.spellcasting.spell_slots_level_1?.toString(),

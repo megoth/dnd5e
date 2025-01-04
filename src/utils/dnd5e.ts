@@ -3,13 +3,13 @@ import { resourceUrl } from "./url";
 
 export function classHasCantripsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.spellcasting?.cantripsKnown, 10) > 0,
+    (level) => parseInt(level.levelSpellcasting?.cantripsKnown, 10) > 0,
   );
 }
 
 export function classHasHigherSpellcasting(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.spellcasting?.spellSlotsLevel6, 10) > 0,
+    (level) => parseInt(level.levelSpellcasting?.spellSlotsLevel6, 10) > 0,
   );
 }
 
@@ -20,7 +20,7 @@ export function classHasInvocations(classInfo: Class): boolean {
 }
 
 export function classHasLowerSpellcasting(classInfo: Class): boolean {
-  return !!classInfo.levels.find((level) => !!level.spellcasting);
+  return !!classInfo.levels.find((level) => !!level.levelSpellcasting);
 }
 
 export function classHasMartialArts(classInfo: Class): boolean {
@@ -43,7 +43,7 @@ export function classHasSorceryPoints(classInfo: Class): boolean {
 
 export function classHasSpellsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.spellcasting?.spellsKnown, 10) > 0,
+    (level) => parseInt(level.levelSpellcasting?.spellsKnown, 10) > 0,
   );
 }
 
@@ -133,12 +133,10 @@ export function apiUrlToSubjectUrl(apiUrl: string): string {
 }
 
 export function highestSpellLevel(level: ClassLevel): number {
-  const level9 = parseInt(level.spellcasting.spellSlotsLevel9, 10);
-  if (level9 > 0) return 9;
   let spellLevel = 9;
   do {
     const hasSpellLevel = parseInt(
-      level.spellcasting[`spellSlotsLevel${spellLevel}`],
+      level.levelSpellcasting[`spellSlotsLevel${spellLevel}`],
       10,
     );
     if (hasSpellLevel) {
@@ -146,7 +144,7 @@ export function highestSpellLevel(level: ClassLevel): number {
     }
     spellLevel--;
   } while (spellLevel > 0);
-  return 0;
+  return spellLevel;
 }
 
 export function parseNumber(number: string): string {
@@ -159,15 +157,15 @@ export function rageCount(count: string): string {
 
 export function sumSpellSlots(level: ClassLevel): number {
   return (
-    parseInt(level.spellcasting.spellSlotsLevel1, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel2, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel3, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel4, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel5, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel6, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel7, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel8, 10) +
-    parseInt(level.spellcasting.spellSlotsLevel9, 10)
+    parseInt(level.levelSpellcasting.spellSlotsLevel1, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel2, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel3, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel4, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel5, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel6, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel7, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel8, 10) +
+    parseInt(level.levelSpellcasting.spellSlotsLevel9, 10)
   );
 }
 

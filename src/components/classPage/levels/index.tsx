@@ -201,23 +201,43 @@ export default function ClassPageLevels({ classInfo }: Props) {
               </td>
               {hasRage && <td>{rageCount(level.classSpecific.rageCount)}</td>}
               {hasRage && <td>{level.classSpecific.rageDamageBonus}</td>}
-              {hasCantripsKnown && <td>{level.spellcasting.cantripsKnown}</td>}
-              {hasSpellsKnown && <td>{level.spellcasting.spellsKnown}</td>}
+              {hasCantripsKnown && (
+                <td>{level.levelSpellcasting.cantripsKnown}</td>
+              )}
+              {hasSpellsKnown && <td>{level.levelSpellcasting.spellsKnown}</td>}
               {hasLowerSpellcasting && !hasInvocations && (
                 <>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel1)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel2)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel3)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel4)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel5)}</td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel1)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel2)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel3)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel4)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel5)}
+                  </td>
                 </>
               )}
               {hasHigherSpellcasting && !hasInvocations && (
                 <>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel6)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel7)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel8)}</td>
-                  <td>{parseNumber(level.spellcasting.spellSlotsLevel9)}</td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel6)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel7)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel8)}
+                  </td>
+                  <td>
+                    {parseNumber(level.levelSpellcasting.spellSlotsLevel9)}
+                  </td>
                 </>
               )}
               {hasInvocations && (

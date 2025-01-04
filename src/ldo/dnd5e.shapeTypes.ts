@@ -14,6 +14,7 @@ import {
   ChoiceOption,
   Class,
   ClassLevel,
+  ClassLevelSpellcasting,
   ClassSpecific,
   ClassSpecificCreatingSpellSlots,
   Condition,
@@ -42,7 +43,6 @@ import {
   ScorePrerequisiteOption,
   Skill,
   Spell,
-  Spellcasting,
   StartingEquipment,
   StringOption,
   Subclass,
@@ -162,6 +162,16 @@ export const ClassLevelShapeType: ShapeType<ClassLevel> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevel",
   context: dnd5eContext,
 };
+
+/**
+ * ClassLevelSpellcasting ShapeType
+ */
+export const ClassLevelSpellcastingShapeType: ShapeType<ClassLevelSpellcasting> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevelSpellcasting",
+    context: dnd5eContext,
+  };
 
 /**
  * ClassSpecific ShapeType
@@ -416,15 +426,6 @@ export const SkillShapeType: ShapeType<Skill> = {
 export const SpellShapeType: ShapeType<Spell> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Spell",
-  context: dnd5eContext,
-};
-
-/**
- * Spellcasting ShapeType
- */
-export const SpellcastingShapeType: ShapeType<Spellcasting> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#Spellcasting",
   context: dnd5eContext,
 };
 
