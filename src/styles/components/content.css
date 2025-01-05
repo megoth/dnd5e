@@ -63,6 +63,10 @@
   @apply my-1 max-w-prose;
 }
 
+.content table {
+  @apply my-2;
+}
+
 .content ul {
   @apply ml-5 list-disc max-w-prose;
 }

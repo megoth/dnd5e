@@ -11,12 +11,15 @@
         informasjonen lagres og hvilke regelsett du ønsker å bruke, enten det er offisielle regler eller dine egne
         hjemmelagde."""@nb-NO .
 :appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
+:atHigherLevels skos:definition "På høyere nivå"@nb-NO .
 :authenticationGuidance skos:definition
         """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
 :authenticationPitch skos:definition
         """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
+:cantrip skos:definition "Liten tryllekunst"@nb-NO .
+:cantripNote skos:definition "{$school} liten tryllekunst"@nb-NO .
 :cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
 :castingTime skos:definition "Kastetid"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
@@ -26,6 +29,7 @@
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
 :close skos:definition "Lukk"@nb-NO .
 :components skos:definition "Komponenter"@nb-NO .
+:concentration skos:definition "Konsentrasjon"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
@@ -68,6 +72,7 @@
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
+:order0 skos:definition "0."@nb-NO .
 :order1 skos:definition "1."@nb-NO .
 :order2 skos:definition "2."@nb-NO .
 :order3 skos:definition "3."@nb-NO .
@@ -107,6 +112,7 @@
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 :solidLogo skos:definition "Logo for Solid"@nb-NO .
 :sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
+:spellNote skos:definition "{$order}-nivå {$school}"@nb-NO .
 :spellsKnown skos:definition "Kjente trylleformler"@nb-NO .
 :spellSlots skos:definition "Trylleformler"@nb-NO .
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .

@@ -571,10 +571,13 @@ export interface Spell {
   type: Type;
   label: string;
   description?: string[];
+  higherLevel?: string[];
   spellRange: string;
   components?: string[];
   duration: string;
+  concentration?: boolean;
   castingTime?: string;
+  level: string;
   magicSchool: MagicSchool;
 }
 

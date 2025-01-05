@@ -113,6 +113,11 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#spell",
     "@type": "@id",
   },
+  higherLevel: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#higherLevel",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
   spellRange: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellRange",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -125,6 +130,10 @@ export const dnd5eContext: ContextDefinition = {
   duration: {
     "@id": "https://dnd5e.app/vocab/dnd5e#duration",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  concentration: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#concentration",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
   },
   castingTime: {
     "@id": "https://dnd5e.app/vocab/dnd5e#castingTime",

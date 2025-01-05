@@ -20,10 +20,8 @@ export default function ClassPageMulticlassing({ classInfo }: Props) {
       .join(` ${l10n.getString("or")} `) || "",
   ].join("");
   return (
-    <aside className="notification">
-      <p>
-        <Translation id="multiclassRequirement" vars={{ requirement }} />
-      </p>
-    </aside>
+    <p className="notification">
+      <Translation id="multiclassRequirement" vars={{ requirement }} />
+    </p>
   );
 }

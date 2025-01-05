@@ -1,5 +1,8 @@
-import { Choice, Class, ClassLevel } from "../ldo/dnd5e.typings";
+import { Choice, Class, ClassLevel, Spell } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
+import Translation from "../components/translation";
+import React from "react";
+import { ReactLocalization } from "@fluent/react/esm/localization";
 
 export function classHasCantripsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
@@ -153,6 +156,16 @@ export function parseNumber(number: string): string {
 
 export function rageCount(count: string): string {
   return parseInt(count, 10) === 9999 ? "Unlimited" : count;
+}
+
+export function spellDuration(spell: Spell, l10n: ReactLocalization): string {
+  return spell.concentration
+    ? `${l10n.getString("concentration")}, ${spell.duration}`
+    : spell.duration;
+}
+
+export function spellResourceUrls(spell: Spell): string[] {
+  return [resourceUrl(spell.magicSchool["@id"])];
 }
 
 export function sumSpellSlots(level: ClassLevel): number {

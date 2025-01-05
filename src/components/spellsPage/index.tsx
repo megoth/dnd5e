@@ -6,8 +6,12 @@ import WarningMessage from "../warningMessage";
 import useListOfType from "../../hooks/useListOfType";
 import { SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
+import { NavLink } from "react-router-dom";
+import { useLocalization } from "@fluent/react";
+import { spellDuration } from "../../utils/dnd5e";
 
 export default function SpellsPage() {
+  const { l10n } = useLocalization();
   const { isLoading, items: spells } = useListOfType(
     SpellShapeType,
     "spells",
@@ -20,19 +24,22 @@ export default function SpellsPage() {
 
   return (
     <Layout pageName={"spellsPageTitle"}>
+      <WarningMessage>
+        <Translation id="workInProgress" />
+      </WarningMessage>
       <Content>
         <h1>
           <Translation id="spellsPageTitle" />
         </h1>
-        <WarningMessage>
-          <Translation id="workInProgress" />
-        </WarningMessage>
         <div className="table-container">
           <table className="table">
             <thead>
               <tr>
                 <th scope="col">
                   <Translation id="name" />
+                </th>
+                <th scope="col">
+                  <Translation id="level" />
                 </th>
                 <th scope="col">
                   <Translation id="school" />
@@ -54,11 +61,16 @@ export default function SpellsPage() {
             <tbody>
               {spells.map((spell) => (
                 <tr key={spell["@id"]}>
-                  <td>{spell.label}</td>
+                  <td>
+                    <NavLink to={`/spells/${btoa(spell["@id"])}`}>
+                      {spell.label}
+                    </NavLink>
+                  </td>
+                  <td>{l10n.getString(`order${spell.level}`)}</td>
                   <td>{spell.magicSchool.label}</td>
                   <td>{spell.castingTime}</td>
                   <td>{spell.spellRange}</td>
-                  <td>{spell.duration}</td>
+                  <td>{spellDuration(spell, l10n)}</td>
                   <td>{spell.components.join(", ")}</td>
                 </tr>
               ))}

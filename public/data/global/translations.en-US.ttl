@@ -10,12 +10,15 @@
         """Manage your characters in Dungeons & Dragons 5th edition. You are in control of where the information is stored,
         and which rulesets to use, whether that be official or homebrewn."""@en-US .
 :appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
+:atHigherLevels skos:definition "At Higher Levels"@en-US .
 :authenticationGuidance skos:definition
         """Choose an identity provider from the list, or provide one yourself."""@en-US .
 :authenticationPitch skos:definition
         """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
+:cantrip skos:definition "Cantrip"@en-US .
+:cantripNote skos:definition "{$school} cantrip"@en-US .
 :cantripsKnown skos:definition "Cantrips Known"@en-US .
 :castingTime skos:definition "Casting Time"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
@@ -25,6 +28,7 @@
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .
 :components skos:definition "Components"@en-US .
+:concentration skos:definition "Concentration"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
@@ -67,6 +71,7 @@
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
+:order0 skos:definition "0th"@en-US .
 :order1 skos:definition "1st"@en-US .
 :order2 skos:definition "2nd"@en-US .
 :order3 skos:definition "3rd"@en-US .
@@ -106,6 +111,7 @@
 :solidIdP skos:definition "Solid identity provider"@en-US .
 :solidLogo skos:definition "Solid logo"@en-US .
 :sorceryPoints skos:definition "Sorcery Points"@en-US .
+:spellNote skos:definition "{$order}-level {$school}"@en-US .
 :spellsKnown skos:definition "Spells Known"@en-US .
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .

@@ -25,6 +25,7 @@ import SignupPage from "./components/signupPage";
 import RulesPage from "./components/rulesPage";
 import LayoutProvider from "./hooks/useLayout/provider";
 import ClassPage from "./components/classPage";
+import SpellPage from "./components/spellPage";
 
 const router = createBrowserRouter([
   {
@@ -114,6 +115,10 @@ const router = createBrowserRouter([
       {
         path: "/spells",
         element: <SpellsPage />,
+      },
+      {
+        path: "/spells/:url",
+        element: <SpellPage />,
       },
       {
         path: "/signup",

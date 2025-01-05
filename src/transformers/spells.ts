@@ -25,17 +25,17 @@ export function transformSpell(
     .fromSubject(`#${data.index}`);
   spell.type = type("Spell");
   spell.label = data.name;
-  // description
-  // higherLevel
+  spell.description = data.desc;
+  spell.higherLevel = data.higher_level;
   spell.spellRange = data.range;
   spell.components = data.components;
   // material
   // areaOfEffect
   // ritual
   spell.duration = data.duration;
-  // concentration
+  spell.concentration = data.concentration;
   spell.castingTime = data.casting_time;
-  // level
+  spell.level = data.level.toString();
   // attackType
   // damage
   spell.magicSchool =

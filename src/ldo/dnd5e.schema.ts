@@ -2213,6 +2213,16 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#higherLevel",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#spellRange",
               valueExpr: {
                 type: "NodeConstraint",
@@ -2239,6 +2249,16 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#concentration",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#boolean",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#castingTime",
               valueExpr: {
                 type: "NodeConstraint",
@@ -2246,6 +2266,14 @@ export const dnd5eSchema: Schema = {
               },
               min: 0,
               max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#level",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#number",
+              },
             },
             {
               type: "TripleConstraint",
