@@ -6,6 +6,7 @@ import {
   AbilityScoreOption,
   ActionOption,
   Alignment,
+  AreaOfEffect,
   Background,
   BackgroundFeature,
   BonusOption,
@@ -46,6 +47,9 @@ import {
   ScorePrerequisiteOption,
   Skill,
   Spell,
+  SpellDamage,
+  SpellDamageCharacterLevel,
+  SpellDamageSlotLevel,
   StartingEquipment,
   StringOption,
   Subclass,
@@ -91,6 +95,15 @@ export const ActionOptionShapeType: ShapeType<ActionOption> = {
 export const AlignmentShapeType: ShapeType<Alignment> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Alignment",
+  context: dnd5eContext,
+};
+
+/**
+ * AreaOfEffect ShapeType
+ */
+export const AreaOfEffectShapeType: ShapeType<AreaOfEffect> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#AreaOfEffect",
   context: dnd5eContext,
 };
 
@@ -457,6 +470,34 @@ export const SkillShapeType: ShapeType<Skill> = {
 export const SpellShapeType: ShapeType<Spell> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Spell",
+  context: dnd5eContext,
+};
+
+/**
+ * SpellDamage ShapeType
+ */
+export const SpellDamageShapeType: ShapeType<SpellDamage> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamage",
+  context: dnd5eContext,
+};
+
+/**
+ * SpellDamageCharacterLevel ShapeType
+ */
+export const SpellDamageCharacterLevelShapeType: ShapeType<SpellDamageCharacterLevel> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageCharacterLevel",
+    context: dnd5eContext,
+  };
+
+/**
+ * SpellDamageSlotLevel ShapeType
+ */
+export const SpellDamageSlotLevelShapeType: ShapeType<SpellDamageSlotLevel> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageSlotLevel",
   context: dnd5eContext,
 };
 

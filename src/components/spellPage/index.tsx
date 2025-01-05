@@ -7,7 +7,11 @@ import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import { SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { spellDuration, spellResourceUrls } from "../../utils/dnd5e";
+import {
+  spellDuration,
+  spellMaterial,
+  spellResourceUrls,
+} from "../../utils/dnd5e";
 import Translation from "../translation";
 import { useLocalization } from "@fluent/react";
 import Markdown from "react-markdown";
@@ -81,7 +85,13 @@ export default function SpellPage() {
           <dt>
             <Translation id="components" />
           </dt>
-          <dd>{spell.components.join(", ")}</dd>
+          <dd>
+            {spell.components
+              .map((component) =>
+                component === "M" ? spellMaterial(spell) : component,
+              )
+              .join(", ")}
+          </dd>
           <dt>
             <Translation id="duration" />
           </dt>

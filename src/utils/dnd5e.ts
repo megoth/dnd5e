@@ -164,6 +164,10 @@ export function spellDuration(spell: Spell, l10n: ReactLocalization): string {
     : spell.duration;
 }
 
+export function spellMaterial(spell: Spell) {
+  return spell.material ? `M (${spell.material})` : "M";
+}
+
 export function spellResourceUrls(spell: Spell): string[] {
   return [resourceUrl(spell.magicSchool["@id"])];
 }

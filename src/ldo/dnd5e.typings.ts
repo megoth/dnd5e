@@ -53,6 +53,16 @@ export interface Alignment {
 }
 
 /**
+ * AreaOfEffect Type
+ */
+export interface AreaOfEffect {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  size: string;
+  ofType: string;
+}
+
+/**
  * Background Type
  */
 export interface Background {
@@ -111,7 +121,7 @@ export interface Choice {
   type: Type;
   description?: string;
   choose?: number;
-  ofType2?: string;
+  ofType?: string;
   from?: OptionSet;
   fromResourceList?: ResourceListOptionSet;
 }
@@ -376,7 +386,7 @@ export interface Feature {
 export interface FeaturePrerequisite {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  ofType: string;
+  ofType2: string;
   level?: string;
   feature?: Feature;
   spell?: Spell;
@@ -574,11 +584,49 @@ export interface Spell {
   higherLevel?: string[];
   spellRange: string;
   components?: string[];
+  material?: string;
+  areaOfEffect?: AreaOfEffect;
+  ritual?: boolean;
   duration: string;
   concentration?: boolean;
   castingTime?: string;
   level: string;
+  attackType?: string;
+  spellDamage: SpellDamage;
   magicSchool: MagicSchool;
+  classes?: Class[];
+  subclasses?: Subclass[];
+}
+
+/**
+ * SpellDamage Type
+ */
+export interface SpellDamage {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  damageType?: DamageType;
+  damageAtCharacterLevel?: SpellDamageCharacterLevel[];
+  damageAtSlotLevel?: SpellDamageSlotLevel[];
+}
+
+/**
+ * SpellDamageCharacterLevel Type
+ */
+export interface SpellDamageCharacterLevel {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  level: string;
+  damageDice: string;
+}
+
+/**
+ * SpellDamageSlotLevel Type
+ */
+export interface SpellDamageSlotLevel {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  slot: string;
+  damageDice: string;
 }
 
 /**

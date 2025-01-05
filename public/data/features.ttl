@@ -217,7 +217,7 @@ _:b518 <https://dnd5e.app/vocab/dnd5e#references> _:b516 .
 _:b518 <https://dnd5e.app/vocab/dnd5e#references> _:b517 .
 _:b519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b519 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiency" .
+_:b519 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b519 <https://dnd5e.app/vocab/dnd5e#from> _:b518 .
 _:b499 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b519 .
 <#bard-ability-score-improvement-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -310,7 +310,7 @@ _:b539 <https://dnd5e.app/vocab/dnd5e#references> _:b537 .
 _:b539 <https://dnd5e.app/vocab/dnd5e#references> _:b538 .
 _:b540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b540 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b540 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiency" .
+_:b540 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b540 <https://dnd5e.app/vocab/dnd5e#from> _:b539 .
 _:b520 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b540 .
 <#magical-secrets-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -588,7 +588,7 @@ _:b549 <https://dnd5e.app/vocab/dnd5e#references> _:b547 .
 _:b549 <https://dnd5e.app/vocab/dnd5e#references> _:b548 .
 _:b550 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b550 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b550 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b550 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b550 <https://dnd5e.app/vocab/dnd5e#from> _:b549 .
 _:b541 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b550 .
 <#circle-of-the-land-arctic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -785,7 +785,7 @@ _:b558 <https://dnd5e.app/vocab/dnd5e#references> _:b556 .
 _:b558 <https://dnd5e.app/vocab/dnd5e#references> _:b557 .
 _:b559 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b559 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b559 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b559 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b559 <https://dnd5e.app/vocab/dnd5e#from> _:b558 .
 _:b551 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b559 .
 <#fighter-fighting-style-archery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -892,7 +892,7 @@ _:b567 <https://dnd5e.app/vocab/dnd5e#references> _:b565 .
 _:b567 <https://dnd5e.app/vocab/dnd5e#references> _:b566 .
 _:b568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b568 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b568 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b568 <https://dnd5e.app/vocab/dnd5e#from> _:b567 .
 _:b560 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b568 .
 <#extra-attack-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1156,7 +1156,7 @@ _:b574 <https://dnd5e.app/vocab/dnd5e#references> _:b572 .
 _:b574 <https://dnd5e.app/vocab/dnd5e#references> _:b573 .
 _:b575 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b575 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b575 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b575 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b575 <https://dnd5e.app/vocab/dnd5e#from> _:b574 .
 _:b569 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b575 .
 <#fighting-style-defense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1344,7 +1344,7 @@ _:b581 <https://dnd5e.app/vocab/dnd5e#references> _:b579 .
 _:b581 <https://dnd5e.app/vocab/dnd5e#references> _:b580 .
 _:b582 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b582 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b582 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b582 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b582 <https://dnd5e.app/vocab/dnd5e#from> _:b581 .
 _:b576 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b582 .
 <#ranger-fighting-style-archery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1396,7 +1396,7 @@ _:b587 <https://dnd5e.app/vocab/dnd5e#references> _:b585 .
 _:b587 <https://dnd5e.app/vocab/dnd5e#references> _:b586 .
 _:b588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b588 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b588 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b588 <https://dnd5e.app/vocab/dnd5e#from> _:b587 .
 _:b583 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b588 .
 <#hunters-prey-colossus-slayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1472,7 +1472,7 @@ _:b593 <https://dnd5e.app/vocab/dnd5e#references> _:b591 .
 _:b593 <https://dnd5e.app/vocab/dnd5e#references> _:b592 .
 _:b594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b594 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b594 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b594 <https://dnd5e.app/vocab/dnd5e#from> _:b593 .
 _:b589 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b594 .
 <#defensive-tactics-escape-the-horde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1539,7 +1539,7 @@ _:b598 <https://dnd5e.app/vocab/dnd5e#references> _:b596 .
 _:b598 <https://dnd5e.app/vocab/dnd5e#references> _:b597 .
 _:b599 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b599 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b599 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b599 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b599 <https://dnd5e.app/vocab/dnd5e#from> _:b598 .
 _:b595 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b599 .
 <#multiattack-volley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1590,7 +1590,7 @@ _:b604 <https://dnd5e.app/vocab/dnd5e#references> _:b602 .
 _:b604 <https://dnd5e.app/vocab/dnd5e#references> _:b603 .
 _:b605 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b605 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b605 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b605 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b605 <https://dnd5e.app/vocab/dnd5e#from> _:b604 .
 _:b600 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b605 .
 <#superior-hunters-defense-evasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1680,13 +1680,13 @@ _:b625 <https://dnd5e.app/vocab/dnd5e#references> _:b623 .
 _:b625 <https://dnd5e.app/vocab/dnd5e#references> _:b624 .
 _:b626 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b626 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b626 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiency" .
+_:b626 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b626 <https://dnd5e.app/vocab/dnd5e#from> _:b625 .
 _:b627 <https://dnd5e.app/vocab/dnd5e#choice> _:b626 .
 _:b628 <https://dnd5e.app/vocab/dnd5e#choices> _:b627 .
 _:b629 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b629 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b629 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiency" .
+_:b629 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b629 <https://dnd5e.app/vocab/dnd5e#from> _:b628 .
 _:b606 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b629 .
 <#sneak-attack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1782,7 +1782,7 @@ _:b650 <https://dnd5e.app/vocab/dnd5e#references> _:b648 .
 _:b650 <https://dnd5e.app/vocab/dnd5e#references> _:b649 .
 _:b651 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b651 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b651 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "proficiency" .
+_:b651 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b651 <https://dnd5e.app/vocab/dnd5e#from> _:b650 .
 _:b630 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b651 .
 <#rogue-evasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -1890,7 +1890,7 @@ _:b663 <https://dnd5e.app/vocab/dnd5e#references> _:b661 .
 _:b663 <https://dnd5e.app/vocab/dnd5e#references> _:b662 .
 _:b664 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b664 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b664 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b664 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b664 <https://dnd5e.app/vocab/dnd5e#from> _:b663 .
 _:b652 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b664 .
 <#dragon-ancestor-black---acid-damage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2015,7 +2015,7 @@ _:b674 <https://dnd5e.app/vocab/dnd5e#references> _:b672 .
 _:b674 <https://dnd5e.app/vocab/dnd5e#references> _:b673 .
 _:b675 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b675 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b675 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b675 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b675 <https://dnd5e.app/vocab/dnd5e#from> _:b674 .
 _:b665 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b675 .
 <#metamagic-careful-spell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2101,7 +2101,7 @@ _:b685 <https://dnd5e.app/vocab/dnd5e#references> _:b683 .
 _:b685 <https://dnd5e.app/vocab/dnd5e#references> _:b684 .
 _:b686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b686 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b686 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b686 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b686 <https://dnd5e.app/vocab/dnd5e#from> _:b685 .
 _:b676 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b686 .
 <#sorcerer-ability-score-improvement-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2138,7 +2138,7 @@ _:b696 <https://dnd5e.app/vocab/dnd5e#references> _:b694 .
 _:b696 <https://dnd5e.app/vocab/dnd5e#references> _:b695 .
 _:b697 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b697 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b697 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b697 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b697 <https://dnd5e.app/vocab/dnd5e#from> _:b696 .
 _:b687 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b697 .
 <#draconic-presence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2220,7 +2220,7 @@ _:b698 <https://dnd5e.app/vocab/dnd5e#invocations> </data/features.ttl#eldritch-
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b699 .
-_:b699 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "spell" .
+_:b699 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b699 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-armor-of-shadows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-armor-of-shadows> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Armor of Shadows" .
@@ -2248,7 +2248,7 @@ _:b699 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b700 .
-_:b700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b700 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b700 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-tome> .
 <#eldritch-invocation-devils-sight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-devils-sight> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Devil's Sight" .
@@ -2269,7 +2269,7 @@ _:b700 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-t
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b701 .
-_:b701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "spell" .
+_:b701 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b701 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-eyes-of-the-rune-keeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-eyes-of-the-rune-keeper> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Eyes of the Rune Keeper" .
@@ -2308,7 +2308,7 @@ _:b701 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b702 .
-_:b702 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "spell" .
+_:b702 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b702 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-thief-of-five-fates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-thief-of-five-fates> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Thief of Five Fates" .
@@ -2324,7 +2324,7 @@ _:b702 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b703 .
-_:b703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b703 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b703 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-chain> .
 <#eldritch-invocation-mire-the-mind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-mire-the-mind> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Mire the Mind" .
@@ -2334,7 +2334,7 @@ _:b703 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-c
 <#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b704 .
 _:b704 <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b704 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-one-with-shadows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-one-with-shadows> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: One with Shadows" .
 <#eldritch-invocation-one-with-shadows> <http://purl.org/dc/terms/description> "When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction." .
@@ -2343,7 +2343,7 @@ _:b704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b705 .
 _:b705 <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b705 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sign-of-ill-omen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-sign-of-ill-omen> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Sign of Ill Omen" .
 <#eldritch-invocation-sign-of-ill-omen> <http://purl.org/dc/terms/description> "You can cast bestow curse once using a warlock spell slot. You can't do so again until you finish a long rest." .
@@ -2352,7 +2352,7 @@ _:b705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b706 .
 _:b706 <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b706 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b706 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-thirsting-blade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-thirsting-blade> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Thirsting Blade" .
 <#eldritch-invocation-thirsting-blade> <http://purl.org/dc/terms/description> "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn." .
@@ -2362,8 +2362,8 @@ _:b706 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b707 .
 <#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b708 .
 _:b707 <https://dnd5e.app/vocab/dnd5e#level> "5"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b707 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
-_:b708 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b707 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
+_:b708 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b708 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-blade> .
 <#eldritch-invocation-bewitching-whispers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-bewitching-whispers> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Bewitching Whispers" .
@@ -2373,7 +2373,7 @@ _:b708 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-b
 <#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b709 .
 _:b709 <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b709 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-dreadful-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-dreadful-word> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Dreadful Word" .
 <#eldritch-invocation-dreadful-word> <http://purl.org/dc/terms/description> "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest." .
@@ -2382,7 +2382,7 @@ _:b709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b710 .
 _:b710 <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b710 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b710 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sculptor-of-flesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-sculptor-of-flesh> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Sculptor of Flesh" .
 <#eldritch-invocation-sculptor-of-flesh> <http://purl.org/dc/terms/description> "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest." .
@@ -2391,7 +2391,7 @@ _:b710 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b711 .
 _:b711 <https://dnd5e.app/vocab/dnd5e#level> "7"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b711 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b711 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-ascendant-step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-ascendant-step> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Ascendant Step" .
 <#eldritch-invocation-ascendant-step> <http://purl.org/dc/terms/description> "You can cast levitate on yourself at will, without expending a spell slot or material components." .
@@ -2400,7 +2400,7 @@ _:b711 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b712 .
 _:b712 <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b712 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b712 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-minions-of-chaos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-minions-of-chaos> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Minions of Chaos" .
 <#eldritch-invocation-minions-of-chaos> <http://purl.org/dc/terms/description> "You can cast conjure elemental once using a warlock spell slot. You can't do so again until you finish a long rest." .
@@ -2409,7 +2409,7 @@ _:b712 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b713 .
 _:b713 <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b713 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-otherworldly-leap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-otherworldly-leap> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Otherworldly Leap" .
 <#eldritch-invocation-otherworldly-leap> <http://purl.org/dc/terms/description> "You can cast jump on yourself at will, without expending a spell slot or material components." .
@@ -2418,7 +2418,7 @@ _:b713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b714 .
 _:b714 <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b714 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-whispers-of-the-grave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-whispers-of-the-grave> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Whispers of the Grave" .
 <#eldritch-invocation-whispers-of-the-grave> <http://purl.org/dc/terms/description> "You can cast speak with dead at will, without expending a spell slot." .
@@ -2427,7 +2427,7 @@ _:b714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b715 .
 _:b715 <https://dnd5e.app/vocab/dnd5e#level> "9"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b715 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b715 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-lifedrinker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-lifedrinker> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Lifedrinker" .
 <#eldritch-invocation-lifedrinker> <http://purl.org/dc/terms/description> "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)." .
@@ -2437,8 +2437,8 @@ _:b715 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b716 .
 <#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b717 .
 _:b716 <https://dnd5e.app/vocab/dnd5e#level> "12"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b716 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
-_:b717 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b716 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
+_:b717 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b717 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-blade> .
 <#eldritch-invocation-chains-of-carceri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-chains-of-carceri> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Chains of Carceri" .
@@ -2449,8 +2449,8 @@ _:b717 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-b
 <#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b718 .
 <#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b719 .
 _:b718 <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b718 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
-_:b719 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b718 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
+_:b719 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b719 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-chain> .
 <#eldritch-invocation-master-of-myriad-forms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-master-of-myriad-forms> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Master of Myriad Forms" .
@@ -2460,7 +2460,7 @@ _:b719 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-c
 <#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b720 .
 _:b720 <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b720 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-visions-of-distant-realms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-visions-of-distant-realms> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Visions of Distant Realms" .
 <#eldritch-invocation-visions-of-distant-realms> <http://purl.org/dc/terms/description> "You can cast arcane eye at will, without expending a spell slot." .
@@ -2469,7 +2469,7 @@ _:b720 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b721 .
 _:b721 <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b721 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b721 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-witch-sight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#eldritch-invocation-witch-sight> <http://www.w3.org/2000/01/rdf-schema#label> "Eldritch Invocation: Witch Sight" .
 <#eldritch-invocation-witch-sight> <http://purl.org/dc/terms/description> "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight." .
@@ -2478,7 +2478,7 @@ _:b721 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
 <#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
 <#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b722 .
 _:b722 <https://dnd5e.app/vocab/dnd5e#level> "15"^^<http://www.w3.org/2001/XMLSchema#number> .
-_:b722 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "level" .
+_:b722 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#pact-boon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
 <#pact-boon> <http://www.w3.org/2000/01/rdf-schema#label> "Pact Boon" .
 <#pact-boon> <http://purl.org/dc/terms/description> "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice." .
@@ -2490,7 +2490,7 @@ _:b727 <https://dnd5e.app/vocab/dnd5e#references> _:b725 .
 _:b727 <https://dnd5e.app/vocab/dnd5e#references> _:b726 .
 _:b728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
 _:b728 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType> "feature" .
+_:b728 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b728 <https://dnd5e.app/vocab/dnd5e#from> _:b727 .
 _:b723 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b728 .
 <#pact-of-the-chain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .

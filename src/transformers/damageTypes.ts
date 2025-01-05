@@ -28,5 +28,5 @@ export default async function writeDamageTypes() {
       ),
     )
   ).reduce((memo, damageType) => memo.concat(damageType));
-  writeFileSync(dataPath("damageTypes"), turtle);
+  writeFileSync(dataPath("damage-types"), turtle);
 }

@@ -1,6 +1,17 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { MagicSchoolShapeType, SpellShapeType } from "../ldo/dnd5e.shapeTypes";
+import {
+  AreaOfEffectShapeType,
+  ClassShapeType,
+  DamageTypeShapeType,
+  DiceShapeType,
+  MagicSchoolShapeType,
+  SpellDamageCharacterLevelShapeType,
+  SpellDamageShapeType,
+  SpellDamageSlotLevelShapeType,
+  SpellShapeType,
+  SubclassShapeType,
+} from "../ldo/dnd5e.shapeTypes";
 import { Spell } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import spells from "../dnd5eapi-data/5e-SRD-Spells.json";
@@ -29,22 +40,67 @@ export function transformSpell(
   spell.higherLevel = data.higher_level;
   spell.spellRange = data.range;
   spell.components = data.components;
-  // material
-  // areaOfEffect
-  // ritual
+  spell.material = data.material;
+  spell.areaOfEffect =
+    data.area_of_effect &&
+    ldoDataset.usingType(AreaOfEffectShapeType).fromJson({
+      size: data.area_of_effect.size.toString(),
+      ofType: data.area_of_effect.type,
+    });
+  spell.ritual = data.ritual;
   spell.duration = data.duration;
   spell.concentration = data.concentration;
   spell.castingTime = data.casting_time;
   spell.level = data.level.toString();
-  // attackType
-  // damage
+  spell.attackType = data.attack_type;
+  spell.spellDamage =
+    data.damage &&
+    ldoDataset.usingType(SpellDamageShapeType).fromJson({
+      ...(data.damage.damage_type && {
+        damageType: ldoDataset
+          .usingType(DamageTypeShapeType)
+          .fromSubject(apiUrlToSubjectUrl(data.damage.damage_type.url)),
+      }),
+      ...(data.damage["damage_at_slot_level"] && {
+        damageAtSlotLevel: Object.entries(
+          data.damage["damage_at_slot_level"],
+        ).map(([slot, damageDice]: [string, string]) =>
+          ldoDataset.usingType(SpellDamageSlotLevelShapeType).fromJson({
+            slot,
+            damageDice,
+          }),
+        ),
+      }),
+      ...(data.damage["damage_at_character_level"] && {
+        damageAtCharacterLevel: Object.entries(
+          data.damage["damage_at_character_level"],
+        ).map(([level, damageDice]: [string, string]) =>
+          ldoDataset.usingType(SpellDamageCharacterLevelShapeType).fromJson({
+            level,
+            damageDice,
+          }),
+        ),
+      }),
+    });
   spell.magicSchool =
     data.school &&
     ldoDataset
       .usingType(MagicSchoolShapeType)
       .fromSubject(apiUrlToSubjectUrl(data.school.url));
-  // classes
-  // subclasses
+  spell.classes =
+    data.classes &&
+    data.classes.map((classData) =>
+      ldoDataset
+        .usingType(ClassShapeType)
+        .fromSubject(apiUrlToSubjectUrl(classData.url)),
+    );
+  spell.subclasses =
+    data.subclasses &&
+    data.subclasses.map((subclass) =>
+      ldoDataset
+        .usingType(SubclassShapeType)
+        .fromSubject(apiUrlToSubjectUrl(subclass.url)),
+    );
   return spell;
 }
 
