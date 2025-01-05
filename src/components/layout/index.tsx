@@ -7,6 +7,7 @@ import SubMenuNav from "../subMenuNav";
 import Session from "../session";
 import useLayout from "../../hooks/useLayout";
 import { bem } from "../../utils/bem";
+import { ScrollRestoration } from "react-router-dom";
 
 export const TESTID_LAYOUT_FADE = "layout-fade";
 export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
@@ -118,6 +119,7 @@ export default function Layout({
           <PageFooter />
         </div>
       )}
+      <ScrollRestoration />
     </div>
   );
 }
