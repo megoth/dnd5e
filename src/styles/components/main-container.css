@@ -7,7 +7,7 @@
 }
 
 .main-container--header {
-  @apply lg:container lg:flex-col px-4;
+  @apply lg:container lg:flex-col;
 }
 @media screen and (min-width: 1024px) {
   .main-container--header {
@@ -16,11 +16,12 @@
 }
 
 .main-container--subheader {
-  @apply lg:container lg:flex-col px-4;
+  @apply lg:container lg:flex-col;
 }
 @media screen and (min-width: 1024px) {
-  .main-container--header {
+  .main-container--subheader {
     padding-inline-start: 256px;
+    padding-inline-end: 256px;
   }
 }
 

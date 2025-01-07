@@ -102,6 +102,7 @@
 
         After you've enabled it the application will remember your choice for that browser."""@en-US .
 :searchEnable skos:definition "Enable search"@en-US .
+:searchHere skos:definition "Search here"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition

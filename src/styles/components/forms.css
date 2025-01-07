@@ -1,13 +1,17 @@
-.checkbox {
-    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border;
+.form--global-search {
+    @apply text-sm leading-4;
 }
 
 .form--search {
-    @apply flex;
+    @apply flex w-full max-w-sm;
 }
 
 .label {
     @apply my-1 block;
+}
+
+.label--global-search {
+    @apply hidden;
 }
 
 .label--search {
@@ -18,10 +22,18 @@
     @apply ml-1;
 }
 
-.input {
-    @apply border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black;
+.input[type="text"] {
+    @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black;
 }
 
-.input--search {
+.input--global-search[type="text"] {
+    @apply px-2 py-1 dark:bg-gray-700 dark:border-black focus:ring-gray-300 dark:text-gray-50;
+}
+
+.input--search[type="text"] {
     @apply w-full;
+}
+
+.checkbox {
+    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border;
 }

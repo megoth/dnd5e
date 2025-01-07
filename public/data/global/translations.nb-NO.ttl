@@ -104,6 +104,7 @@
 
         Applikasjonen lagrer valget ditt for nettleseren."""@nb-NO .
 :searchEnable skos:definition "Skru på søk"@nb-NO .
+:searchHere skos:definition "Søk her"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
