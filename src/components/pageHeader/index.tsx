@@ -14,10 +14,9 @@ export const TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON =
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   className?: string;
-  pageName?: string;
 }
 
-export default function PageHeader({ className, pageName, ...props }: Props) {
+export default function PageHeader({ className, ...props }: Props) {
   const { session } = useSolidAuth();
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
   return (
@@ -52,7 +51,7 @@ export default function PageHeader({ className, pageName, ...props }: Props) {
             <Icon name="menu" />
           </button>
           <div className="flex-1 text-lg font-semibold font-serif leading-10">
-            <Translation id={pageName} />
+            SEARCH FIELD
           </div>
           <button
             type="button"

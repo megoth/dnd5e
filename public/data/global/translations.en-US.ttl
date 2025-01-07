@@ -24,6 +24,7 @@
 :charactersPageTitle skos:definition "Characters"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
+:class skos:definition "Class"@en-US .
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .
@@ -68,6 +69,7 @@
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
 :multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
 :name skos:definition "Name"@en-US .
+:noResults skos:definition "No results"@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :or skos:definition "or"@en-US .
@@ -93,6 +95,13 @@
 :rulesPageTitle skos:definition "Rules"@en-US .
 :savingThrows skos:definition "Saving Throws"@en-US .
 :school skos:definition "School"@en-US .
+:search skos:definition "Search"@en-US .
+:searchDescription skos:definition
+        """The search functionality of this application is 100% browser-based, which means that the application must
+        load most of the data to work.
+
+        After you've enabled it the application will remember your choice for that browser."""@en-US .
+:searchEnable skos:definition "Enable search"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition
@@ -111,11 +120,13 @@
 :solidIdP skos:definition "Solid identity provider"@en-US .
 :solidLogo skos:definition "Solid logo"@en-US .
 :sorceryPoints skos:definition "Sorcery Points"@en-US .
+:spell skos:definition "Spell"@en-US .
 :spellNote skos:definition "{$order}-level {$school}"@en-US .
 :spellsKnown skos:definition "Spells Known"@en-US .
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
+:suggestions skos:definition "Suggestions"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 :unarmoredMovement skos:definition "Unarmored movement"@en-US .

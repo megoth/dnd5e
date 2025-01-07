@@ -11,13 +11,13 @@ export default function useListOfType<Type extends LdoBase>(
   type: string,
 ): {
   isLoading: boolean;
-  items?: Array<Type>;
+  items: Array<Type>;
 } {
   const { dataset, getSubject } = useLdo();
   const { isLoading } = useRulesBundle(rulesBundle);
 
   return useMemo(() => {
-    if (!dataset || isLoading) return { isLoading };
+    if (!dataset || isLoading) return { items: [], isLoading };
     return {
       isLoading,
       items: dataset

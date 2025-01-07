@@ -143,7 +143,6 @@ export interface Class {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-  description?: string;
   hitDie: number;
   levels?: ClassLevel[];
   multiclassing?: Multiclassing;

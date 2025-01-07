@@ -10,6 +10,10 @@
   @apply mt-1 mb-4 max-w-prose;
 }
 
+.content form {
+  @apply mt-2 mb-4 max-w-prose;
+}
+
 .content h1,
 .content h2,
 .content h3,

@@ -24,6 +24,7 @@
 :castingTime skos:definition "Kastetid"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
+:class skos:definition "Klasse"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
 :classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
@@ -69,6 +70,7 @@
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
 :multiclassRequirement skos:definition "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
 :name skos:definition "Navn"@nb-NO .
+:noResults skos:definition "Ingen treff"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
@@ -95,6 +97,13 @@
 :savingThrows skos:definition "Saving Throws"@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :school skos:definition "Skole"@nb-NO .
+:search skos:definition "Søk"@nb-NO .
+:searchDescription skos:definition
+        """Søkefunksjonen i denne applikasjonen er håndtert 100% i nettleseren, noe som betyr at for å kunne søke må du
+        tillatte applikasjonen å laste inn mesteparten av tilgjengelig data.
+
+        Applikasjonen lagrer valget ditt for nettleseren."""@nb-NO .
+:searchEnable skos:definition "Skru på søk"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
@@ -112,11 +121,13 @@
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 :solidLogo skos:definition "Logo for Solid"@nb-NO .
 :sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
+:spell skos:definition "Trylleformel"@nb-NO .
 :spellNote skos:definition "{$order}-nivå {$school}"@nb-NO .
 :spellsKnown skos:definition "Kjente trylleformler"@nb-NO .
 :spellSlots skos:definition "Trylleformler"@nb-NO .
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
+:suggestions skos:definition "Forslag"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 :unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .

@@ -25,6 +25,7 @@
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
+    "minisearch": "^7.1.1",
     "nested-error-stacks": "^2.1.1",
     "postcss": "^8.4.49",
     "rdf-namespaces": "^1.12.0",

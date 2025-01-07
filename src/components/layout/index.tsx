@@ -71,7 +71,7 @@ export default function Layout({
 
   return (
     <div className="flex-1 flex flex-col relative min-h-full" {...handlers}>
-      {header && <PageHeader pageName={pageName} />}
+      {header && <PageHeader />}
       {open && (
         <button
           className={bem("layout__fade", modifiers)}

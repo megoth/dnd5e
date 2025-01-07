@@ -481,16 +481,6 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "http://purl.org/dc/terms/description",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#hitDie",
               valueExpr: {
                 type: "NodeConstraint",
