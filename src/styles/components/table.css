@@ -4,15 +4,28 @@
 }
 
 .table {
-    @apply text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400;
+    @apply text-left rtl:text-right text-gray-500 dark:text-gray-400;
+}
+
+.table--compact {
+    @apply text-sm lg:text-base;
 }
 
 .table > thead {
     @apply top-0 text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
 }
 
+.table--compact > thead {
+    @apply text-xs;
+}
+
 .table th,
 .table td {
+    @apply px-4 py-2;
+}
+
+.table--compact th,
+.table--compact td {
     @apply px-2 py-1 md:px-4 md:py-2;
 }
 

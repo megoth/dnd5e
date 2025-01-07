@@ -15,6 +15,7 @@ import {
   highestSpellLevel,
 } from "../../../utils/dnd5e";
 import Translation from "../../translation";
+import { bem } from "../../../utils/bem";
 
 interface Props {
   classInfo: Class;
@@ -32,7 +33,7 @@ export default function ClassPageLevels({ classInfo }: Props) {
   const hasInvocations = classHasInvocations(classInfo);
   return (
     <div className="table-container">
-      <table className="table">
+      <table className={bem("table", "compact")}>
         <thead>
           {hasLowerSpellcasting && !hasInvocations && (
             <tr>

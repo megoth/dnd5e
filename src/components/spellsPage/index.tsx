@@ -9,6 +9,7 @@ import Loading from "../loading";
 import { NavLink } from "react-router-dom";
 import { useLocalization } from "@fluent/react";
 import { spellDuration } from "../../utils/dnd5e";
+import { bem } from "../../utils/bem";
 
 export default function SpellsPage() {
   const { l10n } = useLocalization();
@@ -32,7 +33,7 @@ export default function SpellsPage() {
           <Translation id="spellsPageTitle" />
         </h1>
         <div className="table-container">
-          <table className="table">
+          <table className={bem("table", "compact")}>
             <thead>
               <tr>
                 <th scope="col">
