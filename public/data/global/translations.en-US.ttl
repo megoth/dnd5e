@@ -127,6 +127,7 @@
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
+:subclasses skos:definition "Subclasses"@en-US .
 :suggestions skos:definition "Suggestions"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .

@@ -128,6 +128,7 @@
 :spellSlots skos:definition "Trylleformler"@nb-NO .
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
+:subclasses skos:definition "Underklasser"@nb-NO .
 :suggestions skos:definition "Forslag"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .

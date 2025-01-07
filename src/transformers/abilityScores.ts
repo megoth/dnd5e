@@ -35,5 +35,5 @@ export default async function writeAbilityScores() {
       ),
     )
   ).reduce((memo, abilityScore) => memo.concat(abilityScore));
-  writeFileSync(dataPath("abilityScores"), turtle);
+  writeFileSync(dataPath("ability-scores"), turtle);
 }

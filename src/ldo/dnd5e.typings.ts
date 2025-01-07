@@ -654,6 +654,7 @@ export interface Subclass {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  label: string;
 }
 
 /**

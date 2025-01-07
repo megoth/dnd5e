@@ -11,7 +11,7 @@
 
 :classesBundle
     rdfs:label "classes" ;
-    dnd5e_app:rulesResource </data/classes.ttl> .
+    dnd5e_app:rulesResource </data/classes.ttl>, </data/subclasses.ttl> .
 
 :spellsBundle
     rdfs:label "spells" ;

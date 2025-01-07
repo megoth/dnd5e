@@ -39,7 +39,7 @@ export default function SearchForm({ modifier, path }: Props) {
         name="search"
         type="text"
         id="search"
-        value={query}
+        value={query || ""}
         onChange={(e) => setQuery(e.target.value)}
         disabled={isLoading}
         aria-disabled={isLoading}

@@ -28,18 +28,39 @@ export default function ClassesPage() {
         <h1>
           <Translation id="classesPageTitle" />
         </h1>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <Translation id="name" />
+              </th>
+              <th scope="col">
+                <Translation id="hitDie" />
+              </th>
+              <th scope="col">
+                <Translation id="subclasses" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {classes.map((adventureClass) => (
+              <tr key={adventureClass["@id"]}>
+                <td>
+                  <NavLink to={`/classes/${btoa(adventureClass["@id"])}`}>
+                    {adventureClass.label}
+                  </NavLink>
+                </td>
+                <td>d{adventureClass.hitDie}</td>
+                <td>
+                  {adventureClass.subclasses
+                    .map((subclass) => subclass.label)
+                    .join(", ")}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </Content>
-      <div className="nav-group">
-        {classes.map((adventureClass) => (
-          <NavLink
-            key={adventureClass["@id"]}
-            to={`/classes/${btoa(adventureClass["@id"])}`}
-            className="nav-group__link"
-          >
-            {adventureClass.label}
-          </NavLink>
-        ))}
-      </div>
     </Layout>
   );
 }

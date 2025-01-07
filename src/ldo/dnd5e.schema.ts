@@ -2501,9 +2501,22 @@ export const dnd5eSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+          ],
         },
       },
     },
