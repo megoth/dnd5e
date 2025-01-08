@@ -27,6 +27,7 @@ import LayoutProvider from "./hooks/useLayout/provider";
 import ClassPage from "./components/classPage";
 import SpellPage from "./components/spellPage";
 import SearchPage from "./components/searchPage";
+import RacePage from "./components/racePage";
 
 const router = createBrowserRouter([
   {
@@ -112,6 +113,10 @@ const router = createBrowserRouter([
       {
         path: "/races",
         element: <RacesPage />,
+      },
+      {
+        path: "/races/:url",
+        element: <RacePage />,
       },
       {
         path: "/search",

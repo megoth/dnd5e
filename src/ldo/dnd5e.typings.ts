@@ -7,6 +7,16 @@ import { ContextDefinition } from "jsonld";
  */
 
 /**
+ * AbilityBonus Type
+ */
+export interface AbilityBonus {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  bonus: string;
+  abilityScore: AbilityScore;
+}
+
+/**
  * AbilityScore Type
  */
 export interface AbilityScore {
@@ -526,6 +536,18 @@ export interface Race {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+  speed: string;
+  abilityBonuses?: AbilityBonus[];
+  alignmentDescription?: string;
+  age?: string;
+  size?: string;
+  sizeDescription?: string;
+  startingProficiencies?: Proficiency[];
+  "startingProficiencyOptions:"?: Choice;
+  languages?: Language[];
+  languageDescription?: string;
+  traits?: Trait[];
+  subraces?: Subrace[];
 }
 
 /**
@@ -655,6 +677,24 @@ export interface Subclass {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+}
+
+/**
+ * Subrace Type
+ */
+export interface Subrace {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+}
+
+/**
+ * Trait Type
+ */
+export interface Trait {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
 }
 
 /**

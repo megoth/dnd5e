@@ -6,6 +6,17 @@ import { ContextDefinition } from "jsonld";
  * =============================================================================
  */
 export const dnd5eContext: ContextDefinition = {
+  bonus: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#bonus",
+    "@type": [
+      "http://www.w3.org/2001/XMLSchema#number",
+      "http://www.w3.org/2001/XMLSchema#integer",
+    ],
+  },
+  abilityScore: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
+    "@type": "@id",
+  },
   type: {
     "@id": "@type",
     "@type": ["@id", "http://www.w3.org/2000/01/rdf-schema#Class"],
@@ -28,10 +39,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  abilityScore: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
-    "@type": "@id",
-  },
   minimumScore: {
     "@id": "https://dnd5e.app/vocab/dnd5e#minimumScore",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -46,7 +53,10 @@ export const dnd5eContext: ContextDefinition = {
   },
   size: {
     "@id": "https://dnd5e.app/vocab/dnd5e#size",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": [
+      "http://www.w3.org/2001/XMLSchema#number",
+      "http://www.w3.org/2001/XMLSchema#string",
+    ],
   },
   ofType: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ofType",
@@ -228,10 +238,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#bonuses",
     "@type": "@id",
     "@container": "@set",
-  },
-  bonus: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#bonus",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   breaths: {
     "@id": "https://dnd5e.app/vocab/dnd5e#breaths",
@@ -632,6 +638,50 @@ export const dnd5eContext: ContextDefinition = {
   },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  speed: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#speed",
+    "@type": "http://www.w3.org/2001/XMLSchema#number",
+  },
+  abilityBonuses: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#abilityBonuses",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  alignmentDescription: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#alignmentDescription",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  age: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#age",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  sizeDescription: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#sizeDescription",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  "startingProficiencyOptions:": {
+    "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions:",
+    "@type": "@id",
+  },
+  languages: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#languages",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  languageDescription: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#languageDescription",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  traits: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#traits",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  subraces: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subraces",
     "@type": "@id",
     "@container": "@set",
   },

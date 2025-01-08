@@ -1,4 +1,4 @@
-import { Choice, Class, ClassLevel, Spell } from "../ldo/dnd5e.typings";
+import { Choice, Class, ClassLevel, Race, Spell } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 import Translation from "../components/translation";
 import React from "react";
@@ -160,6 +160,10 @@ export function parseNumber(number: string): string {
 
 export function rageCount(count: string): string {
   return parseInt(count, 10) === 9999 ? "Unlimited" : count;
+}
+
+export function raceResources(race: Race): string[] {
+  return [];
 }
 
 export function spellDuration(spell: Spell, l10n: ReactLocalization): string {

@@ -2,6 +2,7 @@ import { ShapeType } from "@ldo/ldo";
 import { dnd5eSchema } from "./dnd5e.schema";
 import { dnd5eContext } from "./dnd5e.context";
 import {
+  AbilityBonus,
   AbilityScore,
   AbilityScoreOption,
   ActionOption,
@@ -53,6 +54,8 @@ import {
   StartingEquipment,
   StringOption,
   Subclass,
+  Subrace,
+  Trait,
   Type,
 } from "./dnd5e.typings";
 
@@ -61,6 +64,15 @@ import {
  * LDO ShapeTypes dnd5e
  * =============================================================================
  */
+
+/**
+ * AbilityBonus ShapeType
+ */
+export const AbilityBonusShapeType: ShapeType<AbilityBonus> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#AbilityBonus",
+  context: dnd5eContext,
+};
 
 /**
  * AbilityScore ShapeType
@@ -525,6 +537,24 @@ export const StringOptionShapeType: ShapeType<StringOption> = {
 export const SubclassShapeType: ShapeType<Subclass> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Subclass",
+  context: dnd5eContext,
+};
+
+/**
+ * Subrace ShapeType
+ */
+export const SubraceShapeType: ShapeType<Subrace> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Subrace",
+  context: dnd5eContext,
+};
+
+/**
+ * Trait ShapeType
+ */
+export const TraitShapeType: ShapeType<Trait> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Trait",
   context: dnd5eContext,
 };
 

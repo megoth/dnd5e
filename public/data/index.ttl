@@ -7,13 +7,18 @@
     dnd5e_app:coreRulesIndex </data/dnd5e-core.ttl> ;
     dnd5e_app:resourceBundle :globalResources, :adminResources ;
     dnd5e_app:supportLanguage :locale-en-US, :locale-nb-NO ;
-    dnd5e_app:rulesBundle :classesBundle, :spellsBundle .
+    dnd5e_app:rulesBundle :classesBundle, :racesBundle, :spellsBundle .
 
 :classesBundle
     rdfs:label "classes" ;
     dnd5e_app:rulesResource
             </data/classes.ttl>,
             </data/subclasses.ttl> .
+
+:racesBundle
+    rdfs:label "races" ;
+    dnd5e_app:rulesResource
+        </data/races.ttl> .
 
 :spellsBundle
     rdfs:label "spells" ;
