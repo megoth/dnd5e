@@ -56,6 +56,38 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#ofType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
+  armorCategory: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#armorCategory",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  armorClass: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#armorClass",
+    "@type": "@id",
+  },
+  base: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#base",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  dexBonus: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#dexBonus",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+  },
+  maxBonus: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#maxBonus",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  strMinimum: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#strMinimum",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  stealthDisadvantage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#stealthDisadvantage",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+  },
+  weight: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#weight",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
   startingProficiencies: {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencies",
     "@type": "@id",
@@ -250,8 +282,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#successType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  damage: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#damage",
+  breathDamage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#breathDamage",
     "@type": "@id",
     "@container": "@set",
   },
@@ -281,6 +313,89 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#of",
     "@type": "@id",
   },
+  equipmentCategory: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
+    "@type": "@id",
+  },
+  equipmentList: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentList",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  cost: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#cost",
+    "@type": "@id",
+  },
+  quantity: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  unit: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#unit",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  weapon: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#weapon",
+    "@type": "@id",
+  },
+  weaponCategory: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#weaponCategory",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  weaponRange: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#weaponRange",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  categoryRange: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#categoryRange",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  range: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#range",
+    "@type": "@id",
+  },
+  normal: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#normal",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  long: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#long",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  damage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damage",
+    "@type": "@id",
+  },
+  twoHandedDamage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#twoHandedDamage",
+    "@type": "@id",
+  },
+  properties: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#properties",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  armor: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#armor",
+    "@type": "@id",
+  },
+  gear: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#gear",
+    "@type": "@id",
+  },
+  gearCategory: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#gearCategory",
+    "@type": ["http://www.w3.org/2001/XMLSchema#string", "@id"],
+  },
+  equipmentPack: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentPack",
+    "@type": "@id",
+  },
+  contents: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#contents",
+    "@type": "@id",
+    "@container": "@set",
+  },
   damages: {
     "@id": "https://dnd5e.app/vocab/dnd5e#damages",
     "@type": "@id",
@@ -293,15 +408,6 @@ export const dnd5eContext: ContextDefinition = {
   notes: {
     "@id": "https://dnd5e.app/vocab/dnd5e#notes",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  equipmentCategory: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
-    "@type": "@id",
-  },
-  equipmentList: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentList",
-    "@type": "@id",
-    "@container": "@set",
   },
   ideals: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
@@ -602,10 +708,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipment",
     "@type": "@id",
     "@container": "@set",
-  },
-  quantity: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#quantity",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   startingEquipmentOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",

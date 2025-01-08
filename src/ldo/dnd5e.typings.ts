@@ -73,6 +73,30 @@ export interface AreaOfEffect {
 }
 
 /**
+ * Armor Type
+ */
+export interface Armor {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  armorCategory: string;
+  armorClass?: ArmorClass;
+  strMinimum?: number;
+  stealthDisadvantage?: boolean;
+  weight?: number;
+}
+
+/**
+ * ArmorClass Type
+ */
+export interface ArmorClass {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  base?: number;
+  dexBonus?: boolean;
+  maxBonus?: number;
+}
+
+/**
  * Background Type
  */
 export interface Background {
@@ -119,7 +143,7 @@ export interface BreathOption {
   "@context"?: ContextDefinition;
   label?: string;
   difficultyClass: DifficultyClass;
-  damage?: Damage[];
+  breathDamage?: Damage[];
 }
 
 /**
@@ -293,6 +317,16 @@ export interface CountOption {
 }
 
 /**
+ * Cost Type
+ */
+export interface Cost {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  quantity?: number;
+  unit?: string;
+}
+
+/**
  * Damage Type
  */
 export interface Damage {
@@ -379,6 +413,12 @@ export interface Equipment {
   type: Type;
   label: string;
   description?: string[];
+  equipmentCategory?: EquipmentCategory;
+  cost?: Cost;
+  weapon?: Weapon;
+  armor?: Armor;
+  gear?: Gear;
+  equipmentPack?: EquipmentPack;
 }
 
 /**
@@ -390,6 +430,16 @@ export interface EquipmentCategory {
   type: Type;
   label: string;
   equipmentList?: Equipment[];
+}
+
+/**
+ * EquipmentPack Type
+ */
+export interface EquipmentPack {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  gearCategory?: EquipmentCategory;
+  contents?: Equipment[];
 }
 
 /**
@@ -430,6 +480,16 @@ export interface FeatureSpecific {
   expertiseOptions?: Choice;
   invocations?: Feature[];
   subfeatureOptions?: Choice;
+}
+
+/**
+ * Gear Type
+ */
+export interface Gear {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  gearCategory?: string;
+  weight?: number;
 }
 
 /**
@@ -758,4 +818,41 @@ export interface Type {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: string;
+}
+
+/**
+ * Weapon Type
+ */
+export interface Weapon {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  weaponCategory: string;
+  weaponRange?: string;
+  categoryRange?: string;
+  range?: WeaponRange;
+  damage?: Damage;
+  twoHandedDamage?: Damage;
+  properties?: WeaponProperty[];
+  weight?: number;
+}
+
+/**
+ * WeaponProperty Type
+ */
+export interface WeaponProperty {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label?: string;
+  description?: string[];
+}
+
+/**
+ * WeaponRange Type
+ */
+export interface WeaponRange {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  normal?: number;
+  long?: number;
 }

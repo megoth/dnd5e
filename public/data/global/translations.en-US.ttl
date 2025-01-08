@@ -24,6 +24,7 @@
 :cantripNote skos:definition "{$school} cantrip"@en-US .
 :cantripsKnown skos:definition "Cantrips Known"@en-US .
 :castingTime skos:definition "Casting Time"@en-US .
+:category skos:definition "Category"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .
@@ -33,6 +34,7 @@
 :close skos:definition "Close"@en-US .
 :components skos:definition "Components"@en-US .
 :concentration skos:definition "Concentration"@en-US .
+:cost skos:definition "Cost"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .

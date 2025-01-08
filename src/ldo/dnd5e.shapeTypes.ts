@@ -8,6 +8,8 @@ import {
   ActionOption,
   Alignment,
   AreaOfEffect,
+  Armor,
+  ArmorClass,
   Background,
   BackgroundFeature,
   BonusOption,
@@ -23,6 +25,7 @@ import {
   ClassSpecificCreatingSpellSlots,
   Condition,
   CountOption,
+  Cost,
   Damage,
   DamageCharacterLevel,
   DamageOption,
@@ -32,9 +35,11 @@ import {
   DifficultyClass,
   Equipment,
   EquipmentCategory,
+  EquipmentPack,
   Feature,
   FeaturePrerequisite,
   FeatureSpecific,
+  Gear,
   IdealOption,
   Language,
   MagicSchool,
@@ -61,6 +66,9 @@ import {
   TraitSpecificBreathWeaponDamage,
   TraitSpecificUsage,
   Type,
+  Weapon,
+  WeaponProperty,
+  WeaponRange,
 } from "./dnd5e.typings";
 
 /**
@@ -120,6 +128,24 @@ export const AlignmentShapeType: ShapeType<Alignment> = {
 export const AreaOfEffectShapeType: ShapeType<AreaOfEffect> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#AreaOfEffect",
+  context: dnd5eContext,
+};
+
+/**
+ * Armor ShapeType
+ */
+export const ArmorShapeType: ShapeType<Armor> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Armor",
+  context: dnd5eContext,
+};
+
+/**
+ * ArmorClass ShapeType
+ */
+export const ArmorClassShapeType: ShapeType<ArmorClass> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#ArmorClass",
   context: dnd5eContext,
 };
 
@@ -263,6 +289,15 @@ export const CountOptionShapeType: ShapeType<CountOption> = {
 };
 
 /**
+ * Cost ShapeType
+ */
+export const CostShapeType: ShapeType<Cost> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Cost",
+  context: dnd5eContext,
+};
+
+/**
  * Damage ShapeType
  */
 export const DamageShapeType: ShapeType<Damage> = {
@@ -344,6 +379,15 @@ export const EquipmentCategoryShapeType: ShapeType<EquipmentCategory> = {
 };
 
 /**
+ * EquipmentPack ShapeType
+ */
+export const EquipmentPackShapeType: ShapeType<EquipmentPack> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentPack",
+  context: dnd5eContext,
+};
+
+/**
  * Feature ShapeType
  */
 export const FeatureShapeType: ShapeType<Feature> = {
@@ -367,6 +411,15 @@ export const FeaturePrerequisiteShapeType: ShapeType<FeaturePrerequisite> = {
 export const FeatureSpecificShapeType: ShapeType<FeatureSpecific> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#FeatureSpecific",
+  context: dnd5eContext,
+};
+
+/**
+ * Gear ShapeType
+ */
+export const GearShapeType: ShapeType<Gear> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Gear",
   context: dnd5eContext,
 };
 
@@ -606,5 +659,32 @@ export const TraitSpecificUsageShapeType: ShapeType<TraitSpecificUsage> = {
 export const TypeShapeType: ShapeType<Type> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+  context: dnd5eContext,
+};
+
+/**
+ * Weapon ShapeType
+ */
+export const WeaponShapeType: ShapeType<Weapon> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Weapon",
+  context: dnd5eContext,
+};
+
+/**
+ * WeaponProperty ShapeType
+ */
+export const WeaponPropertyShapeType: ShapeType<WeaponProperty> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#WeaponProperty",
+  context: dnd5eContext,
+};
+
+/**
+ * WeaponRange ShapeType
+ */
+export const WeaponRangeShapeType: ShapeType<WeaponRange> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#WeaponRange",
   context: dnd5eContext,
 };
