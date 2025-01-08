@@ -306,6 +306,16 @@ export interface Damage {
 }
 
 /**
+ * DamageCharacterLevel Type
+ */
+export interface DamageCharacterLevel {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  level: number;
+  damageDice: string;
+}
+
+/**
  * DamageOption Type
  */
 export interface DamageOption {
@@ -316,6 +326,16 @@ export interface DamageOption {
   };
   "dice:"?: string;
   notes?: string;
+}
+
+/**
+ * DamageSlotLevel Type
+ */
+export interface DamageSlotLevel {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  slot: number;
+  damageDice: string;
 }
 
 /**
@@ -543,7 +563,7 @@ export interface Race {
   size?: string;
   sizeDescription?: string;
   startingProficiencies?: Proficiency[];
-  "startingProficiencyOptions:"?: Choice;
+  startingProficiencyOptions?: Choice;
   languages?: Language[];
   languageDescription?: string;
   traits?: Trait[];
@@ -626,28 +646,8 @@ export interface SpellDamage {
   "@id"?: string;
   "@context"?: ContextDefinition;
   damageType?: DamageType;
-  damageAtCharacterLevel?: SpellDamageCharacterLevel[];
-  damageAtSlotLevel?: SpellDamageSlotLevel[];
-}
-
-/**
- * SpellDamageCharacterLevel Type
- */
-export interface SpellDamageCharacterLevel {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  level: number;
-  damageDice: string;
-}
-
-/**
- * SpellDamageSlotLevel Type
- */
-export interface SpellDamageSlotLevel {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  slot: number;
-  damageDice: string;
+  damageAtCharacterLevel?: DamageCharacterLevel[];
+  damageAtSlotLevel?: DamageSlotLevel[];
 }
 
 /**
@@ -695,6 +695,48 @@ export interface Trait {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  label: string;
+  description?: string[];
+  races?: Race[];
+  subraces?: Subrace[];
+  proficiencies?: Proficiency[];
+  proficiencyChoices?: Choice;
+  languageOptions?: Choice;
+  traitSpecific?: TraitSpecific;
+}
+
+/**
+ * TraitSpecific Type
+ */
+export interface TraitSpecific {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  damageType?: DamageType;
+  spellOptions?: Choice;
+  subtraitOptions?: Choice;
+}
+
+/**
+ * TraitSpecificBreathWeapon Type
+ */
+export interface TraitSpecificBreathWeapon {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  description: string;
+  areaOfEffect?: AreaOfEffect;
+  breathWeaponDamage?: TraitSpecificBreathWeaponDamage;
+  difficultyClass?: DifficultyClass;
+}
+
+/**
+ * TraitSpecificBreathWeaponDamage Type
+ */
+export interface TraitSpecificBreathWeaponDamage {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  damageType?: DamageType;
+  damageAtCharacterLevel?: DamageCharacterLevel[];
 }
 
 /**

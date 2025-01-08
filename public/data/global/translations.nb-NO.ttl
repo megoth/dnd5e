@@ -56,6 +56,7 @@
 :ignore skos:definition "Ignorer"@nb-NO .
 :invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
 :kiPoints skos:definition "Ki poeng"@nb-NO .
+:languages skos:definition "Språk"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 :level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
@@ -91,6 +92,7 @@
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
+:race skos:definition "Rase"@nb-NO .
 :racesPageTitle skos:definition "Raser"@nb-NO .
 :rageDamage skos:definition "Raseriskade"@nb-NO .
 :rages skos:definition "Raseri"@nb-NO .

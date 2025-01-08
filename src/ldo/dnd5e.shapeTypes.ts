@@ -24,7 +24,9 @@ import {
   Condition,
   CountOption,
   Damage,
+  DamageCharacterLevel,
   DamageOption,
+  DamageSlotLevel,
   DamageType,
   Dice,
   DifficultyClass,
@@ -49,13 +51,14 @@ import {
   Skill,
   Spell,
   SpellDamage,
-  SpellDamageCharacterLevel,
-  SpellDamageSlotLevel,
   StartingEquipment,
   StringOption,
   Subclass,
   Subrace,
   Trait,
+  TraitSpecific,
+  TraitSpecificBreathWeapon,
+  TraitSpecificBreathWeaponDamage,
   Type,
 } from "./dnd5e.typings";
 
@@ -268,11 +271,29 @@ export const DamageShapeType: ShapeType<Damage> = {
 };
 
 /**
+ * DamageCharacterLevel ShapeType
+ */
+export const DamageCharacterLevelShapeType: ShapeType<DamageCharacterLevel> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#DamageCharacterLevel",
+  context: dnd5eContext,
+};
+
+/**
  * DamageOption ShapeType
  */
 export const DamageOptionShapeType: ShapeType<DamageOption> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#DamageOption",
+  context: dnd5eContext,
+};
+
+/**
+ * DamageSlotLevel ShapeType
+ */
+export const DamageSlotLevelShapeType: ShapeType<DamageSlotLevel> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#DamageSlotLevel",
   context: dnd5eContext,
 };
 
@@ -495,25 +516,6 @@ export const SpellDamageShapeType: ShapeType<SpellDamage> = {
 };
 
 /**
- * SpellDamageCharacterLevel ShapeType
- */
-export const SpellDamageCharacterLevelShapeType: ShapeType<SpellDamageCharacterLevel> =
-  {
-    schema: dnd5eSchema,
-    shape: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageCharacterLevel",
-    context: dnd5eContext,
-  };
-
-/**
- * SpellDamageSlotLevel ShapeType
- */
-export const SpellDamageSlotLevelShapeType: ShapeType<SpellDamageSlotLevel> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageSlotLevel",
-  context: dnd5eContext,
-};
-
-/**
  * StartingEquipment ShapeType
  */
 export const StartingEquipmentShapeType: ShapeType<StartingEquipment> = {
@@ -557,6 +559,36 @@ export const TraitShapeType: ShapeType<Trait> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Trait",
   context: dnd5eContext,
 };
+
+/**
+ * TraitSpecific ShapeType
+ */
+export const TraitSpecificShapeType: ShapeType<TraitSpecific> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecific",
+  context: dnd5eContext,
+};
+
+/**
+ * TraitSpecificBreathWeapon ShapeType
+ */
+export const TraitSpecificBreathWeaponShapeType: ShapeType<TraitSpecificBreathWeapon> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeapon",
+    context: dnd5eContext,
+  };
+
+/**
+ * TraitSpecificBreathWeaponDamage ShapeType
+ */
+export const TraitSpecificBreathWeaponDamageShapeType: ShapeType<TraitSpecificBreathWeaponDamage> =
+  {
+    schema: dnd5eSchema,
+    shape:
+      "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeaponDamage",
+    context: dnd5eContext,
+  };
 
 /**
  * Type ShapeType

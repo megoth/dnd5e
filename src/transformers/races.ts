@@ -3,13 +3,17 @@ import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   AbilityBonusShapeType,
   AbilityScoreShapeType,
+  LanguageShapeType,
+  ProficiencyShapeType,
   RaceShapeType,
+  TraitShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Race } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import races from "../dnd5eapi-data/5e-SRD-Races.json";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import { transformChoice } from "./choice";
 
 export function transformRace(
   data: components["schemas"]["Race"],
@@ -33,11 +37,25 @@ export function transformRace(
   race.age = data.age;
   race.size = data.size.toString();
   race.sizeDescription = data.size_description;
-  // startingProficiencies
-  // startingProficiencyOptions
-  // languages
-  // languageDescription
-  // traits
+  race.startingProficiencies = data.starting_proficiencies.map((proficiency) =>
+    ldoDataset
+      .usingType(ProficiencyShapeType)
+      .fromSubject(apiUrlToSubjectUrl(proficiency.url)),
+  );
+  race.startingProficiencyOptions =
+    data.starting_proficiency_options &&
+    transformChoice(data.starting_proficiency_options, ldoDataset);
+  race.languages = data.languages.map((language) =>
+    ldoDataset
+      .usingType(LanguageShapeType)
+      .fromSubject(apiUrlToSubjectUrl(language.url)),
+  );
+  race.languageDescription = data.language_desc;
+  race.traits = data.traits.map((trait) =>
+    ldoDataset
+      .usingType(TraitShapeType)
+      .fromSubject(apiUrlToSubjectUrl(trait.url)),
+  );
   // subraces
   return race;
 }

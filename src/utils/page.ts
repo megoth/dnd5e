@@ -1,6 +1,3 @@
-import useListOfType from "../hooks/useListOfType";
-import { ClassShapeType } from "../ldo/dnd5e.shapeTypes";
-
 export type Page = {
   href: string;
   text?: string;
@@ -34,22 +31,6 @@ export function getPages(path: string, admin: boolean): Array<Page> {
     {
       href: "/classes",
       translationId: "classesPageTitle",
-      children: path.startsWith("/classes")
-        ? (() => {
-            const { isLoading, items: classes } = useListOfType(
-              ClassShapeType,
-              "classes",
-              "Class",
-            );
-            if (isLoading) return [];
-            return classes
-              .sort((a, b) => (a.label > b.label ? 1 : -1))
-              .map((classInfo) => ({
-                href: `/classes/${btoa(classInfo["@id"])}`,
-                text: classInfo.label,
-              }));
-          })()
-        : [],
     },
     {
       href: "/races",

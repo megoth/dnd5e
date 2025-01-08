@@ -36,7 +36,7 @@ export default function SpellsPage() {
   const [searchParams] = useSearchParams();
   const classFilter = first(searchParams.get("class"));
   const classFilterDecoded = classFilter && atob(classFilter);
-  const levelFilter = first(searchParams.get("level"));
+  const levelFilter = parseInt(first(searchParams.get("level")), 10);
   const schoolFilter = first(searchParams.get("school"));
   const schoolFilterDecoded = schoolFilter && atob(schoolFilter);
 
@@ -119,7 +119,7 @@ export default function SpellsPage() {
           </dt>
           <dd>
             {Array.from({ length: 10 }).map((_, level) => {
-              const active = levelFilter && levelFilter === level.toString();
+              const active = levelFilter && levelFilter === level;
               return (
                 <NavLink
                   key={level}

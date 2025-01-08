@@ -1,5 +1,5 @@
 .data-list {
-    @apply w-full ps-4 overflow-auto;
+    @apply w-full ps-4 overflow-auto max-w-prose;
 }
 
 .data-list > dt {

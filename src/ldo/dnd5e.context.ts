@@ -656,8 +656,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#sizeDescription",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  "startingProficiencyOptions:": {
-    "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions:",
+  startingProficiencyOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions",
     "@type": "@id",
   },
   languages: {
@@ -679,12 +679,24 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  reference: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
-    "@type": "@id",
-  },
   languageOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#languageOptions",
+    "@type": "@id",
+  },
+  traitSpecific: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#traitSpecific",
+    "@type": "@id",
+  },
+  spellOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellOptions",
+    "@type": "@id",
+  },
+  subtraitOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subtraitOptions",
+    "@type": "@id",
+  },
+  reference: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#reference",
     "@type": "@id",
   },
   personalityTraits: {
@@ -697,6 +709,10 @@ export const dnd5eContext: ContextDefinition = {
   },
   flaws: {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
+    "@type": "@id",
+  },
+  breathWeaponDamage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#breathWeaponDamage",
     "@type": "@id",
   },
 };

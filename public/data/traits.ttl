@@ -1,0 +1,164 @@
+<#darkvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#darkvision> <http://www.w3.org/2000/01/rdf-schema#label> "Darkvision" .
+<#darkvision> <http://purl.org/dc/terms/description> "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray." .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#elf> .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#gnome> .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-elf> .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-orc> .
+<#darkvision> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#tiefling> .
+<#dwarven-resilience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#dwarven-resilience> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarven Resilience" .
+<#dwarven-resilience> <http://purl.org/dc/terms/description> "You have advantage on saving throws against poison, and you have resistance against poison damage." .
+<#dwarven-resilience> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
+<#dwarven-combat-training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#dwarven-combat-training> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarven Combat Training" .
+<#dwarven-combat-training> <http://purl.org/dc/terms/description> "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer." .
+<#dwarven-combat-training> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
+<#tool-proficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#tool-proficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Tool Proficiency" .
+<#tool-proficiency> <http://purl.org/dc/terms/description> "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." .
+<#tool-proficiency> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
+<#stonecunning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#stonecunning> <http://www.w3.org/2000/01/rdf-schema#label> "Stonecunning" .
+<#stonecunning> <http://purl.org/dc/terms/description> "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." .
+<#stonecunning> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
+<#dwarven-toughness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#dwarven-toughness> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarven Toughness" .
+<#dwarven-toughness> <http://purl.org/dc/terms/description> "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level." .
+<#dwarven-toughness> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#hill-dwarf> .
+<#keen-senses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#keen-senses> <http://www.w3.org/2000/01/rdf-schema#label> "Keen Senses" .
+<#keen-senses> <http://purl.org/dc/terms/description> "You have proficiency in the Perception skill." .
+<#keen-senses> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#elf> .
+<#fey-ancestry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#fey-ancestry> <http://www.w3.org/2000/01/rdf-schema#label> "Fey Ancestry" .
+<#fey-ancestry> <http://purl.org/dc/terms/description> "You have advantage on saving throws against being charmed, and magic cannot put you to sleep." .
+<#fey-ancestry> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#elf> .
+<#fey-ancestry> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-elf> .
+<#trance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#trance> <http://www.w3.org/2000/01/rdf-schema#label> "Trance" .
+<#trance> <http://purl.org/dc/terms/description> "Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep." .
+<#trance> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#elf> .
+<#elf-weapon-training> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#elf-weapon-training> <http://www.w3.org/2000/01/rdf-schema#label> "Elf Weapon Training" .
+<#elf-weapon-training> <http://purl.org/dc/terms/description> "You have proficiency with the longsword, shortsword, shortbow, and longbow." .
+<#elf-weapon-training> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
+<#high-elf-cantrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#high-elf-cantrip> <http://www.w3.org/2000/01/rdf-schema#label> "High Elf Cantrip" .
+<#high-elf-cantrip> <http://purl.org/dc/terms/description> "You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it." .
+<#high-elf-cantrip> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
+<#extra-language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#extra-language> <http://www.w3.org/2000/01/rdf-schema#label> "Extra Language" .
+<#extra-language> <http://purl.org/dc/terms/description> "You can speak, read, and write one extra language of your choice." .
+<#extra-language> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
+<#lucky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#lucky> <http://www.w3.org/2000/01/rdf-schema#label> "Lucky" .
+<#lucky> <http://purl.org/dc/terms/description> "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll." .
+<#lucky> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#halfling> .
+<#brave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#brave> <http://www.w3.org/2000/01/rdf-schema#label> "Brave" .
+<#brave> <http://purl.org/dc/terms/description> "You have advantage on saving throw against being frightened." .
+<#brave> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#halfling> .
+<#halfling-nimbleness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#halfling-nimbleness> <http://www.w3.org/2000/01/rdf-schema#label> "Halfling Nimbleness" .
+<#halfling-nimbleness> <http://purl.org/dc/terms/description> "You can move through the space of any creature that is of a size larger than yours." .
+<#halfling-nimbleness> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#halfling> .
+<#naturally-stealthy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#naturally-stealthy> <http://www.w3.org/2000/01/rdf-schema#label> "Naturally Stealthy" .
+<#naturally-stealthy> <http://purl.org/dc/terms/description> "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you." .
+<#naturally-stealthy> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#lightfoot-halfling> .
+<#draconic-ancestry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry" .
+<#draconic-ancestry> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-black> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-black> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Black)" .
+<#draconic-ancestry-black> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-black> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-blue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-blue> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Blue)" .
+<#draconic-ancestry-blue> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-blue> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-brass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-brass> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Brass)" .
+<#draconic-ancestry-brass> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-brass> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-bronze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-bronze> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Bronze)" .
+<#draconic-ancestry-bronze> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-bronze> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-copper> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Copper)" .
+<#draconic-ancestry-copper> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-copper> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-gold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-gold> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Gold)" .
+<#draconic-ancestry-gold> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-gold> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-green> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-green> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Green)" .
+<#draconic-ancestry-green> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-green> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-red> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Red)" .
+<#draconic-ancestry-red> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-red> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-silver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-silver> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Silver)" .
+<#draconic-ancestry-silver> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-silver> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#draconic-ancestry-white> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#draconic-ancestry-white> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (White)" .
+<#draconic-ancestry-white> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." .
+<#draconic-ancestry-white> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#breath-weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#breath-weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapon" .
+<#breath-weapon> <http://purl.org/dc/terms/description> "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation." .
+<#breath-weapon> <http://purl.org/dc/terms/description> "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level." .
+<#breath-weapon> <http://purl.org/dc/terms/description> "After you use your breath weapon, you cannot use it again until you complete a short or long rest." .
+<#breath-weapon> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#damage-resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#damage-resistance> <http://www.w3.org/2000/01/rdf-schema#label> "Damage Resistance" .
+<#damage-resistance> <http://purl.org/dc/terms/description> "You have resistance to the damage type associated with your draconic ancestry." .
+<#damage-resistance> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
+<#gnome-cunning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#gnome-cunning> <http://www.w3.org/2000/01/rdf-schema#label> "Gnome Cunning" .
+<#gnome-cunning> <http://purl.org/dc/terms/description> "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." .
+<#gnome-cunning> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#gnome> .
+<#artificers-lore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#artificers-lore> <http://www.w3.org/2000/01/rdf-schema#label> "Artificer's Lore" .
+<#artificers-lore> <http://purl.org/dc/terms/description> "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply." .
+<#artificers-lore> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#rock-gnome> .
+<#tinker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#tinker> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker" .
+<#tinker> <http://purl.org/dc/terms/description> "You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time." .
+<#tinker> <http://purl.org/dc/terms/description> "When you create a device, choose one of the following options:" .
+<#tinker> <http://purl.org/dc/terms/description> "Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents." .
+<#tinker> <http://purl.org/dc/terms/description> "Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action." .
+<#tinker> <http://purl.org/dc/terms/description> "Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed." .
+<#tinker> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#rock-gnome> .
+<#skill-versatility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#skill-versatility> <http://www.w3.org/2000/01/rdf-schema#label> "Skill Versatility" .
+<#skill-versatility> <http://purl.org/dc/terms/description> "You gain proficiency in two skills of your choice." .
+<#skill-versatility> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-elf> .
+<#menacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#menacing> <http://www.w3.org/2000/01/rdf-schema#label> "Menacing" .
+<#menacing> <http://purl.org/dc/terms/description> "You gain proficiency in the Intimidation skill." .
+<#menacing> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-orc> .
+<#relentless-endurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#relentless-endurance> <http://www.w3.org/2000/01/rdf-schema#label> "Relentless Endurance" .
+<#relentless-endurance> <http://purl.org/dc/terms/description> "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest." .
+<#relentless-endurance> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-orc> .
+<#savage-attacks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#savage-attacks> <http://www.w3.org/2000/01/rdf-schema#label> "Savage Attacks" .
+<#savage-attacks> <http://purl.org/dc/terms/description> "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit." .
+<#savage-attacks> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-orc> .
+<#hellish-resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#hellish-resistance> <http://www.w3.org/2000/01/rdf-schema#label> "Hellish Resistance" .
+<#hellish-resistance> <http://purl.org/dc/terms/description> "You have resistance to fire damage." .
+<#hellish-resistance> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#tiefling> .
+<#infernal-legacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Trait> .
+<#infernal-legacy> <http://www.w3.org/2000/01/rdf-schema#label> "Infernal Legacy" .
+<#infernal-legacy> <http://purl.org/dc/terms/description> "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells." .
+<#infernal-legacy> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#tiefling> .

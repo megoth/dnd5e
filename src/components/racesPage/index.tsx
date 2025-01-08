@@ -32,6 +32,12 @@ export default function RacesPage() {
               <th scope="col">
                 <Translation id="name" />
               </th>
+              <th scope="col">
+                <Translation id="size" />
+              </th>
+              <th scope="col">
+                <Translation id="speed" />
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -42,6 +48,8 @@ export default function RacesPage() {
                     {race.label}
                   </NavLink>
                 </td>
+                <td>{race.size}</td>
+                <td>{race.speed}ft</td>
               </tr>
             ))}
           </tbody>

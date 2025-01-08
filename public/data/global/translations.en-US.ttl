@@ -55,6 +55,7 @@
 :ignore skos:definition "Ignore"@en-US .
 :invocationsKnown skos:definition "Invocations Known"@en-US .
 :kiPoints skos:definition "Ki Points"@en-US .
+:languages skos:definition "Languages"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .
 :level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
@@ -90,6 +91,7 @@
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
+:race skos:definition "Race"@en-US .
 :racesPageTitle skos:definition "Races"@en-US .
 :rageDamage skos:definition "Rage Damage"@en-US .
 :rages skos:definition "Rages"@en-US .

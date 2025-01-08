@@ -3,6 +3,7 @@ import useListOfType from "../useListOfType";
 import {
   ClassShapeType,
   MagicSchoolShapeType,
+  RaceShapeType,
   SpellShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
 import { type DependencyList, useEffect } from "react";
@@ -52,6 +53,22 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: racesLoading } = useIndexer(
+    RaceShapeType,
+    "races",
+    "Race",
+    (race) =>
+      !search.has(race["@id"]) &&
+      (() => {
+        search.add({
+          id: race["@id"],
+          type: "race",
+          title: race.label,
+          url: `/races/${btoa(race["@id"])}`,
+        });
+      })(),
+  );
+
   const { isLoading: spellLoading } = useIndexer(
     SpellShapeType,
     "spells",
@@ -84,7 +101,7 @@ export default function useSearch() {
   );
 
   return {
-    isLoading: classesLoading || spellLoading || schoolsLoading,
+    isLoading: classesLoading || racesLoading || spellLoading || schoolsLoading,
     search,
   };
 }

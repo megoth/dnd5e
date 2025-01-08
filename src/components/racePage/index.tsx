@@ -10,6 +10,7 @@ import Loading from "../loading";
 import { raceResources } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
+import Markdown from "react-markdown";
 
 export default function RacePage() {
   const params = useParams();
@@ -82,6 +83,21 @@ export default function RacePage() {
             <Translation id="speed" />
           </dt>
           <dd>{race.speed}ft</dd>
+          {race.traits.map((trait) => (
+            <Fragment key={trait["@id"]}>
+              <dt>{trait.label}</dt>
+              <dd>
+                <Markdown>{trait.description.join("\n\n")}</Markdown>
+              </dd>
+            </Fragment>
+          ))}
+          <dt>
+            <Translation id="languages" />
+          </dt>
+          <dd>
+            {race.languageDescription ||
+              race.languages.map((language) => language.label).join(", ")}
+          </dd>
         </dl>
       </Content>
     </Layout>

@@ -1296,6 +1296,34 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#DamageCharacterLevel",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#level",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageDice",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#DamageOption",
       type: "ShapeDecl",
       shapeExpr: {
@@ -1332,6 +1360,34 @@ export const dnd5eSchema: Schema = {
               },
               min: 0,
               max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#DamageSlotLevel",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#slot",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageDice",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
             },
           ],
         },
@@ -2158,7 +2214,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate:
-                "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions:",
+                "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -2503,73 +2559,16 @@ export const dnd5eSchema: Schema = {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel",
               valueExpr:
-                "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageCharacterLevel",
+                "https://ldo.js.org/shapes/dnd5e.shex#DamageCharacterLevel",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel",
-              valueExpr:
-                "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageSlotLevel",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageSlotLevel",
               min: 0,
               max: -1,
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageCharacterLevel",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "EachOf",
-          expressions: [
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#level",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#damageDice",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#SpellDamageSlotLevel",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "EachOf",
-          expressions: [
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#slot",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#damageDice",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
             },
           ],
         },
@@ -2664,9 +2663,186 @@ export const dnd5eSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#races",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Race",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#subraces",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Subrace",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencies",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencyChoices",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languageOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#traitSpecific",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecific",
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecific",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageType",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#subtraitOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeapon",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#areaOfEffect",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AreaOfEffect",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#breathWeaponDamage",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeaponDamage",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#difficultyClass",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DifficultyClass",
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeaponDamage",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageType",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#DamageCharacterLevel",
+              min: 0,
+              max: -1,
+            },
+          ],
         },
       },
     },

@@ -15,6 +15,7 @@ import writeSpells from "./spells";
 import writeMagicSchools from "./magicSchools";
 import writeSubclasses from "./subclasses";
 import writeRaces from "./races";
+import writeTraits from "./traits";
 
 export default async function transformData() {
   return Promise.all([
@@ -35,5 +36,6 @@ export default async function transformData() {
     writeSkills(),
     writeSpells(),
     writeSubclasses(),
+    writeTraits(),
   ]);
 }

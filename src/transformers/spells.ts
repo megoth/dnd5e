@@ -3,12 +3,11 @@ import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   AreaOfEffectShapeType,
   ClassShapeType,
+  DamageCharacterLevelShapeType,
+  DamageSlotLevelShapeType,
   DamageTypeShapeType,
-  DiceShapeType,
   MagicSchoolShapeType,
-  SpellDamageCharacterLevelShapeType,
   SpellDamageShapeType,
-  SpellDamageSlotLevelShapeType,
   SpellShapeType,
   SubclassShapeType,
 } from "../ldo/dnd5e.shapeTypes";
@@ -65,7 +64,7 @@ export function transformSpell(
         damageAtSlotLevel: Object.entries(
           data.damage["damage_at_slot_level"],
         ).map(([slot, damageDice]: [string, string]) =>
-          ldoDataset.usingType(SpellDamageSlotLevelShapeType).fromJson({
+          ldoDataset.usingType(DamageSlotLevelShapeType).fromJson({
             slot: parseInt(slot, 10),
             damageDice,
           }),
@@ -75,7 +74,7 @@ export function transformSpell(
         damageAtCharacterLevel: Object.entries(
           data.damage["damage_at_character_level"],
         ).map(([level, damageDice]: [string, string]) =>
-          ldoDataset.usingType(SpellDamageCharacterLevelShapeType).fromJson({
+          ldoDataset.usingType(DamageCharacterLevelShapeType).fromJson({
             level: parseInt(level, 10),
             damageDice,
           }),
