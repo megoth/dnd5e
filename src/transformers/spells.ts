@@ -44,14 +44,14 @@ export function transformSpell(
   spell.areaOfEffect =
     data.area_of_effect &&
     ldoDataset.usingType(AreaOfEffectShapeType).fromJson({
-      size: data.area_of_effect.size.toString(),
+      size: data.area_of_effect.size,
       ofType: data.area_of_effect.type,
     });
   spell.ritual = data.ritual;
   spell.duration = data.duration;
   spell.concentration = data.concentration;
   spell.castingTime = data.casting_time;
-  spell.level = data.level.toString();
+  spell.level = data.level;
   spell.attackType = data.attack_type;
   spell.spellDamage =
     data.damage &&
@@ -66,7 +66,7 @@ export function transformSpell(
           data.damage["damage_at_slot_level"],
         ).map(([slot, damageDice]: [string, string]) =>
           ldoDataset.usingType(SpellDamageSlotLevelShapeType).fromJson({
-            slot,
+            slot: parseInt(slot, 10),
             damageDice,
           }),
         ),
@@ -76,7 +76,7 @@ export function transformSpell(
           data.damage["damage_at_character_level"],
         ).map(([level, damageDice]: [string, string]) =>
           ldoDataset.usingType(SpellDamageCharacterLevelShapeType).fromJson({
-            level,
+            level: parseInt(level, 10),
             damageDice,
           }),
         ),

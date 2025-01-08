@@ -41,7 +41,7 @@ function transformClass(
   adventureClass.classSpellcasting =
     data.spellcasting &&
     ldoDataset.usingType(ClassSpellcastingShapeType).fromJson({
-      level: data.spellcasting.level.toString(),
+      level: data.spellcasting.level,
       spellcastingInfo: data.spellcasting.info.map((info) =>
         ldoDataset.usingType(ClassSpellcastingInfoShapeType).fromJson({
           label: info.name,

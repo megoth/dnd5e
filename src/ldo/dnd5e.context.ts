@@ -8,10 +8,7 @@ import { ContextDefinition } from "jsonld";
 export const dnd5eContext: ContextDefinition = {
   bonus: {
     "@id": "https://dnd5e.app/vocab/dnd5e#bonus",
-    "@type": [
-      "http://www.w3.org/2001/XMLSchema#number",
-      "http://www.w3.org/2001/XMLSchema#integer",
-    ],
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   abilityScore: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abilityScore",
@@ -54,7 +51,7 @@ export const dnd5eContext: ContextDefinition = {
   size: {
     "@id": "https://dnd5e.app/vocab/dnd5e#size",
     "@type": [
-      "http://www.w3.org/2001/XMLSchema#number",
+      "http://www.w3.org/2001/XMLSchema#integer",
       "http://www.w3.org/2001/XMLSchema#string",
     ],
   },
@@ -87,15 +84,15 @@ export const dnd5eContext: ContextDefinition = {
   },
   level: {
     "@id": "https://dnd5e.app/vocab/dnd5e#level",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   abilityScoreBonuses: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   proficiencyBonus: {
     "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyBonus",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   features: {
     "@id": "https://dnd5e.app/vocab/dnd5e#features",
@@ -118,10 +115,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#prerequisites",
     "@type": "@id",
     "@container": "@set",
-  },
-  ofType2: {
-    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
   feature: {
     "@id": "https://dnd5e.app/vocab/dnd5e#feature",
@@ -197,7 +190,7 @@ export const dnd5eContext: ContextDefinition = {
   },
   slot: {
     "@id": "https://dnd5e.app/vocab/dnd5e#slot",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   magicSchool: {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicSchool",
@@ -390,47 +383,47 @@ export const dnd5eContext: ContextDefinition = {
   },
   cantripsKnown: {
     "@id": "https://dnd5e.app/vocab/dnd5e#cantripsKnown",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellsKnown: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellsKnown",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel1: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel2: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel3: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel3",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel4: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel4",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel5: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel5",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel6: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel6",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel7: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel7",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel8: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel8",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   spellSlotsLevel9: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   classSpecific: {
     "@id": "https://dnd5e.app/vocab/dnd5e#classSpecific",
@@ -438,47 +431,47 @@ export const dnd5eContext: ContextDefinition = {
   },
   rageCount: {
     "@id": "https://dnd5e.app/vocab/dnd5e#rageCount",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   rageDamageBonus: {
     "@id": "https://dnd5e.app/vocab/dnd5e#rageDamageBonus",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   brutalCriticalDice: {
     "@id": "https://dnd5e.app/vocab/dnd5e#brutalCriticalDice",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   bardicInspirationDice: {
     "@id": "https://dnd5e.app/vocab/dnd5e#bardicInspirationDice",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   songOfRestDie: {
     "@id": "https://dnd5e.app/vocab/dnd5e#songOfRestDie",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   magicalSecretsMax5: {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax5",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   magicalSecretsMax7: {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax7",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   magicalSecretsMax9: {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   channelDivinityChargers: {
     "@id": "https://dnd5e.app/vocab/dnd5e#channelDivinityChargers",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   destroyUndeadCr: {
     "@id": "https://dnd5e.app/vocab/dnd5e#destroyUndeadCr",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   wildShapeMaxCr: {
     "@id": "https://dnd5e.app/vocab/dnd5e#wildShapeMaxCr",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   wildShapeSwim: {
     "@id": "https://dnd5e.app/vocab/dnd5e#wildShapeSwim",
@@ -490,23 +483,23 @@ export const dnd5eContext: ContextDefinition = {
   },
   actionSurges: {
     "@id": "https://dnd5e.app/vocab/dnd5e#actionSurges",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   indomitableUses: {
     "@id": "https://dnd5e.app/vocab/dnd5e#indomitableUses",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   extraAttacks: {
     "@id": "https://dnd5e.app/vocab/dnd5e#extraAttacks",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   kiPoints: {
     "@id": "https://dnd5e.app/vocab/dnd5e#kiPoints",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   unarmoredMovement: {
     "@id": "https://dnd5e.app/vocab/dnd5e#unarmoredMovement",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   martialArts: {
     "@id": "https://dnd5e.app/vocab/dnd5e#martialArts",
@@ -514,23 +507,23 @@ export const dnd5eContext: ContextDefinition = {
   },
   diceCount: {
     "@id": "https://dnd5e.app/vocab/dnd5e#diceCount",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   diceValue: {
     "@id": "https://dnd5e.app/vocab/dnd5e#diceValue",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   auraRange: {
     "@id": "https://dnd5e.app/vocab/dnd5e#auraRange",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   favoredEnemies: {
     "@id": "https://dnd5e.app/vocab/dnd5e#favoredEnemies",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   favoredTerrain: {
     "@id": "https://dnd5e.app/vocab/dnd5e#favoredTerrain",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   sneakAttack: {
     "@id": "https://dnd5e.app/vocab/dnd5e#sneakAttack",
@@ -538,11 +531,11 @@ export const dnd5eContext: ContextDefinition = {
   },
   sorceryPoints: {
     "@id": "https://dnd5e.app/vocab/dnd5e#sorceryPoints",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   metamagicKnown: {
     "@id": "https://dnd5e.app/vocab/dnd5e#metamagicKnown",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   creatingSpellSlots: {
     "@id": "https://dnd5e.app/vocab/dnd5e#creatingSpellSlots",
@@ -551,35 +544,35 @@ export const dnd5eContext: ContextDefinition = {
   },
   spellSlotLevel: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellSlotLevel",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   sorceryPointCost: {
     "@id": "https://dnd5e.app/vocab/dnd5e#sorceryPointCost",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   invocationsKnown: {
     "@id": "https://dnd5e.app/vocab/dnd5e#invocationsKnown",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   mysticArcanumLevel6: {
     "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel6",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   mysticArcanumLevel7: {
     "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel7",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   mysticArcanumLevel8: {
     "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel8",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   mysticArcanumLevel9: {
     "@id": "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   arcaneRecoverLevels: {
     "@id": "https://dnd5e.app/vocab/dnd5e#arcaneRecoverLevels",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   multiclassing: {
     "@id": "https://dnd5e.app/vocab/dnd5e#multiclassing",
@@ -643,7 +636,7 @@ export const dnd5eContext: ContextDefinition = {
   },
   speed: {
     "@id": "https://dnd5e.app/vocab/dnd5e#speed",
-    "@type": "http://www.w3.org/2001/XMLSchema#number",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   abilityBonuses: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abilityBonuses",

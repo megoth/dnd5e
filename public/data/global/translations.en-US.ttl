@@ -122,6 +122,7 @@
 :solidIdP skos:definition "Solid identity provider"@en-US .
 :solidLogo skos:definition "Solid logo"@en-US .
 :sorceryPoints skos:definition "Sorcery Points"@en-US .
+:speed skos:definition "Speed"@en-US .
 :spell skos:definition "Spell"@en-US .
 :spellNote skos:definition "{$order}-level {$school}"@en-US .
 :spells skos:definition "Spells"@en-US .

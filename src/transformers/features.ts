@@ -60,7 +60,7 @@ export function transformFeature(
   feature.type = type("Feature");
   feature.label = data.name;
   feature.description = data.desc;
-  feature.level = data.level.toString();
+  feature.level = data.level;
   feature.class =
     data.class &&
     ldoDataset

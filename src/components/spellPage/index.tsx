@@ -53,7 +53,7 @@ export default function SpellPage() {
       <Content>
         <h1>{spell.label}</h1>
         <p className="notification">
-          {parseInt(spell.level, 10) > 0 ? (
+          {spell.level > 0 ? (
             <Translation
               id="spellNote"
               vars={{

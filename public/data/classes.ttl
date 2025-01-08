@@ -339,7 +339,7 @@ _:b67 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
 _:b67 <http://purl.org/dc/terms/description> "You can cast any bard spell you know as a ritual if that spell has the ritual tag." .
 _:b68 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b68 <http://purl.org/dc/terms/description> "You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells." .
-_:b69 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b69 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b63 .
 _:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b64 .
 _:b69 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b65 .
@@ -630,7 +630,7 @@ _:b126 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
 _:b126 <http://purl.org/dc/terms/description> "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared." .
 _:b127 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b127 <http://purl.org/dc/terms/description> "You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells." .
-_:b128 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b128 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b123 .
 _:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b124 .
 _:b128 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b125 .
@@ -886,7 +886,7 @@ _:b162 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
 _:b162 <http://purl.org/dc/terms/description> "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared." .
 _:b163 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b163 <http://purl.org/dc/terms/description> "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells." .
-_:b164 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b164 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b159 .
 _:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b160 .
 _:b164 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b161 .
@@ -1331,7 +1331,7 @@ _:b284 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficie
 _:b284 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
 _:b285 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b285 <http://purl.org/dc/terms/description> "You can use a holy symbol as a spellcasting focus for your paladin spells." .
-_:b286 <https://dnd5e.app/vocab/dnd5e#level> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b286 <https://dnd5e.app/vocab/dnd5e#level> 2 .
 _:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b283 .
 _:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b284 .
 _:b286 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b285 .
@@ -1522,7 +1522,7 @@ _:b328 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Ability" .
 _:b328 <http://purl.org/dc/terms/description> "Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one." .
 _:b328 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficiency bonus + your Wisdom modifier." .
 _:b328 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Wisdom modifier." .
-_:b329 <https://dnd5e.app/vocab/dnd5e#level> "2"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b329 <https://dnd5e.app/vocab/dnd5e#level> 2 .
 _:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b326 .
 _:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b327 .
 _:b329 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b328 .
@@ -1909,7 +1909,7 @@ _:b404 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficie
 _:b404 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
 _:b405 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b405 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your sorcerer spells." .
-_:b406 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b406 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b401 .
 _:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b402 .
 _:b406 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b403 .
@@ -2099,7 +2099,7 @@ _:b436 <http://purl.org/dc/terms/description> "Spell save DC = 8 + your proficie
 _:b436 <http://purl.org/dc/terms/description> "Spell attack modifier = your proficiency bonus + your Charisma modifier." .
 _:b437 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b437 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your warlock spells." .
-_:b438 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b438 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b433 .
 _:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b434 .
 _:b438 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b435 .
@@ -2439,7 +2439,7 @@ _:b473 <http://www.w3.org/2000/01/rdf-schema#label> "Ritual Casting" .
 _:b473 <http://purl.org/dc/terms/description> "You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared." .
 _:b474 <http://www.w3.org/2000/01/rdf-schema#label> "Spellcasting Focus" .
 _:b474 <http://purl.org/dc/terms/description> "You can use an arcane focus as a spellcasting focus for your wizard spells." .
-_:b475 <https://dnd5e.app/vocab/dnd5e#level> "1"^^<http://www.w3.org/2001/XMLSchema#number> .
+_:b475 <https://dnd5e.app/vocab/dnd5e#level> 1 .
 _:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b469 .
 _:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b470 .
 _:b475 <https://dnd5e.app/vocab/dnd5e#spellcastingInfo> _:b471 .

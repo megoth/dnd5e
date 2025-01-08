@@ -179,7 +179,7 @@ export default function ClassPageLevels({ classInfo }: Props) {
                         <Translation id="movementBonus" vars={{ bonus }} />
                       ) : (
                         "-"
-                      ))(parseInt(level.classSpecific.unarmoredMovement, 10))}
+                      ))(level.classSpecific.unarmoredMovement)}
                   </td>
                 </>
               )}

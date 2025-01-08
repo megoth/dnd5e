@@ -12,7 +12,7 @@ import { ContextDefinition } from "jsonld";
 export interface AbilityBonus {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  bonus: string;
+  bonus: number;
   abilityScore: AbilityScore;
 }
 
@@ -68,7 +68,7 @@ export interface Alignment {
 export interface AreaOfEffect {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  size: string;
+  size: number;
   ofType: string;
 }
 
@@ -173,9 +173,9 @@ export interface ClassLevel {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
-  level: string;
-  abilityScoreBonuses?: string;
-  proficiencyBonus?: string;
+  level: number;
+  abilityScoreBonuses?: number;
+  proficiencyBonus?: number;
   features?: Feature[];
   levelSpellcasting?: ClassLevelSpellcasting;
   classSpecific?: ClassSpecific;
@@ -187,17 +187,17 @@ export interface ClassLevel {
 export interface ClassLevelSpellcasting {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  cantripsKnown?: string;
-  spellsKnown?: string;
-  spellSlotsLevel1?: string;
-  spellSlotsLevel2?: string;
-  spellSlotsLevel3?: string;
-  spellSlotsLevel4?: string;
-  spellSlotsLevel5?: string;
-  spellSlotsLevel6?: string;
-  spellSlotsLevel7?: string;
-  spellSlotsLevel8?: string;
-  spellSlotsLevel9?: string;
+  cantripsKnown?: number;
+  spellsKnown?: number;
+  spellSlotsLevel1?: number;
+  spellSlotsLevel2?: number;
+  spellSlotsLevel3?: number;
+  spellSlotsLevel4?: number;
+  spellSlotsLevel5?: number;
+  spellSlotsLevel6?: number;
+  spellSlotsLevel7?: number;
+  spellSlotsLevel8?: number;
+  spellSlotsLevel9?: number;
 }
 
 /**
@@ -206,38 +206,38 @@ export interface ClassLevelSpellcasting {
 export interface ClassSpecific {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  rageCount?: string;
-  rageDamageBonus?: string;
-  brutalCriticalDice?: string;
-  bardicInspirationDice?: string;
-  songOfRestDie?: string;
-  magicalSecretsMax5?: string;
-  magicalSecretsMax7?: string;
-  magicalSecretsMax9?: string;
-  channelDivinityChargers?: string;
-  destroyUndeadCr?: string;
-  wildShapeMaxCr?: string;
+  rageCount?: number;
+  rageDamageBonus?: number;
+  brutalCriticalDice?: number;
+  bardicInspirationDice?: number;
+  songOfRestDie?: number;
+  magicalSecretsMax5?: number;
+  magicalSecretsMax7?: number;
+  magicalSecretsMax9?: number;
+  channelDivinityChargers?: number;
+  destroyUndeadCr?: number;
+  wildShapeMaxCr?: number;
   wildShapeSwim?: boolean;
   wildShapeFly?: boolean;
-  actionSurges?: string;
-  indomitableUses?: string;
-  extraAttacks?: string;
-  kiPoints?: string;
-  unarmoredMovement?: string;
+  actionSurges?: number;
+  indomitableUses?: number;
+  extraAttacks?: number;
+  kiPoints?: number;
+  unarmoredMovement?: number;
   martialArts?: Dice;
-  auraRange?: string;
-  favoredEnemies?: string;
-  favoredTerrain?: string;
+  auraRange?: number;
+  favoredEnemies?: number;
+  favoredTerrain?: number;
   sneakAttack?: Dice;
-  sorceryPoints?: string;
-  metamagicKnown?: string;
+  sorceryPoints?: number;
+  metamagicKnown?: number;
   creatingSpellSlots?: ClassSpecificCreatingSpellSlots[];
-  invocationsKnown?: string;
-  mysticArcanumLevel6?: string;
-  mysticArcanumLevel7?: string;
-  mysticArcanumLevel8?: string;
-  mysticArcanumLevel9?: string;
-  arcaneRecoverLevels?: string;
+  invocationsKnown?: number;
+  mysticArcanumLevel6?: number;
+  mysticArcanumLevel7?: number;
+  mysticArcanumLevel8?: number;
+  mysticArcanumLevel9?: number;
+  arcaneRecoverLevels?: number;
 }
 
 /**
@@ -246,7 +246,7 @@ export interface ClassSpecific {
 export interface ClassSpellcasting {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  level: string;
+  level: number;
   spellcastingInfo?: ClassSpellcastingInfo[];
   spellcastingAbility: AbilityScore;
 }
@@ -267,8 +267,8 @@ export interface ClassSpellcastingInfo {
 export interface ClassSpecificCreatingSpellSlots {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  spellSlotLevel?: string;
-  sorceryPointCost?: string;
+  spellSlotLevel?: number;
+  sorceryPointCost?: number;
 }
 
 /**
@@ -335,8 +335,8 @@ export interface DamageType {
 export interface Dice {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  diceCount?: string;
-  diceValue?: string;
+  diceCount?: number;
+  diceValue?: number;
 }
 
 /**
@@ -381,7 +381,7 @@ export interface Feature {
   type: Type;
   label: string;
   description?: string[];
-  level?: string;
+  level?: number;
   class?: Class;
   subclass?: Subclass;
   parent?: Feature;
@@ -395,8 +395,8 @@ export interface Feature {
 export interface FeaturePrerequisite {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  ofType2: string;
-  level?: string;
+  ofType: string;
+  level?: number;
   feature?: Feature;
   spell?: Spell;
 }
@@ -536,7 +536,7 @@ export interface Race {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-  speed: string;
+  speed: number;
   abilityBonuses?: AbilityBonus[];
   alignmentDescription?: string;
   age?: string;
@@ -611,7 +611,7 @@ export interface Spell {
   duration: string;
   concentration?: boolean;
   castingTime?: string;
-  level: string;
+  level: number;
   attackType?: string;
   spellDamage: SpellDamage;
   magicSchool: MagicSchool;
@@ -636,7 +636,7 @@ export interface SpellDamage {
 export interface SpellDamageCharacterLevel {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  level: string;
+  level: number;
   damageDice: string;
 }
 
@@ -646,7 +646,7 @@ export interface SpellDamageCharacterLevel {
 export interface SpellDamageSlotLevel {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  slot: string;
+  slot: number;
   damageDice: string;
 }
 

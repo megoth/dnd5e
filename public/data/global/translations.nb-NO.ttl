@@ -123,6 +123,7 @@
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 :solidLogo skos:definition "Logo for Solid"@nb-NO .
 :sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
+:speed skos:definition "Hastighet"@nb-NO .
 :spell skos:definition "Trylleformel"@nb-NO .
 :spellNote skos:definition "{$order}-nivå {$school}"@nb-NO .
 :spells skos:definition "Trylleformler"@nb-NO .

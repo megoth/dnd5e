@@ -1,18 +1,16 @@
 import { Choice, Class, ClassLevel, Race, Spell } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
-import Translation from "../components/translation";
-import React from "react";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 
 export function classHasCantripsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.levelSpellcasting?.cantripsKnown, 10) > 0,
+    (level) => level.levelSpellcasting?.cantripsKnown > 0,
   );
 }
 
 export function classHasHigherSpellcasting(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.levelSpellcasting?.spellSlotsLevel6, 10) > 0,
+    (level) => level.levelSpellcasting?.spellSlotsLevel6 > 0,
   );
 }
 
@@ -50,7 +48,7 @@ export function classHasSpellcasting(classInfo: Class): boolean {
 
 export function classHasSpellsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
-    (level) => parseInt(level.levelSpellcasting?.spellsKnown, 10) > 0,
+    (level) => level.levelSpellcasting?.spellsKnown > 0,
   );
 }
 
@@ -142,10 +140,8 @@ export function apiUrlToSubjectUrl(apiUrl: string): string {
 export function highestSpellLevel(level: ClassLevel): number {
   let spellLevel = 9;
   do {
-    const hasSpellLevel = parseInt(
-      level.levelSpellcasting[`spellSlotsLevel${spellLevel}`],
-      10,
-    );
+    const hasSpellLevel =
+      level.levelSpellcasting[`spellSlotsLevel${spellLevel}`];
     if (hasSpellLevel) {
       return spellLevel;
     }
@@ -154,15 +150,15 @@ export function highestSpellLevel(level: ClassLevel): number {
   return spellLevel;
 }
 
-export function parseNumber(number: string): string {
-  return (parseInt(number, 10) || "-").toString();
+export function parseNumber(number: number): string {
+  return (number || "-").toString();
 }
 
-export function rageCount(count: string): string {
-  return parseInt(count, 10) === 9999 ? "Unlimited" : count;
+export function rageCount(count: number): string {
+  return count === 9999 ? "Unlimited" : count.toString();
 }
 
-export function raceResources(race: Race): string[] {
+export function raceResources(_: Race): string[] {
   return [];
 }
 
@@ -182,15 +178,15 @@ export function spellResourceUrls(spell: Spell): string[] {
 
 export function sumSpellSlots(level: ClassLevel): number {
   return (
-    parseInt(level.levelSpellcasting.spellSlotsLevel1, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel2, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel3, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel4, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel5, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel6, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel7, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel8, 10) +
-    parseInt(level.levelSpellcasting.spellSlotsLevel9, 10)
+    level.levelSpellcasting.spellSlotsLevel1 +
+    level.levelSpellcasting.spellSlotsLevel2 +
+    level.levelSpellcasting.spellSlotsLevel3 +
+    level.levelSpellcasting.spellSlotsLevel4 +
+    level.levelSpellcasting.spellSlotsLevel5 +
+    level.levelSpellcasting.spellSlotsLevel6 +
+    level.levelSpellcasting.spellSlotsLevel7 +
+    level.levelSpellcasting.spellSlotsLevel8 +
+    level.levelSpellcasting.spellSlotsLevel9
   );
 }
 

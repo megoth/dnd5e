@@ -9,6 +9,7 @@ import { RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import { raceResources } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
+import Translation from "../translation";
 
 export default function RacePage() {
   const params = useParams();
@@ -44,7 +45,12 @@ export default function RacePage() {
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>{race.label}</h1>
-        <dl className="data-list"></dl>
+        <dl className="data-list">
+          <dt>
+            <Translation id="speed" />
+          </dt>
+          <dd>{race.speed}ft</dd>
+        </dl>
       </Content>
     </Layout>
   );

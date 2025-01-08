@@ -21,7 +21,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#bonus",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -208,7 +208,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#size",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -605,7 +605,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -613,7 +613,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#abilityScoreBonuses",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -623,7 +623,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#proficiencyBonus",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -667,7 +667,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#cantripsKnown",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -677,7 +677,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellsKnown",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -687,7 +687,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel1",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -697,7 +697,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel2",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -707,7 +707,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel3",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -717,7 +717,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel4",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -727,7 +727,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel5",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -737,7 +737,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel6",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -747,7 +747,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel7",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -757,7 +757,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel8",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -767,7 +767,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotsLevel9",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -789,7 +789,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#rageCount",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -799,7 +799,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#rageDamageBonus",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -809,7 +809,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#brutalCriticalDice",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -819,7 +819,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#bardicInspirationDice",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -829,7 +829,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#songOfRestDie",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -839,7 +839,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax5",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -849,7 +849,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax7",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -859,7 +859,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#magicalSecretsMax9",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -870,7 +870,7 @@ export const dnd5eSchema: Schema = {
                 "https://dnd5e.app/vocab/dnd5e#channelDivinityChargers",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -880,7 +880,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#destroyUndeadCr",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -890,7 +890,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#wildShapeMaxCr",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -920,7 +920,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#actionSurges",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -930,7 +930,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#indomitableUses",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -940,7 +940,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#extraAttacks",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -950,7 +950,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#kiPoints",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -960,7 +960,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#unarmoredMovement",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -977,7 +977,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#auraRange",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -987,7 +987,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#favoredEnemies",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -997,7 +997,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#favoredTerrain",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1014,7 +1014,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#sorceryPoints",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1024,7 +1024,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#metamagicKnown",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1042,7 +1042,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#invocationsKnown",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1052,7 +1052,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel6",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1062,7 +1062,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel7",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1072,7 +1072,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel8",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1082,7 +1082,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#mysticArcanumLevel9",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1092,7 +1092,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#arcaneRecoverLevels",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1114,7 +1114,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -1177,7 +1177,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#spellSlotLevel",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1187,7 +1187,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#sorceryPointCost",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1385,7 +1385,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#diceCount",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1395,7 +1395,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#diceValue",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1544,7 +1544,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -1599,7 +1599,7 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#ofType",
+              predicate: "https://dnd5e.app/vocab/dnd5e#ofType",
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
@@ -1610,7 +1610,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
               min: 0,
               max: 1,
@@ -2098,7 +2098,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#speed",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -2443,7 +2443,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -2532,7 +2532,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#level",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
@@ -2560,7 +2560,7 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#slot",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#number",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
               },
             },
             {
