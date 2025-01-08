@@ -69,7 +69,7 @@ export default function Layout({
 
   return (
     <div className="flex-1 flex flex-col relative min-h-full" {...handlers}>
-      {header && <PageHeader />}
+      {header && <PageHeader className="flex-grow-0" />}
       {open && (
         <button
           className={bem("layout__fade", modifiers)}
@@ -95,6 +95,7 @@ export default function Layout({
             full,
             ["with-meta"]: rightOpen,
           }),
+          "flex-grow lg:flex-grow-0",
         )}
       >
         <div
@@ -113,7 +114,7 @@ export default function Layout({
         </div>
       </div>
       {!full && (
-        <div className={bem("main-container", { full })}>
+        <div className={clsx(bem("main-container", { full }), "flex-grow-0")}>
           <PageFooter />
         </div>
       )}
