@@ -12,10 +12,7 @@ function useIndexer<Type>(
   ...deps: Array<DependencyList>
 ) {
   const { isLoading, items } = useListOfType(shapeType, rulesBundle, type);
-  useEffect(
-    () => items.forEach((classInfo) => indexFn(classInfo)),
-    [items, isLoading, indexFn, ...deps],
-  );
+  useEffect(() => items.forEach(indexFn), [items, isLoading, indexFn, ...deps]);
   return { isLoading, items };
 }
 
@@ -35,12 +32,20 @@ export default function useSearch() {
     "Class",
     (classInfo) =>
       !search.has(classInfo["@id"]) &&
-      search.add({
-        id: classInfo["@id"],
-        type: "class",
-        title: classInfo.label,
-        url: `/classes/${btoa(classInfo["@id"])}`,
-      }),
+      (() => {
+        search.add({
+          id: classInfo["@id"],
+          type: "class",
+          title: classInfo.label,
+          url: `/classes/${btoa(classInfo["@id"])}`,
+        });
+        search.add({
+          id: `${classInfo["@id"]}-spells`,
+          type: "spells",
+          title: classInfo.label,
+          url: `/spells/?class=${btoa(classInfo["@id"])}`,
+        });
+      })(),
   );
 
   const { isLoading: spellLoading } = useIndexer(

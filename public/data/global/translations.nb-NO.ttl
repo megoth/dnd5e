@@ -124,6 +124,7 @@
 :sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
 :spell skos:definition "Trylleformel"@nb-NO .
 :spellNote skos:definition "{$order}-nivå {$school}"@nb-NO .
+:spells skos:definition "Trylleformler"@nb-NO .
 :spellsKnown skos:definition "Kjente trylleformler"@nb-NO .
 :spellSlots skos:definition "Trylleformler"@nb-NO .
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .

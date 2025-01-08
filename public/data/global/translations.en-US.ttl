@@ -123,6 +123,7 @@
 :sorceryPoints skos:definition "Sorcery Points"@en-US .
 :spell skos:definition "Spell"@en-US .
 :spellNote skos:definition "{$order}-level {$school}"@en-US .
+:spells skos:definition "Spells"@en-US .
 :spellsKnown skos:definition "Spells Known"@en-US .
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
