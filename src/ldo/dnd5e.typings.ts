@@ -365,7 +365,7 @@ export interface Dice {
 export interface DifficultyClass {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  dcType?: AbilityScore;
   dcValue?: number;
   successType?: string;
 }
@@ -714,6 +714,7 @@ export interface TraitSpecific {
   damageType?: DamageType;
   spellOptions?: Choice;
   subtraitOptions?: Choice;
+  breathWeapon?: TraitSpecificBreathWeapon;
 }
 
 /**
@@ -727,6 +728,7 @@ export interface TraitSpecificBreathWeapon {
   areaOfEffect?: AreaOfEffect;
   breathWeaponDamage?: TraitSpecificBreathWeaponDamage;
   difficultyClass?: DifficultyClass;
+  traitSpecificUsage?: TraitSpecificUsage;
 }
 
 /**
@@ -737,6 +739,16 @@ export interface TraitSpecificBreathWeaponDamage {
   "@context"?: ContextDefinition;
   damageType?: DamageType;
   damageAtCharacterLevel?: DamageCharacterLevel[];
+}
+
+/**
+ * TraitSpecificUsage Type
+ */
+export interface TraitSpecificUsage {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  times: number;
+  ofType: string;
 }
 
 /**

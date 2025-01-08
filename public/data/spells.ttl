@@ -18,22 +18,6 @@
 <#acid-arrow> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#acid-arrow> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 <#acid-arrow> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
-_:b1356 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1356 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d4" .
-_:b1357 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1357 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d4" .
-_:b1358 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1358 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d4" .
-_:b1359 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1359 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d4" .
-_:b1360 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1360 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d4" .
-_:b1361 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1361 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d4" .
-_:b1362 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1362 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d4" .
-_:b1363 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1363 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d4" .
 _:b1364 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#acid> .
 _:b1364 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1356 .
 _:b1364 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1357 .
@@ -60,14 +44,6 @@ _:b1364 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1363 .
 <#acid-splash> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#acid-splash> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#acid-splash> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1365 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1365 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d6" .
-_:b1366 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1366 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d6" .
-_:b1367 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1367 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1368 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1368 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
 _:b1369 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#acid> .
 _:b1369 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1365 .
 _:b1369 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1366 .
@@ -379,8 +355,6 @@ _:b1374 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#arcane-sword> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#arcane-sword> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
 <#arcane-sword> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1375 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1375 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
 _:b1376 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1376 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1375 .
 <#arcanists-magic-aura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -580,8 +554,6 @@ _:b1376 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1375 .
 <#black-tentacles> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1377 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1377 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
-_:b1378 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1378 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
 _:b1379 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#bludgeoning> .
 _:b1379 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1378 .
 <#blade-barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -602,8 +574,6 @@ _:b1379 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1378 .
 <#blade-barrier> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 _:b1380 <https://dnd5e.app/vocab/dnd5e#areaSize> 100 .
 _:b1380 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1381 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1381 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
 _:b1382 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#slashing> .
 _:b1382 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1381 .
 <#bless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -646,18 +616,6 @@ _:b1382 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1381 .
 <#blight> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#blight> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#blight> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
-_:b1383 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1383 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1384 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1384 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
-_:b1385 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1385 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
-_:b1386 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1386 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d8" .
-_:b1387 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1387 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d8" .
-_:b1388 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1388 <https://dnd5e.app/vocab/dnd5e#damageDice> "13d8" .
 _:b1389 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1389 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1383 .
 _:b1389 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1384 .
@@ -728,22 +686,6 @@ _:b1389 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1388 .
 <#branding-smite> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1398 .
 <#branding-smite> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#branding-smite> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#paladin> .
-_:b1390 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1390 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d6" .
-_:b1391 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1391 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1392 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1392 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1393 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1393 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1394 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1394 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
-_:b1395 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1395 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d6" .
-_:b1396 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1396 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1397 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1397 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
 _:b1398 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1398 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1390 .
 _:b1398 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1391 .
@@ -775,24 +717,6 @@ _:b1398 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1397 .
 <#burning-hands> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b1399 <https://dnd5e.app/vocab/dnd5e#areaSize> 15 .
 _:b1399 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
-_:b1400 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1400 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1401 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1401 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1402 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1402 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1403 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1403 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
-_:b1404 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1404 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d6" .
-_:b1405 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1405 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1406 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1406 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
-_:b1407 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1407 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1408 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1408 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d6" .
 _:b1409 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1409 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1400 .
 _:b1409 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1401 .
@@ -825,20 +749,6 @@ _:b1409 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1408 .
 <#call-lightning> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1410 <https://dnd5e.app/vocab/dnd5e#areaSize> 5 .
 _:b1410 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1411 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1411 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
-_:b1412 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1412 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
-_:b1413 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1413 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d10" .
-_:b1414 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1414 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
-_:b1415 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1415 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
-_:b1416 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1416 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d10" .
-_:b1417 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1417 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d10" .
 _:b1418 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#lightning> .
 _:b1418 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1411 .
 _:b1418 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1412 .
@@ -885,8 +795,6 @@ _:b1419 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#chain-lightning> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#chain-lightning> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#chain-lightning> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1420 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1420 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
 _:b1421 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#lightning> .
 _:b1421 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1420 .
 <#charm-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -928,14 +836,6 @@ _:b1421 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1420 .
 <#chill-touch> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#chill-touch> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#chill-touch> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1422 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1422 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8" .
-_:b1423 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1423 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1424 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1424 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1425 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1425 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1426 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1426 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1422 .
 _:b1426 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1423 .
@@ -963,14 +863,6 @@ _:b1426 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1425 .
 <#circle-of-death> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1427 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1427 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1428 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1428 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1429 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1429 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1430 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1430 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
-_:b1431 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1431 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
 _:b1432 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1432 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1428 .
 _:b1432 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1429 .
@@ -1035,16 +927,6 @@ _:b1432 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1431 .
 <#cloudkill> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1433 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1433 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1434 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1434 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
-_:b1435 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1435 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8" .
-_:b1436 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1436 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8" .
-_:b1437 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1437 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1438 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1438 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
 _:b1439 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#poison> .
 _:b1439 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1434 .
 _:b1439 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1435 .
@@ -1192,16 +1074,6 @@ _:b1440 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
 <#cone-of-cold> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1441 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1441 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
-_:b1442 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1442 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1443 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1443 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
-_:b1444 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1444 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
-_:b1445 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1445 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d8" .
-_:b1446 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1446 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d8" .
 _:b1447 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#cold> .
 _:b1447 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1442 .
 _:b1447 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1443 .
@@ -1465,8 +1337,6 @@ _:b1449 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#control-water> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1450 <https://dnd5e.app/vocab/dnd5e#areaSize> 100 .
 _:b1450 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
-_:b1451 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1451 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
 _:b1452 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#bludgeoning> .
 _:b1452 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1451 .
 <#control-weather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -1760,12 +1630,6 @@ _:b1456 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#delayed-blast-fireball> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1457 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1457 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1458 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1458 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
-_:b1459 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1459 <https://dnd5e.app/vocab/dnd5e#damageDice> "13d6" .
-_:b1460 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1460 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
 _:b1461 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1461 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1458 .
 _:b1461 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1459 .
@@ -1890,8 +1754,6 @@ _:b1464 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#dimension-door> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#dimension-door> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#dimension-door> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1465 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1465 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
 _:b1466 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1466 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1465 .
 <#disguise-self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -1936,8 +1798,6 @@ _:b1466 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1465 .
 <#disintegrate> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1467 <https://dnd5e.app/vocab/dnd5e#areaSize> 10 .
 _:b1467 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
-_:b1468 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1468 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6 + 40" .
 _:b1469 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1469 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1468 .
 <#dispel-evil-and-good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2014,8 +1874,6 @@ _:b1469 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1468 .
 <#divine-favor> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#divine-favor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#paladin> .
 <#divine-favor> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1470 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1470 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4" .
 _:b1471 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1471 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1470 .
 <#divine-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2114,8 +1972,6 @@ _:b1471 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1470 .
 <#dream> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#dream> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#dream> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
-_:b1472 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1472 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
 _:b1473 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#psychic> .
 _:b1473 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1472 .
 <#druidcraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2177,14 +2033,6 @@ _:b1474 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#eldritch-blast> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#eldritch-blast> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#eldritch-blast> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1475 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1475 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d10" .
-_:b1476 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1476 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d10" .
-_:b1477 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1477 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d10" .
-_:b1478 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1478 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d10" .
 _:b1479 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1479 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1475 .
 _:b1479 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1476 .
@@ -2378,8 +2226,6 @@ _:b1481 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#faithful-hound> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1483 .
 <#faithful-hound> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#conjuration> .
 <#faithful-hound> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1482 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1482 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1483 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#piercing> .
 _:b1483 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1482 .
 <#false-life> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2462,8 +2308,6 @@ _:b1484 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
 <#feeblemind> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#feeblemind> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#feeblemind> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1485 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1485 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
 _:b1486 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#psychic> .
 _:b1486 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1485 .
 <#find-familiar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2557,8 +2401,6 @@ _:b1486 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1485 .
 <#finger-of-death> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#finger-of-death> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#finger-of-death> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1487 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1487 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8 + 30" .
 _:b1488 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1488 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1487 .
 <#fire-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2578,14 +2420,6 @@ _:b1488 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1487 .
 <#fire-bolt> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#fire-bolt> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#fire-bolt> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1489 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1489 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d10" .
-_:b1490 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1490 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d10" .
-_:b1491 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1491 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
-_:b1492 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1492 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
 _:b1493 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1493 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1489 .
 _:b1493 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1490 .
@@ -2613,8 +2447,6 @@ _:b1493 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1492 .
 <#fire-shield> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b1494 <https://dnd5e.app/vocab/dnd5e#areaSize> 5 .
 _:b1494 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1495 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1495 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
 _:b1496 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1496 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1495 .
 <#fire-storm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2637,8 +2469,6 @@ _:b1496 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1495 .
 <#fire-storm> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 _:b1497 <https://dnd5e.app/vocab/dnd5e#areaSize> 100 .
 _:b1497 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
-_:b1498 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1498 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
 _:b1499 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1499 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1498 .
 <#fireball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -2665,20 +2495,6 @@ _:b1499 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1498 .
 <#fireball> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b1500 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1500 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1501 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1501 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1502 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1502 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
-_:b1503 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1503 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1504 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1504 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d6" .
-_:b1505 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1505 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
-_:b1506 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1506 <https://dnd5e.app/vocab/dnd5e#damageDice> "13d6" .
-_:b1507 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1507 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
 _:b1508 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1508 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1501 .
 _:b1508 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1502 .
@@ -2707,14 +2523,6 @@ _:b1508 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1507 .
 <#flame-blade> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#flame-blade> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#flame-blade> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1509 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1509 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1510 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1510 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1511 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1511 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1512 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1512 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
 _:b1513 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1513 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1509 .
 _:b1513 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1510 .
@@ -2742,16 +2550,6 @@ _:b1513 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1512 .
 <#flame-strike> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b1514 <https://dnd5e.app/vocab/dnd5e#areaSize> 40 .
 _:b1514 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
-_:b1515 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1515 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6 + 4d6" .
-_:b1516 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1516 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6 + 5d6" .
-_:b1517 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1517 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6 + 6d6" .
-_:b1518 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1518 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6 + 7d6" .
-_:b1519 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1519 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6 + 8d6" .
 _:b1520 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1520 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1515 .
 _:b1520 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1516 .
@@ -2779,22 +2577,6 @@ _:b1520 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1519 .
 <#flaming-sphere> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#flaming-sphere> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#flaming-sphere> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1521 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1521 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d6" .
-_:b1522 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1522 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1523 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1523 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1524 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1524 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1525 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1525 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
-_:b1526 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1526 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d6" .
-_:b1527 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1527 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1528 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1528 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
 _:b1529 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1529 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1521 .
 _:b1529 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1522 .
@@ -2989,8 +2771,6 @@ _:b1532 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#freezing-sphere> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1533 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1533 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1534 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1534 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
 _:b1535 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#cold> .
 _:b1535 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1534 .
 <#gaseous-form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -3237,8 +3017,6 @@ _:b1537 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#guardian-of-faith> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 _:b1538 <https://dnd5e.app/vocab/dnd5e#areaSize> 10 .
 _:b1538 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
-_:b1539 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1539 <https://dnd5e.app/vocab/dnd5e#damageDice> "20" .
 _:b1540 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1540 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1539 .
 <#guards-and-wards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -3305,24 +3083,6 @@ _:b1541 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#guiding-bolt> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#guiding-bolt> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 <#guiding-bolt> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1542 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1542 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1543 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1543 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1544 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1544 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
-_:b1545 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1545 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d6" .
-_:b1546 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1546 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1547 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1547 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
-_:b1548 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1548 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1549 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1549 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d6" .
-_:b1550 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1550 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
 _:b1551 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1551 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1542 .
 _:b1551 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1543 .
@@ -3425,8 +3185,6 @@ _:b1554 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#harm> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1556 .
 <#harm> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#necromancy> .
 <#harm> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
-_:b1555 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1555 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
 _:b1556 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1556 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1555 .
 <#haste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -3499,22 +3257,6 @@ _:b1556 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1555 .
 <#heat-metal> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
 <#heat-metal> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#heat-metal> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1557 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1557 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1558 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1558 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1559 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1559 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
-_:b1560 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1560 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
-_:b1561 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1561 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8" .
-_:b1562 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1562 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8" .
-_:b1563 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1563 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1564 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1564 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
 _:b1565 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1565 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1557 .
 _:b1565 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1558 .
@@ -3539,24 +3281,6 @@ _:b1565 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1564 .
 <#hellish-rebuke> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1575 .
 <#hellish-rebuke> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#hellish-rebuke> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
-_:b1566 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1566 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d10" .
-_:b1567 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1567 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
-_:b1568 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1568 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
-_:b1569 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1569 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d10" .
-_:b1570 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1570 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
-_:b1571 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1571 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
-_:b1572 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1572 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d10" .
-_:b1573 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1573 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d10" .
-_:b1574 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1574 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d10" .
 _:b1575 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1575 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1566 .
 _:b1575 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1567 .
@@ -3733,18 +3457,6 @@ _:b1576 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#ice-storm> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1577 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1577 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
-_:b1578 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1578 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8 + 4d6" .
-_:b1579 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1579 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8 + 4d6" .
-_:b1580 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1580 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8 + 4d6" .
-_:b1581 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1581 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8 + 4d6" .
-_:b1582 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1582 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8 + 4d6" .
-_:b1583 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1583 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8 + 4d6" .
 _:b1584 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#bludgeoning> .
 _:b1584 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1578 .
 _:b1584 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1579 .
@@ -3840,8 +3552,6 @@ _:b1584 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1583 .
 <#incendiary-cloud> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1585 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1585 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1586 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1586 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
 _:b1587 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1587 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1586 .
 <#inflict-wounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -3861,24 +3571,6 @@ _:b1587 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1586 .
 <#inflict-wounds> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#necromancy> .
 <#inflict-wounds> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 <#inflict-wounds> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1588 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1588 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
-_:b1589 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1589 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
-_:b1590 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1590 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d10" .
-_:b1591 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1591 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
-_:b1592 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1592 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
-_:b1593 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1593 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d10" .
-_:b1594 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1594 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d10" .
-_:b1595 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1595 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d10" .
-_:b1596 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1596 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d10" .
 _:b1597 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1597 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1588 .
 _:b1597 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1589 .
@@ -3913,16 +3605,6 @@ _:b1597 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1596 .
 <#insect-plague> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1598 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1598 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1599 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1599 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
-_:b1600 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1600 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d10" .
-_:b1601 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1601 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
-_:b1602 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1602 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
-_:b1603 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1603 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d10" .
 _:b1604 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#piercing> .
 _:b1604 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1599 .
 _:b1604 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1600 .
@@ -4119,20 +3801,6 @@ _:b1604 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1603 .
 <#lightning-bolt> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#land> .
 _:b1605 <https://dnd5e.app/vocab/dnd5e#areaSize> 100 .
 _:b1605 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1606 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1606 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1607 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1607 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
-_:b1608 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1608 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1609 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1609 <https://dnd5e.app/vocab/dnd5e#damageDice> "11d6" .
-_:b1610 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1610 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
-_:b1611 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1611 <https://dnd5e.app/vocab/dnd5e#damageDice> "13d6" .
-_:b1612 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1612 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
 _:b1613 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#lightning> .
 _:b1613 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1606 .
 _:b1613 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1607 .
@@ -4327,24 +3995,6 @@ _:b1614 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
 <#magic-missile> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#magic-missile> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#magic-missile> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1615 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1615 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1616 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1616 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1617 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1617 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1618 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1618 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1619 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1619 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1620 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1620 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1621 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1621 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1622 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1622 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
-_:b1623 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1623 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4 + 1" .
 _:b1624 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1624 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1615 .
 _:b1624 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1616 .
@@ -4593,8 +4243,6 @@ _:b1626 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#meteor-swarm> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1627 <https://dnd5e.app/vocab/dnd5e#areaSize> 40 .
 _:b1627 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1628 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1628 <https://dnd5e.app/vocab/dnd5e#damageDice> "20d6 + 20d6" .
 _:b1629 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1629 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1628 .
 <#mind-blank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -4748,22 +4396,6 @@ _:b1630 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#moonbeam> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b1631 <https://dnd5e.app/vocab/dnd5e#areaSize> 5 .
 _:b1631 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
-_:b1632 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1632 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d10" .
-_:b1633 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1633 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d10" .
-_:b1634 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1634 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
-_:b1635 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1635 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d10" .
-_:b1636 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1636 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d10" .
-_:b1637 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1637 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d10" .
-_:b1638 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1638 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d10" .
-_:b1639 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1639 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d10" .
 _:b1640 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1640 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1632 .
 _:b1640 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1633 .
@@ -4865,8 +4497,6 @@ _:b1641 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
 <#phantasmal-killer> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1643 .
 <#phantasmal-killer> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#illusion> .
 <#phantasmal-killer> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
-_:b1642 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1642 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d10" .
 _:b1643 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#psychic> .
 _:b1643 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1642 .
 <#phantom-steed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -4982,14 +4612,6 @@ _:b1643 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1642 .
 <#poison-spray> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#poison-spray> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#poison-spray> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
-_:b1644 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1644 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d12" .
-_:b1645 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1645 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d12" .
-_:b1646 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1646 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d12" .
-_:b1647 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1647 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d12" .
 _:b1648 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#poison> .
 _:b1648 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1644 .
 _:b1648 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1645 .
@@ -5112,8 +4734,6 @@ _:b1648 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1647 .
 <#prismatic-spray> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1649 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1649 <https://dnd5e.app/vocab/dnd5e#ofType> "cone" .
-_:b1650 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1650 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
 _:b1651 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1650 .
 <#prismatic-wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
 <#prismatic-wall> <http://www.w3.org/2000/01/rdf-schema#label> "Prismatic Wall" .
@@ -5187,14 +4807,6 @@ _:b1653 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#produce-flame> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#conjuration> .
 <#produce-flame> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#produce-flame> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1654 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1654 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8" .
-_:b1655 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1655 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1656 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1656 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1657 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1657 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1658 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1658 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1654 .
 _:b1658 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1655 .
@@ -5371,14 +4983,6 @@ _:b1659 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#ray-of-frost> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#ray-of-frost> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#ray-of-frost> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1660 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1660 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8" .
-_:b1661 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1661 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1662 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1662 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1663 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1663 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1664 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#cold> .
 _:b1664 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1660 .
 _:b1664 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1661 .
@@ -5582,14 +5186,6 @@ _:b1665 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
 <#sacred-flame> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#evocation> .
 <#sacred-flame> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 <#sacred-flame> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1666 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1666 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8" .
-_:b1667 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1667 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1668 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1668 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1669 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1669 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1670 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1670 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1666 .
 _:b1670 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1667 .
@@ -5632,8 +5228,6 @@ _:b1670 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1669 .
 <#scorching-ray> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#scorching-ray> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 <#scorching-ray> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
-_:b1671 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1671 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d6" .
 _:b1672 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1672 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1671 .
 <#scrying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -5804,22 +5398,6 @@ _:b1672 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1671 .
 <#shatter> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b1673 <https://dnd5e.app/vocab/dnd5e#areaSize> 10 .
 _:b1673 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1674 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1674 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1675 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1675 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
-_:b1676 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1676 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
-_:b1677 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1677 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8" .
-_:b1678 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1678 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8" .
-_:b1679 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1679 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1680 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1680 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
-_:b1681 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1681 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
 _:b1682 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#thunder> .
 _:b1682 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1674 .
 _:b1682 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1675 .
@@ -5895,14 +5473,6 @@ _:b1682 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1681 .
 <#shocking-grasp> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#shocking-grasp> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#shocking-grasp> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1683 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1683 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8" .
-_:b1684 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1684 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1685 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1685 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1686 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1686 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
 _:b1687 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#lightning> .
 _:b1687 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1683 .
 _:b1687 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1684 .
@@ -5995,8 +5565,6 @@ _:b1689 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
 <#sleep> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b1690 <https://dnd5e.app/vocab/dnd5e#areaSize> 20 .
 _:b1690 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1691 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1691 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
 _:b1692 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1691 .
 <#sleet-storm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
 <#sleet-storm> <http://www.w3.org/2000/01/rdf-schema#label> "Sleet Storm" .
@@ -6195,22 +5763,6 @@ _:b1696 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
 <#spiritual-weapon> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
 <#spiritual-weapon> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 <#spiritual-weapon> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#life> .
-_:b1697 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1697 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8 + MOD" .
-_:b1698 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1698 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d8 + MOD" .
-_:b1699 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1699 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8 + MOD" .
-_:b1700 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1700 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8 + MOD" .
-_:b1701 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1701 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8 + MOD" .
-_:b1702 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1702 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8 + MOD" .
-_:b1703 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1703 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8 + MOD" .
-_:b1704 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1704 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8 + MOD" .
 _:b1705 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#force> .
 _:b1705 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1697 .
 _:b1705 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1698 .
@@ -6304,8 +5856,6 @@ _:b1706 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#storm-of-vengeance> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 _:b1707 <https://dnd5e.app/vocab/dnd5e#areaSize> 360 .
 _:b1707 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1708 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1708 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d6" .
 _:b1709 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#thunder> .
 _:b1709 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1708 .
 <#suggestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -6352,8 +5902,6 @@ _:b1709 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1708 .
 <#sunbeam> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1710 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1710 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1711 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1711 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8" .
 _:b1712 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1712 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1711 .
 <#sunburst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -6379,8 +5927,6 @@ _:b1712 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1711 .
 <#sunburst> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1713 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1713 <https://dnd5e.app/vocab/dnd5e#ofType> "cylinder" .
-_:b1714 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1714 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
 _:b1715 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#radiant> .
 _:b1715 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1714 .
 <#symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -6555,24 +6101,6 @@ _:b1719 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#thunderwave> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b1720 <https://dnd5e.app/vocab/dnd5e#areaSize> 15 .
 _:b1720 <https://dnd5e.app/vocab/dnd5e#ofType> "cube" .
-_:b1721 <https://dnd5e.app/vocab/dnd5e#slot> 1 .
-_:b1721 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d8" .
-_:b1722 <https://dnd5e.app/vocab/dnd5e#slot> 2 .
-_:b1722 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
-_:b1723 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1723 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d8" .
-_:b1724 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1724 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
-_:b1725 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1725 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d8" .
-_:b1726 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1726 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8" .
-_:b1727 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1727 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1728 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1728 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
-_:b1729 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1729 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
 _:b1730 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#thunder> .
 _:b1730 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1721 .
 _:b1730 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1722 .
@@ -6783,20 +6311,6 @@ _:b1731 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#vampiric-touch> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#vampiric-touch> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#vampiric-touch> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
-_:b1732 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1732 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d6" .
-_:b1733 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1733 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d6" .
-_:b1734 <https://dnd5e.app/vocab/dnd5e#slot> 5 .
-_:b1734 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d6" .
-_:b1735 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1735 <https://dnd5e.app/vocab/dnd5e#damageDice> "6d6" .
-_:b1736 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1736 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d6" .
-_:b1737 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1737 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d6" .
-_:b1738 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1738 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d6" .
 _:b1739 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#necrotic> .
 _:b1739 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1732 .
 _:b1739 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1733 .
@@ -6819,14 +6333,6 @@ _:b1739 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1738 .
 <#vicious-mockery> <https://dnd5e.app/vocab/dnd5e#spellDamage> _:b1744 .
 <#vicious-mockery> <https://dnd5e.app/vocab/dnd5e#magicSchool> </data/magic-schools.ttl#enchantment> .
 <#vicious-mockery> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
-_:b1740 <https://dnd5e.app/vocab/dnd5e#level> 1 .
-_:b1740 <https://dnd5e.app/vocab/dnd5e#damageDice> "1d4" .
-_:b1741 <https://dnd5e.app/vocab/dnd5e#level> 5 .
-_:b1741 <https://dnd5e.app/vocab/dnd5e#damageDice> "2d4" .
-_:b1742 <https://dnd5e.app/vocab/dnd5e#level> 11 .
-_:b1742 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d4" .
-_:b1743 <https://dnd5e.app/vocab/dnd5e#level> 17 .
-_:b1743 <https://dnd5e.app/vocab/dnd5e#damageDice> "4d4" .
 _:b1744 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#psychic> .
 _:b1744 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1740 .
 _:b1744 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1741 .
@@ -6858,8 +6364,6 @@ _:b1744 <https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel> _:b1743 .
 <#wall-of-fire> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#fiend> .
 _:b1745 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1745 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1746 <https://dnd5e.app/vocab/dnd5e#slot> 4 .
-_:b1746 <https://dnd5e.app/vocab/dnd5e#damageDice> "5d8" .
 _:b1747 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#fire> .
 _:b1747 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1746 .
 <#wall-of-force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .
@@ -6900,14 +6404,6 @@ _:b1747 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1746 .
 <#wall-of-ice> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 _:b1748 <https://dnd5e.app/vocab/dnd5e#areaSize> 10 .
 _:b1748 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
-_:b1749 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1749 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d6" .
-_:b1750 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1750 <https://dnd5e.app/vocab/dnd5e#damageDice> "12d6" .
-_:b1751 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1751 <https://dnd5e.app/vocab/dnd5e#damageDice> "14d6" .
-_:b1752 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1752 <https://dnd5e.app/vocab/dnd5e#damageDice> "16d6" .
 _:b1753 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#cold> .
 _:b1753 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1749 .
 _:b1753 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1750 .
@@ -6958,14 +6454,6 @@ _:b1753 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1752 .
 <#wall-of-thorns> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 _:b1754 <https://dnd5e.app/vocab/dnd5e#areaSize> 60 .
 _:b1754 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1755 <https://dnd5e.app/vocab/dnd5e#slot> 6 .
-_:b1755 <https://dnd5e.app/vocab/dnd5e#damageDice> "7d8" .
-_:b1756 <https://dnd5e.app/vocab/dnd5e#slot> 7 .
-_:b1756 <https://dnd5e.app/vocab/dnd5e#damageDice> "8d8" .
-_:b1757 <https://dnd5e.app/vocab/dnd5e#slot> 8 .
-_:b1757 <https://dnd5e.app/vocab/dnd5e#damageDice> "9d8" .
-_:b1758 <https://dnd5e.app/vocab/dnd5e#slot> 9 .
-_:b1758 <https://dnd5e.app/vocab/dnd5e#damageDice> "10d8" .
 _:b1759 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#piercing> .
 _:b1759 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1755 .
 _:b1759 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1756 .
@@ -7110,8 +6598,6 @@ _:b1761 <https://dnd5e.app/vocab/dnd5e#ofType> "sphere" .
 <#wind-wall> <https://dnd5e.app/vocab/dnd5e#subclasses> </data/subclasses.ttl#lore> .
 _:b1762 <https://dnd5e.app/vocab/dnd5e#areaSize> 50 .
 _:b1762 <https://dnd5e.app/vocab/dnd5e#ofType> "line" .
-_:b1763 <https://dnd5e.app/vocab/dnd5e#slot> 3 .
-_:b1763 <https://dnd5e.app/vocab/dnd5e#damageDice> "3d8" .
 _:b1764 <https://dnd5e.app/vocab/dnd5e#damageType> </data/damage-types.ttl#bludgeoning> .
 _:b1764 <https://dnd5e.app/vocab/dnd5e#damageAtSlotLevel> _:b1763 .
 <#wish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Spell> .

@@ -1470,8 +1470,10 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              predicate: "https://dnd5e.app/vocab/dnd5e#dcType",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+              min: 0,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -2763,6 +2765,14 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#breathWeapon",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeapon",
+              min: 0,
+              max: 1,
+            },
           ],
         },
       },
@@ -2815,6 +2825,14 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#traitSpecificUsage",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificUsage",
+              min: 0,
+              max: 1,
+            },
           ],
         },
       },
@@ -2841,6 +2859,34 @@ export const dnd5eSchema: Schema = {
                 "https://ldo.js.org/shapes/dnd5e.shex#DamageCharacterLevel",
               min: 0,
               max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificUsage",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#times",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#ofType",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
             },
           ],
         },

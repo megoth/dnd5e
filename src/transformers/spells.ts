@@ -16,6 +16,12 @@ import { type } from "../../public/data/type";
 import spells from "../dnd5eapi-data/5e-SRD-Spells.json";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import {
+  transformDamageAtCharacterLevel,
+  transformDamageAtSlotLevel,
+  IDamageAtCharacterLevel,
+  IDamageAtSlotLevel,
+} from "./damage";
 
 export function classSpells(classApiUrl: string): Array<string> {
   return spells
@@ -60,26 +66,12 @@ export function transformSpell(
           .usingType(DamageTypeShapeType)
           .fromSubject(apiUrlToSubjectUrl(data.damage.damage_type.url)),
       }),
-      ...(data.damage["damage_at_slot_level"] && {
-        damageAtSlotLevel: Object.entries(
-          data.damage["damage_at_slot_level"],
-        ).map(([slot, damageDice]: [string, string]) =>
-          ldoDataset.usingType(DamageSlotLevelShapeType).fromJson({
-            slot: parseInt(slot, 10),
-            damageDice,
-          }),
-        ),
-      }),
-      ...(data.damage["damage_at_character_level"] && {
-        damageAtCharacterLevel: Object.entries(
-          data.damage["damage_at_character_level"],
-        ).map(([level, damageDice]: [string, string]) =>
-          ldoDataset.usingType(DamageCharacterLevelShapeType).fromJson({
-            level: parseInt(level, 10),
-            damageDice,
-          }),
-        ),
-      }),
+      ...(data.damage["damage_at_slot_level"] &&
+        transformDamageAtSlotLevel(data.damage as IDamageAtSlotLevel)),
+      ...(data.damage["damage_at_character_level"] &&
+        transformDamageAtCharacterLevel(
+          data.damage as IDamageAtCharacterLevel,
+        )),
     });
   spell.magicSchool =
     data.school &&

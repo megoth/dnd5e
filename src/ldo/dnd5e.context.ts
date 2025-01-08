@@ -238,6 +238,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#difficultyClass",
     "@type": "@id",
   },
+  dcType: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#dcType",
+    "@type": "@id",
+  },
   dcValue: {
     "@id": "https://dnd5e.app/vocab/dnd5e#dcValue",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -695,6 +699,22 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subtraitOptions",
     "@type": "@id",
   },
+  breathWeapon: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#breathWeapon",
+    "@type": "@id",
+  },
+  breathWeaponDamage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#breathWeaponDamage",
+    "@type": "@id",
+  },
+  traitSpecificUsage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#traitSpecificUsage",
+    "@type": "@id",
+  },
+  times: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#times",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
   reference: {
     "@id": "https://dnd5e.app/vocab/dnd5e#reference",
     "@type": "@id",
@@ -709,10 +729,6 @@ export const dnd5eContext: ContextDefinition = {
   },
   flaws: {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
-    "@type": "@id",
-  },
-  breathWeaponDamage: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#breathWeaponDamage",
     "@type": "@id",
   },
 };

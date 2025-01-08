@@ -59,6 +59,7 @@ import {
   TraitSpecific,
   TraitSpecificBreathWeapon,
   TraitSpecificBreathWeaponDamage,
+  TraitSpecificUsage,
   Type,
 } from "./dnd5e.typings";
 
@@ -589,6 +590,15 @@ export const TraitSpecificBreathWeaponDamageShapeType: ShapeType<TraitSpecificBr
       "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificBreathWeaponDamage",
     context: dnd5eContext,
   };
+
+/**
+ * TraitSpecificUsage ShapeType
+ */
+export const TraitSpecificUsageShapeType: ShapeType<TraitSpecificUsage> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificUsage",
+  context: dnd5eContext,
+};
 
 /**
  * Type ShapeType
