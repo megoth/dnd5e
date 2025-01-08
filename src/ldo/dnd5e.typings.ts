@@ -332,11 +332,8 @@ export interface Cost {
 export interface Damage {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
   dice: string;
-  type2?: {
-    "@id": string;
-  };
+  damageType?: DamageType;
 }
 
 /**

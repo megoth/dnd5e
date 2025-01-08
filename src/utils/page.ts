@@ -41,6 +41,10 @@ export function getPages(path: string, admin: boolean): Array<Page> {
       translationId: "equipmentPageTitle",
     },
     {
+      href: "/weapons",
+      translationId: "weapons",
+    },
+    {
       href: "/spells",
       translationId: "spellsPageTitle",
     },

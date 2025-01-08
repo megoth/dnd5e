@@ -28,6 +28,7 @@ import ClassPage from "./components/classPage";
 import SpellPage from "./components/spellPage";
 import SearchPage from "./components/searchPage";
 import RacePage from "./components/racePage";
+import WeaponsPage from "./components/weaponsPage";
 
 const router = createBrowserRouter([
   {
@@ -133,6 +134,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignupPage />,
+      },
+      {
+        path: "/weapons",
+        element: <WeaponsPage />,
       },
     ],
   },

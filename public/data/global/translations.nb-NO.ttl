@@ -36,6 +36,7 @@
 :components skos:definition "Komponenter"@nb-NO .
 :concentration skos:definition "Konsentrasjon"@nb-NO .
 :cost skos:definition "Pris"@nb-NO .
+:damage skos:definition "Skade"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
@@ -94,6 +95,7 @@
 :order9 skos:definition "9."@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
+:properties skos:definition "Egenskaper"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
 :race skos:definition "Rase"@nb-NO .
 :racesPageTitle skos:definition "Raser"@nb-NO .
@@ -146,6 +148,8 @@
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 :unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
+:weapons skos:definition "Våpen"@nb-NO .
+:weight skos:definition "Tyngde"@nb-NO .
 :whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
 :whatIsIdPDescription skos:definition
         """Identitetsleverandører for Solid er tjenester som lar deg lage en Solid identitet som du kan bruke til å

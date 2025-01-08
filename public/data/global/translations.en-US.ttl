@@ -35,6 +35,7 @@
 :components skos:definition "Components"@en-US .
 :concentration skos:definition "Concentration"@en-US .
 :cost skos:definition "Cost"@en-US .
+:damage skos:definition "Damage"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
@@ -93,6 +94,7 @@
 :order9 skos:definition "9th"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
+:properties skos:definition "Properties"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 :race skos:definition "Race"@en-US .
 :racesPageTitle skos:definition "Races"@en-US .
@@ -145,6 +147,8 @@
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 :unarmoredMovement skos:definition "Unarmored movement"@en-US .
+:weapons skos:definition "Weapons"@en-US .
+:weight skos:definition "Weight"@en-US .
 :whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .
 :whatIsIdPDescription skos:definition
         """Solid identity providers, or Solid IdPs for short, are services that allow you to create a Solid identity,

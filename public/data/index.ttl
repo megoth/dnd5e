@@ -22,8 +22,10 @@
 :equipmentsBundle
     rdfs:label "equipments" ;
     dnd5e_app:rulesResource
+            </data/damage-types.ttl>,
             </data/equipment-categories.ttl>,
-            </data/equipments.ttl> .
+            </data/equipments.ttl>,
+            </data/weapon-properties.ttl> .
 
 :racesBundle
     rdfs:label "races" ;

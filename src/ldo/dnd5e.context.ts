@@ -291,10 +291,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#dice",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  type2: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#type",
-    "@type": "@id",
-  },
   choices: {
     "@id": "https://dnd5e.app/vocab/dnd5e#choices",
     "@type": "@id",
@@ -400,6 +396,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#damages",
     "@type": "@id",
     "@container": "@set",
+  },
+  type2: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#type",
+    "@type": "@id",
   },
   "dice:": {
     "@id": "https://dnd5e.app/vocab/dnd5e#dice:",

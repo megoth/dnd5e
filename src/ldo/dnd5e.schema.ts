@@ -1401,11 +1401,6 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#dice",
               valueExpr: {
                 type: "NodeConstraint",
@@ -1414,11 +1409,8 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#type",
-              valueExpr: {
-                type: "NodeConstraint",
-                nodeKind: "iri",
-              },
+              predicate: "https://dnd5e.app/vocab/dnd5e#damageType",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageType",
               min: 0,
               max: 1,
             },
