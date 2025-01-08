@@ -49,6 +49,7 @@
 :hitPointsAtHigherLevels skos:definition "Hit Points at Higher Levels"@en-US .
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
+:ignore skos:definition "Ignore"@en-US .
 :invocationsKnown skos:definition "Invocations Known"@en-US .
 :kiPoints skos:definition "Ki Points"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .

@@ -49,7 +49,7 @@ export default function SpellPage() {
 
   return (
     <Layout>
-      <WarningMessage>
+      <WarningMessage id="workInProgress">
         <Translation id="workInProgress" />
       </WarningMessage>
       <Content>

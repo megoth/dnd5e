@@ -84,7 +84,7 @@ export default function SpellsPage() {
 
   return (
     <Layout>
-      <WarningMessage>
+      <WarningMessage id="workInProgress">
         <Translation id="workInProgress" />
       </WarningMessage>
       <Content>
