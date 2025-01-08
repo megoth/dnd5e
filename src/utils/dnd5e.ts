@@ -44,6 +44,10 @@ export function classHasSorceryPoints(classInfo: Class): boolean {
   );
 }
 
+export function classHasSpellcasting(classInfo: Class): boolean {
+  return !!classInfo.classSpellcasting;
+}
+
 export function classHasSpellsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
     (level) => parseInt(level.levelSpellcasting?.spellsKnown, 10) > 0,
