@@ -48,7 +48,7 @@ export default function SpellPage() {
   }
 
   return (
-    <Layout pageName="spellsPageTitle">
+    <Layout>
       <WarningMessage>
         <Translation id="workInProgress" />
       </WarningMessage>

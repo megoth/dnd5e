@@ -26,7 +26,7 @@ export default function FAQPage() {
   );
 
   return (
-    <Layout pageName="faqPageTitle">
+    <Layout>
       <Content>
         <h1>
           <Translation id="faqPageTitle" />

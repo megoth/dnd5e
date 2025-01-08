@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function AdminFAQPAge() {
   return (
-    <Layout pageName="faqPageTitle">
+    <Layout>
       <Content>
         <h1>
           <Translation id="faqsPageTitle" />

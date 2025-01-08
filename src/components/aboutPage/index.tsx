@@ -34,7 +34,7 @@ export default function AboutPage() {
   const { currentLocale } = useApp();
 
   return (
-    <Layout pageName={"aboutPageTitle"}>
+    <Layout>
       {currentLocale !== "en-US" && (
         <WarningMessage data-testid={TESTID_ABOUT_PAGE_LANGUAGE_WARNING}>
           <Translation id="onlyAvailableInEnglish" />

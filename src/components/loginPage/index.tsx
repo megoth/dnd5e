@@ -16,7 +16,7 @@ export default function LoginPage() {
   const providers = getProviders();
   const redirectURL = getRedirectURL("");
   return (
-    <Layout full pageName={"loginPageTitle"}>
+    <Layout>
       <LoggedInAlreadyWarning className={bem("main-container", "content")} />
       <div className="main-container px-4 lg:px-0 md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
         <div>

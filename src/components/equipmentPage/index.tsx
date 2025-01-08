@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function EquipmentPage() {
   return (
-    <Layout pageName={"equipmentPageTitle"}>
+    <Layout>
       <Content>
         <h1>
           <Translation id="equipmentPageTitle" />

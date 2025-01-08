@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function LanguagesPage() {
   return (
-    <Layout pageName={"languagesPageTitle"}>
+    <Layout>
       <Content>
         <h1>
           <Translation id="languagesPageTitle" />

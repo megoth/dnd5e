@@ -52,7 +52,7 @@ export default function ClassPage() {
   }
 
   return (
-    <Layout pageName="classesPageTitle">
+    <Layout>
       <WarningMessage>
         <Translation id="workInProgress" />
       </WarningMessage>

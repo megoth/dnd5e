@@ -72,7 +72,7 @@ export default function SpellsPage() {
   }
 
   return (
-    <Layout pageName={"spellsPageTitle"}>
+    <Layout>
       <WarningMessage>
         <Translation id="workInProgress" />
       </WarningMessage>

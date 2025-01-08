@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function ErrorsPage() {
   return (
-    <Layout pageName="errorsPageTitle">
+    <Layout>
       <Content>
         <h1>
           <Translation id="errorsPageTitle" />

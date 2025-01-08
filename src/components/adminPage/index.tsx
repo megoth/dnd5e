@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function AdminPage() {
   return (
-    <Layout pageName="adminPageTitle">
+    <Layout>
       <Content>
         <h1>
           <Translation id="adminPageTitle" />

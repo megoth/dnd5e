@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <Layout pageName={"homePageTitle"}>
+    <Layout>
       <Content>
         <h1>You are logged in!</h1>
         <p>This part is in development, more will come.</p>

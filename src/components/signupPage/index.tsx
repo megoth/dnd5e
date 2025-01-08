@@ -14,7 +14,7 @@ import { bem } from "../../utils/bem";
 export default function SignupPage() {
   const { l10n } = useLocalization();
   return (
-    <Layout pageName="signupPageTitle" full>
+    <Layout full>
       <Content className={bem("layout__main", "content")}>
         <h1>
           <Translation id="signupPageTitle" />

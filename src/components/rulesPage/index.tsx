@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function RulesPage() {
   return (
-    <Layout pageName={"rulesPageTitle"}>
+    <Layout>
       <Content>
         <h1>
           <Translation id="rulesPageTitle" />

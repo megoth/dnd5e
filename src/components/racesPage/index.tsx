@@ -6,7 +6,7 @@ import WarningMessage from "../warningMessage";
 
 export default function RacesPage() {
   return (
-    <Layout pageName={"racesPageTitle"}>
+    <Layout>
       <Content>
         <h1>
           <Translation id="racesPageTitle" />

@@ -23,7 +23,6 @@ function isInsideTable(target: HTMLElement): boolean {
 interface Props extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;
   header?: boolean;
-  pageName?: string;
   className?: string;
 }
 
@@ -31,7 +30,6 @@ export default function Layout({
   children,
   full = false,
   header = true,
-  pageName,
   className,
   ...props
 }: Props) {
