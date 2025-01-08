@@ -2,7 +2,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+:abilityBonuses skos:definition "Evnebonuser"@nb-NO .
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
+:age skos:definition "Alder"@nb-NO .
+:alignment skos:definition "Innretning"@nb-NO .
 :and skos:definition "og"@nb-NO .
 :appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 :appName skos:definition "D&D5e Solid App"@nb-NO .
@@ -118,6 +121,7 @@
         leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
 :signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 :signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
+:size skos:definition "Størrelse"@nb-NO .
 :slotLevel skos:definition "Plassnivå"@nb-NO .
 :sneakAttack skos:definition "Snikangrep"@nb-NO .
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .

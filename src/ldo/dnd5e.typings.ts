@@ -68,7 +68,7 @@ export interface Alignment {
 export interface AreaOfEffect {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  size: number;
+  areaSize: number;
   ofType: string;
 }
 

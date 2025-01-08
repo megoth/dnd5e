@@ -18,6 +18,7 @@ export default function RacesPage() {
   if (isLoading) {
     return <Loading />;
   }
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />

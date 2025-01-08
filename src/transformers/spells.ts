@@ -44,7 +44,7 @@ export function transformSpell(
   spell.areaOfEffect =
     data.area_of_effect &&
     ldoDataset.usingType(AreaOfEffectShapeType).fromJson({
-      size: data.area_of_effect.size,
+      areaSize: data.area_of_effect.size,
       ofType: data.area_of_effect.type,
     });
   spell.ritual = data.ritual;

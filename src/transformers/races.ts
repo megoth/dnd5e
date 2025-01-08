@@ -29,11 +29,10 @@ export function transformRace(
         .fromSubject(apiUrlToSubjectUrl(bonus.ability_score.url)),
     }),
   );
-  // abilityBonuses
-  // alignment
-  // age
-  // size
-  // sizeDescription
+  race.alignmentDescription = data.alignment;
+  race.age = data.age;
+  race.size = data.size.toString();
+  race.sizeDescription = data.size_description;
   // startingProficiencies
   // startingProficiencyOptions
   // languages

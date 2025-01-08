@@ -158,8 +158,12 @@ export function rageCount(count: number): string {
   return count === 9999 ? "Unlimited" : count.toString();
 }
 
-export function raceResources(_: Race): string[] {
-  return [];
+export function raceResources(race: Race): string[] {
+  return [
+    ...race.abilityBonuses.map((bonus) =>
+      resourceUrl(bonus.abilityScore["@id"]),
+    ),
+  ];
 }
 
 export function spellDuration(spell: Spell, l10n: ReactLocalization): string {

@@ -48,12 +48,9 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#actionType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  size: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#size",
-    "@type": [
-      "http://www.w3.org/2001/XMLSchema#integer",
-      "http://www.w3.org/2001/XMLSchema#string",
-    ],
+  areaSize: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#areaSize",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   ofType: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ofType",
@@ -649,6 +646,10 @@ export const dnd5eContext: ContextDefinition = {
   },
   age: {
     "@id": "https://dnd5e.app/vocab/dnd5e#age",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  size: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#size",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
   sizeDescription: {

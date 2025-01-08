@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import { useParams } from "react-router-dom";
@@ -46,6 +46,38 @@ export default function RacePage() {
       <Content>
         <h1>{race.label}</h1>
         <dl className="data-list">
+          <dt>
+            <Translation id="abilityBonuses" />
+          </dt>
+          <dd>
+            {race.abilityBonuses.map((bonus, index) => (
+              <span key={bonus.abilityScore["@id"]} className="inline-block">
+                +{bonus.bonus} {bonus.abilityScore.label}
+                {index !== race.abilityBonuses.length - 1 && ","}
+                &nbsp;
+              </span>
+            ))}
+          </dd>
+          {race.age && (
+            <>
+              <dt>
+                <Translation id="age" />
+              </dt>
+              <dd>{race.age}</dd>
+            </>
+          )}
+          {race.alignmentDescription && (
+            <>
+              <dt>
+                <Translation id="alignment" />
+              </dt>
+              <dd>{race.alignmentDescription}</dd>
+            </>
+          )}
+          <dt>
+            <Translation id="size" />
+          </dt>
+          <dd>{race.sizeDescription || race.size}</dd>
           <dt>
             <Translation id="speed" />
           </dt>

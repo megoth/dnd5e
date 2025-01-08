@@ -2,18 +2,30 @@
 <#dwarf> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarf" .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1314 .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order." .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#age> "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years." .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium." .
 _:b1314 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1314 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
 <#elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#elf> <http://www.w3.org/2000/01/rdf-schema#label> "Elf" .
 <#elf> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
 <#elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1315 .
+<#elf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not." .
+<#elf> <https://dnd5e.app/vocab/dnd5e#age> "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old." .
+<#elf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#elf> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium." .
 _:b1315 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1315 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#halfling> <http://www.w3.org/2000/01/rdf-schema#label> "Halfling" .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1316 .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways." .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#age> "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century." .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small." .
 _:b1316 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1316 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
@@ -25,6 +37,10 @@ _:b1316 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#d
 <#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1320 .
 <#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1321 .
 <#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1322 .
+<#human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Humans tend toward no particular alignment. The best and the worst are found among them." .
+<#human> <https://dnd5e.app/vocab/dnd5e#age> "Humans reach adulthood in their late teens and live less than a century." .
+<#human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#human> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium." .
 _:b1317 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
 _:b1317 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
 _:b1318 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
@@ -42,6 +58,10 @@ _:b1322 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1323 .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1324 .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains." .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#age> "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80." .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium." .
 _:b1323 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1323 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
 _:b1324 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
@@ -50,12 +70,20 @@ _:b1324 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#gnome> <http://www.w3.org/2000/01/rdf-schema#label> "Gnome" .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1325 .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious." .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#age> "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years." .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small." .
 _:b1325 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1325 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
 <#half-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#half-elf> <http://www.w3.org/2000/01/rdf-schema#label> "Half-Elf" .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1326 .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable." .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#age> "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years." .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium." .
 _:b1326 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1326 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
 <#half-orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
@@ -63,6 +91,10 @@ _:b1326 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1327 .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1328 .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil." .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#age> "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years." .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium." .
 _:b1327 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1327 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
 _:b1328 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
@@ -72,6 +104,10 @@ _:b1328 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1329 .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b1330 .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment." .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#age> "Tieflings mature at the same rate as humans but live a few years longer." .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Tieflings are about the same size and build as humans. Your size is Medium." .
 _:b1329 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
 _:b1329 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
 _:b1330 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
