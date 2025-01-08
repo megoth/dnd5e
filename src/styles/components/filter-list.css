@@ -1,5 +1,5 @@
 .filter-list {
-    @apply w-full ps-4 text-sm lg:text-base;
+    @apply w-full ps-4 text-sm lg:text-base overflow-auto;
 }
 
 .filter-list > dt {
@@ -9,7 +9,7 @@
     content: ":";
 }
 .filter-list > dd {
-    @apply hyphens-none flex gap-2 flex-wrap;
+    @apply float-start hyphens-none flex gap-2 flex-wrap;
 }
 .filter-list > dd a[aria-selected="true"] {
     @apply text-white;

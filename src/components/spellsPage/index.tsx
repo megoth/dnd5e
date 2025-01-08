@@ -4,7 +4,11 @@ import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
 import useListOfType from "../../hooks/useListOfType";
-import { ClassShapeType, SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
+import {
+  ClassShapeType,
+  MagicSchoolShapeType,
+  SpellShapeType,
+} from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import { NavLink, useSearchParams } from "react-router-dom";
 import { useLocalization } from "@fluent/react";
@@ -19,6 +23,11 @@ export default function SpellsPage() {
     "spells",
     "Spell",
   );
+  const { isLoading: schoolsLoading, items: schools } = useListOfType(
+    MagicSchoolShapeType,
+    "spells",
+    "MagicSchool",
+  );
   const { isLoading: classesLoading, items: classes } = useListOfType(
     ClassShapeType,
     "classes",
@@ -28,6 +37,8 @@ export default function SpellsPage() {
   const classFilter = first(searchParams.get("class"));
   const classFilterDecoded = classFilter && atob(classFilter);
   const levelFilter = first(searchParams.get("level"));
+  const schoolFilter = first(searchParams.get("school"));
+  const schoolFilterDecoded = schoolFilter && atob(schoolFilter);
 
   const mergeQuery = useCallback(
     (query: Record<string, string | string[]>): string => {
@@ -67,7 +78,7 @@ export default function SpellsPage() {
     [searchParams],
   );
 
-  if (spellsLoading || classesLoading) {
+  if (spellsLoading || classesLoading || schoolsLoading) {
     return <Loading />;
   }
 
@@ -126,6 +137,28 @@ export default function SpellsPage() {
               );
             })}
           </dd>
+          <dt>
+            <Translation id="school" />
+          </dt>
+          <dd>
+            {schools.map((school) => {
+              const active =
+                schoolFilter && schoolFilterDecoded === school["@id"];
+              return (
+                <NavLink
+                  key={school["@id"]}
+                  to={
+                    active
+                      ? reduceQuery("school")
+                      : mergeQuery({ school: btoa(school["@id"]) })
+                  }
+                  aria-selected={active}
+                >
+                  {school.label}
+                </NavLink>
+              );
+            })}
+          </dd>
         </dl>
         <div className="table-container">
           <table className={bem("table", "compact")}>
@@ -158,13 +191,16 @@ export default function SpellsPage() {
               {spells
                 .filter(
                   (spell) =>
-                    (classFilter
+                    (classFilterDecoded
                       ? !!spell.classes.find(
                           (classInfo) =>
                             classInfo["@id"] === classFilterDecoded,
                         )
                       : true) &&
-                    (levelFilter ? spell.level === levelFilter : true),
+                    (levelFilter ? spell.level === levelFilter : true) &&
+                    (schoolFilterDecoded
+                      ? spell.magicSchool["@id"] === schoolFilterDecoded
+                      : true),
                 )
                 .map((spell) => (
                   <tr key={spell["@id"]}>

@@ -1,6 +1,10 @@
 import MiniSearch from "minisearch";
 import useListOfType from "../useListOfType";
-import { ClassShapeType, SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
+import {
+  ClassShapeType,
+  MagicSchoolShapeType,
+  SpellShapeType,
+} from "../../ldo/dnd5e.shapeTypes";
 import { type DependencyList, useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
 
@@ -63,10 +67,24 @@ export default function useSearch() {
       }),
   );
 
-  const isLoading = classesLoading || spellLoading;
+  const { isLoading: schoolsLoading } = useIndexer(
+    MagicSchoolShapeType,
+    "spells",
+    "MagicSchool",
+    (school) =>
+      !search.has(school["@id"]) &&
+      (() => {
+        search.add({
+          id: school["@id"],
+          type: "school",
+          title: school.label,
+          url: `/spells/?school=${btoa(school["@id"])}`,
+        });
+      })(),
+  );
 
   return {
-    isLoading,
+    isLoading: classesLoading || spellLoading || schoolsLoading,
     search,
   };
 }
