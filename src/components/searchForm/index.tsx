@@ -25,7 +25,7 @@ export default function SearchForm({ modifier, path }: Props) {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
     navigate(
-      `${path}?search=${encodeURIComponent(formData.get("search").toString())}`,
+      `${path || ""}?search=${encodeURIComponent(formData.get("search").toString())}`,
     );
   };
 
