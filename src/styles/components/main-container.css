@@ -7,7 +7,7 @@
 }
 
 .main-container--header {
-  @apply lg:container lg:flex-col;
+  @apply bg-white dark:bg-gray-800 lg:container lg:flex-col;
 }
 @media screen and (min-width: 1024px) {
   .main-container--header {

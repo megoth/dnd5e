@@ -21,7 +21,10 @@ export default function PageHeader({ className, ...props }: Props) {
   const { session } = useSolidAuth();
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
   return (
-    <header className={clsx("mb-2 shadow shadow-md", className)} {...props}>
+    <header
+      className={clsx("mb-2 shadow-md sticky top-0 lg:relative", className)}
+      {...props}
+    >
       <div className={bem("main-container", "header")}>
         <NavLink
           to="/"
