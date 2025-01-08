@@ -8,6 +8,7 @@ import {
 } from "../../ldo/dnd5e.shapeTypes";
 import { type DependencyList, useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
+import { useLocalization } from "@fluent/react";
 
 function useIndexer<Type>(
   shapeType: ShapeType<Type>,
@@ -22,6 +23,7 @@ function useIndexer<Type>(
 }
 
 export default function useSearch() {
+  const { l10n } = useLocalization();
   const search = new MiniSearch({
     fields: ["title"],
     searchOptions: {
@@ -42,12 +44,14 @@ export default function useSearch() {
           id: classInfo["@id"],
           type: "class",
           title: classInfo.label,
+          text: [l10n.getString("descriptionOf", { type: classInfo.label })],
           url: `/classes/${btoa(classInfo["@id"])}`,
         });
         search.add({
           id: `${classInfo["@id"]}-spells`,
           type: "spells",
           title: classInfo.label,
+          text: [l10n.getString("spellsFor", { type: classInfo.label })],
           url: `/spells/?class=${btoa(classInfo["@id"])}`,
         });
       })(),
@@ -64,6 +68,7 @@ export default function useSearch() {
           id: race["@id"],
           type: "race",
           title: race.label,
+          text: [l10n.getString("descriptionOf", { type: race.label })],
           url: `/races/${btoa(race["@id"])}`,
         });
       })(),
@@ -95,6 +100,7 @@ export default function useSearch() {
           id: school["@id"],
           type: "school",
           title: school.label,
+          text: [l10n.getString("spellsFor", { type: school.label })],
           url: `/spells/?school=${btoa(school["@id"])}`,
         });
       })(),

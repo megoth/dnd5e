@@ -38,6 +38,7 @@
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+:descriptionOf skos:definition "Description of {$type}"@en-US .
 :dice skos:definition "{$count}d{$value}"@en-US .
 :duration skos:definition "Duration"@en-US .
 :encountersPageTitle skos:definition "Encounters"@en-US .
@@ -134,6 +135,7 @@
 :spell skos:definition "Spell"@en-US .
 :spellNote skos:definition "{$order}-level {$school}"@en-US .
 :spells skos:definition "Spells"@en-US .
+:spellsFor skos:definition "Spells for {$type}"@en-US .
 :spellsKnown skos:definition "Spells Known"@en-US .
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
