@@ -15,7 +15,7 @@
 }
 
 .button--subtle {
-  @apply bg-transparent border-0 hover:bg-transparent hover:border-0;
+  @apply bg-transparent border-0 hover:bg-transparent hover:border-0 p-0;
 }
 
 .button--solid {

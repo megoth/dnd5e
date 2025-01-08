@@ -11,3 +11,6 @@
 .data-list > dd {
     @apply hyphens-none;
 }
+.data-list > dd p {
+    @apply mt-0 mb-2;
+}
