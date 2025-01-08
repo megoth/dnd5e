@@ -19,7 +19,7 @@ export default function transformMulticlassing(
         abilityScore: ldoDataset
           .usingType(AbilityScoreShapeType)
           .fromSubject(
-            dataUrl("abilityScores", prerequisite.ability_score.index),
+            dataUrl("ability-scores", prerequisite.ability_score.index),
           ),
         minimumScore: prerequisite.minimum_score,
       }),

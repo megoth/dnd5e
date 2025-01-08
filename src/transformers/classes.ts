@@ -77,7 +77,7 @@ function transformClass(
   adventureClass.savingThrows = data.saving_throws.map((savingThrow) =>
     ldoDataset
       .usingType(AbilityScoreShapeType)
-      .fromSubject(dataUrl("abilityScores", savingThrow.index)),
+      .fromSubject(dataUrl("ability-scores", savingThrow.index)),
   );
   adventureClass.subclasses = data.subclasses.map((subclass) =>
     ldoDataset

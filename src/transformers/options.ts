@@ -70,7 +70,7 @@ export function transformScorePrerequisiteOption(
   return ldoDataset.usingType(ScorePrerequisiteOptionShapeType).fromJson({
     abilityScore: ldoDataset
       .usingType(AbilityScoreShapeType)
-      .fromSubject(dataUrl("abilityScores", data.ability_score.index)),
+      .fromSubject(dataUrl("ability-scores", data.ability_score.index)),
     minimumScore: data.minimum_score,
   });
 }

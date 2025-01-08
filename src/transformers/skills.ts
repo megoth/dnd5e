@@ -19,7 +19,7 @@ export function transformSkill(
   skill.description = data.desc;
   skill.abilityScore = createLdoDataset()
     .usingType(AbilityScoreShapeType)
-    .fromSubject(dataUrl("abilityScores", data.ability_score.index));
+    .fromSubject(dataUrl("ability-scores", data.ability_score.index));
   return skill;
 }
 
