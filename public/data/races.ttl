@@ -19,6 +19,7 @@
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#stonecunning> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#dwarven-combat-training> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#tool-proficiency> .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#hill-dwarf> .
 _:b1314 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1314 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
 _:b1315 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
@@ -48,6 +49,7 @@ _:b1319 <https://dnd5e.app/vocab/dnd5e#from> _:b1318 .
 <#elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#fey-ancestry> .
 <#elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#trance> .
 <#elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#keen-senses> .
+<#elf> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
 _:b1320 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1320 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
@@ -64,6 +66,7 @@ _:b1320 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#d
 <#halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#brave> .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#halfling-nimbleness> .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#lucky> .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#lightfoot-halfling> .
 _:b1321 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1321 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
@@ -125,6 +128,7 @@ _:b1329 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#gnome> <https://dnd5e.app/vocab/dnd5e#languageDescription> "You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world." .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#darkvision> .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#gnome-cunning> .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#rock-gnome> .
 _:b1330 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
 _:b1330 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
 <#half-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .

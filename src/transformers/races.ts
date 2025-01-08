@@ -6,6 +6,7 @@ import {
   LanguageShapeType,
   ProficiencyShapeType,
   RaceShapeType,
+  SubraceShapeType,
   TraitShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Race } from "../ldo/dnd5e.typings";
@@ -56,7 +57,11 @@ export function transformRace(
       .usingType(TraitShapeType)
       .fromSubject(apiUrlToSubjectUrl(trait.url)),
   );
-  // subraces
+  race.subraces = data.subraces.map((subrace) =>
+    ldoDataset
+      .usingType(SubraceShapeType)
+      .fromSubject(apiUrlToSubjectUrl(subrace.url)),
+  );
   return race;
 }
 
