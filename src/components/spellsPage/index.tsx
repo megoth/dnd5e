@@ -15,6 +15,8 @@ import { useLocalization } from "@fluent/react";
 import { classHasSpellcasting, spellDuration } from "../../utils/dnd5e";
 import { bem } from "../../utils/bem";
 import { first } from "../../utils/array";
+import useMergeQuery from "../../hooks/useMergeQuery";
+import useReduceQuery from "../../hooks/useReduceQuery";
 
 export default function SpellsPage() {
   const { l10n } = useLocalization();
@@ -40,43 +42,8 @@ export default function SpellsPage() {
   const schoolFilter = first(searchParams.get("school"));
   const schoolFilterDecoded = schoolFilter && atob(schoolFilter);
 
-  const mergeQuery = useCallback(
-    (query: Record<string, string | string[]>): string => {
-      const queries = searchParams.entries().reduce(
-        (params, [key, value]) => ({
-          ...params,
-          [key]: value,
-        }),
-        {} as Record<string, Array<string>>,
-      );
-      return `?${Object.entries({
-        ...queries,
-        ...query,
-      })
-        .map(([key, value]) => `${key}=${value}`)
-        .join("&")}`;
-    },
-    [searchParams],
-  );
-
-  const reduceQuery = useCallback(
-    (...keys: string[]) => {
-      const queries = searchParams.entries().reduce(
-        (params, [key, value]) =>
-          keys.indexOf(key) === -1
-            ? {
-                ...params,
-                [key]: value,
-              }
-            : params,
-        {} as Record<string, Array<string>>,
-      );
-      return `?${Object.entries(queries)
-        .map(([key, value]) => `${key}=${value}`)
-        .join("&")}`;
-    },
-    [searchParams],
-  );
+  const mergeQuery = useMergeQuery();
+  const reduceQuery = useReduceQuery();
 
   if (spellsLoading || classesLoading || schoolsLoading) {
     return <Loading />;
