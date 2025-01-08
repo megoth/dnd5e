@@ -49,9 +49,7 @@ export default function SpellPage() {
 
   return (
     <Layout>
-      <WarningMessage id="workInProgress">
-        <Translation id="workInProgress" />
-      </WarningMessage>
+      <WarningMessage id="workInProgress" />
       <Content>
         <h1>{spell.label}</h1>
         <p className="notification">

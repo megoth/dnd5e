@@ -5,7 +5,7 @@ import Translation from "../translation";
 import { bem } from "../../utils/bem";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
   id?: string;
 }
@@ -29,7 +29,7 @@ export default function WarningMessage({
         id={id}
         {...props}
       >
-        {children}
+        {children || <Translation id={id} />}
         {id && (
           <button
             className={clsx(

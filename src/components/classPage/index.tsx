@@ -53,9 +53,7 @@ export default function ClassPage() {
 
   return (
     <Layout>
-      <WarningMessage id="workInProgress">
-        <Translation id="workInProgress" />
-      </WarningMessage>
+      <WarningMessage id="workInProgress" />
       <Content>
         <h1>{classInfo.label}</h1>
         <ClassPageMulticlassing classInfo={classInfo} />

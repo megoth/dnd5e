@@ -21,9 +21,7 @@ export default function ClassesPage() {
 
   return (
     <Layout>
-      <WarningMessage id="workInProgress">
-        <Translation id="workInProgress" />
-      </WarningMessage>
+      <WarningMessage id="workInProgress" />
       <Content>
         <h1>
           <Translation id="classesPageTitle" />
