@@ -487,7 +487,7 @@ export interface FeatureSpecific {
 export interface Gear {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  gearCategory?: string;
+  gearCategory?: EquipmentCategory;
   weight?: number;
 }
 

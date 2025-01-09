@@ -5,10 +5,11 @@ import {
   ArmorShapeType,
   EquipmentCategoryShapeType,
   EquipmentShapeType,
+  GearShapeType,
   WeaponPropertyShapeType,
   WeaponShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { Armor, Equipment, Weapon } from "../ldo/dnd5e.typings";
+import { Armor, Equipment, Gear, Weapon } from "../ldo/dnd5e.typings";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
@@ -32,6 +33,18 @@ function transformArmor(
       }),
     strMinimum: data.str_minimum,
     stealthDisadvantage: data.stealth_disadvantage,
+    weight: data.weight,
+  });
+}
+
+function transformGear(
+  data: components["schemas"]["Gear"],
+  ldoDataset = createLdoDataset(),
+): Gear {
+  return ldoDataset.usingType(GearShapeType).fromJson({
+    gearCategory: ldoDataset
+      .usingType(EquipmentCategoryShapeType)
+      .fromSubject(apiUrlToSubjectUrl(data.gear_category.url)),
     weight: data.weight,
   });
 }
@@ -80,7 +93,10 @@ export function transformEquipment(
   equipment.armor =
     data["armor_category"] &&
     transformArmor(data as components["schemas"]["Armor"], ldoDataset);
-  // gear
+  equipment.gear =
+    data["gear_category"] &&
+    data["weight"] &&
+    transformGear(data as components["schemas"]["Gear"]);
   // equipmentPack
   return equipment;
 }

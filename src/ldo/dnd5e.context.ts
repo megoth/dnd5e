@@ -381,7 +381,7 @@ export const dnd5eContext: ContextDefinition = {
   },
   gearCategory: {
     "@id": "https://dnd5e.app/vocab/dnd5e#gearCategory",
-    "@type": ["http://www.w3.org/2001/XMLSchema#string", "@id"],
+    "@type": "@id",
   },
   equipmentPack: {
     "@id": "https://dnd5e.app/vocab/dnd5e#equipmentPack",

@@ -1945,10 +1945,8 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#gearCategory",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
               min: 0,
               max: 1,
             },
