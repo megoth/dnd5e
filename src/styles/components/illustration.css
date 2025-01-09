@@ -30,7 +30,7 @@
     .illustration {
         max-height: 512px;
     }
-    .illustration > img {
+    .illustration:not(.illustration--compact) > img {
         margin-top: 0;
     }
 }
