@@ -732,6 +732,22 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  illustration: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#illustration",
+    "@type": "@id",
+  },
+  imageUrl: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#imageUrl",
+    "@type": "@id",
+  },
+  creator: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#creator",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  creatorUrl: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#creatorUrl",
+    "@type": "@id",
+  },
   races: {
     "@id": "https://dnd5e.app/vocab/dnd5e#races",
     "@type": "@id",

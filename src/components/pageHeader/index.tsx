@@ -22,7 +22,10 @@ export default function PageHeader({ className, ...props }: Props) {
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
   return (
     <header
-      className={clsx("mb-2 shadow-md sticky top-0 lg:relative", className)}
+      className={clsx(
+        "mb-2 shadow-md sticky top-0 lg:relative z-10",
+        className,
+      )}
       {...props}
     >
       <div className={bem("main-container", "header")}>

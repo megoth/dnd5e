@@ -188,6 +188,7 @@ export interface Class {
   classSpellcasting: ClassSpellcasting;
   spells?: Spell[];
   subclasses?: Subclass[];
+  illustration?: Illustration;
 }
 
 /**
@@ -499,6 +500,23 @@ export interface IdealOption {
   alignments?: {
     "@id": string;
   }[];
+}
+
+/**
+ * Illustration Type
+ */
+export interface Illustration {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  imageUrl: {
+    "@id": string;
+  };
+  description?: string;
+  creator?: string;
+  creatorUrl?: {
+    "@id": string;
+  };
 }
 
 /**

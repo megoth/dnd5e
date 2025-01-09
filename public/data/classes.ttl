@@ -2504,3 +2504,9 @@ _:b498 <http://purl.org/dc/terms/description> "Choose two from Arcana, History, 
 _:b498 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b498 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
 _:b498 <https://dnd5e.app/vocab/dnd5e#from> _:b497 .
+<#barbarian> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#barbarian> .
+<#bard> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#bard> .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#cleric> .
+<#druid> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#druid> .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#fighter> .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#paladin> .

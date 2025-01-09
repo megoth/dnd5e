@@ -1,0 +1,33 @@
+.illustration {
+    @apply -mx-4 mb-4 overflow-hidden relative;
+    max-height: 256px;
+    max-width: 512px;
+}
+.illustration > img {
+    @apply w-full relative;
+    margin-top: -25%;
+}
+
+.illustration__creator {
+    @apply absolute bottom-0 right-0 p-2 bg-black text-gray-500 leading-none rounded-tl-md text-sm;
+}
+.illustration__creator a {
+    @apply text-gray-500;
+}
+.illustration__creator p {
+    @apply m-0;
+}
+
+@media screen and (min-width: 65ch) {
+    .illustration {
+        @apply mx-0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .illustration {
+        max-height: 512px;
+    }
+    .illustration > img {
+        margin-top: 0;
+    }
+}

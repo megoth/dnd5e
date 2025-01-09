@@ -2,6 +2,11 @@ import { Choice, Class, ClassLevel, Race, Spell } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 
+export function addendumPath(type: string): string {
+  // only used backend
+  return `${process.cwd()}/src/transformers/${type}-addendum.ttl`;
+}
+
 export function classHasCantripsKnown(classInfo: Class): boolean {
   return !!classInfo.levels.find(
     (level) => level.levelSpellcasting?.cantripsKnown > 0,
@@ -120,6 +125,7 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...(classInfo.multiclassing?.prerequisiteOptions
       ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteOptions)
       : []),
+    resourceUrl(classInfo.illustration?.["@id"]),
   ];
 }
 

@@ -41,6 +41,7 @@ import {
   FeatureSpecific,
   Gear,
   IdealOption,
+  Illustration,
   Language,
   MagicSchool,
   Multiclassing,
@@ -429,6 +430,15 @@ export const GearShapeType: ShapeType<Gear> = {
 export const IdealOptionShapeType: ShapeType<IdealOption> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#IdealOption",
+  context: dnd5eContext,
+};
+
+/**
+ * Illustration ShapeType
+ */
+export const IllustrationShapeType: ShapeType<Illustration> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
   context: dnd5eContext,
 };
 

@@ -16,6 +16,7 @@ import { classResourceUrls } from "../../utils/dnd5e";
 import ClassPageLevels from "./levels";
 import ClassPageFeatures from "./features";
 import ClassPageMulticlassing from "./multiclassing";
+import Illustration from "../illustration";
 
 export default function ClassPage() {
   const params = useParams();
@@ -55,6 +56,9 @@ export default function ClassPage() {
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
+        {classInfo.illustration && (
+          <Illustration src={classInfo.illustration} />
+        )}
         <h1>{classInfo.label}</h1>
         <ClassPageMulticlassing classInfo={classInfo} />
         <ClassPageLevels classInfo={classInfo} />

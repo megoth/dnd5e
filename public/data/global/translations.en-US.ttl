@@ -57,6 +57,7 @@
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
 :ignore skos:definition "Ignore"@en-US .
+:illustrationCreatedBy skos:definition "Illustration created by {$creator}"@en-US .
 :invocationsKnown skos:definition "Invocations Known"@en-US .
 :kiPoints skos:definition "Ki Points"@en-US .
 :languages skos:definition "Languages"@en-US .

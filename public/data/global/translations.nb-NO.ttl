@@ -58,6 +58,7 @@
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
 :ignore skos:definition "Ignorer"@nb-NO .
+:illustrationCreatedBy skos:definition "Illustrasjon lagd av {$creator}"@nb-NO .
 :invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
 :kiPoints skos:definition "Ki poeng"@nb-NO .
 :languages skos:definition "Språk"@nb-NO .

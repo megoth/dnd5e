@@ -1,0 +1,6 @@
+<#barbarian> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#barbarian> .
+<#bard> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#bard> .
+<#cleric> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#cleric> .
+<#druid> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#druid> .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#fighter> .
+<#paladin> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#paladin> .

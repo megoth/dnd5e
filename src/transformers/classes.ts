@@ -12,13 +12,19 @@ import {
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Class } from "../ldo/dnd5e.typings";
-import { apiUrlToSubjectUrl, dataPath, dataUrl } from "../utils/dnd5e";
+import {
+  addendumPath,
+  apiUrlToSubjectUrl,
+  dataPath,
+  dataUrl,
+} from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
 import { transformStartingEquipment } from "./startingEquipment";
 import classes from "../dnd5eapi-data/5e-SRD-Classes.json";
 import { classSpells } from "./spells";
+import { readFileSync } from "fs";
 
 function transformClass(
   data: components["schemas"]["Class"],
@@ -93,5 +99,6 @@ export default async function writeClasses() {
       classes.map((adventureClass) => toTurtle(transformClass(adventureClass))),
     )
   ).reduce((memo, condition) => memo.concat(condition));
-  writeFileSync(dataPath("classes"), turtle);
+  const addendum = readFileSync(addendumPath("classes"), "utf-8");
+  writeFileSync(dataPath("classes"), turtle + addendum);
 }
