@@ -13,6 +13,8 @@
         """Manage your characters in Dungeons & Dragons 5th edition. You are in control of where the information is stored,
         and which rulesets to use, whether that be official or homebrewn."""@en-US .
 :appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
+:armor skos:definition "Armor"@en-US .
+:armorClass skos:definition "Armor Class"@en-US .
 :atHigherLevels skos:definition "At Higher Levels"@en-US .
 :authenticationGuidance skos:definition
         """Choose an identity provider from the list, or provide one yourself."""@en-US .
@@ -41,7 +43,9 @@
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
+:dexModifier skos:definition "Dex modifier"@en-US .
 :dice skos:definition "{$count}d{$value}"@en-US .
+:disadvantage skos:definition "Disadvantage"@en-US .
 :duration skos:definition "Duration"@en-US .
 :encountersPageTitle skos:definition "Encounters"@en-US .
 :equipment skos:definition "Equipment"@en-US .
@@ -76,6 +80,7 @@
 :loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 :logOut skos:definition "Log out"@en-US .
 :martialArts skos:definition "Martial Arts"@en-US .
+:max skos:definition "Max"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
 :multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
@@ -146,6 +151,8 @@
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
+:stealth skos:definition "Stealth"@en-US .
+:strength skos:definition "Strength"@en-US .
 :subclasses skos:definition "Subclasses"@en-US .
 :suggestions skos:definition "Suggestions"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .

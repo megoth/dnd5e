@@ -1,17 +1,40 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
+  ArmorClassShapeType,
+  ArmorShapeType,
   EquipmentCategoryShapeType,
   EquipmentShapeType,
   WeaponPropertyShapeType,
   WeaponShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { Equipment, Weapon } from "../ldo/dnd5e.typings";
+import { Armor, Equipment, Weapon } from "../ldo/dnd5e.typings";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import equipment from "../dnd5eapi-data/5e-SRD-Equipment.json";
 import { transformDamage } from "./damage";
+
+function transformArmor(
+  data: components["schemas"]["Armor"],
+  ldoDataset = createLdoDataset(),
+): Armor {
+  return ldoDataset.usingType(ArmorShapeType).fromJson({
+    armorCategory: data.armor_category,
+    armorClass:
+      data.armor_class &&
+      ldoDataset.usingType(ArmorClassShapeType).fromJson({
+        base: parseInt(data.armor_class.base, 10),
+        dexBonus: data.armor_class.dex_bonus as unknown as boolean,
+        maxBonus:
+          data.armor_class.max_bonus &&
+          parseInt(data.armor_class.max_bonus, 10),
+      }),
+    strMinimum: data.str_minimum,
+    stealthDisadvantage: data.stealth_disadvantage,
+    weight: data.weight,
+  });
+}
 
 function transformWeapon(
   data: components["schemas"]["Weapon"],
@@ -54,7 +77,9 @@ export function transformEquipment(
   equipment.weapon =
     data["weapon_category"] &&
     transformWeapon(data as components["schemas"]["Weapon"], ldoDataset);
-  // armor
+  equipment.armor =
+    data["armor_category"] &&
+    transformArmor(data as components["schemas"]["Armor"], ldoDataset);
   // gear
   // equipmentPack
   return equipment;

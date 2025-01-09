@@ -693,269 +693,378 @@ _:b651 <https://dnd5e.app/vocab/dnd5e#long> 15 .
 <#padded-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Padded Armor" .
 <#padded-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
 <#padded-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b652 .
+<#padded-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b654 .
 _:b652 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
 _:b652 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b653 <https://dnd5e.app/vocab/dnd5e#base> 11 .
+_:b653 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b654 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Light" .
+_:b654 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b653 .
+_:b654 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b654 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b654 <https://dnd5e.app/vocab/dnd5e#weight> 8 .
 <#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Leather Armor" .
 <#leather-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#leather-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b653 .
-_:b653 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b653 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#leather-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b655 .
+<#leather-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b657 .
+_:b655 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b655 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b656 <https://dnd5e.app/vocab/dnd5e#base> 11 .
+_:b656 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b657 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Light" .
+_:b657 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b656 .
+_:b657 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b657 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b657 <https://dnd5e.app/vocab/dnd5e#weight> 10 .
 <#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#studded-leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Studded Leather Armor" .
 <#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b654 .
-_:b654 <https://dnd5e.app/vocab/dnd5e#quantity> 45 .
-_:b654 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b658 .
+<#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b660 .
+_:b658 <https://dnd5e.app/vocab/dnd5e#quantity> 45 .
+_:b658 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b659 <https://dnd5e.app/vocab/dnd5e#base> 12 .
+_:b659 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b660 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Light" .
+_:b660 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b659 .
+_:b660 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b660 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b660 <https://dnd5e.app/vocab/dnd5e#weight> 13 .
 <#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#hide-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Hide Armor" .
 <#hide-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#hide-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b655 .
-_:b655 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b655 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#hide-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b661 .
+<#hide-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b663 .
+_:b661 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b661 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b662 <https://dnd5e.app/vocab/dnd5e#base> 12 .
+_:b662 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b662 <https://dnd5e.app/vocab/dnd5e#maxBonus> 2 .
+_:b663 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Medium" .
+_:b663 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b662 .
+_:b663 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b663 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b663 <https://dnd5e.app/vocab/dnd5e#weight> 12 .
 <#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Shirt" .
 <#chain-shirt> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#chain-shirt> <https://dnd5e.app/vocab/dnd5e#cost> _:b656 .
-_:b656 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b656 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#chain-shirt> <https://dnd5e.app/vocab/dnd5e#cost> _:b664 .
+<#chain-shirt> <https://dnd5e.app/vocab/dnd5e#armor> _:b666 .
+_:b664 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b664 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b665 <https://dnd5e.app/vocab/dnd5e#base> 13 .
+_:b665 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b665 <https://dnd5e.app/vocab/dnd5e#maxBonus> 2 .
+_:b666 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Medium" .
+_:b666 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b665 .
+_:b666 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b666 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b666 <https://dnd5e.app/vocab/dnd5e#weight> 20 .
 <#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Scale Mail" .
 <#scale-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#scale-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b657 .
-_:b657 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b657 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#scale-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b667 .
+<#scale-mail> <https://dnd5e.app/vocab/dnd5e#armor> _:b669 .
+_:b667 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b667 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b668 <https://dnd5e.app/vocab/dnd5e#base> 14 .
+_:b668 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b668 <https://dnd5e.app/vocab/dnd5e#maxBonus> 2 .
+_:b669 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Medium" .
+_:b669 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b668 .
+_:b669 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b669 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b669 <https://dnd5e.app/vocab/dnd5e#weight> 45 .
 <#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Breastplate" .
 <#breastplate> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#breastplate> <https://dnd5e.app/vocab/dnd5e#cost> _:b658 .
-_:b658 <https://dnd5e.app/vocab/dnd5e#quantity> 400 .
-_:b658 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#breastplate> <https://dnd5e.app/vocab/dnd5e#cost> _:b670 .
+<#breastplate> <https://dnd5e.app/vocab/dnd5e#armor> _:b672 .
+_:b670 <https://dnd5e.app/vocab/dnd5e#quantity> 400 .
+_:b670 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b671 <https://dnd5e.app/vocab/dnd5e#base> 14 .
+_:b671 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b671 <https://dnd5e.app/vocab/dnd5e#maxBonus> 2 .
+_:b672 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Medium" .
+_:b672 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b671 .
+_:b672 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b672 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b672 <https://dnd5e.app/vocab/dnd5e#weight> 20 .
 <#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#half-plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Half Plate Armor" .
 <#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b659 .
-_:b659 <https://dnd5e.app/vocab/dnd5e#quantity> 750 .
-_:b659 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b673 .
+<#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b675 .
+_:b673 <https://dnd5e.app/vocab/dnd5e#quantity> 750 .
+_:b673 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b674 <https://dnd5e.app/vocab/dnd5e#base> 15 .
+_:b674 <https://dnd5e.app/vocab/dnd5e#dexBonus> true .
+_:b674 <https://dnd5e.app/vocab/dnd5e#maxBonus> 2 .
+_:b675 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Medium" .
+_:b675 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b674 .
+_:b675 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b675 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b675 <https://dnd5e.app/vocab/dnd5e#weight> 40 .
 <#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Ring Mail" .
 <#ring-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#ring-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b660 .
-_:b660 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b660 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#ring-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b676 .
+<#ring-mail> <https://dnd5e.app/vocab/dnd5e#armor> _:b678 .
+_:b676 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b676 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b677 <https://dnd5e.app/vocab/dnd5e#base> 14 .
+_:b677 <https://dnd5e.app/vocab/dnd5e#dexBonus> false .
+_:b678 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Heavy" .
+_:b678 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b677 .
+_:b678 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b678 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b678 <https://dnd5e.app/vocab/dnd5e#weight> 40 .
 <#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Mail" .
 <#chain-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#chain-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b661 .
-_:b661 <https://dnd5e.app/vocab/dnd5e#quantity> 75 .
-_:b661 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#chain-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b679 .
+<#chain-mail> <https://dnd5e.app/vocab/dnd5e#armor> _:b681 .
+_:b679 <https://dnd5e.app/vocab/dnd5e#quantity> 75 .
+_:b679 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b680 <https://dnd5e.app/vocab/dnd5e#base> 16 .
+_:b680 <https://dnd5e.app/vocab/dnd5e#dexBonus> false .
+_:b681 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Heavy" .
+_:b681 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b680 .
+_:b681 <https://dnd5e.app/vocab/dnd5e#strMinimum> 13 .
+_:b681 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b681 <https://dnd5e.app/vocab/dnd5e#weight> 55 .
 <#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#splint-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Splint Armor" .
 <#splint-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#splint-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b662 .
-_:b662 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
-_:b662 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#splint-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b682 .
+<#splint-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b684 .
+_:b682 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
+_:b682 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b683 <https://dnd5e.app/vocab/dnd5e#base> 17 .
+_:b683 <https://dnd5e.app/vocab/dnd5e#dexBonus> false .
+_:b684 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Heavy" .
+_:b684 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b683 .
+_:b684 <https://dnd5e.app/vocab/dnd5e#strMinimum> 15 .
+_:b684 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b684 <https://dnd5e.app/vocab/dnd5e#weight> 60 .
 <#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Armor" .
 <#plate-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#plate-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b663 .
-_:b663 <https://dnd5e.app/vocab/dnd5e#quantity> 1500 .
-_:b663 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#plate-armor> <https://dnd5e.app/vocab/dnd5e#cost> _:b685 .
+<#plate-armor> <https://dnd5e.app/vocab/dnd5e#armor> _:b687 .
+_:b685 <https://dnd5e.app/vocab/dnd5e#quantity> 1500 .
+_:b685 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b686 <https://dnd5e.app/vocab/dnd5e#base> 18 .
+_:b686 <https://dnd5e.app/vocab/dnd5e#dexBonus> false .
+_:b687 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Heavy" .
+_:b687 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b686 .
+_:b687 <https://dnd5e.app/vocab/dnd5e#strMinimum> 15 .
+_:b687 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> true .
+_:b687 <https://dnd5e.app/vocab/dnd5e#weight> 65 .
 <#shield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#shield> <http://www.w3.org/2000/01/rdf-schema#label> "Shield" .
 <#shield> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#shield> <https://dnd5e.app/vocab/dnd5e#cost> _:b664 .
-_:b664 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b664 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#shield> <https://dnd5e.app/vocab/dnd5e#cost> _:b688 .
+<#shield> <https://dnd5e.app/vocab/dnd5e#armor> _:b690 .
+_:b688 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b688 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+_:b689 <https://dnd5e.app/vocab/dnd5e#base> 2 .
+_:b689 <https://dnd5e.app/vocab/dnd5e#dexBonus> false .
+_:b690 <https://dnd5e.app/vocab/dnd5e#armorCategory> "Shield" .
+_:b690 <https://dnd5e.app/vocab/dnd5e#armorClass> _:b689 .
+_:b690 <https://dnd5e.app/vocab/dnd5e#strMinimum> 0 .
+_:b690 <https://dnd5e.app/vocab/dnd5e#stealthDisadvantage> false .
+_:b690 <https://dnd5e.app/vocab/dnd5e#weight> 6 .
 <#abacus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#abacus> <http://www.w3.org/2000/01/rdf-schema#label> "Abacus" .
 <#abacus> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#abacus> <https://dnd5e.app/vocab/dnd5e#cost> _:b665 .
-_:b665 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b665 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#abacus> <https://dnd5e.app/vocab/dnd5e#cost> _:b691 .
+_:b691 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b691 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#acid-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#acid-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Acid (vial)" .
 <#acid-vial> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon." .
 <#acid-vial> <http://purl.org/dc/terms/description> "On a hit, the target takes 2d6 acid damage." .
 <#acid-vial> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#acid-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b666 .
-_:b666 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b666 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#acid-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b692 .
+_:b692 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b692 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#alchemists-fire-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#alchemists-fire-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's fire (flask)" .
 <#alchemists-fire-flask> <http://purl.org/dc/terms/description> "This sticky, adhesive fluid ignites when exposed to air." .
 <#alchemists-fire-flask> <http://purl.org/dc/terms/description> "As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon." .
 <#alchemists-fire-flask> <http://purl.org/dc/terms/description> "On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames." .
 <#alchemists-fire-flask> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#alchemists-fire-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b667 .
-_:b667 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b667 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#alchemists-fire-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b693 .
+_:b693 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b693 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#alms-box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#alms-box> <http://www.w3.org/2000/01/rdf-schema#label> "Alms box" .
 <#alms-box> <http://purl.org/dc/terms/description> "A small box for alms, typically found in a priest's pack." .
 <#alms-box> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#alms-box> <https://dnd5e.app/vocab/dnd5e#cost> _:b668 .
-_:b668 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b668 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#alms-box> <https://dnd5e.app/vocab/dnd5e#cost> _:b694 .
+_:b694 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b694 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#arrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#arrow> <http://www.w3.org/2000/01/rdf-schema#label> "Arrow" .
 <#arrow> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#arrow> <https://dnd5e.app/vocab/dnd5e#cost> _:b669 .
-_:b669 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b669 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#arrow> <https://dnd5e.app/vocab/dnd5e#cost> _:b695 .
+_:b695 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b695 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#block-of-incense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#block-of-incense> <http://www.w3.org/2000/01/rdf-schema#label> "Block of incense" .
 <#block-of-incense> <http://purl.org/dc/terms/description> "A block of incense, typically found in a priest's pack." .
 <#block-of-incense> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#block-of-incense> <https://dnd5e.app/vocab/dnd5e#cost> _:b670 .
-_:b670 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b670 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#block-of-incense> <https://dnd5e.app/vocab/dnd5e#cost> _:b696 .
+_:b696 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b696 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#blowgun-needle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#blowgun-needle> <http://www.w3.org/2000/01/rdf-schema#label> "Blowgun needle" .
 <#blowgun-needle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#blowgun-needle> <https://dnd5e.app/vocab/dnd5e#cost> _:b671 .
-_:b671 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b671 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#blowgun-needle> <https://dnd5e.app/vocab/dnd5e#cost> _:b697 .
+_:b697 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b697 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#censer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#censer> <http://www.w3.org/2000/01/rdf-schema#label> "Censer" .
 <#censer> <http://purl.org/dc/terms/description> "A censer, typically found in a priest's pack." .
 <#censer> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#censer> <https://dnd5e.app/vocab/dnd5e#cost> _:b672 .
-_:b672 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b672 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#censer> <https://dnd5e.app/vocab/dnd5e#cost> _:b698 .
+_:b698 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b698 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbow bolt" .
 <#crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#cost> _:b673 .
-_:b673 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b673 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#cost> _:b699 .
+_:b699 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b699 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sling-bullet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sling-bullet> <http://www.w3.org/2000/01/rdf-schema#label> "Sling bullet" .
 <#sling-bullet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#sling-bullet> <https://dnd5e.app/vocab/dnd5e#cost> _:b674 .
-_:b674 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
-_:b674 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#sling-bullet> <https://dnd5e.app/vocab/dnd5e#cost> _:b700 .
+_:b700 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
+_:b700 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#amulet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#amulet> <http://www.w3.org/2000/01/rdf-schema#label> "Amulet" .
 <#amulet> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
 <#amulet> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
 <#amulet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#amulet> <https://dnd5e.app/vocab/dnd5e#cost> _:b675 .
-_:b675 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b675 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#amulet> <https://dnd5e.app/vocab/dnd5e#cost> _:b701 .
+_:b701 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b701 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#antitoxin-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#antitoxin-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Antitoxin (vial)" .
 <#antitoxin-vial> <http://purl.org/dc/terms/description> "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs." .
 <#antitoxin-vial> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#antitoxin-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b676 .
-_:b676 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b676 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#antitoxin-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b702 .
+_:b702 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b702 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#crystal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#crystal> <http://www.w3.org/2000/01/rdf-schema#label> "Crystal" .
 <#crystal> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
 <#crystal> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#crystal> <https://dnd5e.app/vocab/dnd5e#cost> _:b677 .
-_:b677 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b677 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#crystal> <https://dnd5e.app/vocab/dnd5e#cost> _:b703 .
+_:b703 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b703 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#orb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#orb> <http://www.w3.org/2000/01/rdf-schema#label> "Orb" .
 <#orb> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
 <#orb> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#orb> <https://dnd5e.app/vocab/dnd5e#cost> _:b678 .
-_:b678 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b678 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#orb> <https://dnd5e.app/vocab/dnd5e#cost> _:b704 .
+_:b704 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b704 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#rod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#rod> <http://www.w3.org/2000/01/rdf-schema#label> "Rod" .
 <#rod> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
 <#rod> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#rod> <https://dnd5e.app/vocab/dnd5e#cost> _:b679 .
-_:b679 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b679 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#rod> <https://dnd5e.app/vocab/dnd5e#cost> _:b705 .
+_:b705 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b705 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff" .
 <#staff> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
 <#staff> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#staff> <https://dnd5e.app/vocab/dnd5e#cost> _:b680 .
-_:b680 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b680 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#staff> <https://dnd5e.app/vocab/dnd5e#cost> _:b706 .
+_:b706 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b706 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#wand> <http://www.w3.org/2000/01/rdf-schema#label> "Wand" .
 <#wand> <http://purl.org/dc/terms/description> "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus." .
 <#wand> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#wand> <https://dnd5e.app/vocab/dnd5e#cost> _:b681 .
-_:b681 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b681 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#wand> <https://dnd5e.app/vocab/dnd5e#cost> _:b707 .
+_:b707 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b707 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#backpack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#backpack> <http://www.w3.org/2000/01/rdf-schema#label> "Backpack" .
 <#backpack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#backpack> <https://dnd5e.app/vocab/dnd5e#cost> _:b682 .
-_:b682 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b682 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#backpack> <https://dnd5e.app/vocab/dnd5e#cost> _:b708 .
+_:b708 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b708 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#ball-bearings-bag-of-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ball-bearings-bag-of-1000> <http://www.w3.org/2000/01/rdf-schema#label> "Ball bearings (bag of 1,000)" .
 <#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side." .
 <#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone." .
 <#ball-bearings-bag-of-1000> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
 <#ball-bearings-bag-of-1000> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#ball-bearings-bag-of-1000> <https://dnd5e.app/vocab/dnd5e#cost> _:b683 .
-_:b683 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b683 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#ball-bearings-bag-of-1000> <https://dnd5e.app/vocab/dnd5e#cost> _:b709 .
+_:b709 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b709 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barrel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barrel> <http://www.w3.org/2000/01/rdf-schema#label> "Barrel" .
 <#barrel> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#barrel> <https://dnd5e.app/vocab/dnd5e#cost> _:b684 .
-_:b684 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b684 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barrel> <https://dnd5e.app/vocab/dnd5e#cost> _:b710 .
+_:b710 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b710 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#basket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#basket> <http://www.w3.org/2000/01/rdf-schema#label> "Basket" .
 <#basket> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#basket> <https://dnd5e.app/vocab/dnd5e#cost> _:b685 .
-_:b685 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
-_:b685 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#basket> <https://dnd5e.app/vocab/dnd5e#cost> _:b711 .
+_:b711 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
+_:b711 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#bedroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bedroll> <http://www.w3.org/2000/01/rdf-schema#label> "Bedroll" .
 <#bedroll> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#bedroll> <https://dnd5e.app/vocab/dnd5e#cost> _:b686 .
-_:b686 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b686 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#bedroll> <https://dnd5e.app/vocab/dnd5e#cost> _:b712 .
+_:b712 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b712 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bell> <http://www.w3.org/2000/01/rdf-schema#label> "Bell" .
 <#bell> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#bell> <https://dnd5e.app/vocab/dnd5e#cost> _:b687 .
-_:b687 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b687 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#bell> <https://dnd5e.app/vocab/dnd5e#cost> _:b713 .
+_:b713 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b713 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#blanket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#blanket> <http://www.w3.org/2000/01/rdf-schema#label> "Blanket" .
 <#blanket> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#blanket> <https://dnd5e.app/vocab/dnd5e#cost> _:b688 .
-_:b688 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b688 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#blanket> <https://dnd5e.app/vocab/dnd5e#cost> _:b714 .
+_:b714 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b714 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#block-and-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#block-and-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Block and tackle" .
 <#block-and-tackle> <http://purl.org/dc/terms/description> "A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift." .
 <#block-and-tackle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#block-and-tackle> <https://dnd5e.app/vocab/dnd5e#cost> _:b689 .
-_:b689 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b689 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#block-and-tackle> <https://dnd5e.app/vocab/dnd5e#cost> _:b715 .
+_:b715 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b715 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#book> <http://www.w3.org/2000/01/rdf-schema#label> "Book" .
 <#book> <http://purl.org/dc/terms/description> "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section)." .
 <#book> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#book> <https://dnd5e.app/vocab/dnd5e#cost> _:b690 .
-_:b690 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b690 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#book> <https://dnd5e.app/vocab/dnd5e#cost> _:b716 .
+_:b716 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b716 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#bottle-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bottle-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Bottle, glass" .
 <#bottle-glass> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#bottle-glass> <https://dnd5e.app/vocab/dnd5e#cost> _:b691 .
-_:b691 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b691 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#bottle-glass> <https://dnd5e.app/vocab/dnd5e#cost> _:b717 .
+_:b717 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b717 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bucket> <http://www.w3.org/2000/01/rdf-schema#label> "Bucket" .
 <#bucket> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#bucket> <https://dnd5e.app/vocab/dnd5e#cost> _:b692 .
-_:b692 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b692 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#bucket> <https://dnd5e.app/vocab/dnd5e#cost> _:b718 .
+_:b718 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b718 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#caltrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#caltrops> <http://www.w3.org/2000/01/rdf-schema#label> "Caltrops" .
 <#caltrops> <http://purl.org/dc/terms/description> "As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side." .
@@ -963,154 +1072,154 @@ _:b692 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#caltrops> <http://purl.org/dc/terms/description> "Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point." .
 <#caltrops> <http://purl.org/dc/terms/description> "A creature moving through the area at half speed doesn't need to make the save." .
 <#caltrops> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#caltrops> <https://dnd5e.app/vocab/dnd5e#cost> _:b693 .
-_:b693 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b693 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#caltrops> <https://dnd5e.app/vocab/dnd5e#cost> _:b719 .
+_:b719 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b719 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#candle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#candle> <http://www.w3.org/2000/01/rdf-schema#label> "Candle" .
 <#candle> <http://purl.org/dc/terms/description> "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet." .
 <#candle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#candle> <https://dnd5e.app/vocab/dnd5e#cost> _:b694 .
-_:b694 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b694 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#candle> <https://dnd5e.app/vocab/dnd5e#cost> _:b720 .
+_:b720 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b720 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#case-crossbow-bolt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#case-crossbow-bolt> <http://www.w3.org/2000/01/rdf-schema#label> "Case, crossbow bolt" .
 <#case-crossbow-bolt> <http://purl.org/dc/terms/description> "This wooden case can hold up to twenty crossbow bolts." .
 <#case-crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#case-crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#cost> _:b695 .
-_:b695 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b695 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#case-crossbow-bolt> <https://dnd5e.app/vocab/dnd5e#cost> _:b721 .
+_:b721 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b721 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#case-map-or-scroll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#case-map-or-scroll> <http://www.w3.org/2000/01/rdf-schema#label> "Case, map or scroll" .
 <#case-map-or-scroll> <http://purl.org/dc/terms/description> "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment." .
 <#case-map-or-scroll> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#case-map-or-scroll> <https://dnd5e.app/vocab/dnd5e#cost> _:b696 .
-_:b696 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b696 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#case-map-or-scroll> <https://dnd5e.app/vocab/dnd5e#cost> _:b722 .
+_:b722 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b722 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#chain-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chain-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Chain (10 feet)" .
 <#chain-10-feet> <http://purl.org/dc/terms/description> "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check." .
 <#chain-10-feet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#chain-10-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b697 .
-_:b697 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b697 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#chain-10-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b723 .
+_:b723 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b723 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#chalk-1-piece> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chalk-1-piece> <http://www.w3.org/2000/01/rdf-schema#label> "Chalk (1 piece)" .
 <#chalk-1-piece> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#chalk-1-piece> <https://dnd5e.app/vocab/dnd5e#cost> _:b698 .
-_:b698 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b698 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#chalk-1-piece> <https://dnd5e.app/vocab/dnd5e#cost> _:b724 .
+_:b724 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b724 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#chest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chest> <http://www.w3.org/2000/01/rdf-schema#label> "Chest" .
 <#chest> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#chest> <https://dnd5e.app/vocab/dnd5e#cost> _:b699 .
-_:b699 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b699 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#chest> <https://dnd5e.app/vocab/dnd5e#cost> _:b725 .
+_:b725 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b725 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#clothes-common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#clothes-common> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, common" .
 <#clothes-common> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#clothes-common> <https://dnd5e.app/vocab/dnd5e#cost> _:b700 .
-_:b700 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b700 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#clothes-common> <https://dnd5e.app/vocab/dnd5e#cost> _:b726 .
+_:b726 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b726 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#clothes-costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#clothes-costume> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, costume" .
 <#clothes-costume> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#clothes-costume> <https://dnd5e.app/vocab/dnd5e#cost> _:b701 .
-_:b701 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b701 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#clothes-costume> <https://dnd5e.app/vocab/dnd5e#cost> _:b727 .
+_:b727 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b727 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#clothes-fine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#clothes-fine> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, fine" .
 <#clothes-fine> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#clothes-fine> <https://dnd5e.app/vocab/dnd5e#cost> _:b702 .
-_:b702 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
-_:b702 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#clothes-fine> <https://dnd5e.app/vocab/dnd5e#cost> _:b728 .
+_:b728 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
+_:b728 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#clothes-travelers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#clothes-travelers> <http://www.w3.org/2000/01/rdf-schema#label> "Clothes, traveler's" .
 <#clothes-travelers> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#clothes-travelers> <https://dnd5e.app/vocab/dnd5e#cost> _:b703 .
-_:b703 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b703 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#clothes-travelers> <https://dnd5e.app/vocab/dnd5e#cost> _:b729 .
+_:b729 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b729 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#component-pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#component-pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Component pouch" .
 <#component-pouch> <http://purl.org/dc/terms/description> "A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)." .
 <#component-pouch> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#component-pouch> <https://dnd5e.app/vocab/dnd5e#cost> _:b704 .
-_:b704 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b704 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#component-pouch> <https://dnd5e.app/vocab/dnd5e#cost> _:b730 .
+_:b730 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b730 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#crowbar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#crowbar> <http://www.w3.org/2000/01/rdf-schema#label> "Crowbar" .
 <#crowbar> <http://purl.org/dc/terms/description> "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied." .
 <#crowbar> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#crowbar> <https://dnd5e.app/vocab/dnd5e#cost> _:b705 .
-_:b705 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b705 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#crowbar> <https://dnd5e.app/vocab/dnd5e#cost> _:b731 .
+_:b731 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b731 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sprig-of-mistletoe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sprig-of-mistletoe> <http://www.w3.org/2000/01/rdf-schema#label> "Sprig of mistletoe" .
 <#sprig-of-mistletoe> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
 <#sprig-of-mistletoe> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#sprig-of-mistletoe> <https://dnd5e.app/vocab/dnd5e#cost> _:b706 .
-_:b706 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b706 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#sprig-of-mistletoe> <https://dnd5e.app/vocab/dnd5e#cost> _:b732 .
+_:b732 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b732 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#totem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#totem> <http://www.w3.org/2000/01/rdf-schema#label> "Totem" .
 <#totem> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
 <#totem> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#totem> <https://dnd5e.app/vocab/dnd5e#cost> _:b707 .
-_:b707 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b707 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#totem> <https://dnd5e.app/vocab/dnd5e#cost> _:b733 .
+_:b733 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b733 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#wooden-staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#wooden-staff> <http://www.w3.org/2000/01/rdf-schema#label> "Wooden staff" .
 <#wooden-staff> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
 <#wooden-staff> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#wooden-staff> <https://dnd5e.app/vocab/dnd5e#cost> _:b708 .
-_:b708 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b708 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#wooden-staff> <https://dnd5e.app/vocab/dnd5e#cost> _:b734 .
+_:b734 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b734 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#yew-wand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#yew-wand> <http://www.w3.org/2000/01/rdf-schema#label> "Yew wand" .
 <#yew-wand> <http://purl.org/dc/terms/description> "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus." .
 <#yew-wand> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#yew-wand> <https://dnd5e.app/vocab/dnd5e#cost> _:b709 .
-_:b709 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b709 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#yew-wand> <https://dnd5e.app/vocab/dnd5e#cost> _:b735 .
+_:b735 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b735 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#emblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#emblem> <http://www.w3.org/2000/01/rdf-schema#label> "Emblem" .
 <#emblem> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
 <#emblem> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
 <#emblem> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#emblem> <https://dnd5e.app/vocab/dnd5e#cost> _:b710 .
-_:b710 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b710 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#emblem> <https://dnd5e.app/vocab/dnd5e#cost> _:b736 .
+_:b736 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b736 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#fishing-tackle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#fishing-tackle> <http://www.w3.org/2000/01/rdf-schema#label> "Fishing tackle" .
 <#fishing-tackle> <http://purl.org/dc/terms/description> "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting." .
 <#fishing-tackle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#fishing-tackle> <https://dnd5e.app/vocab/dnd5e#cost> _:b711 .
-_:b711 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b711 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#fishing-tackle> <https://dnd5e.app/vocab/dnd5e#cost> _:b737 .
+_:b737 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b737 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#flask-or-tankard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#flask-or-tankard> <http://www.w3.org/2000/01/rdf-schema#label> "Flask or tankard" .
 <#flask-or-tankard> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#flask-or-tankard> <https://dnd5e.app/vocab/dnd5e#cost> _:b712 .
-_:b712 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b712 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#flask-or-tankard> <https://dnd5e.app/vocab/dnd5e#cost> _:b738 .
+_:b738 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b738 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#grappling-hook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#grappling-hook> <http://www.w3.org/2000/01/rdf-schema#label> "Grappling hook" .
 <#grappling-hook> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#grappling-hook> <https://dnd5e.app/vocab/dnd5e#cost> _:b713 .
-_:b713 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b713 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#grappling-hook> <https://dnd5e.app/vocab/dnd5e#cost> _:b739 .
+_:b739 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b739 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#hammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#hammer> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer" .
 <#hammer> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#hammer> <https://dnd5e.app/vocab/dnd5e#cost> _:b714 .
-_:b714 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b714 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#hammer> <https://dnd5e.app/vocab/dnd5e#cost> _:b740 .
+_:b740 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b740 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#hammer-sledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#hammer-sledge> <http://www.w3.org/2000/01/rdf-schema#label> "Hammer, sledge" .
 <#hammer-sledge> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#hammer-sledge> <https://dnd5e.app/vocab/dnd5e#cost> _:b715 .
-_:b715 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b715 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#hammer-sledge> <https://dnd5e.app/vocab/dnd5e#cost> _:b741 .
+_:b741 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b741 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#holy-water-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#holy-water-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Holy water (flask)" .
 <#holy-water-flask> <http://purl.org/dc/terms/description> "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon." .
@@ -1118,154 +1227,154 @@ _:b715 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#holy-water-flask> <http://purl.org/dc/terms/description> "A cleric or paladin may create holy water by performing a special ritual." .
 <#holy-water-flask> <http://purl.org/dc/terms/description> "The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot." .
 <#holy-water-flask> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#holy-water-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b716 .
-_:b716 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b716 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#holy-water-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b742 .
+_:b742 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b742 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#hourglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#hourglass> <http://www.w3.org/2000/01/rdf-schema#label> "Hourglass" .
 <#hourglass> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#hourglass> <https://dnd5e.app/vocab/dnd5e#cost> _:b717 .
-_:b717 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b717 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#hourglass> <https://dnd5e.app/vocab/dnd5e#cost> _:b743 .
+_:b743 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b743 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#hunting-trap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#hunting-trap> <http://www.w3.org/2000/01/rdf-schema#label> "Hunting trap" .
 <#hunting-trap> <http://purl.org/dc/terms/description> "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground." .
 <#hunting-trap> <http://purl.org/dc/terms/description> "A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long)." .
 <#hunting-trap> <http://purl.org/dc/terms/description> "A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature." .
 <#hunting-trap> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#hunting-trap> <https://dnd5e.app/vocab/dnd5e#cost> _:b718 .
-_:b718 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b718 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#hunting-trap> <https://dnd5e.app/vocab/dnd5e#cost> _:b744 .
+_:b744 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b744 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#ink-1-ounce-bottle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ink-1-ounce-bottle> <http://www.w3.org/2000/01/rdf-schema#label> "Ink (1 ounce bottle)" .
 <#ink-1-ounce-bottle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#ink-1-ounce-bottle> <https://dnd5e.app/vocab/dnd5e#cost> _:b719 .
-_:b719 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b719 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#ink-1-ounce-bottle> <https://dnd5e.app/vocab/dnd5e#cost> _:b745 .
+_:b745 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b745 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#ink-pen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ink-pen> <http://www.w3.org/2000/01/rdf-schema#label> "Ink pen" .
 <#ink-pen> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#ink-pen> <https://dnd5e.app/vocab/dnd5e#cost> _:b720 .
-_:b720 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b720 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#ink-pen> <https://dnd5e.app/vocab/dnd5e#cost> _:b746 .
+_:b746 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b746 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#jug-or-pitcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#jug-or-pitcher> <http://www.w3.org/2000/01/rdf-schema#label> "Jug or pitcher" .
 <#jug-or-pitcher> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#jug-or-pitcher> <https://dnd5e.app/vocab/dnd5e#cost> _:b721 .
-_:b721 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b721 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#jug-or-pitcher> <https://dnd5e.app/vocab/dnd5e#cost> _:b747 .
+_:b747 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b747 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#climbers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#climbers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Climber's Kit" .
 <#climbers-kit> <http://purl.org/dc/terms/description> "A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor." .
 <#climbers-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#climbers-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b722 .
-_:b722 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b722 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#climbers-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b748 .
+_:b748 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b748 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#disguise-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Kit" .
 <#disguise-kit> <http://purl.org/dc/terms/description> "This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise." .
 <#disguise-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#disguise-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b723 .
-_:b723 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b723 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#disguise-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b749 .
+_:b749 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b749 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#forgery-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Forgery Kit" .
 <#forgery-kit> <http://purl.org/dc/terms/description> "This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document." .
 <#forgery-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#forgery-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b724 .
-_:b724 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
-_:b724 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#forgery-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b750 .
+_:b750 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
+_:b750 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#herbalism-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Herbalism Kit" .
 <#herbalism-kit> <http://purl.org/dc/terms/description> "This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing." .
 <#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b725 .
-_:b725 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b725 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b751 .
+_:b751 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b751 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#healers-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#healers-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Healer's Kit" .
 <#healers-kit> <http://purl.org/dc/terms/description> "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check." .
 <#healers-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#healers-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b726 .
-_:b726 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b726 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#healers-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b752 .
+_:b752 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b752 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#mess-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#mess-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Mess Kit" .
 <#mess-kit> <http://purl.org/dc/terms/description> "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl." .
 <#mess-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#mess-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b727 .
-_:b727 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b727 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#mess-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b753 .
+_:b753 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b753 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#poisoners-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoner's Kit" .
 <#poisoners-kit> <http://purl.org/dc/terms/description> "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons." .
 <#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b728 .
-_:b728 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b728 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#cost> _:b754 .
+_:b754 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b754 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#ladder-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ladder-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder (10-foot)" .
 <#ladder-10-foot> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#ladder-10-foot> <https://dnd5e.app/vocab/dnd5e#cost> _:b729 .
-_:b729 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b729 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#ladder-10-foot> <https://dnd5e.app/vocab/dnd5e#cost> _:b755 .
+_:b755 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b755 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#lamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lamp> <http://www.w3.org/2000/01/rdf-schema#label> "Lamp" .
 <#lamp> <http://purl.org/dc/terms/description> "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
 <#lamp> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#lamp> <https://dnd5e.app/vocab/dnd5e#cost> _:b730 .
-_:b730 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b730 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#lamp> <https://dnd5e.app/vocab/dnd5e#cost> _:b756 .
+_:b756 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b756 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#lantern-bullseye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lantern-bullseye> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, bullseye" .
 <#lantern-bullseye> <http://purl.org/dc/terms/description> "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil." .
 <#lantern-bullseye> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#lantern-bullseye> <https://dnd5e.app/vocab/dnd5e#cost> _:b731 .
-_:b731 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b731 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#lantern-bullseye> <https://dnd5e.app/vocab/dnd5e#cost> _:b757 .
+_:b757 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b757 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#lantern-hooded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lantern-hooded> <http://www.w3.org/2000/01/rdf-schema#label> "Lantern, hooded" .
 <#lantern-hooded> <http://purl.org/dc/terms/description> "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius." .
 <#lantern-hooded> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#lantern-hooded> <https://dnd5e.app/vocab/dnd5e#cost> _:b732 .
-_:b732 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b732 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#lantern-hooded> <https://dnd5e.app/vocab/dnd5e#cost> _:b758 .
+_:b758 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b758 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#little-bag-of-sand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#little-bag-of-sand> <http://www.w3.org/2000/01/rdf-schema#label> "Little bag of sand" .
 <#little-bag-of-sand> <http://purl.org/dc/terms/description> "A small bag of sand, typically found in a scholar's pack." .
 <#little-bag-of-sand> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#little-bag-of-sand> <https://dnd5e.app/vocab/dnd5e#cost> _:b733 .
-_:b733 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b733 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#little-bag-of-sand> <https://dnd5e.app/vocab/dnd5e#cost> _:b759 .
+_:b759 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b759 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#lock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lock> <http://www.w3.org/2000/01/rdf-schema#label> "Lock" .
 <#lock> <http://purl.org/dc/terms/description> "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices." .
 <#lock> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#lock> <https://dnd5e.app/vocab/dnd5e#cost> _:b734 .
-_:b734 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b734 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#lock> <https://dnd5e.app/vocab/dnd5e#cost> _:b760 .
+_:b760 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b760 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#magnifying-glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#magnifying-glass> <http://www.w3.org/2000/01/rdf-schema#label> "Magnifying glass" .
 <#magnifying-glass> <http://purl.org/dc/terms/description> "This lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite." .
 <#magnifying-glass> <http://purl.org/dc/terms/description> "A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed." .
 <#magnifying-glass> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#magnifying-glass> <https://dnd5e.app/vocab/dnd5e#cost> _:b735 .
-_:b735 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
-_:b735 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#magnifying-glass> <https://dnd5e.app/vocab/dnd5e#cost> _:b761 .
+_:b761 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
+_:b761 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#manacles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#manacles> <http://www.w3.org/2000/01/rdf-schema#label> "Manacles" .
 <#manacles> <http://purl.org/dc/terms/description> "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check." .
 <#manacles> <http://purl.org/dc/terms/description> "Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points." .
 <#manacles> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#manacles> <https://dnd5e.app/vocab/dnd5e#cost> _:b736 .
-_:b736 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b736 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#manacles> <https://dnd5e.app/vocab/dnd5e#cost> _:b762 .
+_:b762 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b762 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#mirror-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#mirror-steel> <http://www.w3.org/2000/01/rdf-schema#label> "Mirror, steel" .
 <#mirror-steel> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#mirror-steel> <https://dnd5e.app/vocab/dnd5e#cost> _:b737 .
-_:b737 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b737 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#mirror-steel> <https://dnd5e.app/vocab/dnd5e#cost> _:b763 .
+_:b763 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b763 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#oil-flask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#oil-flask> <http://www.w3.org/2000/01/rdf-schema#label> "Oil (flask)" .
 <#oil-flask> <http://purl.org/dc/terms/description> "Oil usually comes in a clay flask that holds 1 pint." .
@@ -1274,750 +1383,750 @@ _:b737 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#oil-flask> <http://purl.org/dc/terms/description> "You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level." .
 <#oil-flask> <http://purl.org/dc/terms/description> "If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn." .
 <#oil-flask> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#oil-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b738 .
-_:b738 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b738 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#oil-flask> <https://dnd5e.app/vocab/dnd5e#cost> _:b764 .
+_:b764 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b764 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#paper-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#paper-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Paper (one sheet)" .
 <#paper-one-sheet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#paper-one-sheet> <https://dnd5e.app/vocab/dnd5e#cost> _:b739 .
-_:b739 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b739 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#paper-one-sheet> <https://dnd5e.app/vocab/dnd5e#cost> _:b765 .
+_:b765 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b765 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#parchment-one-sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#parchment-one-sheet> <http://www.w3.org/2000/01/rdf-schema#label> "Parchment (one sheet)" .
 <#parchment-one-sheet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#parchment-one-sheet> <https://dnd5e.app/vocab/dnd5e#cost> _:b740 .
-_:b740 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b740 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#parchment-one-sheet> <https://dnd5e.app/vocab/dnd5e#cost> _:b766 .
+_:b766 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b766 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#perfume-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#perfume-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Perfume (vial)" .
 <#perfume-vial> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#perfume-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b741 .
-_:b741 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b741 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#perfume-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b767 .
+_:b767 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b767 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#pick-miners> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pick-miners> <http://www.w3.org/2000/01/rdf-schema#label> "Pick, miner's" .
 <#pick-miners> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#pick-miners> <https://dnd5e.app/vocab/dnd5e#cost> _:b742 .
-_:b742 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b742 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#pick-miners> <https://dnd5e.app/vocab/dnd5e#cost> _:b768 .
+_:b768 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b768 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#piton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#piton> <http://www.w3.org/2000/01/rdf-schema#label> "Piton" .
 <#piton> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#piton> <https://dnd5e.app/vocab/dnd5e#cost> _:b743 .
-_:b743 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b743 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#piton> <https://dnd5e.app/vocab/dnd5e#cost> _:b769 .
+_:b769 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b769 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#poison-basic-vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#poison-basic-vial> <http://www.w3.org/2000/01/rdf-schema#label> "Poison, basic (vial)" .
 <#poison-basic-vial> <http://purl.org/dc/terms/description> "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying." .
 <#poison-basic-vial> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#poison-basic-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b744 .
-_:b744 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
-_:b744 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#poison-basic-vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b770 .
+_:b770 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
+_:b770 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#pole-10-foot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pole-10-foot> <http://www.w3.org/2000/01/rdf-schema#label> "Pole (10-foot)" .
 <#pole-10-foot> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#pole-10-foot> <https://dnd5e.app/vocab/dnd5e#cost> _:b745 .
-_:b745 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b745 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#pole-10-foot> <https://dnd5e.app/vocab/dnd5e#cost> _:b771 .
+_:b771 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b771 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#pot-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pot-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Pot, iron" .
 <#pot-iron> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#pot-iron> <https://dnd5e.app/vocab/dnd5e#cost> _:b746 .
-_:b746 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b746 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#pot-iron> <https://dnd5e.app/vocab/dnd5e#cost> _:b772 .
+_:b772 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b772 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#pouch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pouch> <http://www.w3.org/2000/01/rdf-schema#label> "Pouch" .
 <#pouch> <http://purl.org/dc/terms/description> "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)." .
 <#pouch> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#pouch> <https://dnd5e.app/vocab/dnd5e#cost> _:b747 .
-_:b747 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b747 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#pouch> <https://dnd5e.app/vocab/dnd5e#cost> _:b773 .
+_:b773 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b773 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#quiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#quiver> <http://www.w3.org/2000/01/rdf-schema#label> "Quiver" .
 <#quiver> <http://purl.org/dc/terms/description> "A quiver can hold up to 20 arrows." .
 <#quiver> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#quiver> <https://dnd5e.app/vocab/dnd5e#cost> _:b748 .
-_:b748 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b748 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#quiver> <https://dnd5e.app/vocab/dnd5e#cost> _:b774 .
+_:b774 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b774 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#ram-portable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#ram-portable> <http://www.w3.org/2000/01/rdf-schema#label> "Ram, portable" .
 <#ram-portable> <http://purl.org/dc/terms/description> "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check." .
 <#ram-portable> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#ram-portable> <https://dnd5e.app/vocab/dnd5e#cost> _:b749 .
-_:b749 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
-_:b749 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#ram-portable> <https://dnd5e.app/vocab/dnd5e#cost> _:b775 .
+_:b775 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
+_:b775 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#rations-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#rations-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Rations (1 day)" .
 <#rations-1-day> <http://purl.org/dc/terms/description> "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts." .
 <#rations-1-day> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#rations-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b750 .
-_:b750 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b750 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#rations-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b776 .
+_:b776 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b776 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#reliquary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#reliquary> <http://www.w3.org/2000/01/rdf-schema#label> "Reliquary" .
 <#reliquary> <http://purl.org/dc/terms/description> "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic." .
 <#reliquary> <http://purl.org/dc/terms/description> "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield." .
 <#reliquary> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#reliquary> <https://dnd5e.app/vocab/dnd5e#cost> _:b751 .
-_:b751 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b751 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#reliquary> <https://dnd5e.app/vocab/dnd5e#cost> _:b777 .
+_:b777 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b777 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#robes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#robes> <http://www.w3.org/2000/01/rdf-schema#label> "Robes" .
 <#robes> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#robes> <https://dnd5e.app/vocab/dnd5e#cost> _:b752 .
-_:b752 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b752 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#robes> <https://dnd5e.app/vocab/dnd5e#cost> _:b778 .
+_:b778 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b778 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#rope-hempen-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#rope-hempen-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, hempen (50 feet)" .
 <#rope-hempen-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
 <#rope-hempen-50-feet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#rope-hempen-50-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b753 .
-_:b753 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b753 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#rope-hempen-50-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b779 .
+_:b779 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b779 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#rope-silk-50-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#rope-silk-50-feet> <http://www.w3.org/2000/01/rdf-schema#label> "Rope, silk (50 feet)" .
 <#rope-silk-50-feet> <http://purl.org/dc/terms/description> "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check." .
 <#rope-silk-50-feet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#rope-silk-50-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b754 .
-_:b754 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b754 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#rope-silk-50-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b780 .
+_:b780 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b780 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sack> <http://www.w3.org/2000/01/rdf-schema#label> "Sack" .
 <#sack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#sack> <https://dnd5e.app/vocab/dnd5e#cost> _:b755 .
-_:b755 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b755 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#sack> <https://dnd5e.app/vocab/dnd5e#cost> _:b781 .
+_:b781 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b781 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#scale-merchants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#scale-merchants> <http://www.w3.org/2000/01/rdf-schema#label> "Scale, merchant's" .
 <#scale-merchants> <http://purl.org/dc/terms/description> "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth." .
 <#scale-merchants> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#scale-merchants> <https://dnd5e.app/vocab/dnd5e#cost> _:b756 .
-_:b756 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b756 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#scale-merchants> <https://dnd5e.app/vocab/dnd5e#cost> _:b782 .
+_:b782 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b782 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sealing-wax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sealing-wax> <http://www.w3.org/2000/01/rdf-schema#label> "Sealing wax" .
 <#sealing-wax> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#sealing-wax> <https://dnd5e.app/vocab/dnd5e#cost> _:b757 .
-_:b757 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b757 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#sealing-wax> <https://dnd5e.app/vocab/dnd5e#cost> _:b783 .
+_:b783 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b783 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#shovel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#shovel> <http://www.w3.org/2000/01/rdf-schema#label> "Shovel" .
 <#shovel> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#shovel> <https://dnd5e.app/vocab/dnd5e#cost> _:b758 .
-_:b758 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b758 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#shovel> <https://dnd5e.app/vocab/dnd5e#cost> _:b784 .
+_:b784 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b784 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#signal-whistle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#signal-whistle> <http://www.w3.org/2000/01/rdf-schema#label> "Signal whistle" .
 <#signal-whistle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#signal-whistle> <https://dnd5e.app/vocab/dnd5e#cost> _:b759 .
-_:b759 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b759 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#signal-whistle> <https://dnd5e.app/vocab/dnd5e#cost> _:b785 .
+_:b785 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b785 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#signet-ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#signet-ring> <http://www.w3.org/2000/01/rdf-schema#label> "Signet ring" .
 <#signet-ring> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#signet-ring> <https://dnd5e.app/vocab/dnd5e#cost> _:b760 .
-_:b760 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b760 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#signet-ring> <https://dnd5e.app/vocab/dnd5e#cost> _:b786 .
+_:b786 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b786 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#small-knife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#small-knife> <http://www.w3.org/2000/01/rdf-schema#label> "Small knife" .
 <#small-knife> <http://purl.org/dc/terms/description> "A small knife, typically found in a scholar's pack." .
 <#small-knife> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#small-knife> <https://dnd5e.app/vocab/dnd5e#cost> _:b761 .
-_:b761 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b761 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#small-knife> <https://dnd5e.app/vocab/dnd5e#cost> _:b787 .
+_:b787 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b787 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#soap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#soap> <http://www.w3.org/2000/01/rdf-schema#label> "Soap" .
 <#soap> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#soap> <https://dnd5e.app/vocab/dnd5e#cost> _:b762 .
-_:b762 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b762 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#soap> <https://dnd5e.app/vocab/dnd5e#cost> _:b788 .
+_:b788 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b788 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#spellbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#spellbook> <http://www.w3.org/2000/01/rdf-schema#label> "Spellbook" .
 <#spellbook> <http://purl.org/dc/terms/description> "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells." .
 <#spellbook> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#spellbook> <https://dnd5e.app/vocab/dnd5e#cost> _:b763 .
-_:b763 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b763 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#spellbook> <https://dnd5e.app/vocab/dnd5e#cost> _:b789 .
+_:b789 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b789 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#spike-iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#spike-iron> <http://www.w3.org/2000/01/rdf-schema#label> "Spike, iron" .
 <#spike-iron> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#spike-iron> <https://dnd5e.app/vocab/dnd5e#cost> _:b764 .
-_:b764 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b764 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#spike-iron> <https://dnd5e.app/vocab/dnd5e#cost> _:b790 .
+_:b790 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b790 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#spyglass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#spyglass> <http://www.w3.org/2000/01/rdf-schema#label> "Spyglass" .
 <#spyglass> <http://purl.org/dc/terms/description> "Objects viewed through a spyglass are magnified to twice their size." .
 <#spyglass> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#spyglass> <https://dnd5e.app/vocab/dnd5e#cost> _:b765 .
-_:b765 <https://dnd5e.app/vocab/dnd5e#quantity> 1000 .
-_:b765 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#spyglass> <https://dnd5e.app/vocab/dnd5e#cost> _:b791 .
+_:b791 <https://dnd5e.app/vocab/dnd5e#quantity> 1000 .
+_:b791 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#string-10-feet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#string-10-feet> <http://www.w3.org/2000/01/rdf-schema#label> "String (10 feet)" .
 <#string-10-feet> <http://purl.org/dc/terms/description> "A 10-foot length of string, typically found in a burglar's pack." .
 <#string-10-feet> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#string-10-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b766 .
-_:b766 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b766 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#string-10-feet> <https://dnd5e.app/vocab/dnd5e#cost> _:b792 .
+_:b792 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b792 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#tent-two-person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#tent-two-person> <http://www.w3.org/2000/01/rdf-schema#label> "Tent, two-person" .
 <#tent-two-person> <http://purl.org/dc/terms/description> "A simple and portable canvas shelter, a tent sleeps two." .
 <#tent-two-person> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#tent-two-person> <https://dnd5e.app/vocab/dnd5e#cost> _:b767 .
-_:b767 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b767 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#tent-two-person> <https://dnd5e.app/vocab/dnd5e#cost> _:b793 .
+_:b793 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b793 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#tinderbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#tinderbox> <http://www.w3.org/2000/01/rdf-schema#label> "Tinderbox" .
 <#tinderbox> <http://purl.org/dc/terms/description> "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action." .
 <#tinderbox> <http://purl.org/dc/terms/description> "Lighting any other fire takes 1 minute." .
 <#tinderbox> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#tinderbox> <https://dnd5e.app/vocab/dnd5e#cost> _:b768 .
-_:b768 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b768 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#tinderbox> <https://dnd5e.app/vocab/dnd5e#cost> _:b794 .
+_:b794 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b794 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#torch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#torch> <http://www.w3.org/2000/01/rdf-schema#label> "Torch" .
 <#torch> <http://purl.org/dc/terms/description> "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage." .
 <#torch> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#torch> <https://dnd5e.app/vocab/dnd5e#cost> _:b769 .
-_:b769 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b769 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#torch> <https://dnd5e.app/vocab/dnd5e#cost> _:b795 .
+_:b795 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b795 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#vestments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#vestments> <http://www.w3.org/2000/01/rdf-schema#label> "Vestments" .
 <#vestments> <http://purl.org/dc/terms/description> "Religious clothing, typically found in a priest's pack." .
 <#vestments> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#vestments> <https://dnd5e.app/vocab/dnd5e#cost> _:b770 .
-_:b770 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
-_:b770 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#vestments> <https://dnd5e.app/vocab/dnd5e#cost> _:b796 .
+_:b796 <https://dnd5e.app/vocab/dnd5e#quantity> 0 .
+_:b796 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#vial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#vial> <http://www.w3.org/2000/01/rdf-schema#label> "Vial" .
 <#vial> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b771 .
-_:b771 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b771 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#vial> <https://dnd5e.app/vocab/dnd5e#cost> _:b797 .
+_:b797 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b797 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#waterskin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#waterskin> <http://www.w3.org/2000/01/rdf-schema#label> "Waterskin" .
 <#waterskin> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#waterskin> <https://dnd5e.app/vocab/dnd5e#cost> _:b772 .
-_:b772 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b772 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#waterskin> <https://dnd5e.app/vocab/dnd5e#cost> _:b798 .
+_:b798 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b798 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#whetstone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#whetstone> <http://www.w3.org/2000/01/rdf-schema#label> "Whetstone" .
 <#whetstone> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#whetstone> <https://dnd5e.app/vocab/dnd5e#cost> _:b773 .
-_:b773 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b773 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#whetstone> <https://dnd5e.app/vocab/dnd5e#cost> _:b799 .
+_:b799 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b799 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#burglars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#burglars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Burglar's Pack" .
 <#burglars-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#burglars-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b774 .
-_:b774 <https://dnd5e.app/vocab/dnd5e#quantity> 16 .
-_:b774 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#burglars-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b800 .
+_:b800 <https://dnd5e.app/vocab/dnd5e#quantity> 16 .
+_:b800 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#diplomats-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#diplomats-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Diplomat's Pack" .
 <#diplomats-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#diplomats-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b775 .
-_:b775 <https://dnd5e.app/vocab/dnd5e#quantity> 39 .
-_:b775 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#diplomats-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b801 .
+_:b801 <https://dnd5e.app/vocab/dnd5e#quantity> 39 .
+_:b801 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#dungeoneers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#dungeoneers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Dungeoneer's Pack" .
 <#dungeoneers-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#dungeoneers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b776 .
-_:b776 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
-_:b776 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#dungeoneers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b802 .
+_:b802 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
+_:b802 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#entertainers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#entertainers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainer's Pack" .
 <#entertainers-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#entertainers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b777 .
-_:b777 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
-_:b777 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#entertainers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b803 .
+_:b803 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
+_:b803 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#explorers-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#explorers-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Explorer's Pack" .
 <#explorers-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#explorers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b778 .
-_:b778 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b778 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#explorers-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b804 .
+_:b804 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b804 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#priests-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#priests-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Priest's Pack" .
 <#priests-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#priests-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b779 .
-_:b779 <https://dnd5e.app/vocab/dnd5e#quantity> 19 .
-_:b779 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#priests-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b805 .
+_:b805 <https://dnd5e.app/vocab/dnd5e#quantity> 19 .
+_:b805 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#scholars-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#scholars-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Scholar's Pack" .
 <#scholars-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#adventuring-gear> .
-<#scholars-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b780 .
-_:b780 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
-_:b780 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#scholars-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b806 .
+_:b806 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
+_:b806 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#alchemists-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's Supplies" .
 <#alchemists-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b781 .
-_:b781 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b781 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b807 .
+_:b807 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b807 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#brewers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Brewer's Supplies" .
 <#brewers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b782 .
-_:b782 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b782 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b808 .
+_:b808 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b808 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#calligraphers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Calligrapher's Supplies" .
 <#calligraphers-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b783 .
-_:b783 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b783 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b809 .
+_:b809 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b809 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#carpenters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Carpenter's Tools" .
 <#carpenters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b784 .
-_:b784 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
-_:b784 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b810 .
+_:b810 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
+_:b810 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#cartographers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cartographer's Tools" .
 <#cartographers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b785 .
-_:b785 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
-_:b785 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b811 .
+_:b811 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
+_:b811 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#cobblers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cobbler's Tools" .
 <#cobblers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b786 .
-_:b786 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b786 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b812 .
+_:b812 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b812 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#cooks-utensils> <http://www.w3.org/2000/01/rdf-schema#label> "Cook's utensils" .
 <#cooks-utensils> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#cost> _:b787 .
-_:b787 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b787 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#cost> _:b813 .
+_:b813 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b813 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#glassblowers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Glassblower's Tools" .
 <#glassblowers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b788 .
-_:b788 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b788 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b814 .
+_:b814 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b814 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#jewelers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Jeweler's Tools" .
 <#jewelers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b789 .
-_:b789 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b789 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b815 .
+_:b815 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b815 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#leatherworkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Leatherworker's Tools" .
 <#leatherworkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b790 .
-_:b790 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b790 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b816 .
+_:b816 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b816 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#masons-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Mason's Tools" .
 <#masons-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#masons-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#masons-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b791 .
-_:b791 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b791 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#masons-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b817 .
+_:b817 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b817 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#painters-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Painter's Supplies" .
 <#painters-supplies> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#painters-supplies> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#painters-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b792 .
-_:b792 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b792 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#painters-supplies> <https://dnd5e.app/vocab/dnd5e#cost> _:b818 .
+_:b818 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b818 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#potters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Potter's Tools" .
 <#potters-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#potters-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#potters-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b793 .
-_:b793 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b793 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#potters-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b819 .
+_:b819 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b819 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#smiths-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Smith's Tools" .
 <#smiths-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#smiths-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#smiths-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b794 .
-_:b794 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b794 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#smiths-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b820 .
+_:b820 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b820 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#tinkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker's Tools" .
 <#tinkers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b795 .
-_:b795 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b795 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b821 .
+_:b821 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b821 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#weavers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Weaver's Tools" .
 <#weavers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#weavers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#weavers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b796 .
-_:b796 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b796 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#weavers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b822 .
+_:b822 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b822 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#woodcarvers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Woodcarver's Tools" .
 <#woodcarvers-tools> <http://purl.org/dc/terms/description> "These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency." .
 <#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b797 .
-_:b797 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b797 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b823 .
+_:b823 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b823 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#dice-set> <http://www.w3.org/2000/01/rdf-schema#label> "Dice Set" .
 <#dice-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
 <#dice-set> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#dice-set> <https://dnd5e.app/vocab/dnd5e#cost> _:b798 .
-_:b798 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
-_:b798 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#dice-set> <https://dnd5e.app/vocab/dnd5e#cost> _:b824 .
+_:b824 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
+_:b824 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#playing-card-set> <http://www.w3.org/2000/01/rdf-schema#label> "Playing Card Set" .
 <#playing-card-set> <http://purl.org/dc/terms/description> "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency." .
 <#playing-card-set> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#playing-card-set> <https://dnd5e.app/vocab/dnd5e#cost> _:b799 .
-_:b799 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b799 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#playing-card-set> <https://dnd5e.app/vocab/dnd5e#cost> _:b825 .
+_:b825 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b825 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bagpipes> <http://www.w3.org/2000/01/rdf-schema#label> "Bagpipes" .
 <#bagpipes> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#bagpipes> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#bagpipes> <https://dnd5e.app/vocab/dnd5e#cost> _:b800 .
-_:b800 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b800 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#bagpipes> <https://dnd5e.app/vocab/dnd5e#cost> _:b826 .
+_:b826 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b826 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#drum> <http://www.w3.org/2000/01/rdf-schema#label> "Drum" .
 <#drum> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#drum> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#drum> <https://dnd5e.app/vocab/dnd5e#cost> _:b801 .
-_:b801 <https://dnd5e.app/vocab/dnd5e#quantity> 6 .
-_:b801 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#drum> <https://dnd5e.app/vocab/dnd5e#cost> _:b827 .
+_:b827 <https://dnd5e.app/vocab/dnd5e#quantity> 6 .
+_:b827 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#dulcimer> <http://www.w3.org/2000/01/rdf-schema#label> "Dulcimer" .
 <#dulcimer> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#dulcimer> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#dulcimer> <https://dnd5e.app/vocab/dnd5e#cost> _:b802 .
-_:b802 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b802 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#dulcimer> <https://dnd5e.app/vocab/dnd5e#cost> _:b828 .
+_:b828 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b828 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#flute> <http://www.w3.org/2000/01/rdf-schema#label> "Flute" .
 <#flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#flute> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#flute> <https://dnd5e.app/vocab/dnd5e#cost> _:b803 .
-_:b803 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b803 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#flute> <https://dnd5e.app/vocab/dnd5e#cost> _:b829 .
+_:b829 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b829 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lute> <http://www.w3.org/2000/01/rdf-schema#label> "Lute" .
 <#lute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#lute> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#lute> <https://dnd5e.app/vocab/dnd5e#cost> _:b804 .
-_:b804 <https://dnd5e.app/vocab/dnd5e#quantity> 35 .
-_:b804 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#lute> <https://dnd5e.app/vocab/dnd5e#cost> _:b830 .
+_:b830 <https://dnd5e.app/vocab/dnd5e#quantity> 35 .
+_:b830 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#lyre> <http://www.w3.org/2000/01/rdf-schema#label> "Lyre" .
 <#lyre> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#lyre> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#lyre> <https://dnd5e.app/vocab/dnd5e#cost> _:b805 .
-_:b805 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b805 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#lyre> <https://dnd5e.app/vocab/dnd5e#cost> _:b831 .
+_:b831 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b831 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#horn> <http://www.w3.org/2000/01/rdf-schema#label> "Horn" .
 <#horn> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#horn> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#horn> <https://dnd5e.app/vocab/dnd5e#cost> _:b806 .
-_:b806 <https://dnd5e.app/vocab/dnd5e#quantity> 3 .
-_:b806 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#horn> <https://dnd5e.app/vocab/dnd5e#cost> _:b832 .
+_:b832 <https://dnd5e.app/vocab/dnd5e#quantity> 3 .
+_:b832 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pan-flute> <http://www.w3.org/2000/01/rdf-schema#label> "Pan flute" .
 <#pan-flute> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#pan-flute> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#pan-flute> <https://dnd5e.app/vocab/dnd5e#cost> _:b807 .
-_:b807 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
-_:b807 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#pan-flute> <https://dnd5e.app/vocab/dnd5e#cost> _:b833 .
+_:b833 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
+_:b833 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#shawm> <http://www.w3.org/2000/01/rdf-schema#label> "Shawm" .
 <#shawm> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#shawm> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#shawm> <https://dnd5e.app/vocab/dnd5e#cost> _:b808 .
-_:b808 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b808 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#shawm> <https://dnd5e.app/vocab/dnd5e#cost> _:b834 .
+_:b834 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b834 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#viol> <http://www.w3.org/2000/01/rdf-schema#label> "Viol" .
 <#viol> <http://purl.org/dc/terms/description> "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency." .
 <#viol> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#viol> <https://dnd5e.app/vocab/dnd5e#cost> _:b809 .
-_:b809 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b809 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#viol> <https://dnd5e.app/vocab/dnd5e#cost> _:b835 .
+_:b835 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b835 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#navigators-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Navigator's Tools" .
 <#navigators-tools> <http://purl.org/dc/terms/description> "This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea." .
 <#navigators-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#navigators-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b810 .
-_:b810 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b810 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#navigators-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b836 .
+_:b836 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b836 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#thieves-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Thieves' Tools" .
 <#thieves-tools> <http://purl.org/dc/terms/description> "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks." .
 <#thieves-tools> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#tools> .
-<#thieves-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b811 .
-_:b811 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b811 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#thieves-tools> <https://dnd5e.app/vocab/dnd5e#cost> _:b837 .
+_:b837 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b837 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#camel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#camel> <http://www.w3.org/2000/01/rdf-schema#label> "Camel" .
 <#camel> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#camel> <https://dnd5e.app/vocab/dnd5e#cost> _:b812 .
-_:b812 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b812 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#camel> <https://dnd5e.app/vocab/dnd5e#cost> _:b838 .
+_:b838 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b838 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#donkey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#donkey> <http://www.w3.org/2000/01/rdf-schema#label> "Donkey" .
 <#donkey> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#donkey> <https://dnd5e.app/vocab/dnd5e#cost> _:b813 .
-_:b813 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
-_:b813 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#donkey> <https://dnd5e.app/vocab/dnd5e#cost> _:b839 .
+_:b839 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
+_:b839 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#mule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#mule> <http://www.w3.org/2000/01/rdf-schema#label> "Mule" .
 <#mule> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#mule> <https://dnd5e.app/vocab/dnd5e#cost> _:b814 .
-_:b814 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
-_:b814 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#mule> <https://dnd5e.app/vocab/dnd5e#cost> _:b840 .
+_:b840 <https://dnd5e.app/vocab/dnd5e#quantity> 8 .
+_:b840 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#elephant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#elephant> <http://www.w3.org/2000/01/rdf-schema#label> "Elephant" .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#elephant> <https://dnd5e.app/vocab/dnd5e#cost> _:b815 .
-_:b815 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
-_:b815 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#elephant> <https://dnd5e.app/vocab/dnd5e#cost> _:b841 .
+_:b841 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
+_:b841 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#horse-draft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#horse-draft> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, draft" .
 <#horse-draft> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#horse-draft> <https://dnd5e.app/vocab/dnd5e#cost> _:b816 .
-_:b816 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b816 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#horse-draft> <https://dnd5e.app/vocab/dnd5e#cost> _:b842 .
+_:b842 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b842 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#horse-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#horse-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Horse, riding" .
 <#horse-riding> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#horse-riding> <https://dnd5e.app/vocab/dnd5e#cost> _:b817 .
-_:b817 <https://dnd5e.app/vocab/dnd5e#quantity> 75 .
-_:b817 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#horse-riding> <https://dnd5e.app/vocab/dnd5e#cost> _:b843 .
+_:b843 <https://dnd5e.app/vocab/dnd5e#quantity> 75 .
+_:b843 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#mastiff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#mastiff> <http://www.w3.org/2000/01/rdf-schema#label> "Mastiff" .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#mastiff> <https://dnd5e.app/vocab/dnd5e#cost> _:b818 .
-_:b818 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
-_:b818 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#mastiff> <https://dnd5e.app/vocab/dnd5e#cost> _:b844 .
+_:b844 <https://dnd5e.app/vocab/dnd5e#quantity> 25 .
+_:b844 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#pony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#pony> <http://www.w3.org/2000/01/rdf-schema#label> "Pony" .
 <#pony> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#pony> <https://dnd5e.app/vocab/dnd5e#cost> _:b819 .
-_:b819 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
-_:b819 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#pony> <https://dnd5e.app/vocab/dnd5e#cost> _:b845 .
+_:b845 <https://dnd5e.app/vocab/dnd5e#quantity> 30 .
+_:b845 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#warhorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#warhorse> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse" .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#warhorse> <https://dnd5e.app/vocab/dnd5e#cost> _:b820 .
-_:b820 <https://dnd5e.app/vocab/dnd5e#quantity> 400 .
-_:b820 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#warhorse> <https://dnd5e.app/vocab/dnd5e#cost> _:b846 .
+_:b846 <https://dnd5e.app/vocab/dnd5e#quantity> 400 .
+_:b846 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-padded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-padded> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Padded" .
 <#barding-padded> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-padded> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-padded> <https://dnd5e.app/vocab/dnd5e#cost> _:b821 .
-_:b821 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b821 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-padded> <https://dnd5e.app/vocab/dnd5e#cost> _:b847 .
+_:b847 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b847 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Leather" .
 <#barding-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-leather> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-leather> <https://dnd5e.app/vocab/dnd5e#cost> _:b822 .
-_:b822 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
-_:b822 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-leather> <https://dnd5e.app/vocab/dnd5e#cost> _:b848 .
+_:b848 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
+_:b848 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-studded-leather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-studded-leather> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Studded Leather" .
 <#barding-studded-leather> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-studded-leather> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-studded-leather> <https://dnd5e.app/vocab/dnd5e#cost> _:b823 .
-_:b823 <https://dnd5e.app/vocab/dnd5e#quantity> 180 .
-_:b823 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-studded-leather> <https://dnd5e.app/vocab/dnd5e#cost> _:b849 .
+_:b849 <https://dnd5e.app/vocab/dnd5e#quantity> 180 .
+_:b849 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-hide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-hide> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Hide" .
 <#barding-hide> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-hide> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-hide> <https://dnd5e.app/vocab/dnd5e#cost> _:b824 .
-_:b824 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
-_:b824 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-hide> <https://dnd5e.app/vocab/dnd5e#cost> _:b850 .
+_:b850 <https://dnd5e.app/vocab/dnd5e#quantity> 40 .
+_:b850 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain shirt" .
 <#barding-chain-shirt> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-chain-shirt> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-chain-shirt> <https://dnd5e.app/vocab/dnd5e#cost> _:b825 .
-_:b825 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
-_:b825 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-chain-shirt> <https://dnd5e.app/vocab/dnd5e#cost> _:b851 .
+_:b851 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
+_:b851 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Scale mail" .
 <#barding-scale-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-scale-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-scale-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b826 .
-_:b826 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
-_:b826 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-scale-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b852 .
+_:b852 <https://dnd5e.app/vocab/dnd5e#quantity> 200 .
+_:b852 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Breastplate" .
 <#barding-breastplate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-breastplate> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-breastplate> <https://dnd5e.app/vocab/dnd5e#cost> _:b827 .
-_:b827 <https://dnd5e.app/vocab/dnd5e#quantity> 1600 .
-_:b827 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-breastplate> <https://dnd5e.app/vocab/dnd5e#cost> _:b853 .
+_:b853 <https://dnd5e.app/vocab/dnd5e#quantity> 1600 .
+_:b853 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-half-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-half-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Half plate" .
 <#barding-half-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-half-plate> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-half-plate> <https://dnd5e.app/vocab/dnd5e#cost> _:b828 .
-_:b828 <https://dnd5e.app/vocab/dnd5e#quantity> 3000 .
-_:b828 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-half-plate> <https://dnd5e.app/vocab/dnd5e#cost> _:b854 .
+_:b854 <https://dnd5e.app/vocab/dnd5e#quantity> 3000 .
+_:b854 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Ring mail" .
 <#barding-ring-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-ring-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-ring-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b829 .
-_:b829 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
-_:b829 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-ring-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b855 .
+_:b855 <https://dnd5e.app/vocab/dnd5e#quantity> 12 .
+_:b855 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Chain mail" .
 <#barding-chain-mail> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-chain-mail> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-chain-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b830 .
-_:b830 <https://dnd5e.app/vocab/dnd5e#quantity> 300 .
-_:b830 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-chain-mail> <https://dnd5e.app/vocab/dnd5e#cost> _:b856 .
+_:b856 <https://dnd5e.app/vocab/dnd5e#quantity> 300 .
+_:b856 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-splint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-splint> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Splint" .
 <#barding-splint> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-splint> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-splint> <https://dnd5e.app/vocab/dnd5e#cost> _:b831 .
-_:b831 <https://dnd5e.app/vocab/dnd5e#quantity> 800 .
-_:b831 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-splint> <https://dnd5e.app/vocab/dnd5e#cost> _:b857 .
+_:b857 <https://dnd5e.app/vocab/dnd5e#quantity> 800 .
+_:b857 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#barding-plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#barding-plate> <http://www.w3.org/2000/01/rdf-schema#label> "Barding: Plate" .
 <#barding-plate> <http://purl.org/dc/terms/description> "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much." .
 <#barding-plate> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#barding-plate> <https://dnd5e.app/vocab/dnd5e#cost> _:b832 .
-_:b832 <https://dnd5e.app/vocab/dnd5e#quantity> 6000 .
-_:b832 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#barding-plate> <https://dnd5e.app/vocab/dnd5e#cost> _:b858 .
+_:b858 <https://dnd5e.app/vocab/dnd5e#quantity> 6000 .
+_:b858 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#bit-and-bridle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#bit-and-bridle> <http://www.w3.org/2000/01/rdf-schema#label> "Bit and bridle" .
 <#bit-and-bridle> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#bit-and-bridle> <https://dnd5e.app/vocab/dnd5e#cost> _:b833 .
-_:b833 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
-_:b833 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#bit-and-bridle> <https://dnd5e.app/vocab/dnd5e#cost> _:b859 .
+_:b859 <https://dnd5e.app/vocab/dnd5e#quantity> 2 .
+_:b859 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#carriage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#carriage> <http://www.w3.org/2000/01/rdf-schema#label> "Carriage" .
 <#carriage> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#carriage> <https://dnd5e.app/vocab/dnd5e#cost> _:b834 .
-_:b834 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
-_:b834 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#carriage> <https://dnd5e.app/vocab/dnd5e#cost> _:b860 .
+_:b860 <https://dnd5e.app/vocab/dnd5e#quantity> 100 .
+_:b860 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#cart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#cart> <http://www.w3.org/2000/01/rdf-schema#label> "Cart" .
 <#cart> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#cart> <https://dnd5e.app/vocab/dnd5e#cost> _:b835 .
-_:b835 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
-_:b835 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#cart> <https://dnd5e.app/vocab/dnd5e#cost> _:b861 .
+_:b861 <https://dnd5e.app/vocab/dnd5e#quantity> 15 .
+_:b861 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#chariot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#chariot> <http://www.w3.org/2000/01/rdf-schema#label> "Chariot" .
 <#chariot> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#chariot> <https://dnd5e.app/vocab/dnd5e#cost> _:b836 .
-_:b836 <https://dnd5e.app/vocab/dnd5e#quantity> 250 .
-_:b836 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#chariot> <https://dnd5e.app/vocab/dnd5e#cost> _:b862 .
+_:b862 <https://dnd5e.app/vocab/dnd5e#quantity> 250 .
+_:b862 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#animal-feed-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#animal-feed-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Feed (1 day)" .
 <#animal-feed-1-day> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#animal-feed-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b837 .
-_:b837 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b837 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
+<#animal-feed-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b863 .
+_:b863 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b863 <https://dnd5e.app/vocab/dnd5e#unit> "cp" .
 <#saddle-exotic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#saddle-exotic> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Exotic" .
 <#saddle-exotic> <http://purl.org/dc/terms/description> "An exotic saddle is required for riding any aquatic or flying mount." .
 <#saddle-exotic> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#saddle-exotic> <https://dnd5e.app/vocab/dnd5e#cost> _:b838 .
-_:b838 <https://dnd5e.app/vocab/dnd5e#quantity> 60 .
-_:b838 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#saddle-exotic> <https://dnd5e.app/vocab/dnd5e#cost> _:b864 .
+_:b864 <https://dnd5e.app/vocab/dnd5e#quantity> 60 .
+_:b864 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#saddle-military> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#saddle-military> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Military" .
 <#saddle-military> <http://purl.org/dc/terms/description> "A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted." .
 <#saddle-military> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#saddle-military> <https://dnd5e.app/vocab/dnd5e#cost> _:b839 .
-_:b839 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b839 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#saddle-military> <https://dnd5e.app/vocab/dnd5e#cost> _:b865 .
+_:b865 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b865 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#saddle-pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#saddle-pack> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Pack" .
 <#saddle-pack> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#saddle-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b840 .
-_:b840 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b840 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#saddle-pack> <https://dnd5e.app/vocab/dnd5e#cost> _:b866 .
+_:b866 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b866 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#saddle-riding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#saddle-riding> <http://www.w3.org/2000/01/rdf-schema#label> "Saddle, Riding" .
 <#saddle-riding> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#saddle-riding> <https://dnd5e.app/vocab/dnd5e#cost> _:b841 .
-_:b841 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
-_:b841 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#saddle-riding> <https://dnd5e.app/vocab/dnd5e#cost> _:b867 .
+_:b867 <https://dnd5e.app/vocab/dnd5e#quantity> 10 .
+_:b867 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#saddlebags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#saddlebags> <http://www.w3.org/2000/01/rdf-schema#label> "Saddlebags" .
 <#saddlebags> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#saddlebags> <https://dnd5e.app/vocab/dnd5e#cost> _:b842 .
-_:b842 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
-_:b842 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#saddlebags> <https://dnd5e.app/vocab/dnd5e#cost> _:b868 .
+_:b868 <https://dnd5e.app/vocab/dnd5e#quantity> 4 .
+_:b868 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sled> <http://www.w3.org/2000/01/rdf-schema#label> "Sled" .
 <#sled> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#sled> <https://dnd5e.app/vocab/dnd5e#cost> _:b843 .
-_:b843 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
-_:b843 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#sled> <https://dnd5e.app/vocab/dnd5e#cost> _:b869 .
+_:b869 <https://dnd5e.app/vocab/dnd5e#quantity> 20 .
+_:b869 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#stabling-1-day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#stabling-1-day> <http://www.w3.org/2000/01/rdf-schema#label> "Stabling (1 day)" .
 <#stabling-1-day> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#stabling-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b844 .
-_:b844 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
-_:b844 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
+<#stabling-1-day> <https://dnd5e.app/vocab/dnd5e#cost> _:b870 .
+_:b870 <https://dnd5e.app/vocab/dnd5e#quantity> 5 .
+_:b870 <https://dnd5e.app/vocab/dnd5e#unit> "sp" .
 <#wagon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#wagon> <http://www.w3.org/2000/01/rdf-schema#label> "Wagon" .
 <#wagon> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#wagon> <https://dnd5e.app/vocab/dnd5e#cost> _:b845 .
-_:b845 <https://dnd5e.app/vocab/dnd5e#quantity> 35 .
-_:b845 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#wagon> <https://dnd5e.app/vocab/dnd5e#cost> _:b871 .
+_:b871 <https://dnd5e.app/vocab/dnd5e#quantity> 35 .
+_:b871 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#galley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#galley> <http://www.w3.org/2000/01/rdf-schema#label> "Galley" .
 <#galley> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#galley> <https://dnd5e.app/vocab/dnd5e#cost> _:b846 .
-_:b846 <https://dnd5e.app/vocab/dnd5e#quantity> 30000 .
-_:b846 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#galley> <https://dnd5e.app/vocab/dnd5e#cost> _:b872 .
+_:b872 <https://dnd5e.app/vocab/dnd5e#quantity> 30000 .
+_:b872 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#keelboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#keelboat> <http://www.w3.org/2000/01/rdf-schema#label> "Keelboat" .
 <#keelboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
 <#keelboat> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#keelboat> <https://dnd5e.app/vocab/dnd5e#cost> _:b847 .
-_:b847 <https://dnd5e.app/vocab/dnd5e#quantity> 3000 .
-_:b847 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#keelboat> <https://dnd5e.app/vocab/dnd5e#cost> _:b873 .
+_:b873 <https://dnd5e.app/vocab/dnd5e#quantity> 3000 .
+_:b873 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#longship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#longship> <http://www.w3.org/2000/01/rdf-schema#label> "Longship" .
 <#longship> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#longship> <https://dnd5e.app/vocab/dnd5e#cost> _:b848 .
-_:b848 <https://dnd5e.app/vocab/dnd5e#quantity> 10000 .
-_:b848 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#longship> <https://dnd5e.app/vocab/dnd5e#cost> _:b874 .
+_:b874 <https://dnd5e.app/vocab/dnd5e#quantity> 10000 .
+_:b874 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#rowboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#rowboat> <http://www.w3.org/2000/01/rdf-schema#label> "Rowboat" .
 <#rowboat> <http://purl.org/dc/terms/description> "Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land." .
 <#rowboat> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#rowboat> <https://dnd5e.app/vocab/dnd5e#cost> _:b849 .
-_:b849 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
-_:b849 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#rowboat> <https://dnd5e.app/vocab/dnd5e#cost> _:b875 .
+_:b875 <https://dnd5e.app/vocab/dnd5e#quantity> 50 .
+_:b875 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#sailing-ship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#sailing-ship> <http://www.w3.org/2000/01/rdf-schema#label> "Sailing ship" .
 <#sailing-ship> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#sailing-ship> <https://dnd5e.app/vocab/dnd5e#cost> _:b850 .
-_:b850 <https://dnd5e.app/vocab/dnd5e#quantity> 10000 .
-_:b850 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#sailing-ship> <https://dnd5e.app/vocab/dnd5e#cost> _:b876 .
+_:b876 <https://dnd5e.app/vocab/dnd5e#quantity> 10000 .
+_:b876 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
 <#warship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Equipment> .
 <#warship> <http://www.w3.org/2000/01/rdf-schema#label> "Warship" .
 <#warship> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#mounts-and-vehicles> .
-<#warship> <https://dnd5e.app/vocab/dnd5e#cost> _:b851 .
-_:b851 <https://dnd5e.app/vocab/dnd5e#quantity> 25000 .
-_:b851 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .
+<#warship> <https://dnd5e.app/vocab/dnd5e#cost> _:b877 .
+_:b877 <https://dnd5e.app/vocab/dnd5e#quantity> 25000 .
+_:b877 <https://dnd5e.app/vocab/dnd5e#unit> "gp" .

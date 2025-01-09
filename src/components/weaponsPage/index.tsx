@@ -121,62 +121,67 @@ export default function WeaponsPage() {
               })}
           </dd>
         </dl>
-        <table className={bem("table", "compact")}>
-          <thead>
-            <tr>
-              <th scope="col">
-                <Translation id="name" />
-              </th>
-              <th scope="col">
-                <Translation id="cost" />
-              </th>
-              <th scope="col">
-                <Translation id="damage" />
-              </th>
-              <th scope="col">
-                <Translation id="weight" />
-              </th>
-              <th scope="col">
-                <Translation id="properties" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {weapons
-              .filter(
-                (equipment) =>
-                  (categoryFilter
-                    ? equipment.weapon.weaponCategory === categoryFilter
-                    : true) &&
-                  (propertyFilterDecoded
-                    ? !!equipment.weapon.properties.find(
-                        (property) => property["@id"] === propertyFilterDecoded,
-                      )
-                    : true) &&
-                  (rangeFilter
-                    ? equipment.weapon.weaponRange === rangeFilter
-                    : true),
-              )
-              .map((equipment) => (
-                <tr key={equipment["@id"]}>
-                  <td>{equipment.label}</td>
-                  <td>
-                    {equipment.cost.quantity} {equipment.cost.unit}
-                  </td>
-                  <td>
-                    {equipment.weapon.damage?.dice}{" "}
-                    {equipment.weapon.damage?.damageType.label}
-                  </td>
-                  <td>{equipment.weapon.weight} lb.</td>
-                  <td>
-                    {equipment.weapon.properties
-                      .map((property) => property.label)
-                      .join(", ")}
-                  </td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
+        <div className="table-container">
+          <table className={bem("table", "compact")}>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <Translation id="name" />
+                </th>
+                <th scope="col">
+                  <Translation id="cost" />
+                </th>
+                <th scope="col">
+                  <Translation id="damage" />
+                </th>
+                <th scope="col">
+                  <Translation id="weight" />
+                </th>
+                <th scope="col">
+                  <Translation id="properties" />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {weapons
+                .filter(
+                  (equipment) =>
+                    (categoryFilter
+                      ? equipment.weapon.weaponCategory === categoryFilter
+                      : true) &&
+                    (propertyFilterDecoded
+                      ? !!equipment.weapon.properties.find(
+                          (property) =>
+                            property["@id"] === propertyFilterDecoded,
+                        )
+                      : true) &&
+                    (rangeFilter
+                      ? equipment.weapon.weaponRange === rangeFilter
+                      : true),
+                )
+                .map((equipment) => (
+                  <tr key={equipment["@id"]}>
+                    <td>{equipment.label}</td>
+                    <td className="whitespace-nowrap">
+                      {equipment.cost.quantity} {equipment.cost.unit}
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {equipment.weapon.damage?.dice}{" "}
+                      {equipment.weapon.damage?.damageType.label}
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {equipment.weapon.weight} lb.
+                    </td>
+                    <td>
+                      {equipment.weapon.properties
+                        .map((property) => property.label)
+                        .join(", ")}
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
       </Content>
     </Layout>
   );

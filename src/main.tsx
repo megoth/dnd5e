@@ -29,6 +29,7 @@ import SpellPage from "./components/spellPage";
 import SearchPage from "./components/searchPage";
 import RacePage from "./components/racePage";
 import WeaponsPage from "./components/weaponsPage";
+import ArmorPage from "./components/armorPage";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/translations",
         element: <TranslationsPage />,
+      },
+      {
+        path: "/armor",
+        element: <ArmorPage />,
       },
       {
         path: "/characters",

@@ -79,38 +79,41 @@ export default function EquipmentPage() {
               })}
           </dd>
         </dl>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <Translation id="name" />
-              </th>
-              <th scope="col">
-                <Translation id="cost" />
-              </th>
-              <th scope="col">
-                <Translation id="category" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {equipments
-              .filter((equipment) =>
-                categoryFilterDecoded
-                  ? equipment.equipmentCategory["@id"] === categoryFilterDecoded
-                  : true,
-              )
-              .map((equipment) => (
-                <tr key={equipment["@id"]}>
-                  <td>{equipment.label}</td>
-                  <td>
-                    {equipment.cost.quantity} {equipment.cost.unit}
-                  </td>
-                  <td>{equipment.equipmentCategory.label}</td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
+        <div className="table-container">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <Translation id="name" />
+                </th>
+                <th scope="col">
+                  <Translation id="cost" />
+                </th>
+                <th scope="col">
+                  <Translation id="category" />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {equipments
+                .filter((equipment) =>
+                  categoryFilterDecoded
+                    ? equipment.equipmentCategory["@id"] ===
+                      categoryFilterDecoded
+                    : true,
+                )
+                .map((equipment) => (
+                  <tr key={equipment["@id"]}>
+                    <td>{equipment.label}</td>
+                    <td className="whitespace-nowrap">
+                      {equipment.cost.quantity} {equipment.cost.unit}
+                    </td>
+                    <td>{equipment.equipmentCategory.label}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
       </Content>
     </Layout>
   );

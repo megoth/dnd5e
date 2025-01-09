@@ -1,10 +1,10 @@
 .table-container {
-    @apply overflow-x-auto;
+    @apply block overflow-x-auto;
     max-width: 93vw;
 }
 
 .table {
-    @apply text-left rtl:text-right text-gray-500 dark:text-gray-400;
+    @apply text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow;
 }
 
 .table--compact {
@@ -12,7 +12,7 @@
 }
 
 .table > thead {
-    @apply top-0 text-xs bg-gray-100 dark:bg-gray-900 border-b dark:border-gray-700;
+    @apply top-0 text-xs bg-gray-200 dark:bg-gray-900 border-b dark:border-gray-700;
 }
 
 .table--compact > thead {
@@ -30,5 +30,5 @@
 }
 
 .table > tbody > tr {
-    @apply even:text-gray-700 even:bg-gray-50 even:dark:bg-gray-700 even:dark:text-gray-400;
+    @apply even:text-gray-700 bg-gray-50 even:bg-gray-100 dark:bg-gray-700 even:dark:bg-gray-600 even:dark:text-gray-400;
 }
