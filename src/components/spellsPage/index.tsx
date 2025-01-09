@@ -86,7 +86,7 @@ export default function SpellsPage() {
           </dt>
           <dd>
             {Array.from({ length: 10 }).map((_, level) => {
-              const active = levelFilter && levelFilter === level;
+              const active = levelFilter > -1 && levelFilter === level;
               return (
                 <NavLink
                   key={level}
@@ -97,7 +97,7 @@ export default function SpellsPage() {
                   }
                   aria-selected={active}
                 >
-                  {level}
+                  {l10n.getString(`order${level}`)}
                 </NavLink>
               );
             })}
@@ -162,7 +162,7 @@ export default function SpellsPage() {
                             classInfo["@id"] === classFilterDecoded,
                         )
                       : true) &&
-                    (levelFilter ? spell.level === levelFilter : true) &&
+                    (levelFilter > -1 ? spell.level === levelFilter : true) &&
                     (schoolFilterDecoded
                       ? spell.magicSchool["@id"] === schoolFilterDecoded
                       : true),
