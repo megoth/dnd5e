@@ -37,17 +37,22 @@ export default function ClassesPage() {
           <li
             key={classInfo["@id"]}
             className="card"
-            onClick={() => navigate(`/classes/${btoa(classInfo["@id"])}`)}
+            onClick={(event) => {
+              if ((event.target as HTMLElement).nodeName === "A") return;
+              return navigate(`/classes/${btoa(classInfo["@id"])}`);
+            }}
           >
-            {classInfo.illustration ? (
-              <Illustration
-                className="card__media"
-                subject={classInfo.illustration}
-                modifier="compact"
-              />
-            ) : (
-              <Logo className="card__media" />
-            )}
+            <Content>
+              {classInfo.illustration ? (
+                <Illustration
+                  className="card__media"
+                  subject={classInfo.illustration}
+                  modifier="compact"
+                />
+              ) : (
+                <Logo className="card__media" />
+              )}
+            </Content>
             <div className="card__content">
               <h2 className="card__title">
                 <NavLink to={`/classes/${btoa(classInfo["@id"])}`}>
