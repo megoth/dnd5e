@@ -4,7 +4,7 @@ import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
 import Loading from "../loading";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import useSWR from "swr";
 import { useLdo } from "@ldo/solid-react";
 import { resourceUrl } from "../../utils/url";
@@ -18,6 +18,8 @@ import ClassPageFeatures from "./features";
 import ClassPageMulticlassing from "./multiclassing";
 import Illustration from "../illustration";
 import Markdown from "react-markdown";
+import Icon from "../icon";
+import Breadcrumbs from "../breadcrumbs";
 
 export default function ClassPage() {
   const params = useParams();
@@ -56,10 +58,16 @@ export default function ClassPage() {
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      <Breadcrumbs
+        crumbs={[
+          { href: "/classes", translationId: "classes" },
+          { text: classInfo.label },
+        ]}
+      />
+      {classInfo.illustration && (
+        <Illustration subject={classInfo.illustration} />
+      )}
       <Content>
-        {classInfo.illustration && (
-          <Illustration subject={classInfo.illustration} />
-        )}
         <h1>{classInfo.label}</h1>
         <ClassPageMulticlassing classInfo={classInfo} />
         {classInfo.description && (

@@ -27,8 +27,9 @@
 :category skos:definition "Category"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
-:classesPageTitle skos:definition "Classes"@en-US .
 :class skos:definition "Class"@en-US .
+:classes skos:definition "Classes"@en-US .
+:classesPageTitle skos:definition "Classes"@en-US .
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .

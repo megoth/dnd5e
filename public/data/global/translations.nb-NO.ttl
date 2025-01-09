@@ -29,6 +29,7 @@
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :class skos:definition "Klasse"@nb-NO .
+:classes skos:definition "Klasser"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
 :classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .

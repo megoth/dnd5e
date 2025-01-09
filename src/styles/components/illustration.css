@@ -15,7 +15,7 @@
     @apply absolute bottom-0 right-0 p-1.5 bg-black text-gray-500 leading-none rounded-tl-md text-xs;
 }
 .illustration__creator a {
-    @apply text-gray-500;
+    @apply text-gray-500 underline;
 }
 .illustration__creator p {
     @apply m-0;
