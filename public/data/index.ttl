@@ -17,6 +17,7 @@
     rdfs:label "classes" ;
     dnd5e_app:rulesResource
             </data/classes.ttl>,
+            </data/illustrations.ttl>,
             </data/subclasses.ttl> .
 
 :equipmentsBundle

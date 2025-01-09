@@ -1,0 +1,24 @@
+.cards {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2;
+}
+
+.card {
+    @apply block max-w-lg bg-white border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600 hover:bg-gray-600 cursor-pointer;
+}
+
+.card__content {
+    @apply p-4;
+}
+
+.card__content p {
+    @apply m-0 font-normal text-gray-700 dark:text-gray-400;
+}
+
+.card__media.card__media {
+    @apply mb-0;
+    max-height: 256px;
+}
+
+.card__title {
+    @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white;
+}

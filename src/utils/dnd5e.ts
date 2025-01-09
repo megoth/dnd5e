@@ -125,7 +125,9 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...(classInfo.multiclassing?.prerequisiteOptions
       ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteOptions)
       : []),
-    resourceUrl(classInfo.illustration?.["@id"]),
+    ...(classInfo.illustration
+      ? [resourceUrl(classInfo.illustration["@id"])]
+      : []),
   ];
 }
 

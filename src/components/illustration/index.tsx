@@ -1,23 +1,27 @@
 import { type Illustration } from "../../ldo/dnd5e.typings";
 import { useLocalization } from "@fluent/react";
 import Markdown from "react-markdown";
+import { bem } from "../../utils/bem";
+import { HTMLProps } from "react";
+import clsx from "clsx";
 
-interface Props {
-  src: Illustration;
+interface Props extends HTMLProps<HTMLDivElement> {
+  subject: Illustration;
+  modifier?: "compact";
 }
 
-export default function Illustration({ src }: Props) {
+export default function Illustration({ className, subject, modifier }: Props) {
   const { l10n } = useLocalization();
   return (
-    <div className="illustration">
-      <img src={src.imageUrl["@id"]} alt={src.description} />
-      {src.creator && (
-        <div className="illustration__creator">
+    <div className={clsx(bem("illustration", modifier), className)}>
+      <img src={subject.imageUrl["@id"]} alt={subject.description} />
+      {subject.creator && (
+        <div className={bem("illustration__creator", modifier)}>
           <Markdown>
-            {l10n.getString("illustrationCreatedBy", {
-              creator: src.creatorUrl
-                ? `[${src.creator}](${src.creatorUrl})`
-                : src.creator,
+            {l10n.getString("illustrationBy", {
+              creator: subject.creatorUrl
+                ? `[${subject.creator}](${subject.creatorUrl})`
+                : subject.creator,
             })}
           </Markdown>
         </div>

@@ -17,6 +17,7 @@ import ClassPageLevels from "./levels";
 import ClassPageFeatures from "./features";
 import ClassPageMulticlassing from "./multiclassing";
 import Illustration from "../illustration";
+import Markdown from "react-markdown";
 
 export default function ClassPage() {
   const params = useParams();
@@ -57,10 +58,13 @@ export default function ClassPage() {
       <WarningMessage id="workInProgress" />
       <Content>
         {classInfo.illustration && (
-          <Illustration src={classInfo.illustration} />
+          <Illustration subject={classInfo.illustration} />
         )}
         <h1>{classInfo.label}</h1>
         <ClassPageMulticlassing classInfo={classInfo} />
+        {classInfo.description && (
+          <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+        )}
         <ClassPageLevels classInfo={classInfo} />
         <h2>
           <Translation id="classFeatures" />

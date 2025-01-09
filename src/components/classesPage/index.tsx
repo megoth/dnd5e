@@ -7,8 +7,13 @@ import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
 import { NavLink } from "react-router-dom";
 import useListOfType from "../../hooks/useListOfType";
 import Content from "../content";
+import Markdown from "react-markdown";
+import Illustration from "../illustration";
+import Logo from "../logo";
+import { useNavigate } from "react-router";
 
 export default function ClassesPage() {
+  const navigate = useNavigate();
   const { isLoading, items: classes } = useListOfType(
     ClassShapeType,
     "classes",
@@ -26,39 +31,36 @@ export default function ClassesPage() {
         <h1>
           <Translation id="classesPageTitle" />
         </h1>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <Translation id="name" />
-              </th>
-              <th scope="col">
-                <Translation id="hitDie" />
-              </th>
-              <th scope="col">
-                <Translation id="subclasses" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {classes.map((adventureClass) => (
-              <tr key={adventureClass["@id"]}>
-                <td>
-                  <NavLink to={`/classes/${btoa(adventureClass["@id"])}`}>
-                    {adventureClass.label}
-                  </NavLink>
-                </td>
-                <td>d{adventureClass.hitDie}</td>
-                <td>
-                  {adventureClass.subclasses
-                    .map((subclass) => subclass.label)
-                    .join(", ")}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
       </Content>
+      <ul className="cards">
+        {classes.map((classInfo) => (
+          <li
+            key={classInfo["@id"]}
+            className="card"
+            onClick={() => navigate(`/classes/${btoa(classInfo["@id"])}`)}
+          >
+            {classInfo.illustration ? (
+              <Illustration
+                className="card__media"
+                subject={classInfo.illustration}
+                modifier="compact"
+              />
+            ) : (
+              <Logo className="card__media" />
+            )}
+            <div className="card__content">
+              <h2 className="card__title">
+                <NavLink to={`/classes/${btoa(classInfo["@id"])}`}>
+                  {classInfo.label}
+                </NavLink>
+              </h2>
+              {classInfo.description && (
+                <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 }
