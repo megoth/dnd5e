@@ -36,8 +36,10 @@ export default function SplashPage() {
                 <Markdown>{readme}</Markdown>
                 <p>
                   Pages of interest: <NavLink to="/classes">classes</NavLink>,{" "}
-                  <NavLink to="/races">races</NavLink>, and{" "}
-                  <NavLink to="/spells">spells</NavLink>.
+                  <NavLink to="/races">races</NavLink>,{" "}
+                  <NavLink to="/spells">spells</NavLink>,{" "}
+                  <NavLink to="/equipment">equipment</NavLink>, and{" "}
+                  <NavLink to="/weapons">weapons</NavLink>.
                 </p>
               </Content>
               <NavLink

@@ -16,6 +16,7 @@ import Translation from "../translation";
 import { useLocalization } from "@fluent/react";
 import Markdown from "react-markdown";
 import WarningMessage from "../warningMessage";
+import Breadcrumbs from "../breadcrumbs";
 
 export default function SpellPage() {
   const params = useParams();
@@ -50,6 +51,12 @@ export default function SpellPage() {
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      <Breadcrumbs
+        crumbs={[
+          { href: "/spells", translationId: "spells" },
+          { text: spell.label },
+        ]}
+      />
       <Content>
         <h1>{spell.label}</h1>
         <p className="notification">
