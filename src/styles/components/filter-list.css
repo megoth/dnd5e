@@ -12,5 +12,5 @@
     @apply float-start hyphens-none flex gap-2 flex-wrap;
 }
 .filter-list > dd a[aria-selected="true"] {
-    @apply text-white;
+    @apply text-black dark:text-white focus:ring-black dark:focus:ring-white;
 }

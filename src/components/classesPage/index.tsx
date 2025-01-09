@@ -60,7 +60,9 @@ export default function ClassesPage() {
                 </NavLink>
               </h2>
               {classInfo.description && (
-                <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+                <Content>
+                  <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+                </Content>
               )}
             </div>
           </li>

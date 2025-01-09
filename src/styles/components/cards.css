@@ -3,14 +3,14 @@
 }
 
 .card {
-    @apply block max-w-lg bg-white border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600 hover:bg-gray-600 cursor-pointer;
+    @apply block max-w-lg bg-gray-100 hover:bg-gray-200 border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 cursor-pointer;
 }
 
 .card__content {
     @apply p-4;
 }
 
-.card__content p {
+.card__content.card__content p {
     @apply m-0 font-normal text-gray-700 dark:text-gray-400;
 }
 
