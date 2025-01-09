@@ -36,6 +36,7 @@ import {
   Equipment,
   EquipmentCategory,
   EquipmentPack,
+  EquipmentPackContent,
   Feature,
   FeaturePrerequisite,
   FeatureSpecific,
@@ -385,6 +386,15 @@ export const EquipmentCategoryShapeType: ShapeType<EquipmentCategory> = {
 export const EquipmentPackShapeType: ShapeType<EquipmentPack> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentPack",
+  context: dnd5eContext,
+};
+
+/**
+ * EquipmentPackContent ShapeType
+ */
+export const EquipmentPackContentShapeType: ShapeType<EquipmentPackContent> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentPackContent",
   context: dnd5eContext,
 };
 

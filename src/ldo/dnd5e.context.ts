@@ -392,6 +392,10 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  item: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#item",
+    "@type": "@id",
+  },
   damages: {
     "@id": "https://dnd5e.app/vocab/dnd5e#damages",
     "@type": "@id",

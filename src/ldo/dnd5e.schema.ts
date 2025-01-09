@@ -1768,9 +1768,39 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#contents",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#EquipmentPackContent",
               min: 0,
               max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentPackContent",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#quantity",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#item",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
+              min: 0,
+              max: 1,
             },
           ],
         },

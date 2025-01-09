@@ -4,12 +4,20 @@ import {
   ArmorClassShapeType,
   ArmorShapeType,
   EquipmentCategoryShapeType,
+  EquipmentPackContentShapeType,
+  EquipmentPackShapeType,
   EquipmentShapeType,
   GearShapeType,
   WeaponPropertyShapeType,
   WeaponShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { Armor, Equipment, Gear, Weapon } from "../ldo/dnd5e.typings";
+import {
+  Armor,
+  Equipment,
+  EquipmentPack,
+  Gear,
+  Weapon,
+} from "../ldo/dnd5e.typings";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
 import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
@@ -34,6 +42,25 @@ function transformArmor(
     strMinimum: data.str_minimum,
     stealthDisadvantage: data.stealth_disadvantage,
     weight: data.weight,
+  });
+}
+
+function transformEquipmentPack(
+  data: components["schemas"]["EquipmentPack"],
+  ldoDataset = createLdoDataset(),
+): EquipmentPack {
+  return ldoDataset.usingType(EquipmentPackShapeType).fromJson({
+    gearCategory: ldoDataset
+      .usingType(EquipmentCategoryShapeType)
+      .fromSubject(apiUrlToSubjectUrl(data.gear_category.url)),
+    contents: data.contents.map((equipment) =>
+      ldoDataset.usingType(EquipmentPackContentShapeType).fromJson({
+        quantity: equipment.quantity,
+        item: ldoDataset
+          .usingType(EquipmentShapeType)
+          .fromSubject(apiUrlToSubjectUrl(equipment.item.url)),
+      }),
+    ),
   });
 }
 
@@ -96,8 +123,14 @@ export function transformEquipment(
   equipment.gear =
     data["gear_category"] &&
     data["weight"] &&
-    transformGear(data as components["schemas"]["Gear"]);
-  // equipmentPack
+    transformGear(data as components["schemas"]["Gear"], ldoDataset);
+  equipment.equipmentPack =
+    data["gear_category"] &&
+    data["contents"] &&
+    transformEquipmentPack(
+      data as components["schemas"]["EquipmentPack"],
+      ldoDataset,
+    );
   return equipment;
 }
 

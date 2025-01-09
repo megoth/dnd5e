@@ -438,7 +438,17 @@ export interface EquipmentPack {
   "@id"?: string;
   "@context"?: ContextDefinition;
   gearCategory?: EquipmentCategory;
-  contents?: Equipment[];
+  contents?: EquipmentPackContent[];
+}
+
+/**
+ * EquipmentPackContent Type
+ */
+export interface EquipmentPackContent {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  quantity?: number;
+  item?: Equipment;
 }
 
 /**

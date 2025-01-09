@@ -2193,7 +2193,10 @@ export interface components {
         gear_category?: components["schemas"]["APIReference"];
         cost?: components["schemas"]["Cost"];
         /** @description The list of adventuring gear in the pack. */
-        contents?: components["schemas"]["APIReference"][];
+        contents?: {
+          quantity?: number;
+          item?: components["schemas"]["APIReference"];
+        }[];
       };
     /** @description `EquipmentCategory`
      *      */
