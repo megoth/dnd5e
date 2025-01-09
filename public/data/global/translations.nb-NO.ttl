@@ -159,6 +159,7 @@
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 :unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
+:weapon skos:definition "Våpen"@nb-NO .
 :weapons skos:definition "Våpen"@nb-NO .
 :weight skos:definition "Tyngde"@nb-NO .
 :whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .

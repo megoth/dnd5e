@@ -158,6 +158,7 @@
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 :unarmoredMovement skos:definition "Unarmored movement"@en-US .
+:weapon skos:definition "Weapon"@en-US .
 :weapons skos:definition "Weapons"@en-US .
 :weight skos:definition "Weight"@en-US .
 :whatIsIdPLabel skos:definition "What is an identity provider?"@en-US .

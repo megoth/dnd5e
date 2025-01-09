@@ -98,7 +98,7 @@ export default function ArmorPage() {
                     : true,
                 )
                 .map((equipment) => (
-                  <tr key={equipment["@id"]}>
+                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
                     <td>{equipment.label}</td>
                     <td className="whitespace-nowrap">
                       {equipment.armor.armorClass.base}

@@ -13,6 +13,7 @@ import { NavLink, useSearchParams } from "react-router-dom";
 import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
+import { hash, resourceUrl } from "../../utils/url";
 
 export default function EquipmentPage() {
   const { isLoading: equipmentsLoading, items: equipments } = useListOfType(
@@ -103,7 +104,7 @@ export default function EquipmentPage() {
                     : true,
                 )
                 .map((equipment) => (
-                  <tr key={equipment["@id"]}>
+                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
                     <td>{equipment.label}</td>
                     <td className="whitespace-nowrap">
                       {equipment.cost.quantity} {equipment.cost.unit}

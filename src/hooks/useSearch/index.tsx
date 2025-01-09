@@ -2,6 +2,7 @@ import MiniSearch from "minisearch";
 import useListOfType from "../useListOfType";
 import {
   ClassShapeType,
+  EquipmentShapeType,
   MagicSchoolShapeType,
   RaceShapeType,
   SpellShapeType,
@@ -57,6 +58,38 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: equipmentLoading } = useIndexer(
+    EquipmentShapeType,
+    "equipments",
+    "Equipment",
+    (equipment) =>
+      !search.has(equipment["@id"]) &&
+      (() => {
+        search.add({
+          id: equipment["@id"],
+          type: "equipment",
+          title: equipment.label,
+          url: `/equipment#${btoa(equipment["@id"])}`,
+        });
+        if (equipment.weapon) {
+          search.add({
+            id: `${equipment["@id"]}-weapon`,
+            type: "weapon",
+            title: equipment.label,
+            url: `/weapons#${btoa(equipment["@id"])}`,
+          });
+        }
+        if (equipment.armor) {
+          search.add({
+            id: `${equipment["@id"]}-armor`,
+            type: "armor",
+            title: equipment.label,
+            url: `/armor#${btoa(equipment["@id"])}`,
+          });
+        }
+      })(),
+  );
+
   const { isLoading: racesLoading } = useIndexer(
     RaceShapeType,
     "races",
@@ -107,7 +140,12 @@ export default function useSearch() {
   );
 
   return {
-    isLoading: classesLoading || racesLoading || spellLoading || schoolsLoading,
+    isLoading:
+      classesLoading ||
+      equipmentLoading ||
+      racesLoading ||
+      spellLoading ||
+      schoolsLoading,
     search,
   };
 }
