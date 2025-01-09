@@ -632,6 +632,7 @@ export interface Race {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+  description?: string[];
   speed: number;
   abilityBonuses?: AbilityBonus[];
   alignmentDescription?: string;
@@ -644,6 +645,7 @@ export interface Race {
   languageDescription?: string;
   traits?: Trait[];
   subraces?: Subrace[];
+  illustration?: Illustration;
 }
 
 /**

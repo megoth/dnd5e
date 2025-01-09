@@ -16,30 +16,31 @@
 :classesBundle
     rdfs:label "classes" ;
     dnd5e_app:rulesResource
-            </data/classes.ttl>,
-            </data/illustrations.ttl>,
-            </data/subclasses.ttl> .
+        </data/classes.ttl>,
+        </data/illustrations.ttl>,
+        </data/subclasses.ttl> .
 
 :equipmentsBundle
     rdfs:label "equipments" ;
     dnd5e_app:rulesResource
-            </data/damage-types.ttl>,
-            </data/equipment-categories.ttl>,
-            </data/equipments.ttl>,
-            </data/weapon-properties.ttl> .
+        </data/damage-types.ttl>,
+        </data/equipment-categories.ttl>,
+        </data/equipments.ttl>,
+        </data/weapon-properties.ttl> .
 
 :racesBundle
     rdfs:label "races" ;
     dnd5e_app:rulesResource
+        </data/illustrations.ttl>,
         </data/races.ttl> .
 
 :spellsBundle
     rdfs:label "spells" ;
     dnd5e_app:rulesResource
-            </data/classes.ttl>,
-            </data/magic-schools.ttl>,
-            </data/subclasses.ttl>,
-            </data/spells.ttl> .
+        </data/classes.ttl>,
+        </data/magic-schools.ttl>,
+        </data/subclasses.ttl>,
+        </data/spells.ttl> .
 
 :locale-en-US
     dnd5e_app:language "en-US" ;

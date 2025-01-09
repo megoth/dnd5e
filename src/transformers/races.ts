@@ -13,8 +13,9 @@ import { Race } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import races from "../dnd5eapi-data/5e-SRD-Races.json";
 import { writeFileSync } from "node:fs";
-import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import { addendumPath, apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
 import { transformChoice } from "./choice";
+import { readFileSync } from "fs";
 
 export function transformRace(
   data: components["schemas"]["Race"],
@@ -73,5 +74,6 @@ export default async function writeRaces() {
       ),
     )
   ).reduce((memo, races) => memo.concat(races));
-  writeFileSync(dataPath("races"), turtle);
+  const addendum = readFileSync(addendumPath("races"), "utf-8");
+  writeFileSync(dataPath("races"), turtle + addendum);
 }

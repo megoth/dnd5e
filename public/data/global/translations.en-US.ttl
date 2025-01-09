@@ -99,6 +99,7 @@
 :properties skos:definition "Properties"@en-US .
 :provideIdP skos:definition "Provide another Solid identity provider"@en-US .
 :race skos:definition "Race"@en-US .
+:races skos:definition "Races"@en-US .
 :racesPageTitle skos:definition "Races"@en-US .
 :rageDamage skos:definition "Rage Damage"@en-US .
 :rages skos:definition "Rages"@en-US .

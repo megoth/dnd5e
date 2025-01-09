@@ -173,6 +173,7 @@ export function raceResources(race: Race): string[] {
     ),
     ...race.languages.map((language) => resourceUrl(language["@id"])),
     ...race.traits.map((trait) => resourceUrl(trait["@id"])),
+    ...(race.illustration ? [resourceUrl(race.illustration["@id"])] : []),
   ];
 }
 

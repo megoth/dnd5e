@@ -13,16 +13,56 @@
 <#cleric> <http://purl.org/dc/terms/description> "A portrait of a Dwarven Cleric" .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#dragonborn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dragonborn-male-fighter.jpg> .
+<#dragonborn> <http://purl.org/dc/terms/description> "A portrait of a Dragonborn" .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#druid> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-male-druid.jpg> .
 <#druid> <http://purl.org/dc/terms/description> "A portrait of a Human Druid" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dwarf-female-barbarian-in-the-mountains.jpg> .
+<#dwarf> <http://purl.org/dc/terms/description> "A portrait of a Dwarf" .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#elf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-elf-fighter-wearing-heavy-armor-in-the-forest.jpg> .
+<#elf> <http://purl.org/dc/terms/description> "A portrait of an Elf" .
+<#elf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#elf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#fighter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
-<#fighter> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/dnd-character-human-male-fighter-in-heavy-armor.jpg> .
+<#fighter> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-male-fighter-in-heavy-armor.jpg> .
 <#fighter> <http://purl.org/dc/terms/description> "A portrait of a Human Fighter" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-gnome-male-artificer-in-a-workshop.jpg> .
+<#gnome> <http://purl.org/dc/terms/description> "A portrait of a Gnome" .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#half-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-elf-female-druid-in-a-green-forest.jpg> .
+<#half-elf> <http://purl.org/dc/terms/description> "A portrait of a Half-Elf" .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#half-orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-half-orc-female-warlock-wizard-sorcerer.jpg> .
+<#half-orc> <http://purl.org/dc/terms/description> "A portrait of a Half-Orc" .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-halfling-male-rogue-assassin-with-a-hood.jpg> .
+<#halfling> <http://purl.org/dc/terms/description> "A portrait of a Halfling" .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#human> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-black-female-fighter.jpg> .
+<#human> <http://purl.org/dc/terms/description> "A portrait of a Human" .
+<#human> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#human> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#monk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-female-monk.jpg> .
 <#monk> <http://purl.org/dc/terms/description> "A portrait of a Human Monk" .
@@ -48,6 +88,11 @@
 <#sorcerer> <http://purl.org/dc/terms/description> "A portrait of a Drow Sorcerer" .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#tiefling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-tiefling-female-wizard-sorcerer.jpg> .
+<#tiefling> <http://purl.org/dc/terms/description> "A portrait of a Tiefling" .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#warlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-tiefling-black-female-wizard-sorcerer.jpg> .
 <#warlock> <http://purl.org/dc/terms/description> "A portrait of a Tiefling Warlock" .

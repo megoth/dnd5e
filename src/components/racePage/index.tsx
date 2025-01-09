@@ -11,6 +11,8 @@ import { raceResources } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
 import Markdown from "react-markdown";
+import Breadcrumbs from "../breadcrumbs";
+import Illustration from "../illustration";
 
 export default function RacePage() {
   const params = useParams();
@@ -44,8 +46,18 @@ export default function RacePage() {
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      <Breadcrumbs
+        crumbs={[
+          { href: "/races", translationId: "races" },
+          { text: race.label },
+        ]}
+      />
+      {race.illustration && <Illustration subject={race.illustration} />}
       <Content>
         <h1>{race.label}</h1>
+        {race.description && (
+          <Markdown>{race.description.join("\n\n")}</Markdown>
+        )}
         <dl className="data-list">
           <dt>
             <Translation id="abilityBonuses" />
