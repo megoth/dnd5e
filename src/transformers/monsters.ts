@@ -5,7 +5,8 @@ import { Monster } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import monsters from "../dnd5eapi-data/5e-SRD-Monsters.json";
 import { writeFileSync } from "node:fs";
-import { dataPath } from "../utils/dnd5e";
+import { addendumPath, dataPath } from "../utils/dnd5e";
+import { readFileSync } from "fs";
 
 export function transformMonster(
   data: components["schemas"]["Monster"],
@@ -26,12 +27,12 @@ export function transformMonster(
   monster.ofType = data.type;
   monster.subtype = data.subtype;
   // monsterArmorClass
-  // hitPoints
-  // hitDice
-  // hitPointsRoll
+  monster.hitPoints = data.hit_points;
+  monster.hitDice = data.hit_dice;
+  monster.hitPointsRoll = data.hit_points_roll;
   // monsterActions
   // legendaryActions
-  // challengeRating
+  monster.challengeRating = data.challenge_rating;
   // proficiencyBonus
   // conditionImmunities
   // damageImmunities
@@ -56,5 +57,6 @@ export default async function writeMonsters() {
       ),
     )
   ).reduce((memo, monsters) => memo.concat(monsters));
-  writeFileSync(dataPath("monsters"), turtle);
+  const addendum = readFileSync(addendumPath("monsters"), "utf-8");
+  writeFileSync(dataPath("monsters"), turtle + addendum);
 }

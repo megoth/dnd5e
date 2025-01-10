@@ -593,6 +593,7 @@ export interface Monster {
   specialAbilities?: MonsterSpecialAbility[];
   monsterSpeed?: MonsterSpeed;
   xp?: number;
+  illustration?: Illustration;
 }
 
 /**

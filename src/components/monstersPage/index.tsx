@@ -11,6 +11,7 @@ import { NavLink, useSearchParams } from "react-router-dom";
 import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
+import { monsterChallenge, monsterType } from "../../utils/dnd5e";
 
 export default function MonstersPage() {
   const { isLoading, items: monsters } = useListOfType(
@@ -91,8 +92,8 @@ export default function MonstersPage() {
                 <th scope="col">
                   <Translation id="type" />
                 </th>
-                <th scope="col">
-                  <Translation id="xp" />
+                <th scope="col" className="whitespace-nowrap">
+                  <Translation id="challenge" />
                 </th>
               </tr>
             </thead>
@@ -112,10 +113,11 @@ export default function MonstersPage() {
                     </td>
                     <td>{monster.size}</td>
                     <td className="whitespace-nowrap">
-                      {monster.ofType}
-                      {monster.subtype ? ` (${monster.subtype})` : ""}
+                      {monsterType(monster)}
                     </td>
-                    <td>{monster.xp}</td>
+                    <td className="whitespace-nowrap">
+                      {monsterChallenge(monster)}
+                    </td>
                   </tr>
                 ))}
             </tbody>

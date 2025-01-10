@@ -38,6 +38,11 @@
 <#fighter> <http://purl.org/dc/terms/description> "A portrait of a Human Fighter" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#gelatinous-cube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-gelatinous-cube-with-a-corpse-trapped-inside.jpg> .
+<#gelatinous-cube> <http://purl.org/dc/terms/description> "A Gelatinous Cube" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-gnome-male-artificer-in-a-workshop.jpg> .
 <#gnome> <http://purl.org/dc/terms/description> "A portrait of a Gnome" .
@@ -63,6 +68,11 @@
 <#human> <http://purl.org/dc/terms/description> "A portrait of a Human" .
 <#human> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#human> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#mindflayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#mindflayer> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-mind-flayer-surrounded-by-magical-energy.jpg> .
+<#mindflayer> <http://purl.org/dc/terms/description> "A portrait of a Mindflayer" .
+<#mindflayer> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#mindflayer> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#monk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-female-monk.jpg> .
 <#monk> <http://purl.org/dc/terms/description> "A portrait of a Human Monk" .

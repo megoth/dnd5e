@@ -7,9 +7,16 @@ import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { monsterResourceUrls } from "../../utils/dnd5e";
+import {
+  monsterChallenge,
+  monsterHP,
+  monsterResourceUrls,
+  monsterType,
+} from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
+import Translation from "../translation";
+import Illustration from "../illustration";
 
 export default function MonsterPage() {
   const params = useParams();
@@ -49,8 +56,22 @@ export default function MonsterPage() {
           { text: monster.label },
         ]}
       />
+      {monster.illustration && <Illustration subject={monster.illustration} />}
       <Content>
         <h1>{monster.label}</h1>
+        <p className="notification">
+          {monster.size} {monsterType(monster)}
+        </p>
+        <dl className="data-list">
+          <dt>
+            <Translation id="hitPoints" />
+          </dt>
+          <dd>{monsterHP(monster)}</dd>
+          <dt>
+            <Translation id="challenge" />
+          </dt>
+          <dd>{monsterChallenge(monster)}</dd>
+        </dl>
       </Content>
     </Layout>
   );

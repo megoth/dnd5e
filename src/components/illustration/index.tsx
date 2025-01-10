@@ -12,6 +12,7 @@ interface Props extends HTMLProps<HTMLDivElement> {
 
 export default function Illustration({ className, subject, modifier }: Props) {
   const { l10n } = useLocalization();
+  if (!subject) return null;
   return (
     <div className={clsx(bem("illustration", modifier), className)}>
       <img src={subject.imageUrl["@id"]} alt={subject.description} />

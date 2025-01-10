@@ -29,6 +29,8 @@
 :castingTime skos:definition "Kastetid"@nb-NO .
 :category skos:definition "Kategori"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
+:challenge skos:definition "Vanskelighetsgrad"@nb-NO .
+:challengeRating skos:definition "Vanskelighetsgrad"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :class skos:definition "Klasse"@nb-NO .
 :classes skos:definition "Klasser"@nb-NO .

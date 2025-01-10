@@ -2473,6 +2473,13 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#illustration",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
+              min: 0,
+              max: 1,
+            },
           ],
         },
       },

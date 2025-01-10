@@ -1,0 +1,2 @@
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#gelatinous-cube> .
+<#mindflayer> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#mindflayer> .

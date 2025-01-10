@@ -165,8 +165,22 @@ export function highestSpellLevel(level: ClassLevel): number {
   return spellLevel;
 }
 
-export function monsterResourceUrls(_: Monster): string[] {
-  return [];
+export function monsterChallenge(monster: Monster): string {
+  return `${monster.challengeRating} (${monster.xp} XP)`;
+}
+
+export function monsterHP(monster: Monster): string {
+  return `${monster.hitPoints} (${monster.hitPointsRoll})`;
+}
+
+export function monsterResourceUrls(monster: Monster): string[] {
+  return [
+    ...(monster.illustration ? [resourceUrl(monster.illustration["@id"])] : []),
+  ];
+}
+
+export function monsterType(monster: Monster): string {
+  return `${monster.ofType}${monster.subtype ? ` (${monster.subtype})` : ""}`;
 }
 
 export function parseNumber(number: number): string {
