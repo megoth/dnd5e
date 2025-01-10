@@ -46,6 +46,18 @@ import {
   Language,
   MagicSchool,
   Monster,
+  MonsterAction,
+  MonsterArmorClass,
+  MonsterAttack,
+  MonsterMultiAttackAction,
+  MonsterProficiency,
+  MonsterSense,
+  MonsterSpecialAbility,
+  MonsterSpeed,
+  MonsterSpell,
+  MonsterSpellcasting,
+  MonsterSpellLevelSlots,
+  MonsterSpellUsage,
   Multiclassing,
   MultipleOption,
   OptionAction,
@@ -477,6 +489,117 @@ export const MagicSchoolShapeType: ShapeType<MagicSchool> = {
 export const MonsterShapeType: ShapeType<Monster> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Monster",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterAction ShapeType
+ */
+export const MonsterActionShapeType: ShapeType<MonsterAction> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterAction",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterArmorClass ShapeType
+ */
+export const MonsterArmorClassShapeType: ShapeType<MonsterArmorClass> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterArmorClass",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterAttack ShapeType
+ */
+export const MonsterAttackShapeType: ShapeType<MonsterAttack> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterAttack",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterMultiAttackAction ShapeType
+ */
+export const MonsterMultiAttackActionShapeType: ShapeType<MonsterMultiAttackAction> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterMultiAttackAction",
+    context: dnd5eContext,
+  };
+
+/**
+ * MonsterProficiency ShapeType
+ */
+export const MonsterProficiencyShapeType: ShapeType<MonsterProficiency> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterProficiency",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterSense ShapeType
+ */
+export const MonsterSenseShapeType: ShapeType<MonsterSense> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSense",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterSpecialAbility ShapeType
+ */
+export const MonsterSpecialAbilityShapeType: ShapeType<MonsterSpecialAbility> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpecialAbility",
+    context: dnd5eContext,
+  };
+
+/**
+ * MonsterSpeed ShapeType
+ */
+export const MonsterSpeedShapeType: ShapeType<MonsterSpeed> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpeed",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterSpell ShapeType
+ */
+export const MonsterSpellShapeType: ShapeType<MonsterSpell> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpell",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterSpellcasting ShapeType
+ */
+export const MonsterSpellcastingShapeType: ShapeType<MonsterSpellcasting> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellcasting",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterSpellLevelSlots ShapeType
+ */
+export const MonsterSpellLevelSlotsShapeType: ShapeType<MonsterSpellLevelSlots> =
+  {
+    schema: dnd5eSchema,
+    shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellLevelSlots",
+    context: dnd5eContext,
+  };
+
+/**
+ * MonsterSpellUsage ShapeType
+ */
+export const MonsterSpellUsageShapeType: ShapeType<MonsterSpellUsage> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellUsage",
   context: dnd5eContext,
 };
 

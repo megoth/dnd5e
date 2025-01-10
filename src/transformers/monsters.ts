@@ -16,6 +16,35 @@ export function transformMonster(
     .fromSubject(`#${data.index}`);
   monster.type = type("Monster");
   monster.label = data.name;
+  // charisma
+  // constitution
+  // dexterity
+  // intelligence
+  // strength
+  // wisdom
+  monster.size = data.size;
+  monster.ofType = data.type;
+  monster.subtype = data.subtype;
+  // monsterArmorClass
+  // hitPoints
+  // hitDice
+  // hitPointsRoll
+  // monsterActions
+  // legendaryActions
+  // challengeRating
+  // proficiencyBonus
+  // conditionImmunities
+  // damageImmunities
+  // damageResistances
+  // damageVulnerabilities
+  // forms
+  // monsterLanguages
+  // monsterProficiencies
+  // reactions
+  // senses
+  // specialAbilities
+  // monsterSpeed
+  monster.xp = data.xp;
   return monster;
 }
 

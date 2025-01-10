@@ -27,26 +27,39 @@ export default function MonstersPage() {
         <h1>
           <Translation id="monstersPageTitle" />
         </h1>
-        <table className={bem("table")}>
-          <thead>
-            <tr>
-              <th scope="col">
-                <Translation id="name" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {monsters.map((monster) => (
-              <tr key={monster["@id"]}>
-                <td>
-                  <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
-                    {monster.label}
-                  </NavLink>
-                </td>
+        <div className="table-container">
+          <table className={bem("table")}>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <Translation id="name" />
+                </th>
+                <th scope="col">
+                  <Translation id="size" />
+                </th>
+                <th scope="col">
+                  <Translation id="type" />
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {monsters.map((monster) => (
+                <tr key={monster["@id"]}>
+                  <td>
+                    <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
+                      {monster.label}
+                    </NavLink>
+                  </td>
+                  <td>{monster.size}</td>
+                  <td>
+                    {monster.ofType}
+                    {monster.subtype ? ` (${monster.subtype})` : ""}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </Content>
     </Layout>
   );

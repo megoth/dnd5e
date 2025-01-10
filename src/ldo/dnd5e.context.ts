@@ -396,8 +396,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#item",
     "@type": "@id",
   },
-  damages: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#damages",
+  damageOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damageOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -875,6 +875,220 @@ export const dnd5eContext: ContextDefinition = {
   },
   wisdom: {
     "@id": "https://dnd5e.app/vocab/dnd5e#wisdom",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  subtype: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subtype",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  monsterArmorClass: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterArmorClass",
+    "@type": "@id",
+  },
+  value: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#value",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  armorList: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#armorList",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  condition: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#condition",
+    "@type": "@id",
+  },
+  hitPoints: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#hitPoints",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  hitDice: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#hitDice",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  hitPointsRoll: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#hitPointsRoll",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  monsterActions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterActions",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  actionOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#actionOptions",
+    "@type": "@id",
+  },
+  monsterMultiAttackActions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterMultiAttackActions",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  monsterActionOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterActionOptions",
+    "@type": "@id",
+  },
+  multiattackType: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#multiattackType",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  attackBonus: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#attackBonus",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  monsterAttacks: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterAttacks",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  damages: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damages",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  legendaryActions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#legendaryActions",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  challengeRating: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#challengeRating",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  conditionImmunities: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#conditionImmunities",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  damageImmunities: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damageImmunities",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  damageResistances: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damageResistances",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  damageVulnerabilities: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damageVulnerabilities",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  forms: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#forms",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  monsterLanguages: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterLanguages",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  monsterProficiencies: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterProficiencies",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  reactions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#reactions",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  senses: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#senses",
+    "@type": "@id",
+  },
+  passivePerception: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#passivePerception",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  blindsight: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#blindsight",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  darkvision: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#darkvision",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  tremorsense: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#tremorsense",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  truesight: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#truesight",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  specialAbilities: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#specialAbilities",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  monsterSpellcasting: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpellcasting",
+    "@type": "@id",
+  },
+  modifier: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#modifier",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  componentsRequired: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#componentsRequired",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  spellcastingSchool: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellcastingSchool",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  spellcastingSlots: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#spellcastingSlots",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  slots: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#slots",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  monsterSpells: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpells",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  monsterSpellUsage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpellUsage",
+    "@type": "@id",
+  },
+  restTypes: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#restTypes",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@container": "@set",
+  },
+  monsterSpeed: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpeed",
+    "@type": "@id",
+  },
+  walk: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#walk",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  burrow: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#burrow",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  climb: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#climb",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  fly: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#fly",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  swim: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#swim",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  xp: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#xp",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
 };

@@ -156,9 +156,11 @@
 :stealth skos:definition "Stealth"@en-US .
 :strength skos:definition "Strength"@en-US .
 :subclasses skos:definition "Subclasses"@en-US .
+:subtype skos:definition "Subtype"@en-US .
 :suggestions skos:definition "Suggestions"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
+:type skos:definition "Type"@en-US .
 :unarmoredMovement skos:definition "Unarmored movement"@en-US .
 :weapon skos:definition "Weapon"@en-US .
 :weapons skos:definition "Weapons"@en-US .
@@ -195,3 +197,4 @@
         standard that allows you to choose amongst a number of Solid Identity Providers, which means you don't have to
         rely on any specific company's service."""@en-US .
 :workInProgress skos:definition "Work in progress"@en-US .
+:xp skos:definition "XP"@en-US .

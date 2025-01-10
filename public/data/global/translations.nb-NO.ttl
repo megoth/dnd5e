@@ -157,9 +157,11 @@
 :stealth skos:definition "Sniking"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .
 :subclasses skos:definition "Underklasser"@nb-NO .
+:subtype skos:definition "Undertype"@nb-NO .
 :suggestions skos:definition "Forslag"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+:type skos:definition "Type"@nb-NO .
 :unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
 :weapon skos:definition "Våpen"@nb-NO .
 :weapons skos:definition "Våpen"@nb-NO .
@@ -196,3 +198,4 @@
         standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
         blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
 :workInProgress skos:definition "Under utvikling"@nb-NO .
+:xp skos:definition "XP"@nb-NO .

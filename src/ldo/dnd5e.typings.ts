@@ -570,6 +570,180 @@ export interface Monster {
   intelligence?: number;
   strength?: number;
   wisdom?: number;
+  size?: string;
+  ofType?: string;
+  subtype?: string;
+  monsterArmorClass?: MonsterArmorClass;
+  hitPoints?: number;
+  hitDice?: string;
+  hitPointsRoll?: string;
+  monsterActions?: MonsterAction[];
+  legendaryActions?: MonsterAction[];
+  challengeRating?: number;
+  proficiencyBonus?: number;
+  conditionImmunities?: Condition[];
+  damageImmunities?: string[];
+  damageResistances?: string[];
+  damageVulnerabilities?: string[];
+  forms?: Monster[];
+  monsterLanguages?: string;
+  monsterProficiencies?: MonsterProficiency[];
+  reactions?: MonsterAction[];
+  senses?: MonsterSense;
+  specialAbilities?: MonsterSpecialAbility[];
+  monsterSpeed?: MonsterSpeed;
+  xp?: number;
+}
+
+/**
+ * MonsterAction Type
+ */
+export interface MonsterAction {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  description?: string[];
+  actionOptions?: Choice;
+  monsterMultiAttackActions?: MonsterMultiAttackAction[];
+  monsterActionOptions?: Choice;
+  multiattackType?: string;
+  attackBonus?: number;
+  difficultyClass?: DifficultyClass;
+  monsterAttacks?: MonsterAttack[];
+  damages?: Damage[];
+}
+
+/**
+ * MonsterArmorClass Type
+ */
+export interface MonsterArmorClass {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  ofType?: string;
+  value?: number;
+  description?: string[];
+  armorList?: Armor[];
+  spell?: Spell;
+  condition?: Condition;
+}
+
+/**
+ * MonsterAttack Type
+ */
+export interface MonsterAttack {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  difficultyClass?: DifficultyClass;
+  damage?: Damage;
+}
+
+/**
+ * MonsterMultiAttackAction Type
+ */
+export interface MonsterMultiAttackAction {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  count?: number;
+  ofType?: string;
+}
+
+/**
+ * MonsterProficiency Type
+ */
+export interface MonsterProficiency {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  value?: number;
+  proficiency: Proficiency;
+}
+
+/**
+ * MonsterSense Type
+ */
+export interface MonsterSense {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  passivePerception?: number;
+  blindsight?: string;
+  darkvision?: string;
+  tremorsense?: string;
+  truesight?: string;
+}
+
+/**
+ * MonsterSpecialAbility Type
+ */
+export interface MonsterSpecialAbility {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  description?: string[];
+  attackBonus?: number;
+  difficultyClass?: DifficultyClass;
+  monsterSpellcasting?: MonsterSpellcasting;
+}
+
+/**
+ * MonsterSpeed Type
+ */
+export interface MonsterSpeed {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  walk?: string;
+  burrow?: string;
+  climb?: string;
+  fly?: string;
+  swim?: string;
+}
+
+/**
+ * MonsterSpell Type
+ */
+export interface MonsterSpell {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label?: string;
+  level?: number;
+  spell?: Spell;
+  monsterSpellUsage?: MonsterSpellUsage;
+}
+
+/**
+ * MonsterSpellcasting Type
+ */
+export interface MonsterSpellcasting {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  abilityScore?: AbilityScore;
+  difficultyClass?: DifficultyClass;
+  modifier?: number;
+  componentsRequired?: string[];
+  spellcastingSchool?: string;
+  spellcastingSlots?: MonsterSpellLevelSlots[];
+  monsterSpells?: MonsterSpell[];
+}
+
+/**
+ * MonsterSpellLevelSlots Type
+ */
+export interface MonsterSpellLevelSlots {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  level?: number;
+  slots?: number;
+}
+
+/**
+ * MonsterSpellUsage Type
+ */
+export interface MonsterSpellUsage {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  ofType?: string;
+  restTypes?: string[];
+  times?: number;
 }
 
 /**
@@ -617,7 +791,7 @@ export interface OptionSet {
   breaths?: BreathOption[];
   choices?: ChoiceOption[];
   counts?: CountOption[];
-  damages?: DamageOption[];
+  damageOptions?: DamageOption[];
   equipmentCategory?: EquipmentCategory;
   ideals?: IdealOption[];
   multiples?: MultipleOption[];

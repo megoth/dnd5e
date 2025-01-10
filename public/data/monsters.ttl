@@ -1,668 +1,1746 @@
 <#aboleth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#aboleth> <http://www.w3.org/2000/01/rdf-schema#label> "Aboleth" .
+<#aboleth> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#aboleth> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#aboleth> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#acolyte> <http://www.w3.org/2000/01/rdf-schema#label> "Acolyte" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#adult-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Black Dragon" .
+<#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 11500 .
 <#adult-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Blue Dragon" .
+<#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 15000 .
 <#adult-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Brass Dragon" .
+<#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#adult-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Bronze Dragon" .
+<#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 13000 .
 <#adult-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Copper Dragon" .
+<#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 11500 .
 <#adult-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Gold Dragon" .
+<#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 18000 .
 <#adult-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Green Dragon" .
+<#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 13000 .
 <#adult-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Red Dragon" .
+<#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 18000 .
 <#adult-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Silver Dragon" .
+<#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 15000 .
 <#adult-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#adult-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult White Dragon" .
+<#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#air-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#air-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Air Elemental" .
+<#air-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#air-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#air-elemental> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#ancient-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Black Dragon" .
+<#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 33000 .
 <#ancient-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Blue Dragon" .
+<#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 50000 .
 <#ancient-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Brass Dragon" .
+<#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 25000 .
 <#ancient-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Bronze Dragon" .
+<#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 41000 .
 <#ancient-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Copper Dragon" .
+<#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 33000 .
 <#ancient-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Gold Dragon" .
+<#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 62000 .
 <#ancient-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Green Dragon" .
+<#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 41000 .
 <#ancient-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Red Dragon" .
+<#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 62000 .
 <#ancient-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Silver Dragon" .
+<#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 50000 .
 <#ancient-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ancient-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient White Dragon" .
+<#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 25000 .
 <#androsphinx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#androsphinx> <http://www.w3.org/2000/01/rdf-schema#label> "Androsphinx" .
+<#androsphinx> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#androsphinx> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#androsphinx> <https://dnd5e.app/vocab/dnd5e#xp> 18000 .
 <#animated-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#animated-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Animated Armor" .
+<#animated-armor> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#animated-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#animated-armor> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#ankheg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ankheg> <http://www.w3.org/2000/01/rdf-schema#label> "Ankheg" .
+<#ankheg> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ankheg> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#ankheg> <https://dnd5e.app/vocab/dnd5e#xp> 250 .
 <#ape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ape> <http://www.w3.org/2000/01/rdf-schema#label> "Ape" .
+<#ape> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#ape> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#ape> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#archmage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#archmage> <http://www.w3.org/2000/01/rdf-schema#label> "Archmage" .
+<#archmage> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#archmage> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#archmage> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#archmage> <https://dnd5e.app/vocab/dnd5e#xp> 8400 .
 <#assassin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#assassin> <http://www.w3.org/2000/01/rdf-schema#label> "Assassin" .
+<#assassin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#assassin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#assassin> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#assassin> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#awakened-shrub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#awakened-shrub> <http://www.w3.org/2000/01/rdf-schema#label> "Awakened Shrub" .
+<#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#awakened-tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#awakened-tree> <http://www.w3.org/2000/01/rdf-schema#label> "Awakened Tree" .
+<#awakened-tree> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#awakened-tree> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#awakened-tree> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#axe-beak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#axe-beak> <http://www.w3.org/2000/01/rdf-schema#label> "Axe Beak" .
+<#axe-beak> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#axe-beak> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#axe-beak> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#azer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#azer> <http://www.w3.org/2000/01/rdf-schema#label> "Azer" .
+<#azer> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#azer> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#azer> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#baboon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#baboon> <http://www.w3.org/2000/01/rdf-schema#label> "Baboon" .
+<#baboon> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#baboon> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#baboon> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#badger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#badger> <http://www.w3.org/2000/01/rdf-schema#label> "Badger" .
+<#badger> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#badger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#badger> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#balor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#balor> <http://www.w3.org/2000/01/rdf-schema#label> "Balor" .
+<#balor> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#balor> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#balor> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#balor> <https://dnd5e.app/vocab/dnd5e#xp> 22000 .
 <#bandit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bandit> <http://www.w3.org/2000/01/rdf-schema#label> "Bandit" .
+<#bandit> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#bandit> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#bandit> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#bandit> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#bandit-captain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bandit-captain> <http://www.w3.org/2000/01/rdf-schema#label> "Bandit Captain" .
+<#bandit-captain> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#bandit-captain> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#bandit-captain> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#bandit-captain> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#barbed-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#barbed-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Barbed Devil" .
+<#barbed-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#barbed-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#barbed-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#barbed-devil> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#basilisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#basilisk> <http://www.w3.org/2000/01/rdf-schema#label> "Basilisk" .
+<#basilisk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#basilisk> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#basilisk> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bat> <http://www.w3.org/2000/01/rdf-schema#label> "Bat" .
+<#bat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#bat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#bat> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#bearded-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bearded-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Bearded Devil" .
+<#bearded-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#bearded-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#bearded-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#bearded-devil> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#behir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#behir> <http://www.w3.org/2000/01/rdf-schema#label> "Behir" .
+<#behir> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#behir> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#behir> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#berserker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#berserker> <http://www.w3.org/2000/01/rdf-schema#label> "Berserker" .
+<#berserker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#berserker> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#berserker> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#berserker> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#black-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#black-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Black Bear" .
+<#black-bear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#black-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#black-bear> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#black-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#black-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Black Dragon Wyrmling" .
+<#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#black-pudding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#black-pudding> <http://www.w3.org/2000/01/rdf-schema#label> "Black Pudding" .
+<#black-pudding> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#black-pudding> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#black-pudding> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#blink-dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#blink-dog> <http://www.w3.org/2000/01/rdf-schema#label> "Blink Dog" .
+<#blink-dog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#blink-dog> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#blink-dog> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#blood-hawk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#blood-hawk> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Hawk" .
+<#blood-hawk> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#blood-hawk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#blood-hawk> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#blue-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#blue-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Blue Dragon Wyrmling" .
+<#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#boar> <http://www.w3.org/2000/01/rdf-schema#label> "Boar" .
+<#boar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#boar> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#boar> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#bone-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bone-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Bone Devil" .
+<#bone-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#bone-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#bone-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#bone-devil> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#brass-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#brass-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Brass Dragon Wyrmling" .
+<#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#bronze-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bronze-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Bronze Dragon Wyrmling" .
+<#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#brown-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#brown-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Brown Bear" .
+<#brown-bear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#brown-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#brown-bear> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#bugbear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bugbear> <http://www.w3.org/2000/01/rdf-schema#label> "Bugbear" .
+<#bugbear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#bugbear> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#bugbear> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#bugbear> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#bulette> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#bulette> <http://www.w3.org/2000/01/rdf-schema#label> "Bulette" .
+<#bulette> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#bulette> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#bulette> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#camel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#camel> <http://www.w3.org/2000/01/rdf-schema#label> "Camel" .
+<#camel> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#camel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#camel> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cat> <http://www.w3.org/2000/01/rdf-schema#label> "Cat" .
+<#cat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#cat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#cat> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#centaur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#centaur> <http://www.w3.org/2000/01/rdf-schema#label> "Centaur" .
+<#centaur> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#centaur> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#centaur> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#chain-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#chain-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Devil" .
+<#chain-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#chain-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#chain-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#chain-devil> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#chimera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#chimera> <http://www.w3.org/2000/01/rdf-schema#label> "Chimera" .
+<#chimera> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#chimera> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#chimera> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#chuul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#chuul> <http://www.w3.org/2000/01/rdf-schema#label> "Chuul" .
+<#chuul> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#chuul> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#chuul> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#clay-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#clay-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Clay Golem" .
+<#clay-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#clay-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#clay-golem> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#cloaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cloaker> <http://www.w3.org/2000/01/rdf-schema#label> "Cloaker" .
+<#cloaker> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#cloaker> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#cloaker> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#cloud-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cloud-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Cloud Giant" .
+<#cloud-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#cloud-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#cloud-giant> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#cockatrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cockatrice> <http://www.w3.org/2000/01/rdf-schema#label> "Cockatrice" .
+<#cockatrice> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#cockatrice> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#cockatrice> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#commoner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#commoner> <http://www.w3.org/2000/01/rdf-schema#label> "Commoner" .
+<#commoner> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#commoner> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#commoner> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#commoner> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#constrictor-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#constrictor-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Constrictor Snake" .
+<#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#copper-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#copper-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Copper Dragon Wyrmling" .
+<#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#couatl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#couatl> <http://www.w3.org/2000/01/rdf-schema#label> "Couatl" .
+<#couatl> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#couatl> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#couatl> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#crab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#crab> <http://www.w3.org/2000/01/rdf-schema#label> "Crab" .
+<#crab> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#crab> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#crab> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#crocodile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#crocodile> <http://www.w3.org/2000/01/rdf-schema#label> "Crocodile" .
+<#crocodile> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#crocodile> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#crocodile> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#cult-fanatic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cult-fanatic> <http://www.w3.org/2000/01/rdf-schema#label> "Cult Fanatic" .
+<#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#cultist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#cultist> <http://www.w3.org/2000/01/rdf-schema#label> "Cultist" .
+<#cultist> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#cultist> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#cultist> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#cultist> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#darkmantle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#darkmantle> <http://www.w3.org/2000/01/rdf-schema#label> "Darkmantle" .
+<#darkmantle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#darkmantle> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#darkmantle> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#death-dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#death-dog> <http://www.w3.org/2000/01/rdf-schema#label> "Death Dog" .
+<#death-dog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#death-dog> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#death-dog> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#deep-gnome-svirfneblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#deep-gnome-svirfneblin> <http://www.w3.org/2000/01/rdf-schema#label> "Deep Gnome (Svirfneblin)" .
+<#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#subtype> "gnome" .
+<#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#deer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#deer> <http://www.w3.org/2000/01/rdf-schema#label> "Deer" .
+<#deer> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#deer> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#deer> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#deva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#deva> <http://www.w3.org/2000/01/rdf-schema#label> "Deva" .
+<#deva> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#deva> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#deva> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#dire-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#dire-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Dire Wolf" .
+<#dire-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#dire-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#dire-wolf> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#djinni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#djinni> <http://www.w3.org/2000/01/rdf-schema#label> "Djinni" .
+<#djinni> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#djinni> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#djinni> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#doppelganger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#doppelganger> <http://www.w3.org/2000/01/rdf-schema#label> "Doppelganger" .
+<#doppelganger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#doppelganger> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#doppelganger> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#doppelganger> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#draft-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#draft-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Draft Horse" .
+<#draft-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#draft-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#draft-horse> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#dragon-turtle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#dragon-turtle> <http://www.w3.org/2000/01/rdf-schema#label> "Dragon Turtle" .
+<#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#xp> 18000 .
 <#dretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#dretch> <http://www.w3.org/2000/01/rdf-schema#label> "Dretch" .
+<#dretch> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#dretch> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#dretch> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#dretch> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#drider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#drider> <http://www.w3.org/2000/01/rdf-schema#label> "Drider" .
+<#drider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#drider> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#drider> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#drow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#drow> <http://www.w3.org/2000/01/rdf-schema#label> "Drow" .
+<#drow> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#drow> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#drow> <https://dnd5e.app/vocab/dnd5e#subtype> "elf" .
+<#drow> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#druid> <http://www.w3.org/2000/01/rdf-schema#label> "Druid" .
+<#druid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#druid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#druid> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#druid> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#dryad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#dryad> <http://www.w3.org/2000/01/rdf-schema#label> "Dryad" .
+<#dryad> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#dryad> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#dryad> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#duergar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#duergar> <http://www.w3.org/2000/01/rdf-schema#label> "Duergar" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#subtype> "dwarf" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#dust-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#dust-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Dust Mephit" .
+<#dust-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#dust-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#dust-mephit> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#eagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#eagle> <http://www.w3.org/2000/01/rdf-schema#label> "Eagle" .
+<#eagle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#eagle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#eagle> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#earth-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#earth-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Elemental" .
+<#earth-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#earth-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#earth-elemental> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#efreeti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#efreeti> <http://www.w3.org/2000/01/rdf-schema#label> "Efreeti" .
+<#efreeti> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#efreeti> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#efreeti> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#elephant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#elephant> <http://www.w3.org/2000/01/rdf-schema#label> "Elephant" .
+<#elephant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#elephant> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#elephant> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#elk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#elk> <http://www.w3.org/2000/01/rdf-schema#label> "Elk" .
+<#elk> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#elk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#elk> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#erinyes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#erinyes> <http://www.w3.org/2000/01/rdf-schema#label> "Erinyes" .
+<#erinyes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#erinyes> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#erinyes> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#erinyes> <https://dnd5e.app/vocab/dnd5e#xp> 8400 .
 <#ettercap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ettercap> <http://www.w3.org/2000/01/rdf-schema#label> "Ettercap" .
+<#ettercap> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#ettercap> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#ettercap> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#ettin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ettin> <http://www.w3.org/2000/01/rdf-schema#label> "Ettin" .
+<#ettin> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ettin> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#ettin> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#fire-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#fire-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Elemental" .
+<#fire-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#fire-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#fire-elemental> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#fire-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#fire-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Giant" .
+<#fire-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#fire-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#fire-giant> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#flesh-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#flesh-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Flesh Golem" .
+<#flesh-golem> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#flesh-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#flesh-golem> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#flying-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#flying-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Flying Snake" .
+<#flying-snake> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#flying-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#flying-snake> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#flying-sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#flying-sword> <http://www.w3.org/2000/01/rdf-schema#label> "Flying Sword" .
+<#flying-sword> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#flying-sword> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#flying-sword> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#frog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#frog> <http://www.w3.org/2000/01/rdf-schema#label> "Frog" .
+<#frog> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#frog> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#frog> <https://dnd5e.app/vocab/dnd5e#xp> 0 .
 <#frost-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#frost-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Frost Giant" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#gargoyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gargoyle> <http://www.w3.org/2000/01/rdf-schema#label> "Gargoyle" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#gelatinous-cube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gelatinous-cube> <http://www.w3.org/2000/01/rdf-schema#label> "Gelatinous Cube" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#ghast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ghast> <http://www.w3.org/2000/01/rdf-schema#label> "Ghast" .
+<#ghast> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#ghast> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghast> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#ghost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ghost> <http://www.w3.org/2000/01/rdf-schema#label> "Ghost" .
+<#ghost> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#ghost> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghost> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#ghoul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ghoul> <http://www.w3.org/2000/01/rdf-schema#label> "Ghoul" .
+<#ghoul> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#ghoul> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghoul> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-ape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-ape> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Ape" .
+<#giant-ape> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#giant-ape> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-ape> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#giant-badger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-badger> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Badger" .
+<#giant-badger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-badger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-badger> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-bat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Bat" .
+<#giant-bat> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-bat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-bat> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-boar> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Boar" .
+<#giant-boar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-boar> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-boar> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#giant-centipede> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-centipede> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Centipede" .
+<#giant-centipede> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#giant-centipede> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-centipede> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-constrictor-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-constrictor-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Constrictor Snake" .
+<#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#giant-crab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-crab> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Crab" .
+<#giant-crab> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-crab> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-crab> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#giant-crocodile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-crocodile> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Crocodile" .
+<#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#giant-eagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-eagle> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Eagle" .
+<#giant-eagle> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-eagle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-eagle> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-elk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-elk> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Elk" .
+<#giant-elk> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#giant-elk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-elk> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#giant-fire-beetle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-fire-beetle> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Fire Beetle" .
+<#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#giant-frog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-frog> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Frog" .
+<#giant-frog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-frog> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-frog> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-goat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-goat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Goat" .
+<#giant-goat> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-goat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-goat> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#giant-hyena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-hyena> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Hyena" .
+<#giant-hyena> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-hyena> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-hyena> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-lizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-lizard> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Lizard" .
+<#giant-lizard> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-lizard> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-lizard> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-octopus> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Octopus" .
+<#giant-octopus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-octopus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-octopus> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-owl> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Owl" .
+<#giant-owl> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-owl> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-owl> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-poisonous-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-poisonous-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Poisonous Snake" .
+<#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#giant-rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-rat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Rat" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#giant-rat-diseased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-rat-diseased> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Rat (Diseased)" .
+<#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#giant-scorpion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-scorpion> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Scorpion" .
+<#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#giant-sea-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-sea-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Sea Horse" .
+<#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#giant-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Shark" .
+<#giant-shark> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#giant-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-shark> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#giant-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Spider" .
+<#giant-spider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-spider> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-toad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-toad> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Toad" .
+<#giant-toad> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-toad> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-toad> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-vulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-vulture> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Vulture" .
+<#giant-vulture> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#giant-vulture> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-vulture> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#giant-wasp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-wasp> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Wasp" .
+<#giant-wasp> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-wasp> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-wasp> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#giant-weasel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-weasel> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Weasel" .
+<#giant-weasel> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-weasel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-weasel> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#giant-wolf-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#giant-wolf-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Wolf Spider" .
+<#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#gibbering-mouther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gibbering-mouther> <http://www.w3.org/2000/01/rdf-schema#label> "Gibbering Mouther" .
+<#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#glabrezu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#glabrezu> <http://www.w3.org/2000/01/rdf-schema#label> "Glabrezu" .
+<#glabrezu> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#glabrezu> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#glabrezu> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#glabrezu> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#gladiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gladiator> <http://www.w3.org/2000/01/rdf-schema#label> "Gladiator" .
+<#gladiator> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gladiator> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#gladiator> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#gladiator> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#gnoll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gnoll> <http://www.w3.org/2000/01/rdf-schema#label> "Gnoll" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#subtype> "gnoll" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#goat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#goat> <http://www.w3.org/2000/01/rdf-schema#label> "Goat" .
+<#goat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#goat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#goat> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#goblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#goblin> <http://www.w3.org/2000/01/rdf-schema#label> "Goblin" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#gold-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gold-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Gold Dragon Wyrmling" .
+<#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#gorgon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gorgon> <http://www.w3.org/2000/01/rdf-schema#label> "Gorgon" .
+<#gorgon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#gorgon> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#gorgon> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#gray-ooze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gray-ooze> <http://www.w3.org/2000/01/rdf-schema#label> "Gray Ooze" .
+<#gray-ooze> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#gray-ooze> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#gray-ooze> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#green-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#green-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Green Dragon Wyrmling" .
+<#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#green-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#green-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Green Hag" .
+<#green-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#green-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#green-hag> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#grick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#grick> <http://www.w3.org/2000/01/rdf-schema#label> "Grick" .
+<#grick> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#grick> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#grick> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#griffon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#griffon> <http://www.w3.org/2000/01/rdf-schema#label> "Griffon" .
+<#griffon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#griffon> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#griffon> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#grimlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#grimlock> <http://www.w3.org/2000/01/rdf-schema#label> "Grimlock" .
+<#grimlock> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#grimlock> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#grimlock> <https://dnd5e.app/vocab/dnd5e#subtype> "grimlock" .
+<#grimlock> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#guard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#guard> <http://www.w3.org/2000/01/rdf-schema#label> "Guard" .
+<#guard> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#guard> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#guard> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#guard> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#guardian-naga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#guardian-naga> <http://www.w3.org/2000/01/rdf-schema#label> "Guardian Naga" .
+<#guardian-naga> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#guardian-naga> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#guardian-naga> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#gynosphinx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#gynosphinx> <http://www.w3.org/2000/01/rdf-schema#label> "Gynosphinx" .
+<#gynosphinx> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#gynosphinx> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#gynosphinx> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#half-red-dragon-veteran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#half-red-dragon-veteran> <http://www.w3.org/2000/01/rdf-schema#label> "Half-Red Dragon Veteran" .
+<#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#harpy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#harpy> <http://www.w3.org/2000/01/rdf-schema#label> "Harpy" .
+<#harpy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#harpy> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#harpy> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#hawk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hawk> <http://www.w3.org/2000/01/rdf-schema#label> "Hawk" .
+<#hawk> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#hawk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hawk> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#hell-hound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hell-hound> <http://www.w3.org/2000/01/rdf-schema#label> "Hell Hound" .
+<#hell-hound> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#hell-hound> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#hell-hound> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#hezrou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hezrou> <http://www.w3.org/2000/01/rdf-schema#label> "Hezrou" .
+<#hezrou> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#hezrou> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#hezrou> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#hezrou> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#hill-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hill-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Hill Giant" .
+<#hill-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#hill-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#hill-giant> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#hippogriff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hippogriff> <http://www.w3.org/2000/01/rdf-schema#label> "Hippogriff" .
+<#hippogriff> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#hippogriff> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#hippogriff> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#hobgoblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hobgoblin> <http://www.w3.org/2000/01/rdf-schema#label> "Hobgoblin" .
+<#hobgoblin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#hobgoblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#hobgoblin> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#hobgoblin> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#homunculus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#homunculus> <http://www.w3.org/2000/01/rdf-schema#label> "Homunculus" .
+<#homunculus> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#homunculus> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#homunculus> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#horned-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#horned-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Horned Devil" .
+<#horned-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#horned-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#horned-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#horned-devil> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#hunter-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hunter-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter Shark" .
+<#hunter-shark> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#hunter-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hunter-shark> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#hydra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hydra> <http://www.w3.org/2000/01/rdf-schema#label> "Hydra" .
+<#hydra> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#hydra> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#hydra> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#hyena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#hyena> <http://www.w3.org/2000/01/rdf-schema#label> "Hyena" .
+<#hyena> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#hyena> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hyena> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#ice-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ice-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Devil" .
+<#ice-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ice-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#ice-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#ice-devil> <https://dnd5e.app/vocab/dnd5e#xp> 11500 .
 <#ice-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ice-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Mephit" .
+<#ice-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#ice-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#ice-mephit> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#imp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#imp> <http://www.w3.org/2000/01/rdf-schema#label> "Imp" .
+<#imp> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#imp> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#imp> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#imp> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#invisible-stalker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#invisible-stalker> <http://www.w3.org/2000/01/rdf-schema#label> "Invisible Stalker" .
+<#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#iron-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#iron-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Iron Golem" .
+<#iron-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#iron-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#iron-golem> <https://dnd5e.app/vocab/dnd5e#xp> 15000 .
 <#jackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#jackal> <http://www.w3.org/2000/01/rdf-schema#label> "Jackal" .
+<#jackal> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#jackal> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#jackal> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#killer-whale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#killer-whale> <http://www.w3.org/2000/01/rdf-schema#label> "Killer Whale" .
+<#killer-whale> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#killer-whale> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#killer-whale> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#knight> <http://www.w3.org/2000/01/rdf-schema#label> "Knight" .
+<#knight> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#knight> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#knight> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#knight> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#kobold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#kobold> <http://www.w3.org/2000/01/rdf-schema#label> "Kobold" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#subtype> "kobold" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#kraken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#kraken> <http://www.w3.org/2000/01/rdf-schema#label> "Kraken" .
+<#kraken> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#kraken> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#kraken> <https://dnd5e.app/vocab/dnd5e#subtype> "titan" .
+<#kraken> <https://dnd5e.app/vocab/dnd5e#xp> 50000 .
 <#lamia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lamia> <http://www.w3.org/2000/01/rdf-schema#label> "Lamia" .
+<#lamia> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#lamia> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#lamia> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#lemure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lemure> <http://www.w3.org/2000/01/rdf-schema#label> "Lemure" .
+<#lemure> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#lemure> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#lemure> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#lemure> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#lich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lich> <http://www.w3.org/2000/01/rdf-schema#label> "Lich" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#xp> 33000 .
 <#lion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lion> <http://www.w3.org/2000/01/rdf-schema#label> "Lion" .
+<#lion> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#lion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#lion> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#lizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lizard> <http://www.w3.org/2000/01/rdf-schema#label> "Lizard" .
+<#lizard> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#lizard> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#lizard> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#lizardfolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#lizardfolk> <http://www.w3.org/2000/01/rdf-schema#label> "Lizardfolk" .
+<#lizardfolk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#lizardfolk> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#lizardfolk> <https://dnd5e.app/vocab/dnd5e#subtype> "lizardfolk" .
+<#lizardfolk> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#mage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mage> <http://www.w3.org/2000/01/rdf-schema#label> "Mage" .
+<#mage> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mage> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#mage> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#mage> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#magma-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#magma-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Magma Mephit" .
+<#magma-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#magma-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#magma-mephit> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#magmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#magmin> <http://www.w3.org/2000/01/rdf-schema#label> "Magmin" .
+<#magmin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#magmin> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#magmin> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#mammoth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mammoth> <http://www.w3.org/2000/01/rdf-schema#label> "Mammoth" .
+<#mammoth> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#mammoth> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mammoth> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#manticore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#manticore> <http://www.w3.org/2000/01/rdf-schema#label> "Manticore" .
+<#manticore> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#manticore> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#manticore> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#marilith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#marilith> <http://www.w3.org/2000/01/rdf-schema#label> "Marilith" .
+<#marilith> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#marilith> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#marilith> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#marilith> <https://dnd5e.app/vocab/dnd5e#xp> 15000 .
 <#mastiff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mastiff> <http://www.w3.org/2000/01/rdf-schema#label> "Mastiff" .
+<#mastiff> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mastiff> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mastiff> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#medusa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#medusa> <http://www.w3.org/2000/01/rdf-schema#label> "Medusa" .
+<#medusa> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#medusa> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#medusa> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#merfolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#merfolk> <http://www.w3.org/2000/01/rdf-schema#label> "Merfolk" .
+<#merfolk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#merfolk> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#merfolk> <https://dnd5e.app/vocab/dnd5e#subtype> "merfolk" .
+<#merfolk> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#merrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#merrow> <http://www.w3.org/2000/01/rdf-schema#label> "Merrow" .
+<#merrow> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#merrow> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#merrow> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#mimic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mimic> <http://www.w3.org/2000/01/rdf-schema#label> "Mimic" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#minotaur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#minotaur> <http://www.w3.org/2000/01/rdf-schema#label> "Minotaur" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#minotaur-skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#minotaur-skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Minotaur Skeleton" .
+<#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#mule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mule> <http://www.w3.org/2000/01/rdf-schema#label> "Mule" .
+<#mule> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mule> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mule> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#mummy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mummy> <http://www.w3.org/2000/01/rdf-schema#label> "Mummy" .
+<#mummy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mummy> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#mummy> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#mummy-lord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#mummy-lord> <http://www.w3.org/2000/01/rdf-schema#label> "Mummy Lord" .
+<#mummy-lord> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#mummy-lord> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#mummy-lord> <https://dnd5e.app/vocab/dnd5e#xp> 13000 .
 <#nalfeshnee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#nalfeshnee> <http://www.w3.org/2000/01/rdf-schema#label> "Nalfeshnee" .
+<#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#night-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#night-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Night Hag" .
+<#night-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#night-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#night-hag> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#nightmare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#nightmare> <http://www.w3.org/2000/01/rdf-schema#label> "Nightmare" .
+<#nightmare> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#nightmare> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#nightmare> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#noble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#noble> <http://www.w3.org/2000/01/rdf-schema#label> "Noble" .
+<#noble> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#noble> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#noble> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#noble> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#ochre-jelly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ochre-jelly> <http://www.w3.org/2000/01/rdf-schema#label> "Ochre Jelly" .
+<#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#octopus> <http://www.w3.org/2000/01/rdf-schema#label> "Octopus" .
+<#octopus> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#octopus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#octopus> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#ogre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ogre> <http://www.w3.org/2000/01/rdf-schema#label> "Ogre" .
+<#ogre> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ogre> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#ogre> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#ogre-zombie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#ogre-zombie> <http://www.w3.org/2000/01/rdf-schema#label> "Ogre Zombie" .
+<#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#oni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#oni> <http://www.w3.org/2000/01/rdf-schema#label> "Oni" .
+<#oni> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#oni> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#oni> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#orc> <http://www.w3.org/2000/01/rdf-schema#label> "Orc" .
+<#orc> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#orc> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#orc> <https://dnd5e.app/vocab/dnd5e#subtype> "orc" .
+<#orc> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#otyugh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#otyugh> <http://www.w3.org/2000/01/rdf-schema#label> "Otyugh" .
+<#otyugh> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#otyugh> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#otyugh> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#owl> <http://www.w3.org/2000/01/rdf-schema#label> "Owl" .
+<#owl> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#owl> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#owl> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#owlbear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#owlbear> <http://www.w3.org/2000/01/rdf-schema#label> "Owlbear" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#panther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#panther> <http://www.w3.org/2000/01/rdf-schema#label> "Panther" .
+<#panther> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#panther> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#panther> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#pegasus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#pegasus> <http://www.w3.org/2000/01/rdf-schema#label> "Pegasus" .
+<#pegasus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#pegasus> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#pegasus> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#phase-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#phase-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Phase Spider" .
+<#phase-spider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#phase-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#phase-spider> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#pit-fiend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#pit-fiend> <http://www.w3.org/2000/01/rdf-schema#label> "Pit Fiend" .
+<#pit-fiend> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#pit-fiend> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#pit-fiend> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#pit-fiend> <https://dnd5e.app/vocab/dnd5e#xp> 25000 .
 <#planetar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#planetar> <http://www.w3.org/2000/01/rdf-schema#label> "Planetar" .
+<#planetar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#planetar> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#planetar> <https://dnd5e.app/vocab/dnd5e#xp> 15000 .
 <#plesiosaurus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#plesiosaurus> <http://www.w3.org/2000/01/rdf-schema#label> "Plesiosaurus" .
+<#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#poisonous-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#poisonous-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Poisonous Snake" .
+<#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#polar-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#polar-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Bear" .
+<#polar-bear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#polar-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#polar-bear> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#pony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#pony> <http://www.w3.org/2000/01/rdf-schema#label> "Pony" .
+<#pony> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#pony> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#pony> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#priest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#priest> <http://www.w3.org/2000/01/rdf-schema#label> "Priest" .
+<#priest> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#priest> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#priest> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#priest> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#pseudodragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#pseudodragon> <http://www.w3.org/2000/01/rdf-schema#label> "Pseudodragon" .
+<#pseudodragon> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#pseudodragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#pseudodragon> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#purple-worm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#purple-worm> <http://www.w3.org/2000/01/rdf-schema#label> "Purple Worm" .
+<#purple-worm> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#purple-worm> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#purple-worm> <https://dnd5e.app/vocab/dnd5e#xp> 13000 .
 <#quasit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#quasit> <http://www.w3.org/2000/01/rdf-schema#label> "Quasit" .
+<#quasit> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#quasit> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#quasit> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#quasit> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#quipper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#quipper> <http://www.w3.org/2000/01/rdf-schema#label> "Quipper" .
+<#quipper> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#quipper> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#quipper> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#rakshasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#rakshasa> <http://www.w3.org/2000/01/rdf-schema#label> "Rakshasa" .
+<#rakshasa> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#rakshasa> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#rakshasa> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#rat> <http://www.w3.org/2000/01/rdf-schema#label> "Rat" .
+<#rat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#rat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#rat> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#raven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#raven> <http://www.w3.org/2000/01/rdf-schema#label> "Raven" .
+<#raven> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#raven> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#raven> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#red-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#red-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Red Dragon Wyrmling" .
+<#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#reef-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#reef-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Reef Shark" .
+<#reef-shark> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#reef-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#reef-shark> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#remorhaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#remorhaz> <http://www.w3.org/2000/01/rdf-schema#label> "Remorhaz" .
+<#remorhaz> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#remorhaz> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#remorhaz> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#rhinoceros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#rhinoceros> <http://www.w3.org/2000/01/rdf-schema#label> "Rhinoceros" .
+<#rhinoceros> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#rhinoceros> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#rhinoceros> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#riding-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#riding-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Riding Horse" .
+<#riding-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#riding-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#riding-horse> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#roc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#roc> <http://www.w3.org/2000/01/rdf-schema#label> "Roc" .
+<#roc> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#roc> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#roc> <https://dnd5e.app/vocab/dnd5e#xp> 7200 .
 <#roper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#roper> <http://www.w3.org/2000/01/rdf-schema#label> "Roper" .
+<#roper> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#roper> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#roper> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#rug-of-smothering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#rug-of-smothering> <http://www.w3.org/2000/01/rdf-schema#label> "Rug of Smothering" .
+<#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#rust-monster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#rust-monster> <http://www.w3.org/2000/01/rdf-schema#label> "Rust Monster" .
+<#rust-monster> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#rust-monster> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#rust-monster> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#saber-toothed-tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#saber-toothed-tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Saber-Toothed Tiger" .
+<#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#sahuagin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#sahuagin> <http://www.w3.org/2000/01/rdf-schema#label> "Sahuagin" .
+<#sahuagin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#sahuagin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#sahuagin> <https://dnd5e.app/vocab/dnd5e#subtype> "sahuagin" .
+<#sahuagin> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#salamander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#salamander> <http://www.w3.org/2000/01/rdf-schema#label> "Salamander" .
+<#salamander> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#salamander> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#salamander> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#satyr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#satyr> <http://www.w3.org/2000/01/rdf-schema#label> "Satyr" .
+<#satyr> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#satyr> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#satyr> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#scorpion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#scorpion> <http://www.w3.org/2000/01/rdf-schema#label> "Scorpion" .
+<#scorpion> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#scorpion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#scorpion> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#scout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#scout> <http://www.w3.org/2000/01/rdf-schema#label> "Scout" .
+<#scout> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#scout> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#scout> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#scout> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#sea-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#sea-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Sea Hag" .
+<#sea-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#sea-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#sea-hag> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#sea-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#sea-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Sea Horse" .
+<#sea-horse> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#sea-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#sea-horse> <https://dnd5e.app/vocab/dnd5e#xp> 0 .
 <#shadow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#shadow> <http://www.w3.org/2000/01/rdf-schema#label> "Shadow" .
+<#shadow> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#shadow> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#shadow> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#shambling-mound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#shambling-mound> <http://www.w3.org/2000/01/rdf-schema#label> "Shambling Mound" .
+<#shambling-mound> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#shambling-mound> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#shambling-mound> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#shield-guardian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#shield-guardian> <http://www.w3.org/2000/01/rdf-schema#label> "Shield Guardian" .
+<#shield-guardian> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#shield-guardian> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#shield-guardian> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#shrieker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#shrieker> <http://www.w3.org/2000/01/rdf-schema#label> "Shrieker" .
+<#shrieker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#shrieker> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#shrieker> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#silver-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#silver-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Silver Dragon Wyrmling" .
+<#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Skeleton" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#solar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#solar> <http://www.w3.org/2000/01/rdf-schema#label> "Solar" .
+<#solar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#solar> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#solar> <https://dnd5e.app/vocab/dnd5e#xp> 33000 .
 <#specter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#specter> <http://www.w3.org/2000/01/rdf-schema#label> "Specter" .
+<#specter> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#specter> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#specter> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#spider> <http://www.w3.org/2000/01/rdf-schema#label> "Spider" .
+<#spider> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#spider> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#spirit-naga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#spirit-naga> <http://www.w3.org/2000/01/rdf-schema#label> "Spirit Naga" .
+<#spirit-naga> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#spirit-naga> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#spirit-naga> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#sprite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#sprite> <http://www.w3.org/2000/01/rdf-schema#label> "Sprite" .
+<#sprite> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#sprite> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#sprite> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#spy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#spy> <http://www.w3.org/2000/01/rdf-schema#label> "Spy" .
+<#spy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#spy> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#spy> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#spy> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#steam-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#steam-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Steam Mephit" .
+<#steam-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
+<#steam-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#steam-mephit> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#stirge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#stirge> <http://www.w3.org/2000/01/rdf-schema#label> "Stirge" .
+<#stirge> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#stirge> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#stirge> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#stone-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#stone-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Giant" .
+<#stone-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#stone-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#stone-giant> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#stone-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#stone-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Golem" .
+<#stone-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#stone-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#stone-golem> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#storm-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#storm-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Storm Giant" .
+<#storm-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#storm-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#storm-giant> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#succubus-incubus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#succubus-incubus> <http://www.w3.org/2000/01/rdf-schema#label> "Succubus/Incubus" .
+<#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#swarm-of-bats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-bats> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Bats" .
+<#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#swarm-of-beetles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-beetles> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Beetles" .
+<#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#swarm-of-centipedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-centipedes> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Centipedes" .
+<#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#swarm-of-insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-insects> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Insects" .
+<#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#swarm-of-poisonous-snakes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-poisonous-snakes> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Poisonous Snakes" .
+<#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#swarm-of-quippers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-quippers> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Quippers" .
+<#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#swarm-of-rats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-rats> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Rats" .
+<#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#swarm-of-ravens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-ravens> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Ravens" .
+<#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#swarm-of-spiders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-spiders> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Spiders" .
+<#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#swarm-of-wasps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#swarm-of-wasps> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Wasps" .
+<#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#tarrasque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#tarrasque> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrasque" .
+<#tarrasque> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
+<#tarrasque> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#tarrasque> <https://dnd5e.app/vocab/dnd5e#subtype> "titan" .
+<#tarrasque> <https://dnd5e.app/vocab/dnd5e#xp> 155000 .
 <#thug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#thug> <http://www.w3.org/2000/01/rdf-schema#label> "Thug" .
+<#thug> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#thug> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#thug> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#thug> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Tiger" .
+<#tiger> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#tiger> <https://dnd5e.app/vocab/dnd5e#xp> 200 .
 <#treant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#treant> <http://www.w3.org/2000/01/rdf-schema#label> "Treant" .
+<#treant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#treant> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#treant> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#tribal-warrior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#tribal-warrior> <http://www.w3.org/2000/01/rdf-schema#label> "Tribal Warrior" .
+<#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#xp> 25 .
 <#triceratops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#triceratops> <http://www.w3.org/2000/01/rdf-schema#label> "Triceratops" .
+<#triceratops> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#triceratops> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#triceratops> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#troll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#troll> <http://www.w3.org/2000/01/rdf-schema#label> "Troll" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#tyrannosaurus-rex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#tyrannosaurus-rex> <http://www.w3.org/2000/01/rdf-schema#label> "Tyrannosaurus Rex" .
+<#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
+<#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#unicorn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#unicorn> <http://www.w3.org/2000/01/rdf-schema#label> "Unicorn" .
+<#unicorn> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#unicorn> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#unicorn> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#vampire-vampire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vampire-vampire> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Vampire Form" .
+<#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#vampire-bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vampire-bat> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Bat Form" .
+<#vampire-bat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#vampire-bat> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#vampire-bat> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-bat> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#vampire-mist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vampire-mist> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Mist Form" .
+<#vampire-mist> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#vampire-mist> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#vampire-mist> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-mist> <https://dnd5e.app/vocab/dnd5e#xp> 10000 .
 <#vampire-spawn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vampire-spawn> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire Spawn" .
+<#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#veteran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#veteran> <http://www.w3.org/2000/01/rdf-schema#label> "Veteran" .
+<#veteran> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#veteran> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#veteran> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#veteran> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#violet-fungus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#violet-fungus> <http://www.w3.org/2000/01/rdf-schema#label> "Violet Fungus" .
+<#violet-fungus> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#violet-fungus> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#violet-fungus> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#vrock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vrock> <http://www.w3.org/2000/01/rdf-schema#label> "Vrock" .
+<#vrock> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#vrock> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#vrock> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#vrock> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#vulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#vulture> <http://www.w3.org/2000/01/rdf-schema#label> "Vulture" .
+<#vulture> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#vulture> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#vulture> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#warhorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#warhorse> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse" .
+<#warhorse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#warhorse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#warhorse> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#warhorse-skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#warhorse-skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse Skeleton" .
+<#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#water-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#water-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Water Elemental" .
+<#water-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#water-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#water-elemental> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#weasel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#weasel> <http://www.w3.org/2000/01/rdf-schema#label> "Weasel" .
+<#weasel> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#weasel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#weasel> <https://dnd5e.app/vocab/dnd5e#xp> 10 .
 <#werebear-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werebear-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Bear Form" .
+<#werebear-bear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werebear-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werebear-bear> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-bear> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#werebear-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werebear-human> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Human Form" .
+<#werebear-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werebear-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werebear-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-human> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#werebear-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werebear-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Hybrid Form" .
+<#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#wereboar-boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wereboar-boar> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Boar Form" .
+<#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#wereboar-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wereboar-human> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Human Form" .
+<#wereboar-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wereboar-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wereboar-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-human> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#wereboar-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wereboar-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Hybrid Form" .
+<#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#wererat-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wererat-human> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Human Form" .
+<#wererat-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wererat-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wererat-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-human> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#wererat-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wererat-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Hybrid Form" .
+<#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#wererat-rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wererat-rat> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Rat Form" .
+<#wererat-rat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wererat-rat> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#wererat-rat> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-rat> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#weretiger-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#weretiger-human> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Human Form" .
+<#weretiger-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#weretiger-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#weretiger-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-human> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#weretiger-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#weretiger-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Hybrid Form" .
+<#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#weretiger-tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#weretiger-tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Tiger Form" .
+<#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#xp> 1100 .
 <#werewolf-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werewolf-human> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Human Form" .
+<#werewolf-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werewolf-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werewolf-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-human> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#werewolf-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werewolf-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Hybrid Form" .
+<#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#werewolf-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#werewolf-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Wolf Form" .
+<#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
+<#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#white-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#white-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "White Dragon Wyrmling" .
+<#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#wight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wight> <http://www.w3.org/2000/01/rdf-schema#label> "Wight" .
+<#wight> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wight> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#wight> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#will-o-wisp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#will-o-wisp> <http://www.w3.org/2000/01/rdf-schema#label> "Will-o'-Wisp" .
+<#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
+<#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#xp> 450 .
 <#winter-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#winter-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Winter Wolf" .
+<#winter-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#winter-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#winter-wolf> <https://dnd5e.app/vocab/dnd5e#xp> 700 .
 <#wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Wolf" .
+<#wolf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#wolf> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#worg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#worg> <http://www.w3.org/2000/01/rdf-schema#label> "Worg" .
+<#worg> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#worg> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#worg> <https://dnd5e.app/vocab/dnd5e#xp> 100 .
 <#wraith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wraith> <http://www.w3.org/2000/01/rdf-schema#label> "Wraith" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#wyvern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#wyvern> <http://www.w3.org/2000/01/rdf-schema#label> "Wyvern" .
+<#wyvern> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#wyvern> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#wyvern> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#xorn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#xorn> <http://www.w3.org/2000/01/rdf-schema#label> "Xorn" .
+<#xorn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#xorn> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#xorn> <https://dnd5e.app/vocab/dnd5e#xp> 1800 .
 <#young-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Black Dragon" .
+<#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#young-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Blue Dragon" .
+<#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#young-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Brass Dragon" .
+<#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#young-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Bronze Dragon" .
+<#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#young-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Copper Dragon" .
+<#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 2900 .
 <#young-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Gold Dragon" .
+<#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#young-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Green Dragon" .
+<#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 3900 .
 <#young-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Red Dragon" .
+<#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 5900 .
 <#young-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Silver Dragon" .
+<#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 5000 .
 <#young-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#young-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young White Dragon" .
+<#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
+<#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#xp> 2300 .
 <#zombie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
 <#zombie> <http://www.w3.org/2000/01/rdf-schema#label> "Zombie" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
