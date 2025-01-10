@@ -3082,3 +3082,5 @@
 <#zombie> <https://dnd5e.app/vocab/dnd5e#xp> 50 .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#gelatinous-cube> .
 <#mindflayer> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#mindflayer> .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#minotaur> .
+<#troll> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#troll> .

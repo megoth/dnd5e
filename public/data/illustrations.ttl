@@ -73,6 +73,11 @@
 <#mindflayer> <http://purl.org/dc/terms/description> "A portrait of a Mindflayer" .
 <#mindflayer> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#mindflayer> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#minotaur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-minotaur-in-a-cave.jpg> .
+<#minotaur> <http://purl.org/dc/terms/description> "A Minotaur" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#monk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#monk> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-female-monk.jpg> .
 <#monk> <http://purl.org/dc/terms/description> "A portrait of a Human Monk" .
@@ -103,6 +108,11 @@
 <#tiefling> <http://purl.org/dc/terms/description> "A portrait of a Tiefling" .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#troll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#troll> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-troll-in-a-dark-forest.jpg> .
+<#troll> <http://purl.org/dc/terms/description> "A troll" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#warlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-tiefling-black-female-wizard-sorcerer.jpg> .
 <#warlock> <http://purl.org/dc/terms/description> "A portrait of a Tiefling Warlock" .
