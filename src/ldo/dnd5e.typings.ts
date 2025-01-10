@@ -556,6 +556,23 @@ export interface MagicSchool {
 }
 
 /**
+ * Monster Type
+ */
+export interface Monster {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label: string;
+  description?: string[];
+  charisma?: number;
+  constitution?: number;
+  dexterity?: number;
+  intelligence?: number;
+  strength?: number;
+  wisdom?: number;
+}
+
+/**
  * Multiclassing Type
  */
 export interface Multiclassing {

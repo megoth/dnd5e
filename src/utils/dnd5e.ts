@@ -1,4 +1,11 @@
-import { Choice, Class, ClassLevel, Race, Spell } from "../ldo/dnd5e.typings";
+import {
+  Choice,
+  Class,
+  ClassLevel,
+  Monster,
+  Race,
+  Spell,
+} from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 
@@ -156,6 +163,10 @@ export function highestSpellLevel(level: ClassLevel): number {
     spellLevel--;
   } while (spellLevel > 0);
   return spellLevel;
+}
+
+export function monsterResourceUrls(_: Monster): string[] {
+  return [];
 }
 
 export function parseNumber(number: number): string {

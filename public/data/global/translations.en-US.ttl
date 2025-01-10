@@ -81,6 +81,7 @@
 :logOut skos:definition "Log out"@en-US .
 :martialArts skos:definition "Martial Arts"@en-US .
 :max skos:definition "Max"@en-US .
+:monsters skos:definition "Monsters"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
 :multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .

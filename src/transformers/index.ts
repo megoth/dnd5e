@@ -17,6 +17,7 @@ import writeSubclasses from "./subclasses";
 import writeRaces from "./races";
 import writeTraits from "./traits";
 import writeWeaponProperties from "./weaponProperties";
+import writeMonsters from "./monsters";
 
 export default async function transformData() {
   return Promise.all([
@@ -32,6 +33,7 @@ export default async function transformData() {
     writeLanguages(),
     writeMagicSchools(),
     writeLevels(),
+    writeMonsters(),
     writeProficiencies(),
     writeRaces(),
     writeSkills(),

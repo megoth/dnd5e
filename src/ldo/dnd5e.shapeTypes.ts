@@ -45,6 +45,7 @@ import {
   Illustration,
   Language,
   MagicSchool,
+  Monster,
   Multiclassing,
   MultipleOption,
   OptionAction,
@@ -467,6 +468,15 @@ export const LanguageShapeType: ShapeType<Language> = {
 export const MagicSchoolShapeType: ShapeType<MagicSchool> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#MagicSchool",
+  context: dnd5eContext,
+};
+
+/**
+ * Monster ShapeType
+ */
+export const MonsterShapeType: ShapeType<Monster> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Monster",
   context: dnd5eContext,
 };
 

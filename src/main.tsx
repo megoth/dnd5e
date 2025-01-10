@@ -30,6 +30,7 @@ import SearchPage from "./components/searchPage";
 import RacePage from "./components/racePage";
 import WeaponsPage from "./components/weaponsPage";
 import ArmorPage from "./components/armorPage";
+import MonsterPage from "./components/monsterPage";
 
 const router = createBrowserRouter([
   {
@@ -115,6 +116,10 @@ const router = createBrowserRouter([
       {
         path: "/monsters",
         element: <MonstersPage />,
+      },
+      {
+        path: "/monsters/:url",
+        element: <MonsterPage />,
       },
       {
         path: "/races",

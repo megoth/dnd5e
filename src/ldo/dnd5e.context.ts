@@ -853,4 +853,28 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
     "@type": "@id",
   },
+  charisma: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#charisma",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  constitution: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#constitution",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  dexterity: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#dexterity",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  intelligence: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#intelligence",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  strength: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#strength",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
+  wisdom: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#wisdom",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
 };

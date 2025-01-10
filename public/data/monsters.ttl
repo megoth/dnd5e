@@ -1,0 +1,668 @@
+<#aboleth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#aboleth> <http://www.w3.org/2000/01/rdf-schema#label> "Aboleth" .
+<#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#acolyte> <http://www.w3.org/2000/01/rdf-schema#label> "Acolyte" .
+<#adult-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Black Dragon" .
+<#adult-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Blue Dragon" .
+<#adult-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Brass Dragon" .
+<#adult-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Bronze Dragon" .
+<#adult-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Copper Dragon" .
+<#adult-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Gold Dragon" .
+<#adult-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Green Dragon" .
+<#adult-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Red Dragon" .
+<#adult-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Silver Dragon" .
+<#adult-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#adult-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Adult White Dragon" .
+<#air-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#air-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Air Elemental" .
+<#ancient-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Black Dragon" .
+<#ancient-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Blue Dragon" .
+<#ancient-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Brass Dragon" .
+<#ancient-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Bronze Dragon" .
+<#ancient-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Copper Dragon" .
+<#ancient-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Gold Dragon" .
+<#ancient-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Green Dragon" .
+<#ancient-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Red Dragon" .
+<#ancient-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient Silver Dragon" .
+<#ancient-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ancient-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Ancient White Dragon" .
+<#androsphinx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#androsphinx> <http://www.w3.org/2000/01/rdf-schema#label> "Androsphinx" .
+<#animated-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#animated-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Animated Armor" .
+<#ankheg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ankheg> <http://www.w3.org/2000/01/rdf-schema#label> "Ankheg" .
+<#ape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ape> <http://www.w3.org/2000/01/rdf-schema#label> "Ape" .
+<#archmage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#archmage> <http://www.w3.org/2000/01/rdf-schema#label> "Archmage" .
+<#assassin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#assassin> <http://www.w3.org/2000/01/rdf-schema#label> "Assassin" .
+<#awakened-shrub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#awakened-shrub> <http://www.w3.org/2000/01/rdf-schema#label> "Awakened Shrub" .
+<#awakened-tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#awakened-tree> <http://www.w3.org/2000/01/rdf-schema#label> "Awakened Tree" .
+<#axe-beak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#axe-beak> <http://www.w3.org/2000/01/rdf-schema#label> "Axe Beak" .
+<#azer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#azer> <http://www.w3.org/2000/01/rdf-schema#label> "Azer" .
+<#baboon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#baboon> <http://www.w3.org/2000/01/rdf-schema#label> "Baboon" .
+<#badger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#badger> <http://www.w3.org/2000/01/rdf-schema#label> "Badger" .
+<#balor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#balor> <http://www.w3.org/2000/01/rdf-schema#label> "Balor" .
+<#bandit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bandit> <http://www.w3.org/2000/01/rdf-schema#label> "Bandit" .
+<#bandit-captain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bandit-captain> <http://www.w3.org/2000/01/rdf-schema#label> "Bandit Captain" .
+<#barbed-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#barbed-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Barbed Devil" .
+<#basilisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#basilisk> <http://www.w3.org/2000/01/rdf-schema#label> "Basilisk" .
+<#bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bat> <http://www.w3.org/2000/01/rdf-schema#label> "Bat" .
+<#bearded-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bearded-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Bearded Devil" .
+<#behir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#behir> <http://www.w3.org/2000/01/rdf-schema#label> "Behir" .
+<#berserker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#berserker> <http://www.w3.org/2000/01/rdf-schema#label> "Berserker" .
+<#black-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#black-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Black Bear" .
+<#black-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#black-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Black Dragon Wyrmling" .
+<#black-pudding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#black-pudding> <http://www.w3.org/2000/01/rdf-schema#label> "Black Pudding" .
+<#blink-dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#blink-dog> <http://www.w3.org/2000/01/rdf-schema#label> "Blink Dog" .
+<#blood-hawk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#blood-hawk> <http://www.w3.org/2000/01/rdf-schema#label> "Blood Hawk" .
+<#blue-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#blue-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Blue Dragon Wyrmling" .
+<#boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#boar> <http://www.w3.org/2000/01/rdf-schema#label> "Boar" .
+<#bone-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bone-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Bone Devil" .
+<#brass-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#brass-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Brass Dragon Wyrmling" .
+<#bronze-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bronze-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Bronze Dragon Wyrmling" .
+<#brown-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#brown-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Brown Bear" .
+<#bugbear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bugbear> <http://www.w3.org/2000/01/rdf-schema#label> "Bugbear" .
+<#bulette> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#bulette> <http://www.w3.org/2000/01/rdf-schema#label> "Bulette" .
+<#camel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#camel> <http://www.w3.org/2000/01/rdf-schema#label> "Camel" .
+<#cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cat> <http://www.w3.org/2000/01/rdf-schema#label> "Cat" .
+<#centaur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#centaur> <http://www.w3.org/2000/01/rdf-schema#label> "Centaur" .
+<#chain-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#chain-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Devil" .
+<#chimera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#chimera> <http://www.w3.org/2000/01/rdf-schema#label> "Chimera" .
+<#chuul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#chuul> <http://www.w3.org/2000/01/rdf-schema#label> "Chuul" .
+<#clay-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#clay-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Clay Golem" .
+<#cloaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cloaker> <http://www.w3.org/2000/01/rdf-schema#label> "Cloaker" .
+<#cloud-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cloud-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Cloud Giant" .
+<#cockatrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cockatrice> <http://www.w3.org/2000/01/rdf-schema#label> "Cockatrice" .
+<#commoner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#commoner> <http://www.w3.org/2000/01/rdf-schema#label> "Commoner" .
+<#constrictor-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#constrictor-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Constrictor Snake" .
+<#copper-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#copper-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Copper Dragon Wyrmling" .
+<#couatl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#couatl> <http://www.w3.org/2000/01/rdf-schema#label> "Couatl" .
+<#crab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#crab> <http://www.w3.org/2000/01/rdf-schema#label> "Crab" .
+<#crocodile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#crocodile> <http://www.w3.org/2000/01/rdf-schema#label> "Crocodile" .
+<#cult-fanatic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cult-fanatic> <http://www.w3.org/2000/01/rdf-schema#label> "Cult Fanatic" .
+<#cultist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#cultist> <http://www.w3.org/2000/01/rdf-schema#label> "Cultist" .
+<#darkmantle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#darkmantle> <http://www.w3.org/2000/01/rdf-schema#label> "Darkmantle" .
+<#death-dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#death-dog> <http://www.w3.org/2000/01/rdf-schema#label> "Death Dog" .
+<#deep-gnome-svirfneblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#deep-gnome-svirfneblin> <http://www.w3.org/2000/01/rdf-schema#label> "Deep Gnome (Svirfneblin)" .
+<#deer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#deer> <http://www.w3.org/2000/01/rdf-schema#label> "Deer" .
+<#deva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#deva> <http://www.w3.org/2000/01/rdf-schema#label> "Deva" .
+<#dire-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#dire-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Dire Wolf" .
+<#djinni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#djinni> <http://www.w3.org/2000/01/rdf-schema#label> "Djinni" .
+<#doppelganger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#doppelganger> <http://www.w3.org/2000/01/rdf-schema#label> "Doppelganger" .
+<#draft-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#draft-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Draft Horse" .
+<#dragon-turtle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#dragon-turtle> <http://www.w3.org/2000/01/rdf-schema#label> "Dragon Turtle" .
+<#dretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#dretch> <http://www.w3.org/2000/01/rdf-schema#label> "Dretch" .
+<#drider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#drider> <http://www.w3.org/2000/01/rdf-schema#label> "Drider" .
+<#drow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#drow> <http://www.w3.org/2000/01/rdf-schema#label> "Drow" .
+<#druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#druid> <http://www.w3.org/2000/01/rdf-schema#label> "Druid" .
+<#dryad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#dryad> <http://www.w3.org/2000/01/rdf-schema#label> "Dryad" .
+<#duergar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#duergar> <http://www.w3.org/2000/01/rdf-schema#label> "Duergar" .
+<#dust-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#dust-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Dust Mephit" .
+<#eagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#eagle> <http://www.w3.org/2000/01/rdf-schema#label> "Eagle" .
+<#earth-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#earth-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Elemental" .
+<#efreeti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#efreeti> <http://www.w3.org/2000/01/rdf-schema#label> "Efreeti" .
+<#elephant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#elephant> <http://www.w3.org/2000/01/rdf-schema#label> "Elephant" .
+<#elk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#elk> <http://www.w3.org/2000/01/rdf-schema#label> "Elk" .
+<#erinyes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#erinyes> <http://www.w3.org/2000/01/rdf-schema#label> "Erinyes" .
+<#ettercap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ettercap> <http://www.w3.org/2000/01/rdf-schema#label> "Ettercap" .
+<#ettin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ettin> <http://www.w3.org/2000/01/rdf-schema#label> "Ettin" .
+<#fire-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#fire-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Elemental" .
+<#fire-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#fire-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Giant" .
+<#flesh-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#flesh-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Flesh Golem" .
+<#flying-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#flying-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Flying Snake" .
+<#flying-sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#flying-sword> <http://www.w3.org/2000/01/rdf-schema#label> "Flying Sword" .
+<#frog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#frog> <http://www.w3.org/2000/01/rdf-schema#label> "Frog" .
+<#frost-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#frost-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Frost Giant" .
+<#gargoyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gargoyle> <http://www.w3.org/2000/01/rdf-schema#label> "Gargoyle" .
+<#gelatinous-cube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gelatinous-cube> <http://www.w3.org/2000/01/rdf-schema#label> "Gelatinous Cube" .
+<#ghast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ghast> <http://www.w3.org/2000/01/rdf-schema#label> "Ghast" .
+<#ghost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ghost> <http://www.w3.org/2000/01/rdf-schema#label> "Ghost" .
+<#ghoul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ghoul> <http://www.w3.org/2000/01/rdf-schema#label> "Ghoul" .
+<#giant-ape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-ape> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Ape" .
+<#giant-badger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-badger> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Badger" .
+<#giant-bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-bat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Bat" .
+<#giant-boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-boar> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Boar" .
+<#giant-centipede> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-centipede> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Centipede" .
+<#giant-constrictor-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-constrictor-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Constrictor Snake" .
+<#giant-crab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-crab> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Crab" .
+<#giant-crocodile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-crocodile> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Crocodile" .
+<#giant-eagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-eagle> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Eagle" .
+<#giant-elk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-elk> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Elk" .
+<#giant-fire-beetle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-fire-beetle> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Fire Beetle" .
+<#giant-frog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-frog> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Frog" .
+<#giant-goat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-goat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Goat" .
+<#giant-hyena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-hyena> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Hyena" .
+<#giant-lizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-lizard> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Lizard" .
+<#giant-octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-octopus> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Octopus" .
+<#giant-owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-owl> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Owl" .
+<#giant-poisonous-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-poisonous-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Poisonous Snake" .
+<#giant-rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-rat> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Rat" .
+<#giant-rat-diseased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-rat-diseased> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Rat (Diseased)" .
+<#giant-scorpion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-scorpion> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Scorpion" .
+<#giant-sea-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-sea-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Sea Horse" .
+<#giant-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Shark" .
+<#giant-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Spider" .
+<#giant-toad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-toad> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Toad" .
+<#giant-vulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-vulture> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Vulture" .
+<#giant-wasp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-wasp> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Wasp" .
+<#giant-weasel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-weasel> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Weasel" .
+<#giant-wolf-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#giant-wolf-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Giant Wolf Spider" .
+<#gibbering-mouther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gibbering-mouther> <http://www.w3.org/2000/01/rdf-schema#label> "Gibbering Mouther" .
+<#glabrezu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#glabrezu> <http://www.w3.org/2000/01/rdf-schema#label> "Glabrezu" .
+<#gladiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gladiator> <http://www.w3.org/2000/01/rdf-schema#label> "Gladiator" .
+<#gnoll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gnoll> <http://www.w3.org/2000/01/rdf-schema#label> "Gnoll" .
+<#goat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#goat> <http://www.w3.org/2000/01/rdf-schema#label> "Goat" .
+<#goblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#goblin> <http://www.w3.org/2000/01/rdf-schema#label> "Goblin" .
+<#gold-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gold-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Gold Dragon Wyrmling" .
+<#gorgon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gorgon> <http://www.w3.org/2000/01/rdf-schema#label> "Gorgon" .
+<#gray-ooze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gray-ooze> <http://www.w3.org/2000/01/rdf-schema#label> "Gray Ooze" .
+<#green-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#green-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Green Dragon Wyrmling" .
+<#green-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#green-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Green Hag" .
+<#grick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#grick> <http://www.w3.org/2000/01/rdf-schema#label> "Grick" .
+<#griffon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#griffon> <http://www.w3.org/2000/01/rdf-schema#label> "Griffon" .
+<#grimlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#grimlock> <http://www.w3.org/2000/01/rdf-schema#label> "Grimlock" .
+<#guard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#guard> <http://www.w3.org/2000/01/rdf-schema#label> "Guard" .
+<#guardian-naga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#guardian-naga> <http://www.w3.org/2000/01/rdf-schema#label> "Guardian Naga" .
+<#gynosphinx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#gynosphinx> <http://www.w3.org/2000/01/rdf-schema#label> "Gynosphinx" .
+<#half-red-dragon-veteran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#half-red-dragon-veteran> <http://www.w3.org/2000/01/rdf-schema#label> "Half-Red Dragon Veteran" .
+<#harpy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#harpy> <http://www.w3.org/2000/01/rdf-schema#label> "Harpy" .
+<#hawk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hawk> <http://www.w3.org/2000/01/rdf-schema#label> "Hawk" .
+<#hell-hound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hell-hound> <http://www.w3.org/2000/01/rdf-schema#label> "Hell Hound" .
+<#hezrou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hezrou> <http://www.w3.org/2000/01/rdf-schema#label> "Hezrou" .
+<#hill-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hill-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Hill Giant" .
+<#hippogriff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hippogriff> <http://www.w3.org/2000/01/rdf-schema#label> "Hippogriff" .
+<#hobgoblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hobgoblin> <http://www.w3.org/2000/01/rdf-schema#label> "Hobgoblin" .
+<#homunculus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#homunculus> <http://www.w3.org/2000/01/rdf-schema#label> "Homunculus" .
+<#horned-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#horned-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Horned Devil" .
+<#hunter-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hunter-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter Shark" .
+<#hydra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hydra> <http://www.w3.org/2000/01/rdf-schema#label> "Hydra" .
+<#hyena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#hyena> <http://www.w3.org/2000/01/rdf-schema#label> "Hyena" .
+<#ice-devil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ice-devil> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Devil" .
+<#ice-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ice-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Mephit" .
+<#imp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#imp> <http://www.w3.org/2000/01/rdf-schema#label> "Imp" .
+<#invisible-stalker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#invisible-stalker> <http://www.w3.org/2000/01/rdf-schema#label> "Invisible Stalker" .
+<#iron-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#iron-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Iron Golem" .
+<#jackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#jackal> <http://www.w3.org/2000/01/rdf-schema#label> "Jackal" .
+<#killer-whale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#killer-whale> <http://www.w3.org/2000/01/rdf-schema#label> "Killer Whale" .
+<#knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#knight> <http://www.w3.org/2000/01/rdf-schema#label> "Knight" .
+<#kobold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#kobold> <http://www.w3.org/2000/01/rdf-schema#label> "Kobold" .
+<#kraken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#kraken> <http://www.w3.org/2000/01/rdf-schema#label> "Kraken" .
+<#lamia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lamia> <http://www.w3.org/2000/01/rdf-schema#label> "Lamia" .
+<#lemure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lemure> <http://www.w3.org/2000/01/rdf-schema#label> "Lemure" .
+<#lich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lich> <http://www.w3.org/2000/01/rdf-schema#label> "Lich" .
+<#lion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lion> <http://www.w3.org/2000/01/rdf-schema#label> "Lion" .
+<#lizard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lizard> <http://www.w3.org/2000/01/rdf-schema#label> "Lizard" .
+<#lizardfolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#lizardfolk> <http://www.w3.org/2000/01/rdf-schema#label> "Lizardfolk" .
+<#mage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mage> <http://www.w3.org/2000/01/rdf-schema#label> "Mage" .
+<#magma-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#magma-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Magma Mephit" .
+<#magmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#magmin> <http://www.w3.org/2000/01/rdf-schema#label> "Magmin" .
+<#mammoth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mammoth> <http://www.w3.org/2000/01/rdf-schema#label> "Mammoth" .
+<#manticore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#manticore> <http://www.w3.org/2000/01/rdf-schema#label> "Manticore" .
+<#marilith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#marilith> <http://www.w3.org/2000/01/rdf-schema#label> "Marilith" .
+<#mastiff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mastiff> <http://www.w3.org/2000/01/rdf-schema#label> "Mastiff" .
+<#medusa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#medusa> <http://www.w3.org/2000/01/rdf-schema#label> "Medusa" .
+<#merfolk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#merfolk> <http://www.w3.org/2000/01/rdf-schema#label> "Merfolk" .
+<#merrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#merrow> <http://www.w3.org/2000/01/rdf-schema#label> "Merrow" .
+<#mimic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mimic> <http://www.w3.org/2000/01/rdf-schema#label> "Mimic" .
+<#minotaur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#minotaur> <http://www.w3.org/2000/01/rdf-schema#label> "Minotaur" .
+<#minotaur-skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#minotaur-skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Minotaur Skeleton" .
+<#mule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mule> <http://www.w3.org/2000/01/rdf-schema#label> "Mule" .
+<#mummy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mummy> <http://www.w3.org/2000/01/rdf-schema#label> "Mummy" .
+<#mummy-lord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#mummy-lord> <http://www.w3.org/2000/01/rdf-schema#label> "Mummy Lord" .
+<#nalfeshnee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#nalfeshnee> <http://www.w3.org/2000/01/rdf-schema#label> "Nalfeshnee" .
+<#night-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#night-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Night Hag" .
+<#nightmare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#nightmare> <http://www.w3.org/2000/01/rdf-schema#label> "Nightmare" .
+<#noble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#noble> <http://www.w3.org/2000/01/rdf-schema#label> "Noble" .
+<#ochre-jelly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ochre-jelly> <http://www.w3.org/2000/01/rdf-schema#label> "Ochre Jelly" .
+<#octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#octopus> <http://www.w3.org/2000/01/rdf-schema#label> "Octopus" .
+<#ogre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ogre> <http://www.w3.org/2000/01/rdf-schema#label> "Ogre" .
+<#ogre-zombie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#ogre-zombie> <http://www.w3.org/2000/01/rdf-schema#label> "Ogre Zombie" .
+<#oni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#oni> <http://www.w3.org/2000/01/rdf-schema#label> "Oni" .
+<#orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#orc> <http://www.w3.org/2000/01/rdf-schema#label> "Orc" .
+<#otyugh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#otyugh> <http://www.w3.org/2000/01/rdf-schema#label> "Otyugh" .
+<#owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#owl> <http://www.w3.org/2000/01/rdf-schema#label> "Owl" .
+<#owlbear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#owlbear> <http://www.w3.org/2000/01/rdf-schema#label> "Owlbear" .
+<#panther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#panther> <http://www.w3.org/2000/01/rdf-schema#label> "Panther" .
+<#pegasus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#pegasus> <http://www.w3.org/2000/01/rdf-schema#label> "Pegasus" .
+<#phase-spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#phase-spider> <http://www.w3.org/2000/01/rdf-schema#label> "Phase Spider" .
+<#pit-fiend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#pit-fiend> <http://www.w3.org/2000/01/rdf-schema#label> "Pit Fiend" .
+<#planetar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#planetar> <http://www.w3.org/2000/01/rdf-schema#label> "Planetar" .
+<#plesiosaurus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#plesiosaurus> <http://www.w3.org/2000/01/rdf-schema#label> "Plesiosaurus" .
+<#poisonous-snake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#poisonous-snake> <http://www.w3.org/2000/01/rdf-schema#label> "Poisonous Snake" .
+<#polar-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#polar-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Bear" .
+<#pony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#pony> <http://www.w3.org/2000/01/rdf-schema#label> "Pony" .
+<#priest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#priest> <http://www.w3.org/2000/01/rdf-schema#label> "Priest" .
+<#pseudodragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#pseudodragon> <http://www.w3.org/2000/01/rdf-schema#label> "Pseudodragon" .
+<#purple-worm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#purple-worm> <http://www.w3.org/2000/01/rdf-schema#label> "Purple Worm" .
+<#quasit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#quasit> <http://www.w3.org/2000/01/rdf-schema#label> "Quasit" .
+<#quipper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#quipper> <http://www.w3.org/2000/01/rdf-schema#label> "Quipper" .
+<#rakshasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#rakshasa> <http://www.w3.org/2000/01/rdf-schema#label> "Rakshasa" .
+<#rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#rat> <http://www.w3.org/2000/01/rdf-schema#label> "Rat" .
+<#raven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#raven> <http://www.w3.org/2000/01/rdf-schema#label> "Raven" .
+<#red-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#red-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Red Dragon Wyrmling" .
+<#reef-shark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#reef-shark> <http://www.w3.org/2000/01/rdf-schema#label> "Reef Shark" .
+<#remorhaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#remorhaz> <http://www.w3.org/2000/01/rdf-schema#label> "Remorhaz" .
+<#rhinoceros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#rhinoceros> <http://www.w3.org/2000/01/rdf-schema#label> "Rhinoceros" .
+<#riding-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#riding-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Riding Horse" .
+<#roc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#roc> <http://www.w3.org/2000/01/rdf-schema#label> "Roc" .
+<#roper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#roper> <http://www.w3.org/2000/01/rdf-schema#label> "Roper" .
+<#rug-of-smothering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#rug-of-smothering> <http://www.w3.org/2000/01/rdf-schema#label> "Rug of Smothering" .
+<#rust-monster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#rust-monster> <http://www.w3.org/2000/01/rdf-schema#label> "Rust Monster" .
+<#saber-toothed-tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#saber-toothed-tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Saber-Toothed Tiger" .
+<#sahuagin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#sahuagin> <http://www.w3.org/2000/01/rdf-schema#label> "Sahuagin" .
+<#salamander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#salamander> <http://www.w3.org/2000/01/rdf-schema#label> "Salamander" .
+<#satyr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#satyr> <http://www.w3.org/2000/01/rdf-schema#label> "Satyr" .
+<#scorpion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#scorpion> <http://www.w3.org/2000/01/rdf-schema#label> "Scorpion" .
+<#scout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#scout> <http://www.w3.org/2000/01/rdf-schema#label> "Scout" .
+<#sea-hag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#sea-hag> <http://www.w3.org/2000/01/rdf-schema#label> "Sea Hag" .
+<#sea-horse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#sea-horse> <http://www.w3.org/2000/01/rdf-schema#label> "Sea Horse" .
+<#shadow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#shadow> <http://www.w3.org/2000/01/rdf-schema#label> "Shadow" .
+<#shambling-mound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#shambling-mound> <http://www.w3.org/2000/01/rdf-schema#label> "Shambling Mound" .
+<#shield-guardian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#shield-guardian> <http://www.w3.org/2000/01/rdf-schema#label> "Shield Guardian" .
+<#shrieker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#shrieker> <http://www.w3.org/2000/01/rdf-schema#label> "Shrieker" .
+<#silver-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#silver-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "Silver Dragon Wyrmling" .
+<#skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Skeleton" .
+<#solar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#solar> <http://www.w3.org/2000/01/rdf-schema#label> "Solar" .
+<#specter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#specter> <http://www.w3.org/2000/01/rdf-schema#label> "Specter" .
+<#spider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#spider> <http://www.w3.org/2000/01/rdf-schema#label> "Spider" .
+<#spirit-naga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#spirit-naga> <http://www.w3.org/2000/01/rdf-schema#label> "Spirit Naga" .
+<#sprite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#sprite> <http://www.w3.org/2000/01/rdf-schema#label> "Sprite" .
+<#spy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#spy> <http://www.w3.org/2000/01/rdf-schema#label> "Spy" .
+<#steam-mephit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#steam-mephit> <http://www.w3.org/2000/01/rdf-schema#label> "Steam Mephit" .
+<#stirge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#stirge> <http://www.w3.org/2000/01/rdf-schema#label> "Stirge" .
+<#stone-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#stone-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Giant" .
+<#stone-golem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#stone-golem> <http://www.w3.org/2000/01/rdf-schema#label> "Stone Golem" .
+<#storm-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#storm-giant> <http://www.w3.org/2000/01/rdf-schema#label> "Storm Giant" .
+<#succubus-incubus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#succubus-incubus> <http://www.w3.org/2000/01/rdf-schema#label> "Succubus/Incubus" .
+<#swarm-of-bats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-bats> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Bats" .
+<#swarm-of-beetles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-beetles> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Beetles" .
+<#swarm-of-centipedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-centipedes> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Centipedes" .
+<#swarm-of-insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-insects> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Insects" .
+<#swarm-of-poisonous-snakes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-poisonous-snakes> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Poisonous Snakes" .
+<#swarm-of-quippers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-quippers> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Quippers" .
+<#swarm-of-rats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-rats> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Rats" .
+<#swarm-of-ravens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-ravens> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Ravens" .
+<#swarm-of-spiders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-spiders> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Spiders" .
+<#swarm-of-wasps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#swarm-of-wasps> <http://www.w3.org/2000/01/rdf-schema#label> "Swarm of Wasps" .
+<#tarrasque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#tarrasque> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrasque" .
+<#thug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#thug> <http://www.w3.org/2000/01/rdf-schema#label> "Thug" .
+<#tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Tiger" .
+<#treant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#treant> <http://www.w3.org/2000/01/rdf-schema#label> "Treant" .
+<#tribal-warrior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#tribal-warrior> <http://www.w3.org/2000/01/rdf-schema#label> "Tribal Warrior" .
+<#triceratops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#triceratops> <http://www.w3.org/2000/01/rdf-schema#label> "Triceratops" .
+<#troll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#troll> <http://www.w3.org/2000/01/rdf-schema#label> "Troll" .
+<#tyrannosaurus-rex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#tyrannosaurus-rex> <http://www.w3.org/2000/01/rdf-schema#label> "Tyrannosaurus Rex" .
+<#unicorn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#unicorn> <http://www.w3.org/2000/01/rdf-schema#label> "Unicorn" .
+<#vampire-vampire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vampire-vampire> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Vampire Form" .
+<#vampire-bat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vampire-bat> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Bat Form" .
+<#vampire-mist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vampire-mist> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire, Mist Form" .
+<#vampire-spawn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vampire-spawn> <http://www.w3.org/2000/01/rdf-schema#label> "Vampire Spawn" .
+<#veteran> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#veteran> <http://www.w3.org/2000/01/rdf-schema#label> "Veteran" .
+<#violet-fungus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#violet-fungus> <http://www.w3.org/2000/01/rdf-schema#label> "Violet Fungus" .
+<#vrock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vrock> <http://www.w3.org/2000/01/rdf-schema#label> "Vrock" .
+<#vulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#vulture> <http://www.w3.org/2000/01/rdf-schema#label> "Vulture" .
+<#warhorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#warhorse> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse" .
+<#warhorse-skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#warhorse-skeleton> <http://www.w3.org/2000/01/rdf-schema#label> "Warhorse Skeleton" .
+<#water-elemental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#water-elemental> <http://www.w3.org/2000/01/rdf-schema#label> "Water Elemental" .
+<#weasel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#weasel> <http://www.w3.org/2000/01/rdf-schema#label> "Weasel" .
+<#werebear-bear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werebear-bear> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Bear Form" .
+<#werebear-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werebear-human> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Human Form" .
+<#werebear-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werebear-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Werebear, Hybrid Form" .
+<#wereboar-boar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wereboar-boar> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Boar Form" .
+<#wereboar-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wereboar-human> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Human Form" .
+<#wereboar-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wereboar-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Wereboar, Hybrid Form" .
+<#wererat-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wererat-human> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Human Form" .
+<#wererat-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wererat-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Hybrid Form" .
+<#wererat-rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wererat-rat> <http://www.w3.org/2000/01/rdf-schema#label> "Wererat, Rat Form" .
+<#weretiger-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#weretiger-human> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Human Form" .
+<#weretiger-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#weretiger-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Hybrid Form" .
+<#weretiger-tiger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#weretiger-tiger> <http://www.w3.org/2000/01/rdf-schema#label> "Weretiger, Tiger Form" .
+<#werewolf-human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werewolf-human> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Human Form" .
+<#werewolf-hybrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werewolf-hybrid> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Hybrid Form" .
+<#werewolf-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#werewolf-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Werewolf, Wolf Form" .
+<#white-dragon-wyrmling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#white-dragon-wyrmling> <http://www.w3.org/2000/01/rdf-schema#label> "White Dragon Wyrmling" .
+<#wight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wight> <http://www.w3.org/2000/01/rdf-schema#label> "Wight" .
+<#will-o-wisp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#will-o-wisp> <http://www.w3.org/2000/01/rdf-schema#label> "Will-o'-Wisp" .
+<#winter-wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#winter-wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Winter Wolf" .
+<#wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wolf> <http://www.w3.org/2000/01/rdf-schema#label> "Wolf" .
+<#worg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#worg> <http://www.w3.org/2000/01/rdf-schema#label> "Worg" .
+<#wraith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wraith> <http://www.w3.org/2000/01/rdf-schema#label> "Wraith" .
+<#wyvern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#wyvern> <http://www.w3.org/2000/01/rdf-schema#label> "Wyvern" .
+<#xorn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#xorn> <http://www.w3.org/2000/01/rdf-schema#label> "Xorn" .
+<#young-black-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-black-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Black Dragon" .
+<#young-blue-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-blue-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Blue Dragon" .
+<#young-brass-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-brass-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Brass Dragon" .
+<#young-bronze-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-bronze-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Bronze Dragon" .
+<#young-copper-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-copper-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Copper Dragon" .
+<#young-gold-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-gold-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Gold Dragon" .
+<#young-green-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-green-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Green Dragon" .
+<#young-red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-red-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Red Dragon" .
+<#young-silver-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-silver-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young Silver Dragon" .
+<#young-white-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#young-white-dragon> <http://www.w3.org/2000/01/rdf-schema#label> "Young White Dragon" .
+<#zombie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Monster> .
+<#zombie> <http://www.w3.org/2000/01/rdf-schema#label> "Zombie" .
