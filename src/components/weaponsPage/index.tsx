@@ -122,7 +122,7 @@ export default function WeaponsPage() {
           </dd>
         </dl>
         <div className="table-container">
-          <table className={bem("table", "compact")}>
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">

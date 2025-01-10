@@ -105,7 +105,7 @@ export default function MonstersPage() {
           </dd>
         </dl>
         <div className="table-container">
-          <table className={bem("table")}>
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">

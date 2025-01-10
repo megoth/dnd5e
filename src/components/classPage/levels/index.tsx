@@ -33,7 +33,7 @@ export default function ClassPageLevels({ classInfo }: Props) {
   const hasInvocations = classHasInvocations(classInfo);
   return (
     <div className="table-container">
-      <table className={bem("table", "compact")}>
+      <table className="table">
         <thead>
           {hasLowerSpellcasting && !hasInvocations && (
             <tr>
