@@ -152,6 +152,22 @@ export function apiUrlToSubjectUrl(apiUrl: string): string {
   return dataUrl(type, id);
 }
 
+export function description(texts: string[]): string {
+  function isParagraph(text: string, nextText?: string): boolean {
+    return (
+      (text[0] !== "|" || (text[0] === "|" && nextText?.[0] !== "|")) &&
+      text[0] !== "-" &&
+      !text.match(/\d+\./)
+    );
+  }
+
+  return texts
+    .map((text, index) =>
+      isParagraph(text, texts[index + 1]) ? `${text}\n` : text,
+    )
+    .join("\n");
+}
+
 export function highestSpellLevel(level: ClassLevel): number {
   let spellLevel = 9;
   do {

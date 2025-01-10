@@ -8,6 +8,7 @@ import { resourceUrl } from "../../utils/url";
 import { SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
+  description,
   spellDuration,
   spellMaterial,
   spellResourceUrls,
@@ -17,6 +18,7 @@ import { useLocalization } from "@fluent/react";
 import Markdown from "react-markdown";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
+import remarkGfm from "remark-gfm";
 
 export default function SpellPage() {
   const params = useParams();
@@ -102,14 +104,16 @@ export default function SpellPage() {
           </dt>
           <dd>{spellDuration(spell, l10n)}</dd>
         </dl>
-        <Markdown>{spell.description.join("\n\n")}</Markdown>
+        <Markdown remarkPlugins={[remarkGfm]}>
+          {description(spell.description)}
+        </Markdown>
         {spell.higherLevel?.length > 0 && (
           <dl className="data-list">
             <dt>
               <Translation id="atHigherLevels" />
             </dt>
             <dd>
-              <Markdown>{spell.higherLevel.join("\n\n")}</Markdown>
+              <Markdown>{description(spell.higherLevel)}</Markdown>
             </dd>
           </dl>
         )}

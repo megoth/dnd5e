@@ -11,6 +11,7 @@ import Logo from "../logo";
 import Markdown from "react-markdown";
 import { useNavigate } from "react-router";
 import Illustration from "../illustration";
+import { description } from "../../utils/dnd5e";
 
 export default function RacesPage() {
   const navigate = useNavigate();
@@ -61,7 +62,7 @@ export default function RacesPage() {
               </h2>
               {race.description && (
                 <Content>
-                  <Markdown>{race.description.join("\n\n")}</Markdown>
+                  <Markdown>{description(race.description)}</Markdown>
                 </Content>
               )}
             </div>

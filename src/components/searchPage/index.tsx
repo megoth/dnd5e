@@ -1,13 +1,14 @@
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
-import SearchForm from "../searchForm";
 import useSearch from "../../hooks/useSearch";
 import { NavLink, useSearchParams } from "react-router-dom";
 import { Fragment, useEffect, useState } from "react";
 import { first } from "../../utils/array";
 import { type SearchResult, type Suggestion } from "minisearch";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { description } from "../../utils/dnd5e";
 
 export default function SearchPage() {
   const { isLoading, search } = useSearch();
@@ -30,7 +31,6 @@ export default function SearchPage() {
         <h1>
           <Translation id="search" />
         </h1>
-        <SearchForm />
         {suggestions.length > 0 && (
           <p>
             <Translation id={"suggestions"} />
@@ -53,7 +53,11 @@ export default function SearchPage() {
                     {title} (<Translation id={type} />)
                   </NavLink>
                 </h2>
-                {text && <Markdown>{text.join("\n\n")}</Markdown>}
+                {text && (
+                  <Markdown remarkPlugins={[remarkGfm]}>
+                    {description(text)}
+                  </Markdown>
+                )}
               </li>
             ))}
           </ul>

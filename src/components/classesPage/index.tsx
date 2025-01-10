@@ -11,6 +11,7 @@ import Markdown from "react-markdown";
 import Illustration from "../illustration";
 import Logo from "../logo";
 import { useNavigate } from "react-router";
+import { description } from "../../utils/dnd5e";
 
 export default function ClassesPage() {
   const navigate = useNavigate();
@@ -61,7 +62,7 @@ export default function ClassesPage() {
               </h2>
               {classInfo.description && (
                 <Content>
-                  <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+                  <Markdown>{description(classInfo.description)}</Markdown>
                 </Content>
               )}
             </div>

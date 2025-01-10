@@ -7,7 +7,7 @@ import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import { RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { raceResources } from "../../utils/dnd5e";
+import { description, raceResources } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
 import Markdown from "react-markdown";
@@ -56,7 +56,7 @@ export default function RacePage() {
       <Content>
         <h1>{race.label}</h1>
         {race.description && (
-          <Markdown>{race.description.join("\n\n")}</Markdown>
+          <Markdown>{description(race.description)}</Markdown>
         )}
         <dl className="data-list">
           <dt>
@@ -99,7 +99,7 @@ export default function RacePage() {
             <Fragment key={trait["@id"]}>
               <dt>{trait.label}</dt>
               <dd>
-                <Markdown>{trait.description.join("\n\n")}</Markdown>
+                <Markdown>{description(trait.description)}</Markdown>
               </dd>
             </Fragment>
           ))}

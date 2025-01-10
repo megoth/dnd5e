@@ -12,7 +12,7 @@ import { ClassShapeType } from "../../ldo/dnd5e.shapeTypes";
 import ClassPageHitPoints from "./hitPoints";
 import ClassPageProficiencies from "./proficiencies";
 import ClassPageEquipment from "./equipment";
-import { classResourceUrls } from "../../utils/dnd5e";
+import { classResourceUrls, description } from "../../utils/dnd5e";
 import ClassPageLevels from "./levels";
 import ClassPageFeatures from "./features";
 import ClassPageMulticlassing from "./multiclassing";
@@ -71,7 +71,7 @@ export default function ClassPage() {
         <h1>{classInfo.label}</h1>
         <ClassPageMulticlassing classInfo={classInfo} />
         {classInfo.description && (
-          <Markdown>{classInfo.description.join("\n\n")}</Markdown>
+          <Markdown>{description(classInfo.description)}</Markdown>
         )}
         <ClassPageLevels classInfo={classInfo} />
         <h2>
