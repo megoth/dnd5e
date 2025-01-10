@@ -1,5 +1,5 @@
 .breadcrumbs {
-    @apply flex mb-1;
+    @apply flex mb-1 md:-ms-2;
 }
 .breadcrumbs > ol {
     @apply inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse;
