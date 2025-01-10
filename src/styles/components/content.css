@@ -69,7 +69,7 @@
 
 .content p:has(+ ol),
 .content p:has(+ ul) {
-  @apply mb-1;
+  @apply mb-2;
 }
 
 .content table {

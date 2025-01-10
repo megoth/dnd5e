@@ -43,11 +43,13 @@ export default function SearchPage() {
             ))}
           </p>
         )}
-        {results.length === 0 && <Translation id="noResults" />}
-        {results.length > 0 && (
-          <ul>
-            {results.map(({ id, title, text, type, url }) => (
-              <li key={`${type}-${id}`}>
+      </Content>
+      {results.length === 0 && <Translation id="noResults" />}
+      {results.length > 0 && (
+        <ul>
+          {results.map(({ id, title, text, type, url }) => (
+            <li key={`${type}-${id}`}>
+              <Content>
                 <h2>
                   <NavLink to={url}>
                     {title} (<Translation id={type} />)
@@ -58,11 +60,11 @@ export default function SearchPage() {
                     {description(text)}
                   </Markdown>
                 )}
-              </li>
-            ))}
-          </ul>
-        )}
-      </Content>
+              </Content>
+            </li>
+          ))}
+        </ul>
+      )}
     </Layout>
   );
 }
