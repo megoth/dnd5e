@@ -30,7 +30,7 @@ export default function RacesPage() {
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="racesPageTitle" />
+          <Translation id="racesPageTitle" /> ({races.length})
         </h1>
       </Content>
       <ul className="cards">

@@ -6,6 +6,10 @@
     @apply text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow;
 }
 
+.table a {
+    @apply text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
 .table > thead {
     @apply top-0 text-xs bg-gray-200 dark:bg-gray-900 border-b dark:border-gray-700;
 }

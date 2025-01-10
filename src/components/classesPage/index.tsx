@@ -30,7 +30,7 @@ export default function ClassesPage() {
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="classesPageTitle" />
+          <Translation id="classesPageTitle" /> ({classes.length})
         </h1>
       </Content>
       <ul className="cards">

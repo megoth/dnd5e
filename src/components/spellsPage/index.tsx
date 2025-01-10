@@ -49,12 +49,25 @@ export default function SpellsPage() {
     return <Loading />;
   }
 
+  const filteredSpells = spells.filter(
+    (spell) =>
+      (classFilterDecoded
+        ? !!spell.classes.find(
+            (classInfo) => classInfo["@id"] === classFilterDecoded,
+          )
+        : true) &&
+      (levelFilter > -1 ? spell.level === levelFilter : true) &&
+      (schoolFilterDecoded
+        ? spell.magicSchool["@id"] === schoolFilterDecoded
+        : true),
+  );
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="spellsPageTitle" />
+          <Translation id="spellsPageTitle" /> ({filteredSpells.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -125,69 +138,55 @@ export default function SpellsPage() {
             })}
           </dd>
         </dl>
-        <div className="table-container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">
-                  <Translation id="name" />
-                </th>
-                <th scope="col">
-                  <Translation id="level" />
-                </th>
-                <th scope="col">
-                  <Translation id="school" />
-                </th>
-                <th scope="col">
-                  <Translation id="castingTime" />
-                </th>
-                <th scope="col">
-                  <Translation id="range" />
-                </th>
-                <th scope="col">
-                  <Translation id="duration" />
-                </th>
-                <th scope="col">
-                  <Translation id="components" />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {spells
-                .filter(
-                  (spell) =>
-                    (classFilterDecoded
-                      ? !!spell.classes.find(
-                          (classInfo) =>
-                            classInfo["@id"] === classFilterDecoded,
-                        )
-                      : true) &&
-                    (levelFilter > -1 ? spell.level === levelFilter : true) &&
-                    (schoolFilterDecoded
-                      ? spell.magicSchool["@id"] === schoolFilterDecoded
-                      : true),
-                )
-                .map((spell) => (
-                  <tr key={spell["@id"]}>
-                    <td>
-                      <NavLink to={`/spells/${btoa(spell["@id"])}`}>
-                        {spell.label}
-                      </NavLink>
-                    </td>
-                    <td>{l10n.getString(`order${spell.level}`)}</td>
-                    <td>{spell.magicSchool.label}</td>
-                    <td className="whitespace-nowrap">{spell.castingTime}</td>
-                    <td className="whitespace-nowrap">{spell.spellRange}</td>
-                    <td className="whitespace-nowrap">
-                      {spellDuration(spell, l10n)}
-                    </td>
-                    <td>{spell.components.join(", ")}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        </div>
       </Content>
+      <div className="table-container">
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <Translation id="name" />
+              </th>
+              <th scope="col">
+                <Translation id="level" />
+              </th>
+              <th scope="col">
+                <Translation id="school" />
+              </th>
+              <th scope="col">
+                <Translation id="castingTime" />
+              </th>
+              <th scope="col">
+                <Translation id="range" />
+              </th>
+              <th scope="col">
+                <Translation id="duration" />
+              </th>
+              <th scope="col">
+                <Translation id="components" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredSpells.map((spell) => (
+              <tr key={spell["@id"]}>
+                <td>
+                  <NavLink to={`/spells/${btoa(spell["@id"])}`}>
+                    {spell.label}
+                  </NavLink>
+                </td>
+                <td>{l10n.getString(`order${spell.level}`)}</td>
+                <td>{spell.magicSchool.label}</td>
+                <td className="whitespace-nowrap">{spell.castingTime}</td>
+                <td className="whitespace-nowrap">{spell.spellRange}</td>
+                <td className="whitespace-nowrap">
+                  {spellDuration(spell, l10n)}
+                </td>
+                <td>{spell.components.join(", ")}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </Layout>
   );
 }

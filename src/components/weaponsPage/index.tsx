@@ -53,12 +53,25 @@ export default function WeaponsPage() {
     return <Loading />;
   }
 
+  const filteredWeapons = weapons.filter(
+    (equipment) =>
+      (categoryFilter
+        ? equipment.weapon.weaponCategory === categoryFilter
+        : true) &&
+      (propertyFilterDecoded
+        ? !!equipment.weapon.properties.find(
+            (property) => property["@id"] === propertyFilterDecoded,
+          )
+        : true) &&
+      (rangeFilter ? equipment.weapon.weaponRange === rangeFilter : true),
+  );
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="weapons" />
+          <Translation id="weapons" /> ({filteredWeapons.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -143,42 +156,26 @@ export default function WeaponsPage() {
               </tr>
             </thead>
             <tbody>
-              {weapons
-                .filter(
-                  (equipment) =>
-                    (categoryFilter
-                      ? equipment.weapon.weaponCategory === categoryFilter
-                      : true) &&
-                    (propertyFilterDecoded
-                      ? !!equipment.weapon.properties.find(
-                          (property) =>
-                            property["@id"] === propertyFilterDecoded,
-                        )
-                      : true) &&
-                    (rangeFilter
-                      ? equipment.weapon.weaponRange === rangeFilter
-                      : true),
-                )
-                .map((equipment) => (
-                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                    <td>{equipment.label}</td>
-                    <td className="whitespace-nowrap">
-                      {equipment.cost.quantity} {equipment.cost.unit}
-                    </td>
-                    <td className="whitespace-nowrap">
-                      {equipment.weapon.damage?.dice}{" "}
-                      {equipment.weapon.damage?.damageType.label}
-                    </td>
-                    <td className="whitespace-nowrap">
-                      {equipment.weapon.weight} lb.
-                    </td>
-                    <td>
-                      {equipment.weapon.properties
-                        .map((property) => property.label)
-                        .join(", ")}
-                    </td>
-                  </tr>
-                ))}
+              {filteredWeapons.map((equipment) => (
+                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
+                  <td>{equipment.label}</td>
+                  <td className="whitespace-nowrap">
+                    {equipment.cost.quantity} {equipment.cost.unit}
+                  </td>
+                  <td className="whitespace-nowrap">
+                    {equipment.weapon.damage?.dice}{" "}
+                    {equipment.weapon.damage?.damageType.label}
+                  </td>
+                  <td className="whitespace-nowrap">
+                    {equipment.weapon.weight} lb.
+                  </td>
+                  <td>
+                    {equipment.weapon.properties
+                      .map((property) => property.label)
+                      .join(", ")}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

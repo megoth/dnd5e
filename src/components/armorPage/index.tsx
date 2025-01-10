@@ -34,12 +34,16 @@ export default function ArmorPage() {
     return <Loading />;
   }
 
+  const filteredArmor = armor.filter((equipment) =>
+    categoryFilter ? equipment.armor.armorCategory === categoryFilter : true,
+  );
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="armor" />
+          <Translation id="armor" /> ({filteredArmor.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -91,43 +95,37 @@ export default function ArmorPage() {
               </tr>
             </thead>
             <tbody>
-              {armor
-                .filter((equipment) =>
-                  categoryFilter
-                    ? equipment.armor.armorCategory === categoryFilter
-                    : true,
-                )
-                .map((equipment) => (
-                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                    <td>{equipment.label}</td>
-                    <td className="whitespace-nowrap">
-                      {equipment.armor.armorClass.base}
-                      {equipment.armor.armorClass.dexBonus && (
-                        <>
-                          {" "}
-                          + <Translation id="dexModifier" />
-                        </>
-                      )}
-                      {equipment.armor.armorClass.maxBonus && (
-                        <>
-                          {" "}
-                          (<Translation id="max" />{" "}
-                          {equipment.armor.armorClass.maxBonus})
-                        </>
-                      )}
-                    </td>
-                    <td>{parseNumber(equipment.armor.strMinimum)}</td>
-                    <td>
-                      {equipment.armor.stealthDisadvantage && (
-                        <Translation id="disadvantage" />
-                      )}
-                    </td>
-                    <td>{equipment.armor.weight} lb.</td>
-                    <td className="whitespace-nowrap">
-                      {equipment.cost.quantity} {equipment.cost.unit}
-                    </td>
-                  </tr>
-                ))}
+              {filteredArmor.map((equipment) => (
+                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
+                  <td>{equipment.label}</td>
+                  <td className="whitespace-nowrap">
+                    {equipment.armor.armorClass.base}
+                    {equipment.armor.armorClass.dexBonus && (
+                      <>
+                        {" "}
+                        + <Translation id="dexModifier" />
+                      </>
+                    )}
+                    {equipment.armor.armorClass.maxBonus && (
+                      <>
+                        {" "}
+                        (<Translation id="max" />{" "}
+                        {equipment.armor.armorClass.maxBonus})
+                      </>
+                    )}
+                  </td>
+                  <td>{parseNumber(equipment.armor.strMinimum)}</td>
+                  <td>
+                    {equipment.armor.stealthDisadvantage && (
+                      <Translation id="disadvantage" />
+                    )}
+                  </td>
+                  <td>{equipment.armor.weight} lb.</td>
+                  <td className="whitespace-nowrap">
+                    {equipment.cost.quantity} {equipment.cost.unit}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

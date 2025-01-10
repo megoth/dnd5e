@@ -40,12 +40,21 @@ export default function MonstersPage() {
     return <Loading />;
   }
 
+  const filteredMonsters = monsters.filter(
+    (monster) =>
+      (sizeFilter ? monster.size === sizeFilter : true) &&
+      (typeFilter ? monster.ofType === typeFilter : true) &&
+      (challengeFilter
+        ? monster.challengeRating.toString() === challengeFilter
+        : true),
+  );
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="monstersPageTitle" />
+          <Translation id="monstersPageTitle" /> ({filteredMonsters.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -123,31 +132,20 @@ export default function MonstersPage() {
               </tr>
             </thead>
             <tbody>
-              {monsters
-                .filter(
-                  (monster) =>
-                    (sizeFilter ? monster.size === sizeFilter : true) &&
-                    (typeFilter ? monster.ofType === typeFilter : true) &&
-                    (challengeFilter
-                      ? monster.challengeRating.toString() === challengeFilter
-                      : true),
-                )
-                .map((monster) => (
-                  <tr key={monster["@id"]}>
-                    <td>
-                      <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
-                        {monster.label}
-                      </NavLink>
-                    </td>
-                    <td>{monster.size}</td>
-                    <td className="whitespace-nowrap">
-                      {monsterType(monster)}
-                    </td>
-                    <td className="whitespace-nowrap">
-                      {monsterChallenge(monster)}
-                    </td>
-                  </tr>
-                ))}
+              {filteredMonsters.map((monster) => (
+                <tr key={monster["@id"]}>
+                  <td>
+                    <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
+                      {monster.label}
+                    </NavLink>
+                  </td>
+                  <td>{monster.size}</td>
+                  <td className="whitespace-nowrap">{monsterType(monster)}</td>
+                  <td className="whitespace-nowrap">
+                    {monsterChallenge(monster)}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

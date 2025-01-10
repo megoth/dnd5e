@@ -44,12 +44,18 @@ export default function EquipmentPage() {
     return <Loading />;
   }
 
+  const filteredEquipment = equipments.filter((equipment) =>
+    categoryFilterDecoded
+      ? equipment.equipmentCategory["@id"] === categoryFilterDecoded
+      : true,
+  );
+
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="equipmentPageTitle" />
+          <Translation id="equipmentPageTitle" /> ({filteredEquipment.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -95,22 +101,15 @@ export default function EquipmentPage() {
               </tr>
             </thead>
             <tbody>
-              {equipments
-                .filter((equipment) =>
-                  categoryFilterDecoded
-                    ? equipment.equipmentCategory["@id"] ===
-                      categoryFilterDecoded
-                    : true,
-                )
-                .map((equipment) => (
-                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                    <td>{equipment.label}</td>
-                    <td className="whitespace-nowrap">
-                      {equipment.cost.quantity} {equipment.cost.unit}
-                    </td>
-                    <td>{equipment.equipmentCategory.label}</td>
-                  </tr>
-                ))}
+              {filteredEquipment.map((equipment) => (
+                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
+                  <td>{equipment.label}</td>
+                  <td className="whitespace-nowrap">
+                    {equipment.cost.quantity} {equipment.cost.unit}
+                  </td>
+                  <td>{equipment.equipmentCategory.label}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
