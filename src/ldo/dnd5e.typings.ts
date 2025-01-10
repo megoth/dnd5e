@@ -553,6 +553,7 @@ export interface MagicSchool {
   type: Type;
   label: string;
   description?: string[];
+  illustration?: Illustration;
 }
 
 /**
@@ -917,6 +918,7 @@ export interface Spell {
   magicSchool: MagicSchool;
   classes?: Class[];
   subclasses?: Subclass[];
+  illustration?: Illustration;
 }
 
 /**

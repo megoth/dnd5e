@@ -228,7 +228,12 @@ export function spellMaterial(spell: Spell) {
 }
 
 export function spellResourceUrls(spell: Spell): string[] {
-  return [resourceUrl(spell.magicSchool["@id"])];
+  return [
+    resourceUrl(spell.magicSchool["@id"]),
+    ...(spell.magicSchool.illustration
+      ? [resourceUrl(spell.magicSchool.illustration["@id"])]
+      : []),
+  ];
 }
 
 export function sumSpellSlots(level: ClassLevel): number {

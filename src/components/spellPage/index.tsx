@@ -19,6 +19,7 @@ import Markdown from "react-markdown";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
 import remarkGfm from "remark-gfm";
+import Illustration from "../illustration";
 
 export default function SpellPage() {
   const params = useParams();
@@ -38,7 +39,13 @@ export default function SpellPage() {
     () => `spell-${spell?.["@id"]}`,
     async () => {
       if (!spell) return null;
-      return await Promise.all(
+      await Promise.all(
+        spellResourceUrls(spell).map((resourceUrl) =>
+          getResource(resourceUrl).readIfUnfetched(),
+        ),
+      );
+      // must load twice in case of magicSchool illustrations
+      await Promise.all(
         spellResourceUrls(spell).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
         ),
@@ -59,6 +66,11 @@ export default function SpellPage() {
           { text: spell.label },
         ]}
       />
+      {(spell.illustration || spell.magicSchool.illustration) && (
+        <Illustration
+          subject={spell.illustration || spell.magicSchool.illustration}
+        />
+      )}
       <Content>
         <h1>{spell.label}</h1>
         <p className="notification">

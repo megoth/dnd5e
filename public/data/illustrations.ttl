@@ -1,3 +1,8 @@
+<#abjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#abjuration> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/abjuration.jpg> .
+<#abjuration> <http://purl.org/dc/terms/description> "Sigil for Magic School Abjuration" .
+<#abjuration> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#abjuration> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#barbarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#barbarian> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-female-barbarian-fighter.jpg> .
 <#barbarian> <http://purl.org/dc/terms/description> "A portrait of a Human Barbarian" .
@@ -13,6 +18,21 @@
 <#cleric> <http://purl.org/dc/terms/description> "A portrait of a Dwarven Cleric" .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#cleric> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#conjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#conjuration> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/conjuration.jpg> .
+<#conjuration> <http://purl.org/dc/terms/description> "Sigil for Magic School Conjuration" .
+<#conjuration> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#conjuration> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
+<#divination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#divination> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/divination.jpg> .
+<#divination> <http://purl.org/dc/terms/description> "Sigil for Magic School Divination" .
+<#divination> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#divination> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
+<#enchantment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#enchantment> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/enchantment.jpg> .
+<#enchantment> <http://purl.org/dc/terms/description> "Sigil for Magic School Enchantment" .
+<#enchantment> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#enchantment> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#dragonborn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dragonborn-male-fighter.jpg> .
 <#dragonborn> <http://purl.org/dc/terms/description> "A portrait of a Dragonborn" .
@@ -33,6 +53,11 @@
 <#elf> <http://purl.org/dc/terms/description> "A portrait of an Elf" .
 <#elf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#elf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#evocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#evocation> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/evocation.jpg> .
+<#evocation> <http://purl.org/dc/terms/description> "Sigil for Magic School Evocation" .
+<#evocation> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#evocation> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#fighter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-male-fighter-in-heavy-armor.jpg> .
 <#fighter> <http://purl.org/dc/terms/description> "A portrait of a Human Fighter" .
@@ -68,6 +93,11 @@
 <#human> <http://purl.org/dc/terms/description> "A portrait of a Human" .
 <#human> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#human> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#illusion> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/illusion.jpg> .
+<#illusion> <http://purl.org/dc/terms/description> "Sigil for Magic School Illusion" .
+<#illusion> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#illusion> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#mindflayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#mindflayer> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-mind-flayer-surrounded-by-magical-energy.jpg> .
 <#mindflayer> <http://purl.org/dc/terms/description> "A portrait of a Mindflayer" .
@@ -83,6 +113,11 @@
 <#monk> <http://purl.org/dc/terms/description> "A portrait of a Human Monk" .
 <#monk> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#monk> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#necromancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#necromancy> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/necromancy.jpg> .
+<#necromancy> <http://purl.org/dc/terms/description> "Sigil for Magic School Necromancy" .
+<#necromancy> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#necromancy> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#paladin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-aasimar-male-paladin-fighter.jpg> .
 <#paladin> <http://purl.org/dc/terms/description> "A portrait of an Aasimar Paladin" .
@@ -113,6 +148,11 @@
 <#troll> <http://purl.org/dc/terms/description> "A troll" .
 <#troll> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#troll> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#transmutation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#transmutation> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/transmutation.jpg> .
+<#transmutation> <http://purl.org/dc/terms/description> "Sigil for Magic School Transmutation" .
+<#transmutation> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
+<#transmutation> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
 <#warlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#warlock> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-tiefling-black-female-wizard-sorcerer.jpg> .
 <#warlock> <http://purl.org/dc/terms/description> "A portrait of a Tiefling Warlock" .

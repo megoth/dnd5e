@@ -5,7 +5,8 @@ import { MagicSchool } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import schools from "../dnd5eapi-data/5e-SRD-Magic-Schools.json";
 import { writeFileSync } from "node:fs";
-import { dataPath } from "../utils/dnd5e";
+import { addendumPath, dataPath } from "../utils/dnd5e";
+import { readFileSync } from "fs";
 
 export function transformMagicSchool(
   data: components["schemas"]["MagicSchool"],
@@ -26,5 +27,6 @@ export default async function writeMagicSchools() {
       schools.map((school) => toTurtle(transformMagicSchool(school))),
     )
   ).reduce((memo, schools) => memo.concat(schools));
-  writeFileSync(dataPath("magic-schools"), turtle);
+  const addendum = readFileSync(addendumPath("magicSchools"), "utf-8");
+  writeFileSync(dataPath("magic-schools"), turtle + addendum);
 }

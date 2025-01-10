@@ -22,3 +22,11 @@
 <#transmutation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
 <#transmutation> <http://www.w3.org/2000/01/rdf-schema#label> "Transmutation" .
 <#transmutation> <http://purl.org/dc/terms/description> "Transmutation spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature, bolster the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abilities to rapidly recover from injury." .
+<#abjuration> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#abjuration> .
+<#conjuration> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#conjuration> .
+<#divination> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#divination> .
+<#enchantment> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#enchantment> .
+<#evocation> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#evocation> .
+<#illusion> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#illusion> .
+<#necromancy> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#necromancy> .
+<#transmutation> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#transmutation> .
