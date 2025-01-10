@@ -24,10 +24,14 @@ export default function MonstersPage() {
   const types = removeDuplicates(
     monsters.map((monster) => monster.ofType),
   ).sort((a, b) => (a > b ? 1 : -1));
+  const challengeRatings = removeDuplicates(
+    monsters.map((monster) => monster.challengeRating),
+  ).sort((a, b) => a - b);
 
   const [searchParams] = useSearchParams();
   const sizeFilter = first(searchParams.get("size"));
   const typeFilter = first(searchParams.get("type"));
+  const challengeFilter = first(searchParams.get("challenge"));
 
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
@@ -78,6 +82,27 @@ export default function MonstersPage() {
               );
             })}
           </dd>
+          <dt>
+            <Translation id="challenge" />
+          </dt>
+          <dd>
+            {challengeRatings.map((challenge) => {
+              const active = challengeFilter === challenge.toString();
+              return (
+                <NavLink
+                  key={challenge}
+                  to={
+                    active
+                      ? reduceQuery("challenge")
+                      : mergeQuery({ challenge: challenge.toString() })
+                  }
+                  aria-selected={active}
+                >
+                  {challenge}
+                </NavLink>
+              );
+            })}
+          </dd>
         </dl>
         <div className="table-container">
           <table className={bem("table")}>
@@ -102,7 +127,10 @@ export default function MonstersPage() {
                 .filter(
                   (monster) =>
                     (sizeFilter ? monster.size === sizeFilter : true) &&
-                    (typeFilter ? monster.ofType === typeFilter : true),
+                    (typeFilter ? monster.ofType === typeFilter : true) &&
+                    (challengeFilter
+                      ? monster.challengeRating.toString() === challengeFilter
+                      : true),
                 )
                 .map((monster) => (
                   <tr key={monster["@id"]}>
