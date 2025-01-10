@@ -7,7 +7,10 @@ import useListOfType from "../../hooks/useListOfType";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import { bem } from "../../utils/bem";
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
+import { first, removeDuplicates } from "../../utils/array";
+import useMergeQuery from "../../hooks/useMergeQuery";
+import useReduceQuery from "../../hooks/useReduceQuery";
 
 export default function MonstersPage() {
   const { isLoading, items: monsters } = useListOfType(
@@ -15,6 +18,18 @@ export default function MonstersPage() {
     "monsters",
     "Monster",
   );
+
+  const sizes = ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"];
+  const types = removeDuplicates(
+    monsters.map((monster) => monster.ofType),
+  ).sort((a, b) => (a > b ? 1 : -1));
+
+  const [searchParams] = useSearchParams();
+  const sizeFilter = first(searchParams.get("size"));
+  const typeFilter = first(searchParams.get("type"));
+
+  const mergeQuery = useMergeQuery();
+  const reduceQuery = useReduceQuery();
 
   if (isLoading) {
     return <Loading />;
@@ -27,6 +42,42 @@ export default function MonstersPage() {
         <h1>
           <Translation id="monstersPageTitle" />
         </h1>
+        <dl className="filter-list">
+          <dt>
+            <Translation id="size" />
+          </dt>
+          <dd>
+            {sizes.map((size) => {
+              const active = sizeFilter && sizeFilter === size;
+              return (
+                <NavLink
+                  key={size}
+                  to={active ? reduceQuery("size") : mergeQuery({ size })}
+                  aria-selected={active}
+                >
+                  {size}
+                </NavLink>
+              );
+            })}
+          </dd>
+          <dt>
+            <Translation id="type" />
+          </dt>
+          <dd>
+            {types.map((type) => {
+              const active = typeFilter && typeFilter === type;
+              return (
+                <NavLink
+                  key={type}
+                  to={active ? reduceQuery("type") : mergeQuery({ type })}
+                  aria-selected={active}
+                >
+                  {type}
+                </NavLink>
+              );
+            })}
+          </dd>
+        </dl>
         <div className="table-container">
           <table className={bem("table")}>
             <thead>
@@ -40,23 +91,33 @@ export default function MonstersPage() {
                 <th scope="col">
                   <Translation id="type" />
                 </th>
+                <th scope="col">
+                  <Translation id="xp" />
+                </th>
               </tr>
             </thead>
             <tbody>
-              {monsters.map((monster) => (
-                <tr key={monster["@id"]}>
-                  <td>
-                    <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
-                      {monster.label}
-                    </NavLink>
-                  </td>
-                  <td>{monster.size}</td>
-                  <td>
-                    {monster.ofType}
-                    {monster.subtype ? ` (${monster.subtype})` : ""}
-                  </td>
-                </tr>
-              ))}
+              {monsters
+                .filter(
+                  (monster) =>
+                    (sizeFilter ? monster.size === sizeFilter : true) &&
+                    (typeFilter ? monster.ofType === typeFilter : true),
+                )
+                .map((monster) => (
+                  <tr key={monster["@id"]}>
+                    <td>
+                      <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
+                        {monster.label}
+                      </NavLink>
+                    </td>
+                    <td>{monster.size}</td>
+                    <td className="whitespace-nowrap">
+                      {monster.ofType}
+                      {monster.subtype ? ` (${monster.subtype})` : ""}
+                    </td>
+                    <td>{monster.xp}</td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

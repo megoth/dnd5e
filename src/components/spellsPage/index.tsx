@@ -176,9 +176,11 @@ export default function SpellsPage() {
                     </td>
                     <td>{l10n.getString(`order${spell.level}`)}</td>
                     <td>{spell.magicSchool.label}</td>
-                    <td>{spell.castingTime}</td>
-                    <td>{spell.spellRange}</td>
-                    <td>{spellDuration(spell, l10n)}</td>
+                    <td className="whitespace-nowrap">{spell.castingTime}</td>
+                    <td className="whitespace-nowrap">{spell.spellRange}</td>
+                    <td className="whitespace-nowrap">
+                      {spellDuration(spell, l10n)}
+                    </td>
                     <td>{spell.components.join(", ")}</td>
                   </tr>
                 ))}
