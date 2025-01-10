@@ -4,6 +4,7 @@ import {
   ClassShapeType,
   EquipmentShapeType,
   MagicSchoolShapeType,
+  MonsterShapeType,
   RaceShapeType,
   SpellShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
@@ -90,6 +91,23 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: monstersLoading } = useIndexer(
+    MonsterShapeType,
+    "monsters",
+    "Monster",
+    (monster) =>
+      !search.has(monster["@id"]) &&
+      (() => {
+        search.add({
+          id: monster["@id"],
+          type: "monster",
+          title: monster.label,
+          text: [l10n.getString("descriptionOf", { type: monster.label })],
+          url: `/monsters/${btoa(monster["@id"])}`,
+        });
+      })(),
+  );
+
   const { isLoading: racesLoading } = useIndexer(
     RaceShapeType,
     "races",
@@ -143,6 +161,7 @@ export default function useSearch() {
     isLoading:
       classesLoading ||
       equipmentLoading ||
+      monstersLoading ||
       racesLoading ||
       spellLoading ||
       schoolsLoading,

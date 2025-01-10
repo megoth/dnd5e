@@ -82,6 +82,7 @@
 :logOut skos:definition "Logg ut"@nb-NO .
 :martialArts skos:definition "Kampkunst"@nb-NO .
 :max skos:definition "Maks"@nb-NO .
+:monster skos:definition "Monster"@nb-NO .
 :monsters skos:definition "Monstre"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
