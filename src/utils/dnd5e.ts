@@ -156,8 +156,7 @@ export function description(texts: string[]): string {
   function isParagraph(text: string, nextText?: string): boolean {
     return (
       (text[0] !== "|" || (text[0] === "|" && nextText?.[0] !== "|")) &&
-      text[0] !== "-" &&
-      !text.match(/\d+\./)
+      text[0] !== "-"
     );
   }
 
