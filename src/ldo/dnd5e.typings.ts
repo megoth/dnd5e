@@ -58,7 +58,7 @@ export interface Alignment {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-  description: string;
+  description?: string[];
   abbreviation: string;
 }
 
@@ -153,7 +153,7 @@ export interface Choice {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
-  description?: string;
+  description?: string[];
   choose?: number;
   ofType?: string;
   from?: OptionSet;
@@ -507,7 +507,7 @@ export interface Gear {
 export interface IdealOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  description2?: string;
+  description?: string[];
   alignments?: {
     "@id": string;
   }[];
@@ -523,7 +523,7 @@ export interface Illustration {
   imageUrl: {
     "@id": string;
   };
-  description?: string;
+  description?: string[];
   creator?: string;
   creatorUrl?: {
     "@id": string;
@@ -540,7 +540,7 @@ export interface Language {
   label: string;
   languageType?: string;
   script?: string;
-  description?: string;
+  description?: string[];
   typicalSpeakers?: string[];
 }
 
@@ -552,7 +552,7 @@ export interface MagicSchool {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-  description: string;
+  description?: string[];
 }
 
 /**
@@ -889,7 +889,7 @@ export interface Skill {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
-  description: string[];
+  description?: string[];
   abilityScore: AbilityScore;
 }
 
@@ -1004,7 +1004,7 @@ export interface TraitSpecificBreathWeapon {
   "@id"?: string;
   "@context"?: ContextDefinition;
   label?: string;
-  description: string;
+  description?: string[];
   areaOfEffect?: AreaOfEffect;
   breathWeaponDamage?: TraitSpecificBreathWeaponDamage;
   difficultyClass?: DifficultyClass;

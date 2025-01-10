@@ -12,7 +12,7 @@ export function transformChoice(
   return ldoDataset.usingType(ChoiceShapeType).fromJson({
     type: type("Choice"),
     ...(data.desc && {
-      description: data.desc,
+      description: [data.desc],
     }),
     ...(data.choose && {
       choose: data.choose,

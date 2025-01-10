@@ -16,7 +16,7 @@ export function transformLanguage(
     .fromSubject(`#${data.index}`);
   language.type = type("Language");
   language.label = data.name;
-  language.description = data.desc;
+  language.description = [data.desc];
   language.languageType = data.type;
   language.script = data.script;
   language.typicalSpeakers = data.typical_speakers;

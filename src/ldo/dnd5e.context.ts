@@ -418,10 +418,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  description2: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#description",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
   alignments: {
     "@id": "https://dnd5e.app/vocab/dnd5e#alignments",
     "@type": "@id",

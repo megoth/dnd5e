@@ -16,7 +16,7 @@ export function transformMagicSchool(
     .fromSubject(`#${data.index}`);
   school.type = type("MagicSchool");
   school.label = data.name;
-  school.description = data.desc;
+  school.description = [data.desc];
   return school;
 }
 

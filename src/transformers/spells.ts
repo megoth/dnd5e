@@ -3,8 +3,6 @@ import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   AreaOfEffectShapeType,
   ClassShapeType,
-  DamageCharacterLevelShapeType,
-  DamageSlotLevelShapeType,
   DamageTypeShapeType,
   MagicSchoolShapeType,
   SpellDamageShapeType,

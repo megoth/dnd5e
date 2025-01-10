@@ -49,7 +49,7 @@ function transformSpecificTraitBreathWeapon(
 ): TraitSpecificBreathWeapon {
   return ldoDataset.usingType(TraitSpecificBreathWeaponShapeType).fromJson({
     label: data.name,
-    description: data.desc,
+    description: [data.desc],
     areaOfEffect:
       data.area_of_effect &&
       ldoDataset.usingType(AreaOfEffectShapeType).fromJson({

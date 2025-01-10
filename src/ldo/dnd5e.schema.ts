@@ -182,6 +182,8 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
+              min: 0,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -529,7 +531,7 @@ export const dnd5eSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -2004,13 +2006,13 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#description",
+              predicate: "http://purl.org/dc/terms/description",
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -2055,7 +2057,7 @@ export const dnd5eSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -2130,7 +2132,7 @@ export const dnd5eSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -2174,6 +2176,8 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
+              min: 0,
+              max: -1,
             },
           ],
         },
@@ -3654,7 +3658,7 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
-              min: 1,
+              min: 0,
               max: -1,
             },
             {
@@ -4086,6 +4090,8 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
+              min: 0,
+              max: -1,
             },
             {
               type: "TripleConstraint",

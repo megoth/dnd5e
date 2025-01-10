@@ -17,7 +17,7 @@ function transformAlignment(
   alignment.type = type("Alignment");
   alignment.label = data.name;
   alignment.abbreviation = data.abbreviation;
-  alignment.description = data.desc;
+  alignment.description = [data.desc];
   return alignment;
 }
 
