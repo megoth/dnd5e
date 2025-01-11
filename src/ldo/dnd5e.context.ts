@@ -849,28 +849,13 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
     "@type": "@id",
   },
-  charisma: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#charisma",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  monsterAbilities: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterAbilities",
+    "@type": "@id",
+    "@container": "@set",
   },
-  constitution: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#constitution",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
-  },
-  dexterity: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#dexterity",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
-  },
-  intelligence: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#intelligence",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
-  },
-  strength: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#strength",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
-  },
-  wisdom: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#wisdom",
+  value: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#value",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   subtype: {
@@ -880,10 +865,6 @@ export const dnd5eContext: ContextDefinition = {
   monsterArmorClass: {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterArmorClass",
     "@type": "@id",
-  },
-  value: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#value",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   armorList: {
     "@id": "https://dnd5e.app/vocab/dnd5e#armorList",

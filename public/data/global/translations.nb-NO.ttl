@@ -3,6 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :abilityBonuses skos:definition "Evnebonuser"@nb-NO .
+:abilityScores skos:definition "Egenskaper"@nb-NO .
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
 :age skos:definition "Alder"@nb-NO .
 :alignment skos:definition "Innretning"@nb-NO .
@@ -31,6 +32,7 @@
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :challenge skos:definition "Vanskelighetsgrad"@nb-NO .
 :challengeRating skos:definition "Vanskelighetsgrad"@nb-NO .
+:charisma skos:definition "Karisma"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :class skos:definition "Klasse"@nb-NO .
 :classes skos:definition "Klasser"@nb-NO .
@@ -40,6 +42,7 @@
 :close skos:definition "Lukk"@nb-NO .
 :components skos:definition "Komponenter"@nb-NO .
 :concentration skos:definition "Konsentrasjon"@nb-NO .
+:constitution skos:definition "Kroppsform"@nb-NO .
 :cost skos:definition "Pris"@nb-NO .
 :damage skos:definition "Skade"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
@@ -47,6 +50,7 @@
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 :descriptionOf skos:definition "Beskrivelse av {$type}"@nb-NO .
 :dexModifier skos:definition "Smidighet modifikator"@nb-NO .
+:dexterity skos:definition "Smidighet"@nb-NO .
 :dice skos:definition "{$count}d{$value}"@nb-NO .
 :disadvantage skos:definition "Ulempe"@nb-NO .
 :duration skos:definition "Varighet"@nb-NO .
@@ -66,6 +70,7 @@
 :homePageTitle skos:definition "Hjem"@nb-NO .
 :ignore skos:definition "Ignorer"@nb-NO .
 :illustrationBy skos:definition "Illustrasjon av {$creator}"@nb-NO .
+:intelligence skos:definition "Intelligens"@nb-NO .
 :invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
 :kiPoints skos:definition "Ki poeng"@nb-NO .
 :languages skos:definition "Språk"@nb-NO .
@@ -199,5 +204,6 @@
         """Ved å bruke en Solid identitet kan appen gjenkjenne deg og vite hvor dataene dine skal hentes fra. Solid er en
         standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
         blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
+:wisdom skos:definition "Visdom"@nb-NO .
 :workInProgress skos:definition "Under utvikling"@nb-NO .
 :xp skos:definition "XP"@nb-NO .

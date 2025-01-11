@@ -46,6 +46,7 @@ import {
   Language,
   MagicSchool,
   Monster,
+  MonsterAbility,
   MonsterAction,
   MonsterArmorClass,
   MonsterAttack,
@@ -489,6 +490,15 @@ export const MagicSchoolShapeType: ShapeType<MagicSchool> = {
 export const MonsterShapeType: ShapeType<Monster> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Monster",
+  context: dnd5eContext,
+};
+
+/**
+ * MonsterAbility ShapeType
+ */
+export const MonsterAbilityShapeType: ShapeType<MonsterAbility> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterAbility",
   context: dnd5eContext,
 };
 

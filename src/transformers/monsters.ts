@@ -1,12 +1,29 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
-import { MonsterShapeType } from "../ldo/dnd5e.shapeTypes";
-import { Monster } from "../ldo/dnd5e.typings";
+import {
+  AbilityScoreShapeType,
+  MonsterAbilityShapeType,
+  MonsterShapeType,
+} from "../ldo/dnd5e.shapeTypes";
+import { Monster, MonsterAbility } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import monsters from "../dnd5eapi-data/5e-SRD-Monsters.json";
 import { writeFileSync } from "node:fs";
-import { addendumPath, dataPath } from "../utils/dnd5e";
+import { addendumPath, dataPath, dataUrl } from "../utils/dnd5e";
 import { readFileSync } from "fs";
+
+export function transformMonsterAbility(
+  ability: string,
+  value: number,
+  ldoDataset = createLdoDataset(),
+): MonsterAbility {
+  return ldoDataset.usingType(MonsterAbilityShapeType).fromJson({
+    abilityScore: ldoDataset
+      .usingType(AbilityScoreShapeType)
+      .fromSubject(dataUrl("ability-scores", ability)),
+    value,
+  });
+}
 
 export function transformMonster(
   data: components["schemas"]["Monster"],
@@ -17,12 +34,14 @@ export function transformMonster(
     .fromSubject(`#${data.index}`);
   monster.type = type("Monster");
   monster.label = data.name;
-  // charisma
-  // constitution
-  // dexterity
-  // intelligence
-  // strength
-  // wisdom
+  monster.monsterAbilities = [
+    transformMonsterAbility("str", data.strength, ldoDataset),
+    transformMonsterAbility("dex", data.dexterity, ldoDataset),
+    transformMonsterAbility("con", data.constitution, ldoDataset),
+    transformMonsterAbility("int", data.intelligence, ldoDataset),
+    transformMonsterAbility("wis", data.wisdom, ldoDataset),
+    transformMonsterAbility("cha", data.charisma, ldoDataset),
+  ];
   monster.size = data.size;
   monster.ofType = data.type;
   monster.subtype = data.subtype;

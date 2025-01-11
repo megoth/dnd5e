@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import { useParams } from "react-router-dom";
@@ -8,6 +8,7 @@ import { resourceUrl } from "../../utils/url";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
+  ability,
   monsterChallenge,
   monsterHP,
   monsterResourceUrls,
@@ -71,6 +72,17 @@ export default function MonsterPage() {
             <Translation id="challenge" />
           </dt>
           <dd>{monsterChallenge(monster)}</dd>
+        </dl>
+        <h2>
+          <Translation id={"abilityScores"} />
+        </h2>
+        <dl className="data-list">
+          {monster.monsterAbilities.map((monsterAbility) => (
+            <Fragment key={monsterAbility.abilityScore["@id"]}>
+              <dt>{monsterAbility.abilityScore.label}</dt>
+              <dd>{ability(monsterAbility.value)}</dd>
+            </Fragment>
+          ))}
         </dl>
       </Content>
     </Layout>

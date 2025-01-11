@@ -3,6 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :abilityBonuses skos:definition "Ability Bonuses"@en-US .
+:abilityScores skos:definition "Ability Scores"@en-US .
 :aboutPageTitle skos:definition "About the app"@en-US .
 :age skos:definition "Age"@en-US .
 :alignment skos:definition "Alignment"@en-US .
@@ -30,6 +31,7 @@
 :challenge skos:definition "Challenge"@en-US .
 :challengeRating skos:definition "Challenge Rating"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
+:charisma skos:definition "Charisma"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :class skos:definition "Class"@en-US .
 :classes skos:definition "Classes"@en-US .
@@ -39,6 +41,7 @@
 :close skos:definition "Close"@en-US .
 :components skos:definition "Components"@en-US .
 :concentration skos:definition "Concentration"@en-US .
+:constitution skos:definition "Constitution"@en-US .
 :cost skos:definition "Cost"@en-US .
 :damage skos:definition "Damage"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
@@ -46,6 +49,7 @@
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
 :dexModifier skos:definition "Dex modifier"@en-US .
+:dexterity skos:definition "Dexterity"@en-US .
 :dice skos:definition "{$count}d{$value}"@en-US .
 :disadvantage skos:definition "Disadvantage"@en-US .
 :duration skos:definition "Duration"@en-US .
@@ -65,6 +69,7 @@
 :homePageTitle skos:definition "Home"@en-US .
 :ignore skos:definition "Ignore"@en-US .
 :illustrationBy skos:definition "Illustration by {$creator}"@en-US .
+:intelligence skos:definition "Intelligence"@en-US .
 :invocationsKnown skos:definition "Invocations Known"@en-US .
 :kiPoints skos:definition "Ki Points"@en-US .
 :languages skos:definition "Languages"@en-US .
@@ -198,5 +203,6 @@
         """Using a Solid Identity is how this app recognizes who you are and know how to fetch your data. Solid is a
         standard that allows you to choose amongst a number of Solid Identity Providers, which means you don't have to
         rely on any specific company's service."""@en-US .
+:wisdom skos:definition "Wisdom"@en-US .
 :workInProgress skos:definition "Work in progress"@en-US .
 :xp skos:definition "XP"@en-US .

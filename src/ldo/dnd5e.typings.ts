@@ -565,12 +565,7 @@ export interface Monster {
   type: Type;
   label: string;
   description?: string[];
-  charisma?: number;
-  constitution?: number;
-  dexterity?: number;
-  intelligence?: number;
-  strength?: number;
-  wisdom?: number;
+  monsterAbilities?: MonsterAbility[];
   size?: string;
   ofType?: string;
   subtype?: string;
@@ -595,6 +590,16 @@ export interface Monster {
   monsterSpeed?: MonsterSpeed;
   xp?: number;
   illustration?: Illustration;
+}
+
+/**
+ * MonsterAbility Type
+ */
+export interface MonsterAbility {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  abilityScore?: AbilityScore;
+  value: number;
 }
 
 /**

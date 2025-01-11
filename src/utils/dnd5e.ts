@@ -9,6 +9,11 @@ import {
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 
+export function ability(abilityScore: number): string {
+  const modifier = Math.floor((abilityScore - 10) / 2);
+  return `${abilityScore} (${modifier > 0 ? `+${modifier}` : modifier})`;
+}
+
 export function addendumPath(type: string): string {
   // only used backend
   return `${process.cwd()}/src/transformers/${type}-addendum.ttl`;
@@ -190,6 +195,11 @@ export function monsterHP(monster: Monster): string {
 
 export function monsterResourceUrls(monster: Monster): string[] {
   return [
+    ...(monster.monsterAbilities
+      ? monster.monsterAbilities.map((ability) =>
+          resourceUrl(ability.abilityScore["@id"]),
+        )
+      : []),
     ...(monster.illustration ? [resourceUrl(monster.illustration["@id"])] : []),
   ];
 }

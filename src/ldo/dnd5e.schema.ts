@@ -2223,63 +2223,10 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#charisma",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
+              predicate: "https://dnd5e.app/vocab/dnd5e#monsterAbilities",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MonsterAbility",
               min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#constitution",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#dexterity",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#intelligence",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#strength",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#wisdom",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#integer",
-              },
-              min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -2490,6 +2437,33 @@ export const dnd5eSchema: Schema = {
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
               min: 0,
               max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#MonsterAbility",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#abilityScore",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#value",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
             },
           ],
         },
