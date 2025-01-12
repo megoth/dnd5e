@@ -399,7 +399,7 @@ export interface DifficultyClass {
   "@id"?: string;
   "@context"?: ContextDefinition;
   dcType?: AbilityScore;
-  dcValue?: number;
+  value?: number;
   successType?: string;
 }
 
@@ -569,7 +569,7 @@ export interface Monster {
   size?: string;
   ofType?: string;
   subtype?: string;
-  monsterArmorClass?: MonsterArmorClass;
+  monsterArmorClass?: MonsterArmorClass[];
   hitPoints?: number;
   hitDice?: string;
   hitPointsRoll?: string;

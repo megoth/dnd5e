@@ -1619,7 +1619,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#dcValue",
+              predicate: "https://dnd5e.app/vocab/dnd5e#value",
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#integer",
@@ -2264,7 +2264,7 @@ export const dnd5eSchema: Schema = {
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#MonsterArmorClass",
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",

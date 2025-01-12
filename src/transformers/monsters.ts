@@ -2,15 +2,29 @@ import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   AbilityScoreShapeType,
+  ConditionShapeType,
+  EquipmentShapeType,
   MonsterAbilityShapeType,
+  MonsterActionShapeType,
+  MonsterArmorClassShapeType,
+  MonsterMultiAttackActionShapeType,
   MonsterShapeType,
+  MonsterSpeedShapeType,
+  SpellShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Monster, MonsterAbility } from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import monsters from "../dnd5eapi-data/5e-SRD-Monsters.json";
 import { writeFileSync } from "node:fs";
-import { addendumPath, dataPath, dataUrl } from "../utils/dnd5e";
+import {
+  addendumPath,
+  apiUrlToSubjectUrl,
+  dataPath,
+  dataUrl,
+} from "../utils/dnd5e";
 import { readFileSync } from "fs";
+import { transformChoice } from "./choice";
+import { transformDifficultyClass } from "./difficultyClass";
 
 export function transformMonsterAbility(
   ability: string,
@@ -22,6 +36,32 @@ export function transformMonsterAbility(
       .usingType(AbilityScoreShapeType)
       .fromSubject(dataUrl("ability-scores", ability)),
     value,
+  });
+}
+
+export function transformMonsterAction(
+  data: components["schemas"]["MonsterAction"],
+  ldoDataset = createLdoDataset(),
+) {
+  return ldoDataset.usingType(MonsterActionShapeType).fromJson({
+    label: data.name,
+    description: [data.desc],
+    actionOptions:
+      data.action_options && transformChoice(data.action_options, ldoDataset),
+    monsterMultiAttackActions:
+      data.actions &&
+      data.actions.map((action) =>
+        ldoDataset.usingType(MonsterMultiAttackActionShapeType).fromJson({
+          label: action.action_name,
+          count: action.count,
+          ofType: action.type,
+        }),
+      ),
+    monsterActionOptions:
+      data.options && transformChoice(data.options, ldoDataset),
+    multiattackType: data.multiattack_type,
+    attackBonus: data.attack_bonus,
+    difficultyClass: data.dc && transformDifficultyClass(data.dc, ldoDataset),
   });
 }
 
@@ -45,25 +85,73 @@ export function transformMonster(
   monster.size = data.size;
   monster.ofType = data.type;
   monster.subtype = data.subtype;
-  // monsterArmorClass
+  monster.monsterArmorClass = data.armor_class.map((ac) =>
+    ldoDataset.usingType(MonsterArmorClassShapeType).fromJson({
+      ofType: ac.type,
+      value: ac.value,
+      description: [ac.desc],
+      ...(ac["armor"] && {
+        armorList: ac["armor"].map(
+          (armor: components["schemas"]["APIReference"]) =>
+            ldoDataset
+              .usingType(EquipmentShapeType)
+              .fromSubject(apiUrlToSubjectUrl(armor.url)),
+        ),
+      }),
+      ...(ac["spell"] && {
+        spell: ldoDataset
+          .usingType(SpellShapeType)
+          .fromSubject(apiUrlToSubjectUrl(ac["spell"].url)),
+      }),
+      ...(ac["condition"] && {
+        condition: ldoDataset
+          .usingType(ConditionShapeType)
+          .fromSubject(apiUrlToSubjectUrl(ac["condition"].url)),
+      }),
+    }),
+  );
   monster.hitPoints = data.hit_points;
   monster.hitDice = data.hit_dice;
   monster.hitPointsRoll = data.hit_points_roll;
-  // monsterActions
-  // legendaryActions
+  monster.monsterActions =
+    data.actions &&
+    data.actions.map((action) => transformMonsterAction(action, ldoDataset));
+  monster.legendaryActions =
+    data.legendary_actions &&
+    data.legendary_actions.map((action) =>
+      transformMonsterAction(action, ldoDataset),
+    );
   monster.challengeRating = data.challenge_rating;
-  // proficiencyBonus
+  monster.proficiencyBonus = data.proficiency_bonus;
   // conditionImmunities
-  // damageImmunities
-  // damageResistances
-  // damageVulnerabilities
-  // forms
-  // monsterLanguages
+  monster.damageImmunities = data.damage_immunities;
+  monster.damageResistances = data.damage_resistances;
+  monster.damageVulnerabilities = data.damage_vulnerabilities;
+  monster.forms =
+    data.forms &&
+    data.forms.map((form) =>
+      ldoDataset
+        .usingType(MonsterShapeType)
+        .fromSubject(apiUrlToSubjectUrl(form.url)),
+    );
+  monster.monsterLanguages = data.languages;
   // monsterProficiencies
-  // reactions
+  monster.reactions =
+    data.reactions &&
+    data.reactions.map((reaction) =>
+      transformMonsterAction(reaction, ldoDataset),
+    );
   // senses
   // specialAbilities
-  // monsterSpeed
+  monster.monsterSpeed =
+    data.speed &&
+    ldoDataset.usingType(MonsterSpeedShapeType).fromJson({
+      walk: data.speed.walk,
+      burrow: data.speed.burrow,
+      climb: data.speed.climb,
+      fly: data.speed.fly,
+      swim: data.speed.swim,
+    });
   monster.xp = data.xp;
   return monster;
 }

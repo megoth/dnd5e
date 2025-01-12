@@ -290,8 +290,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#dcType",
     "@type": "@id",
   },
-  dcValue: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#dcValue",
+  value: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#value",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
   successType: {
@@ -854,10 +854,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  value: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#value",
-    "@type": "http://www.w3.org/2001/XMLSchema#integer",
-  },
   subtype: {
     "@id": "https://dnd5e.app/vocab/dnd5e#subtype",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -865,6 +861,7 @@ export const dnd5eContext: ContextDefinition = {
   monsterArmorClass: {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterArmorClass",
     "@type": "@id",
+    "@container": "@set",
   },
   armorList: {
     "@id": "https://dnd5e.app/vocab/dnd5e#armorList",

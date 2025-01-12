@@ -3,6 +3,7 @@ import {
   Class,
   ClassLevel,
   Monster,
+  MonsterArmorClass,
   Race,
   Spell,
 } from "../ldo/dnd5e.typings";
@@ -183,6 +184,10 @@ export function highestSpellLevel(level: ClassLevel): number {
     spellLevel--;
   } while (spellLevel > 0);
   return spellLevel;
+}
+
+export function monsterArmorClass(ac: MonsterArmorClass): string {
+  return `${ac.value}${ac.ofType ? ` (${ac.ofType})` : ""}`;
 }
 
 export function monsterChallenge(monster: Monster): string {
