@@ -127,6 +127,7 @@
 :rageDamage skos:definition "Rage Damage"@en-US .
 :rages skos:definition "Rages"@en-US .
 :range skos:definition "Range"@en-US .
+:reactions skos:definition "Reactions"@en-US .
 :readMore skos:definition "Read more"@en-US .
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .

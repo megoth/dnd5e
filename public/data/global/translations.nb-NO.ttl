@@ -128,6 +128,7 @@
 :rageDamage skos:definition "Raseriskade"@nb-NO .
 :rages skos:definition "Raseri"@nb-NO .
 :range skos:definition "Lengde"@nb-NO .
+:reactions skos:definition "Reaksjoner"@nb-NO .
 :readMore skos:definition "Les mer"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .

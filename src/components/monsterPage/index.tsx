@@ -257,6 +257,21 @@ export default function MonsterPage() {
             </dl>
           </>
         )}
+        {monster.reactions.length > 0 && (
+          <>
+            <h3>
+              <Translation id="reactions" />
+            </h3>
+            <dl className="data-list">
+              {monster.reactions.map((action) => (
+                <Fragment key={action.label}>
+                  <dt>{action.label}</dt>
+                  <dd>{action.description}</dd>
+                </Fragment>
+              ))}
+            </dl>
+          </>
+        )}
       </Content>
     </Layout>
   );
