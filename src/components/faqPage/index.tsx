@@ -6,6 +6,7 @@ import { useLdo } from "@ldo/solid-react";
 import { rdf } from "rdf-namespaces";
 import { namedNode } from "@rdfjs/data-model";
 import FAQ from "../faq";
+import Breadcrumbs from "../breadcrumbs";
 
 export const TESTID_FAQ_ITEM = "faq-item";
 
@@ -27,6 +28,12 @@ export default function FAQPage() {
 
   return (
     <Layout>
+      <Breadcrumbs
+        crumbs={[
+          { href: "/about", translationId: "aboutPageTitle" },
+          { translationId: "faqPageTitle" },
+        ]}
+      />
       <Content>
         <h1>
           <Translation id="faqPageTitle" />

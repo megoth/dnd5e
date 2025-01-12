@@ -6,23 +6,11 @@ export type Page = {
   children?: Array<Page>;
 };
 
-export function getPages(path: string, admin: boolean): Array<Page> {
+export function getPages(_: string, _2: boolean): Array<Page> {
   return [
     {
       href: "/characters",
       translationId: "charactersPageTitle",
-      children: path.startsWith("/characters")
-        ? [
-            {
-              href: "/characters/encounters",
-              translationId: "encountersPageTitle",
-            },
-            {
-              href: "/characters/notes",
-              translationId: "notesPageTitle",
-            },
-          ]
-        : [],
     },
     {
       href: "/rules",
@@ -39,14 +27,16 @@ export function getPages(path: string, admin: boolean): Array<Page> {
     {
       href: "/equipment",
       translationId: "equipmentPageTitle",
-    },
-    {
-      href: "/weapons",
-      translationId: "weapons",
-    },
-    {
-      href: "/armor",
-      translationId: "armor",
+      children: [
+        {
+          href: "/weapons",
+          translationId: "weapons",
+        },
+        {
+          href: "/armor",
+          translationId: "armor",
+        },
+      ],
     },
     {
       href: "/spells",
@@ -56,46 +46,15 @@ export function getPages(path: string, admin: boolean): Array<Page> {
       href: "/monsters",
       translationId: "monstersPageTitle",
     },
-    ...(admin
-      ? [
-          {
-            href: "/admin",
-            translationId: "adminPageTitle",
-            bundle: "admin",
-            children: path.startsWith("/admin")
-              ? [
-                  {
-                    href: "/admin/languages",
-                    translationId: "languagesPageTitle",
-                    bundle: "admin",
-                  },
-                  {
-                    href: "/admin/translations",
-                    translationId: "translationsPageTitle",
-                    bundle: "admin",
-                  },
-                  {
-                    href: "/admin/errors",
-                    translationId: "errorsPageTitle",
-                    bundle: "admin",
-                  },
-                  {
-                    href: "/admin/faq",
-                    translationId: "faqShort",
-                  },
-                ]
-              : [],
-          },
-        ]
-      : []),
-    {
-      href: "/faq",
-      translationId: "faqShort",
-      children: [],
-    },
     {
       href: "/about",
       translationId: "aboutPageTitle",
+      children: [
+        {
+          href: "/faq",
+          translationId: "faqShort",
+        },
+      ],
     },
   ];
 }

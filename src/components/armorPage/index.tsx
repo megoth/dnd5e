@@ -12,6 +12,7 @@ import { first, removeDuplicates } from "../../utils/array";
 import { NavLink, useSearchParams } from "react-router-dom";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
+import Breadcrumbs from "../breadcrumbs";
 
 export default function ArmorPage() {
   const { isLoading, items: equipments } = useListOfType(
@@ -41,6 +42,12 @@ export default function ArmorPage() {
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      <Breadcrumbs
+        crumbs={[
+          { href: "/equipment", translationId: "equipment" },
+          { translationId: "armor" },
+        ]}
+      />
       <Content>
         <h1>
           <Translation id="armor" /> ({filteredArmor.length})
