@@ -43,6 +43,11 @@
 <#druid> <http://purl.org/dc/terms/description> "A portrait of a Human Druid" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#duergar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-duergar-bald-warrior-with-white-eyes.jpg> .
+<#duergar> <http://purl.org/dc/terms/description> "A Duergar" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dwarf-female-barbarian-in-the-mountains.jpg> .
 <#dwarf> <http://purl.org/dc/terms/description> "A portrait of a Dwarf" .
@@ -63,16 +68,41 @@
 <#fighter> <http://purl.org/dc/terms/description> "A portrait of a Human Fighter" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#fighter> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#frost-giant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-frost-giant-in-the-mountains.jpg> .
+<#frost-giant> <http://purl.org/dc/terms/description> "A Frost Giant" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#gargoyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-gargoyle-on-top-of-a-pillar.jpg> .
+<#gargoyle> <http://purl.org/dc/terms/description> "A Gargoyle" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#gelatinous-cube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-gelatinous-cube-with-a-corpse-trapped-inside.jpg> .
 <#gelatinous-cube> <http://purl.org/dc/terms/description> "A Gelatinous Cube" .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#giant-rat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-giant-rat.jpg> .
+<#giant-rat> <http://purl.org/dc/terms/description> "A Giant Rat" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#gnoll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-gnoll-warrior-is-in-a-swamp.jpg> .
+<#gnoll> <http://purl.org/dc/terms/description> "A Gnoll" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-gnome-male-artificer-in-a-workshop.jpg> .
 <#gnome> <http://purl.org/dc/terms/description> "A portrait of a Gnome" .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#goblin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-goblin-warrior-in-a-cave-mythjourneys-1.jpg> .
+<#goblin> <http://purl.org/dc/terms/description> "A Goblin" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#half-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-elf-female-druid-in-a-green-forest.jpg> .
 <#half-elf> <http://purl.org/dc/terms/description> "A portrait of a Half-Elf" .
@@ -98,6 +128,21 @@
 <#illusion> <http://purl.org/dc/terms/description> "Sigil for Magic School Illusion" .
 <#illusion> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
 <#illusion> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
+<#kobold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-monster-kobold-warrior-spearman-in-a-dark-forest.jpg> .
+<#kobold> <http://purl.org/dc/terms/description> "A Kobold" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#lich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#lich> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-lich-wearing-a-crown-and-holding-a-staff.jpg> .
+<#lich> <http://purl.org/dc/terms/description> "A Lich" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#mimic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-mimic-treasure-chest-in-a-cave.jpg> .
+<#mimic> <http://purl.org/dc/terms/description> "A Mimic" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#mindflayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#mindflayer> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-mind-flayer-surrounded-by-magical-energy.jpg> .
 <#mindflayer> <http://purl.org/dc/terms/description> "A portrait of a Mindflayer" .
@@ -118,6 +163,11 @@
 <#necromancy> <http://purl.org/dc/terms/description> "Sigil for Magic School Necromancy" .
 <#necromancy> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
 <#necromancy> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
+<#owlbear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-owlbear-in-a-forest.jpg> .
+<#owlbear> <http://purl.org/dc/terms/description> "An Owlbear" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#paladin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#paladin> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-aasimar-male-paladin-fighter.jpg> .
 <#paladin> <http://purl.org/dc/terms/description> "A portrait of an Aasimar Paladin" .
@@ -128,11 +178,21 @@
 <#ranger> <http://purl.org/dc/terms/description> "A portrait of a Human Ranger" .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#ranger> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#red-dragon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#red-dragon> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-monster-red-dragon-is-sitting-on-top-of-a-mountain.jpg> .
+<#red-dragon> <http://purl.org/dc/terms/description> "A Red Dragon" .
+<#red-dragon> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#red-dragon> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#rogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-male-rogue.jpg> .
 <#rogue> <http://purl.org/dc/terms/description> "A portrait of a Human Rogue" .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#rogue> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#skeleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-skeleton-warrior-with-sword-and-shield.jpg> .
+<#skeleton> <http://purl.org/dc/terms/description> "A Skeleton" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#sorcerer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#sorcerer> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dark-elf-female-wizard-sorcerer.jpg> .
 <#sorcerer> <http://purl.org/dc/terms/description> "A portrait of a Drow Sorcerer" .
@@ -163,3 +223,13 @@
 <#wizard> <http://purl.org/dc/terms/description> "A portrait of an Elven Wizard" .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#wizard> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#wraith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-wraith-in-a-graveyard.jpg> .
+<#wraith> <http://purl.org/dc/terms/description> "A Wraith" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#zombie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-zombie.jpg> .
+<#zombie> <http://purl.org/dc/terms/description> "A Zombie" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
