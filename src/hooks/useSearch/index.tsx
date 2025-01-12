@@ -46,7 +46,7 @@ export default function useSearch() {
           id: classInfo["@id"],
           type: "class",
           title: classInfo.label,
-          text: [l10n.getString("descriptionOf", { type: classInfo.label })],
+          text: classInfo.description,
           url: `/classes/${btoa(classInfo["@id"])}`,
         });
         search.add({
@@ -70,6 +70,7 @@ export default function useSearch() {
           id: equipment["@id"],
           type: "equipment",
           title: equipment.label,
+          text: equipment.description,
           url: `/equipment#${btoa(equipment["@id"])}`,
         });
         if (equipment.weapon) {
@@ -77,6 +78,7 @@ export default function useSearch() {
             id: `${equipment["@id"]}-weapon`,
             type: "weapon",
             title: equipment.label,
+            text: equipment.description,
             url: `/weapons#${btoa(equipment["@id"])}`,
           });
         }
@@ -85,6 +87,7 @@ export default function useSearch() {
             id: `${equipment["@id"]}-armor`,
             type: "armor",
             title: equipment.label,
+            text: equipment.description,
             url: `/armor#${btoa(equipment["@id"])}`,
           });
         }
