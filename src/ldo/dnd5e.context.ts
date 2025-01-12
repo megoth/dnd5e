@@ -1001,6 +1001,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpellcasting",
     "@type": "@id",
   },
+  dcValue: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#dcValue",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
   modifier: {
     "@id": "https://dnd5e.app/vocab/dnd5e#modifier",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -1036,6 +1040,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#restTypes",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
     "@container": "@set",
+  },
+  monsterUsage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterUsage",
+    "@type": "@id",
   },
   monsterSpeed: {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterSpeed",

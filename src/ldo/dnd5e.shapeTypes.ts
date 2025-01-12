@@ -58,7 +58,7 @@ import {
   MonsterSpell,
   MonsterSpellcasting,
   MonsterSpellLevelSlots,
-  MonsterSpellUsage,
+  MonsterUsage,
   Multiclassing,
   MultipleOption,
   OptionAction,
@@ -605,11 +605,11 @@ export const MonsterSpellLevelSlotsShapeType: ShapeType<MonsterSpellLevelSlots> 
   };
 
 /**
- * MonsterSpellUsage ShapeType
+ * MonsterUsage ShapeType
  */
-export const MonsterSpellUsageShapeType: ShapeType<MonsterSpellUsage> = {
+export const MonsterUsageShapeType: ShapeType<MonsterUsage> = {
   schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellUsage",
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MonsterUsage",
   context: dnd5eContext,
 };
 

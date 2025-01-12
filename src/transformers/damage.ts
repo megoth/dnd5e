@@ -15,9 +15,11 @@ export function transformDamage(
 ): Damage {
   return ldoDataset.usingType(DamageShapeType).fromJson({
     dice: data.damage_dice,
-    damageType: ldoDataset
-      .usingType(DamageTypeShapeType)
-      .fromSubject(apiUrlToSubjectUrl(data.damage_type.url)),
+    damageType:
+      data.damage_type &&
+      ldoDataset
+        .usingType(DamageTypeShapeType)
+        .fromSubject(apiUrlToSubjectUrl(data.damage_type.url)),
   });
 }
 

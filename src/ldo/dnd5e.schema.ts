@@ -2835,6 +2835,13 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#damage",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Damage",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#difficultyClass",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DifficultyClass",
               min: 0,
@@ -2845,6 +2852,13 @@ export const dnd5eSchema: Schema = {
               predicate: "https://dnd5e.app/vocab/dnd5e#monsterSpellcasting",
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellcasting",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#monsterUsage",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MonsterUsage",
               min: 0,
               max: 1,
             },
@@ -2952,8 +2966,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#monsterSpellUsage",
-              valueExpr:
-                "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellUsage",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MonsterUsage",
               min: 0,
               max: 1,
             },
@@ -2978,8 +2991,11 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#difficultyClass",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DifficultyClass",
+              predicate: "https://dnd5e.app/vocab/dnd5e#dcValue",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
               min: 0,
               max: 1,
             },
@@ -3065,7 +3081,7 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#MonsterSpellUsage",
+      id: "https://ldo.js.org/shapes/dnd5e.shex#MonsterUsage",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -3079,8 +3095,6 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
-              min: 0,
-              max: 1,
             },
             {
               type: "TripleConstraint",

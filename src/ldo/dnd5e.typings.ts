@@ -688,8 +688,10 @@ export interface MonsterSpecialAbility {
   label?: string;
   description?: string[];
   attackBonus?: number;
+  damage?: Damage;
   difficultyClass?: DifficultyClass;
   monsterSpellcasting?: MonsterSpellcasting;
+  monsterUsage?: MonsterUsage;
 }
 
 /**
@@ -714,7 +716,7 @@ export interface MonsterSpell {
   label?: string;
   level?: number;
   spell?: Spell;
-  monsterSpellUsage?: MonsterSpellUsage;
+  monsterSpellUsage?: MonsterUsage;
 }
 
 /**
@@ -724,7 +726,7 @@ export interface MonsterSpellcasting {
   "@id"?: string;
   "@context"?: ContextDefinition;
   abilityScore?: AbilityScore;
-  difficultyClass?: DifficultyClass;
+  dcValue?: number;
   modifier?: number;
   componentsRequired?: string[];
   spellcastingSchool?: string;
@@ -743,12 +745,12 @@ export interface MonsterSpellLevelSlots {
 }
 
 /**
- * MonsterSpellUsage Type
+ * MonsterUsage Type
  */
-export interface MonsterSpellUsage {
+export interface MonsterUsage {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  ofType?: string;
+  ofType: string;
   restTypes?: string[];
   times?: number;
 }
