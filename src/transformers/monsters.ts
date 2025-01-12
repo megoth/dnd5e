@@ -20,7 +20,11 @@ import {
   ProficiencyShapeType,
   SpellShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { Monster, MonsterAbility } from "../ldo/dnd5e.typings";
+import {
+  Monster,
+  MonsterAbility,
+  MonsterProficiency,
+} from "../ldo/dnd5e.typings";
 import { type } from "../../public/data/type";
 import monsters from "../dnd5eapi-data/5e-SRD-Monsters.json";
 import { writeFileSync } from "node:fs";
@@ -71,6 +75,18 @@ function transformMonsterAction(
     multiattackType: data.multiattack_type,
     attackBonus: data.attack_bonus,
     difficultyClass: data.dc && transformDifficultyClass(data.dc, ldoDataset),
+  });
+}
+
+function transformMonsterProficiency(
+  data: components["schemas"]["MonsterProficiency"],
+  ldoDataset = createLdoDataset(),
+): MonsterProficiency {
+  return ldoDataset.usingType(MonsterProficiencyShapeType).fromJson({
+    value: data.value,
+    proficiency: ldoDataset
+      .usingType(ProficiencyShapeType)
+      .fromSubject(apiUrlToSubjectUrl(data.proficiency.url)),
   });
 }
 
@@ -155,14 +171,18 @@ export function transformMonster(
       .fromSubject(apiUrlToSubjectUrl(form.url)),
   );
   monster.monsterLanguages = data.languages;
-  monster.monsterProficiencies = data.proficiencies?.map((proficiency) =>
-    ldoDataset.usingType(MonsterProficiencyShapeType).fromJson({
-      value: proficiency.value,
-      proficiency: ldoDataset
-        .usingType(ProficiencyShapeType)
-        .fromSubject(apiUrlToSubjectUrl(proficiency.proficiency.url)),
-    }),
-  );
+  monster.monsterSavingThrows = data.proficiencies
+    ?.filter((proficiency) =>
+      proficiency.proficiency.url.startsWith(
+        "/api/proficiencies/saving-throw-",
+      ),
+    )
+    .map((proficiency) => transformMonsterProficiency(proficiency, ldoDataset));
+  monster.monsterSkills = data.proficiencies
+    ?.filter((proficiency) =>
+      proficiency.proficiency.url.startsWith("/api/proficiencies/skill-"),
+    )
+    .map((proficiency) => transformMonsterProficiency(proficiency, ldoDataset));
   monster.reactions = data.reactions?.map((reaction) =>
     transformMonsterAction(reaction, ldoDataset),
   );

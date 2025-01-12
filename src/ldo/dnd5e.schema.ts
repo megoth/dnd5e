@@ -2386,7 +2386,15 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#monsterProficiencies",
+              predicate: "https://dnd5e.app/vocab/dnd5e#monsterSavingThrows",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#MonsterProficiency",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#monsterSkills",
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#MonsterProficiency",
               min: 0,

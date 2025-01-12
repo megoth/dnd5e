@@ -5,6 +5,7 @@
 :abilityBonuses skos:definition "Ability Bonuses"@en-US .
 :abilityScores skos:definition "Ability Scores"@en-US .
 :aboutPageTitle skos:definition "About the app"@en-US .
+:actions skos:definition "Actions"@en-US .
 :age skos:definition "Age"@en-US .
 :alignment skos:definition "Alignment"@en-US .
 :and skos:definition "and"@en-US .
@@ -74,6 +75,7 @@
 :kiPoints skos:definition "Ki Points"@en-US .
 :languages skos:definition "Languages"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .
+:legendaryActions skos:definition "Legendary Actions"@en-US .
 :level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
 :locale-nb-NO skos:definition "Norwegian"@en-US .
@@ -88,7 +90,9 @@
 :logOut skos:definition "Log out"@en-US .
 :martialArts skos:definition "Martial Arts"@en-US .
 :max skos:definition "Max"@en-US .
+:modifier skos:definition "Modifier"@en-US .
 :monster skos:definition "Monster"@en-US .
+:monsterFeatures skos:definition "Monster Features"@en-US .
 :monsters skos:definition "Monsters"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
@@ -122,6 +126,7 @@
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .
+:savingThrow skos:definition "Saving Throw"@en-US .
 :savingThrows skos:definition "Saving Throws"@en-US .
 :school skos:definition "School"@en-US .
 :search skos:definition "Search"@en-US .
@@ -146,6 +151,7 @@
 :signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
 :signupPageTitle skos:definition "Create a Solid account"@en-US .
 :size skos:definition "Size"@en-US .
+:skills skos:definition "Skills"@en-US .
 :slotLevel skos:definition "Slot Level"@en-US .
 :sneakAttack skos:definition "Sneak Attack"@en-US .
 :solidIdP skos:definition "Solid identity provider"@en-US .
@@ -165,6 +171,7 @@
 :subclasses skos:definition "Subclasses"@en-US .
 :subtype skos:definition "Subtype"@en-US .
 :suggestions skos:definition "Suggestions"@en-US .
+:traits skos:definition "Traits"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
 :type skos:definition "Type"@en-US .

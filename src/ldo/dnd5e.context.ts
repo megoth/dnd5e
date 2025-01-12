@@ -958,8 +958,13 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterLanguages",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  monsterProficiencies: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#monsterProficiencies",
+  monsterSavingThrows: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSavingThrows",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  monsterSkills: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#monsterSkills",
     "@type": "@id",
     "@container": "@set",
   },

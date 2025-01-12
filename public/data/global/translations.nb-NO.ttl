@@ -5,6 +5,7 @@
 :abilityBonuses skos:definition "Evnebonuser"@nb-NO .
 :abilityScores skos:definition "Egenskaper"@nb-NO .
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
+:actions skos:definition "Handlinger"@nb-NO .
 :age skos:definition "Alder"@nb-NO .
 :alignment skos:definition "Innretning"@nb-NO .
 :and skos:definition "og"@nb-NO .
@@ -75,6 +76,7 @@
 :kiPoints skos:definition "Ki poeng"@nb-NO .
 :languages skos:definition "Språk"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
+:legendaryActions skos:definition "Legendariske handlinger"@nb-NO .
 :level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
@@ -89,7 +91,9 @@
 :logOut skos:definition "Logg ut"@nb-NO .
 :martialArts skos:definition "Kampkunst"@nb-NO .
 :max skos:definition "Maks"@nb-NO .
+:modifier skos:definition "Modifikator"@nb-NO .
 :monster skos:definition "Monster"@nb-NO .
+:monsterFeatures skos:definition "Monsteregenskaper"@nb-NO .
 :monsters skos:definition "Monstre"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
@@ -123,7 +127,8 @@
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .
-:savingThrows skos:definition "Saving Throws"@nb-NO .
+:savingThrow skos:definition "Redningskast"@nb-NO .
+:savingThrows skos:definition "Redningskast"@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :school skos:definition "Skole"@nb-NO .
 :search skos:definition "Søk"@nb-NO .
@@ -147,6 +152,7 @@
 :signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 :signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
 :size skos:definition "Størrelse"@nb-NO .
+:skills skos:definition "Evner"@nb-NO .
 :slotLevel skos:definition "Plassnivå"@nb-NO .
 :sneakAttack skos:definition "Snikangrep"@nb-NO .
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
@@ -166,6 +172,7 @@
 :subclasses skos:definition "Underklasser"@nb-NO .
 :subtype skos:definition "Undertype"@nb-NO .
 :suggestions skos:definition "Forslag"@nb-NO .
+:traits skos:definition "Egenskaper"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
 :type skos:definition "Type"@nb-NO .

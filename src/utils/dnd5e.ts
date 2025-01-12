@@ -3,16 +3,25 @@ import {
   Class,
   ClassLevel,
   Monster,
+  MonsterAbility,
   MonsterArmorClass,
+  MonsterSpeed,
   Race,
   Spell,
 } from "../ldo/dnd5e.typings";
-import { resourceUrl } from "./url";
+import { hash, resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 
+export function modifier(value: number): string {
+  return value > 0 ? `+${value}` : value.toString();
+}
+
+export function scoreModifier(abilityScore: number): string {
+  return modifier(Math.floor((abilityScore - 10) / 2));
+}
+
 export function ability(abilityScore: number): string {
-  const modifier = Math.floor((abilityScore - 10) / 2);
-  return `${abilityScore} (${modifier > 0 ? `+${modifier}` : modifier})`;
+  return `${abilityScore} (${scoreModifier(abilityScore)})`;
 }
 
 export function addendumPath(type: string): string {
@@ -113,28 +122,28 @@ export function choiceResourceUrls(choice: Choice): string[] {
 
 export function classResourceUrls(classInfo: Class): string[] {
   return [
-    ...classInfo.proficiencies.map((proficiency) =>
+    ...(classInfo.proficiencies || []).map((proficiency) =>
       resourceUrl(proficiency["@id"]),
     ),
-    ...classInfo.proficiencyChoices.flatMap((choice) =>
+    ...(classInfo.proficiencyChoices || []).flatMap((choice) =>
       choiceResourceUrls(choice),
     ),
-    ...classInfo.savingThrows.map((savingThrow) =>
+    ...(classInfo.savingThrows || []).map((savingThrow) =>
       resourceUrl(savingThrow["@id"]),
     ),
-    ...classInfo.startingEquipment.map((startingEquipment) =>
+    ...(classInfo.startingEquipment || []).map((startingEquipment) =>
       resourceUrl(startingEquipment.equipment["@id"]),
     ),
-    ...classInfo.startingEquipmentOptions.flatMap((option) =>
+    ...(classInfo.startingEquipmentOptions || []).flatMap((option) =>
       choiceResourceUrls(option),
     ),
-    ...classInfo.levels.map((level) => resourceUrl(level["@id"])),
-    ...classInfo.levels.flatMap((level) =>
+    ...(classInfo.levels || []).map((level) => resourceUrl(level["@id"])),
+    ...(classInfo.levels || []).flatMap((level) =>
       level.features.map((feature) => resourceUrl(feature["@id"])),
     ),
-    ...classInfo.multiclassing.prerequisites.map((prerequisite) =>
+    ...(classInfo.multiclassing?.prerequisites.map((prerequisite) =>
       resourceUrl(prerequisite.abilityScore["@id"]),
-    ),
+    ) || []),
     ...(classInfo.multiclassing?.prerequisiteOptions
       ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteOptions)
       : []),
@@ -198,15 +207,50 @@ export function monsterHP(monster: Monster): string {
   return `${monster.hitPoints} (${monster.hitPointsRoll})`;
 }
 
+export function monsterSpeed(
+  speed: MonsterSpeed,
+  l10n: ReactLocalization,
+): string {
+  function getString(type: string): string[] {
+    return speed[type] ? [`${l10n.getString(type)} ${speed[type]}`] : [];
+  }
+
+  return [
+    speed.walk,
+    ...getString("burrow"),
+    ...getString("climb"),
+    ...getString("fly"),
+    ...getString("swim"),
+  ].join(", ");
+}
+
 export function monsterResourceUrls(monster: Monster): string[] {
   return [
-    ...(monster.monsterAbilities
-      ? monster.monsterAbilities.map((ability) =>
-          resourceUrl(ability.abilityScore["@id"]),
-        )
-      : []),
+    ...(monster.monsterAbilities || []).map((ability) =>
+      resourceUrl(ability.abilityScore["@id"]),
+    ),
+    ...(monster.monsterSavingThrows || []).map((savingThrow) =>
+      resourceUrl(savingThrow.proficiency["@id"]),
+    ),
+    ...(monster.monsterSkills || []).map((skill) =>
+      resourceUrl(skill.proficiency["@id"]),
+    ),
     ...(monster.illustration ? [resourceUrl(monster.illustration["@id"])] : []),
   ];
+}
+
+export function monsterSavingThrow(
+  ability: MonsterAbility,
+  monster: Monster,
+): string {
+  const savingThrow = monster.monsterSavingThrows.find(
+    (savingThrow) =>
+      hash(savingThrow.proficiency["@id"]) ===
+      `saving-throw-${hash(ability.abilityScore["@id"])}`,
+  );
+  return savingThrow
+    ? modifier(savingThrow.value)
+    : scoreModifier(ability.value);
 }
 
 export function monsterType(monster: Monster): string {
@@ -223,11 +267,11 @@ export function rageCount(count: number): string {
 
 export function raceResources(race: Race): string[] {
   return [
-    ...race.abilityBonuses.map((bonus) =>
+    ...(race.abilityBonuses || []).map((bonus) =>
       resourceUrl(bonus.abilityScore["@id"]),
     ),
-    ...race.languages.map((language) => resourceUrl(language["@id"])),
-    ...race.traits.map((trait) => resourceUrl(trait["@id"])),
+    ...(race.languages || []).map((language) => resourceUrl(language["@id"])),
+    ...(race.traits || []).map((trait) => resourceUrl(trait["@id"])),
     ...(race.illustration ? [resourceUrl(race.illustration["@id"])] : []),
   ];
 }

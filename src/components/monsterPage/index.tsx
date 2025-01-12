@@ -9,21 +9,26 @@ import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
   ability,
+  scoreModifier,
   monsterArmorClass,
   monsterChallenge,
   monsterHP,
   monsterResourceUrls,
+  monsterSpeed,
   monsterType,
+  monsterSavingThrow,
 } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
 import Translation from "../translation";
 import Illustration from "../illustration";
+import { useLocalization } from "@fluent/react";
 
 export default function MonsterPage() {
   const params = useParams();
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
+  const { l10n } = useLocalization();
 
   const { data: monster } = useSWR(
     () => url,
@@ -81,18 +86,100 @@ export default function MonsterPage() {
             <Translation id="challenge" />
           </dt>
           <dd>{monsterChallenge(monster)}</dd>
+          <dt>
+            <Translation id="speed" />
+          </dt>
+          <dd>{monsterSpeed(monster.monsterSpeed, l10n)}</dd>
         </dl>
         <h2>
-          <Translation id={"abilityScores"} />
+          <Translation id="abilityScores" />
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th colSpan={2} />
+              <th>
+                <Translation id="modifier" />
+              </th>
+              <th>
+                <Translation id="savingThrow" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {monster.monsterAbilities.map((monsterAbility) => (
+              <tr key={monsterAbility.abilityScore["@id"]}>
+                <td>{monsterAbility.abilityScore.label}</td>
+                <td>{monsterAbility.value}</td>
+                <td>{scoreModifier(monsterAbility.value)}</td>
+                <td>{monsterSavingThrow(monsterAbility, monster)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <dl className="data-list"></dl>
+        <h2>
+          <Translation id="monsterFeatures" />
         </h2>
         <dl className="data-list">
-          {monster.monsterAbilities.map((monsterAbility) => (
-            <Fragment key={monsterAbility.abilityScore["@id"]}>
-              <dt>{monsterAbility.abilityScore.label}</dt>
-              <dd>{ability(monsterAbility.value)}</dd>
-            </Fragment>
-          ))}
+          {monster.monsterSkills.length > 0 && (
+            <>
+              <dt>
+                <Translation id="skills" />
+              </dt>
+              <dd>
+                {monster.monsterSkills
+                  .map((skill) => `${skill.proficiency.label}: ${skill.value}`)
+                  .join(", ")}
+              </dd>
+            </>
+          )}
         </dl>
+        {monster.specialAbilities && (
+          <>
+            <h3>
+              <Translation id="traits" />
+            </h3>
+            <dl className="data-list">
+              {monster.specialAbilities.map((ability) => (
+                <Fragment key={ability.label}>
+                  <dt>{ability.label}</dt>
+                  <dd>{ability.description}</dd>
+                </Fragment>
+              ))}
+            </dl>
+          </>
+        )}
+        {monster.monsterActions && (
+          <>
+            <h3>
+              <Translation id="actions" />
+            </h3>
+            <dl className="data-list">
+              {monster.monsterActions.map((action) => (
+                <Fragment key={action.label}>
+                  <dt>{action.label}</dt>
+                  <dd>{action.description}</dd>
+                </Fragment>
+              ))}
+            </dl>
+          </>
+        )}
+        {monster.legendaryActions && (
+          <>
+            <h3>
+              <Translation id="legendaryActions" />
+            </h3>
+            <dl className="data-list">
+              {monster.legendaryActions.map((action) => (
+                <Fragment key={action.label}>
+                  <dt>{action.label}</dt>
+                  <dd>{action.description}</dd>
+                </Fragment>
+              ))}
+            </dl>
+          </>
+        )}
       </Content>
     </Layout>
   );

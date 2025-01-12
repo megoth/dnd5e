@@ -583,7 +583,8 @@ export interface Monster {
   damageVulnerabilities?: string[];
   forms?: Monster[];
   monsterLanguages?: string;
-  monsterProficiencies?: MonsterProficiency[];
+  monsterSavingThrows?: MonsterProficiency[];
+  monsterSkills?: MonsterProficiency[];
   reactions?: MonsterAction[];
   senses?: MonsterSense;
   specialAbilities?: MonsterSpecialAbility[];
