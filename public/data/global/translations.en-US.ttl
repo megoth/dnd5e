@@ -24,6 +24,7 @@
         """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
+:blindsight skos:definition "Blindsight"@en-US .
 :cantrip skos:definition "Cantrip"@en-US .
 :cantripNote skos:definition "{$school} cantrip"@en-US .
 :cantripsKnown skos:definition "Cantrips Known"@en-US .
@@ -47,6 +48,7 @@
 :damage skos:definition "Damage"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
+:darkvision skos:definition "Darkvision"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
 :dexModifier skos:definition "Dex modifier"@en-US .
@@ -60,6 +62,7 @@
 :faqPageTitle skos:definition "Frequently Asked Questions"@en-US .
 :faqShort skos:definition "FAQ"@en-US .
 :features skos:definition "Features"@en-US .
+:forms skos:definition "Forms"@en-US .
 :hitDie skos:definition "Hit Die"@en-US .
 :hitDiePerClassLevel skos:definition "1d{$hitDie} per {$className} level"@en-US .
 :hitPoints skos:definition "Hit Points"@en-US .
@@ -68,6 +71,7 @@
 :hitPointsAtHigherLevels skos:definition "Hit Points at Higher Levels"@en-US .
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
+:immunities skos:definition "Immunities"@en-US .
 :ignore skos:definition "Ignore"@en-US .
 :illustrationBy skos:definition "Illustration by {$creator}"@en-US .
 :intelligence skos:definition "Intelligence"@en-US .
@@ -112,6 +116,7 @@
 :order7 skos:definition "7th"@en-US .
 :order8 skos:definition "8th"@en-US .
 :order9 skos:definition "9th"@en-US .
+:passivePerception skos:definition "Passive Perception"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
 :properties skos:definition "Properties"@en-US .
@@ -125,6 +130,7 @@
 :readMore skos:definition "Read more"@en-US .
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
+:resistances skos:definition "Resistances"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .
 :savingThrow skos:definition "Saving Throw"@en-US .
 :savingThrows skos:definition "Saving Throws"@en-US .
@@ -137,6 +143,7 @@
         After you've enabled it the application will remember your choice for that browser."""@en-US .
 :searchEnable skos:definition "Enable search"@en-US .
 :searchHere skos:definition "Search here"@en-US .
+:senses skos:definition "Senses"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition
@@ -174,8 +181,11 @@
 :traits skos:definition "Traits"@en-US .
 :translateTo skos:definition "Translate to {$language}"@en-US .
 :translationsLoadFailed skos:definition "Failed to fetch translations"@en-US .
+:tremorsense skos:definition "Tremorsense"@en-US .
+:truesight skos:definition "Truesight"@en-US .
 :type skos:definition "Type"@en-US .
 :unarmoredMovement skos:definition "Unarmored movement"@en-US .
+:vulnerabilities skos:definition "Vulnerabilities"@en-US .
 :weapon skos:definition "Weapon"@en-US .
 :weapons skos:definition "Weapons"@en-US .
 :weight skos:definition "Weight"@en-US .

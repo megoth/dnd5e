@@ -569,6 +569,7 @@ export interface Monster {
   size?: string;
   ofType?: string;
   subtype?: string;
+  alignmentDescription?: string;
   monsterArmorClass?: MonsterArmorClass[];
   hitPoints?: number;
   hitDice?: string;

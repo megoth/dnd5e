@@ -121,6 +121,7 @@ export function transformMonster(
   monster.size = data.size;
   monster.ofType = data.type;
   monster.subtype = data.subtype;
+  monster.alignmentDescription = data.alignment;
   monster.monsterArmorClass = data.armor_class?.map((ac) =>
     ldoDataset.usingType(MonsterArmorClassShapeType).fromJson({
       ofType: ac.type,

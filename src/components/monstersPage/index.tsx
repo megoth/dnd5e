@@ -6,7 +6,6 @@ import WarningMessage from "../warningMessage";
 import useListOfType from "../../hooks/useListOfType";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { bem } from "../../utils/bem";
 import { NavLink, useSearchParams } from "react-router-dom";
 import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";

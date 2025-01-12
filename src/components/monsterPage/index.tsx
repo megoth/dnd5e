@@ -1,19 +1,21 @@
 import React, { Fragment } from "react";
 import Layout from "../layout";
 import Content from "../content";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useLdo } from "@ldo/solid-react";
 import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
+  description,
   modifier,
   monsterArmorClass,
   monsterChallenge,
   monsterHP,
   monsterResourceUrls,
   monsterSavingThrow,
+  monsterSenses,
   monsterSpeed,
   monsterType,
   scoreModifier,
@@ -23,6 +25,7 @@ import Breadcrumbs from "../breadcrumbs";
 import Translation from "../translation";
 import Illustration from "../illustration";
 import { useLocalization } from "@fluent/react";
+import Markdown from "react-markdown";
 
 export default function MonsterPage() {
   const params = useParams();
@@ -74,8 +77,11 @@ export default function MonsterPage() {
       <Content>
         <h1>{monster.label}</h1>
         <p className="notification">
-          {monster.size} {monsterType(monster)}
+          {monster.size} {monsterType(monster)}, {monster.alignmentDescription}
         </p>
+        {monster.description && (
+          <Markdown>{description(monster.description)}</Markdown>
+        )}
         <dl className="data-list">
           {monster.monsterArmorClass.map((ac) => (
             <Fragment key={ac.ofType}>
@@ -90,17 +96,27 @@ export default function MonsterPage() {
           </dt>
           <dd>{monsterHP(monster)}</dd>
           <dt>
-            <Translation id="challenge" />
-          </dt>
-          <dd>{monsterChallenge(monster)}</dd>
-          <dt>
             <Translation id="speed" />
           </dt>
           <dd>{monsterSpeed(monster.monsterSpeed, l10n)}</dd>
+          {monster.forms.length > 0 && (
+            <>
+              <dt>
+                <Translation id="forms" />
+              </dt>
+              <dd>
+                {monster.forms.map((form, index) => (
+                  <Fragment key={form["@id"]}>
+                    <NavLink to={`/monsters/${btoa(form["@id"])}`}>
+                      {form.label}
+                    </NavLink>
+                    {index !== monster.forms.length - 1 && <>, </>}
+                  </Fragment>
+                ))}
+              </dd>
+            </>
+          )}
         </dl>
-        <h2>
-          <Translation id="abilityScores" />
-        </h2>
         <table>
           <thead>
             <tr>
@@ -124,7 +140,6 @@ export default function MonsterPage() {
             ))}
           </tbody>
         </table>
-        <dl className="data-list"></dl>
         <h2>
           <Translation id="monsterFeatures" />
         </h2>
@@ -144,8 +159,60 @@ export default function MonsterPage() {
               </dd>
             </>
           )}
+          {monster.damageVulnerabilities.length > 0 && (
+            <>
+              <dt>
+                <Translation id="vulnerabilities" />
+              </dt>
+              <dd>{monster.damageVulnerabilities.join("; ")}</dd>
+            </>
+          )}
+          {monster.damageResistances.length > 0 && (
+            <>
+              <dt>
+                <Translation id="resistances" />
+              </dt>
+              <dd>{monster.damageResistances.join("; ")}</dd>
+            </>
+          )}
+          {(monster.damageImmunities.length > 0 ||
+            monster.conditionImmunities.length > 0) && (
+            <>
+              <dt>
+                <Translation id="immunities" />
+              </dt>
+              <dd>
+                {[
+                  ...monster.damageImmunities,
+                  ...monster.conditionImmunities.map(
+                    (condition) => condition.label,
+                  ),
+                ].join("; ")}
+              </dd>
+            </>
+          )}
+          {monster.senses && (
+            <>
+              <dt>
+                <Translation id="senses" />
+              </dt>
+              <dd>{monsterSenses(monster.senses, l10n)}</dd>
+            </>
+          )}
+          {monster.monsterLanguages && (
+            <>
+              <dt>
+                <Translation id="languages" />
+              </dt>
+              <dd>{monster.monsterLanguages}</dd>
+            </>
+          )}
+          <dt>
+            <Translation id="challenge" />
+          </dt>
+          <dd>{monsterChallenge(monster)}</dd>
         </dl>
-        {monster.specialAbilities && (
+        {monster.specialAbilities.length > 0 && (
           <>
             <h3>
               <Translation id="traits" />
@@ -160,7 +227,7 @@ export default function MonsterPage() {
             </dl>
           </>
         )}
-        {monster.monsterActions && (
+        {monster.monsterActions.length > 0 && (
           <>
             <h3>
               <Translation id="actions" />
@@ -175,7 +242,7 @@ export default function MonsterPage() {
             </dl>
           </>
         )}
-        {monster.legendaryActions && (
+        {monster.legendaryActions.length > 0 && (
           <>
             <h3>
               <Translation id="legendaryActions" />

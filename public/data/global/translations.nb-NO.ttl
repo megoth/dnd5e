@@ -25,6 +25,7 @@
         """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
+:blindsight skos:definition "Blindesyn"@nb-NO .
 :cantrip skos:definition "Liten tryllekunst"@nb-NO .
 :cantripNote skos:definition "{$school} liten tryllekunst"@nb-NO .
 :cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
@@ -48,6 +49,7 @@
 :damage skos:definition "Skade"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
+:darkvision skos:definition "Mørkesyn"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
 :descriptionOf skos:definition "Beskrivelse av {$type}"@nb-NO .
 :dexModifier skos:definition "Smidighet modifikator"@nb-NO .
@@ -61,6 +63,7 @@
 :faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 :faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
 :features skos:definition "Egenskaper"@nb-NO .
+:forms skos:definition "Former"@nb-NO .
 :hitDie skos:definition "Hit Die"@nb-NO .
 :hitDiePerClassLevel skos:definition "1d{$hitDie} per nivå av {$className}"@nb-NO .
 :hitPoints skos:definition "Hit Points"@nb-NO .
@@ -69,6 +72,7 @@
 :hitPointsAtHigherLevels skos:definition "Hit Points på høyere nivå"@nb-NO .
 :hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
+:immunities skos:definition "Immuniteter"@nb-NO .
 :ignore skos:definition "Ignorer"@nb-NO .
 :illustrationBy skos:definition "Illustrasjon av {$creator}"@nb-NO .
 :intelligence skos:definition "Intelligens"@nb-NO .
@@ -113,6 +117,7 @@
 :order7 skos:definition "7."@nb-NO .
 :order8 skos:definition "8."@nb-NO .
 :order9 skos:definition "9."@nb-NO .
+:passivePerception skos:definition "Passiv oppfatning"@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
 :properties skos:definition "Egenskaper"@nb-NO .
@@ -126,9 +131,11 @@
 :readMore skos:definition "Les mer"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
+:resistances skos:definition "Motstand"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .
 :savingThrow skos:definition "Redningskast"@nb-NO .
 :savingThrows skos:definition "Redningskast"@nb-NO .
+:senses skos:definition "Sanser"@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :school skos:definition "Skole"@nb-NO .
 :search skos:definition "Søk"@nb-NO .
@@ -175,8 +182,11 @@
 :traits skos:definition "Egenskaper"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+:tremorsense skos:definition "Skjelvingssans"@nb-NO .
+:truesight skos:definition "Sannsyn"@nb-NO .
 :type skos:definition "Type"@nb-NO .
 :unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
+:vulnerabilities skos:definition "Svakheter"@nb-NO .
 :weapon skos:definition "Våpen"@nb-NO .
 :weapons skos:definition "Våpen"@nb-NO .
 :weight skos:definition "Tyngde"@nb-NO .

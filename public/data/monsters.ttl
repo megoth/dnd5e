@@ -8,6 +8,7 @@
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b1854 .
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#aboleth> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b1855 .
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#hitPoints> 135 .
 <#aboleth> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d10" .
@@ -112,6 +113,7 @@ _:b1876 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b1883 .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#hitPoints> 9 .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -196,6 +198,7 @@ _:b1897 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b1903 .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b1904 .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 195 .
 <#adult-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d12" .
@@ -319,6 +322,7 @@ _:b1930 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b1936 .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b1937 .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 225 .
 <#adult-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d12" .
@@ -439,6 +443,7 @@ _:b1962 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b1968 .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b1969 .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 172 .
 <#adult-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d12" .
@@ -566,6 +571,7 @@ _:b1997 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2003 .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2004 .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 212 .
 <#adult-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d12" .
@@ -693,6 +699,7 @@ _:b2032 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2038 .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2039 .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 184 .
 <#adult-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d12" .
@@ -817,6 +824,7 @@ _:b2066 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2072 .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2073 .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 256 .
 <#adult-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "19d12" .
@@ -947,6 +955,7 @@ _:b2102 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2108 .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2109 .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 207 .
 <#adult-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d12" .
@@ -1080,6 +1089,7 @@ _:b2138 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2144 .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2145 .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 256 .
 <#adult-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "19d12" .
@@ -1200,6 +1210,7 @@ _:b2170 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2176 .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2177 .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 243 .
 <#adult-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d12" .
@@ -1326,6 +1337,7 @@ _:b2205 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2211 .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2212 .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 200 .
 <#adult-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d12" .
@@ -1450,6 +1462,7 @@ _:b2238 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2244 .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#air-elemental> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2245 .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#hitPoints> 90 .
 <#air-elemental> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -1517,6 +1530,7 @@ _:b2252 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2258 .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2259 .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 367 .
 <#ancient-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "21d20" .
@@ -1640,6 +1654,7 @@ _:b2285 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2291 .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2292 .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 481 .
 <#ancient-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "26d20" .
@@ -1760,6 +1775,7 @@ _:b2317 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2323 .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2324 .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 297 .
 <#ancient-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d20" .
@@ -1890,6 +1906,7 @@ _:b2353 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2359 .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2360 .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 444 .
 <#ancient-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "24d20" .
@@ -2020,6 +2037,7 @@ _:b2389 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2395 .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2396 .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 350 .
 <#ancient-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "20d20" .
@@ -2147,6 +2165,7 @@ _:b2424 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2430 .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2431 .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 546 .
 <#ancient-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "28d20" .
@@ -2280,6 +2299,7 @@ _:b2461 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2467 .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2468 .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 385 .
 <#ancient-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "22d20" .
@@ -2413,6 +2433,7 @@ _:b2497 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2503 .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2504 .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 546 .
 <#ancient-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "28d20" .
@@ -2533,6 +2554,7 @@ _:b2529 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2535 .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2536 .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 487 .
 <#ancient-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "25d20" .
@@ -2662,6 +2684,7 @@ _:b2565 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2571 .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2572 .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 333 .
 <#ancient-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d20" .
@@ -2786,6 +2809,7 @@ _:b2598 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2604 .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#androsphinx> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful neutral" .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2605 .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#hitPoints> 199 .
 <#androsphinx> <https://dnd5e.app/vocab/dnd5e#hitDice> "19d10" .
@@ -2967,6 +2991,7 @@ _:b2646 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2652 .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#animated-armor> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2653 .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#animated-armor> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -3032,6 +3057,7 @@ _:b2660 <https://dnd5e.app/vocab/dnd5e#walk> "25 ft." .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2666 .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#ankheg> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2667 .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2668 .
 <#ankheg> <https://dnd5e.app/vocab/dnd5e#hitPoints> 39 .
@@ -3086,6 +3112,7 @@ _:b2673 <https://dnd5e.app/vocab/dnd5e#burrow> "10 ft." .
 <#ape> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2679 .
 <#ape> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#ape> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#ape> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#ape> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2680 .
 <#ape> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#ape> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -3146,6 +3173,7 @@ _:b2688 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#archmage> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2695 .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2696 .
 <#archmage> <https://dnd5e.app/vocab/dnd5e#hitPoints> 99 .
@@ -3358,6 +3386,7 @@ _:b2744 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#assassin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-good alignment" .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2751 .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 78 .
 <#assassin> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d8" .
@@ -3439,6 +3468,7 @@ _:b2766 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2772 .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2773 .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#hitPoints> 10 .
 <#awakened-shrub> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d6" .
@@ -3484,6 +3514,7 @@ _:b2777 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2783 .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#awakened-tree> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2784 .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#hitPoints> 59 .
 <#awakened-tree> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d12" .
@@ -3530,6 +3561,7 @@ _:b2788 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2794 .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#axe-beak> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2795 .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#axe-beak> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -3570,6 +3602,7 @@ _:b2798 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#azer> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2804 .
 <#azer> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#azer> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#azer> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful neutral" .
 <#azer> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2805 .
 <#azer> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2806 .
 <#azer> <https://dnd5e.app/vocab/dnd5e#hitPoints> 39 .
@@ -3631,6 +3664,7 @@ _:b2815 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2821 .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#baboon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2822 .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 3 .
 <#baboon> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -3675,6 +3709,7 @@ _:b2826 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#badger> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2832 .
 <#badger> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#badger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#badger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#badger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2833 .
 <#badger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 3 .
 <#badger> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -3721,6 +3756,7 @@ _:b2837 <https://dnd5e.app/vocab/dnd5e#burrow> "5 ft." .
 <#balor> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#balor> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#balor> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#balor> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#balor> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2844 .
 <#balor> <https://dnd5e.app/vocab/dnd5e#hitPoints> 262 .
 <#balor> <https://dnd5e.app/vocab/dnd5e#hitDice> "21d12" .
@@ -3819,6 +3855,7 @@ _:b2863 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#bandit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-lawful alignment" .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2870 .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#bandit> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -3865,6 +3902,7 @@ _:b2874 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#bandit-captain> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-lawful alignment" .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2881 .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#hitPoints> 65 .
 <#bandit-captain> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d8" .
@@ -3938,6 +3976,7 @@ _:b2894 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#barbed-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2901 .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 110 .
 <#barbed-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d8" .
@@ -4033,6 +4072,7 @@ _:b2920 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2926 .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#basilisk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2927 .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#basilisk> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -4081,6 +4121,7 @@ _:b2932 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#bat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2938 .
 <#bat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#bat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#bat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#bat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2939 .
 <#bat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#bat> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -4130,6 +4171,7 @@ _:b2944 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#bearded-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2951 .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#bearded-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -4210,6 +4252,7 @@ _:b2964 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#behir> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b2970 .
 <#behir> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#behir> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#behir> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#behir> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2971 .
 <#behir> <https://dnd5e.app/vocab/dnd5e#hitPoints> 168 .
 <#behir> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d12" .
@@ -4286,6 +4329,7 @@ _:b2983 <https://dnd5e.app/vocab/dnd5e#climb> "40 ft." .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#berserker> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any chaotic alignment" .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b2990 .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#hitPoints> 67 .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -4330,6 +4374,7 @@ _:b2994 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3000 .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#black-bear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3001 .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#black-bear> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -4390,6 +4435,7 @@ _:b3009 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3015 .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3016 .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#black-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -4463,6 +4509,7 @@ _:b3028 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3034 .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#black-pudding> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3035 .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#hitPoints> 85 .
 <#black-pudding> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d10" .
@@ -4527,6 +4574,7 @@ _:b3043 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3049 .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#blink-dog> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3050 .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#blink-dog> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -4579,6 +4627,7 @@ _:b3057 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3063 .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#blood-hawk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3064 .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#blood-hawk> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -4629,6 +4678,7 @@ _:b3070 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3076 .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3077 .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#blue-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -4699,6 +4749,7 @@ _:b3088 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#boar> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3094 .
 <#boar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#boar> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#boar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#boar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3095 .
 <#boar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#boar> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -4751,6 +4802,7 @@ _:b3102 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#bone-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3109 .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 142 .
 <#bone-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -4835,6 +4887,7 @@ _:b3123 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3129 .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3130 .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 16 .
 <#brass-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -4906,6 +4959,7 @@ _:b3142 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3148 .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3149 .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 32 .
 <#bronze-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -4980,6 +5034,7 @@ _:b3162 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3168 .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#brown-bear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3169 .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 34 .
 <#brown-bear> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -5044,6 +5099,7 @@ _:b3178 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#bugbear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3185 .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#bugbear> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -5103,6 +5159,7 @@ _:b3193 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3199 .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#bulette> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3200 .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#hitPoints> 94 .
 <#bulette> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d10" .
@@ -5155,6 +5212,7 @@ _:b3206 <https://dnd5e.app/vocab/dnd5e#burrow> "40 ft." .
 <#camel> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3212 .
 <#camel> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#camel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#camel> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#camel> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3213 .
 <#camel> <https://dnd5e.app/vocab/dnd5e#hitPoints> 15 .
 <#camel> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d10" .
@@ -5195,6 +5253,7 @@ _:b3216 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#cat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3222 .
 <#cat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#cat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#cat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#cat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3223 .
 <#cat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#cat> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -5245,6 +5304,7 @@ _:b3229 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3235 .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#centaur> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3236 .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#centaur> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -5316,6 +5376,7 @@ _:b3249 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#chain-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3256 .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 85 .
 <#chain-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d8" .
@@ -5395,6 +5456,7 @@ _:b3269 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3275 .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#chimera> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3276 .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#hitPoints> 114 .
 <#chimera> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -5464,6 +5526,7 @@ _:b3287 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3293 .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#chuul> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3294 .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#hitPoints> 93 .
 <#chuul> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d10" .
@@ -5533,6 +5596,7 @@ _:b3305 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3311 .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#clay-golem> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3312 .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#hitPoints> 133 .
 <#clay-golem> <https://dnd5e.app/vocab/dnd5e#hitDice> "14d10" .
@@ -5610,6 +5674,7 @@ _:b3323 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3329 .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#cloaker> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic neutral" .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3330 .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#hitPoints> 78 .
 <#cloaker> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -5690,6 +5755,7 @@ _:b3344 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3350 .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#cloud-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good (50%) or neutral evil (50%)" .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3351 .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 200 .
 <#cloud-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d12" .
@@ -5827,6 +5893,7 @@ _:b3383 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3389 .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#cockatrice> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3390 .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#cockatrice> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d6" .
@@ -5870,6 +5937,7 @@ _:b3393 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#commoner> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3400 .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#hitPoints> 4 .
 <#commoner> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -5910,6 +5978,7 @@ _:b3403 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3409 .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3410 .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#constrictor-snake> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d10" .
@@ -5956,6 +6025,7 @@ _:b3414 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3420 .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3421 .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#copper-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -6027,6 +6097,7 @@ _:b3433 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3439 .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#couatl> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3440 .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#hitPoints> 97 .
 <#couatl> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d8" .
@@ -6189,6 +6260,7 @@ _:b3478 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#crab> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3484 .
 <#crab> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#crab> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#crab> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#crab> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3485 .
 <#crab> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#crab> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -6237,6 +6309,7 @@ _:b3490 <https://dnd5e.app/vocab/dnd5e#swim> "20 ft." .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3496 .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#crocodile> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3497 .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#crocodile> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -6285,6 +6358,7 @@ _:b3502 <https://dnd5e.app/vocab/dnd5e#swim> "20 ft." .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-good alignment" .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3509 .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#cult-fanatic> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -6396,6 +6470,7 @@ _:b3530 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#cultist> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-good alignment" .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3537 .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#hitPoints> 9 .
 <#cultist> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -6446,6 +6521,7 @@ _:b3543 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3549 .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#darkmantle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3550 .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#darkmantle> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d6" .
@@ -6500,6 +6576,7 @@ _:b3557 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3563 .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#death-dog> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3564 .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#hitPoints> 39 .
 <#death-dog> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -6559,6 +6636,7 @@ _:b3572 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#subtype> "gnome" .
+<#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3579 .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 16 .
 <#deep-gnome-svirfneblin> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d6" .
@@ -6655,6 +6733,7 @@ _:b3598 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#deer> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3604 .
 <#deer> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#deer> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#deer> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#deer> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3605 .
 <#deer> <https://dnd5e.app/vocab/dnd5e#hitPoints> 4 .
 <#deer> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -6695,6 +6774,7 @@ _:b3608 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#deva> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3614 .
 <#deva> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#deva> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#deva> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#deva> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3615 .
 <#deva> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#deva> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d8" .
@@ -6801,6 +6881,7 @@ _:b3636 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3642 .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#dire-wolf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3643 .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#hitPoints> 37 .
 <#dire-wolf> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d10" .
@@ -6853,6 +6934,7 @@ _:b3650 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3656 .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#djinni> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3657 .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#hitPoints> 161 .
 <#djinni> <https://dnd5e.app/vocab/dnd5e#hitDice> "14d10" .
@@ -7015,6 +7097,7 @@ _:b3694 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#doppelganger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3701 .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#doppelganger> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -7083,6 +7166,7 @@ _:b3712 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3718 .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#draft-horse> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3719 .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#draft-horse> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -7123,6 +7207,7 @@ _:b3722 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3728 .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3729 .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 341 .
 <#dragon-turtle> <https://dnd5e.app/vocab/dnd5e#hitDice> "22d20" .
@@ -7203,6 +7288,7 @@ _:b3743 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#dretch> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3750 .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#hitPoints> 18 .
 <#dretch> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d6" .
@@ -7272,6 +7358,7 @@ _:b3759 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#drider> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3765 .
 <#drider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#drider> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#drider> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#drider> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3766 .
 <#drider> <https://dnd5e.app/vocab/dnd5e#hitPoints> 123 .
 <#drider> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -7378,6 +7465,7 @@ _:b3788 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#drow> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#drow> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#drow> <https://dnd5e.app/vocab/dnd5e#subtype> "elf" .
+<#drow> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#drow> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3795 .
 <#drow> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#drow> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -7466,6 +7554,7 @@ _:b3811 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#druid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#druid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#druid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3818 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3819 .
 <#druid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
@@ -7572,6 +7661,7 @@ _:b3838 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3844 .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#dryad> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3845 .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3846 .
 <#dryad> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
@@ -7689,6 +7779,7 @@ _:b3870 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#subtype> "dwarf" .
+<#duergar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3877 .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 26 .
 <#duergar> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -7749,6 +7840,7 @@ _:b3885 <https://dnd5e.app/vocab/dnd5e#walk> "25 ft." .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3891 .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#dust-mephit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3892 .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 17 .
 <#dust-mephit> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d6" .
@@ -7829,6 +7921,7 @@ _:b3905 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3911 .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#eagle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3912 .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 3 .
 <#eagle> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -7876,6 +7969,7 @@ _:b3917 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3923 .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#earth-elemental> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3924 .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#hitPoints> 126 .
 <#earth-elemental> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -7941,6 +8035,7 @@ _:b3931 <https://dnd5e.app/vocab/dnd5e#burrow> "30 ft." .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3937 .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#efreeti> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3938 .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#hitPoints> 200 .
 <#efreeti> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -8080,6 +8175,7 @@ _:b3969 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3975 .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#elephant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3976 .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 76 .
 <#elephant> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d12" .
@@ -8127,6 +8223,7 @@ _:b3981 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#elk> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b3987 .
 <#elk> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#elk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#elk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#elk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b3988 .
 <#elk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#elk> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d10" .
@@ -8175,6 +8272,7 @@ _:b3993 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#erinyes> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4000 .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#hitPoints> 153 .
 <#erinyes> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d8" .
@@ -8257,6 +8355,7 @@ _:b4014 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4020 .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#ettercap> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4021 .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#hitPoints> 44 .
 <#ettercap> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -8337,6 +8436,7 @@ _:b4035 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4041 .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#ettin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4042 .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 85 .
 <#ettin> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d10" .
@@ -8403,6 +8503,7 @@ _:b4052 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4058 .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#fire-elemental> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4059 .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#hitPoints> 102 .
 <#fire-elemental> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -8473,6 +8574,7 @@ _:b4068 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4074 .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#fire-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4075 .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 162 .
 <#fire-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d12" .
@@ -8542,6 +8644,7 @@ _:b4086 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4092 .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#flesh-golem> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4093 .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#hitPoints> 93 .
 <#flesh-golem> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d8" .
@@ -8618,6 +8721,7 @@ _:b4104 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4110 .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#flying-snake> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4111 .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#flying-snake> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d4" .
@@ -8664,6 +8768,7 @@ _:b4115 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4121 .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#flying-sword> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4122 .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#hitPoints> 17 .
 <#flying-sword> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d6" .
@@ -8723,6 +8828,7 @@ _:b4128 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#frog> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4134 .
 <#frog> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#frog> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#frog> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#frog> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4135 .
 <#frog> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#frog> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -8773,6 +8879,7 @@ _:b4141 <https://dnd5e.app/vocab/dnd5e#swim> "20 ft." .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4147 .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#frost-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4148 .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 138 .
 <#frost-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d12" .
@@ -8842,6 +8949,7 @@ _:b4159 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4165 .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#gargoyle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4166 .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#gargoyle> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -8908,6 +9016,7 @@ _:b4174 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4180 .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4181 .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#hitPoints> 84 .
 <#gelatinous-cube> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -8968,6 +9077,7 @@ _:b4188 <https://dnd5e.app/vocab/dnd5e#walk> "15 ft." .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4194 .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghast> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4195 .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#hitPoints> 36 .
 <#ghast> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -9028,6 +9138,7 @@ _:b4202 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4208 .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghost> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4209 .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#ghost> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d8" .
@@ -9110,6 +9221,7 @@ _:b4219 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4225 .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ghoul> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4226 .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#ghoul> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -9159,6 +9271,7 @@ _:b4230 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4236 .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-ape> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4237 .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#hitPoints> 157 .
 <#giant-ape> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d12" .
@@ -9218,6 +9331,7 @@ _:b4245 <https://dnd5e.app/vocab/dnd5e#climb> "40 ft." .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4251 .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-badger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4252 .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#giant-badger> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -9279,6 +9393,7 @@ _:b4260 <https://dnd5e.app/vocab/dnd5e#burrow> "10 ft." .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4266 .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-bat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4267 .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#giant-bat> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -9327,6 +9442,7 @@ _:b4272 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4278 .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-boar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4279 .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 42 .
 <#giant-boar> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d10" .
@@ -9377,6 +9493,7 @@ _:b4285 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4291 .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-centipede> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4292 .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#hitPoints> 4 .
 <#giant-centipede> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -9419,6 +9536,7 @@ _:b4295 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4301 .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4302 .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#hitPoints> 60 .
 <#giant-constrictor-snake> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d12" .
@@ -9468,6 +9586,7 @@ _:b4307 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4313 .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-crab> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4314 .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#giant-crab> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -9516,6 +9635,7 @@ _:b4319 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4325 .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4326 .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#hitPoints> 85 .
 <#giant-crocodile> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d12" .
@@ -9579,6 +9699,7 @@ _:b4335 <https://dnd5e.app/vocab/dnd5e#swim> "50 ft." .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4341 .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-eagle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4342 .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 26 .
 <#giant-eagle> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -9642,6 +9763,7 @@ _:b4351 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4357 .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-elk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4358 .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 42 .
 <#giant-elk> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d12" .
@@ -9692,6 +9814,7 @@ _:b4364 <https://dnd5e.app/vocab/dnd5e#walk> "60 ft." .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4370 .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4371 .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#hitPoints> 4 .
 <#giant-fire-beetle> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -9736,6 +9859,7 @@ _:b4375 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4381 .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-frog> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4382 .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#hitPoints> 18 .
 <#giant-frog> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -9793,6 +9917,7 @@ _:b4390 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4396 .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-goat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4397 .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#giant-goat> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -9839,6 +9964,7 @@ _:b4402 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4408 .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-hyena> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4409 .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#giant-hyena> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -9885,6 +10011,7 @@ _:b4414 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4420 .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-lizard> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4421 .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#giant-lizard> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -9927,6 +10054,7 @@ _:b4424 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4430 .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-octopus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4431 .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#giant-octopus> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -9987,6 +10115,7 @@ _:b4440 <https://dnd5e.app/vocab/dnd5e#swim> "60 ft." .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4446 .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-owl> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4447 .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#giant-owl> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -10041,6 +10170,7 @@ _:b4454 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4460 .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4461 .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#giant-poisonous-snake> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -10086,6 +10216,7 @@ _:b4465 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4471 .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-rat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4472 .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#giant-rat> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -10133,6 +10264,7 @@ _:b4477 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4483 .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4484 .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#giant-rat-diseased> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -10180,6 +10312,7 @@ _:b4489 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4495 .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4496 .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#giant-scorpion> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -10237,6 +10370,7 @@ _:b4503 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4509 .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4510 .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#hitPoints> 16 .
 <#giant-sea-horse> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -10284,6 +10418,7 @@ _:b4515 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4521 .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-shark> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4522 .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#hitPoints> 126 .
 <#giant-shark> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d12" .
@@ -10334,6 +10469,7 @@ _:b4528 <https://dnd5e.app/vocab/dnd5e#swim> "50 ft." .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4534 .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-spider> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4535 .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#hitPoints> 26 .
 <#giant-spider> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -10393,6 +10529,7 @@ _:b4543 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4549 .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-toad> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4550 .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#hitPoints> 39 .
 <#giant-toad> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -10444,6 +10581,7 @@ _:b4556 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4562 .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-vulture> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4563 .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#giant-vulture> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -10510,6 +10648,7 @@ _:b4573 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4579 .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-wasp> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4580 .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#giant-wasp> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -10552,6 +10691,7 @@ _:b4583 <https://dnd5e.app/vocab/dnd5e#swim> "50 ft." .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4589 .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-weasel> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4590 .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#hitPoints> 9 .
 <#giant-weasel> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -10602,6 +10742,7 @@ _:b4596 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4602 .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4603 .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#giant-wolf-spider> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -10660,6 +10801,7 @@ _:b4611 <https://dnd5e.app/vocab/dnd5e#climb> "40 ft." .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4617 .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4618 .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#hitPoints> 67 .
 <#gibbering-mouther> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -10733,6 +10875,7 @@ _:b4629 <https://dnd5e.app/vocab/dnd5e#swim> "10 ft." .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#glabrezu> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4636 .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#hitPoints> 157 .
 <#glabrezu> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -10856,6 +10999,7 @@ _:b4662 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#gladiator> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4669 .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#hitPoints> 112 .
 <#gladiator> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d8" .
@@ -10936,6 +11080,7 @@ _:b4684 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#subtype> "gnoll" .
+<#gnoll> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4691 .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#gnoll> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -10990,6 +11135,7 @@ _:b4697 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#goat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4703 .
 <#goat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#goat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#goat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#goat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4704 .
 <#goat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 4 .
 <#goat> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -11037,6 +11183,7 @@ _:b4709 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#goblin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4716 .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#goblin> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -11090,6 +11237,7 @@ _:b4722 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4728 .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4729 .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 60 .
 <#gold-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -11164,6 +11312,7 @@ _:b4742 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4748 .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#gorgon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4749 .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 114 .
 <#gorgon> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -11223,6 +11372,7 @@ _:b4757 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4763 .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#gray-ooze> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4764 .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#gray-ooze> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -11286,6 +11436,7 @@ _:b4771 <https://dnd5e.app/vocab/dnd5e#climb> "10 ft." .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4777 .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4778 .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 38 .
 <#green-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -11360,6 +11511,7 @@ _:b4790 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4796 .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#green-hag> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4797 .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#hitPoints> 82 .
 <#green-hag> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d8" .
@@ -11451,6 +11603,7 @@ _:b4816 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#grick> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4822 .
 <#grick> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#grick> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#grick> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#grick> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4823 .
 <#grick> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#grick> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -11513,6 +11666,7 @@ _:b4831 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4837 .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#griffon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4838 .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 59 .
 <#griffon> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -11578,6 +11732,7 @@ _:b4847 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#subtype> "grimlock" .
+<#grimlock> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4854 .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#grimlock> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -11639,6 +11794,7 @@ _:b4863 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#guard> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#guard> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#guard> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#guard> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#guard> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4870 .
 <#guard> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#guard> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -11684,6 +11840,7 @@ _:b4874 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4880 .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#guardian-naga> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4881 .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#hitPoints> 127 .
 <#guardian-naga> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -11837,6 +11994,7 @@ _:b4914 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4920 .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#gynosphinx> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful neutral" .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4921 .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#gynosphinx> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -12004,6 +12162,7 @@ _:b4957 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4964 .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#hitPoints> 65 .
 <#half-red-dragon-veteran> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d8" .
@@ -12075,6 +12234,7 @@ _:b4974 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4980 .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#harpy> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4981 .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#hitPoints> 38 .
 <#harpy> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -12135,6 +12295,7 @@ _:b4989 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b4995 .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hawk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b4996 .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#hawk> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -12182,6 +12343,7 @@ _:b5001 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5007 .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#hell-hound> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5008 .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#hell-hound> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -12241,6 +12403,7 @@ _:b5016 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#hezrou> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5023 .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#hezrou> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -12323,6 +12486,7 @@ _:b5036 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5042 .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#hill-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5043 .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 105 .
 <#hill-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d12" .
@@ -12378,6 +12542,7 @@ _:b5050 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5056 .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#hippogriff> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5057 .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#hippogriff> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -12442,6 +12607,7 @@ _:b5066 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#subtype> "goblinoid" .
+<#hobgoblin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5073 .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#hobgoblin> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -12492,6 +12658,7 @@ _:b5078 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5084 .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#homunculus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5085 .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#homunculus> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d4" .
@@ -12541,6 +12708,7 @@ _:b5089 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#horned-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5096 .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 178 .
 <#horned-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d10" .
@@ -12623,6 +12791,7 @@ _:b5110 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5116 .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hunter-shark> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5117 .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#hunter-shark> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -12673,6 +12842,7 @@ _:b5123 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5129 .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#hydra> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5130 .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#hitPoints> 172 .
 <#hydra> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d12" .
@@ -12738,6 +12908,7 @@ _:b5140 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5146 .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#hyena> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5147 .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#hyena> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -12785,6 +12956,7 @@ _:b5152 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#ice-devil> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5159 .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#hitPoints> 180 .
 <#ice-devil> <https://dnd5e.app/vocab/dnd5e#hitDice> "19d10" .
@@ -12876,6 +13048,7 @@ _:b5175 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5181 .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#ice-mephit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5182 .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 21 .
 <#ice-mephit> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d6" .
@@ -12962,6 +13135,7 @@ _:b5197 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#imp> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#imp> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#imp> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#imp> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#imp> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5204 .
 <#imp> <https://dnd5e.app/vocab/dnd5e#hitPoints> 10 .
 <#imp> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d4" .
@@ -13033,6 +13207,7 @@ _:b5215 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5221 .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5222 .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#hitPoints> 104 .
 <#invisible-stalker> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d8" .
@@ -13105,6 +13280,7 @@ _:b5231 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5237 .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#iron-golem> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5238 .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#hitPoints> 210 .
 <#iron-golem> <https://dnd5e.app/vocab/dnd5e#hitDice> "20d10" .
@@ -13188,6 +13364,7 @@ _:b5251 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5257 .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#jackal> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5258 .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#hitPoints> 3 .
 <#jackal> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -13237,6 +13414,7 @@ _:b5264 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5270 .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#killer-whale> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5271 .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#hitPoints> 90 .
 <#killer-whale> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d12" .
@@ -13291,6 +13469,7 @@ _:b5278 <https://dnd5e.app/vocab/dnd5e#swim> "60 ft." .
 <#knight> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#knight> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#knight> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#knight> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#knight> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5285 .
 <#knight> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#knight> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -13360,6 +13539,7 @@ _:b5296 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#subtype> "kobold" .
+<#kobold> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5303 .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#kobold> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -13412,6 +13592,7 @@ _:b5309 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#subtype> "titan" .
+<#kraken> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5316 .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#hitPoints> 472 .
 <#kraken> <https://dnd5e.app/vocab/dnd5e#hitDice> "27d20" .
@@ -13521,6 +13702,7 @@ _:b5338 <https://dnd5e.app/vocab/dnd5e#swim> "60 ft." .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5344 .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#lamia> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5345 .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#hitPoints> 97 .
 <#lamia> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -13644,6 +13826,7 @@ _:b5372 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#lemure> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5379 .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#lemure> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -13697,6 +13880,7 @@ _:b5384 <https://dnd5e.app/vocab/dnd5e#walk> "15 ft." .
 <#lich> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5390 .
 <#lich> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#lich> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#lich> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any evil alignment" .
 <#lich> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5391 .
 <#lich> <https://dnd5e.app/vocab/dnd5e#hitPoints> 135 .
 <#lich> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d8" .
@@ -13943,6 +14127,7 @@ _:b5448 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#lion> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5454 .
 <#lion> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#lion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#lion> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#lion> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5455 .
 <#lion> <https://dnd5e.app/vocab/dnd5e#hitPoints> 26 .
 <#lion> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -14009,6 +14194,7 @@ _:b5466 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5472 .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#lizard> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5473 .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#lizard> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -14052,6 +14238,7 @@ _:b5476 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#subtype> "lizardfolk" .
+<#lizardfolk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5483 .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5484 .
 <#lizardfolk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
@@ -14131,6 +14318,7 @@ _:b5497 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#mage> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mage> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#mage> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#mage> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#mage> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5504 .
 <#mage> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5505 .
 <#mage> <https://dnd5e.app/vocab/dnd5e#hitPoints> 40 .
@@ -14277,6 +14465,7 @@ _:b5535 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5541 .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#magma-mephit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5542 .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#magma-mephit> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d6" .
@@ -14359,6 +14548,7 @@ _:b5556 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5562 .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#magmin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic neutral" .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5563 .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 9 .
 <#magmin> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d6" .
@@ -14413,6 +14603,7 @@ _:b5570 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5576 .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mammoth> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5577 .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#hitPoints> 126 .
 <#mammoth> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d12" .
@@ -14460,6 +14651,7 @@ _:b5582 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5588 .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#manticore> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5589 .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#hitPoints> 68 .
 <#manticore> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -14523,6 +14715,7 @@ _:b5598 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#marilith> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5605 .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#hitPoints> 189 .
 <#marilith> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d10" .
@@ -14613,6 +14806,7 @@ _:b5621 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5627 .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mastiff> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5628 .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#mastiff> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -14659,6 +14853,7 @@ _:b5633 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5639 .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#medusa> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5640 .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#hitPoints> 127 .
 <#medusa> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d8" .
@@ -14737,6 +14932,7 @@ _:b5654 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#subtype> "merfolk" .
+<#merfolk> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5661 .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#merfolk> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -14784,6 +14980,7 @@ _:b5666 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5672 .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#merrow> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5673 .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#merrow> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -14847,6 +15044,7 @@ _:b5682 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#mimic> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5689 .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#mimic> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -14909,6 +15107,7 @@ _:b5698 <https://dnd5e.app/vocab/dnd5e#walk> "15 ft." .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5704 .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#minotaur> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5705 .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#hitPoints> 76 .
 <#minotaur> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d10" .
@@ -14966,6 +15165,7 @@ _:b5713 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5719 .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5720 .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#hitPoints> 67 .
 <#minotaur-skeleton> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d10" .
@@ -15018,6 +15218,7 @@ _:b5725 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#mule> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5731 .
 <#mule> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mule> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#mule> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#mule> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5732 .
 <#mule> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#mule> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -15064,6 +15265,7 @@ _:b5737 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5743 .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#mummy> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5744 .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#mummy> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -15136,6 +15338,7 @@ _:b5753 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5759 .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#mummy-lord> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5760 .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#hitPoints> 97 .
 <#mummy-lord> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d8" .
@@ -15342,6 +15545,7 @@ _:b5806 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5813 .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#hitPoints> 184 .
 <#nalfeshnee> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -15435,6 +15639,7 @@ _:b5829 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5835 .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#night-hag> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5836 .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#hitPoints> 112 .
 <#night-hag> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d8" .
@@ -15549,6 +15754,7 @@ _:b5860 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5866 .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#nightmare> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5867 .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#hitPoints> 68 .
 <#nightmare> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -15601,6 +15807,7 @@ _:b5873 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#noble> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#noble> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#noble> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#noble> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#noble> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5880 .
 <#noble> <https://dnd5e.app/vocab/dnd5e#hitPoints> 9 .
 <#noble> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -15654,6 +15861,7 @@ _:b5887 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5893 .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#ofType> "ooze" .
+<#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5894 .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#ochre-jelly> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -15713,6 +15921,7 @@ _:b5900 <https://dnd5e.app/vocab/dnd5e#climb> "10 ft." .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5906 .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#octopus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5907 .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 3 .
 <#octopus> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d6" .
@@ -15774,6 +15983,7 @@ _:b5916 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5922 .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#ogre> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5923 .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#hitPoints> 59 .
 <#ogre> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -15820,6 +16030,7 @@ _:b5927 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5933 .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5934 .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#hitPoints> 85 .
 <#ogre-zombie> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d10" .
@@ -15869,6 +16080,7 @@ _:b5939 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#oni> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5945 .
 <#oni> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#oni> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#oni> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#oni> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5946 .
 <#oni> <https://dnd5e.app/vocab/dnd5e#hitPoints> 110 .
 <#oni> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -16004,6 +16216,7 @@ _:b5977 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#orc> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#orc> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#orc> <https://dnd5e.app/vocab/dnd5e#subtype> "orc" .
+<#orc> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#orc> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5984 .
 <#orc> <https://dnd5e.app/vocab/dnd5e#hitPoints> 15 .
 <#orc> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -16056,6 +16269,7 @@ _:b5990 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b5996 .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#ofType> "aberration" .
+<#otyugh> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b5997 .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#hitPoints> 114 .
 <#otyugh> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -16126,6 +16340,7 @@ _:b6008 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#owl> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6014 .
 <#owl> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#owl> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#owl> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#owl> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6015 .
 <#owl> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#owl> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -16180,6 +16395,7 @@ _:b6022 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6028 .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#owlbear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6029 .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 59 .
 <#owlbear> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -16243,6 +16459,7 @@ _:b6038 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#panther> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6044 .
 <#panther> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#panther> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#panther> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#panther> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6045 .
 <#panther> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#panther> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -16304,6 +16521,7 @@ _:b6054 <https://dnd5e.app/vocab/dnd5e#climb> "40 ft." .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6060 .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#pegasus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6061 .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 59 .
 <#pegasus> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -16357,6 +16575,7 @@ _:b6068 <https://dnd5e.app/vocab/dnd5e#fly> "90 ft." .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6074 .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#phase-spider> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6075 .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#hitPoints> 32 .
 <#phase-spider> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d10" .
@@ -16412,6 +16631,7 @@ _:b6082 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#subtype> "devil" .
+<#pit-fiend> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6089 .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#hitPoints> 300 .
 <#pit-fiend> <https://dnd5e.app/vocab/dnd5e#hitDice> "24d10" .
@@ -16547,6 +16767,7 @@ _:b6117 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6123 .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#planetar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6124 .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 200 .
 <#planetar> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -16695,6 +16916,7 @@ _:b6157 <https://dnd5e.app/vocab/dnd5e#fly> "120 ft." .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6163 .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6164 .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 68 .
 <#plesiosaurus> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -16745,6 +16967,7 @@ _:b6170 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6176 .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6177 .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#poisonous-snake> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -16787,6 +17010,7 @@ _:b6180 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6186 .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#polar-bear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6187 .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 42 .
 <#polar-bear> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d10" .
@@ -16850,6 +17074,7 @@ _:b6196 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#pony> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6202 .
 <#pony> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#pony> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#pony> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#pony> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6203 .
 <#pony> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#pony> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -16891,6 +17116,7 @@ _:b6206 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#priest> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#priest> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#priest> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#priest> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#priest> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6213 .
 <#priest> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#priest> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -17004,6 +17230,7 @@ _:b6235 <https://dnd5e.app/vocab/dnd5e#walk> "25 ft." .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6241 .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#pseudodragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6242 .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#pseudodragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d4" .
@@ -17066,6 +17293,7 @@ _:b6251 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6257 .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#purple-worm> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6258 .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#hitPoints> 247 .
 <#purple-worm> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d20" .
@@ -17135,6 +17363,7 @@ _:b6268 <https://dnd5e.app/vocab/dnd5e#burrow> "30 ft." .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#quasit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6275 .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 7 .
 <#quasit> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d4" .
@@ -17201,6 +17430,7 @@ _:b6284 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6290 .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#quipper> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6291 .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#quipper> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -17248,6 +17478,7 @@ _:b6296 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6302 .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
+<#rakshasa> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6303 .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#hitPoints> 110 .
 <#rakshasa> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d8" .
@@ -17404,6 +17635,7 @@ _:b6339 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#rat> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6345 .
 <#rat> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#rat> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#rat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#rat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6346 .
 <#rat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#rat> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -17448,6 +17680,7 @@ _:b6350 <https://dnd5e.app/vocab/dnd5e#walk> "20 ft." .
 <#raven> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6356 .
 <#raven> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#raven> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#raven> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#raven> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6357 .
 <#raven> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#raven> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -17495,6 +17728,7 @@ _:b6362 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6368 .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6369 .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 75 .
 <#red-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d8" .
@@ -17565,6 +17799,7 @@ _:b6380 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6386 .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#reef-shark> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6387 .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#reef-shark> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -17615,6 +17850,7 @@ _:b6393 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6399 .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#remorhaz> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6400 .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#hitPoints> 195 .
 <#remorhaz> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d12" .
@@ -17667,6 +17903,7 @@ _:b6406 <https://dnd5e.app/vocab/dnd5e#burrow> "20 ft." .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6412 .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#rhinoceros> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6413 .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#rhinoceros> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -17710,6 +17947,7 @@ _:b6417 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6423 .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#riding-horse> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6424 .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#riding-horse> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d10" .
@@ -17750,6 +17988,7 @@ _:b6427 <https://dnd5e.app/vocab/dnd5e#walk> "60 ft." .
 <#roc> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6433 .
 <#roc> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#roc> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#roc> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#roc> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6434 .
 <#roc> <https://dnd5e.app/vocab/dnd5e#hitPoints> 248 .
 <#roc> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d20" .
@@ -17825,6 +18064,7 @@ _:b6447 <https://dnd5e.app/vocab/dnd5e#fly> "120 ft." .
 <#roper> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6453 .
 <#roper> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#roper> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#roper> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#roper> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6454 .
 <#roper> <https://dnd5e.app/vocab/dnd5e#hitPoints> 93 .
 <#roper> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d10" .
@@ -17905,6 +18145,7 @@ _:b6468 <https://dnd5e.app/vocab/dnd5e#climb> "10 ft." .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6474 .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6475 .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#rug-of-smothering> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d10" .
@@ -17963,6 +18204,7 @@ _:b6481 <https://dnd5e.app/vocab/dnd5e#walk> "10 ft." .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6487 .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#rust-monster> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6488 .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#rust-monster> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -18013,6 +18255,7 @@ _:b6494 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6500 .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6501 .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#saber-toothed-tiger> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d10" .
@@ -18074,6 +18317,7 @@ _:b6510 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#subtype> "sahuagin" .
+<#sahuagin> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6517 .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#sahuagin> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -18145,6 +18389,7 @@ _:b6529 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6535 .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#salamander> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6536 .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#hitPoints> 90 .
 <#salamander> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -18212,6 +18457,7 @@ _:b6546 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6552 .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#satyr> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic neutral" .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6553 .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#hitPoints> 31 .
 <#satyr> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -18273,6 +18519,7 @@ _:b6562 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6568 .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#scorpion> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6569 .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#scorpion> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -18315,6 +18562,7 @@ _:b6572 <https://dnd5e.app/vocab/dnd5e#walk> "10 ft." .
 <#scout> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#scout> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#scout> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#scout> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#scout> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6579 .
 <#scout> <https://dnd5e.app/vocab/dnd5e#hitPoints> 16 .
 <#scout> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -18384,6 +18632,7 @@ _:b6591 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6597 .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#sea-hag> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6598 .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#hitPoints> 52 .
 <#sea-hag> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -18442,6 +18691,7 @@ _:b6606 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6612 .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#sea-horse> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6613 .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#sea-horse> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -18481,6 +18731,7 @@ _:b6616 <https://dnd5e.app/vocab/dnd5e#swim> "20 ft." .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6622 .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#shadow> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6623 .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#hitPoints> 16 .
 <#shadow> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -18551,6 +18802,7 @@ _:b6630 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6636 .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#shambling-mound> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6637 .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#shambling-mound> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -18619,6 +18871,7 @@ _:b6646 <https://dnd5e.app/vocab/dnd5e#swim> "20 ft." .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6652 .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#shield-guardian> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6653 .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#hitPoints> 142 .
 <#shield-guardian> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -18687,6 +18940,7 @@ _:b6662 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6668 .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#shrieker> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6669 .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#shrieker> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .
@@ -18732,6 +18986,7 @@ _:b6673 <https://dnd5e.app/vocab/dnd5e#walk> "0 ft." .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6679 .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6680 .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#silver-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -18802,6 +19057,7 @@ _:b6692 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6698 .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#skeleton> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6699 .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#hitPoints> 13 .
 <#skeleton> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -18852,6 +19108,7 @@ _:b6703 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#solar> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6709 .
 <#solar> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#solar> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#solar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#solar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6710 .
 <#solar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 243 .
 <#solar> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d10" .
@@ -19013,6 +19270,7 @@ _:b6746 <https://dnd5e.app/vocab/dnd5e#fly> "150 ft." .
 <#specter> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6752 .
 <#specter> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#specter> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#specter> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#specter> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6753 .
 <#specter> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#specter> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -19078,6 +19336,7 @@ _:b6758 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#spider> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6764 .
 <#spider> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#spider> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#spider> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#spider> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6765 .
 <#spider> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#spider> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -19132,6 +19391,7 @@ _:b6772 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6778 .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#spirit-naga> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6779 .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#hitPoints> 75 .
 <#spirit-naga> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d10" .
@@ -19267,6 +19527,7 @@ _:b6807 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6813 .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#ofType> "fey" .
+<#sprite> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6814 .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#sprite> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -19330,6 +19591,7 @@ _:b6823 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#spy> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#spy> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#spy> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#spy> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#spy> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6830 .
 <#spy> <https://dnd5e.app/vocab/dnd5e#hitPoints> 27 .
 <#spy> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -19406,6 +19668,7 @@ _:b6844 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6850 .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#steam-mephit> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6851 .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#hitPoints> 21 .
 <#steam-mephit> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d6" .
@@ -19481,6 +19744,7 @@ _:b6863 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6869 .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#stirge> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6870 .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#hitPoints> 2 .
 <#stirge> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -19523,6 +19787,7 @@ _:b6873 <https://dnd5e.app/vocab/dnd5e#fly> "40 ft." .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6879 .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#stone-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6880 .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 126 .
 <#stone-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d12" .
@@ -19597,6 +19862,7 @@ _:b6893 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6899 .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#ofType> "construct" .
+<#stone-golem> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6900 .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#hitPoints> 178 .
 <#stone-golem> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d10" .
@@ -19671,6 +19937,7 @@ _:b6910 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6916 .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#storm-giant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6917 .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 230 .
 <#storm-giant> <https://dnd5e.app/vocab/dnd5e#hitDice> "20d12" .
@@ -19809,6 +20076,7 @@ _:b6948 <https://dnd5e.app/vocab/dnd5e#swim> "50 ft." .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6955 .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 66 .
 <#succubus-incubus> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d8" .
@@ -19891,6 +20159,7 @@ _:b6969 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6975 .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6976 .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-bats> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -19953,6 +20222,7 @@ _:b6982 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6988 .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b6989 .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-beetles> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20010,6 +20280,7 @@ _:b6993 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b6999 .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7000 .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-centipedes> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20066,6 +20337,7 @@ _:b7004 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7010 .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7011 .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-insects> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20122,6 +20394,7 @@ _:b7015 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7021 .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7022 .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#hitPoints> 36 .
 <#swarm-of-poisonous-snakes> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -20178,6 +20451,7 @@ _:b7026 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7032 .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7033 .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#hitPoints> 28 .
 <#swarm-of-quippers> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d8" .
@@ -20240,6 +20514,7 @@ _:b7039 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7045 .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7046 .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#hitPoints> 24 .
 <#swarm-of-rats> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -20298,6 +20573,7 @@ _:b7051 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7057 .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7058 .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#hitPoints> 24 .
 <#swarm-of-ravens> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -20353,6 +20629,7 @@ _:b7062 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7068 .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7069 .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-spiders> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20417,6 +20694,7 @@ _:b7076 <https://dnd5e.app/vocab/dnd5e#climb> "20 ft." .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7082 .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#ofType> "swarm of Tiny beasts" .
+<#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7083 .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#swarm-of-wasps> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20474,6 +20752,7 @@ _:b7087 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#size> "Gargantuan" .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#subtype> "titan" .
+<#tarrasque> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7094 .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#hitPoints> 676 .
 <#tarrasque> <https://dnd5e.app/vocab/dnd5e#hitDice> "33d20" .
@@ -20587,6 +20866,7 @@ _:b7117 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#thug> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#thug> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#thug> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#thug> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any non-good alignment" .
 <#thug> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7124 .
 <#thug> <https://dnd5e.app/vocab/dnd5e#hitPoints> 32 .
 <#thug> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -20646,6 +20926,7 @@ _:b7132 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7138 .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#tiger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7139 .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 37 .
 <#tiger> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d10" .
@@ -20707,6 +20988,7 @@ _:b7148 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#treant> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7154 .
 <#treant> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#treant> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#treant> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#treant> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7155 .
 <#treant> <https://dnd5e.app/vocab/dnd5e#hitPoints> 138 .
 <#treant> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d12" .
@@ -20772,6 +21054,7 @@ _:b7164 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7171 .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#tribal-warrior> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -20816,6 +21099,7 @@ _:b7175 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7181 .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#triceratops> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7182 .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#hitPoints> 95 .
 <#triceratops> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d12" .
@@ -20863,6 +21147,7 @@ _:b7187 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#troll> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7193 .
 <#troll> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#troll> <https://dnd5e.app/vocab/dnd5e#ofType> "giant" .
+<#troll> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#troll> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7194 .
 <#troll> <https://dnd5e.app/vocab/dnd5e#hitPoints> 84 .
 <#troll> <https://dnd5e.app/vocab/dnd5e#hitDice> "8d10" .
@@ -20929,6 +21214,7 @@ _:b7204 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7210 .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#size> "Huge" .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7211 .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#tyrannosaurus-rex> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d12" .
@@ -20988,6 +21274,7 @@ _:b7219 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7225 .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#ofType> "celestial" .
+<#unicorn> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7226 .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#hitPoints> 67 .
 <#unicorn> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d10" .
@@ -21119,6 +21406,7 @@ _:b7255 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7262 .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#hitPoints> 144 .
 <#vampire-vampire> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d8" .
@@ -21236,6 +21524,7 @@ _:b7287 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-bat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7294 .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 144 .
 <#vampire-bat> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d8" .
@@ -21341,6 +21630,7 @@ _:b7315 <https://dnd5e.app/vocab/dnd5e#fly> "30 ft." .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#subtype> "shapechanger" .
+<#vampire-mist> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7322 .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#hitPoints> 144 .
 <#vampire-mist> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d8" .
@@ -21430,6 +21720,7 @@ _:b7339 <https://dnd5e.app/vocab/dnd5e#fly> "20 ft." .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7345 .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7346 .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#hitPoints> 82 .
 <#vampire-spawn> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d8" .
@@ -21508,6 +21799,7 @@ _:b7360 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#subtype> "any race" .
+<#veteran> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "any alignment" .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7367 .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#veteran> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -21575,6 +21867,7 @@ _:b7377 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7383 .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#ofType> "plant" .
+<#violet-fungus> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7384 .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#hitPoints> 18 .
 <#violet-fungus> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d8" .
@@ -21630,6 +21923,7 @@ _:b7390 <https://dnd5e.app/vocab/dnd5e#walk> "5 ft." .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#ofType> "fiend" .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#subtype> "demon" .
+<#vrock> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7397 .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#hitPoints> 104 .
 <#vrock> <https://dnd5e.app/vocab/dnd5e#hitDice> "11d10" .
@@ -21720,6 +22014,7 @@ _:b7412 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7418 .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#vulture> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7419 .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#hitPoints> 5 .
 <#vulture> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d8" .
@@ -21770,6 +22065,7 @@ _:b7425 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7431 .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#warhorse> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7432 .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#hitPoints> 19 .
 <#warhorse> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -21813,6 +22109,7 @@ _:b7436 <https://dnd5e.app/vocab/dnd5e#walk> "60 ft." .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7442 .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7443 .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#warhorse-skeleton> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d10" .
@@ -21859,6 +22156,7 @@ _:b7446 <https://dnd5e.app/vocab/dnd5e#walk> "60 ft." .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7452 .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#water-elemental> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7453 .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#hitPoints> 114 .
 <#water-elemental> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d10" .
@@ -21933,6 +22231,7 @@ _:b7462 <https://dnd5e.app/vocab/dnd5e#swim> "90 ft." .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7468 .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#weasel> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7469 .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#hitPoints> 1 .
 <#weasel> <https://dnd5e.app/vocab/dnd5e#hitDice> "1d4" .
@@ -21983,6 +22282,7 @@ _:b7475 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-bear> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7482 .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#hitPoints> 135 .
 <#werebear-bear> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d8" .
@@ -22049,6 +22349,7 @@ _:b7491 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7498 .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#hitPoints> 135 .
 <#werebear-human> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d8" .
@@ -22110,6 +22411,7 @@ _:b7506 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral good" .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7513 .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 135 .
 <#werebear-hybrid> <https://dnd5e.app/vocab/dnd5e#hitDice> "18d8" .
@@ -22181,6 +22483,7 @@ _:b7524 <https://dnd5e.app/vocab/dnd5e#climb> "30 ft." .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7531 .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#hitPoints> 78 .
 <#wereboar-boar> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d8" .
@@ -22241,6 +22544,7 @@ _:b7539 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7546 .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#hitPoints> 78 .
 <#wereboar-human> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d8" .
@@ -22306,6 +22610,7 @@ _:b7555 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7562 .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 78 .
 <#wereboar-hybrid> <https://dnd5e.app/vocab/dnd5e#hitDice> "12d8" .
@@ -22379,6 +22684,7 @@ _:b7574 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7581 .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#wererat-human> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -22448,6 +22754,7 @@ _:b7592 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7599 .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#wererat-hybrid> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -22521,6 +22828,7 @@ _:b7611 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#wererat-rat> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7618 .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#hitPoints> 33 .
 <#wererat-rat> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -22578,6 +22886,7 @@ _:b7625 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7632 .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#hitPoints> 120 .
 <#weretiger-human> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d8" .
@@ -22648,6 +22957,7 @@ _:b7643 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7650 .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 120 .
 <#weretiger-hybrid> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d8" .
@@ -22733,6 +23043,7 @@ _:b7665 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7672 .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#hitPoints> 120 .
 <#weretiger-tiger> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d8" .
@@ -22801,6 +23112,7 @@ _:b7682 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7689 .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#werewolf-human> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -22862,6 +23174,7 @@ _:b7697 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7704 .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#werewolf-hybrid> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -22931,6 +23244,7 @@ _:b7714 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "humanoid" .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#subtype> "human" .
+<#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7721 .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#hitPoints> 58 .
 <#werewolf-wolf> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -22983,6 +23297,7 @@ _:b7727 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7733 .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7734 .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitPoints> 32 .
 <#white-dragon-wyrmling> <https://dnd5e.app/vocab/dnd5e#hitDice> "5d8" .
@@ -23054,6 +23369,7 @@ _:b7745 <https://dnd5e.app/vocab/dnd5e#swim> "30 ft." .
 <#wight> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7751 .
 <#wight> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wight> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#wight> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#wight> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7752 .
 <#wight> <https://dnd5e.app/vocab/dnd5e#hitPoints> 45 .
 <#wight> <https://dnd5e.app/vocab/dnd5e#hitDice> "6d8" .
@@ -23127,6 +23443,7 @@ _:b7763 <https://dnd5e.app/vocab/dnd5e#walk> "30 ft." .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7769 .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#size> "Tiny" .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7770 .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#will-o-wisp> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d4" .
@@ -23203,6 +23520,7 @@ _:b7779 <https://dnd5e.app/vocab/dnd5e#fly> "50 ft." .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7785 .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#winter-wolf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7786 .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#hitPoints> 75 .
 <#winter-wolf> <https://dnd5e.app/vocab/dnd5e#hitDice> "10d10" .
@@ -23266,6 +23584,7 @@ _:b7796 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7802 .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#ofType> "beast" .
+<#wolf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7803 .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#hitPoints> 11 .
 <#wolf> <https://dnd5e.app/vocab/dnd5e#hitDice> "2d8" .
@@ -23318,6 +23637,7 @@ _:b7810 <https://dnd5e.app/vocab/dnd5e#walk> "40 ft." .
 <#worg> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7816 .
 <#worg> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#worg> <https://dnd5e.app/vocab/dnd5e#ofType> "monstrosity" .
+<#worg> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#worg> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7817 .
 <#worg> <https://dnd5e.app/vocab/dnd5e#hitPoints> 26 .
 <#worg> <https://dnd5e.app/vocab/dnd5e#hitDice> "4d10" .
@@ -23365,6 +23685,7 @@ _:b7822 <https://dnd5e.app/vocab/dnd5e#walk> "50 ft." .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7828 .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#wraith> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7829 .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#hitPoints> 67 .
 <#wraith> <https://dnd5e.app/vocab/dnd5e#hitDice> "9d8" .
@@ -23432,6 +23753,7 @@ _:b7835 <https://dnd5e.app/vocab/dnd5e#fly> "60 ft." .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7841 .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#wyvern> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "unaligned" .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7842 .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#hitPoints> 110 .
 <#wyvern> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -23494,6 +23816,7 @@ _:b7851 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7857 .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#ofType> "elemental" .
+<#xorn> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral" .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7858 .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#hitPoints> 73 .
 <#xorn> <https://dnd5e.app/vocab/dnd5e#hitDice> "7d8" .
@@ -23569,6 +23892,7 @@ _:b7870 <https://dnd5e.app/vocab/dnd5e#burrow> "20 ft." .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7876 .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7877 .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 127 .
 <#young-black-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -23658,6 +23982,7 @@ _:b7893 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7899 .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7900 .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 152 .
 <#young-blue-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -23744,6 +24069,7 @@ _:b7915 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7921 .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7922 .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 110 .
 <#young-brass-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "13d10" .
@@ -23834,6 +24160,7 @@ _:b7939 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7945 .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7946 .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 142 .
 <#young-bronze-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "15d10" .
@@ -23927,6 +24254,7 @@ _:b7964 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7970 .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic good" .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7971 .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 119 .
 <#young-copper-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "14d10" .
@@ -24017,6 +24345,7 @@ _:b7988 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b7994 .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b7995 .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 178 .
 <#young-gold-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d10" .
@@ -24113,6 +24442,7 @@ _:b8014 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b8020 .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful evil" .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b8021 .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 136 .
 <#young-green-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -24206,6 +24536,7 @@ _:b8038 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b8044 .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b8045 .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 178 .
 <#young-red-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "17d10" .
@@ -24292,6 +24623,7 @@ _:b8060 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b8066 .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "lawful good" .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b8067 .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 168 .
 <#young-silver-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "16d10" .
@@ -24384,6 +24716,7 @@ _:b8085 <https://dnd5e.app/vocab/dnd5e#fly> "80 ft." .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b8091 .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#size> "Large" .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#ofType> "dragon" .
+<#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "chaotic evil" .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b8092 .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitPoints> 133 .
 <#young-white-dragon> <https://dnd5e.app/vocab/dnd5e#hitDice> "14d10" .
@@ -24474,6 +24807,7 @@ _:b8108 <https://dnd5e.app/vocab/dnd5e#swim> "40 ft." .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#monsterAbilities> _:b8114 .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#ofType> "undead" .
+<#zombie> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "neutral evil" .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#monsterArmorClass> _:b8115 .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#hitPoints> 22 .
 <#zombie> <https://dnd5e.app/vocab/dnd5e#hitDice> "3d8" .

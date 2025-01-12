@@ -5,6 +5,7 @@ import {
   Monster,
   MonsterAbility,
   MonsterArmorClass,
+  MonsterSense,
   MonsterSpeed,
   Race,
   Spell,
@@ -230,6 +231,10 @@ export function monsterResourceUrls(monster: Monster): string[] {
     ...(monster.monsterAbilities || []).map((ability) =>
       resourceUrl(ability.abilityScore["@id"]),
     ),
+    ...(monster.conditionImmunities || []).map((condition) =>
+      resourceUrl(condition["@id"]),
+    ),
+    ...(monster.forms || []).map((form) => resourceUrl(form["@id"])),
     ...(monster.monsterSavingThrows || []).map((savingThrow) =>
       resourceUrl(savingThrow.proficiency["@id"]),
     ),
@@ -260,6 +265,23 @@ export function monsterSavingThrow(
   return savingThrow
     ? modifier(savingThrow.value)
     : scoreModifier(ability.value);
+}
+
+export function monsterSenses(
+  senses: MonsterSense,
+  l10n: ReactLocalization,
+): string {
+  function getString(type: string): string[] {
+    return senses[type] ? [`${l10n.getString(type)} ${senses[type]}`] : [];
+  }
+
+  return [
+    ...getString("truesight"),
+    ...getString("blindsight"),
+    ...getString("darkvision"),
+    ...getString("tremorsense"),
+    ...getString("passivePerception"),
+  ].join(", ");
 }
 
 export function monsterType(monster: Monster): string {
