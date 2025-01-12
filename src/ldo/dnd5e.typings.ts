@@ -26,7 +26,7 @@ export interface AbilityScore {
   label: string;
   description: string[];
   abbreviation: string;
-  skill?: Skill[];
+  skillList?: Skill[];
 }
 
 /**
@@ -826,13 +826,17 @@ export interface Proficiency {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
-  proficiencyType?: string;
+  ofType?: string;
   label: string;
   classes?: Class[];
   races?: Race[];
   reference?: {
     "@id": string;
   };
+  equipment?: Equipment;
+  equipmentCategory?: EquipmentCategory;
+  savingThrow?: AbilityScore;
+  skill?: Skill;
 }
 
 /**

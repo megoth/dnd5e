@@ -8,15 +8,15 @@ import { resourceUrl } from "../../utils/url";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
-  ability,
-  scoreModifier,
+  modifier,
   monsterArmorClass,
   monsterChallenge,
   monsterHP,
   monsterResourceUrls,
+  monsterSavingThrow,
   monsterSpeed,
   monsterType,
-  monsterSavingThrow,
+  scoreModifier,
 } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
@@ -42,7 +42,14 @@ export default function MonsterPage() {
     () => `spell-${monster?.["@id"]}`,
     async () => {
       if (!monster) return null;
-      return await Promise.all(
+      await Promise.all(
+        monsterResourceUrls(monster).map((resourceUrl) =>
+          getResource(resourceUrl).readIfUnfetched(),
+        ),
+      );
+      // TODO: design better solution
+      // loads twice because of two-link-away-resources
+      await Promise.all(
         monsterResourceUrls(monster).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
         ),
@@ -129,7 +136,10 @@ export default function MonsterPage() {
               </dt>
               <dd>
                 {monster.monsterSkills
-                  .map((skill) => `${skill.proficiency.label}: ${skill.value}`)
+                  .map(
+                    (skill) =>
+                      `${skill.proficiency.skill.label} ${modifier(skill.value)}`,
+                  )
                   .join(", ")}
               </dd>
             </>

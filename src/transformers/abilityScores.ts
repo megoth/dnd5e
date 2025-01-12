@@ -19,7 +19,7 @@ function transformAbilityScore(
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;
   abilityScore.description = data.desc;
-  abilityScore.skill = data.skills.map((skill) =>
+  abilityScore.skillList = data.skills.map((skill) =>
     ldoDataset
       .usingType(SkillShapeType)
       .fromSubject(dataUrl("skills", skill.index)),

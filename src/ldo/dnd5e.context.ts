@@ -31,8 +31,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#abbreviation",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  skill: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#skill",
+  skillList: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#skillList",
     "@type": "@id",
     "@container": "@set",
   },
@@ -92,10 +92,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencies",
     "@type": "@id",
     "@container": "@set",
-  },
-  proficiencyType: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#proficiencyType",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
   classes: {
     "@id": "https://dnd5e.app/vocab/dnd5e#classes",
@@ -835,6 +831,14 @@ export const dnd5eContext: ContextDefinition = {
   },
   reference: {
     "@id": "https://dnd5e.app/vocab/dnd5e#reference",
+    "@type": "@id",
+  },
+  savingThrow: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#savingThrow",
+    "@type": "@id",
+  },
+  skill: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#skill",
     "@type": "@id",
   },
   personalityTraits: {

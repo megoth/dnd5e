@@ -74,7 +74,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#skill",
+              predicate: "https://dnd5e.app/vocab/dnd5e#skillList",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Skill",
               min: 0,
               max: -1,
@@ -3360,7 +3360,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#proficiencyType",
+              predicate: "https://dnd5e.app/vocab/dnd5e#ofType",
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
@@ -3397,6 +3397,35 @@ export const dnd5eSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipment",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
+              valueExpr:
+                "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#savingThrow",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityScore",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#skill",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Skill",
               min: 0,
               max: 1,
             },

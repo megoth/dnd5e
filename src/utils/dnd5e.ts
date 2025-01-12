@@ -9,8 +9,9 @@ import {
   Race,
   Spell,
 } from "../ldo/dnd5e.typings";
-import { hash, resourceUrl } from "./url";
+import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
+import { removeDuplicates } from "./array";
 
 export function modifier(value: number): string {
   return value > 0 ? `+${value}` : value.toString();
@@ -225,18 +226,27 @@ export function monsterSpeed(
 }
 
 export function monsterResourceUrls(monster: Monster): string[] {
-  return [
+  return removeDuplicates([
     ...(monster.monsterAbilities || []).map((ability) =>
       resourceUrl(ability.abilityScore["@id"]),
     ),
     ...(monster.monsterSavingThrows || []).map((savingThrow) =>
       resourceUrl(savingThrow.proficiency["@id"]),
     ),
+    ...(monster.monsterSavingThrows || []).map(
+      (savingThrow) =>
+        savingThrow.proficiency?.savingThrow &&
+        resourceUrl(savingThrow.proficiency.savingThrow["@id"]),
+    ),
     ...(monster.monsterSkills || []).map((skill) =>
       resourceUrl(skill.proficiency["@id"]),
     ),
+    ...(monster.monsterSkills || []).map(
+      (skill) =>
+        skill.proficiency?.skill && resourceUrl(skill.proficiency.skill["@id"]),
+    ),
     ...(monster.illustration ? [resourceUrl(monster.illustration["@id"])] : []),
-  ];
+  ]).filter((value) => !!value);
 }
 
 export function monsterSavingThrow(
@@ -244,9 +254,8 @@ export function monsterSavingThrow(
   monster: Monster,
 ): string {
   const savingThrow = monster.monsterSavingThrows.find(
-    (savingThrow) =>
-      hash(savingThrow.proficiency["@id"]) ===
-      `saving-throw-${hash(ability.abilityScore["@id"])}`,
+    (save) =>
+      save.proficiency.savingThrow?.["@id"] === ability.abilityScore["@id"],
   );
   return savingThrow
     ? modifier(savingThrow.value)
