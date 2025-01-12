@@ -3,7 +3,7 @@
 }
 
 .table {
-    @apply text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow;
+    @apply text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow border border-gray-200 dark:border-gray-600;
 }
 
 .table a {
@@ -11,7 +11,7 @@
 }
 
 .table > thead {
-    @apply top-0 text-xs bg-gray-200 dark:bg-gray-900 border-b dark:border-gray-700;
+    @apply top-0 text-xs bg-gray-200 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700;
 }
 
 .table th,
