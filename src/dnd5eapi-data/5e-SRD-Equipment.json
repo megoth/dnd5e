@@ -1526,6 +1526,7 @@
       "url": "/api/equipment-categories/weapon"
     },
     "weapon_category": "Martial",
+    "weapon_category": "Martial",
     "weapon_range": "Ranged",
     "category_range": "Martial Ranged",
     "cost": {

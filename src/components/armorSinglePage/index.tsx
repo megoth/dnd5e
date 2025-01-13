@@ -9,9 +9,9 @@ import Loading from "../loading";
 import { equipmentResourceUrls } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
-import WeaponInfo from "../weaponInfo";
+import ArmorInfo from "../armorInfo";
 
-export default function WeaponPage() {
+export default function ArmorSinglePage() {
   const params = useParams();
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
@@ -25,15 +25,9 @@ export default function WeaponPage() {
   );
 
   const { isLoading } = useSWR(
-    () => `weapon-${equipment?.["@id"]}`,
+    () => `armor-${equipment?.["@id"]}`,
     async () => {
       if (!equipment) return null;
-      await Promise.all(
-        equipmentResourceUrls(equipment).map((resourceUrl) =>
-          getResource(resourceUrl).readIfUnfetched(),
-        ),
-      );
-      // must load twice in case of weapon.damage
       await Promise.all(
         equipmentResourceUrls(equipment).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
@@ -52,11 +46,11 @@ export default function WeaponPage() {
       <Breadcrumbs
         crumbs={[
           { href: "/equipment", translationId: "equipment" },
-          { href: "/weapons", translationId: "weapons" },
+          { href: "/armor", translationId: "armor" },
           { text: equipment.label },
         ]}
       />
-      <WeaponInfo equipment={equipment} />
+      <ArmorInfo equipment={equipment} />
     </Layout>
   );
 }

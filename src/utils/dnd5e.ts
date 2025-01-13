@@ -1,4 +1,5 @@
 import {
+  ArmorClass,
   Choice,
   Class,
   ClassLevel,
@@ -32,6 +33,14 @@ export function ability(abilityScore: number): string {
 export function addendumPath(type: string): string {
   // only used backend
   return `${process.cwd()}/src/transformers/${type}-addendum.ttl`;
+}
+
+export function armorClass(ac: ArmorClass, l10n: ReactLocalization): string {
+  return [
+    ac.base,
+    ...(ac.dexBonus ? [`+ ${l10n.getString("dex")}`] : []),
+    ...(ac.maxBonus ? [`(${l10n.getString("max")} ${ac.maxBonus})`] : []),
+  ].join(" ");
 }
 
 export function classHasCantripsKnown(classInfo: Class): boolean {

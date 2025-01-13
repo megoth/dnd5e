@@ -14,7 +14,7 @@ import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
 
-export default function EquipmentPage() {
+export default function EquipmentIndexPage() {
   const { isLoading: equipmentsLoading, items: equipments } = useListOfType(
     EquipmentShapeType,
     "equipments",
@@ -103,7 +103,19 @@ export default function EquipmentPage() {
             <tbody>
               {filteredEquipment.map((equipment) => (
                 <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                  <td>{equipment.label}</td>
+                  <td>
+                    {equipment.armor && (
+                      <NavLink to={`/armor/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    )}
+                    {equipment.weapon && (
+                      <NavLink to={`/weapons/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    )}
+                    {!(equipment.armor || equipment.weapon) && equipment.label}
+                  </td>
                   <td className="whitespace-nowrap">
                     {equipment.cost.quantity} {equipment.cost.unit}
                   </td>

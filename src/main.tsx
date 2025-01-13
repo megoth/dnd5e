@@ -16,7 +16,7 @@ import CharactersPage from "./components/charactersPage";
 import EncountersPage from "./components/encountersPage";
 import NotesPage from "./components/notesPage";
 import ClassesPage from "./components/classesPage";
-import EquipmentPage from "./components/equipmentPage";
+import EquipmentIndexPage from "./components/equipmentIndexPage";
 import MonstersPage from "./components/monstersPage";
 import RacesPage from "./components/racesPage";
 import SpellsPage from "./components/spellsPage";
@@ -29,9 +29,10 @@ import SpellPage from "./components/spellPage";
 import SearchPage from "./components/searchPage";
 import RacePage from "./components/racePage";
 import WeaponsPage from "./components/weaponsPage";
-import ArmorPage from "./components/armorPage";
+import ArmorIndexPage from "./components/armorIndexPage";
 import MonsterPage from "./components/monsterPage";
 import WeaponPage from "./components/weaponPage";
+import ArmorSinglePage from "./components/armorSinglePage";
 
 const router = createBrowserRouter([
   {
@@ -76,7 +77,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/armor",
-        element: <ArmorPage />,
+        element: <ArmorIndexPage />,
+      },
+      {
+        path: "/armor/:url",
+        element: <ArmorSinglePage />,
       },
       {
         path: "/characters",
@@ -112,7 +117,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/equipment",
-        element: <EquipmentPage />,
+        element: <EquipmentIndexPage />,
       },
       {
         path: "/monsters",

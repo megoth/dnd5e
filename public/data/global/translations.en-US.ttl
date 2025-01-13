@@ -51,6 +51,7 @@
 :darkvision skos:definition "Darkvision"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
+:dex skos:definition "dex"@en-US .
 :dexModifier skos:definition "Dex modifier"@en-US .
 :dexterity skos:definition "Dexterity"@en-US .
 :dice skos:definition "{$count}d{$value}"@en-US .
@@ -93,7 +94,7 @@
 :loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 :logOut skos:definition "Log out"@en-US .
 :martialArts skos:definition "Martial Arts"@en-US .
-:max skos:definition "Max"@en-US .
+:max skos:definition "max"@en-US .
 :modifier skos:definition "Modifier"@en-US .
 :monster skos:definition "Monster"@en-US .
 :monsterFeatures skos:definition "Monster Features"@en-US .

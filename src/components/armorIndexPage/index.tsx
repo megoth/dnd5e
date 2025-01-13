@@ -6,15 +6,15 @@ import WarningMessage from "../warningMessage";
 import useListOfType from "../../hooks/useListOfType";
 import { EquipmentShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { bem } from "../../utils/bem";
-import { parseNumber } from "../../utils/dnd5e";
+import { armorClass, parseNumber } from "../../utils/dnd5e";
 import { first, removeDuplicates } from "../../utils/array";
 import { NavLink, useSearchParams } from "react-router-dom";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
 import Breadcrumbs from "../breadcrumbs";
+import { useLocalization } from "@fluent/react";
 
-export default function ArmorPage() {
+export default function ArmorIndexPage() {
   const { isLoading, items: equipments } = useListOfType(
     EquipmentShapeType,
     "equipments",
@@ -30,6 +30,8 @@ export default function ArmorPage() {
 
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
+
+  const { l10n } = useLocalization();
 
   if (isLoading) {
     return <Loading />;
@@ -104,22 +106,13 @@ export default function ArmorPage() {
             <tbody>
               {filteredArmor.map((equipment) => (
                 <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                  <td>{equipment.label}</td>
+                  <td>
+                    <NavLink to={`/armor/${btoa(equipment["@id"])}`}>
+                      {equipment.label}
+                    </NavLink>
+                  </td>
                   <td className="whitespace-nowrap">
-                    {equipment.armor.armorClass.base}
-                    {equipment.armor.armorClass.dexBonus && (
-                      <>
-                        {" "}
-                        + <Translation id="dexModifier" />
-                      </>
-                    )}
-                    {equipment.armor.armorClass.maxBonus && (
-                      <>
-                        {" "}
-                        (<Translation id="max" />{" "}
-                        {equipment.armor.armorClass.maxBonus})
-                      </>
-                    )}
+                    {armorClass(equipment.armor.armorClass, l10n)}
                   </td>
                   <td>{parseNumber(equipment.armor.strMinimum)}</td>
                   <td>
