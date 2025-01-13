@@ -2,6 +2,8 @@ import {
   Choice,
   Class,
   ClassLevel,
+  Cost,
+  Damage,
   Monster,
   MonsterAbility,
   MonsterArmorClass,
@@ -153,6 +155,14 @@ export function classResourceUrls(classInfo: Class): string[] {
       ? [resourceUrl(classInfo.illustration["@id"])]
       : []),
   ];
+}
+
+export function cost(cost: Cost): string {
+  return `${cost.quantity} ${cost.unit}`;
+}
+
+export function damage(damage: Damage): string {
+  return `${damage.dice} ${damage.damageType.label}`;
 }
 
 export function dataPath(type: string): string {
@@ -342,4 +352,8 @@ export function sumSpellSlots(level: ClassLevel): number {
 
 export function vocabUrl(id: string): string {
   return `https://dnd5e.app/vocab/dnd5e.ttl#${id}`;
+}
+
+export function weight(weight: number) {
+  return `${weight} lb.`;
 }

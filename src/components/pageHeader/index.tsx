@@ -32,7 +32,7 @@ export default function PageHeader({ className, ...props }: Props) {
         <NavLink
           to="/"
           className="block px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
-          style={{ fontSize: "clamp(2rem, 3rem, 8vw)" }}
+          style={{ fontSize: "clamp(1rem, 2rem, 8vw)" }}
         >
           <Translation id="appName" />
         </NavLink>

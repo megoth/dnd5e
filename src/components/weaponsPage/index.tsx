@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { Fragment } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -9,12 +9,13 @@ import {
   WeaponPropertyShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
-import { bem } from "../../utils/bem";
-import { NavLink, useSearchParams } from "react-router-dom";
+import { NavLink, useLocation, useSearchParams } from "react-router-dom";
 import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
 import Breadcrumbs from "../breadcrumbs";
+import WeaponInfo from "../weaponInfo";
+import { cost, weight } from "../../utils/dnd5e";
 
 export default function WeaponsPage() {
   const { isLoading: equipmentsLoading, items: equipments } = useListOfType(
@@ -49,6 +50,9 @@ export default function WeaponsPage() {
 
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
+
+  const { hash } = useLocation();
+  const hashDecoded = hash && atob(hash.slice(1));
 
   if (equipmentsLoading || propertiesLoading) {
     return <Loading />;
@@ -164,24 +168,39 @@ export default function WeaponsPage() {
             </thead>
             <tbody>
               {filteredWeapons.map((equipment) => (
-                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                  <td>{equipment.label}</td>
-                  <td className="whitespace-nowrap">
-                    {equipment.cost.quantity} {equipment.cost.unit}
-                  </td>
-                  <td className="whitespace-nowrap">
-                    {equipment.weapon.damage?.dice}{" "}
-                    {equipment.weapon.damage?.damageType.label}
-                  </td>
-                  <td className="whitespace-nowrap">
-                    {equipment.weapon.weight} lb.
-                  </td>
-                  <td>
-                    {equipment.weapon.properties
-                      .map((property) => property.label)
-                      .join(", ")}
-                  </td>
-                </tr>
+                <Fragment key={equipment["@id"]}>
+                  {hashDecoded !== equipment["@id"] && (
+                    <tr>
+                      <td>
+                        <NavLink to={`/weapons/#${btoa(equipment["@id"])}`}>
+                          {equipment.label}
+                        </NavLink>
+                      </td>
+                      <td className="whitespace-nowrap">
+                        {cost(equipment.cost)}
+                      </td>
+                      <td className="whitespace-nowrap">
+                        {equipment.weapon.damage?.dice}{" "}
+                        {equipment.weapon.damage?.damageType.label}
+                      </td>
+                      <td className="whitespace-nowrap">
+                        {weight(equipment.weapon.weight)}
+                      </td>
+                      <td>
+                        {equipment.weapon.properties
+                          .map((property) => property.label)
+                          .join(", ")}
+                      </td>
+                    </tr>
+                  )}
+                  {hashDecoded === equipment["@id"] && (
+                    <tr id={btoa(equipment["@id"])}>
+                      <td colSpan={5}>
+                        <WeaponInfo equipment={equipment} />
+                      </td>
+                    </tr>
+                  )}
+                </Fragment>
               ))}
             </tbody>
           </table>
