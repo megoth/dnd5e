@@ -39,7 +39,7 @@ function transformClass(
   adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>
     ldoDataset
       .usingType(LevelShapeType)
-      .fromSubject(dataUrl("class-levels", `${data.index}-${index + 1}`)),
+      .fromSubject(dataUrl("levels", `${data.index}-${index + 1}`)),
   );
   adventureClass.multiclassing =
     data.multi_classing &&
