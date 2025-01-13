@@ -63,7 +63,7 @@ export default function SubclassesPage() {
                     modifier="compact"
                   />
                 ) : (
-                  <Logo className="card__media" />
+                  <Logo className="card__media hidden md:block" />
                 )}
               </Content>
               <div className="card__content">
