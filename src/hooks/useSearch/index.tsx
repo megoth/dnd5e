@@ -6,7 +6,10 @@ import {
   MagicSchoolShapeType,
   MonsterShapeType,
   RaceShapeType,
+  RuleSectionShapeType,
+  RuleShapeType,
   SpellShapeType,
+  SubclassShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
 import { type DependencyList, useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
@@ -130,6 +133,40 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: ruleSectionsLoading } = useIndexer(
+    RuleSectionShapeType,
+    "rules",
+    "RuleSection",
+    (section) =>
+      !search.has(section["@id"]) &&
+      (() => {
+        search.add({
+          id: section["@id"],
+          type: "rule",
+          title: section.label,
+          text: section.description,
+          url: `/rules#${btoa(section["@id"])}`,
+        });
+      })(),
+  );
+
+  const { isLoading: rulesLoading } = useIndexer(
+    RuleShapeType,
+    "rules",
+    "Rule",
+    (rule) =>
+      !search.has(rule["@id"]) &&
+      (() => {
+        search.add({
+          id: rule["@id"],
+          type: "rule",
+          title: rule.label,
+          text: rule.description,
+          url: `/rules#${btoa(rule["@id"])}`,
+        });
+      })(),
+  );
+
   const { isLoading: spellLoading } = useIndexer(
     SpellShapeType,
     "spells",
@@ -162,14 +199,34 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: subclassesLoading } = useIndexer(
+    SubclassShapeType,
+    "classes",
+    "Subclass",
+    (subclass) =>
+      !search.has(subclass["@id"]) &&
+      (() => {
+        search.add({
+          id: subclass["@id"],
+          type: "subclass",
+          title: subclass.label,
+          text: subclass.description,
+          url: `/subclasses/${btoa(subclass["@id"])}`,
+        });
+      })(),
+  );
+
   return {
     isLoading:
       classesLoading ||
       equipmentLoading ||
       monstersLoading ||
       racesLoading ||
+      ruleSectionsLoading ||
+      rulesLoading ||
       spellLoading ||
-      schoolsLoading,
+      schoolsLoading ||
+      subclassesLoading,
     search,
   };
 }

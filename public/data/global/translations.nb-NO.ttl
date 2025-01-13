@@ -134,6 +134,7 @@
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
 :resistances skos:definition "Motstand"@nb-NO .
+:rule skos:definition "Regel"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .
 :savingThrow skos:definition "Redningskast"@nb-NO .
 :savingThrows skos:definition "Redningskast"@nb-NO .
@@ -178,6 +179,7 @@
 :spellsPageTitle skos:definition "Magi"@nb-NO .
 :stealth skos:definition "Sniking"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .
+:subclass skos:definition "Underklasse"@nb-NO .
 :subclasses skos:definition "Underklasser"@nb-NO .
 :subtype skos:definition "Undertype"@nb-NO .
 :suggestions skos:definition "Forslag"@nb-NO .

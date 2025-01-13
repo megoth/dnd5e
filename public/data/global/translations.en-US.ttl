@@ -133,6 +133,7 @@
 :recommendedIdPSet skos:definition "Recommended identity providers"@en-US .
 :rememberIdP skos:definition "Remember identity provider"@en-US .
 :resistances skos:definition "Resistances"@en-US .
+:rule skos:definition "Rule"@en-US .
 :rulesPageTitle skos:definition "Rules"@en-US .
 :savingThrow skos:definition "Saving Throw"@en-US .
 :savingThrows skos:definition "Saving Throws"@en-US .
@@ -177,6 +178,7 @@
 :spellsPageTitle skos:definition "Spells"@en-US .
 :stealth skos:definition "Stealth"@en-US .
 :strength skos:definition "Strength"@en-US .
+:subclass skos:definition "Subclass"@en-US .
 :subclasses skos:definition "Subclasses"@en-US .
 :subtype skos:definition "Subtype"@en-US .
 :suggestions skos:definition "Suggestions"@en-US .
