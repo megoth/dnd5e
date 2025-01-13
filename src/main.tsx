@@ -33,6 +33,7 @@ import ArmorIndexPage from "./components/armorIndexPage";
 import MonsterPage from "./components/monsterPage";
 import WeaponPage from "./components/weaponPage";
 import ArmorSinglePage from "./components/armorSinglePage";
+import EquipmentSinglePage from "./components/equipmentSinglePage";
 
 const router = createBrowserRouter([
   {
@@ -118,6 +119,10 @@ const router = createBrowserRouter([
       {
         path: "/equipment",
         element: <EquipmentIndexPage />,
+      },
+      {
+        path: "/equipment/:url",
+        element: <EquipmentSinglePage />,
       },
       {
         path: "/monsters",

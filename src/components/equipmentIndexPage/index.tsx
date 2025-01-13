@@ -114,7 +114,11 @@ export default function EquipmentIndexPage() {
                         {equipment.label}
                       </NavLink>
                     )}
-                    {!(equipment.armor || equipment.weapon) && equipment.label}
+                    {!(equipment.armor || equipment.weapon) && (
+                      <NavLink to={`/equipment/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    )}
                   </td>
                   <td className="whitespace-nowrap">
                     {equipment.cost.quantity} {equipment.cost.unit}
