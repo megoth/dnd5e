@@ -27,7 +27,8 @@ export default function RulesPage() {
       <WarningMessage id="workInProgress" />
       <Content>
         <h1>
-          <Translation id="rulesPageTitle" />
+          <Translation id="rulesPageTitle" /> (
+          {rules.length + rules.flatMap((rule) => rule.ruleSections).length})
         </h1>
         <ol>
           {rules.map((rule) => (
