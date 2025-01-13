@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
@@ -13,7 +13,6 @@ import Loading from "../loading";
 import { NavLink, useSearchParams } from "react-router-dom";
 import { useLocalization } from "@fluent/react";
 import { classHasSpellcasting, spellDuration } from "../../utils/dnd5e";
-import { bem } from "../../utils/bem";
 import { first } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";

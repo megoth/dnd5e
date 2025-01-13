@@ -34,40 +34,42 @@ export default function RacesPage() {
         </h1>
       </Content>
       <ul className="cards">
-        {races.map((race) => (
-          <li
-            key={race["@id"]}
-            className="card"
-            onClick={(event) => {
-              if ((event.target as HTMLElement).nodeName === "A") return;
-              return navigate(`/races/${btoa(race["@id"])}`);
-            }}
-          >
-            <Content>
-              {race.illustration ? (
-                <Illustration
-                  className="card__media"
-                  subject={race.illustration}
-                  modifier="compact"
-                />
-              ) : (
-                <Logo className="card__media" />
-              )}
-            </Content>
-            <div className="card__content">
-              <h2 className="card__title">
-                <NavLink to={`/classes/${btoa(race["@id"])}`}>
-                  {race.label}
-                </NavLink>
-              </h2>
-              {race.description && (
-                <Content>
-                  <Markdown>{description(race.description)}</Markdown>
-                </Content>
-              )}
-            </div>
-          </li>
-        ))}
+        {races
+          .sort((a, b) => (a.label > b.label ? 1 : -1))
+          .map((race) => (
+            <li
+              key={race["@id"]}
+              className="card"
+              onClick={(event) => {
+                if ((event.target as HTMLElement).nodeName === "A") return;
+                return navigate(`/races/${btoa(race["@id"])}`);
+              }}
+            >
+              <Content>
+                {race.illustration ? (
+                  <Illustration
+                    className="card__media"
+                    subject={race.illustration}
+                    modifier="compact"
+                  />
+                ) : (
+                  <Logo className="card__media" />
+                )}
+              </Content>
+              <div className="card__content">
+                <h2 className="card__title">
+                  <NavLink to={`/classes/${btoa(race["@id"])}`}>
+                    {race.label}
+                  </NavLink>
+                </h2>
+                {race.description && (
+                  <Content>
+                    <Markdown>{description(race.description)}</Markdown>
+                  </Content>
+                )}
+              </div>
+            </li>
+          ))}
       </ul>
     </Layout>
   );

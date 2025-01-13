@@ -38,8 +38,11 @@ export default function SplashPage() {
                   Pages of interest: <NavLink to="/classes">classes</NavLink>,{" "}
                   <NavLink to="/races">races</NavLink>,{" "}
                   <NavLink to="/spells">spells</NavLink>,{" "}
-                  <NavLink to="/equipment">equipment</NavLink>, and{" "}
-                  <NavLink to="/weapons">weapons</NavLink>.
+                  <NavLink to="/monsters">monsters</NavLink>,{" "}
+                  <NavLink to="/equipment">equipment</NavLink>,{" "}
+                  <NavLink to="/weapons">weapons</NavLink>,{" "}
+                  <NavLink to="/armor">armor</NavLink>, and{" "}
+                  <NavLink to="/rules">rules</NavLink>.
                 </p>
               </Content>
               <NavLink

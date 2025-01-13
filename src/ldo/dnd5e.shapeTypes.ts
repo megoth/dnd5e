@@ -68,6 +68,8 @@ import {
   Race,
   ReferenceOption,
   ResourceListOptionSet,
+  Rule,
+  RuleSection,
   ScorePrerequisiteOption,
   Skill,
   Spell,
@@ -694,6 +696,24 @@ export const ResourceListOptionSetShapeType: ShapeType<ResourceListOptionSet> =
     shape: "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
     context: dnd5eContext,
   };
+
+/**
+ * Rule ShapeType
+ */
+export const RuleShapeType: ShapeType<Rule> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Rule",
+  context: dnd5eContext,
+};
+
+/**
+ * RuleSection ShapeType
+ */
+export const RuleSectionShapeType: ShapeType<RuleSection> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#RuleSection",
+  context: dnd5eContext,
+};
 
 /**
  * ScorePrerequisiteOption ShapeType

@@ -886,6 +886,29 @@ export interface ResourceListOptionSet {
 }
 
 /**
+ * Rule Type
+ */
+export interface Rule {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label: string;
+  description?: string[];
+  ruleSections?: RuleSection[];
+}
+
+/**
+ * RuleSection Type
+ */
+export interface RuleSection {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  label: string;
+  description?: string[];
+}
+
+/**
  * ScorePrerequisiteOption Type
  */
 export interface ScorePrerequisiteOption {

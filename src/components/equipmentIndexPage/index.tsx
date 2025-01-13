@@ -44,11 +44,13 @@ export default function EquipmentIndexPage() {
     return <Loading />;
   }
 
-  const filteredEquipment = equipments.filter((equipment) =>
-    categoryFilterDecoded
-      ? equipment.equipmentCategory["@id"] === categoryFilterDecoded
-      : true,
-  );
+  const filteredEquipment = equipments
+    .filter((equipment) =>
+      categoryFilterDecoded
+        ? equipment.equipmentCategory["@id"] === categoryFilterDecoded
+        : true,
+    )
+    .sort((a, b) => (a.label > b.label ? 1 : -1));
 
   return (
     <Layout>

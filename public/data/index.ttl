@@ -12,6 +12,7 @@
         :equipmentsBundle,
         :monstersBundle,
         :racesBundle,
+        :rulesBundle,
         :spellsBundle .
 
 :classesBundle
@@ -40,6 +41,12 @@
     dnd5e_app:rulesResource
         </data/illustrations.ttl>,
         </data/races.ttl> .
+
+:rulesBundle
+    rdfs:label "rules" ;
+    dnd5e_app:rulesResource
+        </data/rules.ttl>,
+        </data/rule-sections.ttl> .
 
 :spellsBundle
     rdfs:label "spells" ;

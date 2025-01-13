@@ -54,18 +54,20 @@ export default function WeaponsPage() {
     return <Loading />;
   }
 
-  const filteredWeapons = weapons.filter(
-    (equipment) =>
-      (categoryFilter
-        ? equipment.weapon.weaponCategory === categoryFilter
-        : true) &&
-      (propertyFilterDecoded
-        ? !!equipment.weapon.properties.find(
-            (property) => property["@id"] === propertyFilterDecoded,
-          )
-        : true) &&
-      (rangeFilter ? equipment.weapon.weaponRange === rangeFilter : true),
-  );
+  const filteredWeapons = weapons
+    .filter(
+      (equipment) =>
+        (categoryFilter
+          ? equipment.weapon.weaponCategory === categoryFilter
+          : true) &&
+        (propertyFilterDecoded
+          ? !!equipment.weapon.properties.find(
+              (property) => property["@id"] === propertyFilterDecoded,
+            )
+          : true) &&
+        (rangeFilter ? equipment.weapon.weaponRange === rangeFilter : true),
+    )
+    .sort((a, b) => (a.label > b.label ? 1 : -1));
 
   return (
     <Layout>

@@ -21,7 +21,9 @@ export default function ArmorIndexPage() {
     "Equipment",
   );
 
-  const armor = equipments.filter((equipment) => !!equipment.armor);
+  const armor = equipments
+    .filter((equipment) => !!equipment.armor)
+    .sort((a, b) => (a.label > b.label ? 1 : -1));
   const categories = removeDuplicates(
     armor.map((equipment) => equipment.armor.armorCategory),
   );

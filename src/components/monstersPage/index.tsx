@@ -39,14 +39,16 @@ export default function MonstersPage() {
     return <Loading />;
   }
 
-  const filteredMonsters = monsters.filter(
-    (monster) =>
-      (sizeFilter ? monster.size === sizeFilter : true) &&
-      (typeFilter ? monster.ofType === typeFilter : true) &&
-      (challengeFilter
-        ? monster.challengeRating.toString() === challengeFilter
-        : true),
-  );
+  const filteredMonsters = monsters
+    .filter(
+      (monster) =>
+        (sizeFilter ? monster.size === sizeFilter : true) &&
+        (typeFilter ? monster.ofType === typeFilter : true) &&
+        (challengeFilter
+          ? monster.challengeRating.toString() === challengeFilter
+          : true),
+    )
+    .sort((a, b) => (a.label > b.label ? 1 : -1));
 
   return (
     <Layout>

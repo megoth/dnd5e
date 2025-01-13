@@ -1082,4 +1082,9 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#xp",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
+  ruleSections: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#ruleSections",
+    "@type": "@id",
+    "@container": "@set",
+  },
 };

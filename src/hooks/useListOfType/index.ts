@@ -23,8 +23,7 @@ export default function useListOfType<Type extends LdoBase>(
       items: dataset
         .match(null, null, namedNode(vocabUrl(type)))
         .toArray()
-        .map((quad) => getSubject(shapeType, quad.subject.value))
-        .sort((a, b) => (a.label > b.label ? 1 : -1)),
+        .map((quad) => getSubject(shapeType, quad.subject.value)),
     };
   }, [dataset, isLoading]);
 }
