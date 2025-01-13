@@ -1032,6 +1032,15 @@ export interface Subrace {
   "@id"?: string;
   "@context"?: ContextDefinition;
   type: Type;
+  label: string;
+  description?: string[];
+  race: Race;
+  abilityBonuses?: AbilityBonus[];
+  startingProficiencies?: Proficiency[];
+  languages?: Language[];
+  languageOptions?: Choice;
+  traits?: Trait[];
+  illustration?: Illustration;
 }
 
 /**

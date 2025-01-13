@@ -40,7 +40,8 @@
     rdfs:label "races" ;
     dnd5e_app:rulesResource
         </data/illustrations.ttl>,
-        </data/races.ttl> .
+        </data/races.ttl>,
+        </data/subraces.ttl> .
 
 :rulesBundle
     rdfs:label "rules" ;

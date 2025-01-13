@@ -10,6 +10,7 @@ import {
   RuleShapeType,
   SpellShapeType,
   SubclassShapeType,
+  SubraceShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
 import { type DependencyList, useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
@@ -216,6 +217,23 @@ export default function useSearch() {
       })(),
   );
 
+  const { isLoading: subracesLoading } = useIndexer(
+    SubraceShapeType,
+    "races",
+    "Subrace",
+    (subrace) =>
+      !search.has(subrace["@id"]) &&
+      (() => {
+        search.add({
+          id: subrace["@id"],
+          type: "subrace",
+          title: subrace.label,
+          text: subrace.description,
+          url: `/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`,
+        });
+      })(),
+  );
+
   return {
     isLoading:
       classesLoading ||
@@ -226,7 +244,8 @@ export default function useSearch() {
       rulesLoading ||
       spellLoading ||
       schoolsLoading ||
-      subclassesLoading,
+      subclassesLoading ||
+      subracesLoading,
     search,
   };
 }

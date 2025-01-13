@@ -13,6 +13,7 @@ import Translation from "../translation";
 import Markdown from "react-markdown";
 import Breadcrumbs from "../breadcrumbs";
 import Illustration from "../illustration";
+import SubraceInfo from "../subraceInfo";
 
 export default function RacePage() {
   const params = useParams();
@@ -112,6 +113,18 @@ export default function RacePage() {
           </dd>
         </dl>
       </Content>
+      {race.subraces.length > 0 && (
+        <>
+          <Content>
+            <h2>
+              <Translation id="subraces" />
+            </h2>
+          </Content>
+          {race.subraces.map((subrace) => (
+            <SubraceInfo key={subrace["@id"]} subrace={subrace} />
+          ))}
+        </>
+      )}
     </Layout>
   );
 }

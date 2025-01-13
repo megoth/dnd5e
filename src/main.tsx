@@ -35,6 +35,7 @@ import WeaponPage from "./components/weaponPage";
 import ArmorSinglePage from "./components/armorSinglePage";
 import EquipmentSinglePage from "./components/equipmentSinglePage";
 import SubclassesPage from "./components/subclassesPage";
+import SubracesPage from "./components/subracesPage";
 
 const router = createBrowserRouter([
   {
@@ -160,6 +161,10 @@ const router = createBrowserRouter([
       {
         path: "/subclasses",
         element: <SubclassesPage />,
+      },
+      {
+        path: "/subraces",
+        element: <SubracesPage />,
       },
       {
         path: "/weapons",

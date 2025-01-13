@@ -4188,9 +4188,79 @@ export const dnd5eSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://purl.org/dc/terms/description",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#race",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Race",
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#abilityBonuses",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#AbilityBonus",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#startingProficiencies",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Proficiency",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languages",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Language",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languageOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#traits",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Trait",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#illustration",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
+              min: 0,
+              max: 1,
+            },
+          ],
         },
       },
     },

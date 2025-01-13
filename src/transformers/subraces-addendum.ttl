@@ -1,0 +1,2 @@
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#high-elf> .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#hill-dwarf> .

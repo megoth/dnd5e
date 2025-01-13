@@ -20,6 +20,7 @@ import writeWeaponProperties from "./weaponProperties";
 import writeMonsters from "./monsters";
 import writeRuleSections from "./ruleSections";
 import writeRules from "./rules";
+import writeSubraces from "./subraces";
 
 export default async function transformData() {
   return Promise.all([
@@ -43,6 +44,7 @@ export default async function transformData() {
     writeSkills(),
     writeSpells(),
     writeSubclasses(),
+    writeSubraces(),
     writeTraits(),
     writeWeaponProperties(),
   ]);

@@ -148,6 +148,16 @@
 <#halfling> <http://purl.org/dc/terms/description> "A portrait of a Halfling" .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#high-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-elf-female-fighter-in-the-woods.jpg> .
+<#high-elf> <http://purl.org/dc/terms/description> "A High-Elf" .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
+<#hill-dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-dwarf-male-fighter-paladin.jpg> .
+<#hill-dwarf> <http://purl.org/dc/terms/description> "A Hill-Dwarf" .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#human> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-black-female-fighter.jpg> .
 <#human> <http://purl.org/dc/terms/description> "A portrait of a Human" .

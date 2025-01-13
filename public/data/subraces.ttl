@@ -1,0 +1,75 @@
+<#hill-dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#hill-dwarf> <http://www.w3.org/2000/01/rdf-schema#label> "Hill Dwarf" .
+<#hill-dwarf> <http://purl.org/dc/terms/description> "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience." .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#dwarf> .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8616 .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#dwarven-toughness> .
+_:b8616 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8616 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+<#high-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#high-elf> <http://www.w3.org/2000/01/rdf-schema#label> "High Elf" .
+<#high-elf> <http://purl.org/dc/terms/description> "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races." .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#elf> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8617 .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#longswords> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#shortswords> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#shortbows> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#longbows> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#languageOptions> _:b8633 .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#elf-weapon-training> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#high-elf-cantrip> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#extra-language> .
+_:b8617 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8617 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+_:b8618 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#dwarvish> .
+_:b8619 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#giant> .
+_:b8620 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#gnomish> .
+_:b8621 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#goblin> .
+_:b8622 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#halfling> .
+_:b8623 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#orc> .
+_:b8624 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#abyssal> .
+_:b8625 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#celestial> .
+_:b8626 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#draconic> .
+_:b8627 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#deep-speech> .
+_:b8628 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#infernal> .
+_:b8629 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#primordial> .
+_:b8630 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#sylvan> .
+_:b8631 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#undercommon> .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8618 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8619 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8620 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8621 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8622 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8623 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8624 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8625 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8626 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8627 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8628 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8629 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8630 .
+_:b8632 <https://dnd5e.app/vocab/dnd5e#references> _:b8631 .
+_:b8633 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b8633 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b8633 <https://dnd5e.app/vocab/dnd5e#ofType> "language" .
+_:b8633 <https://dnd5e.app/vocab/dnd5e#from> _:b8632 .
+<#lightfoot-halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#lightfoot-halfling> <http://www.w3.org/2000/01/rdf-schema#label> "Lightfoot Halfling" .
+<#lightfoot-halfling> <http://purl.org/dc/terms/description> "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life." .
+<#lightfoot-halfling> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#halfling> .
+<#lightfoot-halfling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8634 .
+<#lightfoot-halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#naturally-stealthy> .
+_:b8634 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8634 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+<#rock-gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#rock-gnome> <http://www.w3.org/2000/01/rdf-schema#label> "Rock Gnome" .
+<#rock-gnome> <http://purl.org/dc/terms/description> "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes." .
+<#rock-gnome> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#gnome> .
+<#rock-gnome> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8635 .
+<#rock-gnome> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#tinkers-tools> .
+<#rock-gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#artificers-lore> .
+<#rock-gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#tinker> .
+_:b8635 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8635 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#high-elf> .
+<#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#hill-dwarf> .

@@ -328,6 +328,7 @@ export function raceResources(race: Race): string[] {
       resourceUrl(bonus.abilityScore["@id"]),
     ),
     ...(race.languages || []).map((language) => resourceUrl(language["@id"])),
+    ...(race.subraces || []).map((subrace) => resourceUrl(subrace["@id"])),
     ...(race.traits || []).map((trait) => resourceUrl(trait["@id"])),
     ...(race.illustration ? [resourceUrl(race.illustration["@id"])] : []),
   ];

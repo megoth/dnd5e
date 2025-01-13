@@ -829,6 +829,10 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  race: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#race",
+    "@type": "@id",
+  },
   languageOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#languageOptions",
     "@type": "@id",
