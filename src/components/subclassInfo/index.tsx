@@ -14,7 +14,7 @@ export default function SubclassInfo({ subclass }: Props) {
   return (
     <article id={btoa(subclass["@id"])}>
       {subclass.illustration && (
-        <Illustration subject={subclass.illustration} modifier="compact" />
+        <Illustration subject={subclass.illustration} />
       )}
       <Content>
         <h3>{subclass.label}</h3>
