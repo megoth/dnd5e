@@ -2423,7 +2423,7 @@ export interface components {
         spell_slots_level_9?: number;
       };
       /** @description Class specific information such as dice values for bard songs and number of warlock invocations. */
-      classspecific?: {
+      subclass_specific?: {
         [key: string]: unknown;
       };
     };

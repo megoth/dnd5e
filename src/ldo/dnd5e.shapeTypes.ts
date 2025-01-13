@@ -17,8 +17,6 @@ import {
   Choice,
   ChoiceOption,
   Class,
-  ClassLevel,
-  ClassLevelSpellcasting,
   ClassSpecific,
   ClassSpellcasting,
   ClassSpellcastingInfo,
@@ -44,6 +42,8 @@ import {
   IdealOption,
   Illustration,
   Language,
+  Level,
+  LevelSpellcasting,
   MagicSchool,
   Monster,
   MonsterAbility,
@@ -77,6 +77,8 @@ import {
   StartingEquipment,
   StringOption,
   Subclass,
+  SubclassSpecific,
+  SubclassSpell,
   Subrace,
   Trait,
   TraitSpecific,
@@ -229,25 +231,6 @@ export const ClassShapeType: ShapeType<Class> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Class",
   context: dnd5eContext,
 };
-
-/**
- * ClassLevel ShapeType
- */
-export const ClassLevelShapeType: ShapeType<ClassLevel> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevel",
-  context: dnd5eContext,
-};
-
-/**
- * ClassLevelSpellcasting ShapeType
- */
-export const ClassLevelSpellcastingShapeType: ShapeType<ClassLevelSpellcasting> =
-  {
-    schema: dnd5eSchema,
-    shape: "https://ldo.js.org/shapes/dnd5e.shex#ClassLevelSpellcasting",
-    context: dnd5eContext,
-  };
 
 /**
  * ClassSpecific ShapeType
@@ -474,6 +457,24 @@ export const IllustrationShapeType: ShapeType<Illustration> = {
 export const LanguageShapeType: ShapeType<Language> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Language",
+  context: dnd5eContext,
+};
+
+/**
+ * Level ShapeType
+ */
+export const LevelShapeType: ShapeType<Level> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Level",
+  context: dnd5eContext,
+};
+
+/**
+ * LevelSpellcasting ShapeType
+ */
+export const LevelSpellcastingShapeType: ShapeType<LevelSpellcasting> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#LevelSpellcasting",
   context: dnd5eContext,
 };
 
@@ -776,6 +777,24 @@ export const StringOptionShapeType: ShapeType<StringOption> = {
 export const SubclassShapeType: ShapeType<Subclass> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#Subclass",
+  context: dnd5eContext,
+};
+
+/**
+ * SubclassSpecific ShapeType
+ */
+export const SubclassSpecificShapeType: ShapeType<SubclassSpecific> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#SubclassSpecific",
+  context: dnd5eContext,
+};
+
+/**
+ * SubclassSpell ShapeType
+ */
+export const SubclassSpellShapeType: ShapeType<SubclassSpell> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#SubclassSpell",
   context: dnd5eContext,
 };
 

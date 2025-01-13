@@ -2,10 +2,10 @@ import {
   ArmorClass,
   Choice,
   Class,
-  ClassLevel,
   Cost,
   Damage,
   Equipment,
+  Level,
   Monster,
   MonsterAbility,
   MonsterArmorClass,
@@ -13,6 +13,7 @@ import {
   MonsterSpeed,
   Race,
   Spell,
+  Subclass,
 } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
@@ -208,7 +209,7 @@ export function equipmentResourceUrls(equipment: Equipment): string[] {
   return [resourceUrl(equipment.equipmentCategory["@id"])];
 }
 
-export function highestSpellLevel(level: ClassLevel): number {
+export function highestSpellLevel(level: Level): number {
   let spellLevel = 9;
   do {
     const hasSpellLevel =
@@ -350,7 +351,19 @@ export function spellResourceUrls(spell: Spell): string[] {
   ];
 }
 
-export function sumSpellSlots(level: ClassLevel): number {
+export function subclassResourceUrls(subclass: Subclass): string[] {
+  return [
+    ...subclass.levels.map((level) => resourceUrl(level["@id"])),
+    ...subclass.levels
+      .flatMap((level) => level.features)
+      .map((feature) => resourceUrl(feature["@id"])),
+    ...(subclass.illustration
+      ? [resourceUrl(subclass.illustration["@id"])]
+      : []),
+  ];
+}
+
+export function sumSpellSlots(level: Level): number {
   return (
     level.levelSpellcasting.spellSlotsLevel1 +
     level.levelSpellcasting.spellSlotsLevel2 +

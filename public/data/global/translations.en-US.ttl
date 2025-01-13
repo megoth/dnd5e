@@ -65,7 +65,7 @@
 :features skos:definition "Features"@en-US .
 :forms skos:definition "Forms"@en-US .
 :hitDie skos:definition "Hit Die"@en-US .
-:hitDiePerClassLevel skos:definition "1d{$hitDie} per {$className} level"@en-US .
+:hitDiePerLevel skos:definition "1d{$hitDie} per {$className} level"@en-US .
 :hitPoints skos:definition "Hit Points"@en-US .
 :hitPointsAt1stLevel skos:definition "Hit Points at 1st Level"@en-US .
 :hitPointsAt1stLevelDescription skos:definition "{$hitDie} + your Constitution modifier"@en-US .

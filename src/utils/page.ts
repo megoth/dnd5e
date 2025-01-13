@@ -15,6 +15,12 @@ export function getPages(_: string, _2: boolean): Array<Page> {
     {
       href: "/classes",
       translationId: "classesPageTitle",
+      children: [
+        {
+          href: "/subclasses",
+          translationId: "subclasses",
+        },
+      ],
     },
     {
       href: "/races",

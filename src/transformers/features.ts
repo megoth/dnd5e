@@ -74,7 +74,7 @@ export function transformFeature(
   feature.parent =
     data.parent &&
     ldoDataset.usingType(FeatureShapeType).fromSubject(`#${data.parent.index}`);
-  feature.prerequisites = data.prerequisites.map((prerequisite) =>
+  feature.featurePrerequisites = data.prerequisites.map((prerequisite) =>
     ldoDataset.usingType(FeaturePrerequisiteShapeType).fromJson({
       ofType: prerequisite.type,
       ...(prerequisite["level"] && { level: prerequisite["level"].toString() }),

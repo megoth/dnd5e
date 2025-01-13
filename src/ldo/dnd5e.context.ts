@@ -132,18 +132,24 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subclass",
     "@type": "@id",
   },
-  parent: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#parent",
-    "@type": "@id",
+  subclassFlavor: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subclassFlavor",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  prerequisites: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#prerequisites",
+  subclassSpells: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subclassSpells",
     "@type": "@id",
     "@container": "@set",
   },
-  feature: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#feature",
+  levelPrerequisites: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#levelPrerequisites",
     "@type": "@id",
+    "@container": "@set",
+  },
+  subclassFeaturePrerequisites: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subclassFeaturePrerequisites",
+    "@type": "@id",
+    "@container": "@set",
   },
   spell: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spell",
@@ -241,6 +247,19 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subclasses",
     "@type": "@id",
     "@container": "@set",
+  },
+  parent: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#parent",
+    "@type": "@id",
+  },
+  featurePrerequisites: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#featurePrerequisites",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  feature: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#feature",
+    "@type": "@id",
   },
   featureSpecific: {
     "@id": "https://dnd5e.app/vocab/dnd5e#featureSpecific",
@@ -693,9 +712,22 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#arcaneRecoverLevels",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
+  subclassSpecific: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#subclassSpecific",
+    "@type": "@id",
+  },
+  additionalMagicalSecretsMaxLvl: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#additionalMagicalSecretsMaxLvl",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+  },
   multiclassing: {
     "@id": "https://dnd5e.app/vocab/dnd5e#multiclassing",
     "@type": "@id",
+  },
+  prerequisites: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#prerequisites",
+    "@type": "@id",
+    "@container": "@set",
   },
   prerequisiteOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#prerequisiteOptions",

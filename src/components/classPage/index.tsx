@@ -4,7 +4,7 @@ import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
 import Loading from "../loading";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useSWR from "swr";
 import { useLdo } from "@ldo/solid-react";
 import { resourceUrl } from "../../utils/url";
@@ -18,7 +18,6 @@ import ClassPageFeatures from "./features";
 import ClassPageMulticlassing from "./multiclassing";
 import Illustration from "../illustration";
 import Markdown from "react-markdown";
-import Icon from "../icon";
 import Breadcrumbs from "../breadcrumbs";
 
 export default function ClassPage() {

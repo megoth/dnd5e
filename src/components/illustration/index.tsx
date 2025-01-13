@@ -15,7 +15,10 @@ export default function Illustration({ className, subject, modifier }: Props) {
   if (!subject) return null;
   return (
     <div className={clsx(bem("illustration", modifier), className)}>
-      <img src={subject.imageUrl["@id"]} alt={subject.description} />
+      <img
+        src={subject.imageUrl?.["@id"]}
+        alt={subject.description.join("\n\n")}
+      />
       {subject.creator && (
         <div className={bem("illustration__creator", modifier)}>
           <Markdown>

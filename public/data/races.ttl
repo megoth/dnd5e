@@ -1,7 +1,7 @@
 <#dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#dwarf> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarf" .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
-<#dwarf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8121 .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8078 .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order." .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#age> "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years." .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
@@ -10,7 +10,7 @@
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#handaxes> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#light-hammers> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#warhammers> .
-<#dwarf> <https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions> _:b8126 .
+<#dwarf> <https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions> _:b8083 .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#languages> </data/languages.ttl#common> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#languages> </data/languages.ttl#dwarvish> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#languageDescription> "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak." .
@@ -20,23 +20,23 @@
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#dwarven-combat-training> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#tool-proficiency> .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#hill-dwarf> .
-_:b8121 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8121 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
-_:b8122 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
-_:b8123 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
-_:b8124 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
-_:b8125 <https://dnd5e.app/vocab/dnd5e#references> _:b8122 .
-_:b8125 <https://dnd5e.app/vocab/dnd5e#references> _:b8123 .
-_:b8125 <https://dnd5e.app/vocab/dnd5e#references> _:b8124 .
-_:b8126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b8126 <http://purl.org/dc/terms/description> "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools." .
-_:b8126 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b8126 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
-_:b8126 <https://dnd5e.app/vocab/dnd5e#from> _:b8125 .
+_:b8078 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8078 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
+_:b8079 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
+_:b8080 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
+_:b8081 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
+_:b8082 <https://dnd5e.app/vocab/dnd5e#references> _:b8079 .
+_:b8082 <https://dnd5e.app/vocab/dnd5e#references> _:b8080 .
+_:b8082 <https://dnd5e.app/vocab/dnd5e#references> _:b8081 .
+_:b8083 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b8083 <http://purl.org/dc/terms/description> "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools." .
+_:b8083 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b8083 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
+_:b8083 <https://dnd5e.app/vocab/dnd5e#from> _:b8082 .
 <#elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#elf> <http://www.w3.org/2000/01/rdf-schema#label> "Elf" .
 <#elf> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8127 .
+<#elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8084 .
 <#elf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not." .
 <#elf> <https://dnd5e.app/vocab/dnd5e#age> "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old." .
 <#elf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
@@ -50,12 +50,12 @@ _:b8126 <https://dnd5e.app/vocab/dnd5e#from> _:b8125 .
 <#elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#trance> .
 <#elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#keen-senses> .
 <#elf> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
-_:b8127 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8127 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+_:b8084 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8084 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#halfling> <http://www.w3.org/2000/01/rdf-schema#label> "Halfling" .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
-<#halfling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8128 .
+<#halfling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8085 .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways." .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#age> "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century." .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
@@ -67,40 +67,40 @@ _:b8127 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#d
 <#halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#halfling-nimbleness> .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#lucky> .
 <#halfling> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#lightfoot-halfling> .
-_:b8128 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8128 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+_:b8085 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8085 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
 <#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#human> <http://www.w3.org/2000/01/rdf-schema#label> "Human" .
 <#human> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8129 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8130 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8131 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8132 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8133 .
-<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8134 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8086 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8087 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8088 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8089 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8090 .
+<#human> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8091 .
 <#human> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Humans tend toward no particular alignment. The best and the worst are found among them." .
 <#human> <https://dnd5e.app/vocab/dnd5e#age> "Humans reach adulthood in their late teens and live less than a century." .
 <#human> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#human> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium." .
 <#human> <https://dnd5e.app/vocab/dnd5e#languages> </data/languages.ttl#common> .
 <#human> <https://dnd5e.app/vocab/dnd5e#languageDescription> "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on." .
-_:b8129 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8129 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
-_:b8130 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8130 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
-_:b8131 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8131 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
-_:b8132 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8132 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
-_:b8133 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8133 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
-_:b8134 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8134 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+_:b8086 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8086 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
+_:b8087 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8087 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+_:b8088 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8088 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
+_:b8089 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8089 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+_:b8090 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8090 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+_:b8091 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8091 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
 <#dragonborn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#dragonborn> <http://www.w3.org/2000/01/rdf-schema#label> "Dragonborn" .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8135 .
-<#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8136 .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8092 .
+<#dragonborn> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8093 .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains." .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#age> "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80." .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
@@ -111,14 +111,14 @@ _:b8134 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#draconic-ancestry> .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#breath-weapon> .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#damage-resistance> .
-_:b8135 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8135 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
-_:b8136 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8136 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+_:b8092 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8092 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
+_:b8093 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8093 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
 <#gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#gnome> <http://www.w3.org/2000/01/rdf-schema#label> "Gnome" .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#speed> 25 .
-<#gnome> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8137 .
+<#gnome> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8094 .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious." .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#age> "Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years." .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#size> "Small" .
@@ -129,70 +129,70 @@ _:b8136 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#darkvision> .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#gnome-cunning> .
 <#gnome> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#rock-gnome> .
-_:b8137 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8137 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+_:b8094 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8094 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
 <#half-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#half-elf> <http://www.w3.org/2000/01/rdf-schema#label> "Half-Elf" .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#half-elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8138 .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8095 .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable." .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#age> "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years." .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#sizeDescription> "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium." .
-<#half-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions> _:b8158 .
+<#half-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions> _:b8115 .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#languages> </data/languages.ttl#common> .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#languages> </data/languages.ttl#elvish> .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#languageDescription> "You can speak, read, and write Common, Elvish, and one extra language of your choice." .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#darkvision> .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#fey-ancestry> .
 <#half-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#skill-versatility> .
-_:b8138 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8138 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
-_:b8139 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b8140 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b8141 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b8142 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b8143 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b8144 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b8145 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b8146 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b8147 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b8148 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b8149 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b8150 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b8151 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
-_:b8152 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b8153 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b8154 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
-_:b8155 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b8156 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8139 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8140 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8141 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8142 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8143 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8144 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8145 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8146 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8147 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8148 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8149 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8150 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8151 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8152 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8153 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8154 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8155 .
-_:b8157 <https://dnd5e.app/vocab/dnd5e#references> _:b8156 .
-_:b8158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
-_:b8158 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b8158 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
-_:b8158 <https://dnd5e.app/vocab/dnd5e#from> _:b8157 .
+_:b8095 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8095 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+_:b8096 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b8097 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b8098 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b8099 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b8100 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b8101 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b8102 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b8103 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b8104 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b8105 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b8106 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b8107 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b8108 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
+_:b8109 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b8110 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b8111 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
+_:b8112 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b8113 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8096 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8097 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8098 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8099 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8100 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8101 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8102 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8103 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8104 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8105 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8106 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8107 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8108 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8109 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8110 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8111 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8112 .
+_:b8114 <https://dnd5e.app/vocab/dnd5e#references> _:b8113 .
+_:b8115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b8115 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b8115 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
+_:b8115 <https://dnd5e.app/vocab/dnd5e#from> _:b8114 .
 <#half-orc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#half-orc> <http://www.w3.org/2000/01/rdf-schema#label> "Half-Orc" .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8159 .
-<#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8160 .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8116 .
+<#half-orc> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8117 .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil." .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#age> "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years." .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
@@ -205,15 +205,15 @@ _:b8158 <https://dnd5e.app/vocab/dnd5e#from> _:b8157 .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#savage-attacks> .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#relentless-endurance> .
 <#half-orc> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#menacing> .
-_:b8159 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8159 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
-_:b8160 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8160 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
+_:b8116 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8116 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
+_:b8117 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8117 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#con> .
 <#tiefling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Race> .
 <#tiefling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiefling" .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#speed> 30 .
-<#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8161 .
-<#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8162 .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8118 .
+<#tiefling> <https://dnd5e.app/vocab/dnd5e#abilityBonuses> _:b8119 .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#alignmentDescription> "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment." .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#age> "Tieflings mature at the same rate as humans but live a few years longer." .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#size> "Medium" .
@@ -224,10 +224,10 @@ _:b8160 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#c
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#darkvision> .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#hellish-resistance> .
 <#tiefling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#infernal-legacy> .
-_:b8161 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
-_:b8161 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
-_:b8162 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
-_:b8162 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+_:b8118 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
+_:b8118 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+_:b8119 <https://dnd5e.app/vocab/dnd5e#bonus> 2 .
+_:b8119 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
 <#dragonborn> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#dragonborn> .
 <#dragonborn> <http://purl.org/dc/terms/description> "Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life." .
 <#dwarf> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#dwarf> .

@@ -18,7 +18,7 @@ export default function ClassPageHitPoints({ classInfo }: Props) {
         </dt>
         <dd>
           <Translation
-            id="hitDiePerClassLevel"
+            id="hitDiePerLevel"
             vars={{ hitDie: classInfo.hitDie, className: classInfo.label }}
           />
         </dd>

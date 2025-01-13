@@ -179,7 +179,7 @@ export interface Class {
   label: string;
   description?: string[];
   hitDie: number;
-  levels?: ClassLevel[];
+  levels?: Level[];
   multiclassing?: Multiclassing;
   proficiencies?: Proficiency[];
   proficiencyChoices?: Choice[];
@@ -190,40 +190,6 @@ export interface Class {
   spells?: Spell[];
   subclasses?: Subclass[];
   illustration?: Illustration;
-}
-
-/**
- * ClassLevel Type
- */
-export interface ClassLevel {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  type: Type;
-  level: number;
-  abilityScoreBonuses?: number;
-  proficiencyBonus?: number;
-  features?: Feature[];
-  levelSpellcasting?: ClassLevelSpellcasting;
-  classSpecific?: ClassSpecific;
-}
-
-/**
- * ClassLevelSpellcasting Type
- */
-export interface ClassLevelSpellcasting {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  cantripsKnown?: number;
-  spellsKnown?: number;
-  spellSlotsLevel1?: number;
-  spellSlotsLevel2?: number;
-  spellSlotsLevel3?: number;
-  spellSlotsLevel4?: number;
-  spellSlotsLevel5?: number;
-  spellSlotsLevel6?: number;
-  spellSlotsLevel7?: number;
-  spellSlotsLevel8?: number;
-  spellSlotsLevel9?: number;
 }
 
 /**
@@ -464,7 +430,7 @@ export interface Feature {
   class?: Class;
   subclass?: Subclass;
   parent?: Feature;
-  prerequisites?: FeaturePrerequisite[];
+  featurePrerequisites?: FeaturePrerequisite[];
   featureSpecific?: FeatureSpecific;
 }
 
@@ -542,6 +508,41 @@ export interface Language {
   script?: string;
   description?: string[];
   typicalSpeakers?: string[];
+}
+
+/**
+ * Level Type
+ */
+export interface Level {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: Type;
+  level: number;
+  abilityScoreBonuses?: number;
+  proficiencyBonus?: number;
+  features?: Feature[];
+  levelSpellcasting?: LevelSpellcasting;
+  classSpecific?: ClassSpecific;
+  subclassSpecific?: SubclassSpecific;
+}
+
+/**
+ * LevelSpellcasting Type
+ */
+export interface LevelSpellcasting {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  cantripsKnown?: number;
+  spellsKnown?: number;
+  spellSlotsLevel1?: number;
+  spellSlotsLevel2?: number;
+  spellSlotsLevel3?: number;
+  spellSlotsLevel4?: number;
+  spellSlotsLevel5?: number;
+  spellSlotsLevel6?: number;
+  spellSlotsLevel7?: number;
+  spellSlotsLevel8?: number;
+  spellSlotsLevel9?: number;
 }
 
 /**
@@ -995,6 +996,33 @@ export interface Subclass {
   "@context"?: ContextDefinition;
   type: Type;
   label: string;
+  description?: string[];
+  class: Class;
+  subclassFlavor?: string;
+  levels?: Level[];
+  subclassSpells?: SubclassSpell[];
+  illustration?: Illustration;
+}
+
+/**
+ * SubclassSpecific Type
+ */
+export interface SubclassSpecific {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  additionalMagicalSecretsMaxLvl?: number;
+  auraRange?: number;
+}
+
+/**
+ * SubclassSpell Type
+ */
+export interface SubclassSpell {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  levelPrerequisites?: Level[];
+  subclassFeaturePrerequisites?: Feature[];
+  spell?: Spell;
 }
 
 /**

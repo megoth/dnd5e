@@ -2,10 +2,10 @@ import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
   AbilityScoreShapeType,
-  ClassLevelShapeType,
   ClassShapeType,
   ClassSpellcastingInfoShapeType,
   ClassSpellcastingShapeType,
+  LevelShapeType,
   ProficiencyShapeType,
   SpellShapeType,
   SubclassShapeType,
@@ -38,7 +38,7 @@ function transformClass(
   adventureClass.hitDie = data.hit_die;
   adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>
     ldoDataset
-      .usingType(ClassLevelShapeType)
+      .usingType(LevelShapeType)
       .fromSubject(dataUrl("class-levels", `${data.index}-${index + 1}`)),
   );
   adventureClass.multiclassing =

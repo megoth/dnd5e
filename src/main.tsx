@@ -34,6 +34,8 @@ import MonsterPage from "./components/monsterPage";
 import WeaponPage from "./components/weaponPage";
 import ArmorSinglePage from "./components/armorSinglePage";
 import EquipmentSinglePage from "./components/equipmentSinglePage";
+import SubclassesPage from "./components/subclassesPage";
+import SubclassPage from "./components/subclassPage";
 
 const router = createBrowserRouter([
   {
@@ -155,6 +157,14 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignupPage />,
+      },
+      {
+        path: "/subclasses",
+        element: <SubclassesPage />,
+      },
+      {
+        path: "/subclasses/:url",
+        element: <SubclassPage />,
       },
       {
         path: "/weapons",

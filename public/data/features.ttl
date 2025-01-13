@@ -2219,7 +2219,7 @@ _:b1233 <https://dnd5e.app/vocab/dnd5e#invocations> </data/features.ttl#eldritch
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#level> 2 .
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1234 .
+<#eldritch-invocation-agonizing-blast> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1234 .
 _:b1234 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b1234 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-armor-of-shadows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2247,7 +2247,7 @@ _:b1234 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> 
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#level> 2 .
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1235 .
+<#eldritch-invocation-book-of-ancient-secrets> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1235 .
 _:b1235 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1235 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-tome> .
 <#eldritch-invocation-devils-sight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2268,7 +2268,7 @@ _:b1235 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#level> 2 .
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1236 .
+<#eldritch-invocation-eldritch-spear> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1236 .
 _:b1236 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b1236 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-eyes-of-the-rune-keeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2307,7 +2307,7 @@ _:b1236 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> 
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#level> 2 .
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1237 .
+<#eldritch-invocation-repelling-blast> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1237 .
 _:b1237 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b1237 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> .
 <#eldritch-invocation-thief-of-five-fates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2323,7 +2323,7 @@ _:b1237 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#eldritch-blast> 
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#level> 2 .
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1238 .
+<#eldritch-invocation-voice-of-the-chain-master> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1238 .
 _:b1238 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1238 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-chain> .
 <#eldritch-invocation-mire-the-mind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2332,7 +2332,7 @@ _:b1238 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-
 <#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#level> 5 .
 <#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1239 .
+<#eldritch-invocation-mire-the-mind> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1239 .
 _:b1239 <https://dnd5e.app/vocab/dnd5e#level> 5 .
 _:b1239 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-one-with-shadows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2341,7 +2341,7 @@ _:b1239 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#level> 5 .
 <#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1240 .
+<#eldritch-invocation-one-with-shadows> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1240 .
 _:b1240 <https://dnd5e.app/vocab/dnd5e#level> 5 .
 _:b1240 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sign-of-ill-omen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2350,7 +2350,7 @@ _:b1240 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#level> 5 .
 <#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1241 .
+<#eldritch-invocation-sign-of-ill-omen> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1241 .
 _:b1241 <https://dnd5e.app/vocab/dnd5e#level> 5 .
 _:b1241 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-thirsting-blade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2359,8 +2359,8 @@ _:b1241 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#level> 5 .
 <#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1242 .
-<#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1243 .
+<#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1242 .
+<#eldritch-invocation-thirsting-blade> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1243 .
 _:b1242 <https://dnd5e.app/vocab/dnd5e#level> 5 .
 _:b1242 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 _:b1243 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
@@ -2371,7 +2371,7 @@ _:b1243 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-
 <#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#level> 7 .
 <#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1244 .
+<#eldritch-invocation-bewitching-whispers> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1244 .
 _:b1244 <https://dnd5e.app/vocab/dnd5e#level> 7 .
 _:b1244 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-dreadful-word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2380,7 +2380,7 @@ _:b1244 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#level> 7 .
 <#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1245 .
+<#eldritch-invocation-dreadful-word> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1245 .
 _:b1245 <https://dnd5e.app/vocab/dnd5e#level> 7 .
 _:b1245 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sculptor-of-flesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2389,7 +2389,7 @@ _:b1245 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#level> 7 .
 <#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1246 .
+<#eldritch-invocation-sculptor-of-flesh> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1246 .
 _:b1246 <https://dnd5e.app/vocab/dnd5e#level> 7 .
 _:b1246 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-ascendant-step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2398,7 +2398,7 @@ _:b1246 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#level> 9 .
 <#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1247 .
+<#eldritch-invocation-ascendant-step> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1247 .
 _:b1247 <https://dnd5e.app/vocab/dnd5e#level> 9 .
 _:b1247 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-minions-of-chaos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2407,7 +2407,7 @@ _:b1247 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#level> 9 .
 <#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1248 .
+<#eldritch-invocation-minions-of-chaos> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1248 .
 _:b1248 <https://dnd5e.app/vocab/dnd5e#level> 9 .
 _:b1248 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-otherworldly-leap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2416,7 +2416,7 @@ _:b1248 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#level> 9 .
 <#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1249 .
+<#eldritch-invocation-otherworldly-leap> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1249 .
 _:b1249 <https://dnd5e.app/vocab/dnd5e#level> 9 .
 _:b1249 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-whispers-of-the-grave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2425,7 +2425,7 @@ _:b1249 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#level> 9 .
 <#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1250 .
+<#eldritch-invocation-whispers-of-the-grave> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1250 .
 _:b1250 <https://dnd5e.app/vocab/dnd5e#level> 9 .
 _:b1250 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-lifedrinker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2434,8 +2434,8 @@ _:b1250 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#level> 12 .
 <#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1251 .
-<#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1252 .
+<#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1251 .
+<#eldritch-invocation-lifedrinker> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1252 .
 _:b1251 <https://dnd5e.app/vocab/dnd5e#level> 12 .
 _:b1251 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 _:b1252 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
@@ -2446,8 +2446,8 @@ _:b1252 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-
 <#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#level> 15 .
 <#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1253 .
-<#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1254 .
+<#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1253 .
+<#eldritch-invocation-chains-of-carceri> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1254 .
 _:b1253 <https://dnd5e.app/vocab/dnd5e#level> 15 .
 _:b1253 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 _:b1254 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
@@ -2458,7 +2458,7 @@ _:b1254 <https://dnd5e.app/vocab/dnd5e#feature> </data/features.ttl#pact-of-the-
 <#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#level> 15 .
 <#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1255 .
+<#eldritch-invocation-master-of-myriad-forms> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1255 .
 _:b1255 <https://dnd5e.app/vocab/dnd5e#level> 15 .
 _:b1255 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-visions-of-distant-realms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2467,7 +2467,7 @@ _:b1255 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#level> 15 .
 <#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1256 .
+<#eldritch-invocation-visions-of-distant-realms> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1256 .
 _:b1256 <https://dnd5e.app/vocab/dnd5e#level> 15 .
 _:b1256 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-witch-sight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .
@@ -2476,7 +2476,7 @@ _:b1256 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#level> 15 .
 <#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
 <#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#parent> <#eldritch-invocations> .
-<#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#prerequisites> _:b1257 .
+<#eldritch-invocation-witch-sight> <https://dnd5e.app/vocab/dnd5e#featurePrerequisites> _:b1257 .
 _:b1257 <https://dnd5e.app/vocab/dnd5e#level> 15 .
 _:b1257 <https://dnd5e.app/vocab/dnd5e#ofType> "level" .
 <#pact-boon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Feature> .

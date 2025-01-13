@@ -15,7 +15,6 @@ import {
   highestSpellLevel,
 } from "../../../utils/dnd5e";
 import Translation from "../../translation";
-import { bem } from "../../../utils/bem";
 
 interface Props {
   classInfo: Class;
