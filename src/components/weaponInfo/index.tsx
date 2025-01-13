@@ -34,7 +34,7 @@ export default function WeaponInfo({ equipment }: Props) {
             </dd>
           </>
         )}
-        {equipment.weapon.range && (
+        {equipment.weapon.range?.long && (
           <>
             <dt>
               <Translation id="range" />
