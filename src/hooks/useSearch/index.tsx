@@ -66,13 +66,15 @@ export default function useSearch() {
     (equipment) =>
       !search.has(equipment["@id"]) &&
       (() => {
-        search.add({
-          id: equipment["@id"],
-          type: "equipment",
-          title: equipment.label,
-          text: equipment.description,
-          url: `/equipment#${btoa(equipment["@id"])}`,
-        });
+        if (!equipment.armor || !equipment.weapon) {
+          search.add({
+            id: equipment["@id"],
+            type: "equipment",
+            title: equipment.label,
+            text: equipment.description,
+            url: `/equipment/${btoa(equipment["@id"])}`,
+          });
+        }
         if (equipment.weapon) {
           search.add({
             id: `${equipment["@id"]}-weapon`,
@@ -88,7 +90,7 @@ export default function useSearch() {
             type: "armor",
             title: equipment.label,
             text: equipment.description,
-            url: `/armor#${btoa(equipment["@id"])}`,
+            url: `/armor/${btoa(equipment["@id"])}`,
           });
         }
       })(),
