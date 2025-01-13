@@ -3,7 +3,7 @@
 }
 
 .table {
-    @apply text-sm lg:text-base text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow border border-gray-200 dark:border-gray-600;
+    @apply text-sm lg:text-base text-left rtl:text-right shadow border border-gray-200 dark:border-gray-600;
 }
 
 .table a {
@@ -20,5 +20,5 @@
 }
 
 .table > tbody > tr {
-    @apply even:text-gray-700 bg-gray-50 even:bg-gray-100 dark:bg-gray-700 even:dark:bg-gray-600 even:dark:text-gray-400;
+    @apply bg-gray-50 even:bg-gray-100 dark:bg-gray-700 even:dark:bg-gray-600;
 }
