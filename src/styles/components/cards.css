@@ -3,7 +3,11 @@
 }
 
 .card {
-    @apply block max-w-lg bg-gray-100 hover:bg-gray-200 border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 cursor-pointer;
+    @apply block max-w-lg bg-gray-100  border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600;
+}
+
+.card--clickable {
+    @apply cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600;
 }
 
 .card__content {

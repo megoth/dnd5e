@@ -13,6 +13,7 @@ import Logo from "../logo";
 import { useNavigate } from "react-router";
 import { description } from "../../utils/dnd5e";
 import Breadcrumbs from "../breadcrumbs";
+import { bem } from "../../utils/bem";
 
 export default function SubclassesPage() {
   const navigate = useNavigate();
@@ -46,10 +47,12 @@ export default function SubclassesPage() {
           .map((subclass) => (
             <li
               key={subclass["@id"]}
-              className="card"
+              className={bem("card", "clickable")}
               onClick={(event) => {
                 if ((event.target as HTMLElement).nodeName === "A") return;
-                return navigate(`/subclasses/${btoa(subclass["@id"])}`);
+                return navigate(
+                  `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
+                );
               }}
             >
               <Content>
@@ -65,7 +68,9 @@ export default function SubclassesPage() {
               </Content>
               <div className="card__content">
                 <h2 className="card__title">
-                  <NavLink to={`/subclasses/${btoa(subclass["@id"])}`}>
+                  <NavLink
+                    to={`/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`}
+                  >
                     {subclass.label}
                   </NavLink>
                 </h2>

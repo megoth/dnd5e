@@ -19,6 +19,7 @@ import ClassPageMulticlassing from "./multiclassing";
 import Illustration from "../illustration";
 import Markdown from "react-markdown";
 import Breadcrumbs from "../breadcrumbs";
+import SubclassInfo from "../subclassInfo";
 
 export default function ClassPage() {
   const params = useParams();
@@ -87,6 +88,18 @@ export default function ClassPage() {
         <ClassPageEquipment classInfo={classInfo} />
         <ClassPageFeatures classInfo={classInfo} />
       </Content>
+      {classInfo.subclasses && (
+        <>
+          <Content>
+            <h2>
+              <Translation id="subclasses" />
+            </h2>
+          </Content>
+          {classInfo.subclasses.map((subclass) => (
+            <SubclassInfo key={subclass["@id"]} subclass={subclass} />
+          ))}
+        </>
+      )}
     </Layout>
   );
 }

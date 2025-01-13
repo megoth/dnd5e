@@ -8,6 +8,7 @@
 }
 .illustration > img {
     @apply w-full relative;
+    min-height: 128px;
     margin-top: -25%;
 }
 

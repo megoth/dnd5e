@@ -12,6 +12,7 @@ import Markdown from "react-markdown";
 import { useNavigate } from "react-router";
 import Illustration from "../illustration";
 import { description } from "../../utils/dnd5e";
+import { bem } from "../../utils/bem";
 
 export default function RacesPage() {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ export default function RacesPage() {
           .map((race) => (
             <li
               key={race["@id"]}
-              className="card"
+              className={bem("card", "clickable")}
               onClick={(event) => {
                 if ((event.target as HTMLElement).nodeName === "A") return;
                 return navigate(`/races/${btoa(race["@id"])}`);

@@ -13,11 +13,11 @@ import {
   MonsterSpeed,
   Race,
   Spell,
-  Subclass,
 } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 import { removeDuplicates } from "./array";
+import { subClassOf } from "rdf-namespaces/dist/rdfs";
 
 export function modifier(value: number): string {
   return value > 0 ? `+${value}` : value.toString();
@@ -162,6 +162,7 @@ export function classResourceUrls(classInfo: Class): string[] {
     ...(classInfo.multiclassing?.prerequisiteOptions
       ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteOptions)
       : []),
+    ...classInfo.subclasses.map((subclass) => resourceUrl(subclass["@id"])),
     ...(classInfo.illustration
       ? [resourceUrl(classInfo.illustration["@id"])]
       : []),
@@ -347,18 +348,6 @@ export function spellResourceUrls(spell: Spell): string[] {
     resourceUrl(spell.magicSchool["@id"]),
     ...(spell.magicSchool.illustration
       ? [resourceUrl(spell.magicSchool.illustration["@id"])]
-      : []),
-  ];
-}
-
-export function subclassResourceUrls(subclass: Subclass): string[] {
-  return [
-    ...subclass.levels.map((level) => resourceUrl(level["@id"])),
-    ...subclass.levels
-      .flatMap((level) => level.features)
-      .map((feature) => resourceUrl(feature["@id"])),
-    ...(subclass.illustration
-      ? [resourceUrl(subclass.illustration["@id"])]
       : []),
   ];
 }

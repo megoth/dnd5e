@@ -211,7 +211,7 @@ export default function useSearch() {
           type: "subclass",
           title: subclass.label,
           text: subclass.description,
-          url: `/subclasses/${btoa(subclass["@id"])}`,
+          url: `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
         });
       })(),
   );
