@@ -48,18 +48,20 @@ export default function SpellsPage() {
     return <Loading />;
   }
 
-  const filteredSpells = spells.filter(
-    (spell) =>
-      (classFilterDecoded
-        ? !!spell.classes.find(
-            (classInfo) => classInfo["@id"] === classFilterDecoded,
-          )
-        : true) &&
-      (levelFilter > -1 ? spell.level === levelFilter : true) &&
-      (schoolFilterDecoded
-        ? spell.magicSchool["@id"] === schoolFilterDecoded
-        : true),
-  );
+  const filteredSpells = spells
+    .filter(
+      (spell) =>
+        (classFilterDecoded
+          ? !!spell.classes.find(
+              (classInfo) => classInfo["@id"] === classFilterDecoded,
+            )
+          : true) &&
+        (levelFilter > -1 ? spell.level === levelFilter : true) &&
+        (schoolFilterDecoded
+          ? spell.magicSchool["@id"] === schoolFilterDecoded
+          : true),
+    )
+    .sort((a, b) => (a.label > b.label ? 1 : -1));
 
   return (
     <Layout>

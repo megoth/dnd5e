@@ -88,16 +88,18 @@ export default function ClassPage() {
         <ClassPageEquipment classInfo={classInfo} />
         <ClassPageFeatures classInfo={classInfo} />
       </Content>
-      {classInfo.subclasses && (
+      {classInfo.subclasses.length > 0 && (
         <>
           <Content>
             <h2>
               <Translation id="subclasses" />
             </h2>
           </Content>
-          {classInfo.subclasses.map((subclass) => (
-            <SubclassInfo key={subclass["@id"]} subclass={subclass} />
-          ))}
+          {classInfo.subclasses
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((subclass) => (
+              <SubclassInfo key={subclass["@id"]} subclass={subclass} />
+            ))}
         </>
       )}
     </Layout>

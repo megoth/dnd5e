@@ -120,9 +120,11 @@ export default function RacePage() {
               <Translation id="subraces" />
             </h2>
           </Content>
-          {race.subraces.map((subrace) => (
-            <SubraceInfo key={subrace["@id"]} subrace={subrace} />
-          ))}
+          {race.subraces
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((subrace) => (
+              <SubraceInfo key={subrace["@id"]} subrace={subrace} />
+            ))}
         </>
       )}
     </Layout>
