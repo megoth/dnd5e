@@ -79,7 +79,7 @@ export default function useSearch() {
             type: "weapon",
             title: equipment.label,
             text: equipment.description,
-            url: `/weapons#${btoa(equipment["@id"])}`,
+            url: `/weapons/${btoa(equipment["@id"])}`,
           });
         }
         if (equipment.armor) {

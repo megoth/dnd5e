@@ -31,6 +31,7 @@ import RacePage from "./components/racePage";
 import WeaponsPage from "./components/weaponsPage";
 import ArmorPage from "./components/armorPage";
 import MonsterPage from "./components/monsterPage";
+import WeaponPage from "./components/weaponPage";
 
 const router = createBrowserRouter([
   {
@@ -148,6 +149,10 @@ const router = createBrowserRouter([
       {
         path: "/weapons",
         element: <WeaponsPage />,
+      },
+      {
+        path: "/weapons/:url",
+        element: <WeaponPage />,
       },
     ],
   },

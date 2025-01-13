@@ -19,9 +19,7 @@ export default function Breadcrumbs({ crumbs }: Props) {
       <ol>
         {crumbs.map((crumb, index) => (
           <li key={crumb.href || crumb.text || crumb.translationId}>
-            {index === crumbs.length - 1 && (
-              <Icon name={"breadcrumb-divider"} />
-            )}
+            {index > 0 && <Icon name={"breadcrumb-divider"} />}
             {crumb.href && (
               <NavLink to={crumb.href}>
                 {crumb.translationId ? (

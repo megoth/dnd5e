@@ -4,6 +4,7 @@ import {
   ClassLevel,
   Cost,
   Damage,
+  Equipment,
   Monster,
   MonsterAbility,
   MonsterArmorClass,
@@ -192,6 +193,10 @@ export function description(texts: string[]): string {
       isParagraph(text, texts[index + 1]) ? `${text}\n` : text,
     )
     .join("\n");
+}
+
+export function equipmentResourceUrls(equipment: Equipment): string[] {
+  return [resourceUrl(equipment.equipmentCategory["@id"])];
 }
 
 export function highestSpellLevel(level: ClassLevel): number {
