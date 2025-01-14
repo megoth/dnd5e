@@ -8,6 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 shape:App {
     dnd5e_app:resourceBundle @shape:ResourceBundle* ;
     dnd5e_app:supportLanguage @shape:Locale* ;
+    dnd5e_app:rulesBundle @shape:RulesBundle* ;
 }
 
 shape:FAQ {
@@ -29,9 +30,14 @@ shape:ResourceBundle {
     dnd5e_app:translationsIndex @shape:TranslationsIndex* ;
 }
 
+shape:RulesBundle {
+    rdfs:label xsd:string ;
+    dnd5e_app:rulesResource IRI* ;
+}
+
 shape:TranslationsIndex {
     dnd5e_app:language xsd:string? ;
-    dnd5e_app:resource IRI ;
+    dnd5e_app:translationsResource IRI ;
 }
 
 shape:Translation {

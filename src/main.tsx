@@ -4,7 +4,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { BrowserSolidLdoProvider } from "@ldo/solid-react";
 import HomePage from "./components/homePage";
 import AppProvider from "./hooks/useApp/provider";
-import "../styles/globals.css";
+import "./styles/globals.css";
 import AboutPage from "./components/aboutPage";
 import FAQPage from "./components/faqPage";
 import AdminPage from "./components/adminPage";
@@ -16,7 +16,7 @@ import CharactersPage from "./components/charactersPage";
 import EncountersPage from "./components/encountersPage";
 import NotesPage from "./components/notesPage";
 import ClassesPage from "./components/classesPage";
-import EquipmentPage from "./components/equipmentPage";
+import EquipmentIndexPage from "./components/equipmentIndexPage";
 import MonstersPage from "./components/monstersPage";
 import RacesPage from "./components/racesPage";
 import SpellsPage from "./components/spellsPage";
@@ -24,6 +24,20 @@ import LoginPage from "./components/loginPage";
 import SignupPage from "./components/signupPage";
 import RulesPage from "./components/rulesPage";
 import LayoutProvider from "./hooks/useLayout/provider";
+import ClassPage from "./components/classPage";
+import SpellPage from "./components/spellPage";
+import SearchPage from "./components/searchPage";
+import RacePage from "./components/racePage";
+import WeaponsPage from "./components/weaponsPage";
+import ArmorIndexPage from "./components/armorIndexPage";
+import MonsterPage from "./components/monsterPage";
+import WeaponPage from "./components/weaponPage";
+import ArmorSinglePage from "./components/armorSinglePage";
+import EquipmentSinglePage from "./components/equipmentSinglePage";
+import SubclassesPage from "./components/subclassesPage";
+import SubracesPage from "./components/subracesPage";
+import MagicItemsPage from "./components/magicItemsPage";
+import MagicItemPage from "./components/MagicItemPage";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +81,14 @@ const router = createBrowserRouter([
         element: <TranslationsPage />,
       },
       {
+        path: "/armor",
+        element: <ArmorIndexPage />,
+      },
+      {
+        path: "/armor/:url",
+        element: <ArmorSinglePage />,
+      },
+      {
         path: "/characters",
         element: <CharactersPage />,
       },
@@ -91,28 +113,76 @@ const router = createBrowserRouter([
         element: <RulesPage />,
       },
       {
-        path: "/rules/classes",
+        path: "/classes",
         element: <ClassesPage />,
       },
       {
-        path: "/rules/equipment",
-        element: <EquipmentPage />,
+        path: "/classes/:url",
+        element: <ClassPage />,
       },
       {
-        path: "/rules/monsters",
+        path: "/equipment",
+        element: <EquipmentIndexPage />,
+      },
+      {
+        path: "/equipment/:url",
+        element: <EquipmentSinglePage />,
+      },
+      {
+        path: "/magic-items",
+        element: <MagicItemsPage />,
+      },
+      {
+        path: "/magic-items/:url",
+        element: <MagicItemPage />,
+      },
+      {
+        path: "/monsters",
         element: <MonstersPage />,
       },
       {
-        path: "/rules/races",
+        path: "/monsters/:url",
+        element: <MonsterPage />,
+      },
+      {
+        path: "/races",
         element: <RacesPage />,
       },
       {
-        path: "/rules/spells",
+        path: "/races/:url",
+        element: <RacePage />,
+      },
+      {
+        path: "/search",
+        element: <SearchPage />,
+      },
+      {
+        path: "/spells",
         element: <SpellsPage />,
+      },
+      {
+        path: "/spells/:url",
+        element: <SpellPage />,
       },
       {
         path: "/signup",
         element: <SignupPage />,
+      },
+      {
+        path: "/subclasses",
+        element: <SubclassesPage />,
+      },
+      {
+        path: "/subraces",
+        element: <SubracesPage />,
+      },
+      {
+        path: "/weapons",
+        element: <WeaponsPage />,
+      },
+      {
+        path: "/weapons/:url",
+        element: <WeaponPage />,
       },
     ],
   },

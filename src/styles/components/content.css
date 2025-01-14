@@ -1,0 +1,100 @@
+.content {
+  @apply leading-normal;
+}
+
+.content [id] {
+  @apply snap-y scroll-mt-24 lg:scroll-mt-0;
+}
+
+.content a {
+  @apply text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
+.content dl {
+  @apply mt-1 mb-4;
+}
+
+.content form {
+  @apply mt-2 mb-4 max-w-prose;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  @apply font-semibold mb-2 font-serif;
+}
+
+.content h1 {
+  @apply text-4xl;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  @apply mt-4;
+}
+
+.content h2 {
+  @apply text-3xl;
+}
+
+.content h3 {
+  @apply text-2xl;
+}
+
+.content h4 {
+  @apply text-xl;
+}
+
+.content h5 {
+  @apply text-lg;
+}
+
+.content li {
+  @apply my-0;
+}
+
+.content ol {
+  @apply ml-5 mt-1 mb-4 max-w-prose list-decimal;
+}
+
+.content ol ol {
+  @apply ml-4 my-0.5;
+}
+
+.content p {
+  @apply mt-1 mb-4 max-w-prose;
+}
+
+.content p:has(+ ol),
+.content p:has(+ ul) {
+  @apply mb-2;
+}
+
+.content table {
+  @apply my-2 table;
+}
+
+.content ul {
+  @apply ml-5 mt-1 mb-4 list-disc max-w-prose;
+}
+.content ul ul {
+  @apply ml-4 my-0.5;
+}
+
+.content--small {
+  @apply text-sm;
+}
+
+.content--small h1 {
+  @apply text-2xl;
+}
+
+.content--small h2 {
+  @apply text-xl;
+}

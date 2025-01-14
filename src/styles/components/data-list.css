@@ -1,0 +1,16 @@
+.data-list {
+    @apply w-full ps-4 overflow-auto max-w-prose;
+}
+
+.data-list > dt {
+    @apply float-start clear-start font-bold mr-2 -ms-4;
+}
+.data-list > dt:after {
+    content: ":";
+}
+.data-list > dd {
+    @apply hyphens-none;
+}
+.data-list > dd p {
+    @apply mt-0 mb-2;
+}

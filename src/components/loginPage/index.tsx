@@ -16,7 +16,7 @@ export default function LoginPage() {
   const providers = getProviders();
   const redirectURL = getRedirectURL("");
   return (
-    <Layout full pageName={"loginPageTitle"}>
+    <Layout full>
       <LoggedInAlreadyWarning className={bem("main-container", "content")} />
       <div className="main-container px-4 lg:px-0 md:grid grid-cols-2 gap-4 max-w-3xl place-items-center">
         <div>
@@ -45,9 +45,12 @@ export default function LoginPage() {
             ))}
           </ul>
         </div>
-        <LoginForm className="border p-2 rounded" redirectURL={redirectURL} />
+        <LoginForm
+          className="p-2 bg-gray-100 border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600"
+          redirectURL={redirectURL}
+        />
       </div>
-      <aside className={clsx(bem("main-container", "content"), "my-16")}>
+      <aside className="my-16 px-4 lg:px-0 mx-auto max-w-prose">
         <FAQ id="whyLogInWithSolid" variant="small" />
         <FAQ id="whatIsSolid" variant="small" />
         <FAQ id="whatIsPod" variant="small" />

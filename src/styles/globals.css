@@ -1,0 +1,25 @@
+@import "base/fonts.css";
+
+@import "components/breadcrumbs.css";
+@import "components/button.css";
+@import "components/cards.css";
+@import "components/content.css";
+@import "components/data-list.css";
+@import "components/filter-list.css";
+@import "components/forms.css";
+@import "components/hero.css";
+@import "components/icon.css";
+@import "components/illustration.css";
+@import "components/layout.css";
+@import "components/link.css";
+@import "components/nav-group.css";
+@import "components/notification.css";
+@import "components/main-container.css";
+@import "components/pages-nav.css";
+@import "components/table.css";
+
+@import "utilities/line-behind.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

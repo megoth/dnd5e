@@ -1,0 +1,30 @@
+.main-container {
+  @apply lg:mx-auto;
+}
+
+.main-container--content {
+  @apply lg:container lg:flex-col;
+}
+
+.main-container--header {
+  @apply lg:container lg:flex-col;
+}
+@media screen and (min-width: 1024px) {
+  .main-container--header {
+    padding-inline-start: 256px;
+  }
+}
+
+.main-container--subheader {
+  @apply lg:container lg:flex-col;
+}
+@media screen and (min-width: 1024px) {
+  .main-container--subheader {
+    padding-inline-start: 256px;
+    padding-inline-end: 256px;
+  }
+}
+
+.main-container--full {
+  @apply flex-1 min-w-full lg:max-w-full lg:mx-auto;
+}

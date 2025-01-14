@@ -6,6 +6,7 @@ import useLayout from "../../hooks/useLayout";
 import { useSolidAuth } from "@ldo/solid-react";
 import { NavLink } from "react-router-dom";
 import { bem } from "../../utils/bem";
+import SearchForm from "../searchForm";
 
 export const TESTID_PAGE_HEADER_LEFT_MENU_BUTTON =
   "page-header-left-menu-button";
@@ -14,29 +15,31 @@ export const TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON =
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   className?: string;
-  pageName?: string;
 }
 
-export default function PageHeader({ className, pageName, ...props }: Props) {
+export default function PageHeader({ className, ...props }: Props) {
   const { session } = useSolidAuth();
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
   return (
-    <header className={clsx("mb-2 shadow shadow-md", className)} {...props}>
-      <div className={clsx(bem("main-container", "content"), "pr-0")}>
+    <header
+      className={clsx(
+        "mb-2 shadow-md sticky top-0 lg:relative z-0 bg-white dark:bg-gray-800",
+        className,
+      )}
+      {...props}
+    >
+      <div className={bem("main-container", "header")}>
         <NavLink
           to="/"
-          className="px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
-          style={{ fontSize: "clamp(2rem, 3rem, 8vw)" }}
+          className="block px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          style={{ fontSize: "clamp(1rem, 2rem, 8vw)" }}
         >
           <Translation id="appName" />
         </NavLink>
       </div>
       <div className="bg-gray-100 dark:bg-gray-900">
         <div
-          className={clsx(
-            bem("main-container", "content"),
-            "flex flex-row px-0",
-          )}
+          className={clsx(bem("main-container", "subheader"), "flex flex-row")}
         >
           <button
             type="button"
@@ -51,8 +54,8 @@ export default function PageHeader({ className, pageName, ...props }: Props) {
           >
             <Icon name="menu" />
           </button>
-          <div className="flex-1 text-lg font-semibold font-serif leading-10">
-            <Translation id={pageName} />
+          <div className="flex-1 flex items-center justify-end">
+            <SearchForm modifier="global-search" path="/search" />
           </div>
           <button
             type="button"

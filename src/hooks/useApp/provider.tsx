@@ -12,14 +12,12 @@ import {
   TranslationsIndexShapeType,
 } from "../../ldo/app.shapeTypes";
 import { SessionInfo, useLdo, useSolidAuth } from "@ldo/solid-react";
-import { getHash, getPath } from "../../utils/url";
+import { hash, resourceUrl } from "../../utils/url";
 import { useSearchParams } from "react-router-dom";
 import { FluentBundle, FluentResource } from "@fluent/bundle";
 import { userIsAdmin } from "../../utils/session";
 import { namedNode } from "@rdfjs/data-model";
 import { useLocalStorage } from "@uidotdev/usehooks";
-// TODO: FIX @rdfjs/types
-// eslint-disable-next-line import/no-unresolved
 import { Literal } from "@rdfjs/types";
 
 interface Props {
@@ -48,7 +46,7 @@ export default function AppProvider({ children }: Props) {
       // @ts-ignore
       import.meta.env.VITE_APP_URL ||
       new URL("/data/index.ttl#dnd5e", location.origin).toString();
-    const path = getPath(appUrl);
+    const path = resourceUrl(appUrl);
     await getResource(path).readIfUnfetched();
     return getSubject(AppShapeType, appUrl);
   });
@@ -70,13 +68,14 @@ export default function AppProvider({ children }: Props) {
   // fetch supported languages
   const { data: supportedLocales } = useSWR(
     () => `supportedLocales-${app["@id"]}}`,
-    async () =>
-      Promise.all(
+    async () => {
+      return Promise.all(
         app.supportLanguage.map(async (language) => {
           await getResource(language["@id"]).readIfUnfetched();
           return getSubject(LocaleShapeType, language["@id"]);
         }),
-      ),
+      );
+    },
   );
 
   useEffect(() => {
@@ -126,10 +125,10 @@ export default function AppProvider({ children }: Props) {
     async () =>
       Promise.all(
         translations
-          .map((index) => index.resource)
-          .map(async (resourceUrl) =>
-            getResource(resourceUrl["@id"]).readIfUnfetched(),
-          ),
+          .map((index) => index.translationsResource)
+          .map(async (resourceUrl) => {
+            return getResource(resourceUrl["@id"]).readIfUnfetched();
+          }),
       ),
   );
   const localization = useMemo(() => {
@@ -137,7 +136,7 @@ export default function AppProvider({ children }: Props) {
     if (!resourceBundles || translationsLoading) return null;
     resourceBundles.forEach((bundle) =>
       bundle.translationsIndex
-        .map((index) => index.resource["@id"])
+        .map((index) => index.translationsResource["@id"])
         .flatMap((resourceUrl) => {
           return dataset
             .match(null, null, null, namedNode(resourceUrl))
@@ -154,7 +153,7 @@ export default function AppProvider({ children }: Props) {
         .forEach((translation) =>
           localization.addResource(
             new FluentResource(
-              `${getHash(translation["@id"])} = ${translation.definition}`,
+              `${hash(translation["@id"])} = ${translation.definition}`,
             ),
           ),
         ),
@@ -169,6 +168,7 @@ export default function AppProvider({ children }: Props) {
   return (
     <AppContext.Provider
       value={{
+        app,
         currentLocale,
         availableLocales: supportedLocales?.filter(
           (locale) => locale.language !== currentLocale,

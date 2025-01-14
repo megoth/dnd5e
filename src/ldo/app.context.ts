@@ -38,8 +38,8 @@ export const appContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/app#language",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  resource: {
-    "@id": "https://dnd5e.app/vocab/app#resource",
+  translationsResource: {
+    "@id": "https://dnd5e.app/vocab/app#translationsResource",
     "@type": "@id",
   },
   supportLanguage: {
@@ -50,6 +50,16 @@ export const appContext: ContextDefinition = {
   languageFlag: {
     "@id": "https://dnd5e.app/vocab/app#languageFlag",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  rulesBundle: {
+    "@id": "https://dnd5e.app/vocab/app#rulesBundle",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  rulesResource: {
+    "@id": "https://dnd5e.app/vocab/app#rulesResource",
+    "@type": "@id",
+    "@container": "@set",
   },
   faqLabel: {
     "@id": "https://dnd5e.app/vocab/app#faqLabel",

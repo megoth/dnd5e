@@ -6,6 +6,7 @@ import {
   FAQ,
   Locale,
   ResourceBundle,
+  RulesBundle,
   TranslationsIndex,
   Translation,
 } from "./app.typings";
@@ -49,6 +50,15 @@ export const LocaleShapeType: ShapeType<Locale> = {
 export const ResourceBundleShapeType: ShapeType<ResourceBundle> = {
   schema: appSchema,
   shape: "https://ldo.js.org/shapes/app.shex#ResourceBundle",
+  context: appContext,
+};
+
+/**
+ * RulesBundle ShapeType
+ */
+export const RulesBundleShapeType: ShapeType<RulesBundle> = {
+  schema: appSchema,
+  shape: "https://ldo.js.org/shapes/app.shex#RulesBundle",
   context: appContext,
 };
 

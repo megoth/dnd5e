@@ -1,0 +1,37 @@
+.illustration {
+    @apply mb-4 overflow-hidden relative;
+    max-height: 256px;
+    max-width: 512px;
+}
+.illustration:not(.illustration--compact) {
+    @apply -mx-4;
+}
+.illustration > img {
+    @apply w-full relative;
+    min-height: 128px;
+    margin-top: -25%;
+}
+
+.illustration__creator {
+    @apply absolute bottom-0 right-0 p-1.5 bg-black text-gray-500 leading-none rounded-tl-md text-xs;
+}
+.illustration__creator a {
+    @apply text-gray-500 underline;
+}
+.illustration__creator p {
+    @apply m-0;
+}
+
+@media screen and (min-width: 65ch) {
+    .illustration:not(.illustration--compact) {
+        @apply mx-0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .illustration {
+        max-height: 512px;
+    }
+    .illustration:not(.illustration--compact) > img {
+        margin-top: 0;
+    }
+}

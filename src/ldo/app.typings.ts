@@ -14,6 +14,7 @@ export interface App {
   "@context"?: ContextDefinition;
   resourceBundle?: ResourceBundle[];
   supportLanguage?: Locale[];
+  rulesBundle?: RulesBundle[];
 }
 
 /**
@@ -57,13 +58,25 @@ export interface ResourceBundle {
 }
 
 /**
+ * RulesBundle Type
+ */
+export interface RulesBundle {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label: string;
+  rulesResource?: {
+    "@id": string;
+  }[];
+}
+
+/**
  * TranslationsIndex Type
  */
 export interface TranslationsIndex {
   "@id"?: string;
   "@context"?: ContextDefinition;
   language?: string;
-  resource: {
+  translationsResource: {
     "@id": string;
   };
 }

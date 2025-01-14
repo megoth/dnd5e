@@ -1,0 +1,16 @@
+.filter-list {
+    @apply w-full ps-4 py-1 text-sm lg:text-base overflow-auto;
+}
+
+.filter-list > dt {
+    @apply float-start clear-start font-bold mr-2 -ms-4;
+}
+.filter-list > dt:after {
+    content: ":";
+}
+.filter-list > dd {
+    @apply float-start hyphens-none flex gap-2 flex-wrap;
+}
+.filter-list > dd a[aria-selected="true"] {
+    @apply text-black dark:text-white focus:ring-black dark:focus:ring-white;
+}

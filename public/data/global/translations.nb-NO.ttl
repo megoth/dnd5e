@@ -2,7 +2,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+:abilityBonuses skos:definition "Evnebonuser"@nb-NO .
+:abilityScores skos:definition "Egenskaper"@nb-NO .
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
+:actions skos:definition "Handlinger"@nb-NO .
+:age skos:definition "Alder"@nb-NO .
+:alignment skos:definition "Innretning"@nb-NO .
+:and skos:definition "og"@nb-NO .
 :appDescription skos:definition "En Solid App for D&D5e"@nb-NO .
 :appName skos:definition "D&D5e Solid App"@nb-NO .
 :appPitch skos:definition
@@ -10,24 +16,73 @@
         informasjonen lagres og hvilke regelsett du ønsker å bruke, enten det er offisielle regler eller dine egne
         hjemmelagde."""@nb-NO .
 :appLogoDescription skos:definition "D&D5e Solid App logo"@nb-NO .
+:armor skos:definition "Beskyttelse"@nb-NO .
+:armorClass skos:definition "Beskyttelseklasse"@nb-NO .
+:atHigherLevels skos:definition "På høyere nivå"@nb-NO .
 :authenticationGuidance skos:definition
         """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
 :authenticationPitch skos:definition
         """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
+:blindsight skos:definition "Blindesyn"@nb-NO .
+:cantrip skos:definition "Liten tryllekunst"@nb-NO .
+:cantripNote skos:definition "{$school} liten tryllekunst"@nb-NO .
+:cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
+:castingTime skos:definition "Kastetid"@nb-NO .
+:category skos:definition "Kategori"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
+:challenge skos:definition "Vanskelighetsgrad"@nb-NO .
+:challengeRating skos:definition "Vanskelighetsgrad"@nb-NO .
+:charisma skos:definition "Karisma"@nb-NO .
+:chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
+:class skos:definition "Klasse"@nb-NO .
+:classes skos:definition "Klasser"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .
+:classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
+:classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
 :close skos:definition "Lukk"@nb-NO .
+:components skos:definition "Komponenter"@nb-NO .
+:concentration skos:definition "Konsentrasjon"@nb-NO .
+:constitution skos:definition "Kroppsform"@nb-NO .
+:cost skos:definition "Pris"@nb-NO .
+:damage skos:definition "Skade"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
+:darkvision skos:definition "Mørkesyn"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+:descriptionOf skos:definition "Beskrivelse av {$type}"@nb-NO .
+:dex skos:definition "smidighet"@nb-NO .
+:dexModifier skos:definition "Smidighet modifikator"@nb-NO .
+:dexterity skos:definition "Smidighet"@nb-NO .
+:dice skos:definition "{$count}d{$value}"@nb-NO .
+:disadvantage skos:definition "Ulempe"@nb-NO .
+:duration skos:definition "Varighet"@nb-NO .
 :encountersPageTitle skos:definition "Kamper"@nb-NO .
+:equipment skos:definition "Utstyr"@nb-NO .
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .
 :faqPageTitle skos:definition "Ofte stilte spørsmål"@nb-NO .
 :faqShort skos:definition "Ofte stilte spørsmål"@nb-NO .
+:features skos:definition "Egenskaper"@nb-NO .
+:forms skos:definition "Former"@nb-NO .
+:hitDie skos:definition "Hit Die"@nb-NO .
+:hitDiePerLevel skos:definition "1d{$hitDie} per nivå av {$className}"@nb-NO .
+:hitPoints skos:definition "Hit Points"@nb-NO .
+:hitPointsAt1stLevel skos:definition "Hit Points på første level"@nb-NO .
+:hitPointsAt1stLevelDescription skos:definition "{$hitDie} + din Constitution modifikator"@nb-NO .
+:hitPointsAtHigherLevels skos:definition "Hit Points på høyere nivå"@nb-NO .
+:hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
+:immunities skos:definition "Immuniteter"@nb-NO .
+:ignore skos:definition "Ignorer"@nb-NO .
+:illustrationBy skos:definition "Illustrasjon av {$creator}"@nb-NO .
+:intelligence skos:definition "Intelligens"@nb-NO .
+:invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
+:kiPoints skos:definition "Ki poeng"@nb-NO .
+:languages skos:definition "Språk"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
+:legendaryActions skos:definition "Legendariske handlinger"@nb-NO .
+:level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
 :loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
@@ -39,16 +94,63 @@
 :loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 :loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 :logOut skos:definition "Logg ut"@nb-NO .
+:magicItem skos:definition "Magisk gjenstand"@nb-NO .
+:magicItems skos:definition "Magiske gjenstander"@nb-NO .
+:martialArts skos:definition "Kampkunst"@nb-NO .
+:max skos:definition "maks"@nb-NO .
+:modifier skos:definition "Modifikator"@nb-NO .
+:monster skos:definition "Monster"@nb-NO .
+:monsterFeatures skos:definition "Monsteregenskaper"@nb-NO .
+:monsters skos:definition "Monstre"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
+:movementBonus skos:definition "+{$bonus} fot"@nb-NO .
+:multiclassRequirement skos:definition "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
+:name skos:definition "Navn"@nb-NO .
+:noResults skos:definition "Ingen treff"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
 :or skos:definition "eller"@nb-NO .
+:order0 skos:definition "0."@nb-NO .
+:order1 skos:definition "1."@nb-NO .
+:order2 skos:definition "2."@nb-NO .
+:order3 skos:definition "3."@nb-NO .
+:order4 skos:definition "4."@nb-NO .
+:order5 skos:definition "5."@nb-NO .
+:order6 skos:definition "6."@nb-NO .
+:order7 skos:definition "7."@nb-NO .
+:order8 skos:definition "8."@nb-NO .
+:order9 skos:definition "9."@nb-NO .
+:passivePerception skos:definition "Passiv oppfatning"@nb-NO .
+:proficiencies skos:definition "Ferdigheter"@nb-NO .
+:proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
+:properties skos:definition "Egenskaper"@nb-NO .
 :provideIdP skos:definition "Velg en annen identitetsleverandør for Solid"@nb-NO .
+:race skos:definition "Rase"@nb-NO .
+:races skos:definition "Raser"@nb-NO .
 :racesPageTitle skos:definition "Raser"@nb-NO .
+:rageDamage skos:definition "Raseriskade"@nb-NO .
+:rages skos:definition "Raseri"@nb-NO .
+:range skos:definition "Lengde"@nb-NO .
+:reactions skos:definition "Reaksjoner"@nb-NO .
+:readMore skos:definition "Les mer"@nb-NO .
 :recommendedIdPSet skos:definition "Anbefalte identitetsleverandører"@nb-NO .
 :rememberIdP skos:definition "Husk identitetsleverandør"@nb-NO .
+:resistances skos:definition "Motstand"@nb-NO .
+:rule skos:definition "Regel"@nb-NO .
 :rulesPageTitle skos:definition "Regler"@nb-NO .
+:savingThrow skos:definition "Redningskast"@nb-NO .
+:savingThrows skos:definition "Redningskast"@nb-NO .
+:senses skos:definition "Sanser"@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
+:school skos:definition "Skole"@nb-NO .
+:search skos:definition "Søk"@nb-NO .
+:searchDescription skos:definition
+        """Søkefunksjonen i denne applikasjonen er håndtert 100% i nettleseren, noe som betyr at for å kunne søke må du
+        tillatte applikasjonen å laste inn mesteparten av tilgjengelig data.
+
+        Applikasjonen lagrer valget ditt for nettleseren."""@nb-NO .
+:searchEnable skos:definition "Skru på søk"@nb-NO .
+:searchHere skos:definition "Søk her"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
@@ -61,11 +163,41 @@
         leverandør](https://solidproject.org/users/get-a-pod#how-to-pick-a-provider)"""@nb-NO .
 :signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 :signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
+:size skos:definition "Størrelse"@nb-NO .
+:skills skos:definition "Evner"@nb-NO .
+:slotLevel skos:definition "Plassnivå"@nb-NO .
+:sneakAttack skos:definition "Snikangrep"@nb-NO .
 :solidIdP skos:definition "Identitetsleverandør for Solid"@nb-NO .
 :solidLogo skos:definition "Logo for Solid"@nb-NO .
+:sorceryPoints skos:definition "Trolldom poeng"@nb-NO .
+:speed skos:definition "Hastighet"@nb-NO .
+:spell skos:definition "Trylleformel"@nb-NO .
+:spellNote skos:definition "{$order}-nivå {$school}"@nb-NO .
+:spells skos:definition "Trylleformler"@nb-NO .
+:spellsFor skos:definition "Trylleformler for {$type}"@nb-NO .
+:spellsKnown skos:definition "Kjente trylleformler"@nb-NO .
+:spellSlots skos:definition "Trylleformler"@nb-NO .
+:spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
+:stealth skos:definition "Sniking"@nb-NO .
+:strength skos:definition "Styrke"@nb-NO .
+:subclass skos:definition "Underklasse"@nb-NO .
+:subclasses skos:definition "Underklasser"@nb-NO .
+:subrace skos:definition "Underrase"@nb-NO .
+:subraces skos:definition "Underraser"@nb-NO .
+:subtype skos:definition "Undertype"@nb-NO .
+:suggestions skos:definition "Forslag"@nb-NO .
+:traits skos:definition "Egenskaper"@nb-NO .
 :translateTo skos:definition "Oversett til {$language}"@nb-NO .
 :translationsLoadFailed skos:definition "Klarte ikke å hente oversettelser"@nb-NO .
+:tremorsense skos:definition "Skjelvingssans"@nb-NO .
+:truesight skos:definition "Sannsyn"@nb-NO .
+:type skos:definition "Type"@nb-NO .
+:unarmoredMovement skos:definition "Bevegelse uten rustning"@nb-NO .
+:vulnerabilities skos:definition "Svakheter"@nb-NO .
+:weapon skos:definition "Våpen"@nb-NO .
+:weapons skos:definition "Våpen"@nb-NO .
+:weight skos:definition "Tyngde"@nb-NO .
 :whatIsIdPLabel skos:definition "Hva er en identitetsleverandør?"@nb-NO .
 :whatIsIdPDescription skos:definition
         """Identitetsleverandører for Solid er tjenester som lar deg lage en Solid identitet som du kan bruke til å
@@ -97,4 +229,6 @@
         """Ved å bruke en Solid identitet kan appen gjenkjenne deg og vite hvor dataene dine skal hentes fra. Solid er en
         standard som lar deg velge hvilken tjeneste du ønsker å bruke som identitetsleverandør, som betyr at du ikke
         blir låst til noen bestemte firmaer sine tjenester."""@nb-NO .
+:wisdom skos:definition "Visdom"@nb-NO .
 :workInProgress skos:definition "Under utvikling"@nb-NO .
+:xp skos:definition "XP"@nb-NO .

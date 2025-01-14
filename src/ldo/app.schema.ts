@@ -30,6 +30,13 @@ export const appSchema: Schema = {
               min: 0,
               max: -1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/app#rulesBundle",
+              valueExpr: "https://ldo.js.org/shapes/app.shex#RulesBundle",
+              min: 0,
+              max: -1,
+            },
           ],
         },
       },
@@ -148,6 +155,36 @@ export const appSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/app.shex#RulesBundle",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/app#rulesResource",
+              valueExpr: {
+                type: "NodeConstraint",
+                nodeKind: "iri",
+              },
+              min: 0,
+              max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/app.shex#TranslationsIndex",
       type: "ShapeDecl",
       shapeExpr: {
@@ -167,7 +204,7 @@ export const appSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/app#resource",
+              predicate: "https://dnd5e.app/vocab/app#translationsResource",
               valueExpr: {
                 type: "NodeConstraint",
                 nodeKind: "iri",

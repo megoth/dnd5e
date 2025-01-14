@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<SVGElement> {
-  name: "close" | "login" | "menu" | "settings";
+  name: "breadcrumb-divider" | "close" | "login" | "menu" | "settings";
 }
 
 export default function Icon({ name, ...props }: Props) {
@@ -11,6 +11,24 @@ export default function Icon({ name, ...props }: Props) {
   };
   // eslint-disable-next-line default-case
   switch (name) {
+    case "breadcrumb-divider":
+      return (
+        <svg
+          className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="m1 9 4-4-4-4"
+          />
+        </svg>
+      );
     case "close":
       return (
         <svg

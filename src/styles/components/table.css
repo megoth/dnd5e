@@ -1,0 +1,24 @@
+.table-container {
+    @apply block overflow-x-auto;
+}
+
+.table {
+    @apply text-sm lg:text-base text-left rtl:text-right shadow border border-gray-200 dark:border-gray-600;
+}
+
+.table a {
+    @apply text-red-600 underline focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
+.table > thead {
+    @apply top-0 text-xs bg-gray-200 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700;
+}
+
+.table th,
+.table td {
+    @apply px-2 py-1 md:px-4 md:py-2;
+}
+
+.table > tbody > tr {
+    @apply bg-gray-50 even:bg-gray-100 dark:bg-gray-700 even:dark:bg-gray-600;
+}

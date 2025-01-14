@@ -35,10 +35,12 @@ module.exports = {
       "error",
       "ignorePackages",
       {
+        "": "never",
         ts: "never",
         tsx: "never",
       },
     ],
+    "import/no-unresolved": ["off"],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/click-events-have-key-events": "off",

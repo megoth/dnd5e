@@ -11,25 +11,40 @@ import WarningMessage from "../warningMessage";
 import { NavLink } from "react-router-dom";
 import { bem } from "../../utils/bem";
 import PageFooter from "../pageFooter";
+import Markdown from "react-markdown";
+import readme from "./README.md?raw";
 
 export default function SplashPage() {
   return (
     <Layout full header={false}>
       <section className="hero">
         <div className="flex-1 flex flex-col justify-center items-center leading-normal bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent relative">
-          <PageHeader className="w-full" pageName="homePageTitle" />
+          <PageHeader className="w-full" />
           <div className="px-4 flex-1 text-center">
             <div className="my-4 px-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded-lg md:rounded-xl max-w-lg shadow-md">
               <Logo />
-              <h1 className="text-3xl xs:text-4xl sm:text-6xl my-2 font-serif font-semibold">
-                <Translation id="appName" />
-              </h1>
-              <p className="my-1 max-w-xl">
-                <Translation id="appPitch" />
-              </p>
-              <WarningMessage>
-                <Translation id="workInProgress" />
-              </WarningMessage>
+              <Content>
+                <h1>
+                  <Translation id="appName" />
+                </h1>
+                <p>
+                  <Translation id="appPitch" />
+                </p>
+                <WarningMessage>
+                  <Translation id="workInProgress" />
+                </WarningMessage>
+                <Markdown>{readme}</Markdown>
+                <p>
+                  Pages of interest: <NavLink to="/classes">classes</NavLink>,{" "}
+                  <NavLink to="/races">races</NavLink>,{" "}
+                  <NavLink to="/spells">spells</NavLink>,{" "}
+                  <NavLink to="/monsters">monsters</NavLink>,{" "}
+                  <NavLink to="/equipment">equipment</NavLink>,{" "}
+                  <NavLink to="/weapons">weapons</NavLink>,{" "}
+                  <NavLink to="/armor">armor</NavLink>, and{" "}
+                  <NavLink to="/rules">rules</NavLink>.
+                </p>
+              </Content>
               <NavLink
                 to="/about"
                 className="link block my-2 max-w-prose text-center"

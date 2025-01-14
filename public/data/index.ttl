@@ -6,7 +6,57 @@
 :dnd5e
     dnd5e_app:coreRulesIndex </data/dnd5e-core.ttl> ;
     dnd5e_app:resourceBundle :globalResources, :adminResources ;
-    dnd5e_app:supportLanguage :locale-en-US, :locale-nb-NO .
+    dnd5e_app:supportLanguage :locale-en-US, :locale-nb-NO ;
+    dnd5e_app:rulesBundle
+        :classesBundle,
+        :equipmentsBundle,
+        :monstersBundle,
+        :racesBundle,
+        :rulesBundle,
+        :spellsBundle .
+
+:classesBundle
+    rdfs:label "classes" ;
+    dnd5e_app:rulesResource
+        </data/classes.ttl>,
+        </data/illustrations.ttl>,
+        </data/subclasses.ttl> .
+
+:equipmentsBundle
+    rdfs:label "equipments" ;
+    dnd5e_app:rulesResource
+        </data/damage-types.ttl>,
+        </data/equipment-categories.ttl>,
+        </data/equipments.ttl>,
+        </data/magic-items.ttl>,
+        </data/weapon-properties.ttl> .
+
+:monstersBundle
+    rdfs:label "monsters" ;
+    dnd5e_app:rulesResource
+        </data/illustrations.ttl>,
+        </data/monsters.ttl> .
+
+:racesBundle
+    rdfs:label "races" ;
+    dnd5e_app:rulesResource
+        </data/illustrations.ttl>,
+        </data/races.ttl>,
+        </data/subraces.ttl> .
+
+:rulesBundle
+    rdfs:label "rules" ;
+    dnd5e_app:rulesResource
+        </data/rules.ttl>,
+        </data/rule-sections.ttl> .
+
+:spellsBundle
+    rdfs:label "spells" ;
+    dnd5e_app:rulesResource
+        </data/classes.ttl>,
+        </data/magic-schools.ttl>,
+        </data/subclasses.ttl>,
+        </data/spells.ttl> .
 
 :locale-en-US
     dnd5e_app:language "en-US" ;
@@ -22,36 +72,28 @@
     dnd5e_app:faqIndex </data/global/faqs.ttl> ;
     dnd5e_app:translationBase </translations/global#> ;
     dnd5e_app:translationsIndex
-        :globalTranslationIndex,
         :globalTranslation_en-US_Index,
         :globalTranslation_nb-NO_Index .
 
-:globalTranslationIndex
-    dnd5e_app:resource </data/global/translations.ttl> .
-
 :globalTranslation_en-US_Index
     dnd5e_app:language "en-US" ;
-    dnd5e_app:resource </data/global/translations.en-US.ttl> .
+    dnd5e_app:translationsResource </data/global/translations.en-US.ttl> .
 
 :globalTranslation_nb-NO_Index
     dnd5e_app:language "nb-NO" ;
-    dnd5e_app:resource </data/global/translations.nb-NO.ttl> .
+    dnd5e_app:translationsResource </data/global/translations.nb-NO.ttl> .
 
 :adminResources
     rdfs:label "admin" ;
     dnd5e_app:translationBase <https://dnd5e.app/translations/admin#> ;
     dnd5e_app:translationsIndex
-        :adminTranslationIndex,
         :adminTranslation_en-US_Index,
         :adminTranslation_nb-NO_Index .
 
-:adminTranslationIndex
-    dnd5e_app:resource </data/admin/translations.ttl> .
-
 :adminTranslation_en-US_Index
     dnd5e_app:language "en-US" ;
-    dnd5e_app:resource </data/admin/translations.en-US.ttl> .
+    dnd5e_app:translationsResource </data/admin/translations.en-US.ttl> .
 
 :adminTranslation_nb-NO_Index
     dnd5e_app:language "nb-NO" ;
-    dnd5e_app:resource </data/admin/translations.nb-NO.ttl> .
+    dnd5e_app:translationsResource </data/admin/translations.nb-NO.ttl> .

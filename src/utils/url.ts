@@ -1,8 +1,8 @@
-export function getPath(url) {
+export function resourceUrl(url: string) {
   return url.split("#")[0];
 }
 
-export function getHash(url) {
+export function hash(url: string) {
   return url.split("#")[1];
 }
 

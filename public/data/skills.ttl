@@ -1,0 +1,72 @@
+<#acrobatics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#acrobatics> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobatics" .
+<#acrobatics> <http://purl.org/dc/terms/description> "Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship's deck. The GM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips." .
+<#acrobatics> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+<#animal-handling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#animal-handling> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Handling" .
+<#animal-handling> <http://purl.org/dc/terms/description> "When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, the GM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver." .
+<#animal-handling> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+<#arcana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#arcana> <http://www.w3.org/2000/01/rdf-schema#label> "Arcana" .
+<#arcana> <http://purl.org/dc/terms/description> "Your Intelligence (Arcana) check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes." .
+<#arcana> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+<#athletics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#athletics> <http://www.w3.org/2000/01/rdf-schema#label> "Athletics" .
+<#athletics> <http://purl.org/dc/terms/description> "Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming." .
+<#athletics> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#str> .
+<#deception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#deception> <http://www.w3.org/2000/01/rdf-schema#label> "Deception" .
+<#deception> <http://purl.org/dc/terms/description> "Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast- talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone's suspicions with false assurances, or maintain a straight face while telling a blatant lie." .
+<#deception> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+<#history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#history> <http://www.w3.org/2000/01/rdf-schema#label> "History" .
+<#history> <http://purl.org/dc/terms/description> "Your Intelligence (History) check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations." .
+<#history> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+<#insight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#insight> <http://www.w3.org/2000/01/rdf-schema#label> "Insight" .
+<#insight> <http://purl.org/dc/terms/description> "Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms." .
+<#insight> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+<#intimidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#intimidation> <http://www.w3.org/2000/01/rdf-schema#label> "Intimidation" .
+<#intimidation> <http://purl.org/dc/terms/description> "When you attempt to influence someone through overt threats, hostile actions, and physical violence, the GM might ask you to make a Charisma (Intimidation) check. Examples include trying to pry information out of a prisoner, convincing street thugs to back down from a confrontation, or using the edge of a broken bottle to convince a sneering vizier to reconsider a decision." .
+<#intimidation> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+<#investigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#investigation> <http://www.w3.org/2000/01/rdf-schema#label> "Investigation" .
+<#investigation> <http://purl.org/dc/terms/description> "When you look around for clues and make deductions based on those clues, you make an Intelligence (Investigation) check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Intelligence (Investigation) check." .
+<#investigation> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+<#medicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#medicine> <http://www.w3.org/2000/01/rdf-schema#label> "Medicine" .
+<#medicine> <http://purl.org/dc/terms/description> "A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness." .
+<#medicine> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+<#nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#nature> <http://www.w3.org/2000/01/rdf-schema#label> "Nature" .
+<#nature> <http://purl.org/dc/terms/description> "Your Intelligence (Nature) check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles." .
+<#nature> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+<#perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#perception> <http://www.w3.org/2000/01/rdf-schema#label> "Perception" .
+<#perception> <http://purl.org/dc/terms/description> "Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door." .
+<#perception> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
+<#performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#performance> <http://www.w3.org/2000/01/rdf-schema#label> "Performance" .
+<#performance> <http://purl.org/dc/terms/description> "Your Charisma (Performance) check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment." .
+<#performance> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+<#persuasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#persuasion> <http://www.w3.org/2000/01/rdf-schema#label> "Persuasion" .
+<#persuasion> <http://purl.org/dc/terms/description> "When you attempt to influence someone or a group of people with tact, social graces, or good nature, the GM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk." .
+<#persuasion> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
+<#religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#religion> <http://www.w3.org/2000/01/rdf-schema#label> "Religion" .
+<#religion> <http://purl.org/dc/terms/description> "Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults." .
+<#religion> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#int> .
+<#sleight-of-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#sleight-of-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Sleight of Hand" .
+<#sleight-of-hand> <http://purl.org/dc/terms/description> "Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check. The GM might also call for a Dexterity (Sleight of Hand) check to determine whether you can lift a coin purse off another person or slip something out of another person's pocket." .
+<#sleight-of-hand> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+<#stealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#stealth> <http://www.w3.org/2000/01/rdf-schema#label> "Stealth" .
+<#stealth> <http://purl.org/dc/terms/description> "Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard." .
+<#stealth> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#dex> .
+<#survival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Skill> .
+<#survival> <http://www.w3.org/2000/01/rdf-schema#label> "Survival" .
+<#survival> <http://purl.org/dc/terms/description> "The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards." .
+<#survival> <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .

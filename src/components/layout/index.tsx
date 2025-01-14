@@ -7,14 +7,22 @@ import SubMenuNav from "../subMenuNav";
 import Session from "../session";
 import useLayout from "../../hooks/useLayout";
 import { bem } from "../../utils/bem";
+import { ScrollRestoration } from "react-router-dom";
 
 export const TESTID_LAYOUT_FADE = "layout-fade";
 export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
 
+function isInsideTable(target: HTMLElement): boolean {
+  return (
+    target.nodeName === "TD" ||
+    target.nodeName === "TH" ||
+    target.classList.contains("table-container")
+  );
+}
+
 interface Props extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;
   header?: boolean;
-  pageName?: string;
   className?: string;
 }
 
@@ -22,7 +30,6 @@ export default function Layout({
   children,
   full = false,
   header = true,
-  pageName,
   className,
   ...props
 }: Props) {
@@ -37,11 +44,13 @@ export default function Layout({
   useEffect(() => setDelayedRightOpen(rightOpen), [rightOpen]);
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => {
+    onSwipedLeft: (eventData) => {
+      if (isInsideTable(eventData.event.target as HTMLElement)) return;
       setRightOpen(!leftOpen);
       setLeftOpen(false);
     },
-    onSwipedRight: () => {
+    onSwipedRight: (eventData) => {
+      if (isInsideTable(eventData.event.target as HTMLElement)) return;
       setLeftOpen(!rightOpen);
       setRightOpen(false);
     },
@@ -60,7 +69,7 @@ export default function Layout({
 
   return (
     <div className="flex-1 flex flex-col relative min-h-full" {...handlers}>
-      {header && <PageHeader pageName={pageName} />}
+      {header && <PageHeader className="flex-grow-0" />}
       {open && (
         <button
           className={bem("layout__fade", modifiers)}
@@ -76,9 +85,18 @@ export default function Layout({
         </button>
       )}
       <div
-        className={bem("main-container", {
-          full,
-        })}
+        className={clsx(
+          bem("main-container", {
+            content: !full,
+            full,
+          }),
+          bem("layout-container", {
+            content: !full,
+            full,
+            ["with-meta"]: rightOpen,
+          }),
+          "flex-grow lg:flex-grow-0",
+        )}
       >
         <div
           className={bem("layout__sidebar", "left", modifiers)}
@@ -90,13 +108,17 @@ export default function Layout({
           <main className={clsx("flex-1", className)} {...props}>
             {children}
           </main>
-          {!full && <PageFooter />}
         </div>
-        <div className={bem("layout__sidebar", "right-fake", modifiers)} />
         <div className={bem("layout__sidebar", "right", modifiers)}>
           <Session />
         </div>
       </div>
+      {!full && (
+        <div className={clsx(bem("main-container", { full }), "flex-grow-0")}>
+          <PageFooter />
+        </div>
+      )}
+      <ScrollRestoration />
     </div>
   );
 }
