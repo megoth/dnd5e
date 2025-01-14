@@ -22,10 +22,10 @@
   @apply lg:grid gap-2;
 }
 @media screen and (min-width: 1024px) {
-  .layout-container--content {
+  .layout-container--content:not(.layout-container--full) {
     grid-template-columns: 256px auto;
   }
-  .layout-container--with-meta {
+  .layout-container--with-meta:not(.layout-container--full) {
     grid-template-columns: 256px auto 256px;
   }
 }

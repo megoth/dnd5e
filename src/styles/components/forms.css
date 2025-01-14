@@ -22,7 +22,8 @@
     @apply ml-1;
 }
 
-.input[type="text"] {
+.input[type="text"],
+.input[type="url"]{
     @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black;
 }
 

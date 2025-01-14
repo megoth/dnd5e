@@ -5,7 +5,7 @@ import ErrorMessage from "../errorMessage";
 import { onIdPSelected } from "../../utils/session";
 import { getRedirectURL } from "../../utils/windowHelpers";
 import { useSolidAuth } from "@ldo/solid-react";
-import { NavLink, useLocation, useSearchParams } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 
 export const TESTID_LOGIN_FORM_IDP_FIELD = "login-form-idp-field";
 export const TESTID_LOGIN_FORM_REMEMBER_CHECKBOX =
@@ -70,7 +70,7 @@ export default function LoginForm({
   return (
     <form
       onSubmit={onSubmit}
-      className={clsx("mt-2 md:mt-0 text-left", className)}
+      className={clsx("text-left", className)}
       {...props}
     >
       <img
