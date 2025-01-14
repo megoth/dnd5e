@@ -384,6 +384,7 @@ export interface Equipment {
   armor?: Armor;
   gear?: Gear;
   equipmentPack?: EquipmentPack;
+  magicItem?: MagicItem;
 }
 
 /**
@@ -543,6 +544,17 @@ export interface LevelSpellcasting {
   spellSlotsLevel7?: number;
   spellSlotsLevel8?: number;
   spellSlotsLevel9?: number;
+}
+
+/**
+ * MagicItem Type
+ */
+export interface MagicItem {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  rarity?: string;
+  magicItemVariants?: MagicItem[];
+  magicItemVariant?: boolean;
 }
 
 /**

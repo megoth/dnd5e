@@ -93,6 +93,8 @@
 :loginPitch skos:definition "Start your adventure with Solid"@en-US .
 :loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
 :logOut skos:definition "Log out"@en-US .
+:magicItem skos:definition "Magic Item"@en-US .
+:magicItems skos:definition "Magic Items"@en-US .
 :martialArts skos:definition "Martial Arts"@en-US .
 :max skos:definition "max"@en-US .
 :modifier skos:definition "Modifier"@en-US .

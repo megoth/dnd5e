@@ -21,6 +21,7 @@ import writeMonsters from "./monsters";
 import writeRuleSections from "./ruleSections";
 import writeRules from "./rules";
 import writeSubraces from "./subraces";
+import writeMagicItems from "./magicItems";
 
 export default async function transformData() {
   return Promise.all([
@@ -36,6 +37,7 @@ export default async function transformData() {
     writeLanguages(),
     writeMagicSchools(),
     writeLevels(),
+    writeMagicItems(),
     writeMonsters(),
     writeProficiencies(),
     writeRaces(),

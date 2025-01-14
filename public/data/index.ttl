@@ -28,6 +28,7 @@
         </data/damage-types.ttl>,
         </data/equipment-categories.ttl>,
         </data/equipments.ttl>,
+        </data/magic-items.ttl>,
         </data/weapon-properties.ttl> .
 
 :monstersBundle

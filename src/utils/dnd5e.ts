@@ -169,8 +169,8 @@ export function classResourceUrls(classInfo: Class): string[] {
   ];
 }
 
-export function cost(cost: Cost): string {
-  return `${cost.quantity} ${cost.unit}`;
+export function cost(cost?: Cost): string {
+  return cost ? `${cost.quantity} ${cost.unit}` : "-";
 }
 
 export function damage(damage: Damage): string {
@@ -207,7 +207,12 @@ export function description(texts: string[]): string {
 }
 
 export function equipmentResourceUrls(equipment: Equipment): string[] {
-  return [resourceUrl(equipment.equipmentCategory["@id"])];
+  return [
+    resourceUrl(equipment.equipmentCategory["@id"]),
+    ...equipment.magicItem.magicItemVariants.map((variant) =>
+      resourceUrl(variant["@id"]),
+    ),
+  ];
 }
 
 export function highestSpellLevel(level: Level): number {

@@ -37,12 +37,16 @@ export function getPages(_: string, _2: boolean): Array<Page> {
       translationId: "equipmentPageTitle",
       children: [
         {
-          href: "/weapons",
-          translationId: "weapons",
-        },
-        {
           href: "/armor",
           translationId: "armor",
+        },
+        {
+          href: "/magic-items",
+          translationId: "magicItems",
+        },
+        {
+          href: "/weapons",
+          translationId: "weapons",
         },
       ],
     },

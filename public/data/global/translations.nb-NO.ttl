@@ -94,6 +94,8 @@
 :loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 :loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
 :logOut skos:definition "Logg ut"@nb-NO .
+:magicItem skos:definition "Magisk gjenstand"@nb-NO .
+:magicItems skos:definition "Magiske gjenstander"@nb-NO .
 :martialArts skos:definition "Kampkunst"@nb-NO .
 :max skos:definition "maks"@nb-NO .
 :modifier skos:definition "Modifikator"@nb-NO .

@@ -1526,6 +1526,13 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#magicItem",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MagicItem",
+              min: 0,
+              max: 1,
+            },
           ],
         },
       },
@@ -2148,6 +2155,45 @@ export const dnd5eSchema: Schema = {
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#integer",
+              },
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#MagicItem",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#rarity",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#magicItemVariants",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MagicItem",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#magicItemVariant",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#boolean",
               },
               min: 0,
               max: 1,

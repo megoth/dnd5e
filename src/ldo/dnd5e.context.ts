@@ -427,6 +427,23 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#item",
     "@type": "@id",
   },
+  magicItem: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicItem",
+    "@type": "@id",
+  },
+  rarity: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#rarity",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  magicItemVariants: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicItemVariants",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  magicItemVariant: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#magicItemVariant",
+    "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+  },
   damageOptions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#damageOptions",
     "@type": "@id",

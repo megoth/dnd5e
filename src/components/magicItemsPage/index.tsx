@@ -13,18 +13,19 @@ import { NavLink, useSearchParams } from "react-router-dom";
 import { first, removeDuplicates } from "../../utils/array";
 import useMergeQuery from "../../hooks/useMergeQuery";
 import useReduceQuery from "../../hooks/useReduceQuery";
-import { cost } from "../../utils/dnd5e";
+import Breadcrumbs from "../breadcrumbs";
 
-export default function EquipmentIndexPage() {
+export default function MagicItemsPage() {
   const { isLoading: equipmentsLoading, items: equipments } = useListOfType(
     EquipmentShapeType,
     "equipments",
     "Equipment",
   );
+  const magicItems = equipments.filter((equipment) => equipment.magicItem);
   const categoryIds = useMemo(
     () =>
       removeDuplicates(
-        equipments.map((equipment) => equipment.equipmentCategory["@id"]),
+        magicItems.map((equipment) => equipment.equipmentCategory["@id"]),
       ),
     [equipments],
   );
@@ -34,6 +35,7 @@ export default function EquipmentIndexPage() {
     "equipments",
     "EquipmentCategory",
   );
+
   const [searchParams] = useSearchParams();
   const categoryFilter = first(searchParams.get("category"));
   const categoryFilterDecoded = categoryFilter && atob(categoryFilter);
@@ -45,10 +47,10 @@ export default function EquipmentIndexPage() {
     return <Loading />;
   }
 
-  const filteredEquipment = equipments
-    .filter((equipment) =>
+  const filteredItems = magicItems
+    .filter((item) =>
       categoryFilterDecoded
-        ? equipment.equipmentCategory["@id"] === categoryFilterDecoded
+        ? item.equipmentCategory["@id"] === categoryFilterDecoded
         : true,
     )
     .sort((a, b) => (a.label > b.label ? 1 : -1));
@@ -56,9 +58,15 @@ export default function EquipmentIndexPage() {
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      <Breadcrumbs
+        crumbs={[
+          { href: "/equipment", translationId: "equipment" },
+          { translationId: "magicItems" },
+        ]}
+      />
       <Content>
         <h1>
-          <Translation id="equipmentPageTitle" /> ({filteredEquipment.length})
+          <Translation id="magicItems" /> ({filteredItems.length})
         </h1>
         <dl className="filter-list">
           <dt>
@@ -69,17 +77,14 @@ export default function EquipmentIndexPage() {
               .filter((category) => categoryIds.indexOf(category["@id"]) !== -1)
               .sort((a, b) => (a.label > b.label ? 1 : -1))
               .map((category) => {
-                const active =
-                  categoryFilter && categoryFilterDecoded === category["@id"];
+                const active = category["@id"] === categoryFilterDecoded;
                 return (
                   <NavLink
                     key={category["@id"]}
                     to={
                       active
                         ? reduceQuery("category")
-                        : mergeQuery({
-                            category: btoa(category["@id"]),
-                          })
+                        : mergeQuery({ category: btoa(category["@id"]) })
                     }
                     aria-selected={active}
                   >
@@ -97,43 +102,18 @@ export default function EquipmentIndexPage() {
                   <Translation id="name" />
                 </th>
                 <th scope="col">
-                  <Translation id="cost" />
-                </th>
-                <th scope="col">
                   <Translation id="category" />
                 </th>
               </tr>
             </thead>
             <tbody>
-              {filteredEquipment.map((equipment) => (
-                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
+              {filteredItems.map((equipment) => (
+                <tr key={equipment["@id"]}>
                   <td>
-                    {equipment.armor && (
-                      <NavLink to={`/armor/${btoa(equipment["@id"])}`}>
-                        {equipment.label}
-                      </NavLink>
-                    )}
-                    {equipment.magicItem && (
-                      <NavLink to={`/magic-items/${btoa(equipment["@id"])}`}>
-                        {equipment.label}
-                      </NavLink>
-                    )}
-                    {equipment.weapon && (
-                      <NavLink to={`/weapons/${btoa(equipment["@id"])}`}>
-                        {equipment.label}
-                      </NavLink>
-                    )}
-                    {!(
-                      equipment.armor ||
-                      equipment.weapon ||
-                      equipment.magicItem
-                    ) && (
-                      <NavLink to={`/equipment/${btoa(equipment["@id"])}`}>
-                        {equipment.label}
-                      </NavLink>
-                    )}
+                    <NavLink to={`/magic-items/${btoa(equipment["@id"])}`}>
+                      {equipment.label}
+                    </NavLink>
                   </td>
-                  <td className="whitespace-nowrap">{cost(equipment.cost)}</td>
                   <td>{equipment.equipmentCategory.label}</td>
                 </tr>
               ))}

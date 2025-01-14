@@ -70,7 +70,7 @@ export default function useSearch() {
     (equipment) =>
       !search.has(equipment["@id"]) &&
       (() => {
-        if (!equipment.armor || !equipment.weapon) {
+        if (!equipment.armor && !equipment.weapon && !equipment.magicItem) {
           search.add({
             id: equipment["@id"],
             type: "equipment",
@@ -79,22 +79,31 @@ export default function useSearch() {
             url: `/equipment/${btoa(equipment["@id"])}`,
           });
         }
-        if (equipment.weapon) {
-          search.add({
-            id: `${equipment["@id"]}-weapon`,
-            type: "weapon",
-            title: equipment.label,
-            text: equipment.description,
-            url: `/weapons/${btoa(equipment["@id"])}`,
-          });
-        }
         if (equipment.armor) {
           search.add({
-            id: `${equipment["@id"]}-armor`,
+            id: equipment["@id"],
             type: "armor",
             title: equipment.label,
             text: equipment.description,
             url: `/armor/${btoa(equipment["@id"])}`,
+          });
+        }
+        if (equipment.magicItem) {
+          search.add({
+            id: equipment["@id"],
+            type: "magicItem",
+            title: equipment.label,
+            text: equipment.description,
+            url: `/magic-items/${btoa(equipment["@id"])}`,
+          });
+        }
+        if (equipment.weapon) {
+          search.add({
+            id: equipment["@id"],
+            type: "weapon",
+            title: equipment.label,
+            text: equipment.description,
+            url: `/weapons/${btoa(equipment["@id"])}`,
           });
         }
       })(),

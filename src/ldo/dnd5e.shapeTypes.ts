@@ -44,6 +44,7 @@ import {
   Language,
   Level,
   LevelSpellcasting,
+  MagicItem,
   MagicSchool,
   Monster,
   MonsterAbility,
@@ -475,6 +476,15 @@ export const LevelShapeType: ShapeType<Level> = {
 export const LevelSpellcastingShapeType: ShapeType<LevelSpellcasting> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#LevelSpellcasting",
+  context: dnd5eContext,
+};
+
+/**
+ * MagicItem ShapeType
+ */
+export const MagicItemShapeType: ShapeType<MagicItem> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#MagicItem",
   context: dnd5eContext,
 };
 

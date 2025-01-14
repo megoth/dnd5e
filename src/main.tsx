@@ -36,6 +36,8 @@ import ArmorSinglePage from "./components/armorSinglePage";
 import EquipmentSinglePage from "./components/equipmentSinglePage";
 import SubclassesPage from "./components/subclassesPage";
 import SubracesPage from "./components/subracesPage";
+import MagicItemsPage from "./components/magicItemsPage";
+import MagicItemPage from "./components/MagicItemPage";
 
 const router = createBrowserRouter([
   {
@@ -125,6 +127,14 @@ const router = createBrowserRouter([
       {
         path: "/equipment/:url",
         element: <EquipmentSinglePage />,
+      },
+      {
+        path: "/magic-items",
+        element: <MagicItemsPage />,
+      },
+      {
+        path: "/magic-items/:url",
+        element: <MagicItemPage />,
       },
       {
         path: "/monsters",
