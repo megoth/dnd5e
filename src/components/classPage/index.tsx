@@ -51,8 +51,12 @@ export default function ClassPage() {
     },
   );
 
-  if (isLoading || !classInfo?.["@id"]) {
-    return <Loading />;
+  if (!classInfo?.["@id"]) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -64,31 +68,36 @@ export default function ClassPage() {
           { text: classInfo.label },
         ]}
       />
-      {classInfo.illustration && (
+      {!isLoading && classInfo.illustration && (
         <Illustration subject={classInfo.illustration} />
       )}
       <Content>
         <h1>{classInfo.label}</h1>
-        <ClassPageMulticlassing classInfo={classInfo} />
-        {classInfo.description && (
-          <Markdown>{description(classInfo.description)}</Markdown>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <>
+            <ClassPageMulticlassing classInfo={classInfo} />
+            {classInfo.description && (
+              <Markdown>{description(classInfo.description)}</Markdown>
+            )}
+            <ClassPageLevels classInfo={classInfo} />
+            <h2>
+              <Translation id="classFeatures" />
+            </h2>
+            <p>
+              <Translation
+                id="classFeaturesDescription"
+                vars={{ className: classInfo.label }}
+              />
+            </p>
+            <ClassPageHitPoints classInfo={classInfo} />
+            <ClassPageProficiencies classInfo={classInfo} />
+            <ClassPageEquipment classInfo={classInfo} />
+            <ClassPageFeatures classInfo={classInfo} />
+          </>
         )}
-        <ClassPageLevels classInfo={classInfo} />
-        <h2>
-          <Translation id="classFeatures" />
-        </h2>
-        <p>
-          <Translation
-            id="classFeaturesDescription"
-            vars={{ className: classInfo.label }}
-          />
-        </p>
-        <ClassPageHitPoints classInfo={classInfo} />
-        <ClassPageProficiencies classInfo={classInfo} />
-        <ClassPageEquipment classInfo={classInfo} />
-        <ClassPageFeatures classInfo={classInfo} />
       </Content>
-      {classInfo.subclasses.length > 0 && (
+      {!isLoading && classInfo.subclasses.length > 0 && (
         <>
           <Content>
             <h2>
