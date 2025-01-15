@@ -23,7 +23,7 @@ export default function PageHeader({ className, ...props }: Props) {
   return (
     <header
       className={clsx(
-        "mb-2 shadow-md sticky top-0 lg:relative z-0 bg-white dark:bg-gray-800",
+        "mb-2 shadow-md sticky top-0 lg:relative z-10 bg-white dark:bg-gray-800",
         className,
       )}
       {...props}
