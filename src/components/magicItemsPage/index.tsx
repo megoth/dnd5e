@@ -43,9 +43,7 @@ export default function MagicItemsPage() {
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
 
-  if (equipmentsLoading || categoriesLoading) {
-    return <Loading />;
-  }
+  const isLoading = equipmentsLoading || categoriesLoading;
 
   const filteredItems = magicItems
     .filter((item) =>
@@ -68,58 +66,65 @@ export default function MagicItemsPage() {
         <h1>
           <Translation id="magicItems" /> ({filteredItems.length})
         </h1>
-        <dl className="filter-list">
-          <dt>
-            <Translation id="category" />
-          </dt>
-          <dd>
-            {categories
-              .filter((category) => categoryIds.indexOf(category["@id"]) !== -1)
-              .sort((a, b) => (a.label > b.label ? 1 : -1))
-              .map((category) => {
-                const active = category["@id"] === categoryFilterDecoded;
-                return (
-                  <NavLink
-                    key={category["@id"]}
-                    to={
-                      active
-                        ? reduceQuery("category")
-                        : mergeQuery({ category: btoa(category["@id"]) })
-                    }
-                    aria-selected={active}
-                  >
-                    {category.label}
-                  </NavLink>
-                );
-              })}
-          </dd>
-        </dl>
-        <div className="table-container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">
-                  <Translation id="name" />
-                </th>
-                <th scope="col">
-                  <Translation id="category" />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredItems.map((equipment) => (
-                <tr key={equipment["@id"]}>
-                  <td>
-                    <NavLink to={`/magic-items/${btoa(equipment["@id"])}`}>
-                      {equipment.label}
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <dl className="filter-list">
+            <dt>
+              <Translation id="category" />
+            </dt>
+            <dd>
+              {categories
+                .filter(
+                  (category) => categoryIds.indexOf(category["@id"]) !== -1,
+                )
+                .sort((a, b) => (a.label > b.label ? 1 : -1))
+                .map((category) => {
+                  const active = category["@id"] === categoryFilterDecoded;
+                  return (
+                    <NavLink
+                      key={category["@id"]}
+                      to={
+                        active
+                          ? reduceQuery("category")
+                          : mergeQuery({ category: btoa(category["@id"]) })
+                      }
+                      aria-selected={active}
+                    >
+                      {category.label}
                     </NavLink>
-                  </td>
-                  <td>{equipment.equipmentCategory.label}</td>
+                  );
+                })}
+            </dd>
+          </dl>
+        )}
+        {!isLoading && (
+          <div className="table-container">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <Translation id="name" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="category" />
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredItems.map((equipment) => (
+                  <tr key={equipment["@id"]}>
+                    <td>
+                      <NavLink to={`/magic-items/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    </td>
+                    <td>{equipment.equipmentCategory.label}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Content>
     </Layout>
   );

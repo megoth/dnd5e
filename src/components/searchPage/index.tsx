@@ -9,6 +9,7 @@ import { type SearchResult, type Suggestion } from "minisearch";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { description } from "../../utils/dnd5e";
+import Loading from "../loading";
 
 export default function SearchPage() {
   const { isLoading, search } = useSearch();
@@ -31,7 +32,8 @@ export default function SearchPage() {
         <h1>
           <Translation id="search" />
         </h1>
-        {suggestions.length > 0 && (
+        {isLoading && <Loading />}
+        {!isLoading && suggestions.length > 0 && (
           <p>
             <Translation id={"suggestions"} />
             :&nbsp;
@@ -44,8 +46,8 @@ export default function SearchPage() {
           </p>
         )}
       </Content>
-      {results.length === 0 && <Translation id="noResults" />}
-      {results.length > 0 && (
+      {!isLoading && results.length === 0 && <Translation id="noResults" />}
+      {!isLoading && results.length > 0 && (
         <ul>
           {results.map(({ id, title, text, type, url }) => (
             <li key={`${type}-${id}`}>

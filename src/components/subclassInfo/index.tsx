@@ -7,6 +7,7 @@ import { Subclass } from "../../ldo/dnd5e.typings";
 
 interface Props {
   subclass: Subclass;
+  isLoading?: boolean;
 }
 
 export default function SubclassInfo({ subclass }: Props) {

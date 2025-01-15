@@ -22,10 +22,6 @@ export default function ClassesPage() {
     "Class",
   );
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -33,45 +29,48 @@ export default function ClassesPage() {
         <h1>
           <Translation id="classesPageTitle" /> ({classes.length})
         </h1>
+        {isLoading && <Loading />}
       </Content>
-      <ul className="cards">
-        {classes
-          .sort((a, b) => (a.label > b.label ? 1 : -1))
-          .map((classInfo) => (
-            <li
-              key={classInfo["@id"]}
-              className={bem("card", "clickable")}
-              onClick={(event) => {
-                if ((event.target as HTMLElement).nodeName === "A") return;
-                return navigate(`/classes/${btoa(classInfo["@id"])}`);
-              }}
-            >
-              <Content>
-                {classInfo.illustration ? (
-                  <Illustration
-                    className="card__media"
-                    subject={classInfo.illustration}
-                    modifier="compact"
-                  />
-                ) : (
-                  <Logo className="card__media hidden md:block" />
-                )}
-              </Content>
-              <div className="card__content">
-                <h2 className="card__title">
-                  <NavLink to={`/classes/${btoa(classInfo["@id"])}`}>
-                    {classInfo.label}
-                  </NavLink>
-                </h2>
-                {classInfo.description && (
-                  <Content>
-                    <Markdown>{description(classInfo.description)}</Markdown>
-                  </Content>
-                )}
-              </div>
-            </li>
-          ))}
-      </ul>
+      {!isLoading && (
+        <ul className="cards">
+          {classes
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((classInfo) => (
+              <li
+                key={classInfo["@id"]}
+                className={bem("card", "clickable")}
+                onClick={(event) => {
+                  if ((event.target as HTMLElement).nodeName === "A") return;
+                  return navigate(`/classes/${btoa(classInfo["@id"])}`);
+                }}
+              >
+                <Content>
+                  {classInfo.illustration ? (
+                    <Illustration
+                      className="card__media"
+                      subject={classInfo.illustration}
+                      modifier="compact"
+                    />
+                  ) : (
+                    <Logo className="card__media hidden md:block" />
+                  )}
+                </Content>
+                <div className="card__content">
+                  <h2 className="card__title">
+                    <NavLink to={`/classes/${btoa(classInfo["@id"])}`}>
+                      {classInfo.label}
+                    </NavLink>
+                  </h2>
+                  {classInfo.description && (
+                    <Content>
+                      <Markdown>{description(classInfo.description)}</Markdown>
+                    </Content>
+                  )}
+                </div>
+              </li>
+            ))}
+        </ul>
+      )}
     </Layout>
   );
 }

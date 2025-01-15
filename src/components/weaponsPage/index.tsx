@@ -50,9 +50,7 @@ export default function WeaponsPage() {
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
 
-  if (equipmentsLoading || propertiesLoading) {
-    return <Loading />;
-  }
+  const isLoading = equipmentsLoading || propertiesLoading;
 
   const filteredWeapons = weapons
     .filter(
@@ -82,114 +80,125 @@ export default function WeaponsPage() {
         <h1>
           <Translation id="weapons" /> ({filteredWeapons.length})
         </h1>
-        <dl className="filter-list">
-          <dt>
-            <Translation id="range" />
-          </dt>
-          <dd>
-            {ranges.map((range) => {
-              const active = rangeFilter === range;
-              return (
-                <NavLink
-                  key={range}
-                  to={active ? reduceQuery("range") : mergeQuery({ range })}
-                  aria-selected={active}
-                >
-                  {range}
-                </NavLink>
-              );
-            })}
-          </dd>
-          <dt>
-            <Translation id="category" />
-          </dt>
-          <dd>
-            {categories.map((category) => {
-              const active = categoryFilter === category;
-              return (
-                <NavLink
-                  key={category}
-                  to={
-                    active ? reduceQuery("category") : mergeQuery({ category })
-                  }
-                  aria-selected={active}
-                >
-                  {category}
-                </NavLink>
-              );
-            })}
-          </dd>
-          <dt>
-            <Translation id="properties" />
-          </dt>
-          <dd>
-            {properties
-              .filter((property) => propertyIds.indexOf(property["@id"]) !== -1)
-              .map((property) => {
-                const active = propertyFilterDecoded === property["@id"];
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <dl className="filter-list">
+            <dt>
+              <Translation id="range" />
+            </dt>
+            <dd>
+              {ranges.map((range) => {
+                const active = rangeFilter === range;
                 return (
                   <NavLink
-                    key={property["@id"]}
-                    to={
-                      active
-                        ? reduceQuery("property")
-                        : mergeQuery({ property: btoa(property["@id"]) })
-                    }
+                    key={range}
+                    to={active ? reduceQuery("range") : mergeQuery({ range })}
                     aria-selected={active}
                   >
-                    {property.label}
+                    {range}
                   </NavLink>
                 );
               })}
-          </dd>
-        </dl>
-        <div className="table-container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">
-                  <Translation id="name" />
-                </th>
-                <th scope="col">
-                  <Translation id="cost" />
-                </th>
-                <th scope="col">
-                  <Translation id="damage" />
-                </th>
-                <th scope="col">
-                  <Translation id="weight" />
-                </th>
-                <th scope="col">
-                  <Translation id="properties" />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredWeapons.map((equipment) => (
-                <tr key={equipment["@id"]}>
-                  <td>
-                    <NavLink to={`/weapons/${btoa(equipment["@id"])}`}>
-                      {equipment.label}
+            </dd>
+            <dt>
+              <Translation id="category" />
+            </dt>
+            <dd>
+              {categories.map((category) => {
+                const active = categoryFilter === category;
+                return (
+                  <NavLink
+                    key={category}
+                    to={
+                      active
+                        ? reduceQuery("category")
+                        : mergeQuery({ category })
+                    }
+                    aria-selected={active}
+                  >
+                    {category}
+                  </NavLink>
+                );
+              })}
+            </dd>
+            <dt>
+              <Translation id="properties" />
+            </dt>
+            <dd>
+              {properties
+                .filter(
+                  (property) => propertyIds.indexOf(property["@id"]) !== -1,
+                )
+                .map((property) => {
+                  const active = propertyFilterDecoded === property["@id"];
+                  return (
+                    <NavLink
+                      key={property["@id"]}
+                      to={
+                        active
+                          ? reduceQuery("property")
+                          : mergeQuery({ property: btoa(property["@id"]) })
+                      }
+                      aria-selected={active}
+                    >
+                      {property.label}
                     </NavLink>
-                  </td>
-                  <td className="whitespace-nowrap">{cost(equipment.cost)}</td>
-                  <td className="whitespace-nowrap">
-                    {equipment.weapon.damage?.dice}{" "}
-                    {equipment.weapon.damage?.damageType.label}
-                  </td>
-                  <td className="whitespace-nowrap">
-                    {weight(equipment.weapon.weight)}
-                  </td>
-                  <td>
-                    {equipment.weapon.properties
-                      .map((property) => property.label)
-                      .join(", ")}
-                  </td>
+                  );
+                })}
+            </dd>
+          </dl>
+        )}
+        {!isLoading && (
+          <div className="table-container">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <Translation id="name" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="cost" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="damage" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="weight" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="properties" />
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredWeapons.map((equipment) => (
+                  <tr key={equipment["@id"]}>
+                    <td>
+                      <NavLink to={`/weapons/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {cost(equipment.cost)}
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {equipment.weapon.damage?.dice}{" "}
+                      {equipment.weapon.damage?.damageType.label}
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {weight(equipment.weapon.weight)}
+                    </td>
+                    <td>
+                      {equipment.weapon.properties
+                        .map((property) => property.label)
+                        .join(", ")}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Content>
     </Layout>
   );

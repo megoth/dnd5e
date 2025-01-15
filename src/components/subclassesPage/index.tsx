@@ -23,10 +23,6 @@ export default function SubclassesPage() {
     "Subclass",
   );
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -40,49 +36,52 @@ export default function SubclassesPage() {
         <h1>
           <Translation id="subclasses" /> ({subclasses.length})
         </h1>
+        {isLoading && <Loading />}
       </Content>
-      <ul className="cards">
-        {subclasses
-          .sort((a, b) => (a.label > b.label ? 1 : -1))
-          .map((subclass) => (
-            <li
-              key={subclass["@id"]}
-              className={bem("card", "clickable")}
-              onClick={(event) => {
-                if ((event.target as HTMLElement).nodeName === "A") return;
-                return navigate(
-                  `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
-                );
-              }}
-            >
-              <Content>
-                {subclass.illustration ? (
-                  <Illustration
-                    className="card__media"
-                    subject={subclass.illustration}
-                    modifier="compact"
-                  />
-                ) : (
-                  <Logo className="card__media hidden md:block" />
-                )}
-              </Content>
-              <div className="card__content">
-                <h2 className="card__title">
-                  <NavLink
-                    to={`/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`}
-                  >
-                    {subclass.label}
-                  </NavLink>
-                </h2>
-                {subclass.description && (
-                  <Content>
-                    <Markdown>{description(subclass.description)}</Markdown>
-                  </Content>
-                )}
-              </div>
-            </li>
-          ))}
-      </ul>
+      {!isLoading && (
+        <ul className="cards">
+          {subclasses
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((subclass) => (
+              <li
+                key={subclass["@id"]}
+                className={bem("card", "clickable")}
+                onClick={(event) => {
+                  if ((event.target as HTMLElement).nodeName === "A") return;
+                  return navigate(
+                    `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
+                  );
+                }}
+              >
+                <Content>
+                  {subclass.illustration ? (
+                    <Illustration
+                      className="card__media"
+                      subject={subclass.illustration}
+                      modifier="compact"
+                    />
+                  ) : (
+                    <Logo className="card__media hidden md:block" />
+                  )}
+                </Content>
+                <div className="card__content">
+                  <h2 className="card__title">
+                    <NavLink
+                      to={`/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`}
+                    >
+                      {subclass.label}
+                    </NavLink>
+                  </h2>
+                  {subclass.description && (
+                    <Content>
+                      <Markdown>{description(subclass.description)}</Markdown>
+                    </Content>
+                  )}
+                </div>
+              </li>
+            ))}
+        </ul>
+      )}
     </Layout>
   );
 }

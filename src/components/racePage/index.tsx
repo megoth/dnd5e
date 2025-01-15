@@ -40,8 +40,12 @@ export default function RacePage() {
     },
   );
 
-  if (isLoading || !race) {
-    return <Loading />;
+  if (!race) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -53,67 +57,72 @@ export default function RacePage() {
           { text: race.label },
         ]}
       />
-      {race.illustration && <Illustration subject={race.illustration} />}
+      {!isLoading && race.illustration && (
+        <Illustration subject={race.illustration} />
+      )}
       <Content>
         <h1>{race.label}</h1>
-        {race.description && (
+        {isLoading && <Loading />}
+        {!isLoading && race.description && (
           <Markdown>{description(race.description)}</Markdown>
         )}
-        <dl className="data-list">
-          <dt>
-            <Translation id="abilityBonuses" />
-          </dt>
-          <dd>
-            {race.abilityBonuses.map((bonus, index) => (
-              <span key={bonus.abilityScore["@id"]} className="inline-block">
-                +{bonus.bonus} {bonus.abilityScore.label}
-                {index !== race.abilityBonuses.length - 1 && ","}
-                &nbsp;
-              </span>
+        {!isLoading && (
+          <dl className="data-list">
+            <dt>
+              <Translation id="abilityBonuses" />
+            </dt>
+            <dd>
+              {race.abilityBonuses.map((bonus, index) => (
+                <span key={bonus.abilityScore["@id"]} className="inline-block">
+                  +{bonus.bonus} {bonus.abilityScore.label}
+                  {index !== race.abilityBonuses.length - 1 && ","}
+                  &nbsp;
+                </span>
+              ))}
+            </dd>
+            {race.age && (
+              <>
+                <dt>
+                  <Translation id="age" />
+                </dt>
+                <dd>{race.age}</dd>
+              </>
+            )}
+            {race.alignmentDescription && (
+              <>
+                <dt>
+                  <Translation id="alignment" />
+                </dt>
+                <dd>{race.alignmentDescription}</dd>
+              </>
+            )}
+            <dt>
+              <Translation id="size" />
+            </dt>
+            <dd>{race.sizeDescription || race.size}</dd>
+            <dt>
+              <Translation id="speed" />
+            </dt>
+            <dd>{race.speed}ft</dd>
+            {race.traits.map((trait) => (
+              <Fragment key={trait["@id"]}>
+                <dt>{trait.label}</dt>
+                <dd>
+                  <Markdown>{description(trait.description)}</Markdown>
+                </dd>
+              </Fragment>
             ))}
-          </dd>
-          {race.age && (
-            <>
-              <dt>
-                <Translation id="age" />
-              </dt>
-              <dd>{race.age}</dd>
-            </>
-          )}
-          {race.alignmentDescription && (
-            <>
-              <dt>
-                <Translation id="alignment" />
-              </dt>
-              <dd>{race.alignmentDescription}</dd>
-            </>
-          )}
-          <dt>
-            <Translation id="size" />
-          </dt>
-          <dd>{race.sizeDescription || race.size}</dd>
-          <dt>
-            <Translation id="speed" />
-          </dt>
-          <dd>{race.speed}ft</dd>
-          {race.traits.map((trait) => (
-            <Fragment key={trait["@id"]}>
-              <dt>{trait.label}</dt>
-              <dd>
-                <Markdown>{description(trait.description)}</Markdown>
-              </dd>
-            </Fragment>
-          ))}
-          <dt>
-            <Translation id="languages" />
-          </dt>
-          <dd>
-            {race.languageDescription ||
-              race.languages.map((language) => language.label).join(", ")}
-          </dd>
-        </dl>
+            <dt>
+              <Translation id="languages" />
+            </dt>
+            <dd>
+              {race.languageDescription ||
+                race.languages.map((language) => language.label).join(", ")}
+            </dd>
+          </dl>
+        )}
       </Content>
-      {race.subraces.length > 0 && (
+      {!isLoading && race.subraces.length > 0 && (
         <>
           <Content>
             <h2>

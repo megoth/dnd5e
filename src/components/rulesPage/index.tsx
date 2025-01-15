@@ -18,10 +18,6 @@ export default function RulesPage() {
     "Rule",
   );
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -30,38 +26,45 @@ export default function RulesPage() {
           <Translation id="rulesPageTitle" /> (
           {rules.length + rules.flatMap((rule) => rule.ruleSections).length})
         </h1>
-        <ol>
-          {rules.map((rule) => (
-            <li key={`toc-${rule["@id"]}`}>
-              <NavLink to={`/rules#${btoa(rule["@id"])}`}>{rule.label}</NavLink>
-              {rule.ruleSections && (
-                <ol>
-                  {rule.ruleSections.map((section) => (
-                    <li key={`toc-${section["@id"]}`}>
-                      <NavLink to={`/rules#${btoa(section["@id"])}`}>
-                        {section.label}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ol>
-              )}
-            </li>
-          ))}
-        </ol>
-        {rules.map((rule) => (
-          <div key={rule["@id"]} id={btoa(rule["@id"])}>
-            <Markdown remarkPlugins={[remarkGfm]}>
-              {description(rule.description)}
-            </Markdown>
-            {rule.ruleSections.map((section) => (
-              <div key={section["@id"]} id={btoa(section["@id"])}>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <>
+            <ol>
+              {rules.map((rule) => (
+                <li key={`toc-${rule["@id"]}`}>
+                  <NavLink to={`/rules#${btoa(rule["@id"])}`}>
+                    {rule.label}
+                  </NavLink>
+                  {rule.ruleSections && (
+                    <ol>
+                      {rule.ruleSections.map((section) => (
+                        <li key={`toc-${section["@id"]}`}>
+                          <NavLink to={`/rules#${btoa(section["@id"])}`}>
+                            {section.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                </li>
+              ))}
+            </ol>
+            {rules.map((rule) => (
+              <div key={rule["@id"]} id={btoa(rule["@id"])}>
                 <Markdown remarkPlugins={[remarkGfm]}>
-                  {description(section.description)}
+                  {description(rule.description)}
                 </Markdown>
+                {rule.ruleSections.map((section) => (
+                  <div key={section["@id"]} id={btoa(section["@id"])}>
+                    <Markdown remarkPlugins={[remarkGfm]}>
+                      {description(section.description)}
+                    </Markdown>
+                  </div>
+                ))}
               </div>
             ))}
-          </div>
-        ))}
+          </>
+        )}
       </Content>
     </Layout>
   );

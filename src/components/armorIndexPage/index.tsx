@@ -35,10 +35,6 @@ export default function ArmorIndexPage() {
 
   const { l10n } = useLocalization();
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   const filteredArmor = armor.filter((equipment) =>
     categoryFilter ? equipment.armor.armorCategory === categoryFilter : true,
   );
@@ -56,81 +52,86 @@ export default function ArmorIndexPage() {
         <h1>
           <Translation id="armor" /> ({filteredArmor.length})
         </h1>
-        <dl className="filter-list">
-          <dt>
-            <Translation id="category" />
-          </dt>
-          <dd>
-            {categories.map((category) => {
-              const active = categoryFilter && categoryFilter === category;
-              return (
-                <NavLink
-                  key={category}
-                  to={
-                    active
-                      ? reduceQuery("category")
-                      : mergeQuery({
-                          category,
-                        })
-                  }
-                  aria-selected={active}
-                >
-                  {category}
-                </NavLink>
-              );
-            })}
-          </dd>
-        </dl>
-        <div className="table-container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">
-                  <Translation id="name" />
-                </th>
-                <th scope="col">
-                  <Translation id="armorClass" />
-                </th>
-                <th scope="col">
-                  <Translation id="strength" />
-                </th>
-                <th scope="col">
-                  <Translation id="stealth" />
-                </th>
-                <th scope="col">
-                  <Translation id="weight" />
-                </th>
-                <th scope="col">
-                  <Translation id="cost" />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredArmor.map((equipment) => (
-                <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
-                  <td>
-                    <NavLink to={`/armor/${btoa(equipment["@id"])}`}>
-                      {equipment.label}
-                    </NavLink>
-                  </td>
-                  <td className="whitespace-nowrap">
-                    {armorClass(equipment.armor.armorClass, l10n)}
-                  </td>
-                  <td>{parseNumber(equipment.armor.strMinimum)}</td>
-                  <td>
-                    {equipment.armor.stealthDisadvantage && (
-                      <Translation id="disadvantage" />
-                    )}
-                  </td>
-                  <td>{equipment.armor.weight} lb.</td>
-                  <td className="whitespace-nowrap">
-                    {equipment.cost.quantity} {equipment.cost.unit}
-                  </td>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <dl className="filter-list">
+            <dt>
+              <Translation id="category" />
+            </dt>
+            <dd>
+              {categories.map((category) => {
+                const active = categoryFilter && categoryFilter === category;
+                return (
+                  <NavLink
+                    key={category}
+                    to={
+                      active
+                        ? reduceQuery("category")
+                        : mergeQuery({
+                            category,
+                          })
+                    }
+                    aria-selected={active}
+                  >
+                    {category}
+                  </NavLink>
+                );
+              })}
+            </dd>
+          </dl>
+        )}
+        {!isLoading && (
+          <div className="table-container">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <Translation id="name" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="armorClass" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="strength" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="stealth" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="weight" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="cost" />
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredArmor.map((equipment) => (
+                  <tr key={equipment["@id"]} id={btoa(equipment["@id"])}>
+                    <td>
+                      <NavLink to={`/armor/${btoa(equipment["@id"])}`}>
+                        {equipment.label}
+                      </NavLink>
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {armorClass(equipment.armor.armorClass, l10n)}
+                    </td>
+                    <td>{parseNumber(equipment.armor.strMinimum)}</td>
+                    <td>
+                      {equipment.armor.stealthDisadvantage && (
+                        <Translation id="disadvantage" />
+                      )}
+                    </td>
+                    <td>{equipment.armor.weight} lb.</td>
+                    <td className="whitespace-nowrap">
+                      {equipment.cost.quantity} {equipment.cost.unit}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Content>
     </Layout>
   );

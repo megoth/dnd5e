@@ -4,17 +4,22 @@ import { Equipment } from "../../ldo/dnd5e.typings";
 import { description } from "../../utils/dnd5e";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Loading from "../loading";
 
 interface Props {
   equipment: Equipment;
+  isLoading?: boolean;
 }
 
-export default function MagicItemInfo({ equipment }: Props) {
+export default function MagicItemInfo({ equipment, isLoading }: Props) {
   return (
     <Content>
       <h1>{equipment.label}</h1>
-      <p className="notification">{equipment.equipmentCategory.label}</p>
-      {equipment.description && (
+      {isLoading && <Loading />}
+      {!isLoading && (
+        <p className="notification">{equipment.equipmentCategory.label}</p>
+      )}
+      {!isLoading && equipment.description && (
         <Markdown remarkPlugins={[remarkGfm]}>
           {description(equipment.description)}
         </Markdown>

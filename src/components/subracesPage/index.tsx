@@ -23,10 +23,6 @@ export default function SubracesPage() {
     "Subrace",
   );
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -40,49 +36,52 @@ export default function SubracesPage() {
         <h1>
           <Translation id="subraces" /> ({subraces.length})
         </h1>
+        {isLoading && <Loading />}
       </Content>
-      <ul className="cards">
-        {subraces
-          .sort((a, b) => (a.label > b.label ? 1 : -1))
-          .map((subrace) => (
-            <li
-              key={subrace["@id"]}
-              className={bem("card", "clickable")}
-              onClick={(event) => {
-                if ((event.target as HTMLElement).nodeName === "A") return;
-                return navigate(
-                  `/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`,
-                );
-              }}
-            >
-              <Content>
-                {subrace.illustration ? (
-                  <Illustration
-                    className="card__media"
-                    subject={subrace.illustration}
-                    modifier="compact"
-                  />
-                ) : (
-                  <Logo className="card__media hidden md:block" />
-                )}
-              </Content>
-              <div className="card__content">
-                <h2 className="card__title">
-                  <NavLink
-                    to={`/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`}
-                  >
-                    {subrace.label}
-                  </NavLink>
-                </h2>
-                {subrace.description && (
-                  <Content>
-                    <Markdown>{description(subrace.description)}</Markdown>
-                  </Content>
-                )}
-              </div>
-            </li>
-          ))}
-      </ul>
+      {!isLoading && (
+        <ul className="cards">
+          {subraces
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((subrace) => (
+              <li
+                key={subrace["@id"]}
+                className={bem("card", "clickable")}
+                onClick={(event) => {
+                  if ((event.target as HTMLElement).nodeName === "A") return;
+                  return navigate(
+                    `/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`,
+                  );
+                }}
+              >
+                <Content>
+                  {subrace.illustration ? (
+                    <Illustration
+                      className="card__media"
+                      subject={subrace.illustration}
+                      modifier="compact"
+                    />
+                  ) : (
+                    <Logo className="card__media hidden md:block" />
+                  )}
+                </Content>
+                <div className="card__content">
+                  <h2 className="card__title">
+                    <NavLink
+                      to={`/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`}
+                    >
+                      {subrace.label}
+                    </NavLink>
+                  </h2>
+                  {subrace.description && (
+                    <Content>
+                      <Markdown>{description(subrace.description)}</Markdown>
+                    </Content>
+                  )}
+                </div>
+              </li>
+            ))}
+        </ul>
+      )}
     </Layout>
   );
 }

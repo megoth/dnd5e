@@ -60,8 +60,12 @@ export default function MonsterPage() {
     },
   );
 
-  if (isLoading || !monster) {
-    return <Loading />;
+  if (!monster) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -73,203 +77,211 @@ export default function MonsterPage() {
           { text: monster.label },
         ]}
       />
-      {monster.illustration && <Illustration subject={monster.illustration} />}
+      {!isLoading && monster.illustration && (
+        <Illustration subject={monster.illustration} />
+      )}
       <Content>
         <h1>{monster.label}</h1>
-        <p className="notification">
-          {monster.size} {monsterType(monster)}, {monster.alignmentDescription}
-        </p>
-        {monster.description && (
-          <Markdown>{description(monster.description)}</Markdown>
-        )}
-        <dl className="data-list">
-          {monster.monsterArmorClass.map((ac) => (
-            <Fragment key={ac.ofType}>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <>
+            <p className="notification">
+              {monster.size} {monsterType(monster)},{" "}
+              {monster.alignmentDescription}
+            </p>
+            {monster.description && (
+              <Markdown>{description(monster.description)}</Markdown>
+            )}
+            <dl className="data-list">
+              {monster.monsterArmorClass.map((ac) => (
+                <Fragment key={ac.ofType}>
+                  <dt>
+                    <Translation id="armorClass" />
+                  </dt>
+                  <dd>{monsterArmorClass(ac)}</dd>
+                </Fragment>
+              ))}
               <dt>
-                <Translation id="armorClass" />
+                <Translation id="hitPoints" />
               </dt>
-              <dd>{monsterArmorClass(ac)}</dd>
-            </Fragment>
-          ))}
-          <dt>
-            <Translation id="hitPoints" />
-          </dt>
-          <dd>{monsterHP(monster)}</dd>
-          <dt>
-            <Translation id="speed" />
-          </dt>
-          <dd>{monsterSpeed(monster.monsterSpeed, l10n)}</dd>
-          {monster.forms.length > 0 && (
-            <>
+              <dd>{monsterHP(monster)}</dd>
               <dt>
-                <Translation id="forms" />
+                <Translation id="speed" />
               </dt>
-              <dd>
-                {monster.forms.map((form, index) => (
-                  <Fragment key={form["@id"]}>
-                    <NavLink to={`/monsters/${btoa(form["@id"])}`}>
-                      {form.label}
-                    </NavLink>
-                    {index !== monster.forms.length - 1 && <>, </>}
-                  </Fragment>
+              <dd>{monsterSpeed(monster.monsterSpeed, l10n)}</dd>
+              {monster.forms.length > 0 && (
+                <>
+                  <dt>
+                    <Translation id="forms" />
+                  </dt>
+                  <dd>
+                    {monster.forms.map((form, index) => (
+                      <Fragment key={form["@id"]}>
+                        <NavLink to={`/monsters/${btoa(form["@id"])}`}>
+                          {form.label}
+                        </NavLink>
+                        {index !== monster.forms.length - 1 && <>, </>}
+                      </Fragment>
+                    ))}
+                  </dd>
+                </>
+              )}
+            </dl>
+            <table>
+              <thead>
+                <tr>
+                  <th colSpan={2} />
+                  <th>
+                    <Translation id="modifier" />
+                  </th>
+                  <th>
+                    <Translation id="savingThrow" />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {monster.monsterAbilities.map((monsterAbility) => (
+                  <tr key={monsterAbility.abilityScore["@id"]}>
+                    <td>{monsterAbility.abilityScore.label}</td>
+                    <td>{monsterAbility.value}</td>
+                    <td>{scoreModifier(monsterAbility.value)}</td>
+                    <td>{monsterSavingThrow(monsterAbility, monster)}</td>
+                  </tr>
                 ))}
-              </dd>
-            </>
-          )}
-        </dl>
-        <table>
-          <thead>
-            <tr>
-              <th colSpan={2} />
-              <th>
-                <Translation id="modifier" />
-              </th>
-              <th>
-                <Translation id="savingThrow" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {monster.monsterAbilities.map((monsterAbility) => (
-              <tr key={monsterAbility.abilityScore["@id"]}>
-                <td>{monsterAbility.abilityScore.label}</td>
-                <td>{monsterAbility.value}</td>
-                <td>{scoreModifier(monsterAbility.value)}</td>
-                <td>{monsterSavingThrow(monsterAbility, monster)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <h2>
-          <Translation id="monsterFeatures" />
-        </h2>
-        <dl className="data-list">
-          {monster.monsterSkills.length > 0 && (
-            <>
-              <dt>
-                <Translation id="skills" />
-              </dt>
-              <dd>
-                {monster.monsterSkills
-                  .map(
-                    (skill) =>
-                      `${skill.proficiency.skill.label} ${modifier(skill.value)}`,
-                  )
-                  .join(", ")}
-              </dd>
-            </>
-          )}
-          {monster.damageVulnerabilities.length > 0 && (
-            <>
-              <dt>
-                <Translation id="vulnerabilities" />
-              </dt>
-              <dd>{monster.damageVulnerabilities.join("; ")}</dd>
-            </>
-          )}
-          {monster.damageResistances.length > 0 && (
-            <>
-              <dt>
-                <Translation id="resistances" />
-              </dt>
-              <dd>{monster.damageResistances.join("; ")}</dd>
-            </>
-          )}
-          {(monster.damageImmunities.length > 0 ||
-            monster.conditionImmunities.length > 0) && (
-            <>
-              <dt>
-                <Translation id="immunities" />
-              </dt>
-              <dd>
-                {[
-                  ...monster.damageImmunities,
-                  ...monster.conditionImmunities.map(
-                    (condition) => condition.label,
-                  ),
-                ].join("; ")}
-              </dd>
-            </>
-          )}
-          {monster.senses && (
-            <>
-              <dt>
-                <Translation id="senses" />
-              </dt>
-              <dd>{monsterSenses(monster.senses, l10n)}</dd>
-            </>
-          )}
-          {monster.monsterLanguages && (
-            <>
-              <dt>
-                <Translation id="languages" />
-              </dt>
-              <dd>{monster.monsterLanguages}</dd>
-            </>
-          )}
-          <dt>
-            <Translation id="challenge" />
-          </dt>
-          <dd>{monsterChallenge(monster)}</dd>
-        </dl>
-        {monster.specialAbilities.length > 0 && (
-          <>
-            <h3>
-              <Translation id="traits" />
-            </h3>
+              </tbody>
+            </table>
+            <h2>
+              <Translation id="monsterFeatures" />
+            </h2>
             <dl className="data-list">
-              {monster.specialAbilities.map((ability) => (
-                <Fragment key={ability.label}>
-                  <dt>{ability.label}</dt>
-                  <dd>{ability.description}</dd>
-                </Fragment>
-              ))}
+              {monster.monsterSkills.length > 0 && (
+                <>
+                  <dt>
+                    <Translation id="skills" />
+                  </dt>
+                  <dd>
+                    {monster.monsterSkills
+                      .map(
+                        (skill) =>
+                          `${skill.proficiency.skill.label} ${modifier(skill.value)}`,
+                      )
+                      .join(", ")}
+                  </dd>
+                </>
+              )}
+              {monster.damageVulnerabilities.length > 0 && (
+                <>
+                  <dt>
+                    <Translation id="vulnerabilities" />
+                  </dt>
+                  <dd>{monster.damageVulnerabilities.join("; ")}</dd>
+                </>
+              )}
+              {monster.damageResistances.length > 0 && (
+                <>
+                  <dt>
+                    <Translation id="resistances" />
+                  </dt>
+                  <dd>{monster.damageResistances.join("; ")}</dd>
+                </>
+              )}
+              {(monster.damageImmunities.length > 0 ||
+                monster.conditionImmunities.length > 0) && (
+                <>
+                  <dt>
+                    <Translation id="immunities" />
+                  </dt>
+                  <dd>
+                    {[
+                      ...monster.damageImmunities,
+                      ...monster.conditionImmunities.map(
+                        (condition) => condition.label,
+                      ),
+                    ].join("; ")}
+                  </dd>
+                </>
+              )}
+              {monster.senses && (
+                <>
+                  <dt>
+                    <Translation id="senses" />
+                  </dt>
+                  <dd>{monsterSenses(monster.senses, l10n)}</dd>
+                </>
+              )}
+              {monster.monsterLanguages && (
+                <>
+                  <dt>
+                    <Translation id="languages" />
+                  </dt>
+                  <dd>{monster.monsterLanguages}</dd>
+                </>
+              )}
+              <dt>
+                <Translation id="challenge" />
+              </dt>
+              <dd>{monsterChallenge(monster)}</dd>
             </dl>
-          </>
-        )}
-        {monster.monsterActions.length > 0 && (
-          <>
-            <h3>
-              <Translation id="actions" />
-            </h3>
-            <dl className="data-list">
-              {monster.monsterActions.map((action) => (
-                <Fragment key={action.label}>
-                  <dt>{action.label}</dt>
-                  <dd>{action.description}</dd>
-                </Fragment>
-              ))}
-            </dl>
-          </>
-        )}
-        {monster.legendaryActions.length > 0 && (
-          <>
-            <h3>
-              <Translation id="legendaryActions" />
-            </h3>
-            <dl className="data-list">
-              {monster.legendaryActions.map((action) => (
-                <Fragment key={action.label}>
-                  <dt>{action.label}</dt>
-                  <dd>{action.description}</dd>
-                </Fragment>
-              ))}
-            </dl>
-          </>
-        )}
-        {monster.reactions.length > 0 && (
-          <>
-            <h3>
-              <Translation id="reactions" />
-            </h3>
-            <dl className="data-list">
-              {monster.reactions.map((action) => (
-                <Fragment key={action.label}>
-                  <dt>{action.label}</dt>
-                  <dd>{action.description}</dd>
-                </Fragment>
-              ))}
-            </dl>
+            {monster.specialAbilities.length > 0 && (
+              <>
+                <h3>
+                  <Translation id="traits" />
+                </h3>
+                <dl className="data-list">
+                  {monster.specialAbilities.map((ability) => (
+                    <Fragment key={ability.label}>
+                      <dt>{ability.label}</dt>
+                      <dd>{ability.description}</dd>
+                    </Fragment>
+                  ))}
+                </dl>
+              </>
+            )}
+            {monster.monsterActions.length > 0 && (
+              <>
+                <h3>
+                  <Translation id="actions" />
+                </h3>
+                <dl className="data-list">
+                  {monster.monsterActions.map((action) => (
+                    <Fragment key={action.label}>
+                      <dt>{action.label}</dt>
+                      <dd>{action.description}</dd>
+                    </Fragment>
+                  ))}
+                </dl>
+              </>
+            )}
+            {monster.legendaryActions.length > 0 && (
+              <>
+                <h3>
+                  <Translation id="legendaryActions" />
+                </h3>
+                <dl className="data-list">
+                  {monster.legendaryActions.map((action) => (
+                    <Fragment key={action.label}>
+                      <dt>{action.label}</dt>
+                      <dd>{action.description}</dd>
+                    </Fragment>
+                  ))}
+                </dl>
+              </>
+            )}
+            {monster.reactions.length > 0 && (
+              <>
+                <h3>
+                  <Translation id="reactions" />
+                </h3>
+                <dl className="data-list">
+                  {monster.reactions.map((action) => (
+                    <Fragment key={action.label}>
+                      <dt>{action.label}</dt>
+                      <dd>{action.description}</dd>
+                    </Fragment>
+                  ))}
+                </dl>
+              </>
+            )}
           </>
         )}
       </Content>

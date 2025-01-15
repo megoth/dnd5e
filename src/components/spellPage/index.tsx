@@ -53,8 +53,12 @@ export default function SpellPage() {
     },
   );
 
-  if (isLoading || !spell) {
-    return <Loading />;
+  if (!spell) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -66,68 +70,73 @@ export default function SpellPage() {
           { text: spell.label },
         ]}
       />
-      {(spell.illustration || spell.magicSchool.illustration) && (
+      {!isLoading && (spell.illustration || spell.magicSchool.illustration) && (
         <Illustration
           subject={spell.illustration || spell.magicSchool.illustration}
         />
       )}
       <Content>
         <h1>{spell.label}</h1>
-        <p className="notification">
-          {spell.level > 0 ? (
-            <Translation
-              id="spellNote"
-              vars={{
-                order: l10n.getString(`order${spell.level}`),
-                school: spell.magicSchool.label,
-              }}
-            />
-          ) : (
-            <Translation
-              id="cantripNote"
-              vars={{
-                order: l10n.getString(`order${spell.level}`),
-                school: spell.magicSchool.label,
-              }}
-            />
-          )}
-        </p>
-        <dl className="data-list">
-          <dt>
-            <Translation id="castingTime" />
-          </dt>
-          <dd>{spell.castingTime}</dd>
-          <dt>
-            <Translation id="range" />
-          </dt>
-          <dd>{spell.spellRange}</dd>
-          <dt>
-            <Translation id="components" />
-          </dt>
-          <dd>
-            {spell.components
-              .map((component) =>
-                component === "M" ? spellMaterial(spell) : component,
-              )
-              .join(", ")}
-          </dd>
-          <dt>
-            <Translation id="duration" />
-          </dt>
-          <dd>{spellDuration(spell, l10n)}</dd>
-        </dl>
-        <Markdown remarkPlugins={[remarkGfm]}>
-          {description(spell.description)}
-        </Markdown>
-        {spell.higherLevel?.length > 0 && (
-          <dl className="data-list">
-            <dt>
-              <Translation id="atHigherLevels" />
-            </dt>
-            <dd>
-              <Markdown>{description(spell.higherLevel)}</Markdown>
-            </dd>
-          </dl>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <>
+            <p className="notification">
+              {spell.level > 0 ? (
+                <Translation
+                  id="spellNote"
+                  vars={{
+                    order: l10n.getString(`order${spell.level}`),
+                    school: spell.magicSchool.label,
+                  }}
+                />
+              ) : (
+                <Translation
+                  id="cantripNote"
+                  vars={{
+                    order: l10n.getString(`order${spell.level}`),
+                    school: spell.magicSchool.label,
+                  }}
+                />
+              )}
+            </p>
+            <dl className="data-list">
+              <dt>
+                <Translation id="castingTime" />
+              </dt>
+              <dd>{spell.castingTime}</dd>
+              <dt>
+                <Translation id="range" />
+              </dt>
+              <dd>{spell.spellRange}</dd>
+              <dt>
+                <Translation id="components" />
+              </dt>
+              <dd>
+                {spell.components
+                  .map((component) =>
+                    component === "M" ? spellMaterial(spell) : component,
+                  )
+                  .join(", ")}
+              </dd>
+              <dt>
+                <Translation id="duration" />
+              </dt>
+              <dd>{spellDuration(spell, l10n)}</dd>
+            </dl>
+            <Markdown remarkPlugins={[remarkGfm]}>
+              {description(spell.description)}
+            </Markdown>
+            {spell.higherLevel?.length > 0 && (
+              <dl className="data-list">
+                <dt>
+                  <Translation id="atHigherLevels" />
+                </dt>
+                <dd>
+                  <Markdown>{description(spell.higherLevel)}</Markdown>
+                </dd>
+              </dl>
+            )}
+          </>
         )}
       </Content>
     </Layout>

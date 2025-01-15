@@ -36,8 +36,12 @@ export default function EquipmentSinglePage() {
     },
   );
 
-  if (isLoading || !equipment) {
-    return <Loading />;
+  if (!equipment) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -49,7 +53,7 @@ export default function EquipmentSinglePage() {
           { text: equipment.label },
         ]}
       />
-      <EquipmentInfo equipment={equipment} />
+      <EquipmentInfo equipment={equipment} isLoading={isLoading} />
     </Layout>
   );
 }

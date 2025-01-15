@@ -36,8 +36,12 @@ export default function MagicItemPage() {
     },
   );
 
-  if (isLoading || !equipment) {
-    return <Loading />;
+  if (!equipment) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -50,7 +54,7 @@ export default function MagicItemPage() {
           { text: equipment.label },
         ]}
       />
-      <MagicItemInfo equipment={equipment} />
+      <MagicItemInfo equipment={equipment} isLoading={isLoading} />
     </Layout>
   );
 }

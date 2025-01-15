@@ -22,10 +22,6 @@ export default function RacesPage() {
     "Race",
   );
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -33,45 +29,48 @@ export default function RacesPage() {
         <h1>
           <Translation id="racesPageTitle" /> ({races.length})
         </h1>
+        {isLoading && <Loading />}
       </Content>
-      <ul className="cards">
-        {races
-          .sort((a, b) => (a.label > b.label ? 1 : -1))
-          .map((race) => (
-            <li
-              key={race["@id"]}
-              className={bem("card", "clickable")}
-              onClick={(event) => {
-                if ((event.target as HTMLElement).nodeName === "A") return;
-                return navigate(`/races/${btoa(race["@id"])}`);
-              }}
-            >
-              <Content>
-                {race.illustration ? (
-                  <Illustration
-                    className="card__media"
-                    subject={race.illustration}
-                    modifier="compact"
-                  />
-                ) : (
-                  <Logo className="card__media hidden md:block" />
-                )}
-              </Content>
-              <div className="card__content">
-                <h2 className="card__title">
-                  <NavLink to={`/classes/${btoa(race["@id"])}`}>
-                    {race.label}
-                  </NavLink>
-                </h2>
-                {race.description && (
-                  <Content>
-                    <Markdown>{description(race.description)}</Markdown>
-                  </Content>
-                )}
-              </div>
-            </li>
-          ))}
-      </ul>
+      {!isLoading && (
+        <ul className="cards">
+          {races
+            .sort((a, b) => (a.label > b.label ? 1 : -1))
+            .map((race) => (
+              <li
+                key={race["@id"]}
+                className={bem("card", "clickable")}
+                onClick={(event) => {
+                  if ((event.target as HTMLElement).nodeName === "A") return;
+                  return navigate(`/races/${btoa(race["@id"])}`);
+                }}
+              >
+                <Content>
+                  {race.illustration ? (
+                    <Illustration
+                      className="card__media"
+                      subject={race.illustration}
+                      modifier="compact"
+                    />
+                  ) : (
+                    <Logo className="card__media hidden md:block" />
+                  )}
+                </Content>
+                <div className="card__content">
+                  <h2 className="card__title">
+                    <NavLink to={`/classes/${btoa(race["@id"])}`}>
+                      {race.label}
+                    </NavLink>
+                  </h2>
+                  {race.description && (
+                    <Content>
+                      <Markdown>{description(race.description)}</Markdown>
+                    </Content>
+                  )}
+                </div>
+              </li>
+            ))}
+        </ul>
+      )}
     </Layout>
   );
 }

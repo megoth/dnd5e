@@ -209,8 +209,20 @@ export function description(texts: string[]): string {
 export function equipmentResourceUrls(equipment: Equipment): string[] {
   return [
     resourceUrl(equipment.equipmentCategory["@id"]),
-    ...equipment.magicItem.magicItemVariants.map((variant) =>
+    ...(equipment.gear?.gearCategory
+      ? [resourceUrl(equipment.gear.gearCategory["@id"])]
+      : []),
+    ...(equipment.magicItem?.magicItemVariants || []).map((variant) =>
       resourceUrl(variant["@id"]),
+    ),
+    ...(equipment.weapon?.damage
+      ? [resourceUrl(equipment.weapon.damage.damageType["@id"])]
+      : []),
+    ...(equipment.weapon?.twoHandedDamage
+      ? [resourceUrl(equipment.weapon.twoHandedDamage.damageType["@id"])]
+      : []),
+    ...(equipment.weapon?.properties || []).map((property) =>
+      resourceUrl(property["@id"]),
     ),
   ];
 }

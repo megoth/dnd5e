@@ -42,8 +42,12 @@ export default function WeaponPage() {
     },
   );
 
-  if (isLoading || !equipment) {
-    return <Loading />;
+  if (!equipment) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
@@ -56,7 +60,7 @@ export default function WeaponPage() {
           { text: equipment.label },
         ]}
       />
-      <WeaponInfo equipment={equipment} />
+      <WeaponInfo equipment={equipment} isLoading={isLoading} />
     </Layout>
   );
 }

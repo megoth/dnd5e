@@ -36,8 +36,12 @@ export default function ArmorSinglePage() {
     },
   );
 
-  if (isLoading || !equipment) {
-    return <Loading />;
+  if (!equipment) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (

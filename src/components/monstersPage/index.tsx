@@ -35,10 +35,6 @@ export default function MonstersPage() {
   const mergeQuery = useMergeQuery();
   const reduceQuery = useReduceQuery();
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   const filteredMonsters = monsters
     .filter(
       (monster) =>
@@ -57,99 +53,106 @@ export default function MonstersPage() {
         <h1>
           <Translation id="monstersPageTitle" /> ({filteredMonsters.length})
         </h1>
-        <dl className="filter-list">
-          <dt>
-            <Translation id="size" />
-          </dt>
-          <dd>
-            {sizes.map((size) => {
-              const active = sizeFilter && sizeFilter === size;
-              return (
-                <NavLink
-                  key={size}
-                  to={active ? reduceQuery("size") : mergeQuery({ size })}
-                  aria-selected={active}
-                >
-                  {size}
-                </NavLink>
-              );
-            })}
-          </dd>
-          <dt>
-            <Translation id="type" />
-          </dt>
-          <dd>
-            {types.map((type) => {
-              const active = typeFilter && typeFilter === type;
-              return (
-                <NavLink
-                  key={type}
-                  to={active ? reduceQuery("type") : mergeQuery({ type })}
-                  aria-selected={active}
-                >
-                  {type}
-                </NavLink>
-              );
-            })}
-          </dd>
-          <dt>
-            <Translation id="challenge" />
-          </dt>
-          <dd>
-            {challengeRatings.map((challenge) => {
-              const active = challengeFilter === challenge.toString();
-              return (
-                <NavLink
-                  key={challenge}
-                  to={
-                    active
-                      ? reduceQuery("challenge")
-                      : mergeQuery({ challenge: challenge.toString() })
-                  }
-                  aria-selected={active}
-                >
-                  {challenge}
-                </NavLink>
-              );
-            })}
-          </dd>
-        </dl>
-        <div className="table-container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">
-                  <Translation id="name" />
-                </th>
-                <th scope="col">
-                  <Translation id="size" />
-                </th>
-                <th scope="col">
-                  <Translation id="type" />
-                </th>
-                <th scope="col" className="whitespace-nowrap">
-                  <Translation id="challenge" />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredMonsters.map((monster) => (
-                <tr key={monster["@id"]}>
-                  <td>
-                    <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
-                      {monster.label}
-                    </NavLink>
-                  </td>
-                  <td>{monster.size}</td>
-                  <td className="whitespace-nowrap">{monsterType(monster)}</td>
-                  <td className="whitespace-nowrap">
-                    {monsterChallenge(monster)}
-                  </td>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <dl className="filter-list">
+            <dt>
+              <Translation id="size" />
+            </dt>
+            <dd>
+              {sizes.map((size) => {
+                const active = sizeFilter && sizeFilter === size;
+                return (
+                  <NavLink
+                    key={size}
+                    to={active ? reduceQuery("size") : mergeQuery({ size })}
+                    aria-selected={active}
+                  >
+                    {size}
+                  </NavLink>
+                );
+              })}
+            </dd>
+            <dt>
+              <Translation id="type" />
+            </dt>
+            <dd>
+              {types.map((type) => {
+                const active = typeFilter && typeFilter === type;
+                return (
+                  <NavLink
+                    key={type}
+                    to={active ? reduceQuery("type") : mergeQuery({ type })}
+                    aria-selected={active}
+                  >
+                    {type}
+                  </NavLink>
+                );
+              })}
+            </dd>
+            <dt>
+              <Translation id="challenge" />
+            </dt>
+            <dd>
+              {challengeRatings.map((challenge) => {
+                const active = challengeFilter === challenge.toString();
+                return (
+                  <NavLink
+                    key={challenge}
+                    to={
+                      active
+                        ? reduceQuery("challenge")
+                        : mergeQuery({ challenge: challenge.toString() })
+                    }
+                    aria-selected={active}
+                  >
+                    {challenge}
+                  </NavLink>
+                );
+              })}
+            </dd>
+          </dl>
+        )}
+        {!isLoading && (
+          <div className="table-container">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <Translation id="name" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="size" />
+                  </th>
+                  <th scope="col">
+                    <Translation id="type" />
+                  </th>
+                  <th scope="col" className="whitespace-nowrap">
+                    <Translation id="challenge" />
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredMonsters.map((monster) => (
+                  <tr key={monster["@id"]}>
+                    <td>
+                      <NavLink to={`/monsters/${btoa(monster["@id"])}`}>
+                        {monster.label}
+                      </NavLink>
+                    </td>
+                    <td>{monster.size}</td>
+                    <td className="whitespace-nowrap">
+                      {monsterType(monster)}
+                    </td>
+                    <td className="whitespace-nowrap">
+                      {monsterChallenge(monster)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Content>
     </Layout>
   );
