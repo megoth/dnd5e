@@ -38,6 +38,8 @@ import SubclassesPage from "./components/subclassesPage";
 import SubracesPage from "./components/subracesPage";
 import MagicItemsPage from "./components/magicItemsPage";
 import MagicItemPage from "./components/MagicItemPage";
+import YouPage from "./components/youPage";
+import StoragesPage from "./components/storagesPage";
 
 const router = createBrowserRouter([
   {
@@ -157,6 +159,10 @@ const router = createBrowserRouter([
         element: <SearchPage />,
       },
       {
+        path: "/signup",
+        element: <SignupPage />,
+      },
+      {
         path: "/spells",
         element: <SpellsPage />,
       },
@@ -165,8 +171,8 @@ const router = createBrowserRouter([
         element: <SpellPage />,
       },
       {
-        path: "/signup",
-        element: <SignupPage />,
+        path: "/storages",
+        element: <StoragesPage />,
       },
       {
         path: "/subclasses",
@@ -183,6 +189,10 @@ const router = createBrowserRouter([
       {
         path: "/weapons/:url",
         element: <WeaponPage />,
+      },
+      {
+        path: "/you",
+        element: <YouPage />,
       },
     ],
   },

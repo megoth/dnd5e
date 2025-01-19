@@ -9,8 +9,18 @@ export type Page = {
 export function getPages(_: string, _2: boolean): Array<Page> {
   return [
     {
-      href: "/characters",
-      translationId: "charactersPageTitle",
+      href: "/you",
+      translationId: "yourStuff",
+      children: [
+        {
+          href: "/characters",
+          translationId: "charactersPageTitle",
+        },
+        {
+          href: "/storages",
+          translationId: "storages",
+        },
+      ],
     },
     {
       href: "/classes",

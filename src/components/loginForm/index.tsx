@@ -76,7 +76,7 @@ export default function LoginForm({
       <img
         src="/logos/solid-emblem.svg"
         alt={"loginImage"}
-        className="mx-auto hidden md:block"
+        className="mx-auto"
         style={{ maxWidth: 200 }}
       />
       <label htmlFor="idp" className="label">

@@ -71,7 +71,8 @@
 :hitPointsAt1stLevel skos:definition "Hit Points på første level"@nb-NO .
 :hitPointsAt1stLevelDescription skos:definition "{$hitDie} + din Constitution modifikator"@nb-NO .
 :hitPointsAtHigherLevels skos:definition "Hit Points på høyere nivå"@nb-NO .
-:hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
+:hitPointsAtHigherLevelsDescription skos:definition
+        "1d{$hitDie} (eller {$hitDieBalanced}) + din Constitution modifikator per {$className} nivå etter første"@nb-NO .
 :homePageTitle skos:definition "Hjem"@nb-NO .
 :immunities skos:definition "Immuniteter"@nb-NO .
 :ignore skos:definition "Ignorer"@nb-NO .
@@ -104,7 +105,8 @@
 :monsters skos:definition "Monstre"@nb-NO .
 :monstersPageTitle skos:definition "Monstre"@nb-NO .
 :movementBonus skos:definition "+{$bonus} fot"@nb-NO .
-:multiclassRequirement skos:definition "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
+:multiclassRequirement skos:definition
+        "Du må ha {$requirement} eller høyere for å kunne multiklasse inn eller ut av denne klassen."@nb-NO .
 :name skos:definition "Navn"@nb-NO .
 :noResults skos:definition "Ingen treff"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
@@ -180,6 +182,7 @@
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
 :stealth skos:definition "Sniking"@nb-NO .
+:storages skos:definition "Lagringsplass"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .
 :subclass skos:definition "Underklasse"@nb-NO .
 :subclasses skos:definition "Underklasser"@nb-NO .
@@ -232,3 +235,15 @@
 :wisdom skos:definition "Visdom"@nb-NO .
 :workInProgress skos:definition "Under utvikling"@nb-NO .
 :xp skos:definition "XP"@nb-NO .
+:yourStuff skos:definition "Dine Ting"@nb-NO .
+:yourStuffDescription skos:definition
+        """Denne appen har som mål å gjøre det enkelt å vedlikeholde karakterene dine og annen informasjon knyttet til
+        Dungeons & Dragons 5th edition. Den har også som mål at du skal kunne dele denne informasjonen med andre, f.eks.
+        de andre spillerne i en kampanje du er med i.
+
+        Istedenfor å lagre denne informasjonen på våre servere har vi tatt i bruk en teknologi som heter *Solid* som
+        lar deg velge hvor du vil at dataen din skal lagres. Appen er også designet for å la deg velge om du vil samle
+        alt på et sted, eller om du vil dele det opp i flere deler.
+
+        **For å komme i gang med appen trenger du en *Solid konto*. Når du har det kan du logge deg inn, og vi kan
+        vise mer relevant informasjon knyttet til dine ting.**"""@nb-NO .

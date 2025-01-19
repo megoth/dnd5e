@@ -179,6 +179,7 @@
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
 :stealth skos:definition "Stealth"@en-US .
+:storages skos:definition "Storages"@en-US .
 :strength skos:definition "Strength"@en-US .
 :subclass skos:definition "Subclass"@en-US .
 :subclasses skos:definition "Subclasses"@en-US .
@@ -231,3 +232,15 @@
 :wisdom skos:definition "Wisdom"@en-US .
 :workInProgress skos:definition "Work in progress"@en-US .
 :xp skos:definition "XP"@en-US .
+:yourStuff skos:definition "Your Stuff"@en-US .
+:yourStuffDescription skos:definition
+        """This app has as its goal to make it easy for you to manage your characters and related informasjon tied to
+        Dungeons & Dragons 5th edition. It also aims to let you share this informasjon with others, e.g. the other
+        players in a campaign you're currently participating in.
+
+        Instead of storing the data we've made use of *Solid*, which allows you to decide where to store your data. It
+        should also be noted that the app is also designed to allow you to have it all in one place, or you could split
+        it into multiple parts.
+
+        To get started with this app you need a Solid account. With that available you can authenticate yourself,
+        and we can show more relevant information connected to your stuff."""@en-US .
