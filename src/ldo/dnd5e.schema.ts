@@ -44,7 +44,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#AbilityScore"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -165,7 +168,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Alignment"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -335,7 +341,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Background"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -521,7 +530,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Choice"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -595,7 +607,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Class"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1136,7 +1151,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Condition"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1286,16 +1304,6 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#type",
-              valueExpr: {
-                type: "NodeConstraint",
-                nodeKind: "iri",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#dice:",
               valueExpr: {
                 type: "NodeConstraint",
@@ -1357,7 +1365,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#DamageType"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1463,7 +1474,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Equipment"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1548,7 +1562,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#EquipmentCategory"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1637,7 +1654,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Feature"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1857,7 +1877,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Illustration"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1912,7 +1935,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Language"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -1977,7 +2003,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Level"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -2213,7 +2242,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#MagicSchool"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -2255,7 +2287,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Monster"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3275,11 +3310,6 @@ export const dnd5eSchema: Schema = {
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
-        expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
-        },
       },
     },
     {
@@ -3420,7 +3450,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Proficiency"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3508,7 +3541,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Race"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3708,7 +3744,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Rule"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3750,7 +3789,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#RuleSection"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3804,6 +3846,62 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#SolidProfile",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://xmlns.com/foaf/0.1/name",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/ns/pim/space#preferencesFile",
+              valueExpr: {
+                type: "NodeConstraint",
+                nodeKind: "iri",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/ns/pim/space#storage",
+              valueExpr: {
+                type: "NodeConstraint",
+                nodeKind: "iri",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#defaultStorage",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Storage",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#storages",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Storage",
+              min: 0,
+              max: -1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#Skill",
       type: "ShapeDecl",
       shapeExpr: {
@@ -3814,7 +3912,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Skill"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -3854,7 +3955,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Spell"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -4074,6 +4178,46 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#Storage",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Storage"],
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#container",
+              valueExpr: {
+                type: "NodeConstraint",
+                nodeKind: "iri",
+              },
+              min: 0,
+              max: 1,
+            },
+          ],
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#StringOption",
       type: "ShapeDecl",
       shapeExpr: {
@@ -4101,7 +4245,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Subclass"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -4239,7 +4386,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Subrace"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -4321,7 +4471,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Trait"],
+              },
             },
             {
               type: "TripleConstraint",
@@ -4546,21 +4699,6 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#Type",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-          valueExpr: {
-            type: "NodeConstraint",
-            datatype: "http://www.w3.org/2000/01/rdf-schema#Class",
-          },
-        },
-      },
-    },
-    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#Weapon",
       type: "ShapeDecl",
       shapeExpr: {
@@ -4649,7 +4787,10 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#WeaponProperty"],
+              },
             },
             {
               type: "TripleConstraint",

@@ -14,7 +14,6 @@ import {
   TraitSpecificShapeType,
   TraitSpecificUsageShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { type } from "../../public/data/type";
 import traits from "../dnd5eapi-data/5e-SRD-Traits.json";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
@@ -73,7 +72,7 @@ function transformSpecificTraitBreathWeapon(
         dcType: ldoDataset
           .usingType(AbilityScoreShapeType)
           .fromSubject(data.dc.dc_type.url),
-        dcValue: data.dc.dc_value,
+        value: data.dc.dc_value,
         successType: data.dc.success_type,
       }),
     traitSpecificUsage:
@@ -92,7 +91,7 @@ export function transformTrait(
   const trait = ldoDataset
     .usingType(TraitShapeType)
     .fromSubject(`#${data.index}`);
-  trait.type = type("Trait");
+  trait.type = { "@id": "Trait" };
   trait.label = data.name;
   trait.description = data.desc;
   trait.races = data.races?.map((race) =>

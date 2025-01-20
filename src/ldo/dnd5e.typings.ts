@@ -22,7 +22,9 @@ export interface AbilityBonus {
 export interface AbilityScore {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "AbilityScore";
+  };
   label: string;
   description: string[];
   abbreviation: string;
@@ -56,7 +58,9 @@ export interface ActionOption {
 export interface Alignment {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Alignment";
+  };
   label: string;
   description?: string[];
   abbreviation: string;
@@ -102,7 +106,9 @@ export interface ArmorClass {
 export interface Background {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Background";
+  };
   label: string;
   startingProficiencies?: Proficiency[];
   startingEquipment?: StartingEquipment[];
@@ -152,7 +158,9 @@ export interface BreathOption {
 export interface Choice {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Choice";
+  };
   description?: string[];
   choose?: number;
   ofType?: string;
@@ -175,7 +183,9 @@ export interface ChoiceOption {
 export interface Class {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Class";
+  };
   label: string;
   description?: string[];
   hitDie: number;
@@ -269,7 +279,9 @@ export interface ClassSpecificCreatingSpellSlots {
 export interface Condition {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Condition";
+  };
   label: string;
   description?: string[];
 }
@@ -320,9 +332,6 @@ export interface DamageCharacterLevel {
 export interface DamageOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type2?: {
-    "@id": string;
-  };
   "dice:"?: string;
   notes?: string;
 }
@@ -343,7 +352,9 @@ export interface DamageSlotLevel {
 export interface DamageType {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "DamageType";
+  };
   label: string;
   description?: string[];
 }
@@ -375,7 +386,9 @@ export interface DifficultyClass {
 export interface Equipment {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Equipment";
+  };
   label: string;
   description?: string[];
   equipmentCategory?: EquipmentCategory;
@@ -393,7 +406,9 @@ export interface Equipment {
 export interface EquipmentCategory {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "EquipmentCategory";
+  };
   label: string;
   equipmentList?: Equipment[];
 }
@@ -424,7 +439,9 @@ export interface EquipmentPackContent {
 export interface Feature {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Feature";
+  };
   label: string;
   description?: string[];
   level?: number;
@@ -486,7 +503,9 @@ export interface IdealOption {
 export interface Illustration {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Illustration";
+  };
   imageUrl: {
     "@id": string;
   };
@@ -503,7 +522,9 @@ export interface Illustration {
 export interface Language {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Language";
+  };
   label: string;
   languageType?: string;
   script?: string;
@@ -517,7 +538,9 @@ export interface Language {
 export interface Level {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Level";
+  };
   level: number;
   abilityScoreBonuses?: number;
   proficiencyBonus?: number;
@@ -563,7 +586,9 @@ export interface MagicItem {
 export interface MagicSchool {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "MagicSchool";
+  };
   label: string;
   description?: string[];
   illustration?: Illustration;
@@ -575,7 +600,9 @@ export interface MagicSchool {
 export interface Monster {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Monster";
+  };
   label: string;
   description?: string[];
   monsterAbilities?: MonsterAbility[];
@@ -800,7 +827,6 @@ export interface MultipleOption {
 export interface OptionAction {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
 }
 
 /**
@@ -839,7 +865,9 @@ export interface Prerequisite {
 export interface Proficiency {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Proficiency";
+  };
   ofType?: string;
   label: string;
   classes?: Class[];
@@ -859,7 +887,9 @@ export interface Proficiency {
 export interface Race {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Race";
+  };
   label: string;
   description?: string[];
   speed: number;
@@ -904,7 +934,9 @@ export interface ResourceListOptionSet {
 export interface Rule {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Rule";
+  };
   label: string;
   description?: string[];
   ruleSections?: RuleSection[];
@@ -916,7 +948,9 @@ export interface Rule {
 export interface RuleSection {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "RuleSection";
+  };
   label: string;
   description?: string[];
 }
@@ -932,12 +966,31 @@ export interface ScorePrerequisiteOption {
 }
 
 /**
+ * SolidProfile Type
+ */
+export interface SolidProfile {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  name?: string;
+  preferencesFile?: {
+    "@id": string;
+  };
+  storage?: {
+    "@id": string;
+  };
+  defaultStorage?: Storage;
+  storages?: Storage[];
+}
+
+/**
  * Skill Type
  */
 export interface Skill {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Skill";
+  };
   label: string;
   description?: string[];
   abilityScore: AbilityScore;
@@ -949,7 +1002,9 @@ export interface Skill {
 export interface Spell {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Spell";
+  };
   label: string;
   description?: string[];
   higherLevel?: string[];
@@ -992,6 +1047,21 @@ export interface StartingEquipment {
 }
 
 /**
+ * Storage Type
+ */
+export interface Storage {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  type: {
+    "@id": "Storage";
+  };
+  label?: string;
+  container?: {
+    "@id": string;
+  };
+}
+
+/**
  * StringOption Type
  */
 export interface StringOption {
@@ -1006,7 +1076,9 @@ export interface StringOption {
 export interface Subclass {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Subclass";
+  };
   label: string;
   description?: string[];
   class: Class;
@@ -1043,7 +1115,9 @@ export interface SubclassSpell {
 export interface Subrace {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Subrace";
+  };
   label: string;
   description?: string[];
   race: Race;
@@ -1061,7 +1135,9 @@ export interface Subrace {
 export interface Trait {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "Trait";
+  };
   label: string;
   description?: string[];
   races?: Race[];
@@ -1119,15 +1195,6 @@ export interface TraitSpecificUsage {
 }
 
 /**
- * Type Type
- */
-export interface Type {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  type: string;
-}
-
-/**
  * Weapon Type
  */
 export interface Weapon {
@@ -1149,7 +1216,9 @@ export interface Weapon {
 export interface WeaponProperty {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  type: Type;
+  type: {
+    "@id": "WeaponProperty";
+  };
   label?: string;
   description?: string[];
 }

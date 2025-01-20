@@ -16,7 +16,6 @@ import {
   dataPath,
   dataUrl,
 } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 
 import subclasses from "../dnd5eapi-data/5e-SRD-Subclasses.json";
 import { levelsForSubclass } from "./levels";
@@ -29,7 +28,7 @@ function transformSubclass(
   const subclass = ldoDataset
     .usingType(SubclassShapeType)
     .fromSubject(`#${data.index}`);
-  subclass.type = type("Subclass");
+  subclass.type = { "@id": "Subclass" };
   subclass.label = data.name;
   subclass.description = data.desc;
   subclass.class = ldoDataset

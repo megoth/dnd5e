@@ -18,7 +18,6 @@ import {
   dataPath,
   dataUrl,
 } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
 import { transformStartingEquipment } from "./startingEquipment";
@@ -33,7 +32,7 @@ function transformClass(
   const adventureClass = ldoDataset
     .usingType(ClassShapeType)
     .fromSubject(`#${data.index}`);
-  adventureClass.type = type("Class");
+  adventureClass.type = { "@id": "Class" };
   adventureClass.label = data.name;
   adventureClass.hitDie = data.hit_die;
   adventureClass.levels = Array.from({ length: 20 }).map((_, index) =>

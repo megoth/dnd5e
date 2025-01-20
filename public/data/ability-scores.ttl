@@ -1,10 +1,10 @@
-<#str> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#str> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#str> <http://www.w3.org/2000/01/rdf-schema#label> "Strength" .
 <#str> <https://dnd5e.app/vocab/dnd5e#abbreviation> "STR" .
 <#str> <http://purl.org/dc/terms/description> "Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force." .
 <#str> <http://purl.org/dc/terms/description> "A Strength check can model any attempt to lift, push, pull, or break something, to force your body through a space, or to otherwise apply brute force to a situation. The Athletics skill reflects aptitude in certain kinds of Strength checks." .
 <#str> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#athletics> .
-<#dex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#dex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#dex> <http://www.w3.org/2000/01/rdf-schema#label> "Dexterity" .
 <#dex> <https://dnd5e.app/vocab/dnd5e#abbreviation> "DEX" .
 <#dex> <http://purl.org/dc/terms/description> "Dexterity measures agility, reflexes, and balance." .
@@ -12,12 +12,12 @@
 <#dex> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#acrobatics> .
 <#dex> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#sleight-of-hand> .
 <#dex> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#stealth> .
-<#con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#con> <http://www.w3.org/2000/01/rdf-schema#label> "Constitution" .
 <#con> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CON" .
 <#con> <http://purl.org/dc/terms/description> "Constitution measures health, stamina, and vital force." .
 <#con> <http://purl.org/dc/terms/description> "Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving a specific effort on the part of a character or monster." .
-<#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#int> <http://www.w3.org/2000/01/rdf-schema#label> "Intelligence" .
 <#int> <https://dnd5e.app/vocab/dnd5e#abbreviation> "INT" .
 <#int> <http://purl.org/dc/terms/description> "Intelligence measures mental acuity, accuracy of recall, and the ability to reason." .
@@ -27,7 +27,7 @@
 <#int> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#investigation> .
 <#int> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#nature> .
 <#int> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#religion> .
-<#wis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#wis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#wis> <http://www.w3.org/2000/01/rdf-schema#label> "Wisdom" .
 <#wis> <https://dnd5e.app/vocab/dnd5e#abbreviation> "WIS" .
 <#wis> <http://purl.org/dc/terms/description> "Wisdom reflects how attuned you are to the world around you and represents perceptiveness and intuition." .
@@ -37,7 +37,7 @@
 <#wis> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#medicine> .
 <#wis> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#perception> .
 <#wis> <https://dnd5e.app/vocab/dnd5e#skillList> </data/skills.ttl#survival> .
-<#cha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#AbilityScore> .
+<#cha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#AbilityScore> .
 <#cha> <http://www.w3.org/2000/01/rdf-schema#label> "Charisma" .
 <#cha> <https://dnd5e.app/vocab/dnd5e#abbreviation> "CHA" .
 <#cha> <http://purl.org/dc/terms/description> "Charisma measures your ability to interact effectively with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality." .

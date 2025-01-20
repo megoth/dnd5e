@@ -1,4 +1,4 @@
-<#hill-dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#hill-dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subrace> .
 <#hill-dwarf> <http://www.w3.org/2000/01/rdf-schema#label> "Hill Dwarf" .
 <#hill-dwarf> <http://purl.org/dc/terms/description> "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience." .
 <#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#dwarf> .
@@ -6,7 +6,7 @@
 <#hill-dwarf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#dwarven-toughness> .
 _:b8978 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
 _:b8978 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#wis> .
-<#high-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#high-elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subrace> .
 <#high-elf> <http://www.w3.org/2000/01/rdf-schema#label> "High Elf" .
 <#high-elf> <http://purl.org/dc/terms/description> "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races." .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#elf> .
@@ -49,11 +49,11 @@ _:b8994 <https://dnd5e.app/vocab/dnd5e#references> _:b8990 .
 _:b8994 <https://dnd5e.app/vocab/dnd5e#references> _:b8991 .
 _:b8994 <https://dnd5e.app/vocab/dnd5e#references> _:b8992 .
 _:b8994 <https://dnd5e.app/vocab/dnd5e#references> _:b8993 .
-_:b8995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b8995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8995 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8995 <https://dnd5e.app/vocab/dnd5e#ofType> "language" .
 _:b8995 <https://dnd5e.app/vocab/dnd5e#from> _:b8994 .
-<#lightfoot-halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#lightfoot-halfling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subrace> .
 <#lightfoot-halfling> <http://www.w3.org/2000/01/rdf-schema#label> "Lightfoot Halfling" .
 <#lightfoot-halfling> <http://purl.org/dc/terms/description> "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life." .
 <#lightfoot-halfling> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#halfling> .
@@ -61,7 +61,7 @@ _:b8995 <https://dnd5e.app/vocab/dnd5e#from> _:b8994 .
 <#lightfoot-halfling> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#naturally-stealthy> .
 _:b8996 <https://dnd5e.app/vocab/dnd5e#bonus> 1 .
 _:b8996 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#cha> .
-<#rock-gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Subrace> .
+<#rock-gnome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subrace> .
 <#rock-gnome> <http://www.w3.org/2000/01/rdf-schema#label> "Rock Gnome" .
 <#rock-gnome> <http://purl.org/dc/terms/description> "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes." .
 <#rock-gnome> <https://dnd5e.app/vocab/dnd5e#race> </data/races.ttl#gnome> .

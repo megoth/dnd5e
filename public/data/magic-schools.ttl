@@ -1,25 +1,25 @@
-<#abjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#abjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#abjuration> <http://www.w3.org/2000/01/rdf-schema#label> "Abjuration" .
 <#abjuration> <http://purl.org/dc/terms/description> "Abjuration spells are protective in nature, though some of them have aggressive uses. They create magical barriers, negate harmful effects, harm trespassers, or banish creatures to other planes of existence." .
-<#conjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#conjuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#conjuration> <http://www.w3.org/2000/01/rdf-schema#label> "Conjuration" .
 <#conjuration> <http://purl.org/dc/terms/description> "Conjuration spells involve the transportation of objects and creatures from one location to another. Some spells summon creatures or objects to the caster's side, whereas others allow the caster to teleport to another location. Some conjurations create objects or effects out of nothing." .
-<#divination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#divination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#divination> <http://www.w3.org/2000/01/rdf-schema#label> "Divination" .
 <#divination> <http://purl.org/dc/terms/description> "Divination spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places." .
-<#enchantment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#enchantment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#enchantment> <http://www.w3.org/2000/01/rdf-schema#label> "Enchantment" .
 <#enchantment> <http://purl.org/dc/terms/description> "Enchantment spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a friend, force creatures to take a course of action, or even control another creature like a puppet." .
-<#evocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#evocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#evocation> <http://www.w3.org/2000/01/rdf-schema#label> "Evocation" .
 <#evocation> <http://purl.org/dc/terms/description> "Evocation spells manipulate magical energy to produce a desired effect. Some call up blasts of fire or lightning. Others channel positive energy to heal wounds." .
-<#illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#illusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#illusion> <http://www.w3.org/2000/01/rdf-schema#label> "Illusion" .
 <#illusion> <http://purl.org/dc/terms/description> "Illusion spells deceive the senses or minds of others. They cause people to see things that are not there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature." .
-<#necromancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#necromancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#necromancy> <http://www.w3.org/2000/01/rdf-schema#label> "Necromancy" .
 <#necromancy> <http://purl.org/dc/terms/description> "Necromancy spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create the undead, or even bring the dead back to life." .
-<#transmutation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#MagicSchool> .
+<#transmutation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#MagicSchool> .
 <#transmutation> <http://www.w3.org/2000/01/rdf-schema#label> "Transmutation" .
 <#transmutation> <http://purl.org/dc/terms/description> "Transmutation spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature, bolster the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abilities to rapidly recover from injury." .
 <#abjuration> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#abjuration> .

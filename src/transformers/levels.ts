@@ -10,7 +10,6 @@ import {
   LevelSpellcastingShapeType,
   SubclassSpecificShapeType,
 } from "../ldo/dnd5e.shapeTypes";
-import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import levels from "../dnd5eapi-data/5e-SRD-Levels.json";
@@ -37,7 +36,7 @@ export function transformLevel(
   const level = ldoDataset
     .usingType(LevelShapeType)
     .fromSubject(`#${data.index}`);
-  level.type = type("Level");
+  level.type = { "@id": "Level" };
   level.level = data.level;
   level.abilityScoreBonuses = data.ability_score_bonuses;
   level.proficiencyBonus = data.prof_bonus;

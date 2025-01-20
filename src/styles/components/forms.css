@@ -7,7 +7,7 @@
 }
 
 .label {
-    @apply my-1 block;
+    @apply mt-4 mb-1 block;
 }
 
 .label--global-search {
@@ -24,7 +24,7 @@
 
 .input[type="text"],
 .input[type="url"]{
-    @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black;
+    @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black shadow-md;
 }
 
 .input--global-search[type="text"] {
@@ -35,6 +35,9 @@
     @apply w-full;
 }
 
-.checkbox {
-    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border;
+.checkbox[type="checkbox"] {
+    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border mr-2 shadow-md;
+}
+.checkbox[type="checkbox"][disabled] {
+    @apply text-gray-500 focus:ring-gray-500;
 }

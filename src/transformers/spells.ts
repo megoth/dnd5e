@@ -10,7 +10,6 @@ import {
   SubclassShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Spell } from "../ldo/dnd5e.typings";
-import { type } from "../../public/data/type";
 import spells from "../dnd5eapi-data/5e-SRD-Spells.json";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
@@ -37,7 +36,7 @@ export function transformSpell(
   const spell = ldoDataset
     .usingType(SpellShapeType)
     .fromSubject(`#${data.index}`);
-  spell.type = type("Spell");
+  spell.type = { "@id": "Spell" };
   spell.label = data.name;
   spell.description = data.desc;
   spell.higherLevel = data.higher_level;

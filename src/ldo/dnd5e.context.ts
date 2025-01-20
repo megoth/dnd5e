@@ -16,8 +16,8 @@ export const dnd5eContext: ContextDefinition = {
   },
   type: {
     "@id": "@type",
-    "@type": ["@id", "http://www.w3.org/2000/01/rdf-schema#Class"],
   },
+  AbilityScore: "https://dnd5e.app/vocab/dnd5e#AbilityScore",
   label: {
     "@id": "http://www.w3.org/2000/01/rdf-schema#label",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -36,6 +36,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Skill: "https://dnd5e.app/vocab/dnd5e#Skill",
   minimumScore: {
     "@id": "https://dnd5e.app/vocab/dnd5e#minimumScore",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -48,6 +49,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#actionType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
+  Alignment: "https://dnd5e.app/vocab/dnd5e#Alignment",
   areaSize: {
     "@id": "https://dnd5e.app/vocab/dnd5e#areaSize",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -88,16 +90,19 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#weight",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
+  Background: "https://dnd5e.app/vocab/dnd5e#Background",
   startingProficiencies: {
     "@id": "https://dnd5e.app/vocab/dnd5e#startingProficiencies",
     "@type": "@id",
     "@container": "@set",
   },
+  Proficiency: "https://dnd5e.app/vocab/dnd5e#Proficiency",
   classes: {
     "@id": "https://dnd5e.app/vocab/dnd5e#classes",
     "@type": "@id",
     "@container": "@set",
   },
+  Class: "https://dnd5e.app/vocab/dnd5e#Class",
   hitDie: {
     "@id": "https://dnd5e.app/vocab/dnd5e#hitDie",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -107,6 +112,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Level: "https://dnd5e.app/vocab/dnd5e#Level",
   level: {
     "@id": "https://dnd5e.app/vocab/dnd5e#level",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -124,6 +130,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Feature: "https://dnd5e.app/vocab/dnd5e#Feature",
   class: {
     "@id": "https://dnd5e.app/vocab/dnd5e#class",
     "@type": "@id",
@@ -132,6 +139,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#subclass",
     "@type": "@id",
   },
+  Subclass: "https://dnd5e.app/vocab/dnd5e#Subclass",
   subclassFlavor: {
     "@id": "https://dnd5e.app/vocab/dnd5e#subclassFlavor",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -155,6 +163,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#spell",
     "@type": "@id",
   },
+  Spell: "https://dnd5e.app/vocab/dnd5e#Spell",
   higherLevel: {
     "@id": "https://dnd5e.app/vocab/dnd5e#higherLevel",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -205,6 +214,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#damageType",
     "@type": "@id",
   },
+  DamageType: "https://dnd5e.app/vocab/dnd5e#DamageType",
   damageAtCharacterLevel: {
     "@id": "https://dnd5e.app/vocab/dnd5e#damageAtCharacterLevel",
     "@type": "@id",
@@ -227,10 +237,12 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicSchool",
     "@type": "@id",
   },
+  MagicSchool: "https://dnd5e.app/vocab/dnd5e#MagicSchool",
   illustration: {
     "@id": "https://dnd5e.app/vocab/dnd5e#illustration",
     "@type": "@id",
   },
+  Illustration: "https://dnd5e.app/vocab/dnd5e#Illustration",
   imageUrl: {
     "@id": "https://dnd5e.app/vocab/dnd5e#imageUrl",
     "@type": "@id",
@@ -269,6 +281,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#expertiseOptions",
     "@type": "@id",
   },
+  Choice: "https://dnd5e.app/vocab/dnd5e#Choice",
   choose: {
     "@id": "https://dnd5e.app/vocab/dnd5e#choose",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -340,10 +353,12 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#of",
     "@type": "@id",
   },
+  Equipment: "https://dnd5e.app/vocab/dnd5e#Equipment",
   equipmentCategory: {
     "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
     "@type": "@id",
   },
+  EquipmentCategory: "https://dnd5e.app/vocab/dnd5e#EquipmentCategory",
   equipmentList: {
     "@id": "https://dnd5e.app/vocab/dnd5e#equipmentList",
     "@type": "@id",
@@ -402,6 +417,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  WeaponProperty: "https://dnd5e.app/vocab/dnd5e#WeaponProperty",
   armor: {
     "@id": "https://dnd5e.app/vocab/dnd5e#armor",
     "@type": "@id",
@@ -449,10 +465,6 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  type2: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#type",
-    "@type": "@id",
-  },
   "dice:": {
     "@id": "https://dnd5e.app/vocab/dnd5e#dice:",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -489,6 +501,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#language",
     "@type": "@id",
   },
+  Language: "https://dnd5e.app/vocab/dnd5e#Language",
   languageType: {
     "@id": "https://dnd5e.app/vocab/dnd5e#languageType",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -798,6 +811,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Race: "https://dnd5e.app/vocab/dnd5e#Race",
   speed: {
     "@id": "https://dnd5e.app/vocab/dnd5e#speed",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -841,11 +855,13 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Trait: "https://dnd5e.app/vocab/dnd5e#Trait",
   subraces: {
     "@id": "https://dnd5e.app/vocab/dnd5e#subraces",
     "@type": "@id",
     "@container": "@set",
   },
+  Subrace: "https://dnd5e.app/vocab/dnd5e#Subrace",
   race: {
     "@id": "https://dnd5e.app/vocab/dnd5e#race",
     "@type": "@id",
@@ -906,6 +922,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
     "@type": "@id",
   },
+  Condition: "https://dnd5e.app/vocab/dnd5e#Condition",
+  Monster: "https://dnd5e.app/vocab/dnd5e#Monster",
   monsterAbilities: {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterAbilities",
     "@type": "@id",
@@ -1135,8 +1153,36 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#xp",
     "@type": "http://www.w3.org/2001/XMLSchema#integer",
   },
+  Rule: "https://dnd5e.app/vocab/dnd5e#Rule",
   ruleSections: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ruleSections",
+    "@type": "@id",
+    "@container": "@set",
+  },
+  RuleSection: "https://dnd5e.app/vocab/dnd5e#RuleSection",
+  name: {
+    "@id": "http://xmlns.com/foaf/0.1/name",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  preferencesFile: {
+    "@id": "http://www.w3.org/ns/pim/space#preferencesFile",
+    "@type": "@id",
+  },
+  storage: {
+    "@id": "http://www.w3.org/ns/pim/space#storage",
+    "@type": "@id",
+  },
+  defaultStorage: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#defaultStorage",
+    "@type": "@id",
+  },
+  Storage: "https://dnd5e.app/vocab/dnd5e#Storage",
+  container: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#container",
+    "@type": "@id",
+  },
+  storages: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#storages",
     "@type": "@id",
     "@container": "@set",
   },

@@ -4,7 +4,6 @@ import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Skill } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
 import { dataPath, dataUrl } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import skills from "../dnd5eapi-data/5e-SRD-Skills.json";
 
 export function transformSkill(
@@ -14,7 +13,7 @@ export function transformSkill(
   const skill = ldoDataset
     .usingType(SkillShapeType)
     .fromSubject(`#${data.index}`);
-  skill.type = type("Skill");
+  skill.type = { "@id": "Skill" };
   skill.label = data.name;
   skill.description = data.desc;
   skill.abilityScore = createLdoDataset()

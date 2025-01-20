@@ -385,7 +385,7 @@ export function sumSpellSlots(level: Level): number {
 }
 
 export function vocabUrl(id: string): string {
-  return `https://dnd5e.app/vocab/dnd5e.ttl#${id}`;
+  return `https://dnd5e.app/vocab/dnd5e#${id}`;
 }
 
 export function weight(weight: number) {

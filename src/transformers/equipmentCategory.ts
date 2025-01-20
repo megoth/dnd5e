@@ -6,7 +6,6 @@ import {
 } from "../ldo/dnd5e.shapeTypes";
 import { EquipmentCategory } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import equipmentCategories from "../dnd5eapi-data/5e-SRD-Equipment-Categories.json";
 
@@ -17,7 +16,7 @@ export function transformEquipmentCategory(
   const category = ldoDataset
     .usingType(EquipmentCategoryShapeType)
     .fromSubject(`#${data.index}`);
-  category.type = type("EquipmentCategory");
+  category.type = { "@id": "EquipmentCategory" };
   category.label = data.name;
   category.equipmentList = data.equipment.map((equipment) =>
     ldoDataset

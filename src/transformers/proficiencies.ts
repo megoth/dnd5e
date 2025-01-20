@@ -12,7 +12,6 @@ import {
 import { writeFileSync } from "node:fs";
 import { Proficiency } from "../ldo/dnd5e.typings";
 import { apiUrlToSubjectUrl, dataPath, dataUrl } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import proficiencies from "../dnd5eapi-data/5e-SRD-Proficiencies.json";
 
 export function transformProficiency(
@@ -22,7 +21,7 @@ export function transformProficiency(
   const proficiency = ldoDataset
     .usingType(ProficiencyShapeType)
     .fromSubject(`#${data.index}`);
-  proficiency.type = type("Proficiency");
+  proficiency.type = { "@id": "Proficiency" };
   proficiency.label = data.name;
   proficiency.ofType = data.type;
   proficiency.classes = data.classes.map((classData) =>

@@ -40,6 +40,8 @@ import MagicItemsPage from "./components/magicItemsPage";
 import MagicItemPage from "./components/MagicItemPage";
 import YouPage from "./components/youPage";
 import StoragesPage from "./components/storagesPage";
+import StorageCreatePage from "./components/storageCreatePage";
+import StoragePage from "./components/storagePage";
 
 const router = createBrowserRouter([
   {
@@ -173,6 +175,14 @@ const router = createBrowserRouter([
       {
         path: "/storages",
         element: <StoragesPage />,
+      },
+      {
+        path: "/storages/create",
+        element: <StorageCreatePage />,
+      },
+      {
+        path: "/storages/:url",
+        element: <StoragePage />,
       },
       {
         path: "/subclasses",

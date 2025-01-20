@@ -19,7 +19,6 @@ import {
   Weapon,
 } from "../ldo/dnd5e.typings";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import { writeFileSync } from "node:fs";
 import equipment from "../dnd5eapi-data/5e-SRD-Equipment.json";
 import { transformDamage } from "./damage";
@@ -105,7 +104,7 @@ export function transformEquipment(
   const equipment = ldoDataset
     .usingType(EquipmentShapeType)
     .fromSubject(`#${data.index}`);
-  equipment.type = type("Equipment");
+  equipment.type = { "@id": "Equipment" };
   equipment.label = data.name;
   equipment.description = data.desc;
   equipment.equipmentCategory =

@@ -4,7 +4,6 @@ import { AlignmentShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Alignment } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
 import { dataPath } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import alignments from "../dnd5eapi-data/5e-SRD-Alignments.json";
 
 function transformAlignment(
@@ -14,7 +13,7 @@ function transformAlignment(
   const alignment = ldoDataset
     .usingType(AlignmentShapeType)
     .fromSubject(`#${data.index}`);
-  alignment.type = type("Alignment");
+  alignment.type = { "@id": "Alignment" };
   alignment.label = data.name;
   alignment.abbreviation = data.abbreviation;
   alignment.description = [data.desc];

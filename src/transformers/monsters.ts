@@ -25,7 +25,6 @@ import {
   MonsterAbility,
   MonsterProficiency,
 } from "../ldo/dnd5e.typings";
-import { type } from "../../public/data/type";
 import monsters from "../dnd5eapi-data/5e-SRD-Monsters.json";
 import { writeFileSync } from "node:fs";
 import {
@@ -108,7 +107,7 @@ export function transformMonster(
   const monster = ldoDataset
     .usingType(MonsterShapeType)
     .fromSubject(`#${data.index}`);
-  monster.type = type("Monster");
+  monster.type = { "@id": "Monster" };
   monster.label = data.name;
   monster.monsterAbilities = [
     transformMonsterAbility("str", data.strength, ldoDataset),

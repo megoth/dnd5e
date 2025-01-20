@@ -6,7 +6,6 @@ import {
   MagicItemShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Equipment } from "../ldo/dnd5e.typings";
-import { type } from "../../public/data/type";
 import items from "../dnd5eapi-data/5e-SRD-Magic-Items.json";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
@@ -18,7 +17,7 @@ export function transformMagicItem(
   const equipment = ldoDataset
     .usingType(EquipmentShapeType)
     .fromSubject(`#${data.index}`);
-  equipment.type = type("Equipment");
+  equipment.type = { "@id": "Equipment" };
   equipment.label = data.name;
   equipment.description = data.desc;
   equipment.equipmentCategory = ldoDataset

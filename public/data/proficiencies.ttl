@@ -1,4 +1,4 @@
-<#light-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#light-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#light-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Light Armor" .
 <#light-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#light-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -9,7 +9,7 @@
 <#light-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#light-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#light-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#light-armor> .
-<#medium-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#medium-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#medium-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Armor" .
 <#medium-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#medium-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -17,65 +17,65 @@
 <#medium-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#medium-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#ranger> .
 <#medium-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#medium-armor> .
-<#heavy-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#heavy-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#heavy-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Heavy Armor" .
 <#heavy-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#heavy-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#heavy-armor> .
-<#all-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#all-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#all-armor> <http://www.w3.org/2000/01/rdf-schema#label> "All armor" .
 <#all-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#all-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#fighter> .
 <#all-armor> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#paladin> .
 <#all-armor> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#armor> .
-<#padded-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#padded-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#padded-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Padded Armor" .
 <#padded-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#padded-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#padded-armor> .
-<#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Leather Armor" .
 <#leather-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#leather-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#leather-armor> .
-<#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#studded-leather-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#studded-leather-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Studded Leather Armor" .
 <#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#studded-leather-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#studded-leather-armor> .
-<#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#hide-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#hide-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Hide Armor" .
 <#hide-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#hide-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#hide-armor> .
-<#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#chain-shirt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#chain-shirt> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Shirt" .
 <#chain-shirt> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#chain-shirt> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#chain-shirt> .
-<#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#scale-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#scale-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Scale Mail" .
 <#scale-mail> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#scale-mail> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#scale-mail> .
-<#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#breastplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#breastplate> <http://www.w3.org/2000/01/rdf-schema#label> "Breastplate" .
 <#breastplate> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#breastplate> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#breastplate> .
-<#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#half-plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#half-plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Half Plate Armor" .
 <#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#half-plate-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#half-plate-armor> .
-<#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#ring-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#ring-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Ring Mail" .
 <#ring-mail> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#ring-mail> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#ring-mail> .
-<#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#chain-mail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#chain-mail> <http://www.w3.org/2000/01/rdf-schema#label> "Chain Mail" .
 <#chain-mail> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#chain-mail> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#chain-mail> .
-<#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#splint-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#splint-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Splint Armor" .
 <#splint-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#splint-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#splint-armor> .
-<#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#plate-armor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#plate-armor> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Armor" .
 <#plate-armor> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#plate-armor> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#plate-armor> .
-<#shields> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#shields> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#shields> <http://www.w3.org/2000/01/rdf-schema#label> "Shields" .
 <#shields> <https://dnd5e.app/vocab/dnd5e#ofType> "Armor" .
 <#shields> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -85,7 +85,7 @@
 <#shields> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#paladin> .
 <#shields> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#ranger> .
 <#shields> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#shield> .
-<#simple-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#simple-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#simple-weapons> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Weapons" .
 <#simple-weapons> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#simple-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -98,7 +98,7 @@
 <#simple-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#simple-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#simple-weapons> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#simple-weapons> .
-<#martial-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#martial-weapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#martial-weapons> <http://www.w3.org/2000/01/rdf-schema#label> "Martial Weapons" .
 <#martial-weapons> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#martial-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -106,144 +106,144 @@
 <#martial-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#paladin> .
 <#martial-weapons> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#ranger> .
 <#martial-weapons> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#martial-weapons> .
-<#clubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#clubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#clubs> <http://www.w3.org/2000/01/rdf-schema#label> "Clubs" .
 <#clubs> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#clubs> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#clubs> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#club> .
-<#daggers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#daggers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#daggers> <http://www.w3.org/2000/01/rdf-schema#label> "Daggers" .
 <#daggers> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#daggers> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#daggers> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#daggers> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#daggers> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#dagger> .
-<#greatclubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#greatclubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#greatclubs> <http://www.w3.org/2000/01/rdf-schema#label> "Greatclubs" .
 <#greatclubs> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#greatclubs> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#greatclub> .
-<#handaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#handaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#handaxes> <http://www.w3.org/2000/01/rdf-schema#label> "Handaxes" .
 <#handaxes> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#handaxes> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
 <#handaxes> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#handaxe> .
-<#javelins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#javelins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#javelins> <http://www.w3.org/2000/01/rdf-schema#label> "Javelins" .
 <#javelins> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#javelins> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#javelins> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#javelin> .
-<#light-hammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#light-hammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#light-hammers> <http://www.w3.org/2000/01/rdf-schema#label> "Light hammers" .
 <#light-hammers> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#light-hammers> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
 <#light-hammers> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#light-hammer> .
-<#maces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#maces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#maces> <http://www.w3.org/2000/01/rdf-schema#label> "Maces" .
 <#maces> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#maces> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#maces> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#mace> .
-<#quarterstaffs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#quarterstaffs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#quarterstaffs> <http://www.w3.org/2000/01/rdf-schema#label> "Quarterstaffs" .
 <#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#quarterstaffs> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#quarterstaff> .
-<#sickles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#sickles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#sickles> <http://www.w3.org/2000/01/rdf-schema#label> "Sickles" .
 <#sickles> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#sickles> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#sickles> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#sickle> .
-<#spears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#spears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#spears> <http://www.w3.org/2000/01/rdf-schema#label> "Spears" .
 <#spears> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#spears> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#spears> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#spear> .
-<#crossbows-light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#crossbows-light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#crossbows-light> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbows, light" .
 <#crossbows-light> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#crossbows-light> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#crossbows-light> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#crossbows-light> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#crossbow-light> .
-<#darts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#darts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#darts> <http://www.w3.org/2000/01/rdf-schema#label> "Darts" .
 <#darts> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#darts> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#darts> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#darts> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#darts> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#dart> .
-<#shortbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#shortbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#shortbows> <http://www.w3.org/2000/01/rdf-schema#label> "Shortbows" .
 <#shortbows> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#shortbows> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#high-elf> .
 <#shortbows> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#shortbow> .
-<#slings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#slings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#slings> <http://www.w3.org/2000/01/rdf-schema#label> "Slings" .
 <#slings> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#slings> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#slings> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#slings> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#slings> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#sling> .
-<#battleaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#battleaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#battleaxes> <http://www.w3.org/2000/01/rdf-schema#label> "Battleaxes" .
 <#battleaxes> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#battleaxes> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
 <#battleaxes> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#battleaxe> .
-<#flails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#flails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#flails> <http://www.w3.org/2000/01/rdf-schema#label> "Flails" .
 <#flails> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#flails> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#flail> .
-<#glaives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#glaives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#glaives> <http://www.w3.org/2000/01/rdf-schema#label> "Glaives" .
 <#glaives> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#glaives> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#glaive> .
-<#greataxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#greataxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#greataxes> <http://www.w3.org/2000/01/rdf-schema#label> "Greataxes" .
 <#greataxes> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#greataxes> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#greataxe> .
-<#greatswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#greatswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#greatswords> <http://www.w3.org/2000/01/rdf-schema#label> "Greatswords" .
 <#greatswords> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#greatswords> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#greatsword> .
-<#halberds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#halberds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#halberds> <http://www.w3.org/2000/01/rdf-schema#label> "Halberds" .
 <#halberds> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#halberds> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#halberd> .
-<#lances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#lances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#lances> <http://www.w3.org/2000/01/rdf-schema#label> "Lances" .
 <#lances> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#lances> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#lance> .
-<#longswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#longswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#longswords> <http://www.w3.org/2000/01/rdf-schema#label> "Longswords" .
 <#longswords> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#longswords> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
 <#longswords> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#longswords> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#high-elf> .
 <#longswords> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#longsword> .
-<#mauls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#mauls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#mauls> <http://www.w3.org/2000/01/rdf-schema#label> "Mauls" .
 <#mauls> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#mauls> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#maul> .
-<#morningstars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#morningstars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#morningstars> <http://www.w3.org/2000/01/rdf-schema#label> "Morningstars" .
 <#morningstars> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#morningstars> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#morningstar> .
-<#pikes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#pikes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#pikes> <http://www.w3.org/2000/01/rdf-schema#label> "Pikes" .
 <#pikes> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#pikes> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#pike> .
-<#rapiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#rapiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#rapiers> <http://www.w3.org/2000/01/rdf-schema#label> "Rapiers" .
 <#rapiers> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#rapiers> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
 <#rapiers> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#rapiers> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#rapier> .
-<#scimitars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#scimitars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#scimitars> <http://www.w3.org/2000/01/rdf-schema#label> "Scimitars" .
 <#scimitars> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#scimitars> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#scimitars> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#scimitar> .
-<#shortswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#shortswords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#shortswords> <http://www.w3.org/2000/01/rdf-schema#label> "Shortswords" .
 <#shortswords> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#shortswords> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
@@ -251,195 +251,195 @@
 <#shortswords> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#shortswords> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#high-elf> .
 <#shortswords> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#shortsword> .
-<#tridents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#tridents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#tridents> <http://www.w3.org/2000/01/rdf-schema#label> "Tridents" .
 <#tridents> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#tridents> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#trident> .
-<#war-picks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#war-picks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#war-picks> <http://www.w3.org/2000/01/rdf-schema#label> "War picks" .
 <#war-picks> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#war-picks> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#war-pick> .
-<#warhammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#warhammers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#warhammers> <http://www.w3.org/2000/01/rdf-schema#label> "Warhammers" .
 <#warhammers> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#warhammers> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
 <#warhammers> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#warhammer> .
-<#whips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#whips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#whips> <http://www.w3.org/2000/01/rdf-schema#label> "Whips" .
 <#whips> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#whips> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#whip> .
-<#blowguns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#blowguns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#blowguns> <http://www.w3.org/2000/01/rdf-schema#label> "Blowguns" .
 <#blowguns> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#blowguns> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#blowgun> .
-<#hand-crossbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#hand-crossbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#hand-crossbows> <http://www.w3.org/2000/01/rdf-schema#label> "Hand crossbows" .
 <#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
 <#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#hand-crossbows> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#crossbow-hand> .
-<#crossbows-heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#crossbows-heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#crossbows-heavy> <http://www.w3.org/2000/01/rdf-schema#label> "Crossbows, heavy" .
 <#crossbows-heavy> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#crossbows-heavy> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#crossbow-heavy> .
-<#longbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#longbows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#longbows> <http://www.w3.org/2000/01/rdf-schema#label> "Longbows" .
 <#longbows> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#longbows> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#high-elf> .
 <#longbows> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#longbow> .
-<#nets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#nets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#nets> <http://www.w3.org/2000/01/rdf-schema#label> "Nets" .
 <#nets> <https://dnd5e.app/vocab/dnd5e#ofType> "Weapons" .
 <#nets> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#net> .
-<#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#alchemists-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#alchemists-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Alchemist's Supplies" .
 <#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#alchemists-supplies> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#alchemists-supplies> .
-<#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#brewers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#brewers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Brewer's Supplies" .
 <#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#brewers-supplies> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#brewers-supplies> .
-<#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#calligraphers-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#calligraphers-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Calligrapher's Supplies" .
 <#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#calligraphers-supplies> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#calligraphers-supplies> .
-<#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#carpenters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#carpenters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Carpenter's Tools" .
 <#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#carpenters-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#carpenters-tools> .
-<#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#cartographers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#cartographers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cartographer's Tools" .
 <#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#cartographers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#cartographers-tools> .
-<#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#cobblers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#cobblers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Cobbler's Tools" .
 <#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#cobblers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#cobblers-tools> .
-<#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#cooks-utensils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#cooks-utensils> <http://www.w3.org/2000/01/rdf-schema#label> "Cook's utensils" .
 <#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#cooks-utensils> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#cooks-utensils> .
-<#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#glassblowers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#glassblowers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Glassblower's Tools" .
 <#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#glassblowers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#glassblowers-tools> .
-<#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#jewelers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#jewelers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Jeweler's Tools" .
 <#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#jewelers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#jewelers-tools> .
-<#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#leatherworkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#leatherworkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Leatherworker's Tools" .
 <#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#leatherworkers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#leatherworkers-tools> .
-<#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#masons-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#masons-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Mason's Tools" .
 <#masons-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#masons-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#masons-tools> .
-<#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#painters-supplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#painters-supplies> <http://www.w3.org/2000/01/rdf-schema#label> "Painter's Supplies" .
 <#painters-supplies> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#painters-supplies> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#painters-supplies> .
-<#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#potters-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#potters-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Potter's Tools" .
 <#potters-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#potters-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#potters-tools> .
-<#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#smiths-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#smiths-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Smith's Tools" .
 <#smiths-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#smiths-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#smiths-tools> .
-<#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#tinkers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#tinkers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Tinker's Tools" .
 <#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#tinkers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#tinkers-tools> .
-<#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#weavers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#weavers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Weaver's Tools" .
 <#weavers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#weavers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#weavers-tools> .
-<#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#woodcarvers-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#woodcarvers-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Woodcarver's Tools" .
 <#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#woodcarvers-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#woodcarvers-tools> .
-<#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#disguise-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#disguise-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Disguise Kit" .
 <#disguise-kit> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#disguise-kit> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#disguise-kit> .
-<#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#forgery-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#forgery-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Forgery Kit" .
 <#forgery-kit> <https://dnd5e.app/vocab/dnd5e#ofType> "Artisan's Tools" .
 <#forgery-kit> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#forgery-kit> .
-<#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#dice-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#dice-set> <http://www.w3.org/2000/01/rdf-schema#label> "Dice Set" .
 <#dice-set> <https://dnd5e.app/vocab/dnd5e#ofType> "Gaming Sets" .
 <#dice-set> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#dice-set> .
-<#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#playing-card-set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#playing-card-set> <http://www.w3.org/2000/01/rdf-schema#label> "Playing Card Set" .
 <#playing-card-set> <https://dnd5e.app/vocab/dnd5e#ofType> "Gaming Sets" .
 <#playing-card-set> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#playing-card-set> .
-<#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#bagpipes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#bagpipes> <http://www.w3.org/2000/01/rdf-schema#label> "Bagpipes" .
 <#bagpipes> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#bagpipes> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#bagpipes> .
-<#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#drum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#drum> <http://www.w3.org/2000/01/rdf-schema#label> "Drum" .
 <#drum> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#drum> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#drum> .
-<#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#dulcimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#dulcimer> <http://www.w3.org/2000/01/rdf-schema#label> "Dulcimer" .
 <#dulcimer> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#dulcimer> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#dulcimer> .
-<#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#flute> <http://www.w3.org/2000/01/rdf-schema#label> "Flute" .
 <#flute> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#flute> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#flute> .
-<#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#lute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#lute> <http://www.w3.org/2000/01/rdf-schema#label> "Lute" .
 <#lute> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#lute> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#lute> .
-<#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#lyre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#lyre> <http://www.w3.org/2000/01/rdf-schema#label> "Lyre" .
 <#lyre> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#lyre> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#lyre> .
-<#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#horn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#horn> <http://www.w3.org/2000/01/rdf-schema#label> "Horn" .
 <#horn> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#horn> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#horn> .
-<#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#pan-flute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#pan-flute> <http://www.w3.org/2000/01/rdf-schema#label> "Pan flute" .
 <#pan-flute> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#pan-flute> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#pan-flute> .
-<#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#shawm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#shawm> <http://www.w3.org/2000/01/rdf-schema#label> "Shawm" .
 <#shawm> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#shawm> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#shawm> .
-<#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#viol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#viol> <http://www.w3.org/2000/01/rdf-schema#label> "Viol" .
 <#viol> <https://dnd5e.app/vocab/dnd5e#ofType> "Musical Instruments" .
 <#viol> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#viol> .
-<#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#herbalism-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#herbalism-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Herbalism Kit" .
 <#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#ofType> "Other" .
 <#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
 <#herbalism-kit> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#herbalism-kit> .
-<#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#navigators-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#navigators-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Navigator's Tools" .
 <#navigators-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Other" .
 <#navigators-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#navigators-tools> .
-<#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#poisoners-kit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#poisoners-kit> <http://www.w3.org/2000/01/rdf-schema#label> "Poisoner's Kit" .
 <#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#ofType> "Other" .
 <#poisoners-kit> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#poisoners-kit> .
-<#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#thieves-tools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#thieves-tools> <http://www.w3.org/2000/01/rdf-schema#label> "Thieves' Tools" .
 <#thieves-tools> <https://dnd5e.app/vocab/dnd5e#ofType> "Other" .
 <#thieves-tools> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#thieves-tools> <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipment.ttl#thieves-tools> .
-<#land-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#land-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#land-vehicles> <http://www.w3.org/2000/01/rdf-schema#label> "Land Vehicles" .
 <#land-vehicles> <https://dnd5e.app/vocab/dnd5e#ofType> "Vehicles" .
-<#water-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#water-vehicles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#water-vehicles> <http://www.w3.org/2000/01/rdf-schema#label> "Water Vehicles" .
 <#water-vehicles> <https://dnd5e.app/vocab/dnd5e#ofType> "Vehicles" .
-<#saving-throw-str> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-str> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-str> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: STR" .
 <#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -448,7 +448,7 @@
 <#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#ranger> .
 <#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#str> .
 <#saving-throw-str> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#str> .
-<#saving-throw-dex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-dex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-dex> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: DEX" .
 <#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
@@ -457,7 +457,7 @@
 <#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#rogue> .
 <#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#dex> .
 <#saving-throw-dex> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#dex> .
-<#saving-throw-con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-con> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-con> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: CON" .
 <#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#barbarian> .
@@ -465,7 +465,7 @@
 <#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#sorcerer> .
 <#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#con> .
 <#saving-throw-con> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#con> .
-<#saving-throw-int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-int> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: INT" .
 <#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#druid> .
@@ -473,7 +473,7 @@
 <#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#int> .
 <#saving-throw-int> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#int> .
-<#saving-throw-wis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-wis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-wis> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: WIS" .
 <#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#cleric> .
@@ -483,7 +483,7 @@
 <#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#wizard> .
 <#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#wis> .
 <#saving-throw-wis> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#wis> .
-<#saving-throw-cha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#saving-throw-cha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#saving-throw-cha> <http://www.w3.org/2000/01/rdf-schema#label> "Saving Throw: CHA" .
 <#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#ofType> "Saving Throws" .
 <#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#bard> .
@@ -493,76 +493,76 @@
 <#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#classes> </data/classes.ttl#warlock> .
 <#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/ability-scores.ttl#cha> .
 <#saving-throw-cha> <https://dnd5e.app/vocab/dnd5e#savingThrow> </data/ability-scores.ttl#cha> .
-<#skill-acrobatics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-acrobatics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-acrobatics> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Acrobatics" .
 <#skill-acrobatics> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-acrobatics> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#acrobatics> .
-<#skill-animal-handling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-animal-handling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-animal-handling> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Animal Handling" .
 <#skill-animal-handling> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-animal-handling> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#animal-handling> .
-<#skill-arcana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-arcana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-arcana> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Arcana" .
 <#skill-arcana> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-arcana> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#arcana> .
-<#skill-athletics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-athletics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-athletics> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Athletics" .
 <#skill-athletics> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-athletics> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#athletics> .
-<#skill-deception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-deception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-deception> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Deception" .
 <#skill-deception> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-deception> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#deception> .
-<#skill-history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-history> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: History" .
 <#skill-history> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-history> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#history> .
-<#skill-insight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-insight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-insight> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Insight" .
 <#skill-insight> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-insight> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#insight> .
-<#skill-intimidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-intimidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-intimidation> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Intimidation" .
 <#skill-intimidation> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-intimidation> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#intimidation> .
-<#skill-investigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-investigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-investigation> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Investigation" .
 <#skill-investigation> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-investigation> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#investigation> .
-<#skill-medicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-medicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-medicine> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Medicine" .
 <#skill-medicine> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-medicine> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#medicine> .
-<#skill-nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-nature> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Nature" .
 <#skill-nature> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-nature> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#nature> .
-<#skill-perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-perception> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Perception" .
 <#skill-perception> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-perception> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#elf> .
 <#skill-perception> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#perception> .
-<#skill-performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-performance> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Performance" .
 <#skill-performance> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-performance> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#performance> .
-<#skill-persuasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-persuasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-persuasion> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Persuasion" .
 <#skill-persuasion> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-persuasion> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#persuasion> .
-<#skill-religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-religion> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Religion" .
 <#skill-religion> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-religion> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#religion> .
-<#skill-sleight-of-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-sleight-of-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-sleight-of-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Sleight of Hand" .
 <#skill-sleight-of-hand> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-sleight-of-hand> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#sleight-of-hand> .
-<#skill-stealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-stealth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-stealth> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Stealth" .
 <#skill-stealth> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-stealth> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#stealth> .
-<#skill-survival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Proficiency> .
+<#skill-survival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Proficiency> .
 <#skill-survival> <http://www.w3.org/2000/01/rdf-schema#label> "Skill: Survival" .
 <#skill-survival> <https://dnd5e.app/vocab/dnd5e#ofType> "Skills" .
 <#skill-survival> <https://dnd5e.app/vocab/dnd5e#skill> </data/skills.ttl#survival> .

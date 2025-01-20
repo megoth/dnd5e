@@ -12,7 +12,6 @@ import {
 import { writeFileSync } from "node:fs";
 import { Subrace } from "../ldo/dnd5e.typings";
 import { addendumPath, apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import subraces from "../dnd5eapi-data/5e-SRD-Subraces.json";
 import { readFileSync } from "fs";
 import { transformChoice } from "./choice";
@@ -24,7 +23,7 @@ function transformSubrace(
   const subrace = ldoDataset
     .usingType(SubraceShapeType)
     .fromSubject(`#${data.index}`);
-  subrace.type = type("Subrace");
+  subrace.type = { "@id": "Subrace" };
   subrace.label = data.name;
   subrace.description = [data.desc];
   subrace.race = ldoDataset

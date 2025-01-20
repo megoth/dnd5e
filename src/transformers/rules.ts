@@ -4,7 +4,6 @@ import { RuleSectionShapeType, RuleShapeType } from "../ldo/dnd5e.shapeTypes";
 import { Rule } from "../ldo/dnd5e.typings";
 import { writeFileSync } from "node:fs";
 import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import rules from "../dnd5eapi-data/5e-SRD-Rules.json";
 
 export function transformRule(
@@ -14,7 +13,7 @@ export function transformRule(
   const rule = ldoDataset
     .usingType(RuleShapeType)
     .fromSubject(`#${data.index}`);
-  rule.type = type("Rule");
+  rule.type = { "@id": "Rule" };
   rule.label = data.name;
   rule.description = [data.desc];
   rule.ruleSections = data.subsections.map((section) =>

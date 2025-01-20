@@ -4,7 +4,6 @@ import { ConditionShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Condition } from "../ldo/dnd5e.typings";
 import { dataPath } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 import conditions from "../dnd5eapi-data/5e-SRD-Conditions.json";
 
 function transformCondition(
@@ -14,7 +13,7 @@ function transformCondition(
   const damageType = ldoDataset
     .usingType(ConditionShapeType)
     .fromSubject(`#${data.index}`);
-  damageType.type = type("Condition");
+  damageType.type = { "@id": "Condition" };
   damageType.label = data.name;
   damageType.description = data.desc;
   return damageType;

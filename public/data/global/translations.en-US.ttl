@@ -45,6 +45,10 @@
 :concentration skos:definition "Concentration"@en-US .
 :constitution skos:definition "Constitution"@en-US .
 :cost skos:definition "Cost"@en-US .
+:createStorage skos:definition "Create Storage"@en-US .
+:createStoragePitch skos:definition
+        """To allow this app to handle your data it needs to set up a resource on your Solid Pod. That also allow you
+        to share your data if you so wish."""@en-US .
 :damage skos:definition "Damage"@en-US .
 :darkModeTurnOff skos:definition "Turn off dark mode"@en-US .
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
@@ -84,6 +88,7 @@
 :level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
 :locale-nb-NO skos:definition "Norwegian"@en-US .
+:location skos:definition "Location"@en-US .
 :loggedIn skos:definition "Logged in as {$name}"@en-US .
 :LoggedInAlready skos:definition "You are already logged in as {$name}"@en-US .
 :loggedOut skos:definition "Not logged in"@en-US .
@@ -119,6 +124,7 @@
 :order7 skos:definition "7th"@en-US .
 :order8 skos:definition "8th"@en-US .
 :order9 skos:definition "9th"@en-US .
+:pageRequiresAuthentication skos:definition "This page requires authentication."@en-US .
 :passivePerception skos:definition "Passive Perception"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
@@ -150,6 +156,8 @@
 :searchHere skos:definition "Search here"@en-US .
 :senses skos:definition "Senses"@en-US .
 :serviceLogo skos:definition "Logo for service"@en-US .
+:setAsDefaultStorage skos:definition "Set as default storage"@en-US .
+:setAsDefaultStorageDescription skos:definition "This app requires a default storage to function."@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition
         """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we

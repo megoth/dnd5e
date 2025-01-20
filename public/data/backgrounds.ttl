@@ -1,4 +1,4 @@
-<#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Background> .
+<#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Background> .
 <#acolyte> <http://www.w3.org/2000/01/rdf-schema#label> "Acolyte" .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#skill-insight> .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#skill-religion> .
@@ -10,7 +10,7 @@ _:b1 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
 _:b2 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#pouch> .
 _:b2 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
 _:b3 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
-_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e.ttl#Choice> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b4 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4 <https://dnd5e.app/vocab/dnd5e#ofType> "equipment" .
 _:b4 <https://dnd5e.app/vocab/dnd5e#from> _:b3 .

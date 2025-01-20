@@ -46,6 +46,10 @@
 :concentration skos:definition "Konsentrasjon"@nb-NO .
 :constitution skos:definition "Kroppsform"@nb-NO .
 :cost skos:definition "Pris"@nb-NO .
+:createStorage skos:definition "Sett opp lagringsplass"@nb-NO .
+:createStoragePitch skos:definition
+        """For at denne appen skal kunne håndtere dataene dine så trenger den å sette opp en ressurs på din Solid Pod.
+        Det gjør at du også kan dele dataene dine om du ønsker det."""@nb-NO .
 :damage skos:definition "Skade"@nb-NO .
 :darkModeTurnOff skos:definition "Skru av dark-modus"@nb-NO .
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
@@ -86,6 +90,7 @@
 :level skos:definition "Nivå"@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
+:location skos:definition "Lokasjon"@nb-NO .
 :loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
 :LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
 :loggedOut skos:definition "Ikke logget inn"@nb-NO .
@@ -122,6 +127,7 @@
 :order7 skos:definition "7."@nb-NO .
 :order8 skos:definition "8."@nb-NO .
 :order9 skos:definition "9."@nb-NO .
+:pageRequiresAuthentication skos:definition "Denne siden krever innlogging."@nb-NO .
 :passivePerception skos:definition "Passiv oppfatning"@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
@@ -142,8 +148,6 @@
 :rulesPageTitle skos:definition "Regler"@nb-NO .
 :savingThrow skos:definition "Redningskast"@nb-NO .
 :savingThrows skos:definition "Redningskast"@nb-NO .
-:senses skos:definition "Sanser"@nb-NO .
-:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :school skos:definition "Skole"@nb-NO .
 :search skos:definition "Søk"@nb-NO .
 :searchDescription skos:definition
@@ -153,6 +157,10 @@
         Applikasjonen lagrer valget ditt for nettleseren."""@nb-NO .
 :searchEnable skos:definition "Skru på søk"@nb-NO .
 :searchHere skos:definition "Søk her"@nb-NO .
+:senses skos:definition "Sanser"@nb-NO .
+:setAsDefaultStorage skos:definition "Sett som standard lagringsplass"@nb-NO .
+:setAsDefaultStorageDescription skos:definition "Denne appen krever en standard lagringsplass for å fungere."@nb-NO .
+:serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid

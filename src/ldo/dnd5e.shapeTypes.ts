@@ -72,10 +72,12 @@ import {
   Rule,
   RuleSection,
   ScorePrerequisiteOption,
+  SolidProfile,
   Skill,
   Spell,
   SpellDamage,
   StartingEquipment,
+  Storage,
   StringOption,
   Subclass,
   SubclassSpecific,
@@ -86,7 +88,6 @@ import {
   TraitSpecificBreathWeapon,
   TraitSpecificBreathWeaponDamage,
   TraitSpecificUsage,
-  Type,
   Weapon,
   WeaponProperty,
   WeaponRange,
@@ -737,6 +738,15 @@ export const ScorePrerequisiteOptionShapeType: ShapeType<ScorePrerequisiteOption
   };
 
 /**
+ * SolidProfile ShapeType
+ */
+export const SolidProfileShapeType: ShapeType<SolidProfile> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#SolidProfile",
+  context: dnd5eContext,
+};
+
+/**
  * Skill ShapeType
  */
 export const SkillShapeType: ShapeType<Skill> = {
@@ -769,6 +779,15 @@ export const SpellDamageShapeType: ShapeType<SpellDamage> = {
 export const StartingEquipmentShapeType: ShapeType<StartingEquipment> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#StartingEquipment",
+  context: dnd5eContext,
+};
+
+/**
+ * Storage ShapeType
+ */
+export const StorageShapeType: ShapeType<Storage> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Storage",
   context: dnd5eContext,
 };
 
@@ -862,15 +881,6 @@ export const TraitSpecificBreathWeaponDamageShapeType: ShapeType<TraitSpecificBr
 export const TraitSpecificUsageShapeType: ShapeType<TraitSpecificUsage> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#TraitSpecificUsage",
-  context: dnd5eContext,
-};
-
-/**
- * Type ShapeType
- */
-export const TypeShapeType: ShapeType<Type> = {
-  schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#Type",
   context: dnd5eContext,
 };
 

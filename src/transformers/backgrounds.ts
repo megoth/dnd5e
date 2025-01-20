@@ -8,7 +8,6 @@ import { writeFileSync } from "node:fs";
 import { Background } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
 import { transformStartingEquipment } from "./startingEquipment";
-import { type } from "../../public/data/type";
 import { transformChoice } from "./choice";
 import backgrounds from "../dnd5eapi-data/5e-SRD-Backgrounds.json";
 
@@ -19,7 +18,7 @@ function transformBackground(
   const background = ldoDataset
     .usingType(BackgroundShapeType)
     .fromSubject(`#${data.index}`);
-  background.type = type("Background");
+  background.type = { "@id": "Background" };
   background.label = data.name;
   if (data.starting_proficiencies) {
     background.startingProficiencies = data.starting_proficiencies.map(

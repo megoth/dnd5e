@@ -10,7 +10,6 @@ import {
   TraitShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Race } from "../ldo/dnd5e.typings";
-import { type } from "../../public/data/type";
 import races from "../dnd5eapi-data/5e-SRD-Races.json";
 import { writeFileSync } from "node:fs";
 import { addendumPath, apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
@@ -24,7 +23,7 @@ export function transformRace(
   const race = ldoDataset
     .usingType(RaceShapeType)
     .fromSubject(`#${data.index}`);
-  race.type = type("Race");
+  race.type = { "@id": "Race" };
   race.label = data.name;
   race.speed = data.speed;
   race.abilityBonuses = data.ability_bonuses.map((bonus) =>

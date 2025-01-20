@@ -4,7 +4,6 @@ import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { AbilityScore } from "../ldo/dnd5e.typings";
 import { dataPath, dataUrl } from "../utils/dnd5e";
-import { type } from "../../public/data/type";
 
 import abilityScores from "../dnd5eapi-data/5e-SRD-Ability-Scores.json";
 
@@ -15,7 +14,7 @@ function transformAbilityScore(
   const abilityScore = ldoDataset
     .usingType(AbilityScoreShapeType)
     .fromSubject(`#${data.index}`);
-  abilityScore.type = type("AbilityScore");
+  abilityScore.type = { "@id": "AbilityScore" };
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;
   abilityScore.description = data.desc;
