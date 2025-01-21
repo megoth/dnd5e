@@ -12,9 +12,10 @@
 @import "components/illustration.css";
 @import "components/layout.css";
 @import "components/link.css";
+@import "components/main-container.css";
 @import "components/nav-group.css";
 @import "components/notification.css";
-@import "components/main-container.css";
+@import "components/options.css";
 @import "components/pages-nav.css";
 @import "components/table.css";
 

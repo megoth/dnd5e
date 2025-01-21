@@ -83,6 +83,7 @@
 :illustrationBy skos:definition "Illustrasjon av {$creator}"@nb-NO .
 :intelligence skos:definition "Intelligens"@nb-NO .
 :invocationsKnown skos:definition "Kjente trolldommer"@nb-NO .
+:isDefaultStorage skos:definition "Er standard lagringsplass"@nb-NO .
 :kiPoints skos:definition "Ki poeng"@nb-NO .
 :languages skos:definition "Språk"@nb-NO .
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .

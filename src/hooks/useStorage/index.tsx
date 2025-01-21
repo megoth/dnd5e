@@ -8,7 +8,11 @@ export default function useStorage() {
   const { profile } = useProfile();
   const { getResource, getSubject } = useLdo();
 
-  const { data: defaultStorage, isLoading: defaultStorageLoading } = useSWR(
+  const {
+    data: defaultStorage,
+    isLoading: defaultStorageLoading,
+    mutate: mutateDefaultStorage,
+  } = useSWR(
     () => `storage-${profile?.["@id"]}`,
     async () => {
       if (!profile?.defaultStorage) return;
@@ -19,7 +23,11 @@ export default function useStorage() {
     },
   );
 
-  const { data: storages, isLoading: storagesLoading } = useSWR(
+  const {
+    data: storages,
+    isLoading: storagesLoading,
+    mutate: mutateStorages,
+  } = useSWR(
     () =>
       `storages-${profile.storages.map((storage) => storage["@id"]).join("-")}`,
     async () => {
@@ -37,5 +45,6 @@ export default function useStorage() {
     defaultStorage,
     storages,
     isLoading: defaultStorageLoading || storagesLoading,
+    mutate: async () => Promise.all([mutateDefaultStorage(), mutateStorages()]),
   };
 }

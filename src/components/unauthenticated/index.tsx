@@ -14,7 +14,7 @@ export default function Unauthenticated() {
       <h2 className="font-bold text-xl">
         <Translation id="recommendedIdPSet" />
       </h2>
-      <div className="max-w-72 mx-auto md:mx-0">
+      <div className="max-w-72">
         <ul className="flex flex-col space-y-2 my-2">
           {providers.map(({ loginIri, label }) => (
             <li key={loginIri}>

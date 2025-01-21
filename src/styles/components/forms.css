@@ -28,7 +28,7 @@
 }
 
 .input--global-search[type="text"] {
-    @apply px-2 py-1 dark:bg-gray-700 dark:border-black focus:ring-gray-300 dark:text-gray-50;
+    @apply px-2 py-1 dark:bg-gray-700 dark:border-black focus:ring-gray-300 dark:text-gray-50 shadow-none;
 }
 
 .input--search[type="text"] {

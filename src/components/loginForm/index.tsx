@@ -1,4 +1,4 @@
-import React, { createRef, HTMLAttributes, useEffect, useState } from "react";
+import React, { HTMLAttributes, useState } from "react";
 import clsx from "clsx";
 import Translation from "../translation";
 import ErrorMessage from "../errorMessage";
@@ -22,7 +22,6 @@ export default function LoginForm({
   redirectURL = getRedirectURL(""),
   ...props
 }: Props) {
-  // const router = useRouter();
   const [searchParams] = useSearchParams();
   const queryIdP: string = Array.isArray(searchParams.get("idp"))
     ? searchParams.get("idp")[0]
@@ -35,13 +34,6 @@ export default function LoginForm({
   );
   const [loginError] = useState<Error | null>(null);
   const { login } = useSolidAuth();
-
-  const providerFieldRef = createRef<HTMLInputElement>();
-
-  useEffect(() => {
-    if (!providerFieldRef || searchParams.get("idp") === undefined) return;
-    providerFieldRef.current.focus();
-  }, [providerFieldRef, searchParams.get("idp")]);
 
   if (loginError) {
     return <ErrorMessage error={loginError} />;
@@ -87,7 +79,6 @@ export default function LoginForm({
           onChange={(event) => setProviderIri(event.target.value)}
           className="input"
           value={providerIri}
-          ref={providerFieldRef}
           required
           placeholder="https://"
           data-testid={TESTID_LOGIN_FORM_IDP_FIELD}

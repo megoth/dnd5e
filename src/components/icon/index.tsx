@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react";
 
 interface Props extends HTMLAttributes<SVGElement> {
-  name: "breadcrumb-divider" | "close" | "login" | "menu" | "settings";
+  name: "breadcrumb-divider" | "close" | "login" | "menu" | "settings" | "tick";
 }
 
 export default function Icon({ name, ...props }: Props) {
@@ -94,6 +94,23 @@ export default function Icon({ name, ...props }: Props) {
             strokeLinejoin="round"
             strokeWidth={2}
             d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+          />
+        </svg>
+      );
+    case "tick":
+      return (
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...iconProps}
+        >
+          <path
+            d="M5.5 12.5L10.167 17L19.5 8"
+            stroke="rgb(34 197 94 / var(--tw-text-opacity, 1))"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       );

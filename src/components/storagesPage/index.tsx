@@ -9,10 +9,11 @@ import Breadcrumbs from "../breadcrumbs";
 import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
 import Loading from "../loading";
+import Icon from "../icon";
 
 export default function StoragesPage() {
   const { session } = useSolidAuth();
-  const { storages, isLoading } = useStorage();
+  const { defaultStorage, storages, isLoading } = useStorage();
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -28,18 +29,21 @@ export default function StoragesPage() {
             <h1>
               <Translation id="storages" />
             </h1>
-            <nav>
+            <div className="options">
               <NavLink to="/storages/create" className="button">
                 <Translation id="createStorage" />
               </NavLink>
-            </nav>
+            </div>
             {isLoading && <Loading />}
-            {storages && (
+            {!isLoading && storages && (
               <table className="table">
                 <thead>
                   <tr>
                     <th>
                       <Translation id="name" />
+                    </th>
+                    <th>
+                      <Translation id="isDefaultStorage" />
                     </th>
                   </tr>
                 </thead>
@@ -50,6 +54,11 @@ export default function StoragesPage() {
                         <NavLink to={`/storages/${btoa(storage["@id"])}`}>
                           {storage.label}
                         </NavLink>
+                      </td>
+                      <td>
+                        {storage["@id"] === defaultStorage["@id"] && (
+                          <Icon name="tick" />
+                        )}
                       </td>
                     </tr>
                   ))}

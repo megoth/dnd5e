@@ -81,6 +81,7 @@
 :illustrationBy skos:definition "Illustration by {$creator}"@en-US .
 :intelligence skos:definition "Intelligence"@en-US .
 :invocationsKnown skos:definition "Invocations Known"@en-US .
+:isDefaultStorage skos:definition "Is default storage"@en-US .
 :kiPoints skos:definition "Ki Points"@en-US .
 :languages skos:definition "Languages"@en-US .
 :learnMore skos:definition "Learn more about the project"@en-US .

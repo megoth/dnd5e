@@ -1,23 +1,31 @@
-.button {
-  @apply bg-red-100 py-2 px-4 rounded-sm border border-red-300 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-inset hover:shadow-inner leading-none inline-block dark:text-black text-center;
+.button[href],
+.button[type] {
+    @apply bg-red-100 py-2 px-4 rounded-sm border border-red-300 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-inset leading-none inline-block dark:text-black text-center shadow-md hover:shadow-inner;
 }
 
-.button--close {
-  @apply bg-gray-100 dark:bg-gray-800 border-transparent px-2 w-full hover:bg-transparent hover:text-black dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
+.button[href]:disabled,
+.button[type]:disabled {
+    @apply bg-gray-500 border-gray-500 cursor-not-allowed;
 }
 
-.button--global-search {
-  @apply  bg-gray-50 dark:bg-gray-700 dark:border-black dark:text-gray-300 border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600;
+.button--close[type] {
+    @apply bg-gray-100 dark:bg-gray-800 border-transparent px-2 w-full hover:bg-transparent hover:text-black dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
 }
 
-.button--search {
-  @apply py-1;
+.button--global-search[type] {
+    @apply bg-gray-50 dark:bg-gray-700 dark:border-black dark:text-gray-300 border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
 }
 
-.button--subtle {
-  @apply bg-transparent border-0 hover:bg-transparent hover:border-0 p-0;
+.button--search[type] {
+    @apply py-1;
 }
 
-.button--solid {
-  @apply bg-purple-100 border-purple-300 hover:bg-purple-300 focus:ring-purple-800;
+.button--subtle[href],
+.button--subtle[type] {
+    @apply bg-transparent border-0 hover:bg-transparent hover:border-0 p-0;
+}
+
+.button--solid[href],
+.button--solid[type] {
+    @apply bg-purple-100 border-purple-300 hover:bg-purple-300 focus:ring-purple-800;
 }
