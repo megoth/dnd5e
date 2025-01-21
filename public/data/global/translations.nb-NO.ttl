@@ -55,6 +55,7 @@
 :darkModeTurnOn skos:definition "Skru på dark-modus"@nb-NO .
 :darkvision skos:definition "Mørkesyn"@nb-NO .
 :datasetLoadFailed skos:definition "Klarte ikke å hente ressurs"@nb-NO .
+:deleteStorage skos:definition "Slett lagringsplass"@nb-NO .
 :descriptionOf skos:definition "Beskrivelse av {$type}"@nb-NO .
 :dex skos:definition "smidighet"@nb-NO .
 :dexModifier skos:definition "Smidighet modifikator"@nb-NO .

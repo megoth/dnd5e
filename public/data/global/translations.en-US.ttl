@@ -54,6 +54,7 @@
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :darkvision skos:definition "Darkvision"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+:deleteStorage skos:definition "Delete storage"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
 :dex skos:definition "dex"@en-US .
 :dexModifier skos:definition "Dex modifier"@en-US .

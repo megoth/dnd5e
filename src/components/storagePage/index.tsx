@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import Layout from "../layout";
 import Content from "../content";
 import WarningMessage from "../warningMessage";
@@ -6,7 +6,7 @@ import Breadcrumbs from "../breadcrumbs";
 import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import { StorageShapeType } from "../../ldo/dnd5e.shapeTypes";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useLdo } from "@ldo/solid-react";
 import Loading from "../loading";
 import useStorage from "../../hooks/useStorage";
@@ -24,6 +24,7 @@ export default function StoragePage() {
     isLoading,
   } = useStorage();
   const { profile, mutate: mutateProfile } = useProfile();
+  const navigate = useNavigate();
 
   const { data: storage } = useSWR(
     () => url,
@@ -43,7 +44,9 @@ export default function StoragePage() {
 
   const isDefaultStorage = storage["@id"] === defaultStorage["@id"];
 
-  const onClick: React.MouseEventHandler<HTMLButtonElement> = async (event) => {
+  const changeDefaultStorage: React.MouseEventHandler<
+    HTMLButtonElement
+  > = async (event) => {
     event.preventDefault();
     const updatedProfile = changeData(
       profile,
@@ -52,6 +55,23 @@ export default function StoragePage() {
     updatedProfile.defaultStorage = storage;
     await commitData(updatedProfile);
     await Promise.all([mutateProfile(), mutateStorage()]);
+  };
+
+  const deleteStorage: React.MouseEventHandler<HTMLButtonElement> = async (
+    event,
+  ) => {
+    event.preventDefault();
+    await getResource(resourceUrl(storage["@id"])).delete();
+    const updatedProfile = changeData(
+      profile,
+      getResource(resourceUrl(profile["@id"])),
+    );
+    updatedProfile.storages = storages.filter(
+      (s) => s["@id"] !== storage["@id"],
+    );
+    await commitData(updatedProfile);
+    await Promise.all([mutateProfile(), mutateStorage()]);
+    await navigate("/storages");
   };
 
   return (
@@ -80,9 +100,17 @@ export default function StoragePage() {
               isDefaultStorage ||
               !storages.find((s) => s["@id"] === storage["@id"])
             }
-            onClick={onClick}
+            onClick={changeDefaultStorage}
           >
             <Translation id="setAsDefaultStorage" />
+          </button>
+          <button
+            className="button"
+            type="button"
+            disabled={isDefaultStorage}
+            onClick={deleteStorage}
+          >
+            <Translation id="deleteStorage" />
           </button>
         </div>
       </Content>
