@@ -1,3 +1,7 @@
 .notification {
     @apply text-sm italic text-gray-700 dark:text-gray-400;
 }
+
+.notification p {
+    @apply m-0;
+}

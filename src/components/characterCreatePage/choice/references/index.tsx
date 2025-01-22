@@ -70,51 +70,91 @@ export default function CharacterCreatePageStartingOptionsReferences({
             {description(options.description)}
           </Markdown>
         )}
-        {complexChoice && <>TODO: This is a complex choice.</>}
-        {/*abilityScores*/}
-        {/*actions*/}
-        {/*bonuses*/}
-        {/*breaths*/}
-        {/*choices*/}
-        {/*damageOptions*/}
-        {options.from.equipmentCategory?.equipmentList?.map((equipment) => (
-          <label key={equipment["@id"]} className="label">
-            <input
-              className="checkbox"
-              type="checkbox"
-              value={equipment["@id"]}
-              disabled={
-                chosen.length >= options.choose &&
-                !chosen.find((choice) => choice === equipment["@id"])
-              }
-              onChange={onProficiencyChange}
-            />{" "}
-            {equipment.label}
-          </label>
-        ))}
-        {/*equipmentOptions*/}
-        {/*ideals*/}
-        {/*multiples*/}
-        {options.from.references?.map((reference) => (
-          <label key={getValue(reference)} className="label">
-            <input
-              className="checkbox"
-              type="checkbox"
-              value={getValue(reference)}
-              disabled={
-                chosen.length >= options.choose &&
-                !chosen.find((choice) => choice === getValue(reference))
-              }
-              onChange={onProficiencyChange}
-            />{" "}
-            {reference.proficiency?.skill?.label ||
-              reference.proficiency?.label}
-            {reference.equipment?.label}
-            {reference.language?.label}
-            {reference.spell?.label}
-          </label>
-        ))}
-        {/*strings*/}
+        <div className="m-2">
+          {complexChoice && <>TODO: HERE BE A COMPLEX CHOICE</>}
+          {!complexChoice && options.from.abilityScores.length > 0 && (
+            <>TODO: HERE BE ABILITY SCORES</>
+          )}
+          {!complexChoice && options.from.actions.length > 0 && (
+            <>TODO: HERE BE ACTIONS</>
+          )}
+          {!complexChoice && options.from.bonuses.length > 0 && (
+            <>TODO: HERE BE BONUSES</>
+          )}
+          {!complexChoice && options.from.breaths.length > 0 && (
+            <>TODO: HERE BE BREATHS</>
+          )}
+          {!complexChoice && options.from.choices.length > 0 && (
+            <>TODO: HERE BE CHOICES</>
+          )}
+          {!complexChoice && options.from.damageOptions.length > 0 && (
+            <>TODO: HERE BE DAMAGE OPTIONS</>
+          )}
+          {!complexChoice &&
+            options.from.equipmentCategory?.equipmentList?.map((equipment) => (
+              <label
+                key={`${options.from.equipmentCategory["@id"]}-${equipment["@id"]}`}
+                className="label mt-2"
+              >
+                <input
+                  className="checkbox"
+                  type="checkbox"
+                  value={equipment["@id"]}
+                  disabled={
+                    chosen.length >= options.choose &&
+                    !chosen.find((choice) => choice === equipment["@id"])
+                  }
+                  onChange={onProficiencyChange}
+                />{" "}
+                {equipment.label}
+              </label>
+            ))}
+          {!complexChoice &&
+            options.from.equipmentOptions?.map((option) => (
+              <label key={option.equipment["@id"]} className="label mt-2">
+                <input
+                  className="checkbox"
+                  type="checkbox"
+                  value={option.equipment["@id"]}
+                  disabled={
+                    chosen.length >= options.choose &&
+                    !chosen.find((choice) => choice === option.equipment["@id"])
+                  }
+                  onChange={onProficiencyChange}
+                />{" "}
+                {option.equipment.label}
+              </label>
+            ))}
+          {!complexChoice && options.from.ideals.length > 0 && (
+            <>TODO: HERE BE IDEALS</>
+          )}
+          {!complexChoice && options.from.multiples.length > 0 && (
+            <>TODO: HERE BE MULTIPLES</>
+          )}
+          {!complexChoice &&
+            options.from.references?.map((reference) => (
+              <label key={getValue(reference)} className="label mt-2">
+                <input
+                  className="checkbox"
+                  type="checkbox"
+                  value={getValue(reference)}
+                  disabled={
+                    chosen.length >= options.choose &&
+                    !chosen.find((choice) => choice === getValue(reference))
+                  }
+                  onChange={onProficiencyChange}
+                />{" "}
+                {reference.proficiency?.skill?.label ||
+                  reference.proficiency?.label}
+                {reference.equipment?.label}
+                {reference.language?.label}
+                {reference.spell?.label}
+              </label>
+            ))}
+          {!complexChoice && options.from.strings.length > 0 && (
+            <>TODO: HERE BE STRINGS</>
+          )}
+        </div>
       </>
     )
   );
