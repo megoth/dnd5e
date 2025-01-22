@@ -93,6 +93,7 @@
 :learnMore skos:definition "Lær mer om prosjektet"@nb-NO .
 :legendaryActions skos:definition "Legendariske handlinger"@nb-NO .
 :level skos:definition "Nivå"@nb-NO .
+:loading skos:definition "Laster inn..."@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
 :location skos:definition "Lokasjon"@nb-NO .
