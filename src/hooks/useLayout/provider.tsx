@@ -2,6 +2,7 @@ import React, { ReactNode, useEffect, useState } from "react";
 import LayoutContext from "./context";
 import { useLocation } from "react-router-dom";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { prefersDarkModeScheme } from "../../utils/windowHelpers";
 
 interface Props {
   children: ReactNode;
@@ -27,6 +28,17 @@ export default function LayoutProvider({ children }: Props) {
     setLeftOpen(false);
     setRightOpen(localRight === true.toString() && !full);
   }, [full, location]);
+
+  const [darkMode] = useLocalStorage(
+    "darkMode",
+    prefersDarkModeScheme().toString(),
+  );
+
+  useEffect(() => {
+    document
+      .querySelector("html")
+      .classList.toggle("dark", darkMode === true.toString());
+  }, [darkMode]);
 
   return (
     <LayoutContext.Provider

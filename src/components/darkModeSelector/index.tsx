@@ -1,7 +1,6 @@
-import React, { HTMLAttributes, useEffect } from "react";
+import React, { HTMLAttributes } from "react";
 import clsx from "clsx";
 import Translation from "../translation";
-import { prefersDarkModeScheme } from "../../utils/windowHelpers";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 export const TESTID_DARK_MODE_SELECTOR_BUTTON = "dark-mode-selector-button";
@@ -11,16 +10,7 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export default function DarkModeSelector({ className, ...props }: Props) {
-  const [darkMode, setDarkMode] = useLocalStorage(
-    "darkMode",
-    prefersDarkModeScheme().toString(),
-  );
-
-  useEffect(() => {
-    document
-      .querySelector("html")
-      .classList.toggle("dark", darkMode === true.toString());
-  }, [darkMode]);
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode");
 
   const toggleDarkMode = () => {
     const newValue =
