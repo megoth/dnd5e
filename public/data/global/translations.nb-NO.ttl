@@ -31,10 +31,12 @@
 :cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
 :castingTime skos:definition "Kastetid"@nb-NO .
 :category skos:definition "Kategori"@nb-NO .
+:characters skos:definition "Karakterer"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :challenge skos:definition "Vanskelighetsgrad"@nb-NO .
 :challengeRating skos:definition "Vanskelighetsgrad"@nb-NO .
 :charisma skos:definition "Karisma"@nb-NO .
+:chooseNumber skos:definition "Velg {$number}"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
 :class skos:definition "Klasse"@nb-NO .
 :classes skos:definition "Klasser"@nb-NO .
@@ -46,6 +48,7 @@
 :concentration skos:definition "Konsentrasjon"@nb-NO .
 :constitution skos:definition "Kroppsform"@nb-NO .
 :cost skos:definition "Pris"@nb-NO .
+:createCharacter skos:definition "Lag karakter"@nb-NO .
 :createStorage skos:definition "Sett opp lagringsplass"@nb-NO .
 :createStoragePitch skos:definition
         """For at denne appen skal kunne håndtere dataene dine så trenger den å sette opp en ressurs på din Solid Pod.
@@ -130,6 +133,7 @@
 :order8 skos:definition "8."@nb-NO .
 :order9 skos:definition "9."@nb-NO .
 :pageRequiresAuthentication skos:definition "Denne siden krever innlogging."@nb-NO .
+:pageRequiresStorage skos:definition "Denne siden krever lagringsplass."@nb-NO .
 :passivePerception skos:definition "Passiv oppfatning"@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
@@ -191,6 +195,10 @@
 :spellSlots skos:definition "Trylleformler"@nb-NO .
 :spellSlotsPerSpellLevel skos:definition "Trylleformler per trylleformel nivå"@nb-NO .
 :spellsPageTitle skos:definition "Magi"@nb-NO .
+:startingEquipment skos:definition "Utstyr du starter med"@nb-NO .
+:startingLanguages skos:definition "Språk du starter med"@nb-NO .
+:startingProficiencies skos:definition "Kunnskap du starter med"@nb-NO .
+:startingSpells skos:definition "Trylleformler du starter med"@nb-NO .
 :stealth skos:definition "Sniking"@nb-NO .
 :storages skos:definition "Lagringsplass"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .

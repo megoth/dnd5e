@@ -1186,4 +1186,8 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  defaultCharacter: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#defaultCharacter",
+    "@type": "@id",
+  },
 };

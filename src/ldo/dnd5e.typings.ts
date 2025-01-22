@@ -153,6 +153,15 @@ export interface BreathOption {
 }
 
 /**
+ * Character Type
+ */
+export interface Character {
+  "@id"?: string;
+  "@context"?: ContextDefinition;
+  label: string;
+}
+
+/**
  * Choice Type
  */
 export interface Choice {
@@ -980,6 +989,7 @@ export interface SolidProfile {
   };
   defaultStorage?: Storage;
   storages?: Storage[];
+  defaultCharacter?: Character;
 }
 
 /**

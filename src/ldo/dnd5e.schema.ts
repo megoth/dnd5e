@@ -520,6 +520,21 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
+      id: "https://ldo.js.org/shapes/dnd5e.shex#Character",
+      type: "ShapeDecl",
+      shapeExpr: {
+        type: "Shape",
+        expression: {
+          type: "TripleConstraint",
+          predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+          valueExpr: {
+            type: "NodeConstraint",
+            datatype: "http://www.w3.org/2001/XMLSchema#string",
+          },
+        },
+      },
+    },
+    {
       id: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
       type: "ShapeDecl",
       shapeExpr: {
@@ -3896,6 +3911,13 @@ export const dnd5eSchema: Schema = {
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Storage",
               min: 0,
               max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#defaultCharacter",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Character",
+              min: 0,
+              max: 1,
             },
           ],
         },

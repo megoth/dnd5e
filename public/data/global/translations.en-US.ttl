@@ -32,8 +32,10 @@
 :category skos:definition "Category"@en-US .
 :challenge skos:definition "Challenge"@en-US .
 :challengeRating skos:definition "Challenge Rating"@en-US .
+:characters skos:definition "Characters"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :charisma skos:definition "Charisma"@en-US .
+:chooseNumber skos:definition "Choose {$number}"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
 :class skos:definition "Class"@en-US .
 :classes skos:definition "Classes"@en-US .
@@ -45,6 +47,7 @@
 :concentration skos:definition "Concentration"@en-US .
 :constitution skos:definition "Constitution"@en-US .
 :cost skos:definition "Cost"@en-US .
+:createCharacter skos:definition "Create Character"@en-US .
 :createStorage skos:definition "Create Storage"@en-US .
 :createStoragePitch skos:definition
         """To allow this app to handle your data it needs to set up a resource on your Solid Pod. That also allow you
@@ -127,6 +130,7 @@
 :order8 skos:definition "8th"@en-US .
 :order9 skos:definition "9th"@en-US .
 :pageRequiresAuthentication skos:definition "This page requires authentication."@en-US .
+:pageRequiresStorage skos:definition "This page requires storage."@en-US .
 :passivePerception skos:definition "Passive Perception"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
@@ -188,6 +192,10 @@
 :spellSlots skos:definition "Spell Slots"@en-US .
 :spellSlotsPerSpellLevel skos:definition "Spell Slots per Spell Level"@en-US .
 :spellsPageTitle skos:definition "Spells"@en-US .
+:startingEquipment skos:definition "Starting Equipment"@en-US .
+:startingLanguages skos:definition "Starting Languages"@en-US .
+:startingProficiencies skos:definition "Starting Proficiencies"@en-US .
+:startingSpells skos:definition "Starting Spells"@en-US .
 :stealth skos:definition "Stealth"@en-US .
 :storages skos:definition "Storages"@en-US .
 :strength skos:definition "Strength"@en-US .

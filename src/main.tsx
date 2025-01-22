@@ -42,6 +42,7 @@ import YouPage from "./components/youPage";
 import StoragesPage from "./components/storagesPage";
 import StorageCreatePage from "./components/storageCreatePage";
 import StoragePage from "./components/storagePage";
+import CharacterCreatePage from "./components/characterCreatePage";
 
 const router = createBrowserRouter([
   {
@@ -97,12 +98,8 @@ const router = createBrowserRouter([
         element: <CharactersPage />,
       },
       {
-        path: "/characters/encounters",
-        element: <EncountersPage />,
-      },
-      {
-        path: "/characters/notes",
-        element: <NotesPage />,
+        path: "/characters/create",
+        element: <CharacterCreatePage />,
       },
       {
         path: "/faq",

@@ -14,6 +14,7 @@ import {
   BackgroundFeature,
   BonusOption,
   BreathOption,
+  Character,
   Choice,
   ChoiceOption,
   Class,
@@ -204,6 +205,15 @@ export const BonusOptionShapeType: ShapeType<BonusOption> = {
 export const BreathOptionShapeType: ShapeType<BreathOption> = {
   schema: dnd5eSchema,
   shape: "https://ldo.js.org/shapes/dnd5e.shex#BreathOption",
+  context: dnd5eContext,
+};
+
+/**
+ * Character ShapeType
+ */
+export const CharacterShapeType: ShapeType<Character> = {
+  schema: dnd5eSchema,
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#Character",
   context: dnd5eContext,
 };
 

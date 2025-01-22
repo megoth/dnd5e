@@ -23,8 +23,14 @@
 }
 
 .input[type="text"],
-.input[type="url"]{
-    @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black shadow-md;
+.input[type="url"],
+.select {
+    @apply border bg-gray-50 border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-300 rounded-sm leading-none w-full text-black shadow-sm;
+}
+.input[type="text"]:disabled,
+.input[type="url"]:disabled,
+.select:disabled {
+    @apply bg-gray-300 dark:bg-gray-500 border-gray-300 dark:border-gray-500;
 }
 
 .input--global-search[type="text"] {
@@ -36,8 +42,9 @@
 }
 
 .checkbox[type="checkbox"] {
-    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border mr-2 shadow-md;
+    @apply text-red-600 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-red-600 border mr-2;
 }
 .checkbox[type="checkbox"][disabled] {
-    @apply text-gray-500 focus:ring-gray-500;
+    @apply bg-gray-300 dark:bg-gray-500 border-gray-300 dark:border-gray-500 focus:ring-gray-300 dark:focus:ring-gray-500;
 }
+

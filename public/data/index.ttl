@@ -11,6 +11,7 @@
         :classesBundle,
         :equipmentsBundle,
         :monstersBundle,
+        :proficienciesBundle,
         :racesBundle,
         :rulesBundle,
         :spellsBundle .
@@ -36,6 +37,14 @@
     dnd5e_app:rulesResource
         </data/illustrations.ttl>,
         </data/monsters.ttl> .
+
+:proficienciesBundle
+    rdfs:label "proficiencies" ;
+    dnd5e_app:rulesResource
+        </data/features.ttl>,
+        </data/languages.ttl>,
+        </data/proficiencies.ttl>,
+        </data/skills.ttl> .
 
 :racesBundle
     rdfs:label "races" ;
