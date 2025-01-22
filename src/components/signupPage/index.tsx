@@ -8,7 +8,6 @@ import FAQ from "../faq";
 import LoggedInAlreadyWarning from "../loggedInAlreadyWarning";
 import { NavLink } from "react-router-dom";
 import { useLocalization } from "@fluent/react";
-import PageFooter from "../pageFooter";
 import { bem } from "../../utils/bem";
 
 export default function SignupPage() {
@@ -51,7 +50,6 @@ export default function SignupPage() {
           <FAQ id="whatIsIdP" variant="small" />
           <FAQ id="whatIsPod" variant="small" />
         </aside>
-        <PageFooter className="main-container" />
       </div>
     </Layout>
   );

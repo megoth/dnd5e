@@ -2,7 +2,6 @@ import React, { HTMLAttributes, useEffect, useState } from "react";
 import clsx from "clsx";
 import { useSwipeable } from "react-swipeable";
 import PageHeader from "../pageHeader";
-import PageFooter from "../pageFooter";
 import SubMenuNav from "../subMenuNav";
 import Session from "../session";
 import useLayout from "../../hooks/useLayout";
@@ -113,11 +112,6 @@ export default function Layout({
           <Session />
         </div>
       </div>
-      {!full && (
-        <div className={clsx(bem("main-container", { full }), "flex-grow-0")}>
-          <PageFooter />
-        </div>
-      )}
       <ScrollRestoration />
     </div>
   );

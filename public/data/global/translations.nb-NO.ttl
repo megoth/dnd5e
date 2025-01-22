@@ -167,6 +167,7 @@
 :setAsDefaultStorage skos:definition "Sett som standard lagringsplass"@nb-NO .
 :setAsDefaultStorageDescription skos:definition "Denne appen krever en standard lagringsplass for å fungere."@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
+:settings skos:definition "Innstillinger"@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid

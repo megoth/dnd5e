@@ -31,7 +31,13 @@ export default function PageHeader({ className, ...props }: Props) {
       <div className={bem("main-container", "header")}>
         <NavLink
           to="/"
-          className="block px-4 lg:px-0 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600"
+          className={clsx(
+            "block px-4 font-2xl font-serif self-center text-left focus:outline-none focus:ring-2 focus:ring-red-600",
+            {
+              "lg:px-2": !full,
+              "lg:px-4": full,
+            },
+          )}
           style={{ fontSize: "clamp(1rem, 2rem, 8vw)" }}
         >
           <Translation id="appName" />

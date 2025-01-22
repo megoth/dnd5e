@@ -43,6 +43,7 @@ import StoragesPage from "./components/storagesPage";
 import StorageCreatePage from "./components/storageCreatePage";
 import StoragePage from "./components/storagePage";
 import CharacterCreatePage from "./components/characterCreatePage";
+import SettingsPage from "./components/settingsPage";
 
 const router = createBrowserRouter([
   {
@@ -156,6 +157,10 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <SearchPage />,
+      },
+      {
+        path: "/settings",
+        element: <SettingsPage />,
       },
       {
         path: "/signup",

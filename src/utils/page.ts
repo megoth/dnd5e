@@ -80,6 +80,10 @@ export function getPages(_: string, _2: boolean): Array<Page> {
           href: "/faq",
           translationId: "faqShort",
         },
+        {
+          href: "/settings",
+          translationId: "settings",
+        },
       ],
     },
   ];

@@ -94,6 +94,22 @@
 .layout__sidebar--left.layout__sidebar--full.layout__sidebar--left-open {
   @apply block;
 }
+@media screen and (min-width: 1024px) {
+  .layout__sidebar--left.layout__sidebar--full.layout__sidebar--left-open {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .layout__sidebar--left.layout__sidebar--full.layout__sidebar--left-open {
+    margin-left: -640px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .layout__sidebar--left.layout__sidebar--full.layout__sidebar--left-open {
+    margin-left: -768px;
+  }
+}
 
 .layout__sidebar--right {
   @apply hidden -right-64 xl:right-0;
@@ -105,6 +121,23 @@
 
 .layout__sidebar--right.layout__sidebar--right-open {
   @apply block right-0 overflow-y-auto overscroll-y-auto z-50;
+}
+
+@media screen and (min-width: 1024px) {
+  .layout__sidebar--right.layout__sidebar--full.layout__sidebar--right-open {
+    right: 50%;
+    margin-right: -512px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .layout__sidebar--right.layout__sidebar--full.layout__sidebar--right-open {
+    margin-right: -640px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .layout__sidebar--right.layout__sidebar--full.layout__sidebar--right-open {
+    margin-right: -768px;
+  }
 }
 
 .layout__sidebar--right-fake {

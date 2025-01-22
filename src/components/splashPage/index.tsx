@@ -10,7 +10,6 @@ import PageHeader from "../pageHeader";
 import WarningMessage from "../warningMessage";
 import { NavLink } from "react-router-dom";
 import { bem } from "../../utils/bem";
-import PageFooter from "../pageFooter";
 import Markdown from "react-markdown";
 import readme from "./README.md?raw";
 
@@ -108,7 +107,6 @@ export default function SplashPage() {
                 </div>
               </div>
             </div>
-            <PageFooter className="mb-8" />
             <p className="text-xs text-gray-600 absolute bottom-1 right-2">
               Photo by{" "}
               <a

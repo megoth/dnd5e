@@ -164,6 +164,7 @@
 :serviceLogo skos:definition "Logo for service"@en-US .
 :setAsDefaultStorage skos:definition "Set as default storage"@en-US .
 :setAsDefaultStorageDescription skos:definition "This app requires a default storage to function."@en-US .
+:settings skos:definition "Settings"@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition
         """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we

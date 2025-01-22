@@ -1,7 +1,5 @@
 import clsx from "clsx";
 import React, { HTMLAttributes } from "react";
-import LocaleSelector from "../localeSelector";
-import DarkModeSelector from "../darkModeSelector";
 import { NavLink } from "react-router-dom";
 import Translation from "../translation";
 import { bem } from "../../utils/bem";
@@ -31,10 +29,6 @@ export default function PageFooter({ className, ...props }: Props) {
             <Translation id={label} />
           </NavLink>
         ))}
-      </div>
-      <div className="pb-2 flex xs:space-x-2 space-y-2 xs:space-y-0 flex-col text-center xs:flex-row xs:justify-center">
-        <DarkModeSelector />
-        <LocaleSelector />
       </div>
     </footer>
   );

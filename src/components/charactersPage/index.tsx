@@ -30,12 +30,12 @@ export default function CharactersPage() {
             <Translation id="pageRequiresAuthentication" />
           </p>
         )}
-        {!defaultStorage && (
+        {session.isLoggedIn && !defaultStorage && (
           <>
             <p>
               <Translation id="pageRequiresStorage" />
             </p>
-            <NavLink className="button" to={"/storages/create"}>
+            <NavLink to="/storages/create" className="button">
               <Translation id="createStorage" />
             </NavLink>
           </>
