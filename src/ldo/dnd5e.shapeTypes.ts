@@ -23,7 +23,7 @@ import {
   ClassSpellcastingInfo,
   ClassSpecificCreatingSpellSlots,
   Condition,
-  CountOption,
+  EquipmentOption,
   Cost,
   Damage,
   DamageCharacterLevel,
@@ -293,11 +293,11 @@ export const ConditionShapeType: ShapeType<Condition> = {
 };
 
 /**
- * CountOption ShapeType
+ * EquipmentOption ShapeType
  */
-export const CountOptionShapeType: ShapeType<CountOption> = {
+export const EquipmentOptionShapeType: ShapeType<EquipmentOption> = {
   schema: dnd5eSchema,
-  shape: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
+  shape: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentOption",
   context: dnd5eContext,
 };
 

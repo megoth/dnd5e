@@ -8,10 +8,11 @@ import Unauthenticated from "../unauthenticated";
 import Breadcrumbs from "../breadcrumbs";
 import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
+import Loading from "../loading";
 
 export default function CharactersPage() {
   const { session } = useSolidAuth();
-  const { defaultStorage } = useStorage();
+  const { defaultStorage, isLoading } = useStorage();
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -30,7 +31,8 @@ export default function CharactersPage() {
             <Translation id="pageRequiresAuthentication" />
           </p>
         )}
-        {session.isLoggedIn && !defaultStorage && (
+        {isLoading && <Loading />}
+        {!isLoading && session.isLoggedIn && !defaultStorage && (
           <>
             <p>
               <Translation id="pageRequiresStorage" />
@@ -41,7 +43,7 @@ export default function CharactersPage() {
           </>
         )}
       </Content>
-      {session.isLoggedIn && defaultStorage && (
+      {!isLoading && session.isLoggedIn && defaultStorage && (
         <div className="options">
           <NavLink to="/characters/create" className="button">
             <Translation id="createCharacter" />

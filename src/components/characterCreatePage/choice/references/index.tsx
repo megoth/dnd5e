@@ -2,6 +2,8 @@ import React, { FormEventHandler, useState } from "react";
 import useRulesBundle from "../../../../hooks/useRulesBundle";
 import Translation from "../../../translation";
 import { Choice, ReferenceOption } from "../../../../ldo/dnd5e.typings";
+import Markdown from "react-markdown";
+import { description } from "../../../../utils/dnd5e";
 
 interface Props {
   options?: Choice;
@@ -30,6 +32,22 @@ export default function CharacterCreatePageStartingOptionsReferences({
     }
   };
 
+  const complexChoice =
+    [
+      options.from.abilityScores.length,
+      options.from.actions.length,
+      options.from.bonuses.length,
+      options.from.breaths.length,
+      options.from.choices.length,
+      options.from.damageOptions.length,
+      options.from.equipmentCategory ? 1 : 0,
+      options.from.equipmentOptions.length,
+      options.from.ideals.length,
+      options.from.multiples.length,
+      options.from.references.length,
+      options.from.strings.length,
+    ].filter((length) => length > 0).length > 1;
+
   return (
     options &&
     !isLoading && (
@@ -47,6 +65,36 @@ export default function CharacterCreatePageStartingOptionsReferences({
           {options.ofType === "spell" && <Translation id="startingSpells" />} (
           <Translation id="chooseNumber" vars={{ number: options.choose }} />)
         </label>
+        {options.description && (
+          <Markdown className="notification">
+            {description(options.description)}
+          </Markdown>
+        )}
+        {complexChoice && <>TODO: This is a complex choice.</>}
+        {/*abilityScores*/}
+        {/*actions*/}
+        {/*bonuses*/}
+        {/*breaths*/}
+        {/*choices*/}
+        {/*damageOptions*/}
+        {options.from.equipmentCategory?.equipmentList?.map((equipment) => (
+          <label key={equipment["@id"]} className="label">
+            <input
+              className="checkbox"
+              type="checkbox"
+              value={equipment["@id"]}
+              disabled={
+                chosen.length >= options.choose &&
+                !chosen.find((choice) => choice === equipment["@id"])
+              }
+              onChange={onProficiencyChange}
+            />{" "}
+            {equipment.label}
+          </label>
+        ))}
+        {/*equipmentOptions*/}
+        {/*ideals*/}
+        {/*multiples*/}
         {options.from.references?.map((reference) => (
           <label key={getValue(reference)} className="label">
             <input
@@ -59,12 +107,14 @@ export default function CharacterCreatePageStartingOptionsReferences({
               }
               onChange={onProficiencyChange}
             />{" "}
-            {reference.proficiency?.label}
+            {reference.proficiency?.skill?.label ||
+              reference.proficiency?.label}
             {reference.equipment?.label}
             {reference.language?.label}
             {reference.spell?.label}
           </label>
         ))}
+        {/*strings*/}
       </>
     )
   );

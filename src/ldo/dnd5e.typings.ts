@@ -296,13 +296,13 @@ export interface Condition {
 }
 
 /**
- * CountOption Type
+ * EquipmentOption Type
  */
-export interface CountOption {
+export interface EquipmentOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
   count?: number;
-  of?: Equipment;
+  equipment?: Equipment;
 }
 
 /**
@@ -501,9 +501,7 @@ export interface IdealOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
   description?: string[];
-  alignments?: {
-    "@id": string;
-  }[];
+  alignments?: Alignment[];
 }
 
 /**
@@ -826,7 +824,7 @@ export interface MultipleOption {
   "@context"?: ContextDefinition;
   actions?: ActionOption[];
   choices?: ChoiceOption[];
-  counts?: CountOption[];
+  equipmentOptions?: EquipmentOption[];
   references?: ReferenceOption[];
 }
 
@@ -849,9 +847,9 @@ export interface OptionSet {
   bonuses?: BonusOption[];
   breaths?: BreathOption[];
   choices?: ChoiceOption[];
-  counts?: CountOption[];
   damageOptions?: DamageOption[];
   equipmentCategory?: EquipmentCategory;
+  equipmentOptions?: EquipmentOption[];
   ideals?: IdealOption[];
   multiples?: MultipleOption[];
   references?: ReferenceOption[];
@@ -1077,7 +1075,7 @@ export interface Storage {
 export interface StringOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  "string:"?: string;
+  string?: string;
 }
 
 /**

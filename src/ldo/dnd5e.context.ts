@@ -344,16 +344,19 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#choice",
     "@type": "@id",
   },
-  counts: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#counts",
+  damageOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#damageOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  of: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#of",
-    "@type": "@id",
+  "dice:": {
+    "@id": "https://dnd5e.app/vocab/dnd5e#dice:",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  Equipment: "https://dnd5e.app/vocab/dnd5e#Equipment",
+  notes: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#notes",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
   equipmentCategory: {
     "@id": "https://dnd5e.app/vocab/dnd5e#equipmentCategory",
     "@type": "@id",
@@ -364,6 +367,7 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
+  Equipment: "https://dnd5e.app/vocab/dnd5e#Equipment",
   cost: {
     "@id": "https://dnd5e.app/vocab/dnd5e#cost",
     "@type": "@id",
@@ -460,18 +464,14 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#magicItemVariant",
     "@type": "http://www.w3.org/2001/XMLSchema#boolean",
   },
-  damageOptions: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#damageOptions",
+  equipmentOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipmentOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  "dice:": {
-    "@id": "https://dnd5e.app/vocab/dnd5e#dice:",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  notes: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#notes",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  equipment: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
+    "@type": "@id",
   },
   ideals: {
     "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
@@ -492,10 +492,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#references",
     "@type": "@id",
     "@container": "@set",
-  },
-  equipment: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
-    "@type": "@id",
   },
   language: {
     "@id": "https://dnd5e.app/vocab/dnd5e#language",
@@ -524,8 +520,8 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  "string:": {
-    "@id": "https://dnd5e.app/vocab/dnd5e#string:",
+  string: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#string",
     "@type": "http://www.w3.org/2001/XMLSchema#strsing",
   },
   fromResourceList: {

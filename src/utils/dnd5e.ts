@@ -17,7 +17,6 @@ import {
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 import { removeDuplicates } from "./array";
-import { subClassOf } from "rdf-namespaces/dist/rdfs";
 
 export function modifier(value: number): string {
   return value > 0 ? `+${value}` : value.toString();
@@ -96,14 +95,21 @@ export function classHasSpellsKnown(classInfo: Class): boolean {
 
 export function choiceLabels(choice: Choice) {
   return [
+    // abilityScores
+    // actions
+    // bonuses
+    // breaths
     choice.from.choices?.flatMap((option) => choiceLabels(option.choice)),
-    choice.from.counts?.map(
-      (option) =>
-        `${choice.choose > 1 ? `${option.count} ` : ""}${option.of.label}`,
-    ),
+    // damageOptions
     choice.from.equipmentCategory?.label && [
       `${choice.from.equipmentCategory.label} (${choice.from.equipmentCategory.equipmentList.map((equipment) => equipment.label).join(", ")})`,
     ],
+    choice.from.equipmentOptions?.map(
+      (option) =>
+        `${choice.choose > 1 ? `${option.count} ` : ""}${option.equipment.label}`,
+    ),
+    // ideals
+    // multiples
     choice.from.references?.map(
       (reference) =>
         reference.proficiency?.label ||
@@ -111,6 +117,7 @@ export function choiceLabels(choice: Choice) {
         reference.spell?.label ||
         reference.equipment?.label,
     ),
+    // strings
   ].filter((labels) => labels?.length > 0);
 }
 
@@ -118,10 +125,13 @@ export function choiceResourceUrls(choice: Choice): string[] {
   return [
     ...(choice.from?.abilityScores?.map((score) => score.abilityScore["@id"]) ||
       []),
+    // actions
+    // bonuses
+    // breaths
     ...(choice.from?.choices?.flatMap((option) =>
       choiceResourceUrls(option.choice),
     ) || []),
-    ...(choice.from.counts?.flatMap((option) => option.of["@id"]) || []),
+    // damageOptions
     choice.from.equipmentCategory?.["@id"],
     ...(choice.from?.references?.map(
       (reference) =>
@@ -130,6 +140,13 @@ export function choiceResourceUrls(choice: Choice): string[] {
         reference.language["@id"] ||
         reference.equipment["@id"],
     ) || []),
+    ...(choice.from.equipmentOptions?.flatMap(
+      (option) => option.equipment["@id"],
+    ) || []),
+    // ideals
+    // multiples
+    // references
+    // strings
   ]
     .filter((url) => !!url)
     .map((url) => resourceUrl(url));

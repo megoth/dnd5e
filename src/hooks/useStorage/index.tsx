@@ -3,6 +3,7 @@ import { resourceUrl } from "../../utils/url";
 import { StorageShapeType } from "../../ldo/dnd5e.shapeTypes";
 import useSWR from "swr";
 import useProfile from "../useProfile";
+import { timedPromise } from "../../utils/promise";
 
 export default function useStorage() {
   const { profile } = useProfile();
@@ -15,7 +16,7 @@ export default function useStorage() {
   } = useSWR(
     () => `storage-${profile?.["@id"]}`,
     async () => {
-      if (!profile?.defaultStorage) return;
+      if (!profile?.defaultStorage) return timedPromise();
       await getResource(
         resourceUrl(profile.defaultStorage["@id"]),
       ).readIfUnfetched();
@@ -31,7 +32,7 @@ export default function useStorage() {
     () =>
       `storages-${profile.storages.map((storage) => storage["@id"]).join("-")}`,
     async () => {
-      if (!profile?.storages?.length) return;
+      if (!profile?.storages?.length) return timedPromise();
       return Promise.all(
         profile.storages.map(async (storage) => {
           await getResource(resourceUrl(storage["@id"])).readIfUnfetched();

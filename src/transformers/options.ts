@@ -1,27 +1,88 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset } from "@ldo/ldo";
 import {
+  AbilityBonusShapeType,
   AbilityScoreShapeType,
   ActionOptionShapeType,
+  AlignmentShapeType,
+  BreathOptionShapeType,
   ChoiceOptionShapeType,
-  CountOptionShapeType,
+  EquipmentOptionShapeType,
   EquipmentShapeType,
+  IdealOptionShapeType,
   LanguageShapeType,
   MultipleOptionShapeType,
   ProficiencyShapeType,
   ReferenceOptionShapeType,
   ScorePrerequisiteOptionShapeType,
   SpellShapeType,
+  StringOptionShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import {
+  AbilityBonus,
   ActionOption,
+  BreathOption,
   ChoiceOption,
-  CountOption,
+  EquipmentOption,
   ReferenceOption,
   ScorePrerequisiteOption,
+  StringOption,
 } from "../ldo/dnd5e.typings";
-import { dataUrl } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataUrl } from "../utils/dnd5e";
 import { transformChoice } from "./choice";
+import { transformDifficultyClass } from "./difficultyClass";
+import { transformDamage } from "./damage";
+
+export interface IAbilityBonusOption {
+  ability_score?: components["schemas"]["APIReference"];
+  bonus?: number;
+}
+
+export function transformAbilityBonusOption(
+  data: IAbilityBonusOption,
+  ldoDataset = createLdoDataset(),
+): AbilityBonus {
+  return ldoDataset.usingType(AbilityBonusShapeType).fromJson({
+    abilityScore: ldoDataset
+      .usingType(AbilityScoreShapeType)
+      .fromSubject(apiUrlToSubjectUrl(data.ability_score.url)),
+    bonus: data.bonus,
+  });
+}
+
+export interface IActionOption {
+  action_name?: string;
+  count?: number;
+  type?: "melee" | "ranged" | "ability" | "magic";
+}
+
+export function transformActionOption(
+  data: IActionOption,
+  ldoDataset = createLdoDataset(),
+): ActionOption {
+  return ldoDataset.usingType(ActionOptionShapeType).fromJson({
+    label: data.action_name,
+  });
+}
+
+export interface IBreathOption {
+  name?: string;
+  dc?: components["schemas"]["DC"];
+  damage?: components["schemas"]["Damage"][];
+}
+
+export function transformBreathOption(
+  data: IBreathOption,
+  ldoDataset = createLdoDataset(),
+): BreathOption {
+  return ldoDataset.usingType(BreathOptionShapeType).fromJson({
+    label: data.name,
+    difficultyClass: transformDifficultyClass(data.dc, ldoDataset),
+    breathDamage: data.damage?.map((damage) =>
+      transformDamage(damage, ldoDataset),
+    ),
+  });
+}
 
 export interface IChoiceOption {
   choice?: components["schemas"]["Choice"];
@@ -36,25 +97,40 @@ export function transformChoiceOption(
   });
 }
 
-export interface ICountedReferenceOption {
+export interface IEquipmentOption {
   count?: number;
   of?: components["schemas"]["APIReference"];
 }
 
-export function transformCountedReferenceOption(
-  data: ICountedReferenceOption,
+export function transformEquipmentOption(
+  data: IEquipmentOption,
   ldoDataset = createLdoDataset(),
-): CountOption {
-  return ldoDataset.usingType(CountOptionShapeType).fromJson({
+): EquipmentOption {
+  return ldoDataset.usingType(EquipmentOptionShapeType).fromJson({
     count: data.count,
-    of: ldoDataset
+    equipment: ldoDataset
       .usingType(EquipmentShapeType)
       .fromSubject(dataUrl("equipments", data.of.index)),
   });
 }
 
-export interface IReferenceOption {
-  item?: components["schemas"]["APIReference"];
+export interface IIdealOption {
+  desc?: string;
+  alignments: components["schemas"]["APIReference"][];
+}
+
+export function transformIdealOption(
+  data: IIdealOption,
+  ldoDataset = createLdoDataset(),
+): StringOption {
+  return ldoDataset.usingType(IdealOptionShapeType).fromJson({
+    description: [data.desc],
+    alignments: data.alignments.map((alignment) =>
+      ldoDataset
+        .usingType(AlignmentShapeType)
+        .fromSubject(apiUrlToSubjectUrl(alignment.url)),
+    ),
+  });
 }
 
 interface IScorePrerequisiteOption {
@@ -73,6 +149,10 @@ export function transformScorePrerequisiteOption(
       .fromSubject(dataUrl("ability-scores", data.ability_score.index)),
     minimumScore: data.minimum_score,
   });
+}
+
+export interface IReferenceOption {
+  item?: components["schemas"]["APIReference"];
 }
 
 export function transformReferenceOption(
@@ -99,26 +179,23 @@ export function transformReferenceOption(
   });
 }
 
+export interface IStringOption {
+  string?: string;
+}
+
+export function transformStringOption(
+  data: IStringOption,
+  ldoDataset = createLdoDataset(),
+): StringOption {
+  return ldoDataset.usingType(StringOptionShapeType).fromJson({
+    string: data.string,
+  });
+}
+
 export function transformOption(
   data: components["schemas"]["Option"],
   ldoDataset = createLdoDataset(),
 ) {
-  interface IActionOption {
-    option_type?: string;
-    action_name?: string;
-    count?: number;
-    type?: "melee" | "ranged" | "ability" | "magic";
-  }
-
-  function transformActionOption(
-    data: IActionOption,
-    ldoDataset = createLdoDataset(),
-  ): ActionOption {
-    return ldoDataset.usingType(ActionOptionShapeType).fromJson({
-      label: data.action_name,
-    });
-  }
-
   interface IMultipleOption {
     items?: components["schemas"]["Option"][];
   }
@@ -134,7 +211,7 @@ export function transformOption(
       choices: data.items
         .filter((item) => item.option_type === "choice")
         .map((item) => transformOption(item, ldoDataset)),
-      counts: data.items
+      equipmentOptions: data.items
         .filter((item) => item.option_type === "counted_reference")
         .map((item) => transformOption(item, ldoDataset)),
       references: data.items
@@ -144,21 +221,21 @@ export function transformOption(
   }
 
   switch (data.option_type) {
-    // case "ability_bonus":
-    //   return null;
+    case "ability_bonus":
+      return transformAbilityBonusOption(
+        data as IAbilityBonusOption,
+        ldoDataset,
+      );
     case "action":
       return transformActionOption(data as IActionOption, ldoDataset);
-    // case "breath":
-    //   return null;
+    case "breath":
+      return transformBreathOption(data as IBreathOption, ldoDataset);
     case "choice":
       return transformChoiceOption(data as IChoiceOption, ldoDataset);
     case "counted_reference":
-      return transformCountedReferenceOption(
-        data as ICountedReferenceOption,
-        ldoDataset,
-      );
-    // case "ideal":
-    //   return null;
+      return transformEquipmentOption(data as IEquipmentOption, ldoDataset);
+    case "ideal":
+      return transformIdealOption(data as IIdealOption, ldoDataset);
     case "multiple":
       return transformMultipleOption(data as IMultipleOption, ldoDataset);
     case "reference":
@@ -168,8 +245,8 @@ export function transformOption(
         data as IScorePrerequisiteOption,
         ldoDataset,
       );
-    // case "string":
-    //   return null;
+    case "string":
+      return transformStringOption(data as IStringOption, ldoDataset);
     default:
       throw new Error(`Unsupported type ${data.option_type}`);
   }

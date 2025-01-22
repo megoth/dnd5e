@@ -38,6 +38,12 @@ function transformBackground(
       (choice) => transformChoice(choice, ldoDataset),
     );
   }
+  // language_options
+  // feature
+  // personality_traits
+  // ideals
+  // bonds
+  // flaws
   return background;
 }
 

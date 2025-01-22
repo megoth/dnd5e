@@ -1194,7 +1194,7 @@ export const dnd5eSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
+      id: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentOption",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1213,7 +1213,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#of",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipment",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Equipment",
               min: 0,
               max: 1,
@@ -1870,10 +1870,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#alignments",
-              valueExpr: {
-                type: "NodeConstraint",
-                nodeKind: "iri",
-              },
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Alignment",
               min: 0,
               max: -1,
             },
@@ -3304,8 +3301,8 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#counts",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipmentOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentOption",
               min: 0,
               max: -1,
             },
@@ -3373,13 +3370,6 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#counts",
-              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#CountOption",
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#damageOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#DamageOption",
               min: 0,
@@ -3392,6 +3382,13 @@ export const dnd5eSchema: Schema = {
                 "https://ldo.js.org/shapes/dnd5e.shex#EquipmentCategory",
               min: 0,
               max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#equipmentOptions",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#EquipmentOption",
+              min: 0,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -4246,7 +4243,7 @@ export const dnd5eSchema: Schema = {
         type: "Shape",
         expression: {
           type: "TripleConstraint",
-          predicate: "https://dnd5e.app/vocab/dnd5e#string:",
+          predicate: "https://dnd5e.app/vocab/dnd5e#string",
           valueExpr: {
             type: "NodeConstraint",
             datatype: "http://www.w3.org/2001/XMLSchema#strsing",
