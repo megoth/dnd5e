@@ -10,6 +10,7 @@ import Translation from "../translation";
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
 import readmeMarkdown from "../../../README.md?raw";
+import { NavLink } from "react-router-dom";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
 
@@ -17,6 +18,10 @@ function flatten(text, child) {
   return typeof child === "string"
     ? text + child
     : React.Children.toArray(child.props.children).reduce(flatten, text);
+}
+
+function renderLink(props: React.HTMLAttributes<HTMLAnchorElement>) {
+  return <NavLink to={props["href"]} {...props} />;
 }
 
 function renderHeader(tagName: string) {
@@ -43,6 +48,7 @@ export default function AboutPage() {
       <Content>
         <ReactMarkdown
           components={{
+            a: renderLink,
             h2: renderHeader("h2"),
             h3: renderHeader("h3"),
             h4: renderHeader("h4"),
