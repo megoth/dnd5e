@@ -45,11 +45,12 @@ import SettingsPage from "./components/settingsPage";
 import Loading from "./components/loading";
 
 function lazyLoadPage(modulePath: string) {
-  return ((Component) => (
+  const Component = lazy(() => import(modulePath));
+  return (
     <Suspense fallback={<Loading />}>
       <Component />
     </Suspense>
-  ))(lazy(() => import(modulePath)));
+  );
 }
 
 const router = createBrowserRouter([
@@ -71,7 +72,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: lazyLoadPage("./components/aboutPage"),
+        element: ((Component) => {
+          return (
+            <Suspense fallback={<Loading />}>
+              <Component />
+            </Suspense>
+          );
+        })(lazy(() => import("./components/aboutPage"))),
       },
       {
         path: "/armor",
