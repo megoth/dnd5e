@@ -44,6 +44,7 @@
 :classFeatures skos:definition "Klasse Egenskaper"@nb-NO .
 :classFeaturesDescription skos:definition "Som {$className} får du tilgang til følgende:"@nb-NO .
 :close skos:definition "Lukk"@nb-NO .
+:closeMenu skos:definition "Lukk meny"@nb-NO .
 :components skos:definition "Komponenter"@nb-NO .
 :concentration skos:definition "Konsentrasjon"@nb-NO .
 :constitution skos:definition "Kroppsform"@nb-NO .

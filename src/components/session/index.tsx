@@ -8,12 +8,14 @@ import useLayout from "../../hooks/useLayout";
 import useEscKey from "../../hooks/useEscKey";
 import { useSolidAuth } from "@ldo/solid-react";
 import { bem } from "../../utils/bem";
+import { useLocalization } from "@fluent/react";
 
 export const SESSION_CLOSE_BUTTON = "session-close-button";
 
 export default function Session() {
   const { session } = useSolidAuth();
   const { full, setRightOpen } = useLayout();
+  const { l10n } = useLocalization();
 
   useEscKey(() => setRightOpen(false));
 
@@ -31,6 +33,7 @@ export default function Session() {
         )}
         onClick={() => setRightOpen(false)}
         data-testid={SESSION_CLOSE_BUTTON}
+        aria-label={l10n.getString("closeMenu")}
       >
         <Icon name="close" />
         &nbsp;

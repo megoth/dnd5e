@@ -7,6 +7,7 @@ import Session from "../session";
 import useLayout from "../../hooks/useLayout";
 import { bem } from "../../utils/bem";
 import { ScrollRestoration } from "react-router-dom";
+import { useLocalization } from "@fluent/react";
 
 export const TESTID_LAYOUT_FADE = "layout-fade";
 export const TESTID_LAYOUT_SUB_MENU = "layout-sub-menu";
@@ -55,6 +56,8 @@ export default function Layout({
     },
   });
 
+  const { l10n } = useLocalization();
+
   const open = leftOpen || rightOpen;
   const modifiers = {
     full,
@@ -79,6 +82,7 @@ export default function Layout({
           type="button"
           data-testid={TESTID_LAYOUT_FADE}
           data-open={open}
+          aria-label={l10n.getString("closeMenu")}
         >
           &nbsp;
         </button>

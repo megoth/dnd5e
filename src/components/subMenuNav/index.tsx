@@ -10,12 +10,14 @@ import { userIsAdmin } from "../../utils/session";
 import { useSolidAuth } from "@ldo/solid-react";
 import { useLocation } from "react-router-dom";
 import { bem } from "../../utils/bem";
+import { useLocalization } from "@fluent/react";
 
 export const TESTID_SUB_MENU_NAV_CLOSE_BUTTON = "sub-menu-nav-close-button";
 
 export default function SubMenuNav() {
   const { full, setLeftOpen } = useLayout();
   const { session } = useSolidAuth();
+  const { l10n } = useLocalization();
 
   useEscKey(() => setLeftOpen(false));
 
@@ -36,6 +38,7 @@ export default function SubMenuNav() {
         )}
         onClick={() => setLeftOpen(false)}
         data-testid={TESTID_SUB_MENU_NAV_CLOSE_BUTTON}
+        aria-label={l10n.getString("closeMenu")}
       >
         <Icon name="close" />
         &nbsp;

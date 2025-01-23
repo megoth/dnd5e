@@ -43,6 +43,7 @@
 :classFeatures skos:definition "Class Features"@en-US .
 :classFeaturesDescription skos:definition "As a {$className}, you'll gain the following class features:"@en-US .
 :close skos:definition "Close"@en-US .
+:closeMenu skos:definition "Close menu"@en-US .
 :components skos:definition "Components"@en-US .
 :concentration skos:definition "Concentration"@en-US .
 :constitution skos:definition "Constitution"@en-US .
