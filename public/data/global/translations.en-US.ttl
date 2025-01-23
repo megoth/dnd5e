@@ -120,6 +120,8 @@
 :noResults skos:definition "No results"@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+:openMetaMenu skos:definition "Open meta menu"@en-US .
+:openNavigationMenu skos:definition "Open navigation menu"@en-US .
 :or skos:definition "or"@en-US .
 :order0 skos:definition "0th"@en-US .
 :order1 skos:definition "1st"@en-US .

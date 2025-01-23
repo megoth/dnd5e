@@ -7,6 +7,7 @@ import { useSolidAuth } from "@ldo/solid-react";
 import { NavLink } from "react-router-dom";
 import { bem } from "../../utils/bem";
 import SearchForm from "../searchForm";
+import { useLocalization } from "@fluent/react";
 
 export const TESTID_PAGE_HEADER_LEFT_MENU_BUTTON =
   "page-header-left-menu-button";
@@ -20,6 +21,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 export default function PageHeader({ className, ...props }: Props) {
   const { session } = useSolidAuth();
   const { full, rightOpen, setLeftOpen, setRightOpen } = useLayout();
+  const { l10n } = useLocalization();
   return (
     <header
       className={clsx(
@@ -57,6 +59,7 @@ export default function PageHeader({ className, ...props }: Props) {
             )}
             onClick={() => setLeftOpen(true)}
             data-testid={TESTID_PAGE_HEADER_LEFT_MENU_BUTTON}
+            aria-label={l10n.getString("openNavigationMenu")}
           >
             <Icon name="menu" />
           </button>
@@ -68,6 +71,7 @@ export default function PageHeader({ className, ...props }: Props) {
             className="p-2 px-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
             onClick={() => setRightOpen(!rightOpen)}
             data-testid={TESTID_PAGE_HEADER_RIGHT_MENU_BUTTON}
+            aria-label={l10n.getString("openMetaMenu")}
           >
             {session.isLoggedIn ? (
               <Icon name="settings" />

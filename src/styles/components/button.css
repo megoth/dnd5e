@@ -9,7 +9,7 @@
 }
 
 .button--close[type] {
-    @apply bg-gray-100 dark:bg-gray-800 border-transparent px-2 w-full hover:bg-transparent hover:text-black dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600 shadow-none;
+    @apply bg-gray-100 dark:bg-gray-800 border-transparent px-2 w-full hover:bg-transparent dark:text-gray-200 hover:shadow-none focus:ring-gray-300 dark:focus:ring-gray-600 shadow-none;
 }
 
 .button--global-search[type] {

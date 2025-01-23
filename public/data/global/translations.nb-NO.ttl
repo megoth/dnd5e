@@ -123,6 +123,8 @@
 :noResults skos:definition "Ingen treff"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+:openMetaMenu skos:definition "Åpne meta-meny"@nb-NO .
+:openNavigationMenu skos:definition "Åpne navigeringsmeny"@nb-NO .
 :or skos:definition "eller"@nb-NO .
 :order0 skos:definition "0."@nb-NO .
 :order1 skos:definition "1."@nb-NO .
