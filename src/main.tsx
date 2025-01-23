@@ -6,10 +6,19 @@ import AppProvider from "./hooks/useApp/provider";
 import "./styles/globals.css";
 import LayoutProvider from "./hooks/useLayout/provider";
 import Loading from "./components/loading";
+import Layout from "./components/layout";
 
-function lazyLoadPage(Component) {
+function lazyLoadPage(Component, full: boolean = false) {
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense
+      fallback={
+        <Layout full={full}>
+          <div className="px-4 md:text-center">
+            <Loading />
+          </div>
+        </Layout>
+      }
+    >
       <Component />
     </Suspense>
   );
@@ -30,7 +39,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: lazyLoadPage(lazy(() => import("./components/homePage"))),
+        element: lazyLoadPage(
+          lazy(() => import("./components/homePage")),
+          true,
+        ),
       },
       {
         path: "/about",
@@ -66,7 +78,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: lazyLoadPage(lazy(() => import("./components/loginPage"))),
+        element: lazyLoadPage(
+          lazy(() => import("./components/loginPage")),
+          true,
+        ),
       },
       {
         path: "/rules",
@@ -128,7 +143,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/signup",
-        element: lazyLoadPage(lazy(() => import("./components/signupPage"))),
+        element: lazyLoadPage(
+          lazy(() => import("./components/signupPage")),
+          true,
+        ),
       },
       {
         path: "/spells",

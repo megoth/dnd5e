@@ -2,7 +2,6 @@ import Translation from "../translation";
 import { bem } from "../../utils/bem";
 import { useNavigate } from "react-router";
 import { FormEvent, useEffect, useState } from "react";
-import useSearch from "../../hooks/useSearch";
 import { useLocalization } from "@fluent/react";
 import { useSearchParams } from "react-router-dom";
 import { first } from "../../utils/array";
@@ -13,7 +12,6 @@ interface Props {
 }
 
 export default function SearchForm({ modifier, path }: Props) {
-  const { isLoading } = useSearch();
   const { l10n } = useLocalization();
   const [searchParams] = useSearchParams();
   const [query, setQuery] = useState(first(searchParams.get("search")));
@@ -41,9 +39,7 @@ export default function SearchForm({ modifier, path }: Props) {
         id="search"
         value={query || ""}
         onChange={(e) => setQuery(e.target.value)}
-        disabled={isLoading}
-        aria-disabled={isLoading}
-        placeholder={l10n.getString(isLoading ? "loading" : "searchHere")}
+        placeholder={l10n.getString("searchHere")}
       />
       <button type="submit" className={bem("button", "search", modifier)}>
         <Translation id="search" />
