@@ -44,8 +44,7 @@ import CharacterCreatePage from "./components/characterCreatePage";
 import SettingsPage from "./components/settingsPage";
 import Loading from "./components/loading";
 
-function lazyLoadPage(modulePath: string) {
-  const Component = lazy(() => import(modulePath));
+function lazyLoadPage(Component) {
   return (
     <Suspense fallback={<Loading />}>
       <Component />
@@ -98,7 +97,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/faq",
-        element: lazyLoadPage("./components/faqPage"),
+        element: lazyLoadPage(lazy(() => import("./components/faqPage"))),
       },
       {
         path: "/login",
