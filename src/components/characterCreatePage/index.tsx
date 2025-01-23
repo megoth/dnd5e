@@ -1,17 +1,13 @@
-import React, { FormEventHandler, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
-import { useSolidAuth } from "@ldo/solid-react";
-import Unauthenticated from "../unauthenticated";
 import useProfile from "../../hooks/useProfile";
-import Loading from "../loading";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import useListOfType from "../../hooks/useListOfType";
-import { ClassShapeType, RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
-import CharacterCreatePageChoice from "./choice";
+import { RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
 import CharacterCreatePageRace from "./race";
 import CharacterCreatePageSubrace from "./subrace";
 import CharacterCreatePageName from "./name";
@@ -27,16 +23,20 @@ export type Inputs = {
 };
 
 export default function CharacterCreatePage() {
-  const { session } = useSolidAuth();
-  const { profile, isLoading: profileLoading } = useProfile();
+  const { profile } = useProfile();
   const { register, handleSubmit } = useForm<Inputs>({
     defaultValues: {
       setAsDefault: !profile?.defaultCharacter,
     },
   });
 
-  const { items: races } = useListOfType(RaceShapeType, "races", "Race");
+  const { items: races, isLoading } = useListOfType(
+    RaceShapeType,
+    "characters",
+    "Race",
+  );
   const [race, setRace] = useState(races?.[0]);
+  useEffect(() => setRace(races?.[0]), [races, isLoading]);
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     console.log("DATA", data);
@@ -56,25 +56,20 @@ export default function CharacterCreatePage() {
         <h1>
           <Translation id="createCharacter" />
         </h1>
-        {!session.isLoggedIn && (
-          <p>
-            <Translation id="pageRequiresAuthentication" />
-          </p>
-        )}
-        {session.isLoggedIn && (profileLoading || !profile) && <Loading />}
-        {session.isLoggedIn && !profileLoading && profile && (
-          <form className="form" onSubmit={handleSubmit(onSubmit)}>
-            <CharacterCreatePageName register={register} />
-            <CharacterCreatePageRace register={register} setRace={setRace} />
-            <CharacterCreatePageSubrace register={register} race={race} />
-            <CharacterCreatePageClass register={register} />
-            <button type="submit" className="button w-full mt-8">
-              <Translation id="createCharacter" />
-            </button>
-          </form>
-        )}
+        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <CharacterCreatePageName register={register} />
+          <CharacterCreatePageRace
+            register={register}
+            race={race}
+            setRace={setRace}
+          />
+          <CharacterCreatePageSubrace register={register} race={race} />
+          <CharacterCreatePageClass register={register} />
+          <button type="submit" className="button w-full mt-8">
+            <Translation id="createCharacter" />
+          </button>
+        </form>
       </Content>
-      {!session.isLoggedIn && <Unauthenticated />}
     </Layout>
   );
 }

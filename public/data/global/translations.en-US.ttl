@@ -104,6 +104,7 @@
 :loginPageTitle skos:definition "Log in with Solid"@en-US .
 :loginPitch skos:definition "Start your adventure with Solid"@en-US .
 :loginPrompt skos:definition "Already have a Solid identity? Log in here."@en-US .
+:loginRecommended skos:definition "Login recommended for more funtionality."@en-US .
 :logOut skos:definition "Log out"@en-US .
 :magicItem skos:definition "Magic Item"@en-US .
 :magicItems skos:definition "Magic Items"@en-US .
@@ -202,6 +203,7 @@
 :startingProficiencies skos:definition "Starting Proficiencies"@en-US .
 :startingSpells skos:definition "Starting Spells"@en-US .
 :stealth skos:definition "Stealth"@en-US .
+:storageRecommended skos:definition "Online storage with Solid Pod recommended for more functionality."@en-US .
 :storages skos:definition "Storages"@en-US .
 :strength skos:definition "Strength"@en-US .
 :subclass skos:definition "Subclass"@en-US .

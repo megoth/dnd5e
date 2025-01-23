@@ -106,6 +106,7 @@
 :loginPageTitle skos:definition "Logg på med Solid"@nb-NO .
 :loginPitch skos:definition "Start eventyret ditt med Solid"@nb-NO .
 :loginPrompt skos:definition "Har du allerede en Solid identitet? Logg deg inn her."@nb-NO .
+:loginRecommended skos:definition "Det er anbefalt å logge seg inn for mer funksjonalitet."@nb-NO .
 :logOut skos:definition "Logg ut"@nb-NO .
 :magicItem skos:definition "Magisk gjenstand"@nb-NO .
 :magicItems skos:definition "Magiske gjenstander"@nb-NO .
@@ -205,6 +206,7 @@
 :startingProficiencies skos:definition "Kunnskap du starter med"@nb-NO .
 :startingSpells skos:definition "Trylleformler du starter med"@nb-NO .
 :stealth skos:definition "Sniking"@nb-NO .
+:storageRecommended skos:definition "Lagringsplass på nett med Solid Pods er anbefalt for mer funksjonalitet."@nb-NO .
 :storages skos:definition "Lagringsplass"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .
 :subclass skos:definition "Underklasse"@nb-NO .

@@ -10,10 +10,12 @@ interface Props {
 }
 
 function getValue(reference: ReferenceOption): string {
-  return (reference.equipment ||
-    reference.language ||
-    reference.proficiency ||
-    reference.spell)["@id"];
+  return `reference-${
+    (reference.equipment ||
+      reference.language ||
+      reference.proficiency ||
+      reference.spell)["@id"]
+  }`;
 }
 
 export default function CharacterCreatePageStartingOptionsReferences({
@@ -144,7 +146,9 @@ export default function CharacterCreatePageStartingOptionsReferences({
                   }
                   onChange={onProficiencyChange}
                 />{" "}
-                {reference.proficiency?.skill?.label ||
+                {reference.proficiency?.equipment?.label ||
+                  reference.proficiency?.equipmentCategory?.label ||
+                  reference.proficiency?.skill?.label ||
                   reference.proficiency?.label}
                 {reference.equipment?.label}
                 {reference.language?.label}

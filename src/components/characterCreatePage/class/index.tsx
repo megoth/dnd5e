@@ -1,5 +1,5 @@
 import Translation from "../../translation";
-import React, { FormEventHandler, useState } from "react";
+import React, { FormEventHandler, useEffect, useState } from "react";
 import useListOfType from "../../../hooks/useListOfType";
 import { ClassShapeType } from "../../../ldo/dnd5e.shapeTypes";
 import { type UseFormRegister } from "react-hook-form";
@@ -13,11 +13,12 @@ interface Props {
 export default function CharacterCreatePageClass({ register }: Props) {
   const { items: classes, isLoading } = useListOfType(
     ClassShapeType,
-    "classes",
+    "characters",
     "Class",
   );
 
   const [classInfo, setClassInfo] = useState(classes?.[0]);
+  useEffect(() => setClassInfo(classes?.[0]), [classes]);
 
   const onChange: FormEventHandler<HTMLSelectElement> = async (event) => {
     const classInfo = classes.find(
@@ -41,16 +42,25 @@ export default function CharacterCreatePageClass({ register }: Props) {
         })}
       >
         {classes.map((classInfo) => (
-          <option key={classInfo["@id"]} value={classInfo["@id"]}>
+          <option
+            key={`classChoice-${classInfo["@id"]}`}
+            value={classInfo["@id"]}
+          >
             {classInfo.label}
           </option>
         ))}
       </select>
-      {classInfo.proficiencyChoices.map((choice) => (
-        <CharacterCreatePageChoice key={choice["@id"]} choice={choice} />
+      {classInfo?.proficiencyChoices.map((choice, index) => (
+        <CharacterCreatePageChoice
+          key={`proficiencyChoice-${index}`}
+          choice={choice}
+        />
       ))}
-      {classInfo.startingEquipmentOptions.map((choice) => (
-        <CharacterCreatePageChoice key={choice["@id"]} choice={choice} />
+      {classInfo?.startingEquipmentOptions.map((choice, index) => (
+        <CharacterCreatePageChoice
+          key={`startingEquipmentChoice-${index}`}
+          choice={choice}
+        />
       ))}
     </>
   );

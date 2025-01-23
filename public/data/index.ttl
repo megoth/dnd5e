@@ -8,13 +8,29 @@
     dnd5e_app:resourceBundle :globalResources, :adminResources ;
     dnd5e_app:supportLanguage :locale-en-US, :locale-nb-NO ;
     dnd5e_app:rulesBundle
+        :characterBundle,
         :classesBundle,
         :equipmentsBundle,
         :monstersBundle,
-        :proficienciesBundle,
         :racesBundle,
         :rulesBundle,
         :spellsBundle .
+
+:characterBundle
+    rdfs:label "characters" ;
+    dnd5e_app:rulesResource
+        </data/ability-scores.ttl>,
+        </data/classes.ttl>,
+        </data/equipment-categories.ttl>,
+        </data/equipments.ttl>,
+        </data/features.ttl>,
+        </data/illustrations.ttl>,
+        </data/languages.ttl>,
+        </data/proficiencies.ttl>,
+        </data/races.ttl>,
+        </data/skills.ttl>,
+        </data/spells.ttl>,
+        </data/subraces.ttl> .
 
 :classesBundle
     rdfs:label "classes" ;
@@ -37,14 +53,6 @@
     dnd5e_app:rulesResource
         </data/illustrations.ttl>,
         </data/monsters.ttl> .
-
-:proficienciesBundle
-    rdfs:label "proficiencies" ;
-    dnd5e_app:rulesResource
-        </data/features.ttl>,
-        </data/languages.ttl>,
-        </data/proficiencies.ttl>,
-        </data/skills.ttl> .
 
 :racesBundle
     rdfs:label "races" ;
