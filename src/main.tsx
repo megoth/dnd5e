@@ -1,20 +1,18 @@
-import React from "react";
+import React, {
+  lazy,
+  type LazyExoticComponent,
+  ReactElement,
+  ReactNode,
+  Suspense,
+} from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { BrowserSolidLdoProvider } from "@ldo/solid-react";
 import HomePage from "./components/homePage";
 import AppProvider from "./hooks/useApp/provider";
 import "./styles/globals.css";
-import AboutPage from "./components/aboutPage";
 import FAQPage from "./components/faqPage";
-import AdminPage from "./components/adminPage";
-import ErrorsPage from "./components/errorsPage";
-import AdminFAQPAge from "./components/adminFAQPage";
-import LanguagesPage from "./components/languagesPage";
-import TranslationsPage from "./components/translationsPage";
 import CharactersPage from "./components/charactersPage";
-import EncountersPage from "./components/encountersPage";
-import NotesPage from "./components/notesPage";
 import ClassesPage from "./components/classesPage";
 import EquipmentIndexPage from "./components/equipmentIndexPage";
 import MonstersPage from "./components/monstersPage";
@@ -44,6 +42,15 @@ import StorageCreatePage from "./components/storageCreatePage";
 import StoragePage from "./components/storagePage";
 import CharacterCreatePage from "./components/characterCreatePage";
 import SettingsPage from "./components/settingsPage";
+import Loading from "./components/loading";
+
+function lazyLoadPage(modulePath: string) {
+  return ((Component) => (
+    <Suspense fallback={<Loading />}>
+      <Component />
+    </Suspense>
+  ))(lazy(() => import(modulePath)));
+}
 
 const router = createBrowserRouter([
   {
@@ -64,27 +71,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutPage />,
-      },
-      {
-        path: "/admin",
-        element: <AdminPage />,
-      },
-      {
-        path: "/admin/errors",
-        element: <ErrorsPage />,
-      },
-      {
-        path: "/admin/faq",
-        element: <AdminFAQPAge />,
-      },
-      {
-        path: "/admin/languages",
-        element: <LanguagesPage />,
-      },
-      {
-        path: "/admin/translations",
-        element: <TranslationsPage />,
+        element: lazyLoadPage("./components/aboutPage"),
       },
       {
         path: "/armor",
@@ -104,7 +91,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/faq",
-        element: <FAQPage />,
+        element: lazyLoadPage("./components/faqPage"),
       },
       {
         path: "/login",
