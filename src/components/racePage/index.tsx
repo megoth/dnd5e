@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Layout from "../layout";
 import Content from "../content";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useLdo } from "@ldo/solid-react";
 import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
@@ -19,6 +19,7 @@ export default function RacePage() {
   const params = useParams();
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
+  const location = useLocation();
 
   const { data: race } = useSWR(
     () => url,
@@ -39,6 +40,11 @@ export default function RacePage() {
       );
     },
   );
+
+  useEffect(() => {
+    if (isLoading || location.hash === "") return;
+    document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  }, [isLoading, location]);
 
   if (!race) {
     return (

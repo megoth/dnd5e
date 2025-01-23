@@ -14,7 +14,10 @@ export default function Illustration({ className, subject, modifier }: Props) {
   const { l10n } = useLocalization();
   if (!subject) return null;
   return (
-    <div className={clsx(bem("illustration", modifier), className)}>
+    <div
+      className={clsx(bem("illustration", modifier), className)}
+      style={{ minHeight: 256 }}
+    >
       <img
         src={subject.imageUrl?.["@id"]}
         alt={subject.description.join("\n\n")}

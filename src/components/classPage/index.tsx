@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../layout";
 import Content from "../content";
 import Translation from "../translation";
 import WarningMessage from "../warningMessage";
 import Loading from "../loading";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import useSWR from "swr";
 import { useLdo } from "@ldo/solid-react";
 import { resourceUrl } from "../../utils/url";
@@ -25,6 +25,7 @@ export default function ClassPage() {
   const params = useParams();
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
+  const location = useLocation();
 
   const { data: classInfo } = useSWR(
     () => url,
@@ -50,6 +51,11 @@ export default function ClassPage() {
       );
     },
   );
+
+  useEffect(() => {
+    if (isLoading || location.hash === "") return;
+    document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  }, [isLoading, location]);
 
   if (!classInfo?.["@id"]) {
     return (
