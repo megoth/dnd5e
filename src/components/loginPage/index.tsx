@@ -44,10 +44,7 @@ export default function LoginPage() {
             ))}
           </ul>
         </div>
-        <LoginForm
-          className="p-2 bg-gray-100 border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600"
-          redirectURL={redirectURL}
-        />
+        <LoginForm className="box" redirectURL={redirectURL} />
       </div>
       <aside className="my-16 px-4 lg:px-0 mx-auto max-w-prose">
         <FAQ id="whyLogInWithSolid" variant="small" />

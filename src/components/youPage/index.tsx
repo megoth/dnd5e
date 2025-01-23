@@ -7,10 +7,10 @@ import { useLocalization } from "@fluent/react";
 import Markdown from "react-markdown";
 import { useSolidAuth } from "@ldo/solid-react";
 import FAQ from "../faq";
-import Unauthenticated from "../unauthenticated";
 import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
 import Loading from "../loading";
+import Unauthenticated from "../unauthenticated";
 
 export default function YouPage() {
   const { l10n } = useLocalization();
@@ -42,10 +42,14 @@ export default function YouPage() {
             </h1>
             <Markdown>{l10n.getString("yourStuffDescription")}</Markdown>
           </Content>
-          <Unauthenticated />
+          <Unauthenticated
+            title={l10n.getString("loginPageTitle")}
+            className="box max-w-72"
+          />
           <Content>
             <FAQ id="whatIsSolid" variant="small" />
             <FAQ id="whyLogInWithSolid" variant="small" />
+            <FAQ id="whatIsPod" variant="small" />
           </Content>
         </>
       )}

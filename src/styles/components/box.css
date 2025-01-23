@@ -1,0 +1,3 @@
+.box {
+    @apply p-2 bg-gray-100 border border-gray-200 shadow dark:bg-gray-700 dark:border-gray-600;
+}

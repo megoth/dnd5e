@@ -267,5 +267,9 @@
         should also be noted that the app is also designed to allow you to have it all in one place, or you could split
         it into multiple parts.
 
-        To get started with this app you need a Solid account. With that available you can authenticate yourself,
-        and we can show more relevant information connected to your stuff."""@en-US .
+        Technically you can use the app without logging in, as we will store your data in the browsers local storage.
+        But this will mean that you can only access the data in that browser, and you aren't able to share it with
+        anyone else.
+
+        If this is the first time you're logging in with this app, we'll also suggest setting up the online storage once
+        you're in. Think of this like having a save file in your Pod, where we can store all your data."""@en-US .

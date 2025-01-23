@@ -1,5 +1,6 @@
 @import "base/fonts.css";
 
+@import "components/box.css";
 @import "components/breadcrumbs.css";
 @import "components/button.css";
 @import "components/cards.css";

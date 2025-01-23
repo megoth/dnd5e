@@ -270,5 +270,8 @@
         lar deg velge hvor du vil at dataen din skal lagres. Appen er også designet for å la deg velge om du vil samle
         alt på et sted, eller om du vil dele det opp i flere deler.
 
-        **For å komme i gang med appen trenger du en *Solid konto*. Når du har det kan du logge deg inn, og vi kan
-        vise mer relevant informasjon knyttet til dine ting.**"""@nb-NO .
+        Teknisk sett kan du bruke appen uten å logge inn, da vi vil lagre dataen lokalt i nettleseren. Men dette betyr
+        at du får tilgang til dataen bare i nettleseren, og du kan ikke dele den med andre.
+
+        Om dette er første gangen du logger inn så vil vi anbefale deg deg å sette opp en lagringsplass etter at du har
+        logget inn. Tenk på dette som en lagringsfil på din Pod, hvor vi kan lagre all dataen din."""@nb-NO .

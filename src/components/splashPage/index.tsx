@@ -12,6 +12,7 @@ import { NavLink } from "react-router-dom";
 import { bem } from "../../utils/bem";
 import Markdown from "react-markdown";
 import readme from "./README.md?raw";
+import SolidLogo from "../solidLogo";
 
 export default function SplashPage() {
   return (
@@ -57,9 +58,7 @@ export default function SplashPage() {
                   className="flex-1 flex flex-col justify-center"
                   hyphens={false}
                 >
-                  <img
-                    src="/logos/solid-emblem.svg"
-                    alt={"solidLogo"}
+                  <SolidLogo
                     className="mx-auto"
                     style={{ maxHeight: 175, maxWidth: 200 }}
                   />

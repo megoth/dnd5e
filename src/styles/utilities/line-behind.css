@@ -5,9 +5,8 @@
 .line-behind__line {
     @apply border-t border-gray-400 dark:border-gray-600 mx-auto absolute top-3.5 left-0 right-0 bottom-0 w-full;
     content: "";
-    z-index: -1;
 }
 
-.line-behind span {
-    @apply px-2;
+.line-behind span:not(.line-behind__line) {
+    @apply px-2 z-10;
 }

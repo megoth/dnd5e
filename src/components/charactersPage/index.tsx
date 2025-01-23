@@ -7,10 +7,13 @@ import { useSolidAuth } from "@ldo/solid-react";
 import Breadcrumbs from "../breadcrumbs";
 import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
+import Unauthenticated from "../unauthenticated";
+import { useLocalization } from "@fluent/react";
 
 export default function CharactersPage() {
+  const { l10n } = useLocalization();
   const { session } = useSolidAuth();
-  const { defaultStorage, isLoading } = useStorage();
+  const { defaultStorage, storages, isLoading } = useStorage();
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -34,6 +37,21 @@ export default function CharactersPage() {
           <Translation id="createCharacter" />
         </NavLink>
       </div>
+      {!isLoading && !storages && (
+        <>
+          <Content>
+            <p>
+              <Translation id="storageRecommended" />
+            </p>
+          </Content>
+          {!session.isLoggedIn && (
+            <Unauthenticated
+              title={l10n.getString("loginPageTitle")}
+              className="box max-w-72"
+            />
+          )}
+        </>
+      )}
     </Layout>
   );
 }

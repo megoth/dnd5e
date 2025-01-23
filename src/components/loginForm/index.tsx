@@ -6,6 +6,7 @@ import { onIdPSelected } from "../../utils/session";
 import { getRedirectURL } from "../../utils/windowHelpers";
 import { useSolidAuth } from "@ldo/solid-react";
 import { NavLink, useSearchParams } from "react-router-dom";
+import SolidLogo from "../solidLogo";
 
 export const TESTID_LOGIN_FORM_IDP_FIELD = "login-form-idp-field";
 export const TESTID_LOGIN_FORM_REMEMBER_CHECKBOX =
@@ -14,11 +15,13 @@ export const TESTID_LOGIN_FORM_BUTTON = "login-form-button";
 
 interface Props extends HTMLAttributes<HTMLFormElement> {
   className?: string;
+  hideLogo?: boolean;
   redirectURL?: string;
 }
 
 export default function LoginForm({
   className,
+  hideLogo,
   redirectURL = getRedirectURL(""),
   ...props
 }: Props) {
@@ -65,12 +68,7 @@ export default function LoginForm({
       className={clsx("text-left", className)}
       {...props}
     >
-      <img
-        src="/logos/solid-emblem.svg"
-        alt={"loginImage"}
-        className="mx-auto"
-        style={{ maxWidth: 200 }}
-      />
+      {!hideLogo && <SolidLogo className="mx-auto" />}
       <label htmlFor="idp" className="label">
         <Translation id="solidIdP" />
         <input
