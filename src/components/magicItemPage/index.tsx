@@ -9,7 +9,7 @@ import Loading from "../loading";
 import { equipmentResourceUrls } from "../../utils/dnd5e";
 import WarningMessage from "../warningMessage";
 import Breadcrumbs from "../breadcrumbs";
-import MagicItemInfo from "../MagicItemInfo";
+import MagicItemInfo from "../magicItemInfo";
 
 export default function MagicItemPage() {
   const params = useParams();

@@ -1,47 +1,10 @@
-import React, {
-  lazy,
-  type LazyExoticComponent,
-  ReactElement,
-  ReactNode,
-  Suspense,
-} from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { BrowserSolidLdoProvider } from "@ldo/solid-react";
-import HomePage from "./components/homePage";
 import AppProvider from "./hooks/useApp/provider";
 import "./styles/globals.css";
-import FAQPage from "./components/faqPage";
-import CharactersPage from "./components/charactersPage";
-import ClassesPage from "./components/classesPage";
-import EquipmentIndexPage from "./components/equipmentIndexPage";
-import MonstersPage from "./components/monstersPage";
-import RacesPage from "./components/racesPage";
-import SpellsPage from "./components/spellsPage";
-import LoginPage from "./components/loginPage";
-import SignupPage from "./components/signupPage";
-import RulesPage from "./components/rulesPage";
 import LayoutProvider from "./hooks/useLayout/provider";
-import ClassPage from "./components/classPage";
-import SpellPage from "./components/spellPage";
-import SearchPage from "./components/searchPage";
-import RacePage from "./components/racePage";
-import WeaponsPage from "./components/weaponsPage";
-import ArmorIndexPage from "./components/armorIndexPage";
-import MonsterPage from "./components/monsterPage";
-import WeaponPage from "./components/weaponPage";
-import ArmorSinglePage from "./components/armorSinglePage";
-import EquipmentSinglePage from "./components/equipmentSinglePage";
-import SubclassesPage from "./components/subclassesPage";
-import SubracesPage from "./components/subracesPage";
-import MagicItemsPage from "./components/magicItemsPage";
-import MagicItemPage from "./components/MagicItemPage";
-import YouPage from "./components/youPage";
-import StoragesPage from "./components/storagesPage";
-import StorageCreatePage from "./components/storageCreatePage";
-import StoragePage from "./components/storagePage";
-import CharacterCreatePage from "./components/characterCreatePage";
-import SettingsPage from "./components/settingsPage";
 import Loading from "./components/loading";
 
 function lazyLoadPage(Component) {
@@ -67,33 +30,35 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: lazyLoadPage(lazy(() => import("./components/homePage"))),
       },
       {
         path: "/about",
-        element: ((Component) => {
-          return (
-            <Suspense fallback={<Loading />}>
-              <Component />
-            </Suspense>
-          );
-        })(lazy(() => import("./components/aboutPage"))),
+        element: lazyLoadPage(lazy(() => import("./components/aboutPage"))),
       },
       {
         path: "/armor",
-        element: <ArmorIndexPage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/armorIndexPage")),
+        ),
       },
       {
         path: "/armor/:url",
-        element: <ArmorSinglePage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/armorSinglePage")),
+        ),
       },
       {
         path: "/characters",
-        element: <CharactersPage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/charactersPage")),
+        ),
       },
       {
         path: "/characters/create",
-        element: <CharacterCreatePage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/characterCreatePage")),
+        ),
       },
       {
         path: "/faq",
@@ -101,103 +66,113 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <LoginPage />,
+        element: lazyLoadPage(lazy(() => import("./components/loginPage"))),
       },
       {
         path: "/rules",
-        element: <RulesPage />,
+        element: lazyLoadPage(lazy(() => import("./components/rulesPage"))),
       },
       {
         path: "/classes",
-        element: <ClassesPage />,
+        element: lazyLoadPage(lazy(() => import("./components/classesPage"))),
       },
       {
         path: "/classes/:url",
-        element: <ClassPage />,
+        element: lazyLoadPage(lazy(() => import("./components/classPage"))),
       },
       {
         path: "/equipment",
-        element: <EquipmentIndexPage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/equipmentIndexPage")),
+        ),
       },
       {
         path: "/equipment/:url",
-        element: <EquipmentSinglePage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/equipmentSinglePage")),
+        ),
       },
       {
         path: "/magic-items",
-        element: <MagicItemsPage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/magicItemsPage")),
+        ),
       },
       {
         path: "/magic-items/:url",
-        element: <MagicItemPage />,
+        element: lazyLoadPage(lazy(() => import("./components/magicItemPage"))),
       },
       {
         path: "/monsters",
-        element: <MonstersPage />,
+        element: lazyLoadPage(lazy(() => import("./components/monstersPage"))),
       },
       {
         path: "/monsters/:url",
-        element: <MonsterPage />,
+        element: lazyLoadPage(lazy(() => import("./components/monsterPage"))),
       },
       {
         path: "/races",
-        element: <RacesPage />,
+        element: lazyLoadPage(lazy(() => import("./components/racesPage"))),
       },
       {
         path: "/races/:url",
-        element: <RacePage />,
+        element: lazyLoadPage(lazy(() => import("./components/racePage"))),
       },
       {
         path: "/search",
-        element: <SearchPage />,
+        element: lazyLoadPage(lazy(() => import("./components/searchPage"))),
       },
       {
         path: "/settings",
-        element: <SettingsPage />,
+        element: lazyLoadPage(lazy(() => import("./components/settingsPage"))),
       },
       {
         path: "/signup",
-        element: <SignupPage />,
+        element: lazyLoadPage(lazy(() => import("./components/signupPage"))),
       },
       {
         path: "/spells",
-        element: <SpellsPage />,
+        element: lazyLoadPage(lazy(() => import("./components/spellsPage"))),
       },
       {
         path: "/spells/:url",
-        element: <SpellPage />,
+        element: lazyLoadPage(lazy(() => import("./components/spellPage"))),
       },
       {
         path: "/storages",
-        element: <StoragesPage />,
+        element: lazyLoadPage(lazy(() => import("./components/storagesPage"))),
       },
       {
         path: "/storages/create",
-        element: <StorageCreatePage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/storageCreatePage")),
+        ),
       },
       {
         path: "/storages/:url",
-        element: <StoragePage />,
+        element: lazyLoadPage(lazy(() => import("./components/storagePage"))),
       },
       {
         path: "/subclasses",
-        element: <SubclassesPage />,
+        element: lazyLoadPage(
+          lazy(() => import("./components/subclassesPage")),
+        ),
       },
       {
         path: "/subraces",
-        element: <SubracesPage />,
+        element: lazyLoadPage(lazy(() => import("./components/subracesPage"))),
       },
       {
         path: "/weapons",
-        element: <WeaponsPage />,
+        element: lazyLoadPage(lazy(() => import("./components/weaponsPage"))),
       },
       {
         path: "/weapons/:url",
-        element: <WeaponPage />,
+        element: lazyLoadPage(lazy(() => import("./components/weaponPage"))),
       },
       {
         path: "/you",
-        element: <YouPage />,
+        element: lazyLoadPage(lazy(() => import("./components/youPage"))),
       },
     ],
   },
