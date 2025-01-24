@@ -12,6 +12,7 @@ import CharacterCreatePageRace from "./race";
 import CharacterCreatePageSubrace from "./subrace";
 import CharacterCreatePageName from "./name";
 import CharacterCreatePageClass from "./class";
+import Loading from "../loading";
 
 export type Inputs = {
   name: string;
@@ -56,19 +57,22 @@ export default function CharacterCreatePage() {
         <h1>
           <Translation id="createCharacter" />
         </h1>
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
-          <CharacterCreatePageName register={register} />
-          <CharacterCreatePageRace
-            register={register}
-            race={race}
-            setRace={setRace}
-          />
-          <CharacterCreatePageSubrace register={register} race={race} />
-          <CharacterCreatePageClass register={register} />
-          <button type="submit" className="button w-full mt-8">
-            <Translation id="createCharacter" />
-          </button>
-        </form>
+        {isLoading && <Loading />}
+        {!isLoading && (
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
+            <CharacterCreatePageName register={register} />
+            <CharacterCreatePageRace
+              register={register}
+              race={race}
+              setRace={setRace}
+            />
+            <CharacterCreatePageSubrace register={register} race={race} />
+            <CharacterCreatePageClass register={register} />
+            <button type="submit" className="button w-full mt-8">
+              <Translation id="createCharacter" />
+            </button>
+          </form>
+        )}
       </Content>
     </Layout>
   );
