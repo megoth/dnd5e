@@ -15,7 +15,9 @@ export default function SearchPage() {
   const [results, setResults] = useState<Array<SearchResult>>([]);
   const [suggestions, setSuggestions] = useState<Array<Suggestion>>([]);
   const [searchParams] = useSearchParams();
-  const [query, setQuery] = useState(first(searchParams.get("search")));
+  const [query, setQuery] = useState(
+    decodeURIComponent(first(searchParams.get("search"))),
+  );
 
   useEffect(() => {
     if (isLoading) return;
@@ -23,7 +25,10 @@ export default function SearchPage() {
     setSuggestions(search.autoSuggest(query));
   }, [query, isLoading]);
 
-  useEffect(() => setQuery(first(searchParams.get("search"))), [searchParams]);
+  useEffect(
+    () => setQuery(decodeURIComponent(first(searchParams.get("search")))),
+    [searchParams],
+  );
 
   return (
     <Layout>
