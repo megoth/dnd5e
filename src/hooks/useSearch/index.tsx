@@ -8,6 +8,7 @@ import {
   RaceShapeType,
   RuleSectionShapeType,
   RuleShapeType,
+  SkillShapeType,
   SpellShapeType,
   SubclassShapeType,
   SubraceShapeType,
@@ -178,6 +179,20 @@ export default function useSearch() {
         });
       })(),
   );
+  const { isLoading: skillsLoading } = useIndexer(
+    SkillShapeType,
+    "skills",
+    "Skill",
+    (skill) =>
+      !search.has(skill["@id"]) &&
+      search.add({
+        id: skill["@id"],
+        type: "skill",
+        title: skill.label,
+        text: skill.description,
+        url: `/skills/${btoa(skill["@id"])}`,
+      }),
+  );
 
   const { isLoading: spellLoading } = useIndexer(
     SpellShapeType,
@@ -253,6 +268,7 @@ export default function useSearch() {
       racesLoading ||
       ruleSectionsLoading ||
       rulesLoading ||
+      skillsLoading ||
       spellLoading ||
       schoolsLoading ||
       subclassesLoading ||

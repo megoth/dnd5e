@@ -149,6 +149,14 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "/skills",
+        element: lazyLoadPage(lazy(() => import("./components/skillsPage"))),
+      },
+      {
+        path: "/skills/:url",
+        element: lazyLoadPage(lazy(() => import("./components/skillPage"))),
+      },
+      {
         path: "/spells",
         element: lazyLoadPage(lazy(() => import("./components/spellsPage"))),
       },

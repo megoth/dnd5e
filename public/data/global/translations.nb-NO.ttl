@@ -186,6 +186,7 @@
 :signupSolidPrompt skos:definition "Opprett en ny Solid konto"@nb-NO .
 :signupPageTitle skos:definition "Opprett en Solid konto"@nb-NO .
 :size skos:definition "Størrelse"@nb-NO .
+:skill skos:definition "Evne"@nb-NO .
 :skills skos:definition "Evner"@nb-NO .
 :slotLevel skos:definition "Plassnivå"@nb-NO .
 :sneakAttack skos:definition "Snikangrep"@nb-NO .

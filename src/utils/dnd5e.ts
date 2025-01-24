@@ -12,6 +12,7 @@ import {
   MonsterSense,
   MonsterSpeed,
   Race,
+  Skill,
   Spell,
 } from "../ldo/dnd5e.typings";
 import { resourceUrl } from "./url";
@@ -366,6 +367,10 @@ export function raceResources(race: Race): string[] {
     ...(race.traits || []).map((trait) => resourceUrl(trait["@id"])),
     ...(race.illustration ? [resourceUrl(race.illustration["@id"])] : []),
   ];
+}
+
+export function skillResources(skill: Skill): string[] {
+  return [resourceUrl(skill.abilityScore["@id"])];
 }
 
 export function spellDuration(spell: Spell, l10n: ReactLocalization): string {

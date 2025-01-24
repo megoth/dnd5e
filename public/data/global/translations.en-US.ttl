@@ -3,6 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 :abilityBonuses skos:definition "Ability Bonuses"@en-US .
+:abilityScore skos:definition "Ability Score"@en-US .
 :abilityScores skos:definition "Ability Scores"@en-US .
 :aboutPageTitle skos:definition "About the app"@en-US .
 :actions skos:definition "Actions"@en-US .
@@ -183,6 +184,7 @@
 :signupSolidPrompt skos:definition "Create a new Solid account"@en-US .
 :signupPageTitle skos:definition "Create a Solid account"@en-US .
 :size skos:definition "Size"@en-US .
+:skill skos:definition "Skill"@en-US .
 :skills skos:definition "Skills"@en-US .
 :slotLevel skos:definition "Slot Level"@en-US .
 :sneakAttack skos:definition "Sneak Attack"@en-US .
