@@ -16,7 +16,7 @@ import {
 } from "../ldo/dnd5e.shapeTypes";
 import traits from "../dnd5eapi-data/5e-SRD-Traits.json";
 import { writeFileSync } from "node:fs";
-import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataPath, description } from "../utils/dnd5e";
 import { Trait, TraitSpecificBreathWeapon } from "../ldo/dnd5e.typings";
 import { transformChoice } from "./choice";
 import {
@@ -48,7 +48,7 @@ function transformSpecificTraitBreathWeapon(
 ): TraitSpecificBreathWeapon {
   return ldoDataset.usingType(TraitSpecificBreathWeaponShapeType).fromJson({
     label: data.name,
-    description: [data.desc],
+    description: data.desc,
     areaOfEffect:
       data.area_of_effect &&
       ldoDataset.usingType(AreaOfEffectShapeType).fromJson({
@@ -93,7 +93,7 @@ export function transformTrait(
     .fromSubject(`#${data.index}`);
   trait.type = { "@id": "Trait" };
   trait.label = data.name;
-  trait.description = data.desc;
+  trait.description = description(data.desc);
   trait.races = data.races?.map((race) =>
     ldoDataset
       .usingType(RaceShapeType)

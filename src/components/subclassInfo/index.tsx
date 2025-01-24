@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Content from "../content";
-import { description } from "../../utils/dnd5e";
 import Illustration from "../illustration";
 import Markdown from "react-markdown";
 import { Subclass } from "../../ldo/dnd5e.typings";
@@ -19,15 +18,13 @@ export default function SubclassInfo({ subclass }: Props) {
       )}
       <Content>
         <h3>{subclass.label}</h3>
-        {subclass.description && (
-          <Markdown>{description(subclass.description)}</Markdown>
-        )}
+        {subclass.description && <Markdown>{subclass.description}</Markdown>}
         <dl className={"data-list"}>
           {features.map((feature) => (
             <Fragment key={feature.label}>
               <dt>{feature.label}</dt>
               <dd>
-                <Markdown>{description(feature.description)}</Markdown>
+                <Markdown>{feature.description}</Markdown>
               </dd>
             </Fragment>
           ))}

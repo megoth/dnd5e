@@ -1,7 +1,6 @@
 import React from "react";
 import Content from "../content";
 import { Equipment } from "../../ldo/dnd5e.typings";
-import { description } from "../../utils/dnd5e";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Loading from "../loading";
@@ -20,9 +19,7 @@ export default function MagicItemInfo({ equipment, isLoading }: Props) {
         <p className="notification">{equipment.equipmentCategory.label}</p>
       )}
       {!isLoading && equipment.description && (
-        <Markdown remarkPlugins={[remarkGfm]}>
-          {description(equipment.description)}
-        </Markdown>
+        <Markdown remarkPlugins={[remarkGfm]}>{equipment.description}</Markdown>
       )}
     </Content>
   );

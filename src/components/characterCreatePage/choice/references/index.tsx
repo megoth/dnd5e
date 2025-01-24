@@ -3,7 +3,6 @@ import useRulesBundle from "../../../../hooks/useRulesBundle";
 import Translation from "../../../translation";
 import { Choice, ReferenceOption } from "../../../../ldo/dnd5e.typings";
 import Markdown from "react-markdown";
-import { description } from "../../../../utils/dnd5e";
 
 interface Props {
   options?: Choice;
@@ -68,9 +67,7 @@ export default function CharacterCreatePageStartingOptionsReferences({
           <Translation id="chooseNumber" vars={{ number: options.choose }} />)
         </label>
         {options.description && (
-          <Markdown className="notification">
-            {description(options.description)}
-          </Markdown>
+          <Markdown className="notification">{options.description}</Markdown>
         )}
         <div className="m-2">
           {complexChoice && <>TODO: HERE BE A COMPLEX CHOICE</>}

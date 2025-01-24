@@ -8,7 +8,6 @@ import { first } from "../../utils/array";
 import { type SearchResult, type Suggestion } from "minisearch";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { description } from "../../utils/dnd5e";
 import Loading from "../loading";
 
 export default function SearchPage() {
@@ -58,9 +57,7 @@ export default function SearchPage() {
                   </NavLink>
                 </h2>
                 {text && (
-                  <Markdown remarkPlugins={[remarkGfm]}>
-                    {description(text)}
-                  </Markdown>
+                  <Markdown remarkPlugins={[remarkGfm]}>{text}</Markdown>
                 )}
               </Content>
             </li>

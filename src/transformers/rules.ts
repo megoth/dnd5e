@@ -15,7 +15,7 @@ export function transformRule(
     .fromSubject(`#${data.index}`);
   rule.type = { "@id": "Rule" };
   rule.label = data.name;
-  rule.description = [data.desc];
+  rule.description = data.desc;
   rule.ruleSections = data.subsections.map((section) =>
     ldoDataset
       .usingType(RuleSectionShapeType)

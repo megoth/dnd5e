@@ -8,7 +8,6 @@ import { resourceUrl } from "../../utils/url";
 import { SpellShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
-  description,
   spellDuration,
   spellMaterial,
   spellResourceUrls,
@@ -123,16 +122,14 @@ export default function SpellPage() {
               </dt>
               <dd>{spellDuration(spell, l10n)}</dd>
             </dl>
-            <Markdown remarkPlugins={[remarkGfm]}>
-              {description(spell.description)}
-            </Markdown>
-            {spell.higherLevel?.length > 0 && (
+            <Markdown remarkPlugins={[remarkGfm]}>{spell.description}</Markdown>
+            {spell.higherLevel && (
               <dl className="data-list">
                 <dt>
                   <Translation id="atHigherLevels" />
                 </dt>
                 <dd>
-                  <Markdown>{description(spell.higherLevel)}</Markdown>
+                  <Markdown>{spell.higherLevel}</Markdown>
                 </dd>
               </dl>
             )}

@@ -4,7 +4,7 @@ import { WeaponPropertyShapeType } from "../ldo/dnd5e.shapeTypes";
 import { WeaponProperty } from "../ldo/dnd5e.typings";
 import properties from "../dnd5eapi-data/5e-SRD-Weapon-Properties.json";
 import { writeFileSync } from "node:fs";
-import { dataPath } from "../utils/dnd5e";
+import { dataPath, description } from "../utils/dnd5e";
 
 export function transformWeaponProperty(
   data: components["schemas"]["WeaponProperty"],
@@ -15,7 +15,7 @@ export function transformWeaponProperty(
     .fromSubject(`#${data.index}`);
   property.type = { "@id": "WeaponProperty" };
   property.label = data.name;
-  property.description = data.desc;
+  property.description = description(data.desc);
   return property;
 }
 

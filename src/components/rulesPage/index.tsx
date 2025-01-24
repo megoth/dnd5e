@@ -7,7 +7,6 @@ import useListOfType from "../../hooks/useListOfType";
 import { RuleShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import Markdown from "react-markdown";
-import { description } from "../../utils/dnd5e";
 import remarkGfm from "remark-gfm";
 import { NavLink } from "react-router-dom";
 
@@ -52,12 +51,12 @@ export default function RulesPage() {
             {rules.map((rule) => (
               <div key={rule["@id"]} id={btoa(rule["@id"])}>
                 <Markdown remarkPlugins={[remarkGfm]}>
-                  {description(rule.description)}
+                  {rule.description}
                 </Markdown>
                 {rule.ruleSections.map((section) => (
                   <div key={section["@id"]} id={btoa(section["@id"])}>
                     <Markdown remarkPlugins={[remarkGfm]}>
-                      {description(section.description)}
+                      {section.description}
                     </Markdown>
                   </div>
                 ))}

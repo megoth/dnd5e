@@ -8,7 +8,7 @@ import {
 import { Equipment } from "../ldo/dnd5e.typings";
 import items from "../dnd5eapi-data/5e-SRD-Magic-Items.json";
 import { writeFileSync } from "node:fs";
-import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataPath, description } from "../utils/dnd5e";
 
 export function transformMagicItem(
   data: components["schemas"]["MagicItem"],
@@ -19,7 +19,7 @@ export function transformMagicItem(
     .fromSubject(`#${data.index}`);
   equipment.type = { "@id": "Equipment" };
   equipment.label = data.name;
-  equipment.description = data.desc;
+  equipment.description = description(data.desc);
   equipment.equipmentCategory = ldoDataset
     .usingType(EquipmentCategoryShapeType)
     .fromSubject(apiUrlToSubjectUrl(data.equipment_category.url));

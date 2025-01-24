@@ -57,7 +57,7 @@ export default function useSearch() {
           id: `${classInfo["@id"]}-spells`,
           type: "spells",
           title: classInfo.label,
-          text: [l10n.getString("spellsFor", { type: classInfo.label })],
+          text: l10n.getString("spellsFor", { type: classInfo.label }),
           url: `/spells/?class=${btoa(classInfo["@id"])}`,
         });
       })(),
@@ -120,7 +120,9 @@ export default function useSearch() {
           id: monster["@id"],
           type: "monster",
           title: monster.label,
-          text: [l10n.getString("descriptionOf", { type: monster.label })],
+          text:
+            monster.description ||
+            l10n.getString("descriptionOf", { type: monster.label }),
           url: `/monsters/${btoa(monster["@id"])}`,
         });
       })(),
@@ -137,7 +139,7 @@ export default function useSearch() {
           id: race["@id"],
           type: "race",
           title: race.label,
-          text: [l10n.getString("descriptionOf", { type: race.label })],
+          text: race.description,
           url: `/races/${btoa(race["@id"])}`,
         });
       })(),
@@ -203,7 +205,7 @@ export default function useSearch() {
           id: school["@id"],
           type: "school",
           title: school.label,
-          text: [l10n.getString("spellsFor", { type: school.label })],
+          text: l10n.getString("spellsFor", { type: school.label }),
           url: `/spells/?school=${btoa(school["@id"])}`,
         });
       })(),

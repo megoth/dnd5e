@@ -17,6 +17,7 @@ import {
   apiUrlToSubjectUrl,
   dataPath,
   dataUrl,
+  description,
 } from "../utils/dnd5e";
 import transformMulticlassing from "./multiclassings";
 import { transformChoice } from "./choice";
@@ -50,7 +51,7 @@ function transformClass(
       spellcastingInfo: data.spellcasting.info.map((info) =>
         ldoDataset.usingType(ClassSpellcastingInfoShapeType).fromJson({
           label: info.name,
-          description: info.desc,
+          description: description(info.desc),
         }),
       ),
       spellcastingAbility: ldoDataset

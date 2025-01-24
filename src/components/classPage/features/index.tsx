@@ -1,7 +1,6 @@
 import { Class } from "../../../ldo/dnd5e.typings";
 import Markdown from "react-markdown";
 import { removeDuplicates } from "../../../utils/array";
-import { description } from "../../../utils/dnd5e";
 
 interface Props {
   classInfo: Class;
@@ -21,7 +20,7 @@ export default function ClassPageFeatures({ classInfo }: Props) {
         .map((feature) => (
           <article key={feature["@id"]}>
             <h3>{feature.label}</h3>
-            <Markdown>{description(feature.description)}</Markdown>
+            <Markdown>{feature.description}</Markdown>
           </article>
         ))}
     </>

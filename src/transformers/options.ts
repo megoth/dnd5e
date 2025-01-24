@@ -124,7 +124,7 @@ export function transformIdealOption(
   ldoDataset = createLdoDataset(),
 ): StringOption {
   return ldoDataset.usingType(IdealOptionShapeType).fromJson({
-    description: [data.desc],
+    description: data.desc,
     alignments: data.alignments.map((alignment) =>
       ldoDataset
         .usingType(AlignmentShapeType)

@@ -15,6 +15,7 @@ import {
   apiUrlToSubjectUrl,
   dataPath,
   dataUrl,
+  description,
 } from "../utils/dnd5e";
 
 import subclasses from "../dnd5eapi-data/5e-SRD-Subclasses.json";
@@ -30,7 +31,7 @@ function transformSubclass(
     .fromSubject(`#${data.index}`);
   subclass.type = { "@id": "Subclass" };
   subclass.label = data.name;
-  subclass.description = data.desc;
+  subclass.description = description(data.desc);
   subclass.class = ldoDataset
     .usingType(ClassShapeType)
     .fromSubject(apiUrlToSubjectUrl(data.class.url));

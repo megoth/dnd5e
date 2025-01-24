@@ -11,7 +11,6 @@ import Markdown from "react-markdown";
 import Illustration from "../illustration";
 import Logo from "../logo";
 import { useNavigate } from "react-router";
-import { description } from "../../utils/dnd5e";
 import { bem } from "../../utils/bem";
 
 export default function ClassesPage() {
@@ -63,7 +62,7 @@ export default function ClassesPage() {
                   </h2>
                   {classInfo.description && (
                     <Content>
-                      <Markdown>{description(classInfo.description)}</Markdown>
+                      <Markdown>{classInfo.description}</Markdown>
                     </Content>
                   )}
                 </div>

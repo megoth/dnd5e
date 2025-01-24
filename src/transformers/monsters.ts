@@ -57,7 +57,7 @@ function transformMonsterAction(
 ) {
   return ldoDataset.usingType(MonsterActionShapeType).fromJson({
     label: data.name,
-    description: [data.desc],
+    description: data.desc,
     actionOptions:
       data.action_options && transformChoice(data.action_options, ldoDataset),
     monsterMultiAttackActions:
@@ -125,7 +125,7 @@ export function transformMonster(
     ldoDataset.usingType(MonsterArmorClassShapeType).fromJson({
       ofType: ac.type,
       value: ac.value,
-      description: [ac.desc],
+      description: ac.desc,
       ...(ac["armor"] && {
         armorList: ac["armor"].map(
           (armor: components["schemas"]["APIReference"]) =>
@@ -196,7 +196,7 @@ export function transformMonster(
   monster.specialAbilities = data.special_abilities?.map((ability) =>
     ldoDataset.usingType(MonsterSpecialAbilityShapeType).fromJson({
       label: ability.name,
-      description: [ability.desc],
+      description: ability.desc,
       attackBonus: ability.attack_bonus,
       damage: ability.damage && transformDamage(ability.damage, ldoDataset),
       difficultyClass:

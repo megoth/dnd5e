@@ -12,7 +12,7 @@ import {
 import { Spell } from "../ldo/dnd5e.typings";
 import spells from "../dnd5eapi-data/5e-SRD-Spells.json";
 import { writeFileSync } from "node:fs";
-import { apiUrlToSubjectUrl, dataPath } from "../utils/dnd5e";
+import { apiUrlToSubjectUrl, dataPath, description } from "../utils/dnd5e";
 import {
   transformDamageAtCharacterLevel,
   transformDamageAtSlotLevel,
@@ -38,8 +38,8 @@ export function transformSpell(
     .fromSubject(`#${data.index}`);
   spell.type = { "@id": "Spell" };
   spell.label = data.name;
-  spell.description = data.desc;
-  spell.higherLevel = data.higher_level;
+  spell.description = description(data.desc);
+  spell.higherLevel = description(data.higher_level);
   spell.spellRange = data.range;
   spell.components = data.components;
   spell.material = data.material;

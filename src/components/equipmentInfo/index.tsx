@@ -2,7 +2,7 @@ import React from "react";
 import Content from "../content";
 import { Equipment } from "../../ldo/dnd5e.typings";
 import Translation from "../translation";
-import { cost, description, weight } from "../../utils/dnd5e";
+import { cost, weight } from "../../utils/dnd5e";
 import Markdown from "react-markdown";
 import Loading from "../loading";
 
@@ -20,7 +20,7 @@ export default function EquipmentInfo({ equipment, isLoading }: Props) {
         <>
           <p className="notification">{equipment.equipmentCategory.label}</p>
           {equipment.description && (
-            <Markdown>{description(equipment.description)}</Markdown>
+            <Markdown>{equipment.description}</Markdown>
           )}
           <dl className="data-list">
             <dt>

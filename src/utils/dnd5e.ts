@@ -208,7 +208,7 @@ export function apiUrlToSubjectUrl(apiUrl: string): string {
   return dataUrl(type, id);
 }
 
-export function description(texts: string[]): string {
+export function description(texts: string[] = []): string {
   function isParagraph(text: string, nextText?: string): boolean {
     return (
       (text[0] !== "|" || (text[0] === "|" && nextText?.[0] !== "|")) &&

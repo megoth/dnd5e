@@ -9,7 +9,12 @@ import {
   SubclassShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { Feature, FeatureSpecific } from "../ldo/dnd5e.typings";
-import { apiUrlToSubjectUrl, dataPath, dataUrl } from "../utils/dnd5e";
+import {
+  apiUrlToSubjectUrl,
+  dataPath,
+  dataUrl,
+  description,
+} from "../utils/dnd5e";
 import { writeFileSync } from "node:fs";
 import { transformChoice } from "./choice";
 import features from "../dnd5eapi-data/5e-SRD-Features.json";
@@ -58,7 +63,7 @@ export function transformFeature(
     .fromSubject(`#${data.index}`);
   feature.type = { "@id": "Feature" };
   feature.label = data.name;
-  feature.description = data.desc;
+  feature.description = description(data.desc);
   feature.level = data.level;
   feature.class =
     data.class &&

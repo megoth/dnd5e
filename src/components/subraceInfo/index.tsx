@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Content from "../content";
-import { description } from "../../utils/dnd5e";
 import Illustration from "../illustration";
 import Markdown from "react-markdown";
 import { Subrace } from "../../ldo/dnd5e.typings";
@@ -16,9 +15,7 @@ export default function SubraceInfo({ subrace }: Props) {
       {subrace.illustration && <Illustration subject={subrace.illustration} />}
       <Content>
         <h3>{subrace.label}</h3>
-        {subrace.description && (
-          <Markdown>{description(subrace.description)}</Markdown>
-        )}
+        {subrace.description && <Markdown>{subrace.description}</Markdown>}
         <dl className={"data-list"}>
           <dt>
             <Translation id="abilityBonuses" />
@@ -46,7 +43,7 @@ export default function SubraceInfo({ subrace }: Props) {
             <Fragment key={trait.label}>
               <dt>{trait.label}</dt>
               <dd>
-                <Markdown>{description(trait.description)}</Markdown>
+                <Markdown>{trait.description}</Markdown>
               </dd>
             </Fragment>
           ))}

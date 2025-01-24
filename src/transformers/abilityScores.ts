@@ -3,7 +3,7 @@ import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import { AbilityScoreShapeType, SkillShapeType } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { AbilityScore } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl } from "../utils/dnd5e";
+import { dataPath, dataUrl, description } from "../utils/dnd5e";
 
 import abilityScores from "../dnd5eapi-data/5e-SRD-Ability-Scores.json";
 
@@ -17,7 +17,7 @@ function transformAbilityScore(
   abilityScore.type = { "@id": "AbilityScore" };
   abilityScore.label = data.full_name;
   abilityScore.abbreviation = data.name;
-  abilityScore.description = data.desc;
+  abilityScore.description = description(data.desc);
   abilityScore.skillList = data.skills.map((skill) =>
     ldoDataset
       .usingType(SkillShapeType)

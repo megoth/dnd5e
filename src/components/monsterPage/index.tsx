@@ -8,7 +8,6 @@ import { resourceUrl } from "../../utils/url";
 import { MonsterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
 import {
-  description,
   modifier,
   monsterArmorClass,
   monsterChallenge,
@@ -89,9 +88,7 @@ export default function MonsterPage() {
               {monster.size} {monsterType(monster)},{" "}
               {monster.alignmentDescription}
             </p>
-            {monster.description && (
-              <Markdown>{description(monster.description)}</Markdown>
-            )}
+            {monster.description && <Markdown>{monster.description}</Markdown>}
             <dl className="data-list">
               {monster.monsterArmorClass.map((ac) => (
                 <Fragment key={ac.ofType}>

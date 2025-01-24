@@ -25,7 +25,6 @@ export const dnd5eContext: ContextDefinition = {
   description: {
     "@id": "http://purl.org/dc/terms/description",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
-    "@container": "@set",
   },
   abbreviation: {
     "@id": "https://dnd5e.app/vocab/dnd5e#abbreviation",
@@ -167,7 +166,6 @@ export const dnd5eContext: ContextDefinition = {
   higherLevel: {
     "@id": "https://dnd5e.app/vocab/dnd5e#higherLevel",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
-    "@container": "@set",
   },
   spellRange: {
     "@id": "https://dnd5e.app/vocab/dnd5e#spellRange",

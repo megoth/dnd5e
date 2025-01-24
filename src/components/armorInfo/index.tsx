@@ -2,7 +2,7 @@ import React from "react";
 import Content from "../content";
 import { Equipment } from "../../ldo/dnd5e.typings";
 import Translation from "../translation";
-import { armorClass, cost, description, weight } from "../../utils/dnd5e";
+import { armorClass, cost, weight } from "../../utils/dnd5e";
 import Markdown from "react-markdown";
 import { useLocalization } from "@fluent/react";
 import Loading from "../loading";
@@ -24,7 +24,7 @@ export default function ArmorInfo({ equipment, isLoading }: Props) {
             {equipment.armor.armorCategory} {equipment.equipmentCategory.label}
           </p>
           {equipment.description && (
-            <Markdown>{description(equipment.description)}</Markdown>
+            <Markdown>{equipment.description}</Markdown>
           )}
           <dl className="data-list">
             <dt>

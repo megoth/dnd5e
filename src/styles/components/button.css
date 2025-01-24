@@ -13,7 +13,7 @@
 }
 
 .button--global-search[type] {
-    @apply bg-gray-50 dark:bg-gray-700 dark:border-black dark:text-gray-300 border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 shadow-none focus:ring-gray-300 dark:focus:ring-gray-600;
+    @apply bg-gray-50 dark:bg-gray-700 dark:border-black dark:text-gray-300 border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 shadow-none focus:ring-gray-300 dark:focus:ring-gray-600 rounded-none;
 }
 
 .button--search[type] {

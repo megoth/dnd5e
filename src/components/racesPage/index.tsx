@@ -11,7 +11,6 @@ import Logo from "../logo";
 import Markdown from "react-markdown";
 import { useNavigate } from "react-router";
 import Illustration from "../illustration";
-import { description } from "../../utils/dnd5e";
 import { bem } from "../../utils/bem";
 
 export default function RacesPage() {
@@ -63,7 +62,7 @@ export default function RacesPage() {
                   </h2>
                   {race.description && (
                     <Content>
-                      <Markdown>{description(race.description)}</Markdown>
+                      <Markdown>{race.description}</Markdown>
                     </Content>
                   )}
                 </div>

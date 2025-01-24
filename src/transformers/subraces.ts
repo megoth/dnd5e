@@ -25,7 +25,7 @@ function transformSubrace(
     .fromSubject(`#${data.index}`);
   subrace.type = { "@id": "Subrace" };
   subrace.label = data.name;
-  subrace.description = [data.desc];
+  subrace.description = data.desc;
   subrace.race = ldoDataset
     .usingType(RaceShapeType)
     .fromSubject(apiUrlToSubjectUrl(data.race.url));

@@ -11,7 +11,6 @@ import Markdown from "react-markdown";
 import Illustration from "../illustration";
 import Logo from "../logo";
 import { useNavigate } from "react-router";
-import { description } from "../../utils/dnd5e";
 import Breadcrumbs from "../breadcrumbs";
 import { bem } from "../../utils/bem";
 
@@ -74,7 +73,7 @@ export default function SubracesPage() {
                   </h2>
                   {subrace.description && (
                     <Content>
-                      <Markdown>{description(subrace.description)}</Markdown>
+                      <Markdown>{subrace.description}</Markdown>
                     </Content>
                   )}
                 </div>

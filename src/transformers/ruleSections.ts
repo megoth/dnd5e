@@ -15,7 +15,7 @@ export function transformRuleSection(
     .fromSubject(`#${data.index}`);
   section.type = { "@id": "RuleSection" };
   section.label = data.name;
-  section.description = [data.desc];
+  section.description = data.desc;
   return section;
 }
 
