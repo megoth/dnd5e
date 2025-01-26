@@ -4,6 +4,7 @@ import Illustration from "../illustration";
 import Markdown from "react-markdown";
 import { Subclass } from "../../ldo/dnd5e.typings";
 import Translation from "../translation";
+import { parseNumber } from "../../utils/dnd5e";
 
 interface Props {
   subclass: Subclass;
@@ -55,10 +56,14 @@ export default function SubclassInfo({ subclass }: Props) {
                 <td>
                   {level.features.map((feature) => feature.label).join(", ")}
                 </td>
-                {hasAuraRange && <td>{level.subclassSpecific?.auraRange}</td>}
+                {hasAuraRange && (
+                  <td>{parseNumber(level.subclassSpecific?.auraRange)}</td>
+                )}
                 {hasAdditionalMagicalSecrets && (
                   <td>
-                    {level.subclassSpecific?.additionalMagicalSecretsMaxLvl}
+                    {parseNumber(
+                      level.subclassSpecific?.additionalMagicalSecretsMaxLvl,
+                    )}
                   </td>
                 )}
               </tr>

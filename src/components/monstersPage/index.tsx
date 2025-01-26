@@ -130,6 +130,9 @@ export default function MonstersPage() {
                   <th scope="col" className="whitespace-nowrap">
                     <Translation id="challenge" />
                   </th>
+                  <th scope="col">
+                    <Translation id="xp" />
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -145,8 +148,9 @@ export default function MonstersPage() {
                       {monsterType(monster)}
                     </td>
                     <td className="whitespace-nowrap">
-                      {monsterChallenge(monster)}
+                      {monster.challengeRating}
                     </td>
+                    <td className="whitespace-nowrap">{monster.xp}</td>
                   </tr>
                 ))}
               </tbody>
