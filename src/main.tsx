@@ -7,6 +7,7 @@ import "./styles/globals.css";
 import LayoutProvider from "./hooks/useLayout/provider";
 import Loading from "./components/loading";
 import Layout from "./components/layout";
+import BackgroundPage from "./components/backgroundPage";
 
 function lazyLoadPage(Component, full: boolean = false) {
   return (
@@ -58,6 +59,18 @@ const router = createBrowserRouter([
         path: "/armor/:url",
         element: lazyLoadPage(
           lazy(() => import("./components/armorSinglePage")),
+        ),
+      },
+      {
+        path: "/backgrounds",
+        element: lazyLoadPage(
+          lazy(() => import("./components/backgroundsPage")),
+        ),
+      },
+      {
+        path: "/backgrounds/:url",
+        element: lazyLoadPage(
+          lazy(() => import("./components/backgroundPage")),
         ),
       },
       {

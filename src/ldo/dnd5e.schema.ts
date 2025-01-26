@@ -386,7 +386,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#feature",
+              predicate: "https://dnd5e.app/vocab/dnd5e#backgroundFeature",
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#BackgroundFeature",
               min: 0,
@@ -417,6 +417,13 @@ export const dnd5eSchema: Schema = {
               type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#flaws",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#illustration",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
               min: 0,
               max: 1,
             },

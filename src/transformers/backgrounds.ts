@@ -1,15 +1,17 @@
 import { components } from "../typings/dnd5eapi";
 import { createLdoDataset, toTurtle } from "@ldo/ldo";
 import {
+  BackgroundFeatureShapeType,
   BackgroundShapeType,
   ProficiencyShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import { writeFileSync } from "node:fs";
 import { Background } from "../ldo/dnd5e.typings";
-import { dataPath, dataUrl } from "../utils/dnd5e";
+import { addendumPath, dataPath, dataUrl, description } from "../utils/dnd5e";
 import { transformStartingEquipment } from "./startingEquipment";
 import { transformChoice } from "./choice";
 import backgrounds from "../dnd5eapi-data/5e-SRD-Backgrounds.json";
+import { readFileSync } from "fs";
 
 function transformBackground(
   data: components["schemas"]["Background"],
@@ -38,12 +40,20 @@ function transformBackground(
       (choice) => transformChoice(choice, ldoDataset),
     );
   }
-  // language_options
-  // feature
-  // personality_traits
-  // ideals
-  // bonds
-  // flaws
+  background.languageOptions =
+    data.language_options && transformChoice(data.language_options, ldoDataset);
+  background.backgroundFeature =
+    data.feature &&
+    ldoDataset.usingType(BackgroundFeatureShapeType).fromJson({
+      label: data.feature.name,
+      description: description(data.feature.desc),
+    });
+  background.personalityTraits =
+    data.personality_traits &&
+    transformChoice(data.personality_traits, ldoDataset);
+  background.ideals = data.ideals && transformChoice(data.ideals, ldoDataset);
+  background.bonds = data.bonds && transformChoice(data.bonds, ldoDataset);
+  background.flaws = data.flaws && transformChoice(data.flaws, ldoDataset);
   return background;
 }
 
@@ -55,5 +65,6 @@ export default async function writeBackgrounds() {
       ),
     )
   ).reduce((memo, background) => memo.concat(background));
-  writeFileSync(dataPath("backgrounds"), turtle);
+  const addendum = readFileSync(addendumPath("backgrounds"), "utf-8");
+  writeFileSync(dataPath("backgrounds"), turtle + addendum);
 }

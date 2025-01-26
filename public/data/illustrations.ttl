@@ -3,6 +3,11 @@
 <#abjuration> <http://purl.org/dc/terms/description> "Sigil for Magic School Abjuration" .
 <#abjuration> <https://dnd5e.app/vocab/dnd5e#creator> "choren64" .
 <#abjuration> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://www.reddit.com/user/choren64/" .
+<#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-harengon-female-cleric.jpg> .
+<#acolyte> <http://purl.org/dc/terms/description> "A portrait of a Harengon Acolyte" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#creator> "Mythjourneys" .
+<#acolyte> <https://dnd5e.app/vocab/dnd5e#creatorUrl> "https://mythjourneys.com/" .
 <#barbarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Illustration> .
 <#barbarian> <https://dnd5e.app/vocab/dnd5e#imageUrl> </images/mythjourneys-dnd-character-human-female-barbarian-fighter.jpg> .
 <#barbarian> <http://purl.org/dc/terms/description> "A portrait of a Human Barbarian" .

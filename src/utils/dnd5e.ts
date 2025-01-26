@@ -1,5 +1,6 @@
 import {
   ArmorClass,
+  Background,
   Choice,
   Class,
   Cost,
@@ -42,6 +43,21 @@ export function armorClass(ac: ArmorClass, l10n: ReactLocalization): string {
     ...(ac.dexBonus ? [`+ ${l10n.getString("dex")}`] : []),
     ...(ac.maxBonus ? [`(${l10n.getString("max")} ${ac.maxBonus})`] : []),
   ].join(" ");
+}
+
+export function backgroundResourceUrls(background: Background): string[] {
+  return [
+    ...(background.startingProficiencies
+      ? [
+          ...background.startingProficiencies.map((proficiency) =>
+            resourceUrl(proficiency["@id"]),
+          ),
+          ...background.startingProficiencies.map((proficiency) =>
+            resourceUrl(proficiency.skill["@id"]),
+          ),
+        ]
+      : []),
+  ];
 }
 
 export function classHasCantripsKnown(classInfo: Class): boolean {

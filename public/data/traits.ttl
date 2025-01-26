@@ -23,17 +23,17 @@
 <#tool-proficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Tool Proficiency" .
 <#tool-proficiency> <http://purl.org/dc/terms/description> "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.\n" .
 <#tool-proficiency> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dwarf> .
-<#tool-proficiency> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b9141 .
-_:b9137 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
-_:b9138 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
-_:b9139 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
-_:b9140 <https://dnd5e.app/vocab/dnd5e#references> _:b9137 .
-_:b9140 <https://dnd5e.app/vocab/dnd5e#references> _:b9138 .
-_:b9140 <https://dnd5e.app/vocab/dnd5e#references> _:b9139 .
-_:b9141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b9141 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b9141 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
-_:b9141 <https://dnd5e.app/vocab/dnd5e#from> _:b9140 .
+<#tool-proficiency> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b9178 .
+_:b9174 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#smiths-tools> .
+_:b9175 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#brewers-supplies> .
+_:b9176 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#masons-tools> .
+_:b9177 <https://dnd5e.app/vocab/dnd5e#references> _:b9174 .
+_:b9177 <https://dnd5e.app/vocab/dnd5e#references> _:b9175 .
+_:b9177 <https://dnd5e.app/vocab/dnd5e#references> _:b9176 .
+_:b9178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b9178 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b9178 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
+_:b9178 <https://dnd5e.app/vocab/dnd5e#from> _:b9177 .
 <#stonecunning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#stonecunning> <http://www.w3.org/2000/01/rdf-schema#label> "Stonecunning" .
 <#stonecunning> <http://purl.org/dc/terms/description> "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.\n" .
@@ -68,77 +68,77 @@ _:b9141 <https://dnd5e.app/vocab/dnd5e#from> _:b9140 .
 <#high-elf-cantrip> <http://www.w3.org/2000/01/rdf-schema#label> "High Elf Cantrip" .
 <#high-elf-cantrip> <http://purl.org/dc/terms/description> "You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it.\n" .
 <#high-elf-cantrip> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
-<#high-elf-cantrip> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9158 .
-_:b9142 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#light> .
-_:b9143 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#mage-hand> .
-_:b9144 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#mending> .
-_:b9145 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#message> .
-_:b9146 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#minor-illusion> .
-_:b9147 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#acid-splash> .
-_:b9148 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#prestidigitation> .
-_:b9149 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#ray-of-frost> .
-_:b9150 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#shocking-grasp> .
-_:b9151 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#true-strike> .
-_:b9152 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#chill-touch> .
-_:b9153 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#dancing-lights> .
-_:b9154 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#fire-bolt> .
-_:b9155 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#poison-spray> .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9142 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9143 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9144 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9145 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9146 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9147 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9148 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9149 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9150 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9151 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9152 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9153 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9154 .
-_:b9156 <https://dnd5e.app/vocab/dnd5e#references> _:b9155 .
-_:b9157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b9157 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b9157 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
-_:b9157 <https://dnd5e.app/vocab/dnd5e#from> _:b9156 .
-_:b9158 <https://dnd5e.app/vocab/dnd5e#spellOptions> _:b9157 .
+<#high-elf-cantrip> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9195 .
+_:b9179 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#light> .
+_:b9180 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#mage-hand> .
+_:b9181 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#mending> .
+_:b9182 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#message> .
+_:b9183 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#minor-illusion> .
+_:b9184 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#acid-splash> .
+_:b9185 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#prestidigitation> .
+_:b9186 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#ray-of-frost> .
+_:b9187 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#shocking-grasp> .
+_:b9188 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#true-strike> .
+_:b9189 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#chill-touch> .
+_:b9190 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#dancing-lights> .
+_:b9191 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#fire-bolt> .
+_:b9192 <https://dnd5e.app/vocab/dnd5e#spell> </data/spells.ttl#poison-spray> .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9179 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9180 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9181 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9182 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9183 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9184 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9185 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9186 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9187 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9188 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9189 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9190 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9191 .
+_:b9193 <https://dnd5e.app/vocab/dnd5e#references> _:b9192 .
+_:b9194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b9194 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b9194 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
+_:b9194 <https://dnd5e.app/vocab/dnd5e#from> _:b9193 .
+_:b9195 <https://dnd5e.app/vocab/dnd5e#spellOptions> _:b9194 .
 <#extra-language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#extra-language> <http://www.w3.org/2000/01/rdf-schema#label> "Extra Language" .
 <#extra-language> <http://purl.org/dc/terms/description> "You can speak, read, and write one extra language of your choice.\n" .
 <#extra-language> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
-<#extra-language> <https://dnd5e.app/vocab/dnd5e#languageOptions> _:b9174 .
-_:b9159 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#dwarvish> .
-_:b9160 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#giant> .
-_:b9161 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#gnomish> .
-_:b9162 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#goblin> .
-_:b9163 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#halfling> .
-_:b9164 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#orc> .
-_:b9165 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#abyssal> .
-_:b9166 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#celestial> .
-_:b9167 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#draconic> .
-_:b9168 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#deep-speech> .
-_:b9169 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#infernal> .
-_:b9170 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#primordial> .
-_:b9171 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#sylvan> .
-_:b9172 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#undercommon> .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9159 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9160 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9161 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9162 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9163 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9164 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9165 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9166 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9167 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9168 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9169 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9170 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9171 .
-_:b9173 <https://dnd5e.app/vocab/dnd5e#references> _:b9172 .
-_:b9174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b9174 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b9174 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .
-_:b9174 <https://dnd5e.app/vocab/dnd5e#from> _:b9173 .
+<#extra-language> <https://dnd5e.app/vocab/dnd5e#languageOptions> _:b9211 .
+_:b9196 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#dwarvish> .
+_:b9197 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#giant> .
+_:b9198 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#gnomish> .
+_:b9199 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#goblin> .
+_:b9200 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#halfling> .
+_:b9201 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#orc> .
+_:b9202 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#abyssal> .
+_:b9203 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#celestial> .
+_:b9204 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#draconic> .
+_:b9205 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#deep-speech> .
+_:b9206 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#infernal> .
+_:b9207 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#primordial> .
+_:b9208 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#sylvan> .
+_:b9209 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#undercommon> .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9196 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9197 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9198 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9199 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9200 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9201 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9202 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9203 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9204 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9205 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9206 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9207 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9208 .
+_:b9210 <https://dnd5e.app/vocab/dnd5e#references> _:b9209 .
+_:b9211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b9211 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b9211 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .
+_:b9211 <https://dnd5e.app/vocab/dnd5e#from> _:b9210 .
 <#lucky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#lucky> <http://www.w3.org/2000/01/rdf-schema#label> "Lucky" .
 <#lucky> <http://purl.org/dc/terms/description> "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.\n" .
@@ -159,72 +159,72 @@ _:b9174 <https://dnd5e.app/vocab/dnd5e#from> _:b9173 .
 <#draconic-ancestry> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry" .
 <#draconic-ancestry> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9187 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9175 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9176 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9177 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9178 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9179 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9180 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9181 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9182 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9183 .
-_:b9185 <https://dnd5e.app/vocab/dnd5e#references> _:b9184 .
-_:b9186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b9186 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
-_:b9186 <https://dnd5e.app/vocab/dnd5e#ofType> "trait" .
-_:b9186 <https://dnd5e.app/vocab/dnd5e#from> _:b9185 .
-_:b9187 <https://dnd5e.app/vocab/dnd5e#subtraitOptions> _:b9186 .
+<#draconic-ancestry> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9224 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9212 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9213 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9214 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9215 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9216 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9217 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9218 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9219 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9220 .
+_:b9222 <https://dnd5e.app/vocab/dnd5e#references> _:b9221 .
+_:b9223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b9223 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b9223 <https://dnd5e.app/vocab/dnd5e#ofType> "trait" .
+_:b9223 <https://dnd5e.app/vocab/dnd5e#from> _:b9222 .
+_:b9224 <https://dnd5e.app/vocab/dnd5e#subtraitOptions> _:b9223 .
 <#draconic-ancestry-black> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-black> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Black)" .
 <#draconic-ancestry-black> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-black> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-black> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9188 .
+<#draconic-ancestry-black> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9225 .
 <#draconic-ancestry-blue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-blue> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Blue)" .
 <#draconic-ancestry-blue> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-blue> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-blue> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9189 .
+<#draconic-ancestry-blue> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9226 .
 <#draconic-ancestry-brass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-brass> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Brass)" .
 <#draconic-ancestry-brass> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-brass> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-brass> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9190 .
+<#draconic-ancestry-brass> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9227 .
 <#draconic-ancestry-bronze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-bronze> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Bronze)" .
 <#draconic-ancestry-bronze> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-bronze> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-bronze> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9191 .
+<#draconic-ancestry-bronze> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9228 .
 <#draconic-ancestry-copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-copper> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Copper)" .
 <#draconic-ancestry-copper> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-copper> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-copper> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9192 .
+<#draconic-ancestry-copper> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9229 .
 <#draconic-ancestry-gold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-gold> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Gold)" .
 <#draconic-ancestry-gold> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-gold> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-gold> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9193 .
+<#draconic-ancestry-gold> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9230 .
 <#draconic-ancestry-green> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-green> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Green)" .
 <#draconic-ancestry-green> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-green> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-green> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9194 .
+<#draconic-ancestry-green> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9231 .
 <#draconic-ancestry-red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-red> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Red)" .
 <#draconic-ancestry-red> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-red> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-red> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9195 .
+<#draconic-ancestry-red> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9232 .
 <#draconic-ancestry-silver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-silver> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Silver)" .
 <#draconic-ancestry-silver> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-silver> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-silver> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9196 .
+<#draconic-ancestry-silver> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9233 .
 <#draconic-ancestry-white> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-white> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (White)" .
 <#draconic-ancestry-white> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .
 <#draconic-ancestry-white> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#dragonborn> .
-<#draconic-ancestry-white> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9197 .
+<#draconic-ancestry-white> <https://dnd5e.app/vocab/dnd5e#traitSpecific> _:b9234 .
 <#breath-weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#breath-weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapon" .
 <#breath-weapon> <http://purl.org/dc/terms/description> "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\nAfter you use your breath weapon, you cannot use it again until you complete a short or long rest.\n" .
@@ -250,47 +250,47 @@ _:b9187 <https://dnd5e.app/vocab/dnd5e#subtraitOptions> _:b9186 .
 <#skill-versatility> <http://www.w3.org/2000/01/rdf-schema#label> "Skill Versatility" .
 <#skill-versatility> <http://purl.org/dc/terms/description> "You gain proficiency in two skills of your choice.\n" .
 <#skill-versatility> <https://dnd5e.app/vocab/dnd5e#races> </data/races.ttl#half-elf> .
-<#skill-versatility> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b9217 .
-_:b9198 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
-_:b9199 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
-_:b9200 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
-_:b9201 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
-_:b9202 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
-_:b9203 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
-_:b9204 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
-_:b9205 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
-_:b9206 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
-_:b9207 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
-_:b9208 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
-_:b9209 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
-_:b9210 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
-_:b9211 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
-_:b9212 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
-_:b9213 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
-_:b9214 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
-_:b9215 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9198 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9199 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9200 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9201 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9202 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9203 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9204 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9205 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9206 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9207 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9208 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9209 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9210 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9211 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9212 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9213 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9214 .
-_:b9216 <https://dnd5e.app/vocab/dnd5e#references> _:b9215 .
-_:b9217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b9217 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
-_:b9217 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
-_:b9217 <https://dnd5e.app/vocab/dnd5e#from> _:b9216 .
+<#skill-versatility> <https://dnd5e.app/vocab/dnd5e#proficiencyChoices> _:b9254 .
+_:b9235 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-acrobatics> .
+_:b9236 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-animal-handling> .
+_:b9237 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-arcana> .
+_:b9238 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-athletics> .
+_:b9239 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-deception> .
+_:b9240 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-history> .
+_:b9241 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-insight> .
+_:b9242 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-intimidation> .
+_:b9243 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-investigation> .
+_:b9244 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-medicine> .
+_:b9245 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-nature> .
+_:b9246 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-perception> .
+_:b9247 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-performance> .
+_:b9248 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-persuasion> .
+_:b9249 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-religion> .
+_:b9250 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-sleight-of-hand> .
+_:b9251 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-stealth> .
+_:b9252 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#skill-survival> .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9235 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9236 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9237 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9238 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9239 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9240 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9241 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9242 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9243 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9244 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9245 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9246 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9247 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9248 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9249 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9250 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9251 .
+_:b9253 <https://dnd5e.app/vocab/dnd5e#references> _:b9252 .
+_:b9254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b9254 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b9254 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiencies" .
+_:b9254 <https://dnd5e.app/vocab/dnd5e#from> _:b9253 .
 <#menacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#menacing> <http://www.w3.org/2000/01/rdf-schema#label> "Menacing" .
 <#menacing> <http://purl.org/dc/terms/description> "You gain proficiency in the Intimidation skill.\n" .

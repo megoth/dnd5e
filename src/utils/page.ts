@@ -69,6 +69,10 @@ export function getPages(_: string, _2: boolean): Array<Page> {
       translationId: "skills",
     },
     {
+      href: "/backgrounds",
+      translationId: "backgrounds",
+    },
+    {
       href: "/monsters",
       translationId: "monstersPageTitle",
     },

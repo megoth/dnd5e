@@ -114,11 +114,12 @@ export interface Background {
   startingEquipment?: StartingEquipment[];
   startingEquipmentOptions?: Choice[];
   languageOptions?: Choice;
-  feature?: BackgroundFeature;
+  backgroundFeature?: BackgroundFeature;
   personalityTraits?: Choice;
   ideals?: Choice;
   bonds?: Choice;
   flaws?: Choice;
+  illustration?: Illustration;
 }
 
 /**

@@ -1,6 +1,7 @@
 import MiniSearch from "minisearch";
 import useListOfType from "../useListOfType";
 import {
+  BackgroundShapeType,
   ClassShapeType,
   EquipmentShapeType,
   MagicSchoolShapeType,
@@ -39,6 +40,23 @@ export default function useSearch() {
     },
     storeFields: ["title", "text", "type", "url"],
   });
+
+  const { isLoading: backgroundsLoading } = useIndexer(
+    BackgroundShapeType,
+    "characters",
+    "Background",
+    (background) =>
+      !search.has(background["@id"]) &&
+      (() => {
+        search.add({
+          id: background["@id"],
+          type: "background",
+          title: background.label,
+          text: l10n.getString("descriptionOf", { type: background.label }),
+          url: `/backgrounds/${btoa(background["@id"])}`,
+        });
+      })(),
+  );
 
   const { isLoading: classesLoading } = useIndexer(
     ClassShapeType,
@@ -262,6 +280,7 @@ export default function useSearch() {
 
   return {
     isLoading:
+      backgroundsLoading ||
       classesLoading ||
       equipmentLoading ||
       monstersLoading ||

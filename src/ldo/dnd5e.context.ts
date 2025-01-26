@@ -904,6 +904,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#skill",
     "@type": "@id",
   },
+  backgroundFeature: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#backgroundFeature",
+    "@type": "@id",
+  },
   personalityTraits: {
     "@id": "https://dnd5e.app/vocab/dnd5e#personalityTraits",
     "@type": "@id",

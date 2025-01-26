@@ -25,6 +25,8 @@
         """Log in using your chosen Solid Identity Provider to access the personalization features, such as creating and
         maintaining your characters. We'll store the data on your Pod so that you can use it in any compatible
         app."""@en-US .
+:background skos:definition "Background"@en-US .
+:backgrounds skos:definition "Backgrounds"@en-US .
 :blindsight skos:definition "Blindsight"@en-US .
 :cantrip skos:definition "Cantrip"@en-US .
 :cantripNote skos:definition "{$school} cantrip"@en-US .

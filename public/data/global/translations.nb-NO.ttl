@@ -25,6 +25,8 @@
         """Logg på med din foretrukne Solid identitetsleverandør for å få tilgang til persontilpassede funksjoner, som å
         lage og holde styr på karakterene dine. Vi lagrer all data du legger inn på din Pod slik at du kan bruke de i alle
         kompatible apper."""@nb-NO .
+:background skos:definition "Bakgrunn"@nb-NO .
+:backgrounds skos:definition "Bakgrunner"@nb-NO .
 :blindsight skos:definition "Blindesyn"@nb-NO .
 :cantrip skos:definition "Liten tryllekunst"@nb-NO .
 :cantripNote skos:definition "{$school} liten tryllekunst"@nb-NO .
