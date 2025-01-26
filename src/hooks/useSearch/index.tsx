@@ -208,7 +208,7 @@ export default function useSearch() {
         type: "skill",
         title: skill.label,
         text: skill.description,
-        url: `/skills/${btoa(skill["@id"])}`,
+        url: `/skills#${btoa(skill["@id"])}`,
       }),
   );
 

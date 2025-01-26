@@ -6,7 +6,7 @@ import Loading from "../loading";
 import { SkillShapeType } from "../../ldo/dnd5e.shapeTypes";
 import useListOfType from "../../hooks/useListOfType";
 import Content from "../content";
-import { NavLink } from "react-router-dom";
+import SkillInfo from "../skillInfo";
 
 export default function SkillsPage() {
   const { items: skills, isLoading } = useListOfType(
@@ -23,35 +23,13 @@ export default function SkillsPage() {
           <Translation id="skills" /> ({skills.length})
         </h1>
         {isLoading && <Loading />}
+        {!isLoading &&
+          skills.map((skill) => (
+            <article key={skill["@id"]} id={btoa(skill["@id"])}>
+              <SkillInfo skill={skill} />
+            </article>
+          ))}
       </Content>
-      {!isLoading && (
-        <table className="table">
-          <thead>
-            <tr>
-              <th>
-                <Translation id="name" />
-              </th>
-              <th>
-                <Translation id="abilityScore" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {skills
-              .sort((a, b) => (a.label > b.label ? 1 : -1))
-              .map((skill) => (
-                <tr key={skill["@id"]}>
-                  <td>
-                    <NavLink to={`/skills/${btoa(skill["@id"])}`}>
-                      {skill.label}
-                    </NavLink>
-                  </td>
-                  <td>{skill.abilityScore.label}</td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
-      )}
     </Layout>
   );
 }
