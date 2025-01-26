@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@ldo/cli": "^0.0.1-alpha.28",
+    "@types/n3": "^1.21.1",
     "@types/nested-error-stacks": "^2.1.2",
     "@types/node": "^20.17.9",
     "@types/react": "^18.3.1",

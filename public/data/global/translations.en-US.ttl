@@ -82,7 +82,8 @@
 :hitPointsAt1stLevel skos:definition "Hit Points at 1st Level"@en-US .
 :hitPointsAt1stLevelDescription skos:definition "{$hitDie} + your Constitution modifier"@en-US .
 :hitPointsAtHigherLevels skos:definition "Hit Points at Higher Levels"@en-US .
-:hitPointsAtHigherLevelsDescription skos:definition "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
+:hitPointsAtHigherLevelsDescription skos:definition
+        "1d{$hitDie} (or {$hitDieBalanced}) + your Constitution modifier per {$className} level after 1st"@en-US .
 :homePageTitle skos:definition "Home"@en-US .
 :immunities skos:definition "Immunities"@en-US .
 :ignore skos:definition "Ignore"@en-US .
@@ -119,11 +120,15 @@
 :monsters skos:definition "Monsters"@en-US .
 :monstersPageTitle skos:definition "Monsters"@en-US .
 :movementBonus skos:definition "+{$bonus} ft."@en-US .
-:multiclassRequirement skos:definition "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
+:multiclassRequirement skos:definition
+        "You must have {$requirement} or higher in order to multiclass in or out of this class."@en-US .
 :name skos:definition "Name"@en-US .
 :noResults skos:definition "No results"@en-US .
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
+:onlyAvailableLocally skos:definition
+        """This data is only available in this browser. You should [log in](/login) in order to store the data online, which
+        enables you to manage this data on other devices, but also to share it with others."""@en-US .
 :openMetaMenu skos:definition "Open meta menu"@en-US .
 :openNavigationMenu skos:definition "Open navigation menu"@en-US .
 :or skos:definition "or"@en-US .

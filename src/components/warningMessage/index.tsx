@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { useLocalStorage } from "@uidotdev/usehooks";
 import Translation from "../translation";
 import { bem } from "../../utils/bem";
+import Content from "../content";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
@@ -21,15 +22,10 @@ export default function WarningMessage({
   );
   return (
     !hideNotification && (
-      <div
-        className={clsx(
-          "bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2 flex",
-          className,
-        )}
-        id={id}
-        {...props}
-      >
-        <div className="flex-grow">{children || <Translation id={id} />}</div>
+      <div className={clsx("warning", className)} id={id} {...props}>
+        <Content className="flex-grow">
+          {children || <Translation id={id} />}
+        </Content>
         {id && (
           <button
             className={clsx(

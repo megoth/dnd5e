@@ -19,6 +19,8 @@ import {
 import { resourceUrl } from "./url";
 import { ReactLocalization } from "@fluent/react/esm/localization";
 import { removeDuplicates } from "./array";
+import { LdoBase, ShapeType } from "@ldo/ldo";
+import { CharacterShapeType } from "../ldo/dnd5e.shapeTypes";
 
 export function modifier(value: number): string {
   return value > 0 ? `+${value}` : value.toString();
@@ -425,6 +427,10 @@ export function sumSpellSlots(level: Level): number {
 export function vocabUrl(id: string): string {
   return `https://dnd5e.app/vocab/dnd5e#${id}`;
 }
+
+export const shapeMap: Record<string, ShapeType<LdoBase>> = {
+  [vocabUrl("Character")]: CharacterShapeType,
+};
 
 export function weight(weight: number) {
   return `${weight} lb.`;

@@ -532,12 +532,32 @@ export const dnd5eSchema: Schema = {
       shapeExpr: {
         type: "Shape",
         expression: {
-          type: "TripleConstraint",
-          predicate: "http://www.w3.org/2000/01/rdf-schema#label",
-          valueExpr: {
-            type: "NodeConstraint",
-            datatype: "http://www.w3.org/2001/XMLSchema#string",
-          },
+          type: "EachOf",
+          expressions: [
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              valueExpr: {
+                type: "NodeConstraint",
+                values: ["https://dnd5e.app/vocab/dnd5e#Character"],
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "http://www.w3.org/2000/01/rdf-schema#label",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#illustration",
+              valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Illustration",
+              min: 0,
+              max: 1,
+            },
+          ],
         },
       },
     },

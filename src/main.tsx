@@ -86,6 +86,10 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "/characters/:url",
+        element: lazyLoadPage(lazy(() => import("./components/characterPage"))),
+      },
+      {
         path: "/faq",
         element: lazyLoadPage(lazy(() => import("./components/faqPage"))),
       },

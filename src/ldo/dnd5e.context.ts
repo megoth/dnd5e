@@ -920,6 +920,7 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#flaws",
     "@type": "@id",
   },
+  Character: "https://dnd5e.app/vocab/dnd5e#Character",
   Condition: "https://dnd5e.app/vocab/dnd5e#Condition",
   Monster: "https://dnd5e.app/vocab/dnd5e#Monster",
   monsterAbilities: {

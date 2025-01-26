@@ -159,7 +159,11 @@ export interface BreathOption {
 export interface Character {
   "@id"?: string;
   "@context"?: ContextDefinition;
+  type: {
+    "@id": "Character";
+  };
   label: string;
+  illustration?: Illustration;
 }
 
 /**

@@ -1,0 +1,10 @@
+.warning {
+    @apply bg-yellow-200 text-yellow-900 border-yellow-400 border px-2 py-1 rounded-sm mb-2 flex max-w-prose;
+}
+
+.warning .content p:first-child {
+    @apply mt-0;
+}
+.warning .content p:last-child {
+    @apply mb-0;
+}

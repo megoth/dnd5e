@@ -7,18 +7,23 @@ import { useSolidAuth } from "@ldo/solid-react";
 import Breadcrumbs from "../breadcrumbs";
 import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
-import Unauthenticated from "../unauthenticated";
-import { useLocalization } from "@fluent/react";
+import useListOfType from "../../hooks/useListOfType";
+import { CharacterShapeType } from "../../ldo/dnd5e.shapeTypes";
+import Loading from "../loading";
 
 export default function CharactersPage() {
-  const { l10n } = useLocalization();
   const { session } = useSolidAuth();
-  const { defaultStorage, storages, isLoading } = useStorage();
+  const { defaultStorage, isLoading: storageLoading } = useStorage();
+  const { items: characters, isLoading: charactersLoading } = useListOfType(
+    CharacterShapeType,
+    "characters",
+    "Character",
+  );
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
       {!session.isLoggedIn && <WarningMessage id="loginRecommended" />}
-      {session.isLoggedIn && !defaultStorage && !isLoading && (
+      {session.isLoggedIn && !defaultStorage && !storageLoading && (
         <WarningMessage id="storageRecommended" />
       )}
       <Breadcrumbs
@@ -37,20 +42,21 @@ export default function CharactersPage() {
           <Translation id="createCharacter" />
         </NavLink>
       </div>
-      {!isLoading && !storages && (
-        <>
-          <Content>
-            <p>
-              <Translation id="storageRecommended" />
-            </p>
-          </Content>
-          {!session.isLoggedIn && (
-            <Unauthenticated
-              title={l10n.getString("loginPageTitle")}
-              className="box max-w-72"
-            />
-          )}
-        </>
+      {(charactersLoading || storageLoading) && <Loading />}
+      {!charactersLoading && !storageLoading && characters?.length > 0 && (
+        <ul className="cards">
+          {characters?.map((character) => (
+            <li key={character["@id"]} className="card">
+              <div className="card__content">
+                <h2 className="card__title">
+                  <NavLink to={`/characters/${btoa(character["@id"])}`}>
+                    {character.label}
+                  </NavLink>
+                </h2>
+              </div>
+            </li>
+          ))}
+        </ul>
       )}
     </Layout>
   );

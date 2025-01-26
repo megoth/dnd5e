@@ -18,10 +18,11 @@ export default function useListOfType<Type extends LdoBase>(
 
   return useMemo(() => {
     if (!dataset || isLoading) return { items: [], isLoading };
+    const matchesOnType = dataset.match(null, null, namedNode(vocabUrl(type)));
+    console.log("matchesOnType", vocabUrl(type), matchesOnType.size);
     return {
       isLoading,
-      items: dataset
-        .match(null, null, namedNode(vocabUrl(type)))
+      items: matchesOnType
         .toArray()
         .map((quad) => getSubject(shapeType, quad.subject.value)),
     };

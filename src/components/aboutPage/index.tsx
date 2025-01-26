@@ -5,35 +5,13 @@ import Content from "../content";
 import useApp from "../../hooks/useApp";
 import WarningMessage from "../warningMessage";
 import Translation from "../translation";
-// TODO: FIX lazy solution
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
 import readmeMarkdown from "../../../README.md?raw";
-import { NavLink } from "react-router-dom";
+import {
+  transformMarkdownHeader,
+  transformMarkdownLink,
+} from "../../utils/markdown";
 
 export const TESTID_ABOUT_PAGE_LANGUAGE_WARNING = "about-page-language-warning";
-
-function flatten(text, child) {
-  return typeof child === "string"
-    ? text + child
-    : React.Children.toArray(child.props.children).reduce(flatten, text);
-}
-
-function renderLink(props: React.HTMLAttributes<HTMLAnchorElement>) {
-  return <NavLink to={props["href"]} {...props} />;
-}
-
-function renderHeader(tagName: string) {
-  return function renderHeaderInner(
-    props: React.HTMLAttributes<HTMLHeadingElement>,
-  ) {
-    const children = React.Children.toArray(props.children);
-    const text = children.reduce(flatten, "");
-    const slug = text.toLowerCase().replace(/\W/g, "-");
-    return React.createElement(tagName, { id: slug }, props.children);
-  };
-}
 
 export default function AboutPage() {
   const { currentLocale } = useApp();
@@ -48,10 +26,10 @@ export default function AboutPage() {
       <Content>
         <ReactMarkdown
           components={{
-            a: renderLink,
-            h2: renderHeader("h2"),
-            h3: renderHeader("h3"),
-            h4: renderHeader("h4"),
+            a: transformMarkdownLink,
+            h2: transformMarkdownHeader("h2"),
+            h3: transformMarkdownHeader("h3"),
+            h4: transformMarkdownHeader("h4"),
           }}
         >
           {readmeMarkdown}

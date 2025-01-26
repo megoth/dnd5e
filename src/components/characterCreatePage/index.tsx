@@ -7,12 +7,16 @@ import Breadcrumbs from "../breadcrumbs";
 import useProfile from "../../hooks/useProfile";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import useListOfType from "../../hooks/useListOfType";
-import { RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
+import { CharacterShapeType, RaceShapeType } from "../../ldo/dnd5e.shapeTypes";
 import CharacterCreatePageRace from "./race";
 import CharacterCreatePageSubrace from "./subrace";
 import CharacterCreatePageName from "./name";
 import CharacterCreatePageClass from "./class";
 import Loading from "../loading";
+import useStorage from "../../hooks/useStorage";
+import { useLdo } from "@ldo/solid-react";
+import { vocabUrl } from "../../utils/dnd5e";
+import { useNavigate } from "react-router";
 
 export type Inputs = {
   name: string;
@@ -24,7 +28,10 @@ export type Inputs = {
 };
 
 export default function CharacterCreatePage() {
+  const navigate = useNavigate();
+  const { dataset } = useLdo();
   const { profile } = useProfile();
+  const { store } = useStorage();
   const { register, handleSubmit } = useForm<Inputs>({
     defaultValues: {
       setAsDefault: !profile?.defaultCharacter,
@@ -40,7 +47,14 @@ export default function CharacterCreatePage() {
   useEffect(() => setRace(races?.[0]), [races, isLoading]);
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log("DATA", data);
+    const id = crypto.randomUUID();
+    const character = dataset.usingType(CharacterShapeType).fromJson({
+      "@id": `#${id}`,
+      type: { "@id": "Character" },
+      label: data.name,
+    });
+    const storedCharacter = await store(character, CharacterShapeType);
+    navigate(`/characters/${btoa(storedCharacter["@id"])}`);
   };
 
   return (
