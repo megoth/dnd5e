@@ -6,6 +6,7 @@
 :abilityScores skos:definition "Egenskaper"@nb-NO .
 :aboutPageTitle skos:definition "Om appen"@nb-NO .
 :actions skos:definition "Handlinger"@nb-NO .
+:additionalMagicalSecrets skos:definition "Ekstra magiske hemmeligheter"@nb-NO .
 :age skos:definition "Alder"@nb-NO .
 :alignment skos:definition "Innretning"@nb-NO .
 :and skos:definition "og"@nb-NO .
@@ -19,6 +20,7 @@
 :armor skos:definition "Beskyttelse"@nb-NO .
 :armorClass skos:definition "Beskyttelseklasse"@nb-NO .
 :atHigherLevels skos:definition "På høyere nivå"@nb-NO .
+:auraRange skos:definition "Aura rekkevidde"@nb-NO .
 :authenticationGuidance skos:definition
         """Velg en identitetsleverandør fra lista, eller angi en selv."""@nb-NO .
 :authenticationPitch skos:definition

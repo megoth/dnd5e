@@ -1,5 +1,5 @@
 .hero {
-  @apply flex flex-col bg-cover bg-center bg-no-repeat;
+  @apply flex flex-col bg-cover bg-center bg-no-repeat min-h-screen;
 }
 
 @media screen and (max-width: 640px) {

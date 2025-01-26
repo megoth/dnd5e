@@ -20,7 +20,7 @@ export default function SplashPage() {
       <section className="hero">
         <div className="flex-1 flex flex-col justify-center items-center leading-normal bg-gradient-to-t from-white dark:from-gray-800 to-white dark:to-gray-800 via-transparent dark:via-transparent relative">
           <PageHeader className="w-full" />
-          <div className="px-4 flex-1 text-center">
+          <div className="px-4 pb-4 flex-1 text-center">
             <div className="my-4 px-4 py-2 bg-white dark:bg-gray-800 bg-opacity-75 dark:bg-opacity-80 rounded-lg md:rounded-xl max-w-lg shadow-md">
               <Logo />
               <Content>

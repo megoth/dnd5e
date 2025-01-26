@@ -108,7 +108,12 @@ export default function Layout({
           <SubMenuNav />
         </div>
         <div className={bem("layout__main", modifiers)}>
-          <main className={clsx("flex-1", className)} {...props}>
+          <main
+            className={clsx("flex-1", className, {
+              "min-h-screen": full,
+            })}
+            {...props}
+          >
             {children}
           </main>
         </div>

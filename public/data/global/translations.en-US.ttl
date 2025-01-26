@@ -7,6 +7,7 @@
 :abilityScores skos:definition "Ability Scores"@en-US .
 :aboutPageTitle skos:definition "About the app"@en-US .
 :actions skos:definition "Actions"@en-US .
+:additionalMagicalSecrets skos:definition "Additional Magical Secrets"@en-US .
 :age skos:definition "Age"@en-US .
 :alignment skos:definition "Alignment"@en-US .
 :and skos:definition "and"@en-US .
@@ -18,6 +19,7 @@
 :appLogoDescription skos:definition "D&D5e Solid App logo"@en-US .
 :armor skos:definition "Armor"@en-US .
 :armorClass skos:definition "Armor Class"@en-US .
+:auraRange skos:definition "Aura Range"@en-US .
 :atHigherLevels skos:definition "At Higher Levels"@en-US .
 :authenticationGuidance skos:definition
         """Choose an identity provider from the list, or provide one yourself."""@en-US .

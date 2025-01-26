@@ -26,5 +26,5 @@
 }
 
 .main-container--full {
-  @apply flex-1 min-w-full lg:max-w-full lg:mx-auto;
+  @apply flex-1 min-w-full lg:max-w-full lg:mx-auto min-h-screen;
 }
