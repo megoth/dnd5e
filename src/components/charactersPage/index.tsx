@@ -34,7 +34,7 @@ export default function CharactersPage() {
       />
       <Content>
         <h1>
-          <Translation id="charactersPageTitle" />
+          <Translation id="charactersPageTitle" /> ({characters.length})
         </h1>
       </Content>
       <div className="options">

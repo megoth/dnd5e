@@ -27,7 +27,7 @@ export default function StoragesPage() {
       />
       <Content>
         <h1>
-          <Translation id="storages" />
+          <Translation id="storages" /> ({storages?.length || 0})
         </h1>
         <div className="options">
           {session.isLoggedIn ? (
