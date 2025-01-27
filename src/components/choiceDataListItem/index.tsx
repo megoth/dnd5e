@@ -7,11 +7,13 @@ import { useLdo } from "@ldo/solid-react";
 
 interface Props {
   choice: Choice;
+  asList?: boolean;
 }
 
-export default function ChoiceDataListItem({ choice }: Props) {
+export default function ChoiceDataListItem({ choice, asList }: Props) {
   const { dataset } = useLdo();
   const { l10n } = useLocalization();
+  const labels = choiceLabels(choice, dataset);
   return (
     <>
       <dt>
@@ -24,9 +26,16 @@ export default function ChoiceDataListItem({ choice }: Props) {
         />
       </dt>
       <dd>
-        {choiceLabels(choice, dataset)
-          .map((labels) => labels.join(", "))
-          .join(` ${l10n.getString("or")} `)}
+        {asList ? (
+          <>
+            <br />
+            <ol>{labels[0]?.map((label) => <li key={label}>{label}</li>)}</ol>
+          </>
+        ) : (
+          labels
+            .map((innerLabels) => innerLabels.join(", "))
+            .join(` ${l10n.getString("or")} `)
+        )}
       </dd>
     </>
   );

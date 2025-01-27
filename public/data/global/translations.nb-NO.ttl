@@ -145,6 +145,7 @@
 :pageRequiresAuthentication skos:definition "Denne siden krever innlogging."@nb-NO .
 :pageRequiresStorage skos:definition "Denne siden krever lagringsplass."@nb-NO .
 :passivePerception skos:definition "Passiv oppfatning"@nb-NO .
+:personality_traits skos:definition "Personlighetstrekk"@nb-NO .
 :proficiencies skos:definition "Ferdigheter"@nb-NO .
 :proficiencyBonus skos:definition "Ferdighetsbonus"@nb-NO .
 :properties skos:definition "Egenskaper"@nb-NO .

@@ -58,6 +58,16 @@ export default function BackgroundsPage() {
                       {background.label}
                     </NavLink>
                   </h2>
+                  {background.backgroundFeature && (
+                    <Content>
+                      <p className="notification">
+                        {background.backgroundFeature.label}
+                      </p>
+                      <Markdown>
+                        {background.backgroundFeature.description}
+                      </Markdown>
+                    </Content>
+                  )}
                 </div>
               </li>
             ))}

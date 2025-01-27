@@ -6,6 +6,7 @@ import Translation from "../translation";
 import { proficiencyName, startingEquipmentName } from "../../utils/dnd5e";
 import Illustration from "../illustration";
 import ChoiceDataListItem from "../choiceDataListItem";
+import Markdown from "react-markdown";
 
 interface Props {
   background: Background;
@@ -20,6 +21,12 @@ export default function BackgroundInfo({ background, isLoading }: Props) {
       )}
       <h1>{background.label}</h1>
       {isLoading && <Loading />}
+      {background.backgroundFeature && (
+        <>
+          <p className="notification">{background.backgroundFeature.label}</p>
+          <Markdown>{background.backgroundFeature.description}</Markdown>
+        </>
+      )}
       {!isLoading && (
         <dl className="data-list">
           <dt>
@@ -42,6 +49,12 @@ export default function BackgroundInfo({ background, isLoading }: Props) {
           ))}
           {background.languageOptions && (
             <ChoiceDataListItem choice={background.languageOptions} />
+          )}
+          {background.personalityTraits && (
+            <ChoiceDataListItem
+              choice={background.personalityTraits}
+              asList={true}
+            />
           )}
         </dl>
       )}

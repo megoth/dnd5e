@@ -148,6 +148,7 @@
 :pageRequiresAuthentication skos:definition "This page requires authentication."@en-US .
 :pageRequiresStorage skos:definition "This page requires storage."@en-US .
 :passivePerception skos:definition "Passive Perception"@en-US .
+:personality_traits skos:definition "Personality Traits"@en-US .
 :proficiencies skos:definition "Proficiencies"@en-US .
 :proficiencyBonus skos:definition "Proficiency Bonus"@en-US .
 :properties skos:definition "Properties"@en-US .

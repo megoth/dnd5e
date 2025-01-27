@@ -15,7 +15,13 @@
 }
 
 .card__content.card__content p {
-    @apply m-0 font-normal text-gray-700 dark:text-gray-400;
+    @apply font-normal text-gray-700 dark:text-gray-400;
+}
+.card__content.card__content p:first-child {
+    @apply mt-0;
+}
+.card__content.card__content p:last-child {
+    @apply mb-0;
 }
 
 .card__media.card__media {
