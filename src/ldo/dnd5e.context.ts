@@ -522,14 +522,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#string",
     "@type": "http://www.w3.org/2001/XMLSchema#strsing",
   },
-  fromResourceList: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#fromResourceList",
-    "@type": "@id",
-  },
-  resourceList: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#resourceList",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
   invocations: {
     "@id": "https://dnd5e.app/vocab/dnd5e#invocations",
     "@type": "@id",

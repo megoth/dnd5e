@@ -1,27 +1,30 @@
-import { Choice } from "../../../ldo/dnd5e.typings";
+import { Choice } from "../../ldo/dnd5e.typings";
 import React from "react";
-import Translation from "../../translation";
-import { choiceLabels } from "../../../utils/dnd5e";
+import Translation from "../translation";
+import { choiceLabels } from "../../utils/dnd5e";
 import { useLocalization } from "@fluent/react";
+import { useLdo } from "@ldo/solid-react";
 
 interface Props {
   choice: Choice;
 }
 
-export default function ClassPageChoiceDataListItem({ choice }: Props) {
+export default function ChoiceDataListItem({ choice }: Props) {
+  const { dataset } = useLdo();
   const { l10n } = useLocalization();
   return (
     <>
       <dt>
         <Translation
-          id="chooseNumberFrom"
+          id="chooseNumberFromType"
           vars={{
             number: choice.choose,
+            type: l10n.getString(choice.ofType).toLowerCase(),
           }}
         />
       </dt>
       <dd>
-        {choiceLabels(choice)
+        {choiceLabels(choice, dataset)
           .map((labels) => labels.join(", "))
           .join(` ${l10n.getString("or")} `)}
       </dd>

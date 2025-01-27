@@ -3,7 +3,6 @@ import { createLdoDataset } from "@ldo/ldo";
 import {
   EquipmentCategoryShapeType,
   OptionSetShapeType,
-  ResourceListOptionSetShapeType,
 } from "../ldo/dnd5e.shapeTypes";
 import {
   IAbilityBonusOption,
@@ -108,9 +107,9 @@ function transformResourceList(
   data: IResourceList,
   ldoDataset = createLdoDataset(),
 ) {
-  const [_, type] = data.resource_list_url?.match(/api\/(\S+)\//) || [];
-  return ldoDataset.usingType(ResourceListOptionSetShapeType).fromJson({
-    resourceList: dataUrl(type),
+  const [_, ofType] = data.resource_list_url?.match(/\/api\/(\S+)/) || [];
+  return ldoDataset.usingType(OptionSetShapeType).fromJson({
+    ofType,
   });
 }
 

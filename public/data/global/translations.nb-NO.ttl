@@ -42,6 +42,7 @@
 :charisma skos:definition "Karisma"@nb-NO .
 :chooseNumber skos:definition "Velg {$number}"@nb-NO .
 :chooseNumberFrom skos:definition "Velg {$number} fra"@nb-NO .
+:chooseNumberFromType skos:definition "Velg {$number} {$type} fra"@nb-NO .
 :class skos:definition "Klasse"@nb-NO .
 :classes skos:definition "Klasser"@nb-NO .
 :classesPageTitle skos:definition "Klasser"@nb-NO .

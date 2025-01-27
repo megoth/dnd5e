@@ -1,8 +1,8 @@
 import Translation from "../../translation";
-import React, { Fragment } from "react";
+import React from "react";
 import { Class } from "../../../ldo/dnd5e.typings";
-import { choiceLabels } from "../../../utils/dnd5e";
-import ClassPageChoiceDataListItem from "../choiceDataListItem";
+import ChoiceDataListItem from "../../choiceDataListItem";
+import { proficiencyName } from "../../../utils/dnd5e";
 
 interface Props {
   classInfo: Class;
@@ -15,16 +15,9 @@ export default function ClassPageProficiencies({ classInfo }: Props) {
         <Translation id="proficiencies" />
       </h3>
       <dl className="data-list">
-        <dd>
-          {classInfo.proficiencies
-            .map((proficiency) => proficiency.label)
-            .join(", ")}
-        </dd>
+        <dd>{classInfo.proficiencies.map(proficiencyName).join(", ")}</dd>
         {classInfo.proficiencyChoices.map((choice) => (
-          <ClassPageChoiceDataListItem
-            key={choice.description}
-            choice={choice}
-          />
+          <ChoiceDataListItem key={choice.description} choice={choice} />
         ))}
         <dt>
           <Translation id="savingThrows" />

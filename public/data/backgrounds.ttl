@@ -20,7 +20,7 @@ _:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/
 _:b4 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4 <https://dnd5e.app/vocab/dnd5e#ofType> "equipment" .
 _:b4 <https://dnd5e.app/vocab/dnd5e#from> _:b3 .
-_:b5 <https://dnd5e.app/vocab/dnd5e#resourceList> "/data/undefined.ttl#" .
+_:b5 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .
 _:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b6 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b6 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .

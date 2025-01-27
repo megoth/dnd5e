@@ -1,7 +1,8 @@
 import Translation from "../../translation";
 import React from "react";
 import { Class } from "../../../ldo/dnd5e.typings";
-import ClassPageChoiceDataListItem from "../choiceDataListItem";
+import ChoiceDataListItem from "../../choiceDataListItem";
+import { startingEquipmentName } from "../../../utils/dnd5e";
 
 interface Props {
   classInfo: Class;
@@ -15,18 +16,10 @@ export default function ClassPageEquipment({ classInfo }: Props) {
       </h3>
       <dl className="data-list">
         <dd>
-          {classInfo.startingEquipment
-            .map(
-              (startingEquipment) =>
-                `${startingEquipment.quantity > 1 ? `${startingEquipment.quantity} ` : ""}${startingEquipment.equipment.label}`,
-            )
-            .join(", ")}
+          {classInfo.startingEquipment.map(startingEquipmentName).join(", ")}
         </dd>
         {classInfo.startingEquipmentOptions.map((option) => (
-          <ClassPageChoiceDataListItem
-            key={option.description}
-            choice={option}
-          />
+          <ChoiceDataListItem key={option.description} choice={option} />
         ))}
       </dl>
     </article>

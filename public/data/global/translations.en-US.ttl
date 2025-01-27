@@ -42,6 +42,7 @@
 :charisma skos:definition "Charisma"@en-US .
 :chooseNumber skos:definition "Choose {$number}"@en-US .
 :chooseNumberFrom skos:definition "Choose {$number} from"@en-US .
+:chooseNumberFromType skos:definition "Choose {$number} {$type} from"@en-US .
 :class skos:definition "Class"@en-US .
 :classes skos:definition "Classes"@en-US .
 :classesPageTitle skos:definition "Classes"@en-US .

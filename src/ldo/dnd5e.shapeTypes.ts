@@ -69,7 +69,6 @@ import {
   Proficiency,
   Race,
   ReferenceOption,
-  ResourceListOptionSet,
   Rule,
   RuleSection,
   ScorePrerequisiteOption,
@@ -708,16 +707,6 @@ export const ReferenceOptionShapeType: ShapeType<ReferenceOption> = {
   shape: "https://ldo.js.org/shapes/dnd5e.shex#ReferenceOption",
   context: dnd5eContext,
 };
-
-/**
- * ResourceListOptionSet ShapeType
- */
-export const ResourceListOptionSetShapeType: ShapeType<ResourceListOptionSet> =
-  {
-    schema: dnd5eSchema,
-    shape: "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
-    context: dnd5eContext,
-  };
 
 /**
  * Rule ShapeType

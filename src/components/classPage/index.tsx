@@ -24,7 +24,7 @@ import SubclassInfo from "../subclassInfo";
 export default function ClassPage() {
   const params = useParams();
   const url = atob(params.url);
-  const { getResource, getSubject } = useLdo();
+  const { dataset, getResource, getSubject } = useLdo();
   const location = useLocation();
 
   const { data: classInfo } = useSWR(
@@ -39,13 +39,13 @@ export default function ClassPage() {
     () => `class-${classInfo["@id"]}`,
     async () => {
       await Promise.all(
-        classResourceUrls(classInfo).map((resourceUrl) =>
+        classResourceUrls(classInfo, dataset).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
         ),
       );
       // must run second time to load class features
       await Promise.all(
-        classResourceUrls(classInfo).map((resourceUrl) =>
+        classResourceUrls(classInfo, dataset).map((resourceUrl) =>
           getResource(resourceUrl).readIfUnfetched(),
         ),
       );

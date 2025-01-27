@@ -179,7 +179,6 @@ export interface Choice {
   choose?: number;
   ofType?: string;
   from?: OptionSet;
-  fromResourceList?: ResourceListOptionSet;
 }
 
 /**
@@ -857,6 +856,7 @@ export interface OptionSet {
   equipmentOptions?: EquipmentOption[];
   ideals?: IdealOption[];
   multiples?: MultipleOption[];
+  ofType?: string;
   references?: ReferenceOption[];
   strings?: StringOption[];
 }
@@ -929,15 +929,6 @@ export interface ReferenceOption {
   language?: Language;
   proficiency?: Proficiency;
   spell?: Spell;
-}
-
-/**
- * ResourceListOptionSet Type
- */
-export interface ResourceListOptionSet {
-  "@id"?: string;
-  "@context"?: ContextDefinition;
-  resourceList?: string;
 }
 
 /**

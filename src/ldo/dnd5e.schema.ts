@@ -614,14 +614,6 @@ export const dnd5eSchema: Schema = {
               min: 0,
               max: 1,
             },
-            {
-              type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#fromResourceList",
-              valueExpr:
-                "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
-              min: 0,
-              max: 1,
-            },
           ],
         },
       },
@@ -3433,6 +3425,16 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
+              predicate: "https://dnd5e.app/vocab/dnd5e#ofType",
+              valueExpr: {
+                type: "NodeConstraint",
+                datatype: "http://www.w3.org/2001/XMLSchema#string",
+              },
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
               predicate: "https://dnd5e.app/vocab/dnd5e#references",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ReferenceOption",
               min: 0,
@@ -3752,23 +3754,6 @@ export const dnd5eSchema: Schema = {
               max: 1,
             },
           ],
-        },
-      },
-    },
-    {
-      id: "https://ldo.js.org/shapes/dnd5e.shex#ResourceListOptionSet",
-      type: "ShapeDecl",
-      shapeExpr: {
-        type: "Shape",
-        expression: {
-          type: "TripleConstraint",
-          predicate: "https://dnd5e.app/vocab/dnd5e#resourceList",
-          valueExpr: {
-            type: "NodeConstraint",
-            datatype: "http://www.w3.org/2001/XMLSchema#string",
-          },
-          min: 0,
-          max: 1,
         },
       },
     },

@@ -11,6 +11,7 @@ import Loading from "../loading";
 import Icon from "../icon";
 import Unauthenticated from "../unauthenticated";
 import { useLocalization } from "@fluent/react";
+import { Storage } from "../../ldo/dnd5e.typings";
 
 export default function StoragesPage() {
   const { l10n } = useLocalization();
@@ -27,7 +28,8 @@ export default function StoragesPage() {
       />
       <Content>
         <h1>
-          <Translation id="storages" /> ({storages?.length || 0})
+          <Translation id="storages" /> (
+          {(storages as Array<Storage>)?.length || 0})
         </h1>
         <div className="options">
           {session.isLoggedIn ? (
