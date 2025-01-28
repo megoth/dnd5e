@@ -35,6 +35,7 @@
 :cantripsKnown skos:definition "Kjente mindre trylleformler"@nb-NO .
 :castingTime skos:definition "Kastetid"@nb-NO .
 :category skos:definition "Kategori"@nb-NO .
+:character skos:definition "Karakter"@nb-NO .
 :characters skos:definition "Karakterer"@nb-NO .
 :charactersPageTitle skos:definition "Karakterer"@nb-NO .
 :challenge skos:definition "Vanskelighetsgrad"@nb-NO .

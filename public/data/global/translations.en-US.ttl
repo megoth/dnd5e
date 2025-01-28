@@ -37,6 +37,7 @@
 :category skos:definition "Category"@en-US .
 :challenge skos:definition "Challenge"@en-US .
 :challengeRating skos:definition "Challenge Rating"@en-US .
+:character skos:definition "Character"@en-US .
 :characters skos:definition "Characters"@en-US .
 :charactersPageTitle skos:definition "Characters"@en-US .
 :charisma skos:definition "Charisma"@en-US .

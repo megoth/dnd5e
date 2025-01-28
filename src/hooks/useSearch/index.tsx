@@ -2,6 +2,7 @@ import MiniSearch from "minisearch";
 import useListOfType from "../useListOfType";
 import {
   BackgroundShapeType,
+  CharacterShapeType,
   ClassShapeType,
   EquipmentShapeType,
   MagicSchoolShapeType,
@@ -17,6 +18,7 @@ import {
 import { type DependencyList, useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
 import { useLocalization } from "@fluent/react";
+import useStorage from "../useStorage";
 
 function useIndexer<Type>(
   shapeType: ShapeType<Type>,
@@ -31,6 +33,7 @@ function useIndexer<Type>(
 }
 
 export default function useSearch() {
+  const { isLoading: storageLoading } = useStorage();
   const { l10n } = useLocalization();
   const search = new MiniSearch({
     fields: ["title"],
@@ -54,6 +57,23 @@ export default function useSearch() {
           title: background.label,
           text: l10n.getString("descriptionOf", { type: background.label }),
           url: `/backgrounds/${btoa(background["@id"])}`,
+        });
+      })(),
+  );
+
+  const { isLoading: charactersLoading } = useIndexer(
+    CharacterShapeType,
+    "characters",
+    "Character",
+    (character) =>
+      !search.has(character["@id"]) &&
+      (() => {
+        search.add({
+          id: character["@id"],
+          type: "character",
+          title: character.label,
+          text: l10n.getString("descriptionOf", { type: character.label }),
+          url: `/characters/${btoa(character["@id"])}`,
         });
       })(),
   );
@@ -281,6 +301,7 @@ export default function useSearch() {
   return {
     isLoading:
       backgroundsLoading ||
+      charactersLoading ||
       classesLoading ||
       equipmentLoading ||
       monstersLoading ||
@@ -290,6 +311,7 @@ export default function useSearch() {
       skillsLoading ||
       spellLoading ||
       schoolsLoading ||
+      storageLoading ||
       subclassesLoading ||
       subracesLoading,
     search,
