@@ -1,5 +1,5 @@
 import Translation from "../../translation";
-import CharacterCreatePageChoice from "../choice";
+import CharacterFormChoice from "../choice";
 import React, { FormEventHandler } from "react";
 import useListOfType from "../../../hooks/useListOfType";
 import { RaceShapeType } from "../../../ldo/dnd5e.shapeTypes";
@@ -13,11 +13,7 @@ interface Props {
   setRace: (newRace: Race) => void;
 }
 
-export default function CharacterCreatePageRace({
-  register,
-  race,
-  setRace,
-}: Props) {
+export default function CharacterFormRace({ register, race, setRace }: Props) {
   const { items: races, isLoading } = useListOfType(
     RaceShapeType,
     "characters",
@@ -48,7 +44,7 @@ export default function CharacterCreatePageRace({
           </option>
         ))}
       </select>
-      <CharacterCreatePageChoice choice={race?.startingProficiencyOptions} />
+      <CharacterFormChoice choice={race?.startingProficiencyOptions} />
     </>
   );
 }

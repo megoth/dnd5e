@@ -1,5 +1,5 @@
 import Translation from "../../translation";
-import CharacterCreatePageChoice from "../choice";
+import CharacterFormChoice from "../choice";
 import React, { FormEventHandler, useEffect, useState } from "react";
 import { Race } from "../../../ldo/dnd5e.typings";
 import { type UseFormRegister } from "react-hook-form";
@@ -10,7 +10,7 @@ interface Props {
   register: UseFormRegister<Inputs>;
 }
 
-export default function CharacterCreatePageSubrace({ race, register }: Props) {
+export default function CharacterFormSubrace({ race, register }: Props) {
   const [subrace, setLocalSubrace] = useState(race?.subraces?.[0]);
 
   useEffect(() => setLocalSubrace(race?.subraces?.[0]), [race]);
@@ -46,7 +46,7 @@ export default function CharacterCreatePageSubrace({ race, register }: Props) {
           ))}
           {race.subraces.length === 0 && <option>No subraces available</option>}
         </select>
-        <CharacterCreatePageChoice choice={subrace?.languageOptions} />
+        <CharacterFormChoice choice={subrace?.languageOptions} />
       </>
     )
   );

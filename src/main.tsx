@@ -90,6 +90,12 @@ const router = createBrowserRouter([
         element: lazyLoadPage(lazy(() => import("./components/characterPage"))),
       },
       {
+        path: "/characters/:url/edit",
+        element: lazyLoadPage(
+          lazy(() => import("./components/characterEditPage")),
+        ),
+      },
+      {
         path: "/faq",
         element: lazyLoadPage(lazy(() => import("./components/faqPage"))),
       },

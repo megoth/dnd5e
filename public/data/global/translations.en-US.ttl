@@ -73,6 +73,8 @@
 :dice skos:definition "{$count}d{$value}"@en-US .
 :disadvantage skos:definition "Disadvantage"@en-US .
 :duration skos:definition "Duration"@en-US .
+:edit skos:definition "Edit"@en-US .
+:editCharacter skos:definition "Edit Character"@en-US .
 :encountersPageTitle skos:definition "Encounters"@en-US .
 :equipment skos:definition "Equipment"@en-US .
 :equipmentPageTitle skos:definition "Equipment"@en-US .

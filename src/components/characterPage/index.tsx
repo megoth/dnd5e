@@ -10,9 +10,12 @@ import Markdown from "react-markdown";
 import { transformMarkdownLink } from "../../utils/markdown";
 import useStoredSubject from "../../hooks/useStoredSubject";
 import { useLocalization } from "@fluent/react";
+import { NavLink } from "react-router-dom";
+import Translation from "../translation";
 
 export default function CharacterPage() {
   const {
+    canEdit,
     subject: character,
     isLoading,
     isLocal,
@@ -52,6 +55,20 @@ export default function CharacterPage() {
       )}
       <Content>
         <h1>{character.label}</h1>
+        <div className={"options"}>
+          {canEdit ? (
+            <NavLink
+              to={`/characters/${btoa(character["@id"])}/edit`}
+              className="button"
+            >
+              <Translation id="edit" />
+            </NavLink>
+          ) : (
+            <button disabled className="button" type="button">
+              <Translation id="edit" />
+            </button>
+          )}
+        </div>
         {isLoading && <Loading />}
       </Content>
     </Layout>

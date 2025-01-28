@@ -73,6 +73,8 @@
 :dice skos:definition "{$count}d{$value}"@nb-NO .
 :disadvantage skos:definition "Ulempe"@nb-NO .
 :duration skos:definition "Varighet"@nb-NO .
+:edit skos:definition "Rediger"@nb-NO .
+:editCharacter skos:definition "Rediger karakter"@nb-NO .
 :encountersPageTitle skos:definition "Kamper"@nb-NO .
 :equipment skos:definition "Utstyr"@nb-NO .
 :equipmentPageTitle skos:definition "Utstyr"@nb-NO .

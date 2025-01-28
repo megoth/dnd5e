@@ -4,10 +4,11 @@ import Translation from "../../translation";
 import React from "react";
 
 interface Props {
+  name?: string;
   register: UseFormRegister<Inputs>;
 }
 
-export default function CharacterCreatePageName({ register }: Props) {
+export default function CharacterFormName({ name, register }: Props) {
   return (
     <>
       <label htmlFor="name" className="label">
@@ -17,6 +18,7 @@ export default function CharacterCreatePageName({ register }: Props) {
         className="input"
         id="name"
         type="text"
+        defaultValue={name}
         {...register("name", { required: true })}
       />
     </>

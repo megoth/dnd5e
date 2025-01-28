@@ -4,7 +4,7 @@ import useListOfType from "../../../hooks/useListOfType";
 import { ClassShapeType } from "../../../ldo/dnd5e.shapeTypes";
 import { type UseFormRegister } from "react-hook-form";
 import { type Inputs } from "../index";
-import CharacterCreatePageChoice from "../choice";
+import CharacterFormChoice from "../choice";
 
 interface Props {
   register: UseFormRegister<Inputs>;
@@ -51,13 +51,13 @@ export default function CharacterCreatePageClass({ register }: Props) {
         ))}
       </select>
       {classInfo?.proficiencyChoices.map((choice, index) => (
-        <CharacterCreatePageChoice
+        <CharacterFormChoice
           key={`proficiencyChoice-${index}`}
           choice={choice}
         />
       ))}
       {classInfo?.startingEquipmentOptions.map((choice, index) => (
-        <CharacterCreatePageChoice
+        <CharacterFormChoice
           key={`startingEquipmentChoice-${index}`}
           choice={choice}
         />

@@ -4,6 +4,7 @@ import useSWR from "swr";
 import { resourceUrl } from "../../utils/url";
 import useStorage from "../useStorage";
 import { LdoBase, ShapeType } from "@ldo/ldo";
+import { useMemo } from "react";
 
 export default function useStoredSubject<T extends LdoBase>(
   shapeType: ShapeType<T>,
@@ -12,7 +13,7 @@ export default function useStoredSubject<T extends LdoBase>(
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
 
-  const { isLoading: isStorageLoading } = useStorage();
+  const { isLoading: isStorageLoading, storages } = useStorage();
 
   const {
     data: subject,
@@ -21,17 +22,29 @@ export default function useStoredSubject<T extends LdoBase>(
   } = useSWR(
     () => url,
     async () => {
-      const resource = resourceUrl(url);
-      if (resource) {
-        await getResource(resource).readIfUnfetched();
+      const rUrl = resourceUrl(url);
+      if (rUrl) {
+        await getResource(rUrl).readIfUnfetched();
       }
       return getSubject(shapeType, url);
     },
   );
 
+  const isLoading = isStorageLoading || isSubjectLoading;
+
+  const canEdit = useMemo(() => {
+    if (isLoading) return false;
+    const rUrl = resourceUrl(url);
+    return (
+      rUrl === "" || // local data
+      !!(storages || []).find((storage) => rUrl.startsWith(storage["@id"]))
+    );
+  }, [isLoading, url]);
+
   return {
+    canEdit,
     subject,
-    isLoading: isStorageLoading || isSubjectLoading,
+    isLoading,
     isLocal: subject?.["@id"] && !resourceUrl(subject["@id"]),
     isSubjectLoading,
     isStorageLoading,

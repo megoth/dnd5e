@@ -17,9 +17,7 @@ function getValue(reference: ReferenceOption): string {
   }`;
 }
 
-export default function CharacterCreatePageStartingOptionsReferences({
-  options,
-}: Props) {
+export default function CharacterFormChoiceReferences({ options }: Props) {
   const [chosen, setChosen] = useState([]);
   const { isLoading } = useRulesBundle("proficiencies");
 

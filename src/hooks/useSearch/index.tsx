@@ -15,20 +15,37 @@ import {
   SubclassShapeType,
   SubraceShapeType,
 } from "../../ldo/dnd5e.shapeTypes";
-import { type DependencyList, useEffect } from "react";
+import { useEffect } from "react";
 import type { ShapeType } from "@ldo/ldo";
 import { useLocalization } from "@fluent/react";
 import useStorage from "../useStorage";
+
+type IndexDocument = {
+  id: string;
+  title: string;
+};
 
 function useIndexer<Type>(
   shapeType: ShapeType<Type>,
   rulesBundle: string,
   type: string,
-  indexFn: (item: Type) => void,
-  ...deps: Array<DependencyList>
+  search: MiniSearch<IndexDocument>,
+  indexFn: (item: Type) => IndexDocument,
+  filterFn: (item: Type) => boolean = () => true,
 ) {
   const { isLoading, items } = useListOfType(shapeType, rulesBundle, type);
-  useEffect(() => items.forEach(indexFn), [items, isLoading, indexFn, ...deps]);
+  useEffect(
+    () =>
+      items
+        .filter(filterFn)
+        .forEach((item) =>
+          ((indexDocument) =>
+            search.has(indexDocument.id)
+              ? search.replace(indexDocument)
+              : search.add(indexDocument))(indexFn(item)),
+        ),
+    [items, isLoading, indexFn],
+  );
   return { isLoading, items };
 }
 
@@ -44,266 +61,259 @@ export default function useSearch() {
     storeFields: ["title", "text", "type", "url"],
   });
 
+  const { isLoading: armorLoading } = useIndexer(
+    EquipmentShapeType,
+    "equipments",
+    "Equipment",
+    search,
+    (equipment) => ({
+      id: equipment["@id"],
+      type: "armor",
+      title: equipment.label,
+      text: equipment.description,
+      url: `/armor/${btoa(equipment["@id"])}`,
+    }),
+    (equipment) => !!equipment.armor,
+  );
+
   const { isLoading: backgroundsLoading } = useIndexer(
     BackgroundShapeType,
     "characters",
     "Background",
-    (background) =>
-      !search.has(background["@id"]) &&
-      (() => {
-        search.add({
-          id: background["@id"],
-          type: "background",
-          title: background.label,
-          text: l10n.getString("descriptionOf", { type: background.label }),
-          url: `/backgrounds/${btoa(background["@id"])}`,
-        });
-      })(),
+    search,
+    (background) => ({
+      id: background["@id"],
+      type: "background",
+      title: background.label,
+      text: l10n.getString("descriptionOf", { type: background.label }),
+      url: `/backgrounds/${btoa(background["@id"])}`,
+    }),
   );
 
   const { isLoading: charactersLoading } = useIndexer(
     CharacterShapeType,
     "characters",
     "Character",
-    (character) =>
-      !search.has(character["@id"]) &&
-      (() => {
-        search.add({
-          id: character["@id"],
-          type: "character",
-          title: character.label,
-          text: l10n.getString("descriptionOf", { type: character.label }),
-          url: `/characters/${btoa(character["@id"])}`,
-        });
-      })(),
+    search,
+    (character) => ({
+      id: character["@id"],
+      type: "character",
+      title: character.label,
+      text: l10n.getString("descriptionOf", { type: character.label }),
+      url: `/characters/${btoa(character["@id"])}`,
+    }),
   );
 
   const { isLoading: classesLoading } = useIndexer(
     ClassShapeType,
     "classes",
     "Class",
-    (classInfo) =>
-      !search.has(classInfo["@id"]) &&
-      (() => {
-        search.add({
-          id: classInfo["@id"],
-          type: "class",
-          title: classInfo.label,
-          text: classInfo.description,
-          url: `/classes/${btoa(classInfo["@id"])}`,
-        });
-        search.add({
-          id: `${classInfo["@id"]}-spells`,
-          type: "spells",
-          title: classInfo.label,
-          text: l10n.getString("spellsFor", { type: classInfo.label }),
-          url: `/spells/?class=${btoa(classInfo["@id"])}`,
-        });
-      })(),
+    search,
+    (classInfo) => ({
+      id: classInfo["@id"],
+      type: "class",
+      title: classInfo.label,
+      text: classInfo.description,
+      url: `/classes/${btoa(classInfo["@id"])}`,
+    }),
+  );
+
+  const { isLoading: classSpellsLoading } = useIndexer(
+    ClassShapeType,
+    "classes",
+    "Class",
+    search,
+    (classInfo) => ({
+      id: `${classInfo["@id"]}-spells`,
+      type: "spells",
+      title: classInfo.label,
+      text: l10n.getString("spellsFor", { type: classInfo.label }),
+      url: `/spells/?class=${btoa(classInfo["@id"])}`,
+    }),
   );
 
   const { isLoading: equipmentLoading } = useIndexer(
     EquipmentShapeType,
     "equipments",
     "Equipment",
+    search,
+    (equipment) => ({
+      id: equipment["@id"],
+      type: "equipment",
+      title: equipment.label,
+      text: equipment.description,
+      url: `/equipment/${btoa(equipment["@id"])}`,
+    }),
     (equipment) =>
-      !search.has(equipment["@id"]) &&
-      (() => {
-        if (!equipment.armor && !equipment.weapon && !equipment.magicItem) {
-          search.add({
-            id: equipment["@id"],
-            type: "equipment",
-            title: equipment.label,
-            text: equipment.description,
-            url: `/equipment/${btoa(equipment["@id"])}`,
-          });
-        }
-        if (equipment.armor) {
-          search.add({
-            id: equipment["@id"],
-            type: "armor",
-            title: equipment.label,
-            text: equipment.description,
-            url: `/armor/${btoa(equipment["@id"])}`,
-          });
-        }
-        if (equipment.magicItem) {
-          search.add({
-            id: equipment["@id"],
-            type: "magicItem",
-            title: equipment.label,
-            text: equipment.description,
-            url: `/magic-items/${btoa(equipment["@id"])}`,
-          });
-        }
-        if (equipment.weapon) {
-          search.add({
-            id: equipment["@id"],
-            type: "weapon",
-            title: equipment.label,
-            text: equipment.description,
-            url: `/weapons/${btoa(equipment["@id"])}`,
-          });
-        }
-      })(),
+      !equipment.armor && !equipment.weapon && !equipment.magicItem,
+  );
+
+  const { isLoading: magicItemsLoading } = useIndexer(
+    EquipmentShapeType,
+    "equipments",
+    "Equipment",
+    search,
+    (equipment) => ({
+      id: equipment["@id"],
+      type: "magicItem",
+      title: equipment.label,
+      text: equipment.description,
+      url: `/magic-items/${btoa(equipment["@id"])}`,
+    }),
+    (equipment) => !!equipment.magicItem,
   );
 
   const { isLoading: monstersLoading } = useIndexer(
     MonsterShapeType,
     "monsters",
     "Monster",
-    (monster) =>
-      !search.has(monster["@id"]) &&
-      (() => {
-        search.add({
-          id: monster["@id"],
-          type: "monster",
-          title: monster.label,
-          text:
-            monster.description ||
-            l10n.getString("descriptionOf", { type: monster.label }),
-          url: `/monsters/${btoa(monster["@id"])}`,
-        });
-      })(),
+    search,
+    (monster) => ({
+      id: monster["@id"],
+      type: "monster",
+      title: monster.label,
+      text:
+        monster.description ||
+        l10n.getString("descriptionOf", { type: monster.label }),
+      url: `/monsters/${btoa(monster["@id"])}`,
+    }),
   );
 
   const { isLoading: racesLoading } = useIndexer(
     RaceShapeType,
     "races",
     "Race",
-    (race) =>
-      !search.has(race["@id"]) &&
-      (() => {
-        search.add({
-          id: race["@id"],
-          type: "race",
-          title: race.label,
-          text: race.description,
-          url: `/races/${btoa(race["@id"])}`,
-        });
-      })(),
+    search,
+    (race) => ({
+      id: race["@id"],
+      type: "race",
+      title: race.label,
+      text: race.description,
+      url: `/races/${btoa(race["@id"])}`,
+    }),
   );
 
   const { isLoading: ruleSectionsLoading } = useIndexer(
     RuleSectionShapeType,
     "rules",
     "RuleSection",
-    (section) =>
-      !search.has(section["@id"]) &&
-      (() => {
-        search.add({
-          id: section["@id"],
-          type: "rule",
-          title: section.label,
-          text: section.description,
-          url: `/rules#${btoa(section["@id"])}`,
-        });
-      })(),
+    search,
+    (section) => ({
+      id: section["@id"],
+      type: "rule",
+      title: section.label,
+      text: section.description,
+      url: `/rules#${btoa(section["@id"])}`,
+    }),
   );
 
   const { isLoading: rulesLoading } = useIndexer(
     RuleShapeType,
     "rules",
     "Rule",
-    (rule) =>
-      !search.has(rule["@id"]) &&
-      (() => {
-        search.add({
-          id: rule["@id"],
-          type: "rule",
-          title: rule.label,
-          text: rule.description,
-          url: `/rules#${btoa(rule["@id"])}`,
-        });
-      })(),
+    search,
+    (rule) => ({
+      id: rule["@id"],
+      type: "rule",
+      title: rule.label,
+      text: rule.description,
+      url: `/rules#${btoa(rule["@id"])}`,
+    }),
   );
   const { isLoading: skillsLoading } = useIndexer(
     SkillShapeType,
     "skills",
     "Skill",
-    (skill) =>
-      !search.has(skill["@id"]) &&
-      search.add({
-        id: skill["@id"],
-        type: "skill",
-        title: skill.label,
-        text: skill.description,
-        url: `/skills#${btoa(skill["@id"])}`,
-      }),
+    search,
+    (skill) => ({
+      id: skill["@id"],
+      type: "skill",
+      title: skill.label,
+      text: skill.description,
+      url: `/skills#${btoa(skill["@id"])}`,
+    }),
   );
 
   const { isLoading: spellLoading } = useIndexer(
     SpellShapeType,
     "spells",
     "Spell",
-    (spell) =>
-      !search.has(spell["@id"]) &&
-      search.add({
-        id: spell["@id"],
-        type: "spell",
-        title: spell.label,
-        text: spell.description,
-        url: `/spells/${btoa(spell["@id"])}`,
-      }),
+    search,
+    (spell) => ({
+      id: spell["@id"],
+      type: "spell",
+      title: spell.label,
+      text: spell.description,
+      url: `/spells/${btoa(spell["@id"])}`,
+    }),
   );
 
   const { isLoading: schoolsLoading } = useIndexer(
     MagicSchoolShapeType,
     "spells",
     "MagicSchool",
-    (school) =>
-      !search.has(school["@id"]) &&
-      (() => {
-        search.add({
-          id: school["@id"],
-          type: "school",
-          title: school.label,
-          text: l10n.getString("spellsFor", { type: school.label }),
-          url: `/spells/?school=${btoa(school["@id"])}`,
-        });
-      })(),
+    search,
+    (school) => ({
+      id: school["@id"],
+      type: "school",
+      title: school.label,
+      text: l10n.getString("spellsFor", { type: school.label }),
+      url: `/spells/?school=${btoa(school["@id"])}`,
+    }),
   );
 
   const { isLoading: subclassesLoading } = useIndexer(
     SubclassShapeType,
     "classes",
     "Subclass",
-    (subclass) =>
-      !search.has(subclass["@id"]) &&
-      (() => {
-        search.add({
-          id: subclass["@id"],
-          type: "subclass",
-          title: subclass.label,
-          text: subclass.description,
-          url: `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
-        });
-      })(),
+    search,
+    (subclass) => ({
+      id: subclass["@id"],
+      type: "subclass",
+      title: subclass.label,
+      text: subclass.description,
+      url: `/classes/${btoa(subclass.class["@id"])}#${btoa(subclass["@id"])}`,
+    }),
   );
 
   const { isLoading: subracesLoading } = useIndexer(
     SubraceShapeType,
     "races",
     "Subrace",
-    (subrace) =>
-      !search.has(subrace["@id"]) &&
-      (() => {
-        search.add({
-          id: subrace["@id"],
-          type: "subrace",
-          title: subrace.label,
-          text: subrace.description,
-          url: `/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`,
-        });
-      })(),
+    search,
+    (subrace) => ({
+      id: subrace["@id"],
+      type: "subrace",
+      title: subrace.label,
+      text: subrace.description,
+      url: `/races/${btoa(subrace.race["@id"])}#${btoa(subrace["@id"])}`,
+    }),
+  );
+
+  const { isLoading: weaponsLoading } = useIndexer(
+    EquipmentShapeType,
+    "equipments",
+    "Equipment",
+    search,
+    (equipment) => ({
+      id: equipment["@id"],
+      type: "weapon",
+      title: equipment.label,
+      text: equipment.description,
+      url: `/weapons/${btoa(equipment["@id"])}`,
+    }),
+    (equipment) => !!equipment.weapon,
   );
 
   return {
     isLoading:
+      armorLoading ||
       backgroundsLoading ||
       charactersLoading ||
       classesLoading ||
+      classSpellsLoading ||
       equipmentLoading ||
+      magicItemsLoading ||
       monstersLoading ||
       racesLoading ||
       ruleSectionsLoading ||
@@ -313,7 +323,8 @@ export default function useSearch() {
       schoolsLoading ||
       storageLoading ||
       subclassesLoading ||
-      subracesLoading,
+      subracesLoading ||
+      weaponsLoading,
     search,
   };
 }
