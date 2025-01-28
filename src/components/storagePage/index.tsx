@@ -66,7 +66,7 @@ export default function StoragePage() {
       profile,
       getResource(resourceUrl(profile["@id"])),
     );
-    updatedProfile.storages = storages.filter(
+    updatedProfile.storages = (storages || []).filter(
       (s) => s["@id"] !== storage["@id"],
     );
     await commitData(updatedProfile);
@@ -98,7 +98,7 @@ export default function StoragePage() {
             disabled={
               isLoading ||
               isDefaultStorage ||
-              !storages.find((s) => s["@id"] === storage["@id"])
+              !(storages || []).find((s) => s["@id"] === storage["@id"])
             }
             onClick={changeDefaultStorage}
           >

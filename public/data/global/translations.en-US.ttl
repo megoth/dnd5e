@@ -53,6 +53,7 @@
 :closeMenu skos:definition "Close menu"@en-US .
 :components skos:definition "Components"@en-US .
 :concentration skos:definition "Concentration"@en-US .
+:confirm skos:definition "Confirm"@en-US .
 :constitution skos:definition "Constitution"@en-US .
 :cost skos:definition "Cost"@en-US .
 :createCharacter skos:definition "Create Character"@en-US .
@@ -65,6 +66,10 @@
 :darkModeTurnOn skos:definition "Turn on dark mode"@en-US .
 :darkvision skos:definition "Darkvision"@en-US .
 :datasetLoadFailed skos:definition "Failed to fetch resource"@en-US .
+:delete skos:definition "Delete"@en-US .
+:deleteCharacter skos:definition "Delete Character"@en-US .
+:deleteCharacterConfirmation skos:definition
+        "Are you sure you want to delete {$characterName}? This action cannot be undone."@en-US .
 :deleteStorage skos:definition "Delete storage"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
 :dex skos:definition "dex"@en-US .

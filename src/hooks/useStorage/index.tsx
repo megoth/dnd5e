@@ -89,6 +89,15 @@ export default function useStorage() {
     storages,
     isLoading: loadingLocalData || defaultStorageLoading || storagesLoading,
     mutate: async () => Promise.all([mutateDefaultStorage(), mutateStorages()]),
+    remove: async function <T extends LdoBase>(subject: T): Promise<void> {
+      if (!defaultStorage) {
+        // TODO: REMOVE FROM LOCAL DATASET
+        localStorage.removeItem(`local_${subject["@id"]}`);
+        return;
+      }
+      // TODO: ONLINE STORAGE
+      return new Promise((resolve) => resolve());
+    },
     store: async function <T extends LdoBase>(
       subject: T,
       shapeType: ShapeType<T>,

@@ -13,7 +13,7 @@ export default function useStoredSubject<T extends LdoBase>(
   const url = atob(params.url);
   const { getResource, getSubject } = useLdo();
 
-  const { isLoading: isStorageLoading, storages } = useStorage();
+  const { isLoading: isStorageLoading, defaultStorage, remove } = useStorage();
 
   const {
     data: subject,
@@ -37,17 +37,18 @@ export default function useStoredSubject<T extends LdoBase>(
     const rUrl = resourceUrl(url);
     return (
       rUrl === "" || // local data
-      !!(storages || []).find((storage) => rUrl.startsWith(storage["@id"]))
+      rUrl.startsWith(defaultStorage["@id"])
     );
   }, [isLoading, url]);
 
   return {
     canEdit,
-    subject,
     isLoading,
     isLocal: subject?.["@id"] && !resourceUrl(subject["@id"]),
     isSubjectLoading,
     isStorageLoading,
+    remove: () => remove(subject),
+    subject,
     ...rest,
   };
 }

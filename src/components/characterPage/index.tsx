@@ -57,16 +57,29 @@ export default function CharacterPage() {
         <h1>{character.label}</h1>
         <div className={"options"}>
           {canEdit ? (
-            <NavLink
-              to={`/characters/${btoa(character["@id"])}/edit`}
-              className="button"
-            >
-              <Translation id="edit" />
-            </NavLink>
+            <>
+              <NavLink
+                to={`/characters/${btoa(character["@id"])}/edit`}
+                className="button"
+              >
+                <Translation id="edit" />
+              </NavLink>
+              <NavLink
+                to={`/characters/${btoa(character["@id"])}/delete`}
+                className="button"
+              >
+                <Translation id="delete" />
+              </NavLink>
+            </>
           ) : (
-            <button disabled className="button" type="button">
-              <Translation id="edit" />
-            </button>
+            <>
+              <button disabled className="button" type="button">
+                <Translation id="edit" />
+              </button>
+              <button disabled className="button" type="button">
+                <Translation id="delete" />
+              </button>
+            </>
           )}
         </div>
         {isLoading && <Loading />}
