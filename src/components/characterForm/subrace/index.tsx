@@ -46,7 +46,7 @@ export default function CharacterFormSubrace({ race, register }: Props) {
           ))}
           {race.subraces.length === 0 && <option>No subraces available</option>}
         </select>
-        <CharacterFormChoice choice={subrace?.languageOptions} />
+        <CharacterFormChoice choice={subrace?.languageChoice} />
       </>
     )
   );

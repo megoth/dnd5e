@@ -538,7 +538,7 @@ _:b2341 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2341 <https://dnd5e.app/vocab/dnd5e#from> _:b2340 .
 _:b2342 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2342 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it." .
-_:b2342 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2341 .
+_:b2342 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2341 .
 _:b2343 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
 _:b2343 <http://purl.org/dc/terms/description> "The dragon makes a Wisdom (Perception) check." .
 _:b2344 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Attack" .
@@ -681,7 +681,7 @@ _:b2381 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2381 <https://dnd5e.app/vocab/dnd5e#from> _:b2380 .
 _:b2382 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2382 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon." .
-_:b2382 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2381 .
+_:b2382 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2381 .
 _:b2383 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
 _:b2383 <http://purl.org/dc/terms/description> "The dragon makes a Wisdom (Perception) check." .
 _:b2384 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Attack" .
@@ -823,7 +823,7 @@ _:b2421 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2421 <https://dnd5e.app/vocab/dnd5e#from> _:b2420 .
 _:b2422 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2422 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save." .
-_:b2422 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2421 .
+_:b2422 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2421 .
 _:b2423 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
 _:b2423 <http://purl.org/dc/terms/description> "The dragon makes a Wisdom (Perception) check." .
 _:b2424 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Attack" .
@@ -965,7 +965,7 @@ _:b2460 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2460 <https://dnd5e.app/vocab/dnd5e#from> _:b2459 .
 _:b2461 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2461 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b2461 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2460 .
+_:b2461 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2460 .
 _:b2462 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
 _:b2462 <http://purl.org/dc/terms/description> "The dragon makes a Wisdom (Perception) check." .
 _:b2463 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Attack" .
@@ -1365,7 +1365,7 @@ _:b2569 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2569 <https://dnd5e.app/vocab/dnd5e#from> _:b2568 .
 _:b2570 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2570 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b2570 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2569 .
+_:b2570 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2569 .
 _:b2571 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
 _:b2571 <http://purl.org/dc/terms/description> "The dragon makes a Wisdom (Perception) check." .
 _:b2572 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Attack" .
@@ -1946,7 +1946,7 @@ _:b2721 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2721 <https://dnd5e.app/vocab/dnd5e#from> _:b2720 .
 _:b2722 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2722 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons:\nFire Breath. The dragon exhales fire in an 90-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 21 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it." .
-_:b2722 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2721 .
+_:b2722 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2721 .
 _:b2723 <http://www.w3.org/2000/01/rdf-schema#label> "Change Shape" .
 _:b2723 <http://purl.org/dc/terms/description> "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form." .
 _:b2724 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
@@ -2092,7 +2092,7 @@ _:b2762 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2762 <https://dnd5e.app/vocab/dnd5e#from> _:b2761 .
 _:b2763 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2763 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon." .
-_:b2763 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2762 .
+_:b2763 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2762 .
 _:b2764 <http://www.w3.org/2000/01/rdf-schema#label> "Change Shape" .
 _:b2764 <http://purl.org/dc/terms/description> "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form." .
 _:b2765 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
@@ -2237,7 +2237,7 @@ _:b2803 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2803 <https://dnd5e.app/vocab/dnd5e#from> _:b2802 .
 _:b2804 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2804 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 63 (14d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 22 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save." .
-_:b2804 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2803 .
+_:b2804 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2803 .
 _:b2805 <http://www.w3.org/2000/01/rdf-schema#label> "Change Shape" .
 _:b2805 <http://purl.org/dc/terms/description> "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form." .
 _:b2806 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
@@ -2382,7 +2382,7 @@ _:b2843 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2843 <https://dnd5e.app/vocab/dnd5e#from> _:b2842 .
 _:b2844 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2844 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (13d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b2844 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2843 .
+_:b2844 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2843 .
 _:b2845 <http://www.w3.org/2000/01/rdf-schema#label> "Change Shape" .
 _:b2845 <http://purl.org/dc/terms/description> "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form." .
 _:b2846 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
@@ -2785,7 +2785,7 @@ _:b2953 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b2953 <https://dnd5e.app/vocab/dnd5e#from> _:b2952 .
 _:b2954 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b2954 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b2954 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b2953 .
+_:b2954 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b2953 .
 _:b2955 <http://www.w3.org/2000/01/rdf-schema#label> "Change Shape" .
 _:b2955 <http://purl.org/dc/terms/description> "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form." .
 _:b2956 <http://www.w3.org/2000/01/rdf-schema#label> "Detect" .
@@ -4094,8 +4094,8 @@ _:b3290 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3290 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3290 <https://dnd5e.app/vocab/dnd5e#from> _:b3289 .
 _:b3291 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3291 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3290 .
 _:b3291 <http://purl.org/dc/terms/description> "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers." .
+_:b3291 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b3290 .
 _:b3291 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3292 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b3292 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage." .
@@ -4179,8 +4179,8 @@ _:b3311 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3311 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3311 <https://dnd5e.app/vocab/dnd5e#from> _:b3310 .
 _:b3312 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3312 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3311 .
 _:b3312 <http://purl.org/dc/terms/description> "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice." .
+_:b3312 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b3311 .
 _:b3312 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3313 <http://www.w3.org/2000/01/rdf-schema#label> "Claw" .
 _:b3313 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage." .
@@ -5099,7 +5099,7 @@ _:b3546 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3546 <https://dnd5e.app/vocab/dnd5e#from> _:b3545 .
 _:b3547 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b3547 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it." .
-_:b3547 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b3546 .
+_:b3547 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b3546 .
 _:b3548 <https://dnd5e.app/vocab/dnd5e#value> 2 .
 _:b3548 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b3549 <https://dnd5e.app/vocab/dnd5e#value> 3 .
@@ -5187,7 +5187,7 @@ _:b3570 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3570 <https://dnd5e.app/vocab/dnd5e#from> _:b3569 .
 _:b3571 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b3571 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon." .
-_:b3571 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b3570 .
+_:b3571 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b3570 .
 _:b3572 <https://dnd5e.app/vocab/dnd5e#value> 2 .
 _:b3572 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b3573 <https://dnd5e.app/vocab/dnd5e#value> 4 .
@@ -5528,8 +5528,8 @@ _:b3657 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3657 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3657 <https://dnd5e.app/vocab/dnd5e#from> _:b3656 .
 _:b3658 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3658 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3657 .
 _:b3658 <http://purl.org/dc/terms/description> "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow." .
+_:b3658 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b3657 .
 _:b3658 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3659 <http://www.w3.org/2000/01/rdf-schema#label> "Pike" .
 _:b3659 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage." .
@@ -5679,7 +5679,7 @@ _:b3697 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3697 <https://dnd5e.app/vocab/dnd5e#from> _:b3696 .
 _:b3698 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b3698 <http://purl.org/dc/terms/description> "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns." .
-_:b3698 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3697 .
+_:b3698 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b3697 .
 _:b3698 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3699 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b3699 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage." .
@@ -5752,8 +5752,8 @@ _:b3716 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3716 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3716 <https://dnd5e.app/vocab/dnd5e#from> _:b3715 .
 _:b3717 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3717 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3716 .
 _:b3717 <http://purl.org/dc/terms/description> "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once." .
+_:b3717 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b3716 .
 _:b3717 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3718 <http://www.w3.org/2000/01/rdf-schema#label> "Pincer" .
 _:b3718 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled." .
@@ -6271,7 +6271,7 @@ _:b3849 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3849 <https://dnd5e.app/vocab/dnd5e#from> _:b3848 .
 _:b3850 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b3850 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save." .
-_:b3850 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b3849 .
+_:b3850 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b3849 .
 _:b3851 <https://dnd5e.app/vocab/dnd5e#value> 3 .
 _:b3851 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b3852 <https://dnd5e.app/vocab/dnd5e#value> 3 .
@@ -7451,7 +7451,7 @@ _:b4156 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4156 <https://dnd5e.app/vocab/dnd5e#from> _:b4155 .
 _:b4157 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b4157 <http://purl.org/dc/terms/description> "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks." .
-_:b4157 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4156 .
+_:b4157 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b4156 .
 _:b4157 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4158 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b4158 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) piercing damage." .
@@ -7606,8 +7606,8 @@ _:b4195 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4195 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4195 <https://dnd5e.app/vocab/dnd5e#from> _:b4194 .
 _:b4196 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4196 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4195 .
 _:b4196 <http://purl.org/dc/terms/description> "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack." .
+_:b4196 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b4195 .
 _:b4196 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4197 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b4197 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage." .
@@ -8285,8 +8285,8 @@ _:b4369 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4369 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4369 <https://dnd5e.app/vocab/dnd5e#from> _:b4368 .
 _:b4370 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4370 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4369 .
 _:b4370 <http://purl.org/dc/terms/description> "The efreeti makes two scimitar attacks or uses its Hurl Flame twice." .
+_:b4370 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b4369 .
 _:b4370 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4371 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b4371 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage." .
@@ -8533,8 +8533,8 @@ _:b4433 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4433 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4433 <https://dnd5e.app/vocab/dnd5e#from> _:b4432 .
 _:b4434 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4434 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4433 .
 _:b4434 <http://purl.org/dc/terms/description> "The erinyes makes three attacks" .
+_:b4434 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b4433 .
 _:b4434 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4435 <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
 _:b4435 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage." .
@@ -11136,7 +11136,7 @@ _:b5069 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5069 <https://dnd5e.app/vocab/dnd5e#from> _:b5068 .
 _:b5070 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b5070 <http://purl.org/dc/terms/description> "The glabrezu makes four attacks: two with its pincers and two with its fists. Alternatively, it makes two attacks with its pincers and casts one spell." .
-_:b5070 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5069 .
+_:b5070 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5069 .
 _:b5070 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5071 <http://www.w3.org/2000/01/rdf-schema#label> "Pincer" .
 _:b5071 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target." .
@@ -11263,8 +11263,8 @@ _:b5105 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5105 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5105 <https://dnd5e.app/vocab/dnd5e#from> _:b5104 .
 _:b5106 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5106 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5105 .
 _:b5106 <http://purl.org/dc/terms/description> "The gladiator makes three melee attacks or two ranged attacks." .
+_:b5106 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5105 .
 _:b5106 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5107 <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
 _:b5107 <http://purl.org/dc/terms/description> "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. and range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack." .
@@ -11517,7 +11517,7 @@ _:b5171 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5171 <https://dnd5e.app/vocab/dnd5e#from> _:b5170 .
 _:b5172 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b5172 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b5172 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b5171 .
+_:b5172 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b5171 .
 _:b5173 <https://dnd5e.app/vocab/dnd5e#value> 4 .
 _:b5173 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b5174 <https://dnd5e.app/vocab/dnd5e#value> 5 .
@@ -12990,7 +12990,7 @@ _:b5537 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5537 <https://dnd5e.app/vocab/dnd5e#from> _:b5536 .
 _:b5538 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b5538 <http://purl.org/dc/terms/description> "The devil makes three melee attacks: two with its fork and one with its tail. It can use Hurl Flame in place of any melee attack." .
-_:b5538 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5537 .
+_:b5538 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5537 .
 _:b5538 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5539 <http://www.w3.org/2000/01/rdf-schema#label> "Fork" .
 _:b5539 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage." .
@@ -13568,8 +13568,8 @@ _:b5681 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5681 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5681 <https://dnd5e.app/vocab/dnd5e#from> _:b5680 .
 _:b5682 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5682 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5681 .
 _:b5682 <http://purl.org/dc/terms/description> "The golem makes two melee attacks." .
+_:b5682 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5681 .
 _:b5682 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5683 <http://www.w3.org/2000/01/rdf-schema#label> "Slam" .
 _:b5683 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage." .
@@ -13886,8 +13886,8 @@ _:b5761 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5761 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5761 <https://dnd5e.app/vocab/dnd5e#from> _:b5760 .
 _:b5762 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5762 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5761 .
 _:b5762 <http://purl.org/dc/terms/description> "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling." .
+_:b5762 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5761 .
 _:b5762 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5763 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b5763 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 23 (3d8 + 10) piercing damage. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken's turns. If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone." .
@@ -13985,7 +13985,7 @@ _:b5790 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5790 <https://dnd5e.app/vocab/dnd5e#from> _:b5789 .
 _:b5791 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b5791 <http://purl.org/dc/terms/description> "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch." .
-_:b5791 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5790 .
+_:b5791 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5790 .
 _:b5791 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5792 <http://www.w3.org/2000/01/rdf-schema#label> "Claws" .
 _:b5792 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage." .
@@ -14526,7 +14526,7 @@ _:b5929 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5929 <https://dnd5e.app/vocab/dnd5e#from> _:b5928 .
 _:b5930 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b5930 <http://purl.org/dc/terms/description> "The lizardfolk makes two melee attacks, each one with a different weapon." .
-_:b5930 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5929 .
+_:b5930 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b5929 .
 _:b5930 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5931 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b5931 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage." .
@@ -14932,8 +14932,8 @@ _:b6035 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6035 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6035 <https://dnd5e.app/vocab/dnd5e#from> _:b6034 .
 _:b6036 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6036 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6035 .
 _:b6036 <http://purl.org/dc/terms/description> "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes." .
+_:b6036 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b6035 .
 _:b6036 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6037 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b6037 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage." .
@@ -15140,8 +15140,8 @@ _:b6087 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6087 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6087 <https://dnd5e.app/vocab/dnd5e#from> _:b6086 .
 _:b6088 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6088 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6087 .
 _:b6088 <http://purl.org/dc/terms/description> "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow." .
+_:b6088 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b6087 .
 _:b6088 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6089 <http://www.w3.org/2000/01/rdf-schema#label> "Snake Hair" .
 _:b6089 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) poison damage." .
@@ -15264,7 +15264,7 @@ _:b6120 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6120 <https://dnd5e.app/vocab/dnd5e#from> _:b6119 .
 _:b6121 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b6121 <http://purl.org/dc/terms/description> "The merrow makes two attacks: one with its bite and one with its claws or harpoon." .
-_:b6121 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6120 .
+_:b6121 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b6120 .
 _:b6121 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6122 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b6122 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage." .
@@ -16377,8 +16377,8 @@ _:b6395 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6395 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6395 <https://dnd5e.app/vocab/dnd5e#from> _:b6394 .
 _:b6396 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6396 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6395 .
 _:b6396 <http://purl.org/dc/terms/description> "The oni makes two attacks, either with its claws or its glaive." .
+_:b6396 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b6395 .
 _:b6396 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6397 <http://www.w3.org/2000/01/rdf-schema#label> "Claw (Oni Form Only)" .
 _:b6397 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage." .
@@ -18608,7 +18608,7 @@ _:b6966 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6966 <https://dnd5e.app/vocab/dnd5e#from> _:b6965 .
 _:b6967 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b6967 <http://purl.org/dc/terms/description> "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear." .
-_:b6967 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6966 .
+_:b6967 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b6966 .
 _:b6967 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6968 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b6968 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage." .
@@ -18857,8 +18857,8 @@ _:b7030 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7030 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7030 <https://dnd5e.app/vocab/dnd5e#from> _:b7029 .
 _:b7031 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7031 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7030 .
 _:b7031 <http://purl.org/dc/terms/description> "The scout makes two melee attacks or two ranged attacks." .
+_:b7031 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b7030 .
 _:b7031 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7032 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b7032 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage." .
@@ -19300,7 +19300,7 @@ _:b7137 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7137 <https://dnd5e.app/vocab/dnd5e#from> _:b7136 .
 _:b7138 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b7138 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b7138 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b7137 .
+_:b7138 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b7137 .
 _:b7139 <https://dnd5e.app/vocab/dnd5e#value> 2 .
 _:b7139 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b7140 <https://dnd5e.app/vocab/dnd5e#value> 5 .
@@ -21078,7 +21078,7 @@ _:b7550 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7550 <https://dnd5e.app/vocab/dnd5e#from> _:b7549 .
 _:b7551 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b7551 <http://purl.org/dc/terms/description> "The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail. It can use its Swallow instead of its bite." .
-_:b7551 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7550 .
+_:b7551 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b7550 .
 _:b7551 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7552 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b7552 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 36 (4d12 + 10) piercing damage. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the tarrasque can't bite another target." .
@@ -21732,8 +21732,8 @@ _:b7719 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7719 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7719 <https://dnd5e.app/vocab/dnd5e#from> _:b7718 .
 _:b7720 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7720 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7719 .
 _:b7720 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
+_:b7720 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b7719 .
 _:b7720 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7721 <http://www.w3.org/2000/01/rdf-schema#label> "Unarmed Strike" .
 _:b7721 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18)." .
@@ -22037,8 +22037,8 @@ _:b7804 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7804 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7804 <https://dnd5e.app/vocab/dnd5e#from> _:b7803 .
 _:b7805 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7805 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7804 .
 _:b7805 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
+_:b7805 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b7804 .
 _:b7805 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7806 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b7806 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0." .
@@ -22730,8 +22730,8 @@ _:b7973 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7973 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7973 <https://dnd5e.app/vocab/dnd5e#from> _:b7972 .
 _:b7974 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7974 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7973 .
 _:b7974 <http://purl.org/dc/terms/description> "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid." .
+_:b7974 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b7973 .
 _:b7974 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7975 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b7975 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with werebear lycanthropy." .
@@ -22931,8 +22931,8 @@ _:b8023 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8023 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8023 <https://dnd5e.app/vocab/dnd5e#from> _:b8022 .
 _:b8024 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8024 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8023 .
 _:b8024 <http://purl.org/dc/terms/description> "The wereboar makes two attacks, only one of which can be with its tusks." .
+_:b8024 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8023 .
 _:b8024 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8025 <http://www.w3.org/2000/01/rdf-schema#label> "Maul" .
 _:b8025 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage." .
@@ -23009,8 +23009,8 @@ _:b8044 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8044 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8044 <https://dnd5e.app/vocab/dnd5e#from> _:b8043 .
 _:b8045 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8045 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8044 .
 _:b8045 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
+_:b8045 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8044 .
 _:b8045 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8046 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b8046 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage." .
@@ -23084,8 +23084,8 @@ _:b8064 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8064 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8064 <https://dnd5e.app/vocab/dnd5e#from> _:b8063 .
 _:b8065 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8065 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8064 .
 _:b8065 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
+_:b8065 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8064 .
 _:b8065 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8066 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b8066 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy." .
@@ -23219,8 +23219,8 @@ _:b8099 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8099 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8099 <https://dnd5e.app/vocab/dnd5e#from> _:b8098 .
 _:b8100 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8100 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8099 .
 _:b8100 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
+_:b8100 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8099 .
 _:b8100 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8101 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b8101 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage." .
@@ -23299,8 +23299,8 @@ _:b8120 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8120 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8120 <https://dnd5e.app/vocab/dnd5e#from> _:b8119 .
 _:b8121 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8121 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8120 .
 _:b8121 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
+_:b8121 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8120 .
 _:b8121 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8122 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b8122 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy." .
@@ -23715,8 +23715,8 @@ _:b8224 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8224 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8224 <https://dnd5e.app/vocab/dnd5e#from> _:b8223 .
 _:b8225 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8225 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8224 .
 _:b8225 <http://purl.org/dc/terms/description> "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack." .
+_:b8225 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8224 .
 _:b8225 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8226 <http://www.w3.org/2000/01/rdf-schema#label> "Life Drain" .
 _:b8226 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.\nA humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time." .
@@ -24092,7 +24092,7 @@ _:b8314 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8314 <https://dnd5e.app/vocab/dnd5e#from> _:b8313 .
 _:b8315 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
 _:b8315 <http://purl.org/dc/terms/description> "The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack." .
-_:b8315 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8314 .
+_:b8315 <https://dnd5e.app/vocab/dnd5e#actionChoice> _:b8314 .
 _:b8315 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8316 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b8316 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage." .
@@ -24447,7 +24447,7 @@ _:b8404 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8404 <https://dnd5e.app/vocab/dnd5e#from> _:b8403 .
 _:b8405 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b8405 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it." .
-_:b8405 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b8404 .
+_:b8405 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b8404 .
 _:b8406 <https://dnd5e.app/vocab/dnd5e#value> 3 .
 _:b8406 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b8407 <https://dnd5e.app/vocab/dnd5e#value> 6 .
@@ -24554,7 +24554,7 @@ _:b8433 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8433 <https://dnd5e.app/vocab/dnd5e#from> _:b8432 .
 _:b8434 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b8434 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon." .
-_:b8434 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b8433 .
+_:b8434 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b8433 .
 _:b8435 <https://dnd5e.app/vocab/dnd5e#value> 3 .
 _:b8435 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b8436 <https://dnd5e.app/vocab/dnd5e#value> 7 .
@@ -24662,7 +24662,7 @@ _:b8463 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8463 <https://dnd5e.app/vocab/dnd5e#from> _:b8462 .
 _:b8464 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b8464 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save." .
-_:b8464 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b8463 .
+_:b8464 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b8463 .
 _:b8465 <https://dnd5e.app/vocab/dnd5e#value> 4 .
 _:b8465 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b8466 <https://dnd5e.app/vocab/dnd5e#value> 6 .
@@ -24770,7 +24770,7 @@ _:b8492 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8492 <https://dnd5e.app/vocab/dnd5e#from> _:b8491 .
 _:b8493 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b8493 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b8493 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b8492 .
+_:b8493 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b8492 .
 _:b8494 <https://dnd5e.app/vocab/dnd5e#value> 6 .
 _:b8494 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b8495 <https://dnd5e.app/vocab/dnd5e#value> 9 .
@@ -25062,7 +25062,7 @@ _:b8569 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8569 <https://dnd5e.app/vocab/dnd5e#from> _:b8568 .
 _:b8570 <http://www.w3.org/2000/01/rdf-schema#label> "Breath Weapons" .
 _:b8570 <http://purl.org/dc/terms/description> "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." .
-_:b8570 <https://dnd5e.app/vocab/dnd5e#monsterActionOptions> _:b8569 .
+_:b8570 <https://dnd5e.app/vocab/dnd5e#monsterActionChoice> _:b8569 .
 _:b8571 <https://dnd5e.app/vocab/dnd5e#value> 4 .
 _:b8571 <https://dnd5e.app/vocab/dnd5e#proficiency> </data/proficiencies.ttl#saving-throw-dex> .
 _:b8572 <https://dnd5e.app/vocab/dnd5e#value> 9 .

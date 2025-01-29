@@ -43,7 +43,7 @@ export function transformRace(
       .usingType(ProficiencyShapeType)
       .fromSubject(apiUrlToSubjectUrl(proficiency.url)),
   );
-  race.startingProficiencyOptions =
+  race.startingProficiencyChoice =
     data.starting_proficiency_options &&
     transformChoice(data.starting_proficiency_options, ldoDataset);
   race.languages = data.languages.map((language) =>

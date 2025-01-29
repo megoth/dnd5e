@@ -205,7 +205,7 @@ _:b1091 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1091 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b1091 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b1091 <https://dnd5e.app/vocab/dnd5e#from> _:b1090 .
-_:b1071 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b1091 .
+_:b1071 <https://dnd5e.app/vocab/dnd5e#expertiseChoice> _:b1091 .
 <#bard-ability-score-improvement-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#bard-ability-score-improvement-1> <http://www.w3.org/2000/01/rdf-schema#label> "Ability Score Improvement" .
 <#bard-ability-score-improvement-1> <http://purl.org/dc/terms/description> "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.\n" .
@@ -293,7 +293,7 @@ _:b1112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1112 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b1112 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b1112 <https://dnd5e.app/vocab/dnd5e#from> _:b1111 .
-_:b1092 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b1112 .
+_:b1092 <https://dnd5e.app/vocab/dnd5e#expertiseChoice> _:b1112 .
 <#magical-secrets-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#magical-secrets-1> <http://www.w3.org/2000/01/rdf-schema#label> "Magical Secrets" .
 <#magical-secrets-1> <http://purl.org/dc/terms/description> "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. \n\nThe chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. \n\nYou learn two additional spells from any class at 14th level and again at 18th level.\n" .
@@ -538,7 +538,7 @@ _:b1122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1122 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1122 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1122 <https://dnd5e.app/vocab/dnd5e#from> _:b1121 .
-_:b1113 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1122 .
+_:b1113 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1122 .
 <#circle-of-the-land-arctic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#circle-of-the-land-arctic> <http://www.w3.org/2000/01/rdf-schema#label> "Circle of the Land: Arctic" .
 <#circle-of-the-land-arctic> <http://purl.org/dc/terms/description> "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.\n" .
@@ -708,7 +708,7 @@ _:b1131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1131 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1131 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1131 <https://dnd5e.app/vocab/dnd5e#from> _:b1130 .
-_:b1123 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1131 .
+_:b1123 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1131 .
 <#fighter-fighting-style-archery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#fighter-fighting-style-archery> <http://www.w3.org/2000/01/rdf-schema#label> "Fighting Style: Archery" .
 <#fighter-fighting-style-archery> <http://purl.org/dc/terms/description> "You gain a +2 bonus to attack rolls you make with ranged weapons.\n" .
@@ -814,7 +814,7 @@ _:b1140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1140 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1140 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1140 <https://dnd5e.app/vocab/dnd5e#from> _:b1139 .
-_:b1132 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1140 .
+_:b1132 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1140 .
 <#extra-attack-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#extra-attack-2> <http://www.w3.org/2000/01/rdf-schema#label> "Extra Attack (2)" .
 <#extra-attack-2> <http://purl.org/dc/terms/description> "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.\n" .
@@ -1055,7 +1055,7 @@ _:b1147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1147 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1147 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1147 <https://dnd5e.app/vocab/dnd5e#from> _:b1146 .
-_:b1141 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1147 .
+_:b1141 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1147 .
 <#fighting-style-defense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#fighting-style-defense> <http://www.w3.org/2000/01/rdf-schema#label> "Fighting Style: Defense" .
 <#fighting-style-defense> <http://purl.org/dc/terms/description> "While you are wearing armor, you gain a +1 bonus to AC.\n" .
@@ -1219,7 +1219,7 @@ _:b1154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1154 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1154 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1154 <https://dnd5e.app/vocab/dnd5e#from> _:b1153 .
-_:b1148 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1154 .
+_:b1148 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1154 .
 <#ranger-fighting-style-archery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#ranger-fighting-style-archery> <http://www.w3.org/2000/01/rdf-schema#label> "Fighting Style: Archery" .
 <#ranger-fighting-style-archery> <http://purl.org/dc/terms/description> "You gain a +2 bonus to attack rolls you make with ranged weapons.\n" .
@@ -1268,7 +1268,7 @@ _:b1160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1160 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1160 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1160 <https://dnd5e.app/vocab/dnd5e#from> _:b1159 .
-_:b1155 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1160 .
+_:b1155 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1160 .
 <#hunters-prey-colossus-slayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#hunters-prey-colossus-slayer> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter's Prey: Colossus Slayer" .
 <#hunters-prey-colossus-slayer> <http://purl.org/dc/terms/description> "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.\n" .
@@ -1329,7 +1329,7 @@ _:b1166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1166 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1166 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1166 <https://dnd5e.app/vocab/dnd5e#from> _:b1165 .
-_:b1161 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1166 .
+_:b1161 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1166 .
 <#defensive-tactics-escape-the-horde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#defensive-tactics-escape-the-horde> <http://www.w3.org/2000/01/rdf-schema#label> "Defensive Tactics: Escape the Horde" .
 <#defensive-tactics-escape-the-horde> <http://purl.org/dc/terms/description> "Opportunity attacks against you are made with disadvantage.\n" .
@@ -1384,7 +1384,7 @@ _:b1171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1171 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1171 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1171 <https://dnd5e.app/vocab/dnd5e#from> _:b1170 .
-_:b1167 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1171 .
+_:b1167 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1171 .
 <#multiattack-volley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#multiattack-volley> <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack: Volley" .
 <#multiattack-volley> <http://purl.org/dc/terms/description> "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.\n" .
@@ -1428,7 +1428,7 @@ _:b1177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1177 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1177 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1177 <https://dnd5e.app/vocab/dnd5e#from> _:b1176 .
-_:b1172 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1177 .
+_:b1172 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1177 .
 <#superior-hunters-defense-evasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#superior-hunters-defense-evasion> <http://www.w3.org/2000/01/rdf-schema#label> "Superior Hunter's Defense: Evasion" .
 <#superior-hunters-defense-evasion> <http://purl.org/dc/terms/description> "When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.\n" .
@@ -1522,7 +1522,7 @@ _:b1201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1201 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1201 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b1201 <https://dnd5e.app/vocab/dnd5e#from> _:b1200 .
-_:b1178 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b1201 .
+_:b1178 <https://dnd5e.app/vocab/dnd5e#expertiseChoice> _:b1201 .
 <#sneak-attack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#sneak-attack> <http://www.w3.org/2000/01/rdf-schema#label> "Sneak Attack" .
 <#sneak-attack> <http://purl.org/dc/terms/description> "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.\n" .
@@ -1613,7 +1613,7 @@ _:b1223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1223 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b1223 <https://dnd5e.app/vocab/dnd5e#ofType> "proficiency" .
 _:b1223 <https://dnd5e.app/vocab/dnd5e#from> _:b1222 .
-_:b1202 <https://dnd5e.app/vocab/dnd5e#expertiseOptions> _:b1223 .
+_:b1202 <https://dnd5e.app/vocab/dnd5e#expertiseChoice> _:b1223 .
 <#rogue-evasion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#rogue-evasion> <http://www.w3.org/2000/01/rdf-schema#label> "Evasion" .
 <#rogue-evasion> <http://purl.org/dc/terms/description> "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.\n" .
@@ -1718,7 +1718,7 @@ _:b1236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1236 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1236 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1236 <https://dnd5e.app/vocab/dnd5e#from> _:b1235 .
-_:b1224 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1236 .
+_:b1224 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1236 .
 <#dragon-ancestor-black---acid-damage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#dragon-ancestor-black---acid-damage> <http://www.w3.org/2000/01/rdf-schema#label> "Dragon Ancestor: Black - Acid Damage" .
 <#dragon-ancestor-black---acid-damage> <http://purl.org/dc/terms/description> "At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.\n\nYou can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.\n" .
@@ -1828,7 +1828,7 @@ _:b1247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1247 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b1247 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1247 <https://dnd5e.app/vocab/dnd5e#from> _:b1246 .
-_:b1237 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1247 .
+_:b1237 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1247 .
 <#metamagic-careful-spell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#metamagic-careful-spell> <http://www.w3.org/2000/01/rdf-schema#label> "Metamagic: Careful Spell" .
 <#metamagic-careful-spell> <http://purl.org/dc/terms/description> "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.\n" .
@@ -1910,7 +1910,7 @@ _:b1258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1258 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1258 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1258 <https://dnd5e.app/vocab/dnd5e#from> _:b1257 .
-_:b1248 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1258 .
+_:b1248 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1258 .
 <#sorcerer-ability-score-improvement-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#sorcerer-ability-score-improvement-3> <http://www.w3.org/2000/01/rdf-schema#label> "Ability Score Improvement" .
 <#sorcerer-ability-score-improvement-3> <http://purl.org/dc/terms/description> "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.\n" .
@@ -1945,7 +1945,7 @@ _:b1269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1269 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1269 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1269 <https://dnd5e.app/vocab/dnd5e#from> _:b1268 .
-_:b1259 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1269 .
+_:b1259 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1269 .
 <#draconic-presence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#draconic-presence> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Presence" .
 <#draconic-presence> <http://purl.org/dc/terms/description> "Beginning at 18th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As an action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute or until you lose your concentration (as if you were casting a concentration spell), each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed (if you chose awe) or frightened (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours.\n" .
@@ -2293,7 +2293,7 @@ _:b1300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b1300 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b1300 <https://dnd5e.app/vocab/dnd5e#ofType> "feature" .
 _:b1300 <https://dnd5e.app/vocab/dnd5e#from> _:b1299 .
-_:b1295 <https://dnd5e.app/vocab/dnd5e#subfeatureOptions> _:b1300 .
+_:b1295 <https://dnd5e.app/vocab/dnd5e#subfeatureChoice> _:b1300 .
 <#pact-of-the-chain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Feature> .
 <#pact-of-the-chain> <http://www.w3.org/2000/01/rdf-schema#label> "Pact of the Chain" .
 <#pact-of-the-chain> <http://purl.org/dc/terms/description> "You learn the find familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.\n\nWhen you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.\n\nAdditionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.\n\nYour familiar is more cunning than a typical familiar. Its default form can be a reflection of your patron, with imps and quasits tied to the Fiend.\n" .

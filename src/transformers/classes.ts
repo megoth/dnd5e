@@ -69,7 +69,7 @@ function transformClass(
     (startingEquipment) =>
       transformStartingEquipment(startingEquipment, ldoDataset),
   );
-  adventureClass.startingEquipmentOptions = data.starting_equipment_options.map(
+  adventureClass.startingEquipmentChoices = data.starting_equipment_options.map(
     (option) => transformChoice(option, ldoDataset),
   );
   adventureClass.proficiencyChoices = data.proficiency_choices.map((choice) =>

@@ -36,11 +36,11 @@ function transformBackground(
     );
   }
   if (data.starting_equipment_options) {
-    background.startingEquipmentOptions = data.starting_equipment_options.map(
+    background.startingEquipmentChoices = data.starting_equipment_options.map(
       (choice) => transformChoice(choice, ldoDataset),
     );
   }
-  background.languageOptions =
+  background.languageChoice =
     data.language_options && transformChoice(data.language_options, ldoDataset);
   background.backgroundFeature =
     data.feature &&

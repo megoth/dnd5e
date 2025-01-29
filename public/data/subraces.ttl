@@ -15,7 +15,7 @@ _:b9154 <https://dnd5e.app/vocab/dnd5e#abilityScore> </data/ability-scores.ttl#w
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#shortswords> .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#shortbows> .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#longbows> .
-<#high-elf> <https://dnd5e.app/vocab/dnd5e#languageOptions> _:b9171 .
+<#high-elf> <https://dnd5e.app/vocab/dnd5e#languageChoice> _:b9171 .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#elf-weapon-training> .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#high-elf-cantrip> .
 <#high-elf> <https://dnd5e.app/vocab/dnd5e#traits> </data/traits.ttl#extra-language> .

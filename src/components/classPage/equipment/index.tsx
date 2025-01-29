@@ -18,7 +18,7 @@ export default function ClassPageEquipment({ classInfo }: Props) {
         <dd>
           {classInfo.startingEquipment.map(startingEquipmentName).join(", ")}
         </dd>
-        {classInfo.startingEquipmentOptions.map((option) => (
+        {classInfo.startingEquipmentChoices.map((option) => (
           <ChoiceDataListItem key={option.description} choice={option} />
         ))}
       </dl>

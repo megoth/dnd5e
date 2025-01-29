@@ -372,14 +372,14 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate:
-                "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+                "https://dnd5e.app/vocab/dnd5e#startingEquipmentChoices",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#languageOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languageChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -718,7 +718,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate:
-                "https://dnd5e.app/vocab/dnd5e#startingEquipmentOptions",
+                "https://dnd5e.app/vocab/dnd5e#startingEquipmentChoices",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: -1,
@@ -1815,7 +1815,7 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#expertiseOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#expertiseChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -1829,7 +1829,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#subfeatureOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#subfeatureChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -2637,7 +2637,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#actionOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#actionChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -2653,7 +2653,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#monsterActionOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#monsterActionChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -3275,8 +3275,10 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#prerequisiteOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#prerequisiteChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
+              min: 0,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -3670,7 +3672,7 @@ export const dnd5eSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate:
-                "https://dnd5e.app/vocab/dnd5e#startingProficiencyOptions",
+                "https://dnd5e.app/vocab/dnd5e#startingProficiencyChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -4466,7 +4468,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#languageOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languageChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -4553,7 +4555,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#languageOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#languageChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
@@ -4586,14 +4588,14 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#spellOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#spellChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#subtraitOptions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#subtraitChoice",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#Choice",
               min: 0,
               max: 1,

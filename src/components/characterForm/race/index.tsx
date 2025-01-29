@@ -44,7 +44,7 @@ export default function CharacterFormRace({ register, race, setRace }: Props) {
           </option>
         ))}
       </select>
-      <CharacterFormChoice choice={race?.startingProficiencyOptions} />
+      <CharacterFormChoice choice={race?.startingProficiencyChoice} />
     </>
   );
 }

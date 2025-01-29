@@ -41,14 +41,14 @@ export default function BackgroundInfo({ background, isLoading }: Props) {
           <dd>
             {background.startingEquipment.map(startingEquipmentName).join(", ")}
           </dd>
-          {background.startingEquipmentOptions.map((option) => (
+          {background.startingEquipmentChoices.map((choice) => (
             <ChoiceDataListItem
-              key={`${option.ofType}-${option.description}`}
-              choice={option}
+              key={`${choice.ofType}-${choice.description}`}
+              choice={choice}
             />
           ))}
-          {background.languageOptions && (
-            <ChoiceDataListItem choice={background.languageOptions} />
+          {background.languageChoice && (
+            <ChoiceDataListItem choice={background.languageChoice} />
           )}
           {background.personalityTraits && (
             <ChoiceDataListItem

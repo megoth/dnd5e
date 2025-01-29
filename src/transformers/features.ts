@@ -33,13 +33,13 @@ function transformSpecificFeature(
     .usingType(FeatureSpecificShapeType)
     .fromJson({});
   if (data.subfeature_options) {
-    featureSpecific.subfeatureOptions = transformChoice(
+    featureSpecific.subfeatureChoice = transformChoice(
       data.subfeature_options,
       ldoDataset,
     );
   }
   if (data.expertise_options) {
-    featureSpecific.expertiseOptions = transformChoice(
+    featureSpecific.expertiseChoice = transformChoice(
       data.expertise_options,
       ldoDataset,
     );

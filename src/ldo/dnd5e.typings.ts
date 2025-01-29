@@ -112,8 +112,8 @@ export interface Background {
   label: string;
   startingProficiencies?: Proficiency[];
   startingEquipment?: StartingEquipment[];
-  startingEquipmentOptions?: Choice[];
-  languageOptions?: Choice;
+  startingEquipmentChoices?: Choice[];
+  languageChoice?: Choice;
   backgroundFeature?: BackgroundFeature;
   personalityTraits?: Choice;
   ideals?: Choice;
@@ -208,7 +208,7 @@ export interface Class {
   proficiencyChoices?: Choice[];
   savingThrows?: AbilityScore[];
   startingEquipment?: StartingEquipment[];
-  startingEquipmentOptions?: Choice[];
+  startingEquipmentChoices?: Choice[];
   classSpellcasting: ClassSpellcasting;
   spells?: Spell[];
   subclasses?: Subclass[];
@@ -483,9 +483,9 @@ export interface FeaturePrerequisite {
 export interface FeatureSpecific {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  expertiseOptions?: Choice;
+  expertiseChoice?: Choice;
   invocations?: Feature[];
-  subfeatureOptions?: Choice;
+  subfeatureChoice?: Choice;
 }
 
 /**
@@ -663,9 +663,9 @@ export interface MonsterAction {
   "@context"?: ContextDefinition;
   label?: string;
   description?: string;
-  actionOptions?: Choice;
+  actionChoice?: Choice;
   monsterMultiAttackActions?: MonsterMultiAttackAction[];
-  monsterActionOptions?: Choice;
+  monsterActionChoice?: Choice;
   multiattackType?: string;
   attackBonus?: number;
   difficultyClass?: DifficultyClass;
@@ -815,7 +815,7 @@ export interface Multiclassing {
   "@id"?: string;
   "@context"?: ContextDefinition;
   prerequisites?: Prerequisite[];
-  prerequisiteOptions: Choice;
+  prerequisiteChoice?: Choice;
   proficiencies?: Proficiency[];
   proficiencyChoices?: Choice[];
 }
@@ -911,7 +911,7 @@ export interface Race {
   size?: string;
   sizeDescription?: string;
   startingProficiencies?: Proficiency[];
-  startingProficiencyOptions?: Choice;
+  startingProficiencyChoice?: Choice;
   languages?: Language[];
   languageDescription?: string;
   traits?: Trait[];
@@ -1128,7 +1128,7 @@ export interface Subrace {
   abilityBonuses?: AbilityBonus[];
   startingProficiencies?: Proficiency[];
   languages?: Language[];
-  languageOptions?: Choice;
+  languageChoice?: Choice;
   traits?: Trait[];
   illustration?: Illustration;
 }
@@ -1148,7 +1148,7 @@ export interface Trait {
   subraces?: Subrace[];
   proficiencies?: Proficiency[];
   proficiencyChoices?: Choice;
-  languageOptions?: Choice;
+  languageChoice?: Choice;
   traitSpecific?: TraitSpecific;
 }
 
@@ -1159,8 +1159,8 @@ export interface TraitSpecific {
   "@id"?: string;
   "@context"?: ContextDefinition;
   damageType?: DamageType;
-  spellOptions?: Choice;
-  subtraitOptions?: Choice;
+  spellChoice?: Choice;
+  subtraitChoice?: Choice;
   breathWeapon?: TraitSpecificBreathWeapon;
 }
 

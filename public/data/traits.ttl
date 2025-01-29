@@ -101,12 +101,12 @@ _:b9194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b9194 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b9194 <https://dnd5e.app/vocab/dnd5e#ofType> "spell" .
 _:b9194 <https://dnd5e.app/vocab/dnd5e#from> _:b9193 .
-_:b9195 <https://dnd5e.app/vocab/dnd5e#spellOptions> _:b9194 .
+_:b9195 <https://dnd5e.app/vocab/dnd5e#spellChoice> _:b9194 .
 <#extra-language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#extra-language> <http://www.w3.org/2000/01/rdf-schema#label> "Extra Language" .
 <#extra-language> <http://purl.org/dc/terms/description> "You can speak, read, and write one extra language of your choice.\n" .
 <#extra-language> <https://dnd5e.app/vocab/dnd5e#subraces> </data/subraces.ttl#high-elf> .
-<#extra-language> <https://dnd5e.app/vocab/dnd5e#languageOptions> _:b9211 .
+<#extra-language> <https://dnd5e.app/vocab/dnd5e#languageChoice> _:b9211 .
 _:b9196 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#dwarvish> .
 _:b9197 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#giant> .
 _:b9198 <https://dnd5e.app/vocab/dnd5e#language> </data/languages.ttl#gnomish> .
@@ -174,7 +174,7 @@ _:b9223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/voc
 _:b9223 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b9223 <https://dnd5e.app/vocab/dnd5e#ofType> "trait" .
 _:b9223 <https://dnd5e.app/vocab/dnd5e#from> _:b9222 .
-_:b9224 <https://dnd5e.app/vocab/dnd5e#subtraitOptions> _:b9223 .
+_:b9224 <https://dnd5e.app/vocab/dnd5e#subtraitChoice> _:b9223 .
 <#draconic-ancestry-black> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Trait> .
 <#draconic-ancestry-black> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic Ancestry (Black)" .
 <#draconic-ancestry-black> <http://purl.org/dc/terms/description> "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.\n" .

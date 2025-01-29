@@ -48,7 +48,7 @@ function transformSubrace(
       .usingType(LanguageShapeType)
       .fromSubject(apiUrlToSubjectUrl(language.url)),
   );
-  subrace.languageOptions =
+  subrace.languageChoice =
     data.language_options && transformChoice(data.language_options, ldoDataset);
   subrace.traits = data.racial_traits.map((trait) =>
     ldoDataset

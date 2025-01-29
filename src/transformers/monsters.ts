@@ -58,7 +58,7 @@ function transformMonsterAction(
   return ldoDataset.usingType(MonsterActionShapeType).fromJson({
     label: data.name,
     description: data.desc,
-    actionOptions:
+    actionChoice:
       data.action_options && transformChoice(data.action_options, ldoDataset),
     monsterMultiAttackActions:
       data.actions &&
@@ -69,7 +69,7 @@ function transformMonsterAction(
           ofType: action.type,
         }),
       ),
-    monsterActionOptions:
+    monsterActionChoice:
       data.options && transformChoice(data.options, ldoDataset),
     multiattackType: data.multiattack_type,
     attackBonus: data.attack_bonus,

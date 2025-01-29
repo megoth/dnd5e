@@ -231,8 +231,8 @@ export function backgroundResourceUrls(
     ...(background.illustration
       ? [resourceUrl(background.illustration["@id"])]
       : []),
-    ...(background.languageOptions
-      ? choiceResourceUrls(background.languageOptions, dataset)
+    ...(background.languageChoice
+      ? choiceResourceUrls(background.languageChoice, dataset)
       : []),
     ...(background.personalityTraits
       ? choiceResourceUrls(background.personalityTraits, dataset)
@@ -240,8 +240,8 @@ export function backgroundResourceUrls(
     ...(background.startingEquipment || []).map(
       (startingEquipment) => startingEquipment.equipment["@id"],
     ),
-    ...(background.startingEquipmentOptions || []).flatMap((option) =>
-      choiceResourceUrls(option, dataset),
+    ...(background.startingEquipmentChoices || []).flatMap((choice) =>
+      choiceResourceUrls(choice, dataset),
     ),
     ...(background.startingProficiencies || []).map((proficiency) =>
       resourceUrl(proficiency["@id"]),
@@ -269,7 +269,7 @@ export function classResourceUrls(
     ...(classInfo.startingEquipment || []).map((startingEquipment) =>
       resourceUrl(startingEquipment.equipment["@id"]),
     ),
-    ...(classInfo.startingEquipmentOptions || []).flatMap((option) =>
+    ...(classInfo.startingEquipmentChoices || []).flatMap((option) =>
       choiceResourceUrls(option, dataset),
     ),
     ...(classInfo.levels || []).map((level) => resourceUrl(level["@id"])),
@@ -279,11 +279,8 @@ export function classResourceUrls(
     ...(classInfo.multiclassing?.prerequisites.map((prerequisite) =>
       resourceUrl(prerequisite.abilityScore["@id"]),
     ) || []),
-    ...(classInfo.multiclassing?.prerequisiteOptions
-      ? choiceResourceUrls(
-          classInfo.multiclassing?.prerequisiteOptions,
-          dataset,
-        )
+    ...(classInfo.multiclassing?.prerequisiteChoice
+      ? choiceResourceUrls(classInfo.multiclassing?.prerequisiteChoice, dataset)
       : []),
     ...classInfo.subclasses.map((subclass) => resourceUrl(subclass["@id"])),
     ...(classInfo.illustration

@@ -112,7 +112,7 @@ export function transformTrait(
   trait.proficiencyChoices =
     data.proficiency_choices &&
     transformChoice(data.proficiency_choices, ldoDataset);
-  trait.languageOptions =
+  trait.languageChoice =
     data.language_options && transformChoice(data.language_options, ldoDataset);
   trait.traitSpecific =
     data.trait_specific &&
@@ -125,13 +125,13 @@ export function transformTrait(
           ),
       }),
       ...(data.trait_specific["spell_options"] && {
-        spellOptions: transformChoice(
+        spellChoice: transformChoice(
           data.trait_specific["spell_options"],
           ldoDataset,
         ),
       }),
       ...(data.trait_specific["subtrait_options"] && {
-        subtraitOptions: transformChoice(
+        subtraitChoice: transformChoice(
           data.trait_specific["subtrait_options"],
           ldoDataset,
         ),

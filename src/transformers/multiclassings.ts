@@ -25,7 +25,7 @@ export default function transformMulticlassing(
       }),
     ),
     ...(data.prerequisite_options && {
-      prerequisiteOptions: transformChoice(
+      prerequisiteChoice: transformChoice(
         data.prerequisite_options,
         ldoDataset,
       ),

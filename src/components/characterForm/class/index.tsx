@@ -56,7 +56,7 @@ export default function CharacterCreatePageClass({ register }: Props) {
           choice={choice}
         />
       ))}
-      {classInfo?.startingEquipmentOptions.map((choice, index) => (
+      {classInfo?.startingEquipmentChoices.map((choice, index) => (
         <CharacterFormChoice
           key={`startingEquipmentChoice-${index}`}
           choice={choice}
