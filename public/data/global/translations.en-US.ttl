@@ -70,6 +70,7 @@
 :deleteCharacter skos:definition "Delete Character"@en-US .
 :deleteCharacterConfirmation skos:definition
         "Are you sure you want to delete {$characterName}? This action cannot be undone."@en-US .
+:deleteLocalData skos:definition "Delete local data"@en-US .
 :deleteStorage skos:definition "Delete storage"@en-US .
 :descriptionOf skos:definition "Description of {$type}"@en-US .
 :dex skos:definition "dex"@en-US .
@@ -110,6 +111,7 @@
 :level skos:definition "Level"@en-US .
 :locale-en-US skos:definition "English (US)"@en-US .
 :locale-nb-NO skos:definition "Norwegian"@en-US .
+:localStorage skos:definition "Local Storage"@en-US .
 :location skos:definition "Location"@en-US .
 :loggedIn skos:definition "Logged in as {$name}"@en-US .
 :LoggedInAlready skos:definition "You are already logged in as {$name}"@en-US .
@@ -190,6 +192,13 @@
 :setAsDefaultStorage skos:definition "Set as default storage"@en-US .
 :setAsDefaultStorageDescription skos:definition "This app requires a default storage to function."@en-US .
 :settings skos:definition "Settings"@en-US .
+:settingsDarkModeDescription skos:definition
+        """The app supports dark mode. By default it will follow the browser's preference, but you can set it
+        specifically here if you want."""@en-US .
+:settingsLanguagesDescription skos:definition
+        """This app can support multiple languages, but only has two out of the box: English and Norwegian. If you're
+        interested in helping with translations, let me know."""@en-US .
+:settingsLocalStorageDescription skos:definition "If you want to delete all local data, click the button below."@en-US .
 :signupGuidance skos:definition "Not sure which to choose?"@en-US .
 :signupPitch skos:definition
         """Since this is a Solid app we don't require you to create an account specifically for this service. Instead we

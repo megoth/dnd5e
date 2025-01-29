@@ -70,6 +70,7 @@
 :deleteCharacter skos:definition "Slett karakter"@nb-NO .
 :deleteCharacterConfirmation skos:definition
         "Er du sikker på at du vil slette {$characterName}? Denne handlingen kan ikke gjøres om."@nb-NO .
+:deleteLocalData skos:definition "Slett lokal data"@nb-NO .
 :deleteStorage skos:definition "Slett lagringsplass"@nb-NO .
 :descriptionOf skos:definition "Beskrivelse av {$type}"@nb-NO .
 :dex skos:definition "smidighet"@nb-NO .
@@ -110,6 +111,7 @@
 :loading skos:definition "Laster inn..."@nb-NO .
 :locale-en-US skos:definition "Engelsk"@nb-NO .
 :locale-nb-NO skos:definition "Norsk"@nb-NO .
+:localStorage skos:definition "Lokal lagringsplass"@nb-NO .
 :location skos:definition "Lokasjon"@nb-NO .
 :loggedIn skos:definition "Logget inn som {$name}"@nb-NO .
 :LoggedInAlready skos:definition "Du er allerede logget inn som {$name}"@nb-NO .
@@ -187,6 +189,13 @@
 :setAsDefaultStorageDescription skos:definition "Denne appen krever en standard lagringsplass for å fungere."@nb-NO .
 :serviceLogo skos:definition "Logo for tjenesten"@nb-NO .
 :settings skos:definition "Innstillinger"@nb-NO .
+:settingsDarkModeDescription skos:definition
+        """Denne appen har dark mode støtte. I utgangspunktet følger den det nettleseren har satt, men du kan overstyre
+        det her om du ønsker."""@nb-NO .
+:settingsLanguagesDescription skos:definition
+        """Denne appen kan støtte flere språk, men har bare to tilgjengelige per nå: englisk og norsk. Om du er
+        interessert i å hjelpe til med oversettelser, gi meg beskjed."""@nb-NO .
+:settingsLocalStorageDescription skos:definition "Om du ønsker å slette all lokal data, trykk på knappen under."@nb-NO .
 :signupGuidance skos:definition "Usikker på hva du skal velge?"@nb-NO .
 :signupPitch skos:definition
         """Siden dette er en Solid app så trenger du ikke å lage en egen konto. Istedenfor trenger du å ha en Solid
