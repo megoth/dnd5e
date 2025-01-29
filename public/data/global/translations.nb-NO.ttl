@@ -221,7 +221,8 @@
 :startingProficiencies skos:definition "Kunnskap du starter med"@nb-NO .
 :startingSpells skos:definition "Trylleformler du starter med"@nb-NO .
 :stealth skos:definition "Sniking"@nb-NO .
-:storageRecommended skos:definition "Lagringsplass på nett med Solid Pods er anbefalt for mer funksjonalitet."@nb-NO .
+:storageRecommended skos:definition
+        "Lagringsplass på nett med Solid Pods er anbefalt for mer funksjonalitet. [Logg inn](/login) for å sette det opp."@nb-NO .
 :storages skos:definition "Lagringsplass"@nb-NO .
 :strength skos:definition "Styrke"@nb-NO .
 :subclass skos:definition "Underklasse"@nb-NO .

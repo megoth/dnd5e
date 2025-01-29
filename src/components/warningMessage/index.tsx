@@ -4,6 +4,9 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 import Translation from "../translation";
 import { bem } from "../../utils/bem";
 import Content from "../content";
+import Markdown from "react-markdown";
+import { useLocalization } from "@fluent/react";
+import { transformMarkdownLink } from "../../utils/markdown";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
@@ -17,6 +20,7 @@ export default function WarningMessage({
   id,
   ...props
 }: Props) {
+  const { l10n } = useLocalization();
   const [hideNotification, setHideNotification] = useLocalStorage(
     `notification-${id}`,
   );
@@ -24,7 +28,15 @@ export default function WarningMessage({
     !hideNotification && (
       <div className={clsx("warning", className)} id={id} {...props}>
         <Content className="flex-grow">
-          {children || <Translation id={id} />}
+          {children || (
+            <Markdown
+              components={{
+                a: transformMarkdownLink,
+              }}
+            >
+              {l10n.getString(id)}
+            </Markdown>
+          )}
         </Content>
         {id && (
           <button

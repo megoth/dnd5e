@@ -9,17 +9,15 @@ import useStorage from "../../hooks/useStorage";
 import { NavLink } from "react-router-dom";
 import Loading from "../loading";
 import Icon from "../icon";
-import Unauthenticated from "../unauthenticated";
-import { useLocalization } from "@fluent/react";
 import { Storage } from "../../ldo/dnd5e.typings";
 
 export default function StoragesPage() {
-  const { l10n } = useLocalization();
   const { session } = useSolidAuth();
   const { defaultStorage, storages, isLoading } = useStorage();
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
+      {!isLoading && !storages && <WarningMessage id="storageRecommended" />}
       <Breadcrumbs
         crumbs={[
           { href: "/you", translationId: "yourStuff" },
@@ -74,21 +72,6 @@ export default function StoragesPage() {
           </table>
         )}
       </Content>
-      {!isLoading && !storages && (
-        <>
-          <Content>
-            <p>
-              <Translation id="storageRecommended" />
-            </p>
-          </Content>
-          {!session.isLoggedIn && (
-            <Unauthenticated
-              title={l10n.getString("loginPageTitle")}
-              className="box max-w-72"
-            />
-          )}
-        </>
-      )}
     </Layout>
   );
 }
