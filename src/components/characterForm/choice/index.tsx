@@ -12,7 +12,7 @@ export default function CharacterFormChoice({ choice }: Props) {
 
   return (
     !isLoading &&
-    choice?.from?.references && (
+    choice?.from?.referenceOptions && (
       <CharacterFormChoiceReferences options={choice} />
     )
   );

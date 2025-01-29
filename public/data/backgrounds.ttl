@@ -35,14 +35,14 @@ _:b12 <https://dnd5e.app/vocab/dnd5e#string> "I quote (or misquote) sacred texts
 _:b13 <https://dnd5e.app/vocab/dnd5e#string> "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b14 <https://dnd5e.app/vocab/dnd5e#string> "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b15 <https://dnd5e.app/vocab/dnd5e#string> "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."^^<http://www.w3.org/2001/XMLSchema#strsing> .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b8 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b9 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b10 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b11 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b12 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b13 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b14 .
-_:b16 <https://dnd5e.app/vocab/dnd5e#strings> _:b15 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b8 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b9 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b10 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b11 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b12 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b13 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b14 .
+_:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b15 .
 _:b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b17 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
 _:b17 <https://dnd5e.app/vocab/dnd5e#ofType> "personality_traits" .
@@ -77,12 +77,12 @@ _:b23 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#chaotic-n
 _:b23 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#chaotic-evil> .
 _:b23 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#neutral> .
 _:b23 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#neutral-evil> .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b18 .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b19 .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b20 .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b21 .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b22 .
-_:b24 <https://dnd5e.app/vocab/dnd5e#ideals> _:b23 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b18 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b19 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b20 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b21 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b22 .
+_:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b23 .
 _:b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b25 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b25 <https://dnd5e.app/vocab/dnd5e#ofType> "ideals" .
@@ -93,12 +93,12 @@ _:b28 <https://dnd5e.app/vocab/dnd5e#string> "I owe my life to the priest who to
 _:b29 <https://dnd5e.app/vocab/dnd5e#string> "Everything I do is for the common people."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b30 <https://dnd5e.app/vocab/dnd5e#string> "I will do anything to protect the temple where I served."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b31 <https://dnd5e.app/vocab/dnd5e#string> "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."^^<http://www.w3.org/2001/XMLSchema#strsing> .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b26 .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b27 .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b28 .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b29 .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b30 .
-_:b32 <https://dnd5e.app/vocab/dnd5e#strings> _:b31 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b26 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b27 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b28 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b29 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b30 .
+_:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b31 .
 _:b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b33 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b33 <https://dnd5e.app/vocab/dnd5e#ofType> "bonds" .
@@ -109,12 +109,12 @@ _:b36 <https://dnd5e.app/vocab/dnd5e#string> "My piety sometimes leads me to bli
 _:b37 <https://dnd5e.app/vocab/dnd5e#string> "I am inflexible in my thinking."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b38 <https://dnd5e.app/vocab/dnd5e#string> "I am suspicious of strangers and expect the worst of them."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b39 <https://dnd5e.app/vocab/dnd5e#string> "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."^^<http://www.w3.org/2001/XMLSchema#strsing> .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b34 .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b35 .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b36 .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b37 .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b38 .
-_:b40 <https://dnd5e.app/vocab/dnd5e#strings> _:b39 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b34 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b35 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b36 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b37 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b38 .
+_:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b39 .
 _:b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b41 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b41 <https://dnd5e.app/vocab/dnd5e#ofType> "flaws" .

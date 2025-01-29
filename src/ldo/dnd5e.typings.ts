@@ -826,10 +826,10 @@ export interface Multiclassing {
 export interface MultipleOption {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  actions?: ActionOption[];
-  choices?: ChoiceOption[];
+  actionOptions?: ActionOption[];
+  choiceOptions?: ChoiceOption[];
   equipmentOptions?: EquipmentOption[];
-  references?: ReferenceOption[];
+  referenceOptions?: ReferenceOption[];
 }
 
 /**
@@ -846,19 +846,19 @@ export interface OptionAction {
 export interface OptionSet {
   "@id"?: string;
   "@context"?: ContextDefinition;
-  abilityScores?: AbilityScoreOption[];
-  actions?: ActionOption[];
-  bonuses?: BonusOption[];
-  breaths?: BreathOption[];
-  choices?: ChoiceOption[];
+  abilityScoreOptions?: AbilityScoreOption[];
+  actionOptions?: ActionOption[];
+  bonusOptions?: BonusOption[];
+  breathOptions?: BreathOption[];
+  choiceOptions?: ChoiceOption[];
   damageOptions?: DamageOption[];
   equipmentCategory?: EquipmentCategory;
   equipmentOptions?: EquipmentOption[];
-  ideals?: IdealOption[];
-  multiples?: MultipleOption[];
+  idealOptions?: IdealOption[];
+  multipleOptions?: MultipleOption[];
   ofType?: string;
-  references?: ReferenceOption[];
-  strings?: StringOption[];
+  referenceOptions?: ReferenceOption[];
+  stringOptions?: StringOption[];
 }
 
 /**

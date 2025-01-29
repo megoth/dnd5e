@@ -56,6 +56,15 @@ export default function BackgroundInfo({ background, isLoading }: Props) {
               asList={true}
             />
           )}
+          {background.ideals && (
+            <ChoiceDataListItem choice={background.ideals} asList={true} />
+          )}
+          {background.bonds && (
+            <ChoiceDataListItem choice={background.bonds} asList={true} />
+          )}
+          {background.flaws && (
+            <ChoiceDataListItem choice={background.flaws} asList={true} />
+          )}
         </dl>
       )}
     </Content>

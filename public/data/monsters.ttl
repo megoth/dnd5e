@@ -530,8 +530,8 @@ _:b2338 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2338 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2339 <http://www.w3.org/2000/01/rdf-schema#label> "Sleep Breath" .
 _:b2339 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2338 .
-_:b2340 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2337 .
-_:b2340 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2339 .
+_:b2340 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2337 .
+_:b2340 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2339 .
 _:b2341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2341 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2341 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -673,8 +673,8 @@ _:b2378 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b2378 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2379 <http://www.w3.org/2000/01/rdf-schema#label> "Repulsion Breath" .
 _:b2379 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2378 .
-_:b2380 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2377 .
-_:b2380 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2379 .
+_:b2380 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2377 .
+_:b2380 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2379 .
 _:b2381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2381 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2381 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -815,8 +815,8 @@ _:b2418 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2418 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2419 <http://www.w3.org/2000/01/rdf-schema#label> "Slowing Breath" .
 _:b2419 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2418 .
-_:b2420 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2417 .
-_:b2420 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2419 .
+_:b2420 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2417 .
+_:b2420 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2419 .
 _:b2421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2421 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2421 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -957,8 +957,8 @@ _:b2457 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b2457 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2458 <http://www.w3.org/2000/01/rdf-schema#label> "Weakening Breath" .
 _:b2458 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2457 .
-_:b2459 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2456 .
-_:b2459 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2458 .
+_:b2459 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2456 .
+_:b2459 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2458 .
 _:b2460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2460 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2460 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -1357,8 +1357,8 @@ _:b2566 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2566 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2567 <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzing Breath" .
 _:b2567 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2566 .
-_:b2568 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2565 .
-_:b2568 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2567 .
+_:b2568 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2565 .
+_:b2568 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2567 .
 _:b2569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2569 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2569 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -1938,8 +1938,8 @@ _:b2718 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2718 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2719 <http://www.w3.org/2000/01/rdf-schema#label> "Sleep Breath" .
 _:b2719 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2718 .
-_:b2720 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2717 .
-_:b2720 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2719 .
+_:b2720 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2717 .
+_:b2720 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2719 .
 _:b2721 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2721 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2721 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -2084,8 +2084,8 @@ _:b2759 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b2759 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2760 <http://www.w3.org/2000/01/rdf-schema#label> "Repulsion Breath" .
 _:b2760 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2759 .
-_:b2761 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2758 .
-_:b2761 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2760 .
+_:b2761 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2758 .
+_:b2761 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2760 .
 _:b2762 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2762 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2762 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -2229,8 +2229,8 @@ _:b2800 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2800 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2801 <http://www.w3.org/2000/01/rdf-schema#label> "Slowing Breath" .
 _:b2801 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2800 .
-_:b2802 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2799 .
-_:b2802 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2801 .
+_:b2802 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2799 .
+_:b2802 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2801 .
 _:b2803 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2803 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2803 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -2374,8 +2374,8 @@ _:b2840 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b2840 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2841 <http://www.w3.org/2000/01/rdf-schema#label> "Weakening Breath" .
 _:b2841 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2840 .
-_:b2842 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2839 .
-_:b2842 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2841 .
+_:b2842 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2839 .
+_:b2842 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2841 .
 _:b2843 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2843 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2843 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -2777,8 +2777,8 @@ _:b2950 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b2950 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b2951 <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzing Breath" .
 _:b2951 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b2950 .
-_:b2952 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2949 .
-_:b2952 <https://dnd5e.app/vocab/dnd5e#breaths> _:b2951 .
+_:b2952 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2949 .
+_:b2952 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b2951 .
 _:b2953 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b2953 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b2953 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -4088,14 +4088,14 @@ _:b3287 <https://dnd5e.app/vocab/dnd5e#value> 15 .
 _:b3287 <https://dnd5e.app/vocab/dnd5e#ofType> "armor" .
 _:b3287 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#studded-leather-armor> .
 _:b3288 <http://www.w3.org/2000/01/rdf-schema#label> "Dagger" .
-_:b3289 <https://dnd5e.app/vocab/dnd5e#actions> _:b3288 .
+_:b3289 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3288 .
 _:b3290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3290 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3290 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3290 <https://dnd5e.app/vocab/dnd5e#from> _:b3289 .
 _:b3291 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3291 <http://purl.org/dc/terms/description> "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers." .
 _:b3291 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3290 .
+_:b3291 <http://purl.org/dc/terms/description> "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers." .
 _:b3291 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3292 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b3292 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage." .
@@ -4173,14 +4173,14 @@ _:b3307 <https://dnd5e.app/vocab/dnd5e#value> 14 .
 _:b3308 <https://dnd5e.app/vocab/dnd5e#value> 15 .
 _:b3308 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b3309 <http://www.w3.org/2000/01/rdf-schema#label> "Hurl Flame" .
-_:b3310 <https://dnd5e.app/vocab/dnd5e#actions> _:b3309 .
+_:b3310 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3309 .
 _:b3311 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3311 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3311 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3311 <https://dnd5e.app/vocab/dnd5e#from> _:b3310 .
 _:b3312 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3312 <http://purl.org/dc/terms/description> "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice." .
 _:b3312 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3311 .
+_:b3312 <http://purl.org/dc/terms/description> "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice." .
 _:b3312 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3313 <http://www.w3.org/2000/01/rdf-schema#label> "Claw" .
 _:b3313 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage." .
@@ -5091,8 +5091,8 @@ _:b3543 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b3543 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b3544 <http://www.w3.org/2000/01/rdf-schema#label> "Sleep Breath" .
 _:b3544 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b3543 .
-_:b3545 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3542 .
-_:b3545 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3544 .
+_:b3545 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3542 .
+_:b3545 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3544 .
 _:b3546 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3546 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b3546 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -5179,8 +5179,8 @@ _:b3567 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b3567 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b3568 <http://www.w3.org/2000/01/rdf-schema#label> "Repulsion Breath" .
 _:b3568 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b3567 .
-_:b3569 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3566 .
-_:b3569 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3568 .
+_:b3569 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3566 .
+_:b3569 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3568 .
 _:b3570 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3570 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b3570 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -5522,14 +5522,14 @@ _:b3653 <https://dnd5e.app/vocab/dnd5e#value> 11 .
 _:b3654 <https://dnd5e.app/vocab/dnd5e#value> 12 .
 _:b3654 <https://dnd5e.app/vocab/dnd5e#ofType> "dex" .
 _:b3655 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b3656 <https://dnd5e.app/vocab/dnd5e#actions> _:b3655 .
+_:b3656 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3655 .
 _:b3657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3657 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3657 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3657 <https://dnd5e.app/vocab/dnd5e#from> _:b3656 .
 _:b3658 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3658 <http://purl.org/dc/terms/description> "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow." .
 _:b3658 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3657 .
+_:b3658 <http://purl.org/dc/terms/description> "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow." .
 _:b3658 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3659 <http://www.w3.org/2000/01/rdf-schema#label> "Pike" .
 _:b3659 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage." .
@@ -5746,14 +5746,14 @@ _:b3712 <https://dnd5e.app/vocab/dnd5e#value> 5 .
 _:b3713 <https://dnd5e.app/vocab/dnd5e#value> 16 .
 _:b3713 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b3714 <http://www.w3.org/2000/01/rdf-schema#label> "Pincer" .
-_:b3715 <https://dnd5e.app/vocab/dnd5e#actions> _:b3714 .
+_:b3715 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3714 .
 _:b3716 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3716 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b3716 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b3716 <https://dnd5e.app/vocab/dnd5e#from> _:b3715 .
 _:b3717 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b3717 <http://purl.org/dc/terms/description> "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once." .
 _:b3717 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b3716 .
+_:b3717 <http://purl.org/dc/terms/description> "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once." .
 _:b3717 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b3718 <http://www.w3.org/2000/01/rdf-schema#label> "Pincer" .
 _:b3718 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled." .
@@ -6263,8 +6263,8 @@ _:b3846 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b3846 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b3847 <http://www.w3.org/2000/01/rdf-schema#label> "Slowing Breath" .
 _:b3847 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b3846 .
-_:b3848 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3845 .
-_:b3848 <https://dnd5e.app/vocab/dnd5e#breaths> _:b3847 .
+_:b3848 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3845 .
+_:b3848 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b3847 .
 _:b3849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b3849 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b3849 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -7599,15 +7599,15 @@ _:b4191 <https://dnd5e.app/vocab/dnd5e#value> 19 .
 _:b4191 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b4192 <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
 _:b4193 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b4194 <https://dnd5e.app/vocab/dnd5e#actions> _:b4192 .
-_:b4194 <https://dnd5e.app/vocab/dnd5e#actions> _:b4193 .
+_:b4194 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4192 .
+_:b4194 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4193 .
 _:b4195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b4195 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4195 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4195 <https://dnd5e.app/vocab/dnd5e#from> _:b4194 .
 _:b4196 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4196 <http://purl.org/dc/terms/description> "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack." .
 _:b4196 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4195 .
+_:b4196 <http://purl.org/dc/terms/description> "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack." .
 _:b4196 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4197 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b4197 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage." .
@@ -8278,15 +8278,15 @@ _:b4365 <https://dnd5e.app/vocab/dnd5e#value> 17 .
 _:b4365 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b4366 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b4367 <http://www.w3.org/2000/01/rdf-schema#label> "Hurl Flame" .
-_:b4368 <https://dnd5e.app/vocab/dnd5e#actions> _:b4366 .
-_:b4368 <https://dnd5e.app/vocab/dnd5e#actions> _:b4367 .
+_:b4368 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4366 .
+_:b4368 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4367 .
 _:b4369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b4369 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4369 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4369 <https://dnd5e.app/vocab/dnd5e#from> _:b4368 .
 _:b4370 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4370 <http://purl.org/dc/terms/description> "The efreeti makes two scimitar attacks or uses its Hurl Flame twice." .
 _:b4370 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4369 .
+_:b4370 <http://purl.org/dc/terms/description> "The efreeti makes two scimitar attacks or uses its Hurl Flame twice." .
 _:b4370 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4371 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b4371 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage." .
@@ -8526,15 +8526,15 @@ _:b4429 <https://dnd5e.app/vocab/dnd5e#ofType> "armor" .
 _:b4429 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#plate-armor> .
 _:b4430 <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
 _:b4431 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b4432 <https://dnd5e.app/vocab/dnd5e#actions> _:b4430 .
-_:b4432 <https://dnd5e.app/vocab/dnd5e#actions> _:b4431 .
+_:b4432 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4430 .
+_:b4432 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4431 .
 _:b4433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b4433 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b4433 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b4433 <https://dnd5e.app/vocab/dnd5e#from> _:b4432 .
 _:b4434 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b4434 <http://purl.org/dc/terms/description> "The erinyes makes three attacks" .
 _:b4434 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b4433 .
+_:b4434 <http://purl.org/dc/terms/description> "The erinyes makes three attacks" .
 _:b4434 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b4435 <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
 _:b4435 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage." .
@@ -11255,16 +11255,16 @@ _:b5100 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#shield> .
 _:b5101 <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
 _:b5102 <http://www.w3.org/2000/01/rdf-schema#label> "Shield Bash" .
 _:b5103 <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
-_:b5104 <https://dnd5e.app/vocab/dnd5e#actions> _:b5101 .
-_:b5104 <https://dnd5e.app/vocab/dnd5e#actions> _:b5102 .
-_:b5104 <https://dnd5e.app/vocab/dnd5e#actions> _:b5103 .
+_:b5104 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5101 .
+_:b5104 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5102 .
+_:b5104 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5103 .
 _:b5105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b5105 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5105 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5105 <https://dnd5e.app/vocab/dnd5e#from> _:b5104 .
 _:b5106 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5106 <http://purl.org/dc/terms/description> "The gladiator makes three melee attacks or two ranged attacks." .
 _:b5106 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5105 .
+_:b5106 <http://purl.org/dc/terms/description> "The gladiator makes three melee attacks or two ranged attacks." .
 _:b5106 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5107 <http://www.w3.org/2000/01/rdf-schema#label> "Spear" .
 _:b5107 <http://purl.org/dc/terms/description> "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. and range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack." .
@@ -11509,8 +11509,8 @@ _:b5168 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b5168 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b5169 <http://www.w3.org/2000/01/rdf-schema#label> "Weakening Breath" .
 _:b5169 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b5168 .
-_:b5170 <https://dnd5e.app/vocab/dnd5e#breaths> _:b5167 .
-_:b5170 <https://dnd5e.app/vocab/dnd5e#breaths> _:b5169 .
+_:b5170 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b5167 .
+_:b5170 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b5169 .
 _:b5171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b5171 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b5171 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -13561,15 +13561,15 @@ _:b5677 <https://dnd5e.app/vocab/dnd5e#value> 20 .
 _:b5677 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b5678 <http://www.w3.org/2000/01/rdf-schema#label> "Slam" .
 _:b5679 <http://www.w3.org/2000/01/rdf-schema#label> "Sword" .
-_:b5680 <https://dnd5e.app/vocab/dnd5e#actions> _:b5678 .
-_:b5680 <https://dnd5e.app/vocab/dnd5e#actions> _:b5679 .
+_:b5680 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5678 .
+_:b5680 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5679 .
 _:b5681 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b5681 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5681 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5681 <https://dnd5e.app/vocab/dnd5e#from> _:b5680 .
 _:b5682 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5682 <http://purl.org/dc/terms/description> "The golem makes two melee attacks." .
 _:b5682 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5681 .
+_:b5682 <http://purl.org/dc/terms/description> "The golem makes two melee attacks." .
 _:b5682 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5683 <http://www.w3.org/2000/01/rdf-schema#label> "Slam" .
 _:b5683 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage." .
@@ -13879,15 +13879,15 @@ _:b5757 <https://dnd5e.app/vocab/dnd5e#value> 18 .
 _:b5757 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b5758 <http://www.w3.org/2000/01/rdf-schema#label> "Tentacle" .
 _:b5759 <http://www.w3.org/2000/01/rdf-schema#label> "Fling" .
-_:b5760 <https://dnd5e.app/vocab/dnd5e#actions> _:b5758 .
-_:b5760 <https://dnd5e.app/vocab/dnd5e#actions> _:b5759 .
+_:b5760 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5758 .
+_:b5760 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5759 .
 _:b5761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b5761 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b5761 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b5761 <https://dnd5e.app/vocab/dnd5e#from> _:b5760 .
 _:b5762 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b5762 <http://purl.org/dc/terms/description> "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling." .
 _:b5762 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b5761 .
+_:b5762 <http://purl.org/dc/terms/description> "The kraken makes three tentacle attacks, each of which it can replace with one use of Fling." .
 _:b5762 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b5763 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b5763 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 23 (3d8 + 10) piercing damage. If the target is a Large or smaller creature grappled by the kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the kraken, and it takes 42 (12d6) acid damage at the start of each of the kraken's turns. If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone." .
@@ -14926,14 +14926,14 @@ _:b6031 <https://dnd5e.app/vocab/dnd5e#value> 8 .
 _:b6032 <https://dnd5e.app/vocab/dnd5e#value> 14 .
 _:b6032 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b6033 <http://www.w3.org/2000/01/rdf-schema#label> "Tail Spike" .
-_:b6034 <https://dnd5e.app/vocab/dnd5e#actions> _:b6033 .
+_:b6034 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6033 .
 _:b6035 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b6035 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6035 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6035 <https://dnd5e.app/vocab/dnd5e#from> _:b6034 .
 _:b6036 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6036 <http://purl.org/dc/terms/description> "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes." .
 _:b6036 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6035 .
+_:b6036 <http://purl.org/dc/terms/description> "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes." .
 _:b6036 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6037 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b6037 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage." .
@@ -15134,14 +15134,14 @@ _:b6083 <https://dnd5e.app/vocab/dnd5e#value> 15 .
 _:b6084 <https://dnd5e.app/vocab/dnd5e#value> 15 .
 _:b6084 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b6085 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b6086 <https://dnd5e.app/vocab/dnd5e#actions> _:b6085 .
+_:b6086 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6085 .
 _:b6087 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b6087 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6087 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6087 <https://dnd5e.app/vocab/dnd5e#from> _:b6086 .
 _:b6088 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6088 <http://purl.org/dc/terms/description> "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow." .
 _:b6088 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6087 .
+_:b6088 <http://purl.org/dc/terms/description> "The medusa makes either three melee attacks--one with its snake hair and two with its shortsword--or two ranged attacks with its longbow." .
 _:b6088 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6089 <http://www.w3.org/2000/01/rdf-schema#label> "Snake Hair" .
 _:b6089 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) poison damage." .
@@ -16370,15 +16370,15 @@ _:b6391 <https://dnd5e.app/vocab/dnd5e#ofType> "armor" .
 _:b6391 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#chain-mail> .
 _:b6392 <http://www.w3.org/2000/01/rdf-schema#label> "Glaive" .
 _:b6393 <http://www.w3.org/2000/01/rdf-schema#label> "Claw" .
-_:b6394 <https://dnd5e.app/vocab/dnd5e#actions> _:b6392 .
-_:b6394 <https://dnd5e.app/vocab/dnd5e#actions> _:b6393 .
+_:b6394 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6392 .
+_:b6394 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6393 .
 _:b6395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b6395 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b6395 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b6395 <https://dnd5e.app/vocab/dnd5e#from> _:b6394 .
 _:b6396 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b6396 <http://purl.org/dc/terms/description> "The oni makes two attacks, either with its claws or its glaive." .
 _:b6396 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b6395 .
+_:b6396 <http://purl.org/dc/terms/description> "The oni makes two attacks, either with its claws or its glaive." .
 _:b6396 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b6397 <http://www.w3.org/2000/01/rdf-schema#label> "Claw (Oni Form Only)" .
 _:b6397 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage." .
@@ -18850,15 +18850,15 @@ _:b7026 <https://dnd5e.app/vocab/dnd5e#ofType> "armor" .
 _:b7026 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#leather-armor> .
 _:b7027 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b7028 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b7029 <https://dnd5e.app/vocab/dnd5e#actions> _:b7027 .
-_:b7029 <https://dnd5e.app/vocab/dnd5e#actions> _:b7028 .
+_:b7029 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7027 .
+_:b7029 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7028 .
 _:b7030 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b7030 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7030 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7030 <https://dnd5e.app/vocab/dnd5e#from> _:b7029 .
 _:b7031 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7031 <http://purl.org/dc/terms/description> "The scout makes two melee attacks or two ranged attacks." .
 _:b7031 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7030 .
+_:b7031 <http://purl.org/dc/terms/description> "The scout makes two melee attacks or two ranged attacks." .
 _:b7031 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7032 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b7032 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage." .
@@ -19292,8 +19292,8 @@ _:b7134 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b7134 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b7135 <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzing Breath" .
 _:b7135 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b7134 .
-_:b7136 <https://dnd5e.app/vocab/dnd5e#breaths> _:b7133 .
-_:b7136 <https://dnd5e.app/vocab/dnd5e#breaths> _:b7135 .
+_:b7136 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b7133 .
+_:b7136 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b7135 .
 _:b7137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b7137 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b7137 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -21726,14 +21726,14 @@ _:b7715 <https://dnd5e.app/vocab/dnd5e#value> 18 .
 _:b7716 <https://dnd5e.app/vocab/dnd5e#value> 16 .
 _:b7716 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b7717 <http://www.w3.org/2000/01/rdf-schema#label> "Unarmed Strike (Vampire Form Only)" .
-_:b7718 <https://dnd5e.app/vocab/dnd5e#actions> _:b7717 .
+_:b7718 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7717 .
 _:b7719 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b7719 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7719 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7719 <https://dnd5e.app/vocab/dnd5e#from> _:b7718 .
 _:b7720 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7720 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
 _:b7720 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7719 .
+_:b7720 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
 _:b7720 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7721 <http://www.w3.org/2000/01/rdf-schema#label> "Unarmed Strike" .
 _:b7721 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18)." .
@@ -22031,14 +22031,14 @@ _:b7800 <https://dnd5e.app/vocab/dnd5e#value> 12 .
 _:b7801 <https://dnd5e.app/vocab/dnd5e#value> 15 .
 _:b7801 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b7802 <http://www.w3.org/2000/01/rdf-schema#label> "Claws" .
-_:b7803 <https://dnd5e.app/vocab/dnd5e#actions> _:b7802 .
+_:b7803 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7802 .
 _:b7804 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b7804 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7804 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7804 <https://dnd5e.app/vocab/dnd5e#from> _:b7803 .
 _:b7805 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7805 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
 _:b7805 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7804 .
+_:b7805 <http://purl.org/dc/terms/description> "The vampire makes two attacks, only one of which can be a bite attack." .
 _:b7805 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7806 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b7806 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0." .
@@ -22723,15 +22723,15 @@ _:b7969 <https://dnd5e.app/vocab/dnd5e#value> 11 .
 _:b7969 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b7970 <http://www.w3.org/2000/01/rdf-schema#label> "Claw" .
 _:b7971 <http://www.w3.org/2000/01/rdf-schema#label> "Greataxe" .
-_:b7972 <https://dnd5e.app/vocab/dnd5e#actions> _:b7970 .
-_:b7972 <https://dnd5e.app/vocab/dnd5e#actions> _:b7971 .
+_:b7972 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7970 .
+_:b7972 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7971 .
 _:b7973 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b7973 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b7973 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b7973 <https://dnd5e.app/vocab/dnd5e#from> _:b7972 .
 _:b7974 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b7974 <http://purl.org/dc/terms/description> "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid." .
 _:b7974 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b7973 .
+_:b7974 <http://purl.org/dc/terms/description> "In bear form, the werebear makes two claw attacks. In humanoid form, it makes two greataxe attacks. In hybrid form, it can attack like a bear or a humanoid." .
 _:b7974 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b7975 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b7975 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with werebear lycanthropy." .
@@ -22925,14 +22925,14 @@ _:b8019 <https://dnd5e.app/vocab/dnd5e#value> 8 .
 _:b8020 <https://dnd5e.app/vocab/dnd5e#value> 11 .
 _:b8020 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b8021 <http://www.w3.org/2000/01/rdf-schema#label> "Maul" .
-_:b8022 <https://dnd5e.app/vocab/dnd5e#actions> _:b8021 .
+_:b8022 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8021 .
 _:b8023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8023 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8023 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8023 <https://dnd5e.app/vocab/dnd5e#from> _:b8022 .
 _:b8024 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8024 <http://purl.org/dc/terms/description> "The wereboar makes two attacks, only one of which can be with its tusks." .
 _:b8024 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8023 .
+_:b8024 <http://purl.org/dc/terms/description> "The wereboar makes two attacks, only one of which can be with its tusks." .
 _:b8024 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8025 <http://www.w3.org/2000/01/rdf-schema#label> "Maul" .
 _:b8025 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage." .
@@ -23002,15 +23002,15 @@ _:b8040 <https://dnd5e.app/vocab/dnd5e#value> 12 .
 _:b8040 <https://dnd5e.app/vocab/dnd5e#ofType> "dex" .
 _:b8041 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b8042 <http://www.w3.org/2000/01/rdf-schema#label> "Hand Crossbow" .
-_:b8043 <https://dnd5e.app/vocab/dnd5e#actions> _:b8041 .
-_:b8043 <https://dnd5e.app/vocab/dnd5e#actions> _:b8042 .
+_:b8043 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8041 .
+_:b8043 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8042 .
 _:b8044 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8044 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8044 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8044 <https://dnd5e.app/vocab/dnd5e#from> _:b8043 .
 _:b8045 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8045 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
 _:b8045 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8044 .
+_:b8045 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
 _:b8045 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8046 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b8046 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage." .
@@ -23077,15 +23077,15 @@ _:b8060 <https://dnd5e.app/vocab/dnd5e#value> 12 .
 _:b8060 <https://dnd5e.app/vocab/dnd5e#ofType> "natural" .
 _:b8061 <http://www.w3.org/2000/01/rdf-schema#label> "Shortsword" .
 _:b8062 <http://www.w3.org/2000/01/rdf-schema#label> "Hand Crossbow" .
-_:b8063 <https://dnd5e.app/vocab/dnd5e#actions> _:b8061 .
-_:b8063 <https://dnd5e.app/vocab/dnd5e#actions> _:b8062 .
+_:b8063 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8061 .
+_:b8063 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8062 .
 _:b8064 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8064 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8064 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8064 <https://dnd5e.app/vocab/dnd5e#from> _:b8063 .
 _:b8065 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8065 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
 _:b8065 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8064 .
+_:b8065 <http://purl.org/dc/terms/description> "The wererat makes two attacks, only one of which can be a bite." .
 _:b8065 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8066 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b8066 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy." .
@@ -23212,15 +23212,15 @@ _:b8095 <https://dnd5e.app/vocab/dnd5e#value> 12 .
 _:b8095 <https://dnd5e.app/vocab/dnd5e#ofType> "dex" .
 _:b8096 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b8097 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b8098 <https://dnd5e.app/vocab/dnd5e#actions> _:b8096 .
-_:b8098 <https://dnd5e.app/vocab/dnd5e#actions> _:b8097 .
+_:b8098 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8096 .
+_:b8098 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8097 .
 _:b8099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8099 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8099 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8099 <https://dnd5e.app/vocab/dnd5e#from> _:b8098 .
 _:b8100 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8100 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
 _:b8100 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8099 .
+_:b8100 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
 _:b8100 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8101 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b8101 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage." .
@@ -23291,16 +23291,16 @@ _:b8115 <https://dnd5e.app/vocab/dnd5e#ofType> "dex" .
 _:b8116 <http://www.w3.org/2000/01/rdf-schema#label> "Scimitar" .
 _:b8117 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
 _:b8118 <http://www.w3.org/2000/01/rdf-schema#label> "Claw" .
-_:b8119 <https://dnd5e.app/vocab/dnd5e#actions> _:b8116 .
-_:b8119 <https://dnd5e.app/vocab/dnd5e#actions> _:b8117 .
-_:b8119 <https://dnd5e.app/vocab/dnd5e#actions> _:b8118 .
+_:b8119 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8116 .
+_:b8119 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8117 .
+_:b8119 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8118 .
 _:b8120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8120 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8120 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8120 <https://dnd5e.app/vocab/dnd5e#from> _:b8119 .
 _:b8121 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8121 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
 _:b8121 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8120 .
+_:b8121 <http://purl.org/dc/terms/description> "In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks." .
 _:b8121 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8122 <http://www.w3.org/2000/01/rdf-schema#label> "Bite" .
 _:b8122 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with weretiger lycanthropy." .
@@ -23708,15 +23708,15 @@ _:b8220 <https://dnd5e.app/vocab/dnd5e#ofType> "armor" .
 _:b8220 <https://dnd5e.app/vocab/dnd5e#armorList> </data/equipment.ttl#studded-leather-armor> .
 _:b8221 <http://www.w3.org/2000/01/rdf-schema#label> "Longsword" .
 _:b8222 <http://www.w3.org/2000/01/rdf-schema#label> "Longbow" .
-_:b8223 <https://dnd5e.app/vocab/dnd5e#actions> _:b8221 .
-_:b8223 <https://dnd5e.app/vocab/dnd5e#actions> _:b8222 .
+_:b8223 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8221 .
+_:b8223 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8222 .
 _:b8224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8224 <https://dnd5e.app/vocab/dnd5e#ofType> "action" .
 _:b8224 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
 _:b8224 <https://dnd5e.app/vocab/dnd5e#from> _:b8223 .
 _:b8225 <http://www.w3.org/2000/01/rdf-schema#label> "Multiattack" .
-_:b8225 <http://purl.org/dc/terms/description> "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack." .
 _:b8225 <https://dnd5e.app/vocab/dnd5e#actionOptions> _:b8224 .
+_:b8225 <http://purl.org/dc/terms/description> "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack." .
 _:b8225 <https://dnd5e.app/vocab/dnd5e#multiattackType> "action_options" .
 _:b8226 <http://www.w3.org/2000/01/rdf-schema#label> "Life Drain" .
 _:b8226 <http://purl.org/dc/terms/description> "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.\nA humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time." .
@@ -24439,8 +24439,8 @@ _:b8401 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b8401 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b8402 <http://www.w3.org/2000/01/rdf-schema#label> "Sleep Breath" .
 _:b8402 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b8401 .
-_:b8403 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8400 .
-_:b8403 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8402 .
+_:b8403 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8400 .
+_:b8403 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8402 .
 _:b8404 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8404 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b8404 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -24546,8 +24546,8 @@ _:b8430 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b8430 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b8431 <http://www.w3.org/2000/01/rdf-schema#label> "Repulsion Breath" .
 _:b8431 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b8430 .
-_:b8432 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8429 .
-_:b8432 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8431 .
+_:b8432 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8429 .
+_:b8432 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8431 .
 _:b8433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8433 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b8433 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -24654,8 +24654,8 @@ _:b8460 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b8460 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b8461 <http://www.w3.org/2000/01/rdf-schema#label> "Slowing Breath" .
 _:b8461 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b8460 .
-_:b8462 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8459 .
-_:b8462 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8461 .
+_:b8462 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8459 .
+_:b8462 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8461 .
 _:b8463 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8463 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b8463 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -24762,8 +24762,8 @@ _:b8489 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#str> .
 _:b8489 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b8490 <http://www.w3.org/2000/01/rdf-schema#label> "Weakening Breath" .
 _:b8490 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b8489 .
-_:b8491 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8488 .
-_:b8491 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8490 .
+_:b8491 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8488 .
+_:b8491 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8490 .
 _:b8492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8492 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b8492 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
@@ -25054,8 +25054,8 @@ _:b8566 <https://dnd5e.app/vocab/dnd5e#dcType> </data/ability-scores.ttl#con> .
 _:b8566 <https://dnd5e.app/vocab/dnd5e#successType> "none" .
 _:b8567 <http://www.w3.org/2000/01/rdf-schema#label> "Paralyzing Breath" .
 _:b8567 <https://dnd5e.app/vocab/dnd5e#difficultyClass> _:b8566 .
-_:b8568 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8565 .
-_:b8568 <https://dnd5e.app/vocab/dnd5e#breaths> _:b8567 .
+_:b8568 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8565 .
+_:b8568 <https://dnd5e.app/vocab/dnd5e#breathOptions> _:b8567 .
 _:b8569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
 _:b8569 <https://dnd5e.app/vocab/dnd5e#ofType> "attack" .
 _:b8569 <https://dnd5e.app/vocab/dnd5e#choose> 1 .

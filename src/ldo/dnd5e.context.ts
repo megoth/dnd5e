@@ -288,23 +288,23 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#from",
     "@type": "@id",
   },
-  abilityScores: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScores",
+  abilityScoreOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#abilityScoreOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  actions: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#actions",
+  actionOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#actionOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  bonuses: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#bonuses",
+  bonusOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#bonusOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  breaths: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#breaths",
+  breathOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#breathOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -333,8 +333,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#dice",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
-  choices: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#choices",
+  choiceOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#choiceOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -471,8 +471,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#equipment",
     "@type": "@id",
   },
-  ideals: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
+  idealOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#idealOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -481,13 +481,13 @@ export const dnd5eContext: ContextDefinition = {
     "@type": "@id",
     "@container": "@set",
   },
-  multiples: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#multiples",
+  multipleOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#multipleOptions",
     "@type": "@id",
     "@container": "@set",
   },
-  references: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#references",
+  referenceOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#referenceOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -513,8 +513,8 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#proficiency",
     "@type": "@id",
   },
-  strings: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#strings",
+  stringOptions: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#stringOptions",
     "@type": "@id",
     "@container": "@set",
   },
@@ -904,6 +904,10 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#personalityTraits",
     "@type": "@id",
   },
+  ideals: {
+    "@id": "https://dnd5e.app/vocab/dnd5e#ideals",
+    "@type": "@id",
+  },
   bonds: {
     "@id": "https://dnd5e.app/vocab/dnd5e#bonds",
     "@type": "@id",
@@ -954,10 +958,6 @@ export const dnd5eContext: ContextDefinition = {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterActions",
     "@type": "@id",
     "@container": "@set",
-  },
-  actionOptions: {
-    "@id": "https://dnd5e.app/vocab/dnd5e#actionOptions",
-    "@type": "@id",
   },
   monsterMultiAttackActions: {
     "@id": "https://dnd5e.app/vocab/dnd5e#monsterMultiAttackActions",

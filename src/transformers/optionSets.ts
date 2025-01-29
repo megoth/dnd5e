@@ -53,25 +53,25 @@ function transformOptionsArray(
   ldoDataset = createLdoDataset(),
 ) {
   return ldoDataset.usingType(OptionSetShapeType).fromJson({
-    abilityScores: data.options
+    abilityScoreOptions: data.options
       .filter((option) => option.option_type === "score_prerequisite")
       .map((option) => transformScorePrerequisiteOption(option, ldoDataset)),
-    actions: data.options
+    actionOptions: data.options
       .filter((option) => option.option_type === "action")
       .map((option) =>
         transformActionOption(option as IActionOption, ldoDataset),
       ),
-    bonuses: data.options
+    bonusOptions: data.options
       .filter((option) => option.option_type === "ability_bonus")
       .map((option) =>
         transformAbilityBonusOption(option as IAbilityBonusOption, ldoDataset),
       ),
-    breaths: data.options
+    breathOptions: data.options
       .filter((option) => option.option_type === "breath")
       .map((option) =>
         transformBreathOption(option as IBreathOption, ldoDataset),
       ),
-    choices: data.options
+    choiceOptions: data.options
       .filter((option) => option.option_type === "choice")
       .map((option) =>
         transformChoiceOption(option as IChoiceOption, ldoDataset),
@@ -81,17 +81,17 @@ function transformOptionsArray(
       .map((option) =>
         transformEquipmentOption(option as IEquipmentOption, ldoDataset),
       ),
-    ideals: data.options
+    idealOptions: data.options
       .filter((option) => option.option_type === "ideal")
       .map((option) =>
         transformIdealOption(option as IIdealOption, ldoDataset),
       ),
-    references: data.options
+    referenceOptions: data.options
       .filter((option) => option.option_type === "reference")
       .map((option) =>
         transformReferenceOption(option as IReferenceOption, ldoDataset),
       ),
-    strings: data.options
+    stringOptions: data.options
       .filter((option) => option.option_type === "string")
       .map((option) =>
         transformStringOption(option as IStringOption, ldoDataset),

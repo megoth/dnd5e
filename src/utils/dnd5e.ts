@@ -118,7 +118,7 @@ export function choiceLabels(
         // TODO: actions
         // TODO: bonuses
         // TODO: breaths
-        ...(choice.from.choices || []).flatMap((option) =>
+        ...(choice.from.choiceOptions || []).flatMap((option) =>
           choiceLabels(option.choice, dataset),
         ),
         // TODO: damageOptions
@@ -129,8 +129,7 @@ export function choiceLabels(
           (option) =>
             `${choice.choose > 1 ? `${option.count} ` : ""}${option.equipment.label}`,
         ),
-        choice.from.ideals.map((ideal) => ideal.description),
-        // TODO: ideals
+        choice.from.idealOptions.map((ideal) => ideal.description),
         // TODO: multiples
         choice.from.ofType
           ? ((ofType): string[] => {
@@ -149,7 +148,7 @@ export function choiceLabels(
               return [];
             })(choice.from.ofType)
           : [],
-        (choice.from.references || []).map(
+        (choice.from.referenceOptions || []).map(
           (reference) =>
             reference.proficiency?.skill?.label ||
             reference.proficiency?.label ||
@@ -157,7 +156,7 @@ export function choiceLabels(
             reference.spell?.label ||
             reference.equipment?.label,
         ),
-        (choice.from.strings || []).map((string) => string.string),
+        (choice.from.stringOptions || []).map((string) => string.string),
       ].filter((labels) => labels?.length > 0)
     : [];
 }
@@ -169,25 +168,25 @@ export function choiceResourceUrls(
   return choice.from
     ? removeDuplicates(
         [
-          ...(choice.from.abilityScores?.map(
+          ...(choice.from.abilityScoreOptions?.map(
             (score) => score.abilityScore["@id"],
           ) || []),
           // actions - do not need to load resources
-          ...(choice.from.bonuses || []).map(
+          ...(choice.from.bonusOptions || []).map(
             (bonus) => bonus.abilityScore["@id"],
           ),
-          ...(choice.from.breaths || []).flatMap((breath) => [
+          ...(choice.from.breathOptions || []).flatMap((breath) => [
             breath.difficultyClass?.dcType["@id"],
             ...(breath.breathDamage || []).map(
               (damage) => damage.damageType["@id"],
             ),
           ]),
-          ...(choice.from.choices?.flatMap((option) =>
+          ...(choice.from.choiceOptions?.flatMap((option) =>
             choiceResourceUrls(option.choice, dataset),
           ) || []),
           // damageOptions - do not need to load resources
           choice.from.equipmentCategory?.["@id"],
-          ...(choice.from.references?.map(
+          ...(choice.from.referenceOptions?.map(
             (reference) =>
               reference.proficiency["@id"] ||
               reference.spell["@id"] ||
@@ -197,7 +196,7 @@ export function choiceResourceUrls(
           ...(choice.from.equipmentOptions || []).flatMap(
             (option) => option.equipment["@id"],
           ),
-          ...(choice.from.ideals || []).flatMap((ideal) =>
+          ...(choice.from.idealOptions || []).flatMap((ideal) =>
             (ideal.alignments || []).map((alignment) => alignment["@id"]),
           ),
           // TODO: multiples

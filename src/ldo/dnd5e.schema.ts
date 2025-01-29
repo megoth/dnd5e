@@ -3306,14 +3306,14 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#actions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#actionOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ActionOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#choices",
+              predicate: "https://dnd5e.app/vocab/dnd5e#choiceOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ChoiceOption",
               min: 0,
               max: -1,
@@ -3327,7 +3327,7 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#references",
+              predicate: "https://dnd5e.app/vocab/dnd5e#referenceOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ReferenceOption",
               min: 0,
               max: -1,
@@ -3353,7 +3353,7 @@ export const dnd5eSchema: Schema = {
           expressions: [
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#abilityScores",
+              predicate: "https://dnd5e.app/vocab/dnd5e#abilityScoreOptions",
               valueExpr:
                 "https://ldo.js.org/shapes/dnd5e.shex#AbilityScoreOption",
               min: 0,
@@ -3361,28 +3361,28 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#actions",
+              predicate: "https://dnd5e.app/vocab/dnd5e#actionOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ActionOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#bonuses",
+              predicate: "https://dnd5e.app/vocab/dnd5e#bonusOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#BonusOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#breaths",
+              predicate: "https://dnd5e.app/vocab/dnd5e#breathOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#BreathOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#choices",
+              predicate: "https://dnd5e.app/vocab/dnd5e#choiceOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ChoiceOption",
               min: 0,
               max: -1,
@@ -3411,14 +3411,14 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#ideals",
+              predicate: "https://dnd5e.app/vocab/dnd5e#idealOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#IdealOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#multiples",
+              predicate: "https://dnd5e.app/vocab/dnd5e#multipleOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#MultipleOption",
               min: 0,
               max: -1,
@@ -3435,14 +3435,14 @@ export const dnd5eSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#references",
+              predicate: "https://dnd5e.app/vocab/dnd5e#referenceOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#ReferenceOption",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
-              predicate: "https://dnd5e.app/vocab/dnd5e#strings",
+              predicate: "https://dnd5e.app/vocab/dnd5e#stringOptions",
               valueExpr: "https://ldo.js.org/shapes/dnd5e.shex#StringOption",
               min: 0,
               max: -1,

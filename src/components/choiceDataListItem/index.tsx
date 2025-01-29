@@ -21,7 +21,7 @@ export default function ChoiceDataListItem({ choice, asList }: Props) {
           id="chooseNumberFromType"
           vars={{
             number: choice.choose,
-            type: l10n.getString(choice.ofType).toLowerCase(),
+            type: l10n.getString(choice.ofType)?.toLowerCase(),
           }}
         />
       </dt>

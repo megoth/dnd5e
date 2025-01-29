@@ -33,18 +33,18 @@ export default function CharacterFormChoiceReferences({ options }: Props) {
 
   const complexChoice =
     [
-      options.from.abilityScores.length,
-      options.from.actions.length,
-      options.from.bonuses.length,
-      options.from.breaths.length,
-      options.from.choices.length,
+      options.from.abilityScoreOptions.length,
+      options.from.actionOptions.length,
+      options.from.bonusOptions.length,
+      options.from.breathOptions.length,
+      options.from.choiceOptions.length,
       options.from.damageOptions.length,
       options.from.equipmentCategory ? 1 : 0,
       options.from.equipmentOptions.length,
-      options.from.ideals.length,
-      options.from.multiples.length,
-      options.from.references.length,
-      options.from.strings.length,
+      options.from.idealOptions.length,
+      options.from.multipleOptions.length,
+      options.from.referenceOptions.length,
+      options.from.stringOptions.length,
     ].filter((length) => length > 0).length > 1;
 
   return (
@@ -69,19 +69,19 @@ export default function CharacterFormChoiceReferences({ options }: Props) {
         )}
         <div className="m-2">
           {complexChoice && <>TODO: HERE BE A COMPLEX CHOICE</>}
-          {!complexChoice && options.from.abilityScores.length > 0 && (
+          {!complexChoice && options.from.abilityScoreOptions.length > 0 && (
             <>TODO: HERE BE ABILITY SCORES</>
           )}
-          {!complexChoice && options.from.actions.length > 0 && (
+          {!complexChoice && options.from.actionOptions.length > 0 && (
             <>TODO: HERE BE ACTIONS</>
           )}
-          {!complexChoice && options.from.bonuses.length > 0 && (
+          {!complexChoice && options.from.bonusOptions.length > 0 && (
             <>TODO: HERE BE BONUSES</>
           )}
-          {!complexChoice && options.from.breaths.length > 0 && (
+          {!complexChoice && options.from.breathOptions.length > 0 && (
             <>TODO: HERE BE BREATHS</>
           )}
-          {!complexChoice && options.from.choices.length > 0 && (
+          {!complexChoice && options.from.choiceOptions.length > 0 && (
             <>TODO: HERE BE CHOICES</>
           )}
           {!complexChoice && options.from.damageOptions.length > 0 && (
@@ -122,14 +122,14 @@ export default function CharacterFormChoiceReferences({ options }: Props) {
                 {option.equipment.label}
               </label>
             ))}
-          {!complexChoice && options.from.ideals.length > 0 && (
+          {!complexChoice && options.from.idealOptions.length > 0 && (
             <>TODO: HERE BE IDEALS</>
           )}
-          {!complexChoice && options.from.multiples.length > 0 && (
+          {!complexChoice && options.from.multipleOptions.length > 0 && (
             <>TODO: HERE BE MULTIPLES</>
           )}
           {!complexChoice &&
-            options.from.references?.map((reference) => (
+            options.from.referenceOptions?.map((reference) => (
               <label key={getValue(reference)} className="label mt-2">
                 <input
                   className="checkbox"
@@ -150,7 +150,7 @@ export default function CharacterFormChoiceReferences({ options }: Props) {
                 {reference.spell?.label}
               </label>
             ))}
-          {!complexChoice && options.from.strings.length > 0 && (
+          {!complexChoice && options.from.stringOptions.length > 0 && (
             <>TODO: HERE BE STRINGS</>
           )}
         </div>

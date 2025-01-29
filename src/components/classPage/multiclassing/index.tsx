@@ -15,7 +15,7 @@ export default function ClassPageMulticlassing({ classInfo }: Props) {
           `${prerequisite.abilityScore.label} (${prerequisite.minimumScore})`,
       )
       .join(` ${l10n.getString("and")} `) || "",
-    classInfo.multiclassing.prerequisiteOptions?.from.abilityScores
+    classInfo.multiclassing.prerequisiteOptions?.from.abilityScoreOptions
       .map((score) => `${score.abilityScore.label} (${score.minimumScore})`)
       .join(` ${l10n.getString("or")} `) || "",
   ].join("");
