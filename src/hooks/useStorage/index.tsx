@@ -84,36 +84,46 @@ export default function useStorage() {
     },
   );
 
+  const isLoading =
+    loadingLocalData || defaultStorageLoading || storagesLoading;
+
+  const mutate = async () =>
+    Promise.all([mutateDefaultStorage(), mutateStorages()]);
+
+  const remove = async function <T extends LdoBase>(subject: T): Promise<void> {
+    if (!defaultStorage) {
+      dataset.deleteMatches(namedNode(subject["@id"]));
+      localStorage.removeItem(`local_${subject["@id"]}`);
+      return;
+    }
+    // TODO: ONLINE STORAGE
+    return new Promise((resolve) => resolve());
+  };
+
+  const store = async function <T extends LdoBase>(
+    subject: T,
+    shapeType: ShapeType<T>,
+  ): Promise<T> {
+    if (!defaultStorage) {
+      const localSubject = createLdoDataset()
+        .usingType(shapeType)
+        .fromJson(subject);
+      localStorage.setItem(
+        `local_${subject["@id"]}`,
+        await toTurtle(localSubject),
+      );
+      return localSubject;
+    }
+    // TODO: ONLINE STORAGE
+    return new Promise((resolve) => resolve(subject));
+  };
+
   return {
     defaultStorage,
     storages,
-    isLoading: loadingLocalData || defaultStorageLoading || storagesLoading,
-    mutate: async () => Promise.all([mutateDefaultStorage(), mutateStorages()]),
-    remove: async function <T extends LdoBase>(subject: T): Promise<void> {
-      if (!defaultStorage) {
-        // TODO: REMOVE FROM LOCAL DATASET
-        localStorage.removeItem(`local_${subject["@id"]}`);
-        return;
-      }
-      // TODO: ONLINE STORAGE
-      return new Promise((resolve) => resolve());
-    },
-    store: async function <T extends LdoBase>(
-      subject: T,
-      shapeType: ShapeType<T>,
-    ): Promise<T> {
-      if (!defaultStorage) {
-        const localSubject = createLdoDataset()
-          .usingType(shapeType)
-          .fromJson(subject);
-        localStorage.setItem(
-          `local_${subject["@id"]}`,
-          await toTurtle(localSubject),
-        );
-        return localSubject;
-      }
-      // TODO: ONLINE STORAGE
-      return new Promise((resolve) => resolve(subject));
-    },
+    isLoading,
+    mutate,
+    remove,
+    store,
   };
 }
