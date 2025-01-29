@@ -52,17 +52,15 @@ export default function SubclassesPage() {
                   );
                 }}
               >
-                <Content>
-                  {subclass.illustration ? (
-                    <Illustration
-                      className="card__media"
-                      subject={subclass.illustration}
-                      modifier="compact"
-                    />
-                  ) : (
-                    <Logo className="card__media hidden md:block" />
-                  )}
-                </Content>
+                {subclass.illustration ? (
+                  <Illustration
+                    className="card__media"
+                    subject={subclass.illustration}
+                    modifier="compact"
+                  />
+                ) : (
+                  <Logo className="card__media hidden md:block" />
+                )}
                 <div className="card__content">
                   <h2 className="card__title">
                     <NavLink
@@ -72,9 +70,9 @@ export default function SubclassesPage() {
                     </NavLink>
                   </h2>
                   {subclass.description && (
-                    <Content>
-                      <Markdown>{subclass.description}</Markdown>
-                    </Content>
+                    <Markdown className="content">
+                      {subclass.description}
+                    </Markdown>
                   )}
                 </div>
               </li>

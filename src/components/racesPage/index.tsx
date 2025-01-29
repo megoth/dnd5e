@@ -43,17 +43,15 @@ export default function RacesPage() {
                   return navigate(`/races/${btoa(race["@id"])}`);
                 }}
               >
-                <Content>
-                  {race.illustration ? (
-                    <Illustration
-                      className="card__media"
-                      subject={race.illustration}
-                      modifier="compact"
-                    />
-                  ) : (
-                    <Logo className="card__media hidden md:block" />
-                  )}
-                </Content>
+                {race.illustration ? (
+                  <Illustration
+                    className="card__media"
+                    subject={race.illustration}
+                    modifier="compact"
+                  />
+                ) : (
+                  <Logo className="card__media hidden md:block" />
+                )}
                 <div className="card__content">
                   <h2 className="card__title">
                     <NavLink to={`/classes/${btoa(race["@id"])}`}>
@@ -61,9 +59,7 @@ export default function RacesPage() {
                     </NavLink>
                   </h2>
                   {race.description && (
-                    <Content>
-                      <Markdown>{race.description}</Markdown>
-                    </Content>
+                    <Markdown className="content">{race.description}</Markdown>
                   )}
                 </div>
               </li>

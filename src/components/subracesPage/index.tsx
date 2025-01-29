@@ -52,17 +52,15 @@ export default function SubracesPage() {
                   );
                 }}
               >
-                <Content>
-                  {subrace.illustration ? (
-                    <Illustration
-                      className="card__media"
-                      subject={subrace.illustration}
-                      modifier="compact"
-                    />
-                  ) : (
-                    <Logo className="card__media hidden md:block" />
-                  )}
-                </Content>
+                {subrace.illustration ? (
+                  <Illustration
+                    className="card__media"
+                    subject={subrace.illustration}
+                    modifier="compact"
+                  />
+                ) : (
+                  <Logo className="card__media hidden md:block" />
+                )}
                 <div className="card__content">
                   <h2 className="card__title">
                     <NavLink
@@ -72,9 +70,9 @@ export default function SubracesPage() {
                     </NavLink>
                   </h2>
                   {subrace.description && (
-                    <Content>
-                      <Markdown>{subrace.description}</Markdown>
-                    </Content>
+                    <Markdown className="content">
+                      {subrace.description}
+                    </Markdown>
                   )}
                 </div>
               </li>

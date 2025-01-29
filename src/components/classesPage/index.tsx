@@ -43,17 +43,15 @@ export default function ClassesPage() {
                   return navigate(`/classes/${btoa(classInfo["@id"])}`);
                 }}
               >
-                <Content>
-                  {classInfo.illustration ? (
-                    <Illustration
-                      className="card__media"
-                      subject={classInfo.illustration}
-                      modifier="compact"
-                    />
-                  ) : (
-                    <Logo className="card__media hidden md:block" />
-                  )}
-                </Content>
+                {classInfo.illustration ? (
+                  <Illustration
+                    className="card__media"
+                    subject={classInfo.illustration}
+                    modifier="compact"
+                  />
+                ) : (
+                  <Logo className="card__media hidden md:block" />
+                )}
                 <div className="card__content">
                   <h2 className="card__title">
                     <NavLink to={`/classes/${btoa(classInfo["@id"])}`}>
@@ -61,9 +59,9 @@ export default function ClassesPage() {
                     </NavLink>
                   </h2>
                   {classInfo.description && (
-                    <Content>
-                      <Markdown>{classInfo.description}</Markdown>
-                    </Content>
+                    <Markdown className="content">
+                      {classInfo.description}
+                    </Markdown>
                   )}
                 </div>
               </li>
