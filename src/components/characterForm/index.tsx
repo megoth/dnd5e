@@ -9,7 +9,6 @@ import CharacterFormSubrace from "./subrace";
 import CharacterFormName from "./name";
 import CharacterCreatePageClass from "./class";
 import Loading from "../loading";
-import { useLdo } from "@ldo/solid-react";
 import { useNavigate } from "react-router";
 import useStorage from "../../hooks/useStorage";
 import { Character } from "../../ldo/dnd5e.typings";
@@ -29,7 +28,6 @@ interface Props {
 
 export default function CharacterForm({ character }: Props) {
   const navigate = useNavigate();
-  const { dataset } = useLdo();
   const { profile } = useProfile();
   const { store } = useStorage();
 
@@ -53,21 +51,20 @@ export default function CharacterForm({ character }: Props) {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const id = character?.["@id"] || `#${crypto.randomUUID()}`;
-    const updatedCharacter = dataset.usingType(CharacterShapeType).fromJson({
-      "@id": id,
-      type: { "@id": "Character" },
-      label: data.name,
+    const storedCharacter = await store(CharacterShapeType, id, (character) => {
+      character.type = { "@id": "Character" };
+      character.label = data.name;
+      return character;
     });
-    const storedCharacter = await store(updatedCharacter, CharacterShapeType);
     navigate(`/characters/${btoa(storedCharacter["@id"])}`);
   };
 
   return (
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
       <CharacterFormName register={register} name={character?.label} />
-      <CharacterFormRace register={register} race={race} setRace={setRace} />
-      <CharacterFormSubrace register={register} race={race} />
-      <CharacterCreatePageClass register={register} />
+      {/*<CharacterFormRace register={register} race={race} setRace={setRace} />*/}
+      {/*<CharacterFormSubrace register={register} race={race} />*/}
+      {/*<CharacterCreatePageClass register={register} />*/}
       <button type="submit" className="button w-full mt-8">
         <Translation id="createCharacter" />
       </button>

@@ -4,6 +4,7 @@ import useRulesBundle from "../useRulesBundle";
 import { useMemo } from "react";
 import { namedNode } from "@rdfjs/data-model";
 import { vocabUrl } from "../../utils/dnd5e";
+import useStorage from "../useStorage";
 
 export default function useListOfType<Type extends LdoBase>(
   shapeType: ShapeType<Type>,
@@ -14,7 +15,9 @@ export default function useListOfType<Type extends LdoBase>(
   items: Array<Type>;
 } {
   const { dataset, getSubject } = useLdo();
-  const { isLoading } = useRulesBundle(rulesBundle);
+  const { isLoading: rulesLoading } = useRulesBundle(rulesBundle);
+  const { isLoading: storageLoading } = useStorage();
+  const isLoading = rulesLoading || storageLoading;
 
   return useMemo(() => {
     if (!dataset || isLoading) return { items: [], isLoading };

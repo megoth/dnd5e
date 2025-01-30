@@ -20,7 +20,8 @@ import { first } from "../../utils/array";
 export default function useStorage() {
   const { dataset } = useLdo();
   const { profile } = useProfile();
-  const { getResource, getSubject } = useLdo();
+  const { getResource, getSubject, changeData, commitData, createData } =
+    useLdo();
   const [loadingLocalData, setLoadingLocalData] = useState<boolean>(true);
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export default function useStorage() {
     isLoading: defaultStorageLoading,
     mutate: mutateDefaultStorage,
   } = useSWR(
-    () => `storage-${profile?.["@id"]}`,
+    () => `storage-${profile?.["@id"]}-${profile?.defaultStorage?.["@id"]}`,
     async () => {
       if (!profile?.defaultStorage) return timedPromise();
       await getResource(
@@ -91,31 +92,43 @@ export default function useStorage() {
     Promise.all([mutateDefaultStorage(), mutateStorages()]);
 
   const remove = async function <T extends LdoBase>(subject: T): Promise<void> {
-    if (!defaultStorage) {
-      dataset.deleteMatches(namedNode(subject["@id"]));
+    const hasOnlineStorage = resourceUrl(subject["@id"]) !== "";
+    if (!defaultStorage || !hasOnlineStorage) {
+      dataset.deleteMatches(namedNode(subject["@id"])); // TODO: remove leafs
       localStorage.removeItem(`local_${subject["@id"]}`);
       return;
     }
-    // TODO: ONLINE STORAGE
-    return new Promise((resolve) => resolve());
+    const storageResource = getResource(resourceUrl(defaultStorage["@id"]));
+    await storageResource.readIfUnfetched();
+    const updatedSubject = changeData(subject, storageResource);
+    delete updatedSubject["@id"];
+    await commitData(updatedSubject);
+    return Promise.resolve();
   };
 
   const store = async function <T extends LdoBase>(
-    subject: T,
     shapeType: ShapeType<T>,
+    subjectId: string,
+    populateFn: (subject: T) => T,
   ): Promise<T> {
+    const newSubject = createLdoDataset()
+      .usingType(shapeType)
+      .fromSubject(subjectId);
     if (!defaultStorage) {
-      const localSubject = createLdoDataset()
-        .usingType(shapeType)
-        .fromJson(subject);
-      localStorage.setItem(
-        `local_${subject["@id"]}`,
-        await toTurtle(localSubject),
-      );
+      const localSubject = populateFn(newSubject);
+      localStorage.setItem(`local_${subjectId}`, await toTurtle(localSubject));
       return localSubject;
     }
-    // TODO: ONLINE STORAGE
-    return new Promise((resolve) => resolve(subject));
+    const defaultResourceUrl = resourceUrl(defaultStorage["@id"]);
+    const storageResource = getResource(defaultResourceUrl);
+    await storageResource.readIfUnfetched();
+    const hasOnlineStorage = resourceUrl(subjectId) !== "";
+    const id = hasOnlineStorage ? subjectId : defaultResourceUrl + subjectId;
+    const oldSubject =
+      getSubject(shapeType, id) || createData(shapeType, id, storageResource);
+    const updatedSubject = populateFn(changeData(oldSubject, storageResource));
+    await commitData(updatedSubject);
+    return Promise.resolve(updatedSubject);
   };
 
   return {

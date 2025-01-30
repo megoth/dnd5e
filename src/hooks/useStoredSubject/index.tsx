@@ -37,9 +37,9 @@ export default function useStoredSubject<T extends LdoBase>(
     const rUrl = resourceUrl(url);
     return (
       rUrl === "" || // local data
-      (defaultStorage && rUrl.startsWith(defaultStorage["@id"]))
+      (defaultStorage && rUrl.startsWith(resourceUrl(defaultStorage["@id"])))
     );
-  }, [isLoading, url]);
+  }, [isLoading, url, defaultStorage]);
 
   return {
     canEdit,
