@@ -29,6 +29,10 @@ export function dataUrl(type: string, id: string = ""): string {
   return `/data/${type}.ttl#${id}`;
 }
 
+export function isLocal(subject?: LdoBase): boolean {
+  return subject?.["@id"] && !resourceUrl(subject["@id"]);
+}
+
 export function modifier(value: number): string {
   return value > 0 ? `+${value}` : value.toString();
 }

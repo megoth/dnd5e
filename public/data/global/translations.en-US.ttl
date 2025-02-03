@@ -140,8 +140,9 @@
 :notesPageTitle skos:definition "Notes"@en-US .
 :onlyAvailableInEnglish skos:definition "Only available in english"@en-US .
 :onlyAvailableLocally skos:definition
-        """This data is only available in this browser. You should [log in](/login) in order to store the data online, which
-        enables you to manage this data on other devices, but also to share it with others."""@en-US .
+        """This data is only available on this devide and in this browser. You should [log in](/login) in order to
+        store the data online, which enables you to manage this data on other devices, but also to share it with
+        others."""@en-US .
 :openMetaMenu skos:definition "Open meta menu"@en-US .
 :openNavigationMenu skos:definition "Open navigation menu"@en-US .
 :or skos:definition "or"@en-US .

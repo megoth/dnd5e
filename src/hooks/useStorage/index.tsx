@@ -7,6 +7,7 @@ import { timedPromise } from "../../utils/promise";
 import {
   createLdoDataset,
   LdoBase,
+  LdoDataset,
   parseRdf,
   type ShapeType,
   toTurtle,
@@ -14,8 +15,17 @@ import {
 import { useEffect, useState } from "react";
 import { namedNode, quad } from "@rdfjs/data-model";
 import { rdf } from "rdf-namespaces";
-import { shapeMap } from "../../utils/dnd5e";
+import { isLocal, shapeMap } from "../../utils/dnd5e";
 import { first } from "../../utils/array";
+
+function getType(id: string | null, dataset: LdoDataset) {
+  return first(
+    dataset
+      .match(id ? namedNode(id) : null, namedNode(rdf.type), null, null)
+      .toArray()
+      .map((match) => match.object.value),
+  );
+}
 
 export default function useStorage() {
   const { dataset } = useLdo();
@@ -23,34 +33,6 @@ export default function useStorage() {
   const { getResource, getSubject, changeData, commitData, createData } =
     useLdo();
   const [loadingLocalData, setLoadingLocalData] = useState<boolean>(true);
-
-  useEffect(() => {
-    Promise.all(
-      Object.entries(localStorage)
-        .filter(([key]) => key.startsWith("local_"))
-        .map(async ([key, value]) => {
-          const id = key.slice(7);
-          if (
-            dataset.has(quad(namedNode(id), namedNode(rdf.type), null, null))
-          ) {
-            return;
-          }
-          const localDataset = await parseRdf(value);
-          const type = first(
-            localDataset
-              .match(null, namedNode(rdf.type), null, null)
-              .toArray()
-              .map((match) => match.object.value),
-          );
-          const shapeType = shapeMap[type];
-          if (!type || !shapeType) return;
-          const localEntity = localDataset
-            .usingType(shapeType)
-            .fromSubject(`#${id}`);
-          dataset.usingType(shapeType).fromJson(localEntity);
-        }),
-    ).then(() => setLoadingLocalData(false));
-  }, [localStorage]);
 
   const {
     data: defaultStorage,
@@ -66,6 +48,84 @@ export default function useStorage() {
       return getSubject(StorageShapeType, profile.defaultStorage["@id"]);
     },
   );
+
+  const removeLocal = function <T extends LdoBase>(subject: T): void {
+    dataset.deleteMatches(namedNode(subject["@id"]));
+    delete subject["@id"];
+    localStorage.removeItem(`local_${subject["@id"]}`);
+  };
+
+  const store = async function <T extends LdoBase>(
+    shapeType: ShapeType<T>,
+    subjectId: string,
+    populateFn: (subject: T) => T,
+  ): Promise<T> {
+    const newSubject = createLdoDataset()
+      .usingType(shapeType)
+      .fromSubject(subjectId);
+    if (!defaultStorage) {
+      const localSubject = populateFn(newSubject);
+      localStorage.setItem(`local_${subjectId}`, await toTurtle(localSubject));
+      return localSubject;
+    }
+    const defaultResourceUrl = resourceUrl(defaultStorage["@id"]);
+    const storageResource = getResource(defaultResourceUrl);
+    await storageResource.readIfUnfetched();
+    const id = isLocal({ "@id": subjectId })
+      ? defaultResourceUrl + subjectId
+      : subjectId;
+    const oldSubject =
+      getSubject(shapeType, id) || createData(shapeType, id, storageResource);
+    const updatedSubject = populateFn(changeData(oldSubject, storageResource));
+    await commitData(updatedSubject);
+    return Promise.resolve(updatedSubject);
+  };
+
+  useEffect(() => {
+    Promise.all(
+      Object.entries(localStorage)
+        .filter(([key]) => key.startsWith("local_"))
+        .map(async ([key, value]): Promise<void> => {
+          const id = key.slice(6);
+          const type = getType(id.slice(1), dataset);
+          if (type) {
+            return; // entity is already added
+          }
+          const localDataset = await parseRdf(value);
+          const localType = getType(null, localDataset);
+          const shapeType = shapeMap[localType];
+          if (!localType || !shapeType) {
+            return; // need to know which type to create
+          }
+          const localEntity = localDataset.usingType(shapeType).fromSubject(id);
+          if (!defaultStorage) {
+            dataset.usingType(shapeType).fromJson(localEntity);
+            return; // unable to sync to online storage, so end here
+          }
+          // TODO: Does this work for more complex objects?
+          await store(shapeType, localEntity["@id"], (entity) =>
+            Object.entries(localEntity).reduce((memo, [key, value]) => {
+              memo[key] = value;
+              return memo;
+            }, entity),
+          );
+          dataset.match(namedNode(localEntity["@id"])).forEach((oldQuad) => {
+            // updating old data
+            dataset.delete(oldQuad);
+            dataset.add(
+              quad(
+                namedNode(
+                  resourceUrl(defaultStorage["@id"]) + localEntity["@id"],
+                ),
+                oldQuad.predicate,
+                oldQuad.object,
+              ),
+            );
+          });
+          removeLocal(localEntity); // remove local entity from local dataset and storage
+        }),
+    ).then(() => setLoadingLocalData(false));
+  }, [localStorage, defaultStorage]);
 
   const {
     data: storages,
@@ -85,6 +145,10 @@ export default function useStorage() {
     },
   );
 
+  // useEffect(() => {
+  //   storages;
+  // }, []);
+
   const isLoading =
     loadingLocalData || defaultStorageLoading || storagesLoading;
 
@@ -92,43 +156,14 @@ export default function useStorage() {
     Promise.all([mutateDefaultStorage(), mutateStorages()]);
 
   const remove = async function <T extends LdoBase>(subject: T): Promise<void> {
-    const hasOnlineStorage = resourceUrl(subject["@id"]) !== "";
-    if (!defaultStorage || !hasOnlineStorage) {
-      dataset.deleteMatches(namedNode(subject["@id"])); // TODO: remove leafs
-      localStorage.removeItem(`local_${subject["@id"]}`);
-      return;
+    if (isLocal(subject)) {
+      return removeLocal(subject);
     }
     const storageResource = getResource(resourceUrl(defaultStorage["@id"]));
     await storageResource.readIfUnfetched();
     const updatedSubject = changeData(subject, storageResource);
     delete updatedSubject["@id"];
     await commitData(updatedSubject);
-    return Promise.resolve();
-  };
-
-  const store = async function <T extends LdoBase>(
-    shapeType: ShapeType<T>,
-    subjectId: string,
-    populateFn: (subject: T) => T,
-  ): Promise<T> {
-    const newSubject = createLdoDataset()
-      .usingType(shapeType)
-      .fromSubject(subjectId);
-    if (!defaultStorage) {
-      const localSubject = populateFn(newSubject);
-      localStorage.setItem(`local_${subjectId}`, await toTurtle(localSubject));
-      return localSubject;
-    }
-    const defaultResourceUrl = resourceUrl(defaultStorage["@id"]);
-    const storageResource = getResource(defaultResourceUrl);
-    await storageResource.readIfUnfetched();
-    const hasOnlineStorage = resourceUrl(subjectId) !== "";
-    const id = hasOnlineStorage ? subjectId : defaultResourceUrl + subjectId;
-    const oldSubject =
-      getSubject(shapeType, id) || createData(shapeType, id, storageResource);
-    const updatedSubject = populateFn(changeData(oldSubject, storageResource));
-    await commitData(updatedSubject);
-    return Promise.resolve(updatedSubject);
   };
 
   return {
@@ -137,6 +172,7 @@ export default function useStorage() {
     isLoading,
     mutate,
     remove,
+    removeLocal,
     store,
   };
 }

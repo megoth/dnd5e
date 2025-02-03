@@ -139,6 +139,10 @@
 :noResults skos:definition "Ingen treff"@nb-NO .
 :notesPageTitle skos:definition "Notater"@nb-NO .
 :onlyAvailableInEnglish skos:definition "Bare tilgjengelig på engelsk"@nb-NO .
+:onlyAvailableLocally skos:definition
+        """Dataen er bare tilgjengelig på denne maskinen og i denne nettleseren. Du burde [logge inn](/login) for å
+        lagre dataen på nett, som gjør at du kan se dataen på andre maskiner, men også dele den med andre
+        personer."""@nb-NO .
 :openMetaMenu skos:definition "Åpne meta-meny"@nb-NO .
 :openNavigationMenu skos:definition "Åpne navigeringsmeny"@nb-NO .
 :or skos:definition "eller"@nb-NO .

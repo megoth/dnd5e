@@ -10,6 +10,10 @@ import { NavLink } from "react-router-dom";
 import useListOfType from "../../hooks/useListOfType";
 import { CharacterShapeType } from "../../ldo/dnd5e.shapeTypes";
 import Loading from "../loading";
+import { isLocal } from "../../utils/dnd5e";
+import Markdown from "react-markdown";
+import { transformMarkdownLink } from "../../utils/markdown";
+import { useLocalization } from "@fluent/react";
 
 export default function CharactersPage() {
   const { session } = useSolidAuth();
@@ -19,6 +23,7 @@ export default function CharactersPage() {
     "characters",
     "Character",
   );
+  const { l10n } = useLocalization();
   return (
     <Layout>
       <WarningMessage id="workInProgress" />
@@ -53,6 +58,16 @@ export default function CharactersPage() {
                     {character.label}
                   </NavLink>
                 </h2>
+                {isLocal(character) && (
+                  <Markdown
+                    components={{
+                      a: transformMarkdownLink,
+                    }}
+                    className="content notification"
+                  >
+                    {l10n.getString("onlyAvailableLocally")}
+                  </Markdown>
+                )}
               </div>
             </li>
           ))}

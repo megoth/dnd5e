@@ -1,4 +1,4 @@
-export function first<T>(valueOrArray: T | Array<T>): T {
+export function first<T>(valueOrArray: T | Array<T>): T | undefined {
   return Array.isArray(valueOrArray) ? valueOrArray[0] : valueOrArray;
 }
 

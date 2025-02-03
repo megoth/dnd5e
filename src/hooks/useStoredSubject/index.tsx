@@ -5,6 +5,7 @@ import { resourceUrl } from "../../utils/url";
 import useStorage from "../useStorage";
 import { LdoBase, ShapeType } from "@ldo/ldo";
 import { useMemo } from "react";
+import { isLocal } from "../../utils/dnd5e";
 
 export default function useStoredSubject<T extends LdoBase>(
   shapeType: ShapeType<T>,
@@ -44,7 +45,7 @@ export default function useStoredSubject<T extends LdoBase>(
   return {
     canEdit,
     isLoading,
-    isLocal: subject?.["@id"] && !resourceUrl(subject["@id"]),
+    isLocal: isLocal(subject),
     isSubjectLoading,
     isStorageLoading,
     remove: () => remove(subject),
