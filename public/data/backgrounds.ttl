@@ -1,30 +1,30 @@
-<#acolyte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Background> .
+<#acolyte> <type> <https://dnd5e.app/vocab/dnd5e#Background> .
 <#acolyte> <http://www.w3.org/2000/01/rdf-schema#label> "Acolyte" .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#skill-insight> .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#startingProficiencies> </data/proficiencies.ttl#skill-religion> .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b1 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#startingEquipment> _:b2 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#startingEquipmentChoices> _:b4 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#languageChoice> _:b6 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#backgroundFeature> _:b7 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#personalityTraits> _:b17 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#ideals> _:b25 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#bonds> _:b33 .
-<#acolyte> <https://dnd5e.app/vocab/dnd5e#flaws> _:b41 .
+<#acolyte> <startingProficiencies> </data/proficiencies.ttl#skill-insight> .
+<#acolyte> <startingProficiencies> </data/proficiencies.ttl#skill-religion> .
+<#acolyte> <startingEquipment> _:b1 .
+<#acolyte> <startingEquipment> _:b2 .
+<#acolyte> <startingEquipmentChoices> _:b4 .
+<#acolyte> <languageChoice> _:b6 .
+<#acolyte> <backgroundFeature> _:b7 .
+<#acolyte> <personalityTraits> _:b17 .
+<#acolyte> <ideals> _:b25 .
+<#acolyte> <bonds> _:b33 .
+<#acolyte> <flaws> _:b41 .
 _:b1 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#clothes-common> .
 _:b1 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
 _:b2 <https://dnd5e.app/vocab/dnd5e#equipment> </data/equipments.ttl#pouch> .
 _:b2 <https://dnd5e.app/vocab/dnd5e#quantity> 1 .
 _:b3 <https://dnd5e.app/vocab/dnd5e#equipmentCategory> </data/equipment-categories.ttl#holy-symbols> .
-_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b4 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b4 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b4 <choose> "1" .
 _:b4 <https://dnd5e.app/vocab/dnd5e#ofType> "equipment" .
-_:b4 <https://dnd5e.app/vocab/dnd5e#from> _:b3 .
+_:b4 <from> _:b3 .
 _:b5 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .
-_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b6 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b6 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b6 <choose> "2" .
 _:b6 <https://dnd5e.app/vocab/dnd5e#ofType> "languages" .
-_:b6 <https://dnd5e.app/vocab/dnd5e#from> _:b5 .
+_:b6 <from> _:b5 .
 _:b7 <http://www.w3.org/2000/01/rdf-schema#label> "Shelter of the Faithful" .
 _:b7 <http://purl.org/dc/terms/description> "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.\n" .
 _:b8 <https://dnd5e.app/vocab/dnd5e#string> "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."^^<http://www.w3.org/2001/XMLSchema#strsing> .
@@ -43,10 +43,10 @@ _:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b12 .
 _:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b13 .
 _:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b14 .
 _:b16 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b15 .
-_:b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b17 <https://dnd5e.app/vocab/dnd5e#choose> 2 .
+_:b17 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b17 <choose> "2" .
 _:b17 <https://dnd5e.app/vocab/dnd5e#ofType> "personality_traits" .
-_:b17 <https://dnd5e.app/vocab/dnd5e#from> _:b16 .
+_:b17 <from> _:b16 .
 _:b18 <http://purl.org/dc/terms/description> "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld." .
 _:b18 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#lawful-good> .
 _:b18 <https://dnd5e.app/vocab/dnd5e#alignments> </data/alignments.ttl#lawful-neutral> .
@@ -83,10 +83,10 @@ _:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b20 .
 _:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b21 .
 _:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b22 .
 _:b24 <https://dnd5e.app/vocab/dnd5e#idealOptions> _:b23 .
-_:b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b25 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b25 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b25 <choose> "1" .
 _:b25 <https://dnd5e.app/vocab/dnd5e#ofType> "ideals" .
-_:b25 <https://dnd5e.app/vocab/dnd5e#from> _:b24 .
+_:b25 <from> _:b24 .
 _:b26 <https://dnd5e.app/vocab/dnd5e#string> "I would die to recover an ancient relic of my faith that was lost long ago."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b27 <https://dnd5e.app/vocab/dnd5e#string> "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b28 <https://dnd5e.app/vocab/dnd5e#string> "I owe my life to the priest who took me in when my parents died."^^<http://www.w3.org/2001/XMLSchema#strsing> .
@@ -99,10 +99,10 @@ _:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b28 .
 _:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b29 .
 _:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b30 .
 _:b32 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b31 .
-_:b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b33 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b33 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b33 <choose> "1" .
 _:b33 <https://dnd5e.app/vocab/dnd5e#ofType> "bonds" .
-_:b33 <https://dnd5e.app/vocab/dnd5e#from> _:b32 .
+_:b33 <from> _:b32 .
 _:b34 <https://dnd5e.app/vocab/dnd5e#string> "I judge others harshly, and myself even more severely."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b35 <https://dnd5e.app/vocab/dnd5e#string> "I put too much trust in those who wield power within my temple's hierarchy."^^<http://www.w3.org/2001/XMLSchema#strsing> .
 _:b36 <https://dnd5e.app/vocab/dnd5e#string> "My piety sometimes leads me to blindly trust those that profess faith in my god."^^<http://www.w3.org/2001/XMLSchema#strsing> .
@@ -115,8 +115,8 @@ _:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b36 .
 _:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b37 .
 _:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b38 .
 _:b40 <https://dnd5e.app/vocab/dnd5e#stringOptions> _:b39 .
-_:b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Choice> .
-_:b41 <https://dnd5e.app/vocab/dnd5e#choose> 1 .
+_:b41 <type> <https://dnd5e.app/vocab/dnd5e#Choice> .
+_:b41 <choose> "1" .
 _:b41 <https://dnd5e.app/vocab/dnd5e#ofType> "flaws" .
-_:b41 <https://dnd5e.app/vocab/dnd5e#from> _:b40 .
+_:b41 <from> _:b40 .
 <#acolyte> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#acolyte> .

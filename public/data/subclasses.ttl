@@ -1,39 +1,39 @@
-<#berserker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#berserker> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#berserker> <http://www.w3.org/2000/01/rdf-schema#label> "Berserker" .
 <#berserker> <http://purl.org/dc/terms/description> "For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.\n" .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#barbarian> .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Primal Path" .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#berserker-3> .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#berserker-6> .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#berserker-10> .
-<#berserker> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#berserker-14> .
-<#lore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#berserker> <class> </data/classes.ttl#barbarian> .
+<#berserker> <subclassFlavor> "Primal Path" .
+<#berserker> <levels> </data/levels.ttl#berserker-3> .
+<#berserker> <levels> </data/levels.ttl#berserker-6> .
+<#berserker> <levels> </data/levels.ttl#berserker-10> .
+<#berserker> <levels> </data/levels.ttl#berserker-14> .
+<#lore> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#lore> <http://www.w3.org/2000/01/rdf-schema#label> "Lore" .
 <#lore> <http://purl.org/dc/terms/description> "Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.\n" .
-<#lore> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#bard> .
-<#lore> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Bard College" .
-<#lore> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#lore-3> .
-<#lore> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#lore-6> .
-<#lore> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#lore-14> .
-<#life> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#lore> <class> </data/classes.ttl#bard> .
+<#lore> <subclassFlavor> "Bard College" .
+<#lore> <levels> </data/levels.ttl#lore-3> .
+<#lore> <levels> </data/levels.ttl#lore-6> .
+<#lore> <levels> </data/levels.ttl#lore-14> .
+<#life> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#life> <http://www.w3.org/2000/01/rdf-schema#label> "Life" .
 <#life> <http://purl.org/dc/terms/description> "The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community.\n" .
-<#life> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#cleric> .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Divine Domain" .
-<#life> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#life-1> .
-<#life> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#life-2> .
-<#life> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#life-6> .
-<#life> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#life-8> .
-<#life> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#life-17> .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9069 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9070 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9071 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9072 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9073 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9074 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9075 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9076 .
-<#life> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9077 .
+<#life> <class> </data/classes.ttl#cleric> .
+<#life> <subclassFlavor> "Divine Domain" .
+<#life> <levels> </data/levels.ttl#life-1> .
+<#life> <levels> </data/levels.ttl#life-2> .
+<#life> <levels> </data/levels.ttl#life-6> .
+<#life> <levels> </data/levels.ttl#life-8> .
+<#life> <levels> </data/levels.ttl#life-17> .
+<#life> <subclassSpells> _:b9069 .
+<#life> <subclassSpells> _:b9070 .
+<#life> <subclassSpells> _:b9071 .
+<#life> <subclassSpells> _:b9072 .
+<#life> <subclassSpells> _:b9073 .
+<#life> <subclassSpells> _:b9074 .
+<#life> <subclassSpells> _:b9075 .
+<#life> <subclassSpells> _:b9076 .
+<#life> <subclassSpells> _:b9077 .
 _:b9069 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#cleric-1> .
 _:b9069 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/bless> .
 _:b9070 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#cleric-1> .
@@ -52,71 +52,71 @@ _:b9076 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#cle
 _:b9076 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/mass-cure-wounds> .
 _:b9077 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#cleric-9> .
 _:b9077 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/raise-dead> .
-<#land> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#land> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#land> <http://www.w3.org/2000/01/rdf-schema#label> "Land" .
 <#land> <http://purl.org/dc/terms/description> "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.\n" .
-<#land> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#druid> .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Druid Circle" .
-<#land> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#land-2> .
-<#land> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#land-6> .
-<#land> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#land-10> .
-<#land> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#land-14> .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9078 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9079 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9080 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9081 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9082 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9083 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9084 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9085 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9086 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9087 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9088 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9089 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9090 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9091 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9092 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9093 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9094 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9095 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9096 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9097 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9098 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9099 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9100 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9101 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9102 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9103 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9104 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9105 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9106 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9107 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9108 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9109 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9110 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9111 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9112 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9113 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9114 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9115 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9116 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9117 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9118 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9119 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9120 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9121 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9122 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9123 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9124 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9125 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9126 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9127 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9128 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9129 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9130 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9131 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9132 .
-<#land> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9133 .
+<#land> <class> </data/classes.ttl#druid> .
+<#land> <subclassFlavor> "Druid Circle" .
+<#land> <levels> </data/levels.ttl#land-2> .
+<#land> <levels> </data/levels.ttl#land-6> .
+<#land> <levels> </data/levels.ttl#land-10> .
+<#land> <levels> </data/levels.ttl#land-14> .
+<#land> <subclassSpells> _:b9078 .
+<#land> <subclassSpells> _:b9079 .
+<#land> <subclassSpells> _:b9080 .
+<#land> <subclassSpells> _:b9081 .
+<#land> <subclassSpells> _:b9082 .
+<#land> <subclassSpells> _:b9083 .
+<#land> <subclassSpells> _:b9084 .
+<#land> <subclassSpells> _:b9085 .
+<#land> <subclassSpells> _:b9086 .
+<#land> <subclassSpells> _:b9087 .
+<#land> <subclassSpells> _:b9088 .
+<#land> <subclassSpells> _:b9089 .
+<#land> <subclassSpells> _:b9090 .
+<#land> <subclassSpells> _:b9091 .
+<#land> <subclassSpells> _:b9092 .
+<#land> <subclassSpells> _:b9093 .
+<#land> <subclassSpells> _:b9094 .
+<#land> <subclassSpells> _:b9095 .
+<#land> <subclassSpells> _:b9096 .
+<#land> <subclassSpells> _:b9097 .
+<#land> <subclassSpells> _:b9098 .
+<#land> <subclassSpells> _:b9099 .
+<#land> <subclassSpells> _:b9100 .
+<#land> <subclassSpells> _:b9101 .
+<#land> <subclassSpells> _:b9102 .
+<#land> <subclassSpells> _:b9103 .
+<#land> <subclassSpells> _:b9104 .
+<#land> <subclassSpells> _:b9105 .
+<#land> <subclassSpells> _:b9106 .
+<#land> <subclassSpells> _:b9107 .
+<#land> <subclassSpells> _:b9108 .
+<#land> <subclassSpells> _:b9109 .
+<#land> <subclassSpells> _:b9110 .
+<#land> <subclassSpells> _:b9111 .
+<#land> <subclassSpells> _:b9112 .
+<#land> <subclassSpells> _:b9113 .
+<#land> <subclassSpells> _:b9114 .
+<#land> <subclassSpells> _:b9115 .
+<#land> <subclassSpells> _:b9116 .
+<#land> <subclassSpells> _:b9117 .
+<#land> <subclassSpells> _:b9118 .
+<#land> <subclassSpells> _:b9119 .
+<#land> <subclassSpells> _:b9120 .
+<#land> <subclassSpells> _:b9121 .
+<#land> <subclassSpells> _:b9122 .
+<#land> <subclassSpells> _:b9123 .
+<#land> <subclassSpells> _:b9124 .
+<#land> <subclassSpells> _:b9125 .
+<#land> <subclassSpells> _:b9126 .
+<#land> <subclassSpells> _:b9127 .
+<#land> <subclassSpells> _:b9128 .
+<#land> <subclassSpells> _:b9129 .
+<#land> <subclassSpells> _:b9130 .
+<#land> <subclassSpells> _:b9131 .
+<#land> <subclassSpells> _:b9132 .
+<#land> <subclassSpells> _:b9133 .
 _:b9078 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#druid-3> .
 _:b9078 <https://dnd5e.app/vocab/dnd5e#subclassFeaturePrerequisites> </data/features.ttl#circle-of-the-land-arctic> .
 _:b9078 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/hold-person> .
@@ -285,45 +285,45 @@ _:b9132 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/insect-plague> .
 _:b9133 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#druid-9> .
 _:b9133 <https://dnd5e.app/vocab/dnd5e#subclassFeaturePrerequisites> </data/features.ttl#circle-of-the-land-swamp> .
 _:b9133 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/scrying> .
-<#champion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#champion> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#champion> <http://www.w3.org/2000/01/rdf-schema#label> "Champion" .
 <#champion> <http://purl.org/dc/terms/description> "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.\n" .
-<#champion> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#fighter> .
-<#champion> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Martial Archetype" .
-<#champion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#champion-3> .
-<#champion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#champion-7> .
-<#champion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#champion-10> .
-<#champion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#champion-15> .
-<#champion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#champion-18> .
-<#open-hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#champion> <class> </data/classes.ttl#fighter> .
+<#champion> <subclassFlavor> "Martial Archetype" .
+<#champion> <levels> </data/levels.ttl#champion-3> .
+<#champion> <levels> </data/levels.ttl#champion-7> .
+<#champion> <levels> </data/levels.ttl#champion-10> .
+<#champion> <levels> </data/levels.ttl#champion-15> .
+<#champion> <levels> </data/levels.ttl#champion-18> .
+<#open-hand> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#open-hand> <http://www.w3.org/2000/01/rdf-schema#label> "Open Hand" .
 <#open-hand> <http://purl.org/dc/terms/description> "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.\n" .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#monk> .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Monastic Tradition" .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#open-hand-3> .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#open-hand-6> .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#open-hand-11> .
-<#open-hand> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#open-hand-17> .
-<#devotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#open-hand> <class> </data/classes.ttl#monk> .
+<#open-hand> <subclassFlavor> "Monastic Tradition" .
+<#open-hand> <levels> </data/levels.ttl#open-hand-3> .
+<#open-hand> <levels> </data/levels.ttl#open-hand-6> .
+<#open-hand> <levels> </data/levels.ttl#open-hand-11> .
+<#open-hand> <levels> </data/levels.ttl#open-hand-17> .
+<#devotion> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#devotion> <http://www.w3.org/2000/01/rdf-schema#label> "Devotion" .
 <#devotion> <http://purl.org/dc/terms/description> "The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.\n" .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#paladin> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Sacred Oath" .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#devotion-3> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#devotion-7> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#devotion-15> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#devotion-18> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#devotion-20> .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9134 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9135 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9136 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9137 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9138 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9139 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9140 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9141 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9142 .
-<#devotion> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9143 .
+<#devotion> <class> </data/classes.ttl#paladin> .
+<#devotion> <subclassFlavor> "Sacred Oath" .
+<#devotion> <levels> </data/levels.ttl#devotion-3> .
+<#devotion> <levels> </data/levels.ttl#devotion-7> .
+<#devotion> <levels> </data/levels.ttl#devotion-15> .
+<#devotion> <levels> </data/levels.ttl#devotion-18> .
+<#devotion> <levels> </data/levels.ttl#devotion-20> .
+<#devotion> <subclassSpells> _:b9134 .
+<#devotion> <subclassSpells> _:b9135 .
+<#devotion> <subclassSpells> _:b9136 .
+<#devotion> <subclassSpells> _:b9137 .
+<#devotion> <subclassSpells> _:b9138 .
+<#devotion> <subclassSpells> _:b9139 .
+<#devotion> <subclassSpells> _:b9140 .
+<#devotion> <subclassSpells> _:b9141 .
+<#devotion> <subclassSpells> _:b9142 .
+<#devotion> <subclassSpells> _:b9143 .
 _:b9134 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#paladin-3> .
 _:b9134 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/protection-from-evil-and-good> .
 _:b9135 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#paladin-3> .
@@ -344,52 +344,52 @@ _:b9142 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#pal
 _:b9142 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/commune> .
 _:b9143 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#paladin-17> .
 _:b9143 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/flame-strike> .
-<#hunter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#hunter> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#hunter> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter" .
 <#hunter> <http://purl.org/dc/terms/description> "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.\n" .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#ranger> .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Ranger Archetype" .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#hunter-3> .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#hunter-7> .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#hunter-11> .
-<#hunter> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#hunter-15> .
-<#thief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#hunter> <class> </data/classes.ttl#ranger> .
+<#hunter> <subclassFlavor> "Ranger Archetype" .
+<#hunter> <levels> </data/levels.ttl#hunter-3> .
+<#hunter> <levels> </data/levels.ttl#hunter-7> .
+<#hunter> <levels> </data/levels.ttl#hunter-11> .
+<#hunter> <levels> </data/levels.ttl#hunter-15> .
+<#thief> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#thief> <http://www.w3.org/2000/01/rdf-schema#label> "Thief" .
 <#thief> <http://purl.org/dc/terms/description> "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.\n" .
-<#thief> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#rogue> .
-<#thief> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Roguish Archetype" .
-<#thief> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#thief-3> .
-<#thief> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#thief-9> .
-<#thief> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#thief-13> .
-<#thief> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#thief-17> .
-<#draconic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#thief> <class> </data/classes.ttl#rogue> .
+<#thief> <subclassFlavor> "Roguish Archetype" .
+<#thief> <levels> </data/levels.ttl#thief-3> .
+<#thief> <levels> </data/levels.ttl#thief-9> .
+<#thief> <levels> </data/levels.ttl#thief-13> .
+<#thief> <levels> </data/levels.ttl#thief-17> .
+<#draconic> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#draconic> <http://www.w3.org/2000/01/rdf-schema#label> "Draconic" .
 <#draconic> <http://purl.org/dc/terms/description> "Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.\n" .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#sorcerer> .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Sorcerous Origin" .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#draconic-1> .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#draconic-6> .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#draconic-14> .
-<#draconic> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#draconic-18> .
-<#fiend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#draconic> <class> </data/classes.ttl#sorcerer> .
+<#draconic> <subclassFlavor> "Sorcerous Origin" .
+<#draconic> <levels> </data/levels.ttl#draconic-1> .
+<#draconic> <levels> </data/levels.ttl#draconic-6> .
+<#draconic> <levels> </data/levels.ttl#draconic-14> .
+<#draconic> <levels> </data/levels.ttl#draconic-18> .
+<#fiend> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#fiend> <http://www.w3.org/2000/01/rdf-schema#label> "Fiend" .
 <#fiend> <http://purl.org/dc/terms/description> "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.\n" .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#warlock> .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Otherworldly Patron" .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#fiend-1> .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#fiend-6> .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#fiend-10> .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#fiend-14> .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9144 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9145 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9146 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9147 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9148 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9149 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9150 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9151 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9152 .
-<#fiend> <https://dnd5e.app/vocab/dnd5e#subclassSpells> _:b9153 .
+<#fiend> <class> </data/classes.ttl#warlock> .
+<#fiend> <subclassFlavor> "Otherworldly Patron" .
+<#fiend> <levels> </data/levels.ttl#fiend-1> .
+<#fiend> <levels> </data/levels.ttl#fiend-6> .
+<#fiend> <levels> </data/levels.ttl#fiend-10> .
+<#fiend> <levels> </data/levels.ttl#fiend-14> .
+<#fiend> <subclassSpells> _:b9144 .
+<#fiend> <subclassSpells> _:b9145 .
+<#fiend> <subclassSpells> _:b9146 .
+<#fiend> <subclassSpells> _:b9147 .
+<#fiend> <subclassSpells> _:b9148 .
+<#fiend> <subclassSpells> _:b9149 .
+<#fiend> <subclassSpells> _:b9150 .
+<#fiend> <subclassSpells> _:b9151 .
+<#fiend> <subclassSpells> _:b9152 .
+<#fiend> <subclassSpells> _:b9153 .
 _:b9144 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#warlock-1> .
 _:b9144 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/burning-hands> .
 _:b9145 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#warlock-1> .
@@ -410,15 +410,15 @@ _:b9152 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#war
 _:b9152 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/flame-strike> .
 _:b9153 <https://dnd5e.app/vocab/dnd5e#levelPrerequisites> </data/levels.ttl#warlock-9> .
 _:b9153 <https://dnd5e.app/vocab/dnd5e#spell> </api/spells/hallow> .
-<#evocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
+<#evocation> <type> <https://dnd5e.app/vocab/dnd5e#Subclass> .
 <#evocation> <http://www.w3.org/2000/01/rdf-schema#label> "Evocation" .
 <#evocation> <http://purl.org/dc/terms/description> "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.\n" .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#class> </data/classes.ttl#wizard> .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#subclassFlavor> "Arcane Tradition" .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#evocation-2> .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#evocation-6> .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#evocation-10> .
-<#evocation> <https://dnd5e.app/vocab/dnd5e#levels> </data/levels.ttl#evocation-14> .
+<#evocation> <class> </data/classes.ttl#wizard> .
+<#evocation> <subclassFlavor> "Arcane Tradition" .
+<#evocation> <levels> </data/levels.ttl#evocation-2> .
+<#evocation> <levels> </data/levels.ttl#evocation-6> .
+<#evocation> <levels> </data/levels.ttl#evocation-10> .
+<#evocation> <levels> </data/levels.ttl#evocation-14> .
 <#berserker> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#berserker> .
 <#champion> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#champion> .
 <#devotion> <https://dnd5e.app/vocab/dnd5e#illustration> </data/illustrations.ttl#devotion> .

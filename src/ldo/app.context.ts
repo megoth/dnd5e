@@ -1,15 +1,15 @@
-import { ContextDefinition } from "jsonld";
+import { LdoJsonldContext } from "@ldo/jsonld-dataset-proxy";
 
 /**
  * =============================================================================
  * appContext: JSONLD Context for app
  * =============================================================================
  */
-export const appContext: ContextDefinition = {
+export const appContext: LdoJsonldContext = {
   resourceBundle: {
     "@id": "https://dnd5e.app/vocab/app#resourceBundle",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   label: {
     "@id": "http://www.w3.org/2000/01/rdf-schema#label",
@@ -18,12 +18,12 @@ export const appContext: ContextDefinition = {
   errorsIndex: {
     "@id": "https://dnd5e.app/vocab/app#errorsIndex",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   faqIndex: {
     "@id": "https://dnd5e.app/vocab/app#faqIndex",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   translationBase: {
     "@id": "https://dnd5e.app/vocab/app#translationBase",
@@ -32,7 +32,7 @@ export const appContext: ContextDefinition = {
   translationsIndex: {
     "@id": "https://dnd5e.app/vocab/app#translationsIndex",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   language: {
     "@id": "https://dnd5e.app/vocab/app#language",
@@ -45,7 +45,7 @@ export const appContext: ContextDefinition = {
   supportLanguage: {
     "@id": "https://dnd5e.app/vocab/app#supportLanguage",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   languageFlag: {
     "@id": "https://dnd5e.app/vocab/app#languageFlag",
@@ -54,12 +54,12 @@ export const appContext: ContextDefinition = {
   rulesBundle: {
     "@id": "https://dnd5e.app/vocab/app#rulesBundle",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   rulesResource: {
     "@id": "https://dnd5e.app/vocab/app#rulesResource",
     "@type": "@id",
-    "@container": "@set",
+    "@isCollection": true,
   },
   faqLabel: {
     "@id": "https://dnd5e.app/vocab/app#faqLabel",

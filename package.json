@@ -17,8 +17,8 @@
     "@fluent/bundle": "^0.17.1",
     "@fluent/langneg": "^0.7.0",
     "@fluent/react": "^0.14.1",
-    "@ldo/ldo": "^0.0.1-alpha.28",
-    "@ldo/solid-react": "^0.0.1-alpha.28",
+    "@ldo/ldo": "^0.0.1-alpha.29",
+    "@ldo/solid-react": "^0.0.1-alpha.32",
     "@tailwindcss/forms": "^0.5.9",
     "@uidotdev/usehooks": "^2.4.1",
     "@vitejs/plugin-react": "^4.3.4",
@@ -40,7 +40,7 @@
     "tailwindcss": "^3.4.16"
   },
   "devDependencies": {
-    "@ldo/cli": "^0.0.1-alpha.28",
+    "@ldo/cli": "^0.0.1-alpha.32",
     "@types/n3": "^1.21.1",
     "@types/nested-error-stacks": "^2.1.2",
     "@types/node": "^20.17.9",
